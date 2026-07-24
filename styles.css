@@ -626,3 +626,76 @@ button{font:inherit}
     font-size: 12px;
   }
 }
+
+
+/* Open typography beside the teacher's right arm */
+.slide:first-child .slide-overlay-teacher {
+  top: 48%;
+  right: clamp(100px, 9vw, 145px);
+  width: min(390px, 32vw);
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  backdrop-filter: none;
+  color: #111;
+  text-shadow:
+    0 1px 1px rgba(255, 255, 255, .96),
+    0 3px 12px rgba(255, 255, 255, .86),
+    0 8px 24px rgba(255, 255, 255, .70);
+}
+
+.slide-kicker,
+.slide:first-child .slide-overlay-teacher h2,
+.slide:first-child .slide-overlay-teacher h2 em,
+.slide:first-child .slide-overlay-teacher p,
+.slide:first-child .slide-overlay-teacher p strong {
+  color: #111;
+}
+
+.slide:first-child .slide-overlay-teacher h2 em {
+  font-weight: 700;
+}
+
+.slide-support {
+  margin-top: 18px;
+  padding: 15px 0 0;
+  border-top: 2px solid rgba(17, 17, 17, .72);
+  color: #0c0c0c;
+  font-size: clamp(16px, 1.35vw, 19px);
+  font-weight: 800;
+  line-height: 1.35;
+  letter-spacing: -.015em;
+}
+
+.site-header {
+  box-shadow:
+    0 6px 12px rgba(24, 35, 28, .22),
+    0 16px 32px rgba(24, 35, 28, .22),
+    0 30px 58px rgba(24, 35, 28, .16);
+}
+
+.site-header::after {
+  height: 32px;
+  bottom: -32px;
+  background: linear-gradient(180deg, rgba(21, 31, 24, .24), rgba(21, 31, 24, 0));
+}
+
+@media (max-width: 900px) {
+  .slide:first-child .slide-overlay-teacher {
+    right: 28px;
+    bottom: 44px;
+    width: min(410px, calc(100% - 56px));
+    padding: 0;
+  }
+}
+
+@media (max-width: 560px) {
+  .slide:first-child .slide-overlay-teacher {
+    right: 22px;
+    bottom: 38px;
+    width: calc(100% - 44px);
+    padding: 0;
+  }
+}
