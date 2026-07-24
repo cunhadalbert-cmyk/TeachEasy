@@ -17,8 +17,12 @@ function showSlide(index) {
 }
 
 function restartTimer() {
-  clearInterval(timer);
-  timer = setInterval(() => showSlide(current + 1), 5500);
+  clearTimeout(timer);
+  const delay = current === 0 ? 13000 : 5500;
+  timer = setTimeout(() => {
+    showSlide(current + 1);
+    restartTimer();
+  }, delay);
 }
 
 prev.addEventListener('click', () => {
