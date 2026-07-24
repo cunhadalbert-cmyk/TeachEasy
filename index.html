@@ -203,7 +203,57 @@
       </div>
 
       <button class="btn btn-primary service-dialog-action" type="button">Quero solicitar este material</button>
-      <small>O pedido será conectado ao WhatsApp na próxima etapa do projeto.</small>
+      <small class="service-dialog-note">Você poderá continuar pelo WhatsApp no celular, notebook ou computador.</small>
+
+      <form class="service-request-form" hidden>
+        <div class="service-request-heading">
+          <span>MONTE SEU PEDIDO</span>
+          <h3>Conte o que você precisa</h3>
+          <p>Preencha os dados essenciais. A mensagem será organizada automaticamente para o WhatsApp.</p>
+        </div>
+
+        <div class="service-form-grid">
+          <label>
+            <span>Seu nome</span>
+            <input name="teacher_name" type="text" autocomplete="name" placeholder="Como podemos chamar você?" required>
+          </label>
+          <label>
+            <span>Ano ou série</span>
+            <input name="grade" type="text" placeholder="Ex.: 5º ano" required>
+          </label>
+          <label>
+            <span>Disciplina</span>
+            <input name="subject" type="text" placeholder="Ex.: Matemática" required>
+          </label>
+          <label>
+            <span>Tema</span>
+            <input name="topic" type="text" placeholder="Ex.: Frações" required>
+          </label>
+          <label>
+            <span>Quantidade e duração</span>
+            <input name="duration" type="text" placeholder="Ex.: 2 aulas de 50 minutos" required>
+          </label>
+          <label>
+            <span>Formato de entrega</span>
+            <select name="format" required>
+              <option value="PDF">PDF</option>
+              <option value="Word editável">Word editável</option>
+              <option value="PDF e Word editável">PDF e Word editável</option>
+            </select>
+          </label>
+          <label class="service-form-full">
+            <span>Observações adicionais</span>
+            <textarea name="notes" rows="3" placeholder="Ex.: incluir BNCC, adaptação inclusiva ou quantidade de questões"></textarea>
+          </label>
+        </div>
+
+        <p class="service-request-status" role="status" aria-live="polite"></p>
+
+        <div class="service-form-actions">
+          <button class="btn btn-outline service-request-back" type="button">← Voltar</button>
+          <button class="btn btn-primary service-request-submit" type="submit">Continuar pelo WhatsApp →</button>
+        </div>
+      </form>
     </dialog>
 
     <section id="sobre" class="section section-soft">
