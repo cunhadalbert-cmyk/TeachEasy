@@ -140,40 +140,71 @@
         </div>
 
         <div class="cards-grid initial-services-grid">
-          <article class="feature-card initial-service-card">
+          <article class="feature-card initial-service-card" role="button" tabindex="0" data-service="planning" aria-haspopup="dialog">
             <span class="service-number">01</span>
             <div class="icon">🗓</div>
             <h3>Planejamento de aula</h3>
             <p>Objetivos, habilidades, recursos, metodologia, desenvolvimento e avaliação em uma estrutura clara.</p>
             <span class="service-detail">Organização completa da aula</span>
+            <span class="service-open-hint">Ver detalhes <b>→</b></span>
           </article>
 
-          <article class="feature-card initial-service-card">
+          <article class="feature-card initial-service-card" role="button" tabindex="0" data-service="activity" aria-haspopup="dialog">
             <span class="service-number">02</span>
             <div class="icon">✏️</div>
             <h3>Atividade com gabarito</h3>
             <p>Exercícios adequados à série, ao tema e ao nível de dificuldade, acompanhados das respostas.</p>
             <span class="service-detail">Pronta para imprimir e aplicar</span>
+            <span class="service-open-hint">Ver detalhes <b>→</b></span>
           </article>
 
-          <article class="feature-card initial-service-card">
+          <article class="feature-card initial-service-card" role="button" tabindex="0" data-service="assessment" aria-haspopup="dialog">
             <span class="service-number">03</span>
             <div class="icon">✅</div>
             <h3>Avaliação com gabarito</h3>
             <p>Questões objetivas e discursivas, critérios de correção e gabarito organizado para o professor.</p>
             <span class="service-detail">Avaliação clara e personalizável</span>
+            <span class="service-open-hint">Ver detalhes <b>→</b></span>
           </article>
 
-          <article class="feature-card initial-service-card">
+          <article class="feature-card initial-service-card" role="button" tabindex="0" data-service="sequence" aria-haspopup="dialog">
             <span class="service-number">04</span>
             <div class="icon">📚</div>
             <h3>Sequência didática</h3>
             <p>Aulas conectadas por etapas, com objetivos, atividades e progressão pedagógica bem definida.</p>
             <span class="service-detail">Do primeiro contato ao aprofundamento</span>
+            <span class="service-open-hint">Ver detalhes <b>→</b></span>
           </article>
         </div>
       </div>
     </section>
+
+    <dialog id="service-dialog" class="service-dialog" aria-labelledby="service-dialog-title">
+      <button class="service-dialog-close" type="button" aria-label="Fechar detalhes">×</button>
+      <div class="service-dialog-icon" aria-hidden="true"></div>
+      <span class="service-dialog-kicker">SERVIÇO TEACHEASY</span>
+      <h2 id="service-dialog-title"></h2>
+      <p class="service-dialog-description"></p>
+
+      <div class="service-dialog-columns">
+        <div>
+          <h3>O que está incluído</h3>
+          <ul class="service-dialog-includes"></ul>
+        </div>
+        <div>
+          <h3>O que você informa</h3>
+          <ul class="service-dialog-inputs"></ul>
+        </div>
+      </div>
+
+      <div class="service-dialog-delivery">
+        <strong>Formato de entrega</strong>
+        <span>PDF, Word editável ou ambos</span>
+      </div>
+
+      <button class="btn btn-primary service-dialog-action" type="button">Quero solicitar este material</button>
+      <small>O pedido será conectado ao WhatsApp na próxima etapa do projeto.</small>
+    </dialog>
 
     <section id="sobre" class="section section-soft">
       <div class="container split">
