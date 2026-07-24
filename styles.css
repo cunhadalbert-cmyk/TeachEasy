@@ -304,3 +304,17 @@ button{font:inherit}
 .slide:nth-child(1) {
   background-image: url('assets/professora-loira-hero-4k.png');
 }
+
+
+/* Cohesive classroom carousel images */
+.slide:nth-child(2) {
+  background-image: url('assets/professora-morena-alunos-4k.png');
+}
+
+.slide:nth-child(3) {
+  background-image: url('assets/professora-negra-alunos-4k.png');
+}
+
+.slide:nth-child(4) {
+  background-image: url('assets/professora-asiatica-alunos-4k.png');
+}
