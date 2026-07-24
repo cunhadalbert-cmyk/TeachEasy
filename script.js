@@ -5,6 +5,7 @@ const prev = document.querySelector('.prev');
 const next = document.querySelector('.next');
 const menuToggle = document.querySelector('.menu-toggle');
 const mainNav = document.querySelector('.main-nav');
+const carousel = document.querySelector('.carousel');
 
 let current = 0;
 let timer;
@@ -34,6 +35,23 @@ dots.forEach(dot => dot.addEventListener('click', () => {
   showSlide(Number(dot.dataset.slide));
   restartTimer();
 }));
+
+carousel.setAttribute('tabindex', '0');
+carousel.setAttribute('role', 'button');
+carousel.setAttribute('aria-label', 'Avançar para o próximo destaque');
+
+carousel.addEventListener('click', event => {
+  if (event.target.closest('.carousel-dots button')) return;
+  showSlide(current + 1);
+  restartTimer();
+});
+
+carousel.addEventListener('keydown', event => {
+  if (event.key !== 'Enter' && event.key !== ' ') return;
+  event.preventDefault();
+  showSlide(current + 1);
+  restartTimer();
+});
 
 chips.forEach(chip => chip.addEventListener('click', () => {
   showSlide(Number(chip.dataset.slide));
