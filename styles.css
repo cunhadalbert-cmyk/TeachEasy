@@ -473,3 +473,30 @@ button{font:inherit}
     font-size: 13px;
   }
 }
+
+
+/* Soft depth between the brand bar and carousel */
+.site-header {
+  z-index: 12;
+  border-bottom: 0;
+  box-shadow:
+    0 5px 10px rgba(33, 47, 37, .13),
+    0 14px 28px rgba(33, 47, 37, .16),
+    0 28px 52px rgba(33, 47, 37, .10);
+}
+
+.site-header::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -26px;
+  height: 26px;
+  pointer-events: none;
+  background: linear-gradient(180deg, rgba(38, 52, 42, .14), rgba(38, 52, 42, 0));
+}
+
+.hero {
+  position: relative;
+  z-index: 1;
+}
