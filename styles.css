@@ -773,7 +773,7 @@ button{font:inherit}
 .slide:nth-child(2) .slide-overlay-content {
   display: block;
   position: absolute;
-  top: 50%;
+  top: 24%;
   left: clamp(94px, 9vw, 150px);
   right: auto;
   z-index: 3;
