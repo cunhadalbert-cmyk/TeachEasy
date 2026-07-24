@@ -361,3 +361,30 @@ button{font:inherit}
 .slide {
   background-size: cover;
 }
+
+
+/* Visible Ken Burns motion for every active slide */
+.slide {
+  transform-origin: center;
+  will-change: transform;
+}
+
+.slide.active {
+  animation: carousel-visible-pan 5.5s ease-in-out infinite alternate;
+}
+
+@keyframes carousel-visible-pan {
+  from {
+    transform: scale(1.07) translate3d(-1.5%, 0, 0);
+  }
+  to {
+    transform: scale(1.11) translate3d(1.5%, 0, 0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .slide.active {
+    animation: none;
+    transform: scale(1);
+  }
+}
