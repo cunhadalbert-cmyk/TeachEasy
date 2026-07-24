@@ -308,7 +308,7 @@ button{font:inherit}
 
 /* Cohesive classroom carousel images */
 .slide:nth-child(2) {
-  background-image: url('assets/professora-morena-alunos-4k.png');
+  background-image: url('assets/professora-alunos-uniforme-4k.png');
 }
 
 .slide:nth-child(3) {
@@ -761,5 +761,81 @@ button{font:inherit}
   .slide:first-child .slide-overlay-teacher {
     top: auto;
     bottom: 96px;
+  }
+}
+
+
+/* Uniformed students and content-generation message on slide two */
+.slide:nth-child(2) {
+  background-position: center;
+}
+
+.slide:nth-child(2) .slide-overlay-content {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: clamp(94px, 9vw, 150px);
+  right: auto;
+  z-index: 3;
+  width: min(440px, 34vw);
+  max-width: none;
+  padding: 0;
+  color: #fff;
+  transform: translateY(-50%);
+  text-shadow: 0 3px 14px rgba(0, 0, 0, .62);
+}
+
+.slide:nth-child(2) .slide-kicker {
+  margin-bottom: 14px;
+  color: #fff;
+  font-size: 13px;
+  letter-spacing: .19em;
+}
+
+.slide:nth-child(2) .slide-overlay-content h2 {
+  margin: 0 0 20px;
+  color: #fff;
+  font-family: "Libre Franklin", sans-serif;
+  font-size: clamp(38px, 4vw, 62px);
+  font-weight: 700;
+  line-height: .98;
+  letter-spacing: -.055em;
+}
+
+.slide:nth-child(2) .slide-overlay-content h2 em {
+  display: block;
+  color: #f2c977;
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 700;
+}
+
+.slide:nth-child(2) .slide-overlay-content p {
+  max-width: 390px;
+  margin: 0;
+  color: #fff;
+  font-size: clamp(18px, 1.7vw, 23px);
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+@media (max-width: 900px) {
+  .slide:nth-child(2) .slide-overlay-content {
+    top: auto;
+    left: 32px;
+    bottom: 76px;
+    width: min(440px, calc(100% - 64px));
+    transform: none;
+  }
+}
+
+@media (max-width: 560px) {
+  .slide:nth-child(2) .slide-overlay-content {
+    left: 22px;
+    bottom: 58px;
+    width: calc(100% - 44px);
+  }
+
+  .slide:nth-child(2) .slide-overlay-content h2 {
+    font-size: 38px;
   }
 }
