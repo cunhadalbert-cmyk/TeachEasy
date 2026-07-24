@@ -1269,3 +1269,45 @@ button{font:inherit}
     font-size: 43px;
   }
 }
+
+
+/* Seamless television-style carousel dissolve */
+.slide {
+  z-index: 0;
+  opacity: 0;
+  transform-origin: center center;
+  will-change: opacity, transform;
+  transition: opacity 2.25s cubic-bezier(.42, 0, .18, 1) !important;
+  animation: television-camera-drift 18s ease-in-out infinite alternate !important;
+}
+
+.slide.active {
+  z-index: 1;
+  opacity: 1;
+  animation: television-camera-drift 18s ease-in-out infinite alternate !important;
+}
+
+.slide:nth-child(2) { animation-delay: -4s !important; }
+.slide:nth-child(3) { animation-delay: -8s !important; }
+.slide:nth-child(4) { animation-delay: -12s !important; }
+
+@keyframes television-camera-drift {
+  0% {
+    transform: scale(1.035) translate3d(-.45%, -.15%, 0);
+  }
+  50% {
+    transform: scale(1.055) translate3d(.25%, .15%, 0);
+  }
+  100% {
+    transform: scale(1.075) translate3d(.55%, -.1%, 0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .slide,
+  .slide.active {
+    animation: none !important;
+    transform: scale(1) !important;
+    transition-duration: .65s !important;
+  }
+}
