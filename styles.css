@@ -1451,3 +1451,197 @@ button{font:inherit}
     min-height: 0;
   }
 }
+
+
+/* Clickable service cards and detail dialog */
+.initial-service-card[role="button"] {
+  cursor: pointer;
+}
+
+.initial-service-card[role="button"]:focus-visible {
+  outline: 4px solid rgba(122, 46, 58, .35);
+  outline-offset: 4px;
+}
+
+.service-open-hint {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 14px;
+  color: var(--green-700);
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.service-open-hint b {
+  color: var(--wine);
+  font-size: 21px;
+  transition: transform .25s ease;
+}
+
+.initial-service-card:hover .service-open-hint b {
+  transform: translateX(5px);
+}
+
+.service-dialog {
+  width: min(850px, calc(100% - 32px));
+  max-height: min(760px, calc(100vh - 32px));
+  overflow: auto;
+  padding: 42px;
+  border: 1px solid rgba(86, 112, 90, .18);
+  border-radius: 26px;
+  color: var(--text);
+  background:
+    radial-gradient(circle at 100% 0, rgba(122, 46, 58, .09), transparent 34%),
+    #fff;
+  box-shadow: 0 34px 90px rgba(27, 40, 31, .30);
+}
+
+.service-dialog[open] {
+  animation: service-dialog-in .35s cubic-bezier(.22, 1, .36, 1);
+}
+
+.service-dialog::backdrop {
+  background: rgba(28, 39, 31, .62);
+  backdrop-filter: blur(7px);
+}
+
+@keyframes service-dialog-in {
+  from { opacity: 0; transform: translateY(24px) scale(.98); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+.service-dialog-close {
+  position: absolute;
+  top: 18px;
+  right: 20px;
+  width: 42px;
+  height: 42px;
+  border: 0;
+  border-radius: 50%;
+  background: var(--wine-soft);
+  color: var(--wine);
+  font-size: 28px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.service-dialog-icon {
+  display: grid;
+  width: 66px;
+  height: 66px;
+  margin-bottom: 18px;
+  place-items: center;
+  border-radius: 20px;
+  background: var(--green-100);
+  font-size: 32px;
+}
+
+.service-dialog-kicker {
+  color: var(--wine);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: .17em;
+}
+
+.service-dialog h2 {
+  margin: 8px 0 12px;
+  font-family: "Libre Franklin", sans-serif;
+  font-size: clamp(34px, 4vw, 48px);
+  line-height: 1.08;
+  letter-spacing: -.04em;
+}
+
+.service-dialog-description {
+  max-width: 700px;
+  margin: 0 0 28px;
+  color: var(--muted);
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.service-dialog-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 22px;
+}
+
+.service-dialog-columns > div {
+  padding: 22px;
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  background: rgba(251, 248, 241, .72);
+}
+
+.service-dialog h3 {
+  margin: 0 0 14px;
+  color: var(--green-900);
+  font-size: 18px;
+}
+
+.service-dialog ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.service-dialog li {
+  position: relative;
+  margin: 10px 0;
+  padding-left: 24px;
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.45;
+}
+
+.service-dialog li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--wine);
+  font-weight: 900;
+}
+
+.service-dialog-delivery {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  margin: 22px 0;
+  padding: 17px 20px;
+  border-radius: 14px;
+  background: var(--green-100);
+  color: var(--green-900);
+}
+
+.service-dialog-delivery span {
+  color: var(--wine);
+  font-weight: 800;
+}
+
+.service-dialog-action {
+  width: 100%;
+  min-height: 54px;
+}
+
+.service-dialog > small {
+  display: block;
+  margin-top: 10px;
+  color: var(--muted);
+  text-align: center;
+}
+
+@media (max-width: 680px) {
+  .service-dialog {
+    padding: 30px 22px 24px;
+    border-radius: 20px;
+  }
+
+  .service-dialog-columns {
+    grid-template-columns: 1fr;
+  }
+
+  .service-dialog-delivery {
+    flex-direction: column;
+    gap: 4px;
+  }
+}
