@@ -1210,3 +1210,62 @@ button{font:inherit}
     animation-duration: .01s;
   }
 }
+
+
+/* Final placement refinements for slides three and four */
+.slide:nth-child(3) .slide-overlay-evaluation p {
+  max-width: 360px;
+  margin: 18px 0 0;
+  color: #111;
+  font-size: clamp(17px, 1.55vw, 22px);
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.slide:nth-child(4) .slide-overlay-time {
+  top: 15%;
+  left: clamp(84px, 8vw, 136px);
+  right: auto;
+  bottom: auto;
+  color: #111;
+  text-align: left;
+  text-shadow:
+    0 2px 8px rgba(255, 255, 255, .92),
+    0 8px 24px rgba(255, 255, 255, .72);
+}
+
+.slide:nth-child(4) .slide-overlay-time span {
+  color: #111;
+  font-size: clamp(42px, 5vw, 72px);
+}
+
+.slide:nth-child(4) .slide-overlay-time span::before {
+  margin: 0 auto 16px 0;
+  background: var(--wine);
+}
+
+@media (max-width: 900px) {
+  .slide:nth-child(4) .slide-overlay-time {
+    top: 12%;
+    left: 28px;
+    right: auto;
+    bottom: auto;
+  }
+}
+
+@media (max-width: 560px) {
+  .slide:nth-child(3) .slide-overlay-evaluation p {
+    font-size: 16px;
+  }
+
+  .slide:nth-child(4) .slide-overlay-time {
+    top: 10%;
+    left: 22px;
+    right: auto;
+    bottom: auto;
+  }
+
+  .slide:nth-child(4) .slide-overlay-time span {
+    font-size: 43px;
+  }
+}
