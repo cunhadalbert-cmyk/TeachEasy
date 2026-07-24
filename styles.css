@@ -355,3 +355,9 @@ button{font:inherit}
     background-position: center;
   }
 }
+
+
+/* Keep animated images covering every viewport */
+.slide {
+  background-size: cover;
+}
