@@ -500,3 +500,20 @@ button{font:inherit}
   position: relative;
   z-index: 1;
 }
+
+
+/* Depth only on the TeachEasy name */
+.site-header {
+  box-shadow: none;
+}
+
+.site-header::after {
+  display: none;
+}
+
+.brand strong {
+  text-shadow:
+    0 2px 2px rgba(82, 31, 41, .16),
+    0 5px 10px rgba(82, 31, 41, .14),
+    0 12px 24px rgba(82, 31, 41, .10);
+}
