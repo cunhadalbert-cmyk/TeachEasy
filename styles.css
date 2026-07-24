@@ -388,3 +388,19 @@ button{font:inherit}
     transform: scale(1);
   }
 }
+
+
+/* Smooth crossfade between carousel slides */
+.slide {
+  transition: opacity 1.4s cubic-bezier(.4, 0, .2, 1);
+}
+
+.slide.active {
+  z-index: 1;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .slide {
+    transition-duration: .2s;
+  }
+}
