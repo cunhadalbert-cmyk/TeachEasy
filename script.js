@@ -177,8 +177,7 @@ serviceRequestForm?.addEventListener('submit', async event => {
     'Quantidade e duração: ' + data.get('duration'),
     'Formato: ' + data.get('format'),
     notes ? 'Observações: ' + notes : ''
-  ].filter(Boolean).join('
-');
+  ].filter(Boolean).join(String.fromCharCode(10));
 
   if (!TEACHEASY_WHATSAPP_NUMBER) {
     try {
