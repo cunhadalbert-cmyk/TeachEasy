@@ -111,6 +111,8 @@ function fillList(container, items) {
 function openServiceDetails(serviceKey) {
   const service = serviceDetails[serviceKey];
   if (!service || !serviceDialog) return;
+  currentServiceKey = serviceKey;
+  serviceDialog.classList.remove('request-mode');
   serviceDialog.querySelector('.service-dialog-icon').textContent = service.icon;
   serviceDialog.querySelector('#service-dialog-title').textContent = service.title;
   serviceDialog.querySelector('.service-dialog-description').textContent = service.description;
@@ -131,4 +133,64 @@ serviceCards.forEach(card => {
 serviceDialogClose?.addEventListener('click', () => serviceDialog.close());
 serviceDialog?.addEventListener('click', event => {
   if (event.target === serviceDialog) serviceDialog.close();
+});
+
+
+// Configure aqui, somente com números: país + DDD + telefone.
+// Exemplo: 5511999999999
+const TEACHEASY_WHATSAPP_NUMBER = '';
+
+let currentServiceKey = '';
+const serviceRequestForm = document.querySelector('.service-request-form');
+const serviceRequestAction = document.querySelector('.service-dialog-action');
+const serviceRequestBack = document.querySelector('.service-request-back');
+const serviceRequestStatus = document.querySelector('.service-request-status');
+
+serviceRequestAction?.addEventListener('click', () => {
+  serviceDialog.classList.add('request-mode');
+  serviceRequestForm.hidden = false;
+  serviceRequestStatus.textContent = '';
+  serviceDialog.scrollTo({ top: 0, behavior: 'smooth' });
+  serviceRequestForm.querySelector('input')?.focus();
+});
+
+serviceRequestBack?.addEventListener('click', () => {
+  serviceDialog.classList.remove('request-mode');
+  serviceRequestForm.hidden = true;
+  serviceRequestStatus.textContent = '';
+  serviceDialog.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
+serviceRequestForm?.addEventListener('submit', async event => {
+  event.preventDefault();
+  const data = new FormData(serviceRequestForm);
+  const selectedService = serviceDetails[currentServiceKey];
+  const notes = String(data.get('notes') || '').trim();
+  const message = [
+    'Olá! Quero solicitar um material no TeachEasy.',
+    '',
+    'Serviço: ' + selectedService.title,
+    'Nome: ' + data.get('teacher_name'),
+    'Ano ou série: ' + data.get('grade'),
+    'Disciplina: ' + data.get('subject'),
+    'Tema: ' + data.get('topic'),
+    'Quantidade e duração: ' + data.get('duration'),
+    'Formato: ' + data.get('format'),
+    notes ? 'Observações: ' + notes : ''
+  ].filter(Boolean).join('
+');
+
+  if (!TEACHEASY_WHATSAPP_NUMBER) {
+    try {
+      await navigator.clipboard.writeText(message);
+      serviceRequestStatus.textContent = 'Pedido preparado e copiado. Falta apenas configurar o número oficial do WhatsApp.';
+    } catch {
+      serviceRequestStatus.textContent = 'Pedido preparado. Falta apenas configurar o número oficial do WhatsApp.';
+    }
+    return;
+  }
+
+  const whatsappUrl = 'https://wa.me/' + TEACHEASY_WHATSAPP_NUMBER + '?text=' + encodeURIComponent(message);
+  window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
+  serviceRequestStatus.textContent = 'Abrindo o WhatsApp com seu pedido preenchido…';
 });
