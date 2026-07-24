@@ -699,3 +699,41 @@ button{font:inherit}
     padding: 0;
   }
 }
+
+
+/* Text on the opposite side, pure black without glow */
+.slide:first-child .slide-overlay-teacher {
+  left: clamp(86px, 8vw, 132px);
+  right: auto;
+  color: #000;
+  text-shadow: none;
+}
+
+.slide-kicker,
+.slide:first-child .slide-overlay-teacher h2,
+.slide:first-child .slide-overlay-teacher h2 em,
+.slide:first-child .slide-overlay-teacher p,
+.slide:first-child .slide-overlay-teacher p strong,
+.slide-support {
+  color: #000;
+  text-shadow: none;
+}
+
+.slide-support {
+  text-transform: uppercase;
+  letter-spacing: .035em;
+}
+
+@media (max-width: 900px) {
+  .slide:first-child .slide-overlay-teacher {
+    left: 28px;
+    right: auto;
+  }
+}
+
+@media (max-width: 560px) {
+  .slide:first-child .slide-overlay-teacher {
+    left: 22px;
+    right: auto;
+  }
+}
