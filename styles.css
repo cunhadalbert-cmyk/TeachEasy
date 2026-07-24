@@ -537,7 +537,7 @@ button{font:inherit}
   display: block;
   position: absolute;
   top: 50%;
-  right: clamp(34px, 6vw, 96px);
+  right: clamp(88px, 8vw, 132px);
   left: auto;
   z-index: 3;
   width: min(410px, 34vw);
