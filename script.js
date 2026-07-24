@@ -62,10 +62,73 @@ chips.forEach(chip => chip.addEventListener('click', () => {
   restartTimer();
 }));
 
-menuToggle.addEventListener('click', () => {
-  const open = mainNav.classList.toggle('open');
-  menuToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
-});
+if (menuToggle && mainNav) {
+  menuToggle.addEventListener('click', () => {
+    const open = mainNav.classList.toggle('open');
+    menuToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+}
 
 showSlide(0);
 restartTimer();
+
+
+const serviceDetails = {
+  planning: {
+    icon: '🗓', title: 'Planejamento de aula',
+    description: 'Uma estrutura completa para orientar a aula do início à avaliação, adaptada à série, à disciplina e ao tema.',
+    includes: ['Objetivos de aprendizagem', 'Habilidades e conhecimentos prévios', 'Recursos e metodologia', 'Desenvolvimento passo a passo', 'Avaliação e adaptações'],
+    inputs: ['Ano ou série', 'Disciplina e tema', 'Quantidade e duração das aulas', 'Objetivo principal', 'Necessidades específicas da turma']
+  },
+  activity: {
+    icon: '✏️', title: 'Atividade com gabarito',
+    description: 'Exercícios adequados ao nível da turma, organizados para imprimir, editar e aplicar com facilidade.',
+    includes: ['Texto de apoio quando necessário', 'Questões objetivas e discursivas', 'Nível de dificuldade ajustável', 'Espaço para respostas', 'Gabarito completo'],
+    inputs: ['Ano ou série', 'Disciplina e tema', 'Quantidade de questões', 'Tipo de atividade', 'Nível de dificuldade']
+  },
+  assessment: {
+    icon: '✅', title: 'Avaliação com gabarito',
+    description: 'Uma avaliação clara e personalizável, com critérios de correção e questões alinhadas ao conteúdo trabalhado.',
+    includes: ['Cabeçalho e orientações', 'Questões objetivas', 'Questões discursivas', 'Critérios de correção', 'Gabarito organizado'],
+    inputs: ['Ano ou série', 'Disciplina e conteúdos', 'Quantidade de questões', 'Tipos de questão', 'Nível de dificuldade']
+  },
+  sequence: {
+    icon: '📚', title: 'Sequência didática',
+    description: 'Um conjunto de aulas conectadas, com progressão pedagógica e atividades que aprofundam o tema por etapas.',
+    includes: ['Objetivo geral e objetivos por etapa', 'Organização das aulas', 'Atividades progressivas', 'Recursos e intervenções', 'Avaliação final'],
+    inputs: ['Ano ou série', 'Disciplina e tema', 'Quantidade de aulas', 'Duração de cada encontro', 'Resultado esperado']
+  }
+};
+
+const serviceCards = [...document.querySelectorAll('[data-service]')];
+const serviceDialog = document.querySelector('#service-dialog');
+const serviceDialogClose = document.querySelector('.service-dialog-close');
+
+function fillList(container, items) {
+  container.innerHTML = items.map(item => '<li>' + item + '</li>').join('');
+}
+
+function openServiceDetails(serviceKey) {
+  const service = serviceDetails[serviceKey];
+  if (!service || !serviceDialog) return;
+  serviceDialog.querySelector('.service-dialog-icon').textContent = service.icon;
+  serviceDialog.querySelector('#service-dialog-title').textContent = service.title;
+  serviceDialog.querySelector('.service-dialog-description').textContent = service.description;
+  fillList(serviceDialog.querySelector('.service-dialog-includes'), service.includes);
+  fillList(serviceDialog.querySelector('.service-dialog-inputs'), service.inputs);
+  serviceDialog.showModal();
+}
+
+serviceCards.forEach(card => {
+  card.addEventListener('click', () => openServiceDetails(card.dataset.service));
+  card.addEventListener('keydown', event => {
+    if (event.key !== 'Enter' && event.key !== ' ') return;
+    event.preventDefault();
+    openServiceDetails(card.dataset.service);
+  });
+});
+
+serviceDialogClose?.addEventListener('click', () => serviceDialog.close());
+serviceDialog?.addEventListener('click', event => {
+  if (event.target === serviceDialog) serviceDialog.close();
+});
