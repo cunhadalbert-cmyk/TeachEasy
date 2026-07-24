@@ -318,3 +318,13 @@ button{font:inherit}
 .slide:nth-child(4) {
   background-image: url('assets/professora-asiatica-alunos-4k.png');
 }
+
+
+/* Simplified header */
+.topbar {
+  display: none;
+}
+
+.brand strong {
+  color: var(--wine);
+}
