@@ -328,3 +328,30 @@ button{font:inherit}
 .brand strong {
   color: var(--wine);
 }
+
+
+/* Gentle motion for every carousel image */
+.slide {
+  background-size: 108% auto;
+  background-position: 46% center;
+}
+
+.slide.active {
+  animation: carousel-image-pan 8s ease-in-out infinite alternate;
+}
+
+@keyframes carousel-image-pan {
+  from {
+    background-position: 46% center;
+  }
+  to {
+    background-position: 54% center;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .slide.active {
+    animation: none;
+    background-position: center;
+  }
+}
