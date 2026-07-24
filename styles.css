@@ -737,3 +737,29 @@ button{font:inherit}
     right: auto;
   }
 }
+
+
+/* Higher message and click-to-advance carousel */
+.slide:first-child .slide-overlay-teacher {
+  top: 41%;
+}
+
+.carousel-arrow {
+  display: none;
+}
+
+.carousel {
+  cursor: pointer;
+}
+
+.carousel:focus-visible {
+  outline: 4px solid rgba(122, 46, 58, .75);
+  outline-offset: -4px;
+}
+
+@media (max-width: 900px) {
+  .slide:first-child .slide-overlay-teacher {
+    top: auto;
+    bottom: 96px;
+  }
+}
