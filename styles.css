@@ -703,7 +703,7 @@ button{font:inherit}
 
 /* Text on the opposite side, pure black without glow */
 .slide:first-child .slide-overlay-teacher {
-  left: clamp(86px, 8vw, 132px);
+  left: clamp(140px, 12vw, 190px);
   right: auto;
   color: #000;
   text-shadow: none;
