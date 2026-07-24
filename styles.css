@@ -298,3 +298,9 @@ button{font:inherit}
     min-height: 72vh;
   }
 }
+
+
+/* Hero image generated for TeachEasy */
+.slide:nth-child(1) {
+  background-image: url('assets/professora-loira-hero-4k.png');
+}
