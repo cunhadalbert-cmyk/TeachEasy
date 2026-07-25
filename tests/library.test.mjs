@@ -89,11 +89,15 @@ test('Formulário por foto fica oculto na entrada e abre pelo botão discreto', 
   const window = await createLibraryPage();
   const dialog = window.document.querySelector('#photo-activity-dialog');
   const preview = window.document.querySelector('#photo-generated-preview');
+  const launcher = window.document.querySelector('#photo-activity-launcher');
   assert.equal(dialog.open, false);
   assert.equal(preview.hidden, true);
   assert.equal(window.document.querySelectorAll('.library-choice-card').length, 4);
+  assert.match(launcher.textContent, /Criar atividade por foto/);
+  assert.match(launcher.textContent, /Envie uma foto do conteúdo e gere uma atividade personalizada/);
+  assert.equal(launcher.querySelectorAll('.photo-launcher-arrow').length, 1);
 
-  window.document.querySelector('#photo-activity-launcher').click();
+  launcher.click();
   assert.equal(dialog.open, true);
   await window.happyDOM.close();
 });

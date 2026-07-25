@@ -289,22 +289,64 @@
 }
 
 .photo-activity-launcher {
-  margin: -10px 0 28px;
-  padding: 9px 14px;
-  border: 1px solid rgba(90, 15, 31, .28);
-  border-radius: 999px;
-  background: #fff;
-  color: #6f1e31;
+  display: flex;
+  width: min(100%, 900px);
+  min-height: 112px;
+  margin: -10px auto 34px;
+  padding: 24px 28px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  border: 1px solid rgba(255, 255, 255, .65);
+  border-radius: 26px;
+  background: linear-gradient(135deg, #5a0f1f 0%, #7d263a 55%, #a44f61 100%);
+  color: #fff;
   font: inherit;
-  font-size: 14px;
-  font-weight: 700;
+  text-align: left;
   cursor: pointer;
+  box-shadow:
+    0 18px 38px rgba(0, 0, 0, .24),
+    0 8px 20px rgba(90, 15, 31, .3);
+  transition: transform 200ms ease, box-shadow 200ms ease;
 }
 
 .photo-activity-launcher:hover,
 .photo-activity-launcher:focus-visible {
-  border-color: #6f1e31;
-  background: #fbf1f2;
+  transform: translateY(-4px);
+  box-shadow:
+    0 24px 46px rgba(0, 0, 0, .28),
+    0 12px 26px rgba(90, 15, 31, .36);
+}
+
+.photo-launcher-copy {
+  display: grid;
+  gap: 7px;
+}
+
+.photo-launcher-copy strong {
+  color: #fff;
+  font-size: clamp(22px, 3vw, 30px);
+  line-height: 1.15;
+}
+
+.photo-launcher-copy small {
+  color: #f8e9e5;
+  font-size: clamp(15px, 2vw, 18px);
+  line-height: 1.4;
+}
+
+.photo-launcher-arrow {
+  display: grid;
+  width: 48px;
+  height: 48px;
+  flex: 0 0 48px;
+  place-items: center;
+  border: 1px solid rgba(255, 255, 255, .8);
+  border-radius: 50%;
+  background: rgba(255, 255, 255, .12);
+  color: #fff;
+  font-size: 25px;
+  line-height: 1;
 }
 
 .selection-summary {
@@ -1131,6 +1173,19 @@
 
   .photo-dialog-content {
     padding: 26px 18px;
+  }
+
+  .photo-activity-launcher {
+    min-height: 104px;
+    padding: 20px;
+    gap: 16px;
+    border-radius: 22px;
+  }
+
+  .photo-launcher-arrow {
+    width: 42px;
+    height: 42px;
+    flex-basis: 42px;
   }
 
   .photo-activity-form {
