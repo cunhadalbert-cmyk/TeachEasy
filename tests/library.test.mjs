@@ -70,6 +70,15 @@ test('Hero usa destaques inline e não exibe chips em bloco separado', async () 
   await window.happyDOM.close();
 });
 
+test('Seção de etapas usa fundo branco, sombras e rodapé vinho', async () => {
+  const css = await readFile(new URL('../biblioteca.css', import.meta.url), 'utf8');
+  assert.match(css, /\.library-page\s*\{[^}]*background:\s*#fff/s);
+  assert.match(css, /\.library-content\s*\{[^}]*background:\s*#fff/s);
+  assert.match(css, /\.library-choice-card\s*\{[^}]*0 14px 30px rgba\(0, 0, 0, \.18\)/s);
+  assert.match(css, /\.library-choice-card strong\s*\{[^}]*text-shadow:\s*0 2px 6px rgba\(0, 0, 0, \.18\)/s);
+  assert.match(css, /\.library-footer\s*\{[^}]*linear-gradient\(/s);
+});
+
 test('Navegação progressiva abre ano, bimestre e só então os filtros', async () => {
   const window = await createLibraryPage();
   clickChoice(window, 'Anos Iniciais');

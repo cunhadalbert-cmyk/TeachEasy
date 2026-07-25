@@ -5,7 +5,7 @@
 }
 
 .library-page {
-  background: #f7f3e9;
+  background: #fff;
 }
 
 .library-header {
@@ -116,13 +116,15 @@
   min-height: 190px;
   padding: 28px;
   border: 1px solid rgba(45, 76, 58, .24);
-  border-radius: 22px;
+  border-radius: 28px;
   background: #fffdf9;
   color: var(--library-ink);
   text-align: left;
   cursor: pointer;
-  box-shadow: 0 12px 30px rgba(28, 67, 51, .08);
-  transition: transform 180ms ease, box-shadow 180ms ease;
+  box-shadow:
+    0 14px 30px rgba(0, 0, 0, .18),
+    0 6px 14px rgba(0, 0, 0, .12);
+  transition: transform 200ms ease, box-shadow 200ms ease;
 }
 
 .library-choice-card[data-theme="infantil"] {
@@ -147,19 +149,23 @@
 
 .library-choice-card:hover,
 .library-choice-card:focus-visible {
-  transform: translateY(-3px);
-  box-shadow: 0 16px 36px rgba(28, 67, 51, .14);
+  transform: translateY(-4px);
+  box-shadow:
+    0 18px 36px rgba(0, 0, 0, .22),
+    0 8px 18px rgba(0, 0, 0, .16);
 }
 
 .library-choice-card strong,
 .library-choice-card span,
 .library-choice-card small {
   display: block;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, .14);
 }
 
 .library-choice-card strong {
   margin: 14px 0 8px;
   font-size: clamp(1.25rem, 2vw, 1.6rem);
+  text-shadow: 0 2px 6px rgba(0, 0, 0, .18);
 }
 
 .library-choice-card > span {
@@ -257,6 +263,7 @@
 
 .library-content {
   padding-top: 64px;
+  background: #fff;
 }
 
 .library-toolbar {
@@ -839,6 +846,19 @@
 
 .library-footer {
   margin-top: 40px;
+  background: linear-gradient(
+    180deg,
+    #5a0f1f 0%,
+    #742033 45%,
+    #8e3a4d 75%,
+    #a44f61 100%
+  );
+  color: #f7ece8;
+}
+
+.library-footer strong,
+.library-footer span {
+  color: #f7ece8;
 }
 
 @media (max-width: 1020px) {
