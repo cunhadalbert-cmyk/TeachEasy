@@ -105,10 +105,10 @@ test('Seção sobre mostra o fluxo da IA até a Biblioteca e preserva o texto', 
 
 test('Foto da professora usa movimento lateral suave e acessível', async () => {
   const css = await readFile(new URL('../styles.css', import.meta.url), 'utf8');
-  assert.match(css, /\.teacheasy-workflow img\s*\{[^}]*width:\s*106%[^}]*animation:\s*teacherImagePan 16s ease-in-out infinite alternate/s);
-  assert.match(css, /@keyframes teacherImagePan\s*\{[^}]*translateX\(-3%\)[\s\S]*translateX\(-1%\)/s);
+  assert.match(css, /\.teacheasy-workflow img\s*\{[^}]*width:\s*110%[^}]*animation:\s*teacherImagePan 12s ease-in-out -3s infinite alternate/s);
+  assert.match(css, /@keyframes teacherImagePan\s*\{[^}]*translateX\(-7%\)[\s\S]*translateX\(-2%\)/s);
   assert.match(css, /\.teacheasy-workflow:hover img\s*\{[^}]*animation-play-state:\s*paused/s);
-  assert.match(css, /@media \(max-width:\s*768px\)[\s\S]*\.teacheasy-workflow img\s*\{[^}]*width:\s*103%[^}]*animation-duration:\s*20s/s);
+  assert.match(css, /@media \(max-width:\s*768px\)[\s\S]*\.teacheasy-workflow img\s*\{[^}]*width:\s*105%[^}]*animation-duration:\s*18s/s);
   assert.match(css, /@media \(prefers-reduced-motion: reduce\)[\s\S]*\.teacheasy-workflow img\s*\{[^}]*width:\s*100%[^}]*animation:\s*none !important/s);
 });
 

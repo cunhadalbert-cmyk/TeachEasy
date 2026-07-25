@@ -292,25 +292,28 @@ button{font:inherit}
   background:#fff;box-shadow:var(--shadow);overflow:hidden;
 }
 .teacheasy-workflow img{
-  display:block;width:106%;max-width:none;height:auto;
-  transform:translateX(-3%);border-radius:19px;
-  animation:teacherImagePan 16s ease-in-out infinite alternate;
+  display:block;width:110%;max-width:none;height:auto;
+  transform:translateX(-7%);border-radius:19px;
+  animation:teacherImagePan 12s ease-in-out -3s infinite alternate;
   will-change:transform;
 }
-.teacheasy-workflow:hover img{
-  animation-play-state:paused;
+@media (hover:hover) and (pointer:fine){
+  .teacheasy-workflow:hover img{
+    animation-play-state:paused;
+  }
 }
 @keyframes teacherImagePan{
-  from{transform:translateX(-3%)}
-  to{transform:translateX(-1%)}
+  from{transform:translateX(-7%)}
+  to{transform:translateX(-2%)}
 }
 @media (max-width:768px){
   .teacheasy-workflow img{
-    width:103%;transform:translateX(-1.5%);animation-duration:20s;
+    width:105%;transform:translateX(-3.5%);
+    animation-duration:18s;animation-delay:-4s;
   }
   @keyframes teacherImagePan{
-    from{transform:translateX(-1.5%)}
-    to{transform:translateX(-.5%)}
+    from{transform:translateX(-3.5%)}
+    to{transform:translateX(-1%)}
   }
 }
 .badge{
