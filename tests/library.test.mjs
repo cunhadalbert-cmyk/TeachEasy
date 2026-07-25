@@ -98,7 +98,8 @@ test('Formulário por foto fica oculto na entrada e abre pelo botão discreto', 
   assert.match(launcher.textContent, /Envie uma foto do conteúdo e a IA gera uma atividade personalizada para você/);
   assert.equal(launcher.querySelectorAll('.photo-launcher-arrow').length, 1);
   assert.equal(launcher.querySelectorAll('.photo-launcher-illustration').length, 1);
-  assert.equal(window.document.querySelectorAll('.photo-feature-badges > span').length, 3);
+  assert.equal(window.document.querySelector('.photo-feature-badges'), null);
+  assert.doesNotMatch(window.document.body.textContent, /Rápido e prático|Atividades originais|Com gabarito e versão adaptada/);
 
   launcher.click();
   assert.equal(dialog.open, true);

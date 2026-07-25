@@ -376,47 +376,6 @@
   line-height: 1;
 }
 
-.photo-feature-badges {
-  display: flex;
-  max-width: 1100px;
-  margin: 16px auto 0;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 10px;
-}
-
-.photo-feature-badges span {
-  display: flex;
-  align-items: center;
-  gap: 7px;
-  padding: 8px 13px;
-  border: 1px solid #ddceca;
-  border-radius: 999px;
-  background: #fff;
-  color: #5f2332;
-  font-size: 14px;
-  font-weight: 750;
-  box-shadow: 0 6px 16px rgba(52, 12, 22, .09);
-}
-
-.photo-feature-badges b {
-  font-size: 16px;
-}
-
-.photo-feature-badges i {
-  display: grid;
-  width: 22px;
-  height: 22px;
-  margin-left: 3px;
-  place-items: center;
-  border-radius: 50%;
-  background: #35bd70;
-  color: #fff;
-  font-size: 13px;
-  font-style: normal;
-  font-weight: 900;
-}
-
 .selection-summary {
   min-width: 180px;
   padding: 15px 18px;
@@ -1278,16 +1237,6 @@
     width: 42px;
     height: 42px;
     flex-basis: 42px;
-  }
-
-  .photo-feature-badges {
-    margin-top: 13px;
-    gap: 7px;
-  }
-
-  .photo-feature-badges span {
-    padding: 7px 10px;
-    font-size: 12px;
   }
 
   .photo-activity-form {
