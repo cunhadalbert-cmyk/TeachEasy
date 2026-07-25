@@ -36,10 +36,7 @@
 
 .library-hero {
   padding: 74px 0 66px;
-  background:
-    radial-gradient(circle at 8% 20%, rgba(122, 46, 58, .12), transparent 28%),
-    radial-gradient(circle at 88% 82%, rgba(86, 112, 90, .18), transparent 32%),
-    linear-gradient(145deg, #fffdf8, #eef4ec);
+  background: linear-gradient(180deg, #3b0714 0%, #5b0f20 35%, #7a2438 70%, #a44a5c 100%);
 }
 
 .library-hero-grid {
@@ -61,7 +58,7 @@
 .library-hero h1 {
   max-width: 760px;
   margin: 0;
-  color: var(--library-ink);
+  color: #f1dfd2;
   font-family: "Libre Franklin", sans-serif;
   font-size: clamp(42px, 5.7vw, 76px);
   line-height: 1;
@@ -71,26 +68,38 @@
 .library-hero p {
   max-width: 720px;
   margin: 24px 0 0;
-  color: var(--muted);
+  color: #f3e7de;
   font-size: clamp(18px, 2vw, 22px);
   line-height: 1.6;
 }
 
-.library-hero-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin-top: 28px;
+.library-hero .library-eyebrow {
+  color: #efb8c3;
 }
 
-.library-hero-tags span {
-  padding: 9px 14px;
-  border: 1px solid rgba(86, 112, 90, .24);
+.library-hero-highlights {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+  vertical-align: baseline;
+}
+
+.library-hero-highlights span {
+  padding: 3px 9px;
+  border: 1px solid rgba(255, 226, 228, .3);
   border-radius: 999px;
-  background: rgba(255, 255, 255, .74);
-  color: var(--green-700);
-  font-size: 14px;
-  font-weight: 800;
+  background: rgba(255, 224, 226, .1);
+  color: #fff3ed;
+  font-size: .78em;
+  font-weight: 700;
+  line-height: 1.45;
+}
+
+.library-hero-highlights i {
+  color: rgba(255, 231, 226, .65);
+  font-style: normal;
+  font-weight: 500;
 }
 
 .library-choice-grid {
@@ -879,6 +888,19 @@
 
   .library-hero {
     padding: 48px 0 44px;
+  }
+
+  .library-hero h1 {
+    font-size: clamp(40px, 12vw, 56px);
+  }
+
+  .library-hero p {
+    font-size: 18px;
+    line-height: 1.7;
+  }
+
+  .library-hero-highlights {
+    gap: 5px;
   }
 
   .library-toolbar {

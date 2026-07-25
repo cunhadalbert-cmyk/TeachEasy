@@ -60,6 +60,16 @@ test('Cabeçalho da Biblioteca participa do fluxo da página', async () => {
   assert.match(css, /\.library-page \[hidden\]\s*\{[^}]*display:\s*none !important/s);
 });
 
+test('Hero usa destaques inline e não exibe chips em bloco separado', async () => {
+  const window = await createLibraryPage();
+  const description = window.document.querySelector('.library-hero-description');
+  assert.match(description.textContent, /atividade ideal com/);
+  assert.equal(description.querySelectorAll('.library-hero-highlights > span').length, 4);
+  assert.equal(window.document.querySelector('.library-hero-tags'), null);
+  assert.match(description.textContent, /BNCC\s*\|\s*Gabaritos\s*\|\s*Figuras\s*\|\s*Inclusão/);
+  await window.happyDOM.close();
+});
+
 test('Navegação progressiva abre ano, bimestre e só então os filtros', async () => {
   const window = await createLibraryPage();
   clickChoice(window, 'Anos Iniciais');
