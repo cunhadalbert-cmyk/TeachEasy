@@ -1,0 +1,7 @@
+{
+  "extends": ["html-validate:recommended"],
+  "rules": {
+    "empty-heading": "off",
+    "prefer-native-element": "off"
+  }
+}
