@@ -116,10 +116,10 @@ const pageSize = 5;
 const navigation = { stage: '', grade: '', term: '' };
 
 const stages = [
-  { name: 'Educação Infantil', label: 'Educação Infantil', detail: 'Maternal, Pré I e Pré II', count: 288, symbol: '🎨' },
-  { name: 'Ensino Fundamental I', label: 'Ensino Fundamental — Anos Iniciais', detail: '1º ao 5º ano', count: 800, symbol: '📚' },
-  { name: 'Ensino Fundamental II', label: 'Ensino Fundamental — Anos Finais', detail: '6º ao 9º ano', count: 384, symbol: '🔬' },
-  { name: 'Ensino Médio', label: 'Ensino Médio', detail: '1ª à 3ª série', count: 240, symbol: '🎓' }
+  { name: 'Educação Infantil', label: 'Educação Infantil', detail: 'Maternal, Pré I e Pré II', count: 288, theme: 'infantil' },
+  { name: 'Ensino Fundamental I', label: 'Ensino Fundamental — Anos Iniciais', detail: '1º ao 5º ano', count: 800, theme: 'iniciais' },
+  { name: 'Ensino Fundamental II', label: 'Ensino Fundamental — Anos Finais', detail: '6º ao 9º ano', count: 384, theme: 'finais' },
+  { name: 'Ensino Médio', label: 'Ensino Médio', detail: '1ª à 3ª série', count: 240, theme: 'medio' }
 ];
 
 const gradesByStage = {
@@ -347,12 +347,12 @@ function resetFilters() {
   requestAnimationFrame(renderActivities);
 }
 
-function choiceCard(title, detail, symbol, action, count = '') {
+function choiceCard(title, detail, action, count = '', theme = '') {
   const button = document.createElement('button');
   button.className = 'library-choice-card';
   button.type = 'button';
+  if (theme) button.dataset.theme = theme;
   button.innerHTML = `
-    <span class="choice-symbol" aria-hidden="true">${symbol}</span>
     <strong>${title}</strong>
     <span>${detail}</span>
     ${count ? `<small>${count.toLocaleString('pt-BR')} atividades-base</small>` : ''}
@@ -384,10 +384,10 @@ function renderNavigation() {
     stepTitle.textContent = 'Escolha uma etapa';
     stepHelp.textContent = '1.712 atividades-base. Inclusão e autismo estão disponíveis em todas as etapas.';
     choiceGrid.replaceChildren(...stages.map(stage =>
-      choiceCard(stage.label, stage.detail, stage.symbol, () => {
+      choiceCard(stage.label, stage.detail, () => {
         navigation.stage = stage.name;
         renderNavigation();
-      }, stage.count)
+      }, stage.count, stage.theme)
     ));
     return;
   }
@@ -396,7 +396,7 @@ function renderNavigation() {
     stepTitle.textContent = 'Escolha o ano ou a série';
     stepHelp.textContent = stageLabel(navigation.stage);
     choiceGrid.replaceChildren(...gradesByStage[navigation.stage].map(grade =>
-      choiceCard(grade, 'Conteúdos dos quatro bimestres', '📘', () => {
+      choiceCard(grade, 'Conteúdos dos quatro bimestres', () => {
         navigation.grade = grade;
         renderNavigation();
       })
@@ -408,7 +408,7 @@ function renderNavigation() {
     stepTitle.textContent = 'Escolha o bimestre';
     stepHelp.textContent = `${stageLabel(navigation.stage)} · ${navigation.grade}`;
     choiceGrid.replaceChildren(...[1, 2, 3, 4].map(term =>
-      choiceCard(`${term}º bimestre`, 'Ver atividades deste período', '🗓️', () => {
+      choiceCard(`${term}º bimestre`, 'Ver atividades deste período', () => {
         navigation.term = String(term);
         currentPage = 1;
         renderNavigation();

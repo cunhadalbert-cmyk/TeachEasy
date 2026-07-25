@@ -108,12 +108,32 @@
   padding: 28px;
   border: 1px solid rgba(45, 76, 58, .24);
   border-radius: 22px;
-  background: #fff;
+  background: #fffdf9;
   color: var(--library-ink);
   text-align: left;
   cursor: pointer;
   box-shadow: 0 12px 30px rgba(28, 67, 51, .08);
   transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.library-choice-card[data-theme="infantil"] {
+  border-color: #e8c8bd;
+  background: #f9e6df;
+}
+
+.library-choice-card[data-theme="iniciais"] {
+  border-color: #bfd7c7;
+  background: #e4f1e7;
+}
+
+.library-choice-card[data-theme="finais"] {
+  border-color: #bfd4df;
+  background: #e4f0f5;
+}
+
+.library-choice-card[data-theme="medio"] {
+  border-color: #d4c7d6;
+  background: #eee6ef;
 }
 
 .library-choice-card:hover,
@@ -133,7 +153,7 @@
   font-size: clamp(1.25rem, 2vw, 1.6rem);
 }
 
-.library-choice-card > span:not(.choice-symbol) {
+.library-choice-card > span {
   font-size: 1.05rem;
 }
 
@@ -141,10 +161,6 @@
   margin-top: 14px;
   color: #42705e;
   font-weight: 700;
-}
-
-.choice-symbol {
-  font-size: 2.2rem;
 }
 
 .library-breadcrumb {

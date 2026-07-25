@@ -39,6 +39,11 @@ function openActivities(window, stage, grade, term = '1º bimestre') {
 test('Biblioteca começa com quatro etapas e controles auxiliares ocultos', async () => {
   const window = await createLibraryPage();
   assert.equal(window.document.querySelectorAll('.library-choice-card').length, 4);
+  assert.equal(window.document.querySelectorAll('.choice-symbol').length, 0);
+  assert.deepEqual(
+    [...window.document.querySelectorAll('.library-choice-card')].map(card => card.dataset.theme),
+    ['infantil', 'iniciais', 'finais', 'medio']
+  );
   assert.equal(window.document.querySelector('.library-filters').hidden, true);
   assert.equal(window.document.querySelector('.library-pagination').hidden, true);
   assert.equal(window.document.querySelector('.library-back').hidden, true);
