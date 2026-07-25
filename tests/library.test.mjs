@@ -83,6 +83,23 @@ test('Destaque da Biblioteca fica na página inicial junto aos quatro serviços'
   await window.happyDOM.close();
 });
 
+test('Seção sobre mostra o fluxo da IA até a Biblioteca e preserva o texto', async () => {
+  const html = await readFile(new URL('../index.html', import.meta.url), 'utf8');
+  const window = new Window({ url: 'https://teacheasy.test/index.html' });
+  window.document.write(html);
+  window.document.close();
+
+  const section = window.document.querySelector('#sobre');
+  const workflow = section.querySelector('.teacheasy-workflow');
+  assert.equal(workflow.querySelector('img').getAttribute('src'), 'assets/fluxo-teacheasy.png');
+  assert.match(workflow.textContent, /A IA cria/);
+  assert.match(workflow.textContent, /O professor revisa/);
+  assert.match(workflow.textContent, /A Biblioteca organiza/);
+  assert.match(section.querySelector('.split-copy').textContent, /Mais tempo para o que realmente importa: seus alunos/);
+  assert.equal(section.querySelector('.teacher-placeholder'), null);
+  await window.happyDOM.close();
+});
+
 test('Cabeçalho da Biblioteca participa do fluxo da página', async () => {
   const css = await readFile(new URL('../biblioteca.css', import.meta.url), 'utf8');
   assert.match(css, /\.library-header\s*\{[^}]*position:\s*relative/s);

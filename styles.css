@@ -287,16 +287,23 @@ button{font:inherit}
 
 .section-soft{background:linear-gradient(90deg,#f6f1e9,#fff)}
 .split{display:grid;grid-template-columns:1fr 1.1fr;gap:54px;align-items:center}
-.teacher-placeholder{
-  min-height:440px;border-radius:26px;overflow:hidden;
-  background:linear-gradient(135deg,#dce7db,#efe7dc);
-  box-shadow:var(--shadow);display:grid;place-items:center;
+.teacheasy-workflow{
+  margin:0;padding:14px;border:1px solid rgba(122,46,58,.13);border-radius:28px;
+  background:#fff;box-shadow:var(--shadow);overflow:hidden;
 }
-.placeholder-inner{
-  width:86%;height:86%;border-radius:18px;
-  background:linear-gradient(90deg,rgba(48,70,53,.15),rgba(255,255,255,.05)),
-    url('https://images.unsplash.com/photo-1580894894513-541e068a3e2b?auto=format&fit=crop&w=1000&q=80') center/cover;
-  display:flex;align-items:flex-end;padding:24px;color:#fff;font-weight:700;text-shadow:0 2px 8px rgba(0,0,0,.4)
+.teacheasy-workflow img{
+  display:block;width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:19px;
+}
+.teacheasy-workflow figcaption{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:8px;padding:15px 4px 3px;
+  color:var(--green-900);font-size:14px;font-weight:800;text-align:center;
+}
+.teacheasy-workflow figcaption span{
+  display:flex;align-items:center;justify-content:center;gap:6px;
+}
+.teacheasy-workflow figcaption b{
+  display:grid;width:23px;height:23px;place-items:center;border-radius:50%;
+  background:var(--wine);color:#fff;font-size:12px;
 }
 .badge{
   display:inline-block;padding:8px 14px;border:1px solid #d8b3bc;border-radius:999px;
@@ -352,6 +359,11 @@ button{font:inherit}
   .home-library-copy{gap:7px}
   .home-library-copy > span{font-size:15px;line-height:1.35}
   .home-library-arrow{width:46px;height:46px;font-size:29px}
+  .teacheasy-workflow{padding:10px;border-radius:22px}
+  .teacheasy-workflow img{border-radius:15px}
+  .teacheasy-workflow figcaption{gap:4px;padding-top:12px;font-size:12px}
+  .teacheasy-workflow figcaption span{gap:4px}
+  .teacheasy-workflow figcaption b{width:20px;height:20px;font-size:11px}
   .topbar{display:none}
   .header-inner{min-height:78px}
   .brand strong{font-size:26px}
