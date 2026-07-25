@@ -1,7 +1,7 @@
 const activitySeeds = [
   ['EI01', 'Educação Infantil', 'Maternal', 1, 'Campos de experiência', 'Cores e formas', 'Fácil', 'EI02TS02', '🎨', ['#ffd6d6', '#fff1b8']],
-  ['EI02', 'Educação Infantil', 'Pré-escola', 1, 'Linguagem', 'Meu nome e minhas letras', 'Fácil', 'EI03EF09', '🔤', ['#d9ecff', '#f7ddff']],
-  ['EI03', 'Educação Infantil', 'Pré-escola', 2, 'Matemática', 'Contagem até 10', 'Fácil', 'EI03ET07', '🔢', ['#dff3dc', '#fff0b7']],
+  ['EI02', 'Educação Infantil', 'Pré I', 1, 'Linguagem', 'Meu nome e minhas letras', 'Fácil', 'EI03EF09', '🔤', ['#d9ecff', '#f7ddff']],
+  ['EI03', 'Educação Infantil', 'Pré II', 2, 'Matemática', 'Contagem até 10', 'Fácil', 'EI03ET07', '🔢', ['#dff3dc', '#fff0b7']],
   ['EI04', 'Educação Infantil', 'Maternal', 3, 'Natureza e sociedade', 'Animais e seus sons', 'Fácil', 'EI02ET03', '🐘', ['#d8f0de', '#ffe0b8']],
   ['EFI01', 'Ensino Fundamental I', '1º ano', 1, 'Língua Portuguesa', 'Alfabeto e consciência fonológica', 'Fácil', 'EF01LP05', '📚', ['#dbe9ff', '#ffe0ec']],
   ['EFI02', 'Ensino Fundamental I', '1º ano', 2, 'Matemática', 'Adição ilustrada', 'Fácil', 'EF01MA06', '➕', ['#dff3dc', '#fff0b7']],
@@ -82,7 +82,7 @@ const activities = activitySeeds.map((seed, index) => {
     answers: answerTemplates,
     hasAnswerKey: index % 7 !== 0,
     hasFigures: index % 6 !== 0,
-    hasAdapted: index % 5 !== 0,
+    hasAdapted: true,
     description: `Atividade demonstrativa sobre ${topic.toLowerCase()}, com linguagem adequada ao ${grade}.`
   };
 });
@@ -98,10 +98,36 @@ const preview = document.querySelector('#activity-preview');
 const previewContent = document.querySelector('#preview-content');
 const previewClose = document.querySelector('.preview-close');
 const toast = document.querySelector('#library-toast');
+const choiceGrid = document.querySelector('#library-choice-grid');
+const stepTitle = document.querySelector('#library-step-title');
+const stepHelp = document.querySelector('#library-step-help');
+const breadcrumb = document.querySelector('#library-breadcrumb');
+const backButton = document.querySelector('#library-back');
+const pagination = document.querySelector('#library-pagination');
+const previousPage = document.querySelector('#previous-page');
+const nextPage = document.querySelector('#next-page');
+const pageStatus = document.querySelector('#page-status');
 
 const favorites = new Set();
 const selectedActivities = new Set();
 let toastTimer;
+let currentPage = 1;
+const pageSize = 5;
+const navigation = { stage: '', grade: '', term: '' };
+
+const stages = [
+  { name: 'Educação Infantil', label: 'Educação Infantil', detail: 'Maternal, Pré I e Pré II', count: 288, symbol: '🎨' },
+  { name: 'Ensino Fundamental I', label: 'Ensino Fundamental — Anos Iniciais', detail: '1º ao 5º ano', count: 800, symbol: '📚' },
+  { name: 'Ensino Fundamental II', label: 'Ensino Fundamental — Anos Finais', detail: '6º ao 9º ano', count: 384, symbol: '🔬' },
+  { name: 'Ensino Médio', label: 'Ensino Médio', detail: '1ª à 3ª série', count: 240, symbol: '🎓' }
+];
+
+const gradesByStage = {
+  'Educação Infantil': ['Maternal', 'Pré I', 'Pré II'],
+  'Ensino Fundamental I': ['1º ano', '2º ano', '3º ano', '4º ano', '5º ano'],
+  'Ensino Fundamental II': ['6º ano', '7º ano', '8º ano', '9º ano'],
+  'Ensino Médio': ['1ª série', '2ª série', '3ª série']
+};
 
 function uniqueSorted(field) {
   return [...new Set(activities.map(activity => activity[field]))]
@@ -118,19 +144,16 @@ function populateSelect(name, values) {
   });
 }
 
-populateSelect('grade', uniqueSorted('grade'));
 populateSelect('subject', uniqueSorted('subject'));
 
 function getFilters() {
   const data = new FormData(filterForm);
   return {
-    stage: String(data.get('stage') || ''),
-    grade: String(data.get('grade') || ''),
-    term: String(data.get('term') || ''),
+    stage: navigation.stage,
+    grade: navigation.grade,
+    term: navigation.term,
     subject: String(data.get('subject') || ''),
     query: String(data.get('query') || '').trim().toLocaleLowerCase('pt-BR'),
-    difficulty: String(data.get('difficulty') || ''),
-    bncc: data.has('bncc'),
     answerKey: data.has('answerKey'),
     figures: data.has('figures'),
     adapted: data.has('adapted')
@@ -144,8 +167,6 @@ function matchesFilters(activity, filters) {
     && (!filters.term || String(activity.term) === filters.term)
     && (!filters.subject || activity.subject === filters.subject)
     && (!filters.query || searchable.includes(filters.query))
-    && (!filters.difficulty || activity.difficulty === filters.difficulty)
-    && (!filters.bncc || Boolean(activity.bncc))
     && (!filters.answerKey || activity.hasAnswerKey)
     && (!filters.figures || activity.hasFigures)
     && (!filters.adapted || activity.hasAdapted);
@@ -186,7 +207,7 @@ function renderCard(activity) {
         <button class="btn btn-outline preview-button" type="button">Visualizar</button>
         <button class="btn btn-outline favorite-text-button" type="button">Favoritar</button>
         <button class="btn btn-primary add-button" type="button" aria-pressed="${selectedActivities.has(activity.id)}">
-          ${selectedActivities.has(activity.id) ? '✓ Adicionada' : 'Adicionar à atividade'}
+          ${selectedActivities.has(activity.id) ? '✓ Adicionada' : 'Adicionar à seleção'}
         </button>
       </div>
     </div>
@@ -202,10 +223,16 @@ function renderCard(activity) {
 function renderActivities() {
   const filters = getFilters();
   const filtered = activities.filter(activity => matchesFilters(activity, filters));
-  activityGrid.replaceChildren(...filtered.map(renderCard));
-  resultCount.textContent = filtered.length;
+  const pageCount = Math.max(1, Math.ceil(filtered.length / pageSize));
+  currentPage = Math.min(currentPage, pageCount);
+  const visible = filtered.slice((currentPage - 1) * pageSize, currentPage * pageSize);
+  activityGrid.replaceChildren(...visible.map(renderCard));
   emptyState.hidden = filtered.length > 0;
   activityGrid.hidden = filtered.length === 0;
+  pagination.hidden = filtered.length <= pageSize;
+  pageStatus.textContent = `Página ${currentPage} de ${pageCount}`;
+  previousPage.disabled = currentPage === 1;
+  nextPage.disabled = currentPage === pageCount;
   renderFilterSummary(filters);
 }
 
@@ -216,8 +243,6 @@ function renderFilterSummary(filters) {
     filters.term && `${filters.term}º bimestre`,
     filters.subject,
     filters.query && `“${filters.query}”`,
-    filters.difficulty,
-    filters.bncc && 'com BNCC',
     filters.answerKey && 'com gabarito',
     filters.figures && 'com figuras',
     filters.adapted && 'com adaptação'
@@ -251,7 +276,7 @@ function toggleSelection(id) {
     showToast(`“${activity.topic}” removida da seleção.`);
   } else {
     selectedActivities.add(id);
-    showToast(`“${activity.topic}” adicionada à sua atividade.`);
+    showToast(`“${activity.topic}” adicionada à seleção.`);
   }
   selectionCount.textContent = selectedActivities.size;
   renderActivities();
@@ -318,10 +343,89 @@ function openPreview(activity) {
 
 function resetFilters() {
   filterForm.reset();
+  currentPage = 1;
   requestAnimationFrame(renderActivities);
 }
 
-filterForm.addEventListener('input', renderActivities);
+function choiceCard(title, detail, symbol, action, count = '') {
+  const button = document.createElement('button');
+  button.className = 'library-choice-card';
+  button.type = 'button';
+  button.innerHTML = `
+    <span class="choice-symbol" aria-hidden="true">${symbol}</span>
+    <strong>${title}</strong>
+    <span>${detail}</span>
+    ${count ? `<small>${count.toLocaleString('pt-BR')} atividades-base</small>` : ''}
+  `;
+  button.addEventListener('click', action);
+  return button;
+}
+
+function stageLabel(name) {
+  return stages.find(stage => stage.name === name)?.label || name;
+}
+
+function renderNavigation() {
+  const atActivities = Boolean(navigation.term);
+  filterForm.hidden = !atActivities;
+  activityGrid.hidden = !atActivities;
+  activeFilterSummary.hidden = !atActivities;
+  pagination.hidden = true;
+  choiceGrid.hidden = atActivities;
+  backButton.hidden = !navigation.stage;
+
+  const crumbs = ['Biblioteca'];
+  if (navigation.stage) crumbs.push(stageLabel(navigation.stage));
+  if (navigation.grade) crumbs.push(navigation.grade);
+  if (navigation.term) crumbs.push(`${navigation.term}º bimestre`);
+  breadcrumb.textContent = crumbs.join(' → ');
+
+  if (!navigation.stage) {
+    stepTitle.textContent = 'Escolha uma etapa';
+    stepHelp.textContent = '1.712 atividades-base. Inclusão e autismo estão disponíveis em todas as etapas.';
+    choiceGrid.replaceChildren(...stages.map(stage =>
+      choiceCard(stage.label, stage.detail, stage.symbol, () => {
+        navigation.stage = stage.name;
+        renderNavigation();
+      }, stage.count)
+    ));
+    return;
+  }
+
+  if (!navigation.grade) {
+    stepTitle.textContent = 'Escolha o ano ou a série';
+    stepHelp.textContent = stageLabel(navigation.stage);
+    choiceGrid.replaceChildren(...gradesByStage[navigation.stage].map(grade =>
+      choiceCard(grade, 'Conteúdos dos quatro bimestres', '📘', () => {
+        navigation.grade = grade;
+        renderNavigation();
+      })
+    ));
+    return;
+  }
+
+  if (!navigation.term) {
+    stepTitle.textContent = 'Escolha o bimestre';
+    stepHelp.textContent = `${stageLabel(navigation.stage)} · ${navigation.grade}`;
+    choiceGrid.replaceChildren(...[1, 2, 3, 4].map(term =>
+      choiceCard(`${term}º bimestre`, 'Ver atividades deste período', '🗓️', () => {
+        navigation.term = String(term);
+        currentPage = 1;
+        renderNavigation();
+      })
+    ));
+    return;
+  }
+
+  stepTitle.textContent = 'Escolha uma atividade';
+  stepHelp.textContent = `${stageLabel(navigation.stage)} · ${navigation.grade} · ${navigation.term}º bimestre`;
+  renderActivities();
+}
+
+filterForm.addEventListener('input', () => {
+  currentPage = 1;
+  renderActivities();
+});
 filterForm.addEventListener('submit', event => {
   event.preventDefault();
   renderActivities();
@@ -333,4 +437,20 @@ preview.addEventListener('click', event => {
   if (event.target === preview) preview.close();
 });
 
-renderActivities();
+backButton.addEventListener('click', () => {
+  if (navigation.term) navigation.term = '';
+  else if (navigation.grade) navigation.grade = '';
+  else navigation.stage = '';
+  currentPage = 1;
+  renderNavigation();
+});
+previousPage.addEventListener('click', () => {
+  currentPage -= 1;
+  renderActivities();
+});
+nextPage.addEventListener('click', () => {
+  currentPage += 1;
+  renderActivities();
+});
+
+renderNavigation();

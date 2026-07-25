@@ -30,7 +30,7 @@
         <div>
           <span class="library-eyebrow">CONTEÚDO PEDAGÓGICO ORGANIZADO</span>
           <h1>Encontre a atividade certa para sua turma.</h1>
-          <p>Explore atividades demonstrativas por etapa, ano, disciplina, habilidade da BNCC e necessidade de adaptação.</p>
+          <p>Escolha a etapa, o ano e o bimestre. Depois, encontre a atividade ideal.</p>
           <div class="library-hero-tags" role="group" aria-label="Recursos disponíveis">
             <span>BNCC</span>
             <span>Gabaritos</span>
@@ -39,13 +39,6 @@
           </div>
         </div>
 
-        <aside class="library-goal-card" aria-label="Meta de atividades do bimestre">
-          <span class="goal-label">META DO BIMESTRE</span>
-          <strong><b id="goal-current">85</b> de 420</strong>
-          <p>atividades cadastradas no bimestre</p>
-          <progress class="goal-progress" max="420" value="85">85 de 420</progress>
-          <small>Protótipo demonstrativo da futura coleção completa.</small>
-        </aside>
       </div>
     </section>
 
@@ -54,8 +47,8 @@
         <div class="library-toolbar">
           <div>
             <span class="library-eyebrow">BIBLIOTECA</span>
-            <h2>Atividades para explorar</h2>
-            <p><strong id="result-count">0</strong> atividades encontradas</p>
+            <h2 id="library-step-title">Escolha uma etapa</h2>
+            <p id="library-step-help">Quatro bibliotecas organizadas para você encontrar tudo com facilidade.</p>
           </div>
           <div class="selection-summary" aria-live="polite">
             <span>Minha seleção</span>
@@ -63,36 +56,11 @@
           </div>
         </div>
 
-        <form class="library-filters" id="library-filters">
-          <label>
-            <span>Etapa de ensino</span>
-            <select name="stage">
-              <option value="">Todas as etapas</option>
-              <option>Educação Infantil</option>
-              <option>Ensino Fundamental I</option>
-              <option>Ensino Fundamental II</option>
-              <option>Ensino Médio</option>
-            </select>
-          </label>
+        <nav class="library-breadcrumb" id="library-breadcrumb" aria-label="Caminho da biblioteca"></nav>
+        <button class="btn btn-outline library-back" id="library-back" type="button" hidden>← Voltar</button>
+        <div class="library-choice-grid" id="library-choice-grid"></div>
 
-          <label>
-            <span>Ano ou série</span>
-            <select name="grade">
-              <option value="">Todos os anos</option>
-            </select>
-          </label>
-
-          <label>
-            <span>Bimestre</span>
-            <select name="term">
-              <option value="">Todos</option>
-              <option value="1">1º bimestre</option>
-              <option value="2">2º bimestre</option>
-              <option value="3">3º bimestre</option>
-              <option value="4">4º bimestre</option>
-            </select>
-          </label>
-
+        <form class="library-filters" id="library-filters" hidden>
           <label>
             <span>Disciplina</span>
             <select name="subject">
@@ -105,19 +73,8 @@
             <input name="query" type="search" placeholder="Ex.: frações, leitura, ecossistemas">
           </label>
 
-          <label>
-            <span>Dificuldade</span>
-            <select name="difficulty">
-              <option value="">Todas</option>
-              <option>Fácil</option>
-              <option>Média</option>
-              <option>Desafiadora</option>
-            </select>
-          </label>
-
           <fieldset class="filter-toggles">
             <legend>Recursos</legend>
-            <label><input type="checkbox" name="bncc"> BNCC</label>
             <label><input type="checkbox" name="answerKey"> Gabarito</label>
             <label><input type="checkbox" name="figures"> Figuras</label>
             <label><input type="checkbox" name="adapted"> Autismo e inclusão</label>
@@ -131,6 +88,11 @@
 
         <div class="active-filter-summary" id="active-filter-summary" aria-live="polite"></div>
         <div class="activity-grid" id="activity-grid"></div>
+        <div class="library-pagination" id="library-pagination" hidden>
+          <button class="btn btn-outline" id="previous-page" type="button">← Anterior</button>
+          <span id="page-status"></span>
+          <button class="btn btn-outline" id="next-page" type="button">Próxima →</button>
+        </div>
 
         <div class="empty-state" id="empty-state" hidden>
           <span>🔎</span>

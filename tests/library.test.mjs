@@ -23,32 +23,44 @@ async function createLibraryPage() {
   return window;
 }
 
-test('Biblioteca carrega as atividades e o indicador da meta', async () => {
+function clickChoice(window, text) {
+  const choice = [...window.document.querySelectorAll('.library-choice-card')]
+    .find(card => card.textContent.includes(text));
+  assert.ok(choice, `Cartão "${text}" não encontrado`);
+  choice.click();
+}
+
+function openActivities(window, stage, grade, term = '1º bimestre') {
+  clickChoice(window, stage);
+  clickChoice(window, grade);
+  clickChoice(window, term);
+}
+
+test('Biblioteca começa com quatro etapas e sem filtros ou meta', async () => {
   const window = await createLibraryPage();
-  assert.equal(window.document.querySelectorAll('.activity-library-card').length, 26);
-  assert.equal(window.document.querySelector('#result-count').textContent, '26');
-  assert.equal(window.document.querySelector('.goal-progress').value, 85);
+  assert.equal(window.document.querySelectorAll('.library-choice-card').length, 4);
+  assert.equal(window.document.querySelector('.library-filters').hidden, true);
+  assert.equal(window.document.querySelector('.library-goal-card'), null);
+  assert.match(window.document.body.textContent, /1.712/);
   await window.happyDOM.close();
 });
 
-test('Filtros combinados reduzem a lista para a atividade de frações', async () => {
+test('Navegação progressiva abre ano, bimestre e só então os filtros', async () => {
   const window = await createLibraryPage();
-  const stage = window.document.querySelector('[name="stage"]');
-  const query = window.document.querySelector('[name="query"]');
-
-  stage.value = 'Ensino Fundamental I';
-  stage.dispatchEvent(new window.Event('input', { bubbles: true }));
-  assert.equal(window.document.querySelectorAll('.activity-library-card').length, 12);
-
-  query.value = 'frações';
-  query.dispatchEvent(new window.Event('input', { bubbles: true }));
-  assert.equal(window.document.querySelectorAll('.activity-library-card').length, 1);
-  assert.match(window.document.querySelector('.activity-library-card h3').textContent, /Frações/);
+  clickChoice(window, 'Anos Iniciais');
+  assert.equal(window.document.querySelectorAll('.library-choice-card').length, 5);
+  assert.equal(window.document.querySelector('.library-filters').hidden, true);
+  clickChoice(window, '5º ano');
+  assert.equal(window.document.querySelectorAll('.library-choice-card').length, 4);
+  clickChoice(window, '1º bimestre');
+  assert.equal(window.document.querySelector('.library-filters').hidden, false);
+  assert.ok(window.document.querySelectorAll('.activity-library-card').length <= 5);
   await window.happyDOM.close();
 });
 
 test('Visualização contém atividade, gabarito separado e versão adaptada', async () => {
   const window = await createLibraryPage();
+  openActivities(window, 'Educação Infantil', 'Maternal');
   const previewButton = window.document.querySelector('.preview-button');
   previewButton.click();
 
@@ -62,6 +74,7 @@ test('Visualização contém atividade, gabarito separado e versão adaptada', a
 
 test('Favoritar e adicionar atualizam o estado da interface', async () => {
   const window = await createLibraryPage();
+  openActivities(window, 'Educação Infantil', 'Maternal');
   window.document.querySelector('.favorite-text-button').click();
   window.document.querySelector('.add-button').click();
 
@@ -69,4 +82,20 @@ test('Favoritar e adicionar atualizam o estado da interface', async () => {
   assert.equal(window.document.querySelector('.add-button').getAttribute('aria-pressed'), 'true');
   assert.equal(window.document.querySelector('#selection-count').textContent, '1');
   await window.happyDOM.close();
+});
+
+test('Autismo e inclusão aparecem em todas as etapas', async () => {
+  for (const [stage, grade] of [
+    ['Educação Infantil', 'Maternal'],
+    ['Anos Iniciais', '1º ano'],
+    ['Anos Finais', '6º ano'],
+    ['Ensino Médio', '1ª série']
+  ]) {
+    const window = await createLibraryPage();
+    openActivities(window, stage, grade);
+    const card = window.document.querySelector('.activity-library-card');
+    assert.ok(card);
+    assert.match(card.textContent, /Versão adaptada/);
+    await window.happyDOM.close();
+  }
 });
