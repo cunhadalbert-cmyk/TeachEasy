@@ -288,21 +288,30 @@ button{font:inherit}
 .section-soft{background:linear-gradient(90deg,#f6f1e9,#fff)}
 .split{display:grid;grid-template-columns:minmax(0,1.28fr) minmax(380px,.92fr);gap:40px;align-items:center}
 .teacheasy-workflow{
-  margin:0;padding:12px;border:1px solid rgba(122,46,58,.13);border-radius:28px;
+  position:relative;margin:0;padding:12px;border:1px solid rgba(122,46,58,.13);border-radius:32px;
   background:#fff;box-shadow:var(--shadow);overflow:hidden;
 }
 .teacheasy-workflow img{
-  display:block;width:calc(100% - 16px);margin-inline:auto;aspect-ratio:4/3;
-  object-fit:contain;border-radius:19px;
-  animation:teacheasy-photo-drift 16s ease-in-out infinite alternate;
+  display:block;width:106%;max-width:none;height:auto;
+  transform:translateX(-3%);border-radius:19px;
+  animation:teacherImagePan 16s ease-in-out infinite alternate;
   will-change:transform;
 }
 .teacheasy-workflow:hover img{
   animation-play-state:paused;
 }
-@keyframes teacheasy-photo-drift{
-  from{transform:translateX(-6px)}
-  to{transform:translateX(6px)}
+@keyframes teacherImagePan{
+  from{transform:translateX(-3%)}
+  to{transform:translateX(-1%)}
+}
+@media (max-width:768px){
+  .teacheasy-workflow img{
+    width:103%;transform:translateX(-1.5%);animation-duration:20s;
+  }
+  @keyframes teacherImagePan{
+    from{transform:translateX(-1.5%)}
+    to{transform:translateX(-.5%)}
+  }
 }
 .badge{
   display:inline-block;padding:8px 14px;border:1px solid #d8b3bc;border-radius:999px;
@@ -360,9 +369,7 @@ button{font:inherit}
   .home-library-copy > span{font-size:15px;line-height:1.35}
   .home-library-arrow{width:46px;height:46px;font-size:29px}
   .teacheasy-workflow{padding:10px;border-radius:22px}
-  .teacheasy-workflow img{
-    width:100%;border-radius:15px;animation:none;transform:none;
-  }
+  .teacheasy-workflow img{border-radius:15px}
   .topbar{display:none}
   .header-inner{min-height:78px}
   .brand strong{font-size:26px}
@@ -1440,6 +1447,7 @@ button{font:inherit}
 
 @media (prefers-reduced-motion: reduce) {
   .teacheasy-workflow img {
+    width: 100%;
     animation: none !important;
     transform: none !important;
   }
