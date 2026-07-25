@@ -29,7 +29,7 @@ body{
 }
 a{color:inherit;text-decoration:none}
 button{font:inherit}
-.container{width:min(1180px,calc(100% - 40px));margin-inline:auto}
+.container{width:min(1240px,calc(100% - 40px));margin-inline:auto}
 
 .skip-link{position:absolute;left:-9999px;top:10px;background:#fff;padding:12px 18px;z-index:999}
 .skip-link:focus{left:10px}
@@ -183,7 +183,7 @@ button{font:inherit}
 
 .hero{
   background:linear-gradient(135deg,#fffaf1 0%,#f7f0e5 62%,#eef3ec 100%);
-  padding:54px 0 46px;
+  padding:46px 0 38px;
 }
 .hero-grid{display:grid;grid-template-columns:1fr 1.12fr;gap:46px;align-items:center}
 .eyebrow,.section-heading span{
@@ -263,7 +263,7 @@ button{font:inherit}
 .carousel-dots button{width:12px;height:12px;border-radius:50%;border:0;background:#c7c6b8;cursor:pointer}
 .carousel-dots button.active{background:var(--wine)}
 
-.section{padding:74px 0}
+.section{padding:60px 0}
 .cards-grid,.service-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
 .feature-card,.service-card{
   border:1px solid var(--border);border-radius:var(--radius);padding:28px;background:#fff;transition:.25s ease;
@@ -286,24 +286,13 @@ button{font:inherit}
 .feature-card a,.service-card a{color:var(--wine);font-weight:800}
 
 .section-soft{background:linear-gradient(90deg,#f6f1e9,#fff)}
-.split{display:grid;grid-template-columns:1fr 1.1fr;gap:54px;align-items:center}
+.split{display:grid;grid-template-columns:minmax(0,1.28fr) minmax(380px,.92fr);gap:40px;align-items:center}
 .teacheasy-workflow{
-  margin:0;padding:14px;border:1px solid rgba(122,46,58,.13);border-radius:28px;
+  margin:0;padding:12px;border:1px solid rgba(122,46,58,.13);border-radius:28px;
   background:#fff;box-shadow:var(--shadow);overflow:hidden;
 }
 .teacheasy-workflow img{
   display:block;width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:19px;
-}
-.teacheasy-workflow figcaption{
-  display:grid;grid-template-columns:repeat(3,1fr);gap:8px;padding:15px 4px 3px;
-  color:var(--green-900);font-size:14px;font-weight:800;text-align:center;
-}
-.teacheasy-workflow figcaption span{
-  display:flex;align-items:center;justify-content:center;gap:6px;
-}
-.teacheasy-workflow figcaption b{
-  display:grid;width:23px;height:23px;place-items:center;border-radius:50%;
-  background:var(--wine);color:#fff;font-size:12px;
 }
 .badge{
   display:inline-block;padding:8px 14px;border:1px solid #d8b3bc;border-radius:999px;
@@ -315,7 +304,7 @@ button{font:inherit}
 .check-list li{margin:10px 0;padding-left:30px;position:relative;font-size:18px}
 .check-list li::before{content:"✓";position:absolute;left:0;color:var(--wine);font-weight:900}
 
-.section-heading{text-align:center;margin-bottom:34px}
+.section-heading{text-align:center;margin-bottom:28px}
 .section-heading h2{font-size:44px;margin:8px 0}
 .service-card{min-height:260px}
 .stats{
@@ -344,7 +333,7 @@ button{font:inherit}
 }
 
 @media (max-width: 680px){
-  .container{width:min(100% - 24px,1180px)}
+  .container{width:min(100% - 24px,1240px)}
   .home-library-highlight{
     grid-template-columns: 78px 1fr 48px;
     width:100%;
@@ -361,9 +350,6 @@ button{font:inherit}
   .home-library-arrow{width:46px;height:46px;font-size:29px}
   .teacheasy-workflow{padding:10px;border-radius:22px}
   .teacheasy-workflow img{border-radius:15px}
-  .teacheasy-workflow figcaption{gap:4px;padding-top:12px;font-size:12px}
-  .teacheasy-workflow figcaption span{gap:4px}
-  .teacheasy-workflow figcaption b{width:20px;height:20px;font-size:11px}
   .topbar{display:none}
   .header-inner{min-height:78px}
   .brand strong{font-size:26px}
@@ -377,7 +363,7 @@ button{font:inherit}
   .carousel-chips button:nth-child(n+2){display:none}
   .cards-grid,.service-grid,.stats-grid{grid-template-columns:1fr}
   .feature-card,.service-card{min-height:auto}
-  .section{padding:52px 0}
+  .section{padding:42px 0}
   .split-copy h2,.section-heading h2{font-size:36px}
 }
 
@@ -1461,7 +1447,7 @@ button{font:inherit}
 
 .initial-services-heading {
   max-width: 790px;
-  margin: 0 auto 46px;
+  margin: 0 auto 36px;
 }
 
 .initial-services-heading p {
