@@ -292,7 +292,17 @@ button{font:inherit}
   background:#fff;box-shadow:var(--shadow);overflow:hidden;
 }
 .teacheasy-workflow img{
-  display:block;width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:19px;
+  display:block;width:calc(100% - 16px);margin-inline:auto;aspect-ratio:4/3;
+  object-fit:contain;border-radius:19px;
+  animation:teacheasy-photo-drift 16s ease-in-out infinite alternate;
+  will-change:transform;
+}
+.teacheasy-workflow:hover img{
+  animation-play-state:paused;
+}
+@keyframes teacheasy-photo-drift{
+  from{transform:translateX(-6px)}
+  to{transform:translateX(6px)}
 }
 .badge{
   display:inline-block;padding:8px 14px;border:1px solid #d8b3bc;border-radius:999px;
@@ -350,7 +360,9 @@ button{font:inherit}
   .home-library-copy > span{font-size:15px;line-height:1.35}
   .home-library-arrow{width:46px;height:46px;font-size:29px}
   .teacheasy-workflow{padding:10px;border-radius:22px}
-  .teacheasy-workflow img{border-radius:15px}
+  .teacheasy-workflow img{
+    width:100%;border-radius:15px;animation:none;transform:none;
+  }
   .topbar{display:none}
   .header-inner{min-height:78px}
   .brand strong{font-size:26px}
@@ -1427,6 +1439,11 @@ button{font:inherit}
 }
 
 @media (prefers-reduced-motion: reduce) {
+  .teacheasy-workflow img {
+    animation: none !important;
+    transform: none !important;
+  }
+
   .slide,
   .slide.active {
     animation: none !important;

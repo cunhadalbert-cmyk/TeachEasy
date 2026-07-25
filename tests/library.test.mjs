@@ -103,6 +103,14 @@ test('Seção sobre mostra o fluxo da IA até a Biblioteca e preserva o texto', 
   await window.happyDOM.close();
 });
 
+test('Foto da professora usa movimento lateral suave e acessível', async () => {
+  const css = await readFile(new URL('../styles.css', import.meta.url), 'utf8');
+  assert.match(css, /\.teacheasy-workflow img\s*\{[^}]*animation:\s*teacheasy-photo-drift 16s ease-in-out infinite alternate/s);
+  assert.match(css, /@keyframes teacheasy-photo-drift\s*\{[^}]*translateX\(-6px\)[\s\S]*translateX\(6px\)/s);
+  assert.match(css, /\.teacheasy-workflow:hover img\s*\{[^}]*animation-play-state:\s*paused/s);
+  assert.match(css, /@media \(prefers-reduced-motion: reduce\)[\s\S]*\.teacheasy-workflow img\s*\{[^}]*animation:\s*none !important/s);
+});
+
 test('Cabeçalho da Biblioteca participa do fluxo da página', async () => {
   const css = await readFile(new URL('../biblioteca.css', import.meta.url), 'utf8');
   assert.match(css, /\.library-header\s*\{[^}]*position:\s*relative/s);
