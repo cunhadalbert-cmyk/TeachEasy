@@ -167,7 +167,7 @@ function buildDemoMaterial(serviceKey, data) {
   const grade = valueOrExample('grade', '5º ano');
   const subject = valueOrExample('subject', 'Matemática');
   const topic = valueOrExample('topic', 'Frações');
-  const duration = valueOrExample('duration', '1 aula de 50 minutos');
+  const duration = valueOrExample('duration', '5 questões');
   const line = String.fromCharCode(10);
 
   if (serviceKey === 'activity') {
@@ -277,7 +277,7 @@ serviceRequestForm?.addEventListener('submit', async event => {
     'Ano ou série: ' + valueOrExample('grade', '5º ano'),
     'Disciplina: ' + valueOrExample('subject', 'Matemática'),
     'Tema: ' + valueOrExample('topic', 'Frações'),
-    'Quantidade e duração: ' + valueOrExample('duration', '1 aula de 50 minutos'),
+    'Quantidade de questões: ' + valueOrExample('duration', '5 questões'),
     'Formato: ' + valueOrExample('format', 'PDF'),
     notes ? 'Observações: ' + notes : ''
   ].filter(Boolean).join(String.fromCharCode(10));
