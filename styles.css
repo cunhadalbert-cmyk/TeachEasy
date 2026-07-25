@@ -1785,3 +1785,22 @@ button{font:inherit}
     order: 2;
   }
 }
+
+
+/* Projeção de profundidade dos cards de serviços */
+.initial-service-card {
+  box-shadow:
+    0 22px 42px rgba(30, 58, 45, 0.16),
+    0 8px 16px rgba(30, 58, 45, 0.10),
+    0 2px 5px rgba(30, 58, 45, 0.08);
+  transition: transform .35s ease, box-shadow .35s ease, border-color .35s ease;
+}
+
+.initial-service-card:hover,
+.initial-service-card:focus-visible {
+  transform: translateY(-10px);
+  box-shadow:
+    0 34px 62px rgba(30, 58, 45, 0.22),
+    0 14px 26px rgba(30, 58, 45, 0.13),
+    0 4px 8px rgba(30, 58, 45, 0.09);
+}
