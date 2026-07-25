@@ -171,30 +171,50 @@ function buildDemoMaterial(serviceKey, data) {
   const line = String.fromCharCode(10);
 
   if (serviceKey === 'activity') {
-    return [
-      'ATIVIDADE GERADA — ' + topic.toUpperCase(),
-      grade + ' | ' + subject + ' | ' + duration,
+    const requestText = [subject, topic, String(data.get('notes') || '')].join(' ').toLowerCase();
+    const mathMatch = requestText.match(/(\d+)\s*(?:quest(?:ão|ões)?\s*)?(?:de\s*)?matemática/);
+    const portugueseMatch = requestText.match(/(\d+)\s*(?:quest(?:ão|ões)?\s*)?(?:de\s*)?português/);
+    const mathCount = mathMatch ? Math.min(Number(mathMatch[1]), 5) : (requestText.includes('matemática') ? 3 : 5);
+    const portugueseCount = portugueseMatch ? Math.min(Number(portugueseMatch[1]), 5) : (requestText.includes('português') ? 2 : 0);
+
+    const mathQuestions = [
+      ['Resolva: 245 + 378 =', '623.'],
+      ['Uma escola recebeu 8 caixas com 24 lápis em cada uma. Quantos lápis recebeu ao todo?', '192 lápis.'],
+      ['Uma pizza foi dividida em 8 partes iguais e 3 foram consumidas. Que fração representa a parte consumida?', '3/8.'],
+      ['Calcule: 960 ÷ 6 =', '160.'],
+      ['Qual é o valor de 7 × 9 + 12?', '75.']
+    ];
+    const portugueseQuestions = [
+      ['Leia: “A menina abriu o livro colorido.” Qual é o substantivo que nomeia o objeto?', 'Livro.'],
+      ['Reescreva no plural: “O aluno realizou a atividade.”', 'Os alunos realizaram as atividades.'],
+      ['Qual é o adjetivo na frase: “O jardim estava florido e alegre”?', 'Florido e alegre.'],
+      ['Separe em sílabas a palavra “professora”.', 'pro-fes-so-ra.'],
+      ['Escreva uma frase usando corretamente um ponto de interrogação.', 'Resposta pessoal contendo uma pergunta e ponto de interrogação.']
+    ];
+
+    const output = [
+      'ATIVIDADE INTERDISCIPLINAR COLORIDA — 5º ANO',
+      'Matemática e Língua Portuguesa | ' + duration,
       '',
       'Nome: __________________________________  Data: ____/____/______',
-      '',
-      '1. Explique com suas palavras o que você já sabe sobre ' + topic + '.',
-      '',
-      '2. Escreva um exemplo de ' + topic + ' presente no seu dia a dia.',
-      '',
-      '3. Resolva: uma pizza foi dividida em 8 partes iguais e 3 foram consumidas. Que fração representa a parte consumida?',
-      '',
-      '4. Marque a alternativa equivalente a 1/2:',
-      '   a) 1/4   b) 2/4   c) 3/4   d) 4/4',
-      '',
-      '5. Desenhe uma figura e represente nela a fração 3/5.',
-      '',
-      'GABARITO',
-      '1. Resposta pessoal coerente com o tema.',
-      '2. Resposta pessoal. Exemplos: receita, divisão de alimentos ou medidas.',
-      '3. 3/8.',
-      '4. Alternativa b) 2/4.',
-      '5. Espera-se uma figura dividida em 5 partes iguais, com 3 destacadas.'
-    ].join(line);
+      ''
+    ];
+    const answers = [];
+    let questionNumber = 1;
+
+    mathQuestions.slice(0, mathCount).forEach(([question, answer]) => {
+      output.push('MATEMÁTICA ' + questionNumber + '. ' + question, '');
+      answers.push(questionNumber + '. ' + answer);
+      questionNumber += 1;
+    });
+    portugueseQuestions.slice(0, portugueseCount).forEach(([question, answer]) => {
+      output.push('PORTUGUÊS ' + questionNumber + '. ' + question, '');
+      answers.push(questionNumber + '. ' + answer);
+      questionNumber += 1;
+    });
+
+    output.push('GABARITO', ...answers);
+    return output.join(line);
   }
 
   if (serviceKey === 'assessment') {
