@@ -66,6 +66,39 @@ button{font:inherit}
   border-color:var(--wine);
   color:var(--wine);
 }
+
+.home-library-highlight {
+  display: grid;
+  width: 100%;
+  margin: 0 0 30px;
+  padding: 28px 32px;
+  gap: 8px;
+  border: 1px solid #e5d8d3;
+  border-radius: 26px;
+  background: linear-gradient(180deg, #fff, #fbf6f3);
+  color: var(--green-900);
+  text-align: center;
+  box-shadow: 0 12px 30px rgba(52, 24, 30, .1);
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.home-library-highlight:hover,
+.home-library-highlight:focus-visible {
+  transform: translateY(-3px);
+  box-shadow: 0 18px 38px rgba(52, 24, 30, .15);
+}
+
+.home-library-highlight strong {
+  font-family: "Libre Franklin", sans-serif;
+  font-size: clamp(30px, 4vw, 46px);
+  line-height: 1.1;
+}
+
+.home-library-highlight span {
+  color: var(--muted);
+  font-size: 18px;
+  line-height: 1.5;
+}
 .security-badge{display:flex;align-items:center;gap:8px;color:var(--green-700)}
 .security-badge span{font-size:30px}
 .security-badge small{font-size:14px;line-height:1.25}
@@ -228,6 +261,8 @@ button{font:inherit}
 
 @media (max-width: 680px){
   .container{width:min(100% - 24px,1180px)}
+  .home-library-highlight{width:100%;padding:24px 18px;border-radius:22px;text-align:center}
+  .home-library-highlight span{font-size:16px}
   .topbar{display:none}
   .header-inner{min-height:78px}
   .brand strong{font-size:26px}
