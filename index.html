@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Libre+Franklin:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="photo-activity.css">
 </head>
 <body>
   <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
@@ -160,6 +161,81 @@
           </span>
           <span class="home-library-arrow" aria-hidden="true">→</span>
         </a>
+
+        <div class="photo-activity-feature">
+          <button class="photo-activity-launcher" id="photo-activity-launcher" type="button">
+            <img
+              class="photo-launcher-illustration"
+              src="assets/photo-activity-illustration.png"
+              alt="Foto de um conteúdo se transformando em uma nova atividade"
+              width="320"
+              height="213"
+            >
+            <span class="photo-launcher-copy">
+              <span class="photo-launcher-badge">NOVIDADE!</span>
+              <strong>Criar atividade por foto</strong>
+              <small>Envie uma foto do conteúdo e a IA gera uma atividade personalizada para você!</small>
+            </span>
+            <span class="photo-launcher-arrow" aria-hidden="true">→</span>
+          </button>
+        </div>
+
+        <dialog class="photo-activity-dialog" id="photo-activity-dialog" aria-labelledby="photo-activity-title">
+          <button class="photo-dialog-close" type="button" aria-label="Fechar criação por foto">×</button>
+          <div class="photo-dialog-content">
+            <div class="photo-dialog-intro">
+              <span class="eyebrow">CRIAÇÃO ASSISTIDA</span>
+              <h2 id="photo-activity-title">Criar atividade por foto</h2>
+              <p>Use uma imagem como referência. A prévia cria novas questões e sugere figuras quando forem úteis.</p>
+            </div>
+
+            <form class="photo-activity-form" id="photo-activity-form">
+              <label class="photo-upload-field">
+                <span>Imagem de referência</span>
+                <input id="photo-reference" name="photo" type="file" accept=".jpg,.jpeg,.png,image/jpeg,image/png" required>
+                <small>JPG, JPEG ou PNG.</small>
+              </label>
+              <label>
+                <span>Ano ou série</span>
+                <select name="grade" required>
+                  <option value="">Escolha uma opção</option>
+                  <option>Educação Infantil</option>
+                  <option>1º ano</option><option>2º ano</option><option>3º ano</option>
+                  <option>4º ano</option><option>5º ano</option><option>6º ano</option>
+                  <option>7º ano</option><option>8º ano</option><option>9º ano</option>
+                  <option>1ª série</option><option>2ª série</option><option>3ª série</option>
+                </select>
+              </label>
+              <label>
+                <span>Quantidade de questões</span>
+                <input name="questionCount" type="number" min="1" max="20" value="5" required>
+              </label>
+              <fieldset class="photo-options">
+                <legend>Opções</legend>
+                <label><input name="answerKey" type="checkbox" checked> Incluir gabarito</label>
+                <label><input name="adapted" type="checkbox"> Gerar versão adaptada</label>
+              </fieldset>
+              <p class="photo-form-error" id="photo-form-error" role="alert" hidden></p>
+              <button class="btn btn-primary" type="submit">Gerar prévia</button>
+            </form>
+
+            <section class="photo-generated-preview" id="photo-generated-preview" aria-live="polite" hidden>
+              <div class="school-header" id="school-header" hidden>
+                <strong>Nome da escola</strong>
+                <span>Professor(a): ____________________ Turma: ______ Data: ____/____/______</span>
+              </div>
+              <div id="photo-preview-content"></div>
+              <div class="photo-preview-actions">
+                <button class="btn btn-outline" id="photo-regenerate" type="button">Gerar novamente</button>
+                <label class="school-header-toggle">
+                  <input id="school-header-toggle" type="checkbox"> Adicionar cabeçalho da escola
+                </label>
+                <button class="btn btn-outline" id="photo-download-pdf" type="button">Baixar PDF</button>
+                <button class="btn btn-primary" id="photo-download-word" type="button">Baixar Word</button>
+              </div>
+            </section>
+          </div>
+        </dialog>
 
         <div class="cards-grid initial-services-grid">
           <article class="feature-card initial-service-card" role="button" tabindex="0" data-service="planning" aria-haspopup="dialog">
@@ -317,6 +393,7 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/docx@9.7.1/dist/index.iife.js"></script>
+  <script src="photo-activity.js"></script>
   <script src="script.js"></script>
 </body>
 </html>

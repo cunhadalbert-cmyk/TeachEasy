@@ -527,23 +527,25 @@ previewClose.addEventListener('click', () => preview.close());
 preview.addEventListener('click', event => {
   if (event.target === preview) preview.close();
 });
-photoActivityLauncher.addEventListener('click', () => photoActivityDialog.showModal());
-photoDialogClose.addEventListener('click', () => photoActivityDialog.close());
-photoActivityDialog.addEventListener('click', event => {
-  if (event.target === photoActivityDialog) photoActivityDialog.close();
-});
-photoActivityForm.addEventListener('submit', event => {
-  event.preventDefault();
-  if (validatePhotoReference()) renderPhotoPreview();
-});
-photoRegenerate.addEventListener('click', () => {
-  if (validatePhotoReference()) renderPhotoPreview();
-});
-schoolHeaderToggle.addEventListener('change', () => {
-  schoolHeader.hidden = !schoolHeaderToggle.checked;
-});
-photoDownloadPdf.addEventListener('click', () => window.print());
-photoDownloadWord.addEventListener('click', downloadWordPreview);
+if (photoActivityLauncher) {
+  photoActivityLauncher.addEventListener('click', () => photoActivityDialog.showModal());
+  photoDialogClose.addEventListener('click', () => photoActivityDialog.close());
+  photoActivityDialog.addEventListener('click', event => {
+    if (event.target === photoActivityDialog) photoActivityDialog.close();
+  });
+  photoActivityForm.addEventListener('submit', event => {
+    event.preventDefault();
+    if (validatePhotoReference()) renderPhotoPreview();
+  });
+  photoRegenerate.addEventListener('click', () => {
+    if (validatePhotoReference()) renderPhotoPreview();
+  });
+  schoolHeaderToggle.addEventListener('change', () => {
+    schoolHeader.hidden = !schoolHeaderToggle.checked;
+  });
+  photoDownloadPdf.addEventListener('click', () => window.print());
+  photoDownloadWord.addEventListener('click', downloadWordPreview);
+}
 
 backButton.addEventListener('click', () => {
   if (navigation.term) navigation.term = '';

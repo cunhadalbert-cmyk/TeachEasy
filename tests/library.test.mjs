@@ -23,6 +23,24 @@ async function createLibraryPage() {
   return window;
 }
 
+async function createHomePhotoPage() {
+  const [html, script] = await Promise.all([
+    readFile(new URL('../index.html', import.meta.url), 'utf8'),
+    readFile(new URL('../photo-activity.js', import.meta.url), 'utf8')
+  ]);
+  const window = new Window({ url: 'https://teacheasy.test/index.html' });
+  window.document.write(html);
+  window.document.close();
+  window.HTMLDialogElement.prototype.showModal = function showModal() {
+    this.open = true;
+  };
+  window.HTMLDialogElement.prototype.close = function close() {
+    this.open = false;
+  };
+  window.eval(script);
+  return window;
+}
+
 function clickChoice(window, text) {
   const choice = [...window.document.querySelectorAll('.library-choice-card')]
     .find(card => card.textContent.includes(text));
@@ -57,6 +75,7 @@ test('Biblioteca começa com quatro etapas e controles auxiliares ocultos', asyn
   assert.equal(window.document.querySelector('.activity-grid').hidden, true);
   assert.equal(window.document.querySelectorAll('.activity-library-card').length, 0);
   assert.equal(window.document.querySelector('.library-goal-card'), null);
+  assert.equal(window.document.querySelector('#photo-activity-launcher'), null);
   assert.match(window.document.body.textContent, /1.712 atividades-base/);
   await window.happyDOM.close();
 });
@@ -70,6 +89,7 @@ test('Destaque da Biblioteca fica na página inicial junto aos quatro serviços'
   const section = window.document.querySelector('#solucoes');
   const heading = section.querySelector('.initial-services-heading');
   const highlight = section.querySelector('.home-library-highlight');
+  const photoHighlight = section.querySelector('.photo-activity-feature');
   const services = section.querySelector('.initial-services-grid');
   assert.equal(highlight.getAttribute('href'), 'biblioteca.html');
   assert.match(highlight.textContent, /Biblioteca de Atividades/);
@@ -77,7 +97,8 @@ test('Destaque da Biblioteca fica na página inicial junto aos quatro serviços'
   assert.equal(highlight.querySelectorAll('.home-library-illustration').length, 1);
   assert.equal(highlight.querySelectorAll('.home-library-arrow').length, 1);
   assert.ok(Boolean(heading.compareDocumentPosition(highlight) & window.Node.DOCUMENT_POSITION_FOLLOWING));
-  assert.ok(Boolean(highlight.compareDocumentPosition(services) & window.Node.DOCUMENT_POSITION_FOLLOWING));
+  assert.ok(Boolean(highlight.compareDocumentPosition(photoHighlight) & window.Node.DOCUMENT_POSITION_FOLLOWING));
+  assert.ok(Boolean(photoHighlight.compareDocumentPosition(services) & window.Node.DOCUMENT_POSITION_FOLLOWING));
   assert.equal(window.document.querySelectorAll('.home-library-highlight').length, 1);
   assert.equal(window.document.querySelectorAll('a[href="biblioteca.html"]').length, 1);
   await window.happyDOM.close();
@@ -150,14 +171,13 @@ test('Seção de etapas usa fundo branco, sombras e rodapé vinho', async () => 
   assert.match(css, /\.library-footer\s*\{[^}]*linear-gradient\(/s);
 });
 
-test('Formulário por foto fica oculto na entrada e abre pelo botão discreto', async () => {
-  const window = await createLibraryPage();
+test('Formulário por foto fica na página inicial e abre pelo banner', async () => {
+  const window = await createHomePhotoPage();
   const dialog = window.document.querySelector('#photo-activity-dialog');
   const preview = window.document.querySelector('#photo-generated-preview');
   const launcher = window.document.querySelector('#photo-activity-launcher');
   assert.equal(dialog.open, false);
   assert.equal(preview.hidden, true);
-  assert.equal(window.document.querySelectorAll('.library-choice-card').length, 4);
   assert.match(launcher.textContent, /Criar atividade por foto/);
   assert.match(launcher.textContent, /NOVIDADE!/);
   assert.match(launcher.textContent, /Envie uma foto do conteúdo e a IA gera uma atividade personalizada para você/);
@@ -172,15 +192,14 @@ test('Formulário por foto fica oculto na entrada e abre pelo botão discreto', 
 });
 
 test('Botão por foto usa o bloco horizontal amplo aprovado', async () => {
-  const css = await readFile(new URL('../biblioteca.css', import.meta.url), 'utf8');
-  assert.match(css, /\.photo-activity-launcher\s*\{[^}]*width:\s*85%/s);
-  assert.match(css, /\.photo-activity-launcher\s*\{[^}]*max-width:\s*1500px/s);
+  const css = await readFile(new URL('../photo-activity.css', import.meta.url), 'utf8');
+  assert.match(css, /\.photo-activity-launcher\s*\{[^}]*width:\s*100%/s);
   assert.match(css, /\.photo-activity-launcher\s*\{[^}]*min-height:\s*210px/s);
   assert.match(css, /\.photo-activity-launcher\s*\{[^}]*linear-gradient\(90deg/s);
 });
 
 test('Criação por foto exige uma imagem JPG ou PNG', async () => {
-  const window = await createLibraryPage();
+  const window = await createHomePhotoPage();
   const form = window.document.querySelector('#photo-activity-form');
   form.dispatchEvent(new window.Event('submit', { bubbles: true, cancelable: true }));
   assert.equal(window.document.querySelector('#photo-generated-preview').hidden, true);
@@ -190,7 +209,7 @@ test('Criação por foto exige uma imagem JPG ou PNG', async () => {
 });
 
 test('Imagem gera prévia e cabeçalho da escola permanece opcional', async () => {
-  const window = await createLibraryPage();
+  const window = await createHomePhotoPage();
   const form = window.document.querySelector('#photo-activity-form');
   attachReferenceImage(window);
   form.elements.grade.value = '3º ano';
