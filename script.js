@@ -145,6 +145,7 @@ const serviceRequestForm = document.querySelector('.service-request-form');
 const serviceRequestAction = document.querySelector('.service-dialog-action');
 const serviceRequestBack = document.querySelector('.service-request-back');
 const serviceRequestStatus = document.querySelector('.service-request-status');
+const serviceGenerateExample = document.querySelector('.service-generate-example');
 
 serviceRequestAction?.addEventListener('click', () => {
   serviceDialog.classList.add('request-mode');
@@ -165,17 +166,18 @@ serviceRequestForm?.addEventListener('submit', async event => {
   event.preventDefault();
   const data = new FormData(serviceRequestForm);
   const selectedService = serviceDetails[currentServiceKey];
+  const valueOrExample = (field, example) => String(data.get(field) || '').trim() || example;
   const notes = String(data.get('notes') || '').trim();
   const message = [
     'Olá! Quero solicitar um material no TeachEasy.',
     '',
     'Serviço: ' + selectedService.title,
-    'Nome: ' + data.get('teacher_name'),
-    'Ano ou série: ' + data.get('grade'),
-    'Disciplina: ' + data.get('subject'),
-    'Tema: ' + data.get('topic'),
-    'Quantidade e duração: ' + data.get('duration'),
-    'Formato: ' + data.get('format'),
+    'Nome: ' + valueOrExample('teacher_name', 'Professor(a) de exemplo'),
+    'Ano ou série: ' + valueOrExample('grade', '5º ano'),
+    'Disciplina: ' + valueOrExample('subject', 'Matemática'),
+    'Tema: ' + valueOrExample('topic', 'Frações'),
+    'Quantidade e duração: ' + valueOrExample('duration', '2 aulas de 50 minutos'),
+    'Formato: ' + valueOrExample('format', 'PDF'),
     notes ? 'Observações: ' + notes : ''
   ].filter(Boolean).join(String.fromCharCode(10));
 
@@ -192,4 +194,24 @@ serviceRequestForm?.addEventListener('submit', async event => {
   const whatsappUrl = 'https://wa.me/' + TEACHEASY_WHATSAPP_NUMBER + '?text=' + encodeURIComponent(message);
   window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
   serviceRequestStatus.textContent = 'Abrindo o WhatsApp com seu pedido preenchido…';
+});
+
+
+serviceGenerateExample?.addEventListener('click', () => {
+  const selectedService = serviceDetails[currentServiceKey] || serviceDetails.planning;
+  const example = [
+    'EXEMPLO DE PEDIDO',
+    '',
+    'Serviço: ' + selectedService.title,
+    'Professor(a): Maria Silva',
+    'Ano ou série: 5º ano',
+    'Disciplina: Matemática',
+    'Tema: Frações',
+    'Quantidade e duração: 2 aulas de 50 minutos',
+    'Formato: PDF e Word editável',
+    'Observações: incluir habilidades da BNCC e uma atividade inclusiva com gabarito.'
+  ].join(String.fromCharCode(10));
+
+  serviceRequestStatus.style.whiteSpace = 'pre-line';
+  serviceRequestStatus.textContent = example;
 });
