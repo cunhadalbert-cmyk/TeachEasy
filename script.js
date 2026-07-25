@@ -361,6 +361,11 @@ async function generatePdf(material, topic, fileBase) {
   pdf.setTextColor(18, 55, 47);
   lines.forEach((line, index) => {
     if (line === 'GABARITO') {
+      if (y > 190) {
+        pdf.addPage();
+        y = 18;
+      }
+      pdf.addImage(figure, 'PNG', 18, y + 4, 174, 72);
       pdf.addPage();
       y = 18;
     }
@@ -376,11 +381,6 @@ async function generatePdf(material, topic, fileBase) {
     y += Math.max(6, wrapped.length * 6);
   });
 
-  if (y > 195) {
-    pdf.addPage();
-    y = 18;
-  }
-  pdf.addImage(figure, 'PNG', 18, y + 4, 174, 72);
   pdf.save(fileBase + '.pdf');
 }
 
@@ -395,8 +395,9 @@ async function generateWord(material, topic, fileBase) {
       children: [new window.docx.TextRun({ text: line || ' ', bold: line === 'GABARITO', color: line === 'GABARITO' ? '12372F' : undefined })]
     })
   );
-  paragraphs.push(new window.docx.Paragraph({
-    spacing: { before: 240 },
+  const answerKeyIndex = material.split(String.fromCharCode(10)).findIndex(line => line === 'GABARITO');
+  paragraphs.splice(answerKeyIndex, 0, new window.docx.Paragraph({
+    spacing: { before: 240, after: 240 },
     children: [new window.docx.ImageRun({ data: image, transformation: { width: 600, height: 250 }, type: 'png' })]
   }));
   const documentFile = new window.docx.Document({
