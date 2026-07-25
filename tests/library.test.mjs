@@ -112,6 +112,19 @@ test('Foto da professora usa movimento lateral suave e acessível', async () => 
   assert.match(css, /@media \(prefers-reduced-motion: reduce\)[\s\S]*\.teacheasy-workflow img\s*\{[^}]*width:\s*100%[^}]*animation:\s*none !important/s);
 });
 
+test('Página inicial não exibe a seção antiga de serviços', async () => {
+  const html = await readFile(new URL('../index.html', import.meta.url), 'utf8');
+  const window = new Window({ url: 'https://teacheasy.test/index.html' });
+  window.document.write(html);
+  window.document.close();
+
+  assert.equal(window.document.querySelector('#recursos'), null);
+  assert.equal(window.document.querySelectorAll('.service-grid .service-card').length, 0);
+  assert.doesNotMatch(window.document.body.textContent, /NOSSOS SERVIÇOS|Tudo o que você precisa, em um só lugar/);
+  assert.ok(window.document.querySelector('#sobre').nextElementSibling.classList.contains('stats'));
+  await window.happyDOM.close();
+});
+
 test('Cabeçalho da Biblioteca participa do fluxo da página', async () => {
   const css = await readFile(new URL('../biblioteca.css', import.meta.url), 'utf8');
   assert.match(css, /\.library-header\s*\{[^}]*position:\s*relative/s);
