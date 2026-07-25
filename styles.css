@@ -68,36 +68,113 @@ button{font:inherit}
 }
 
 .home-library-highlight {
+  position: relative;
   display: grid;
+  grid-template-columns: minmax(120px, 180px) 1fr 92px;
+  align-items: center;
   width: 100%;
   margin: 0 0 30px;
-  padding: 28px 32px;
-  gap: 8px;
-  border: 1px solid #e5d8d3;
-  border-radius: 26px;
-  background: linear-gradient(180deg, #fff, #fbf6f3);
-  color: var(--green-900);
-  text-align: center;
-  box-shadow: 0 12px 30px rgba(52, 24, 30, .1);
+  min-height: 210px;
+  padding: 24px 38px;
+  gap: 28px;
+  overflow: hidden;
+  border: 2px solid rgba(255, 255, 255, .72);
+  border-radius: 44px;
+  background: linear-gradient(90deg, #570b20 0%, #820f2d 52%, #a32345 100%);
+  color: #fff;
+  text-align: left;
+  box-shadow:
+    0 22px 36px rgba(68, 6, 24, .30),
+    0 8px 16px rgba(48, 5, 18, .22),
+    0 0 28px rgba(185, 45, 82, .20);
   transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.home-library-highlight::after {
+  content: "";
+  position: absolute;
+  inset: 2px;
+  pointer-events: none;
+  border: 1px solid rgba(255, 255, 255, .20);
+  border-radius: 40px;
 }
 
 .home-library-highlight:hover,
 .home-library-highlight:focus-visible {
-  transform: translateY(-3px);
-  box-shadow: 0 18px 38px rgba(52, 24, 30, .15);
+  transform: translateY(-5px);
+  box-shadow:
+    0 28px 44px rgba(68, 6, 24, .36),
+    0 10px 20px rgba(48, 5, 18, .25),
+    0 0 34px rgba(185, 45, 82, .26);
+}
+
+.home-library-highlight:focus-visible {
+  outline: 4px solid rgba(122, 46, 58, .30);
+  outline-offset: 5px;
+}
+
+.home-library-illustration {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  place-items: center;
+}
+
+.home-library-illustration svg {
+  display: block;
+  width: 100%;
+  max-width: 170px;
+  filter: drop-shadow(0 12px 12px rgba(37, 3, 13, .30));
+}
+
+.library-page-back { fill: #fff8ed; }
+.library-page-fold { fill: none; stroke: #f0c3b2; stroke-width: 5; stroke-linejoin: round; }
+.library-book { stroke: rgba(255, 255, 255, .75); stroke-width: 3; }
+.library-book-one { fill: #f1b83b; }
+.library-book-two { fill: #61c3ad; }
+.library-book-three { fill: #e9829b; }
+.library-book-line { fill: none; stroke: rgba(69, 13, 31, .62); stroke-width: 5; stroke-linecap: round; }
+.library-check { fill: #fff; stroke: #f3c3cf; stroke-width: 4; }
+.library-check-mark { fill: none; stroke: #8b1231; stroke-width: 7; stroke-linecap: round; stroke-linejoin: round; }
+.library-spark { fill: none; stroke: #ffd96a; stroke-width: 7; stroke-linecap: round; }
+
+.home-library-copy {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  gap: 12px;
 }
 
 .home-library-highlight strong {
   font-family: "Libre Franklin", sans-serif;
   font-size: clamp(30px, 4vw, 46px);
   line-height: 1.1;
+  color: #fff;
+  text-shadow: 0 3px 10px rgba(33, 2, 11, .28);
 }
 
-.home-library-highlight span {
-  color: var(--muted);
-  font-size: 18px;
-  line-height: 1.5;
+.home-library-copy > span {
+  color: #fff5f1;
+  font-size: clamp(17px, 2vw, 21px);
+  line-height: 1.4;
+  text-shadow: 0 2px 7px rgba(33, 2, 11, .24);
+}
+
+.home-library-arrow {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  width: 74px;
+  height: 74px;
+  place-items: center;
+  justify-self: end;
+  border: 2px solid rgba(255, 255, 255, .82);
+  border-radius: 50%;
+  background: #fff;
+  color: #8b1231;
+  font-size: 45px;
+  line-height: 1;
+  box-shadow: 0 10px 20px rgba(42, 2, 14, .24);
 }
 .security-badge{display:flex;align-items:center;gap:8px;color:var(--green-700)}
 .security-badge span{font-size:30px}
@@ -261,8 +338,20 @@ button{font:inherit}
 
 @media (max-width: 680px){
   .container{width:min(100% - 24px,1180px)}
-  .home-library-highlight{width:100%;padding:24px 18px;border-radius:22px;text-align:center}
-  .home-library-highlight span{font-size:16px}
+  .home-library-highlight{
+    grid-template-columns: 78px 1fr 48px;
+    width:100%;
+    min-height:148px;
+    padding:18px 16px;
+    gap:14px;
+    border-radius:28px;
+  }
+  .home-library-highlight::after{border-radius:24px}
+  .home-library-illustration svg{max-width:82px}
+  .home-library-highlight strong{font-size:clamp(24px,7vw,32px)}
+  .home-library-copy{gap:7px}
+  .home-library-copy > span{font-size:15px;line-height:1.35}
+  .home-library-arrow{width:46px;height:46px;font-size:29px}
   .topbar{display:none}
   .header-inner{min-height:78px}
   .brand strong{font-size:26px}

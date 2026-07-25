@@ -73,9 +73,13 @@ test('Destaque da Biblioteca fica na página inicial junto aos quatro serviços'
   const services = section.querySelector('.initial-services-grid');
   assert.equal(highlight.getAttribute('href'), 'biblioteca.html');
   assert.match(highlight.textContent, /Biblioteca de Atividades/);
+  assert.match(highlight.textContent, /Encontre atividades prontas por etapa, ano e bimestre/);
+  assert.equal(highlight.querySelectorAll('.home-library-illustration').length, 1);
+  assert.equal(highlight.querySelectorAll('.home-library-arrow').length, 1);
   assert.ok(Boolean(heading.compareDocumentPosition(highlight) & window.Node.DOCUMENT_POSITION_FOLLOWING));
   assert.ok(Boolean(highlight.compareDocumentPosition(services) & window.Node.DOCUMENT_POSITION_FOLLOWING));
   assert.equal(window.document.querySelectorAll('.home-library-highlight').length, 1);
+  assert.equal(window.document.querySelectorAll('a[href="biblioteca.html"]').length, 1);
   await window.happyDOM.close();
 });
 
