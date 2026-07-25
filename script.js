@@ -162,10 +162,91 @@ serviceRequestBack?.addEventListener('click', () => {
   serviceDialog.scrollTo({ top: 0, behavior: 'smooth' });
 });
 
+function buildDemoMaterial(serviceKey, data) {
+  const valueOrExample = (field, example) => String(data.get(field) || '').trim() || example;
+  const grade = valueOrExample('grade', '5º ano');
+  const subject = valueOrExample('subject', 'Matemática');
+  const topic = valueOrExample('topic', 'Frações');
+  const duration = valueOrExample('duration', '1 aula de 50 minutos');
+  const line = String.fromCharCode(10);
+
+  if (serviceKey === 'activity') {
+    return [
+      'ATIVIDADE GERADA — ' + topic.toUpperCase(),
+      grade + ' | ' + subject + ' | ' + duration,
+      '',
+      'Nome: __________________________________  Data: ____/____/______',
+      '',
+      '1. Explique com suas palavras o que você já sabe sobre ' + topic + '.',
+      '',
+      '2. Escreva um exemplo de ' + topic + ' presente no seu dia a dia.',
+      '',
+      '3. Resolva: uma pizza foi dividida em 8 partes iguais e 3 foram consumidas. Que fração representa a parte consumida?',
+      '',
+      '4. Marque a alternativa equivalente a 1/2:',
+      '   a) 1/4   b) 2/4   c) 3/4   d) 4/4',
+      '',
+      '5. Desenhe uma figura e represente nela a fração 3/5.',
+      '',
+      'GABARITO',
+      '1. Resposta pessoal coerente com o tema.',
+      '2. Resposta pessoal. Exemplos: receita, divisão de alimentos ou medidas.',
+      '3. 3/8.',
+      '4. Alternativa b) 2/4.',
+      '5. Espera-se uma figura dividida em 5 partes iguais, com 3 destacadas.'
+    ].join(line);
+  }
+
+  if (serviceKey === 'assessment') {
+    return [
+      'AVALIAÇÃO GERADA — ' + topic.toUpperCase(),
+      grade + ' | ' + subject,
+      '',
+      '1. Defina ' + topic + ' com suas palavras.',
+      '2. Apresente um exemplo relacionado ao tema.',
+      '3. Resolva uma situação-problema envolvendo ' + topic + '.',
+      '4. Explique como chegou à resposta.',
+      '',
+      'GABARITO: respostas avaliadas pela compreensão do conceito, aplicação correta e clareza do raciocínio.'
+    ].join(line);
+  }
+
+  if (serviceKey === 'sequence') {
+    return [
+      'SEQUÊNCIA DIDÁTICA GERADA — ' + topic.toUpperCase(),
+      grade + ' | ' + subject + ' | ' + duration,
+      '',
+      'Aula 1: levantamento dos conhecimentos prévios e apresentação do tema.',
+      'Aula 2: explicação dialogada com exemplos visuais e atividade em duplas.',
+      'Aula 3: atividade prática, socialização das respostas e intervenção do professor.',
+      'Aula 4: revisão, produção final e avaliação formativa.',
+      '',
+      'Inclusão: usar instruções curtas, apoio visual, exemplos concretos e tempo adicional quando necessário.'
+    ].join(line);
+  }
+
+  return [
+    'PLANEJAMENTO DE AULA GERADO — ' + topic.toUpperCase(),
+    grade + ' | ' + subject + ' | ' + duration,
+    '',
+    'Objetivo: compreender e aplicar os conceitos principais de ' + topic + '.',
+    'Abertura: conversa inicial e levantamento dos conhecimentos prévios.',
+    'Desenvolvimento: explicação com exemplos, atividade guiada e prática em duplas.',
+    'Recursos: quadro, material visual, folhas de atividade e objetos concretos.',
+    'Avaliação: observação da participação, correção da atividade e pergunta de saída.',
+    'Inclusão: linguagem objetiva, rotina visual, apoio individual e diferentes formas de resposta.'
+  ].join(line);
+}
+
+function showGeneratedMaterial(data) {
+  serviceRequestStatus.style.whiteSpace = 'pre-line';
+  serviceRequestStatus.textContent = buildDemoMaterial(currentServiceKey || 'planning', data);
+}
+
 serviceRequestForm?.addEventListener('submit', async event => {
   event.preventDefault();
   const data = new FormData(serviceRequestForm);
-  const selectedService = serviceDetails[currentServiceKey];
+  const selectedService = serviceDetails[currentServiceKey] || serviceDetails.planning;
   const valueOrExample = (field, example) => String(data.get(field) || '').trim() || example;
   const notes = String(data.get('notes') || '').trim();
   const message = [
@@ -176,18 +257,14 @@ serviceRequestForm?.addEventListener('submit', async event => {
     'Ano ou série: ' + valueOrExample('grade', '5º ano'),
     'Disciplina: ' + valueOrExample('subject', 'Matemática'),
     'Tema: ' + valueOrExample('topic', 'Frações'),
-    'Quantidade e duração: ' + valueOrExample('duration', '2 aulas de 50 minutos'),
+    'Quantidade e duração: ' + valueOrExample('duration', '1 aula de 50 minutos'),
     'Formato: ' + valueOrExample('format', 'PDF'),
     notes ? 'Observações: ' + notes : ''
   ].filter(Boolean).join(String.fromCharCode(10));
 
   if (!TEACHEASY_WHATSAPP_NUMBER) {
-    try {
-      await navigator.clipboard.writeText(message);
-      serviceRequestStatus.textContent = 'Pedido preparado e copiado. Falta apenas configurar o número oficial do WhatsApp.';
-    } catch {
-      serviceRequestStatus.textContent = 'Pedido preparado. Falta apenas configurar o número oficial do WhatsApp.';
-    }
+    showGeneratedMaterial(data);
+    try { await navigator.clipboard.writeText(message); } catch {}
     return;
   }
 
@@ -196,22 +273,6 @@ serviceRequestForm?.addEventListener('submit', async event => {
   serviceRequestStatus.textContent = 'Abrindo o WhatsApp com seu pedido preenchido…';
 });
 
-
 serviceGenerateExample?.addEventListener('click', () => {
-  const selectedService = serviceDetails[currentServiceKey] || serviceDetails.planning;
-  const example = [
-    'EXEMPLO DE PEDIDO',
-    '',
-    'Serviço: ' + selectedService.title,
-    'Professor(a): Maria Silva',
-    'Ano ou série: 5º ano',
-    'Disciplina: Matemática',
-    'Tema: Frações',
-    'Quantidade e duração: 2 aulas de 50 minutos',
-    'Formato: PDF e Word editável',
-    'Observações: incluir habilidades da BNCC e uma atividade inclusiva com gabarito.'
-  ].join(String.fromCharCode(10));
-
-  serviceRequestStatus.style.whiteSpace = 'pre-line';
-  serviceRequestStatus.textContent = example;
+  showGeneratedMaterial(new FormData(serviceRequestForm));
 });
