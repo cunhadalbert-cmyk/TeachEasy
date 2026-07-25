@@ -264,7 +264,7 @@ serviceRequestForm?.addEventListener('submit', async event => {
 
   if (!TEACHEASY_WHATSAPP_NUMBER) {
     showGeneratedMaterial(data);
-    try { await navigator.clipboard.writeText(message); } catch {}
+    await downloadRequestedMaterial(data);
     return;
   }
 
@@ -273,6 +273,134 @@ serviceRequestForm?.addEventListener('submit', async event => {
   serviceRequestStatus.textContent = 'Abrindo o WhatsApp com seu pedido preenchido…';
 });
 
-serviceGenerateExample?.addEventListener('click', () => {
-  showGeneratedMaterial(new FormData(serviceRequestForm));
+function createColorfulFigure(topic) {
+  const canvas = document.createElement('canvas');
+  canvas.width = 1200;
+  canvas.height = 500;
+  const ctx = canvas.getContext('2d');
+  const gradient = ctx.createLinearGradient(0, 0, 1200, 500);
+  gradient.addColorStop(0, '#e8f7f1');
+  gradient.addColorStop(1, '#fff3cf');
+  ctx.fillStyle = gradient;
+  ctx.fillRect(0, 0, 1200, 500);
+
+  ctx.fillStyle = '#12372f';
+  ctx.font = 'bold 54px Arial';
+  ctx.fillText('Aprendendo ' + topic, 60, 85);
+  ctx.font = '30px Arial';
+  ctx.fillStyle = '#31564e';
+  ctx.fillText('Observe a representação colorida:', 60, 140);
+
+  const colors = ['#ff6b6b', '#f7b731', '#20bf6b', '#45aaf2', '#a55eea'];
+  for (let i = 0; i < 5; i += 1) {
+    const x = 80 + i * 205;
+    ctx.beginPath();
+    ctx.roundRect(x, 205, 165, 165, 24);
+    ctx.fillStyle = i < 3 ? colors[i] : '#ffffff';
+    ctx.fill();
+    ctx.lineWidth = 7;
+    ctx.strokeStyle = '#12372f';
+    ctx.stroke();
+  }
+
+  ctx.fillStyle = '#12372f';
+  ctx.font = 'bold 38px Arial';
+  ctx.fillText('3 partes coloridas de um total de 5 = 3/5', 215, 445);
+  return canvas.toDataURL('image/png');
+}
+
+function safeFileName(text) {
+  return String(text || 'material-teacheasy')
+    .normalize('NFD').replace(/[\u0300-\u036f]/g, '')
+    .replace(/[^a-zA-Z0-9-]+/g, '-').replace(/-+/g, '-').toLowerCase();
+}
+
+function dataUrlToBytes(dataUrl) {
+  const binary = atob(dataUrl.split(',')[1]);
+  return Uint8Array.from(binary, character => character.charCodeAt(0));
+}
+
+function downloadBlob(blob, fileName) {
+  const url = URL.createObjectURL(blob);
+  const link = document.createElement('a');
+  link.href = url;
+  link.download = fileName;
+  document.body.appendChild(link);
+  link.click();
+  link.remove();
+  setTimeout(() => URL.revokeObjectURL(url), 1500);
+}
+
+async function generatePdf(material, topic, fileBase) {
+  if (!window.jspdf?.jsPDF) throw new Error('Gerador de PDF indisponível');
+  const pdf = new window.jspdf.jsPDF({ unit: 'mm', format: 'a4' });
+  const figure = createColorfulFigure(topic);
+  const lines = material.split(String.fromCharCode(10));
+  let y = 18;
+
+  pdf.setTextColor(18, 55, 47);
+  lines.forEach((line, index) => {
+    const isTitle = index === 0 || line === 'GABARITO';
+    pdf.setFont('helvetica', isTitle ? 'bold' : 'normal');
+    pdf.setFontSize(isTitle ? 15 : 11);
+    const wrapped = pdf.splitTextToSize(line || ' ', 174);
+    if (y + wrapped.length * 6 > 270) {
+      pdf.addPage();
+      y = 18;
+    }
+    pdf.text(wrapped, 18, y);
+    y += Math.max(6, wrapped.length * 6);
+  });
+
+  if (y > 195) {
+    pdf.addPage();
+    y = 18;
+  }
+  pdf.addImage(figure, 'PNG', 18, y + 4, 174, 72);
+  pdf.save(fileBase + '.pdf');
+}
+
+async function generateWord(material, topic, fileBase) {
+  if (!window.docx?.Document) throw new Error('Gerador de Word indisponível');
+  const image = dataUrlToBytes(createColorfulFigure(topic));
+  const paragraphs = material.split(String.fromCharCode(10)).map((line, index) =>
+    new window.docx.Paragraph({
+      heading: index === 0 ? window.docx.HeadingLevel.TITLE : undefined,
+      spacing: { after: line ? 140 : 60 },
+      children: [new window.docx.TextRun({ text: line || ' ', bold: line === 'GABARITO', color: line === 'GABARITO' ? '12372F' : undefined })]
+    })
+  );
+  paragraphs.push(new window.docx.Paragraph({
+    spacing: { before: 240 },
+    children: [new window.docx.ImageRun({ data: image, transformation: { width: 600, height: 250 }, type: 'png' })]
+  }));
+  const documentFile = new window.docx.Document({
+    sections: [{ properties: {}, children: paragraphs }]
+  });
+  const blob = await window.docx.Packer.toBlob(documentFile);
+  downloadBlob(blob, fileBase + '.docx');
+}
+
+async function downloadRequestedMaterial(data) {
+  const topic = String(data.get('topic') || '').trim() || 'Frações';
+  const format = String(data.get('format') || 'PDF');
+  const material = buildDemoMaterial(currentServiceKey || 'planning', data);
+  const fileBase = safeFileName('TeachEasy-' + (serviceDetails[currentServiceKey]?.title || 'Material') + '-' + topic);
+
+  serviceRequestStatus.style.whiteSpace = 'pre-line';
+  serviceRequestStatus.textContent = material + '\n\nPreparando arquivo para download…';
+
+  try {
+    if (format === 'PDF' || format === 'PDF e Word editável') await generatePdf(material, topic, fileBase);
+    if (format === 'Word editável' || format === 'PDF e Word editável') await generateWord(material, topic, fileBase);
+    serviceRequestStatus.textContent = material + '\n\n✓ Arquivo gerado e baixado com figura colorida.';
+  } catch (error) {
+    serviceRequestStatus.textContent = material + '\n\nNão foi possível baixar o arquivo agora. Tente novamente.';
+  }
+}
+
+serviceGenerateExample?.addEventListener('click', async () => {
+  const data = new FormData(serviceRequestForm);
+  showGeneratedMaterial(data);
+  await downloadRequestedMaterial(data);
 });
