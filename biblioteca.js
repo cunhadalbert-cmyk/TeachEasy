@@ -472,8 +472,8 @@ function renderNavigation() {
   breadcrumb.textContent = crumbs.join(' → ');
 
   if (!navigation.stage) {
-    stepTitle.textContent = 'Escolha uma etapa';
-    stepHelp.textContent = '1.712 atividades-base. Inclusão e autismo estão disponíveis em todas as etapas.';
+    stepTitle.textContent = 'Biblioteca de Atividades';
+    stepHelp.textContent = 'Escolha uma etapa para encontrar atividades prontas para sua turma.';
     choiceGrid.replaceChildren(...stages.map(stage =>
       choiceCard(stage.label, stage.detail, () => {
         navigation.stage = stage.name;

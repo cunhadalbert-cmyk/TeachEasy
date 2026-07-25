@@ -45,6 +45,11 @@ function attachReferenceImage(window) {
 test('Biblioteca começa com quatro etapas e controles auxiliares ocultos', async () => {
   const window = await createLibraryPage();
   assert.equal(window.document.querySelectorAll('.library-choice-card').length, 4);
+  assert.equal(window.document.querySelector('#library-step-title').textContent, 'Biblioteca de Atividades');
+  assert.equal(
+    window.document.querySelector('#library-step-help').textContent,
+    'Escolha uma etapa para encontrar atividades prontas para sua turma.'
+  );
   assert.equal(window.document.querySelectorAll('.choice-symbol').length, 0);
   assert.deepEqual(
     [...window.document.querySelectorAll('.library-choice-card')].map(card => card.dataset.theme),
@@ -56,7 +61,24 @@ test('Biblioteca começa com quatro etapas e controles auxiliares ocultos', asyn
   assert.equal(window.document.querySelector('.activity-grid').hidden, true);
   assert.equal(window.document.querySelectorAll('.activity-library-card').length, 0);
   assert.equal(window.document.querySelector('.library-goal-card'), null);
-  assert.match(window.document.body.textContent, /1.712/);
+  assert.match(window.document.body.textContent, /288 atividades-base/);
+  assert.match(window.document.body.textContent, /800 atividades-base/);
+  assert.match(window.document.body.textContent, /384 atividades-base/);
+  assert.match(window.document.body.textContent, /240 atividades-base/);
+  await window.happyDOM.close();
+});
+
+test('Destaque da biblioteca fica entre o banner por foto e os quatro cards', async () => {
+  const window = await createLibraryPage();
+  const banner = window.document.querySelector('.photo-activity-feature');
+  const heading = window.document.querySelector('.library-toolbar');
+  const cards = window.document.querySelector('.library-choice-grid');
+  assert.ok(Boolean(banner.compareDocumentPosition(heading) & window.Node.DOCUMENT_POSITION_FOLLOWING));
+  assert.ok(Boolean(heading.compareDocumentPosition(cards) & window.Node.DOCUMENT_POSITION_FOLLOWING));
+
+  const css = await readFile(new URL('../biblioteca.css', import.meta.url), 'utf8');
+  assert.match(css, /\.library-toolbar\s*\{[^}]*border-radius:\s*26px/s);
+  assert.match(css, /\.library-toolbar\s*\{[^}]*box-shadow:/s);
   await window.happyDOM.close();
 });
 
