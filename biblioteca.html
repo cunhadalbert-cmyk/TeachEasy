@@ -57,13 +57,28 @@
             <strong><b id="selection-count">0</b> atividades</strong>
           </div>
         </div>
-        <button class="photo-activity-launcher" id="photo-activity-launcher" type="button">
-          <span class="photo-launcher-copy">
-            <strong>Criar atividade por foto</strong>
-            <small>Envie uma foto do conteúdo e gere uma atividade personalizada.</small>
-          </span>
-          <span class="photo-launcher-arrow" aria-hidden="true">→</span>
-        </button>
+        <div class="photo-activity-feature">
+          <button class="photo-activity-launcher" id="photo-activity-launcher" type="button">
+            <img
+              class="photo-launcher-illustration"
+              src="assets/photo-activity-illustration.png"
+              alt="Foto de um conteúdo se transformando em uma nova atividade"
+              width="320"
+              height="213"
+            >
+            <span class="photo-launcher-copy">
+              <span class="photo-launcher-badge">NOVIDADE!</span>
+              <strong>Criar atividade por foto</strong>
+              <small>Envie uma foto do conteúdo e a IA gera uma atividade personalizada para você!</small>
+            </span>
+            <span class="photo-launcher-arrow" aria-hidden="true">→</span>
+          </button>
+          <div class="photo-feature-badges" role="group" aria-label="Benefícios da criação por foto">
+            <span><b aria-hidden="true">📷</b> Rápido e prático <i aria-hidden="true">✓</i></span>
+            <span><b aria-hidden="true">✨</b> Atividades originais <i aria-hidden="true">✓</i></span>
+            <span><b aria-hidden="true">❤</b> Com gabarito e versão adaptada <i aria-hidden="true">✓</i></span>
+          </div>
+        </div>
 
         <nav class="library-breadcrumb" id="library-breadcrumb" aria-label="Caminho da biblioteca"></nav>
         <button class="btn btn-outline library-back" id="library-back" type="button" hidden>← Voltar</button>

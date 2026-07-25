@@ -94,8 +94,11 @@ test('Formulário por foto fica oculto na entrada e abre pelo botão discreto', 
   assert.equal(preview.hidden, true);
   assert.equal(window.document.querySelectorAll('.library-choice-card').length, 4);
   assert.match(launcher.textContent, /Criar atividade por foto/);
-  assert.match(launcher.textContent, /Envie uma foto do conteúdo e gere uma atividade personalizada/);
+  assert.match(launcher.textContent, /NOVIDADE!/);
+  assert.match(launcher.textContent, /Envie uma foto do conteúdo e a IA gera uma atividade personalizada para você/);
   assert.equal(launcher.querySelectorAll('.photo-launcher-arrow').length, 1);
+  assert.equal(launcher.querySelectorAll('.photo-launcher-illustration').length, 1);
+  assert.equal(window.document.querySelectorAll('.photo-feature-badges > span').length, 3);
 
   launcher.click();
   assert.equal(dialog.open, true);
@@ -106,7 +109,7 @@ test('Botão por foto usa o bloco horizontal amplo aprovado', async () => {
   const css = await readFile(new URL('../biblioteca.css', import.meta.url), 'utf8');
   assert.match(css, /\.photo-activity-launcher\s*\{[^}]*width:\s*85%/s);
   assert.match(css, /\.photo-activity-launcher\s*\{[^}]*max-width:\s*1500px/s);
-  assert.match(css, /\.photo-activity-launcher\s*\{[^}]*min-height:\s*142px/s);
+  assert.match(css, /\.photo-activity-launcher\s*\{[^}]*min-height:\s*210px/s);
   assert.match(css, /\.photo-activity-launcher\s*\{[^}]*linear-gradient\(90deg/s);
 });
 
