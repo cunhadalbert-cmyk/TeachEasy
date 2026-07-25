@@ -138,7 +138,7 @@ serviceDialog?.addEventListener('click', event => {
 
 // Configure aqui, somente com números: país + DDD + telefone.
 // Exemplo: 5511999999999
-const TEACHEASY_WHATSAPP_NUMBER = '';
+const TEACHEASY_WHATSAPP_NUMBER = '5524999629129';
 
 let currentServiceKey = '';
 const serviceRequestForm = document.querySelector('.service-request-form');
