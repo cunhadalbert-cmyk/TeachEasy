@@ -97,6 +97,12 @@ const serviceDetails = {
     description: 'Um conjunto de aulas conectadas, com progressão pedagógica e atividades que aprofundam o tema por etapas.',
     includes: ['Objetivo geral e objetivos por etapa', 'Organização das aulas', 'Atividades progressivas', 'Recursos e intervenções', 'Avaliação final'],
     inputs: ['Ano ou série', 'Disciplina e tema', 'Quantidade de aulas', 'Duração de cada encontro', 'Resultado esperado']
+  },
+  portfolio: {
+    icon: '🗂', title: 'Portfólio do estudante',
+    description: 'Um registro organizado da aprendizagem, com produções, avanços, observações e próximos objetivos do estudante.',
+    includes: ['Identificação e período', 'Objetivos acompanhados', 'Evidências de aprendizagem', 'Avanços e desafios', 'Parecer descritivo e próximos passos'],
+    inputs: ['Nome do estudante', 'Ano ou turma', 'Período avaliado', 'Produções e evidências', 'Observações do professor']
   }
 };
 
@@ -112,6 +118,7 @@ function openServiceDetails(serviceKey) {
   const service = serviceDetails[serviceKey];
   if (!service || !serviceDialog) return;
   currentServiceKey = serviceKey;
+  configureRequestForm(serviceKey);
   serviceDialog.classList.remove('request-mode');
   serviceDialog.querySelector('.service-dialog-icon').textContent = service.icon;
   serviceDialog.querySelector('#service-dialog-title').textContent = service.title;
@@ -146,6 +153,51 @@ const serviceRequestAction = document.querySelector('.service-dialog-action');
 const serviceRequestBack = document.querySelector('.service-request-back');
 const serviceRequestStatus = document.querySelector('.service-request-status');
 const serviceGenerateExample = document.querySelector('.service-generate-example');
+
+const serviceFormConfig = {
+  planning: {
+    grade: ['Ano ou série', 'Ex.: 5º ano'],
+    subject: ['Disciplina', 'Ex.: Matemática'],
+    topic: ['Tema da aula', 'Ex.: Frações'],
+    duration: ['Quantidade de aulas', 'Ex.: 2 aulas']
+  },
+  activity: {
+    grade: ['Ano ou série', 'Ex.: 5º ano'],
+    subject: ['Disciplina', 'Ex.: Matemática e Português'],
+    topic: ['Tema ou conteúdo', 'Ex.: Frações e interpretação de texto'],
+    duration: ['Quantidade de questões', 'Ex.: 5 questões']
+  },
+  assessment: {
+    grade: ['Ano ou série', 'Ex.: 5º ano'],
+    subject: ['Disciplina', 'Ex.: Ciências'],
+    topic: ['Conteúdo da avaliação', 'Ex.: Sistema Solar'],
+    duration: ['Quantidade de questões', 'Ex.: 10 questões']
+  },
+  sequence: {
+    grade: ['Ano ou série', 'Ex.: Educação Infantil'],
+    subject: ['Campo ou disciplina', 'Ex.: Linguagem'],
+    topic: ['Tema da sequência', 'Ex.: Animais brasileiros'],
+    duration: ['Quantidade de aulas', 'Ex.: 4 aulas']
+  },
+  portfolio: {
+    grade: ['Ano ou turma', 'Ex.: 5º ano A'],
+    subject: ['Nome do estudante', 'Ex.: João da Silva'],
+    topic: ['Área acompanhada', 'Ex.: Leitura e escrita'],
+    duration: ['Período avaliado', 'Ex.: 1º bimestre']
+  }
+};
+
+function configureRequestForm(serviceKey) {
+  const config = serviceFormConfig[serviceKey] || serviceFormConfig.activity;
+  Object.entries(config).forEach(([field, settings]) => {
+    const input = serviceRequestForm?.querySelector('[name="' + field + '"]');
+    if (!input) return;
+    const label = input.closest('label')?.querySelector('span');
+    if (label) label.textContent = settings[0];
+    input.placeholder = settings[1];
+  });
+  serviceRequestForm?.reset();
+}
 
 serviceRequestAction?.addEventListener('click', () => {
   serviceDialog.classList.add('request-mode');
@@ -242,6 +294,26 @@ function buildDemoMaterial(serviceKey, data) {
       'Aula 4: revisão, produção final e avaliação formativa.',
       '',
       'Inclusão: usar instruções curtas, apoio visual, exemplos concretos e tempo adicional quando necessário.'
+    ].join(line);
+  }
+
+  if (serviceKey === 'portfolio') {
+    const student = subject === 'Matemática' ? 'Estudante de exemplo' : subject;
+    return [
+      'PORTFÓLIO DO ESTUDANTE — ' + grade.toUpperCase(),
+      'Estudante: ' + student + ' | Período: ' + duration,
+      '',
+      'ÁREA ACOMPANHADA: ' + topic,
+      '',
+      'Objetivos observados: desenvolver autonomia, participação e domínio progressivo das habilidades trabalhadas.',
+      'Evidências: produções escritas, atividades realizadas, registros fotográficos e participação nas propostas.',
+      'Avanços: demonstra evolução na organização das ideias e maior segurança para realizar as atividades.',
+      'Desafios: continuar fortalecendo a leitura dos enunciados e a revisão das respostas.',
+      'Intervenções: apoio visual, explicações em etapas, retomada dos conceitos e atividades diversificadas.',
+      'Próximos passos: ampliar a autonomia e propor novos desafios adequados ao ritmo do estudante.',
+      '',
+      'PARECER DESCRITIVO',
+      'O estudante participou das atividades do período e apresentou avanços importantes. Recomenda-se manter o acompanhamento e valorizar suas conquistas.'
     ].join(line);
   }
 
