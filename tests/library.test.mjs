@@ -94,7 +94,11 @@ test('Seção sobre mostra o fluxo da IA até a Biblioteca e preserva o texto', 
   assert.equal(workflow.querySelector('img').getAttribute('src'), 'assets/fluxo-teacheasy.png');
   assert.equal(workflow.querySelector('figcaption'), null);
   assert.doesNotMatch(workflow.textContent, /A IA cria|O professor revisa|A Biblioteca organiza/);
-  assert.match(section.querySelector('.split-copy').textContent, /Mais tempo para o que realmente importa: seus alunos/);
+  const copy = section.querySelector('.split-copy');
+  assert.match(copy.textContent, /Mais tempo para o que realmente importa: você/);
+  assert.doesNotMatch(copy.textContent, /FEITO PARA PROFESSORES|Conheça a plataforma/);
+  assert.match(copy.textContent, /O TeachEasy usa inteligência artificial para ajudar professores/);
+  assert.equal(copy.querySelectorAll('.check-list li').length, 4);
   assert.equal(section.querySelector('.teacher-placeholder'), null);
   await window.happyDOM.close();
 });
