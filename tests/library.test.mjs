@@ -36,13 +36,23 @@ function openActivities(window, stage, grade, term = '1º bimestre') {
   clickChoice(window, term);
 }
 
-test('Biblioteca começa com quatro etapas e sem filtros ou meta', async () => {
+test('Biblioteca começa com quatro etapas e controles auxiliares ocultos', async () => {
   const window = await createLibraryPage();
   assert.equal(window.document.querySelectorAll('.library-choice-card').length, 4);
   assert.equal(window.document.querySelector('.library-filters').hidden, true);
+  assert.equal(window.document.querySelector('.library-pagination').hidden, true);
+  assert.equal(window.document.querySelector('.library-back').hidden, true);
+  assert.equal(window.document.querySelector('.activity-grid').hidden, true);
+  assert.equal(window.document.querySelectorAll('.activity-library-card').length, 0);
   assert.equal(window.document.querySelector('.library-goal-card'), null);
   assert.match(window.document.body.textContent, /1.712/);
   await window.happyDOM.close();
+});
+
+test('Cabeçalho da Biblioteca participa do fluxo da página', async () => {
+  const css = await readFile(new URL('../biblioteca.css', import.meta.url), 'utf8');
+  assert.match(css, /\.library-header\s*\{[^}]*position:\s*relative/s);
+  assert.match(css, /\.library-page \[hidden\]\s*\{[^}]*display:\s*none !important/s);
 });
 
 test('Navegação progressiva abre ano, bimestre e só então os filtros', async () => {
@@ -50,11 +60,14 @@ test('Navegação progressiva abre ano, bimestre e só então os filtros', async
   clickChoice(window, 'Anos Iniciais');
   assert.equal(window.document.querySelectorAll('.library-choice-card').length, 5);
   assert.equal(window.document.querySelector('.library-filters').hidden, true);
+  assert.equal(window.document.querySelector('.library-back').hidden, false);
   clickChoice(window, '5º ano');
   assert.equal(window.document.querySelectorAll('.library-choice-card').length, 4);
+  assert.equal(window.document.querySelector('.library-filters').hidden, true);
   clickChoice(window, '1º bimestre');
   assert.equal(window.document.querySelector('.library-filters').hidden, false);
   assert.ok(window.document.querySelectorAll('.activity-library-card').length <= 5);
+  assert.equal(window.document.querySelector('.library-pagination').hidden, true);
   await window.happyDOM.close();
 });
 
