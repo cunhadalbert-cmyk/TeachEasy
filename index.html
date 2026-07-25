@@ -209,33 +209,33 @@
         <div class="service-request-heading">
           <span>MONTE SEU PEDIDO</span>
           <h3>Conte o que você precisa</h3>
-          <p>Preencha os dados essenciais. A mensagem será organizada automaticamente para o WhatsApp.</p>
+          <p>Preencha somente se quiser. Para testar sem dados, use o exemplo automático.</p>
         </div>
 
         <div class="service-form-grid">
           <label>
             <span>Seu nome</span>
-            <input name="teacher_name" type="text" autocomplete="name" placeholder="Como podemos chamar você?" required>
+            <input name="teacher_name" type="text" autocomplete="name" placeholder="Como podemos chamar você?">
           </label>
           <label>
             <span>Ano ou série</span>
-            <input name="grade" type="text" placeholder="Ex.: 5º ano" required>
+            <input name="grade" type="text" placeholder="Ex.: 5º ano">
           </label>
           <label>
             <span>Disciplina</span>
-            <input name="subject" type="text" placeholder="Ex.: Matemática" required>
+            <input name="subject" type="text" placeholder="Ex.: Matemática">
           </label>
           <label>
             <span>Tema</span>
-            <input name="topic" type="text" placeholder="Ex.: Frações" required>
+            <input name="topic" type="text" placeholder="Ex.: Frações">
           </label>
           <label>
             <span>Quantidade e duração</span>
-            <input name="duration" type="text" placeholder="Ex.: 2 aulas de 50 minutos" required>
+            <input name="duration" type="text" placeholder="Ex.: 2 aulas de 50 minutos">
           </label>
           <label>
             <span>Formato de entrega</span>
-            <select name="format" required>
+            <select name="format">
               <option value="PDF">PDF</option>
               <option value="Word editável">Word editável</option>
               <option value="PDF e Word editável">PDF e Word editável</option>
@@ -251,6 +251,7 @@
 
         <div class="service-form-actions">
           <button class="btn btn-outline service-request-back" type="button">← Voltar</button>
+          <button class="btn btn-outline service-generate-example" type="button">Gerar exemplo</button>
           <button class="btn btn-primary service-request-submit" type="submit">Continuar pelo WhatsApp →</button>
         </div>
       </form>
