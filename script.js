@@ -360,6 +360,10 @@ async function generatePdf(material, topic, fileBase) {
 
   pdf.setTextColor(18, 55, 47);
   lines.forEach((line, index) => {
+    if (line === 'GABARITO') {
+      pdf.addPage();
+      y = 18;
+    }
     const isTitle = index === 0 || line === 'GABARITO';
     pdf.setFont('helvetica', isTitle ? 'bold' : 'normal');
     pdf.setFontSize(isTitle ? 15 : 11);
@@ -386,6 +390,7 @@ async function generateWord(material, topic, fileBase) {
   const paragraphs = material.split(String.fromCharCode(10)).map((line, index) =>
     new window.docx.Paragraph({
       heading: index === 0 ? window.docx.HeadingLevel.TITLE : undefined,
+      pageBreakBefore: line === 'GABARITO',
       spacing: { after: line ? 140 : 60 },
       children: [new window.docx.TextRun({ text: line || ' ', bold: line === 'GABARITO', color: line === 'GABARITO' ? '12372F' : undefined })]
     })
