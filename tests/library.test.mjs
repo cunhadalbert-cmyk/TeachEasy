@@ -102,6 +102,14 @@ test('Formulário por foto fica oculto na entrada e abre pelo botão discreto', 
   await window.happyDOM.close();
 });
 
+test('Botão por foto usa o bloco horizontal amplo aprovado', async () => {
+  const css = await readFile(new URL('../biblioteca.css', import.meta.url), 'utf8');
+  assert.match(css, /\.photo-activity-launcher\s*\{[^}]*width:\s*85%/s);
+  assert.match(css, /\.photo-activity-launcher\s*\{[^}]*max-width:\s*1500px/s);
+  assert.match(css, /\.photo-activity-launcher\s*\{[^}]*min-height:\s*142px/s);
+  assert.match(css, /\.photo-activity-launcher\s*\{[^}]*linear-gradient\(90deg/s);
+});
+
 test('Criação por foto exige uma imagem JPG ou PNG', async () => {
   const window = await createLibraryPage();
   const form = window.document.querySelector('#photo-activity-form');
