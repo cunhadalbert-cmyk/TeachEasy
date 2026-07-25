@@ -1804,3 +1804,27 @@ button{font:inherit}
     0 14px 26px rgba(30, 58, 45, 0.13),
     0 4px 8px rgba(30, 58, 45, 0.09);
 }
+
+
+/* Sombra mais escura nos oito cards */
+.initial-service-card,
+.service-card {
+  box-shadow:
+    0 24px 48px rgba(17, 39, 29, 0.26),
+    0 10px 20px rgba(17, 39, 29, 0.18),
+    0 3px 7px rgba(17, 39, 29, 0.15);
+  border-color: rgba(45, 76, 58, 0.28);
+  transition: transform .35s ease, box-shadow .35s ease, border-color .35s ease;
+}
+
+.initial-service-card:hover,
+.initial-service-card:focus-visible,
+.service-card:hover,
+.service-card:focus-within {
+  transform: translateY(-10px);
+  box-shadow:
+    0 38px 70px rgba(17, 39, 29, 0.34),
+    0 17px 30px rgba(17, 39, 29, 0.22),
+    0 5px 10px rgba(17, 39, 29, 0.17);
+  border-color: rgba(121, 39, 64, 0.42);
+}
