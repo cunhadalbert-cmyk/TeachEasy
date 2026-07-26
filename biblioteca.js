@@ -507,10 +507,6 @@ function openCollectionPreview(activity) {
       </section>
 
       <section class="worksheet-page collection-student-page collection-student-page-two">
-        <div class="student-fields">
-          <span>Nome:</span><span>Turma:</span><span>Data:</span>
-        </div>
-        <h2 class="activity-continuation-title">${activity.topic} — continuação</h2>
         <ol class="question-list collection-question-list" start="4">${questionMarkup(activity, activity.questions.slice(3, 6))}</ol>
       </section>
 

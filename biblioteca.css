@@ -561,19 +561,16 @@
   font-family: Arial, sans-serif;
 }
 
+.collection-student-page .student-fields {
+  grid-template-columns: 2fr 1fr 1fr;
+}
+
 .collection-student-page h1 {
   margin: 20px 0 14px;
   color: #111;
   font-family: Arial, sans-serif;
   font-size: 24px;
   text-align: center;
-}
-
-.activity-continuation-title {
-  margin: 20px 0 26px;
-  color: #111;
-  font-family: Arial, sans-serif;
-  font-size: 18px;
 }
 
 .collection-instruction {
@@ -603,6 +600,10 @@
   margin-bottom: 24px;
   break-inside: avoid;
   page-break-inside: avoid;
+}
+
+.collection-student-page-two .collection-question-list {
+  margin-top: 0;
 }
 
 .question-alternatives {
@@ -1065,7 +1066,7 @@
   .collection-answer-key {
     color: #000;
     font-family: Arial, sans-serif;
-    font-size: 13pt;
+    font-size: 12pt;
     line-height: 1.3;
   }
 
@@ -1073,17 +1074,13 @@
     font-size: 18pt;
   }
 
-  .activity-continuation-title {
-    font-size: 18pt;
-  }
-
   .collection-instruction,
   .support-text {
-    font-size: 12pt;
+    font-size: 11.5pt;
   }
 
   .collection-question-list > li > p {
-    font-size: 13pt;
+    font-size: 12.5pt;
     line-height: 1.3;
   }
 

@@ -539,7 +539,7 @@ test('Ciências é carregada somente após etapa, ano, bimestre e disciplina', a
 test('Impressão da coleção usa A4 e gabarito separado sem marca promocional', async () => {
   const css = await readFile(new URL('../biblioteca.css', import.meta.url), 'utf8');
   assert.match(css, /@page\s*\{[^}]*size:\s*A4 portrait;[^}]*margin:\s*15mm/s);
-  assert.match(css, /\.collection-student-page,[\s\S]*font-family:\s*Arial,\s*sans-serif;[\s\S]*font-size:\s*13pt;[\s\S]*line-height:\s*1\.3/s);
+  assert.match(css, /\.collection-student-page,[\s\S]*font-family:\s*Arial,\s*sans-serif;[\s\S]*font-size:\s*12pt;[\s\S]*line-height:\s*1\.3/s);
   assert.match(css, /\.collection-student-page h1\s*\{[^}]*font-size:\s*18pt/s);
   assert.match(css, /\.question-alternatives\s*\{[^}]*font-size:\s*12pt/s);
   assert.match(css, /\.collection-answer-key\s*\{[^}]*break-before:\s*page;[^}]*font-size:\s*11pt/s);
@@ -653,12 +653,16 @@ test('Atividade de seis questões ocupa duas folhas e mantém gabarito separado'
   assert.equal(studentPages[1].querySelectorAll('.collection-question-list > li').length, 3);
   assert.ok(studentPages[0].querySelector('.support-text'));
   assert.equal(studentPages[1].querySelector('.support-text'), null);
+  assert.equal(studentPages[0].querySelectorAll('.student-fields').length, 1);
+  assert.equal(studentPages[1].querySelector('.student-fields'), null);
+  assert.equal(studentPages[1].querySelector('h1, h2, h3'), null);
+  assert.doesNotMatch(studentPages[1].textContent, /continuação/i);
   assert.equal(studentPages[1].querySelector('.collection-question-list').getAttribute('start'), '4');
   assert.ok(preview.querySelector('.collection-answer-key'));
 
   const css = await readFile(new URL('../biblioteca.css', import.meta.url), 'utf8');
-  assert.match(css, /\.collection-instruction,\s*\.support-text\s*\{[^}]*font-size:\s*12pt/s);
-  assert.match(css, /\.collection-question-list > li > p\s*\{[^}]*font-size:\s*13pt;[^}]*line-height:\s*1\.3/s);
+  assert.match(css, /\.collection-instruction,\s*\.support-text\s*\{[^}]*font-size:\s*11\.5pt/s);
+  assert.match(css, /\.collection-question-list > li > p\s*\{[^}]*font-size:\s*12\.5pt;[^}]*line-height:\s*1\.3/s);
   assert.match(css, /\.collection-question-list > li\s*\{[^}]*break-inside:\s*avoid;[^}]*page-break-inside:\s*avoid;/s);
   await window.happyDOM.close();
 });
