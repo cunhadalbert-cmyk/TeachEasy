@@ -1,41 +1,67 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360">
-  <rect width="1200" height="360" fill="white"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="400" viewBox="0 0 1200 400">
+  <rect width="1200" height="400" fill="#fff"/>
   <defs>
-    <pattern id="terra" width="14" height="14" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="14" stroke="#5b4610" stroke-width="4"/></pattern>
-    <pattern id="folha" width="16" height="16" patternUnits="userSpaceOnUse"><circle cx="4" cy="4" r="3" fill="#1f5637"/></pattern>
+    <pattern id="terra" width="12" height="12" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="12" stroke="#8a6426" stroke-width="3"/>
+    </pattern>
+    <pattern id="folha" width="14" height="14" patternUnits="userSpaceOnUse">
+      <circle cx="4" cy="4" r="2.5" fill="#2e7d45"/>
+    </pattern>
   </defs>
-  <g stroke="#111" stroke-width="5" fill="none">
-    <rect x="15" y="15" width="285" height="330"/>
-    <rect x="315" y="15" width="285" height="330"/>
-    <rect x="615" y="15" width="285" height="330"/>
-    <rect x="915" y="15" width="270" height="330"/>
+
+  <g stroke="#171717" stroke-width="4" fill="none">
+    <rect x="12" y="12" width="282" height="376" rx="4"/>
+    <rect x="312" y="12" width="282" height="376" rx="4"/>
+    <rect x="612" y="12" width="282" height="376" rx="4"/>
+    <rect x="912" y="12" width="276" height="376" rx="4"/>
   </g>
-  <g stroke="#111" stroke-width="5" font-family="Arial" font-size="26" fill="#111">
-    <g transform="translate(60 120)">
-      <circle cx="40" cy="60" r="26" fill="#fff"/><path d="M40 86v70M40 100l-30 26M40 100l30 26M40 156l-20 50M40 156l20 50" fill="none"/>
-      <path d="M150 230h70l-10-70h-50Z" fill="url(#terra)"/><path d="M185 160v-40M185 135c-22 0-30-18-30-18 20-6 30 18 30 18Z" fill="url(#folha)"/>
-      <path d="M175 118c14 22 6 40 6 40" fill="none"/>
-      <g fill="#fff"><path d="M85 30h110v52H85l-14 22 2-22h12Z"/></g>
-      <text x="100" y="65" stroke="none">Coitada!</text>
+
+  <g font-family="Arial, sans-serif" fill="#171717" stroke="#171717" stroke-width="4">
+    <!-- Quadrinho 1 -->
+    <g transform="translate(28 30)">
+      <circle cx="72" cy="170" r="25" fill="#fff"/>
+      <path d="M72 195v78M72 213l-34 28M72 213l34 28M72 273l-22 58M72 273l22 58" fill="none"/>
+      <path d="M160 292h78l-10-70h-58Z" fill="url(#terra)"/>
+      <path d="M199 222v-50" fill="none"/>
+      <path d="M199 194c-24-3-34-24-34-24 24-8 36 14 34 24Z" fill="url(#folha)"/>
+      <path d="M199 193c14 18 9 35 5 44" fill="none"/>
+      <path d="M105 72h128v58H118l-19 22 6-22Z" fill="#fff"/>
+      <text x="129" y="109" font-size="25" stroke="none">Coitada!</text>
     </g>
-    <g transform="translate(360 120)">
-      <circle cx="40" cy="60" r="26" fill="#fff"/><path d="M40 86v70M40 100l40 20M40 100l-28 26M40 156l-20 50M40 156l20 50" fill="none"/>
-      <path d="M92 108h58v42H92Z" fill="#fff"/><path d="M150 118l34-14v34Z" fill="#fff"/>
-      <g fill="#fff"><ellipse cx="180" cy="52" rx="62" ry="34"/><circle cx="126" cy="96" r="10"/><circle cx="112" cy="112" r="6"/></g>
-      <text x="146" y="62" stroke="none">Água!</text>
+
+    <!-- Quadrinho 2 -->
+    <g transform="translate(328 30)">
+      <circle cx="72" cy="170" r="25" fill="#fff"/>
+      <path d="M72 195v78M72 213l-30 28M72 213l42 18M72 273l-22 58M72 273l22 58" fill="none"/>
+      <path d="M114 210h64v50h-64Z" fill="#fff"/>
+      <path d="M178 220l34-14v34Z" fill="#fff"/>
+      <ellipse cx="186" cy="85" rx="62" ry="34" fill="#fff"/>
+      <circle cx="135" cy="128" r="10" fill="#fff"/>
+      <circle cx="119" cy="145" r="6" fill="#fff"/>
+      <text x="151" y="94" font-size="25" stroke="none">Água!</text>
     </g>
-    <g transform="translate(660 110)">
-      <circle cx="40" cy="60" r="26" fill="#fff"/><path d="M40 86v70M40 100l40 10M40 100l-28 26M40 156l-20 50M40 156l20 50" fill="none"/>
-      <path d="M80 96h50v36H80Z" fill="#fff"/><path d="M130 104l30-12v30Z" fill="#fff"/>
-      <path d="M152 118c6 24 10 48 8 70M164 116c8 24 12 48 10 72" fill="none"/>
-      <path d="M140 224h70l-10-70h-50Z" fill="url(#terra)"/>
-      <text x="70" y="40" stroke="none" font-size="40" font-weight="bold">TCHIBUM!</text>
+
+    <!-- Quadrinho 3 -->
+    <g transform="translate(628 30)">
+      <circle cx="66" cy="176" r="25" fill="#fff"/>
+      <path d="M66 201v72M66 218l-30 25M66 218l45 4M66 273l-22 58M66 273l22 58" fill="none"/>
+      <path d="M108 207h62v48h-62Z" fill="#fff"/>
+      <path d="M170 216l34-14v34Z" fill="#fff"/>
+      <path d="M204 227c5 22 10 44 8 65M217 225c7 22 12 44 10 67" fill="none" stroke="#1e6eb5"/>
+      <path d="M180 326h74l-10-68h-54Z" fill="url(#terra)"/>
+      <text x="52" y="75" font-size="34" font-weight="bold" stroke="none">TCHIBUM!</text>
     </g>
-    <g transform="translate(960 120)">
-      <circle cx="40" cy="60" r="26" fill="#fff"/><path d="M40 86v70M40 100l-30 26M40 100l30 26M40 156l-20 50M40 156l20 50" fill="none"/>
-      <path d="M120 230h70l-10-70h-50Z" fill="url(#terra)"/><path d="M155 160v-70M155 120c-24-6-28-30-28-30 24-4 28 30 28 30ZM155 132c24-6 28-30 28-30-24-4-28 30-28 30Z" fill="url(#folha)"/>
-      <g fill="#fff"><path d="M60 26h130v52H60l6 24-22-24Z"/></g>
-      <text x="72" y="60" stroke="none">Que linda!</text>
+
+    <!-- Quadrinho 4 -->
+    <g transform="translate(928 30)">
+      <circle cx="66" cy="176" r="25" fill="#fff"/>
+      <path d="M66 201v72M66 218l-30 25M66 218l34 25M66 273l-22 58M66 273l22 58" fill="none"/>
+      <path d="M157 326h78l-10-68h-58Z" fill="url(#terra)"/>
+      <path d="M196 258v-105" fill="none"/>
+      <path d="M196 198c-28-6-36-34-36-34 29-5 38 27 36 34Z" fill="url(#folha)"/>
+      <path d="M196 214c28-6 36-34 36-34-29-5-38 27-36 34Z" fill="url(#folha)"/>
+      <path d="M95 68h142v58H108l-19 22 6-22Z" fill="#fff"/>
+      <text x="118" y="105" font-size="25" stroke="none">Que linda!</text>
     </g>
   </g>
 </svg>
