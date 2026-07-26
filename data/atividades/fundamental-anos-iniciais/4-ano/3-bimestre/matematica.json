@@ -954,6 +954,1445 @@
         "revisor": "revisao-pedagogica-teacheasy",
         "dataRevisao": "2026-07-25"
       }
+    },
+    {
+      "id": "efi-4ano-b3-mat-numeros-ate-dez-milhar-d",
+      "titulo": "Números em diferentes representações",
+      "tema": "Números naturais",
+      "sequencia": "D",
+      "tipoSequencia": "Ampliação",
+      "dificuldade": "facil",
+      "objetivo": "Ler, escrever, comparar e ordenar números naturais até a dezena de milhar.",
+      "bncc": [
+        {
+          "codigo": "EF04MA01",
+          "descricaoResumida": "Ler, escrever e ordenar números naturais até a ordem de dezenas de milhar."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": true,
+      "figuras": [
+        {
+          "id": "fig-num-01",
+          "arquivo": "assets/atividades/matematica/fig-num-01.svg",
+          "descricao": "Dois cartões mostram os números 9.308 e 9.380 com as ordens de milhar, centena, dezena e unidade alinhadas.",
+          "funcaoPedagogica": "Apoiar a comparação pelo valor posicional.",
+          "posicaoSugerida": "junto da questão 3",
+          "textoAlternativo": "Dois números alinhados em uma tabela de valor posicional: 9.308 e 9.380.",
+          "compativelPretoBranco": true
+        }
+      ],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia cada representação e registre as respostas com atenção ao valor posicional.",
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "escrita-numerica",
+          "enunciado": "Escreva em algarismos: oito mil, quatrocentos e trinta e dois.",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 2,
+          "tipo": "escrita-por-extenso",
+          "enunciado": "Escreva por extenso o número 6.075.",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 3,
+          "tipo": "comparacao",
+          "enunciado": "Complete com >, < ou =: 9.308 ___ 9.380.",
+          "alternativas": [],
+          "figuraId": "fig-num-01",
+          "espacoResposta": "pequeno"
+        },
+        {
+          "numero": 4,
+          "tipo": "ordenacao",
+          "enunciado": "Coloque em ordem crescente: 4.906, 4.690, 4.960 e 4.609.",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 5,
+          "tipo": "valor-posicional",
+          "enunciado": "No número 7.542, qual é o valor do algarismo 5?",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 6,
+          "tipo": "problema",
+          "enunciado": "Uma biblioteca registrou 8.945 empréstimos em um ano. No ano seguinte, registrou 9.054. Em qual ano houve mais empréstimos e qual foi a diferença?",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "grande"
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "8.432.",
+          "justificativa": "O número possui 8 milhares, 4 centenas, 3 dezenas e 2 unidades."
+        },
+        {
+          "numero": 2,
+          "resposta": "Seis mil e setenta e cinco.",
+          "justificativa": "O zero indica ausência de centenas."
+        },
+        {
+          "numero": 3,
+          "resposta": "9.308 < 9.380.",
+          "justificativa": "Os milhares e centenas são iguais; nas dezenas, 0 é menor que 8."
+        },
+        {
+          "numero": 4,
+          "resposta": "4.609, 4.690, 4.906, 4.960.",
+          "justificativa": "A comparação é feita da maior ordem para a menor."
+        },
+        {
+          "numero": 5,
+          "resposta": "500.",
+          "justificativa": "O algarismo 5 ocupa a ordem das centenas."
+        },
+        {
+          "numero": 6,
+          "resposta": "No segundo ano, com 109 empréstimos a mais.",
+          "justificativa": "9.054 − 8.945 = 109."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-26"
+      }
+    },
+    {
+      "id": "efi-4ano-b3-mat-compor-decompor-e",
+      "titulo": "Compor e decompor números",
+      "tema": "Sistema de numeração decimal",
+      "sequencia": "E",
+      "tipoSequencia": "Prática",
+      "dificuldade": "intermediaria",
+      "objetivo": "Compor e decompor números naturais usando diferentes adições e multiplicações por potências de dez.",
+      "bncc": [
+        {
+          "codigo": "EF04MA02",
+          "descricaoResumida": "Mostrar, por decomposição e composição, que todo número natural pode ser escrito por meio de adições e multiplicações por potências de dez."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Use o valor de cada ordem para compor e decompor os números.",
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "completar",
+          "enunciado": "Complete: 5.682 = 5.000 + ____ + 80 + 2.",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 2,
+          "tipo": "composicao",
+          "enunciado": "Qual número é formado por 7 milhares, 3 centenas, 0 dezenas e 9 unidades?",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 3,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual decomposição representa 4.205?",
+          "alternativas": [
+            "4.000 + 200 + 5",
+            "400 + 20 + 5",
+            "4.000 + 20 + 5",
+            "4.000 + 200 + 50"
+          ],
+          "figuraId": null,
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 4,
+          "tipo": "equivalencia",
+          "enunciado": "Escreva outra decomposição correta para 3.460, diferente de 3.000 + 400 + 60.",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 5,
+          "tipo": "analise-erro",
+          "enunciado": "Joana escreveu 8.071 = 8.000 + 700 + 1. Explique o erro e corrija.",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 6,
+          "tipo": "problema",
+          "enunciado": "Um painel mostra 6.000 + 900 + 40 + 7 pontos. Quantos pontos aparecem no painel?",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "medio"
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "600.",
+          "justificativa": "O 6 ocupa a ordem das centenas."
+        },
+        {
+          "numero": 2,
+          "resposta": "7.309.",
+          "justificativa": "São 7.000 + 300 + 9."
+        },
+        {
+          "numero": 3,
+          "resposta": "Alternativa A.",
+          "justificativa": "4.205 possui 4 milhares, 2 centenas, nenhuma dezena e 5 unidades."
+        },
+        {
+          "numero": 4,
+          "resposta": "Exemplo: 3.400 + 60 ou 3.000 + 460.",
+          "justificativa": "Aceitar qualquer decomposição equivalente a 3.460."
+        },
+        {
+          "numero": 5,
+          "resposta": "O algarismo 7 representa 70, não 700. Correto: 8.000 + 70 + 1.",
+          "justificativa": "O 7 está na ordem das dezenas."
+        },
+        {
+          "numero": 6,
+          "resposta": "6.947 pontos.",
+          "justificativa": "6.000 + 900 + 40 + 7 = 6.947."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-26"
+      }
+    },
+    {
+      "id": "efi-4ano-b3-mat-adicao-subtracao-f",
+      "titulo": "Caminhos para somar e subtrair",
+      "tema": "Adição e subtração",
+      "sequencia": "F",
+      "tipoSequencia": "Consolidação",
+      "dificuldade": "intermediaria",
+      "objetivo": "Resolver problemas de adição e subtração e explicar estratégias de cálculo.",
+      "bncc": [
+        {
+          "codigo": "EF04MA03",
+          "descricaoResumida": "Resolver e elaborar problemas com números naturais envolvendo adição e subtração."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Resolva cada situação e mostre os cálculos usados.",
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "calculo",
+          "enunciado": "Calcule 2.748 + 1.965.",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 2,
+          "tipo": "calculo",
+          "enunciado": "Calcule 7.000 − 2.486.",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 3,
+          "tipo": "problema",
+          "enunciado": "Uma campanha arrecadou 3.275 livros na primeira semana e 2.846 na segunda. Quantos livros foram arrecadados?",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 4,
+          "tipo": "problema",
+          "enunciado": "Um reservatório tinha 8.500 litros e foram usados 3.765 litros. Quantos litros restaram?",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 5,
+          "tipo": "analise-estrategia",
+          "enunciado": "Explique como calcular 4.999 + 638 usando a ideia de completar 5.000.",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 6,
+          "tipo": "problema-inverso",
+          "enunciado": "Depois de receber 1.875 visitantes, um museu totalizou 6.420 visitantes no mês. Quantos já haviam visitado o museu antes?",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "medio"
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "4.713.",
+          "justificativa": "2.748 + 1.965 = 4.713."
+        },
+        {
+          "numero": 2,
+          "resposta": "4.514.",
+          "justificativa": "7.000 − 2.486 = 4.514."
+        },
+        {
+          "numero": 3,
+          "resposta": "6.121 livros.",
+          "justificativa": "3.275 + 2.846 = 6.121."
+        },
+        {
+          "numero": 4,
+          "resposta": "4.735 litros.",
+          "justificativa": "8.500 − 3.765 = 4.735."
+        },
+        {
+          "numero": 5,
+          "resposta": "Somar 1 a 4.999 para obter 5.000 e retirar esse 1 de 638: 5.000 + 637 = 5.637.",
+          "justificativa": "A compensação preserva a soma."
+        },
+        {
+          "numero": 6,
+          "resposta": "4.545 visitantes.",
+          "justificativa": "6.420 − 1.875 = 4.545."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-26"
+      }
+    },
+    {
+      "id": "efi-4ano-b3-mat-estimar-conferir-g",
+      "titulo": "Estimar antes de calcular",
+      "tema": "Estimativa e cálculo",
+      "sequencia": "G",
+      "tipoSequencia": "Ampliação",
+      "dificuldade": "intermediaria",
+      "objetivo": "Usar arredondamentos e estimativas para antecipar e conferir resultados.",
+      "bncc": [
+        {
+          "codigo": "EF04MA05",
+          "descricaoResumida": "Utilizar propriedades das operações para desenvolver estratégias de cálculo."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Faça primeiro uma estimativa e depois confira com o cálculo exato quando solicitado.",
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "estimativa",
+          "enunciado": "Arredonde 3.476 para a centena mais próxima.",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 2,
+          "tipo": "estimativa",
+          "enunciado": "Sem calcular exatamente, escolha a melhor estimativa para 2.980 + 4.120.",
+          "alternativas": [
+            "5.000",
+            "6.000",
+            "7.000",
+            "8.000"
+          ],
+          "figuraId": null,
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 3,
+          "tipo": "analise-resultado",
+          "enunciado": "Carlos afirmou que 1.986 + 2.115 = 8.001. Use uma estimativa para mostrar que o resultado não pode estar correto.",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 4,
+          "tipo": "estimativa",
+          "enunciado": "Estime 7.842 − 3.126 arredondando os números para a centena mais próxima.",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 5,
+          "tipo": "comparacao",
+          "enunciado": "Qual resultado é mais razoável para 49 × 8: 392 ou 3.920? Justifique pela estimativa.",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 6,
+          "tipo": "problema",
+          "enunciado": "Uma feira recebeu 1.948 pessoas pela manhã e 2.071 à tarde. Estime o total arredondando para a centena e depois calcule o total exato.",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "medio"
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "3.500.",
+          "justificativa": "Como 76 é maior que 50, arredonda-se 3.476 para 3.500."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa C: 7.000.",
+          "justificativa": "3.000 + 4.000 ≈ 7.000."
+        },
+        {
+          "numero": 3,
+          "resposta": "O resultado deveria estar próximo de 4.000; o valor exato é 4.101.",
+          "justificativa": "2.000 + 2.000 ≈ 4.000."
+        },
+        {
+          "numero": 4,
+          "resposta": "Aproximadamente 4.700.",
+          "justificativa": "7.800 − 3.100 = 4.700."
+        },
+        {
+          "numero": 5,
+          "resposta": "392.",
+          "justificativa": "50 × 8 = 400, portanto 392 é razoável."
+        },
+        {
+          "numero": 6,
+          "resposta": "Estimativa: 4.000 pessoas. Exato: 4.019 pessoas.",
+          "justificativa": "1.900 + 2.100 = 4.000; 1.948 + 2.071 = 4.019."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-26"
+      }
+    },
+    {
+      "id": "efi-4ano-b3-mat-fracoes-unitarias-h",
+      "titulo": "Partes iguais de um inteiro",
+      "tema": "Frações unitárias",
+      "sequencia": "H",
+      "tipoSequencia": "Introdução",
+      "dificuldade": "facil",
+      "objetivo": "Reconhecer e comparar frações unitárias em representações de partes iguais.",
+      "bncc": [
+        {
+          "codigo": "EF04MA09",
+          "descricaoResumida": "Reconhecer frações unitárias usuais como unidades de medida menores do que uma unidade."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": true,
+      "figuras": [
+        {
+          "id": "fig-fracao-01",
+          "arquivo": "assets/atividades/matematica/fig-fracao-01.svg",
+          "descricao": "Retângulo dividido em quatro partes iguais, com a primeira parte hachurada.",
+          "funcaoPedagogica": "Permitir identificar visualmente a fração um quarto.",
+          "posicaoSugerida": "antes da questão 1",
+          "textoAlternativo": "Retângulo dividido em quatro partes iguais, uma delas destacada.",
+          "compativelPretoBranco": true
+        }
+      ],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Observe as partes iguais e registre a fração correspondente.",
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "identificacao",
+          "enunciado": "Uma barra foi dividida em 4 partes iguais e uma parte foi pintada. Que fração representa a parte pintada?",
+          "alternativas": [],
+          "figuraId": "fig-fracao-01",
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 2,
+          "tipo": "comparacao",
+          "enunciado": "Qual é maior: 1/3 ou 1/6? Explique.",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 3,
+          "tipo": "multipla-escolha",
+          "enunciado": "Uma folha foi dividida em 8 partes iguais. Uma dessas partes representa:",
+          "alternativas": [
+            "1/2",
+            "1/4",
+            "1/8",
+            "1/10"
+          ],
+          "figuraId": null,
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 4,
+          "tipo": "associacao",
+          "enunciado": "Associe: A) metade; B) terça parte; C) quarta parte. ( ) 1/4  ( ) 1/2  ( ) 1/3.",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 5,
+          "tipo": "problema",
+          "enunciado": "Uma fita de 1 metro foi dividida em 5 pedaços iguais. Que fração do metro corresponde a cada pedaço?",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 6,
+          "tipo": "discursiva",
+          "enunciado": "Explique por que 1/10 é menor que 1/5, mesmo que 10 seja maior que 5.",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "medio"
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "1/4.",
+          "justificativa": "Uma de quatro partes iguais foi pintada."
+        },
+        {
+          "numero": 2,
+          "resposta": "1/3.",
+          "justificativa": "Ao dividir o mesmo inteiro em menos partes, cada parte é maior."
+        },
+        {
+          "numero": 3,
+          "resposta": "Alternativa C: 1/8.",
+          "justificativa": "É uma parte entre oito partes iguais."
+        },
+        {
+          "numero": 4,
+          "resposta": "C; A; B.",
+          "justificativa": "1/4 é quarta parte, 1/2 é metade e 1/3 é terça parte."
+        },
+        {
+          "numero": 5,
+          "resposta": "1/5 do metro.",
+          "justificativa": "Cada pedaço é uma de cinco partes iguais."
+        },
+        {
+          "numero": 6,
+          "resposta": "Porque o denominador indica em quantas partes iguais o inteiro foi dividido; dez partes são menores que cinco partes.",
+          "justificativa": "Comparar frações unitárias pelo denominador."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-26"
+      }
+    },
+    {
+      "id": "efi-4ano-b3-mat-probabilidade-eventos-i",
+      "titulo": "Prever resultados em situações aleatórias",
+      "tema": "Probabilidade e eventos aleatórios",
+      "sequencia": "I",
+      "tipoSequencia": "Introdução",
+      "dificuldade": "intermediaria",
+      "objetivo": "Identificar resultados possíveis e comparar chances em experimentos aleatórios simples.",
+      "bncc": [
+        {
+          "codigo": "EF04MA26",
+          "descricaoResumida": "Identificar, entre eventos aleatórios cotidianos, aqueles que têm maior chance de ocorrência."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": true,
+      "figuras": [
+        {
+          "id": "fig-probabilidade-01",
+          "arquivo": "assets/atividades/matematica/fig-probabilidade-01.svg",
+          "descricao": "Roleta circular dividida em oito setores iguais: quatro azuis, dois amarelos, um verde e um branco, diferenciados também por padrões gráficos.",
+          "funcaoPedagogica": "Permitir comparar chances pela contagem de setores iguais, sem depender apenas das cores.",
+          "posicaoSugerida": "antes das questões 1 a 4",
+          "textoAlternativo": "Roleta com oito partes iguais: quatro partes azuis com pontos, duas amarelas com linhas, uma verde quadriculada e uma branca.",
+          "compativelPretoBranco": true
+        }
+      ],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Observe a roleta, conte os setores iguais e justifique cada comparação de chance.",
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "resultados-possiveis",
+          "enunciado": "Observe a roleta. Quais são as quatro cores que podem ser sorteadas?",
+          "alternativas": [],
+          "figuraId": "fig-probabilidade-01",
+          "espacoResposta": "pequeno"
+        },
+        {
+          "numero": 2,
+          "tipo": "comparacao",
+          "enunciado": "Ao girar a roleta uma vez, é mais provável obter azul ou amarelo? Explique usando a quantidade de setores.",
+          "alternativas": [],
+          "figuraId": "fig-probabilidade-01",
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 3,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual cor tem a menor chance de ser sorteada?",
+          "alternativas": [
+            "Azul",
+            "Amarelo",
+            "Verde e branco têm a mesma menor chance",
+            "Todas têm a mesma chance"
+          ],
+          "figuraId": "fig-probabilidade-01",
+          "espacoResposta": "pequeno"
+        },
+        {
+          "numero": 4,
+          "tipo": "fracao-probabilidade",
+          "enunciado": "A roleta tem oito setores iguais. Que fração dos setores é azul?",
+          "alternativas": [],
+          "figuraId": "fig-probabilidade-01",
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 5,
+          "tipo": "evento-impossivel",
+          "enunciado": "É possível sortear a cor vermelha nessa roleta? Responda e justifique.",
+          "alternativas": [],
+          "figuraId": "fig-probabilidade-01",
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 6,
+          "tipo": "planejamento",
+          "enunciado": "Para que amarelo e azul tenham a mesma chance, quantos dos quatro setores azuis devem ser alterados para amarelo? Explique a nova distribuição.",
+          "alternativas": [],
+          "figuraId": "fig-probabilidade-01",
+          "espacoResposta": "grande"
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Azul, amarelo, verde e branco.",
+          "justificativa": "Essas são as quatro cores presentes nos oito setores da roleta."
+        },
+        {
+          "numero": 2,
+          "resposta": "Azul.",
+          "justificativa": "Há quatro setores azuis e dois amarelos; como os setores são iguais, quatro resultados favoráveis representam chance maior que dois."
+        },
+        {
+          "numero": 3,
+          "resposta": "Alternativa C.",
+          "justificativa": "Verde e branco ocupam um setor cada e, portanto, têm a mesma menor chance."
+        },
+        {
+          "numero": 4,
+          "resposta": "4/8, equivalente a 1/2.",
+          "justificativa": "Quatro dos oito setores iguais são azuis."
+        },
+        {
+          "numero": 5,
+          "resposta": "Não.",
+          "justificativa": "Nenhum setor é vermelho, então esse resultado é impossível nessa roleta."
+        },
+        {
+          "numero": 6,
+          "resposta": "Alterar um setor azul para amarelo; a nova distribuição terá três setores azuis e três amarelos.",
+          "justificativa": "Partindo de quatro azuis e dois amarelos, a troca reduz azul para três e aumenta amarelo para três, igualando as chances."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-26"
+      }
+    },
+    {
+      "id": "efi-4ano-b3-mat-localizacao-mapas-j",
+      "titulo": "Percursos em uma malha",
+      "tema": "Localização e deslocamento",
+      "sequencia": "J",
+      "tipoSequencia": "Introdução",
+      "dificuldade": "facil",
+      "objetivo": "Descrever posições e deslocamentos em uma malha quadriculada usando referências.",
+      "bncc": [
+        {
+          "codigo": "EF04MA16",
+          "descricaoResumida": "Descrever deslocamentos e localização de pessoas e objetos no espaço por meio de malhas e referências."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": true,
+      "figuras": [
+        {
+          "id": "fig-malha-01",
+          "arquivo": "assets/atividades/matematica/fig-malha-01.svg",
+          "descricao": "Malha 5 por 5 com escola, praça, biblioteca, parque e posto de saúde em posições identificadas.",
+          "funcaoPedagogica": "Apoiar leitura de coordenadas e descrição de percursos.",
+          "posicaoSugerida": "junto das questões 1 a 4 e 6",
+          "textoAlternativo": "Malha quadriculada com cinco locais identificados.",
+          "compativelPretoBranco": true
+        }
+      ],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Use as linhas, colunas e setas da malha para descrever os percursos.",
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "localizacao",
+          "enunciado": "Na malha, em qual coordenada está a biblioteca?",
+          "alternativas": [],
+          "figuraId": "fig-malha-01",
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 2,
+          "tipo": "deslocamento",
+          "enunciado": "Partindo da escola, siga 2 quadrados para a direita e 1 para cima. Em qual local você chega?",
+          "alternativas": [],
+          "figuraId": "fig-malha-01",
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 3,
+          "tipo": "percurso",
+          "enunciado": "Descreva um percurso da praça até o posto de saúde usando direita, esquerda, para cima e para baixo.",
+          "alternativas": [],
+          "figuraId": "fig-malha-01",
+          "espacoResposta": "grande"
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao-percurso",
+          "enunciado": "Qual é o caminho mais curto entre a escola e o parque? Registre a quantidade de quadrados.",
+          "alternativas": [],
+          "figuraId": "fig-malha-01",
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 5,
+          "tipo": "orientacao",
+          "enunciado": "Se uma pessoa está voltada para cima da folha e gira um quarto de volta para a direita, para qual lado passa a olhar?",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 6,
+          "tipo": "elaboracao",
+          "enunciado": "Crie um percurso de exatamente 6 quadrados na malha e indique o ponto de partida e o de chegada.",
+          "alternativas": [],
+          "figuraId": "fig-malha-01",
+          "espacoResposta": "grande"
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "C2.",
+          "justificativa": "A biblioteca está na coluna C e linha 2."
+        },
+        {
+          "numero": 2,
+          "resposta": "Biblioteca.",
+          "justificativa": "A escola está em A3; dois quadrados à direita e um para cima levam a C2, onde está a biblioteca."
+        },
+        {
+          "numero": 3,
+          "resposta": "Exemplo: 2 quadrados para a direita e 2 para baixo.",
+          "justificativa": "Aceitar qualquer percurso correto conforme a malha."
+        },
+        {
+          "numero": 4,
+          "resposta": "4 quadrados.",
+          "justificativa": "Conferir o menor percurso possível sem diagonais."
+        },
+        {
+          "numero": 5,
+          "resposta": "Para o lado direito da folha.",
+          "justificativa": "Um quarto de volta corresponde a 90 graus."
+        },
+        {
+          "numero": 6,
+          "resposta": "Critérios de correção: indicar pontos de partida e chegada existentes na malha e apresentar um percurso contínuo de exatamente 6 quadrados.",
+          "justificativa": "Conferir a contagem dos seis deslocamentos e a coerência entre o percurso e os pontos indicados."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-26"
+      }
+    },
+    {
+      "id": "efi-4ano-b3-mat-angulos-figuras-k",
+      "titulo": "Ângulos nas formas ao nosso redor",
+      "tema": "Ângulos",
+      "sequencia": "K",
+      "tipoSequencia": "Prática",
+      "dificuldade": "intermediaria",
+      "objetivo": "Reconhecer ângulos retos e não retos em figuras e objetos do cotidiano.",
+      "bncc": [
+        {
+          "codigo": "EF04MA18",
+          "descricaoResumida": "Reconhecer ângulos retos e não retos em figuras poligonais."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": true,
+      "figuras": [
+        {
+          "id": "fig-angulos-01",
+          "arquivo": "assets/atividades/matematica/fig-angulos-01.svg",
+          "descricao": "Conjunto de um retângulo, um triângulo e dois ângulos isolados, um reto e outro não reto.",
+          "funcaoPedagogica": "Permitir comparar visualmente ângulos retos e não retos.",
+          "posicaoSugerida": "junto das questões 1 e 2",
+          "textoAlternativo": "Retângulo, triângulo e exemplos de ângulo reto e não reto.",
+          "compativelPretoBranco": true
+        }
+      ],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Observe os cantos das figuras e compare-os com um ângulo reto.",
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "identificacao",
+          "enunciado": "Qual das figuras apresenta quatro ângulos retos?",
+          "alternativas": [
+            "Triângulo",
+            "Retângulo",
+            "Círculo",
+            "Pentágono irregular"
+          ],
+          "figuraId": "fig-angulos-01",
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 2,
+          "tipo": "classificacao",
+          "enunciado": "Classifique o ângulo A da figura como reto ou não reto.",
+          "alternativas": [],
+          "figuraId": "fig-angulos-01",
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 3,
+          "tipo": "cotidiano",
+          "enunciado": "Cite dois objetos da sala de aula que tenham cantos com ângulo reto.",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 4,
+          "tipo": "analise",
+          "enunciado": "Um quadrado foi inclinado no papel. Seus ângulos deixaram de ser retos? Explique.",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 5,
+          "tipo": "contagem",
+          "enunciado": "Quantos ângulos retos há em dois retângulos separados?",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 6,
+          "tipo": "desenho",
+          "enunciado": "Desenhe uma figura com exatamente dois ângulos retos e explique onde eles aparecem.",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "grande"
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Alternativa B: Retângulo.",
+          "justificativa": "Todo retângulo possui quatro ângulos retos."
+        },
+        {
+          "numero": 2,
+          "resposta": "Ângulo reto.",
+          "justificativa": "A abertura corresponde a um quarto de volta."
+        },
+        {
+          "numero": 3,
+          "resposta": "Exemplos: canto da lousa, folha, mesa, livro ou porta.",
+          "justificativa": "Aceitar objetos com cantos de 90 graus."
+        },
+        {
+          "numero": 4,
+          "resposta": "Não.",
+          "justificativa": "Girar a figura muda sua posição, mas não altera a medida dos ângulos."
+        },
+        {
+          "numero": 5,
+          "resposta": "8 ângulos retos.",
+          "justificativa": "Cada retângulo tem 4; 2 × 4 = 8."
+        },
+        {
+          "numero": 6,
+          "resposta": "Critérios de correção: desenho com exatamente dois ângulos de 90 graus, ambos identificados.",
+          "justificativa": "Os dois ângulos indicados devem coincidir com um quarto de volta; não pode haver terceiro ângulo reto na figura."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-26"
+      }
+    },
+    {
+      "id": "efi-4ano-b3-mat-perimetro-area-l",
+      "titulo": "Contorno e superfície",
+      "tema": "Perímetro e área",
+      "sequencia": "L",
+      "tipoSequencia": "Consolidação",
+      "dificuldade": "intermediaria",
+      "objetivo": "Distinguir perímetro de área e resolver medições em malhas quadriculadas.",
+      "bncc": [
+        {
+          "codigo": "EF04MA20",
+          "descricaoResumida": "Medir e estimar comprimentos, perímetros e áreas em situações cotidianas."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": true,
+      "figuras": [
+        {
+          "id": "fig-area-01",
+          "arquivo": "assets/atividades/matematica/fig-area-01.svg",
+          "descricao": "Figura em formato de L formada por dez quadrados unitários em uma malha.",
+          "funcaoPedagogica": "Apoiar a contagem de unidades de área e de lados do perímetro.",
+          "posicaoSugerida": "junto das questões 4 e 5",
+          "textoAlternativo": "Figura em L formada por dez quadrados em uma malha.",
+          "compativelPretoBranco": true
+        }
+      ],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Considere cada lado do quadradinho como 1 cm e cada quadradinho como 1 cm².",
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "perimetro",
+          "enunciado": "Um retângulo mede 6 cm de comprimento e 3 cm de largura. Qual é o perímetro?",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 2,
+          "tipo": "area",
+          "enunciado": "Qual é a área do mesmo retângulo?",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 3,
+          "tipo": "comparacao",
+          "enunciado": "Duas figuras podem ter a mesma área e perímetros diferentes? Explique com um exemplo.",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 4,
+          "tipo": "malha",
+          "enunciado": "Conte a área da figura desenhada na malha.",
+          "alternativas": [],
+          "figuraId": "fig-area-01",
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 5,
+          "tipo": "malha",
+          "enunciado": "Calcule o perímetro da figura desenhada na malha.",
+          "alternativas": [],
+          "figuraId": "fig-area-01",
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 6,
+          "tipo": "problema",
+          "enunciado": "Um jardim retangular mede 8 m por 5 m. Quantos metros de cerca são necessários para contorná-lo e qual é sua área?",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "medio"
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "18 cm.",
+          "justificativa": "6 + 3 + 6 + 3 = 18."
+        },
+        {
+          "numero": 2,
+          "resposta": "18 cm².",
+          "justificativa": "6 × 3 = 18."
+        },
+        {
+          "numero": 3,
+          "resposta": "Sim. Exemplo: retângulos 1 × 6 e 2 × 3 têm área 6, mas perímetros 14 e 10.",
+          "justificativa": "Área mede superfície; perímetro mede contorno."
+        },
+        {
+          "numero": 4,
+          "resposta": "10 cm².",
+          "justificativa": "A figura ocupa 10 quadradinhos inteiros."
+        },
+        {
+          "numero": 5,
+          "resposta": "22 cm.",
+          "justificativa": "Contando somente os lados externos dos dez quadradinhos da figura em L, obtêm-se 22 segmentos de 1 cm."
+        },
+        {
+          "numero": 6,
+          "resposta": "26 m de cerca e 40 m² de área.",
+          "justificativa": "Perímetro: 8 + 5 + 8 + 5 = 26; área: 8 × 5 = 40."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-26"
+      }
+    },
+    {
+      "id": "efi-4ano-b3-mat-tempo-duracao-m",
+      "titulo": "Horários e duração de atividades",
+      "tema": "Medidas de tempo",
+      "sequencia": "M",
+      "tipoSequencia": "Prática",
+      "dificuldade": "intermediaria",
+      "objetivo": "Ler horários e calcular durações e intervalos de tempo.",
+      "bncc": [
+        {
+          "codigo": "EF04MA22",
+          "descricaoResumida": "Ler e registrar medidas e intervalos de tempo em horas, minutos e segundos."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Registre os horários e mostre como calculou cada intervalo.",
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "duracao",
+          "enunciado": "Uma aula começou às 8h15 e terminou às 9h05. Quanto tempo durou?",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 2,
+          "tipo": "horario-final",
+          "enunciado": "Um filme começou às 14h30 e durou 1 hora e 25 minutos. A que horas terminou?",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 3,
+          "tipo": "horario-inicial",
+          "enunciado": "Uma viagem terminou às 18h10 e durou 2 horas e 40 minutos. A que horas começou?",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 4,
+          "tipo": "conversao",
+          "enunciado": "Quantos minutos há em 3 horas e 15 minutos?",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 5,
+          "tipo": "comparacao",
+          "enunciado": "Qual duração é maior: 95 minutos ou 1 hora e 40 minutos? Qual é a diferença?",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 6,
+          "tipo": "problema",
+          "enunciado": "A feira abre às 7h45 e fecha às 16h30, com pausa de 45 minutos. Por quanto tempo fica efetivamente aberta?",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "medio"
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "50 minutos.",
+          "justificativa": "De 8h15 a 9h são 45 minutos; mais 5 minutos."
+        },
+        {
+          "numero": 2,
+          "resposta": "15h55.",
+          "justificativa": "14h30 + 1h25 = 15h55."
+        },
+        {
+          "numero": 3,
+          "resposta": "15h30.",
+          "justificativa": "18h10 − 2h40 = 15h30."
+        },
+        {
+          "numero": 4,
+          "resposta": "195 minutos.",
+          "justificativa": "3 × 60 + 15 = 195."
+        },
+        {
+          "numero": 5,
+          "resposta": "1 hora e 40 minutos é maior por 5 minutos.",
+          "justificativa": "1h40 = 100 minutos; 100 − 95 = 5."
+        },
+        {
+          "numero": 6,
+          "resposta": "8 horas.",
+          "justificativa": "De 7h45 a 16h30 são 8h45; retirando 45 minutos, restam 8h."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-26"
+      }
+    },
+    {
+      "id": "efi-4ano-b3-mat-tabelas-graficos-n",
+      "titulo": "Lendo dados de uma pesquisa",
+      "tema": "Tabelas e gráficos",
+      "sequencia": "N",
+      "tipoSequencia": "Introdução",
+      "dificuldade": "facil",
+      "objetivo": "Ler, comparar e interpretar dados apresentados em tabela e gráfico de colunas.",
+      "bncc": [
+        {
+          "codigo": "EF04MA27",
+          "descricaoResumida": "Analisar dados apresentados em tabelas simples ou de dupla entrada e em gráficos de colunas."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": true,
+      "figuras": [
+        {
+          "id": "fig-grafico-01",
+          "arquivo": "assets/atividades/matematica/fig-grafico-01.svg",
+          "descricao": "Gráfico de colunas com votos: maçã 14, banana 11, laranja 9 e uva 8.",
+          "funcaoPedagogica": "Permitir leitura, comparação e soma de dados.",
+          "posicaoSugerida": "junto de todas as questões",
+          "textoAlternativo": "Gráfico de colunas: maçã 14, banana 11, laranja 9 e uva 8 votos.",
+          "compativelPretoBranco": true
+        }
+      ],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Observe a tabela e responda usando os dados apresentados.",
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "leitura-tabela",
+          "enunciado": "Qual fruta recebeu mais votos?",
+          "alternativas": [],
+          "figuraId": "fig-grafico-01",
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 2,
+          "tipo": "leitura-tabela",
+          "enunciado": "Quantos votos recebeu a banana?",
+          "alternativas": [],
+          "figuraId": "fig-grafico-01",
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 3,
+          "tipo": "comparacao",
+          "enunciado": "Qual é a diferença entre os votos de maçã e laranja?",
+          "alternativas": [],
+          "figuraId": "fig-grafico-01",
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 4,
+          "tipo": "soma",
+          "enunciado": "Quantos estudantes participaram da pesquisa?",
+          "alternativas": [],
+          "figuraId": "fig-grafico-01",
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 5,
+          "tipo": "inferência",
+          "enunciado": "Se mais 4 estudantes votassem em uva, ela ultrapassaria a banana? Explique.",
+          "alternativas": [],
+          "figuraId": "fig-grafico-01",
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Escreva uma conclusão correta sobre a pesquisa e cite dois dados que a sustentam.",
+          "alternativas": [],
+          "figuraId": "fig-grafico-01",
+          "espacoResposta": "grande"
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Maçã.",
+          "justificativa": "Maçã recebeu 14 votos, o maior valor."
+        },
+        {
+          "numero": 2,
+          "resposta": "11 votos.",
+          "justificativa": "Esse é o valor indicado para banana."
+        },
+        {
+          "numero": 3,
+          "resposta": "5 votos.",
+          "justificativa": "14 − 9 = 5."
+        },
+        {
+          "numero": 4,
+          "resposta": "42 estudantes.",
+          "justificativa": "14 + 11 + 9 + 8 = 42."
+        },
+        {
+          "numero": 5,
+          "resposta": "Sim. Uva passaria de 8 para 12 votos, superando os 11 da banana.",
+          "justificativa": "Comparação direta dos novos totais."
+        },
+        {
+          "numero": 6,
+          "resposta": "Exemplo: maçã foi a preferida, com 14 votos, enquanto uva teve a menor votação, com 8.",
+          "justificativa": "Aceitar conclusão coerente apoiada por dois dados corretos."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-26"
+      }
+    },
+    {
+      "id": "efi-4ano-b3-mat-padroes-sequencias-o",
+      "titulo": "Descobrindo regras em sequências",
+      "tema": "Sequências numéricas",
+      "sequencia": "O",
+      "tipoSequencia": "Ampliação",
+      "dificuldade": "intermediaria",
+      "objetivo": "Identificar, descrever e aplicar regras de formação em sequências numéricas.",
+      "bncc": [
+        {
+          "codigo": "EF04MA04",
+          "descricaoResumida": "Utilizar relações entre adição e subtração e entre multiplicação e divisão para ampliar estratégias de cálculo."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Descubra a regra de cada sequência antes de completar os termos.",
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "sequencia",
+          "enunciado": "Complete: 125, 150, 175, ____, ____.",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 2,
+          "tipo": "regra",
+          "enunciado": "Qual é a regra da sequência 900, 800, 700, 600?",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 3,
+          "tipo": "sequencia",
+          "enunciado": "Complete: 6, 12, 24, 48, ____.",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 4,
+          "tipo": "analise-erro",
+          "enunciado": "Na sequência que aumenta de 35 em 35, Lucas escreveu 140, 175, 200, 245. Qual termo está errado e qual deveria ser?",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 5,
+          "tipo": "problema",
+          "enunciado": "Uma arquibancada tem 18 lugares na primeira fileira e cada fileira seguinte tem 2 lugares a mais. Quantos lugares há na quinta fileira?",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 6,
+          "tipo": "elaboracao",
+          "enunciado": "Crie uma sequência com cinco termos que comece em 40 e siga uma regra constante. Escreva também a regra.",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "medio"
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "200 e 225.",
+          "justificativa": "A sequência aumenta de 25 em 25."
+        },
+        {
+          "numero": 2,
+          "resposta": "Diminuir 100 a cada termo.",
+          "justificativa": "900 − 100 = 800 e assim por diante."
+        },
+        {
+          "numero": 3,
+          "resposta": "96.",
+          "justificativa": "Cada termo é o dobro do anterior."
+        },
+        {
+          "numero": 4,
+          "resposta": "200 está errado; deveria ser 210.",
+          "justificativa": "175 + 35 = 210."
+        },
+        {
+          "numero": 5,
+          "resposta": "26 lugares.",
+          "justificativa": "18, 20, 22, 24, 26."
+        },
+        {
+          "numero": 6,
+          "resposta": "Critérios de correção: cinco termos iniciados em 40, com a mesma diferença ou o mesmo fator aplicado entre todos os termos, e regra declarada corretamente.",
+          "justificativa": "Conferir se os quatro intervalos seguem exatamente a regra informada."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-26"
+      }
     }
   ]
 }

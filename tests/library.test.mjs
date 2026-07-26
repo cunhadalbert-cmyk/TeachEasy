@@ -560,9 +560,9 @@ test('Impressão da coleção usa A4 e gabarito separado sem marca promocional',
   assert.doesNotMatch(script.match(/function openCollectionPreview[\s\S]*?function resetFilters/)[0], /worksheet-brand|logotipo|marca-d’água|publicidade|rodapé promocional/i);
 });
 
-test('Lote de Matemática e Língua Portuguesa preserva 15 atividades e 90 questões', async () => {
+test('Lote de Matemática e Língua Portuguesa preserva 27 atividades e 162 questões', async () => {
   const files = [
-    ['matematica.json', '4ano-3bimestre-matematica', 'Matemática', 8, 48],
+    ['matematica.json', '4ano-3bimestre-matematica', 'Matemática', 20, 120],
     ['lingua-portuguesa.json', '4ano-3bimestre-lingua-portuguesa', 'Língua Portuguesa', 7, 42]
   ];
   const allIds = [];
@@ -594,9 +594,65 @@ test('Lote de Matemática e Língua Portuguesa preserva 15 atividades e 90 quest
     });
   }
 
-  assert.equal(allIds.length, 15);
-  assert.equal(new Set(allIds).size, 15);
-  assert.equal(totalQuestions, 90);
+  assert.equal(allIds.length, 27);
+  assert.equal(new Set(allIds).size, 27);
+  assert.equal(totalQuestions, 162);
+});
+
+test('Matemática possui 20 atividades autorais, 120 questões e figuras válidas', async () => {
+  const raw = await readFile(new URL('../data/atividades/fundamental-anos-iniciais/4-ano/3-bimestre/matematica.json', import.meta.url), 'utf8');
+  const collection = JSON.parse(raw);
+  const activities = collection.atividades;
+  const ids = activities.map(activity => activity.id);
+  const titles = activities.map(activity => activity.titulo.trim().toLocaleLowerCase('pt-BR'));
+  const normalizedPrompts = activities.flatMap(activity =>
+    activity.questoes.map(question =>
+      question.enunciado.normalize('NFKC').trim().replace(/\s+/g, ' ').toLocaleLowerCase('pt-BR')
+    )
+  );
+
+  assert.equal(activities.length, 20);
+  assert.equal(activities.reduce((total, activity) => total + activity.questoes.length, 0), 120);
+  assert.equal(new Set(ids).size, 20);
+  assert.equal(new Set(titles).size, 20);
+  assert.equal(new Set(normalizedPrompts).size, 120);
+
+  for (const activity of activities) {
+    assert.equal(activity.quantidadeQuestoes, 6);
+    assert.equal(activity.questoes.length, 6);
+    assert.equal(activity.gabarito.length, 6);
+    assert.ok(activity.objetivo.trim());
+    assert.ok(activity.instrucaoGeral.trim());
+    assert.ok(['facil', 'intermediaria', 'desafiadora'].includes(activity.dificuldade));
+    assert.ok(activity.bncc.length > 0);
+    assert.deepEqual(activity.questoes.map(question => question.numero), [1, 2, 3, 4, 5, 6]);
+    assert.deepEqual(activity.gabarito.map(answer => answer.numero), [1, 2, 3, 4, 5, 6]);
+
+    const figureIds = new Set(activity.figuras.map(figure => figure.id));
+    assert.equal(figureIds.size, activity.figuras.length);
+    for (const figure of activity.figuras) {
+      assert.ok(figure.id);
+      assert.match(figure.arquivo, /^assets\/atividades\/matematica\/[^/]+\.svg$/);
+      assert.ok(figure.descricao);
+      assert.ok(figure.funcaoPedagogica);
+      assert.ok(figure.posicaoSugerida);
+      assert.ok(figure.textoAlternativo);
+      assert.equal(figure.compativelPretoBranco, true);
+      const image = await readFile(new URL(`../${figure.arquivo}`, import.meta.url), 'utf8');
+      assert.match(image, /^<svg[\s>]/);
+      assert.ok(image.length > 500);
+    }
+
+    for (const question of activity.questoes) {
+      assert.ok(question.espacoResposta);
+      if (question.figuraId) assert.ok(figureIds.has(question.figuraId));
+    }
+  }
+
+  const libraryScript = await readFile(new URL('../biblioteca.js', import.meta.url), 'utf8');
+  const fixesScript = await readFile(new URL('../biblioteca-fixes.js', import.meta.url), 'utf8');
+  assert.match(libraryScript, /'Matemática':\s*\{[\s\S]*?count:\s*20,/);
+  assert.match(fixesScript, /EXPECTED_MATH_ACTIVITIES\s*=\s*20/);
 });
 
 test('Matemática e Língua Portuguesa carregam somente com a disciplina correspondente', async () => {
@@ -613,7 +669,7 @@ test('Matemática e Língua Portuguesa carregam somente com a disciplina corresp
 
   window.document.querySelector('#next-page').click();
   const mathCards = [...window.document.querySelectorAll('.activity-library-card')];
-  assert.equal(mathCards.length, 3);
+  assert.equal(mathCards.length, 5);
   const moneyCard = mathCards.find(card => card.textContent.includes('Compras, preços e troco'));
   moneyCard.querySelector('.preview-button').click();
   assert.match(window.document.querySelector('.collection-student-page').textContent, /R\$ 18,50|R\$ 50,00/);

@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="620" viewBox="0 0 900 620">
+  <rect width="900" height="620" fill="white"/>
+  <defs>
+    <pattern id="dots" width="18" height="18" patternUnits="userSpaceOnUse"><circle cx="5" cy="5" r="3" fill="#174a8b"/></pattern>
+    <pattern id="lines" width="16" height="16" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="16" stroke="#5b4610" stroke-width="5"/></pattern>
+    <pattern id="grid" width="18" height="18" patternUnits="userSpaceOnUse"><path d="M0 0H18V18" fill="none" stroke="#1f5637" stroke-width="3"/></pattern>
+  </defs>
+  <g transform="translate(450 300)" stroke="#111" stroke-width="5">
+    <path d="M0 0L0-230A230 230 0 0 1 162.63-162.63Z" fill="url(#dots)"/>
+    <path d="M0 0L162.63-162.63A230 230 0 0 1 230 0Z" fill="url(#dots)"/>
+    <path d="M0 0L230 0A230 230 0 0 1 162.63 162.63Z" fill="url(#dots)"/>
+    <path d="M0 0L162.63 162.63A230 230 0 0 1 0 230Z" fill="url(#dots)"/>
+    <path d="M0 0L0 230A230 230 0 0 1-162.63 162.63Z" fill="url(#lines)"/>
+    <path d="M0 0L-162.63 162.63A230 230 0 0 1-230 0Z" fill="url(#lines)"/>
+    <path d="M0 0L-230 0A230 230 0 0 1-162.63-162.63Z" fill="url(#grid)"/>
+    <path d="M0 0L-162.63-162.63A230 230 0 0 1 0-230Z" fill="#fff"/>
+    <circle r="20" fill="#111"/>
+  </g>
+  <path d="M450 22l-24 48h48Z" fill="#111"/>
+  <g font-family="Arial" font-size="22" fill="#111">
+    <text x="700" y="150">4 setores azuis</text>
+    <text x="700" y="205">2 setores amarelos</text>
+    <text x="700" y="260">1 setor verde</text>
+    <text x="700" y="315">1 setor branco</text>
+  </g>
+</svg>
