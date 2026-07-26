@@ -654,15 +654,21 @@ test('Atividade de seis questões ocupa duas folhas e mantém gabarito separado'
   assert.ok(studentPages[0].querySelector('.support-text'));
   assert.equal(studentPages[1].querySelector('.support-text'), null);
   assert.equal(studentPages[0].querySelectorAll('.student-fields').length, 1);
+  assert.match(studentPages[0].querySelector('.student-fields').textContent, /Nome: _+.*Turma: _+.*Data: _+/s);
   assert.equal(studentPages[1].querySelector('.student-fields'), null);
   assert.equal(studentPages[1].querySelector('h1, h2, h3'), null);
   assert.doesNotMatch(studentPages[1].textContent, /continuação/i);
   assert.equal(studentPages[1].querySelector('.collection-question-list').getAttribute('start'), '4');
   assert.ok(preview.querySelector('.collection-answer-key'));
+  assert.match(preview.querySelector('.collection-export-actions').textContent, /Baixar PDF.*Baixar Word/s);
 
   const css = await readFile(new URL('../biblioteca.css', import.meta.url), 'utf8');
+  assert.match(css, /\.collection-student-page \.student-fields\s*\{[^}]*margin:\s*0 0 10mm/s);
   assert.match(css, /\.collection-instruction,\s*\.support-text\s*\{[^}]*font-size:\s*11\.5pt/s);
   assert.match(css, /\.collection-question-list > li > p\s*\{[^}]*font-size:\s*12\.5pt;[^}]*line-height:\s*1\.3/s);
   assert.match(css, /\.collection-question-list > li\s*\{[^}]*break-inside:\s*avoid;[^}]*page-break-inside:\s*avoid;/s);
+  const script = await readFile(new URL('../biblioteca.js', import.meta.url), 'utf8');
+  assert.match(script, /function downloadCollectionWord[\s\S]*application\/msword/s);
+  assert.match(script, /function downloadCollectionWord[\s\S]*page-break-after:\s*always;[\s\S]*page-break-before:\s*always;/s);
   await window.happyDOM.close();
 });

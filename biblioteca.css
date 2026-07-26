@@ -553,7 +553,14 @@
 }
 
 .preview-print {
-  margin: 0 0 18px auto;
+  margin: 0;
+}
+
+.collection-export-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-bottom: 18px;
 }
 
 .collection-student-page,
@@ -562,11 +569,22 @@
 }
 
 .collection-student-page .student-fields {
-  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-columns: 2fr 1fr;
+  margin: 0 0 10mm;
+  color: #111;
+  font-size: 15px;
+}
+
+.collection-student-page .student-fields span {
+  border-bottom: 0;
+}
+
+.collection-student-page .student-fields span:last-child {
+  grid-column: 1 / -1;
 }
 
 .collection-student-page h1 {
-  margin: 20px 0 14px;
+  margin: 0 0 18px;
   color: #111;
   font-family: Arial, sans-serif;
   font-size: 24px;
@@ -1026,7 +1044,7 @@
   .preview-close,
   .preview-topline,
   .figure-production-review,
-  .preview-print {
+  .collection-export-actions {
     display: none !important;
   }
 
@@ -1052,7 +1070,7 @@
   .answer-key-page {
     width: 210mm;
     max-width: 100%;
-    min-height: calc(297mm - 30mm);
+    min-height: 0;
     margin: 0;
     padding: 0;
     border: none !important;
@@ -1088,8 +1106,21 @@
     font-size: 15pt;
   }
 
+  .support-text {
+    margin: 0 0 4mm;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+  }
+
   .question-alternatives {
+    margin: 1mm 0;
     font-size: 12pt;
+  }
+
+  .question-alternatives li {
+    margin: 0;
+    line-height: 1.25;
   }
 
   .collection-answer-key {
@@ -1104,6 +1135,7 @@
   }
 
   .collection-question-list > li {
+    margin-bottom: 4mm;
     break-inside: avoid;
     page-break-inside: avoid;
   }

@@ -401,13 +401,15 @@ function toggleSelection(id) {
 
 function questionMarkup(activity, questions = activity.questions) {
   if (activity.collectionActivity) {
-    return questions.map(question => `
-      <li>
-        <p>${question.enunciado.replace(/\n/g, '<br>')}</p>
-        ${question.alternativas.length ? `<ol class="question-alternatives" type="a">${question.alternativas.map(alternative => `<li>${alternative}</li>`).join('')}</ol>` : ''}
-        <div class="student-answer-space answer-space-${question.espacoResposta}" aria-label="Espaço para resposta"></div>
-      </li>
-    `).join('');
+    return questions.map(question => {
+      const embeddedAnswerSpace = ['multipla-escolha', 'completar', 'associacao'].includes(question.tipo);
+      return `
+        <li>
+          <p>${question.enunciado.replace(/\n/g, '<br>')}</p>
+          ${question.alternativas.length ? `<ol class="question-alternatives" type="a">${question.alternativas.map(alternative => `<li>${alternative}</li>`).join('')}</ol>` : ''}
+          ${embeddedAnswerSpace ? '' : `<div class="student-answer-space answer-space-${question.espacoResposta}" aria-label="Espaço para resposta"></div>`}
+        </li>`;
+    }).join('');
   }
   return activity.questions.map(question => `
     <li>${question}<span class="answer-line" aria-hidden="true"></span></li>
@@ -489,11 +491,16 @@ function openCollectionPreview(activity) {
     <div class="preview-shell collection-preview-shell">
       <div class="preview-topline">Revisão · ${activity.stage} · ${activity.grade} · ${activity.term}º bimestre</div>
       ${pendingFiguresMarkup(activity)}
-      <button class="btn btn-primary preview-print" type="button">Imprimir atividade</button>
+      <div class="collection-export-actions">
+        <button class="btn btn-outline preview-print" type="button">Baixar PDF / Imprimir</button>
+        <button class="btn btn-primary preview-word" type="button">Baixar Word</button>
+      </div>
 
       <section class="worksheet-page collection-student-page">
         <div class="student-fields">
-          <span>Nome:</span><span>Turma:</span><span>Data:</span>
+          <span>Nome: ___________________________________________</span>
+          <span>Turma: __________________</span>
+          <span>Data: ____/____/____</span>
         </div>
         <h1>${activity.topic}</h1>
         <p class="collection-instruction">${activity.instruction}</p>
@@ -517,7 +524,48 @@ function openCollectionPreview(activity) {
       </section>
     </div>`;
   previewContent.querySelector('.preview-print').addEventListener('click', () => window.print());
+  previewContent.querySelector('.preview-word').addEventListener('click', () => downloadCollectionWord(activity));
   preview.showModal();
+}
+
+function downloadCollectionWord(activity) {
+  const pages = [...previewContent.querySelectorAll('.collection-student-page, .collection-answer-key')]
+    .map(page => page.outerHTML)
+    .join('');
+  const wordDocument = `<!doctype html>
+    <html xmlns:o="urn:schemas-microsoft-com:office:office"
+      xmlns:w="urn:schemas-microsoft-com:office:word"
+      xmlns="http://www.w3.org/TR/REC-html40">
+      <head><meta charset="utf-8"><title>${activity.topic}</title>
+      <style>
+        @page { size: A4 portrait; margin: 15mm; }
+        body { margin: 0; background: #fff; color: #000; font-family: Arial, sans-serif; font-size: 12pt; line-height: 1.3; }
+        .worksheet-page { min-height: 267mm; margin: 0; padding: 0; background: #fff; page-break-after: always; }
+        .student-fields { display: block; margin: 0 0 10mm; font-size: 11pt; }
+        .student-fields span { display: inline-block; width: 64%; border: 0; }
+        .student-fields span:nth-child(2) { width: 34%; }
+        .student-fields span:last-child { display: block; width: 100%; margin-top: 2mm; }
+        h1 { margin: 0 0 5mm; font: bold 18pt Arial, sans-serif; text-align: center; }
+        .collection-instruction { margin: 0 0 4mm; font-size: 11.5pt; font-weight: bold; }
+        .support-text { margin: 0 0 5mm; padding: 0; border: 0; font-size: 11.5pt; }
+        .support-text h2 { margin: 0 0 2mm; font: bold 13pt Arial, sans-serif; }
+        .question-list { margin: 0; padding-left: 7mm; }
+        .question-list > li { margin: 0 0 5mm; page-break-inside: avoid; }
+        .question-list > li > p { margin: 0 0 2mm; font-size: 12.5pt; line-height: 1.3; }
+        .question-alternatives { margin: 2mm 0; font-size: 12pt; }
+        .student-answer-space { margin-top: 2mm; border: 0; border-bottom: 1px solid #999; }
+        .answer-space-pequeno { min-height: 12mm; } .answer-space-medio { min-height: 23mm; } .answer-space-grande { min-height: 35mm; }
+        .collection-answer-key { page-break-before: always; font-size: 11pt; }
+        .collection-answer-key h2 { margin: 0 0 5mm; font: bold 18pt Arial, sans-serif; text-align: center; }
+        .collection-answer-key h3 { font: bold 15pt Arial, sans-serif; }
+        .collection-answer-key li { margin-bottom: 4mm; page-break-inside: avoid; }
+      </style></head><body>${pages}</body></html>`;
+  const blob = new Blob([wordDocument], { type: 'application/msword' });
+  const link = document.createElement('a');
+  link.href = URL.createObjectURL(blob);
+  link.download = `${activity.id}.doc`;
+  link.click();
+  URL.revokeObjectURL(link.href);
 }
 
 function resetFilters() {
