@@ -113,7 +113,7 @@ test('Destaque da Biblioteca fica na página inicial junto aos quatro serviços'
   assert.match(highlight.textContent, /Biblioteca de Atividades/);
   assert.match(highlight.textContent, /Encontre atividades prontas por etapa, ano e bimestre/);
   assert.equal(highlight.querySelectorAll('.home-library-illustration').length, 1);
-  assert.equal(highlight.querySelectorAll('.home-library-arrow').length, 1);
+  assert.equal(highlight.querySelector('.home-library-arrow'), null);
   assert.ok(Boolean(heading.compareDocumentPosition(highlight) & window.Node.DOCUMENT_POSITION_FOLLOWING));
   assert.ok(Boolean(highlight.compareDocumentPosition(photoHighlight) & window.Node.DOCUMENT_POSITION_FOLLOWING));
   assert.ok(Boolean(photoHighlight.compareDocumentPosition(services) & window.Node.DOCUMENT_POSITION_FOLLOWING));
@@ -164,9 +164,7 @@ test('Topo, rodapé e banners usam gradientes vinho com contraste claro', async 
   assert.match(css, /body:not\(\.library-page\) \.topbar,\s*body:not\(\.library-page\) \.site-header\s*\{[^}]*linear-gradient\(180deg,\s*#3b0714 0%,\s*#5b1022 50%,\s*#7d2639 100%\)/s);
   assert.match(css, /body:not\(\.library-page\) \.footer\s*\{[^}]*linear-gradient\(180deg,\s*#3b0714 0%,\s*#5b1022 50%,\s*#7d2639 100%\)/s);
   assert.match(css, /\.home-library-highlight\s*\{[^}]*linear-gradient\(90deg,\s*#4a0715 0%,\s*#7a1730 48%,\s*#a34058 100%\)/s);
-  assert.match(css, /\.home-library-arrow\s*\{[^}]*color:\s*#fff/s);
   assert.match(photoCss, /\.photo-activity-launcher\s*\{[^}]*linear-gradient\(90deg,\s*#4a0715 0%,\s*#7a1730 48%,\s*#a34058 100%\)/s);
-  assert.match(photoCss, /\.photo-launcher-arrow\s*\{[^}]*color:\s*#fff/s);
 });
 
 test('Seção sobre mostra o fluxo da IA até a Biblioteca e preserva o texto', async () => {
@@ -246,7 +244,7 @@ test('Formulário por foto fica na página inicial e abre pelo banner', async ()
   assert.match(launcher.textContent, /Criar atividade por foto/);
   assert.match(launcher.textContent, /NOVIDADE!/);
   assert.match(launcher.textContent, /Envie uma foto do conteúdo e a IA gera uma atividade personalizada para você/);
-  assert.equal(launcher.querySelectorAll('.photo-launcher-arrow').length, 1);
+  assert.equal(launcher.querySelector('.photo-launcher-arrow'), null);
   assert.equal(launcher.querySelectorAll('.photo-launcher-illustration').length, 1);
   assert.equal(window.document.querySelector('.photo-feature-badges'), null);
   assert.doesNotMatch(window.document.body.textContent, /Rápido e prático|Atividades originais|Com gabarito e versão adaptada/);

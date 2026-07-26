@@ -70,7 +70,7 @@ button{font:inherit}
 .home-library-highlight {
   position: relative;
   display: grid;
-  grid-template-columns: minmax(120px, 180px) 1fr 92px;
+  grid-template-columns: minmax(120px, 180px) 1fr;
   align-items: center;
   width: 100%;
   margin: 0 0 30px;
@@ -359,7 +359,7 @@ button{font:inherit}
 @media (max-width: 680px){
   .container{width:min(100% - 24px,1240px)}
   .home-library-highlight{
-    grid-template-columns: 78px 1fr 48px;
+    grid-template-columns: 78px 1fr;
     width:100%;
     min-height:148px;
     padding:18px 16px;
