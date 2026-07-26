@@ -4,10 +4,12 @@ import test from 'node:test';
 import { Window } from 'happy-dom';
 
 async function createLibraryPage() {
-  const [html, script, scienceCollection] = await Promise.all([
+  const [html, script, scienceCollection, mathCollection, portugueseCollection] = await Promise.all([
     readFile(new URL('../biblioteca.html', import.meta.url), 'utf8'),
     readFile(new URL('../biblioteca.js', import.meta.url), 'utf8'),
-    readFile(new URL('../data/atividades/fundamental-anos-iniciais/4-ano/3-bimestre/ciencias.json', import.meta.url), 'utf8')
+    readFile(new URL('../data/atividades/fundamental-anos-iniciais/4-ano/3-bimestre/ciencias.json', import.meta.url), 'utf8'),
+    readFile(new URL('../data/atividades/fundamental-anos-iniciais/4-ano/3-bimestre/matematica.json', import.meta.url), 'utf8'),
+    readFile(new URL('../data/atividades/fundamental-anos-iniciais/4-ano/3-bimestre/lingua-portuguesa.json', import.meta.url), 'utf8')
   ]);
   const window = new Window({ url: 'https://teacheasy.test/biblioteca.html' });
   window.document.write(html);
@@ -22,9 +24,14 @@ async function createLibraryPage() {
   window.__fetchCalls = [];
   window.fetch = async path => {
     window.__fetchCalls.push(path);
+    const collections = {
+      'data/atividades/fundamental-anos-iniciais/4-ano/3-bimestre/ciencias.json': scienceCollection,
+      'data/atividades/fundamental-anos-iniciais/4-ano/3-bimestre/matematica.json': mathCollection,
+      'data/atividades/fundamental-anos-iniciais/4-ano/3-bimestre/lingua-portuguesa.json': portugueseCollection
+    };
     return {
-      ok: true,
-      json: async () => JSON.parse(scienceCollection)
+      ok: Boolean(collections[path]),
+      json: async () => JSON.parse(collections[path])
     };
   };
 
@@ -538,4 +545,85 @@ test('Impressão da coleção usa A4 e gabarito separado sem marca promocional',
   assert.match(css, /\.collection-answer-key\s*\{[^}]*break-before:\s*page;[^}]*font-size:\s*11pt/s);
   const script = await readFile(new URL('../biblioteca.js', import.meta.url), 'utf8');
   assert.doesNotMatch(script.match(/function openCollectionPreview[\s\S]*?function resetFilters/)[0], /worksheet-brand|logotipo|marca-d’água|publicidade|rodapé promocional/i);
+});
+
+test('Lote de Matemática e Língua Portuguesa preserva 15 atividades e 90 questões', async () => {
+  const files = [
+    ['matematica.json', '4ano-3bimestre-matematica', 'Matemática', 8, 48],
+    ['lingua-portuguesa.json', '4ano-3bimestre-lingua-portuguesa', 'Língua Portuguesa', 7, 42]
+  ];
+  const allIds = [];
+  let totalQuestions = 0;
+
+  for (const [filename, collectionId, subject, activityCount, questionCount] of files) {
+    const raw = await readFile(new URL(`../data/atividades/fundamental-anos-iniciais/4-ano/3-bimestre/${filename}`, import.meta.url), 'utf8');
+    assert.doesNotMatch(raw, /\uFFFD/);
+    const collection = JSON.parse(raw);
+    assert.equal(collection.schemaVersion, '1.0');
+    assert.equal(collection.colecao, collectionId);
+    assert.equal(collection.idioma, 'pt-BR');
+    assert.equal(collection.disciplina, subject);
+    assert.equal(collection.atividades.length, activityCount);
+    assert.equal(collection.atividades.reduce((total, activity) => total + activity.questoes.length, 0), questionCount);
+
+    collection.atividades.forEach(activity => {
+      allIds.push(activity.id);
+      totalQuestions += activity.questoes.length;
+      assert.equal(activity.quantidadeQuestoes, 6);
+      assert.equal(activity.questoes.length, 6);
+      assert.equal(activity.gabarito.length, 6);
+      assert.deepEqual(activity.questoes.map(question => question.numero), [1, 2, 3, 4, 5, 6]);
+      assert.deepEqual(activity.gabarito.map(answer => answer.numero), [1, 2, 3, 4, 5, 6]);
+      const figureIds = new Set(activity.figuras.map(figure => figure.id));
+      activity.questoes.forEach(question => {
+        if (question.figuraId) assert.ok(figureIds.has(question.figuraId));
+      });
+    });
+  }
+
+  assert.equal(allIds.length, 15);
+  assert.equal(new Set(allIds).size, 15);
+  assert.equal(totalQuestions, 90);
+});
+
+test('Matemática e Língua Portuguesa carregam somente com a disciplina correspondente', async () => {
+  const window = await createLibraryPage();
+  openActivities(window, 'Anos Iniciais', '4º ano', '3º bimestre');
+  const subject = window.document.querySelector('#library-filters select[name="subject"]');
+
+  subject.value = 'Matemática';
+  subject.dispatchEvent(new window.Event('input', { bubbles: true }));
+  await new Promise(resolve => setTimeout(resolve, 0));
+  assert.deepEqual(window.__fetchCalls, ['data/atividades/fundamental-anos-iniciais/4-ano/3-bimestre/matematica.json']);
+  assert.equal(window.document.querySelectorAll('.activity-library-card').length, 5);
+  assert.equal(window.document.querySelector('#library-pagination').hidden, false);
+
+  window.document.querySelector('#next-page').click();
+  const mathCards = [...window.document.querySelectorAll('.activity-library-card')];
+  assert.equal(mathCards.length, 3);
+  const moneyCard = mathCards.find(card => card.textContent.includes('Compras, preços e troco'));
+  moneyCard.querySelector('.preview-button').click();
+  assert.match(window.document.querySelector('.collection-student-page').textContent, /R\$ 18,50|R\$ 50,00/);
+  window.document.querySelector('#activity-preview').close();
+
+  subject.value = 'Língua Portuguesa';
+  subject.dispatchEvent(new window.Event('input', { bubbles: true }));
+  await new Promise(resolve => setTimeout(resolve, 0));
+  assert.deepEqual(window.__fetchCalls, [
+    'data/atividades/fundamental-anos-iniciais/4-ano/3-bimestre/matematica.json',
+    'data/atividades/fundamental-anos-iniciais/4-ano/3-bimestre/lingua-portuguesa.json'
+  ]);
+  assert.equal(window.document.querySelectorAll('.activity-library-card').length, 5);
+  window.document.querySelector('.activity-library-card .preview-button').click();
+  assert.ok(window.document.querySelector('.collection-student-page .support-text'));
+  assert.equal(window.document.querySelectorAll('.collection-question-list > li').length, 6);
+  assert.ok(window.document.querySelector('.collection-answer-key'));
+  await window.happyDOM.close();
+});
+
+test('Coleções mantêm responsividade e quebra de página de impressão', async () => {
+  const css = await readFile(new URL('../biblioteca.css', import.meta.url), 'utf8');
+  assert.match(css, /@media \(max-width:\s*680px\)[\s\S]*\.activity-grid\s*\{[^}]*grid-template-columns:\s*1fr/s);
+  assert.match(css, /\.worksheet-page\s*\{[\s\S]*page-break-after:\s*always/s);
+  assert.match(css, /\.collection-answer-key\s*\{[^}]*break-before:\s*page/s);
 });

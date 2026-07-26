@@ -87,9 +87,31 @@ let activities = activitySeeds.map((seed, index) => {
   };
 });
 
-const scienceCollectionPath = 'data/atividades/fundamental-anos-iniciais/4-ano/3-bimestre/ciencias.json';
-let scienceCollectionLoaded = false;
-let scienceCollectionPromise = null;
+const collectionRegistry = {
+  'Ciências': {
+    path: 'data/atividades/fundamental-anos-iniciais/4-ano/3-bimestre/ciencias.json',
+    collection: '4ano-3bimestre-ciencias',
+    count: 5,
+    symbol: '🔬',
+    colors: ['#d9f1e1', '#e8f0ff']
+  },
+  'Matemática': {
+    path: 'data/atividades/fundamental-anos-iniciais/4-ano/3-bimestre/matematica.json',
+    collection: '4ano-3bimestre-matematica',
+    count: 8,
+    symbol: '➗',
+    colors: ['#e1ebff', '#fff1bd']
+  },
+  'Língua Portuguesa': {
+    path: 'data/atividades/fundamental-anos-iniciais/4-ano/3-bimestre/lingua-portuguesa.json',
+    collection: '4ano-3bimestre-lingua-portuguesa',
+    count: 7,
+    symbol: '📖',
+    colors: ['#ffe2e8', '#eee3ff']
+  }
+};
+const loadedCollections = new Set();
+const collectionPromises = new Map();
 
 function difficultyLabel(value) {
   return {
@@ -99,12 +121,12 @@ function difficultyLabel(value) {
   }[value] || value;
 }
 
-function validateScienceCollection(collection) {
+function validateCollection(collection, config) {
   if (collection.schemaVersion !== '1.0'
-    || collection.colecao !== '4ano-3bimestre-ciencias'
+    || collection.colecao !== config.collection
     || collection.idioma !== 'pt-BR'
-    || collection.atividades.length !== 5) {
-    throw new Error('Estrutura da coleção de Ciências inválida.');
+    || collection.atividades.length !== config.count) {
+    throw new Error(`Estrutura da coleção de ${collection.disciplina || 'atividades'} inválida.`);
   }
   const ids = new Set();
   collection.atividades.forEach(activity => {
@@ -121,18 +143,18 @@ function validateScienceCollection(collection) {
   });
 }
 
-function normalizeScienceActivity(activity) {
+function normalizeCollectionActivity(activity, collection, config) {
   return {
     id: activity.id,
     stage: 'Ensino Fundamental I',
     grade: '4º ano',
     term: 3,
-    subject: 'Ciências',
+    subject: collection.disciplina,
     topic: activity.titulo,
     difficulty: difficultyLabel(activity.dificuldade),
     bncc: activity.bncc.map(item => item.codigo).join(', '),
-    symbol: '🔬',
-    colors: ['#d9f1e1', '#e8f0ff'],
+    symbol: config.symbol,
+    colors: config.colors,
     questions: activity.questoes,
     answers: activity.gabarito,
     figures: activity.figuras,
@@ -146,38 +168,40 @@ function normalizeScienceActivity(activity) {
   };
 }
 
-function shouldLoadScienceCollection() {
-  return navigation.stage === 'Ensino Fundamental I'
-    && navigation.grade === '4º ano'
-    && navigation.term === '3'
-    && filterForm.elements.subject.value === 'Ciências';
+function selectedCollectionConfig() {
+  if (navigation.stage !== 'Ensino Fundamental I'
+    || navigation.grade !== '4º ano'
+    || navigation.term !== '3') return null;
+  return collectionRegistry[filterForm.elements.subject.value] || null;
 }
 
-async function ensureScienceCollection() {
-  if (!shouldLoadScienceCollection() || scienceCollectionLoaded) return;
-  if (!scienceCollectionPromise) {
-    scienceCollectionPromise = fetch(scienceCollectionPath)
+async function ensureSelectedCollection() {
+  const config = selectedCollectionConfig();
+  if (!config || loadedCollections.has(config.collection)) return;
+  if (!collectionPromises.has(config.collection)) {
+    const promise = fetch(config.path)
       .then(response => {
-        if (!response.ok) throw new Error('Não foi possível carregar a coleção de Ciências.');
+        if (!response.ok) throw new Error('Não foi possível carregar a coleção selecionada.');
         return response.json();
       })
       .then(collection => {
-        validateScienceCollection(collection);
+        validateCollection(collection, config);
         activities = activities
           .filter(activity => !(activity.stage === 'Ensino Fundamental I'
             && activity.grade === '4º ano'
             && activity.term === 3
-            && activity.subject === 'Ciências'))
-          .concat(collection.atividades.map(normalizeScienceActivity));
-        scienceCollectionLoaded = true;
+            && activity.subject === collection.disciplina))
+          .concat(collection.atividades.map(activity => normalizeCollectionActivity(activity, collection, config)));
+        loadedCollections.add(config.collection);
       })
       .catch(error => {
-        scienceCollectionPromise = null;
+        collectionPromises.delete(config.collection);
         showToast(error.message);
         throw error;
       });
+    collectionPromises.set(config.collection, promise);
   }
-  return scienceCollectionPromise;
+  return collectionPromises.get(config.collection);
 }
 
 const filterForm = document.querySelector('#library-filters');
@@ -473,10 +497,12 @@ function openCollectionPreview(activity) {
         </div>
         <h1>${activity.topic}</h1>
         <p class="collection-instruction">${activity.instruction}</p>
-        <article class="support-text">
-          <h2>${activity.supportText.titulo}</h2>
-          <p>${activity.supportText.conteudo.replace(/\n/g, '<br>')}</p>
-        </article>
+        ${activity.supportText && activity.supportText.conteudo ? `
+          <article class="support-text">
+            ${activity.supportText.titulo ? `<h2>${activity.supportText.titulo}</h2>` : ''}
+            <p>${activity.supportText.conteudo.replace(/\n/g, '<br>')}</p>
+          </article>
+        ` : ''}
         <ol class="question-list collection-question-list">${questionMarkup(activity)}</ol>
       </section>
 
@@ -573,12 +599,12 @@ function renderNavigation() {
 
 filterForm.addEventListener('input', async () => {
   currentPage = 1;
-  await ensureScienceCollection().catch(() => {});
+  await ensureSelectedCollection().catch(() => {});
   renderActivities();
 });
 filterForm.addEventListener('submit', event => {
   event.preventDefault();
-  ensureScienceCollection().catch(() => {}).finally(renderActivities);
+  ensureSelectedCollection().catch(() => {}).finally(renderActivities);
 });
 filterForm.addEventListener('reset', () => requestAnimationFrame(renderActivities));
 emptyReset.addEventListener('click', resetFilters);

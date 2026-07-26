@@ -1,0 +1,871 @@
+{
+  "schemaVersion": "1.0",
+  "colecao": "4ano-3bimestre-lingua-portuguesa",
+  "idioma": "pt-BR",
+  "etapa": "Ensino Fundamental — Anos Iniciais",
+  "ano": "4º ano",
+  "bimestre": 3,
+  "disciplina": "Língua Portuguesa",
+  "statusBimestre": "sugerido",
+  "atividades": [
+    {
+      "id": "efi-4ano-b3-lp-noticia-a",
+      "titulo": "Conhecendo a estrutura da notícia",
+      "tema": "Notícia",
+      "sequencia": "A",
+      "tipoSequencia": "Introdução",
+      "dificuldade": "facil",
+      "objetivo": "Identificar fato, participantes, tempo, lugar e finalidade informativa em uma notícia.",
+      "bncc": [
+        {
+          "codigo": "EF04LP14",
+          "descricaoResumida": "Identificar, em notícias, fatos, participantes, local e momento do acontecimento."
+        },
+        {
+          "codigo": "EF04LP15",
+          "descricaoResumida": "Distinguir fatos de opiniões em textos jornalísticos."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia a notícia e responda às questões.",
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "resposta-curta",
+          "enunciado": "Qual foi o fato principal noticiado?",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 2,
+          "tipo": "resposta-curta",
+          "enunciado": "Quem participou da inauguração?",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 3,
+          "tipo": "multipla-escolha",
+          "enunciado": "Onde o fato aconteceu?",
+          "alternativas": [
+            "Em uma praça",
+            "Na horta da escola",
+            "Em uma loja",
+            "Na casa da professora"
+          ],
+          "figuraId": null,
+          "espacoResposta": "pequeno"
+        },
+        {
+          "numero": 4,
+          "tipo": "resposta-curta",
+          "enunciado": "Quando ocorreu a inauguração?",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 5,
+          "tipo": "analise-texto",
+          "enunciado": "A frase 'a ideia ajuda a economizar água' apresenta uma informação atribuída a quem?",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 6,
+          "tipo": "discursiva",
+          "enunciado": "Explique por que esse texto pode ser chamado de notícia.",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "grande"
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "A inauguração de um sistema simples de irrigação na horta da escola.",
+          "justificativa": "É o acontecimento central."
+        },
+        {
+          "numero": 2,
+          "resposta": "Os alunos do 4º ano.",
+          "justificativa": "Informação explícita."
+        },
+        {
+          "numero": 3,
+          "resposta": "Alternativa B.",
+          "justificativa": "O local é a horta da escola."
+        },
+        {
+          "numero": 4,
+          "resposta": "Na manhã de terça-feira.",
+          "justificativa": "Marcador temporal explícito."
+        },
+        {
+          "numero": 5,
+          "resposta": "À professora responsável.",
+          "justificativa": "A notícia atribui a avaliação a essa fonte."
+        },
+        {
+          "numero": 6,
+          "resposta": "Porque informa um fato ocorrido, indicando o que aconteceu, quem participou, onde e quando.",
+          "justificativa": "Aceitar explicação equivalente."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-25"
+      },
+      "textoApoio": {
+        "titulo": "Horta da escola ganha sistema de irrigação",
+        "conteudo": "Na manhã de terça-feira, os alunos do 4º ano inauguraram um sistema simples de irrigação na horta da Escola Caminhos. O projeto usa garrafas reaproveitadas para levar água lentamente às plantas. Segundo a professora responsável, a ideia ajuda a economizar água e manter a horta cuidada durante os fins de semana."
+      }
+    },
+    {
+      "id": "efi-4ano-b3-lp-noticia-b",
+      "titulo": "Informação ou opinião?",
+      "tema": "Notícia",
+      "sequencia": "B",
+      "tipoSequencia": "Prática",
+      "dificuldade": "intermediaria",
+      "objetivo": "Distinguir fatos verificáveis de opiniões em textos jornalísticos.",
+      "bncc": [
+        {
+          "codigo": "EF04LP15",
+          "descricaoResumida": "Distinguir fatos de opiniões em textos jornalísticos."
+        },
+        {
+          "codigo": "EF04LP16",
+          "descricaoResumida": "Produzir notícias sobre fatos ocorridos no universo escolar."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia as frases e analise se apresentam fato ou opinião.",
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "classificacao",
+          "enunciado": "Classifique: 'A biblioteca recebeu 120 livros novos na segunda-feira.' É fato ou opinião? Justifique.",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 2,
+          "tipo": "classificacao",
+          "enunciado": "Classifique: 'A nova biblioteca é o lugar mais bonito da escola.' É fato ou opinião? Justifique.",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 3,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual frase apresenta um fato?",
+          "alternativas": [
+            "O recreio ficou muito mais divertido.",
+            "A feira ocorreu no dia 12 de agosto.",
+            "A apresentação foi maravilhosa.",
+            "O uniforme novo é feio."
+          ],
+          "figuraId": null,
+          "espacoResposta": "pequeno"
+        },
+        {
+          "numero": 4,
+          "tipo": "analise-texto",
+          "enunciado": "Transforme a opinião 'O campeonato foi emocionante' em uma frase informativa e verificável.",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 5,
+          "tipo": "resposta-curta",
+          "enunciado": "Por que uma notícia deve deixar claro quando uma frase é opinião de alguém?",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Escreva duas frases sobre um evento escolar: uma com fato e outra com opinião. Identifique cada uma.",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "grande"
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Fato.",
+          "justificativa": "A quantidade e a data podem ser verificadas."
+        },
+        {
+          "numero": 2,
+          "resposta": "Opinião.",
+          "justificativa": "É uma avaliação pessoal."
+        },
+        {
+          "numero": 3,
+          "resposta": "Alternativa B.",
+          "justificativa": "Data e ocorrência são verificáveis."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta possível: 'O campeonato terminou com placar de 3 a 2 e foi decidido no último minuto.'",
+          "justificativa": "A frase deve apresentar dados verificáveis."
+        },
+        {
+          "numero": 5,
+          "resposta": "Para o leitor distinguir informação comprovável de avaliação pessoal.",
+          "justificativa": "Aceitar formulação equivalente."
+        },
+        {
+          "numero": 6,
+          "resposta": "Resposta pessoal, desde que as duas frases sejam coerentes e corretamente identificadas.",
+          "justificativa": "Avaliar distinção entre fato e opinião."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-25"
+      }
+    },
+    {
+      "id": "efi-4ano-b3-lp-noticia-c",
+      "titulo": "Produzindo uma notícia escolar",
+      "tema": "Notícia",
+      "sequencia": "C",
+      "tipoSequencia": "Consolidação",
+      "dificuldade": "desafiadora",
+      "objetivo": "Planejar e escrever uma notícia escolar com título, fato principal e informações essenciais.",
+      "bncc": [
+        {
+          "codigo": "EF04LP16",
+          "descricaoResumida": "Produzir notícias sobre fatos ocorridos no universo escolar."
+        },
+        {
+          "codigo": "EF15LP05",
+          "descricaoResumida": "Planejar o texto considerando situação comunicativa e finalidade."
+        },
+        {
+          "codigo": "EF15LP06",
+          "descricaoResumida": "Reler e revisar o texto produzido."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Use as informações fornecidas para planejar e escrever uma notícia.",
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "planejamento",
+          "enunciado": "Fato: campeonato de xadrez; data: 18 de setembro; local: pátio; participantes: turmas do 4º e 5º anos. Escreva um título informativo.",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 2,
+          "tipo": "planejamento",
+          "enunciado": "Escreva uma frase inicial respondendo: o que aconteceu, onde e quando?",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 3,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual informação deve aparecer no desenvolvimento?",
+          "alternativas": [
+            "Uma receita",
+            "Detalhes do campeonato e resultado",
+            "Uma história inventada sem relação",
+            "Uma lista de compras"
+          ],
+          "figuraId": null,
+          "espacoResposta": "pequeno"
+        },
+        {
+          "numero": 4,
+          "tipo": "producao",
+          "enunciado": "Escreva um parágrafo informando que Ana, do 4º ano, venceu a final e recebeu medalha.",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 5,
+          "tipo": "revisao",
+          "enunciado": "Revise esta frase: 'ontem os aluno participou do campeonato e recebeu medalhas'. Reescreva-a corretamente.",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Junte as informações e escreva uma notícia de 8 a 10 linhas. Depois, releia verificando título, clareza, pontuação e ortografia.",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "grande"
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Resposta possível: 'Aluna do 4º ano vence campeonato de xadrez'.",
+          "justificativa": "O título deve resumir o fato."
+        },
+        {
+          "numero": 2,
+          "resposta": "Resposta possível: 'No dia 18 de setembro, as turmas do 4º e 5º anos participaram de um campeonato de xadrez no pátio da escola.'",
+          "justificativa": "Deve conter fato, tempo e lugar."
+        },
+        {
+          "numero": 3,
+          "resposta": "Alternativa B.",
+          "justificativa": "O desenvolvimento detalha o acontecimento."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta possível: 'Ana, aluna do 4º ano, venceu a partida final e recebeu uma medalha.'",
+          "justificativa": "Avaliar clareza e correção."
+        },
+        {
+          "numero": 5,
+          "resposta": "'Ontem, os alunos participaram do campeonato e receberam medalhas.'",
+          "justificativa": "Corrigir maiúscula, concordância e pontuação."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral com estrutura de notícia e informações fornecidas.",
+          "justificativa": "Avaliar presença de título, fato, local, data, participantes e resultado."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-25"
+      }
+    },
+    {
+      "id": "efi-4ano-b3-lp-divulgacao-cientifica-a",
+      "titulo": "Descobrindo informações científicas",
+      "tema": "Divulgação científica",
+      "sequencia": "A",
+      "tipoSequencia": "Introdução",
+      "dificuldade": "intermediaria",
+      "objetivo": "Localizar informações explícitas e identificar relações de causa e consequência em texto de divulgação científica.",
+      "bncc": [
+        {
+          "codigo": "EF04LP19",
+          "descricaoResumida": "Ler e compreender textos expositivos de divulgação científica para crianças."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de divulgação científica e responda.",
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "resposta-curta",
+          "enunciado": "O que as abelhas carregam de uma flor para outra?",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 2,
+          "tipo": "resposta-curta",
+          "enunciado": "Que processo ajuda as plantas a formar frutos e sementes?",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 3,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual seria uma consequência da redução da polinização?",
+          "alternativas": [
+            "Aumento de todos os alimentos",
+            "Diminuição da produção de alguns alimentos",
+            "Desaparecimento imediato das flores",
+            "Aumento da chuva"
+          ],
+          "figuraId": null,
+          "espacoResposta": "pequeno"
+        },
+        {
+          "numero": 4,
+          "tipo": "analise-texto",
+          "enunciado": "Copie uma frase que explique por que as abelhas são importantes para as plantas.",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 5,
+          "tipo": "vocabulario",
+          "enunciado": "No texto, o que significa 'contribuem para o equilíbrio dos ambientes'? Explique com suas palavras.",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 6,
+          "tipo": "resumo",
+          "enunciado": "Escreva um resumo de três linhas apresentando as duas principais importâncias das abelhas citadas.",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "grande"
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Grãos de pólen.",
+          "justificativa": "Informação explícita."
+        },
+        {
+          "numero": 2,
+          "resposta": "A polinização.",
+          "justificativa": "O transporte do pólen favorece frutos e sementes."
+        },
+        {
+          "numero": 3,
+          "resposta": "Alternativa B.",
+          "justificativa": "O texto afirma que a produção diminuiria."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta possível: 'Esse transporte ajuda muitas plantas a formar frutos e sementes.'",
+          "justificativa": "Aceitar trecho equivalente."
+        },
+        {
+          "numero": 5,
+          "resposta": "Significa que ajudam o ambiente a funcionar de forma adequada, participando da reprodução das plantas e das cadeias alimentares.",
+          "justificativa": "Aceitar explicação coerente."
+        },
+        {
+          "numero": 6,
+          "resposta": "Deve mencionar polinização/formação de frutos e participação no equilíbrio/cadeias alimentares.",
+          "justificativa": "Avaliar síntese das ideias principais."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-25"
+      },
+      "textoApoio": {
+        "titulo": "Por que as abelhas são importantes?",
+        "conteudo": "Ao visitar flores, as abelhas carregam grãos de pólen de uma flor para outra. Esse transporte ajuda muitas plantas a formar frutos e sementes. Sem a polinização, a produção de diversos alimentos diminuiria. Além disso, as abelhas fazem parte das cadeias alimentares e contribuem para o equilíbrio dos ambientes."
+      }
+    },
+    {
+      "id": "efi-4ano-b3-lp-pesquisa-registro-b",
+      "titulo": "Organizando informações de uma pesquisa",
+      "tema": "Pesquisa e registro",
+      "sequencia": "B",
+      "tipoSequencia": "Prática",
+      "dificuldade": "intermediaria",
+      "objetivo": "Selecionar informações relevantes, registrar dados e organizar sínteses de pesquisa.",
+      "bncc": [
+        {
+          "codigo": "EF04LP20",
+          "descricaoResumida": "Reconhecer a função de gráficos, diagramas e tabelas em textos como forma de apresentação de dados."
+        },
+        {
+          "codigo": "EF04LP21",
+          "descricaoResumida": "Planejar e produzir textos sobre temas de interesse com base em resultados de observações e pesquisas."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Analise os dados da pesquisa sobre leitura na turma.",
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "analise-tabela",
+          "enunciado": "Pesquisa com 30 alunos: aventura 12; histórias em quadrinhos 9; contos 6; poesia 3. Qual gênero foi mais escolhido?",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 2,
+          "tipo": "resposta-curta",
+          "enunciado": "Quantos alunos escolheram histórias em quadrinhos e contos juntos?",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 3,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual gênero teve a menor quantidade de escolhas?",
+          "alternativas": [
+            "Aventura",
+            "Histórias em quadrinhos",
+            "Contos",
+            "Poesia"
+          ],
+          "figuraId": null,
+          "espacoResposta": "pequeno"
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Quantos alunos a mais escolheram aventura do que poesia?",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 5,
+          "tipo": "producao",
+          "enunciado": "Escreva duas frases que apresentem os principais resultados da pesquisa.",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 6,
+          "tipo": "conclusao",
+          "enunciado": "Escreva uma conclusão de três a quatro linhas sugerindo uma ação para a biblioteca com base nos dados.",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "grande"
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Aventura.",
+          "justificativa": "Recebeu 12 escolhas."
+        },
+        {
+          "numero": 2,
+          "resposta": "15 alunos.",
+          "justificativa": "9 + 6 = 15."
+        },
+        {
+          "numero": 3,
+          "resposta": "Alternativa D.",
+          "justificativa": "Poesia recebeu 3 escolhas."
+        },
+        {
+          "numero": 4,
+          "resposta": "9 alunos.",
+          "justificativa": "12 − 3 = 9."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta possível: aventura foi a mais escolhida; poesia foi a menos escolhida.",
+          "justificativa": "As frases devem corresponder aos dados."
+        },
+        {
+          "numero": 6,
+          "resposta": "Resposta pessoal baseada nos dados, por exemplo ampliar livros de aventura e promover poesia.",
+          "justificativa": "A sugestão deve ser justificada pelos resultados."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-25"
+      }
+    },
+    {
+      "id": "efi-4ano-b3-lp-texto-literario-b",
+      "titulo": "Personagens, acontecimentos e sentidos",
+      "tema": "Texto literário",
+      "sequencia": "B",
+      "tipoSequencia": "Prática",
+      "dificuldade": "intermediaria",
+      "objetivo": "Compreender narrativa literária, identificando personagens, sequência de acontecimentos e inferências.",
+      "bncc": [
+        {
+          "codigo": "EF35LP21",
+          "descricaoResumida": "Ler e compreender textos literários de diferentes gêneros."
+        },
+        {
+          "codigo": "EF35LP26",
+          "descricaoResumida": "Ler e compreender narrativas ficcionais observando elementos da narrativa."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia a narrativa e responda.",
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "resposta-curta",
+          "enunciado": "Quem são os personagens principais?",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 2,
+          "tipo": "ordenacao",
+          "enunciado": "Numere na ordem: ( ) Clara abriu o baú. ( ) Clara encontrou a chave. ( ) O avô apontou o depósito. ( ) Eles leram histórias.",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 3,
+          "tipo": "multipla-escolha",
+          "enunciado": "Por que o avô sorriu ao ver a chave?",
+          "alternativas": [
+            "Porque não conhecia a chave",
+            "Porque provavelmente reconheceu a chave e sabia do baú",
+            "Porque queria jogar a chave fora",
+            "Porque estava com medo"
+          ],
+          "figuraId": null,
+          "espacoResposta": "pequeno"
+        },
+        {
+          "numero": 4,
+          "tipo": "inferencia",
+          "enunciado": "O que as cartas e fotografias permitiram que Clara conhecesse?",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 5,
+          "tipo": "vocabulario",
+          "enunciado": "Que sentido a expressão 'histórias de outros tempos' tem no texto?",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 6,
+          "tipo": "discursiva",
+          "enunciado": "Explique como a decisão de Clara de perguntar ao avô mudou o que aconteceu na história.",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "grande"
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Clara e o avô.",
+          "justificativa": "São os personagens que conduzem a ação."
+        },
+        {
+          "numero": 2,
+          "resposta": "3; 1; 2; 4.",
+          "justificativa": "Essa é a ordem narrativa."
+        },
+        {
+          "numero": 3,
+          "resposta": "Alternativa B.",
+          "justificativa": "A reação e o gesto indicam reconhecimento."
+        },
+        {
+          "numero": 4,
+          "resposta": "Histórias e lembranças da família.",
+          "justificativa": "Inferência apoiada em cartas e fotografias."
+        },
+        {
+          "numero": 5,
+          "resposta": "Histórias do passado da família.",
+          "justificativa": "Sentido contextual."
+        },
+        {
+          "numero": 6,
+          "resposta": "Ao perguntar, ela descobriu o baú e teve acesso às memórias da família; se guardasse a chave, isso não aconteceria.",
+          "justificativa": "Avaliar relação de causa e consequência."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-25"
+      },
+      "textoApoio": {
+        "titulo": "A chave no jardim",
+        "conteudo": "Clara encontrou uma pequena chave enferrujada perto do canteiro. Primeiro pensou em guardá-la, mas decidiu perguntar ao avô se ele sabia de onde vinha. O avô sorriu e apontou para um baú antigo no depósito. Clara correu até lá, abriu o baú e encontrou cartas e fotografias da família. Naquela tarde, os dois ficaram juntos lendo histórias de outros tempos."
+      }
+    },
+    {
+      "id": "efi-4ano-b3-lp-narrativa-c",
+      "titulo": "Escrevendo uma narrativa curta",
+      "tema": "Produção textual",
+      "sequencia": "C",
+      "tipoSequencia": "Consolidação",
+      "dificuldade": "desafiadora",
+      "objetivo": "Planejar, escrever e revisar narrativa curta com situação inicial, conflito, desenvolvimento e desfecho.",
+      "bncc": [
+        {
+          "codigo": "EF35LP25",
+          "descricaoResumida": "Criar narrativas ficcionais com certa autonomia, utilizando detalhes descritivos e sequência de eventos."
+        },
+        {
+          "codigo": "EF35LP26",
+          "descricaoResumida": "Compreender e empregar elementos da narrativa."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Planeje e escreva uma narrativa curta.",
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "planejamento",
+          "enunciado": "Escolha um personagem e descreva-o em duas frases.",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 2,
+          "tipo": "planejamento",
+          "enunciado": "Defina o lugar e o momento em que a história acontece.",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 3,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual elemento cria um conflito na narrativa?",
+          "alternativas": [
+            "O personagem encontra uma porta que não consegue abrir",
+            "O personagem diz seu nome",
+            "O texto informa a data",
+            "A história termina antes de começar"
+          ],
+          "figuraId": null,
+          "espacoResposta": "pequeno"
+        },
+        {
+          "numero": 4,
+          "tipo": "planejamento",
+          "enunciado": "Escreva o problema que seu personagem enfrentará e uma tentativa de resolvê-lo.",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 5,
+          "tipo": "desfecho",
+          "enunciado": "Escreva um desfecho coerente para o problema planejado.",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Produza a narrativa completa em 12 a 15 linhas. Use parágrafos, pontuação, marcadores de tempo e revise a ortografia.",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "grande"
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Resposta pessoal com descrição coerente.",
+          "justificativa": "Deve apresentar características do personagem."
+        },
+        {
+          "numero": 2,
+          "resposta": "Resposta pessoal com lugar e tempo definidos.",
+          "justificativa": "Verificar clareza."
+        },
+        {
+          "numero": 3,
+          "resposta": "Alternativa A.",
+          "justificativa": "A porta fechada cria um problema a ser resolvido."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta pessoal com conflito e tentativa de solução.",
+          "justificativa": "Avaliar coerência."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta pessoal coerente com o conflito.",
+          "justificativa": "O desfecho deve encerrar a sequência."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral com personagem, ambiente, conflito, desenvolvimento e desfecho.",
+          "justificativa": "Avaliar organização narrativa, coesão, pontuação e revisão."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-25"
+      }
+    }
+  ]
+}
