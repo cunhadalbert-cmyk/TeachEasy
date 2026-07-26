@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="520" viewBox="0 0 1200 520">
+  <rect width="1200" height="520" fill="white"/>
+  <defs><marker id="a" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0l12 6-12 6Z" fill="#111"/></marker></defs>
+  <g fill="none" stroke="#111" stroke-width="5"><rect x="25" y="75" width="330" height="400" rx="18"/><rect x="435" y="75" width="330" height="400" rx="18"/><rect x="845" y="75" width="330" height="400" rx="18"/></g>
+  <g font-family="Arial" font-size="32" font-weight="bold" text-anchor="middle"><text x="190" y="55">1</text><text x="600" y="55">2</text><text x="1010" y="55">3</text></g>
+  <g stroke="#111" stroke-width="7" fill="#eee"><rect x="70" y="170" width="55" height="220" rx="15"/><circle cx="160" cy="280" r="42"/><path d="M150 280h110"/><path d="M245 350q-20-130 20-160 35 20 20 70 35-45 55-5-5 85-55 130Z" fill="#ddd"/></g>
+  <g fill="#111"><circle cx="170" cy="260" r="9"/><circle cx="235" cy="325" r="8"/><circle cx="270" cy="285" r="8"/></g>
+  <g stroke="#111" stroke-width="7" fill="#ddd"><circle cx="610" cy="205" r="70"/><path d="M525 445q10-150 85-150t85 150"/><path d="M485 330q80-100 130-90" fill="none"/></g><g fill="#111"><circle cx="520" cy="315" r="8"/><circle cx="550" cy="285" r="8"/><circle cx="585" cy="250" r="8"/></g>
+  <g stroke="#111" stroke-width="7" fill="#eee"><circle cx="1010" cy="190" r="65"/><path d="M910 445q15-170 100-170t100 170"/></g><path d="M1010 240v130" stroke="#111" stroke-width="8" marker-end="url(#a)"/>
+  <g stroke="#111" stroke-width="6" marker-end="url(#a)"><path d="M365 275h55"/><path d="M775 275h55"/></g>
+</svg>

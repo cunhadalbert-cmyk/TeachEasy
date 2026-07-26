@@ -143,6 +143,28 @@ function validateCollection(collection, config) {
   });
 }
 
+async function validateCollectionAssets(collection) {
+  const referencedFigures = collection.atividades.flatMap(activity => {
+    const referencedIds = new Set(activity.questoes.map(question => question.figuraId).filter(Boolean));
+    return activity.figuras
+      .filter(figure => referencedIds.has(figure.id))
+      .map(figure => ({ activity, figure }));
+  });
+
+  await Promise.all(referencedFigures.map(async ({ activity, figure }) => {
+    if (!figure.arquivo) {
+      throw new Error(`Esta atividade depende da figura ${figure.id}, mas o arquivo visual ainda não foi produzido.`);
+    }
+    const response = await fetch(figure.arquivo);
+    if (!response.ok) {
+      throw new Error(`Esta atividade depende da figura ${figure.id}, mas o arquivo visual ainda não foi produzido.`);
+    }
+    activity.figuras = activity.figuras.map(item => item.id === figure.id
+      ? { ...item, arquivoValidado: true }
+      : item);
+  }));
+}
+
 function normalizeCollectionActivity(activity, collection, config) {
   return {
     id: activity.id,
@@ -186,6 +208,9 @@ async function ensureSelectedCollection() {
       })
       .then(collection => {
         validateCollection(collection, config);
+        return validateCollectionAssets(collection).then(() => collection);
+      })
+      .then(collection => {
         activities = activities
           .filter(activity => !(activity.stage === 'Ensino Fundamental I'
             && activity.grade === '4º ano'
@@ -403,9 +428,13 @@ function questionMarkup(activity, questions = activity.questions) {
   if (activity.collectionActivity) {
     return questions.map(question => {
       const embeddedAnswerSpace = ['multipla-escolha', 'completar', 'associacao'].includes(question.tipo);
+      const figure = question.figuraId
+        ? activity.figures.find(item => item.id === question.figuraId && item.arquivoValidado)
+        : null;
       return `
         <li>
           <p>${question.enunciado.replace(/\n/g, '<br>')}</p>
+          ${figure ? `<img class="question-figure" src="${figure.arquivo}" alt="${figure.textoAlternativo || ''}">` : ''}
           ${question.alternativas.length ? `<ol class="question-alternatives" type="a">${question.alternativas.map(alternative => `<li>${alternative}</li>`).join('')}</ol>` : ''}
           ${embeddedAnswerSpace ? '' : `<div class="student-answer-space answer-space-${question.espacoResposta}" aria-label="Espaço para resposta"></div>`}
         </li>`;
@@ -479,10 +508,11 @@ function openPreview(activity) {
 }
 
 function pendingFiguresMarkup(activity) {
-  if (!activity.figures.length) return '';
+  const missing = activity.figures.filter(figure => !figure.arquivoValidado);
+  if (!missing.length) return '';
   return `<aside class="figure-production-review">
     <strong>Área administrativa/revisão</strong>
-    ${activity.figures.map(figure => `<p data-figure-id="${figure.id}">Figura pendente de produção</p>`).join('')}
+    ${missing.map(figure => `<p data-figure-id="${figure.id}">Esta atividade depende da figura ${figure.id}, mas o arquivo visual ainda não foi produzido.</p>`).join('')}
   </aside>`;
 }
 
@@ -524,12 +554,32 @@ function openCollectionPreview(activity) {
       </section>
     </div>`;
   previewContent.querySelector('.preview-print').addEventListener('click', () => window.print());
-  previewContent.querySelector('.preview-word').addEventListener('click', () => downloadCollectionWord(activity));
+  previewContent.querySelector('.preview-word').addEventListener('click', () => {
+    downloadCollectionWord(activity).catch(error => showToast(error.message));
+  });
   preview.showModal();
 }
 
-function downloadCollectionWord(activity) {
-  const pages = [...previewContent.querySelectorAll('.collection-student-page, .collection-answer-key')]
+async function imageAsDataUrl(source) {
+  const response = await fetch(source);
+  if (!response.ok) throw new Error('Não foi possível incorporar uma figura ao arquivo Word.');
+  const blob = await response.blob();
+  return new Promise((resolve, reject) => {
+    const reader = new FileReader();
+    reader.onload = () => resolve(reader.result);
+    reader.onerror = reject;
+    reader.readAsDataURL(blob);
+  });
+}
+
+async function downloadCollectionWord(activity) {
+  const pageCopies = [...previewContent.querySelectorAll('.collection-student-page, .collection-answer-key')]
+    .map(page => page.cloneNode(true));
+  const images = pageCopies.flatMap(page => [...page.querySelectorAll('.question-figure')]);
+  await Promise.all(images.map(async image => {
+    image.src = await imageAsDataUrl(image.getAttribute('src'));
+  }));
+  const pages = pageCopies
     .map(page => page.outerHTML)
     .join('');
   const wordDocument = `<!doctype html>
@@ -552,6 +602,7 @@ function downloadCollectionWord(activity) {
         .question-list { margin: 0; padding-left: 7mm; }
         .question-list > li { margin: 0 0 5mm; page-break-inside: avoid; }
         .question-list > li > p { margin: 0 0 2mm; font-size: 12.5pt; line-height: 1.3; }
+        .question-figure { display: block; width: auto; max-width: 160mm; max-height: 40mm; margin: 1.5mm auto 2mm; object-fit: contain; page-break-inside: avoid; }
         .question-alternatives { margin: 2mm 0; font-size: 12pt; }
         .student-answer-space { margin-top: 2mm; border: 0; border-bottom: 1px solid #999; }
         .answer-space-pequeno { min-height: 12mm; } .answer-space-medio { min-height: 23mm; } .answer-space-grande { min-height: 35mm; }

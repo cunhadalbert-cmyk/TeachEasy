@@ -620,6 +620,18 @@
   page-break-inside: avoid;
 }
 
+.question-figure {
+  display: block;
+  width: auto;
+  max-width: min(100%, 160mm);
+  max-height: 40mm;
+  margin: 7px auto 9px;
+  object-fit: contain;
+  break-inside: avoid;
+  page-break-inside: avoid;
+  filter: grayscale(100%);
+}
+
 .collection-student-page-two .collection-question-list {
   margin-top: 0;
 }
@@ -1138,6 +1150,12 @@
     margin-bottom: 4mm;
     break-inside: avoid;
     page-break-inside: avoid;
+  }
+
+  .question-figure {
+    max-width: 160mm;
+    max-height: 40mm;
+    margin: 1.5mm auto 2mm;
   }
 
   .collection-answer-key h2,

@@ -3,7 +3,7 @@ import { readFile, readdir } from 'node:fs/promises';
 import test from 'node:test';
 import { Window } from 'happy-dom';
 
-async function createLibraryPage() {
+async function createLibraryPage({ missingAsset = '' } = {}) {
   const [html, script, scienceCollection, mathCollection, portugueseCollection] = await Promise.all([
     readFile(new URL('../biblioteca.html', import.meta.url), 'utf8'),
     readFile(new URL('../biblioteca.js', import.meta.url), 'utf8'),
@@ -22,16 +22,19 @@ async function createLibraryPage() {
     this.open = false;
   };
   window.__fetchCalls = [];
+  window.__assetFetchCalls = [];
   window.fetch = async path => {
-    window.__fetchCalls.push(path);
     const collections = {
       'data/atividades/fundamental-anos-iniciais/4-ano/3-bimestre/ciencias.json': scienceCollection,
       'data/atividades/fundamental-anos-iniciais/4-ano/3-bimestre/matematica.json': mathCollection,
       'data/atividades/fundamental-anos-iniciais/4-ano/3-bimestre/lingua-portuguesa.json': portugueseCollection
     };
+    if (collections[path]) window.__fetchCalls.push(path);
+    else window.__assetFetchCalls.push(path);
     return {
-      ok: Boolean(collections[path]),
-      json: async () => JSON.parse(collections[path])
+      ok: Boolean(collections[path]) || (path.startsWith('assets/atividades/') && path !== missingAsset),
+      json: async () => JSON.parse(collections[path]),
+      blob: async () => new window.Blob(['imagem'], { type: 'image/png' })
     };
   };
 
@@ -530,7 +533,10 @@ test('Ciências é carregada somente após etapa, ano, bimestre e disciplina', a
   const preview = window.document.querySelector('#activity-preview');
   assert.equal(preview.querySelectorAll('.collection-question-list > li').length, 6);
   assert.ok(preview.querySelector('.support-text h2').textContent);
-  assert.match(preview.querySelector('.figure-production-review').textContent, /Figura pendente de produção/);
+  assert.equal(preview.querySelector('.figure-production-review'), null);
+  const figure = preview.querySelector('.question-figure');
+  assert.ok(figure);
+  assert.equal(figure.getAttribute('src'), 'assets/atividades/ciencias/figura-01.png');
   assert.doesNotMatch(preview.querySelector('.collection-student-page').textContent, /Figura pendente de produção|Sequência de quatro desenhos/);
   assert.ok(preview.querySelector('.collection-answer-key'));
   await window.happyDOM.close();
@@ -670,5 +676,52 @@ test('Atividade de seis questões ocupa duas folhas e mantém gabarito separado'
   const script = await readFile(new URL('../biblioteca.js', import.meta.url), 'utf8');
   assert.match(script, /function downloadCollectionWord[\s\S]*application\/msword/s);
   assert.match(script, /function downloadCollectionWord[\s\S]*page-break-after:\s*always;[\s\S]*page-break-before:\s*always;/s);
+  await window.happyDOM.close();
+});
+
+test('Toda figura obrigatória possui arquivo e aparece junto da questão', async () => {
+  const raw = await readFile(new URL('../data/atividades/fundamental-anos-iniciais/4-ano/3-bimestre/ciencias.json', import.meta.url), 'utf8');
+  const collection = JSON.parse(raw);
+  const expected = new Map([
+    ['efi-4ano-b3-cie-decomposicao-a', [3, 'figura-01']],
+    ['efi-4ano-b3-cie-decomposicao-b', [3, 'figura-02']],
+    ['efi-4ano-b3-cie-decomposicao-c', [5, 'figura-03']],
+    ['efi-4ano-b3-cie-microrganismos-saude-a', [3, 'figura-04']],
+    ['efi-4ano-b3-cie-microrganismos-saude-b', [5, 'figura-05']]
+  ]);
+  for (const activity of collection.atividades) {
+    const [questionNumber, figureId] = expected.get(activity.id);
+    const question = activity.questoes.find(item => item.numero === questionNumber);
+    const figure = activity.figuras.find(item => item.id === figureId);
+    assert.equal(question.figuraId, figureId);
+    assert.ok(figure.arquivo.endsWith(`${figureId}.png`));
+    const image = await readFile(new URL(`../${figure.arquivo}`, import.meta.url));
+    assert.ok(image.length > 1000);
+    assert.deepEqual([...image.subarray(1, 4)], [80, 78, 71]);
+  }
+
+  const window = await createLibraryPage();
+  openActivities(window, 'Anos Iniciais', '4º ano', '3º bimestre');
+  const subject = window.document.querySelector('#library-filters select[name="subject"]');
+  subject.value = 'Ciências';
+  subject.dispatchEvent(new window.Event('input', { bubbles: true }));
+  await new Promise(resolve => setTimeout(resolve, 0));
+  window.document.querySelector('.activity-library-card .preview-button').click();
+  const questionWithFigure = window.document.querySelector('.question-figure').closest('.collection-question-list > li');
+  assert.ok(questionWithFigure);
+  assert.match(questionWithFigure.textContent, /Observe a figura/);
+  assert.match(await readFile(new URL('../biblioteca.css', import.meta.url), 'utf8'), /\.question-figure\s*\{[^}]*max-width:[^;]*160mm\);[^}]*object-fit:\s*contain;[^}]*page-break-inside:\s*avoid/s);
+  await window.happyDOM.close();
+});
+
+test('Coleção não é liberada quando uma figura obrigatória está ausente', async () => {
+  const window = await createLibraryPage({ missingAsset: 'assets/atividades/ciencias/figura-01.png' });
+  openActivities(window, 'Anos Iniciais', '4º ano', '3º bimestre');
+  const subject = window.document.querySelector('#library-filters select[name="subject"]');
+  subject.value = 'Ciências';
+  subject.dispatchEvent(new window.Event('input', { bubbles: true }));
+  await new Promise(resolve => setTimeout(resolve, 0));
+  assert.match(window.document.querySelector('#library-toast').textContent, /depende da figura figura-01.*arquivo visual ainda não foi produzido/);
+  assert.equal(window.document.querySelector('[data-activity-id="efi-4ano-b3-cie-decomposicao-a"]'), null);
   await window.happyDOM.close();
 });
