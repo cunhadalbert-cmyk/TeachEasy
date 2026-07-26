@@ -59,6 +59,24 @@ async function createInteractiveHomePage() {
   return window;
 }
 
+async function createHomeAiPage() {
+  const [html, script] = await Promise.all([
+    readFile(new URL('../index.html', import.meta.url), 'utf8'),
+    readFile(new URL('../ai-content.js', import.meta.url), 'utf8')
+  ]);
+  const window = new Window({ url: 'https://teacheasy.test/index.html' });
+  window.document.write(html);
+  window.document.close();
+  window.HTMLDialogElement.prototype.showModal = function showModal() {
+    this.open = true;
+  };
+  window.HTMLDialogElement.prototype.close = function close() {
+    this.open = false;
+  };
+  window.eval(script);
+  return window;
+}
+
 function clickChoice(window, text) {
   const choice = [...window.document.querySelectorAll('.library-choice-card')]
     .find(card => card.textContent.includes(text));
@@ -153,6 +171,43 @@ test('Quatro atalhos abrem demonstrações distintas e úteis', async () => {
   cards[3].click();
   assert.equal(dialog.querySelectorAll('.ai-demo-step').length, 4);
   assert.match(dialog.textContent, /Professor informa o pedido|Pronta para revisar/);
+  await window.happyDOM.close();
+});
+
+test('Criar com a IA é uma função real e distinta das três experiências existentes', async () => {
+  const window = await createHomeAiPage();
+  const launcher = window.document.querySelector('#ai-content-launcher');
+  const dialog = window.document.querySelector('#ai-content-dialog');
+  assert.match(launcher.closest('.ai-content-feature').textContent, /Criar com a IA/);
+  assert.match(launcher.textContent, /Fazer solicitação/);
+  assert.equal(window.document.querySelectorAll('#ai-content-launcher').length, 1);
+  assert.doesNotMatch(launcher.closest('.ai-content-feature').textContent, /Biblioteca de Atividades|Criar atividade por foto|Veja a IA criando/);
+
+  launcher.click();
+  assert.equal(dialog.open, true);
+  const form = window.document.querySelector('#ai-content-form');
+  assert.equal(form.elements.materialType.options.length, 9);
+  assert.ok(form.elements.request.required);
+  assert.match(form.elements.request.placeholder, /ciclo da água/);
+
+  form.elements.request.value = 'Crie uma atividade de Ciências sobre o ciclo da água.';
+  form.elements.materialType.value = 'Atividade';
+  form.elements.stage.value = 'Ensino Fundamental — Anos Iniciais';
+  form.elements.grade.value = '4º ano';
+  form.elements.subject.value = 'Ciências';
+  form.elements.topic.value = 'Ciclo da água';
+  form.elements.questionCount.value = '3';
+  form.elements.figures.checked = true;
+  form.elements.answerKey.checked = true;
+  form.elements.adapted.checked = true;
+  form.dispatchEvent(new window.Event('submit', { bubbles: true, cancelable: true }));
+
+  const preview = window.document.querySelector('#ai-content-preview');
+  assert.equal(preview.hidden, false);
+  assert.equal(preview.querySelectorAll('.generated-questions li').length, 3);
+  assert.match(preview.textContent, /Gabarito|Versão adaptada para inclusão/);
+  assert.match(preview.textContent, /Editar conteúdo|Pedir alteração à IA|Gerar novamente|Baixar em PDF|Baixar em Word/);
+  assert.doesNotMatch(window.document.querySelector('#ai-preview-document').textContent, /TeachEasy|propaganda|marca d’água/i);
   await window.happyDOM.close();
 });
 

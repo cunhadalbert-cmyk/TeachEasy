@@ -4,7 +4,7 @@
   "private": true,
   "description": "Site estático do TeachEasy e protótipo da Biblioteca de Atividades.",
   "scripts": {
-    "check:js": "node --check script.js && node --check biblioteca.js && node --check photo-activity.js && node --check scripts/check-whitespace.mjs && node --check tests/library.test.mjs",
+    "check:js": "node --check script.js && node --check biblioteca.js && node --check photo-activity.js && node --check ai-content.js && node --check scripts/check-whitespace.mjs && node --check tests/library.test.mjs",
     "check:html": "html-validate index.html biblioteca.html",
     "check:whitespace": "node scripts/check-whitespace.mjs",
     "test": "node --test tests/library.test.mjs",

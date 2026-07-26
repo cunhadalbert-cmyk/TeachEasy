@@ -220,6 +220,99 @@
           </div>
         </dialog>
 
+        <section class="ai-content-feature" aria-labelledby="ai-content-feature-title">
+          <div class="ai-content-feature-copy">
+            <span>CRIAÇÃO PERSONALIZADA</span>
+            <h3 id="ai-content-feature-title">Criar com a IA</h3>
+            <p>Informe o que você precisa e a IA prepara o material para a sua turma.</p>
+          </div>
+          <button class="btn ai-content-launcher" id="ai-content-launcher" type="button">
+            Fazer solicitação
+          </button>
+        </section>
+
+        <dialog class="ai-content-dialog" id="ai-content-dialog" aria-labelledby="ai-content-title">
+          <button class="ai-content-close" type="button" aria-label="Fechar criação com a IA">×</button>
+          <div class="ai-content-dialog-body">
+            <header class="ai-content-intro">
+              <span>CRIAÇÃO PERSONALIZADA</span>
+              <h2 id="ai-content-title">Criar com a IA</h2>
+              <p>Descreva o material. Você poderá revisar, editar e pedir alterações antes de baixar.</p>
+            </header>
+
+            <form class="ai-content-form" id="ai-content-form">
+              <label class="ai-prompt-field">
+                <span>Conte para a IA o que você precisa</span>
+                <textarea name="request" rows="5" required placeholder="Crie uma atividade de Ciências para o 4º ano sobre o ciclo da água, com 8 questões, figuras, gabarito e uma versão adaptada para aluno com autismo."></textarea>
+              </label>
+
+              <div class="ai-content-form-grid">
+                <label><span>Tipo de material</span><select name="materialType" required>
+                  <option value="">Selecione</option><option>Atividade</option><option>Prova</option>
+                  <option>Plano de aula</option><option>Sequência didática</option>
+                  <option>Exercício de revisão</option><option>Trabalho</option>
+                  <option>Relatório</option><option>Portfólio do estudante</option>
+                </select></label>
+                <label><span>Etapa de ensino</span><select name="stage" required>
+                  <option value="">Selecione</option><option>Educação Infantil</option>
+                  <option>Ensino Fundamental — Anos Iniciais</option>
+                  <option>Ensino Fundamental — Anos Finais</option><option>Ensino Médio</option>
+                </select></label>
+                <label><span>Ano ou série</span><input name="grade" type="text" required placeholder="Ex.: 4º ano"></label>
+                <label><span>Disciplina</span><input name="subject" type="text" required placeholder="Ex.: Ciências"></label>
+                <label><span>Conteúdo ou tema</span><input name="topic" type="text" required placeholder="Ex.: Ciclo da água"></label>
+                <label><span>Objetivo da atividade</span><input name="objective" type="text" placeholder="Ex.: Compreender as etapas do ciclo"></label>
+                <label><span>Quantidade de questões</span><input name="questionCount" type="number" min="1" max="30" value="8"></label>
+                <label><span>Nível de dificuldade</span><select name="difficulty">
+                  <option>Fácil</option><option selected>Intermediário</option><option>Avançado</option>
+                </select></label>
+                <label><span>Tipo de questões</span><select name="questionType">
+                  <option>Mistas</option><option>Objetivas</option><option>Discursivas</option>
+                </select></label>
+              </div>
+
+              <fieldset class="ai-content-options">
+                <legend>Recursos do material</legend>
+                <label><input name="figures" type="checkbox"> Incluir figuras</label>
+                <label><input name="answerKey" type="checkbox" checked> Incluir gabarito</label>
+                <label><input name="adapted" type="checkbox"> Criar versão adaptada para inclusão</label>
+              </fieldset>
+
+              <label class="ai-notes-field">
+                <span>Observações adicionais</span>
+                <textarea name="notes" rows="3" placeholder="Orientações, contexto da turma ou adaptações específicas."></textarea>
+              </label>
+
+              <fieldset class="ai-school-header-fields">
+                <legend>Cabeçalho escolar opcional</legend>
+                <label><span>Nome da escola</span><input name="school" type="text"></label>
+                <label><span>Professor</span><input name="teacher" type="text"></label>
+                <label><span>Aluno</span><input name="student" type="text"></label>
+                <label><span>Turma</span><input name="classroom" type="text"></label>
+                <label><span>Data</span><input name="date" type="date"></label>
+              </fieldset>
+
+              <button class="btn btn-primary ai-create-submit" type="submit">Criar conteúdo</button>
+            </form>
+
+            <section class="ai-content-preview" id="ai-content-preview" aria-live="polite" hidden>
+              <div class="ai-preview-status">Prévia pronta para revisão</div>
+              <article class="ai-preview-document" id="ai-preview-document" contenteditable="false"></article>
+              <label class="ai-change-request">
+                <span>O que você quer alterar?</span>
+                <textarea id="ai-change-request" rows="2" placeholder="Ex.: deixe as questões mais simples e inclua uma questão com desenho."></textarea>
+              </label>
+              <div class="ai-preview-actions">
+                <button class="btn btn-outline" id="ai-edit-content" type="button">Editar conteúdo</button>
+                <button class="btn btn-outline" id="ai-request-change" type="button">Pedir alteração à IA</button>
+                <button class="btn btn-outline" id="ai-regenerate-content" type="button">Gerar novamente</button>
+                <button class="btn btn-outline" id="ai-download-pdf" type="button">Baixar em PDF</button>
+                <button class="btn btn-primary" id="ai-download-word" type="button">Baixar em Word</button>
+              </div>
+            </section>
+          </div>
+        </dialog>
+
         <div class="cards-grid initial-services-grid">
           <article class="feature-card initial-service-card" role="button" tabindex="0" data-service="library-demo" data-demo-theme="rose" aria-haspopup="dialog">
             <div class="icon">🗂️</div>
@@ -300,6 +393,7 @@
   </footer>
 
   <script src="photo-activity.js"></script>
+  <script src="ai-content.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
