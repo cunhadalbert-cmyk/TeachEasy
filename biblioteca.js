@@ -61,7 +61,7 @@ const answerTemplates = [
   'Produção autoral avaliada por clareza, pertinência e compreensão.'
 ];
 
-const activities = activitySeeds.map((seed, index) => {
+let activities = activitySeeds.map((seed, index) => {
   const [id, stage, grade, term, subject, topic, difficulty, bncc, symbol, colors] = seed;
   const questions = (subjectQuestions[subject] || subjectQuestions.default).map(question =>
     question.replace('conteúdo', topic.toLowerCase())
@@ -86,6 +86,99 @@ const activities = activitySeeds.map((seed, index) => {
     description: `Atividade demonstrativa sobre ${topic.toLowerCase()}, com linguagem adequada ao ${grade}.`
   };
 });
+
+const scienceCollectionPath = 'data/atividades/fundamental-anos-iniciais/4-ano/3-bimestre/ciencias.json';
+let scienceCollectionLoaded = false;
+let scienceCollectionPromise = null;
+
+function difficultyLabel(value) {
+  return {
+    facil: 'Fácil',
+    intermediaria: 'Intermediária',
+    desafiadora: 'Desafiadora'
+  }[value] || value;
+}
+
+function validateScienceCollection(collection) {
+  if (collection.schemaVersion !== '1.0'
+    || collection.colecao !== '4ano-3bimestre-ciencias'
+    || collection.idioma !== 'pt-BR'
+    || collection.atividades.length !== 5) {
+    throw new Error('Estrutura da coleção de Ciências inválida.');
+  }
+  const ids = new Set();
+  collection.atividades.forEach(activity => {
+    if (ids.has(activity.id) || activity.questoes.length !== 6 || activity.gabarito.length !== 6) {
+      throw new Error('Atividades, questões ou IDs da coleção são inválidos.');
+    }
+    ids.add(activity.id);
+    const figureIds = new Set(activity.figuras.map(figure => figure.id));
+    activity.questoes.forEach(question => {
+      if (question.figuraId && !figureIds.has(question.figuraId)) {
+        throw new Error(`Referência de figura inválida em ${activity.id}.`);
+      }
+    });
+  });
+}
+
+function normalizeScienceActivity(activity) {
+  return {
+    id: activity.id,
+    stage: 'Ensino Fundamental I',
+    grade: '4º ano',
+    term: 3,
+    subject: 'Ciências',
+    topic: activity.titulo,
+    difficulty: difficultyLabel(activity.dificuldade),
+    bncc: activity.bncc.map(item => item.codigo).join(', '),
+    symbol: '🔬',
+    colors: ['#d9f1e1', '#e8f0ff'],
+    questions: activity.questoes,
+    answers: activity.gabarito,
+    figures: activity.figuras,
+    hasAnswerKey: activity.possuiGabarito,
+    hasFigures: activity.possuiFiguras,
+    hasAdapted: activity.possuiVersaoAdaptada,
+    description: activity.objetivo,
+    instruction: activity.instrucaoGeral,
+    supportText: activity.textoApoio,
+    collectionActivity: true
+  };
+}
+
+function shouldLoadScienceCollection() {
+  return navigation.stage === 'Ensino Fundamental I'
+    && navigation.grade === '4º ano'
+    && navigation.term === '3'
+    && filterForm.elements.subject.value === 'Ciências';
+}
+
+async function ensureScienceCollection() {
+  if (!shouldLoadScienceCollection() || scienceCollectionLoaded) return;
+  if (!scienceCollectionPromise) {
+    scienceCollectionPromise = fetch(scienceCollectionPath)
+      .then(response => {
+        if (!response.ok) throw new Error('Não foi possível carregar a coleção de Ciências.');
+        return response.json();
+      })
+      .then(collection => {
+        validateScienceCollection(collection);
+        activities = activities
+          .filter(activity => !(activity.stage === 'Ensino Fundamental I'
+            && activity.grade === '4º ano'
+            && activity.term === 3
+            && activity.subject === 'Ciências'))
+          .concat(collection.atividades.map(normalizeScienceActivity));
+        scienceCollectionLoaded = true;
+      })
+      .catch(error => {
+        scienceCollectionPromise = null;
+        showToast(error.message);
+        throw error;
+      });
+  }
+  return scienceCollectionPromise;
+}
 
 const filterForm = document.querySelector('#library-filters');
 const activityGrid = document.querySelector('#activity-grid');
@@ -283,16 +376,34 @@ function toggleSelection(id) {
 }
 
 function questionMarkup(activity) {
+  if (activity.collectionActivity) {
+    return activity.questions.map(question => `
+      <li>
+        <p>${question.enunciado.replace(/\n/g, '<br>')}</p>
+        ${question.alternativas.length ? `<ol class="question-alternatives" type="a">${question.alternativas.map(alternative => `<li>${alternative}</li>`).join('')}</ol>` : ''}
+        <div class="student-answer-space answer-space-${question.espacoResposta}" aria-label="Espaço para resposta"></div>
+      </li>
+    `).join('');
+  }
   return activity.questions.map(question => `
     <li>${question}<span class="answer-line" aria-hidden="true"></span></li>
   `).join('');
 }
 
 function answerMarkup(activity) {
+  if (activity.collectionActivity) {
+    return activity.answers.map(answer => `
+      <li><strong>${answer.resposta}</strong><p>${answer.justificativa}</p></li>
+    `).join('');
+  }
   return activity.answers.map(answer => `<li>${answer}</li>`).join('');
 }
 
 function openPreview(activity) {
+  if (activity.collectionActivity) {
+    openCollectionPreview(activity);
+    return;
+  }
   const gradient = `linear-gradient(135deg, ${activity.colors[0]}, ${activity.colors[1]})`;
   previewContent.innerHTML = `
     <div class="preview-shell">
@@ -338,6 +449,44 @@ function openPreview(activity) {
       </section>
     </div>
   `;
+  preview.showModal();
+}
+
+function pendingFiguresMarkup(activity) {
+  if (!activity.figures.length) return '';
+  return `<aside class="figure-production-review">
+    <strong>Área administrativa/revisão</strong>
+    ${activity.figures.map(figure => `<p data-figure-id="${figure.id}">Figura pendente de produção</p>`).join('')}
+  </aside>`;
+}
+
+function openCollectionPreview(activity) {
+  previewContent.innerHTML = `
+    <div class="preview-shell collection-preview-shell">
+      <div class="preview-topline">Revisão · ${activity.stage} · ${activity.grade} · ${activity.term}º bimestre</div>
+      ${pendingFiguresMarkup(activity)}
+      <button class="btn btn-primary preview-print" type="button">Imprimir atividade</button>
+
+      <section class="worksheet-page collection-student-page">
+        <div class="student-fields">
+          <span>Nome:</span><span>Turma:</span><span>Data:</span>
+        </div>
+        <h1>${activity.topic}</h1>
+        <p class="collection-instruction">${activity.instruction}</p>
+        <article class="support-text">
+          <h2>${activity.supportText.titulo}</h2>
+          <p>${activity.supportText.conteudo.replace(/\n/g, '<br>')}</p>
+        </article>
+        <ol class="question-list collection-question-list">${questionMarkup(activity)}</ol>
+      </section>
+
+      <section class="worksheet-page answer-key-page collection-answer-key">
+        <h2>Gabarito</h2>
+        <h3>${activity.topic}</h3>
+        <ol>${answerMarkup(activity)}</ol>
+      </section>
+    </div>`;
+  previewContent.querySelector('.preview-print').addEventListener('click', () => window.print());
   preview.showModal();
 }
 
@@ -422,13 +571,14 @@ function renderNavigation() {
   renderActivities();
 }
 
-filterForm.addEventListener('input', () => {
+filterForm.addEventListener('input', async () => {
   currentPage = 1;
+  await ensureScienceCollection().catch(() => {});
   renderActivities();
 });
 filterForm.addEventListener('submit', event => {
   event.preventDefault();
-  renderActivities();
+  ensureScienceCollection().catch(() => {}).finally(renderActivities);
 });
 filterForm.addEventListener('reset', () => requestAnimationFrame(renderActivities));
 emptyReset.addEventListener('click', resetFilters);

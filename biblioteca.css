@@ -533,6 +533,94 @@
   color: #fff;
 }
 
+.figure-production-review {
+  margin: 18px 0;
+  padding: 16px 18px;
+  border: 1px solid #e0b95a;
+  border-radius: 14px;
+  background: #fff8df;
+  color: #5d4310;
+}
+
+.figure-production-review strong {
+  display: block;
+  margin-bottom: 6px;
+}
+
+.figure-production-review p {
+  margin: 4px 0;
+  font-weight: 800;
+}
+
+.preview-print {
+  margin: 0 0 18px auto;
+}
+
+.collection-student-page,
+.collection-answer-key {
+  font-family: Arial, sans-serif;
+}
+
+.collection-student-page h1 {
+  margin: 20px 0 14px;
+  color: #111;
+  font-family: Arial, sans-serif;
+  font-size: 24px;
+  text-align: center;
+}
+
+.collection-instruction {
+  font-weight: 700;
+}
+
+.support-text {
+  margin: 20px 0 24px;
+  padding: 18px;
+  border: 1px solid #bfc7c1;
+  border-radius: 10px;
+}
+
+.support-text h2 {
+  margin: 0 0 10px;
+  color: #111;
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+}
+
+.support-text p,
+.collection-question-list > li > p {
+  white-space: normal;
+}
+
+.collection-question-list > li {
+  margin-bottom: 24px;
+}
+
+.question-alternatives {
+  margin: 10px 0;
+}
+
+.question-alternatives li {
+  margin: 7px 0;
+}
+
+.student-answer-space {
+  margin-top: 10px;
+  background: repeating-linear-gradient(to bottom, transparent 0, transparent 29px, #b8b8b8 30px);
+}
+
+.answer-space-pequeno { min-height: 42px; }
+.answer-space-medio { min-height: 82px; }
+.answer-space-grande { min-height: 132px; }
+
+.collection-answer-key > ol > li {
+  margin-bottom: 18px;
+}
+
+.collection-answer-key p {
+  margin: 5px 0 0;
+}
+
 .empty-state {
   padding: 70px 24px;
   border: 2px dashed rgba(45, 76, 58, .25);
@@ -905,11 +993,19 @@
 }
 
 @media print {
+  @page {
+    size: A4 portrait;
+    margin: 15mm;
+  }
+
   .library-header,
   .library-hero,
   .library-content,
   .library-footer,
-  .preview-close {
+  .preview-close,
+  .preview-topline,
+  .figure-production-review,
+  .preview-print {
     display: none !important;
   }
 
@@ -926,10 +1022,48 @@
   }
 
   .worksheet-page {
-    min-height: 95vh;
+    min-height: 0;
     margin: 0;
+    padding: 0;
     border: 0;
     box-shadow: none;
     page-break-after: always;
+  }
+
+  .collection-student-page,
+  .collection-answer-key {
+    color: #000;
+    font-family: Arial, sans-serif;
+    font-size: 13pt;
+    line-height: 1.3;
+  }
+
+  .collection-student-page h1 {
+    font-size: 18pt;
+  }
+
+  .support-text h2 {
+    font-size: 15pt;
+  }
+
+  .question-alternatives {
+    font-size: 12pt;
+  }
+
+  .collection-answer-key {
+    break-before: page;
+    font-size: 11pt;
+  }
+
+  .collection-answer-key h2,
+  .collection-answer-key h3 {
+    font-family: Arial, sans-serif;
+  }
+
+  .collection-student-page::before,
+  .collection-student-page::after,
+  .collection-answer-key::before,
+  .collection-answer-key::after {
+    content: none !important;
   }
 }

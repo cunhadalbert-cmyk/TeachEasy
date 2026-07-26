@@ -4,9 +4,10 @@ import test from 'node:test';
 import { Window } from 'happy-dom';
 
 async function createLibraryPage() {
-  const [html, script] = await Promise.all([
+  const [html, script, scienceCollection] = await Promise.all([
     readFile(new URL('../biblioteca.html', import.meta.url), 'utf8'),
-    readFile(new URL('../biblioteca.js', import.meta.url), 'utf8')
+    readFile(new URL('../biblioteca.js', import.meta.url), 'utf8'),
+    readFile(new URL('../data/atividades/fundamental-anos-iniciais/4-ano/3-bimestre/ciencias.json', import.meta.url), 'utf8')
   ]);
   const window = new Window({ url: 'https://teacheasy.test/biblioteca.html' });
   window.document.write(html);
@@ -17,6 +18,14 @@ async function createLibraryPage() {
   };
   window.HTMLDialogElement.prototype.close = function close() {
     this.open = false;
+  };
+  window.__fetchCalls = [];
+  window.fetch = async path => {
+    window.__fetchCalls.push(path);
+    return {
+      ok: true,
+      json: async () => JSON.parse(scienceCollection)
+    };
   };
 
   window.eval(script);
@@ -463,4 +472,70 @@ test('Autismo e inclusão aparecem em todas as etapas', async () => {
     assert.match(card.textContent, /Versão adaptada/);
     await window.happyDOM.close();
   }
+});
+
+test('Coleção de Ciências possui schema válido, cinco atividades e referências consistentes', async () => {
+  const raw = await readFile(new URL('../data/atividades/fundamental-anos-iniciais/4-ano/3-bimestre/ciencias.json', import.meta.url), 'utf8');
+  const collection = JSON.parse(raw);
+  assert.equal(collection.schemaVersion, '1.0');
+  assert.equal(collection.colecao, '4ano-3bimestre-ciencias');
+  assert.equal(collection.idioma, 'pt-BR');
+  assert.equal(collection.atividades.length, 5);
+  assert.equal(new Set(collection.atividades.map(activity => activity.id)).size, 5);
+
+  collection.atividades.forEach(activity => {
+    assert.ok(['facil', 'intermediaria', 'desafiadora'].includes(activity.dificuldade));
+    assert.equal(activity.questoes.length, 6);
+    assert.equal(activity.gabarito.length, 6);
+    assert.ok(activity.instrucaoGeral);
+    assert.ok(activity.textoApoio.titulo);
+    assert.ok(activity.textoApoio.conteudo);
+    const figureIds = new Set(activity.figuras.map(figure => figure.id));
+    activity.questoes.forEach(question => {
+      if (question.figuraId) assert.ok(figureIds.has(question.figuraId));
+    });
+  });
+
+  const healthActivity = collection.atividades.find(activity => activity.id === 'efi-4ano-b3-cie-microrganismos-saude-b');
+  const answerSix = healthActivity.gabarito.find(answer => answer.numero === 6);
+  assert.match(answerSix.resposta, /lavar as mãos antes do lanche.*transmissão pelas mãos/s);
+  assert.match(answerSix.resposta, /gotículas no ar/);
+  assert.match(answerSix.resposta, /água ou alimentos contaminados/);
+  assert.doesNotMatch(answerSix.resposta, /compartilhar copo|compartilhamento de copos/i);
+});
+
+test('Ciências é carregada somente após etapa, ano, bimestre e disciplina', async () => {
+  const window = await createLibraryPage();
+  openActivities(window, 'Anos Iniciais', '4º ano', '3º bimestre');
+  assert.equal(window.__fetchCalls.length, 0);
+
+  const subject = window.document.querySelector('#library-filters select[name="subject"]');
+  subject.value = 'Ciências';
+  subject.dispatchEvent(new window.Event('input', { bubbles: true }));
+  await new Promise(resolve => setTimeout(resolve, 0));
+
+  assert.deepEqual(window.__fetchCalls, ['data/atividades/fundamental-anos-iniciais/4-ano/3-bimestre/ciencias.json']);
+  const cards = [...window.document.querySelectorAll('.activity-library-card')];
+  assert.equal(cards.length, 5);
+  assert.ok(cards.every(card => /Fácil|Intermediária|Desafiadora/.test(card.textContent)));
+
+  cards[0].querySelector('.preview-button').click();
+  const preview = window.document.querySelector('#activity-preview');
+  assert.equal(preview.querySelectorAll('.collection-question-list > li').length, 6);
+  assert.ok(preview.querySelector('.support-text h2').textContent);
+  assert.match(preview.querySelector('.figure-production-review').textContent, /Figura pendente de produção/);
+  assert.doesNotMatch(preview.querySelector('.collection-student-page').textContent, /Figura pendente de produção|Sequência de quatro desenhos/);
+  assert.ok(preview.querySelector('.collection-answer-key'));
+  await window.happyDOM.close();
+});
+
+test('Impressão da coleção usa A4 e gabarito separado sem marca promocional', async () => {
+  const css = await readFile(new URL('../biblioteca.css', import.meta.url), 'utf8');
+  assert.match(css, /@page\s*\{[^}]*size:\s*A4 portrait;[^}]*margin:\s*15mm/s);
+  assert.match(css, /\.collection-student-page,[\s\S]*font-family:\s*Arial,\s*sans-serif;[\s\S]*font-size:\s*13pt;[\s\S]*line-height:\s*1\.3/s);
+  assert.match(css, /\.collection-student-page h1\s*\{[^}]*font-size:\s*18pt/s);
+  assert.match(css, /\.question-alternatives\s*\{[^}]*font-size:\s*12pt/s);
+  assert.match(css, /\.collection-answer-key\s*\{[^}]*break-before:\s*page;[^}]*font-size:\s*11pt/s);
+  const script = await readFile(new URL('../biblioteca.js', import.meta.url), 'utf8');
+  assert.doesNotMatch(script.match(/function openCollectionPreview[\s\S]*?function resetFilters/)[0], /worksheet-brand|logotipo|marca-d’água|publicidade|rodapé promocional/i);
 });
