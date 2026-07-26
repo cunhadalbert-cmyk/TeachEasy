@@ -1,4 +1,4 @@
-﻿(() => {
+(() => {
   const STORAGE_KEYS = {
     favorites: 'teacheasy.library.favorites',
     selection: 'teacheasy.library.selection'
