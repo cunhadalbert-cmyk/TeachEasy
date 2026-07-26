@@ -1,5 +1,5 @@
 import assert from 'node:assert/strict';
-import { readFile } from 'node:fs/promises';
+import { readFile, readdir } from 'node:fs/promises';
 import test from 'node:test';
 import { Window } from 'happy-dom';
 
@@ -161,10 +161,50 @@ test('Topo, rodapé e banners usam gradientes vinho com contraste claro', async 
     readFile(new URL('../styles.css', import.meta.url), 'utf8'),
     readFile(new URL('../photo-activity.css', import.meta.url), 'utf8')
   ]);
-  assert.match(css, /body:not\(\.library-page\) \.topbar,\s*body:not\(\.library-page\) \.site-header\s*\{[^}]*linear-gradient\(180deg,\s*#3b0714 0%,\s*#5b1022 50%,\s*#7d2639 100%\)/s);
+  assert.match(css, /body:not\(\.library-page\) \.site-header\s*\{[^}]*linear-gradient\(180deg,\s*#3b0714 0%,\s*#5b1022 50%,\s*#7d2639 100%\)/s);
   assert.match(css, /body:not\(\.library-page\) \.footer\s*\{[^}]*linear-gradient\(180deg,\s*#3b0714 0%,\s*#5b1022 50%,\s*#7d2639 100%\)/s);
   assert.match(css, /\.home-library-highlight\s*\{[^}]*linear-gradient\(90deg,\s*#4a0715 0%,\s*#7a1730 48%,\s*#a34058 100%\)/s);
   assert.match(photoCss, /\.photo-activity-launcher\s*\{[^}]*linear-gradient\(90deg,\s*#4a0715 0%,\s*#7a1730 48%,\s*#a34058 100%\)/s);
+});
+
+test('HTML final não contém IDs duplicados, links vazios ou textos substituídos', async () => {
+  for (const file of ['index.html', 'biblioteca.html']) {
+    const html = await readFile(new URL(`../${file}`, import.meta.url), 'utf8');
+    const ids = [...html.matchAll(/\bid="([^"]+)"/g)].map(match => match[1]);
+    assert.equal(new Set(ids).size, ids.length, `${file} contém IDs duplicados`);
+    assert.doesNotMatch(html, /href="#"/);
+    assert.doesNotMatch(html, /\uFFFD|Educa\?\?|navega\?\?/i);
+  }
+
+  const home = await readFile(new URL('../index.html', import.meta.url), 'utf8');
+  assert.match(home, /COMECE PELO QUE VOCÊ MAIS PRECISA/);
+  assert.match(home, /Cinco serviços para facilitar a sua rotina/);
+  assert.match(home, /Mais tempo para o que realmente importa: você\./);
+  assert.doesNotMatch(home, /FEITO PARA PROFESSORES|Conheça a plataforma|NOSSOS SERVIÇOS|Tudo o que você precisa, em um só lugar/);
+});
+
+test('Links da Biblioteca e responsividade principal permanecem definidos', async () => {
+  const [html, css, photoCss, libraryCss] = await Promise.all([
+    readFile(new URL('../index.html', import.meta.url), 'utf8'),
+    readFile(new URL('../styles.css', import.meta.url), 'utf8'),
+    readFile(new URL('../photo-activity.css', import.meta.url), 'utf8'),
+    readFile(new URL('../biblioteca.css', import.meta.url), 'utf8')
+  ]);
+  assert.equal((html.match(/href="biblioteca\.html"/g) || []).length, 1);
+  assert.match(css, /@media \(max-width:\s*980px\)/);
+  assert.match(css, /@media \(max-width:\s*680px\)/);
+  assert.match(photoCss, /@media \(max-width:\s*680px\)/);
+  assert.match(libraryCss, /@media \(max-width:\s*680px\)/);
+});
+
+test('Assets restantes possuem referência no projeto', async () => {
+  const assetNames = await readdir(new URL('../assets/', import.meta.url));
+  const sources = await Promise.all(
+    ['index.html', 'biblioteca.html', 'styles.css', 'biblioteca.css', 'photo-activity.css']
+      .map(file => readFile(new URL(`../${file}`, import.meta.url), 'utf8'))
+  );
+  const combined = sources.join('\n');
+  assetNames.forEach(asset => assert.match(combined, new RegExp(asset.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'))));
 });
 
 test('Seção sobre mostra o fluxo da IA até a Biblioteca e preserva o texto', async () => {

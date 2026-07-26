@@ -14,24 +14,9 @@
 <body>
   <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
 
-  <div class="topbar">
-    <div class="container topbar-inner">
-      <div class="contact">
-        <span>✉ contato@teacheasy.com.br</span>
-        <span>☎ (11) 98765-4321</span>
-      </div>
-      <div class="top-links">
-        <a href="#">Central de Ajuda</a>
-        <a href="#">Blog</a>
-        <a href="#">Entrar</a>
-        <a class="btn btn-small btn-primary" href="#">Comece grátis</a>
-      </div>
-    </div>
-  </div>
-
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="#" aria-label="Página inicial TeachEasy">
+      <a class="brand" href="index.html" aria-label="Página inicial TeachEasy">
         <strong>TeachEasy</strong>
         <span>O caminho mais rápido do professor.</span>
       </a>
@@ -274,75 +259,8 @@
       <h2 id="service-dialog-title"></h2>
       <p class="service-dialog-description"></p>
 
-      <div class="service-dialog-columns">
-        <div>
-          <h3>O que está incluído</h3>
-          <ul class="service-dialog-includes"></ul>
-        </div>
-        <div>
-          <h3>O que você informa</h3>
-          <ul class="service-dialog-inputs"></ul>
-        </div>
-      </div>
+      <div class="service-dialog-columns"></div>
 
-      <div class="service-dialog-delivery">
-        <strong>Formato de entrega</strong>
-        <span>PDF, Word editável ou ambos</span>
-      </div>
-
-      <button class="btn btn-primary service-dialog-action" type="button">Quero solicitar este material</button>
-      <small class="service-dialog-note">Você poderá continuar pelo WhatsApp no celular, notebook ou computador.</small>
-
-      <form class="service-request-form" hidden>
-        <div class="service-request-heading">
-          <span>MONTE SEU PEDIDO</span>
-          <h3>Conte o que você precisa</h3>
-          <p>Preencha somente se quiser. Para testar sem dados, use o exemplo automático.</p>
-        </div>
-
-        <div class="service-form-grid">
-          <label>
-            <span>Seu nome</span>
-            <input name="teacher_name" type="text" autocomplete="name" placeholder="Como podemos chamar você?">
-          </label>
-          <label>
-            <span>Ano ou série</span>
-            <input name="grade" type="text" placeholder="Ex.: 5º ano">
-          </label>
-          <label>
-            <span>Disciplina</span>
-            <input name="subject" type="text" placeholder="Ex.: Matemática">
-          </label>
-          <label>
-            <span>Tema</span>
-            <input name="topic" type="text" placeholder="Ex.: Frações">
-          </label>
-          <label>
-            <span>Quantidade de questões</span>
-            <input name="duration" type="text" inputmode="numeric" placeholder="Ex.: 5 questões">
-          </label>
-          <label>
-            <span>Formato de entrega</span>
-            <select name="format">
-              <option value="PDF">PDF</option>
-              <option value="Word editável">Word editável</option>
-              <option value="PDF e Word editável">PDF e Word editável</option>
-            </select>
-          </label>
-          <label class="service-form-full">
-            <span>Observações adicionais</span>
-            <textarea name="notes" rows="3" placeholder="Ex.: incluir BNCC, adaptação inclusiva ou quantidade de questões"></textarea>
-          </label>
-        </div>
-
-        <p class="service-request-status" role="status" aria-live="polite"></p>
-
-        <div class="service-form-actions">
-          <button class="btn btn-outline service-request-back" type="button">← Voltar</button>
-          <button class="btn btn-outline service-generate-example" type="button">Gerar e baixar material</button>
-          <button class="btn btn-primary service-request-submit" type="submit">Continuar pelo WhatsApp →</button>
-        </div>
-      </form>
     </dialog>
 
     <section id="sobre" class="section section-soft">
@@ -381,8 +299,6 @@
     </div>
   </footer>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/docx@9.7.1/dist/index.iife.js"></script>
   <script src="photo-activity.js"></script>
   <script src="script.js"></script>
 </body>
