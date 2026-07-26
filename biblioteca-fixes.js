@@ -1,4 +1,7 @@
 (() => {
+  const EXPECTED_MATH_ACTIVITIES = 20;
+  collectionRegistry['Matemática'].count = EXPECTED_MATH_ACTIVITIES;
+
   const STORAGE_KEYS = {
     favorites: 'teacheasy.library.favorites',
     selection: 'teacheasy.library.selection'

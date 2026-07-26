@@ -98,7 +98,7 @@ const collectionRegistry = {
   'Matemática': {
     path: 'data/atividades/fundamental-anos-iniciais/4-ano/3-bimestre/matematica.json',
     collection: '4ano-3bimestre-matematica',
-    count: 8,
+    count: 20,
     symbol: '➗',
     colors: ['#e1ebff', '#fff1bd']
   },
