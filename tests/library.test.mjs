@@ -636,3 +636,29 @@ test('Prévia e impressão usam folhas brancas sem efeito de cartão', async () 
   assert.match(css, /@media print\s*\{[\s\S]*html,\s*body\s*\{[^}]*background:\s*#fff !important;/s);
   assert.match(css, /@media print\s*\{[\s\S]*\.worksheet-page,\s*\.activity-print-page,\s*\.answer-key-page\s*\{[^}]*width:\s*210mm;[^}]*border:\s*none !important;[^}]*border-radius:\s*0 !important;[^}]*background:\s*#fff !important;[^}]*box-shadow:\s*none !important;/s);
 });
+
+test('Atividade de seis questões ocupa duas folhas e mantém gabarito separado', async () => {
+  const window = await createLibraryPage();
+  openActivities(window, 'Anos Iniciais', '4º ano', '3º bimestre');
+  const subject = window.document.querySelector('#library-filters select[name="subject"]');
+  subject.value = 'Ciências';
+  subject.dispatchEvent(new window.Event('input', { bubbles: true }));
+  await new Promise(resolve => setTimeout(resolve, 0));
+  window.document.querySelector('.activity-library-card .preview-button').click();
+
+  const preview = window.document.querySelector('#activity-preview');
+  const studentPages = [...preview.querySelectorAll('.collection-student-page')];
+  assert.equal(studentPages.length, 2);
+  assert.equal(studentPages[0].querySelectorAll('.collection-question-list > li').length, 3);
+  assert.equal(studentPages[1].querySelectorAll('.collection-question-list > li').length, 3);
+  assert.ok(studentPages[0].querySelector('.support-text'));
+  assert.equal(studentPages[1].querySelector('.support-text'), null);
+  assert.equal(studentPages[1].querySelector('.collection-question-list').getAttribute('start'), '4');
+  assert.ok(preview.querySelector('.collection-answer-key'));
+
+  const css = await readFile(new URL('../biblioteca.css', import.meta.url), 'utf8');
+  assert.match(css, /\.collection-instruction,\s*\.support-text\s*\{[^}]*font-size:\s*12pt/s);
+  assert.match(css, /\.collection-question-list > li > p\s*\{[^}]*font-size:\s*13pt;[^}]*line-height:\s*1\.3/s);
+  assert.match(css, /\.collection-question-list > li\s*\{[^}]*break-inside:\s*avoid;[^}]*page-break-inside:\s*avoid;/s);
+  await window.happyDOM.close();
+});
