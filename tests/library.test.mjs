@@ -41,6 +41,24 @@ async function createHomePhotoPage() {
   return window;
 }
 
+async function createInteractiveHomePage() {
+  const [html, script] = await Promise.all([
+    readFile(new URL('../index.html', import.meta.url), 'utf8'),
+    readFile(new URL('../script.js', import.meta.url), 'utf8')
+  ]);
+  const window = new Window({ url: 'https://teacheasy.test/index.html' });
+  window.document.write(html);
+  window.document.close();
+  window.HTMLDialogElement.prototype.showModal = function showModal() {
+    this.open = true;
+  };
+  window.HTMLDialogElement.prototype.close = function close() {
+    this.open = false;
+  };
+  window.eval(script);
+  return window;
+}
+
 function clickChoice(window, text) {
   const choice = [...window.document.querySelectorAll('.library-choice-card')]
     .find(card => card.textContent.includes(text));
@@ -101,6 +119,40 @@ test('Destaque da Biblioteca fica na página inicial junto aos quatro serviços'
   assert.ok(Boolean(photoHighlight.compareDocumentPosition(services) & window.Node.DOCUMENT_POSITION_FOLLOWING));
   assert.equal(window.document.querySelectorAll('.home-library-highlight').length, 1);
   assert.equal(window.document.querySelectorAll('a[href="biblioteca.html"]').length, 1);
+  await window.happyDOM.close();
+});
+
+test('Quatro atalhos abrem demonstrações distintas e úteis', async () => {
+  const window = await createInteractiveHomePage();
+  const cards = [...window.document.querySelectorAll('.initial-service-card')];
+  assert.equal(cards.length, 4);
+  assert.equal(window.document.querySelectorAll('.service-number').length, 0);
+  assert.deepEqual(
+    cards.map(card => card.querySelector('h3').textContent),
+    ['Visualizar atividades da biblioteca', 'Desenhos para colorir', 'Jogos pedagógicos', 'Veja a IA criando']
+  );
+
+  cards[0].click();
+  const dialog = window.document.querySelector('#service-dialog');
+  assert.equal(dialog.open, true);
+  const firstActivity = dialog.querySelector('.demo-slide strong').textContent;
+  dialog.querySelector('.demo-next').click();
+  assert.notEqual(dialog.querySelector('.demo-slide strong').textContent, firstActivity);
+  dialog.close();
+
+  cards[1].click();
+  assert.equal(dialog.querySelectorAll('.demo-category').length, 6);
+  assert.match(dialog.textContent, /Surpreenda-me/);
+  dialog.close();
+
+  cards[2].click();
+  assert.equal(dialog.querySelectorAll('.demo-game').length, 6);
+  assert.match(dialog.textContent, /Caça-palavras|Jogo da memória/);
+  dialog.close();
+
+  cards[3].click();
+  assert.equal(dialog.querySelectorAll('.ai-demo-step').length, 4);
+  assert.match(dialog.textContent, /Professor informa o pedido|Pronta para revisar/);
   await window.happyDOM.close();
 });
 

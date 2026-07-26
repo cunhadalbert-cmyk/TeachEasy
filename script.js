@@ -74,35 +74,21 @@ restartTimer();
 
 
 const serviceDetails = {
-  planning: {
-    icon: '🗓', title: 'Planejamento de aula',
-    description: 'Uma estrutura completa para orientar a aula do início à avaliação, adaptada à série, à disciplina e ao tema.',
-    includes: ['Objetivos de aprendizagem', 'Habilidades e conhecimentos prévios', 'Recursos e metodologia', 'Desenvolvimento passo a passo', 'Avaliação e adaptações'],
-    inputs: ['Ano ou série', 'Disciplina e tema', 'Quantidade e duração das aulas', 'Objetivo principal', 'Necessidades específicas da turma']
+  'library-demo': {
+    icon: '🗂️', title: 'Visualizar atividades da biblioteca',
+    description: 'Passe pelos exemplos e veja como as atividades ficam organizadas antes de escolher.'
   },
-  activity: {
-    icon: '✏️', title: 'Atividade com gabarito',
-    description: 'Exercícios adequados ao nível da turma, organizados para imprimir, editar e aplicar com facilidade.',
-    includes: ['Texto de apoio quando necessário', 'Questões objetivas e discursivas', 'Nível de dificuldade ajustável', 'Espaço para respostas', 'Gabarito completo'],
-    inputs: ['Ano ou série', 'Disciplina e tema', 'Quantidade de questões', 'Tipo de atividade', 'Nível de dificuldade']
+  'coloring-demo': {
+    icon: '🎨', title: 'Desenhos para colorir',
+    description: 'Escolha uma categoria ou deixe o TeachEasy sugerir um tema.'
   },
-  assessment: {
-    icon: '✅', title: 'Avaliação com gabarito',
-    description: 'Uma avaliação clara e personalizável, com critérios de correção e questões alinhadas ao conteúdo trabalhado.',
-    includes: ['Cabeçalho e orientações', 'Questões objetivas', 'Questões discursivas', 'Critérios de correção', 'Gabarito organizado'],
-    inputs: ['Ano ou série', 'Disciplina e conteúdos', 'Quantidade de questões', 'Tipos de questão', 'Nível de dificuldade']
+  'games-demo': {
+    icon: '🎲', title: 'Jogos pedagógicos',
+    description: 'Veja materiais lúdicos que podem ser impressos e usados com a turma.'
   },
-  sequence: {
-    icon: '📚', title: 'Sequência didática',
-    description: 'Um conjunto de aulas conectadas, com progressão pedagógica e atividades que aprofundam o tema por etapas.',
-    includes: ['Objetivo geral e objetivos por etapa', 'Organização das aulas', 'Atividades progressivas', 'Recursos e intervenções', 'Avaliação final'],
-    inputs: ['Ano ou série', 'Disciplina e tema', 'Quantidade de aulas', 'Duração de cada encontro', 'Resultado esperado']
-  },
-  portfolio: {
-    icon: '🗂', title: 'Portfólio do estudante',
-    description: 'Um registro organizado da aprendizagem, com produções, avanços, observações e próximos objetivos do estudante.',
-    includes: ['Identificação e período', 'Objetivos acompanhados', 'Evidências de aprendizagem', 'Avanços e desafios', 'Parecer descritivo e próximos passos'],
-    inputs: ['Nome do estudante', 'Ano ou turma', 'Período avaliado', 'Produções e evidências', 'Observações do professor']
+  'ai-demo': {
+    icon: '✨', title: 'Veja a IA criando',
+    description: 'Acompanhe o pedido se transformando em uma atividade pronta para revisão.'
   }
 };
 
@@ -114,17 +100,108 @@ function fillList(container, items) {
   container.innerHTML = items.map(item => '<li>' + item + '</li>').join('');
 }
 
+function libraryDemoMarkup() {
+  return `
+    <div class="demo-showcase">
+      <div class="demo-carousel">
+        <button class="demo-carousel-button demo-previous" type="button" aria-label="Atividade anterior">‹</button>
+        <div class="demo-slide" aria-live="polite"></div>
+        <button class="demo-carousel-button demo-next" type="button" aria-label="Próxima atividade">›</button>
+      </div>
+      <div class="demo-dots" aria-hidden="true"></div>
+    </div>
+  `;
+}
+
+function renderLibraryCarousel(container) {
+  const examples = [
+    { label: 'Educação Infantil · Natureza', title: 'Descobrindo as cores das plantas', text: 'Atividade visual com observação, pintura e versão adaptada.' },
+    { label: '3º ano · Matemática · 2º bimestre', title: 'Problemas de adição e subtração', text: 'Situações do cotidiano com espaço para cálculo e gabarito.' },
+    { label: '7º ano · Ciências · 3º bimestre', title: 'Ecossistemas brasileiros', text: 'Leitura curta, figuras de apoio e questões de compreensão.' },
+    { label: 'Ensino Médio · Língua Portuguesa', title: 'Interpretação e argumentação', text: 'Texto de apoio, questões discursivas e critérios de resposta.' }
+  ];
+  let index = 0;
+  const slide = container.querySelector('.demo-slide');
+  const dots = container.querySelector('.demo-dots');
+  const show = nextIndex => {
+    index = (nextIndex + examples.length) % examples.length;
+    const example = examples[index];
+    slide.innerHTML = `<small>${example.label}</small><strong>${example.title}</strong><p>${example.text}</p>`;
+    dots.innerHTML = examples.map((_, dotIndex) => `<span class="${dotIndex === index ? 'active' : ''}"></span>`).join('');
+  };
+  container.querySelector('.demo-previous').addEventListener('click', () => show(index - 1));
+  container.querySelector('.demo-next').addEventListener('click', () => show(index + 1));
+  show(0);
+}
+
+function coloringDemoMarkup() {
+  const categories = ['Animais', 'Alfabeto', 'Números', 'Natureza', 'Profissões', 'Datas comemorativas'];
+  return `
+    <div class="demo-showcase">
+      <div class="demo-category-grid">
+        ${categories.map(category => `<button class="demo-category" type="button">${category}</button>`).join('')}
+      </div>
+      <button class="demo-surprise" type="button">✨ Surpreenda-me</button>
+      <p class="demo-surprise-result" aria-live="polite"></p>
+    </div>
+  `;
+}
+
+function activateColoringDemo(container) {
+  const categories = [...container.querySelectorAll('.demo-category')];
+  const result = container.querySelector('.demo-surprise-result');
+  const select = button => {
+    categories.forEach(category => category.classList.toggle('active', category === button));
+    result.textContent = `Categoria escolhida: ${button.textContent}`;
+  };
+  categories.forEach(button => button.addEventListener('click', () => select(button)));
+  container.querySelector('.demo-surprise').addEventListener('click', () => {
+    select(categories[Math.floor(Math.random() * categories.length)]);
+  });
+}
+
+function gamesDemoMarkup() {
+  const games = ['🔎 Caça-palavras', '✏️ Cruzadinhas', '🧠 Jogo da memória', '🎟️ Bingo educativo', '🖼️ Associação de imagens', '✂️ Recorte e montagem'];
+  return `<div class="demo-showcase"><div class="demo-game-grid">${games.map(game => `<div class="demo-game">${game}</div>`).join('')}</div></div>`;
+}
+
+function aiDemoMarkup() {
+  const steps = [
+    ['1', 'Professor informa o pedido', 'Ano, tema e objetivo'],
+    ['2', 'A IA gera', 'Conteúdo criado em tempo real'],
+    ['3', 'A prévia é montada', 'Questões, figuras e gabarito'],
+    ['4', 'Pronta para revisar', 'Professor confere e adapta']
+  ];
+  return `<div class="demo-showcase"><div class="ai-demo-flow">${steps.map(step => `
+    <div class="ai-demo-step"><b>${step[0]}</b><strong>${step[1]}</strong><span>${step[2]}</span></div>
+  `).join('')}</div></div>`;
+}
+
+function renderDemoExperience(serviceKey) {
+  const container = serviceDialog.querySelector('.service-dialog-columns');
+  if (serviceKey === 'library-demo') {
+    container.innerHTML = libraryDemoMarkup();
+    renderLibraryCarousel(container);
+  } else if (serviceKey === 'coloring-demo') {
+    container.innerHTML = coloringDemoMarkup();
+    activateColoringDemo(container);
+  } else if (serviceKey === 'games-demo') {
+    container.innerHTML = gamesDemoMarkup();
+  } else {
+    container.innerHTML = aiDemoMarkup();
+  }
+}
+
 function openServiceDetails(serviceKey) {
   const service = serviceDetails[serviceKey];
   if (!service || !serviceDialog) return;
   currentServiceKey = serviceKey;
-  configureRequestForm(serviceKey);
   serviceDialog.classList.remove('request-mode');
+  serviceDialog.classList.add('demo-mode');
   serviceDialog.querySelector('.service-dialog-icon').textContent = service.icon;
   serviceDialog.querySelector('#service-dialog-title').textContent = service.title;
   serviceDialog.querySelector('.service-dialog-description').textContent = service.description;
-  fillList(serviceDialog.querySelector('.service-dialog-includes'), service.includes);
-  fillList(serviceDialog.querySelector('.service-dialog-inputs'), service.inputs);
+  renderDemoExperience(serviceKey);
   serviceDialog.showModal();
 }
 
