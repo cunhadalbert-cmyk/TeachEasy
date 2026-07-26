@@ -14,7 +14,7 @@
   gap: 32px;
   border: 1px solid rgba(255, 255, 255, .65);
   border-radius: 34px;
-  background: linear-gradient(90deg, #4b0b19 0%, #68172a 52%, #8f354a 100%);
+  background: linear-gradient(90deg, #4a0715 0%, #7a1730 48%, #a34058 100%);
   color: #fff;
   font: inherit;
   text-align: left;
@@ -78,8 +78,8 @@
   place-items: center;
   border: 1px solid rgba(255, 255, 255, .8);
   border-radius: 50%;
-  background: #fff;
-  color: #871e36;
+  background: rgba(255, 255, 255, .14);
+  color: #fff;
   font-size: 25px;
   line-height: 1;
 }

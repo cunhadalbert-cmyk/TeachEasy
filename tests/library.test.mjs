@@ -156,6 +156,19 @@ test('Quatro atalhos abrem demonstrações distintas e úteis', async () => {
   await window.happyDOM.close();
 });
 
+test('Topo, rodapé e banners usam gradientes vinho com contraste claro', async () => {
+  const [css, photoCss] = await Promise.all([
+    readFile(new URL('../styles.css', import.meta.url), 'utf8'),
+    readFile(new URL('../photo-activity.css', import.meta.url), 'utf8')
+  ]);
+  assert.match(css, /body:not\(\.library-page\) \.topbar,\s*body:not\(\.library-page\) \.site-header\s*\{[^}]*linear-gradient\(180deg,\s*#3b0714 0%,\s*#5b1022 50%,\s*#7d2639 100%\)/s);
+  assert.match(css, /body:not\(\.library-page\) \.footer\s*\{[^}]*linear-gradient\(180deg,\s*#3b0714 0%,\s*#5b1022 50%,\s*#7d2639 100%\)/s);
+  assert.match(css, /\.home-library-highlight\s*\{[^}]*linear-gradient\(90deg,\s*#4a0715 0%,\s*#7a1730 48%,\s*#a34058 100%\)/s);
+  assert.match(css, /\.home-library-arrow\s*\{[^}]*color:\s*#fff/s);
+  assert.match(photoCss, /\.photo-activity-launcher\s*\{[^}]*linear-gradient\(90deg,\s*#4a0715 0%,\s*#7a1730 48%,\s*#a34058 100%\)/s);
+  assert.match(photoCss, /\.photo-launcher-arrow\s*\{[^}]*color:\s*#fff/s);
+});
+
 test('Seção sobre mostra o fluxo da IA até a Biblioteca e preserva o texto', async () => {
   const html = await readFile(new URL('../index.html', import.meta.url), 'utf8');
   const window = new Window({ url: 'https://teacheasy.test/index.html' });
