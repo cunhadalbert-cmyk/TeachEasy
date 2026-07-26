@@ -1,0 +1,21 @@
+{
+  "name": "teacheasy",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Site estático do TeachEasy e protótipo da Biblioteca de Atividades.",
+  "scripts": {
+    "check:js": "node --check script.js && node --check biblioteca.js && node --check photo-activity.js && node --check ai-content.js && node --check scripts/check-whitespace.mjs && node --check scripts/audit-figures.mjs && node --check tests/library.test.mjs",
+    "check:html": "html-validate index.html biblioteca.html",
+    "check:whitespace": "node scripts/check-whitespace.mjs",
+    "check:figures": "node scripts/audit-figures.mjs",
+    "test": "node --test tests/library.test.mjs",
+    "validate": "npm run check:js && npm run check:html && npm run check:whitespace && npm run check:figures && npm test"
+  },
+  "engines": {
+    "node": ">=24.8.0"
+  },
+  "devDependencies": {
+    "happy-dom": "20.11.1",
+    "html-validate": "11.5.6"
+  }
+}

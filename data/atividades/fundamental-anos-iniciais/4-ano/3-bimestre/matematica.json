@@ -1,0 +1,959 @@
+{
+  "schemaVersion": "1.0",
+  "colecao": "4ano-3bimestre-matematica",
+  "idioma": "pt-BR",
+  "etapa": "Ensino Fundamental — Anos Iniciais",
+  "ano": "4º ano",
+  "bimestre": 3,
+  "disciplina": "Matemática",
+  "statusBimestre": "sugerido",
+  "atividades": [
+    {
+      "id": "efi-4ano-b3-mat-estrategias-multiplicar-a",
+      "titulo": "Estratégias para multiplicar",
+      "tema": "Multiplicação",
+      "sequencia": "A",
+      "tipoSequencia": "Introdução",
+      "dificuldade": "intermediaria",
+      "objetivo": "Resolver problemas de multiplicação utilizando adição de parcelas iguais, decomposição e cálculo mental.",
+      "bncc": [
+        {
+          "codigo": "EF04MA06",
+          "descricaoResumida": "Resolver e elaborar problemas envolvendo diferentes significados da multiplicação, utilizando estratégias diversas."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Resolva as questões e registre seus cálculos.",
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "completar",
+          "enunciado": "Uma caixa tem 7 lápis. Há 4 caixas iguais. Complete: 7 + 7 + 7 + 7 = ____ e 4 × 7 = ____.",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "pequeno"
+        },
+        {
+          "numero": 2,
+          "tipo": "resposta-curta",
+          "enunciado": "Há 6 mesas com 5 livros em cada uma. Quantos livros há ao todo? Mostre o cálculo.",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 3,
+          "tipo": "multipla-escolha",
+          "enunciado": "Uma escola organizou 8 equipes com 4 estudantes em cada equipe. Quantos estudantes participaram?",
+          "alternativas": [
+            "12",
+            "24",
+            "32",
+            "36"
+          ],
+          "figuraId": null,
+          "espacoResposta": "pequeno"
+        },
+        {
+          "numero": 4,
+          "tipo": "discursiva",
+          "enunciado": "Pedro calculou 9 × 6 fazendo 10 × 6 = 60 e depois 60 − 6 = 54. Explique por que a estratégia funciona.",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 5,
+          "tipo": "completar",
+          "enunciado": "Complete: 13 × 4 = (10 × 4) + (3 × 4) = ____ + ____ = ____.",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "pequeno"
+        },
+        {
+          "numero": 6,
+          "tipo": "problema",
+          "enunciado": "A escola colocou 12 fileiras com 5 cadeiras e acrescentou mais 8 cadeiras perto do palco. Quantas cadeiras ficaram disponíveis?",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "grande"
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "28 e 28.",
+          "justificativa": "Quatro grupos de 7 correspondem a 4 × 7."
+        },
+        {
+          "numero": 2,
+          "resposta": "30 livros.",
+          "justificativa": "6 × 5 = 30."
+        },
+        {
+          "numero": 3,
+          "resposta": "Alternativa C: 32.",
+          "justificativa": "8 × 4 = 32."
+        },
+        {
+          "numero": 4,
+          "resposta": "Porque 9 grupos de 6 correspondem a 10 grupos de 6 menos 1 grupo de 6.",
+          "justificativa": "60 − 6 = 54."
+        },
+        {
+          "numero": 5,
+          "resposta": "40; 12; 52.",
+          "justificativa": "A decomposição separa 13 em 10 e 3."
+        },
+        {
+          "numero": 6,
+          "resposta": "68 cadeiras.",
+          "justificativa": "12 × 5 = 60; 60 + 8 = 68."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-25"
+      }
+    },
+    {
+      "id": "efi-4ano-b3-mat-multiplicacao-cotidiano-b",
+      "titulo": "Multiplicação no cotidiano",
+      "tema": "Multiplicação",
+      "sequencia": "B",
+      "tipoSequencia": "Prática",
+      "dificuldade": "intermediaria",
+      "objetivo": "Aplicar a multiplicação em situações do cotidiano e selecionar estratégias eficientes de cálculo.",
+      "bncc": [
+        {
+          "codigo": "EF04MA06",
+          "descricaoResumida": "Resolver e elaborar problemas envolvendo diferentes significados da multiplicação, utilizando estratégias diversas."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia cada situação, escolha a operação adequada e registre a resposta.",
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "problema",
+          "enunciado": "Uma papelaria recebeu 9 caixas com 24 cadernos em cada caixa. Quantos cadernos recebeu?",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Uma excursão levará 7 grupos de 18 alunos. Quantos alunos participarão?",
+          "alternativas": [
+            "116",
+            "126",
+            "136",
+            "146"
+          ],
+          "figuraId": null,
+          "espacoResposta": "pequeno"
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Em um teatro há 15 fileiras com 8 cadeiras em cada uma. Quantas cadeiras há?",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 4,
+          "tipo": "analise-estrategia",
+          "enunciado": "Lia calculou 25 × 6 fazendo 100 + 50. Mostre como ela pode ter pensado.",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 5,
+          "tipo": "problema",
+          "enunciado": "Uma fábrica embala 32 biscoitos em cada pacote. Quantos biscoitos há em 7 pacotes?",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 6,
+          "tipo": "elaboracao",
+          "enunciado": "Crie um problema do cotidiano cuja solução seja 14 × 6. Depois, resolva-o.",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "grande"
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "216 cadernos.",
+          "justificativa": "9 × 24 = 216."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa B: 126.",
+          "justificativa": "7 × 18 = 126."
+        },
+        {
+          "numero": 3,
+          "resposta": "120 cadeiras.",
+          "justificativa": "15 × 8 = 120."
+        },
+        {
+          "numero": 4,
+          "resposta": "Ela pode ter feito 20 × 6 = 120 e 5 × 6 = 30; 120 + 30 = 150.",
+          "justificativa": "A soma 100 + 50 também pode vir de outras decomposições corretas."
+        },
+        {
+          "numero": 5,
+          "resposta": "224 biscoitos.",
+          "justificativa": "32 × 7 = 224."
+        },
+        {
+          "numero": 6,
+          "resposta": "Resposta pessoal; o resultado deve ser 84.",
+          "justificativa": "Verificar coerência do enunciado e do cálculo 14 × 6."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-25"
+      }
+    },
+    {
+      "id": "efi-4ano-b3-mat-multiplicar-dividir-c",
+      "titulo": "Desafios de multiplicar e dividir",
+      "tema": "Multiplicação e divisão",
+      "sequencia": "C",
+      "tipoSequencia": "Consolidação",
+      "dificuldade": "desafiadora",
+      "objetivo": "Resolver problemas que envolvam multiplicação e divisão, reconhecendo a relação inversa entre as operações.",
+      "bncc": [
+        {
+          "codigo": "EF04MA06",
+          "descricaoResumida": "Resolver e elaborar problemas envolvendo multiplicação."
+        },
+        {
+          "codigo": "EF04MA07",
+          "descricaoResumida": "Resolver e elaborar problemas de divisão cujo divisor tenha no máximo dois algarismos."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Resolva os desafios e justifique as estratégias escolhidas.",
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "problema",
+          "enunciado": "Uma escola comprou 8 caixas com 36 lápis. Depois distribuiu todos os lápis igualmente entre 12 turmas. Quantos lápis cada turma recebeu?",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "grande"
+        },
+        {
+          "numero": 2,
+          "tipo": "completar",
+          "enunciado": "Complete a família de fatos: 7 × 9 = __; 9 × 7 = __; 63 ÷ 7 = __; 63 ÷ 9 = __.",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "pequeno"
+        },
+        {
+          "numero": 3,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual cálculo resolve: 'Há 144 figurinhas para dividir igualmente entre 9 crianças'?",
+          "alternativas": [
+            "144 + 9",
+            "144 − 9",
+            "144 × 9",
+            "144 ÷ 9"
+          ],
+          "figuraId": null,
+          "espacoResposta": "pequeno"
+        },
+        {
+          "numero": 4,
+          "tipo": "analise-erro",
+          "enunciado": "Rafael afirmou que 156 ÷ 12 = 12. Verifique o resultado usando multiplicação e corrija se necessário.",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 5,
+          "tipo": "problema",
+          "enunciado": "Uma loja recebeu 11 caixas com 48 garrafas. Organizou as garrafas em prateleiras com 24 unidades. Quantas prateleiras completas foram usadas?",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "grande"
+        },
+        {
+          "numero": 6,
+          "tipo": "discursiva",
+          "enunciado": "Explique como a multiplicação pode ajudar a conferir uma divisão. Use um exemplo numérico.",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "grande"
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "24 lápis por turma.",
+          "justificativa": "8 × 36 = 288; 288 ÷ 12 = 24."
+        },
+        {
+          "numero": 2,
+          "resposta": "63; 63; 9; 7.",
+          "justificativa": "As operações pertencem à mesma família de fatos."
+        },
+        {
+          "numero": 3,
+          "resposta": "Alternativa D.",
+          "justificativa": "A situação pede repartição igual."
+        },
+        {
+          "numero": 4,
+          "resposta": "O resultado correto é 13.",
+          "justificativa": "12 × 12 = 144, enquanto 12 × 13 = 156."
+        },
+        {
+          "numero": 5,
+          "resposta": "22 prateleiras.",
+          "justificativa": "11 × 48 = 528; 528 ÷ 24 = 22."
+        },
+        {
+          "numero": 6,
+          "resposta": "Resposta esperada: multiplicar quociente pelo divisor deve recuperar o dividendo; por exemplo, 84 ÷ 7 = 12 e 12 × 7 = 84.",
+          "justificativa": "Aceitar exemplo equivalente."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-25"
+      }
+    },
+    {
+      "id": "efi-4ano-b3-mat-repartir-medir-a",
+      "titulo": "Repartir e medir quantidades",
+      "tema": "Divisão",
+      "sequencia": "A",
+      "tipoSequencia": "Introdução",
+      "dificuldade": "facil",
+      "objetivo": "Distinguir situações de divisão por repartição equitativa e por medida.",
+      "bncc": [
+        {
+          "codigo": "EF04MA07",
+          "descricaoResumida": "Resolver e elaborar problemas de divisão cujo divisor tenha no máximo dois algarismos."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia as situações e identifique como a divisão foi usada.",
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "resposta-curta",
+          "enunciado": "24 frutas foram repartidas igualmente entre 6 crianças. Quantas frutas cada criança recebeu?",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 2,
+          "tipo": "resposta-curta",
+          "enunciado": "Há 24 frutas e cabem 6 em cada cesta. Quantas cestas são necessárias?",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 3,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual situação representa repartição igual?",
+          "alternativas": [
+            "30 alunos em grupos de 5",
+            "30 lápis divididos igualmente entre 5 alunos",
+            "5 caixas com 30 lápis cada",
+            "30 + 5 lápis"
+          ],
+          "figuraId": null,
+          "espacoResposta": "pequeno"
+        },
+        {
+          "numero": 4,
+          "tipo": "completar",
+          "enunciado": "Complete: 42 ÷ 7 = __ porque __ × 7 = 42.",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "pequeno"
+        },
+        {
+          "numero": 5,
+          "tipo": "associacao",
+          "enunciado": "Associe: A) 36 balas divididas entre 9 crianças. B) 36 balas colocadas em saquinhos de 9. ( ) quantidade por criança. ( ) número de saquinhos.",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 6,
+          "tipo": "elaboracao",
+          "enunciado": "Escreva uma situação de divisão por repartição usando 48 ÷ 8 e resolva.",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "grande"
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "4 frutas.",
+          "justificativa": "24 ÷ 6 = 4."
+        },
+        {
+          "numero": 2,
+          "resposta": "4 cestas.",
+          "justificativa": "24 ÷ 6 = 4."
+        },
+        {
+          "numero": 3,
+          "resposta": "Alternativa B.",
+          "justificativa": "A quantidade é distribuída igualmente entre pessoas."
+        },
+        {
+          "numero": 4,
+          "resposta": "6; 6.",
+          "justificativa": "6 × 7 = 42."
+        },
+        {
+          "numero": 5,
+          "resposta": "A; B.",
+          "justificativa": "A busca a quantidade por criança; B busca o número de grupos."
+        },
+        {
+          "numero": 6,
+          "resposta": "Resposta pessoal com resultado 6.",
+          "justificativa": "Verificar situação de repartição coerente."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-25"
+      }
+    },
+    {
+      "id": "efi-4ano-b3-mat-divisao-problemas-b",
+      "titulo": "Divisão em situações-problema",
+      "tema": "Divisão",
+      "sequencia": "B",
+      "tipoSequencia": "Prática",
+      "dificuldade": "intermediaria",
+      "objetivo": "Resolver problemas de divisão com quociente exato e interpretar o resultado no contexto.",
+      "bncc": [
+        {
+          "codigo": "EF04MA07",
+          "descricaoResumida": "Resolver e elaborar problemas de divisão cujo divisor tenha no máximo dois algarismos."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Resolva e escreva respostas completas.",
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "problema",
+          "enunciado": "192 livros serão distribuídos igualmente entre 8 salas. Quantos livros cada sala receberá?",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Uma confeitaria colocou 156 doces em caixas com 12 doces. Quantas caixas usou?",
+          "alternativas": [
+            "11",
+            "12",
+            "13",
+            "14"
+          ],
+          "figuraId": null,
+          "espacoResposta": "pequeno"
+        },
+        {
+          "numero": 3,
+          "tipo": "problema",
+          "enunciado": "225 mudas serão plantadas em 15 fileiras iguais. Quantas mudas haverá em cada fileira?",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 4,
+          "tipo": "analise-estrategia",
+          "enunciado": "Para calcular 168 ÷ 7, Sofia pensou: 140 ÷ 7 = 20 e 28 ÷ 7 = 4. Qual foi o resultado e por que a estratégia funciona?",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 5,
+          "tipo": "problema",
+          "enunciado": "Uma escola tem 264 alunos. Para uma atividade, formará grupos de 11 alunos. Quantos grupos completos serão formados?",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 6,
+          "tipo": "problema",
+          "enunciado": "Uma transportadora precisa levar 360 caixas em caminhões que comportam 45 caixas cada. Quantos caminhões são necessários?",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "grande"
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "24 livros.",
+          "justificativa": "192 ÷ 8 = 24."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa C: 13.",
+          "justificativa": "156 ÷ 12 = 13."
+        },
+        {
+          "numero": 3,
+          "resposta": "15 mudas.",
+          "justificativa": "225 ÷ 15 = 15."
+        },
+        {
+          "numero": 4,
+          "resposta": "24.",
+          "justificativa": "168 foi decomposto em 140 + 28; 20 + 4 = 24."
+        },
+        {
+          "numero": 5,
+          "resposta": "24 grupos.",
+          "justificativa": "264 ÷ 11 = 24."
+        },
+        {
+          "numero": 6,
+          "resposta": "8 caminhões.",
+          "justificativa": "360 ÷ 45 = 8."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-25"
+      }
+    },
+    {
+      "id": "efi-4ano-b3-mat-compras-troco-a",
+      "titulo": "Compras, preços e troco",
+      "tema": "Sistema monetário",
+      "sequencia": "A",
+      "tipoSequencia": "Introdução",
+      "dificuldade": "facil",
+      "objetivo": "Resolver situações de compra, pagamento e troco com valores em reais.",
+      "bncc": [
+        {
+          "codigo": "EF04MA25",
+          "descricaoResumida": "Resolver e elaborar problemas de compra e venda e formas de pagamento, utilizando termos como troco e desconto."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Use reais e centavos para resolver as situações.",
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "resposta-curta",
+          "enunciado": "Um caderno custa R$ 18,50 e uma caneta custa R$ 6,25. Qual é o valor total?",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 2,
+          "tipo": "resposta-curta",
+          "enunciado": "João pagou R$ 50,00 por uma mochila de R$ 37,90. Qual foi o troco?",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 3,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual conjunto forma exatamente R$ 20,00?",
+          "alternativas": [
+            "R$ 10,00 + R$ 5,00",
+            "R$ 10,00 + R$ 5,00 + R$ 5,00",
+            "R$ 20,00 + R$ 2,00",
+            "R$ 5,00 + R$ 2,00"
+          ],
+          "figuraId": null,
+          "espacoResposta": "pequeno"
+        },
+        {
+          "numero": 4,
+          "tipo": "completar",
+          "enunciado": "R$ 12,75 + R$ 7,25 = R$ ____.",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "pequeno"
+        },
+        {
+          "numero": 5,
+          "tipo": "problema",
+          "enunciado": "Uma família comprou pão por R$ 14,80 e leite por R$ 8,60. Pagou com R$ 30,00. Qual foi o troco?",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 6,
+          "tipo": "discursiva",
+          "enunciado": "Explique uma maneira de conferir se um troco está correto.",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "medio"
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "R$ 24,75.",
+          "justificativa": "18,50 + 6,25 = 24,75."
+        },
+        {
+          "numero": 2,
+          "resposta": "R$ 12,10.",
+          "justificativa": "50,00 − 37,90 = 12,10."
+        },
+        {
+          "numero": 3,
+          "resposta": "Alternativa B.",
+          "justificativa": "10 + 5 + 5 = 20."
+        },
+        {
+          "numero": 4,
+          "resposta": "20,00.",
+          "justificativa": "12,75 + 7,25 = 20,00."
+        },
+        {
+          "numero": 5,
+          "resposta": "R$ 6,60.",
+          "justificativa": "14,80 + 8,60 = 23,40; 30,00 − 23,40 = 6,60."
+        },
+        {
+          "numero": 6,
+          "resposta": "Resposta esperada: somar o valor da compra ao troco e verificar se resulta no valor pago.",
+          "justificativa": "Aceitar estratégia equivalente."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-25"
+      }
+    },
+    {
+      "id": "efi-4ano-b3-mat-planejando-compra-b",
+      "titulo": "Planejando uma compra",
+      "tema": "Sistema monetário",
+      "sequencia": "B",
+      "tipoSequencia": "Prática",
+      "dificuldade": "intermediaria",
+      "objetivo": "Comparar preços, calcular totais e tomar decisões de compra dentro de um orçamento.",
+      "bncc": [
+        {
+          "codigo": "EF04MA25",
+          "descricaoResumida": "Resolver e elaborar problemas de compra e venda e formas de pagamento, utilizando termos como troco e desconto."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Analise os preços e respeite o orçamento indicado.",
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "analise-tabela",
+          "enunciado": "Preços: livro R$ 28,00; jogo R$ 35,50; estojo R$ 16,75. Quanto custam livro e estojo juntos?",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Com R$ 50,00, qual compra é possível sem ultrapassar o valor?",
+          "alternativas": [
+            "livro + jogo",
+            "jogo + estojo",
+            "livro + estojo",
+            "dois jogos"
+          ],
+          "figuraId": null,
+          "espacoResposta": "pequeno"
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Quanto sobra de R$ 60,00 após comprar o jogo de R$ 35,50?",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 4,
+          "tipo": "problema",
+          "enunciado": "Uma loja oferece desconto de R$ 5,00 em um brinquedo de R$ 42,90. Qual será o preço final?",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 5,
+          "tipo": "problema",
+          "enunciado": "Ana tem R$ 100,00 e quer comprar dois livros de R$ 28,00 e um estojo de R$ 16,75. Quanto gastará e quanto sobrará?",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "grande"
+        },
+        {
+          "numero": 6,
+          "tipo": "discursiva",
+          "enunciado": "Compare as opções: comprar o jogo e o estojo ou comprar dois livros. Qual opção custa menos? Mostre os cálculos e explique.",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "grande"
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "R$ 44,75.",
+          "justificativa": "28,00 + 16,75 = 44,75."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa C.",
+          "justificativa": "Livro + estojo = R$ 44,75."
+        },
+        {
+          "numero": 3,
+          "resposta": "R$ 24,50.",
+          "justificativa": "60,00 − 35,50 = 24,50."
+        },
+        {
+          "numero": 4,
+          "resposta": "R$ 37,90.",
+          "justificativa": "42,90 − 5,00 = 37,90."
+        },
+        {
+          "numero": 5,
+          "resposta": "Gastará R$ 72,75 e sobrará R$ 27,25.",
+          "justificativa": "2 × 28,00 = 56,00; + 16,75 = 72,75."
+        },
+        {
+          "numero": 6,
+          "resposta": "Jogo + estojo custa menos: R$ 52,25; dois livros custam R$ 56,00. A diferença é R$ 3,75.",
+          "justificativa": "35,50 + 16,75 = 52,25; 2 × 28,00 = 56,00."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-25"
+      }
+    },
+    {
+      "id": "efi-4ano-b3-mat-feira-escola-c",
+      "titulo": "Feira da escola: cálculos e decisões",
+      "tema": "Problemas combinados",
+      "sequencia": "C",
+      "tipoSequencia": "Consolidação",
+      "dificuldade": "desafiadora",
+      "objetivo": "Resolver problemas combinando adição, multiplicação, divisão e sistema monetário.",
+      "bncc": [
+        {
+          "codigo": "EF04MA03",
+          "descricaoResumida": "Resolver e elaborar problemas com números naturais envolvendo adição e subtração."
+        },
+        {
+          "codigo": "EF04MA06",
+          "descricaoResumida": "Resolver e elaborar problemas envolvendo multiplicação."
+        },
+        {
+          "codigo": "EF04MA07",
+          "descricaoResumida": "Resolver e elaborar problemas envolvendo divisão."
+        },
+        {
+          "codigo": "EF04MA25",
+          "descricaoResumida": "Resolver problemas de compra e venda e formas de pagamento."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Use mais de uma operação quando necessário e justifique suas decisões.",
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "problema",
+          "enunciado": "A turma preparou 18 bandejas com 12 brigadeiros. Quantos brigadeiros foram feitos?",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 2,
+          "tipo": "problema",
+          "enunciado": "Os 216 brigadeiros serão colocados em caixas com 9 unidades. Quantas caixas serão necessárias?",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 3,
+          "tipo": "problema",
+          "enunciado": "Cada caixa será vendida por R$ 15,00. Se todas forem vendidas, quanto será arrecadado?",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 4,
+          "tipo": "problema",
+          "enunciado": "A turma gastou R$ 128,50 com ingredientes. Qual será o lucro depois de vender todas as caixas?",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 5,
+          "tipo": "analise-decisao",
+          "enunciado": "A turma pode comprar 30 cartazes a R$ 2,40 cada ou um pacote com 30 por R$ 65,00. Qual opção é mais econômica e quanto economiza?",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "grande"
+        },
+        {
+          "numero": 6,
+          "tipo": "discursiva",
+          "enunciado": "Explique a ordem das operações usadas para descobrir produção, número de caixas, arrecadação e lucro.",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "grande"
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "216 brigadeiros.",
+          "justificativa": "18 × 12 = 216."
+        },
+        {
+          "numero": 2,
+          "resposta": "24 caixas.",
+          "justificativa": "216 ÷ 9 = 24."
+        },
+        {
+          "numero": 3,
+          "resposta": "R$ 360,00.",
+          "justificativa": "24 × 15 = 360."
+        },
+        {
+          "numero": 4,
+          "resposta": "R$ 231,50.",
+          "justificativa": "360,00 − 128,50 = 231,50."
+        },
+        {
+          "numero": 5,
+          "resposta": "O pacote de R$ 65,00 é mais econômico e economiza R$ 7,00.",
+          "justificativa": "30 × 2,40 = 72,00; 72,00 − 65,00 = 7,00."
+        },
+        {
+          "numero": 6,
+          "resposta": "Resposta esperada: primeiro multiplicar para achar a produção; dividir para formar caixas; multiplicar pelo preço; subtrair os gastos.",
+          "justificativa": "Avaliar encadeamento lógico."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-25"
+      }
+    }
+  ]
+}
