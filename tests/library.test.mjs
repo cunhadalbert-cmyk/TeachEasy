@@ -627,3 +627,12 @@ test('Coleções mantêm responsividade e quebra de página de impressão', asyn
   assert.match(css, /\.worksheet-page\s*\{[\s\S]*page-break-after:\s*always/s);
   assert.match(css, /\.collection-answer-key\s*\{[^}]*break-before:\s*page/s);
 });
+
+test('Prévia e impressão usam folhas brancas sem efeito de cartão', async () => {
+  const css = await readFile(new URL('../biblioteca.css', import.meta.url), 'utf8');
+  assert.match(css, /\.activity-preview\s*\{[^}]*background:\s*#fff;[^}]*box-shadow:\s*none;/s);
+  assert.match(css, /\.worksheet-page\s*\{[^}]*border:\s*0;[^}]*border-radius:\s*0;[^}]*background:\s*#fff;[^}]*box-shadow:\s*none;/s);
+  assert.match(css, /\.answer-key-page\s*\{[^}]*border:\s*0;[^}]*background:\s*#fff;[^}]*box-shadow:\s*none;[^}]*border-radius:\s*0;/s);
+  assert.match(css, /@media print\s*\{[\s\S]*html,\s*body\s*\{[^}]*background:\s*#fff !important;/s);
+  assert.match(css, /@media print\s*\{[\s\S]*\.worksheet-page,\s*\.activity-print-page,\s*\.answer-key-page\s*\{[^}]*width:\s*210mm;[^}]*border:\s*none !important;[^}]*border-radius:\s*0 !important;[^}]*background:\s*#fff !important;[^}]*box-shadow:\s*none !important;/s);
+});
