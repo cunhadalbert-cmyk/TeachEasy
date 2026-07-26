@@ -189,6 +189,18 @@ test('Criar com a IA é uma função real e distinta das três experiências exi
   assert.equal(form.elements.materialType.options.length, 9);
   assert.ok(form.elements.request.required);
   assert.match(form.elements.request.placeholder, /ciclo da água/);
+  assert.equal(form.elements.notes, undefined);
+  assert.equal(form.elements.school, undefined);
+  assert.equal(form.elements.teacher, undefined);
+  assert.equal(form.elements.student, undefined);
+  assert.equal(form.elements.classroom, undefined);
+  assert.equal(form.elements.date, undefined);
+  assert.doesNotMatch(form.textContent, /Conte para a IA o que você precisa|Observações adicionais|Cabeçalho escolar opcional/);
+  const headerFile = form.elements.schoolHeader;
+  assert.equal(headerFile.getAttribute('accept'), '.png,.jpg,.jpeg,.pdf,image/png,image/jpeg,application/pdf');
+  assert.match(form.querySelector('.ai-school-header-upload').textContent, /Cabeçalho da escola|Selecionar cabeçalho|Remover arquivo/);
+  assert.equal(form.querySelector('#ai-header-file-preview').hidden, true);
+  assert.equal(form.querySelector('#ai-use-school-header').checked, true);
 
   form.elements.request.value = 'Crie uma atividade de Ciências sobre o ciclo da água.';
   form.elements.materialType.value = 'Atividade';
@@ -209,6 +221,13 @@ test('Criar com a IA é uma função real e distinta das três experiências exi
   assert.match(preview.textContent, /Editar conteúdo|Pedir alteração à IA|Gerar novamente|Baixar em PDF|Baixar em Word/);
   assert.doesNotMatch(window.document.querySelector('#ai-preview-document').textContent, /TeachEasy|propaganda|marca d’água/i);
   await window.happyDOM.close();
+});
+
+test('Banner Criar com a IA segue o padrão vinho e mantém botão amarelo acessível', async () => {
+  const css = await readFile(new URL('../styles.css', import.meta.url), 'utf8');
+  assert.match(css, /\.ai-content-feature\s*\{[^}]*min-height:\s*210px[^}]*border-radius:\s*34px[^}]*linear-gradient\(90deg,\s*#4a0715 0%,\s*#7a1730 48%,\s*#a34058 100%\)/s);
+  assert.match(css, /\.ai-content-launcher\s*\{[^}]*linear-gradient\(135deg,\s*#ffd75a 0%,\s*#f4b928 100%\)[^}]*color:\s*#4a0715/s);
+  assert.match(css, /\.ai-content-launcher:focus-visible\s*\{[^}]*outline:/s);
 });
 
 test('Topo, rodapé e banners usam gradientes vinho com contraste claro', async () => {

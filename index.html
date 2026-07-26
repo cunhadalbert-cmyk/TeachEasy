@@ -220,7 +220,18 @@
           </div>
         </dialog>
 
-        <section class="ai-content-feature" aria-labelledby="ai-content-feature-title">
+        <section class="ai-content-feature" role="button" tabindex="0" aria-labelledby="ai-content-feature-title" aria-haspopup="dialog">
+          <span class="ai-content-illustration" aria-hidden="true">
+            <svg viewBox="0 0 180 150">
+              <path class="ai-spark ai-spark-one" d="M28 20v20M18 30h20"/>
+              <path class="ai-spark ai-spark-two" d="M150 24v16M142 32h16"/>
+              <path class="ai-page" d="M42 24h76l24 24v82H42z"/>
+              <path class="ai-page-fold" d="M118 24v25h24"/>
+              <path class="ai-line" d="M60 66h62M60 83h62M60 100h42"/>
+              <circle class="ai-magic" cx="128" cy="111" r="23"/>
+              <path class="ai-magic-mark" d="m118 112 7 7 14-17"/>
+            </svg>
+          </span>
           <div class="ai-content-feature-copy">
             <span>CRIAÇÃO PERSONALIZADA</span>
             <h3 id="ai-content-feature-title">Criar com a IA</h3>
@@ -242,8 +253,7 @@
 
             <form class="ai-content-form" id="ai-content-form">
               <label class="ai-prompt-field">
-                <span>Conte para a IA o que você precisa</span>
-                <textarea name="request" rows="5" required placeholder="Crie uma atividade de Ciências para o 4º ano sobre o ciclo da água, com 8 questões, figuras, gabarito e uma versão adaptada para aluno com autismo."></textarea>
+                <textarea name="request" rows="5" required aria-label="Descreva o conteúdo que deseja criar" placeholder="Crie uma atividade de Ciências para o 4º ano sobre o ciclo da água, com 8 questões, figuras, gabarito e uma versão adaptada para aluno com autismo."></textarea>
               </label>
 
               <div class="ai-content-form-grid">
@@ -278,19 +288,26 @@
                 <label><input name="adapted" type="checkbox"> Criar versão adaptada para inclusão</label>
               </fieldset>
 
-              <label class="ai-notes-field">
-                <span>Observações adicionais</span>
-                <textarea name="notes" rows="3" placeholder="Orientações, contexto da turma ou adaptações específicas."></textarea>
-              </label>
-
-              <fieldset class="ai-school-header-fields">
-                <legend>Cabeçalho escolar opcional</legend>
-                <label><span>Nome da escola</span><input name="school" type="text"></label>
-                <label><span>Professor</span><input name="teacher" type="text"></label>
-                <label><span>Aluno</span><input name="student" type="text"></label>
-                <label><span>Turma</span><input name="classroom" type="text"></label>
-                <label><span>Data</span><input name="date" type="date"></label>
-              </fieldset>
+              <section class="ai-school-header-upload" aria-labelledby="ai-school-header-title">
+                <div>
+                  <h3 id="ai-school-header-title">Cabeçalho da escola</h3>
+                  <p>Envie o cabeçalho que deseja usar na atividade.</p>
+                </div>
+                <input id="ai-school-header-file" name="schoolHeader" type="file" accept=".png,.jpg,.jpeg,.pdf,image/png,image/jpeg,application/pdf" hidden>
+                <div class="ai-header-file-actions">
+                  <label class="btn btn-outline ai-header-select" for="ai-school-header-file">Selecionar cabeçalho</label>
+                  <button class="btn btn-outline" id="ai-header-remove" type="button" hidden>Remover arquivo</button>
+                </div>
+                <div class="ai-header-file-preview" id="ai-header-file-preview" hidden>
+                  <strong id="ai-header-file-name"></strong>
+                  <img id="ai-header-image-preview" src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="Prévia do cabeçalho da escola" hidden>
+                  <p id="ai-header-pdf-message" hidden>Arquivo PDF carregado.</p>
+                </div>
+                <label class="ai-use-header-option" hidden>
+                  <input id="ai-use-school-header" type="checkbox" checked>
+                  Usar este cabeçalho no material gerado
+                </label>
+              </section>
 
               <button class="btn btn-primary ai-create-submit" type="submit">Criar conteúdo</button>
             </form>

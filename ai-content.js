@@ -4,7 +4,16 @@ const aiForm = document.querySelector('#ai-content-form');
 const aiPreview = document.querySelector('#ai-content-preview');
 const aiDocument = document.querySelector('#ai-preview-document');
 const aiChangeRequest = document.querySelector('#ai-change-request');
+const aiHeaderFile = document.querySelector('#ai-school-header-file');
+const aiHeaderPreview = document.querySelector('#ai-header-file-preview');
+const aiHeaderImage = document.querySelector('#ai-header-image-preview');
+const aiHeaderPdfMessage = document.querySelector('#ai-header-pdf-message');
+const aiHeaderName = document.querySelector('#ai-header-file-name');
+const aiHeaderRemove = document.querySelector('#ai-header-remove');
+const aiUseHeader = document.querySelector('#ai-use-school-header');
+const aiUseHeaderOption = document.querySelector('.ai-use-header-option');
 let aiGeneration = 0;
+let schoolHeaderAsset = null;
 
 function escapeContent(value = '') {
   return value.replace(/[&<>"']/g, character => ({
@@ -12,16 +21,16 @@ function escapeContent(value = '') {
   })[character]);
 }
 
-function buildSchoolHeader(data) {
-  if (!data.school && !data.teacher && !data.student && !data.classroom && !data.date) return '';
+function buildSchoolHeader() {
+  if (!schoolHeaderAsset || !aiUseHeader.checked) return '';
+  if (schoolHeaderAsset.type === 'application/pdf') {
+    return `<header class="generated-school-header generated-school-header-pdf">
+      <strong>Cabeçalho escolar anexado</strong>
+      <span>${escapeContent(schoolHeaderAsset.name)}</span>
+    </header>`;
+  }
   return `<header class="generated-school-header">
-    ${data.school ? `<strong>${escapeContent(data.school)}</strong>` : ''}
-    <p>${[
-      data.teacher && `Professor: ${escapeContent(data.teacher)}`,
-      data.student && `Aluno: ${escapeContent(data.student)}`,
-      data.classroom && `Turma: ${escapeContent(data.classroom)}`,
-      data.date && `Data: ${escapeContent(data.date.split('-').reverse().join('/'))}`
-    ].filter(Boolean).join(' · ')}</p>
+    <img src="${schoolHeaderAsset.dataUrl}" alt="Cabeçalho enviado pela escola">
   </header>`;
 }
 
@@ -48,7 +57,7 @@ function renderAiPreview() {
   aiGeneration += 1;
 
   aiDocument.innerHTML = `
-    ${buildSchoolHeader(data)}
+    ${buildSchoolHeader()}
     <section class="generated-material">
       <small>${escapeContent(data.materialType)} · ${escapeContent(data.stage)} · ${escapeContent(data.grade)}</small>
       <h2>${escapeContent(data.topic)}</h2>
@@ -58,7 +67,6 @@ function renderAiPreview() {
       <ol class="generated-questions">${buildQuestions(data)}</ol>
       ${data.answerKey ? `<section class="generated-answer-key"><h3>Gabarito</h3><p>Respostas orientadoras para revisão do professor.</p></section>` : ''}
       ${data.adapted ? `<section class="generated-adapted"><h3>Versão adaptada para inclusão</h3><p>Comandos curtos, apoio visual, linguagem direta e menor carga por bloco.</p></section>` : ''}
-      ${data.notes ? `<p><strong>Observações consideradas:</strong> ${escapeContent(data.notes)}</p>` : ''}
     </section>`;
 
   aiForm.hidden = true;
@@ -85,6 +93,14 @@ aiLauncher.addEventListener('click', () => {
   aiForm.hidden = false;
   aiPreview.hidden = true;
 });
+aiLauncher.closest('.ai-content-feature').addEventListener('click', event => {
+  if (!event.target.closest('#ai-content-launcher')) aiLauncher.click();
+});
+aiLauncher.closest('.ai-content-feature').addEventListener('keydown', event => {
+  if (event.key !== 'Enter' && event.key !== ' ') return;
+  event.preventDefault();
+  aiLauncher.click();
+});
 aiDialog.querySelector('.ai-content-close').addEventListener('click', () => aiDialog.close());
 aiDialog.addEventListener('click', event => {
   if (event.target === aiDialog) aiDialog.close();
@@ -92,6 +108,40 @@ aiDialog.addEventListener('click', event => {
 aiForm.addEventListener('submit', event => {
   event.preventDefault();
   renderAiPreview();
+});
+aiHeaderFile.addEventListener('change', () => {
+  const file = aiHeaderFile.files[0];
+  if (!file) return;
+  const allowedTypes = ['image/png', 'image/jpeg', 'application/pdf'];
+  if (!allowedTypes.includes(file.type)) {
+    aiHeaderFile.value = '';
+    return;
+  }
+  const reader = new FileReader();
+  reader.addEventListener('load', () => {
+    schoolHeaderAsset = { name: file.name, type: file.type, dataUrl: reader.result };
+    aiHeaderName.textContent = file.name;
+    aiHeaderPreview.hidden = false;
+    aiHeaderRemove.hidden = false;
+    aiUseHeaderOption.hidden = false;
+    aiUseHeader.checked = true;
+    const isImage = file.type.startsWith('image/');
+    aiHeaderImage.hidden = !isImage;
+    aiHeaderPdfMessage.hidden = isImage;
+    if (isImage) aiHeaderImage.src = reader.result;
+  });
+  reader.readAsDataURL(file);
+});
+aiHeaderRemove.addEventListener('click', () => {
+  schoolHeaderAsset = null;
+  aiHeaderFile.value = '';
+  aiHeaderImage.src = 'data:image/gif;base64,R0lGODlhAQABAAAAACw=';
+  aiHeaderPreview.hidden = true;
+  aiHeaderImage.hidden = true;
+  aiHeaderPdfMessage.hidden = true;
+  aiHeaderRemove.hidden = true;
+  aiUseHeaderOption.hidden = true;
+  aiUseHeader.checked = false;
 });
 document.querySelector('#ai-edit-content').addEventListener('click', event => {
   const editing = aiDocument.contentEditable !== 'true';
