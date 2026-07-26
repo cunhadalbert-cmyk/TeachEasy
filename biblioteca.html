@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Biblioteca demonstrativa de atividades pedagógicas do TeachEasy.">
-  <title>Biblioteca de Atividades — TeachEasy</title>
+  <meta name="description" content="Biblioteca demonstrativa de atividades pedagÃ³gicas do TeachEasy.">
+  <title>Biblioteca de Atividades â€” TeachEasy</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Libre+Franklin:wght@600;700&display=swap" rel="stylesheet">
@@ -16,11 +16,11 @@
 
   <header class="library-header">
     <div class="container library-header-inner">
-      <a class="brand" href="index.html" aria-label="Voltar para o início do TeachEasy">
+      <a class="brand" href="index.html" aria-label="Voltar para o inÃ­cio do TeachEasy">
         <strong>TeachEasy</strong>
         <span>Biblioteca de Atividades</span>
       </a>
-      <a class="btn btn-outline" href="index.html">← Voltar ao início</a>
+      <a class="btn btn-outline" href="index.html">â† Voltar ao inÃ­cio</a>
     </div>
   </header>
 
@@ -28,7 +28,7 @@
     <section class="library-hero">
       <div class="container library-hero-grid">
         <div>
-          <span class="library-eyebrow">CONTEÚDO PEDAGÓGICO ORGANIZADO</span>
+          <span class="library-eyebrow">CONTEÃšDO PEDAGÃ“GICO ORGANIZADO</span>
           <h1>Encontre a atividade certa para sua turma.</h1>
           <p class="library-hero-description">
             Escolha a etapa, o ano e o bimestre. Depois, encontre a atividade ideal com
@@ -50,15 +50,15 @@
           <div>
             <span class="library-eyebrow">BIBLIOTECA</span>
             <h2 id="library-step-title">Escolha uma etapa</h2>
-            <p id="library-step-help">1.712 atividades-base. Inclusão e autismo estão disponíveis em todas as etapas.</p>
+            <p id="library-step-help">1.712 atividades-base. InclusÃ£o e autismo estÃ£o disponÃ­veis em todas as etapas.</p>
           </div>
           <div class="selection-summary" aria-live="polite">
-            <span>Minha seleção</span>
+            <span>Minha seleÃ§Ã£o</span>
             <strong><b id="selection-count">0</b> atividades</strong>
           </div>
         </div>
         <nav class="library-breadcrumb" id="library-breadcrumb" aria-label="Caminho da biblioteca"></nav>
-        <button class="btn btn-outline library-back" id="library-back" type="button" hidden>← Voltar</button>
+        <button class="btn btn-outline library-back" id="library-back" type="button" hidden>â† Voltar</button>
         <div class="library-choice-grid" id="library-choice-grid"></div>
 
         <form class="library-filters" id="library-filters" hidden>
@@ -70,15 +70,15 @@
           </label>
 
           <label class="filter-search">
-            <span>Tema ou conteúdo</span>
-            <input name="query" type="search" placeholder="Ex.: frações, leitura, ecossistemas">
+            <span>Tema ou conteÃºdo</span>
+            <input name="query" type="search" placeholder="Ex.: fraÃ§Ãµes, leitura, ecossistemas">
           </label>
 
           <fieldset class="filter-toggles">
             <legend>Recursos</legend>
             <label><input type="checkbox" name="answerKey"> Gabarito</label>
             <label><input type="checkbox" name="figures"> Figuras</label>
-            <label><input type="checkbox" name="adapted"> Autismo e inclusão</label>
+            <label><input type="checkbox" name="adapted"> Autismo e inclusÃ£o</label>
           </fieldset>
 
           <div class="filter-actions">
@@ -90,15 +90,15 @@
         <div class="active-filter-summary" id="active-filter-summary" aria-live="polite"></div>
         <div class="activity-grid" id="activity-grid"></div>
         <div class="library-pagination" id="library-pagination" hidden>
-          <button class="btn btn-outline" id="previous-page" type="button">← Anterior</button>
+          <button class="btn btn-outline" id="previous-page" type="button">â† Anterior</button>
           <span id="page-status"></span>
-          <button class="btn btn-outline" id="next-page" type="button">Próxima →</button>
+          <button class="btn btn-outline" id="next-page" type="button">PrÃ³xima â†’</button>
         </div>
 
         <div class="empty-state" id="empty-state" hidden>
-          <span>🔎</span>
+          <span>ðŸ”Ž</span>
           <h3>Nenhuma atividade encontrada</h3>
-          <p>Tente remover alguns filtros para visualizar outras opções.</p>
+          <p>Tente remover alguns filtros para visualizar outras opÃ§Ãµes.</p>
           <button class="btn btn-outline" type="button" id="empty-reset">Limpar filtros</button>
         </div>
       </div>
@@ -106,7 +106,7 @@
   </main>
 
   <dialog class="activity-preview" id="activity-preview" aria-labelledby="preview-title">
-    <button class="preview-close" type="button" aria-label="Fechar visualização">×</button>
+    <button class="preview-close" type="button" aria-label="Fechar visualizaÃ§Ã£o">Ã—</button>
     <div id="preview-content"></div>
   </dialog>
 
@@ -115,10 +115,12 @@
   <footer class="footer library-footer">
     <div class="container">
       <strong>TeachEasy</strong>
-      <span>Biblioteca demonstrativa — conteúdo para professores.</span>
+      <span>Biblioteca demonstrativa â€” conteÃºdo para professores.</span>
     </div>
   </footer>
 
   <script src="biblioteca.js"></script>
+  <script src="biblioteca-fixes.js"></script>
 </body>
 </html>
+
