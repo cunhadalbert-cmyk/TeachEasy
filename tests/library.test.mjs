@@ -23,6 +23,13 @@ async function createLibraryPage({ missingAsset = '' } = {}) {
   };
   window.__fetchCalls = [];
   window.__assetFetchCalls = [];
+  window.__downloadBlob = null;
+  window.URL.createObjectURL = blob => {
+    window.__downloadBlob = blob;
+    return 'blob:teacheasy-test';
+  };
+  window.URL.revokeObjectURL = () => {};
+  window.HTMLAnchorElement.prototype.click = function click() {};
   window.fetch = async path => {
     const collections = {
       'data/atividades/fundamental-anos-iniciais/4-ano/3-bimestre/ciencias.json': scienceCollection,
@@ -710,7 +717,23 @@ test('Toda figura obrigatória possui arquivo e aparece junto da questão', asyn
   const questionWithFigure = window.document.querySelector('.question-figure').closest('.collection-question-list > li');
   assert.ok(questionWithFigure);
   assert.match(questionWithFigure.textContent, /Observe a figura/);
+  const children = [...questionWithFigure.children];
+  assert.ok(children.indexOf(questionWithFigure.querySelector('p')) < children.indexOf(questionWithFigure.querySelector('.question-figure')));
+  assert.ok(children.indexOf(questionWithFigure.querySelector('.question-figure')) < children.indexOf(questionWithFigure.querySelector('.question-alternatives')));
   assert.match(await readFile(new URL('../biblioteca.css', import.meta.url), 'utf8'), /\.question-figure\s*\{[^}]*max-width:[^;]*160mm\);[^}]*object-fit:\s*contain;[^}]*page-break-inside:\s*avoid/s);
+
+  window.document.querySelector('.preview-word').click();
+  await new Promise(resolve => setTimeout(resolve, 20));
+  assert.ok(window.__downloadBlob);
+  const word = await window.__downloadBlob.text();
+  assert.match(word, /<img[^>]+class="question-figure"[^>]+src="data:image\/png;base64,/);
+  assert.match(word, /\.question-figure\s*\{[^}]*page-break-inside:\s*avoid/);
+  assert.match(word, /page-break-after:\s*always/);
+
+  const css = await readFile(new URL('../biblioteca.css', import.meta.url), 'utf8');
+  const printRules = css.match(/@media print\s*\{[\s\S]*\}\s*$/)[0];
+  assert.match(printRules, /\.question-figure\s*\{[^}]*max-width:\s*160mm;[^}]*max-height:\s*40mm/s);
+  assert.doesNotMatch(printRules, /\.question-figure\s*\{[^}]*display:\s*none/s);
   await window.happyDOM.close();
 });
 

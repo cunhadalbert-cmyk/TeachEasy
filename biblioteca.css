@@ -1023,16 +1023,60 @@
   }
 
   .preview-shell {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
     padding: 26px 18px;
   }
 
   .worksheet-page {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
     padding: 23px 18px;
+    overflow: hidden;
+    overflow-wrap: anywhere;
+  }
+
+  .collection-question-list {
+    max-width: 100%;
+    padding-left: 26px;
+  }
+
+  .collection-question-list > li,
+  .collection-question-list > li > p {
+    max-width: 100%;
+    overflow-wrap: anywhere;
   }
 
   .worksheet-header,
   .student-fields {
     grid-template-columns: 1fr;
+  }
+
+  .collection-export-actions {
+    justify-content: stretch;
+    flex-wrap: wrap;
+  }
+
+  .collection-export-actions .btn {
+    flex: 1 1 170px;
+  }
+
+  .collection-student-page .student-fields {
+    grid-template-columns: 1fr;
+  }
+
+  .collection-student-page .student-fields span:last-child {
+    grid-column: auto;
+  }
+
+  .collection-student-page,
+  .collection-answer-key {
+    width: calc(100vw - 72px);
+    max-width: 100%;
   }
 }
 

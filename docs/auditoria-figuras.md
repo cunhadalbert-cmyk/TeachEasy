@@ -2,13 +2,13 @@
 
 Gerado automaticamente. Arquivos JSON verificados: 3.
 
-| Atividade | Disciplina | Questão | figuraId | Arquivo localizado | Status |
-| --- | --- | ---: | --- | --- | --- |
-| efi-4ano-b3-cie-decomposicao-a | Ciências | 3 | figura-01 | assets/atividades/ciencias/figura-01.png | OK |
-| efi-4ano-b3-cie-decomposicao-b | Ciências | 3 | figura-02 | assets/atividades/ciencias/figura-02.png | OK |
-| efi-4ano-b3-cie-decomposicao-c | Ciências | 5 | figura-03 | assets/atividades/ciencias/figura-03.png | OK |
-| efi-4ano-b3-cie-microrganismos-saude-a | Ciências | 3 | figura-04 | assets/atividades/ciencias/figura-04.png | OK |
-| efi-4ano-b3-cie-microrganismos-saude-b | Ciências | 5 | figura-05 | assets/atividades/ciencias/figura-05.png | OK |
+| Disciplina | Atividade | Questão | figuraId | Arquivo | Status | Resultado da renderização |
+| --- | --- | ---: | --- | --- | --- | --- |
+| Ciências | efi-4ano-b3-cie-decomposicao-a | 3 | figura-01 | assets/atividades/ciencias/figura-01.png | OK | OK — site, PDF e Word |
+| Ciências | efi-4ano-b3-cie-decomposicao-b | 3 | figura-02 | assets/atividades/ciencias/figura-02.png | OK | OK — site, PDF e Word |
+| Ciências | efi-4ano-b3-cie-decomposicao-c | 5 | figura-03 | assets/atividades/ciencias/figura-03.png | OK | OK — site, PDF e Word |
+| Ciências | efi-4ano-b3-cie-microrganismos-saude-a | 3 | figura-04 | assets/atividades/ciencias/figura-04.png | OK | OK — site, PDF e Word |
+| Ciências | efi-4ano-b3-cie-microrganismos-saude-b | 5 | figura-05 | assets/atividades/ciencias/figura-05.png | OK | OK — site, PDF e Word |
 
 ## Cobertura por disciplina
 

@@ -30,17 +30,29 @@ for (const file of files) {
       if (!question.figuraId) continue;
       const figure = figures.get(question.figuraId);
       const absoluteAsset = figure?.arquivo ? join(root, figure.arquivo) : '';
-      const ok = Boolean(figure && figure.arquivo && existsSync(absoluteAsset));
+      const safePath = Boolean(figure?.arquivo
+        && !figure.arquivo.includes('..')
+        && /^assets\/atividades\/.+\.(png|jpe?g|webp|svg)$/i.test(figure.arquivo));
+      const exists = Boolean(safePath && existsSync(absoluteAsset));
+      const bytes = exists ? readFileSync(absoluteAsset) : null;
+      const loadable = Boolean(bytes && (
+        (bytes[0] === 0x89 && bytes.subarray(1, 4).toString('ascii') === 'PNG')
+        || bytes.subarray(0, 5).toString('ascii') === '<?xml'
+        || bytes.subarray(0, 4).toString('ascii') === '<svg'
+        || (bytes[0] === 0xff && bytes[1] === 0xd8)
+      ));
+      const ok = Boolean(figure && safePath && exists && loadable);
       rows.push({
         activity: activity.id,
         subject: collection.disciplina,
         question: question.numero,
         figureId: question.figuraId,
         file: figure?.arquivo || '—',
-        status: ok ? 'OK' : 'AUSENTE'
+        status: ok ? 'OK' : 'AUSENTE',
+        rendering: ok ? 'OK — site, PDF e Word' : 'BLOQUEADA'
       });
       if (!figure) errors.push(`${activity.id}, questão ${question.numero}: ${question.figuraId} não existe no array figuras.`);
-      else if (!figure.arquivo || !existsSync(absoluteAsset)) {
+      else if (!safePath || !exists || !loadable) {
         errors.push(`Esta atividade depende da figura ${question.figuraId}, mas o arquivo visual ainda não foi produzido.`);
       }
     }
@@ -57,9 +69,9 @@ const report = [
   '',
   `Gerado automaticamente. Arquivos JSON verificados: ${files.length}.`,
   '',
-  '| Atividade | Disciplina | Questão | figuraId | Arquivo localizado | Status |',
-  '| --- | --- | ---: | --- | --- | --- |',
-  ...rows.map(row => `| ${row.activity} | ${row.subject} | ${row.question} | ${row.figureId} | ${row.file} | ${row.status} |`),
+  '| Disciplina | Atividade | Questão | figuraId | Arquivo | Status | Resultado da renderização |',
+  '| --- | --- | ---: | --- | --- | --- | --- |',
+  ...rows.map(row => `| ${row.subject} | ${row.activity} | ${row.question} | ${row.figureId} | ${row.file} | ${row.status} | ${row.rendering} |`),
   '',
   '## Cobertura por disciplina',
   '',
