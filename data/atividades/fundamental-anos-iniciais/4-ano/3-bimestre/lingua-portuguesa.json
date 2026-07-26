@@ -866,6 +866,1657 @@
         "revisor": "revisao-pedagogica-teacheasy",
         "dataRevisao": "2026-07-25"
       }
+    },
+    {
+      "id": "efi-4ano-b3-lp-acentuacao-dicionario-a",
+      "titulo": "Acento, sílaba forte e busca no dicionário",
+      "tema": "Ortografia e acentuação",
+      "sequencia": "A",
+      "tipoSequencia": "Introdução",
+      "dificuldade": "facil",
+      "objetivo": "Reconhecer a sílaba tônica, aplicar o acento gráfico em paroxítonas terminadas em -l, -r e -ão e localizar palavras no dicionário pela ordem alfabética.",
+      "bncc": [
+        {
+          "codigo": "EF04LP04",
+          "descricaoResumida": "Usar acento gráfico (agudo ou circunflexo) em paroxítonas terminadas em -i(s), -l, -r, -ão(s)."
+        },
+        {
+          "codigo": "EF04LP03",
+          "descricaoResumida": "Localizar palavras no dicionário para esclarecer significados, reconhecendo o sentido mais plausível para o contexto."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto sobre o caderno da turma e responda às questões.",
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "resposta-curta",
+          "enunciado": "Escreva a sílaba mais forte (tônica) das palavras fácil e açúcar.",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 2,
+          "tipo": "resposta-curta",
+          "enunciado": "Copie a terminação (a parte final) de cada uma das seis palavras do quadro da turma.",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 3,
+          "tipo": "multipla-escolha",
+          "enunciado": "Por que as seis palavras do quadro recebem acento gráfico?",
+          "alternativas": [
+            "Porque são oxítonas terminadas em -a, -e ou -o",
+            "Porque são paroxítonas terminadas em -l, -r ou -ão",
+            "Porque são monossílabos tônicos",
+            "Porque todas têm três sílabas"
+          ],
+          "figuraId": null,
+          "espacoResposta": "pequeno"
+        },
+        {
+          "numero": 4,
+          "tipo": "ordenacao",
+          "enunciado": "Escreva as seis palavras do quadro em ordem alfabética, como elas apareceriam no dicionário.",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 5,
+          "tipo": "vocabulario",
+          "enunciado": "Uma das palavras do quadro é caráter. Explique o que você faria para descobrir o significado dela no dicionário e por que a ordem alfabética ajuda nessa busca.",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Escolha duas palavras do quadro e escreva uma frase com cada uma, mantendo o acento no lugar certo.",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "grande"
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Em fácil, a sílaba tônica é fá. Em açúcar, a sílaba tônica é çú.",
+          "justificativa": "Em ambas o acento gráfico marca a sílaba tônica, que é a penúltima."
+        },
+        {
+          "numero": 2,
+          "resposta": "fácil termina em -l; difícil termina em -l; túnel termina em -l; açúcar termina em -r; caráter termina em -r; órfão termina em -ão.",
+          "justificativa": "Aceitar a indicação apenas da letra ou terminação final de cada palavra."
+        },
+        {
+          "numero": 3,
+          "resposta": "Alternativa B.",
+          "justificativa": "Todas são paroxítonas com terminação -l, -r ou -ão, que exige acento pela regra."
+        },
+        {
+          "numero": 4,
+          "resposta": "açúcar, caráter, difícil, fácil, órfão, túnel.",
+          "justificativa": "Ordem alfabética pela primeira letra; nenhuma palavra do conjunto tem a mesma inicial."
+        },
+        {
+          "numero": 5,
+          "resposta": "Procurar na letra C, avançar até as palavras iniciadas por ca- e localizar caráter. A ordem alfabética ajuda porque o dicionário organiza as palavras nessa sequência, o que evita ler o livro inteiro.",
+          "justificativa": "Critério de correção: aceitar como correta a resposta que cite a busca pela letra inicial e mencione que a ordem alfabética torna a consulta mais rápida."
+        },
+        {
+          "numero": 6,
+          "resposta": "Resposta autoral do aluno. Exemplo aceitável: 'Esse exercício foi fácil.' e 'Meu avô não usa açúcar no café.'",
+          "justificativa": "Critério de correção: cada frase deve ter sentido completo, usar a palavra escolhida do quadro e manter o acento gráfico. Considerar correta mesmo que a frase seja curta."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-26"
+      },
+      "textoApoio": {
+        "titulo": "O caderno de palavras difíceis",
+        "conteudo": "Toda sexta-feira, a turma do 4º ano abre o caderno de palavras difíceis. Quem encontrou uma palavra nova durante a semana escreve no quadro e conta onde a leu. Nesta semana apareceram seis: fácil, difícil, túnel, açúcar, caráter e órfão. A professora pediu que cada aluno batesse palma na sílaba mais forte de cada palavra e depois procurasse o significado no dicionário da sala."
+      }
+    },
+    {
+      "id": "efi-4ano-b3-lp-carta-pessoal-a",
+      "titulo": "Quem escreve, para quem e por quê",
+      "tema": "Carta pessoal",
+      "sequencia": "A",
+      "tipoSequencia": "Introdução",
+      "dificuldade": "facil",
+      "objetivo": "Identificar remetente, destinatário, finalidade e as partes que compõem uma carta pessoal.",
+      "bncc": [
+        {
+          "codigo": "EF04LP10",
+          "descricaoResumida": "Ler e compreender, com autonomia, cartas pessoais, de acordo com as convenções do gênero e a finalidade do texto."
+        },
+        {
+          "codigo": "EF35LP16",
+          "descricaoResumida": "Identificar e reproduzir a formatação e a diagramação específicas de gêneros como a carta."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia a carta escrita por Beatriz e responda às questões.",
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "resposta-curta",
+          "enunciado": "Quem escreveu a carta e quem vai recebê-la?",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 2,
+          "tipo": "resposta-curta",
+          "enunciado": "Qual é a finalidade principal dessa carta?",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 3,
+          "tipo": "multipla-escolha",
+          "enunciado": "A expressão 'Com saudade' aparece no final da carta. Que parte da carta ela ocupa?",
+          "alternativas": [
+            "O cabeçalho com local e data",
+            "A despedida",
+            "O corpo da carta",
+            "A saudação inicial"
+          ],
+          "figuraId": null,
+          "espacoResposta": "pequeno"
+        },
+        {
+          "numero": 4,
+          "tipo": "analise-texto",
+          "enunciado": "Copie da carta o trecho que informa o local e a data em que ela foi escrita.",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "pequeno"
+        },
+        {
+          "numero": 5,
+          "tipo": "inferencia",
+          "enunciado": "Beatriz usa 'a senhora' para falar com a tia. O que essa escolha mostra sobre a relação entre as duas?",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Escreva uma carta pessoal curta convidando alguém da sua família para um evento da escola.",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "grande"
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Quem escreveu foi Beatriz, a sobrinha; quem vai receber é a tia Vilma.",
+          "justificativa": "A assinatura indica o remetente e a saudação inicial indica o destinatário."
+        },
+        {
+          "numero": 2,
+          "resposta": "Convidar a tia para assistir à apresentação de teatro da turma.",
+          "justificativa": "O convite é o motivo central declarado no corpo da carta."
+        },
+        {
+          "numero": 3,
+          "resposta": "Alternativa B.",
+          "justificativa": "A expressão antecede a assinatura e encerra a carta, função própria da despedida."
+        },
+        {
+          "numero": 4,
+          "resposta": "Manaus, 12 de agosto de 2025.",
+          "justificativa": "Local e data aparecem no cabeçalho, antes da saudação."
+        },
+        {
+          "numero": 5,
+          "resposta": "Mostra respeito e um tratamento mais formal com uma pessoa mais velha da família, ainda que exista carinho entre elas.",
+          "justificativa": "Critério de correção: aceitar respostas que mencionem respeito, formalidade ou diferença de idade. Não aceitar respostas que afirmem que as duas não se conhecem, pois o texto indica proximidade."
+        },
+        {
+          "numero": 6,
+          "resposta": "Resposta autoral do aluno.",
+          "justificativa": "Critério de correção: a carta deve conter as quatro partes trabalhadas — local e data, saudação inicial, motivo do convite com informação de dia, hora ou lugar, e despedida com assinatura. Considerar adequada a carta que apresente pelo menos três dessas partes e mantenha o convite como finalidade."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-26"
+      },
+      "textoApoio": {
+        "titulo": "Carta para a tia Vilma",
+        "conteudo": "Manaus, 12 de agosto de 2025.\n\nQuerida tia Vilma,\n\nEscrevo para contar que a nossa turma vai apresentar uma peça no fim do mês. Fiquei com o papel de narradora e já decorei todas as falas. A senhora disse que viria me visitar em agosto, e por isso queria convidá-la para assistir. A apresentação será no pátio da escola, às nove horas da manhã do dia 30. Se a senhora puder vir, avise pelo telefone da minha mãe.\n\nCom saudade,\nBeatriz"
+      }
+    },
+    {
+      "id": "efi-4ano-b3-lp-verbete-a",
+      "titulo": "Como se organiza um verbete",
+      "tema": "Verbete de enciclopédia",
+      "sequencia": "A",
+      "tipoSequencia": "Introdução",
+      "dificuldade": "intermediaria",
+      "objetivo": "Reconhecer a organização do verbete de enciclopédia infantil — título, definição, detalhamento e curiosidade — e sua linguagem informativa.",
+      "bncc": [
+        {
+          "codigo": "EF04LP23",
+          "descricaoResumida": "Identificar e reproduzir, em verbetes de enciclopédia infantil, a formatação específica do gênero (título, definição, detalhamento, curiosidades)."
+        },
+        {
+          "codigo": "EF04LP22",
+          "descricaoResumida": "Planejar e produzir, com certa autonomia, verbetes de enciclopédia infantil."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o verbete e responda às questões.",
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "resposta-curta",
+          "enunciado": "Qual é o título do verbete e sobre o que ele trata?",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 2,
+          "tipo": "resposta-curta",
+          "enunciado": "Copie do verbete a parte que apresenta a definição, ou seja, a explicação inicial do que é o animal.",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 3,
+          "tipo": "multipla-escolha",
+          "enunciado": "Como pode ser classificada a linguagem usada nesse verbete?",
+          "alternativas": [
+            "Cheia de opiniões de quem escreveu",
+            "Informativa e objetiva",
+            "Engraçada e cheia de rimas",
+            "Cheia de ordens dirigidas ao leitor"
+          ],
+          "figuraId": null,
+          "espacoResposta": "pequeno"
+        },
+        {
+          "numero": 4,
+          "tipo": "analise-texto",
+          "enunciado": "O verbete termina com uma curiosidade. Que informação ela acrescenta que a definição não trazia?",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 5,
+          "tipo": "comparacao",
+          "enunciado": "Um verbete e uma notícia informam o leitor. Escreva uma diferença entre esses dois gêneros quanto ao tipo de assunto que cada um trata.",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Escreva um verbete curto sobre um animal que você conhece bem.",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "grande"
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "O título é Boto-cor-de-rosa e o verbete trata desse golfinho de água doce que vive nos rios da Amazônia.",
+          "justificativa": "O título nomeia a entrada e a primeira frase delimita o assunto."
+        },
+        {
+          "numero": 2,
+          "resposta": "Golfinho de água doce que vive nos rios da Amazônia.",
+          "justificativa": "É a frase inicial que diz o que o animal é, função da definição no verbete."
+        },
+        {
+          "numero": 3,
+          "resposta": "Alternativa B.",
+          "justificativa": "O texto apresenta dados verificáveis, sem opinião, humor ou ordens."
+        },
+        {
+          "numero": 4,
+          "resposta": "A curiosidade explica que o boto enxerga pouco na água escura e se orienta pelo som, informação que a definição inicial não trazia.",
+          "justificativa": "A definição apenas classifica o animal e indica onde ele vive."
+        },
+        {
+          "numero": 5,
+          "resposta": "O verbete trata de um assunto permanente, que continua verdadeiro com o tempo; a notícia trata de um fato que acabou de acontecer, com dia e lugar determinados.",
+          "justificativa": "Critério de correção: aceitar qualquer resposta que oponha assunto permanente a acontecimento recente, mesmo com outras palavras."
+        },
+        {
+          "numero": 6,
+          "resposta": "Resposta autoral do aluno.",
+          "justificativa": "Critério de correção: o verbete deve trazer título com o nome do animal, uma definição que diga o que ele é, pelo menos um detalhamento (tamanho, alimentação ou onde vive) e uma curiosidade. Aceitar como adequado o texto que contenha o título e ao menos duas das outras três partes, em linguagem informativa."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-26"
+      },
+      "textoApoio": {
+        "titulo": "Boto-cor-de-rosa",
+        "conteudo": "Boto-cor-de-rosa. Golfinho de água doce que vive nos rios da Amazônia. Quando adulto, pode medir até dois metros e meio e pesar cerca de cento e oitenta quilos. A pele dos filhotes é acinzentada e vai ficando rosada com o passar dos anos. Alimenta-se de peixes e caranguejos, que localiza emitindo sons e escutando o eco. Curiosidade: por enxergar pouco na água escura dos rios, o boto se orienta quase sempre pelo som, e não pela visão."
+      }
+    },
+    {
+      "id": "efi-4ano-b3-lp-poema-a",
+      "titulo": "Versos, estrofes e o som das palavras",
+      "tema": "Poema",
+      "sequencia": "A",
+      "tipoSequencia": "Introdução",
+      "dificuldade": "intermediaria",
+      "objetivo": "Identificar versos, estrofes e rimas em um poema e explicar efeitos de sentido criados por imagens poéticas.",
+      "bncc": [
+        {
+          "codigo": "EF35LP23",
+          "descricaoResumida": "Apreciar poemas e outros textos versificados, observando rimas e diferentes modos de divisão dos versos e estrofes."
+        },
+        {
+          "codigo": "EF35LP27",
+          "descricaoResumida": "Ler e compreender textos em versos, explorando rimas, sons e jogos de palavras."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o poema em voz baixa, prestando atenção no som das palavras, e responda às questões.",
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "resposta-curta",
+          "enunciado": "Quantas estrofes e quantos versos ao todo tem o poema?",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "pequeno"
+        },
+        {
+          "numero": 2,
+          "tipo": "resposta-curta",
+          "enunciado": "Copie as duas palavras que rimam na primeira estrofe.",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "pequeno"
+        },
+        {
+          "numero": 3,
+          "tipo": "multipla-escolha",
+          "enunciado": "No verso 'bateu palma no telhado', o poema quer dizer que a chuva:",
+          "alternativas": [
+            "aplaudiu a casa de alegria",
+            "fez barulho ao cair no telhado",
+            "quebrou as telhas do telhado",
+            "chamou alguém pelo nome"
+          ],
+          "figuraId": null,
+          "espacoResposta": "pequeno"
+        },
+        {
+          "numero": 4,
+          "tipo": "vocabulario",
+          "enunciado": "O poema diz que a chuva 'fez riacho de brinquedo'. Explique com suas palavras o que essa imagem quer dizer.",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 5,
+          "tipo": "inferencia",
+          "enunciado": "No último verso, a chuva 'levou embora o meu medo'. O que muda no sentimento de quem fala no poema entre a primeira e a segunda estrofe?",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Escreva uma estrofe de quatro versos sobre o tempo na sua cidade, usando pelo menos uma rima.",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "grande"
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Duas estrofes e oito versos ao todo, quatro em cada estrofe.",
+          "justificativa": "Cada bloco separado por linha em branco é uma estrofe; cada linha é um verso."
+        },
+        {
+          "numero": 2,
+          "resposta": "telhado e pendurado.",
+          "justificativa": "São as palavras finais do segundo e do quarto versos, com o mesmo som final."
+        },
+        {
+          "numero": 3,
+          "resposta": "Alternativa B.",
+          "justificativa": "A imagem compara o som das gotas no telhado ao som de palmas."
+        },
+        {
+          "numero": 4,
+          "resposta": "Quer dizer que a água que escorreu pela calçada formou um filete parecido com um riacho pequeno, como se fosse um riacho de mentirinha, próprio de brincadeira.",
+          "justificativa": "Critério de correção: aceitar respostas que expliquem a comparação entre a água da calçada e um riacho pequeno ou de faz de conta."
+        },
+        {
+          "numero": 5,
+          "resposta": "Na primeira estrofe a chuva apenas chega e molha as coisas; na segunda, ela leva embora o medo, e quem fala passa a se sentir aliviado e tranquilo.",
+          "justificativa": "Critério de correção: aceitar respostas que indiquem passagem do incômodo ou receio para o alívio, a calma ou a alegria."
+        },
+        {
+          "numero": 6,
+          "resposta": "Resposta autoral do aluno.",
+          "justificativa": "Critério de correção: a estrofe deve ter exatamente quatro versos escritos um abaixo do outro, tratar do tempo (chuva, sol, calor, vento) e apresentar pelo menos duas palavras com som final semelhante. Não descontar por rima imperfeita."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-26"
+      },
+      "textoApoio": {
+        "titulo": "Chuva na calçada",
+        "conteudo": "A chuva chegou de tarde,\nbateu palma no telhado,\nmolhou o pé da goiabeira\ne o meu tênis pendurado.\n\nEscorreu pela calçada,\nfez riacho de brinquedo,\nlevou folha, levou galho,\nlevou embora o meu medo."
+      }
+    },
+    {
+      "id": "efi-4ano-b3-lp-quadrinhos-a",
+      "titulo": "O que a imagem conta na tirinha",
+      "tema": "História em quadrinhos",
+      "sequencia": "A",
+      "tipoSequencia": "Introdução",
+      "dificuldade": "facil",
+      "objetivo": "Construir o sentido de uma tirinha relacionando imagem e palavra e interpretando tipos de balão e onomatopeia.",
+      "bncc": [
+        {
+          "codigo": "EF15LP14",
+          "descricaoResumida": "Construir o sentido de histórias em quadrinhos e tirinhas, relacionando imagens e palavras e interpretando recursos gráficos."
+        },
+        {
+          "codigo": "EF15LP04",
+          "descricaoResumida": "Identificar o efeito de sentido produzido pelo uso de recursos gráfico-visuais em textos multissemióticos."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": true,
+      "figuras": [
+        {
+          "id": "lp-fig-tirinha-01",
+          "arquivo": "assets/atividades/lingua-portuguesa/fig-tirinha-01.svg",
+          "descricao": "Tirinha autoral em quatro quadrinhos: uma menina encontra uma planta murcha no vaso e diz 'Coitada!'; em seguida pensa 'Água!' dentro de um balão em forma de nuvem enquanto pega um regador; depois rega a planta, com a onomatopeia TCHIBUM em letras grandes; no último quadrinho a planta aparece ereta e a menina diz 'Que linda!'.",
+          "funcaoPedagogica": "Fornece o texto multissemiótico que o aluno precisa ler para identificar a sequência narrativa, distinguir balão de fala de balão de pensamento e localizar a onomatopeia.",
+          "posicaoSugerida": "antes-das-questoes",
+          "textoAlternativo": "Tira de quatro quadrinhos mostrando uma menina que encontra uma planta murcha, pensa em água, rega a planta e depois a vê recuperada.",
+          "compativelPretoBranco": true
+        }
+      ],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto sobre a linguagem dos quadrinhos, depois estude a tirinha e responda às questões.",
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "resposta-curta",
+          "enunciado": "Observe a imagem e escreva, em uma frase, o que acontece do primeiro ao último quadrinho.",
+          "alternativas": [],
+          "figuraId": "lp-fig-tirinha-01",
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "No segundo quadrinho, o balão tem formato de nuvem com bolinhas. Isso indica que a personagem está:",
+          "alternativas": [
+            "gritando bem alto",
+            "pensando",
+            "cantando uma música",
+            "dormindo"
+          ],
+          "figuraId": "lp-fig-tirinha-01",
+          "espacoResposta": "pequeno"
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Copie a onomatopeia que aparece no terceiro quadrinho e escreva que som ela representa.",
+          "alternativas": [],
+          "figuraId": "lp-fig-tirinha-01",
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 4,
+          "tipo": "analise-texto",
+          "enunciado": "No último quadrinho, o rabinho do balão aponta para a menina. Explique como esse detalhe do desenho mostra ao leitor quem está falando.",
+          "alternativas": [],
+          "figuraId": "lp-fig-tirinha-01",
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 5,
+          "tipo": "inferencia",
+          "enunciado": "A planta aparece diferente no primeiro e no último quadrinho. Relacione essa mudança com o que a menina fez.",
+          "alternativas": [],
+          "figuraId": "lp-fig-tirinha-01",
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Escreva a fala que você colocaria em um quinto quadrinho e indique se usaria balão de fala ou de pensamento, explicando o motivo da escolha.",
+          "alternativas": [],
+          "figuraId": "lp-fig-tirinha-01",
+          "espacoResposta": "grande"
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Uma menina encontra uma planta murcha, pensa em água, rega a planta e no fim a vê bonita e recuperada.",
+          "justificativa": "Critério de correção: aceitar qualquer frase que reúna o problema (planta murcha), a ação (regar) e o resultado (planta recuperada)."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa B.",
+          "justificativa": "O balão em forma de nuvem, com bolinhas no lugar do rabinho, é o balão de pensamento."
+        },
+        {
+          "numero": 3,
+          "resposta": "TCHIBUM. Representa o som da água caindo sobre a terra do vaso.",
+          "justificativa": "A palavra imita um som e aparece fora do balão, em letras grandes, como é próprio da onomatopeia."
+        },
+        {
+          "numero": 4,
+          "resposta": "O rabinho é a ponta do balão que aponta para quem fala. Como ele aponta para a menina, o leitor entende que a fala 'Que linda!' é dela, e não da planta.",
+          "justificativa": "Critério de correção: aceitar respostas que expliquem que a direção do rabinho identifica o falante."
+        },
+        {
+          "numero": 5,
+          "resposta": "No primeiro quadrinho a planta está murcha porque estava sem água; no último ela está ereta porque a menina a regou. A mudança mostra o resultado da ação da personagem.",
+          "justificativa": "Critério de correção: exigir que a resposta ligue a mudança da planta ao ato de regar."
+        },
+        {
+          "numero": 6,
+          "resposta": "Resposta autoral do aluno.",
+          "justificativa": "Critério de correção: a fala deve continuar a história de forma coerente com o último quadrinho e a escolha do balão precisa vir acompanhada de justificativa compatível — balão de fala se a personagem diz em voz alta, balão de pensamento se apenas pensa."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-26"
+      },
+      "textoApoio": {
+        "titulo": "Como se lê uma tirinha",
+        "conteudo": "Na história em quadrinhos, a imagem e a palavra contam a história juntas. Os balões mostram o que as personagens dizem ou pensam: o balão de fala tem um rabinho que aponta para quem está falando, e o balão de pensamento tem formato de nuvem, com bolinhas no lugar do rabinho. As palavras que imitam sons, como TCHIBUM, são chamadas de onomatopeias e costumam aparecer em letras grandes, fora dos balões. A ordem dos quadrinhos, da esquerda para a direita, indica a passagem do tempo."
+      }
+    },
+    {
+      "id": "efi-4ano-b3-lp-instrucional-b",
+      "titulo": "As regras de um jogo, passo a passo",
+      "tema": "Texto instrucional",
+      "sequencia": "B",
+      "tipoSequencia": "Prática",
+      "dificuldade": "intermediaria",
+      "objetivo": "Reconhecer a organização do texto injuntivo instrucional — lista de material e sequência de passos — e o uso de verbos no imperativo.",
+      "bncc": [
+        {
+          "codigo": "EF04LP13",
+          "descricaoResumida": "Identificar e reproduzir, em textos injuntivos instrucionais, a formatação própria desses textos: verbos imperativos, lista de materiais e passos do jogo."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": true,
+      "figuras": [
+        {
+          "id": "lp-fig-jogo-01",
+          "arquivo": "assets/atividades/lingua-portuguesa/fig-jogo-01.svg",
+          "descricao": "Tabuleiro autoral do jogo Trilha das Palavras, com a casa Saída, oito casas numeradas de 2 a 9 e a casa Chegada, algumas preenchidas com tramas diferentes, acompanhado do desenho do material: um dado, dois peões, um tabuleiro e uma lista de palavras.",
+          "funcaoPedagogica": "Permite que o aluno confira a lista de material citada no texto instrucional e conte as casas do percurso para responder às questões sobre a sequência de passos.",
+          "posicaoSugerida": "antes-das-questoes",
+          "textoAlternativo": "Tabuleiro em trilha com a casa Saída, casas numeradas de 2 a 9 e a casa Chegada, e ao lado os desenhos de um dado, dois peões, um tabuleiro e uma lista de palavras.",
+          "compativelPretoBranco": true
+        }
+      ],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia as regras do jogo, estude o tabuleiro e responda às questões.",
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "resposta-curta",
+          "enunciado": "Observe a imagem e copie a lista completa do material necessário para jogar.",
+          "alternativas": [],
+          "figuraId": "lp-fig-jogo-01",
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 2,
+          "tipo": "resposta-curta",
+          "enunciado": "Quantos passos numerados tem a parte 'Como jogar'?",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "pequeno"
+        },
+        {
+          "numero": 3,
+          "tipo": "multipla-escolha",
+          "enunciado": "As palavras coloque, jogue e sorteie aparecem no início dos passos porque o texto:",
+          "alternativas": [
+            "conta uma história do passado",
+            "dá instruções ao jogador",
+            "descreve um lugar em detalhe",
+            "apresenta a opinião do autor"
+          ],
+          "figuraId": null,
+          "espacoResposta": "pequeno"
+        },
+        {
+          "numero": 4,
+          "tipo": "ordenacao",
+          "enunciado": "Escreva na ordem correta o que o jogador deve fazer desde o momento em que joga o dado até descobrir se continua na casa.",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 5,
+          "tipo": "analise-texto",
+          "enunciado": "Segundo a imagem, quantas casas o jogador percorre da Saída até a Chegada, contando as duas? Explique como você contou.",
+          "alternativas": [],
+          "figuraId": "lp-fig-jogo-01",
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Acrescente uma sexta regra ao jogo, começando por um verbo que dê instrução, como nas outras regras.",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "grande"
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Um tabuleiro, um dado, dois peões e uma lista de palavras.",
+          "justificativa": "Os quatro itens aparecem na parte Material do texto e estão desenhados na figura."
+        },
+        {
+          "numero": 2,
+          "resposta": "Cinco passos.",
+          "justificativa": "A parte Como jogar está numerada de 1 a 5."
+        },
+        {
+          "numero": 3,
+          "resposta": "Alternativa B.",
+          "justificativa": "Verbos no imperativo indicam ordem ou instrução dirigida a quem vai jogar."
+        },
+        {
+          "numero": 4,
+          "resposta": "Primeiro, jogar o dado; depois, andar o número de casas indicado; em seguida, se a casa for marcada, sortear uma palavra da lista; então separar as sílabas em voz alta; por fim, permanecer na casa se acertar ou voltar uma casa se errar.",
+          "justificativa": "Critério de correção: aceitar a resposta que mantenha a ordem jogar o dado, andar, sortear a palavra, separar as sílabas e conferir o resultado, ainda que com outras palavras."
+        },
+        {
+          "numero": 5,
+          "resposta": "Dez casas. Contam-se a Saída, as oito casas numeradas de 2 a 9 e a Chegada.",
+          "justificativa": "Critério de correção: aceitar a resposta 10 acompanhada de qualquer explicação que mostre a contagem das casas extremas junto com as numeradas."
+        },
+        {
+          "numero": 6,
+          "resposta": "Resposta autoral do aluno. Exemplo aceitável: 'Passe a vez se cair na casa da Chegada com número maior que o necessário.'",
+          "justificativa": "Critério de correção: a regra deve começar por verbo no imperativo, ser compreensível e não contradizer as cinco regras já existentes."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-26"
+      },
+      "textoApoio": {
+        "titulo": "Trilha das Palavras",
+        "conteudo": "Material: 1 tabuleiro, 1 dado, 2 peões e 1 lista de palavras.\n\nComo jogar:\n1. Coloque os dois peões na casa Saída.\n2. Jogue o dado e ande o número de casas indicado.\n3. Ao parar em uma casa marcada, sorteie uma palavra da lista e separe as sílabas em voz alta.\n4. Se acertar, permaneça na casa; se errar, volte uma casa.\n5. Vence quem chegar primeiro à casa Chegada."
+      }
+    },
+    {
+      "id": "efi-4ano-b3-lp-relato-pessoal-b",
+      "titulo": "Meu ponto de vista, na ordem certa",
+      "tema": "Relato pessoal",
+      "sequencia": "B",
+      "tipoSequencia": "Prática",
+      "dificuldade": "intermediaria",
+      "objetivo": "Reconhecer a narração em primeira pessoa e a sequência temporal de um relato pessoal, identificando marcadores de tempo e ponto de vista.",
+      "bncc": [
+        {
+          "codigo": "EF35LP29",
+          "descricaoResumida": "Identificar, em narrativas, o ponto de vista com base no qual as histórias são narradas, diferenciando primeira e terceira pessoas."
+        },
+        {
+          "codigo": "EF35LP09",
+          "descricaoResumida": "Organizar o texto em unidades de sentido, dividindo-o em parágrafos segundo as normas gráficas e o gênero."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o relato de Luíza e responda às questões.",
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "resposta-curta",
+          "enunciado": "O relato é contado em primeira ou em terceira pessoa? Copie uma palavra do texto que comprove sua resposta.",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 2,
+          "tipo": "ordenacao",
+          "enunciado": "Escreva, em ordem, os quatro acontecimentos principais do relato.",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 3,
+          "tipo": "multipla-escolha",
+          "enunciado": "As expressões 'Acordei atrasada', 'Quando cheguei à escola' e 'No fim da apresentação' servem principalmente para:",
+          "alternativas": [
+            "descrever o pátio da escola",
+            "marcar a passagem do tempo",
+            "apresentar as personagens",
+            "dar uma ordem ao leitor"
+          ],
+          "figuraId": null,
+          "espacoResposta": "pequeno"
+        },
+        {
+          "numero": 4,
+          "tipo": "inferencia",
+          "enunciado": "Que sentimento a narradora tem ao ficar parada no portão? Copie o trecho que mostra isso.",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 5,
+          "tipo": "analise-texto",
+          "enunciado": "O relato termina de um jeito diferente de como começou. Explique o que mudou para a narradora.",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Escreva um relato curto, em primeira pessoa, sobre algo que aconteceu com você na escola.",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "grande"
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Em primeira pessoa. Palavras que comprovam: Acordei, cheguei, Fiquei, Voltei ou meu.",
+          "justificativa": "Os verbos e pronomes na primeira pessoa mostram que quem narra participou dos fatos."
+        },
+        {
+          "numero": 2,
+          "resposta": "1) A narradora acordou atrasada; 2) chegou à escola e a turma já dançava sem ela; 3) ficou parada no portão sem coragem de entrar; 4) a professora a convidou para dançar na festa junina.",
+          "justificativa": "Critério de correção: aceitar a ordem correta dos quatro fatos, mesmo que resumidos em poucas palavras."
+        },
+        {
+          "numero": 3,
+          "resposta": "Alternativa B.",
+          "justificativa": "São marcadores temporais que organizam a sequência dos acontecimentos."
+        },
+        {
+          "numero": 4,
+          "resposta": "Sentimento de nervosismo, vergonha ou tristeza. Trecho: 'com o coração batendo forte, sem coragem de entrar'.",
+          "justificativa": "Critério de correção: aceitar nervosismo, medo, vergonha, angústia ou tristeza, desde que acompanhados do trecho correto."
+        },
+        {
+          "numero": 5,
+          "resposta": "No começo ela estava atrasada e perdeu a apresentação; no fim, saiu triste, mas com uma nova chance de dançar na festa junina e com um plano para não se atrasar de novo.",
+          "justificativa": "Critério de correção: exigir que a resposta indique a mudança do desânimo para alguma solução, plano ou nova oportunidade."
+        },
+        {
+          "numero": 6,
+          "resposta": "Resposta autoral do aluno.",
+          "justificativa": "Critério de correção: o relato deve estar em primeira pessoa, narrar um fato realmente vivido na escola e apresentar começo, meio e fim em um único parágrafo, com pelo menos uma expressão que marque o tempo. Não avaliar a importância do fato escolhido."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-26"
+      },
+      "textoApoio": {
+        "titulo": "O dia em que perdi a apresentação",
+        "conteudo": "Acordei atrasada no dia da apresentação de dança. Meu despertador tinha tocado, mas eu o desliguei ainda dormindo. Quando cheguei à escola, a música já tocava no pátio e minha turma dançava sem mim. Fiquei parada no portão, com o coração batendo forte, sem coragem de entrar. No fim da apresentação, a professora me chamou e disse que eu poderia dançar na festa junina. Voltei para casa triste, mas com um plano: colocar dois despertadores."
+      }
+    },
+    {
+      "id": "efi-4ano-b3-lp-conto-popular-b",
+      "titulo": "Conflito e desfecho no conto popular",
+      "tema": "Conto popular brasileiro",
+      "sequencia": "B",
+      "tipoSequencia": "Prática",
+      "dificuldade": "intermediaria",
+      "objetivo": "Identificar personagem central, conflito gerador e resolução em um conto popular, reconhecendo marcas da tradição oral.",
+      "bncc": [
+        {
+          "codigo": "EF35LP29",
+          "descricaoResumida": "Identificar, em narrativas, cenário, personagem central, conflito gerador e resolução."
+        },
+        {
+          "codigo": "EF35LP21",
+          "descricaoResumida": "Ler e compreender, de forma autônoma, textos literários de diferentes gêneros e extensões."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o conto popular e responda às questões.",
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "resposta-curta",
+          "enunciado": "Quem é a personagem central do conto e o que ela tem de especial?",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 2,
+          "tipo": "resposta-curta",
+          "enunciado": "Qual é o conflito, isto é, o problema que dá início à parte principal da história?",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 3,
+          "tipo": "multipla-escolha",
+          "enunciado": "O desfecho do conto mostra que:",
+          "alternativas": [
+            "a cuia era feita de um material muito raro",
+            "quem guarda tudo só para si acaba perdendo o que tinha",
+            "o vizinho nunca mais quis tomar café",
+            "a vovó Chica foi morar em outra cidade"
+          ],
+          "figuraId": null,
+          "espacoResposta": "pequeno"
+        },
+        {
+          "numero": 4,
+          "tipo": "analise-texto",
+          "enunciado": "Copie a frase em que a vovó Chica explica o segredo da cuia.",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 5,
+          "tipo": "inferencia",
+          "enunciado": "A expressão 'Contam no interior que' abre a história. O que ela indica sobre a origem desse conto?",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 6,
+          "tipo": "desfecho",
+          "enunciado": "Reescreva o desfecho do conto imaginando que o vizinho não devolveu a cuia, mantendo o mesmo conflito.",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "grande"
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "A vovó Chica. Ela tinha uma cuia que nunca esvaziava, por mais café que servisse aos visitantes.",
+          "justificativa": "É a personagem em torno de quem giram todos os acontecimentos."
+        },
+        {
+          "numero": 2,
+          "resposta": "Um vizinho curioso quis descobrir o segredo da cuia e a escondeu debaixo do próprio banco.",
+          "justificativa": "É a ação que rompe o equilíbrio inicial e desencadeia o restante da narrativa."
+        },
+        {
+          "numero": 3,
+          "resposta": "Alternativa B.",
+          "justificativa": "A cuia seca nas mãos de quem a tomou para si e volta a fazer sentido quando o vizinho passa a servir os outros."
+        },
+        {
+          "numero": 4,
+          "resposta": "A cuia só ficava cheia enquanto houvesse quem servisse aos outros.",
+          "justificativa": "É a fala em que a personagem revela a explicação do fato mágico."
+        },
+        {
+          "numero": 5,
+          "resposta": "Indica que é uma história da tradição oral, contada e recontada pelas pessoas, sem autor conhecido.",
+          "justificativa": "Critério de correção: aceitar respostas que mencionem história antiga, passada de boca em boca, contada pelo povo ou sem autor definido."
+        },
+        {
+          "numero": 6,
+          "resposta": "Resposta autoral do aluno.",
+          "justificativa": "Critério de correção: o novo desfecho deve partir do mesmo conflito (o vizinho esconde a cuia), manter as personagens já apresentadas e apresentar um encerramento coerente com essa escolha, mesmo que diferente do original. Não exigir final feliz."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-26"
+      },
+      "textoApoio": {
+        "titulo": "A cuia da vovó Chica",
+        "conteudo": "Contam no interior que a vovó Chica tinha uma cuia que nunca esvaziava. Toda tarde ela servia café aos visitantes e a cuia continuava cheia até o último gole. Um vizinho curioso quis descobrir o segredo e, numa noite de festa, escondeu a cuia debaixo do próprio banco. Na manhã seguinte, encontrou a cuia seca e rachada. Envergonhado, devolveu-a e pediu desculpas. A vovó Chica riu e disse que a cuia só ficava cheia enquanto houvesse quem servisse aos outros. Desde esse dia, o vizinho passou a levar café às pessoas que moravam sozinhas na estrada."
+      }
+    },
+    {
+      "id": "efi-4ano-b3-lp-entrevista-b",
+      "titulo": "Perguntar para descobrir",
+      "tema": "Entrevista",
+      "sequencia": "B",
+      "tipoSequencia": "Prática",
+      "dificuldade": "intermediaria",
+      "objetivo": "Reconhecer a organização da entrevista em perguntas e respostas, identificar entrevistador e entrevistado e formular perguntas produtivas.",
+      "bncc": [
+        {
+          "codigo": "EF04LP17",
+          "descricaoResumida": "Produzir entrevistas orientando-se por roteiro e demonstrando conhecimento do gênero entrevista."
+        },
+        {
+          "codigo": "EF35LP10",
+          "descricaoResumida": "Identificar gêneros do discurso oral usados em diferentes situações e contextos comunicativos e suas características."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia a entrevista publicada no jornal da escola e responda às questões.",
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "resposta-curta",
+          "enunciado": "Quem é o entrevistado e qual é a profissão dele?",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 2,
+          "tipo": "resposta-curta",
+          "enunciado": "Copie a pergunta que o repórter faz para saber o que mudou no trabalho do entrevistado.",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 3,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual é a finalidade principal dessa entrevista?",
+          "alternativas": [
+            "vender um produto ao leitor",
+            "dar a conhecer a experiência de trabalho de uma pessoa",
+            "ensinar o leitor a escrever cartas",
+            "contar uma história inventada"
+          ],
+          "figuraId": null,
+          "espacoResposta": "pequeno"
+        },
+        {
+          "numero": 4,
+          "tipo": "analise-texto",
+          "enunciado": "Nesse texto, o que indica ao leitor quem está falando a cada momento?",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 5,
+          "tipo": "inferencia",
+          "enunciado": "Segundo o entrevistado, por que hoje ele entrega menos cartas do que antes?",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 6,
+          "tipo": "planejamento",
+          "enunciado": "Escreva três perguntas que você faria a alguém que trabalha na sua escola. Nenhuma delas pode ser respondida apenas com sim ou não.",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "grande"
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "O entrevistado é o seu Raimundo, que é carteiro.",
+          "justificativa": "O nome aparece antes de cada fala e a profissão é informada no título e na primeira resposta."
+        },
+        {
+          "numero": 2,
+          "resposta": "O que mudou no seu trabalho nesse tempo?",
+          "justificativa": "É a segunda pergunta do repórter, dirigida exatamente a esse ponto."
+        },
+        {
+          "numero": 3,
+          "resposta": "Alternativa B.",
+          "justificativa": "As perguntas buscam informações sobre a trajetória e a rotina de trabalho do entrevistado."
+        },
+        {
+          "numero": 4,
+          "resposta": "O nome de quem fala aparece escrito antes de cada fala, seguido de dois-pontos: Repórter e Seu Raimundo.",
+          "justificativa": "Critério de correção: aceitar respostas que citem a identificação pelo nome antes da fala, com ou sem menção aos dois-pontos."
+        },
+        {
+          "numero": 5,
+          "resposta": "Porque hoje as pessoas se comunicam pelo celular, e por isso ele entrega mais encomendas do que cartas.",
+          "justificativa": "A informação está na segunda resposta do entrevistado e precisa ser relacionada por inferência."
+        },
+        {
+          "numero": 6,
+          "resposta": "Resposta autoral do aluno.",
+          "justificativa": "Critério de correção: devem ser três perguntas, dirigidas a alguém que trabalha na escola, escritas com ponto de interrogação e formuladas de modo que exijam explicação. Considerar incorreta a pergunta que comece por 'Você gosta de', 'Você tem' ou equivalente, por admitir resposta sim ou não."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-26"
+      },
+      "textoApoio": {
+        "titulo": "Entrevista com seu Raimundo, carteiro há trinta anos",
+        "conteudo": "Repórter: Há quanto tempo o senhor entrega cartas neste bairro?\nSeu Raimundo: Faz trinta anos. Comecei quando as ruas ainda eram de terra.\nRepórter: O que mudou no seu trabalho nesse tempo?\nSeu Raimundo: Hoje entrego menos cartas e mais encomendas. As pessoas se falam pelo celular.\nRepórter: O senhor sente falta das cartas?\nSeu Raimundo: Sinto. A carta chegava, a pessoa lia devagar e guardava numa gaveta. Isso se perdeu um pouco."
+      }
+    },
+    {
+      "id": "efi-4ano-b3-lp-campanha-educativa-b",
+      "titulo": "Uma mensagem para quem?",
+      "tema": "Campanha educativa",
+      "sequencia": "B",
+      "tipoSequencia": "Prática",
+      "dificuldade": "intermediaria",
+      "objetivo": "Identificar público, objetivo e mensagem de uma campanha educativa e distinguir fato de opinião em texto persuasivo.",
+      "bncc": [
+        {
+          "codigo": "EF04LP15",
+          "descricaoResumida": "Distinguir fatos de opiniões e sugestões em textos informativos, jornalísticos e publicitários."
+        },
+        {
+          "codigo": "EF15LP04",
+          "descricaoResumida": "Identificar o efeito de sentido produzido pelo uso de recursos gráfico-visuais em textos multissemióticos."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": true,
+      "figuras": [
+        {
+          "id": "lp-fig-campanha-01",
+          "arquivo": "assets/atividades/lingua-portuguesa/fig-campanha-01.svg",
+          "descricao": "Cartaz autoral de campanha educativa com a frase FECHE A TORNEIRA em letras grandes na faixa superior, o desenho de uma torneira pingando, a figura de uma pessoa escovando os dentes, a frase explicativa sobre a água que vai embora pelo ralo e, no rodapé, a indicação de que a Escola Caminhos convida os alunos do 4º ano.",
+          "funcaoPedagogica": "É o próprio texto multissemiótico analisado: o aluno precisa ler a frase principal, localizar o público indicado no rodapé e relacionar o desenho da torneira pingando à mensagem verbal.",
+          "posicaoSugerida": "antes-das-questoes",
+          "textoAlternativo": "Cartaz de campanha com o título FECHE A TORNEIRA, o desenho de uma torneira pingando ao lado de uma pessoa escovando os dentes e, no rodapé, o convite da Escola Caminhos aos alunos do 4º ano.",
+          "compativelPretoBranco": true
+        }
+      ],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto sobre campanhas educativas, estude o cartaz e responda às questões.",
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "resposta-curta",
+          "enunciado": "Observe a imagem e copie a frase principal do cartaz, aquela escrita em letras maiores.",
+          "alternativas": [],
+          "figuraId": "lp-fig-campanha-01",
+          "espacoResposta": "pequeno"
+        },
+        {
+          "numero": 2,
+          "tipo": "resposta-curta",
+          "enunciado": "A quem esse cartaz se dirige? Copie o trecho do cartaz que mostra isso.",
+          "alternativas": [],
+          "figuraId": "lp-fig-campanha-01",
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 3,
+          "tipo": "multipla-escolha",
+          "enunciado": "A palavra 'feche' aparece no cartaz porque a campanha quer:",
+          "alternativas": [
+            "contar um fato que já aconteceu",
+            "pedir uma ação ao leitor",
+            "descrever como é uma torneira",
+            "fazer uma pergunta ao leitor"
+          ],
+          "figuraId": "lp-fig-campanha-01",
+          "espacoResposta": "pequeno"
+        },
+        {
+          "numero": 4,
+          "tipo": "classificacao",
+          "enunciado": "A frase 'a água limpa vai embora pelo ralo' é um fato ou uma opinião? Justifique sua classificação.",
+          "alternativas": [],
+          "figuraId": "lp-fig-campanha-01",
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 5,
+          "tipo": "inferencia",
+          "enunciado": "Como o desenho da torneira pingando reforça a mensagem escrita no cartaz?",
+          "alternativas": [],
+          "figuraId": "lp-fig-campanha-01",
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Crie a frase principal de uma campanha educativa sobre o lixo na sua escola, usando no máximo seis palavras.",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "grande"
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "FECHE A TORNEIRA.",
+          "justificativa": "É a frase da faixa superior, destacada em letras maiores, que concentra o apelo da campanha."
+        },
+        {
+          "numero": 2,
+          "resposta": "Aos alunos do 4º ano da escola. Trecho: 'Escola Caminhos convida os alunos do 4º ano'.",
+          "justificativa": "O rodapé identifica ao mesmo tempo quem produziu o cartaz e o público a quem ele se dirige."
+        },
+        {
+          "numero": 3,
+          "resposta": "Alternativa B.",
+          "justificativa": "O verbo no imperativo dirige um pedido de ação diretamente a quem lê."
+        },
+        {
+          "numero": 4,
+          "resposta": "É um fato, porque pode ser observado e verificado: com a torneira aberta, a água realmente escorre pelo ralo sem ser usada.",
+          "justificativa": "Critério de correção: exigir a classificação como fato acompanhada de justificativa que mencione a possibilidade de observar ou comprovar. Não aceitar a classificação como opinião."
+        },
+        {
+          "numero": 5,
+          "resposta": "O desenho mostra a água caindo sem ser usada enquanto a pessoa escova os dentes, o que faz o leitor ver o desperdício que a frase descreve com palavras.",
+          "justificativa": "Critério de correção: aceitar respostas que relacionem a imagem do desperdício ao pedido escrito de fechar a torneira."
+        },
+        {
+          "numero": 6,
+          "resposta": "Resposta autoral do aluno. Exemplo aceitável: 'Jogue o lixo na lixeira certa.'",
+          "justificativa": "Critério de correção: a frase deve tratar de lixo na escola, começar por um verbo que peça ação e ter no máximo seis palavras. Não avaliar a criatividade, e sim o cumprimento dessas três condições."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-26"
+      },
+      "textoApoio": {
+        "titulo": "O que é uma campanha educativa",
+        "conteudo": "A campanha educativa é feita para convencer um grupo de pessoas a mudar uma atitude. Ela costuma trazer uma frase curta em letras grandes, uma imagem que reforça essa frase e a indicação de quem produziu o cartaz. Diferente do anúncio de uma loja, a campanha educativa não vende nada: ela pede uma ação que traz benefício para todos. Por isso, seus verbos costumam aparecer no imperativo, chamando o leitor para agir."
+      }
+    },
+    {
+      "id": "efi-4ano-b3-lp-pontuacao-dialogo-b",
+      "titulo": "Travessão, dois-pontos e a fala das personagens",
+      "tema": "Pontuação em diálogos",
+      "sequencia": "B",
+      "tipoSequencia": "Prática",
+      "dificuldade": "intermediaria",
+      "objetivo": "Reconhecer e empregar travessão, dois-pontos e ponto de interrogação na marcação do discurso direto.",
+      "bncc": [
+        {
+          "codigo": "EF04LP05",
+          "descricaoResumida": "Identificar na leitura e usar na escrita ponto final, de interrogação, de exclamação, dois-pontos e travessão em diálogos."
+        },
+        {
+          "codigo": "EF35LP30",
+          "descricaoResumida": "Diferenciar discurso indireto e discurso direto, determinando o efeito de sentido dos verbos de enunciação."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o diálogo e responda às questões, prestando atenção nos sinais de pontuação.",
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "resposta-curta",
+          "enunciado": "Que sinal de pontuação indica o início da fala de cada personagem?",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "pequeno"
+        },
+        {
+          "numero": 2,
+          "tipo": "resposta-curta",
+          "enunciado": "Copie a frase em que aparecem os dois-pontos e explique para que eles servem nessa passagem.",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 3,
+          "tipo": "multipla-escolha",
+          "enunciado": "Na linha '— Entrou, sim — respondeu Téo', o segundo travessão serve para:",
+          "alternativas": [
+            "encerrar definitivamente o texto",
+            "separar a fala da personagem do comentário do narrador",
+            "indicar que a frase é uma pergunta",
+            "mostrar espanto da personagem"
+          ],
+          "figuraId": null,
+          "espacoResposta": "pequeno"
+        },
+        {
+          "numero": 4,
+          "tipo": "classificacao",
+          "enunciado": "Copie do diálogo uma frase que termine com ponto de interrogação e explique por que ela recebe esse sinal.",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 5,
+          "tipo": "analise-texto",
+          "enunciado": "Reescreva a fala 'A professora já entrou?' em discurso indireto, começando por: Marina perguntou se...",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Escreva um diálogo curto de quatro falas entre dois colegas de turma.",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "grande"
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "O travessão.",
+          "justificativa": "No discurso direto, o travessão abre a fala de cada personagem em linha própria."
+        },
+        {
+          "numero": 2,
+          "resposta": "Frase: 'Marina chegou ofegante e perguntou:'. Os dois-pontos servem para anunciar que virá a seguir a fala da personagem.",
+          "justificativa": "Critério de correção: aceitar explicações equivalentes, como introduzir ou apresentar a fala."
+        },
+        {
+          "numero": 3,
+          "resposta": "Alternativa B.",
+          "justificativa": "O segundo travessão fecha a fala e marca a entrada do comentário do narrador."
+        },
+        {
+          "numero": 4,
+          "resposta": "Exemplos aceitáveis: 'A professora já entrou?', 'Esperar?' ou 'Até quando?'. Recebem esse sinal porque são perguntas feitas por uma personagem à outra.",
+          "justificativa": "Critério de correção: aceitar qualquer uma das três frases interrogativas do texto, desde que a explicação mencione que se trata de uma pergunta."
+        },
+        {
+          "numero": 5,
+          "resposta": "Marina perguntou se a professora já tinha entrado.",
+          "justificativa": "Critério de correção: aceitar variações como 'se a professora já havia entrado', desde que desapareçam o travessão e o ponto de interrogação e o verbo seja ajustado."
+        },
+        {
+          "numero": 6,
+          "resposta": "Resposta autoral do aluno.",
+          "justificativa": "Critério de correção: o diálogo deve ter quatro falas, cada uma iniciada por travessão em linha própria, incluir pelo menos um ponto de interrogação e apresentar ao menos uma ocorrência de dois-pontos introduzindo uma fala. Não exigir comentário do narrador."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-26"
+      },
+      "textoApoio": {
+        "titulo": "No portão da escola",
+        "conteudo": "Marina chegou ofegante e perguntou:\n— A professora já entrou?\n— Entrou, sim — respondeu Téo, sem tirar os olhos do livro. — Mas ela pediu para esperarmos aqui.\n— Esperar? Até quando?\n— Até o sinal tocar de novo.\nMarina largou a mochila no chão e sentou-se ao lado do amigo."
+      }
+    },
+    {
+      "id": "efi-4ano-b3-lp-coesao-b",
+      "titulo": "Palavras que evitam repetição",
+      "tema": "Coesão textual",
+      "sequencia": "B",
+      "tipoSequencia": "Prática",
+      "dificuldade": "desafiadora",
+      "objetivo": "Reconhecer substituições lexicais e pronominais que garantem a continuidade do texto e aplicá-las na reescrita.",
+      "bncc": [
+        {
+          "codigo": "EF35LP06",
+          "descricaoResumida": "Recuperar relações entre partes de um texto, identificando substituições lexicais e pronominais que contribuem para a continuidade."
+        },
+        {
+          "codigo": "EF35LP14",
+          "descricaoResumida": "Identificar e usar pronomes pessoais, possessivos e demonstrativos como recurso coesivo anafórico."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia as duas versões do texto de Lucas e responda às questões.",
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "resposta-curta",
+          "enunciado": "Quantas vezes a palavra cachorro aparece na primeira versão do texto?",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "pequeno"
+        },
+        {
+          "numero": 2,
+          "tipo": "resposta-curta",
+          "enunciado": "Copie as três palavras ou expressões que Lucas usou na segunda versão no lugar de cachorro.",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 3,
+          "tipo": "multipla-escolha",
+          "enunciado": "Na segunda versão, a palavra 'elas' substitui:",
+          "alternativas": [
+            "as casinhas",
+            "as crianças",
+            "as praças",
+            "as comidas"
+          ],
+          "figuraId": null,
+          "espacoResposta": "pequeno"
+        },
+        {
+          "numero": 4,
+          "tipo": "classificacao",
+          "enunciado": "Separe as substituições da segunda versão em dois grupos: as feitas por pronomes e as feitas por outros substantivos.",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 5,
+          "tipo": "comparacao",
+          "enunciado": "Explique por que a segunda versão é mais agradável de ler do que a primeira.",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Reescreva evitando as repetições: 'A Ana perdeu a mochila. A Ana procurou a mochila na sala. A Ana encontrou a mochila embaixo da mesa.'",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "grande"
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Cinco vezes.",
+          "justificativa": "A palavra aparece em cada uma das cinco frases da primeira versão."
+        },
+        {
+          "numero": 2,
+          "resposta": "O animal, ele e o bichinho.",
+          "justificativa": "São as três formas usadas para retomar o mesmo referente sem repeti-lo."
+        },
+        {
+          "numero": 3,
+          "resposta": "Alternativa B.",
+          "justificativa": "O pronome retoma 'as crianças', mencionadas na frase anterior."
+        },
+        {
+          "numero": 4,
+          "resposta": "Pronomes: ele, elas. Outros substantivos: o animal, o bichinho.",
+          "justificativa": "Critério de correção: aceitar a separação correta mesmo que o aluno não use os termos pronome e substantivo, desde que os dois grupos estejam distintos."
+        },
+        {
+          "numero": 5,
+          "resposta": "Porque a segunda versão não repete a mesma palavra em todas as frases; as substituições deixam a leitura mais variada e o texto continua sendo compreendido, já que se sabe a quem cada palavra se refere.",
+          "justificativa": "Critério de correção: aceitar respostas que mencionem a ausência de repetição e a manutenção do sentido."
+        },
+        {
+          "numero": 6,
+          "resposta": "Exemplo aceitável: 'A Ana perdeu a mochila. Ela a procurou na sala e a encontrou embaixo da mesa.'",
+          "justificativa": "Critério de correção: a reescrita deve manter os três fatos na mesma ordem, reduzir para no máximo uma ocorrência de 'Ana' e uma de 'mochila' e usar pelo menos um pronome no lugar das repetições. Aceitar também a junção das frases com e ou vírgula."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-26"
+      },
+      "textoApoio": {
+        "titulo": "O cachorro da praça, em duas versões",
+        "conteudo": "Primeira versão, escrita por Lucas: O cachorro apareceu na praça. O cachorro estava com fome. As crianças deram comida para o cachorro. Depois as crianças fizeram uma casinha para o cachorro. O cachorro dormiu na casinha.\n\nA professora pediu que Lucas reescrevesse o texto sem repetir tanto.\n\nSegunda versão: O cachorro apareceu na praça. O animal estava com fome. As crianças deram comida para ele. Depois elas fizeram uma casinha para o bichinho, que dormiu ali mesmo."
+      }
+    },
+    {
+      "id": "efi-4ano-b3-lp-paragrafo-c",
+      "titulo": "Escrever e revisar um parágrafo claro",
+      "tema": "Produção e revisão de parágrafo",
+      "sequencia": "C",
+      "tipoSequencia": "Consolidação",
+      "dificuldade": "desafiadora",
+      "objetivo": "Revisar um rascunho aplicando pontuação, maiúsculas e ortografia, e produzir um parágrafo organizado em unidades de sentido.",
+      "bncc": [
+        {
+          "codigo": "EF35LP09",
+          "descricaoResumida": "Organizar o texto em unidades de sentido, dividindo-o em parágrafos segundo as normas gráficas e o gênero."
+        },
+        {
+          "codigo": "EF35LP07",
+          "descricaoResumida": "Utilizar, ao produzir um texto, conhecimentos linguísticos e gramaticais como ortografia, pontuação e concordância."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o rascunho de Pedro e responda às questões. Depois, escreva o seu próprio parágrafo.",
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "resposta-curta",
+          "enunciado": "Quantas ideias diferentes o rascunho de Pedro reúne? Liste-as em poucas palavras.",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 2,
+          "tipo": "revisao",
+          "enunciado": "Copie o rascunho separando as frases com ponto final e usando letra maiúscula no começo de cada uma.",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "grande"
+        },
+        {
+          "numero": 3,
+          "tipo": "multipla-escolha",
+          "enunciado": "Um parágrafo bem escrito deve:",
+          "alternativas": [
+            "ter uma única frase bem longa, sem pontuação",
+            "reunir ideias relacionadas e separá-las com pontuação",
+            "começar sempre por um verbo",
+            "ter no mínimo dez linhas"
+          ],
+          "figuraId": null,
+          "espacoResposta": "pequeno"
+        },
+        {
+          "numero": 4,
+          "tipo": "revisao",
+          "enunciado": "No rascunho aparece 'nos' onde deveria estar 'nós'. Explique a diferença entre as duas palavras e escreva a frase corrigida.",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 5,
+          "tipo": "conclusao",
+          "enunciado": "Qual é a ideia principal do parágrafo de Pedro? Escreva-a em uma única frase.",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Escreva um parágrafo de quatro a seis linhas sobre um espaço da sua escola.",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "grande"
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Quatro ideias: onde fica a horta; o que é plantado nela; quem rega e quando; e a previsão de colheita em outubro.",
+          "justificativa": "Critério de correção: aceitar de três a quatro ideias, desde que correspondam a informações realmente presentes no rascunho."
+        },
+        {
+          "numero": 2,
+          "resposta": "A horta da escola fica atrás da quadra. Nós plantamos alface, cebolinha e tomate. A turma rega as plantas toda segunda-feira. Quando chove, não precisa regar. O professor disse que em outubro vai ter colheita.",
+          "justificativa": "Critério de correção: aceitar pequenas variações no corte das frases, desde que cada uma comece com letra maiúscula, termine com ponto final e o sentido do rascunho seja mantido."
+        },
+        {
+          "numero": 3,
+          "resposta": "Alternativa B.",
+          "justificativa": "O parágrafo agrupa ideias relacionadas, e a pontuação é o que separa cada unidade de sentido."
+        },
+        {
+          "numero": 4,
+          "resposta": "'Nós' é o pronome que indica a primeira pessoa do plural e leva acento; 'nos' sem acento é outra palavra, usada como pronome átono, como em 'ela nos chamou'. Frase corrigida: Nós plantamos alface, cebolinha e tomate.",
+          "justificativa": "Critério de correção: aceitar explicações mais simples, desde que identifiquem 'nós' como a palavra que se refere a quem fala junto com outras pessoas e que a frase corrigida traga o acento."
+        },
+        {
+          "numero": 5,
+          "resposta": "A turma cuida da horta da escola e espera colher em outubro.",
+          "justificativa": "Critério de correção: aceitar qualquer frase única que reúna o cuidado com a horta como assunto central, sem listar todos os detalhes."
+        },
+        {
+          "numero": 6,
+          "resposta": "Resposta autoral do aluno.",
+          "justificativa": "Critério de correção: o parágrafo deve ter de quatro a seis linhas, tratar de um único espaço da escola, iniciar cada frase com letra maiúscula, encerrar cada ideia com ponto final e apresentar pelo menos uma vírgula em enumeração. Corrigir a ortografia sem descontar por erros em palavras não trabalhadas no bimestre."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-26"
+      },
+      "textoApoio": {
+        "titulo": "Um rascunho para consertar",
+        "conteudo": "Rascunho de Pedro, copiado do caderno exatamente como ele escreveu:\n\na horta da escola fica atrás da quadra nos plantamos alface cebolinha e tomate a turma rega as plantas toda segunda-feira quando chove não precisa regar o professor disse que em outubro vai ter colheita"
+      }
     }
   ]
 }

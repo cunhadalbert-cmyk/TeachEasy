@@ -2,6 +2,9 @@
   const EXPECTED_MATH_ACTIVITIES = 20;
   collectionRegistry['Matemática'].count = EXPECTED_MATH_ACTIVITIES;
 
+  const EXPECTED_PORTUGUESE_ACTIVITIES = 20;
+  collectionRegistry['Língua Portuguesa'].count = EXPECTED_PORTUGUESE_ACTIVITIES;
+
   const STORAGE_KEYS = {
     favorites: 'teacheasy.library.favorites',
     selection: 'teacheasy.library.selection'

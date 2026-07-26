@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360">
+  <rect width="1200" height="360" fill="white"/>
+  <defs>
+    <pattern id="terra" width="14" height="14" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="14" stroke="#5b4610" stroke-width="4"/></pattern>
+    <pattern id="folha" width="16" height="16" patternUnits="userSpaceOnUse"><circle cx="4" cy="4" r="3" fill="#1f5637"/></pattern>
+  </defs>
+  <g stroke="#111" stroke-width="5" fill="none">
+    <rect x="15" y="15" width="285" height="330"/>
+    <rect x="315" y="15" width="285" height="330"/>
+    <rect x="615" y="15" width="285" height="330"/>
+    <rect x="915" y="15" width="270" height="330"/>
+  </g>
+  <g stroke="#111" stroke-width="5" font-family="Arial" font-size="26" fill="#111">
+    <g transform="translate(60 120)">
+      <circle cx="40" cy="60" r="26" fill="#fff"/><path d="M40 86v70M40 100l-30 26M40 100l30 26M40 156l-20 50M40 156l20 50" fill="none"/>
+      <path d="M150 230h70l-10-70h-50Z" fill="url(#terra)"/><path d="M185 160v-40M185 135c-22 0-30-18-30-18 20-6 30 18 30 18Z" fill="url(#folha)"/>
+      <path d="M175 118c14 22 6 40 6 40" fill="none"/>
+      <g fill="#fff"><path d="M85 30h110v52H85l-14 22 2-22h12Z"/></g>
+      <text x="100" y="65" stroke="none">Coitada!</text>
+    </g>
+    <g transform="translate(360 120)">
+      <circle cx="40" cy="60" r="26" fill="#fff"/><path d="M40 86v70M40 100l40 20M40 100l-28 26M40 156l-20 50M40 156l20 50" fill="none"/>
+      <path d="M92 108h58v42H92Z" fill="#fff"/><path d="M150 118l34-14v34Z" fill="#fff"/>
+      <g fill="#fff"><ellipse cx="180" cy="52" rx="62" ry="34"/><circle cx="126" cy="96" r="10"/><circle cx="112" cy="112" r="6"/></g>
+      <text x="146" y="62" stroke="none">Água!</text>
+    </g>
+    <g transform="translate(660 110)">
+      <circle cx="40" cy="60" r="26" fill="#fff"/><path d="M40 86v70M40 100l40 10M40 100l-28 26M40 156l-20 50M40 156l20 50" fill="none"/>
+      <path d="M80 96h50v36H80Z" fill="#fff"/><path d="M130 104l30-12v30Z" fill="#fff"/>
+      <path d="M152 118c6 24 10 48 8 70M164 116c8 24 12 48 10 72" fill="none"/>
+      <path d="M140 224h70l-10-70h-50Z" fill="url(#terra)"/>
+      <text x="70" y="40" stroke="none" font-size="40" font-weight="bold">TCHIBUM!</text>
+    </g>
+    <g transform="translate(960 120)">
+      <circle cx="40" cy="60" r="26" fill="#fff"/><path d="M40 86v70M40 100l-30 26M40 100l30 26M40 156l-20 50M40 156l20 50" fill="none"/>
+      <path d="M120 230h70l-10-70h-50Z" fill="url(#terra)"/><path d="M155 160v-70M155 120c-24-6-28-30-28-30 24-4 28 30 28 30ZM155 132c24-6 28-30 28-30-24-4-28 30-28 30Z" fill="url(#folha)"/>
+      <g fill="#fff"><path d="M60 26h130v52H60l6 24-22-24Z"/></g>
+      <text x="72" y="60" stroke="none">Que linda!</text>
+    </g>
+  </g>
+</svg>

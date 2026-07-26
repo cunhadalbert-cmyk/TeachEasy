@@ -560,10 +560,10 @@ test('Impressão da coleção usa A4 e gabarito separado sem marca promocional',
   assert.doesNotMatch(script.match(/function openCollectionPreview[\s\S]*?function resetFilters/)[0], /worksheet-brand|logotipo|marca-d’água|publicidade|rodapé promocional/i);
 });
 
-test('Lote de Matemática e Língua Portuguesa preserva 27 atividades e 162 questões', async () => {
+test('Lote de Matemática e Língua Portuguesa preserva 40 atividades e 240 questões', async () => {
   const files = [
     ['matematica.json', '4ano-3bimestre-matematica', 'Matemática', 20, 120],
-    ['lingua-portuguesa.json', '4ano-3bimestre-lingua-portuguesa', 'Língua Portuguesa', 7, 42]
+    ['lingua-portuguesa.json', '4ano-3bimestre-lingua-portuguesa', 'Língua Portuguesa', 20, 120]
   ];
   const allIds = [];
   let totalQuestions = 0;
@@ -594,9 +594,9 @@ test('Lote de Matemática e Língua Portuguesa preserva 27 atividades e 162 ques
     });
   }
 
-  assert.equal(allIds.length, 27);
-  assert.equal(new Set(allIds).size, 27);
-  assert.equal(totalQuestions, 162);
+  assert.equal(allIds.length, 40);
+  assert.equal(new Set(allIds).size, 40);
+  assert.equal(totalQuestions, 240);
 });
 
 test('Matemática possui 20 atividades autorais, 120 questões e figuras válidas', async () => {
@@ -652,6 +652,94 @@ test('Matemática possui 20 atividades autorais, 120 questões e figuras válida
   const libraryScript = await readFile(new URL('../biblioteca.js', import.meta.url), 'utf8');
   const fixesScript = await readFile(new URL('../biblioteca-fixes.js', import.meta.url), 'utf8');
   assert.match(libraryScript, /'Matemática':\s*\{[\s\S]*?count:\s*20,/);
+  assert.match(fixesScript, /EXPECTED_MATH_ACTIVITIES\s*=\s*20/);
+});
+
+test('Língua Portuguesa possui 20 atividades autorais, 120 questões e figuras válidas', async () => {
+  const raw = await readFile(new URL('../data/atividades/fundamental-anos-iniciais/4-ano/3-bimestre/lingua-portuguesa.json', import.meta.url), 'utf8');
+  assert.doesNotMatch(raw, /\uFFFD/);
+  const collection = JSON.parse(raw);
+  const activities = collection.atividades;
+  const normalize = value => value.normalize('NFKC').trim().replace(/\s+/g, ' ').toLocaleLowerCase('pt-BR');
+  const ids = activities.map(activity => activity.id);
+  const titles = activities.map(activity => normalize(activity.titulo));
+  const prompts = activities.flatMap(activity => activity.questoes.map(question => normalize(question.enunciado)));
+  const supportTexts = activities
+    .filter(activity => activity.textoApoio)
+    .map(activity => normalize(activity.textoApoio.conteudo));
+
+  assert.equal(activities.length, 20);
+  assert.equal(activities.reduce((total, activity) => total + activity.questoes.length, 0), 120);
+  assert.equal(activities.reduce((total, activity) => total + activity.gabarito.length, 0), 120);
+  assert.equal(new Set(ids).size, 20);
+  assert.equal(new Set(titles).size, 20);
+  assert.equal(new Set(prompts).size, 120);
+  assert.equal(new Set(supportTexts).size, supportTexts.length);
+
+  const preservedIds = [
+    'efi-4ano-b3-lp-noticia-a',
+    'efi-4ano-b3-lp-noticia-b',
+    'efi-4ano-b3-lp-noticia-c',
+    'efi-4ano-b3-lp-divulgacao-cientifica-a',
+    'efi-4ano-b3-lp-pesquisa-registro-b',
+    'efi-4ano-b3-lp-texto-literario-b',
+    'efi-4ano-b3-lp-narrativa-c'
+  ];
+  preservedIds.forEach(id => assert.ok(ids.includes(id), `atividade original ausente: ${id}`));
+  const newIds = ids.filter(id => !preservedIds.includes(id));
+  assert.equal(newIds.length, 13);
+
+  for (const activity of activities) {
+    assert.equal(activity.quantidadeQuestoes, 6);
+    assert.equal(activity.questoes.length, 6);
+    assert.equal(activity.gabarito.length, 6);
+    assert.ok(activity.objetivo.trim());
+    assert.ok(activity.instrucaoGeral.trim());
+    assert.ok(['facil', 'intermediaria', 'desafiadora'].includes(activity.dificuldade));
+    assert.ok(activity.bncc.length > 0);
+    activity.bncc.forEach(skill => {
+      assert.match(skill.codigo, /^EF(04|15|35)LP\d{2}$/);
+      assert.ok(skill.descricaoResumida.trim());
+    });
+    assert.deepEqual(activity.questoes.map(question => question.numero), [1, 2, 3, 4, 5, 6]);
+    assert.deepEqual(activity.gabarito.map(answer => answer.numero), [1, 2, 3, 4, 5, 6]);
+    assert.equal(activity.possuiFiguras, activity.figuras.length > 0);
+
+    const figureIds = new Set(activity.figuras.map(figure => figure.id));
+    assert.equal(figureIds.size, activity.figuras.length);
+    for (const figure of activity.figuras) {
+      assert.ok(figure.id);
+      assert.match(figure.arquivo, /^assets\/atividades\/lingua-portuguesa\/[^/]+\.svg$/);
+      assert.ok(figure.descricao);
+      assert.ok(figure.funcaoPedagogica);
+      assert.ok(figure.posicaoSugerida);
+      assert.ok(figure.textoAlternativo);
+      assert.equal(figure.compativelPretoBranco, true);
+      const image = await readFile(new URL(`../${figure.arquivo}`, import.meta.url), 'utf8');
+      assert.match(image, /^<svg[\s>]/);
+      assert.ok(image.length > 500);
+    }
+
+    for (const question of activity.questoes) {
+      assert.ok(question.espacoResposta);
+      if (question.figuraId) assert.ok(figureIds.has(question.figuraId));
+    }
+
+    for (const answer of activity.gabarito) {
+      assert.ok(answer.resposta.trim());
+      assert.ok(answer.justificativa.trim());
+      // Nas atividades acrescentadas neste lote, toda resposta aberta precisa
+      // trazer critério de correção explícito, e não apenas "resposta pessoal".
+      if (newIds.includes(activity.id) && /resposta (pessoal|autoral)/i.test(answer.resposta)) {
+        assert.match(answer.justificativa, /Critério de correção/i);
+      }
+    }
+  }
+
+  const libraryScript = await readFile(new URL('../biblioteca.js', import.meta.url), 'utf8');
+  const fixesScript = await readFile(new URL('../biblioteca-fixes.js', import.meta.url), 'utf8');
+  assert.match(libraryScript, /'Língua Portuguesa':\s*\{[\s\S]*?count:\s*20,/);
+  assert.match(fixesScript, /EXPECTED_PORTUGUESE_ACTIVITIES\s*=\s*20/);
   assert.match(fixesScript, /EXPECTED_MATH_ACTIVITIES\s*=\s*20/);
 });
 
