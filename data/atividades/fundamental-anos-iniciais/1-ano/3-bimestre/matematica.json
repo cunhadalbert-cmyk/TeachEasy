@@ -1,0 +1,3522 @@
+{
+  "schemaVersion": "1.0",
+  "colecao": "1ano-3bimestre-matematica",
+  "idioma": "pt-BR",
+  "etapa": "Ensino Fundamental — Anos Iniciais",
+  "ano": "1º ano",
+  "bimestre": 3,
+  "disciplina": "Matemática",
+  "statusBimestre": "sugerido",
+  "atividades": [
+    {
+      "id": "efi-1ano-b3-mat-01-numeros-ate-50-descoberta",
+      "titulo": "Números até 50 — Descoberta",
+      "tema": "Números naturais",
+      "sequencia": "Atividade 1",
+      "tipoSequencia": "Introdução",
+      "dificuldade": "facil",
+      "objetivo": "Desenvolver conhecimentos de números naturais com linguagem adequada ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01MA01",
+          "descricaoResumida": "Habilidade BNCC relacionada a números naturais no 1º ano."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia com ajuda quando necessário e responda com atenção. Você pode usar desenhos ou palavras nas respostas abertas.",
+      "textoApoio": {
+        "titulo": "Vamos aprender: Números até 50 — Descoberta",
+        "conteudo": "Os números indicam quantidades e posições. Nesta atividade, vamos observar 5 + 3 = 8. Para aprender melhor, é importante contar cada objeto apenas uma vez.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Conte de 1 em 1 e escreva o número que vem depois de 5.",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "resposta-curta",
+          "enunciado": "Resolva: 5 + 3 =",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "explicacao",
+          "enunciado": "Resolva: 8 - 3 =",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "registro",
+          "enunciado": "Qual é maior: 8 ou 11?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "situacao-problema",
+          "enunciado": "Complete a sequência: 5, 6, ___, 8.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Crie uma situação-problema cuja resposta seja 8.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "6.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 2,
+          "resposta": "8.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 3,
+          "resposta": "5.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 4,
+          "resposta": "11.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 5,
+          "resposta": "7.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral com cálculo coerente e resultado 8.",
+          "justificativa": "Critério de correção: clareza, relação com o tema e registro compreensível para o nível de alfabetização."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-1ano-b3-mat-02-comparacao-de-quantidades-descoberta",
+      "titulo": "Comparação de quantidades — Descoberta",
+      "tema": "Comparar números",
+      "sequencia": "Atividade 2",
+      "tipoSequencia": "Introdução",
+      "dificuldade": "facil",
+      "objetivo": "Desenvolver conhecimentos de comparar números com linguagem adequada ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01MA03",
+          "descricaoResumida": "Habilidade BNCC relacionada a comparar números no 1º ano."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia com ajuda quando necessário e responda com atenção. Você pode usar desenhos ou palavras nas respostas abertas.",
+      "textoApoio": {
+        "titulo": "Vamos aprender: Comparação de quantidades — Descoberta",
+        "conteudo": "Podemos comparar quantidades usando mais, menos ou igual. Nesta atividade, vamos observar 6 + 4 = 10. Para aprender melhor, é importante alinhar ou contar os elementos dos grupos.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Conte de 1 em 1 e escreva o número que vem depois de 6.",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "resposta-curta",
+          "enunciado": "Resolva: 6 + 4 =",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "explicacao",
+          "enunciado": "Resolva: 10 - 4 =",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "registro",
+          "enunciado": "Qual é maior: 10 ou 13?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "situacao-problema",
+          "enunciado": "Complete a sequência: 6, 7, ___, 9.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Crie uma situação-problema cuja resposta seja 10.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "7.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 2,
+          "resposta": "10.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 3,
+          "resposta": "6.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 4,
+          "resposta": "13.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 5,
+          "resposta": "8.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral com cálculo coerente e resultado 10.",
+          "justificativa": "Critério de correção: clareza, relação com o tema e registro compreensível para o nível de alfabetização."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-1ano-b3-mat-03-sequencias-numericas-descoberta",
+      "titulo": "Sequências numéricas — Descoberta",
+      "tema": "Regularidades",
+      "sequencia": "Atividade 3",
+      "tipoSequencia": "Introdução",
+      "dificuldade": "facil",
+      "objetivo": "Desenvolver conhecimentos de regularidades com linguagem adequada ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01MA05",
+          "descricaoResumida": "Habilidade BNCC relacionada a regularidades no 1º ano."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia com ajuda quando necessário e responda com atenção. Você pode usar desenhos ou palavras nas respostas abertas.",
+      "textoApoio": {
+        "titulo": "Vamos aprender: Sequências numéricas — Descoberta",
+        "conteudo": "Uma sequência segue uma ordem ou regra. Nesta atividade, vamos observar 7 + 5 = 12. Para aprender melhor, é importante observar o que muda de um termo para o outro.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Conte de 1 em 1 e escreva o número que vem depois de 7.",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "resposta-curta",
+          "enunciado": "Resolva: 7 + 5 =",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "explicacao",
+          "enunciado": "Resolva: 12 - 5 =",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "registro",
+          "enunciado": "Qual é maior: 12 ou 15?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "situacao-problema",
+          "enunciado": "Complete a sequência: 7, 8, ___, 10.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Crie uma situação-problema cuja resposta seja 12.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "8.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 2,
+          "resposta": "12.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 3,
+          "resposta": "7.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 4,
+          "resposta": "15.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 5,
+          "resposta": "9.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral com cálculo coerente e resultado 12.",
+          "justificativa": "Critério de correção: clareza, relação com o tema e registro compreensível para o nível de alfabetização."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-1ano-b3-mat-04-adicao-no-cotidiano-descoberta",
+      "titulo": "Adição no cotidiano — Descoberta",
+      "tema": "Adição",
+      "sequencia": "Atividade 4",
+      "tipoSequencia": "Introdução",
+      "dificuldade": "facil",
+      "objetivo": "Desenvolver conhecimentos de adição com linguagem adequada ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01MA06",
+          "descricaoResumida": "Habilidade BNCC relacionada a adição no 1º ano."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia com ajuda quando necessário e responda com atenção. Você pode usar desenhos ou palavras nas respostas abertas.",
+      "textoApoio": {
+        "titulo": "Vamos aprender: Adição no cotidiano — Descoberta",
+        "conteudo": "Adicionar é juntar quantidades ou acrescentar elementos. Nesta atividade, vamos observar 8 + 6 = 14. Para aprender melhor, é importante representar as parcelas antes de somar.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Conte de 1 em 1 e escreva o número que vem depois de 8.",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "resposta-curta",
+          "enunciado": "Resolva: 8 + 6 =",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "explicacao",
+          "enunciado": "Resolva: 14 - 6 =",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "registro",
+          "enunciado": "Qual é maior: 14 ou 17?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "situacao-problema",
+          "enunciado": "Complete a sequência: 8, 9, ___, 11.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Crie uma situação-problema cuja resposta seja 14.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "9.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 2,
+          "resposta": "14.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 3,
+          "resposta": "8.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 4,
+          "resposta": "17.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 5,
+          "resposta": "10.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral com cálculo coerente e resultado 14.",
+          "justificativa": "Critério de correção: clareza, relação com o tema e registro compreensível para o nível de alfabetização."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-1ano-b3-mat-05-subtracao-no-cotidiano-descoberta",
+      "titulo": "Subtração no cotidiano — Descoberta",
+      "tema": "Subtração",
+      "sequencia": "Atividade 5",
+      "tipoSequencia": "Introdução",
+      "dificuldade": "facil",
+      "objetivo": "Desenvolver conhecimentos de subtração com linguagem adequada ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01MA08",
+          "descricaoResumida": "Habilidade BNCC relacionada a subtração no 1º ano."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia com ajuda quando necessário e responda com atenção. Você pode usar desenhos ou palavras nas respostas abertas.",
+      "textoApoio": {
+        "titulo": "Vamos aprender: Subtração no cotidiano — Descoberta",
+        "conteudo": "Subtrair pode significar retirar ou descobrir a diferença. Nesta atividade, vamos observar 9 + 7 = 16. Para aprender melhor, é importante começar pelo total e retirar a quantidade indicada.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Conte de 1 em 1 e escreva o número que vem depois de 9.",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "resposta-curta",
+          "enunciado": "Resolva: 9 + 7 =",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "explicacao",
+          "enunciado": "Resolva: 16 - 7 =",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "registro",
+          "enunciado": "Qual é maior: 16 ou 19?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "situacao-problema",
+          "enunciado": "Complete a sequência: 9, 10, ___, 12.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Crie uma situação-problema cuja resposta seja 16.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "10.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 2,
+          "resposta": "16.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 3,
+          "resposta": "9.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 4,
+          "resposta": "19.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 5,
+          "resposta": "11.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral com cálculo coerente e resultado 16.",
+          "justificativa": "Critério de correção: clareza, relação com o tema e registro compreensível para o nível de alfabetização."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-1ano-b3-mat-06-dezena-e-unidade-descoberta",
+      "titulo": "Dezena e unidade — Descoberta",
+      "tema": "Sistema decimal",
+      "sequencia": "Atividade 6",
+      "tipoSequencia": "Introdução",
+      "dificuldade": "facil",
+      "objetivo": "Desenvolver conhecimentos de sistema decimal com linguagem adequada ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01MA07",
+          "descricaoResumida": "Habilidade BNCC relacionada a sistema decimal no 1º ano."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia com ajuda quando necessário e responda com atenção. Você pode usar desenhos ou palavras nas respostas abertas.",
+      "textoApoio": {
+        "titulo": "Vamos aprender: Dezena e unidade — Descoberta",
+        "conteudo": "Uma dezena corresponde a dez unidades. Nesta atividade, vamos observar 10 + 8 = 18. Para aprender melhor, é importante agrupar objetos de dez em dez.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Conte de 1 em 1 e escreva o número que vem depois de 10.",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "resposta-curta",
+          "enunciado": "Resolva: 10 + 8 =",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "explicacao",
+          "enunciado": "Resolva: 18 - 8 =",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "registro",
+          "enunciado": "Qual é maior: 18 ou 21?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "situacao-problema",
+          "enunciado": "Complete a sequência: 10, 11, ___, 13.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Crie uma situação-problema cuja resposta seja 18.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "11.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 2,
+          "resposta": "18.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 3,
+          "resposta": "10.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 4,
+          "resposta": "21.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 5,
+          "resposta": "12.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral com cálculo coerente e resultado 18.",
+          "justificativa": "Critério de correção: clareza, relação com o tema e registro compreensível para o nível de alfabetização."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-1ano-b3-mat-07-formas-geometricas-descoberta",
+      "titulo": "Formas geométricas — Descoberta",
+      "tema": "Geometria",
+      "sequencia": "Atividade 7",
+      "tipoSequencia": "Introdução",
+      "dificuldade": "facil",
+      "objetivo": "Desenvolver conhecimentos de geometria com linguagem adequada ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01MA14",
+          "descricaoResumida": "Habilidade BNCC relacionada a geometria no 1º ano."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia com ajuda quando necessário e responda com atenção. Você pode usar desenhos ou palavras nas respostas abertas.",
+      "textoApoio": {
+        "titulo": "Vamos aprender: Formas geométricas — Descoberta",
+        "conteudo": "Círculo, quadrado, triângulo e retângulo aparecem em objetos do cotidiano. Nesta atividade, vamos observar 11 + 2 = 13. Para aprender melhor, é importante observar lados, pontas e contorno.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Conte de 1 em 1 e escreva o número que vem depois de 11.",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "resposta-curta",
+          "enunciado": "Resolva: 11 + 2 =",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "explicacao",
+          "enunciado": "Resolva: 13 - 2 =",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "registro",
+          "enunciado": "Qual é maior: 13 ou 16?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "situacao-problema",
+          "enunciado": "Complete a sequência: 11, 12, ___, 14.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Crie uma situação-problema cuja resposta seja 13.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "12.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 2,
+          "resposta": "13.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 3,
+          "resposta": "11.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 4,
+          "resposta": "16.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 5,
+          "resposta": "13.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral com cálculo coerente e resultado 13.",
+          "justificativa": "Critério de correção: clareza, relação com o tema e registro compreensível para o nível de alfabetização."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-1ano-b3-mat-08-comprimento-e-comparacao-descoberta",
+      "titulo": "Comprimento e comparação — Descoberta",
+      "tema": "Grandezas e medidas",
+      "sequencia": "Atividade 8",
+      "tipoSequencia": "Introdução",
+      "dificuldade": "facil",
+      "objetivo": "Desenvolver conhecimentos de grandezas e medidas com linguagem adequada ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01MA15",
+          "descricaoResumida": "Habilidade BNCC relacionada a grandezas e medidas no 1º ano."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia com ajuda quando necessário e responda com atenção. Você pode usar desenhos ou palavras nas respostas abertas.",
+      "textoApoio": {
+        "titulo": "Vamos aprender: Comprimento e comparação — Descoberta",
+        "conteudo": "Objetos podem ser comparados como mais compridos ou mais curtos. Nesta atividade, vamos observar 12 + 3 = 15. Para aprender melhor, é importante usar a mesma unidade de comparação.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Conte de 1 em 1 e escreva o número que vem depois de 12.",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "resposta-curta",
+          "enunciado": "Resolva: 12 + 3 =",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "explicacao",
+          "enunciado": "Resolva: 15 - 3 =",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "registro",
+          "enunciado": "Qual é maior: 15 ou 18?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "situacao-problema",
+          "enunciado": "Complete a sequência: 12, 13, ___, 15.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Crie uma situação-problema cuja resposta seja 15.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "13.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 2,
+          "resposta": "15.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 3,
+          "resposta": "12.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 4,
+          "resposta": "18.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 5,
+          "resposta": "14.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral com cálculo coerente e resultado 15.",
+          "justificativa": "Critério de correção: clareza, relação com o tema e registro compreensível para o nível de alfabetização."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-1ano-b3-mat-09-dias-e-horarios-descoberta",
+      "titulo": "Dias e horários — Descoberta",
+      "tema": "Tempo",
+      "sequencia": "Atividade 9",
+      "tipoSequencia": "Introdução",
+      "dificuldade": "facil",
+      "objetivo": "Desenvolver conhecimentos de tempo com linguagem adequada ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01MA17",
+          "descricaoResumida": "Habilidade BNCC relacionada a tempo no 1º ano."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia com ajuda quando necessário e responda com atenção. Você pode usar desenhos ou palavras nas respostas abertas.",
+      "textoApoio": {
+        "titulo": "Vamos aprender: Dias e horários — Descoberta",
+        "conteudo": "Calendários e relógios ajudam a organizar acontecimentos. Nesta atividade, vamos observar 13 + 4 = 17. Para aprender melhor, é importante observar a ordem dos dias e períodos.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Conte de 1 em 1 e escreva o número que vem depois de 13.",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "resposta-curta",
+          "enunciado": "Resolva: 13 + 4 =",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "explicacao",
+          "enunciado": "Resolva: 17 - 4 =",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "registro",
+          "enunciado": "Qual é maior: 17 ou 20?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "situacao-problema",
+          "enunciado": "Complete a sequência: 13, 14, ___, 16.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Crie uma situação-problema cuja resposta seja 17.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "14.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 2,
+          "resposta": "17.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 3,
+          "resposta": "13.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 4,
+          "resposta": "20.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 5,
+          "resposta": "15.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral com cálculo coerente e resultado 17.",
+          "justificativa": "Critério de correção: clareza, relação com o tema e registro compreensível para o nível de alfabetização."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-1ano-b3-mat-10-tabelas-e-graficos-simples-descoberta",
+      "titulo": "Tabelas e gráficos simples — Descoberta",
+      "tema": "Tratamento da informação",
+      "sequencia": "Atividade 10",
+      "tipoSequencia": "Introdução",
+      "dificuldade": "facil",
+      "objetivo": "Desenvolver conhecimentos de tratamento da informação com linguagem adequada ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01MA21",
+          "descricaoResumida": "Habilidade BNCC relacionada a tratamento da informação no 1º ano."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia com ajuda quando necessário e responda com atenção. Você pode usar desenhos ou palavras nas respostas abertas.",
+      "textoApoio": {
+        "titulo": "Vamos aprender: Tabelas e gráficos simples — Descoberta",
+        "conteudo": "Tabelas e gráficos organizam dados para facilitar comparações. Nesta atividade, vamos observar 14 + 5 = 19. Para aprender melhor, é importante ler título, categorias e quantidades.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Conte de 1 em 1 e escreva o número que vem depois de 14.",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "resposta-curta",
+          "enunciado": "Resolva: 14 + 5 =",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "explicacao",
+          "enunciado": "Resolva: 19 - 5 =",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "registro",
+          "enunciado": "Qual é maior: 19 ou 22?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "situacao-problema",
+          "enunciado": "Complete a sequência: 14, 15, ___, 17.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Crie uma situação-problema cuja resposta seja 19.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "15.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 2,
+          "resposta": "19.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 3,
+          "resposta": "14.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 4,
+          "resposta": "22.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 5,
+          "resposta": "16.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral com cálculo coerente e resultado 19.",
+          "justificativa": "Critério de correção: clareza, relação com o tema e registro compreensível para o nível de alfabetização."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-1ano-b3-mat-11-numeros-ate-50-pratica",
+      "titulo": "Números até 50 — Prática",
+      "tema": "Números naturais",
+      "sequencia": "Atividade 11",
+      "tipoSequencia": "Desenvolvimento",
+      "dificuldade": "intermediaria",
+      "objetivo": "Desenvolver conhecimentos de números naturais com linguagem adequada ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01MA01",
+          "descricaoResumida": "Habilidade BNCC relacionada a números naturais no 1º ano."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia com ajuda quando necessário e responda com atenção. Você pode usar desenhos ou palavras nas respostas abertas.",
+      "textoApoio": {
+        "titulo": "Vamos aprender: Números até 50 — Prática",
+        "conteudo": "Os números indicam quantidades e posições. Nesta atividade, vamos observar 15 + 6 = 21. Para aprender melhor, é importante contar cada objeto apenas uma vez.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Conte de 1 em 1 e escreva o número que vem depois de 15.",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "resposta-curta",
+          "enunciado": "Resolva: 15 + 6 =",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "explicacao",
+          "enunciado": "Resolva: 21 - 6 =",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "registro",
+          "enunciado": "Qual é maior: 21 ou 24?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "situacao-problema",
+          "enunciado": "Complete a sequência: 15, 16, ___, 18.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Crie uma situação-problema cuja resposta seja 21.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "16.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 2,
+          "resposta": "21.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 3,
+          "resposta": "15.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 4,
+          "resposta": "24.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 5,
+          "resposta": "17.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral com cálculo coerente e resultado 21.",
+          "justificativa": "Critério de correção: clareza, relação com o tema e registro compreensível para o nível de alfabetização."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-1ano-b3-mat-12-comparacao-de-quantidades-pratica",
+      "titulo": "Comparação de quantidades — Prática",
+      "tema": "Comparar números",
+      "sequencia": "Atividade 12",
+      "tipoSequencia": "Desenvolvimento",
+      "dificuldade": "intermediaria",
+      "objetivo": "Desenvolver conhecimentos de comparar números com linguagem adequada ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01MA03",
+          "descricaoResumida": "Habilidade BNCC relacionada a comparar números no 1º ano."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia com ajuda quando necessário e responda com atenção. Você pode usar desenhos ou palavras nas respostas abertas.",
+      "textoApoio": {
+        "titulo": "Vamos aprender: Comparação de quantidades — Prática",
+        "conteudo": "Podemos comparar quantidades usando mais, menos ou igual. Nesta atividade, vamos observar 16 + 7 = 23. Para aprender melhor, é importante alinhar ou contar os elementos dos grupos.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Conte de 1 em 1 e escreva o número que vem depois de 16.",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "resposta-curta",
+          "enunciado": "Resolva: 16 + 7 =",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "explicacao",
+          "enunciado": "Resolva: 23 - 7 =",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "registro",
+          "enunciado": "Qual é maior: 23 ou 26?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "situacao-problema",
+          "enunciado": "Complete a sequência: 16, 17, ___, 19.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Crie uma situação-problema cuja resposta seja 23.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "17.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 2,
+          "resposta": "23.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 3,
+          "resposta": "16.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 4,
+          "resposta": "26.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 5,
+          "resposta": "18.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral com cálculo coerente e resultado 23.",
+          "justificativa": "Critério de correção: clareza, relação com o tema e registro compreensível para o nível de alfabetização."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-1ano-b3-mat-13-sequencias-numericas-pratica",
+      "titulo": "Sequências numéricas — Prática",
+      "tema": "Regularidades",
+      "sequencia": "Atividade 13",
+      "tipoSequencia": "Desenvolvimento",
+      "dificuldade": "intermediaria",
+      "objetivo": "Desenvolver conhecimentos de regularidades com linguagem adequada ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01MA05",
+          "descricaoResumida": "Habilidade BNCC relacionada a regularidades no 1º ano."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia com ajuda quando necessário e responda com atenção. Você pode usar desenhos ou palavras nas respostas abertas.",
+      "textoApoio": {
+        "titulo": "Vamos aprender: Sequências numéricas — Prática",
+        "conteudo": "Uma sequência segue uma ordem ou regra. Nesta atividade, vamos observar 17 + 8 = 25. Para aprender melhor, é importante observar o que muda de um termo para o outro.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Conte de 1 em 1 e escreva o número que vem depois de 17.",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "resposta-curta",
+          "enunciado": "Resolva: 17 + 8 =",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "explicacao",
+          "enunciado": "Resolva: 25 - 8 =",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "registro",
+          "enunciado": "Qual é maior: 25 ou 28?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "situacao-problema",
+          "enunciado": "Complete a sequência: 17, 18, ___, 20.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Crie uma situação-problema cuja resposta seja 25.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "18.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 2,
+          "resposta": "25.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 3,
+          "resposta": "17.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 4,
+          "resposta": "28.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 5,
+          "resposta": "19.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral com cálculo coerente e resultado 25.",
+          "justificativa": "Critério de correção: clareza, relação com o tema e registro compreensível para o nível de alfabetização."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-1ano-b3-mat-14-adicao-no-cotidiano-pratica",
+      "titulo": "Adição no cotidiano — Prática",
+      "tema": "Adição",
+      "sequencia": "Atividade 14",
+      "tipoSequencia": "Desenvolvimento",
+      "dificuldade": "intermediaria",
+      "objetivo": "Desenvolver conhecimentos de adição com linguagem adequada ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01MA06",
+          "descricaoResumida": "Habilidade BNCC relacionada a adição no 1º ano."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia com ajuda quando necessário e responda com atenção. Você pode usar desenhos ou palavras nas respostas abertas.",
+      "textoApoio": {
+        "titulo": "Vamos aprender: Adição no cotidiano — Prática",
+        "conteudo": "Adicionar é juntar quantidades ou acrescentar elementos. Nesta atividade, vamos observar 18 + 2 = 20. Para aprender melhor, é importante representar as parcelas antes de somar.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Conte de 1 em 1 e escreva o número que vem depois de 18.",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "resposta-curta",
+          "enunciado": "Resolva: 18 + 2 =",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "explicacao",
+          "enunciado": "Resolva: 20 - 2 =",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "registro",
+          "enunciado": "Qual é maior: 20 ou 23?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "situacao-problema",
+          "enunciado": "Complete a sequência: 18, 19, ___, 21.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Crie uma situação-problema cuja resposta seja 20.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "19.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 2,
+          "resposta": "20.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 3,
+          "resposta": "18.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 4,
+          "resposta": "23.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 5,
+          "resposta": "20.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral com cálculo coerente e resultado 20.",
+          "justificativa": "Critério de correção: clareza, relação com o tema e registro compreensível para o nível de alfabetização."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-1ano-b3-mat-15-subtracao-no-cotidiano-pratica",
+      "titulo": "Subtração no cotidiano — Prática",
+      "tema": "Subtração",
+      "sequencia": "Atividade 15",
+      "tipoSequencia": "Desenvolvimento",
+      "dificuldade": "intermediaria",
+      "objetivo": "Desenvolver conhecimentos de subtração com linguagem adequada ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01MA08",
+          "descricaoResumida": "Habilidade BNCC relacionada a subtração no 1º ano."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia com ajuda quando necessário e responda com atenção. Você pode usar desenhos ou palavras nas respostas abertas.",
+      "textoApoio": {
+        "titulo": "Vamos aprender: Subtração no cotidiano — Prática",
+        "conteudo": "Subtrair pode significar retirar ou descobrir a diferença. Nesta atividade, vamos observar 19 + 3 = 22. Para aprender melhor, é importante começar pelo total e retirar a quantidade indicada.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Conte de 1 em 1 e escreva o número que vem depois de 19.",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "resposta-curta",
+          "enunciado": "Resolva: 19 + 3 =",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "explicacao",
+          "enunciado": "Resolva: 22 - 3 =",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "registro",
+          "enunciado": "Qual é maior: 22 ou 25?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "situacao-problema",
+          "enunciado": "Complete a sequência: 19, 20, ___, 22.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Crie uma situação-problema cuja resposta seja 22.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "20.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 2,
+          "resposta": "22.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 3,
+          "resposta": "19.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 4,
+          "resposta": "25.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 5,
+          "resposta": "21.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral com cálculo coerente e resultado 22.",
+          "justificativa": "Critério de correção: clareza, relação com o tema e registro compreensível para o nível de alfabetização."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-1ano-b3-mat-16-dezena-e-unidade-pratica",
+      "titulo": "Dezena e unidade — Prática",
+      "tema": "Sistema decimal",
+      "sequencia": "Atividade 16",
+      "tipoSequencia": "Desenvolvimento",
+      "dificuldade": "intermediaria",
+      "objetivo": "Desenvolver conhecimentos de sistema decimal com linguagem adequada ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01MA07",
+          "descricaoResumida": "Habilidade BNCC relacionada a sistema decimal no 1º ano."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia com ajuda quando necessário e responda com atenção. Você pode usar desenhos ou palavras nas respostas abertas.",
+      "textoApoio": {
+        "titulo": "Vamos aprender: Dezena e unidade — Prática",
+        "conteudo": "Uma dezena corresponde a dez unidades. Nesta atividade, vamos observar 20 + 4 = 24. Para aprender melhor, é importante agrupar objetos de dez em dez.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Conte de 1 em 1 e escreva o número que vem depois de 20.",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "resposta-curta",
+          "enunciado": "Resolva: 20 + 4 =",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "explicacao",
+          "enunciado": "Resolva: 24 - 4 =",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "registro",
+          "enunciado": "Qual é maior: 24 ou 27?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "situacao-problema",
+          "enunciado": "Complete a sequência: 20, 21, ___, 23.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Crie uma situação-problema cuja resposta seja 24.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "21.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 2,
+          "resposta": "24.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 3,
+          "resposta": "20.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 4,
+          "resposta": "27.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 5,
+          "resposta": "22.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral com cálculo coerente e resultado 24.",
+          "justificativa": "Critério de correção: clareza, relação com o tema e registro compreensível para o nível de alfabetização."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-1ano-b3-mat-17-formas-geometricas-pratica",
+      "titulo": "Formas geométricas — Prática",
+      "tema": "Geometria",
+      "sequencia": "Atividade 17",
+      "tipoSequencia": "Desenvolvimento",
+      "dificuldade": "intermediaria",
+      "objetivo": "Desenvolver conhecimentos de geometria com linguagem adequada ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01MA14",
+          "descricaoResumida": "Habilidade BNCC relacionada a geometria no 1º ano."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia com ajuda quando necessário e responda com atenção. Você pode usar desenhos ou palavras nas respostas abertas.",
+      "textoApoio": {
+        "titulo": "Vamos aprender: Formas geométricas — Prática",
+        "conteudo": "Círculo, quadrado, triângulo e retângulo aparecem em objetos do cotidiano. Nesta atividade, vamos observar 21 + 5 = 26. Para aprender melhor, é importante observar lados, pontas e contorno.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Conte de 1 em 1 e escreva o número que vem depois de 21.",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "resposta-curta",
+          "enunciado": "Resolva: 21 + 5 =",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "explicacao",
+          "enunciado": "Resolva: 26 - 5 =",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "registro",
+          "enunciado": "Qual é maior: 26 ou 29?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "situacao-problema",
+          "enunciado": "Complete a sequência: 21, 22, ___, 24.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Crie uma situação-problema cuja resposta seja 26.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "22.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 2,
+          "resposta": "26.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 3,
+          "resposta": "21.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 4,
+          "resposta": "29.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 5,
+          "resposta": "23.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral com cálculo coerente e resultado 26.",
+          "justificativa": "Critério de correção: clareza, relação com o tema e registro compreensível para o nível de alfabetização."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-1ano-b3-mat-18-comprimento-e-comparacao-pratica",
+      "titulo": "Comprimento e comparação — Prática",
+      "tema": "Grandezas e medidas",
+      "sequencia": "Atividade 18",
+      "tipoSequencia": "Desenvolvimento",
+      "dificuldade": "intermediaria",
+      "objetivo": "Desenvolver conhecimentos de grandezas e medidas com linguagem adequada ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01MA15",
+          "descricaoResumida": "Habilidade BNCC relacionada a grandezas e medidas no 1º ano."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia com ajuda quando necessário e responda com atenção. Você pode usar desenhos ou palavras nas respostas abertas.",
+      "textoApoio": {
+        "titulo": "Vamos aprender: Comprimento e comparação — Prática",
+        "conteudo": "Objetos podem ser comparados como mais compridos ou mais curtos. Nesta atividade, vamos observar 22 + 6 = 28. Para aprender melhor, é importante usar a mesma unidade de comparação.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Conte de 1 em 1 e escreva o número que vem depois de 22.",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "resposta-curta",
+          "enunciado": "Resolva: 22 + 6 =",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "explicacao",
+          "enunciado": "Resolva: 28 - 6 =",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "registro",
+          "enunciado": "Qual é maior: 28 ou 31?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "situacao-problema",
+          "enunciado": "Complete a sequência: 22, 23, ___, 25.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Crie uma situação-problema cuja resposta seja 28.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "23.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 2,
+          "resposta": "28.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 3,
+          "resposta": "22.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 4,
+          "resposta": "31.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 5,
+          "resposta": "24.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral com cálculo coerente e resultado 28.",
+          "justificativa": "Critério de correção: clareza, relação com o tema e registro compreensível para o nível de alfabetização."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-1ano-b3-mat-19-dias-e-horarios-pratica",
+      "titulo": "Dias e horários — Prática",
+      "tema": "Tempo",
+      "sequencia": "Atividade 19",
+      "tipoSequencia": "Desenvolvimento",
+      "dificuldade": "intermediaria",
+      "objetivo": "Desenvolver conhecimentos de tempo com linguagem adequada ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01MA17",
+          "descricaoResumida": "Habilidade BNCC relacionada a tempo no 1º ano."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia com ajuda quando necessário e responda com atenção. Você pode usar desenhos ou palavras nas respostas abertas.",
+      "textoApoio": {
+        "titulo": "Vamos aprender: Dias e horários — Prática",
+        "conteudo": "Calendários e relógios ajudam a organizar acontecimentos. Nesta atividade, vamos observar 23 + 7 = 30. Para aprender melhor, é importante observar a ordem dos dias e períodos.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Conte de 1 em 1 e escreva o número que vem depois de 23.",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "resposta-curta",
+          "enunciado": "Resolva: 23 + 7 =",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "explicacao",
+          "enunciado": "Resolva: 30 - 7 =",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "registro",
+          "enunciado": "Qual é maior: 30 ou 33?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "situacao-problema",
+          "enunciado": "Complete a sequência: 23, 24, ___, 26.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Crie uma situação-problema cuja resposta seja 30.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "24.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 2,
+          "resposta": "30.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 3,
+          "resposta": "23.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 4,
+          "resposta": "33.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 5,
+          "resposta": "25.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral com cálculo coerente e resultado 30.",
+          "justificativa": "Critério de correção: clareza, relação com o tema e registro compreensível para o nível de alfabetização."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-1ano-b3-mat-20-tabelas-e-graficos-simples-pratica",
+      "titulo": "Tabelas e gráficos simples — Prática",
+      "tema": "Tratamento da informação",
+      "sequencia": "Atividade 20",
+      "tipoSequencia": "Desenvolvimento",
+      "dificuldade": "intermediaria",
+      "objetivo": "Desenvolver conhecimentos de tratamento da informação com linguagem adequada ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01MA21",
+          "descricaoResumida": "Habilidade BNCC relacionada a tratamento da informação no 1º ano."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia com ajuda quando necessário e responda com atenção. Você pode usar desenhos ou palavras nas respostas abertas.",
+      "textoApoio": {
+        "titulo": "Vamos aprender: Tabelas e gráficos simples — Prática",
+        "conteudo": "Tabelas e gráficos organizam dados para facilitar comparações. Nesta atividade, vamos observar 24 + 8 = 32. Para aprender melhor, é importante ler título, categorias e quantidades.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Conte de 1 em 1 e escreva o número que vem depois de 24.",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "resposta-curta",
+          "enunciado": "Resolva: 24 + 8 =",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "explicacao",
+          "enunciado": "Resolva: 32 - 8 =",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "registro",
+          "enunciado": "Qual é maior: 32 ou 35?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "situacao-problema",
+          "enunciado": "Complete a sequência: 24, 25, ___, 27.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Crie uma situação-problema cuja resposta seja 32.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "25.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 2,
+          "resposta": "32.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 3,
+          "resposta": "24.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 4,
+          "resposta": "35.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 5,
+          "resposta": "26.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral com cálculo coerente e resultado 32.",
+          "justificativa": "Critério de correção: clareza, relação com o tema e registro compreensível para o nível de alfabetização."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-1ano-b3-mat-21-numeros-ate-50-desafio",
+      "titulo": "Números até 50 — Desafio",
+      "tema": "Números naturais",
+      "sequencia": "Atividade 21",
+      "tipoSequencia": "Consolidação",
+      "dificuldade": "desafiadora",
+      "objetivo": "Desenvolver conhecimentos de números naturais com linguagem adequada ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01MA01",
+          "descricaoResumida": "Habilidade BNCC relacionada a números naturais no 1º ano."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia com ajuda quando necessário e responda com atenção. Você pode usar desenhos ou palavras nas respostas abertas.",
+      "textoApoio": {
+        "titulo": "Vamos aprender: Números até 50 — Desafio",
+        "conteudo": "Os números indicam quantidades e posições. Nesta atividade, vamos observar 25 + 2 = 27. Para aprender melhor, é importante contar cada objeto apenas uma vez.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Conte de 1 em 1 e escreva o número que vem depois de 25.",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "resposta-curta",
+          "enunciado": "Resolva: 25 + 2 =",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "explicacao",
+          "enunciado": "Resolva: 27 - 2 =",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "registro",
+          "enunciado": "Qual é maior: 27 ou 30?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "situacao-problema",
+          "enunciado": "Complete a sequência: 25, 26, ___, 28.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Crie uma situação-problema cuja resposta seja 27.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "26.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 2,
+          "resposta": "27.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 3,
+          "resposta": "25.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 4,
+          "resposta": "30.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 5,
+          "resposta": "27.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral com cálculo coerente e resultado 27.",
+          "justificativa": "Critério de correção: clareza, relação com o tema e registro compreensível para o nível de alfabetização."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-1ano-b3-mat-22-comparacao-de-quantidades-desafio",
+      "titulo": "Comparação de quantidades — Desafio",
+      "tema": "Comparar números",
+      "sequencia": "Atividade 22",
+      "tipoSequencia": "Consolidação",
+      "dificuldade": "desafiadora",
+      "objetivo": "Desenvolver conhecimentos de comparar números com linguagem adequada ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01MA03",
+          "descricaoResumida": "Habilidade BNCC relacionada a comparar números no 1º ano."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia com ajuda quando necessário e responda com atenção. Você pode usar desenhos ou palavras nas respostas abertas.",
+      "textoApoio": {
+        "titulo": "Vamos aprender: Comparação de quantidades — Desafio",
+        "conteudo": "Podemos comparar quantidades usando mais, menos ou igual. Nesta atividade, vamos observar 26 + 3 = 29. Para aprender melhor, é importante alinhar ou contar os elementos dos grupos.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Conte de 1 em 1 e escreva o número que vem depois de 26.",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "resposta-curta",
+          "enunciado": "Resolva: 26 + 3 =",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "explicacao",
+          "enunciado": "Resolva: 29 - 3 =",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "registro",
+          "enunciado": "Qual é maior: 29 ou 32?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "situacao-problema",
+          "enunciado": "Complete a sequência: 26, 27, ___, 29.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Crie uma situação-problema cuja resposta seja 29.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "27.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 2,
+          "resposta": "29.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 3,
+          "resposta": "26.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 4,
+          "resposta": "32.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 5,
+          "resposta": "28.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral com cálculo coerente e resultado 29.",
+          "justificativa": "Critério de correção: clareza, relação com o tema e registro compreensível para o nível de alfabetização."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-1ano-b3-mat-23-sequencias-numericas-desafio",
+      "titulo": "Sequências numéricas — Desafio",
+      "tema": "Regularidades",
+      "sequencia": "Atividade 23",
+      "tipoSequencia": "Consolidação",
+      "dificuldade": "desafiadora",
+      "objetivo": "Desenvolver conhecimentos de regularidades com linguagem adequada ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01MA05",
+          "descricaoResumida": "Habilidade BNCC relacionada a regularidades no 1º ano."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia com ajuda quando necessário e responda com atenção. Você pode usar desenhos ou palavras nas respostas abertas.",
+      "textoApoio": {
+        "titulo": "Vamos aprender: Sequências numéricas — Desafio",
+        "conteudo": "Uma sequência segue uma ordem ou regra. Nesta atividade, vamos observar 27 + 4 = 31. Para aprender melhor, é importante observar o que muda de um termo para o outro.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Conte de 1 em 1 e escreva o número que vem depois de 27.",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "resposta-curta",
+          "enunciado": "Resolva: 27 + 4 =",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "explicacao",
+          "enunciado": "Resolva: 31 - 4 =",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "registro",
+          "enunciado": "Qual é maior: 31 ou 34?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "situacao-problema",
+          "enunciado": "Complete a sequência: 27, 28, ___, 30.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Crie uma situação-problema cuja resposta seja 31.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "28.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 2,
+          "resposta": "31.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 3,
+          "resposta": "27.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 4,
+          "resposta": "34.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 5,
+          "resposta": "29.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral com cálculo coerente e resultado 31.",
+          "justificativa": "Critério de correção: clareza, relação com o tema e registro compreensível para o nível de alfabetização."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-1ano-b3-mat-24-adicao-no-cotidiano-desafio",
+      "titulo": "Adição no cotidiano — Desafio",
+      "tema": "Adição",
+      "sequencia": "Atividade 24",
+      "tipoSequencia": "Consolidação",
+      "dificuldade": "desafiadora",
+      "objetivo": "Desenvolver conhecimentos de adição com linguagem adequada ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01MA06",
+          "descricaoResumida": "Habilidade BNCC relacionada a adição no 1º ano."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia com ajuda quando necessário e responda com atenção. Você pode usar desenhos ou palavras nas respostas abertas.",
+      "textoApoio": {
+        "titulo": "Vamos aprender: Adição no cotidiano — Desafio",
+        "conteudo": "Adicionar é juntar quantidades ou acrescentar elementos. Nesta atividade, vamos observar 28 + 5 = 33. Para aprender melhor, é importante representar as parcelas antes de somar.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Conte de 1 em 1 e escreva o número que vem depois de 28.",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "resposta-curta",
+          "enunciado": "Resolva: 28 + 5 =",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "explicacao",
+          "enunciado": "Resolva: 33 - 5 =",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "registro",
+          "enunciado": "Qual é maior: 33 ou 36?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "situacao-problema",
+          "enunciado": "Complete a sequência: 28, 29, ___, 31.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Crie uma situação-problema cuja resposta seja 33.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "29.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 2,
+          "resposta": "33.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 3,
+          "resposta": "28.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 4,
+          "resposta": "36.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 5,
+          "resposta": "30.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral com cálculo coerente e resultado 33.",
+          "justificativa": "Critério de correção: clareza, relação com o tema e registro compreensível para o nível de alfabetização."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-1ano-b3-mat-25-subtracao-no-cotidiano-desafio",
+      "titulo": "Subtração no cotidiano — Desafio",
+      "tema": "Subtração",
+      "sequencia": "Atividade 25",
+      "tipoSequencia": "Consolidação",
+      "dificuldade": "desafiadora",
+      "objetivo": "Desenvolver conhecimentos de subtração com linguagem adequada ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01MA08",
+          "descricaoResumida": "Habilidade BNCC relacionada a subtração no 1º ano."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia com ajuda quando necessário e responda com atenção. Você pode usar desenhos ou palavras nas respostas abertas.",
+      "textoApoio": {
+        "titulo": "Vamos aprender: Subtração no cotidiano — Desafio",
+        "conteudo": "Subtrair pode significar retirar ou descobrir a diferença. Nesta atividade, vamos observar 29 + 6 = 35. Para aprender melhor, é importante começar pelo total e retirar a quantidade indicada.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Conte de 1 em 1 e escreva o número que vem depois de 29.",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "resposta-curta",
+          "enunciado": "Resolva: 29 + 6 =",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "explicacao",
+          "enunciado": "Resolva: 35 - 6 =",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "registro",
+          "enunciado": "Qual é maior: 35 ou 38?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "situacao-problema",
+          "enunciado": "Complete a sequência: 29, 30, ___, 32.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Crie uma situação-problema cuja resposta seja 35.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "30.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 2,
+          "resposta": "35.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 3,
+          "resposta": "29.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 4,
+          "resposta": "38.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 5,
+          "resposta": "31.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral com cálculo coerente e resultado 35.",
+          "justificativa": "Critério de correção: clareza, relação com o tema e registro compreensível para o nível de alfabetização."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-1ano-b3-mat-26-dezena-e-unidade-desafio",
+      "titulo": "Dezena e unidade — Desafio",
+      "tema": "Sistema decimal",
+      "sequencia": "Atividade 26",
+      "tipoSequencia": "Consolidação",
+      "dificuldade": "desafiadora",
+      "objetivo": "Desenvolver conhecimentos de sistema decimal com linguagem adequada ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01MA07",
+          "descricaoResumida": "Habilidade BNCC relacionada a sistema decimal no 1º ano."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia com ajuda quando necessário e responda com atenção. Você pode usar desenhos ou palavras nas respostas abertas.",
+      "textoApoio": {
+        "titulo": "Vamos aprender: Dezena e unidade — Desafio",
+        "conteudo": "Uma dezena corresponde a dez unidades. Nesta atividade, vamos observar 30 + 7 = 37. Para aprender melhor, é importante agrupar objetos de dez em dez.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Conte de 1 em 1 e escreva o número que vem depois de 30.",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "resposta-curta",
+          "enunciado": "Resolva: 30 + 7 =",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "explicacao",
+          "enunciado": "Resolva: 37 - 7 =",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "registro",
+          "enunciado": "Qual é maior: 37 ou 40?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "situacao-problema",
+          "enunciado": "Complete a sequência: 30, 31, ___, 33.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Crie uma situação-problema cuja resposta seja 37.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "31.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 2,
+          "resposta": "37.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 3,
+          "resposta": "30.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 4,
+          "resposta": "40.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 5,
+          "resposta": "32.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral com cálculo coerente e resultado 37.",
+          "justificativa": "Critério de correção: clareza, relação com o tema e registro compreensível para o nível de alfabetização."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-1ano-b3-mat-27-formas-geometricas-desafio",
+      "titulo": "Formas geométricas — Desafio",
+      "tema": "Geometria",
+      "sequencia": "Atividade 27",
+      "tipoSequencia": "Consolidação",
+      "dificuldade": "desafiadora",
+      "objetivo": "Desenvolver conhecimentos de geometria com linguagem adequada ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01MA14",
+          "descricaoResumida": "Habilidade BNCC relacionada a geometria no 1º ano."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia com ajuda quando necessário e responda com atenção. Você pode usar desenhos ou palavras nas respostas abertas.",
+      "textoApoio": {
+        "titulo": "Vamos aprender: Formas geométricas — Desafio",
+        "conteudo": "Círculo, quadrado, triângulo e retângulo aparecem em objetos do cotidiano. Nesta atividade, vamos observar 31 + 8 = 39. Para aprender melhor, é importante observar lados, pontas e contorno.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Conte de 1 em 1 e escreva o número que vem depois de 31.",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "resposta-curta",
+          "enunciado": "Resolva: 31 + 8 =",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "explicacao",
+          "enunciado": "Resolva: 39 - 8 =",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "registro",
+          "enunciado": "Qual é maior: 39 ou 42?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "situacao-problema",
+          "enunciado": "Complete a sequência: 31, 32, ___, 34.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Crie uma situação-problema cuja resposta seja 39.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "32.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 2,
+          "resposta": "39.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 3,
+          "resposta": "31.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 4,
+          "resposta": "42.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 5,
+          "resposta": "33.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral com cálculo coerente e resultado 39.",
+          "justificativa": "Critério de correção: clareza, relação com o tema e registro compreensível para o nível de alfabetização."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-1ano-b3-mat-28-comprimento-e-comparacao-desafio",
+      "titulo": "Comprimento e comparação — Desafio",
+      "tema": "Grandezas e medidas",
+      "sequencia": "Atividade 28",
+      "tipoSequencia": "Consolidação",
+      "dificuldade": "desafiadora",
+      "objetivo": "Desenvolver conhecimentos de grandezas e medidas com linguagem adequada ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01MA15",
+          "descricaoResumida": "Habilidade BNCC relacionada a grandezas e medidas no 1º ano."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia com ajuda quando necessário e responda com atenção. Você pode usar desenhos ou palavras nas respostas abertas.",
+      "textoApoio": {
+        "titulo": "Vamos aprender: Comprimento e comparação — Desafio",
+        "conteudo": "Objetos podem ser comparados como mais compridos ou mais curtos. Nesta atividade, vamos observar 32 + 2 = 34. Para aprender melhor, é importante usar a mesma unidade de comparação.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Conte de 1 em 1 e escreva o número que vem depois de 32.",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "resposta-curta",
+          "enunciado": "Resolva: 32 + 2 =",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "explicacao",
+          "enunciado": "Resolva: 34 - 2 =",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "registro",
+          "enunciado": "Qual é maior: 34 ou 37?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "situacao-problema",
+          "enunciado": "Complete a sequência: 32, 33, ___, 35.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Crie uma situação-problema cuja resposta seja 34.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "33.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 2,
+          "resposta": "34.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 3,
+          "resposta": "32.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 4,
+          "resposta": "37.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 5,
+          "resposta": "34.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral com cálculo coerente e resultado 34.",
+          "justificativa": "Critério de correção: clareza, relação com o tema e registro compreensível para o nível de alfabetização."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-1ano-b3-mat-29-dias-e-horarios-desafio",
+      "titulo": "Dias e horários — Desafio",
+      "tema": "Tempo",
+      "sequencia": "Atividade 29",
+      "tipoSequencia": "Consolidação",
+      "dificuldade": "desafiadora",
+      "objetivo": "Desenvolver conhecimentos de tempo com linguagem adequada ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01MA17",
+          "descricaoResumida": "Habilidade BNCC relacionada a tempo no 1º ano."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia com ajuda quando necessário e responda com atenção. Você pode usar desenhos ou palavras nas respostas abertas.",
+      "textoApoio": {
+        "titulo": "Vamos aprender: Dias e horários — Desafio",
+        "conteudo": "Calendários e relógios ajudam a organizar acontecimentos. Nesta atividade, vamos observar 33 + 3 = 36. Para aprender melhor, é importante observar a ordem dos dias e períodos.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Conte de 1 em 1 e escreva o número que vem depois de 33.",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "resposta-curta",
+          "enunciado": "Resolva: 33 + 3 =",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "explicacao",
+          "enunciado": "Resolva: 36 - 3 =",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "registro",
+          "enunciado": "Qual é maior: 36 ou 39?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "situacao-problema",
+          "enunciado": "Complete a sequência: 33, 34, ___, 36.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Crie uma situação-problema cuja resposta seja 36.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "34.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 2,
+          "resposta": "36.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 3,
+          "resposta": "33.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 4,
+          "resposta": "39.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 5,
+          "resposta": "35.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral com cálculo coerente e resultado 36.",
+          "justificativa": "Critério de correção: clareza, relação com o tema e registro compreensível para o nível de alfabetização."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-1ano-b3-mat-30-tabelas-e-graficos-simples-desafio",
+      "titulo": "Tabelas e gráficos simples — Desafio",
+      "tema": "Tratamento da informação",
+      "sequencia": "Atividade 30",
+      "tipoSequencia": "Consolidação",
+      "dificuldade": "desafiadora",
+      "objetivo": "Desenvolver conhecimentos de tratamento da informação com linguagem adequada ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01MA21",
+          "descricaoResumida": "Habilidade BNCC relacionada a tratamento da informação no 1º ano."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia com ajuda quando necessário e responda com atenção. Você pode usar desenhos ou palavras nas respostas abertas.",
+      "textoApoio": {
+        "titulo": "Vamos aprender: Tabelas e gráficos simples — Desafio",
+        "conteudo": "Tabelas e gráficos organizam dados para facilitar comparações. Nesta atividade, vamos observar 34 + 4 = 38. Para aprender melhor, é importante ler título, categorias e quantidades.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Conte de 1 em 1 e escreva o número que vem depois de 34.",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "resposta-curta",
+          "enunciado": "Resolva: 34 + 4 =",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "explicacao",
+          "enunciado": "Resolva: 38 - 4 =",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "registro",
+          "enunciado": "Qual é maior: 38 ou 41?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "situacao-problema",
+          "enunciado": "Complete a sequência: 34, 35, ___, 37.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Crie uma situação-problema cuja resposta seja 38.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "35.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 2,
+          "resposta": "38.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 3,
+          "resposta": "34.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 4,
+          "resposta": "41.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 5,
+          "resposta": "36.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral com cálculo coerente e resultado 38.",
+          "justificativa": "Critério de correção: clareza, relação com o tema e registro compreensível para o nível de alfabetização."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    }
+  ]
+}

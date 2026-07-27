@@ -1,0 +1,3522 @@
+{
+  "schemaVersion": "1.0",
+  "colecao": "1ano-3bimestre-geografia",
+  "idioma": "pt-BR",
+  "etapa": "Ensino Fundamental — Anos Iniciais",
+  "ano": "1º ano",
+  "bimestre": 3,
+  "disciplina": "Geografia",
+  "statusBimestre": "sugerido",
+  "atividades": [
+    {
+      "id": "efi-1ano-b3-geo-01-o-lugar-onde-moro-descoberta",
+      "titulo": "O lugar onde moro — Descoberta",
+      "tema": "Lugar de vivência",
+      "sequencia": "Atividade 1",
+      "tipoSequencia": "Introdução",
+      "dificuldade": "facil",
+      "objetivo": "Desenvolver conhecimentos de lugar de vivência com linguagem adequada ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01GE01",
+          "descricaoResumida": "Habilidade BNCC relacionada a lugar de vivência no 1º ano."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia com ajuda quando necessário e responda com atenção. Você pode usar desenhos ou palavras nas respostas abertas.",
+      "textoApoio": {
+        "titulo": "Vamos aprender: O lugar onde moro — Descoberta",
+        "conteudo": "A moradia e seus arredores fazem parte dos lugares de vivência. Nesta atividade, vamos observar casa, prédio, rua, caminho e vizinhança. Para aprender melhor, é importante observar características e cuidar do lugar.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto “O lugar onde moro — Descoberta”, qual é a ideia principal?",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "resposta-curta",
+          "enunciado": "No texto “O lugar onde moro — Descoberta”, qual exemplo é apresentado?",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "explicacao",
+          "enunciado": "Na atividade “O lugar onde moro — Descoberta”, explique com suas palavras: casa, prédio, rua, caminho e vizinhança.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "registro",
+          "enunciado": "Escreva uma palavra ou expressão importante para “O lugar onde moro — Descoberta”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "situacao-problema",
+          "enunciado": "Que atitude ajuda a aprender ou agir corretamente em “O lugar onde moro — Descoberta”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Produza uma frase curta para concluir “O lugar onde moro — Descoberta”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "A moradia e seus arredores fazem parte dos lugares de vivência.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 2,
+          "resposta": "casa, prédio, rua, caminho e vizinhança.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 3,
+          "resposta": "Explicação coerente e relacionada a lugar de vivência.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta possível: lugar de vivência.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 5,
+          "resposta": "observar características e cuidar do lugar.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral clara e relacionada ao tema.",
+          "justificativa": "Critério de correção: clareza, relação com o tema e registro compreensível para o nível de alfabetização."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-1ano-b3-geo-02-caminho-ate-a-escola-descoberta",
+      "titulo": "Caminho até a escola — Descoberta",
+      "tema": "Trajetos",
+      "sequencia": "Atividade 2",
+      "tipoSequencia": "Introdução",
+      "dificuldade": "facil",
+      "objetivo": "Desenvolver conhecimentos de trajetos com linguagem adequada ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01GE08",
+          "descricaoResumida": "Habilidade BNCC relacionada a trajetos no 1º ano."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia com ajuda quando necessário e responda com atenção. Você pode usar desenhos ou palavras nas respostas abertas.",
+      "textoApoio": {
+        "titulo": "Vamos aprender: Caminho até a escola — Descoberta",
+        "conteudo": "Trajetos ligam lugares e podem ser descritos com referências. Nesta atividade, vamos observar passar pela praça e virar perto do mercado. Para aprender melhor, é importante seguir caminhos seguros e reconhecer pontos de referência.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto “Caminho até a escola — Descoberta”, qual é a ideia principal?",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "resposta-curta",
+          "enunciado": "No texto “Caminho até a escola — Descoberta”, qual exemplo é apresentado?",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "explicacao",
+          "enunciado": "Na atividade “Caminho até a escola — Descoberta”, explique com suas palavras: passar pela praça e virar perto do mercado.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "registro",
+          "enunciado": "Escreva uma palavra ou expressão importante para “Caminho até a escola — Descoberta”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "situacao-problema",
+          "enunciado": "Que atitude ajuda a aprender ou agir corretamente em “Caminho até a escola — Descoberta”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Produza uma frase curta para concluir “Caminho até a escola — Descoberta”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Trajetos ligam lugares e podem ser descritos com referências.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 2,
+          "resposta": "passar pela praça e virar perto do mercado.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 3,
+          "resposta": "Explicação coerente e relacionada a trajetos.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta possível: trajetos.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 5,
+          "resposta": "seguir caminhos seguros e reconhecer pontos de referência.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral clara e relacionada ao tema.",
+          "justificativa": "Critério de correção: clareza, relação com o tema e registro compreensível para o nível de alfabetização."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-1ano-b3-geo-03-brincadeiras-em-diferentes-lugares-descoberta",
+      "titulo": "Brincadeiras em diferentes lugares — Descoberta",
+      "tema": "Espaço e cultura",
+      "sequencia": "Atividade 3",
+      "tipoSequencia": "Introdução",
+      "dificuldade": "facil",
+      "objetivo": "Desenvolver conhecimentos de espaço e cultura com linguagem adequada ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01GE02",
+          "descricaoResumida": "Habilidade BNCC relacionada a espaço e cultura no 1º ano."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia com ajuda quando necessário e responda com atenção. Você pode usar desenhos ou palavras nas respostas abertas.",
+      "textoApoio": {
+        "titulo": "Vamos aprender: Brincadeiras em diferentes lugares — Descoberta",
+        "conteudo": "As brincadeiras variam conforme o espaço e os costumes. Nesta atividade, vamos observar bola no pátio e jogos de roda na praça. Para aprender melhor, é importante respeitar regras e dividir o espaço.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto “Brincadeiras em diferentes lugares — Descoberta”, qual é a ideia principal?",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "resposta-curta",
+          "enunciado": "No texto “Brincadeiras em diferentes lugares — Descoberta”, qual exemplo é apresentado?",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "explicacao",
+          "enunciado": "Na atividade “Brincadeiras em diferentes lugares — Descoberta”, explique com suas palavras: bola no pátio e jogos de roda na praça.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "registro",
+          "enunciado": "Escreva uma palavra ou expressão importante para “Brincadeiras em diferentes lugares — Descoberta”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "situacao-problema",
+          "enunciado": "Que atitude ajuda a aprender ou agir corretamente em “Brincadeiras em diferentes lugares — Descoberta”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Produza uma frase curta para concluir “Brincadeiras em diferentes lugares — Descoberta”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "As brincadeiras variam conforme o espaço e os costumes.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 2,
+          "resposta": "bola no pátio e jogos de roda na praça.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 3,
+          "resposta": "Explicação coerente e relacionada a espaço e cultura.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta possível: espaço e cultura.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 5,
+          "resposta": "respeitar regras e dividir o espaço.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral clara e relacionada ao tema.",
+          "justificativa": "Critério de correção: clareza, relação com o tema e registro compreensível para o nível de alfabetização."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-1ano-b3-geo-04-regras-nos-espacos-publicos-descoberta",
+      "titulo": "Regras nos espaços públicos — Descoberta",
+      "tema": "Convivência nos lugares",
+      "sequencia": "Atividade 4",
+      "tipoSequencia": "Introdução",
+      "dificuldade": "facil",
+      "objetivo": "Desenvolver conhecimentos de convivência nos lugares com linguagem adequada ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01GE04",
+          "descricaoResumida": "Habilidade BNCC relacionada a convivência nos lugares no 1º ano."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia com ajuda quando necessário e responda com atenção. Você pode usar desenhos ou palavras nas respostas abertas.",
+      "textoApoio": {
+        "titulo": "Vamos aprender: Regras nos espaços públicos — Descoberta",
+        "conteudo": "Praças, ruas e escolas são espaços compartilhados. Nesta atividade, vamos observar usar lixeiras e respeitar a passagem das pessoas. Para aprender melhor, é importante cuidar do que pertence a todos.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto “Regras nos espaços públicos — Descoberta”, qual é a ideia principal?",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "resposta-curta",
+          "enunciado": "No texto “Regras nos espaços públicos — Descoberta”, qual exemplo é apresentado?",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "explicacao",
+          "enunciado": "Na atividade “Regras nos espaços públicos — Descoberta”, explique com suas palavras: usar lixeiras e respeitar a passagem das pessoas.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "registro",
+          "enunciado": "Escreva uma palavra ou expressão importante para “Regras nos espaços públicos — Descoberta”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "situacao-problema",
+          "enunciado": "Que atitude ajuda a aprender ou agir corretamente em “Regras nos espaços públicos — Descoberta”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Produza uma frase curta para concluir “Regras nos espaços públicos — Descoberta”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Praças, ruas e escolas são espaços compartilhados.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 2,
+          "resposta": "usar lixeiras e respeitar a passagem das pessoas.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 3,
+          "resposta": "Explicação coerente e relacionada a convivência nos lugares.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta possível: convivência nos lugares.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 5,
+          "resposta": "cuidar do que pertence a todos.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral clara e relacionada ao tema.",
+          "justificativa": "Critério de correção: clareza, relação com o tema e registro compreensível para o nível de alfabetização."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-1ano-b3-geo-05-moradias-e-materiais-descoberta",
+      "titulo": "Moradias e materiais — Descoberta",
+      "tema": "Tipos de moradia",
+      "sequencia": "Atividade 5",
+      "tipoSequencia": "Introdução",
+      "dificuldade": "facil",
+      "objetivo": "Desenvolver conhecimentos de tipos de moradia com linguagem adequada ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01GE06",
+          "descricaoResumida": "Habilidade BNCC relacionada a tipos de moradia no 1º ano."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia com ajuda quando necessário e responda com atenção. Você pode usar desenhos ou palavras nas respostas abertas.",
+      "textoApoio": {
+        "titulo": "Vamos aprender: Moradias e materiais — Descoberta",
+        "conteudo": "Moradias possuem formas e materiais relacionados ao lugar e às necessidades. Nesta atividade, vamos observar casas de madeira, tijolos ou outros materiais. Para aprender melhor, é importante evitar julgar pessoas pelo tipo de moradia.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto “Moradias e materiais — Descoberta”, qual é a ideia principal?",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "resposta-curta",
+          "enunciado": "No texto “Moradias e materiais — Descoberta”, qual exemplo é apresentado?",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "explicacao",
+          "enunciado": "Na atividade “Moradias e materiais — Descoberta”, explique com suas palavras: casas de madeira, tijolos ou outros materiais.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "registro",
+          "enunciado": "Escreva uma palavra ou expressão importante para “Moradias e materiais — Descoberta”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "situacao-problema",
+          "enunciado": "Que atitude ajuda a aprender ou agir corretamente em “Moradias e materiais — Descoberta”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Produza uma frase curta para concluir “Moradias e materiais — Descoberta”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Moradias possuem formas e materiais relacionados ao lugar e às necessidades.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 2,
+          "resposta": "casas de madeira, tijolos ou outros materiais.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 3,
+          "resposta": "Explicação coerente e relacionada a tipos de moradia.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta possível: tipos de moradia.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 5,
+          "resposta": "evitar julgar pessoas pelo tipo de moradia.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral clara e relacionada ao tema.",
+          "justificativa": "Critério de correção: clareza, relação com o tema e registro compreensível para o nível de alfabetização."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-1ano-b3-geo-06-trabalhos-do-bairro-descoberta",
+      "titulo": "Trabalhos do bairro — Descoberta",
+      "tema": "Trabalho e lugar",
+      "sequencia": "Atividade 6",
+      "tipoSequencia": "Introdução",
+      "dificuldade": "facil",
+      "objetivo": "Desenvolver conhecimentos de trabalho e lugar com linguagem adequada ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01GE07",
+          "descricaoResumida": "Habilidade BNCC relacionada a trabalho e lugar no 1º ano."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia com ajuda quando necessário e responda com atenção. Você pode usar desenhos ou palavras nas respostas abertas.",
+      "textoApoio": {
+        "titulo": "Vamos aprender: Trabalhos do bairro — Descoberta",
+        "conteudo": "Diferentes trabalhos transformam e organizam os lugares. Nesta atividade, vamos observar coleta de resíduos, comércio e atendimento de saúde. Para aprender melhor, é importante valorizar quem trabalha na comunidade.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto “Trabalhos do bairro — Descoberta”, qual é a ideia principal?",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "resposta-curta",
+          "enunciado": "No texto “Trabalhos do bairro — Descoberta”, qual exemplo é apresentado?",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "explicacao",
+          "enunciado": "Na atividade “Trabalhos do bairro — Descoberta”, explique com suas palavras: coleta de resíduos, comércio e atendimento de saúde.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "registro",
+          "enunciado": "Escreva uma palavra ou expressão importante para “Trabalhos do bairro — Descoberta”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "situacao-problema",
+          "enunciado": "Que atitude ajuda a aprender ou agir corretamente em “Trabalhos do bairro — Descoberta”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Produza uma frase curta para concluir “Trabalhos do bairro — Descoberta”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Diferentes trabalhos transformam e organizam os lugares.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 2,
+          "resposta": "coleta de resíduos, comércio e atendimento de saúde.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 3,
+          "resposta": "Explicação coerente e relacionada a trabalho e lugar.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta possível: trabalho e lugar.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 5,
+          "resposta": "valorizar quem trabalha na comunidade.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral clara e relacionada ao tema.",
+          "justificativa": "Critério de correção: clareza, relação com o tema e registro compreensível para o nível de alfabetização."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-1ano-b3-geo-07-mapas-e-desenhos-do-lugar-descoberta",
+      "titulo": "Mapas e desenhos do lugar — Descoberta",
+      "tema": "Representação espacial",
+      "sequencia": "Atividade 7",
+      "tipoSequencia": "Introdução",
+      "dificuldade": "facil",
+      "objetivo": "Desenvolver conhecimentos de representação espacial com linguagem adequada ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01GE09",
+          "descricaoResumida": "Habilidade BNCC relacionada a representação espacial no 1º ano."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia com ajuda quando necessário e responda com atenção. Você pode usar desenhos ou palavras nas respostas abertas.",
+      "textoApoio": {
+        "titulo": "Vamos aprender: Mapas e desenhos do lugar — Descoberta",
+        "conteudo": "Desenhos e mapas simples representam lugares vistos de cima. Nesta atividade, vamos observar desenhar sala, pátio e caminho. Para aprender melhor, é importante usar símbolos e posições claras.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto “Mapas e desenhos do lugar — Descoberta”, qual é a ideia principal?",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "resposta-curta",
+          "enunciado": "No texto “Mapas e desenhos do lugar — Descoberta”, qual exemplo é apresentado?",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "explicacao",
+          "enunciado": "Na atividade “Mapas e desenhos do lugar — Descoberta”, explique com suas palavras: desenhar sala, pátio e caminho.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "registro",
+          "enunciado": "Escreva uma palavra ou expressão importante para “Mapas e desenhos do lugar — Descoberta”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "situacao-problema",
+          "enunciado": "Que atitude ajuda a aprender ou agir corretamente em “Mapas e desenhos do lugar — Descoberta”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Produza uma frase curta para concluir “Mapas e desenhos do lugar — Descoberta”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Desenhos e mapas simples representam lugares vistos de cima.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 2,
+          "resposta": "desenhar sala, pátio e caminho.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 3,
+          "resposta": "Explicação coerente e relacionada a representação espacial.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta possível: representação espacial.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 5,
+          "resposta": "usar símbolos e posições claras.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral clara e relacionada ao tema.",
+          "justificativa": "Critério de correção: clareza, relação com o tema e registro compreensível para o nível de alfabetização."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-1ano-b3-geo-08-frente-atras-direita-e-esquerda-descoberta",
+      "titulo": "Frente, atrás, direita e esquerda — Descoberta",
+      "tema": "Localização",
+      "sequencia": "Atividade 8",
+      "tipoSequencia": "Introdução",
+      "dificuldade": "facil",
+      "objetivo": "Desenvolver conhecimentos de localização com linguagem adequada ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01GE09",
+          "descricaoResumida": "Habilidade BNCC relacionada a localização no 1º ano."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia com ajuda quando necessário e responda com atenção. Você pode usar desenhos ou palavras nas respostas abertas.",
+      "textoApoio": {
+        "titulo": "Vamos aprender: Frente, atrás, direita e esquerda — Descoberta",
+        "conteudo": "Palavras de posição ajudam a localizar pessoas e objetos. Nesta atividade, vamos observar a mesa está à frente da janela. Para aprender melhor, é importante usar um ponto de referência.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto “Frente, atrás, direita e esquerda — Descoberta”, qual é a ideia principal?",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "resposta-curta",
+          "enunciado": "No texto “Frente, atrás, direita e esquerda — Descoberta”, qual exemplo é apresentado?",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "explicacao",
+          "enunciado": "Na atividade “Frente, atrás, direita e esquerda — Descoberta”, explique com suas palavras: a mesa está à frente da janela.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "registro",
+          "enunciado": "Escreva uma palavra ou expressão importante para “Frente, atrás, direita e esquerda — Descoberta”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "situacao-problema",
+          "enunciado": "Que atitude ajuda a aprender ou agir corretamente em “Frente, atrás, direita e esquerda — Descoberta”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Produza uma frase curta para concluir “Frente, atrás, direita e esquerda — Descoberta”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Palavras de posição ajudam a localizar pessoas e objetos.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 2,
+          "resposta": "a mesa está à frente da janela.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 3,
+          "resposta": "Explicação coerente e relacionada a localização.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta possível: localização.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 5,
+          "resposta": "usar um ponto de referência.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral clara e relacionada ao tema.",
+          "justificativa": "Critério de correção: clareza, relação com o tema e registro compreensível para o nível de alfabetização."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-1ano-b3-geo-09-tempo-e-paisagem-descoberta",
+      "titulo": "Tempo e paisagem — Descoberta",
+      "tema": "Condições do tempo",
+      "sequencia": "Atividade 9",
+      "tipoSequencia": "Introdução",
+      "dificuldade": "facil",
+      "objetivo": "Desenvolver conhecimentos de condições do tempo com linguagem adequada ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01GE05",
+          "descricaoResumida": "Habilidade BNCC relacionada a condições do tempo no 1º ano."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia com ajuda quando necessário e responda com atenção. Você pode usar desenhos ou palavras nas respostas abertas.",
+      "textoApoio": {
+        "titulo": "Vamos aprender: Tempo e paisagem — Descoberta",
+        "conteudo": "Sol, chuva, vento e frio influenciam atividades e roupas. Nesta atividade, vamos observar usar guarda-chuva em dia chuvoso. Para aprender melhor, é importante observar o tempo antes de planejar atividades.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto “Tempo e paisagem — Descoberta”, qual é a ideia principal?",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "resposta-curta",
+          "enunciado": "No texto “Tempo e paisagem — Descoberta”, qual exemplo é apresentado?",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "explicacao",
+          "enunciado": "Na atividade “Tempo e paisagem — Descoberta”, explique com suas palavras: usar guarda-chuva em dia chuvoso.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "registro",
+          "enunciado": "Escreva uma palavra ou expressão importante para “Tempo e paisagem — Descoberta”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "situacao-problema",
+          "enunciado": "Que atitude ajuda a aprender ou agir corretamente em “Tempo e paisagem — Descoberta”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Produza uma frase curta para concluir “Tempo e paisagem — Descoberta”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Sol, chuva, vento e frio influenciam atividades e roupas.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 2,
+          "resposta": "usar guarda-chuva em dia chuvoso.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 3,
+          "resposta": "Explicação coerente e relacionada a condições do tempo.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta possível: condições do tempo.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 5,
+          "resposta": "observar o tempo antes de planejar atividades.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral clara e relacionada ao tema.",
+          "justificativa": "Critério de correção: clareza, relação com o tema e registro compreensível para o nível de alfabetização."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-1ano-b3-geo-10-natureza-no-cotidiano-descoberta",
+      "titulo": "Natureza no cotidiano — Descoberta",
+      "tema": "Elementos naturais",
+      "sequencia": "Atividade 10",
+      "tipoSequencia": "Introdução",
+      "dificuldade": "facil",
+      "objetivo": "Desenvolver conhecimentos de elementos naturais com linguagem adequada ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01GE10",
+          "descricaoResumida": "Habilidade BNCC relacionada a elementos naturais no 1º ano."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia com ajuda quando necessário e responda com atenção. Você pode usar desenhos ou palavras nas respostas abertas.",
+      "textoApoio": {
+        "titulo": "Vamos aprender: Natureza no cotidiano — Descoberta",
+        "conteudo": "Água, solo, vegetação e luz solar estão presentes no cotidiano. Nesta atividade, vamos observar árvores dão sombra e água é usada em muitas atividades. Para aprender melhor, é importante evitar desperdícios e proteger os elementos naturais.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto “Natureza no cotidiano — Descoberta”, qual é a ideia principal?",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "resposta-curta",
+          "enunciado": "No texto “Natureza no cotidiano — Descoberta”, qual exemplo é apresentado?",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "explicacao",
+          "enunciado": "Na atividade “Natureza no cotidiano — Descoberta”, explique com suas palavras: árvores dão sombra e água é usada em muitas atividades.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "registro",
+          "enunciado": "Escreva uma palavra ou expressão importante para “Natureza no cotidiano — Descoberta”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "situacao-problema",
+          "enunciado": "Que atitude ajuda a aprender ou agir corretamente em “Natureza no cotidiano — Descoberta”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Produza uma frase curta para concluir “Natureza no cotidiano — Descoberta”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Água, solo, vegetação e luz solar estão presentes no cotidiano.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 2,
+          "resposta": "árvores dão sombra e água é usada em muitas atividades.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 3,
+          "resposta": "Explicação coerente e relacionada a elementos naturais.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta possível: elementos naturais.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 5,
+          "resposta": "evitar desperdícios e proteger os elementos naturais.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral clara e relacionada ao tema.",
+          "justificativa": "Critério de correção: clareza, relação com o tema e registro compreensível para o nível de alfabetização."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-1ano-b3-geo-11-o-lugar-onde-moro-pratica",
+      "titulo": "O lugar onde moro — Prática",
+      "tema": "Lugar de vivência",
+      "sequencia": "Atividade 11",
+      "tipoSequencia": "Desenvolvimento",
+      "dificuldade": "intermediaria",
+      "objetivo": "Desenvolver conhecimentos de lugar de vivência com linguagem adequada ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01GE01",
+          "descricaoResumida": "Habilidade BNCC relacionada a lugar de vivência no 1º ano."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia com ajuda quando necessário e responda com atenção. Você pode usar desenhos ou palavras nas respostas abertas.",
+      "textoApoio": {
+        "titulo": "Vamos aprender: O lugar onde moro — Prática",
+        "conteudo": "A moradia e seus arredores fazem parte dos lugares de vivência. Nesta atividade, vamos observar casa, prédio, rua, caminho e vizinhança. Para aprender melhor, é importante observar características e cuidar do lugar.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto “O lugar onde moro — Prática”, qual é a ideia principal?",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "resposta-curta",
+          "enunciado": "No texto “O lugar onde moro — Prática”, qual exemplo é apresentado?",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "explicacao",
+          "enunciado": "Na atividade “O lugar onde moro — Prática”, explique com suas palavras: casa, prédio, rua, caminho e vizinhança.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "registro",
+          "enunciado": "Escreva uma palavra ou expressão importante para “O lugar onde moro — Prática”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "situacao-problema",
+          "enunciado": "Que atitude ajuda a aprender ou agir corretamente em “O lugar onde moro — Prática”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Produza uma frase curta para concluir “O lugar onde moro — Prática”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "A moradia e seus arredores fazem parte dos lugares de vivência.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 2,
+          "resposta": "casa, prédio, rua, caminho e vizinhança.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 3,
+          "resposta": "Explicação coerente e relacionada a lugar de vivência.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta possível: lugar de vivência.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 5,
+          "resposta": "observar características e cuidar do lugar.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral clara e relacionada ao tema.",
+          "justificativa": "Critério de correção: clareza, relação com o tema e registro compreensível para o nível de alfabetização."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-1ano-b3-geo-12-caminho-ate-a-escola-pratica",
+      "titulo": "Caminho até a escola — Prática",
+      "tema": "Trajetos",
+      "sequencia": "Atividade 12",
+      "tipoSequencia": "Desenvolvimento",
+      "dificuldade": "intermediaria",
+      "objetivo": "Desenvolver conhecimentos de trajetos com linguagem adequada ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01GE08",
+          "descricaoResumida": "Habilidade BNCC relacionada a trajetos no 1º ano."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia com ajuda quando necessário e responda com atenção. Você pode usar desenhos ou palavras nas respostas abertas.",
+      "textoApoio": {
+        "titulo": "Vamos aprender: Caminho até a escola — Prática",
+        "conteudo": "Trajetos ligam lugares e podem ser descritos com referências. Nesta atividade, vamos observar passar pela praça e virar perto do mercado. Para aprender melhor, é importante seguir caminhos seguros e reconhecer pontos de referência.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto “Caminho até a escola — Prática”, qual é a ideia principal?",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "resposta-curta",
+          "enunciado": "No texto “Caminho até a escola — Prática”, qual exemplo é apresentado?",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "explicacao",
+          "enunciado": "Na atividade “Caminho até a escola — Prática”, explique com suas palavras: passar pela praça e virar perto do mercado.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "registro",
+          "enunciado": "Escreva uma palavra ou expressão importante para “Caminho até a escola — Prática”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "situacao-problema",
+          "enunciado": "Que atitude ajuda a aprender ou agir corretamente em “Caminho até a escola — Prática”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Produza uma frase curta para concluir “Caminho até a escola — Prática”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Trajetos ligam lugares e podem ser descritos com referências.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 2,
+          "resposta": "passar pela praça e virar perto do mercado.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 3,
+          "resposta": "Explicação coerente e relacionada a trajetos.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta possível: trajetos.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 5,
+          "resposta": "seguir caminhos seguros e reconhecer pontos de referência.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral clara e relacionada ao tema.",
+          "justificativa": "Critério de correção: clareza, relação com o tema e registro compreensível para o nível de alfabetização."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-1ano-b3-geo-13-brincadeiras-em-diferentes-lugares-pratica",
+      "titulo": "Brincadeiras em diferentes lugares — Prática",
+      "tema": "Espaço e cultura",
+      "sequencia": "Atividade 13",
+      "tipoSequencia": "Desenvolvimento",
+      "dificuldade": "intermediaria",
+      "objetivo": "Desenvolver conhecimentos de espaço e cultura com linguagem adequada ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01GE02",
+          "descricaoResumida": "Habilidade BNCC relacionada a espaço e cultura no 1º ano."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia com ajuda quando necessário e responda com atenção. Você pode usar desenhos ou palavras nas respostas abertas.",
+      "textoApoio": {
+        "titulo": "Vamos aprender: Brincadeiras em diferentes lugares — Prática",
+        "conteudo": "As brincadeiras variam conforme o espaço e os costumes. Nesta atividade, vamos observar bola no pátio e jogos de roda na praça. Para aprender melhor, é importante respeitar regras e dividir o espaço.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto “Brincadeiras em diferentes lugares — Prática”, qual é a ideia principal?",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "resposta-curta",
+          "enunciado": "No texto “Brincadeiras em diferentes lugares — Prática”, qual exemplo é apresentado?",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "explicacao",
+          "enunciado": "Na atividade “Brincadeiras em diferentes lugares — Prática”, explique com suas palavras: bola no pátio e jogos de roda na praça.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "registro",
+          "enunciado": "Escreva uma palavra ou expressão importante para “Brincadeiras em diferentes lugares — Prática”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "situacao-problema",
+          "enunciado": "Que atitude ajuda a aprender ou agir corretamente em “Brincadeiras em diferentes lugares — Prática”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Produza uma frase curta para concluir “Brincadeiras em diferentes lugares — Prática”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "As brincadeiras variam conforme o espaço e os costumes.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 2,
+          "resposta": "bola no pátio e jogos de roda na praça.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 3,
+          "resposta": "Explicação coerente e relacionada a espaço e cultura.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta possível: espaço e cultura.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 5,
+          "resposta": "respeitar regras e dividir o espaço.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral clara e relacionada ao tema.",
+          "justificativa": "Critério de correção: clareza, relação com o tema e registro compreensível para o nível de alfabetização."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-1ano-b3-geo-14-regras-nos-espacos-publicos-pratica",
+      "titulo": "Regras nos espaços públicos — Prática",
+      "tema": "Convivência nos lugares",
+      "sequencia": "Atividade 14",
+      "tipoSequencia": "Desenvolvimento",
+      "dificuldade": "intermediaria",
+      "objetivo": "Desenvolver conhecimentos de convivência nos lugares com linguagem adequada ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01GE04",
+          "descricaoResumida": "Habilidade BNCC relacionada a convivência nos lugares no 1º ano."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia com ajuda quando necessário e responda com atenção. Você pode usar desenhos ou palavras nas respostas abertas.",
+      "textoApoio": {
+        "titulo": "Vamos aprender: Regras nos espaços públicos — Prática",
+        "conteudo": "Praças, ruas e escolas são espaços compartilhados. Nesta atividade, vamos observar usar lixeiras e respeitar a passagem das pessoas. Para aprender melhor, é importante cuidar do que pertence a todos.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto “Regras nos espaços públicos — Prática”, qual é a ideia principal?",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "resposta-curta",
+          "enunciado": "No texto “Regras nos espaços públicos — Prática”, qual exemplo é apresentado?",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "explicacao",
+          "enunciado": "Na atividade “Regras nos espaços públicos — Prática”, explique com suas palavras: usar lixeiras e respeitar a passagem das pessoas.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "registro",
+          "enunciado": "Escreva uma palavra ou expressão importante para “Regras nos espaços públicos — Prática”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "situacao-problema",
+          "enunciado": "Que atitude ajuda a aprender ou agir corretamente em “Regras nos espaços públicos — Prática”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Produza uma frase curta para concluir “Regras nos espaços públicos — Prática”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Praças, ruas e escolas são espaços compartilhados.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 2,
+          "resposta": "usar lixeiras e respeitar a passagem das pessoas.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 3,
+          "resposta": "Explicação coerente e relacionada a convivência nos lugares.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta possível: convivência nos lugares.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 5,
+          "resposta": "cuidar do que pertence a todos.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral clara e relacionada ao tema.",
+          "justificativa": "Critério de correção: clareza, relação com o tema e registro compreensível para o nível de alfabetização."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-1ano-b3-geo-15-moradias-e-materiais-pratica",
+      "titulo": "Moradias e materiais — Prática",
+      "tema": "Tipos de moradia",
+      "sequencia": "Atividade 15",
+      "tipoSequencia": "Desenvolvimento",
+      "dificuldade": "intermediaria",
+      "objetivo": "Desenvolver conhecimentos de tipos de moradia com linguagem adequada ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01GE06",
+          "descricaoResumida": "Habilidade BNCC relacionada a tipos de moradia no 1º ano."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia com ajuda quando necessário e responda com atenção. Você pode usar desenhos ou palavras nas respostas abertas.",
+      "textoApoio": {
+        "titulo": "Vamos aprender: Moradias e materiais — Prática",
+        "conteudo": "Moradias possuem formas e materiais relacionados ao lugar e às necessidades. Nesta atividade, vamos observar casas de madeira, tijolos ou outros materiais. Para aprender melhor, é importante evitar julgar pessoas pelo tipo de moradia.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto “Moradias e materiais — Prática”, qual é a ideia principal?",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "resposta-curta",
+          "enunciado": "No texto “Moradias e materiais — Prática”, qual exemplo é apresentado?",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "explicacao",
+          "enunciado": "Na atividade “Moradias e materiais — Prática”, explique com suas palavras: casas de madeira, tijolos ou outros materiais.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "registro",
+          "enunciado": "Escreva uma palavra ou expressão importante para “Moradias e materiais — Prática”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "situacao-problema",
+          "enunciado": "Que atitude ajuda a aprender ou agir corretamente em “Moradias e materiais — Prática”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Produza uma frase curta para concluir “Moradias e materiais — Prática”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Moradias possuem formas e materiais relacionados ao lugar e às necessidades.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 2,
+          "resposta": "casas de madeira, tijolos ou outros materiais.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 3,
+          "resposta": "Explicação coerente e relacionada a tipos de moradia.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta possível: tipos de moradia.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 5,
+          "resposta": "evitar julgar pessoas pelo tipo de moradia.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral clara e relacionada ao tema.",
+          "justificativa": "Critério de correção: clareza, relação com o tema e registro compreensível para o nível de alfabetização."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-1ano-b3-geo-16-trabalhos-do-bairro-pratica",
+      "titulo": "Trabalhos do bairro — Prática",
+      "tema": "Trabalho e lugar",
+      "sequencia": "Atividade 16",
+      "tipoSequencia": "Desenvolvimento",
+      "dificuldade": "intermediaria",
+      "objetivo": "Desenvolver conhecimentos de trabalho e lugar com linguagem adequada ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01GE07",
+          "descricaoResumida": "Habilidade BNCC relacionada a trabalho e lugar no 1º ano."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia com ajuda quando necessário e responda com atenção. Você pode usar desenhos ou palavras nas respostas abertas.",
+      "textoApoio": {
+        "titulo": "Vamos aprender: Trabalhos do bairro — Prática",
+        "conteudo": "Diferentes trabalhos transformam e organizam os lugares. Nesta atividade, vamos observar coleta de resíduos, comércio e atendimento de saúde. Para aprender melhor, é importante valorizar quem trabalha na comunidade.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto “Trabalhos do bairro — Prática”, qual é a ideia principal?",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "resposta-curta",
+          "enunciado": "No texto “Trabalhos do bairro — Prática”, qual exemplo é apresentado?",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "explicacao",
+          "enunciado": "Na atividade “Trabalhos do bairro — Prática”, explique com suas palavras: coleta de resíduos, comércio e atendimento de saúde.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "registro",
+          "enunciado": "Escreva uma palavra ou expressão importante para “Trabalhos do bairro — Prática”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "situacao-problema",
+          "enunciado": "Que atitude ajuda a aprender ou agir corretamente em “Trabalhos do bairro — Prática”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Produza uma frase curta para concluir “Trabalhos do bairro — Prática”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Diferentes trabalhos transformam e organizam os lugares.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 2,
+          "resposta": "coleta de resíduos, comércio e atendimento de saúde.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 3,
+          "resposta": "Explicação coerente e relacionada a trabalho e lugar.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta possível: trabalho e lugar.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 5,
+          "resposta": "valorizar quem trabalha na comunidade.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral clara e relacionada ao tema.",
+          "justificativa": "Critério de correção: clareza, relação com o tema e registro compreensível para o nível de alfabetização."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-1ano-b3-geo-17-mapas-e-desenhos-do-lugar-pratica",
+      "titulo": "Mapas e desenhos do lugar — Prática",
+      "tema": "Representação espacial",
+      "sequencia": "Atividade 17",
+      "tipoSequencia": "Desenvolvimento",
+      "dificuldade": "intermediaria",
+      "objetivo": "Desenvolver conhecimentos de representação espacial com linguagem adequada ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01GE09",
+          "descricaoResumida": "Habilidade BNCC relacionada a representação espacial no 1º ano."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia com ajuda quando necessário e responda com atenção. Você pode usar desenhos ou palavras nas respostas abertas.",
+      "textoApoio": {
+        "titulo": "Vamos aprender: Mapas e desenhos do lugar — Prática",
+        "conteudo": "Desenhos e mapas simples representam lugares vistos de cima. Nesta atividade, vamos observar desenhar sala, pátio e caminho. Para aprender melhor, é importante usar símbolos e posições claras.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto “Mapas e desenhos do lugar — Prática”, qual é a ideia principal?",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "resposta-curta",
+          "enunciado": "No texto “Mapas e desenhos do lugar — Prática”, qual exemplo é apresentado?",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "explicacao",
+          "enunciado": "Na atividade “Mapas e desenhos do lugar — Prática”, explique com suas palavras: desenhar sala, pátio e caminho.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "registro",
+          "enunciado": "Escreva uma palavra ou expressão importante para “Mapas e desenhos do lugar — Prática”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "situacao-problema",
+          "enunciado": "Que atitude ajuda a aprender ou agir corretamente em “Mapas e desenhos do lugar — Prática”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Produza uma frase curta para concluir “Mapas e desenhos do lugar — Prática”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Desenhos e mapas simples representam lugares vistos de cima.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 2,
+          "resposta": "desenhar sala, pátio e caminho.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 3,
+          "resposta": "Explicação coerente e relacionada a representação espacial.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta possível: representação espacial.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 5,
+          "resposta": "usar símbolos e posições claras.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral clara e relacionada ao tema.",
+          "justificativa": "Critério de correção: clareza, relação com o tema e registro compreensível para o nível de alfabetização."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-1ano-b3-geo-18-frente-atras-direita-e-esquerda-pratica",
+      "titulo": "Frente, atrás, direita e esquerda — Prática",
+      "tema": "Localização",
+      "sequencia": "Atividade 18",
+      "tipoSequencia": "Desenvolvimento",
+      "dificuldade": "intermediaria",
+      "objetivo": "Desenvolver conhecimentos de localização com linguagem adequada ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01GE09",
+          "descricaoResumida": "Habilidade BNCC relacionada a localização no 1º ano."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia com ajuda quando necessário e responda com atenção. Você pode usar desenhos ou palavras nas respostas abertas.",
+      "textoApoio": {
+        "titulo": "Vamos aprender: Frente, atrás, direita e esquerda — Prática",
+        "conteudo": "Palavras de posição ajudam a localizar pessoas e objetos. Nesta atividade, vamos observar a mesa está à frente da janela. Para aprender melhor, é importante usar um ponto de referência.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto “Frente, atrás, direita e esquerda — Prática”, qual é a ideia principal?",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "resposta-curta",
+          "enunciado": "No texto “Frente, atrás, direita e esquerda — Prática”, qual exemplo é apresentado?",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "explicacao",
+          "enunciado": "Na atividade “Frente, atrás, direita e esquerda — Prática”, explique com suas palavras: a mesa está à frente da janela.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "registro",
+          "enunciado": "Escreva uma palavra ou expressão importante para “Frente, atrás, direita e esquerda — Prática”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "situacao-problema",
+          "enunciado": "Que atitude ajuda a aprender ou agir corretamente em “Frente, atrás, direita e esquerda — Prática”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Produza uma frase curta para concluir “Frente, atrás, direita e esquerda — Prática”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Palavras de posição ajudam a localizar pessoas e objetos.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 2,
+          "resposta": "a mesa está à frente da janela.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 3,
+          "resposta": "Explicação coerente e relacionada a localização.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta possível: localização.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 5,
+          "resposta": "usar um ponto de referência.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral clara e relacionada ao tema.",
+          "justificativa": "Critério de correção: clareza, relação com o tema e registro compreensível para o nível de alfabetização."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-1ano-b3-geo-19-tempo-e-paisagem-pratica",
+      "titulo": "Tempo e paisagem — Prática",
+      "tema": "Condições do tempo",
+      "sequencia": "Atividade 19",
+      "tipoSequencia": "Desenvolvimento",
+      "dificuldade": "intermediaria",
+      "objetivo": "Desenvolver conhecimentos de condições do tempo com linguagem adequada ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01GE05",
+          "descricaoResumida": "Habilidade BNCC relacionada a condições do tempo no 1º ano."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia com ajuda quando necessário e responda com atenção. Você pode usar desenhos ou palavras nas respostas abertas.",
+      "textoApoio": {
+        "titulo": "Vamos aprender: Tempo e paisagem — Prática",
+        "conteudo": "Sol, chuva, vento e frio influenciam atividades e roupas. Nesta atividade, vamos observar usar guarda-chuva em dia chuvoso. Para aprender melhor, é importante observar o tempo antes de planejar atividades.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto “Tempo e paisagem — Prática”, qual é a ideia principal?",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "resposta-curta",
+          "enunciado": "No texto “Tempo e paisagem — Prática”, qual exemplo é apresentado?",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "explicacao",
+          "enunciado": "Na atividade “Tempo e paisagem — Prática”, explique com suas palavras: usar guarda-chuva em dia chuvoso.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "registro",
+          "enunciado": "Escreva uma palavra ou expressão importante para “Tempo e paisagem — Prática”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "situacao-problema",
+          "enunciado": "Que atitude ajuda a aprender ou agir corretamente em “Tempo e paisagem — Prática”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Produza uma frase curta para concluir “Tempo e paisagem — Prática”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Sol, chuva, vento e frio influenciam atividades e roupas.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 2,
+          "resposta": "usar guarda-chuva em dia chuvoso.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 3,
+          "resposta": "Explicação coerente e relacionada a condições do tempo.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta possível: condições do tempo.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 5,
+          "resposta": "observar o tempo antes de planejar atividades.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral clara e relacionada ao tema.",
+          "justificativa": "Critério de correção: clareza, relação com o tema e registro compreensível para o nível de alfabetização."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-1ano-b3-geo-20-natureza-no-cotidiano-pratica",
+      "titulo": "Natureza no cotidiano — Prática",
+      "tema": "Elementos naturais",
+      "sequencia": "Atividade 20",
+      "tipoSequencia": "Desenvolvimento",
+      "dificuldade": "intermediaria",
+      "objetivo": "Desenvolver conhecimentos de elementos naturais com linguagem adequada ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01GE10",
+          "descricaoResumida": "Habilidade BNCC relacionada a elementos naturais no 1º ano."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia com ajuda quando necessário e responda com atenção. Você pode usar desenhos ou palavras nas respostas abertas.",
+      "textoApoio": {
+        "titulo": "Vamos aprender: Natureza no cotidiano — Prática",
+        "conteudo": "Água, solo, vegetação e luz solar estão presentes no cotidiano. Nesta atividade, vamos observar árvores dão sombra e água é usada em muitas atividades. Para aprender melhor, é importante evitar desperdícios e proteger os elementos naturais.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto “Natureza no cotidiano — Prática”, qual é a ideia principal?",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "resposta-curta",
+          "enunciado": "No texto “Natureza no cotidiano — Prática”, qual exemplo é apresentado?",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "explicacao",
+          "enunciado": "Na atividade “Natureza no cotidiano — Prática”, explique com suas palavras: árvores dão sombra e água é usada em muitas atividades.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "registro",
+          "enunciado": "Escreva uma palavra ou expressão importante para “Natureza no cotidiano — Prática”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "situacao-problema",
+          "enunciado": "Que atitude ajuda a aprender ou agir corretamente em “Natureza no cotidiano — Prática”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Produza uma frase curta para concluir “Natureza no cotidiano — Prática”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Água, solo, vegetação e luz solar estão presentes no cotidiano.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 2,
+          "resposta": "árvores dão sombra e água é usada em muitas atividades.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 3,
+          "resposta": "Explicação coerente e relacionada a elementos naturais.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta possível: elementos naturais.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 5,
+          "resposta": "evitar desperdícios e proteger os elementos naturais.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral clara e relacionada ao tema.",
+          "justificativa": "Critério de correção: clareza, relação com o tema e registro compreensível para o nível de alfabetização."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-1ano-b3-geo-21-o-lugar-onde-moro-desafio",
+      "titulo": "O lugar onde moro — Desafio",
+      "tema": "Lugar de vivência",
+      "sequencia": "Atividade 21",
+      "tipoSequencia": "Consolidação",
+      "dificuldade": "desafiadora",
+      "objetivo": "Desenvolver conhecimentos de lugar de vivência com linguagem adequada ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01GE01",
+          "descricaoResumida": "Habilidade BNCC relacionada a lugar de vivência no 1º ano."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia com ajuda quando necessário e responda com atenção. Você pode usar desenhos ou palavras nas respostas abertas.",
+      "textoApoio": {
+        "titulo": "Vamos aprender: O lugar onde moro — Desafio",
+        "conteudo": "A moradia e seus arredores fazem parte dos lugares de vivência. Nesta atividade, vamos observar casa, prédio, rua, caminho e vizinhança. Para aprender melhor, é importante observar características e cuidar do lugar.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto “O lugar onde moro — Desafio”, qual é a ideia principal?",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "resposta-curta",
+          "enunciado": "No texto “O lugar onde moro — Desafio”, qual exemplo é apresentado?",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "explicacao",
+          "enunciado": "Na atividade “O lugar onde moro — Desafio”, explique com suas palavras: casa, prédio, rua, caminho e vizinhança.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "registro",
+          "enunciado": "Escreva uma palavra ou expressão importante para “O lugar onde moro — Desafio”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "situacao-problema",
+          "enunciado": "Que atitude ajuda a aprender ou agir corretamente em “O lugar onde moro — Desafio”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Produza uma frase curta para concluir “O lugar onde moro — Desafio”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "A moradia e seus arredores fazem parte dos lugares de vivência.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 2,
+          "resposta": "casa, prédio, rua, caminho e vizinhança.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 3,
+          "resposta": "Explicação coerente e relacionada a lugar de vivência.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta possível: lugar de vivência.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 5,
+          "resposta": "observar características e cuidar do lugar.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral clara e relacionada ao tema.",
+          "justificativa": "Critério de correção: clareza, relação com o tema e registro compreensível para o nível de alfabetização."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-1ano-b3-geo-22-caminho-ate-a-escola-desafio",
+      "titulo": "Caminho até a escola — Desafio",
+      "tema": "Trajetos",
+      "sequencia": "Atividade 22",
+      "tipoSequencia": "Consolidação",
+      "dificuldade": "desafiadora",
+      "objetivo": "Desenvolver conhecimentos de trajetos com linguagem adequada ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01GE08",
+          "descricaoResumida": "Habilidade BNCC relacionada a trajetos no 1º ano."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia com ajuda quando necessário e responda com atenção. Você pode usar desenhos ou palavras nas respostas abertas.",
+      "textoApoio": {
+        "titulo": "Vamos aprender: Caminho até a escola — Desafio",
+        "conteudo": "Trajetos ligam lugares e podem ser descritos com referências. Nesta atividade, vamos observar passar pela praça e virar perto do mercado. Para aprender melhor, é importante seguir caminhos seguros e reconhecer pontos de referência.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto “Caminho até a escola — Desafio”, qual é a ideia principal?",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "resposta-curta",
+          "enunciado": "No texto “Caminho até a escola — Desafio”, qual exemplo é apresentado?",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "explicacao",
+          "enunciado": "Na atividade “Caminho até a escola — Desafio”, explique com suas palavras: passar pela praça e virar perto do mercado.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "registro",
+          "enunciado": "Escreva uma palavra ou expressão importante para “Caminho até a escola — Desafio”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "situacao-problema",
+          "enunciado": "Que atitude ajuda a aprender ou agir corretamente em “Caminho até a escola — Desafio”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Produza uma frase curta para concluir “Caminho até a escola — Desafio”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Trajetos ligam lugares e podem ser descritos com referências.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 2,
+          "resposta": "passar pela praça e virar perto do mercado.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 3,
+          "resposta": "Explicação coerente e relacionada a trajetos.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta possível: trajetos.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 5,
+          "resposta": "seguir caminhos seguros e reconhecer pontos de referência.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral clara e relacionada ao tema.",
+          "justificativa": "Critério de correção: clareza, relação com o tema e registro compreensível para o nível de alfabetização."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-1ano-b3-geo-23-brincadeiras-em-diferentes-lugares-desafio",
+      "titulo": "Brincadeiras em diferentes lugares — Desafio",
+      "tema": "Espaço e cultura",
+      "sequencia": "Atividade 23",
+      "tipoSequencia": "Consolidação",
+      "dificuldade": "desafiadora",
+      "objetivo": "Desenvolver conhecimentos de espaço e cultura com linguagem adequada ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01GE02",
+          "descricaoResumida": "Habilidade BNCC relacionada a espaço e cultura no 1º ano."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia com ajuda quando necessário e responda com atenção. Você pode usar desenhos ou palavras nas respostas abertas.",
+      "textoApoio": {
+        "titulo": "Vamos aprender: Brincadeiras em diferentes lugares — Desafio",
+        "conteudo": "As brincadeiras variam conforme o espaço e os costumes. Nesta atividade, vamos observar bola no pátio e jogos de roda na praça. Para aprender melhor, é importante respeitar regras e dividir o espaço.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto “Brincadeiras em diferentes lugares — Desafio”, qual é a ideia principal?",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "resposta-curta",
+          "enunciado": "No texto “Brincadeiras em diferentes lugares — Desafio”, qual exemplo é apresentado?",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "explicacao",
+          "enunciado": "Na atividade “Brincadeiras em diferentes lugares — Desafio”, explique com suas palavras: bola no pátio e jogos de roda na praça.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "registro",
+          "enunciado": "Escreva uma palavra ou expressão importante para “Brincadeiras em diferentes lugares — Desafio”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "situacao-problema",
+          "enunciado": "Que atitude ajuda a aprender ou agir corretamente em “Brincadeiras em diferentes lugares — Desafio”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Produza uma frase curta para concluir “Brincadeiras em diferentes lugares — Desafio”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "As brincadeiras variam conforme o espaço e os costumes.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 2,
+          "resposta": "bola no pátio e jogos de roda na praça.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 3,
+          "resposta": "Explicação coerente e relacionada a espaço e cultura.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta possível: espaço e cultura.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 5,
+          "resposta": "respeitar regras e dividir o espaço.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral clara e relacionada ao tema.",
+          "justificativa": "Critério de correção: clareza, relação com o tema e registro compreensível para o nível de alfabetização."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-1ano-b3-geo-24-regras-nos-espacos-publicos-desafio",
+      "titulo": "Regras nos espaços públicos — Desafio",
+      "tema": "Convivência nos lugares",
+      "sequencia": "Atividade 24",
+      "tipoSequencia": "Consolidação",
+      "dificuldade": "desafiadora",
+      "objetivo": "Desenvolver conhecimentos de convivência nos lugares com linguagem adequada ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01GE04",
+          "descricaoResumida": "Habilidade BNCC relacionada a convivência nos lugares no 1º ano."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia com ajuda quando necessário e responda com atenção. Você pode usar desenhos ou palavras nas respostas abertas.",
+      "textoApoio": {
+        "titulo": "Vamos aprender: Regras nos espaços públicos — Desafio",
+        "conteudo": "Praças, ruas e escolas são espaços compartilhados. Nesta atividade, vamos observar usar lixeiras e respeitar a passagem das pessoas. Para aprender melhor, é importante cuidar do que pertence a todos.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto “Regras nos espaços públicos — Desafio”, qual é a ideia principal?",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "resposta-curta",
+          "enunciado": "No texto “Regras nos espaços públicos — Desafio”, qual exemplo é apresentado?",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "explicacao",
+          "enunciado": "Na atividade “Regras nos espaços públicos — Desafio”, explique com suas palavras: usar lixeiras e respeitar a passagem das pessoas.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "registro",
+          "enunciado": "Escreva uma palavra ou expressão importante para “Regras nos espaços públicos — Desafio”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "situacao-problema",
+          "enunciado": "Que atitude ajuda a aprender ou agir corretamente em “Regras nos espaços públicos — Desafio”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Produza uma frase curta para concluir “Regras nos espaços públicos — Desafio”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Praças, ruas e escolas são espaços compartilhados.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 2,
+          "resposta": "usar lixeiras e respeitar a passagem das pessoas.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 3,
+          "resposta": "Explicação coerente e relacionada a convivência nos lugares.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta possível: convivência nos lugares.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 5,
+          "resposta": "cuidar do que pertence a todos.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral clara e relacionada ao tema.",
+          "justificativa": "Critério de correção: clareza, relação com o tema e registro compreensível para o nível de alfabetização."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-1ano-b3-geo-25-moradias-e-materiais-desafio",
+      "titulo": "Moradias e materiais — Desafio",
+      "tema": "Tipos de moradia",
+      "sequencia": "Atividade 25",
+      "tipoSequencia": "Consolidação",
+      "dificuldade": "desafiadora",
+      "objetivo": "Desenvolver conhecimentos de tipos de moradia com linguagem adequada ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01GE06",
+          "descricaoResumida": "Habilidade BNCC relacionada a tipos de moradia no 1º ano."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia com ajuda quando necessário e responda com atenção. Você pode usar desenhos ou palavras nas respostas abertas.",
+      "textoApoio": {
+        "titulo": "Vamos aprender: Moradias e materiais — Desafio",
+        "conteudo": "Moradias possuem formas e materiais relacionados ao lugar e às necessidades. Nesta atividade, vamos observar casas de madeira, tijolos ou outros materiais. Para aprender melhor, é importante evitar julgar pessoas pelo tipo de moradia.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto “Moradias e materiais — Desafio”, qual é a ideia principal?",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "resposta-curta",
+          "enunciado": "No texto “Moradias e materiais — Desafio”, qual exemplo é apresentado?",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "explicacao",
+          "enunciado": "Na atividade “Moradias e materiais — Desafio”, explique com suas palavras: casas de madeira, tijolos ou outros materiais.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "registro",
+          "enunciado": "Escreva uma palavra ou expressão importante para “Moradias e materiais — Desafio”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "situacao-problema",
+          "enunciado": "Que atitude ajuda a aprender ou agir corretamente em “Moradias e materiais — Desafio”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Produza uma frase curta para concluir “Moradias e materiais — Desafio”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Moradias possuem formas e materiais relacionados ao lugar e às necessidades.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 2,
+          "resposta": "casas de madeira, tijolos ou outros materiais.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 3,
+          "resposta": "Explicação coerente e relacionada a tipos de moradia.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta possível: tipos de moradia.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 5,
+          "resposta": "evitar julgar pessoas pelo tipo de moradia.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral clara e relacionada ao tema.",
+          "justificativa": "Critério de correção: clareza, relação com o tema e registro compreensível para o nível de alfabetização."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-1ano-b3-geo-26-trabalhos-do-bairro-desafio",
+      "titulo": "Trabalhos do bairro — Desafio",
+      "tema": "Trabalho e lugar",
+      "sequencia": "Atividade 26",
+      "tipoSequencia": "Consolidação",
+      "dificuldade": "desafiadora",
+      "objetivo": "Desenvolver conhecimentos de trabalho e lugar com linguagem adequada ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01GE07",
+          "descricaoResumida": "Habilidade BNCC relacionada a trabalho e lugar no 1º ano."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia com ajuda quando necessário e responda com atenção. Você pode usar desenhos ou palavras nas respostas abertas.",
+      "textoApoio": {
+        "titulo": "Vamos aprender: Trabalhos do bairro — Desafio",
+        "conteudo": "Diferentes trabalhos transformam e organizam os lugares. Nesta atividade, vamos observar coleta de resíduos, comércio e atendimento de saúde. Para aprender melhor, é importante valorizar quem trabalha na comunidade.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto “Trabalhos do bairro — Desafio”, qual é a ideia principal?",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "resposta-curta",
+          "enunciado": "No texto “Trabalhos do bairro — Desafio”, qual exemplo é apresentado?",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "explicacao",
+          "enunciado": "Na atividade “Trabalhos do bairro — Desafio”, explique com suas palavras: coleta de resíduos, comércio e atendimento de saúde.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "registro",
+          "enunciado": "Escreva uma palavra ou expressão importante para “Trabalhos do bairro — Desafio”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "situacao-problema",
+          "enunciado": "Que atitude ajuda a aprender ou agir corretamente em “Trabalhos do bairro — Desafio”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Produza uma frase curta para concluir “Trabalhos do bairro — Desafio”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Diferentes trabalhos transformam e organizam os lugares.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 2,
+          "resposta": "coleta de resíduos, comércio e atendimento de saúde.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 3,
+          "resposta": "Explicação coerente e relacionada a trabalho e lugar.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta possível: trabalho e lugar.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 5,
+          "resposta": "valorizar quem trabalha na comunidade.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral clara e relacionada ao tema.",
+          "justificativa": "Critério de correção: clareza, relação com o tema e registro compreensível para o nível de alfabetização."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-1ano-b3-geo-27-mapas-e-desenhos-do-lugar-desafio",
+      "titulo": "Mapas e desenhos do lugar — Desafio",
+      "tema": "Representação espacial",
+      "sequencia": "Atividade 27",
+      "tipoSequencia": "Consolidação",
+      "dificuldade": "desafiadora",
+      "objetivo": "Desenvolver conhecimentos de representação espacial com linguagem adequada ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01GE09",
+          "descricaoResumida": "Habilidade BNCC relacionada a representação espacial no 1º ano."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia com ajuda quando necessário e responda com atenção. Você pode usar desenhos ou palavras nas respostas abertas.",
+      "textoApoio": {
+        "titulo": "Vamos aprender: Mapas e desenhos do lugar — Desafio",
+        "conteudo": "Desenhos e mapas simples representam lugares vistos de cima. Nesta atividade, vamos observar desenhar sala, pátio e caminho. Para aprender melhor, é importante usar símbolos e posições claras.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto “Mapas e desenhos do lugar — Desafio”, qual é a ideia principal?",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "resposta-curta",
+          "enunciado": "No texto “Mapas e desenhos do lugar — Desafio”, qual exemplo é apresentado?",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "explicacao",
+          "enunciado": "Na atividade “Mapas e desenhos do lugar — Desafio”, explique com suas palavras: desenhar sala, pátio e caminho.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "registro",
+          "enunciado": "Escreva uma palavra ou expressão importante para “Mapas e desenhos do lugar — Desafio”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "situacao-problema",
+          "enunciado": "Que atitude ajuda a aprender ou agir corretamente em “Mapas e desenhos do lugar — Desafio”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Produza uma frase curta para concluir “Mapas e desenhos do lugar — Desafio”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Desenhos e mapas simples representam lugares vistos de cima.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 2,
+          "resposta": "desenhar sala, pátio e caminho.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 3,
+          "resposta": "Explicação coerente e relacionada a representação espacial.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta possível: representação espacial.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 5,
+          "resposta": "usar símbolos e posições claras.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral clara e relacionada ao tema.",
+          "justificativa": "Critério de correção: clareza, relação com o tema e registro compreensível para o nível de alfabetização."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-1ano-b3-geo-28-frente-atras-direita-e-esquerda-desafio",
+      "titulo": "Frente, atrás, direita e esquerda — Desafio",
+      "tema": "Localização",
+      "sequencia": "Atividade 28",
+      "tipoSequencia": "Consolidação",
+      "dificuldade": "desafiadora",
+      "objetivo": "Desenvolver conhecimentos de localização com linguagem adequada ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01GE09",
+          "descricaoResumida": "Habilidade BNCC relacionada a localização no 1º ano."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia com ajuda quando necessário e responda com atenção. Você pode usar desenhos ou palavras nas respostas abertas.",
+      "textoApoio": {
+        "titulo": "Vamos aprender: Frente, atrás, direita e esquerda — Desafio",
+        "conteudo": "Palavras de posição ajudam a localizar pessoas e objetos. Nesta atividade, vamos observar a mesa está à frente da janela. Para aprender melhor, é importante usar um ponto de referência.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto “Frente, atrás, direita e esquerda — Desafio”, qual é a ideia principal?",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "resposta-curta",
+          "enunciado": "No texto “Frente, atrás, direita e esquerda — Desafio”, qual exemplo é apresentado?",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "explicacao",
+          "enunciado": "Na atividade “Frente, atrás, direita e esquerda — Desafio”, explique com suas palavras: a mesa está à frente da janela.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "registro",
+          "enunciado": "Escreva uma palavra ou expressão importante para “Frente, atrás, direita e esquerda — Desafio”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "situacao-problema",
+          "enunciado": "Que atitude ajuda a aprender ou agir corretamente em “Frente, atrás, direita e esquerda — Desafio”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Produza uma frase curta para concluir “Frente, atrás, direita e esquerda — Desafio”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Palavras de posição ajudam a localizar pessoas e objetos.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 2,
+          "resposta": "a mesa está à frente da janela.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 3,
+          "resposta": "Explicação coerente e relacionada a localização.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta possível: localização.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 5,
+          "resposta": "usar um ponto de referência.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral clara e relacionada ao tema.",
+          "justificativa": "Critério de correção: clareza, relação com o tema e registro compreensível para o nível de alfabetização."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-1ano-b3-geo-29-tempo-e-paisagem-desafio",
+      "titulo": "Tempo e paisagem — Desafio",
+      "tema": "Condições do tempo",
+      "sequencia": "Atividade 29",
+      "tipoSequencia": "Consolidação",
+      "dificuldade": "desafiadora",
+      "objetivo": "Desenvolver conhecimentos de condições do tempo com linguagem adequada ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01GE05",
+          "descricaoResumida": "Habilidade BNCC relacionada a condições do tempo no 1º ano."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia com ajuda quando necessário e responda com atenção. Você pode usar desenhos ou palavras nas respostas abertas.",
+      "textoApoio": {
+        "titulo": "Vamos aprender: Tempo e paisagem — Desafio",
+        "conteudo": "Sol, chuva, vento e frio influenciam atividades e roupas. Nesta atividade, vamos observar usar guarda-chuva em dia chuvoso. Para aprender melhor, é importante observar o tempo antes de planejar atividades.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto “Tempo e paisagem — Desafio”, qual é a ideia principal?",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "resposta-curta",
+          "enunciado": "No texto “Tempo e paisagem — Desafio”, qual exemplo é apresentado?",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "explicacao",
+          "enunciado": "Na atividade “Tempo e paisagem — Desafio”, explique com suas palavras: usar guarda-chuva em dia chuvoso.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "registro",
+          "enunciado": "Escreva uma palavra ou expressão importante para “Tempo e paisagem — Desafio”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "situacao-problema",
+          "enunciado": "Que atitude ajuda a aprender ou agir corretamente em “Tempo e paisagem — Desafio”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Produza uma frase curta para concluir “Tempo e paisagem — Desafio”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Sol, chuva, vento e frio influenciam atividades e roupas.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 2,
+          "resposta": "usar guarda-chuva em dia chuvoso.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 3,
+          "resposta": "Explicação coerente e relacionada a condições do tempo.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta possível: condições do tempo.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 5,
+          "resposta": "observar o tempo antes de planejar atividades.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral clara e relacionada ao tema.",
+          "justificativa": "Critério de correção: clareza, relação com o tema e registro compreensível para o nível de alfabetização."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-1ano-b3-geo-30-natureza-no-cotidiano-desafio",
+      "titulo": "Natureza no cotidiano — Desafio",
+      "tema": "Elementos naturais",
+      "sequencia": "Atividade 30",
+      "tipoSequencia": "Consolidação",
+      "dificuldade": "desafiadora",
+      "objetivo": "Desenvolver conhecimentos de elementos naturais com linguagem adequada ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01GE10",
+          "descricaoResumida": "Habilidade BNCC relacionada a elementos naturais no 1º ano."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia com ajuda quando necessário e responda com atenção. Você pode usar desenhos ou palavras nas respostas abertas.",
+      "textoApoio": {
+        "titulo": "Vamos aprender: Natureza no cotidiano — Desafio",
+        "conteudo": "Água, solo, vegetação e luz solar estão presentes no cotidiano. Nesta atividade, vamos observar árvores dão sombra e água é usada em muitas atividades. Para aprender melhor, é importante evitar desperdícios e proteger os elementos naturais.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto “Natureza no cotidiano — Desafio”, qual é a ideia principal?",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "resposta-curta",
+          "enunciado": "No texto “Natureza no cotidiano — Desafio”, qual exemplo é apresentado?",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "explicacao",
+          "enunciado": "Na atividade “Natureza no cotidiano — Desafio”, explique com suas palavras: árvores dão sombra e água é usada em muitas atividades.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "registro",
+          "enunciado": "Escreva uma palavra ou expressão importante para “Natureza no cotidiano — Desafio”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "situacao-problema",
+          "enunciado": "Que atitude ajuda a aprender ou agir corretamente em “Natureza no cotidiano — Desafio”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Produza uma frase curta para concluir “Natureza no cotidiano — Desafio”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Água, solo, vegetação e luz solar estão presentes no cotidiano.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 2,
+          "resposta": "árvores dão sombra e água é usada em muitas atividades.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 3,
+          "resposta": "Explicação coerente e relacionada a elementos naturais.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta possível: elementos naturais.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 5,
+          "resposta": "evitar desperdícios e proteger os elementos naturais.",
+          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral clara e relacionada ao tema.",
+          "justificativa": "Critério de correção: clareza, relação com o tema e registro compreensível para o nível de alfabetização."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    }
+  ]
+}
