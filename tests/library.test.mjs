@@ -283,6 +283,51 @@ test('HTML final não contém IDs duplicados, links vazios ou textos substituíd
   assert.doesNotMatch(home, /FEITO PARA PROFESSORES|Conheça a plataforma|NOSSOS SERVIÇOS|Tudo o que você precisa, em um só lugar/);
 });
 
+test('HTML, JavaScript e JSON permanecem em UTF-8 sem textos corrompidos', async () => {
+  const collectJsonFiles = async directory => {
+    const files = [];
+    const entries = await readdir(directory, { withFileTypes: true });
+
+    for (const entry of entries) {
+      const entryUrl = new URL(entry.name, directory);
+      if (entry.isDirectory()) {
+        files.push(...await collectJsonFiles(new URL(`${entry.name}/`, directory)));
+      } else if (entry.name.endsWith('.json')) {
+        files.push(entryUrl);
+      }
+    }
+
+    return files;
+  };
+
+  const sourceFiles = [
+    'index.html',
+    'biblioteca.html',
+    'script.js',
+    'biblioteca.js',
+    'biblioteca-fixes.js',
+    'photo-activity.js',
+    'ai-content.js',
+    'package.json'
+  ].map(file => new URL(`../${file}`, import.meta.url));
+  sourceFiles.push(new URL('./library.test.mjs', import.meta.url));
+  sourceFiles.push(...await collectJsonFiles(new URL('../data/', import.meta.url)));
+
+  const windows1252Continuation = '\u0080-\u00BF\u0192\u02C6\u02DC\u0152\u0153\u0160\u0161\u0178\u017D\u017E\u2013\u2014\u2018\u2019\u201A\u201C\u201D\u201E\u2020\u2021\u2022\u2026\u2030\u2039\u203A\u20AC\u2122';
+  const mojibake = new RegExp(`(?:\\u00C2|\\u00C3|\\u00E2|\\u00F0)[${windows1252Continuation}]|\\uFFFD`, 'u');
+
+  for (const file of sourceFiles) {
+    const bytes = await readFile(file);
+    assert.notDeepEqual([...bytes.subarray(0, 3)], [0xEF, 0xBB, 0xBF], `${file.pathname} contém BOM`);
+    assert.doesNotMatch(bytes.toString('utf8'), mojibake, `${file.pathname} contém texto corrompido`);
+  }
+
+  for (const file of ['index.html', 'biblioteca.html']) {
+    const html = await readFile(new URL(`../${file}`, import.meta.url), 'utf8');
+    assert.match(html, /^<!DOCTYPE html>[\s\S]*?<head>\s*<meta charset="UTF-8">/);
+  }
+});
+
 test('Links da Biblioteca e responsividade principal permanecem definidos', async () => {
   const [html, css, photoCss, libraryCss] = await Promise.all([
     readFile(new URL('../index.html', import.meta.url), 'utf8'),

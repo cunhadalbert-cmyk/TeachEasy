@@ -2,7 +2,7 @@
     "name":  "teacheasy",
     "version":  "0.1.0",
     "private":  true,
-    "description":  "Site estÃ¡tico do TeachEasy e protÃ³tipo da Biblioteca de Atividades.",
+    "description":  "Site estático do TeachEasy e protótipo da Biblioteca de Atividades.",
     "scripts":  {
                     "check:js":  "node --check script.js \u0026\u0026 node --check biblioteca.js \u0026\u0026 node --check biblioteca-fixes.js \u0026\u0026 node --check photo-activity.js \u0026\u0026 node --check ai-content.js \u0026\u0026 node --check scripts/check-whitespace.mjs \u0026\u0026 node --check scripts/audit-figures.mjs \u0026\u0026 node --check tests/library.test.mjs",
                     "check:html":  "html-validate index.html biblioteca.html",
