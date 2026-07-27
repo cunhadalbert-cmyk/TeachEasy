@@ -1,4 +1,8 @@
 (() => {
+  const EXPECTED_SCIENCE_ACTIVITIES = 25;
+  collectionRegistry['Ciências'].count = EXPECTED_SCIENCE_ACTIVITIES;
+  collectionRegistry['Ciências'].extraPath = 'data/atividades/fundamental-anos-iniciais/4-ano/3-bimestre/ciencias-extra.json';
+
   const EXPECTED_MATH_ACTIVITIES = 30;
   collectionRegistry['Matemática'].count = EXPECTED_MATH_ACTIVITIES;
   collectionRegistry['Matemática'].extraPath = 'data/atividades/fundamental-anos-iniciais/4-ano/3-bimestre/matematica-extra.json';
