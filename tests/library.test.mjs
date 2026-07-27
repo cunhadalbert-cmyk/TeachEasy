@@ -860,7 +860,7 @@ test('Matemática e Língua Portuguesa carregam somente com a disciplina corresp
   await window.happyDOM.close();
 });
 
-test('História e Geografia do 4º ano e coleções do 3º ano estão completas', async () => {
+test('Coleções integradas do 1º, 3º e 4º ano estão completas', async () => {
   const files = [
     ['4-ano', 'historia.json', '4ano-3bimestre-historia', '4º ano', 'História'],
     ['4-ano', 'geografia.json', '4ano-3bimestre-geografia', '4º ano', 'Geografia'],
@@ -868,7 +868,12 @@ test('História e Geografia do 4º ano e coleções do 3º ano estão completas'
     ['3-ano', 'matematica.json', '3ano-3bimestre-matematica', '3º ano', 'Matemática'],
     ['3-ano', 'historia.json', '3ano-3bimestre-historia', '3º ano', 'História'],
     ['3-ano', 'ciencias.json', '3ano-3bimestre-ciencias', '3º ano', 'Ciências'],
-    ['3-ano', 'geografia.json', '3ano-3bimestre-geografia', '3º ano', 'Geografia']
+    ['3-ano', 'geografia.json', '3ano-3bimestre-geografia', '3º ano', 'Geografia'],
+    ['1-ano', 'lingua-portuguesa.json', '1ano-3bimestre-lingua-portuguesa', '1º ano', 'Língua Portuguesa'],
+    ['1-ano', 'matematica.json', '1ano-3bimestre-matematica', '1º ano', 'Matemática'],
+    ['1-ano', 'historia.json', '1ano-3bimestre-historia', '1º ano', 'História'],
+    ['1-ano', 'ciencias.json', '1ano-3bimestre-ciencias', '1º ano', 'Ciências'],
+    ['1-ano', 'geografia.json', '1ano-3bimestre-geografia', '1º ano', 'Geografia']
   ];
   const allIds = [];
 
@@ -902,8 +907,8 @@ test('História e Geografia do 4º ano e coleções do 3º ano estão completas'
     }
   }
 
-  assert.equal(allIds.length, 210);
-  assert.equal(new Set(allIds).size, 210);
+  assert.equal(allIds.length, 360);
+  assert.equal(new Set(allIds).size, 360);
 
   const fixesScript = await readFile(new URL('../biblioteca-fixes.js', import.meta.url), 'utf8');
   files.forEach(([gradePath, filename, collectionId]) => {

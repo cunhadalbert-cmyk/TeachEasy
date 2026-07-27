@@ -1,6 +1,6 @@
 # Auditoria de figuras das atividades
 
-Gerado automaticamente. Arquivos JSON verificados: 13.
+Gerado automaticamente. Arquivos JSON verificados: 18.
 
 | Disciplina | Atividade | Questão | figuraId | Arquivo | Status | Resultado da renderização |
 | --- | --- | ---: | --- | --- | --- | --- |

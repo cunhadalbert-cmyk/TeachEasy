@@ -93,6 +93,46 @@
       grade: '3º ano',
       symbol: '🗺️',
       colors: ['#d8efff', '#dff3dc']
+    },
+    {
+      path: 'data/atividades/fundamental-anos-iniciais/1-ano/3-bimestre/lingua-portuguesa.json',
+      collection: '1ano-3bimestre-lingua-portuguesa',
+      count: 30,
+      grade: '1º ano',
+      symbol: '📖',
+      colors: ['#ffe2e8', '#eee3ff']
+    },
+    {
+      path: 'data/atividades/fundamental-anos-iniciais/1-ano/3-bimestre/matematica.json',
+      collection: '1ano-3bimestre-matematica',
+      count: 30,
+      grade: '1º ano',
+      symbol: '➗',
+      colors: ['#e1ebff', '#fff1bd']
+    },
+    {
+      path: 'data/atividades/fundamental-anos-iniciais/1-ano/3-bimestre/historia.json',
+      collection: '1ano-3bimestre-historia',
+      count: 30,
+      grade: '1º ano',
+      symbol: '🏺',
+      colors: ['#f1dfc8', '#ffe7cf']
+    },
+    {
+      path: 'data/atividades/fundamental-anos-iniciais/1-ano/3-bimestre/ciencias.json',
+      collection: '1ano-3bimestre-ciencias',
+      count: 30,
+      grade: '1º ano',
+      symbol: '🔬',
+      colors: ['#d9f1e1', '#e8f0ff']
+    },
+    {
+      path: 'data/atividades/fundamental-anos-iniciais/1-ano/3-bimestre/geografia.json',
+      collection: '1ano-3bimestre-geografia',
+      count: 30,
+      grade: '1º ano',
+      symbol: '🗺️',
+      colors: ['#d8efff', '#dff3dc']
     }
   ];
 
@@ -137,7 +177,7 @@
 
   function isSupportedThirdTerm() {
     return navigation.stage === 'Ensino Fundamental I'
-      && ['3º ano', '4º ano'].includes(navigation.grade)
+      && ['1º ano', '3º ano', '4º ano'].includes(navigation.grade)
       && navigation.term === '3';
   }
 
