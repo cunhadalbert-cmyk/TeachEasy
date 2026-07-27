@@ -2347,6 +2347,616 @@
         "revisor": "revisao-pedagogica-teacheasy",
         "dataRevisao": "2026-07-27"
       }
+    },
+    {
+      "id": "efi-4ano-b3-cie-extra-21-a-energia-do-sol-chega-aos-seres-vivos",
+      "titulo": "A energia do Sol chega aos seres vivos",
+      "tema": "Energia nas cadeias alimentares",
+      "sequencia": "Atividade 21",
+      "tipoSequencia": "Consolidação",
+      "dificuldade": "desafiadora",
+      "objetivo": "Compreender energia nas cadeias alimentares por meio de leitura, comparação e aplicação em situações do cotidiano.",
+      "bncc": [
+        {
+          "codigo": "EF04CI05",
+          "descricaoResumida": "Descrever o papel do Sol como fonte primária de energia na produção de alimentos."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, relacione as informações científicas e responda com atenção.",
+      "textoApoio": {
+        "titulo": "Para compreender: A energia do Sol chega aos seres vivos",
+        "conteudo": "As plantas usam luz solar, água e gás carbônico para produzir alimento. Por isso, a energia que passa por muitas cadeias alimentares começa no Sol. Um exemplo é capim alimenta o gafanhoto, que serve de alimento para o sapo. Para agir com responsabilidade, é importante preservar os produtores e os ambientes onde vivem.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto “A energia do Sol chega aos seres vivos”, o que devemos compreender sobre energia nas cadeias alimentares?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual alternativa apresenta um exemplo correto relacionado a “A energia do Sol chega aos seres vivos”?",
+          "alternativas": [
+            "Capim alimenta o gafanhoto, que serve de alimento para o sapo.",
+            "Ignorar todas as relações entre pessoas, natureza e lugar.",
+            "Desperdiçar recursos porque eles nunca acabam.",
+            "Considerar que todos os lugares são iguais e nunca se transformam."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Explique com suas palavras por que capim alimenta o gafanhoto, que serve de alimento para o sapo.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Compare “produtor” e “consumidor”. Indique uma diferença importante.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "situacao-problema",
+          "enunciado": "Uma turma está estudando energia nas cadeias alimentares. Que atitude ela pode adotar para preservar os produtores e os ambientes onde vivem?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Escreva um pequeno parágrafo relacionando “A energia do Sol chega aos seres vivos” ao lugar onde você vive ou a uma situação que conhece.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "As plantas usam luz solar, água e gás carbônico para produzir alimento. Por isso, a energia que passa por muitas cadeias alimentares começa no Sol.",
+          "justificativa": "A resposta retoma a ideia central apresentada no texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "A primeira alternativa reproduz um exemplo correto e coerente com o tema."
+        },
+        {
+          "numero": 3,
+          "resposta": "Espera-se explicação coerente sobre o exemplo: capim alimenta o gafanhoto, que serve de alimento para o sapo.",
+          "justificativa": "Critério de correção: relacionar o exemplo à ideia central do texto."
+        },
+        {
+          "numero": 4,
+          "resposta": "Espera-se distinguir produtor de consumidor.",
+          "justificativa": "Critério de correção: apresentar pelo menos uma diferença pertinente entre os dois elementos."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta esperada: preservar os produtores e os ambientes onde vivem.",
+          "justificativa": "A atitude deve ser possível, responsável e diretamente ligada à situação apresentada."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral relacionada ao tema e a uma situação conhecida pelo estudante.",
+          "justificativa": "Critério de correção: clareza, coerência, uso de informação da atividade e relação com o cotidiano."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-4ano-b3-cie-extra-22-produtores-consumidores-e-decompositores",
+      "titulo": "Produtores, consumidores e decompositores",
+      "tema": "Cadeias alimentares",
+      "sequencia": "Atividade 22",
+      "tipoSequencia": "Consolidação",
+      "dificuldade": "facil",
+      "objetivo": "Compreender cadeias alimentares por meio de leitura, comparação e aplicação em situações do cotidiano.",
+      "bncc": [
+        {
+          "codigo": "EF04CI04",
+          "descricaoResumida": "Analisar e construir cadeias alimentares simples, reconhecendo produtores, consumidores e decompositores."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, relacione as informações científicas e responda com atenção.",
+      "textoApoio": {
+        "titulo": "Para compreender: Produtores, consumidores e decompositores",
+        "conteudo": "Produtores fabricam o próprio alimento, consumidores obtêm energia ao se alimentar e decompositores transformam restos de seres vivos. Um exemplo é folha, lagarta, pássaro, fungos e bactérias. Para agir com responsabilidade, é importante não retirar espécies nem abandonar resíduos no ambiente.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto “Produtores, consumidores e decompositores”, o que devemos compreender sobre cadeias alimentares?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual alternativa apresenta um exemplo correto relacionado a “Produtores, consumidores e decompositores”?",
+          "alternativas": [
+            "Folha, lagarta, pássaro, fungos e bactérias.",
+            "Ignorar todas as relações entre pessoas, natureza e lugar.",
+            "Desperdiçar recursos porque eles nunca acabam.",
+            "Considerar que todos os lugares são iguais e nunca se transformam."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Explique com suas palavras por que folha, lagarta, pássaro, fungos e bactérias.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Compare “consumidor” e “decompositor”. Indique uma diferença importante.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "situacao-problema",
+          "enunciado": "Uma turma está estudando cadeias alimentares. Que atitude ela pode adotar para não retirar espécies nem abandonar resíduos no ambiente?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Escreva um pequeno parágrafo relacionando “Produtores, consumidores e decompositores” ao lugar onde você vive ou a uma situação que conhece.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Produtores fabricam o próprio alimento, consumidores obtêm energia ao se alimentar e decompositores transformam restos de seres vivos.",
+          "justificativa": "A resposta retoma a ideia central apresentada no texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "A primeira alternativa reproduz um exemplo correto e coerente com o tema."
+        },
+        {
+          "numero": 3,
+          "resposta": "Espera-se explicação coerente sobre o exemplo: folha, lagarta, pássaro, fungos e bactérias.",
+          "justificativa": "Critério de correção: relacionar o exemplo à ideia central do texto."
+        },
+        {
+          "numero": 4,
+          "resposta": "Espera-se distinguir consumidor de decompositor.",
+          "justificativa": "Critério de correção: apresentar pelo menos uma diferença pertinente entre os dois elementos."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta esperada: não retirar espécies nem abandonar resíduos no ambiente.",
+          "justificativa": "A atitude deve ser possível, responsável e diretamente ligada à situação apresentada."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral relacionada ao tema e a uma situação conhecida pelo estudante.",
+          "justificativa": "Critério de correção: clareza, coerência, uso de informação da atividade e relação com o cotidiano."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-4ano-b3-cie-extra-23-uma-teia-de-relacoes-alimentares",
+      "titulo": "Uma teia de relações alimentares",
+      "tema": "Teias alimentares",
+      "sequencia": "Atividade 23",
+      "tipoSequencia": "Consolidação",
+      "dificuldade": "intermediaria",
+      "objetivo": "Compreender teias alimentares por meio de leitura, comparação e aplicação em situações do cotidiano.",
+      "bncc": [
+        {
+          "codigo": "EF04CI04",
+          "descricaoResumida": "Analisar e construir cadeias alimentares simples, reconhecendo produtores, consumidores e decompositores."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, relacione as informações científicas e responda com atenção.",
+      "textoApoio": {
+        "titulo": "Para compreender: Uma teia de relações alimentares",
+        "conteudo": "Na natureza, um ser vivo pode participar de várias cadeias alimentares. O conjunto dessas relações forma uma teia alimentar. Um exemplo é sementes alimentam aves e roedores, que podem servir de alimento para serpentes. Para agir com responsabilidade, é importante proteger a diversidade para manter as relações do ecossistema.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto “Uma teia de relações alimentares”, o que devemos compreender sobre teias alimentares?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual alternativa apresenta um exemplo correto relacionado a “Uma teia de relações alimentares”?",
+          "alternativas": [
+            "Sementes alimentam aves e roedores, que podem servir de alimento para serpentes.",
+            "Ignorar todas as relações entre pessoas, natureza e lugar.",
+            "Desperdiçar recursos porque eles nunca acabam.",
+            "Considerar que todos os lugares são iguais e nunca se transformam."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Explique com suas palavras por que sementes alimentam aves e roedores, que podem servir de alimento para serpentes.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Compare “cadeia alimentar” e “teia alimentar”. Indique uma diferença importante.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "situacao-problema",
+          "enunciado": "Uma turma está estudando teias alimentares. Que atitude ela pode adotar para proteger a diversidade para manter as relações do ecossistema?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Escreva um pequeno parágrafo relacionando “Uma teia de relações alimentares” ao lugar onde você vive ou a uma situação que conhece.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Na natureza, um ser vivo pode participar de várias cadeias alimentares. O conjunto dessas relações forma uma teia alimentar.",
+          "justificativa": "A resposta retoma a ideia central apresentada no texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "A primeira alternativa reproduz um exemplo correto e coerente com o tema."
+        },
+        {
+          "numero": 3,
+          "resposta": "Espera-se explicação coerente sobre o exemplo: sementes alimentam aves e roedores, que podem servir de alimento para serpentes.",
+          "justificativa": "Critério de correção: relacionar o exemplo à ideia central do texto."
+        },
+        {
+          "numero": 4,
+          "resposta": "Espera-se distinguir cadeia alimentar de teia alimentar.",
+          "justificativa": "Critério de correção: apresentar pelo menos uma diferença pertinente entre os dois elementos."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta esperada: proteger a diversidade para manter as relações do ecossistema.",
+          "justificativa": "A atitude deve ser possível, responsável e diretamente ligada à situação apresentada."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral relacionada ao tema e a uma situação conhecida pelo estudante.",
+          "justificativa": "Critério de correção: clareza, coerência, uso de informação da atividade e relação com o cotidiano."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-4ano-b3-cie-extra-24-microrganismos-que-ajudam-a-produzir-alimentos",
+      "titulo": "Microrganismos que ajudam a produzir alimentos",
+      "tema": "Microrganismos úteis",
+      "sequencia": "Atividade 24",
+      "tipoSequencia": "Consolidação",
+      "dificuldade": "desafiadora",
+      "objetivo": "Compreender microrganismos úteis por meio de leitura, comparação e aplicação em situações do cotidiano.",
+      "bncc": [
+        {
+          "codigo": "EF04CI07",
+          "descricaoResumida": "Verificar a participação de microrganismos na produção de alimentos, combustíveis, medicamentos e outros produtos."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, relacione as informações científicas e responda com atenção.",
+      "textoApoio": {
+        "titulo": "Para compreender: Microrganismos que ajudam a produzir alimentos",
+        "conteudo": "Alguns microrganismos transformam ingredientes durante a produção de pão, iogurte e queijo. Um exemplo é leveduras liberam gás e fazem a massa do pão crescer. Para agir com responsabilidade, é importante seguir higiene, temperatura e tempo adequados no preparo.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto “Microrganismos que ajudam a produzir alimentos”, o que devemos compreender sobre microrganismos úteis?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual alternativa apresenta um exemplo correto relacionado a “Microrganismos que ajudam a produzir alimentos”?",
+          "alternativas": [
+            "Leveduras liberam gás e fazem a massa do pão crescer.",
+            "Ignorar todas as relações entre pessoas, natureza e lugar.",
+            "Desperdiçar recursos porque eles nunca acabam.",
+            "Considerar que todos os lugares são iguais e nunca se transformam."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Explique com suas palavras por que leveduras liberam gás e fazem a massa do pão crescer.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Compare “microrganismo útil” e “microrganismo causador de deterioração”. Indique uma diferença importante.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "situacao-problema",
+          "enunciado": "Uma turma está estudando microrganismos úteis. Que atitude ela pode adotar para seguir higiene, temperatura e tempo adequados no preparo?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Escreva um pequeno parágrafo relacionando “Microrganismos que ajudam a produzir alimentos” ao lugar onde você vive ou a uma situação que conhece.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Alguns microrganismos transformam ingredientes durante a produção de pão, iogurte e queijo.",
+          "justificativa": "A resposta retoma a ideia central apresentada no texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "A primeira alternativa reproduz um exemplo correto e coerente com o tema."
+        },
+        {
+          "numero": 3,
+          "resposta": "Espera-se explicação coerente sobre o exemplo: leveduras liberam gás e fazem a massa do pão crescer.",
+          "justificativa": "Critério de correção: relacionar o exemplo à ideia central do texto."
+        },
+        {
+          "numero": 4,
+          "resposta": "Espera-se distinguir microrganismo útil de microrganismo causador de deterioração.",
+          "justificativa": "Critério de correção: apresentar pelo menos uma diferença pertinente entre os dois elementos."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta esperada: seguir higiene, temperatura e tempo adequados no preparo.",
+          "justificativa": "A atitude deve ser possível, responsável e diretamente ligada à situação apresentada."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral relacionada ao tema e a uma situação conhecida pelo estudante.",
+          "justificativa": "Critério de correção: clareza, coerência, uso de informação da atividade e relação com o cotidiano."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-4ano-b3-cie-extra-25-prevencao-de-doencas-no-cotidiano",
+      "titulo": "Prevenção de doenças no cotidiano",
+      "tema": "Saúde e microrganismos",
+      "sequencia": "Atividade 25",
+      "tipoSequencia": "Consolidação",
+      "dificuldade": "facil",
+      "objetivo": "Compreender saúde e microrganismos por meio de leitura, comparação e aplicação em situações do cotidiano.",
+      "bncc": [
+        {
+          "codigo": "EF04CI08",
+          "descricaoResumida": "Propor atitudes e medidas adequadas para prevenção de doenças associadas a microrganismos."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, relacione as informações científicas e responda com atenção.",
+      "textoApoio": {
+        "titulo": "Para compreender: Prevenção de doenças no cotidiano",
+        "conteudo": "Lavar as mãos, conservar alimentos, beber água tratada e manter a vacinação em dia ajudam a prevenir doenças. Um exemplo é lavar as mãos antes de comer e depois de usar o banheiro. Para agir com responsabilidade, é importante combinar higiene, saneamento, conservação de alimentos e vacinação.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto “Prevenção de doenças no cotidiano”, o que devemos compreender sobre saúde e microrganismos?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual alternativa apresenta um exemplo correto relacionado a “Prevenção de doenças no cotidiano”?",
+          "alternativas": [
+            "Lavar as mãos antes de comer e depois de usar o banheiro.",
+            "Ignorar todas as relações entre pessoas, natureza e lugar.",
+            "Desperdiçar recursos porque eles nunca acabam.",
+            "Considerar que todos os lugares são iguais e nunca se transformam."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Explique com suas palavras por que lavar as mãos antes de comer e depois de usar o banheiro.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Compare “medida individual” e “medida coletiva”. Indique uma diferença importante.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "situacao-problema",
+          "enunciado": "Uma turma está estudando saúde e microrganismos. Que atitude ela pode adotar para combinar higiene, saneamento, conservação de alimentos e vacinação?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Escreva um pequeno parágrafo relacionando “Prevenção de doenças no cotidiano” ao lugar onde você vive ou a uma situação que conhece.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Lavar as mãos, conservar alimentos, beber água tratada e manter a vacinação em dia ajudam a prevenir doenças.",
+          "justificativa": "A resposta retoma a ideia central apresentada no texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "A primeira alternativa reproduz um exemplo correto e coerente com o tema."
+        },
+        {
+          "numero": 3,
+          "resposta": "Espera-se explicação coerente sobre o exemplo: lavar as mãos antes de comer e depois de usar o banheiro.",
+          "justificativa": "Critério de correção: relacionar o exemplo à ideia central do texto."
+        },
+        {
+          "numero": 4,
+          "resposta": "Espera-se distinguir medida individual de medida coletiva.",
+          "justificativa": "Critério de correção: apresentar pelo menos uma diferença pertinente entre os dois elementos."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta esperada: combinar higiene, saneamento, conservação de alimentos e vacinação.",
+          "justificativa": "A atitude deve ser possível, responsável e diretamente ligada à situação apresentada."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral relacionada ao tema e a uma situação conhecida pelo estudante.",
+          "justificativa": "Critério de correção: clareza, coerência, uso de informação da atividade e relação com o cotidiano."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
     }
   ]
 }

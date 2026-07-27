@@ -1,5 +1,5 @@
 (() => {
-  const EXPECTED_SCIENCE_ACTIVITIES = 25;
+  const EXPECTED_SCIENCE_ACTIVITIES = 30;
   const EXPECTED_MATH_ACTIVITIES = 30;
   const EXPECTED_PORTUGUESE_ACTIVITIES = 30;
 
@@ -85,6 +85,14 @@
       grade: '3º ano',
       symbol: '🔬',
       colors: ['#d9f1e1', '#e8f0ff']
+    },
+    {
+      path: 'data/atividades/fundamental-anos-iniciais/3-ano/3-bimestre/geografia.json',
+      collection: '3ano-3bimestre-geografia',
+      count: 30,
+      grade: '3º ano',
+      symbol: '🗺️',
+      colors: ['#d8efff', '#dff3dc']
     }
   ];
 

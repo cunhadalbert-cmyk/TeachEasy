@@ -566,6 +566,24 @@ test('Coleção de Ciências possui schema válido, cinco atividades e referênc
   assert.doesNotMatch(answerSix.resposta, /compartilhar copo|compartilhamento de copos/i);
 });
 
+test('Ciências do 4º ano totaliza 30 atividades e 180 questões', async () => {
+  const [baseRaw, extraRaw] = await Promise.all([
+    readFile(new URL('../data/atividades/fundamental-anos-iniciais/4-ano/3-bimestre/ciencias.json', import.meta.url), 'utf8'),
+    readFile(new URL('../data/atividades/fundamental-anos-iniciais/4-ano/3-bimestre/ciencias-extra.json', import.meta.url), 'utf8')
+  ]);
+  const base = JSON.parse(baseRaw);
+  const extra = JSON.parse(extraRaw);
+  const activities = [...base.atividades, ...extra.atividades];
+  const ids = activities.map(activity => activity.id);
+
+  assert.equal(base.atividades.length, 5);
+  assert.equal(extra.atividades.length, 25);
+  assert.equal(activities.length, 30);
+  assert.equal(new Set(ids).size, 30);
+  assert.equal(activities.reduce((total, activity) => total + activity.questoes.length, 0), 180);
+  assert.equal(activities.reduce((total, activity) => total + activity.gabarito.length, 0), 180);
+});
+
 test('Ciências é carregada somente após etapa, ano, bimestre e disciplina', async () => {
   const window = await createLibraryPage();
   openActivities(window, 'Anos Iniciais', '4º ano', '3º bimestre');
@@ -849,7 +867,8 @@ test('História e Geografia do 4º ano e coleções do 3º ano estão completas'
     ['3-ano', 'lingua-portuguesa.json', '3ano-3bimestre-lingua-portuguesa', '3º ano', 'Língua Portuguesa'],
     ['3-ano', 'matematica.json', '3ano-3bimestre-matematica', '3º ano', 'Matemática'],
     ['3-ano', 'historia.json', '3ano-3bimestre-historia', '3º ano', 'História'],
-    ['3-ano', 'ciencias.json', '3ano-3bimestre-ciencias', '3º ano', 'Ciências']
+    ['3-ano', 'ciencias.json', '3ano-3bimestre-ciencias', '3º ano', 'Ciências'],
+    ['3-ano', 'geografia.json', '3ano-3bimestre-geografia', '3º ano', 'Geografia']
   ];
   const allIds = [];
 
@@ -883,8 +902,8 @@ test('História e Geografia do 4º ano e coleções do 3º ano estão completas'
     }
   }
 
-  assert.equal(allIds.length, 180);
-  assert.equal(new Set(allIds).size, 180);
+  assert.equal(allIds.length, 210);
+  assert.equal(new Set(allIds).size, 210);
 
   const fixesScript = await readFile(new URL('../biblioteca-fixes.js', import.meta.url), 'utf8');
   files.forEach(([gradePath, filename, collectionId]) => {
