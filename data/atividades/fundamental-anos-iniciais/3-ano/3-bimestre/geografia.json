@@ -1,0 +1,3672 @@
+{
+  "schemaVersion": "1.0",
+  "colecao": "3ano-3bimestre-geografia",
+  "idioma": "pt-BR",
+  "etapa": "Ensino Fundamental — Anos Iniciais",
+  "ano": "3º ano",
+  "bimestre": 3,
+  "disciplina": "Geografia",
+  "statusBimestre": "sugerido",
+  "atividades": [
+    {
+      "id": "efi-3ano-b3-geo-01-culturas-presentes-no-bairro",
+      "titulo": "Culturas presentes no bairro",
+      "tema": "Diversidade cultural",
+      "sequencia": "Atividade 1",
+      "tipoSequencia": "Introdução",
+      "dificuldade": "facil",
+      "objetivo": "Compreender diversidade cultural por meio de leitura, comparação e aplicação em situações do cotidiano.",
+      "bncc": [
+        {
+          "codigo": "EF03GE01",
+          "descricaoResumida": "Identificar e comparar aspectos culturais dos grupos sociais de seus lugares de vivência."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, relacione as informações ao espaço geográfico e responda com atenção.",
+      "textoApoio": {
+        "titulo": "Para compreender: Culturas presentes no bairro",
+        "conteudo": "O bairro reúne pessoas com costumes, festas, alimentos e formas de falar diferentes. Um exemplo é uma feira onde famílias compartilham receitas de várias origens. Para agir com responsabilidade, é importante respeitar os costumes e ouvir as histórias de diferentes moradores.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto “Culturas presentes no bairro”, o que devemos compreender sobre diversidade cultural?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual alternativa apresenta um exemplo correto relacionado a “Culturas presentes no bairro”?",
+          "alternativas": [
+            "Uma feira onde famílias compartilham receitas de várias origens.",
+            "Ignorar todas as relações entre pessoas, natureza e lugar.",
+            "Desperdiçar recursos porque eles nunca acabam.",
+            "Considerar que todos os lugares são iguais e nunca se transformam."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Explique com suas palavras por que uma feira onde famílias compartilham receitas de várias origens.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Compare “costumes de uma família” e “costumes compartilhados pela comunidade”. Indique uma diferença importante.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "situacao-problema",
+          "enunciado": "Uma turma está estudando diversidade cultural. Que atitude ela pode adotar para respeitar os costumes e ouvir as histórias de diferentes moradores?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Escreva um pequeno parágrafo relacionando “Culturas presentes no bairro” ao lugar onde você vive ou a uma situação que conhece.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "O bairro reúne pessoas com costumes, festas, alimentos e formas de falar diferentes.",
+          "justificativa": "A resposta retoma a ideia central apresentada no texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "A primeira alternativa reproduz um exemplo correto e coerente com o tema."
+        },
+        {
+          "numero": 3,
+          "resposta": "Espera-se explicação coerente sobre o exemplo: uma feira onde famílias compartilham receitas de várias origens.",
+          "justificativa": "Critério de correção: relacionar o exemplo à ideia central do texto."
+        },
+        {
+          "numero": 4,
+          "resposta": "Espera-se distinguir costumes de uma família de costumes compartilhados pela comunidade.",
+          "justificativa": "Critério de correção: apresentar pelo menos uma diferença pertinente entre os dois elementos."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta esperada: respeitar os costumes e ouvir as histórias de diferentes moradores.",
+          "justificativa": "A atitude deve ser possível, responsável e diretamente ligada à situação apresentada."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral relacionada ao tema e a uma situação conhecida pelo estudante.",
+          "justificativa": "Critério de correção: clareza, coerência, uso de informação da atividade e relação com o cotidiano."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-3ano-b3-geo-02-festas-e-tradicoes-locais",
+      "titulo": "Festas e tradições locais",
+      "tema": "Tradições culturais",
+      "sequencia": "Atividade 2",
+      "tipoSequencia": "Introdução",
+      "dificuldade": "intermediaria",
+      "objetivo": "Compreender tradições culturais por meio de leitura, comparação e aplicação em situações do cotidiano.",
+      "bncc": [
+        {
+          "codigo": "EF03GE01",
+          "descricaoResumida": "Identificar e comparar aspectos culturais dos grupos sociais de seus lugares de vivência."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, relacione as informações ao espaço geográfico e responda com atenção.",
+      "textoApoio": {
+        "titulo": "Para compreender: Festas e tradições locais",
+        "conteudo": "Festas locais expressam memórias e costumes de grupos que vivem no município. Um exemplo é uma festa comunitária com músicas, danças e comidas tradicionais. Para agir com responsabilidade, é importante participar sem ridicularizar as tradições dos outros.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto “Festas e tradições locais”, o que devemos compreender sobre tradições culturais?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual alternativa apresenta um exemplo correto relacionado a “Festas e tradições locais”?",
+          "alternativas": [
+            "Uma festa comunitária com músicas, danças e comidas tradicionais.",
+            "Ignorar todas as relações entre pessoas, natureza e lugar.",
+            "Desperdiçar recursos porque eles nunca acabam.",
+            "Considerar que todos os lugares são iguais e nunca se transformam."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Explique com suas palavras por que uma festa comunitária com músicas, danças e comidas tradicionais.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Compare “uma festa familiar” e “uma festa que envolve todo o bairro”. Indique uma diferença importante.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "situacao-problema",
+          "enunciado": "Uma turma está estudando tradições culturais. Que atitude ela pode adotar para participar sem ridicularizar as tradições dos outros?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Escreva um pequeno parágrafo relacionando “Festas e tradições locais” ao lugar onde você vive ou a uma situação que conhece.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Festas locais expressam memórias e costumes de grupos que vivem no município.",
+          "justificativa": "A resposta retoma a ideia central apresentada no texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "A primeira alternativa reproduz um exemplo correto e coerente com o tema."
+        },
+        {
+          "numero": 3,
+          "resposta": "Espera-se explicação coerente sobre o exemplo: uma festa comunitária com músicas, danças e comidas tradicionais.",
+          "justificativa": "Critério de correção: relacionar o exemplo à ideia central do texto."
+        },
+        {
+          "numero": 4,
+          "resposta": "Espera-se distinguir uma festa familiar de uma festa que envolve todo o bairro.",
+          "justificativa": "Critério de correção: apresentar pelo menos uma diferença pertinente entre os dois elementos."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta esperada: participar sem ridicularizar as tradições dos outros.",
+          "justificativa": "A atitude deve ser possível, responsável e diretamente ligada à situação apresentada."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral relacionada ao tema e a uma situação conhecida pelo estudante.",
+          "justificativa": "Critério de correção: clareza, coerência, uso de informação da atividade e relação com o cotidiano."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-3ano-b3-geo-03-diferentes-modos-de-viver",
+      "titulo": "Diferentes modos de viver",
+      "tema": "Grupos sociais",
+      "sequencia": "Atividade 3",
+      "tipoSequencia": "Introdução",
+      "dificuldade": "desafiadora",
+      "objetivo": "Compreender grupos sociais por meio de leitura, comparação e aplicação em situações do cotidiano.",
+      "bncc": [
+        {
+          "codigo": "EF03GE01",
+          "descricaoResumida": "Identificar e comparar aspectos culturais dos grupos sociais de seus lugares de vivência."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, relacione as informações ao espaço geográfico e responda com atenção.",
+      "textoApoio": {
+        "titulo": "Para compreender: Diferentes modos de viver",
+        "conteudo": "Os grupos sociais organizam a moradia, o trabalho e o lazer de maneiras variadas. Um exemplo é crianças que brincam em praças, quintais, aldeias ou áreas rurais. Para agir com responsabilidade, é importante comparar modos de vida sem considerar um superior ao outro.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto “Diferentes modos de viver”, o que devemos compreender sobre grupos sociais?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual alternativa apresenta um exemplo correto relacionado a “Diferentes modos de viver”?",
+          "alternativas": [
+            "Crianças que brincam em praças, quintais, aldeias ou áreas rurais.",
+            "Ignorar todas as relações entre pessoas, natureza e lugar.",
+            "Desperdiçar recursos porque eles nunca acabam.",
+            "Considerar que todos os lugares são iguais e nunca se transformam."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Explique com suas palavras por que crianças que brincam em praças, quintais, aldeias ou áreas rurais.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Compare “vida em área urbana” e “vida em área rural”. Indique uma diferença importante.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "situacao-problema",
+          "enunciado": "Uma turma está estudando grupos sociais. Que atitude ela pode adotar para comparar modos de vida sem considerar um superior ao outro?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Escreva um pequeno parágrafo relacionando “Diferentes modos de viver” ao lugar onde você vive ou a uma situação que conhece.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Os grupos sociais organizam a moradia, o trabalho e o lazer de maneiras variadas.",
+          "justificativa": "A resposta retoma a ideia central apresentada no texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "A primeira alternativa reproduz um exemplo correto e coerente com o tema."
+        },
+        {
+          "numero": 3,
+          "resposta": "Espera-se explicação coerente sobre o exemplo: crianças que brincam em praças, quintais, aldeias ou áreas rurais.",
+          "justificativa": "Critério de correção: relacionar o exemplo à ideia central do texto."
+        },
+        {
+          "numero": 4,
+          "resposta": "Espera-se distinguir vida em área urbana de vida em área rural.",
+          "justificativa": "Critério de correção: apresentar pelo menos uma diferença pertinente entre os dois elementos."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta esperada: comparar modos de vida sem considerar um superior ao outro.",
+          "justificativa": "A atitude deve ser possível, responsável e diretamente ligada à situação apresentada."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral relacionada ao tema e a uma situação conhecida pelo estudante.",
+          "justificativa": "Critério de correção: clareza, coerência, uso de informação da atividade e relação com o cotidiano."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-3ano-b3-geo-04-contribuicoes-dos-povos-indigenas",
+      "titulo": "Contribuições dos povos indígenas",
+      "tema": "Formação cultural brasileira",
+      "sequencia": "Atividade 4",
+      "tipoSequencia": "Introdução",
+      "dificuldade": "facil",
+      "objetivo": "Compreender formação cultural brasileira por meio de leitura, comparação e aplicação em situações do cotidiano.",
+      "bncc": [
+        {
+          "codigo": "EF03GE02",
+          "descricaoResumida": "Identificar marcas de contribuição cultural e econômica de grupos de diferentes origens."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, relacione as informações ao espaço geográfico e responda com atenção.",
+      "textoApoio": {
+        "titulo": "Para compreender: Contribuições dos povos indígenas",
+        "conteudo": "Povos indígenas contribuíram com conhecimentos, palavras, alimentos e modos de cuidar da natureza. Um exemplo é o uso da mandioca e de nomes indígenas para rios e cidades. Para agir com responsabilidade, é importante valorizar os povos indígenas atuais e combater estereótipos.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto “Contribuições dos povos indígenas”, o que devemos compreender sobre formação cultural brasileira?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual alternativa apresenta um exemplo correto relacionado a “Contribuições dos povos indígenas”?",
+          "alternativas": [
+            "O uso da mandioca e de nomes indígenas para rios e cidades.",
+            "Ignorar todas as relações entre pessoas, natureza e lugar.",
+            "Desperdiçar recursos porque eles nunca acabam.",
+            "Considerar que todos os lugares são iguais e nunca se transformam."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Explique com suas palavras por que o uso da mandioca e de nomes indígenas para rios e cidades.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Compare “contribuição indígena no passado” e “presença indígena no Brasil atual”. Indique uma diferença importante.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "situacao-problema",
+          "enunciado": "Uma turma está estudando formação cultural brasileira. Que atitude ela pode adotar para valorizar os povos indígenas atuais e combater estereótipos?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Escreva um pequeno parágrafo relacionando “Contribuições dos povos indígenas” ao lugar onde você vive ou a uma situação que conhece.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Povos indígenas contribuíram com conhecimentos, palavras, alimentos e modos de cuidar da natureza.",
+          "justificativa": "A resposta retoma a ideia central apresentada no texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "A primeira alternativa reproduz um exemplo correto e coerente com o tema."
+        },
+        {
+          "numero": 3,
+          "resposta": "Espera-se explicação coerente sobre o exemplo: o uso da mandioca e de nomes indígenas para rios e cidades.",
+          "justificativa": "Critério de correção: relacionar o exemplo à ideia central do texto."
+        },
+        {
+          "numero": 4,
+          "resposta": "Espera-se distinguir contribuição indígena no passado de presença indígena no Brasil atual.",
+          "justificativa": "Critério de correção: apresentar pelo menos uma diferença pertinente entre os dois elementos."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta esperada: valorizar os povos indígenas atuais e combater estereótipos.",
+          "justificativa": "A atitude deve ser possível, responsável e diretamente ligada à situação apresentada."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral relacionada ao tema e a uma situação conhecida pelo estudante.",
+          "justificativa": "Critério de correção: clareza, coerência, uso de informação da atividade e relação com o cotidiano."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-3ano-b3-geo-05-contribuicoes-africanas-e-afro-brasileiras",
+      "titulo": "Contribuições africanas e afro-brasileiras",
+      "tema": "Formação cultural brasileira",
+      "sequencia": "Atividade 5",
+      "tipoSequencia": "Introdução",
+      "dificuldade": "intermediaria",
+      "objetivo": "Compreender formação cultural brasileira por meio de leitura, comparação e aplicação em situações do cotidiano.",
+      "bncc": [
+        {
+          "codigo": "EF03GE02",
+          "descricaoResumida": "Identificar marcas de contribuição cultural e econômica de grupos de diferentes origens."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, relacione as informações ao espaço geográfico e responda com atenção.",
+      "textoApoio": {
+        "titulo": "Para compreender: Contribuições africanas e afro-brasileiras",
+        "conteudo": "Povos africanos e afro-brasileiros contribuíram para a música, a culinária, a língua e o trabalho no Brasil. Um exemplo é ritmos, técnicas agrícolas e pratos presentes no cotidiano. Para agir com responsabilidade, é importante reconhecer essas contribuições e enfrentar o racismo.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto “Contribuições africanas e afro-brasileiras”, o que devemos compreender sobre formação cultural brasileira?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual alternativa apresenta um exemplo correto relacionado a “Contribuições africanas e afro-brasileiras”?",
+          "alternativas": [
+            "Ritmos, técnicas agrícolas e pratos presentes no cotidiano.",
+            "Ignorar todas as relações entre pessoas, natureza e lugar.",
+            "Desperdiçar recursos porque eles nunca acabam.",
+            "Considerar que todos os lugares são iguais e nunca se transformam."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Explique com suas palavras por que ritmos, técnicas agrícolas e pratos presentes no cotidiano.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Compare “uma manifestação cultural” e “uma contribuição econômica”. Indique uma diferença importante.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "situacao-problema",
+          "enunciado": "Uma turma está estudando formação cultural brasileira. Que atitude ela pode adotar para reconhecer essas contribuições e enfrentar o racismo?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Escreva um pequeno parágrafo relacionando “Contribuições africanas e afro-brasileiras” ao lugar onde você vive ou a uma situação que conhece.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Povos africanos e afro-brasileiros contribuíram para a música, a culinária, a língua e o trabalho no Brasil.",
+          "justificativa": "A resposta retoma a ideia central apresentada no texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "A primeira alternativa reproduz um exemplo correto e coerente com o tema."
+        },
+        {
+          "numero": 3,
+          "resposta": "Espera-se explicação coerente sobre o exemplo: ritmos, técnicas agrícolas e pratos presentes no cotidiano.",
+          "justificativa": "Critério de correção: relacionar o exemplo à ideia central do texto."
+        },
+        {
+          "numero": 4,
+          "resposta": "Espera-se distinguir uma manifestação cultural de uma contribuição econômica.",
+          "justificativa": "Critério de correção: apresentar pelo menos uma diferença pertinente entre os dois elementos."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta esperada: reconhecer essas contribuições e enfrentar o racismo.",
+          "justificativa": "A atitude deve ser possível, responsável e diretamente ligada à situação apresentada."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral relacionada ao tema e a uma situação conhecida pelo estudante.",
+          "justificativa": "Critério de correção: clareza, coerência, uso de informação da atividade e relação com o cotidiano."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-3ano-b3-geo-06-migracoes-e-marcas-culturais",
+      "titulo": "Migrações e marcas culturais",
+      "tema": "Migração",
+      "sequencia": "Atividade 6",
+      "tipoSequencia": "Introdução",
+      "dificuldade": "desafiadora",
+      "objetivo": "Compreender migração por meio de leitura, comparação e aplicação em situações do cotidiano.",
+      "bncc": [
+        {
+          "codigo": "EF03GE02",
+          "descricaoResumida": "Identificar marcas de contribuição cultural e econômica de grupos de diferentes origens."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, relacione as informações ao espaço geográfico e responda com atenção.",
+      "textoApoio": {
+        "titulo": "Para compreender: Migrações e marcas culturais",
+        "conteudo": "Pessoas que migram levam conhecimentos e costumes e também aprendem com o novo lugar. Um exemplo é uma família que abre um comércio com alimentos de sua região de origem. Para agir com responsabilidade, é importante acolher migrantes e conhecer suas histórias.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto “Migrações e marcas culturais”, o que devemos compreender sobre migração?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual alternativa apresenta um exemplo correto relacionado a “Migrações e marcas culturais”?",
+          "alternativas": [
+            "Uma família que abre um comércio com alimentos de sua região de origem.",
+            "Ignorar todas as relações entre pessoas, natureza e lugar.",
+            "Desperdiçar recursos porque eles nunca acabam.",
+            "Considerar que todos os lugares são iguais e nunca se transformam."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Explique com suas palavras por que uma família que abre um comércio com alimentos de sua região de origem.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Compare “lugar de origem” e “lugar de destino”. Indique uma diferença importante.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "situacao-problema",
+          "enunciado": "Uma turma está estudando migração. Que atitude ela pode adotar para acolher migrantes e conhecer suas histórias?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Escreva um pequeno parágrafo relacionando “Migrações e marcas culturais” ao lugar onde você vive ou a uma situação que conhece.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Pessoas que migram levam conhecimentos e costumes e também aprendem com o novo lugar.",
+          "justificativa": "A resposta retoma a ideia central apresentada no texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "A primeira alternativa reproduz um exemplo correto e coerente com o tema."
+        },
+        {
+          "numero": 3,
+          "resposta": "Espera-se explicação coerente sobre o exemplo: uma família que abre um comércio com alimentos de sua região de origem.",
+          "justificativa": "Critério de correção: relacionar o exemplo à ideia central do texto."
+        },
+        {
+          "numero": 4,
+          "resposta": "Espera-se distinguir lugar de origem de lugar de destino.",
+          "justificativa": "Critério de correção: apresentar pelo menos uma diferença pertinente entre os dois elementos."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta esperada: acolher migrantes e conhecer suas histórias.",
+          "justificativa": "A atitude deve ser possível, responsável e diretamente ligada à situação apresentada."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral relacionada ao tema e a uma situação conhecida pelo estudante.",
+          "justificativa": "Critério de correção: clareza, coerência, uso de informação da atividade e relação com o cotidiano."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-3ano-b3-geo-07-povos-ribeirinhos",
+      "titulo": "Povos ribeirinhos",
+      "tema": "Comunidades tradicionais",
+      "sequencia": "Atividade 7",
+      "tipoSequencia": "Introdução",
+      "dificuldade": "facil",
+      "objetivo": "Compreender comunidades tradicionais por meio de leitura, comparação e aplicação em situações do cotidiano.",
+      "bncc": [
+        {
+          "codigo": "EF03GE03",
+          "descricaoResumida": "Reconhecer modos de vida de povos e comunidades tradicionais em distintos lugares."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, relacione as informações ao espaço geográfico e responda com atenção.",
+      "textoApoio": {
+        "titulo": "Para compreender: Povos ribeirinhos",
+        "conteudo": "Comunidades ribeirinhas organizam parte da vida em relação aos rios. Um exemplo é uso de barcos, pesca e períodos de cheia e vazante. Para agir com responsabilidade, é importante proteger os rios e respeitar os conhecimentos comunitários.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto “Povos ribeirinhos”, o que devemos compreender sobre comunidades tradicionais?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual alternativa apresenta um exemplo correto relacionado a “Povos ribeirinhos”?",
+          "alternativas": [
+            "Uso de barcos, pesca e períodos de cheia e vazante.",
+            "Ignorar todas as relações entre pessoas, natureza e lugar.",
+            "Desperdiçar recursos porque eles nunca acabam.",
+            "Considerar que todos os lugares são iguais e nunca se transformam."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Explique com suas palavras por que uso de barcos, pesca e períodos de cheia e vazante.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Compare “deslocamento por rio” e “deslocamento por estrada”. Indique uma diferença importante.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "situacao-problema",
+          "enunciado": "Uma turma está estudando comunidades tradicionais. Que atitude ela pode adotar para proteger os rios e respeitar os conhecimentos comunitários?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Escreva um pequeno parágrafo relacionando “Povos ribeirinhos” ao lugar onde você vive ou a uma situação que conhece.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Comunidades ribeirinhas organizam parte da vida em relação aos rios.",
+          "justificativa": "A resposta retoma a ideia central apresentada no texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "A primeira alternativa reproduz um exemplo correto e coerente com o tema."
+        },
+        {
+          "numero": 3,
+          "resposta": "Espera-se explicação coerente sobre o exemplo: uso de barcos, pesca e períodos de cheia e vazante.",
+          "justificativa": "Critério de correção: relacionar o exemplo à ideia central do texto."
+        },
+        {
+          "numero": 4,
+          "resposta": "Espera-se distinguir deslocamento por rio de deslocamento por estrada.",
+          "justificativa": "Critério de correção: apresentar pelo menos uma diferença pertinente entre os dois elementos."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta esperada: proteger os rios e respeitar os conhecimentos comunitários.",
+          "justificativa": "A atitude deve ser possível, responsável e diretamente ligada à situação apresentada."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral relacionada ao tema e a uma situação conhecida pelo estudante.",
+          "justificativa": "Critério de correção: clareza, coerência, uso de informação da atividade e relação com o cotidiano."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-3ano-b3-geo-08-comunidades-quilombolas",
+      "titulo": "Comunidades quilombolas",
+      "tema": "Comunidades tradicionais",
+      "sequencia": "Atividade 8",
+      "tipoSequencia": "Introdução",
+      "dificuldade": "intermediaria",
+      "objetivo": "Compreender comunidades tradicionais por meio de leitura, comparação e aplicação em situações do cotidiano.",
+      "bncc": [
+        {
+          "codigo": "EF03GE03",
+          "descricaoResumida": "Reconhecer modos de vida de povos e comunidades tradicionais em distintos lugares."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, relacione as informações ao espaço geográfico e responda com atenção.",
+      "textoApoio": {
+        "titulo": "Para compreender: Comunidades quilombolas",
+        "conteudo": "Comunidades quilombolas preservam territórios, memórias, trabalhos e práticas culturais. Um exemplo é cultivo coletivo, celebrações e transmissão de histórias. Para agir com responsabilidade, é importante respeitar direitos territoriais e valorizar a cultura quilombola.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto “Comunidades quilombolas”, o que devemos compreender sobre comunidades tradicionais?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual alternativa apresenta um exemplo correto relacionado a “Comunidades quilombolas”?",
+          "alternativas": [
+            "Cultivo coletivo, celebrações e transmissão de histórias.",
+            "Ignorar todas as relações entre pessoas, natureza e lugar.",
+            "Desperdiçar recursos porque eles nunca acabam.",
+            "Considerar que todos os lugares são iguais e nunca se transformam."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Explique com suas palavras por que cultivo coletivo, celebrações e transmissão de histórias.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Compare “memória individual” e “memória coletiva”. Indique uma diferença importante.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "situacao-problema",
+          "enunciado": "Uma turma está estudando comunidades tradicionais. Que atitude ela pode adotar para respeitar direitos territoriais e valorizar a cultura quilombola?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Escreva um pequeno parágrafo relacionando “Comunidades quilombolas” ao lugar onde você vive ou a uma situação que conhece.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Comunidades quilombolas preservam territórios, memórias, trabalhos e práticas culturais.",
+          "justificativa": "A resposta retoma a ideia central apresentada no texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "A primeira alternativa reproduz um exemplo correto e coerente com o tema."
+        },
+        {
+          "numero": 3,
+          "resposta": "Espera-se explicação coerente sobre o exemplo: cultivo coletivo, celebrações e transmissão de histórias.",
+          "justificativa": "Critério de correção: relacionar o exemplo à ideia central do texto."
+        },
+        {
+          "numero": 4,
+          "resposta": "Espera-se distinguir memória individual de memória coletiva.",
+          "justificativa": "Critério de correção: apresentar pelo menos uma diferença pertinente entre os dois elementos."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta esperada: respeitar direitos territoriais e valorizar a cultura quilombola.",
+          "justificativa": "A atitude deve ser possível, responsável e diretamente ligada à situação apresentada."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral relacionada ao tema e a uma situação conhecida pelo estudante.",
+          "justificativa": "Critério de correção: clareza, coerência, uso de informação da atividade e relação com o cotidiano."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-3ano-b3-geo-09-povos-do-campo-e-da-floresta",
+      "titulo": "Povos do campo e da floresta",
+      "tema": "Comunidades tradicionais",
+      "sequencia": "Atividade 9",
+      "tipoSequencia": "Introdução",
+      "dificuldade": "desafiadora",
+      "objetivo": "Compreender comunidades tradicionais por meio de leitura, comparação e aplicação em situações do cotidiano.",
+      "bncc": [
+        {
+          "codigo": "EF03GE03",
+          "descricaoResumida": "Reconhecer modos de vida de povos e comunidades tradicionais em distintos lugares."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, relacione as informações ao espaço geográfico e responda com atenção.",
+      "textoApoio": {
+        "titulo": "Para compreender: Povos do campo e da floresta",
+        "conteudo": "Povos do campo e da floresta desenvolvem modos de vida relacionados ao território e aos recursos naturais. Um exemplo é extrativismo responsável, agricultura familiar e saberes sobre plantas. Para agir com responsabilidade, é importante usar os recursos sem destruir as condições de renovação.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto “Povos do campo e da floresta”, o que devemos compreender sobre comunidades tradicionais?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual alternativa apresenta um exemplo correto relacionado a “Povos do campo e da floresta”?",
+          "alternativas": [
+            "Extrativismo responsável, agricultura familiar e saberes sobre plantas.",
+            "Ignorar todas as relações entre pessoas, natureza e lugar.",
+            "Desperdiçar recursos porque eles nunca acabam.",
+            "Considerar que todos os lugares são iguais e nunca se transformam."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Explique com suas palavras por que extrativismo responsável, agricultura familiar e saberes sobre plantas.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Compare “uso sustentável” e “exploração predatória”. Indique uma diferença importante.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "situacao-problema",
+          "enunciado": "Uma turma está estudando comunidades tradicionais. Que atitude ela pode adotar para usar os recursos sem destruir as condições de renovação?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Escreva um pequeno parágrafo relacionando “Povos do campo e da floresta” ao lugar onde você vive ou a uma situação que conhece.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Povos do campo e da floresta desenvolvem modos de vida relacionados ao território e aos recursos naturais.",
+          "justificativa": "A resposta retoma a ideia central apresentada no texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "A primeira alternativa reproduz um exemplo correto e coerente com o tema."
+        },
+        {
+          "numero": 3,
+          "resposta": "Espera-se explicação coerente sobre o exemplo: extrativismo responsável, agricultura familiar e saberes sobre plantas.",
+          "justificativa": "Critério de correção: relacionar o exemplo à ideia central do texto."
+        },
+        {
+          "numero": 4,
+          "resposta": "Espera-se distinguir uso sustentável de exploração predatória.",
+          "justificativa": "Critério de correção: apresentar pelo menos uma diferença pertinente entre os dois elementos."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta esperada: usar os recursos sem destruir as condições de renovação.",
+          "justificativa": "A atitude deve ser possível, responsável e diretamente ligada à situação apresentada."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral relacionada ao tema e a uma situação conhecida pelo estudante.",
+          "justificativa": "Critério de correção: clareza, coerência, uso de informação da atividade e relação com o cotidiano."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-3ano-b3-geo-10-paisagem-de-ontem-e-de-hoje",
+      "titulo": "Paisagem de ontem e de hoje",
+      "tema": "Transformação das paisagens",
+      "sequencia": "Atividade 10",
+      "tipoSequencia": "Introdução",
+      "dificuldade": "facil",
+      "objetivo": "Compreender transformação das paisagens por meio de leitura, comparação e aplicação em situações do cotidiano.",
+      "bncc": [
+        {
+          "codigo": "EF03GE04",
+          "descricaoResumida": "Explicar mudanças nas paisagens resultantes da ação humana e dos processos naturais."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, relacione as informações ao espaço geográfico e responda com atenção.",
+      "textoApoio": {
+        "titulo": "Para compreender: Paisagem de ontem e de hoje",
+        "conteudo": "Paisagens mudam com novas construções, vias, vegetação e também por processos naturais. Um exemplo é uma rua que ganhou casas, árvores e calçadas ao longo dos anos. Para agir com responsabilidade, é importante comparar fotografias e relatos de épocas diferentes.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto “Paisagem de ontem e de hoje”, o que devemos compreender sobre transformação das paisagens?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual alternativa apresenta um exemplo correto relacionado a “Paisagem de ontem e de hoje”?",
+          "alternativas": [
+            "Uma rua que ganhou casas, árvores e calçadas ao longo dos anos.",
+            "Ignorar todas as relações entre pessoas, natureza e lugar.",
+            "Desperdiçar recursos porque eles nunca acabam.",
+            "Considerar que todos os lugares são iguais e nunca se transformam."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Explique com suas palavras por que uma rua que ganhou casas, árvores e calçadas ao longo dos anos.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Compare “elemento que permaneceu” e “elemento que mudou”. Indique uma diferença importante.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "situacao-problema",
+          "enunciado": "Uma turma está estudando transformação das paisagens. Que atitude ela pode adotar para comparar fotografias e relatos de épocas diferentes?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Escreva um pequeno parágrafo relacionando “Paisagem de ontem e de hoje” ao lugar onde você vive ou a uma situação que conhece.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Paisagens mudam com novas construções, vias, vegetação e também por processos naturais.",
+          "justificativa": "A resposta retoma a ideia central apresentada no texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "A primeira alternativa reproduz um exemplo correto e coerente com o tema."
+        },
+        {
+          "numero": 3,
+          "resposta": "Espera-se explicação coerente sobre o exemplo: uma rua que ganhou casas, árvores e calçadas ao longo dos anos.",
+          "justificativa": "Critério de correção: relacionar o exemplo à ideia central do texto."
+        },
+        {
+          "numero": 4,
+          "resposta": "Espera-se distinguir elemento que permaneceu de elemento que mudou.",
+          "justificativa": "Critério de correção: apresentar pelo menos uma diferença pertinente entre os dois elementos."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta esperada: comparar fotografias e relatos de épocas diferentes.",
+          "justificativa": "A atitude deve ser possível, responsável e diretamente ligada à situação apresentada."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral relacionada ao tema e a uma situação conhecida pelo estudante.",
+          "justificativa": "Critério de correção: clareza, coerência, uso de informação da atividade e relação com o cotidiano."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-3ano-b3-geo-11-a-natureza-transforma-a-paisagem",
+      "titulo": "A natureza transforma a paisagem",
+      "tema": "Processos naturais",
+      "sequencia": "Atividade 11",
+      "tipoSequencia": "Desenvolvimento",
+      "dificuldade": "intermediaria",
+      "objetivo": "Compreender processos naturais por meio de leitura, comparação e aplicação em situações do cotidiano.",
+      "bncc": [
+        {
+          "codigo": "EF03GE04",
+          "descricaoResumida": "Explicar mudanças nas paisagens resultantes da ação humana e dos processos naturais."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, relacione as informações ao espaço geográfico e responda com atenção.",
+      "textoApoio": {
+        "titulo": "Para compreender: A natureza transforma a paisagem",
+        "conteudo": "Chuvas, ventos, rios e crescimento da vegetação transformam paisagens ao longo do tempo. Um exemplo é a margem de um rio modificada pela erosão depois de muitas chuvas. Para agir com responsabilidade, é importante evitar ocupações perigosas e conservar a vegetação.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto “A natureza transforma a paisagem”, o que devemos compreender sobre processos naturais?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual alternativa apresenta um exemplo correto relacionado a “A natureza transforma a paisagem”?",
+          "alternativas": [
+            "A margem de um rio modificada pela erosão depois de muitas chuvas.",
+            "Ignorar todas as relações entre pessoas, natureza e lugar.",
+            "Desperdiçar recursos porque eles nunca acabam.",
+            "Considerar que todos os lugares são iguais e nunca se transformam."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Explique com suas palavras por que a margem de um rio modificada pela erosão depois de muitas chuvas.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Compare “transformação lenta” e “transformação rápida”. Indique uma diferença importante.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "situacao-problema",
+          "enunciado": "Uma turma está estudando processos naturais. Que atitude ela pode adotar para evitar ocupações perigosas e conservar a vegetação?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Escreva um pequeno parágrafo relacionando “A natureza transforma a paisagem” ao lugar onde você vive ou a uma situação que conhece.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Chuvas, ventos, rios e crescimento da vegetação transformam paisagens ao longo do tempo.",
+          "justificativa": "A resposta retoma a ideia central apresentada no texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "A primeira alternativa reproduz um exemplo correto e coerente com o tema."
+        },
+        {
+          "numero": 3,
+          "resposta": "Espera-se explicação coerente sobre o exemplo: a margem de um rio modificada pela erosão depois de muitas chuvas.",
+          "justificativa": "Critério de correção: relacionar o exemplo à ideia central do texto."
+        },
+        {
+          "numero": 4,
+          "resposta": "Espera-se distinguir transformação lenta de transformação rápida.",
+          "justificativa": "Critério de correção: apresentar pelo menos uma diferença pertinente entre os dois elementos."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta esperada: evitar ocupações perigosas e conservar a vegetação.",
+          "justificativa": "A atitude deve ser possível, responsável e diretamente ligada à situação apresentada."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral relacionada ao tema e a uma situação conhecida pelo estudante.",
+          "justificativa": "Critério de correção: clareza, coerência, uso de informação da atividade e relação com o cotidiano."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-3ano-b3-geo-12-a-acao-humana-transforma-a-paisagem",
+      "titulo": "A ação humana transforma a paisagem",
+      "tema": "Ação humana",
+      "sequencia": "Atividade 12",
+      "tipoSequencia": "Desenvolvimento",
+      "dificuldade": "desafiadora",
+      "objetivo": "Compreender ação humana por meio de leitura, comparação e aplicação em situações do cotidiano.",
+      "bncc": [
+        {
+          "codigo": "EF03GE04",
+          "descricaoResumida": "Explicar mudanças nas paisagens resultantes da ação humana e dos processos naturais."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, relacione as informações ao espaço geográfico e responda com atenção.",
+      "textoApoio": {
+        "titulo": "Para compreender: A ação humana transforma a paisagem",
+        "conteudo": "Construções, plantações e retirada de vegetação alteram a paisagem. Um exemplo é uma área verde transformada em loteamento. Para agir com responsabilidade, é importante planejar mudanças e proteger áreas importantes.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto “A ação humana transforma a paisagem”, o que devemos compreender sobre ação humana?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual alternativa apresenta um exemplo correto relacionado a “A ação humana transforma a paisagem”?",
+          "alternativas": [
+            "Uma área verde transformada em loteamento.",
+            "Ignorar todas as relações entre pessoas, natureza e lugar.",
+            "Desperdiçar recursos porque eles nunca acabam.",
+            "Considerar que todos os lugares são iguais e nunca se transformam."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Explique com suas palavras por que uma área verde transformada em loteamento.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Compare “transformação planejada” e “transformação sem cuidado ambiental”. Indique uma diferença importante.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "situacao-problema",
+          "enunciado": "Uma turma está estudando ação humana. Que atitude ela pode adotar para planejar mudanças e proteger áreas importantes?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Escreva um pequeno parágrafo relacionando “A ação humana transforma a paisagem” ao lugar onde você vive ou a uma situação que conhece.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Construções, plantações e retirada de vegetação alteram a paisagem.",
+          "justificativa": "A resposta retoma a ideia central apresentada no texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "A primeira alternativa reproduz um exemplo correto e coerente com o tema."
+        },
+        {
+          "numero": 3,
+          "resposta": "Espera-se explicação coerente sobre o exemplo: uma área verde transformada em loteamento.",
+          "justificativa": "Critério de correção: relacionar o exemplo à ideia central do texto."
+        },
+        {
+          "numero": 4,
+          "resposta": "Espera-se distinguir transformação planejada de transformação sem cuidado ambiental.",
+          "justificativa": "Critério de correção: apresentar pelo menos uma diferença pertinente entre os dois elementos."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta esperada: planejar mudanças e proteger áreas importantes.",
+          "justificativa": "A atitude deve ser possível, responsável e diretamente ligada à situação apresentada."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral relacionada ao tema e a uma situação conhecida pelo estudante.",
+          "justificativa": "Critério de correção: clareza, coerência, uso de informação da atividade e relação com o cotidiano."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-3ano-b3-geo-13-do-campo-a-mesa",
+      "titulo": "Do campo à mesa",
+      "tema": "Produtos da natureza",
+      "sequencia": "Atividade 13",
+      "tipoSequencia": "Desenvolvimento",
+      "dificuldade": "facil",
+      "objetivo": "Compreender produtos da natureza por meio de leitura, comparação e aplicação em situações do cotidiano.",
+      "bncc": [
+        {
+          "codigo": "EF03GE05",
+          "descricaoResumida": "Identificar alimentos, minerais e outros produtos extraídos da natureza, comparando atividades de trabalho."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, relacione as informações ao espaço geográfico e responda com atenção.",
+      "textoApoio": {
+        "titulo": "Para compreender: Do campo à mesa",
+        "conteudo": "Muitos alimentos passam por etapas de cultivo, transporte, transformação e venda. Um exemplo é o milho cultivado no campo que vira farinha e chega ao mercado. Para agir com responsabilidade, é importante reduzir desperdícios e valorizar quem participa da produção.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto “Do campo à mesa”, o que devemos compreender sobre produtos da natureza?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual alternativa apresenta um exemplo correto relacionado a “Do campo à mesa”?",
+          "alternativas": [
+            "O milho cultivado no campo que vira farinha e chega ao mercado.",
+            "Ignorar todas as relações entre pessoas, natureza e lugar.",
+            "Desperdiçar recursos porque eles nunca acabam.",
+            "Considerar que todos os lugares são iguais e nunca se transformam."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Explique com suas palavras por que o milho cultivado no campo que vira farinha e chega ao mercado.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Compare “produto in natura” e “produto transformado”. Indique uma diferença importante.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "situacao-problema",
+          "enunciado": "Uma turma está estudando produtos da natureza. Que atitude ela pode adotar para reduzir desperdícios e valorizar quem participa da produção?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Escreva um pequeno parágrafo relacionando “Do campo à mesa” ao lugar onde você vive ou a uma situação que conhece.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Muitos alimentos passam por etapas de cultivo, transporte, transformação e venda.",
+          "justificativa": "A resposta retoma a ideia central apresentada no texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "A primeira alternativa reproduz um exemplo correto e coerente com o tema."
+        },
+        {
+          "numero": 3,
+          "resposta": "Espera-se explicação coerente sobre o exemplo: o milho cultivado no campo que vira farinha e chega ao mercado.",
+          "justificativa": "Critério de correção: relacionar o exemplo à ideia central do texto."
+        },
+        {
+          "numero": 4,
+          "resposta": "Espera-se distinguir produto in natura de produto transformado.",
+          "justificativa": "Critério de correção: apresentar pelo menos uma diferença pertinente entre os dois elementos."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta esperada: reduzir desperdícios e valorizar quem participa da produção.",
+          "justificativa": "A atitude deve ser possível, responsável e diretamente ligada à situação apresentada."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral relacionada ao tema e a uma situação conhecida pelo estudante.",
+          "justificativa": "Critério de correção: clareza, coerência, uso de informação da atividade e relação com o cotidiano."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-3ano-b3-geo-14-minerais-no-cotidiano",
+      "titulo": "Minerais no cotidiano",
+      "tema": "Extrativismo mineral",
+      "sequencia": "Atividade 14",
+      "tipoSequencia": "Desenvolvimento",
+      "dificuldade": "intermediaria",
+      "objetivo": "Compreender extrativismo mineral por meio de leitura, comparação e aplicação em situações do cotidiano.",
+      "bncc": [
+        {
+          "codigo": "EF03GE05",
+          "descricaoResumida": "Identificar alimentos, minerais e outros produtos extraídos da natureza, comparando atividades de trabalho."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, relacione as informações ao espaço geográfico e responda com atenção.",
+      "textoApoio": {
+        "titulo": "Para compreender: Minerais no cotidiano",
+        "conteudo": "Minerais extraídos da natureza são usados em construções, objetos e tecnologias. Um exemplo é ferro usado em ferramentas e estruturas. Para agir com responsabilidade, é importante evitar desperdício e apoiar a reciclagem de materiais.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto “Minerais no cotidiano”, o que devemos compreender sobre extrativismo mineral?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual alternativa apresenta um exemplo correto relacionado a “Minerais no cotidiano”?",
+          "alternativas": [
+            "Ferro usado em ferramentas e estruturas.",
+            "Ignorar todas as relações entre pessoas, natureza e lugar.",
+            "Desperdiçar recursos porque eles nunca acabam.",
+            "Considerar que todos os lugares são iguais e nunca se transformam."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Explique com suas palavras por que ferro usado em ferramentas e estruturas.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Compare “extração mineral” e “reciclagem de metal”. Indique uma diferença importante.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "situacao-problema",
+          "enunciado": "Uma turma está estudando extrativismo mineral. Que atitude ela pode adotar para evitar desperdício e apoiar a reciclagem de materiais?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Escreva um pequeno parágrafo relacionando “Minerais no cotidiano” ao lugar onde você vive ou a uma situação que conhece.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Minerais extraídos da natureza são usados em construções, objetos e tecnologias.",
+          "justificativa": "A resposta retoma a ideia central apresentada no texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "A primeira alternativa reproduz um exemplo correto e coerente com o tema."
+        },
+        {
+          "numero": 3,
+          "resposta": "Espera-se explicação coerente sobre o exemplo: ferro usado em ferramentas e estruturas.",
+          "justificativa": "Critério de correção: relacionar o exemplo à ideia central do texto."
+        },
+        {
+          "numero": 4,
+          "resposta": "Espera-se distinguir extração mineral de reciclagem de metal.",
+          "justificativa": "Critério de correção: apresentar pelo menos uma diferença pertinente entre os dois elementos."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta esperada: evitar desperdício e apoiar a reciclagem de materiais.",
+          "justificativa": "A atitude deve ser possível, responsável e diretamente ligada à situação apresentada."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral relacionada ao tema e a uma situação conhecida pelo estudante.",
+          "justificativa": "Critério de correção: clareza, coerência, uso de informação da atividade e relação com o cotidiano."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-3ano-b3-geo-15-trabalho-no-campo-e-na-cidade",
+      "titulo": "Trabalho no campo e na cidade",
+      "tema": "Atividades econômicas",
+      "sequencia": "Atividade 15",
+      "tipoSequencia": "Desenvolvimento",
+      "dificuldade": "desafiadora",
+      "objetivo": "Compreender atividades econômicas por meio de leitura, comparação e aplicação em situações do cotidiano.",
+      "bncc": [
+        {
+          "codigo": "EF03GE05",
+          "descricaoResumida": "Identificar alimentos, minerais e outros produtos extraídos da natureza, comparando atividades de trabalho."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, relacione as informações ao espaço geográfico e responda com atenção.",
+      "textoApoio": {
+        "titulo": "Para compreender: Trabalho no campo e na cidade",
+        "conteudo": "Campo e cidade possuem trabalhos diferentes e interdependentes. Um exemplo é alimentos produzidos no campo e vendidos ou processados na cidade. Para agir com responsabilidade, é importante valorizar todos os trabalhadores da cadeia produtiva.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto “Trabalho no campo e na cidade”, o que devemos compreender sobre atividades econômicas?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual alternativa apresenta um exemplo correto relacionado a “Trabalho no campo e na cidade”?",
+          "alternativas": [
+            "Alimentos produzidos no campo e vendidos ou processados na cidade.",
+            "Ignorar todas as relações entre pessoas, natureza e lugar.",
+            "Desperdiçar recursos porque eles nunca acabam.",
+            "Considerar que todos os lugares são iguais e nunca se transformam."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Explique com suas palavras por que alimentos produzidos no campo e vendidos ou processados na cidade.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Compare “produção rural” e “comércio urbano”. Indique uma diferença importante.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "situacao-problema",
+          "enunciado": "Uma turma está estudando atividades econômicas. Que atitude ela pode adotar para valorizar todos os trabalhadores da cadeia produtiva?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Escreva um pequeno parágrafo relacionando “Trabalho no campo e na cidade” ao lugar onde você vive ou a uma situação que conhece.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Campo e cidade possuem trabalhos diferentes e interdependentes.",
+          "justificativa": "A resposta retoma a ideia central apresentada no texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "A primeira alternativa reproduz um exemplo correto e coerente com o tema."
+        },
+        {
+          "numero": 3,
+          "resposta": "Espera-se explicação coerente sobre o exemplo: alimentos produzidos no campo e vendidos ou processados na cidade.",
+          "justificativa": "Critério de correção: relacionar o exemplo à ideia central do texto."
+        },
+        {
+          "numero": 4,
+          "resposta": "Espera-se distinguir produção rural de comércio urbano.",
+          "justificativa": "Critério de correção: apresentar pelo menos uma diferença pertinente entre os dois elementos."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta esperada: valorizar todos os trabalhadores da cadeia produtiva.",
+          "justificativa": "A atitude deve ser possível, responsável e diretamente ligada à situação apresentada."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral relacionada ao tema e a uma situação conhecida pelo estudante.",
+          "justificativa": "Critério de correção: clareza, coerência, uso de informação da atividade e relação com o cotidiano."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-3ano-b3-geo-16-maquete-e-planta-da-sala",
+      "titulo": "Maquete e planta da sala",
+      "tema": "Representação espacial",
+      "sequencia": "Atividade 16",
+      "tipoSequencia": "Desenvolvimento",
+      "dificuldade": "facil",
+      "objetivo": "Compreender representação espacial por meio de leitura, comparação e aplicação em situações do cotidiano.",
+      "bncc": [
+        {
+          "codigo": "EF03GE06",
+          "descricaoResumida": "Identificar e interpretar representações bidimensionais e tridimensionais de diferentes lugares."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, relacione as informações ao espaço geográfico e responda com atenção.",
+      "textoApoio": {
+        "titulo": "Para compreender: Maquete e planta da sala",
+        "conteudo": "Uma maquete representa o espaço em três dimensões; uma planta o mostra visto de cima. Um exemplo é representar mesas, porta e quadro de uma sala. Para agir com responsabilidade, é importante observar proporção e posição dos elementos.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto “Maquete e planta da sala”, o que devemos compreender sobre representação espacial?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual alternativa apresenta um exemplo correto relacionado a “Maquete e planta da sala”?",
+          "alternativas": [
+            "Representar mesas, porta e quadro de uma sala.",
+            "Ignorar todas as relações entre pessoas, natureza e lugar.",
+            "Desperdiçar recursos porque eles nunca acabam.",
+            "Considerar que todos os lugares são iguais e nunca se transformam."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Explique com suas palavras por que representar mesas, porta e quadro de uma sala.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Compare “representação bidimensional” e “representação tridimensional”. Indique uma diferença importante.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "situacao-problema",
+          "enunciado": "Uma turma está estudando representação espacial. Que atitude ela pode adotar para observar proporção e posição dos elementos?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Escreva um pequeno parágrafo relacionando “Maquete e planta da sala” ao lugar onde você vive ou a uma situação que conhece.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Uma maquete representa o espaço em três dimensões; uma planta o mostra visto de cima.",
+          "justificativa": "A resposta retoma a ideia central apresentada no texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "A primeira alternativa reproduz um exemplo correto e coerente com o tema."
+        },
+        {
+          "numero": 3,
+          "resposta": "Espera-se explicação coerente sobre o exemplo: representar mesas, porta e quadro de uma sala.",
+          "justificativa": "Critério de correção: relacionar o exemplo à ideia central do texto."
+        },
+        {
+          "numero": 4,
+          "resposta": "Espera-se distinguir representação bidimensional de representação tridimensional.",
+          "justificativa": "Critério de correção: apresentar pelo menos uma diferença pertinente entre os dois elementos."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta esperada: observar proporção e posição dos elementos.",
+          "justificativa": "A atitude deve ser possível, responsável e diretamente ligada à situação apresentada."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral relacionada ao tema e a uma situação conhecida pelo estudante.",
+          "justificativa": "Critério de correção: clareza, coerência, uso de informação da atividade e relação com o cotidiano."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-3ano-b3-geo-17-fotografia-aerea-e-mapa",
+      "titulo": "Fotografia aérea e mapa",
+      "tema": "Representação espacial",
+      "sequencia": "Atividade 17",
+      "tipoSequencia": "Desenvolvimento",
+      "dificuldade": "intermediaria",
+      "objetivo": "Compreender representação espacial por meio de leitura, comparação e aplicação em situações do cotidiano.",
+      "bncc": [
+        {
+          "codigo": "EF03GE06",
+          "descricaoResumida": "Identificar e interpretar representações bidimensionais e tridimensionais de diferentes lugares."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, relacione as informações ao espaço geográfico e responda com atenção.",
+      "textoApoio": {
+        "titulo": "Para compreender: Fotografia aérea e mapa",
+        "conteudo": "Fotografias aéreas registram a aparência do lugar; mapas selecionam informações usando símbolos. Um exemplo é localizar ruas e praças em duas representações do bairro. Para agir com responsabilidade, é importante comparar o ponto de vista e a finalidade de cada imagem.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto “Fotografia aérea e mapa”, o que devemos compreender sobre representação espacial?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual alternativa apresenta um exemplo correto relacionado a “Fotografia aérea e mapa”?",
+          "alternativas": [
+            "Localizar ruas e praças em duas representações do bairro.",
+            "Ignorar todas as relações entre pessoas, natureza e lugar.",
+            "Desperdiçar recursos porque eles nunca acabam.",
+            "Considerar que todos os lugares são iguais e nunca se transformam."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Explique com suas palavras por que localizar ruas e praças em duas representações do bairro.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Compare “fotografia aérea” e “mapa temático”. Indique uma diferença importante.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "situacao-problema",
+          "enunciado": "Uma turma está estudando representação espacial. Que atitude ela pode adotar para comparar o ponto de vista e a finalidade de cada imagem?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Escreva um pequeno parágrafo relacionando “Fotografia aérea e mapa” ao lugar onde você vive ou a uma situação que conhece.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Fotografias aéreas registram a aparência do lugar; mapas selecionam informações usando símbolos.",
+          "justificativa": "A resposta retoma a ideia central apresentada no texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "A primeira alternativa reproduz um exemplo correto e coerente com o tema."
+        },
+        {
+          "numero": 3,
+          "resposta": "Espera-se explicação coerente sobre o exemplo: localizar ruas e praças em duas representações do bairro.",
+          "justificativa": "Critério de correção: relacionar o exemplo à ideia central do texto."
+        },
+        {
+          "numero": 4,
+          "resposta": "Espera-se distinguir fotografia aérea de mapa temático.",
+          "justificativa": "Critério de correção: apresentar pelo menos uma diferença pertinente entre os dois elementos."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta esperada: comparar o ponto de vista e a finalidade de cada imagem.",
+          "justificativa": "A atitude deve ser possível, responsável e diretamente ligada à situação apresentada."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral relacionada ao tema e a uma situação conhecida pelo estudante.",
+          "justificativa": "Critério de correção: clareza, coerência, uso de informação da atividade e relação com o cotidiano."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-3ano-b3-geo-18-croqui-do-caminho-da-escola",
+      "titulo": "Croqui do caminho da escola",
+      "tema": "Representação espacial",
+      "sequencia": "Atividade 18",
+      "tipoSequencia": "Desenvolvimento",
+      "dificuldade": "desafiadora",
+      "objetivo": "Compreender representação espacial por meio de leitura, comparação e aplicação em situações do cotidiano.",
+      "bncc": [
+        {
+          "codigo": "EF03GE06",
+          "descricaoResumida": "Identificar e interpretar representações bidimensionais e tridimensionais de diferentes lugares."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, relacione as informações ao espaço geográfico e responda com atenção.",
+      "textoApoio": {
+        "titulo": "Para compreender: Croqui do caminho da escola",
+        "conteudo": "Croquis são desenhos simples que destacam referências importantes de um trajeto. Um exemplo é desenhar esquinas, praça e mercado entre a casa e a escola. Para agir com responsabilidade, é importante organizar o percurso com começo, direção e referências.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto “Croqui do caminho da escola”, o que devemos compreender sobre representação espacial?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual alternativa apresenta um exemplo correto relacionado a “Croqui do caminho da escola”?",
+          "alternativas": [
+            "Desenhar esquinas, praça e mercado entre a casa e a escola.",
+            "Ignorar todas as relações entre pessoas, natureza e lugar.",
+            "Desperdiçar recursos porque eles nunca acabam.",
+            "Considerar que todos os lugares são iguais e nunca se transformam."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Explique com suas palavras por que desenhar esquinas, praça e mercado entre a casa e a escola.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Compare “trajeto real” e “trajeto representado”. Indique uma diferença importante.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "situacao-problema",
+          "enunciado": "Uma turma está estudando representação espacial. Que atitude ela pode adotar para organizar o percurso com começo, direção e referências?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Escreva um pequeno parágrafo relacionando “Croqui do caminho da escola” ao lugar onde você vive ou a uma situação que conhece.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Croquis são desenhos simples que destacam referências importantes de um trajeto.",
+          "justificativa": "A resposta retoma a ideia central apresentada no texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "A primeira alternativa reproduz um exemplo correto e coerente com o tema."
+        },
+        {
+          "numero": 3,
+          "resposta": "Espera-se explicação coerente sobre o exemplo: desenhar esquinas, praça e mercado entre a casa e a escola.",
+          "justificativa": "Critério de correção: relacionar o exemplo à ideia central do texto."
+        },
+        {
+          "numero": 4,
+          "resposta": "Espera-se distinguir trajeto real de trajeto representado.",
+          "justificativa": "Critério de correção: apresentar pelo menos uma diferença pertinente entre os dois elementos."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta esperada: organizar o percurso com começo, direção e referências.",
+          "justificativa": "A atitude deve ser possível, responsável e diretamente ligada à situação apresentada."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral relacionada ao tema e a uma situação conhecida pelo estudante.",
+          "justificativa": "Critério de correção: clareza, coerência, uso de informação da atividade e relação com o cotidiano."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-3ano-b3-geo-19-simbolos-e-legendas",
+      "titulo": "Símbolos e legendas",
+      "tema": "Alfabetização cartográfica",
+      "sequencia": "Atividade 19",
+      "tipoSequencia": "Desenvolvimento",
+      "dificuldade": "facil",
+      "objetivo": "Compreender alfabetização cartográfica por meio de leitura, comparação e aplicação em situações do cotidiano.",
+      "bncc": [
+        {
+          "codigo": "EF03GE07",
+          "descricaoResumida": "Reconhecer e elaborar legendas com símbolos em representações cartográficas."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, relacione as informações ao espaço geográfico e responda com atenção.",
+      "textoApoio": {
+        "titulo": "Para compreender: Símbolos e legendas",
+        "conteudo": "A legenda explica o significado das cores e dos símbolos usados em um mapa. Um exemplo é um quadrado azul para escola e uma área verde para praça. Para agir com responsabilidade, é importante usar símbolos diferentes e explicá-los claramente.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto “Símbolos e legendas”, o que devemos compreender sobre alfabetização cartográfica?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual alternativa apresenta um exemplo correto relacionado a “Símbolos e legendas”?",
+          "alternativas": [
+            "Um quadrado azul para escola e uma área verde para praça.",
+            "Ignorar todas as relações entre pessoas, natureza e lugar.",
+            "Desperdiçar recursos porque eles nunca acabam.",
+            "Considerar que todos os lugares são iguais e nunca se transformam."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Explique com suas palavras por que um quadrado azul para escola e uma área verde para praça.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Compare “símbolo no mapa” e “explicação na legenda”. Indique uma diferença importante.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "situacao-problema",
+          "enunciado": "Uma turma está estudando alfabetização cartográfica. Que atitude ela pode adotar para usar símbolos diferentes e explicá-los claramente?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Escreva um pequeno parágrafo relacionando “Símbolos e legendas” ao lugar onde você vive ou a uma situação que conhece.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "A legenda explica o significado das cores e dos símbolos usados em um mapa.",
+          "justificativa": "A resposta retoma a ideia central apresentada no texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "A primeira alternativa reproduz um exemplo correto e coerente com o tema."
+        },
+        {
+          "numero": 3,
+          "resposta": "Espera-se explicação coerente sobre o exemplo: um quadrado azul para escola e uma área verde para praça.",
+          "justificativa": "Critério de correção: relacionar o exemplo à ideia central do texto."
+        },
+        {
+          "numero": 4,
+          "resposta": "Espera-se distinguir símbolo no mapa de explicação na legenda.",
+          "justificativa": "Critério de correção: apresentar pelo menos uma diferença pertinente entre os dois elementos."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta esperada: usar símbolos diferentes e explicá-los claramente.",
+          "justificativa": "A atitude deve ser possível, responsável e diretamente ligada à situação apresentada."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral relacionada ao tema e a uma situação conhecida pelo estudante.",
+          "justificativa": "Critério de correção: clareza, coerência, uso de informação da atividade e relação com o cotidiano."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-3ano-b3-geo-20-mapa-dos-servicos-do-bairro",
+      "titulo": "Mapa dos serviços do bairro",
+      "tema": "Alfabetização cartográfica",
+      "sequencia": "Atividade 20",
+      "tipoSequencia": "Desenvolvimento",
+      "dificuldade": "intermediaria",
+      "objetivo": "Compreender alfabetização cartográfica por meio de leitura, comparação e aplicação em situações do cotidiano.",
+      "bncc": [
+        {
+          "codigo": "EF03GE07",
+          "descricaoResumida": "Reconhecer e elaborar legendas com símbolos em representações cartográficas."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, relacione as informações ao espaço geográfico e responda com atenção.",
+      "textoApoio": {
+        "titulo": "Para compreender: Mapa dos serviços do bairro",
+        "conteudo": "Mapas temáticos podem mostrar escolas, postos de saúde, pontos de ônibus e outros serviços. Um exemplo é marcar serviços com símbolos e criar uma legenda. Para agir com responsabilidade, é importante verificar se os símbolos ajudam o leitor a localizar os serviços.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto “Mapa dos serviços do bairro”, o que devemos compreender sobre alfabetização cartográfica?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual alternativa apresenta um exemplo correto relacionado a “Mapa dos serviços do bairro”?",
+          "alternativas": [
+            "Marcar serviços com símbolos e criar uma legenda.",
+            "Ignorar todas as relações entre pessoas, natureza e lugar.",
+            "Desperdiçar recursos porque eles nunca acabam.",
+            "Considerar que todos os lugares são iguais e nunca se transformam."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Explique com suas palavras por que marcar serviços com símbolos e criar uma legenda.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Compare “mapa de ruas” e “mapa temático de serviços”. Indique uma diferença importante.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "situacao-problema",
+          "enunciado": "Uma turma está estudando alfabetização cartográfica. Que atitude ela pode adotar para verificar se os símbolos ajudam o leitor a localizar os serviços?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Escreva um pequeno parágrafo relacionando “Mapa dos serviços do bairro” ao lugar onde você vive ou a uma situação que conhece.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Mapas temáticos podem mostrar escolas, postos de saúde, pontos de ônibus e outros serviços.",
+          "justificativa": "A resposta retoma a ideia central apresentada no texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "A primeira alternativa reproduz um exemplo correto e coerente com o tema."
+        },
+        {
+          "numero": 3,
+          "resposta": "Espera-se explicação coerente sobre o exemplo: marcar serviços com símbolos e criar uma legenda.",
+          "justificativa": "Critério de correção: relacionar o exemplo à ideia central do texto."
+        },
+        {
+          "numero": 4,
+          "resposta": "Espera-se distinguir mapa de ruas de mapa temático de serviços.",
+          "justificativa": "Critério de correção: apresentar pelo menos uma diferença pertinente entre os dois elementos."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta esperada: verificar se os símbolos ajudam o leitor a localizar os serviços.",
+          "justificativa": "A atitude deve ser possível, responsável e diretamente ligada à situação apresentada."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral relacionada ao tema e a uma situação conhecida pelo estudante.",
+          "justificativa": "Critério de correção: clareza, coerência, uso de informação da atividade e relação com o cotidiano."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-3ano-b3-geo-21-orientacao-no-espaco",
+      "titulo": "Orientação no espaço",
+      "tema": "Localização",
+      "sequencia": "Atividade 21",
+      "tipoSequencia": "Consolidação",
+      "dificuldade": "desafiadora",
+      "objetivo": "Compreender localização por meio de leitura, comparação e aplicação em situações do cotidiano.",
+      "bncc": [
+        {
+          "codigo": "EF03GE07",
+          "descricaoResumida": "Reconhecer e elaborar legendas com símbolos em representações cartográficas."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, relacione as informações ao espaço geográfico e responda com atenção.",
+      "textoApoio": {
+        "titulo": "Para compreender: Orientação no espaço",
+        "conteudo": "Pontos de referência e indicações de direção ajudam na localização. Um exemplo é seguir em frente, virar à direita e reconhecer a praça. Para agir com responsabilidade, é importante dar instruções em ordem e usar referências visíveis.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto “Orientação no espaço”, o que devemos compreender sobre localização?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual alternativa apresenta um exemplo correto relacionado a “Orientação no espaço”?",
+          "alternativas": [
+            "Seguir em frente, virar à direita e reconhecer a praça.",
+            "Ignorar todas as relações entre pessoas, natureza e lugar.",
+            "Desperdiçar recursos porque eles nunca acabam.",
+            "Considerar que todos os lugares são iguais e nunca se transformam."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Explique com suas palavras por que seguir em frente, virar à direita e reconhecer a praça.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Compare “posição de partida” e “destino do percurso”. Indique uma diferença importante.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "situacao-problema",
+          "enunciado": "Uma turma está estudando localização. Que atitude ela pode adotar para dar instruções em ordem e usar referências visíveis?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Escreva um pequeno parágrafo relacionando “Orientação no espaço” ao lugar onde você vive ou a uma situação que conhece.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Pontos de referência e indicações de direção ajudam na localização.",
+          "justificativa": "A resposta retoma a ideia central apresentada no texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "A primeira alternativa reproduz um exemplo correto e coerente com o tema."
+        },
+        {
+          "numero": 3,
+          "resposta": "Espera-se explicação coerente sobre o exemplo: seguir em frente, virar à direita e reconhecer a praça.",
+          "justificativa": "Critério de correção: relacionar o exemplo à ideia central do texto."
+        },
+        {
+          "numero": 4,
+          "resposta": "Espera-se distinguir posição de partida de destino do percurso.",
+          "justificativa": "Critério de correção: apresentar pelo menos uma diferença pertinente entre os dois elementos."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta esperada: dar instruções em ordem e usar referências visíveis.",
+          "justificativa": "A atitude deve ser possível, responsável e diretamente ligada à situação apresentada."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral relacionada ao tema e a uma situação conhecida pelo estudante.",
+          "justificativa": "Critério de correção: clareza, coerência, uso de informação da atividade e relação com o cotidiano."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-3ano-b3-geo-22-o-lixo-produzido-em-casa",
+      "titulo": "O lixo produzido em casa",
+      "tema": "Consumo e resíduos",
+      "sequencia": "Atividade 22",
+      "tipoSequencia": "Consolidação",
+      "dificuldade": "facil",
+      "objetivo": "Compreender consumo e resíduos por meio de leitura, comparação e aplicação em situações do cotidiano.",
+      "bncc": [
+        {
+          "codigo": "EF03GE08",
+          "descricaoResumida": "Relacionar a produção de lixo doméstico e escolar aos problemas de consumo excessivo."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, relacione as informações ao espaço geográfico e responda com atenção.",
+      "textoApoio": {
+        "titulo": "Para compreender: O lixo produzido em casa",
+        "conteudo": "O consumo diário gera resíduos que precisam ser reduzidos, reutilizados e separados. Um exemplo é separar papel, metal, vidro, plástico e rejeitos. Para agir com responsabilidade, é importante comprar com atenção e evitar produtos descartáveis.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto “O lixo produzido em casa”, o que devemos compreender sobre consumo e resíduos?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual alternativa apresenta um exemplo correto relacionado a “O lixo produzido em casa”?",
+          "alternativas": [
+            "Separar papel, metal, vidro, plástico e rejeitos.",
+            "Ignorar todas as relações entre pessoas, natureza e lugar.",
+            "Desperdiçar recursos porque eles nunca acabam.",
+            "Considerar que todos os lugares são iguais e nunca se transformam."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Explique com suas palavras por que separar papel, metal, vidro, plástico e rejeitos.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Compare “resíduo reciclável” e “rejeito não reciclável”. Indique uma diferença importante.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "situacao-problema",
+          "enunciado": "Uma turma está estudando consumo e resíduos. Que atitude ela pode adotar para comprar com atenção e evitar produtos descartáveis?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Escreva um pequeno parágrafo relacionando “O lixo produzido em casa” ao lugar onde você vive ou a uma situação que conhece.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "O consumo diário gera resíduos que precisam ser reduzidos, reutilizados e separados.",
+          "justificativa": "A resposta retoma a ideia central apresentada no texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "A primeira alternativa reproduz um exemplo correto e coerente com o tema."
+        },
+        {
+          "numero": 3,
+          "resposta": "Espera-se explicação coerente sobre o exemplo: separar papel, metal, vidro, plástico e rejeitos.",
+          "justificativa": "Critério de correção: relacionar o exemplo à ideia central do texto."
+        },
+        {
+          "numero": 4,
+          "resposta": "Espera-se distinguir resíduo reciclável de rejeito não reciclável.",
+          "justificativa": "Critério de correção: apresentar pelo menos uma diferença pertinente entre os dois elementos."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta esperada: comprar com atenção e evitar produtos descartáveis.",
+          "justificativa": "A atitude deve ser possível, responsável e diretamente ligada à situação apresentada."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral relacionada ao tema e a uma situação conhecida pelo estudante.",
+          "justificativa": "Critério de correção: clareza, coerência, uso de informação da atividade e relação com o cotidiano."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-3ano-b3-geo-23-consumo-consciente-na-escola",
+      "titulo": "Consumo consciente na escola",
+      "tema": "Consumo e resíduos",
+      "sequencia": "Atividade 23",
+      "tipoSequencia": "Consolidação",
+      "dificuldade": "intermediaria",
+      "objetivo": "Compreender consumo e resíduos por meio de leitura, comparação e aplicação em situações do cotidiano.",
+      "bncc": [
+        {
+          "codigo": "EF03GE08",
+          "descricaoResumida": "Relacionar a produção de lixo doméstico e escolar aos problemas de consumo excessivo."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, relacione as informações ao espaço geográfico e responda com atenção.",
+      "textoApoio": {
+        "titulo": "Para compreender: Consumo consciente na escola",
+        "conteudo": "A escola pode reduzir resíduos evitando desperdício de papel, água, alimentos e materiais. Um exemplo é usar os dois lados da folha e levar garrafa reutilizável. Para agir com responsabilidade, é importante planejar compras e compartilhar materiais em bom estado.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto “Consumo consciente na escola”, o que devemos compreender sobre consumo e resíduos?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual alternativa apresenta um exemplo correto relacionado a “Consumo consciente na escola”?",
+          "alternativas": [
+            "Usar os dois lados da folha e levar garrafa reutilizável.",
+            "Ignorar todas as relações entre pessoas, natureza e lugar.",
+            "Desperdiçar recursos porque eles nunca acabam.",
+            "Considerar que todos os lugares são iguais e nunca se transformam."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Explique com suas palavras por que usar os dois lados da folha e levar garrafa reutilizável.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Compare “consumo necessário” e “consumo excessivo”. Indique uma diferença importante.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "situacao-problema",
+          "enunciado": "Uma turma está estudando consumo e resíduos. Que atitude ela pode adotar para planejar compras e compartilhar materiais em bom estado?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Escreva um pequeno parágrafo relacionando “Consumo consciente na escola” ao lugar onde você vive ou a uma situação que conhece.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "A escola pode reduzir resíduos evitando desperdício de papel, água, alimentos e materiais.",
+          "justificativa": "A resposta retoma a ideia central apresentada no texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "A primeira alternativa reproduz um exemplo correto e coerente com o tema."
+        },
+        {
+          "numero": 3,
+          "resposta": "Espera-se explicação coerente sobre o exemplo: usar os dois lados da folha e levar garrafa reutilizável.",
+          "justificativa": "Critério de correção: relacionar o exemplo à ideia central do texto."
+        },
+        {
+          "numero": 4,
+          "resposta": "Espera-se distinguir consumo necessário de consumo excessivo.",
+          "justificativa": "Critério de correção: apresentar pelo menos uma diferença pertinente entre os dois elementos."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta esperada: planejar compras e compartilhar materiais em bom estado.",
+          "justificativa": "A atitude deve ser possível, responsável e diretamente ligada à situação apresentada."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral relacionada ao tema e a uma situação conhecida pelo estudante.",
+          "justificativa": "Critério de correção: clareza, coerência, uso de informação da atividade e relação com o cotidiano."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-3ano-b3-geo-24-caminho-dos-residuos",
+      "titulo": "Caminho dos resíduos",
+      "tema": "Gestão de resíduos",
+      "sequencia": "Atividade 24",
+      "tipoSequencia": "Consolidação",
+      "dificuldade": "desafiadora",
+      "objetivo": "Compreender gestão de resíduos por meio de leitura, comparação e aplicação em situações do cotidiano.",
+      "bncc": [
+        {
+          "codigo": "EF03GE08",
+          "descricaoResumida": "Relacionar a produção de lixo doméstico e escolar aos problemas de consumo excessivo."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, relacione as informações ao espaço geográfico e responda com atenção.",
+      "textoApoio": {
+        "titulo": "Para compreender: Caminho dos resíduos",
+        "conteudo": "Depois do descarte, resíduos podem seguir para coleta seletiva, reciclagem, compostagem ou aterro. Um exemplo é restos de frutas encaminhados para compostagem. Para agir com responsabilidade, é importante separar corretamente para evitar contaminação.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto “Caminho dos resíduos”, o que devemos compreender sobre gestão de resíduos?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual alternativa apresenta um exemplo correto relacionado a “Caminho dos resíduos”?",
+          "alternativas": [
+            "Restos de frutas encaminhados para compostagem.",
+            "Ignorar todas as relações entre pessoas, natureza e lugar.",
+            "Desperdiçar recursos porque eles nunca acabam.",
+            "Considerar que todos os lugares são iguais e nunca se transformam."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Explique com suas palavras por que restos de frutas encaminhados para compostagem.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Compare “destinação adequada” e “descarte em rua ou rio”. Indique uma diferença importante.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "situacao-problema",
+          "enunciado": "Uma turma está estudando gestão de resíduos. Que atitude ela pode adotar para separar corretamente para evitar contaminação?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Escreva um pequeno parágrafo relacionando “Caminho dos resíduos” ao lugar onde você vive ou a uma situação que conhece.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Depois do descarte, resíduos podem seguir para coleta seletiva, reciclagem, compostagem ou aterro.",
+          "justificativa": "A resposta retoma a ideia central apresentada no texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "A primeira alternativa reproduz um exemplo correto e coerente com o tema."
+        },
+        {
+          "numero": 3,
+          "resposta": "Espera-se explicação coerente sobre o exemplo: restos de frutas encaminhados para compostagem.",
+          "justificativa": "Critério de correção: relacionar o exemplo à ideia central do texto."
+        },
+        {
+          "numero": 4,
+          "resposta": "Espera-se distinguir destinação adequada de descarte em rua ou rio.",
+          "justificativa": "Critério de correção: apresentar pelo menos uma diferença pertinente entre os dois elementos."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta esperada: separar corretamente para evitar contaminação.",
+          "justificativa": "A atitude deve ser possível, responsável e diretamente ligada à situação apresentada."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral relacionada ao tema e a uma situação conhecida pelo estudante.",
+          "justificativa": "Critério de correção: clareza, coerência, uso de informação da atividade e relação com o cotidiano."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-3ano-b3-geo-25-agua-no-cotidiano",
+      "titulo": "Água no cotidiano",
+      "tema": "Usos da água",
+      "sequencia": "Atividade 25",
+      "tipoSequencia": "Consolidação",
+      "dificuldade": "facil",
+      "objetivo": "Compreender usos da água por meio de leitura, comparação e aplicação em situações do cotidiano.",
+      "bncc": [
+        {
+          "codigo": "EF03GE09",
+          "descricaoResumida": "Investigar os usos dos recursos naturais, especialmente da água, em atividades cotidianas."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, relacione as informações ao espaço geográfico e responda com atenção.",
+      "textoApoio": {
+        "titulo": "Para compreender: Água no cotidiano",
+        "conteudo": "A água é usada para beber, preparar alimentos, higiene, limpeza e produção. Um exemplo é fechar a torneira ao escovar os dentes. Para agir com responsabilidade, é importante evitar desperdício e comunicar vazamentos.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto “Água no cotidiano”, o que devemos compreender sobre usos da água?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual alternativa apresenta um exemplo correto relacionado a “Água no cotidiano”?",
+          "alternativas": [
+            "Fechar a torneira ao escovar os dentes.",
+            "Ignorar todas as relações entre pessoas, natureza e lugar.",
+            "Desperdiçar recursos porque eles nunca acabam.",
+            "Considerar que todos os lugares são iguais e nunca se transformam."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Explique com suas palavras por que fechar a torneira ao escovar os dentes.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Compare “uso essencial” e “desperdício de água”. Indique uma diferença importante.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "situacao-problema",
+          "enunciado": "Uma turma está estudando usos da água. Que atitude ela pode adotar para evitar desperdício e comunicar vazamentos?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Escreva um pequeno parágrafo relacionando “Água no cotidiano” ao lugar onde você vive ou a uma situação que conhece.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "A água é usada para beber, preparar alimentos, higiene, limpeza e produção.",
+          "justificativa": "A resposta retoma a ideia central apresentada no texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "A primeira alternativa reproduz um exemplo correto e coerente com o tema."
+        },
+        {
+          "numero": 3,
+          "resposta": "Espera-se explicação coerente sobre o exemplo: fechar a torneira ao escovar os dentes.",
+          "justificativa": "Critério de correção: relacionar o exemplo à ideia central do texto."
+        },
+        {
+          "numero": 4,
+          "resposta": "Espera-se distinguir uso essencial de desperdício de água.",
+          "justificativa": "Critério de correção: apresentar pelo menos uma diferença pertinente entre os dois elementos."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta esperada: evitar desperdício e comunicar vazamentos.",
+          "justificativa": "A atitude deve ser possível, responsável e diretamente ligada à situação apresentada."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral relacionada ao tema e a uma situação conhecida pelo estudante.",
+          "justificativa": "Critério de correção: clareza, coerência, uso de informação da atividade e relação com o cotidiano."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-3ano-b3-geo-26-agua-no-campo-e-na-cidade",
+      "titulo": "Água no campo e na cidade",
+      "tema": "Usos da água",
+      "sequencia": "Atividade 26",
+      "tipoSequencia": "Consolidação",
+      "dificuldade": "intermediaria",
+      "objetivo": "Compreender usos da água por meio de leitura, comparação e aplicação em situações do cotidiano.",
+      "bncc": [
+        {
+          "codigo": "EF03GE09",
+          "descricaoResumida": "Investigar os usos dos recursos naturais, especialmente da água, em atividades cotidianas."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, relacione as informações ao espaço geográfico e responda com atenção.",
+      "textoApoio": {
+        "titulo": "Para compreender: Água no campo e na cidade",
+        "conteudo": "No campo, a água pode irrigar plantações e atender animais; na cidade, abastece casas, serviços e indústrias. Um exemplo é comparar irrigação de uma horta e abastecimento de um hospital. Para agir com responsabilidade, é importante usar a quantidade necessária em cada atividade.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto “Água no campo e na cidade”, o que devemos compreender sobre usos da água?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual alternativa apresenta um exemplo correto relacionado a “Água no campo e na cidade”?",
+          "alternativas": [
+            "Comparar irrigação de uma horta e abastecimento de um hospital.",
+            "Ignorar todas as relações entre pessoas, natureza e lugar.",
+            "Desperdiçar recursos porque eles nunca acabam.",
+            "Considerar que todos os lugares são iguais e nunca se transformam."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Explique com suas palavras por que comparar irrigação de uma horta e abastecimento de um hospital.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Compare “uso rural” e “uso urbano”. Indique uma diferença importante.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "situacao-problema",
+          "enunciado": "Uma turma está estudando usos da água. Que atitude ela pode adotar para usar a quantidade necessária em cada atividade?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Escreva um pequeno parágrafo relacionando “Água no campo e na cidade” ao lugar onde você vive ou a uma situação que conhece.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "No campo, a água pode irrigar plantações e atender animais; na cidade, abastece casas, serviços e indústrias.",
+          "justificativa": "A resposta retoma a ideia central apresentada no texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "A primeira alternativa reproduz um exemplo correto e coerente com o tema."
+        },
+        {
+          "numero": 3,
+          "resposta": "Espera-se explicação coerente sobre o exemplo: comparar irrigação de uma horta e abastecimento de um hospital.",
+          "justificativa": "Critério de correção: relacionar o exemplo à ideia central do texto."
+        },
+        {
+          "numero": 4,
+          "resposta": "Espera-se distinguir uso rural de uso urbano.",
+          "justificativa": "Critério de correção: apresentar pelo menos uma diferença pertinente entre os dois elementos."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta esperada: usar a quantidade necessária em cada atividade.",
+          "justificativa": "A atitude deve ser possível, responsável e diretamente ligada à situação apresentada."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral relacionada ao tema e a uma situação conhecida pelo estudante.",
+          "justificativa": "Critério de correção: clareza, coerência, uso de informação da atividade e relação com o cotidiano."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-3ano-b3-geo-27-de-onde-vem-a-agua-tratada",
+      "titulo": "De onde vem a água tratada",
+      "tema": "Abastecimento",
+      "sequencia": "Atividade 27",
+      "tipoSequencia": "Consolidação",
+      "dificuldade": "desafiadora",
+      "objetivo": "Compreender abastecimento por meio de leitura, comparação e aplicação em situações do cotidiano.",
+      "bncc": [
+        {
+          "codigo": "EF03GE09",
+          "descricaoResumida": "Investigar os usos dos recursos naturais, especialmente da água, em atividades cotidianas."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, relacione as informações ao espaço geográfico e responda com atenção.",
+      "textoApoio": {
+        "titulo": "Para compreender: De onde vem a água tratada",
+        "conteudo": "A água captada em rios ou reservatórios passa por tratamento antes de chegar às moradias. Um exemplo é captação, tratamento, distribuição, uso e coleta de esgoto. Para agir com responsabilidade, é importante proteger mananciais e não jogar resíduos nos cursos d’água.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto “De onde vem a água tratada”, o que devemos compreender sobre abastecimento?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual alternativa apresenta um exemplo correto relacionado a “De onde vem a água tratada”?",
+          "alternativas": [
+            "Captação, tratamento, distribuição, uso e coleta de esgoto.",
+            "Ignorar todas as relações entre pessoas, natureza e lugar.",
+            "Desperdiçar recursos porque eles nunca acabam.",
+            "Considerar que todos os lugares são iguais e nunca se transformam."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Explique com suas palavras por que captação, tratamento, distribuição, uso e coleta de esgoto.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Compare “água antes do tratamento” e “água própria para consumo”. Indique uma diferença importante.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "situacao-problema",
+          "enunciado": "Uma turma está estudando abastecimento. Que atitude ela pode adotar para proteger mananciais e não jogar resíduos nos cursos d’água?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Escreva um pequeno parágrafo relacionando “De onde vem a água tratada” ao lugar onde você vive ou a uma situação que conhece.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "A água captada em rios ou reservatórios passa por tratamento antes de chegar às moradias.",
+          "justificativa": "A resposta retoma a ideia central apresentada no texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "A primeira alternativa reproduz um exemplo correto e coerente com o tema."
+        },
+        {
+          "numero": 3,
+          "resposta": "Espera-se explicação coerente sobre o exemplo: captação, tratamento, distribuição, uso e coleta de esgoto.",
+          "justificativa": "Critério de correção: relacionar o exemplo à ideia central do texto."
+        },
+        {
+          "numero": 4,
+          "resposta": "Espera-se distinguir água antes do tratamento de água própria para consumo.",
+          "justificativa": "Critério de correção: apresentar pelo menos uma diferença pertinente entre os dois elementos."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta esperada: proteger mananciais e não jogar resíduos nos cursos d’água.",
+          "justificativa": "A atitude deve ser possível, responsável e diretamente ligada à situação apresentada."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral relacionada ao tema e a uma situação conhecida pelo estudante.",
+          "justificativa": "Critério de correção: clareza, coerência, uso de informação da atividade e relação com o cotidiano."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-3ano-b3-geo-28-agua-na-agricultura",
+      "titulo": "Água na agricultura",
+      "tema": "Uso sustentável da água",
+      "sequencia": "Atividade 28",
+      "tipoSequencia": "Consolidação",
+      "dificuldade": "facil",
+      "objetivo": "Compreender uso sustentável da água por meio de leitura, comparação e aplicação em situações do cotidiano.",
+      "bncc": [
+        {
+          "codigo": "EF03GE10",
+          "descricaoResumida": "Identificar cuidados necessários para o uso sustentável da água na agricultura e na geração de energia."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, relacione as informações ao espaço geográfico e responda com atenção.",
+      "textoApoio": {
+        "titulo": "Para compreender: Água na agricultura",
+        "conteudo": "Técnicas de irrigação bem planejadas ajudam a cultivar usando menos água. Um exemplo é irrigação por gotejamento próxima às raízes. Para agir com responsabilidade, é importante regar em horários de menor calor e reparar vazamentos.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto “Água na agricultura”, o que devemos compreender sobre uso sustentável da água?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual alternativa apresenta um exemplo correto relacionado a “Água na agricultura”?",
+          "alternativas": [
+            "Irrigação por gotejamento próxima às raízes.",
+            "Ignorar todas as relações entre pessoas, natureza e lugar.",
+            "Desperdiçar recursos porque eles nunca acabam.",
+            "Considerar que todos os lugares são iguais e nunca se transformam."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Explique com suas palavras por que irrigação por gotejamento próxima às raízes.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Compare “irrigação eficiente” e “irrigação com desperdício”. Indique uma diferença importante.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "situacao-problema",
+          "enunciado": "Uma turma está estudando uso sustentável da água. Que atitude ela pode adotar para regar em horários de menor calor e reparar vazamentos?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Escreva um pequeno parágrafo relacionando “Água na agricultura” ao lugar onde você vive ou a uma situação que conhece.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Técnicas de irrigação bem planejadas ajudam a cultivar usando menos água.",
+          "justificativa": "A resposta retoma a ideia central apresentada no texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "A primeira alternativa reproduz um exemplo correto e coerente com o tema."
+        },
+        {
+          "numero": 3,
+          "resposta": "Espera-se explicação coerente sobre o exemplo: irrigação por gotejamento próxima às raízes.",
+          "justificativa": "Critério de correção: relacionar o exemplo à ideia central do texto."
+        },
+        {
+          "numero": 4,
+          "resposta": "Espera-se distinguir irrigação eficiente de irrigação com desperdício.",
+          "justificativa": "Critério de correção: apresentar pelo menos uma diferença pertinente entre os dois elementos."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta esperada: regar em horários de menor calor e reparar vazamentos.",
+          "justificativa": "A atitude deve ser possível, responsável e diretamente ligada à situação apresentada."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral relacionada ao tema e a uma situação conhecida pelo estudante.",
+          "justificativa": "Critério de correção: clareza, coerência, uso de informação da atividade e relação com o cotidiano."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-3ano-b3-geo-29-agua-e-geracao-de-energia",
+      "titulo": "Água e geração de energia",
+      "tema": "Uso sustentável da água",
+      "sequencia": "Atividade 29",
+      "tipoSequencia": "Consolidação",
+      "dificuldade": "intermediaria",
+      "objetivo": "Compreender uso sustentável da água por meio de leitura, comparação e aplicação em situações do cotidiano.",
+      "bncc": [
+        {
+          "codigo": "EF03GE10",
+          "descricaoResumida": "Identificar cuidados necessários para o uso sustentável da água na agricultura e na geração de energia."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, relacione as informações ao espaço geográfico e responda com atenção.",
+      "textoApoio": {
+        "titulo": "Para compreender: Água e geração de energia",
+        "conteudo": "Usinas hidrelétricas usam o movimento da água, mas reservatórios também modificam paisagens e ecossistemas. Um exemplo é avaliar produção de energia e impactos sobre comunidades e rios. Para agir com responsabilidade, é importante economizar energia e planejar empreendimentos com responsabilidade.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto “Água e geração de energia”, o que devemos compreender sobre uso sustentável da água?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual alternativa apresenta um exemplo correto relacionado a “Água e geração de energia”?",
+          "alternativas": [
+            "Avaliar produção de energia e impactos sobre comunidades e rios.",
+            "Ignorar todas as relações entre pessoas, natureza e lugar.",
+            "Desperdiçar recursos porque eles nunca acabam.",
+            "Considerar que todos os lugares são iguais e nunca se transformam."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Explique com suas palavras por que avaliar produção de energia e impactos sobre comunidades e rios.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Compare “benefício energético” e “impacto socioambiental”. Indique uma diferença importante.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "situacao-problema",
+          "enunciado": "Uma turma está estudando uso sustentável da água. Que atitude ela pode adotar para economizar energia e planejar empreendimentos com responsabilidade?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Escreva um pequeno parágrafo relacionando “Água e geração de energia” ao lugar onde você vive ou a uma situação que conhece.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Usinas hidrelétricas usam o movimento da água, mas reservatórios também modificam paisagens e ecossistemas.",
+          "justificativa": "A resposta retoma a ideia central apresentada no texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "A primeira alternativa reproduz um exemplo correto e coerente com o tema."
+        },
+        {
+          "numero": 3,
+          "resposta": "Espera-se explicação coerente sobre o exemplo: avaliar produção de energia e impactos sobre comunidades e rios.",
+          "justificativa": "Critério de correção: relacionar o exemplo à ideia central do texto."
+        },
+        {
+          "numero": 4,
+          "resposta": "Espera-se distinguir benefício energético de impacto socioambiental.",
+          "justificativa": "Critério de correção: apresentar pelo menos uma diferença pertinente entre os dois elementos."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta esperada: economizar energia e planejar empreendimentos com responsabilidade.",
+          "justificativa": "A atitude deve ser possível, responsável e diretamente ligada à situação apresentada."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral relacionada ao tema e a uma situação conhecida pelo estudante.",
+          "justificativa": "Critério de correção: clareza, coerência, uso de informação da atividade e relação com o cotidiano."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-3ano-b3-geo-30-impactos-ambientais-no-campo-e-na-cidade",
+      "titulo": "Impactos ambientais no campo e na cidade",
+      "tema": "Atividades econômicas e ambiente",
+      "sequencia": "Atividade 30",
+      "tipoSequencia": "Consolidação",
+      "dificuldade": "desafiadora",
+      "objetivo": "Compreender atividades econômicas e ambiente por meio de leitura, comparação e aplicação em situações do cotidiano.",
+      "bncc": [
+        {
+          "codigo": "EF03GE11",
+          "descricaoResumida": "Comparar impactos das atividades econômicas urbanas e rurais sobre o ambiente."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, relacione as informações ao espaço geográfico e responda com atenção.",
+      "textoApoio": {
+        "titulo": "Para compreender: Impactos ambientais no campo e na cidade",
+        "conteudo": "Atividades rurais e urbanas podem causar poluição, erosão, desmatamento e excesso de resíduos. Um exemplo é comparar fumaça de veículos com solo exposto por manejo inadequado. Para agir com responsabilidade, é importante adotar transporte menos poluente e proteger solo e vegetação.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto “Impactos ambientais no campo e na cidade”, o que devemos compreender sobre atividades econômicas e ambiente?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual alternativa apresenta um exemplo correto relacionado a “Impactos ambientais no campo e na cidade”?",
+          "alternativas": [
+            "Comparar fumaça de veículos com solo exposto por manejo inadequado.",
+            "Ignorar todas as relações entre pessoas, natureza e lugar.",
+            "Desperdiçar recursos porque eles nunca acabam.",
+            "Considerar que todos os lugares são iguais e nunca se transformam."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Explique com suas palavras por que comparar fumaça de veículos com solo exposto por manejo inadequado.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Compare “impacto urbano” e “impacto rural”. Indique uma diferença importante.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "situacao-problema",
+          "enunciado": "Uma turma está estudando atividades econômicas e ambiente. Que atitude ela pode adotar para adotar transporte menos poluente e proteger solo e vegetação?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Escreva um pequeno parágrafo relacionando “Impactos ambientais no campo e na cidade” ao lugar onde você vive ou a uma situação que conhece.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Atividades rurais e urbanas podem causar poluição, erosão, desmatamento e excesso de resíduos.",
+          "justificativa": "A resposta retoma a ideia central apresentada no texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "A primeira alternativa reproduz um exemplo correto e coerente com o tema."
+        },
+        {
+          "numero": 3,
+          "resposta": "Espera-se explicação coerente sobre o exemplo: comparar fumaça de veículos com solo exposto por manejo inadequado.",
+          "justificativa": "Critério de correção: relacionar o exemplo à ideia central do texto."
+        },
+        {
+          "numero": 4,
+          "resposta": "Espera-se distinguir impacto urbano de impacto rural.",
+          "justificativa": "Critério de correção: apresentar pelo menos uma diferença pertinente entre os dois elementos."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta esperada: adotar transporte menos poluente e proteger solo e vegetação.",
+          "justificativa": "A atitude deve ser possível, responsável e diretamente ligada à situação apresentada."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral relacionada ao tema e a uma situação conhecida pelo estudante.",
+          "justificativa": "Critério de correção: clareza, coerência, uso de informação da atividade e relação com o cotidiano."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    }
+  ]
+}
