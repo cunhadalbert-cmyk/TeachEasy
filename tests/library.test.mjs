@@ -560,9 +560,10 @@ test('Impressão da coleção usa A4 e gabarito separado sem marca promocional',
   assert.doesNotMatch(script.match(/function openCollectionPreview[\s\S]*?function resetFilters/)[0], /worksheet-brand|logotipo|marca-d’água|publicidade|rodapé promocional/i);
 });
 
-test('Lote de Matemática e Língua Portuguesa preserva 50 atividades e 300 questões', async () => {
+test('Lote de Matemática e Língua Portuguesa preserva 60 atividades e 360 questões', async () => {
   const files = [
     ['matematica.json', '4ano-3bimestre-matematica', 'Matemática', 20, 120],
+    ['matematica-extra.json', '4ano-3bimestre-matematica-extra', 'Matemática', 10, 60],
     ['lingua-portuguesa.json', '4ano-3bimestre-lingua-portuguesa', 'Língua Portuguesa', 20, 120],
     ['lingua-portuguesa-extra.json', '4ano-3bimestre-lingua-portuguesa-extra', 'Língua Portuguesa', 10, 60]
   ];
@@ -595,15 +596,21 @@ test('Lote de Matemática e Língua Portuguesa preserva 50 atividades e 300 ques
     });
   }
 
-  assert.equal(allIds.length, 50);
-  assert.equal(new Set(allIds).size, 50);
-  assert.equal(totalQuestions, 300);
+  assert.equal(allIds.length, 60);
+  assert.equal(new Set(allIds).size, 60);
+  assert.equal(totalQuestions, 360);
 });
 
-test('Matemática possui 20 atividades autorais, 120 questões e figuras válidas', async () => {
-  const raw = await readFile(new URL('../data/atividades/fundamental-anos-iniciais/4-ano/3-bimestre/matematica.json', import.meta.url), 'utf8');
+test('Matemática possui 30 atividades autorais, 180 questões e figuras válidas', async () => {
+  const [raw, extraRaw] = await Promise.all([
+    readFile(new URL('../data/atividades/fundamental-anos-iniciais/4-ano/3-bimestre/matematica.json', import.meta.url), 'utf8'),
+    readFile(new URL('../data/atividades/fundamental-anos-iniciais/4-ano/3-bimestre/matematica-extra.json', import.meta.url), 'utf8')
+  ]);
+  assert.doesNotMatch(raw, /\uFFFD/);
+  assert.doesNotMatch(extraRaw, /\uFFFD/);
   const collection = JSON.parse(raw);
-  const activities = collection.atividades;
+  const extraCollection = JSON.parse(extraRaw);
+  const activities = [...collection.atividades, ...extraCollection.atividades];
   const ids = activities.map(activity => activity.id);
   const titles = activities.map(activity => activity.titulo.trim().toLocaleLowerCase('pt-BR'));
   const normalizedPrompts = activities.flatMap(activity =>
@@ -612,11 +619,11 @@ test('Matemática possui 20 atividades autorais, 120 questões e figuras válida
     )
   );
 
-  assert.equal(activities.length, 20);
-  assert.equal(activities.reduce((total, activity) => total + activity.questoes.length, 0), 120);
-  assert.equal(new Set(ids).size, 20);
-  assert.equal(new Set(titles).size, 20);
-  assert.equal(new Set(normalizedPrompts).size, 120);
+  assert.equal(activities.length, 30);
+  assert.equal(activities.reduce((total, activity) => total + activity.questoes.length, 0), 180);
+  assert.equal(new Set(ids).size, 30);
+  assert.equal(new Set(titles).size, 30);
+  assert.equal(new Set(normalizedPrompts).size, 180);
 
   for (const activity of activities) {
     assert.equal(activity.quantidadeQuestoes, 6);
@@ -653,7 +660,8 @@ test('Matemática possui 20 atividades autorais, 120 questões e figuras válida
   const libraryScript = await readFile(new URL('../biblioteca.js', import.meta.url), 'utf8');
   const fixesScript = await readFile(new URL('../biblioteca-fixes.js', import.meta.url), 'utf8');
   assert.match(libraryScript, /'Matemática':\s*\{[\s\S]*?count:\s*20,/);
-  assert.match(fixesScript, /EXPECTED_MATH_ACTIVITIES\s*=\s*20/);
+  assert.match(fixesScript, /EXPECTED_MATH_ACTIVITIES\s*=\s*30/);
+  assert.match(fixesScript, /collectionRegistry\['Matemática'\]\.extraPath\s*=\s*'data\/atividades\/fundamental-anos-iniciais\/4-ano\/3-bimestre\/matematica-extra\.json'/);
 });
 
 test('Língua Portuguesa possui 30 atividades autorais, 180 questões e figuras válidas', async () => {
@@ -751,7 +759,7 @@ test('Língua Portuguesa possui 30 atividades autorais, 180 questões e figuras 
   const fixesScript = await readFile(new URL('../biblioteca-fixes.js', import.meta.url), 'utf8');
   assert.match(libraryScript, /'Língua Portuguesa':\s*\{[\s\S]*?count:\s*20,/);
   assert.match(fixesScript, /EXPECTED_PORTUGUESE_ACTIVITIES\s*=\s*30/);
-  assert.match(fixesScript, /EXPECTED_MATH_ACTIVITIES\s*=\s*20/);
+  assert.match(fixesScript, /EXPECTED_MATH_ACTIVITIES\s*=\s*30/);
 });
 
 test('Matemática e Língua Portuguesa carregam somente com a disciplina correspondente', async () => {
