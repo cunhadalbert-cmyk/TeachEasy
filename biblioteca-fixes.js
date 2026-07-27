@@ -136,6 +136,49 @@
     }
   ];
 
+
+  const PRIMARY_SUBJECTS_FUNDAMENTAL_I = new Set([
+    'Língua Portuguesa',
+    'Matemática',
+    'História',
+    'Geografia',
+    'Ciências'
+  ]);
+
+  function isPrimaryFundamentalISubject(subject) {
+    return PRIMARY_SUBJECTS_FUNDAMENTAL_I.has(subject);
+  }
+
+  const originalMatchesFilters = matchesFilters;
+  matchesFilters = function matchesFiltersWithPrimarySubjects(activity, filters) {
+    if (activity.stage === 'Ensino Fundamental I'
+      && ['1º ano', '2º ano', '3º ano', '4º ano', '5º ano'].includes(activity.grade)
+      && !isPrimaryFundamentalISubject(activity.subject)) {
+      return false;
+    }
+    return originalMatchesFilters(activity, filters);
+  };
+
+  function refreshSubjectOptionsForCurrentGrade() {
+    const select = filterForm.elements.subject;
+    const currentValue = select.value;
+    const allOption = select.querySelector('option[value="]');
+    const values = navigation.stage === 'Ensino Fundamental I'
+      && ['1º ano', '2º ano', '3º ano', '4º ano', '5º ano'].includes(navigation.grade)
+      ? [...PRIMARY_SUBJECTS_FUNDAMENTAL_I]
+      : uniqueSorted('subject');
+
+    select.replaceChildren(allOption || new Option('Todas as disciplinas', ''));
+    values.forEach(value => select.append(new Option(value, value)));
+    select.value = values.includes(currentValue) ? currentValue : '';
+  }
+
+  const originalRenderNavigation = renderNavigation;
+  renderNavigation = function renderNavigationWithPrimarySubjects() {
+    originalRenderNavigation();
+    refreshSubjectOptionsForCurrentGrade();
+  };
+
   const STORAGE_KEYS = {
     favorites: 'teacheasy.library.favorites',
     selection: 'teacheasy.library.selection'
@@ -308,3 +351,4 @@
 
   renderActivities();
 })();
+
