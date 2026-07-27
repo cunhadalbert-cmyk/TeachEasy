@@ -12,6 +12,141 @@
 
   const collectionConfigs = [
     {
+      path: 'data/atividades/fundamental-anos-iniciais/4-ano/1-bimestre/lingua-portuguesa.json',
+      collection: '4ano-1bimestre-lingua-portuguesa',
+      count: 30,
+      grade: '4º ano',
+      term: 1,
+      symbol: '📖',
+      colors: ['#ffe2e8', '#eee3ff']
+    },
+    {
+      path: 'data/atividades/fundamental-anos-iniciais/4-ano/1-bimestre/matematica.json',
+      collection: '4ano-1bimestre-matematica',
+      count: 30,
+      grade: '4º ano',
+      term: 1,
+      symbol: '➗',
+      colors: ['#e1ebff', '#fff1bd']
+    },
+    {
+      path: 'data/atividades/fundamental-anos-iniciais/4-ano/1-bimestre/historia.json',
+      collection: '4ano-1bimestre-historia',
+      count: 30,
+      grade: '4º ano',
+      term: 1,
+      symbol: '🏺',
+      colors: ['#f1dfc8', '#ffe7cf']
+    },
+    {
+      path: 'data/atividades/fundamental-anos-iniciais/4-ano/1-bimestre/geografia.json',
+      collection: '4ano-1bimestre-geografia',
+      count: 30,
+      grade: '4º ano',
+      term: 1,
+      symbol: '🗺️',
+      colors: ['#d8efff', '#dff3dc']
+    },
+    {
+      path: 'data/atividades/fundamental-anos-iniciais/4-ano/1-bimestre/ciencias.json',
+      collection: '4ano-1bimestre-ciencias',
+      count: 30,
+      grade: '4º ano',
+      term: 1,
+      symbol: '🔬',
+      colors: ['#d9f1e1', '#e8f0ff']
+    },
+    {
+      path: 'data/atividades/fundamental-anos-iniciais/4-ano/2-bimestre/lingua-portuguesa.json',
+      collection: '4ano-2bimestre-lingua-portuguesa',
+      count: 30,
+      grade: '4º ano',
+      term: 2,
+      symbol: '📖',
+      colors: ['#ffe2e8', '#eee3ff']
+    },
+    {
+      path: 'data/atividades/fundamental-anos-iniciais/4-ano/2-bimestre/matematica.json',
+      collection: '4ano-2bimestre-matematica',
+      count: 30,
+      grade: '4º ano',
+      term: 2,
+      symbol: '➗',
+      colors: ['#e1ebff', '#fff1bd']
+    },
+    {
+      path: 'data/atividades/fundamental-anos-iniciais/4-ano/2-bimestre/historia.json',
+      collection: '4ano-2bimestre-historia',
+      count: 30,
+      grade: '4º ano',
+      term: 2,
+      symbol: '🏺',
+      colors: ['#f1dfc8', '#ffe7cf']
+    },
+    {
+      path: 'data/atividades/fundamental-anos-iniciais/4-ano/2-bimestre/geografia.json',
+      collection: '4ano-2bimestre-geografia',
+      count: 30,
+      grade: '4º ano',
+      term: 2,
+      symbol: '🗺️',
+      colors: ['#d8efff', '#dff3dc']
+    },
+    {
+      path: 'data/atividades/fundamental-anos-iniciais/4-ano/2-bimestre/ciencias.json',
+      collection: '4ano-2bimestre-ciencias',
+      count: 30,
+      grade: '4º ano',
+      term: 2,
+      symbol: '🔬',
+      colors: ['#d9f1e1', '#e8f0ff']
+    },
+    {
+      path: 'data/atividades/fundamental-anos-iniciais/4-ano/4-bimestre/lingua-portuguesa.json',
+      collection: '4ano-4bimestre-lingua-portuguesa',
+      count: 30,
+      grade: '4º ano',
+      term: 4,
+      symbol: '📖',
+      colors: ['#ffe2e8', '#eee3ff']
+    },
+    {
+      path: 'data/atividades/fundamental-anos-iniciais/4-ano/4-bimestre/matematica.json',
+      collection: '4ano-4bimestre-matematica',
+      count: 30,
+      grade: '4º ano',
+      term: 4,
+      symbol: '➗',
+      colors: ['#e1ebff', '#fff1bd']
+    },
+    {
+      path: 'data/atividades/fundamental-anos-iniciais/4-ano/4-bimestre/historia.json',
+      collection: '4ano-4bimestre-historia',
+      count: 30,
+      grade: '4º ano',
+      term: 4,
+      symbol: '🏺',
+      colors: ['#f1dfc8', '#ffe7cf']
+    },
+    {
+      path: 'data/atividades/fundamental-anos-iniciais/4-ano/4-bimestre/geografia.json',
+      collection: '4ano-4bimestre-geografia',
+      count: 30,
+      grade: '4º ano',
+      term: 4,
+      symbol: '🗺️',
+      colors: ['#d8efff', '#dff3dc']
+    },
+    {
+      path: 'data/atividades/fundamental-anos-iniciais/4-ano/4-bimestre/ciencias.json',
+      collection: '4ano-4bimestre-ciencias',
+      count: 30,
+      grade: '4º ano',
+      term: 4,
+      symbol: '🔬',
+      colors: ['#d9f1e1', '#e8f0ff']
+    },
+    {
       path: 'data/atividades/fundamental-anos-iniciais/4-ano/3-bimestre/ciencias.json',
       extraPath: 'data/atividades/fundamental-anos-iniciais/4-ano/3-bimestre/ciencias-extra.json',
       collection: '4ano-3bimestre-ciencias',
@@ -218,14 +353,14 @@
     saveStoredSet(STORAGE_KEYS.selection, selectedActivities);
   };
 
-  function isSupportedThirdTerm() {
+  function isSupportedCollectionPeriod() {
     return navigation.stage === 'Ensino Fundamental I'
       && ['1º ano', '3º ano', '4º ano'].includes(navigation.grade)
       && navigation.term === '3';
   }
 
   function configsForCurrentFilter() {
-    if (!isSupportedThirdTerm()) return [];
+    if (!isSupportedCollectionPeriod()) return [];
 
     const selectedSubject = String(filterForm.elements.subject.value || '');
     return collectionConfigs.filter(config =>
@@ -321,7 +456,7 @@
 
   const originalEnsureSelectedCollection = ensureSelectedCollection;
   ensureSelectedCollection = async function ensureCollectionsWithoutDuplication() {
-    if (isSupportedThirdTerm()) {
+    if (isSupportedCollectionPeriod()) {
       await ensureCurrentCollections();
       return;
     }
