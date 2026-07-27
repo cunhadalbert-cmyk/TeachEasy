@@ -2,8 +2,9 @@
   const EXPECTED_MATH_ACTIVITIES = 20;
   collectionRegistry['Matemática'].count = EXPECTED_MATH_ACTIVITIES;
 
-  const EXPECTED_PORTUGUESE_ACTIVITIES = 20;
+  const EXPECTED_PORTUGUESE_ACTIVITIES = 30;
   collectionRegistry['Língua Portuguesa'].count = EXPECTED_PORTUGUESE_ACTIVITIES;
+  collectionRegistry['Língua Portuguesa'].extraPath = 'data/atividades/fundamental-anos-iniciais/4-ano/3-bimestre/lingua-portuguesa-extra.json';
 
   const STORAGE_KEYS = {
     favorites: 'teacheasy.library.favorites',
@@ -76,7 +77,24 @@
           }
           return response.json();
         })
-        .then(collection => {
+        .then(async collection => {
+          if (config.extraPath) {
+            const extraResponse = await fetch(config.extraPath);
+            if (!extraResponse.ok) {
+              throw new Error('Não foi possível carregar as atividades extras de Língua Portuguesa.');
+            }
+
+            const extraCollection = await extraResponse.json();
+
+            collection = {
+              ...collection,
+              atividades: [
+                ...collection.atividades,
+                ...extraCollection.atividades
+              ]
+            };
+          }
+
           validateCollection(collection, config);
           return validateCollectionAssets(collection).then(() => collection);
         })
