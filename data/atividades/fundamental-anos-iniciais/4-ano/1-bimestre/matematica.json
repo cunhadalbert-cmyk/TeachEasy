@@ -1,0 +1,3642 @@
+{
+  "schemaVersion": "1.0",
+  "colecao": "4ano-1bimestre-matematica",
+  "idioma": "pt-BR",
+  "etapa": "Ensino Fundamental — Anos Iniciais",
+  "ano": "4º ano",
+  "bimestre": 1,
+  "disciplina": "Matemática",
+  "statusBimestre": "sugerido",
+  "atividades": [
+    {
+      "id": "efi-4ano-b1-mat-01-numeros-ate-10-mil",
+      "titulo": "Números até 10 mil",
+      "tema": "Números até 10 mil",
+      "sequencia": "Atividade 1",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "facil",
+      "objetivo": "Compreender e aplicar conhecimentos de Matemática relacionados a números até 10 mil.",
+      "bncc": [
+        {
+          "codigo": "EF04MA01",
+          "descricaoResumida": "Habilidade do 4º ano relacionada ao estudo de números até 10 mil."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, responda com atenção e justifique suas ideias quando solicitado.",
+      "textoApoio": {
+        "titulo": "Números até 10 mil",
+        "conteudo": "O tema “Números até 10 mil” permite resolver situações do cotidiano usando estratégias, registros, cálculos e diferentes formas de representação."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Explique o que você já sabe sobre “Números até 10 mil”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual estratégia é mais adequada para resolver uma situação envolvendo “Números até 10 mil”?",
+          "alternativas": [
+            "Escolher uma estratégia, registrar os cálculos e conferir o resultado",
+            "Escolher qualquer resposta sem justificativa",
+            "Ignorar as informações apresentadas",
+            "Usar apenas uma opinião sem verificar dados"
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "calculo",
+          "enunciado": "Resolva um exemplo criado por você relacionado a “Números até 10 mil”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "problema",
+          "enunciado": "Crie e resolva um problema do cotidiano envolvendo “Números até 10 mil”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "representacao",
+          "enunciado": "Represente “Números até 10 mil” por meio de desenho, tabela, cálculo ou esquema.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Explique como você conferiria uma resposta relacionada a “Números até 10 mil”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Resposta construída com base no texto e no tema.",
+          "justificativa": "Critério: apresentar compreensão clara e coerente."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "A alternativa A apresenta procedimento adequado e fundamentado."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta pessoal coerente.",
+          "justificativa": "Critério: aplicar corretamente o conceito estudado."
+        },
+        {
+          "numero": 4,
+          "resposta": "Produção autoral.",
+          "justificativa": "Critério: clareza, pertinência e relação com o tema."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta pessoal com justificativa.",
+          "justificativa": "Critério: comparar, revisar ou analisar usando evidências."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral.",
+          "justificativa": "Critério: síntese clara e adequada ao 4º ano."
+        }
+      ],
+      "revisao": {
+        "status": "revisao-pedagogica-pendente",
+        "bnccConferida": false,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "gerador-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-4ano-b1-mat-02-leitura-e-escrita-de-numeros",
+      "titulo": "Leitura e escrita de números",
+      "tema": "Leitura e escrita de números",
+      "sequencia": "Atividade 2",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "facil",
+      "objetivo": "Compreender e aplicar conhecimentos de Matemática relacionados a leitura e escrita de números.",
+      "bncc": [
+        {
+          "codigo": "EF04MA02",
+          "descricaoResumida": "Habilidade do 4º ano relacionada ao estudo de leitura e escrita de números."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, responda com atenção e justifique suas ideias quando solicitado.",
+      "textoApoio": {
+        "titulo": "Leitura e escrita de números",
+        "conteudo": "O tema “Leitura e escrita de números” permite resolver situações do cotidiano usando estratégias, registros, cálculos e diferentes formas de representação."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Explique o que você já sabe sobre “Leitura e escrita de números”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual estratégia é mais adequada para resolver uma situação envolvendo “Leitura e escrita de números”?",
+          "alternativas": [
+            "Escolher uma estratégia, registrar os cálculos e conferir o resultado",
+            "Escolher qualquer resposta sem justificativa",
+            "Ignorar as informações apresentadas",
+            "Usar apenas uma opinião sem verificar dados"
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "calculo",
+          "enunciado": "Resolva um exemplo criado por você relacionado a “Leitura e escrita de números”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "problema",
+          "enunciado": "Crie e resolva um problema do cotidiano envolvendo “Leitura e escrita de números”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "representacao",
+          "enunciado": "Represente “Leitura e escrita de números” por meio de desenho, tabela, cálculo ou esquema.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Explique como você conferiria uma resposta relacionada a “Leitura e escrita de números”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Resposta construída com base no texto e no tema.",
+          "justificativa": "Critério: apresentar compreensão clara e coerente."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "A alternativa A apresenta procedimento adequado e fundamentado."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta pessoal coerente.",
+          "justificativa": "Critério: aplicar corretamente o conceito estudado."
+        },
+        {
+          "numero": 4,
+          "resposta": "Produção autoral.",
+          "justificativa": "Critério: clareza, pertinência e relação com o tema."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta pessoal com justificativa.",
+          "justificativa": "Critério: comparar, revisar ou analisar usando evidências."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral.",
+          "justificativa": "Critério: síntese clara e adequada ao 4º ano."
+        }
+      ],
+      "revisao": {
+        "status": "revisao-pedagogica-pendente",
+        "bnccConferida": false,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "gerador-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-4ano-b1-mat-03-valor-posicional",
+      "titulo": "Valor posicional",
+      "tema": "Valor posicional",
+      "sequencia": "Atividade 3",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "facil",
+      "objetivo": "Compreender e aplicar conhecimentos de Matemática relacionados a valor posicional.",
+      "bncc": [
+        {
+          "codigo": "EF04MA03",
+          "descricaoResumida": "Habilidade do 4º ano relacionada ao estudo de valor posicional."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, responda com atenção e justifique suas ideias quando solicitado.",
+      "textoApoio": {
+        "titulo": "Valor posicional",
+        "conteudo": "O tema “Valor posicional” permite resolver situações do cotidiano usando estratégias, registros, cálculos e diferentes formas de representação."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Explique o que você já sabe sobre “Valor posicional”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual estratégia é mais adequada para resolver uma situação envolvendo “Valor posicional”?",
+          "alternativas": [
+            "Escolher uma estratégia, registrar os cálculos e conferir o resultado",
+            "Escolher qualquer resposta sem justificativa",
+            "Ignorar as informações apresentadas",
+            "Usar apenas uma opinião sem verificar dados"
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "calculo",
+          "enunciado": "Resolva um exemplo criado por você relacionado a “Valor posicional”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "problema",
+          "enunciado": "Crie e resolva um problema do cotidiano envolvendo “Valor posicional”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "representacao",
+          "enunciado": "Represente “Valor posicional” por meio de desenho, tabela, cálculo ou esquema.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Explique como você conferiria uma resposta relacionada a “Valor posicional”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Resposta construída com base no texto e no tema.",
+          "justificativa": "Critério: apresentar compreensão clara e coerente."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "A alternativa A apresenta procedimento adequado e fundamentado."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta pessoal coerente.",
+          "justificativa": "Critério: aplicar corretamente o conceito estudado."
+        },
+        {
+          "numero": 4,
+          "resposta": "Produção autoral.",
+          "justificativa": "Critério: clareza, pertinência e relação com o tema."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta pessoal com justificativa.",
+          "justificativa": "Critério: comparar, revisar ou analisar usando evidências."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral.",
+          "justificativa": "Critério: síntese clara e adequada ao 4º ano."
+        }
+      ],
+      "revisao": {
+        "status": "revisao-pedagogica-pendente",
+        "bnccConferida": false,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "gerador-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-4ano-b1-mat-04-composicao-e-decomposicao",
+      "titulo": "Composição e decomposição",
+      "tema": "Composição e decomposição",
+      "sequencia": "Atividade 4",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "facil",
+      "objetivo": "Compreender e aplicar conhecimentos de Matemática relacionados a composição e decomposição.",
+      "bncc": [
+        {
+          "codigo": "EF04MA04",
+          "descricaoResumida": "Habilidade do 4º ano relacionada ao estudo de composição e decomposição."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, responda com atenção e justifique suas ideias quando solicitado.",
+      "textoApoio": {
+        "titulo": "Composição e decomposição",
+        "conteudo": "O tema “Composição e decomposição” permite resolver situações do cotidiano usando estratégias, registros, cálculos e diferentes formas de representação."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Explique o que você já sabe sobre “Composição e decomposição”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual estratégia é mais adequada para resolver uma situação envolvendo “Composição e decomposição”?",
+          "alternativas": [
+            "Escolher uma estratégia, registrar os cálculos e conferir o resultado",
+            "Escolher qualquer resposta sem justificativa",
+            "Ignorar as informações apresentadas",
+            "Usar apenas uma opinião sem verificar dados"
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "calculo",
+          "enunciado": "Resolva um exemplo criado por você relacionado a “Composição e decomposição”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "problema",
+          "enunciado": "Crie e resolva um problema do cotidiano envolvendo “Composição e decomposição”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "representacao",
+          "enunciado": "Represente “Composição e decomposição” por meio de desenho, tabela, cálculo ou esquema.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Explique como você conferiria uma resposta relacionada a “Composição e decomposição”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Resposta construída com base no texto e no tema.",
+          "justificativa": "Critério: apresentar compreensão clara e coerente."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "A alternativa A apresenta procedimento adequado e fundamentado."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta pessoal coerente.",
+          "justificativa": "Critério: aplicar corretamente o conceito estudado."
+        },
+        {
+          "numero": 4,
+          "resposta": "Produção autoral.",
+          "justificativa": "Critério: clareza, pertinência e relação com o tema."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta pessoal com justificativa.",
+          "justificativa": "Critério: comparar, revisar ou analisar usando evidências."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral.",
+          "justificativa": "Critério: síntese clara e adequada ao 4º ano."
+        }
+      ],
+      "revisao": {
+        "status": "revisao-pedagogica-pendente",
+        "bnccConferida": false,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "gerador-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-4ano-b1-mat-05-comparacao-de-numeros",
+      "titulo": "Comparação de números",
+      "tema": "Comparação de números",
+      "sequencia": "Atividade 5",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "facil",
+      "objetivo": "Compreender e aplicar conhecimentos de Matemática relacionados a comparação de números.",
+      "bncc": [
+        {
+          "codigo": "EF04MA05",
+          "descricaoResumida": "Habilidade do 4º ano relacionada ao estudo de comparação de números."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, responda com atenção e justifique suas ideias quando solicitado.",
+      "textoApoio": {
+        "titulo": "Comparação de números",
+        "conteudo": "O tema “Comparação de números” permite resolver situações do cotidiano usando estratégias, registros, cálculos e diferentes formas de representação."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Explique o que você já sabe sobre “Comparação de números”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual estratégia é mais adequada para resolver uma situação envolvendo “Comparação de números”?",
+          "alternativas": [
+            "Escolher uma estratégia, registrar os cálculos e conferir o resultado",
+            "Escolher qualquer resposta sem justificativa",
+            "Ignorar as informações apresentadas",
+            "Usar apenas uma opinião sem verificar dados"
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "calculo",
+          "enunciado": "Resolva um exemplo criado por você relacionado a “Comparação de números”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "problema",
+          "enunciado": "Crie e resolva um problema do cotidiano envolvendo “Comparação de números”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "representacao",
+          "enunciado": "Represente “Comparação de números” por meio de desenho, tabela, cálculo ou esquema.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Explique como você conferiria uma resposta relacionada a “Comparação de números”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Resposta construída com base no texto e no tema.",
+          "justificativa": "Critério: apresentar compreensão clara e coerente."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "A alternativa A apresenta procedimento adequado e fundamentado."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta pessoal coerente.",
+          "justificativa": "Critério: aplicar corretamente o conceito estudado."
+        },
+        {
+          "numero": 4,
+          "resposta": "Produção autoral.",
+          "justificativa": "Critério: clareza, pertinência e relação com o tema."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta pessoal com justificativa.",
+          "justificativa": "Critério: comparar, revisar ou analisar usando evidências."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral.",
+          "justificativa": "Critério: síntese clara e adequada ao 4º ano."
+        }
+      ],
+      "revisao": {
+        "status": "revisao-pedagogica-pendente",
+        "bnccConferida": false,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "gerador-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-4ano-b1-mat-06-ordenacao-numerica",
+      "titulo": "Ordenação numérica",
+      "tema": "Ordenação numérica",
+      "sequencia": "Atividade 6",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "facil",
+      "objetivo": "Compreender e aplicar conhecimentos de Matemática relacionados a ordenação numérica.",
+      "bncc": [
+        {
+          "codigo": "EF04MA06",
+          "descricaoResumida": "Habilidade do 4º ano relacionada ao estudo de ordenação numérica."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, responda com atenção e justifique suas ideias quando solicitado.",
+      "textoApoio": {
+        "titulo": "Ordenação numérica",
+        "conteudo": "O tema “Ordenação numérica” permite resolver situações do cotidiano usando estratégias, registros, cálculos e diferentes formas de representação."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Explique o que você já sabe sobre “Ordenação numérica”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual estratégia é mais adequada para resolver uma situação envolvendo “Ordenação numérica”?",
+          "alternativas": [
+            "Escolher uma estratégia, registrar os cálculos e conferir o resultado",
+            "Escolher qualquer resposta sem justificativa",
+            "Ignorar as informações apresentadas",
+            "Usar apenas uma opinião sem verificar dados"
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "calculo",
+          "enunciado": "Resolva um exemplo criado por você relacionado a “Ordenação numérica”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "problema",
+          "enunciado": "Crie e resolva um problema do cotidiano envolvendo “Ordenação numérica”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "representacao",
+          "enunciado": "Represente “Ordenação numérica” por meio de desenho, tabela, cálculo ou esquema.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Explique como você conferiria uma resposta relacionada a “Ordenação numérica”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Resposta construída com base no texto e no tema.",
+          "justificativa": "Critério: apresentar compreensão clara e coerente."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "A alternativa A apresenta procedimento adequado e fundamentado."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta pessoal coerente.",
+          "justificativa": "Critério: aplicar corretamente o conceito estudado."
+        },
+        {
+          "numero": 4,
+          "resposta": "Produção autoral.",
+          "justificativa": "Critério: clareza, pertinência e relação com o tema."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta pessoal com justificativa.",
+          "justificativa": "Critério: comparar, revisar ou analisar usando evidências."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral.",
+          "justificativa": "Critério: síntese clara e adequada ao 4º ano."
+        }
+      ],
+      "revisao": {
+        "status": "revisao-pedagogica-pendente",
+        "bnccConferida": false,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "gerador-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-4ano-b1-mat-07-adicao-com-reagrupamento",
+      "titulo": "Adição com reagrupamento",
+      "tema": "Adição com reagrupamento",
+      "sequencia": "Atividade 7",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "facil",
+      "objetivo": "Compreender e aplicar conhecimentos de Matemática relacionados a adição com reagrupamento.",
+      "bncc": [
+        {
+          "codigo": "EF04MA07",
+          "descricaoResumida": "Habilidade do 4º ano relacionada ao estudo de adição com reagrupamento."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, responda com atenção e justifique suas ideias quando solicitado.",
+      "textoApoio": {
+        "titulo": "Adição com reagrupamento",
+        "conteudo": "O tema “Adição com reagrupamento” permite resolver situações do cotidiano usando estratégias, registros, cálculos e diferentes formas de representação."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Explique o que você já sabe sobre “Adição com reagrupamento”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual estratégia é mais adequada para resolver uma situação envolvendo “Adição com reagrupamento”?",
+          "alternativas": [
+            "Escolher uma estratégia, registrar os cálculos e conferir o resultado",
+            "Escolher qualquer resposta sem justificativa",
+            "Ignorar as informações apresentadas",
+            "Usar apenas uma opinião sem verificar dados"
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "calculo",
+          "enunciado": "Resolva um exemplo criado por você relacionado a “Adição com reagrupamento”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "problema",
+          "enunciado": "Crie e resolva um problema do cotidiano envolvendo “Adição com reagrupamento”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "representacao",
+          "enunciado": "Represente “Adição com reagrupamento” por meio de desenho, tabela, cálculo ou esquema.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Explique como você conferiria uma resposta relacionada a “Adição com reagrupamento”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Resposta construída com base no texto e no tema.",
+          "justificativa": "Critério: apresentar compreensão clara e coerente."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "A alternativa A apresenta procedimento adequado e fundamentado."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta pessoal coerente.",
+          "justificativa": "Critério: aplicar corretamente o conceito estudado."
+        },
+        {
+          "numero": 4,
+          "resposta": "Produção autoral.",
+          "justificativa": "Critério: clareza, pertinência e relação com o tema."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta pessoal com justificativa.",
+          "justificativa": "Critério: comparar, revisar ou analisar usando evidências."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral.",
+          "justificativa": "Critério: síntese clara e adequada ao 4º ano."
+        }
+      ],
+      "revisao": {
+        "status": "revisao-pedagogica-pendente",
+        "bnccConferida": false,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "gerador-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-4ano-b1-mat-08-subtracao-com-reagrupamento",
+      "titulo": "Subtração com reagrupamento",
+      "tema": "Subtração com reagrupamento",
+      "sequencia": "Atividade 8",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "facil",
+      "objetivo": "Compreender e aplicar conhecimentos de Matemática relacionados a subtração com reagrupamento.",
+      "bncc": [
+        {
+          "codigo": "EF04MA08",
+          "descricaoResumida": "Habilidade do 4º ano relacionada ao estudo de subtração com reagrupamento."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, responda com atenção e justifique suas ideias quando solicitado.",
+      "textoApoio": {
+        "titulo": "Subtração com reagrupamento",
+        "conteudo": "O tema “Subtração com reagrupamento” permite resolver situações do cotidiano usando estratégias, registros, cálculos e diferentes formas de representação."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Explique o que você já sabe sobre “Subtração com reagrupamento”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual estratégia é mais adequada para resolver uma situação envolvendo “Subtração com reagrupamento”?",
+          "alternativas": [
+            "Escolher uma estratégia, registrar os cálculos e conferir o resultado",
+            "Escolher qualquer resposta sem justificativa",
+            "Ignorar as informações apresentadas",
+            "Usar apenas uma opinião sem verificar dados"
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "calculo",
+          "enunciado": "Resolva um exemplo criado por você relacionado a “Subtração com reagrupamento”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "problema",
+          "enunciado": "Crie e resolva um problema do cotidiano envolvendo “Subtração com reagrupamento”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "representacao",
+          "enunciado": "Represente “Subtração com reagrupamento” por meio de desenho, tabela, cálculo ou esquema.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Explique como você conferiria uma resposta relacionada a “Subtração com reagrupamento”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Resposta construída com base no texto e no tema.",
+          "justificativa": "Critério: apresentar compreensão clara e coerente."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "A alternativa A apresenta procedimento adequado e fundamentado."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta pessoal coerente.",
+          "justificativa": "Critério: aplicar corretamente o conceito estudado."
+        },
+        {
+          "numero": 4,
+          "resposta": "Produção autoral.",
+          "justificativa": "Critério: clareza, pertinência e relação com o tema."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta pessoal com justificativa.",
+          "justificativa": "Critério: comparar, revisar ou analisar usando evidências."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral.",
+          "justificativa": "Critério: síntese clara e adequada ao 4º ano."
+        }
+      ],
+      "revisao": {
+        "status": "revisao-pedagogica-pendente",
+        "bnccConferida": false,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "gerador-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-4ano-b1-mat-09-problemas-de-adicao",
+      "titulo": "Problemas de adição",
+      "tema": "Problemas de adição",
+      "sequencia": "Atividade 9",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "facil",
+      "objetivo": "Compreender e aplicar conhecimentos de Matemática relacionados a problemas de adição.",
+      "bncc": [
+        {
+          "codigo": "EF04MA09",
+          "descricaoResumida": "Habilidade do 4º ano relacionada ao estudo de problemas de adição."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, responda com atenção e justifique suas ideias quando solicitado.",
+      "textoApoio": {
+        "titulo": "Problemas de adição",
+        "conteudo": "O tema “Problemas de adição” permite resolver situações do cotidiano usando estratégias, registros, cálculos e diferentes formas de representação."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Explique o que você já sabe sobre “Problemas de adição”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual estratégia é mais adequada para resolver uma situação envolvendo “Problemas de adição”?",
+          "alternativas": [
+            "Escolher uma estratégia, registrar os cálculos e conferir o resultado",
+            "Escolher qualquer resposta sem justificativa",
+            "Ignorar as informações apresentadas",
+            "Usar apenas uma opinião sem verificar dados"
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "calculo",
+          "enunciado": "Resolva um exemplo criado por você relacionado a “Problemas de adição”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "problema",
+          "enunciado": "Crie e resolva um problema do cotidiano envolvendo “Problemas de adição”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "representacao",
+          "enunciado": "Represente “Problemas de adição” por meio de desenho, tabela, cálculo ou esquema.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Explique como você conferiria uma resposta relacionada a “Problemas de adição”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Resposta construída com base no texto e no tema.",
+          "justificativa": "Critério: apresentar compreensão clara e coerente."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "A alternativa A apresenta procedimento adequado e fundamentado."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta pessoal coerente.",
+          "justificativa": "Critério: aplicar corretamente o conceito estudado."
+        },
+        {
+          "numero": 4,
+          "resposta": "Produção autoral.",
+          "justificativa": "Critério: clareza, pertinência e relação com o tema."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta pessoal com justificativa.",
+          "justificativa": "Critério: comparar, revisar ou analisar usando evidências."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral.",
+          "justificativa": "Critério: síntese clara e adequada ao 4º ano."
+        }
+      ],
+      "revisao": {
+        "status": "revisao-pedagogica-pendente",
+        "bnccConferida": false,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "gerador-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-4ano-b1-mat-10-problemas-de-subtracao",
+      "titulo": "Problemas de subtração",
+      "tema": "Problemas de subtração",
+      "sequencia": "Atividade 10",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "facil",
+      "objetivo": "Compreender e aplicar conhecimentos de Matemática relacionados a problemas de subtração.",
+      "bncc": [
+        {
+          "codigo": "EF04MA10",
+          "descricaoResumida": "Habilidade do 4º ano relacionada ao estudo de problemas de subtração."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, responda com atenção e justifique suas ideias quando solicitado.",
+      "textoApoio": {
+        "titulo": "Problemas de subtração",
+        "conteudo": "O tema “Problemas de subtração” permite resolver situações do cotidiano usando estratégias, registros, cálculos e diferentes formas de representação."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Explique o que você já sabe sobre “Problemas de subtração”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual estratégia é mais adequada para resolver uma situação envolvendo “Problemas de subtração”?",
+          "alternativas": [
+            "Escolher uma estratégia, registrar os cálculos e conferir o resultado",
+            "Escolher qualquer resposta sem justificativa",
+            "Ignorar as informações apresentadas",
+            "Usar apenas uma opinião sem verificar dados"
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "calculo",
+          "enunciado": "Resolva um exemplo criado por você relacionado a “Problemas de subtração”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "problema",
+          "enunciado": "Crie e resolva um problema do cotidiano envolvendo “Problemas de subtração”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "representacao",
+          "enunciado": "Represente “Problemas de subtração” por meio de desenho, tabela, cálculo ou esquema.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Explique como você conferiria uma resposta relacionada a “Problemas de subtração”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Resposta construída com base no texto e no tema.",
+          "justificativa": "Critério: apresentar compreensão clara e coerente."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "A alternativa A apresenta procedimento adequado e fundamentado."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta pessoal coerente.",
+          "justificativa": "Critério: aplicar corretamente o conceito estudado."
+        },
+        {
+          "numero": 4,
+          "resposta": "Produção autoral.",
+          "justificativa": "Critério: clareza, pertinência e relação com o tema."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta pessoal com justificativa.",
+          "justificativa": "Critério: comparar, revisar ou analisar usando evidências."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral.",
+          "justificativa": "Critério: síntese clara e adequada ao 4º ano."
+        }
+      ],
+      "revisao": {
+        "status": "revisao-pedagogica-pendente",
+        "bnccConferida": false,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "gerador-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-4ano-b1-mat-11-estimativa-de-resultados",
+      "titulo": "Estimativa de resultados",
+      "tema": "Estimativa de resultados",
+      "sequencia": "Atividade 11",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "intermediaria",
+      "objetivo": "Compreender e aplicar conhecimentos de Matemática relacionados a estimativa de resultados.",
+      "bncc": [
+        {
+          "codigo": "EF04MA01",
+          "descricaoResumida": "Habilidade do 4º ano relacionada ao estudo de estimativa de resultados."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, responda com atenção e justifique suas ideias quando solicitado.",
+      "textoApoio": {
+        "titulo": "Estimativa de resultados",
+        "conteudo": "O tema “Estimativa de resultados” permite resolver situações do cotidiano usando estratégias, registros, cálculos e diferentes formas de representação."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Explique o que você já sabe sobre “Estimativa de resultados”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual estratégia é mais adequada para resolver uma situação envolvendo “Estimativa de resultados”?",
+          "alternativas": [
+            "Escolher uma estratégia, registrar os cálculos e conferir o resultado",
+            "Escolher qualquer resposta sem justificativa",
+            "Ignorar as informações apresentadas",
+            "Usar apenas uma opinião sem verificar dados"
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "calculo",
+          "enunciado": "Resolva um exemplo criado por você relacionado a “Estimativa de resultados”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "problema",
+          "enunciado": "Crie e resolva um problema do cotidiano envolvendo “Estimativa de resultados”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "representacao",
+          "enunciado": "Represente “Estimativa de resultados” por meio de desenho, tabela, cálculo ou esquema.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Explique como você conferiria uma resposta relacionada a “Estimativa de resultados”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Resposta construída com base no texto e no tema.",
+          "justificativa": "Critério: apresentar compreensão clara e coerente."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "A alternativa A apresenta procedimento adequado e fundamentado."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta pessoal coerente.",
+          "justificativa": "Critério: aplicar corretamente o conceito estudado."
+        },
+        {
+          "numero": 4,
+          "resposta": "Produção autoral.",
+          "justificativa": "Critério: clareza, pertinência e relação com o tema."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta pessoal com justificativa.",
+          "justificativa": "Critério: comparar, revisar ou analisar usando evidências."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral.",
+          "justificativa": "Critério: síntese clara e adequada ao 4º ano."
+        }
+      ],
+      "revisao": {
+        "status": "revisao-pedagogica-pendente",
+        "bnccConferida": false,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "gerador-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-4ano-b1-mat-12-calculo-mental",
+      "titulo": "Cálculo mental",
+      "tema": "Cálculo mental",
+      "sequencia": "Atividade 12",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "intermediaria",
+      "objetivo": "Compreender e aplicar conhecimentos de Matemática relacionados a cálculo mental.",
+      "bncc": [
+        {
+          "codigo": "EF04MA02",
+          "descricaoResumida": "Habilidade do 4º ano relacionada ao estudo de cálculo mental."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, responda com atenção e justifique suas ideias quando solicitado.",
+      "textoApoio": {
+        "titulo": "Cálculo mental",
+        "conteudo": "O tema “Cálculo mental” permite resolver situações do cotidiano usando estratégias, registros, cálculos e diferentes formas de representação."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Explique o que você já sabe sobre “Cálculo mental”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual estratégia é mais adequada para resolver uma situação envolvendo “Cálculo mental”?",
+          "alternativas": [
+            "Escolher uma estratégia, registrar os cálculos e conferir o resultado",
+            "Escolher qualquer resposta sem justificativa",
+            "Ignorar as informações apresentadas",
+            "Usar apenas uma opinião sem verificar dados"
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "calculo",
+          "enunciado": "Resolva um exemplo criado por você relacionado a “Cálculo mental”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "problema",
+          "enunciado": "Crie e resolva um problema do cotidiano envolvendo “Cálculo mental”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "representacao",
+          "enunciado": "Represente “Cálculo mental” por meio de desenho, tabela, cálculo ou esquema.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Explique como você conferiria uma resposta relacionada a “Cálculo mental”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Resposta construída com base no texto e no tema.",
+          "justificativa": "Critério: apresentar compreensão clara e coerente."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "A alternativa A apresenta procedimento adequado e fundamentado."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta pessoal coerente.",
+          "justificativa": "Critério: aplicar corretamente o conceito estudado."
+        },
+        {
+          "numero": 4,
+          "resposta": "Produção autoral.",
+          "justificativa": "Critério: clareza, pertinência e relação com o tema."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta pessoal com justificativa.",
+          "justificativa": "Critério: comparar, revisar ou analisar usando evidências."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral.",
+          "justificativa": "Critério: síntese clara e adequada ao 4º ano."
+        }
+      ],
+      "revisao": {
+        "status": "revisao-pedagogica-pendente",
+        "bnccConferida": false,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "gerador-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-4ano-b1-mat-13-sequencias-numericas",
+      "titulo": "Sequências numéricas",
+      "tema": "Sequências numéricas",
+      "sequencia": "Atividade 13",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "intermediaria",
+      "objetivo": "Compreender e aplicar conhecimentos de Matemática relacionados a sequências numéricas.",
+      "bncc": [
+        {
+          "codigo": "EF04MA03",
+          "descricaoResumida": "Habilidade do 4º ano relacionada ao estudo de sequências numéricas."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, responda com atenção e justifique suas ideias quando solicitado.",
+      "textoApoio": {
+        "titulo": "Sequências numéricas",
+        "conteudo": "O tema “Sequências numéricas” permite resolver situações do cotidiano usando estratégias, registros, cálculos e diferentes formas de representação."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Explique o que você já sabe sobre “Sequências numéricas”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual estratégia é mais adequada para resolver uma situação envolvendo “Sequências numéricas”?",
+          "alternativas": [
+            "Escolher uma estratégia, registrar os cálculos e conferir o resultado",
+            "Escolher qualquer resposta sem justificativa",
+            "Ignorar as informações apresentadas",
+            "Usar apenas uma opinião sem verificar dados"
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "calculo",
+          "enunciado": "Resolva um exemplo criado por você relacionado a “Sequências numéricas”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "problema",
+          "enunciado": "Crie e resolva um problema do cotidiano envolvendo “Sequências numéricas”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "representacao",
+          "enunciado": "Represente “Sequências numéricas” por meio de desenho, tabela, cálculo ou esquema.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Explique como você conferiria uma resposta relacionada a “Sequências numéricas”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Resposta construída com base no texto e no tema.",
+          "justificativa": "Critério: apresentar compreensão clara e coerente."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "A alternativa A apresenta procedimento adequado e fundamentado."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta pessoal coerente.",
+          "justificativa": "Critério: aplicar corretamente o conceito estudado."
+        },
+        {
+          "numero": 4,
+          "resposta": "Produção autoral.",
+          "justificativa": "Critério: clareza, pertinência e relação com o tema."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta pessoal com justificativa.",
+          "justificativa": "Critério: comparar, revisar ou analisar usando evidências."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral.",
+          "justificativa": "Critério: síntese clara e adequada ao 4º ano."
+        }
+      ],
+      "revisao": {
+        "status": "revisao-pedagogica-pendente",
+        "bnccConferida": false,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "gerador-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-4ano-b1-mat-14-dobro-e-metade",
+      "titulo": "Dobro e metade",
+      "tema": "Dobro e metade",
+      "sequencia": "Atividade 14",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "intermediaria",
+      "objetivo": "Compreender e aplicar conhecimentos de Matemática relacionados a dobro e metade.",
+      "bncc": [
+        {
+          "codigo": "EF04MA04",
+          "descricaoResumida": "Habilidade do 4º ano relacionada ao estudo de dobro e metade."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, responda com atenção e justifique suas ideias quando solicitado.",
+      "textoApoio": {
+        "titulo": "Dobro e metade",
+        "conteudo": "O tema “Dobro e metade” permite resolver situações do cotidiano usando estratégias, registros, cálculos e diferentes formas de representação."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Explique o que você já sabe sobre “Dobro e metade”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual estratégia é mais adequada para resolver uma situação envolvendo “Dobro e metade”?",
+          "alternativas": [
+            "Escolher uma estratégia, registrar os cálculos e conferir o resultado",
+            "Escolher qualquer resposta sem justificativa",
+            "Ignorar as informações apresentadas",
+            "Usar apenas uma opinião sem verificar dados"
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "calculo",
+          "enunciado": "Resolva um exemplo criado por você relacionado a “Dobro e metade”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "problema",
+          "enunciado": "Crie e resolva um problema do cotidiano envolvendo “Dobro e metade”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "representacao",
+          "enunciado": "Represente “Dobro e metade” por meio de desenho, tabela, cálculo ou esquema.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Explique como você conferiria uma resposta relacionada a “Dobro e metade”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Resposta construída com base no texto e no tema.",
+          "justificativa": "Critério: apresentar compreensão clara e coerente."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "A alternativa A apresenta procedimento adequado e fundamentado."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta pessoal coerente.",
+          "justificativa": "Critério: aplicar corretamente o conceito estudado."
+        },
+        {
+          "numero": 4,
+          "resposta": "Produção autoral.",
+          "justificativa": "Critério: clareza, pertinência e relação com o tema."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta pessoal com justificativa.",
+          "justificativa": "Critério: comparar, revisar ou analisar usando evidências."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral.",
+          "justificativa": "Critério: síntese clara e adequada ao 4º ano."
+        }
+      ],
+      "revisao": {
+        "status": "revisao-pedagogica-pendente",
+        "bnccConferida": false,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "gerador-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-4ano-b1-mat-15-triplo-e-terca-parte",
+      "titulo": "Triplo e terça parte",
+      "tema": "Triplo e terça parte",
+      "sequencia": "Atividade 15",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "intermediaria",
+      "objetivo": "Compreender e aplicar conhecimentos de Matemática relacionados a triplo e terça parte.",
+      "bncc": [
+        {
+          "codigo": "EF04MA05",
+          "descricaoResumida": "Habilidade do 4º ano relacionada ao estudo de triplo e terça parte."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, responda com atenção e justifique suas ideias quando solicitado.",
+      "textoApoio": {
+        "titulo": "Triplo e terça parte",
+        "conteudo": "O tema “Triplo e terça parte” permite resolver situações do cotidiano usando estratégias, registros, cálculos e diferentes formas de representação."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Explique o que você já sabe sobre “Triplo e terça parte”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual estratégia é mais adequada para resolver uma situação envolvendo “Triplo e terça parte”?",
+          "alternativas": [
+            "Escolher uma estratégia, registrar os cálculos e conferir o resultado",
+            "Escolher qualquer resposta sem justificativa",
+            "Ignorar as informações apresentadas",
+            "Usar apenas uma opinião sem verificar dados"
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "calculo",
+          "enunciado": "Resolva um exemplo criado por você relacionado a “Triplo e terça parte”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "problema",
+          "enunciado": "Crie e resolva um problema do cotidiano envolvendo “Triplo e terça parte”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "representacao",
+          "enunciado": "Represente “Triplo e terça parte” por meio de desenho, tabela, cálculo ou esquema.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Explique como você conferiria uma resposta relacionada a “Triplo e terça parte”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Resposta construída com base no texto e no tema.",
+          "justificativa": "Critério: apresentar compreensão clara e coerente."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "A alternativa A apresenta procedimento adequado e fundamentado."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta pessoal coerente.",
+          "justificativa": "Critério: aplicar corretamente o conceito estudado."
+        },
+        {
+          "numero": 4,
+          "resposta": "Produção autoral.",
+          "justificativa": "Critério: clareza, pertinência e relação com o tema."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta pessoal com justificativa.",
+          "justificativa": "Critério: comparar, revisar ou analisar usando evidências."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral.",
+          "justificativa": "Critério: síntese clara e adequada ao 4º ano."
+        }
+      ],
+      "revisao": {
+        "status": "revisao-pedagogica-pendente",
+        "bnccConferida": false,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "gerador-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-4ano-b1-mat-16-multiplicacao-por-2",
+      "titulo": "Multiplicação por 2",
+      "tema": "Multiplicação por 2",
+      "sequencia": "Atividade 16",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "intermediaria",
+      "objetivo": "Compreender e aplicar conhecimentos de Matemática relacionados a multiplicação por 2.",
+      "bncc": [
+        {
+          "codigo": "EF04MA06",
+          "descricaoResumida": "Habilidade do 4º ano relacionada ao estudo de multiplicação por 2."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, responda com atenção e justifique suas ideias quando solicitado.",
+      "textoApoio": {
+        "titulo": "Multiplicação por 2",
+        "conteudo": "O tema “Multiplicação por 2” permite resolver situações do cotidiano usando estratégias, registros, cálculos e diferentes formas de representação."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Explique o que você já sabe sobre “Multiplicação por 2”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual estratégia é mais adequada para resolver uma situação envolvendo “Multiplicação por 2”?",
+          "alternativas": [
+            "Escolher uma estratégia, registrar os cálculos e conferir o resultado",
+            "Escolher qualquer resposta sem justificativa",
+            "Ignorar as informações apresentadas",
+            "Usar apenas uma opinião sem verificar dados"
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "calculo",
+          "enunciado": "Resolva um exemplo criado por você relacionado a “Multiplicação por 2”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "problema",
+          "enunciado": "Crie e resolva um problema do cotidiano envolvendo “Multiplicação por 2”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "representacao",
+          "enunciado": "Represente “Multiplicação por 2” por meio de desenho, tabela, cálculo ou esquema.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Explique como você conferiria uma resposta relacionada a “Multiplicação por 2”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Resposta construída com base no texto e no tema.",
+          "justificativa": "Critério: apresentar compreensão clara e coerente."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "A alternativa A apresenta procedimento adequado e fundamentado."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta pessoal coerente.",
+          "justificativa": "Critério: aplicar corretamente o conceito estudado."
+        },
+        {
+          "numero": 4,
+          "resposta": "Produção autoral.",
+          "justificativa": "Critério: clareza, pertinência e relação com o tema."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta pessoal com justificativa.",
+          "justificativa": "Critério: comparar, revisar ou analisar usando evidências."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral.",
+          "justificativa": "Critério: síntese clara e adequada ao 4º ano."
+        }
+      ],
+      "revisao": {
+        "status": "revisao-pedagogica-pendente",
+        "bnccConferida": false,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "gerador-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-4ano-b1-mat-17-multiplicacao-por-3",
+      "titulo": "Multiplicação por 3",
+      "tema": "Multiplicação por 3",
+      "sequencia": "Atividade 17",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "intermediaria",
+      "objetivo": "Compreender e aplicar conhecimentos de Matemática relacionados a multiplicação por 3.",
+      "bncc": [
+        {
+          "codigo": "EF04MA07",
+          "descricaoResumida": "Habilidade do 4º ano relacionada ao estudo de multiplicação por 3."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, responda com atenção e justifique suas ideias quando solicitado.",
+      "textoApoio": {
+        "titulo": "Multiplicação por 3",
+        "conteudo": "O tema “Multiplicação por 3” permite resolver situações do cotidiano usando estratégias, registros, cálculos e diferentes formas de representação."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Explique o que você já sabe sobre “Multiplicação por 3”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual estratégia é mais adequada para resolver uma situação envolvendo “Multiplicação por 3”?",
+          "alternativas": [
+            "Escolher uma estratégia, registrar os cálculos e conferir o resultado",
+            "Escolher qualquer resposta sem justificativa",
+            "Ignorar as informações apresentadas",
+            "Usar apenas uma opinião sem verificar dados"
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "calculo",
+          "enunciado": "Resolva um exemplo criado por você relacionado a “Multiplicação por 3”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "problema",
+          "enunciado": "Crie e resolva um problema do cotidiano envolvendo “Multiplicação por 3”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "representacao",
+          "enunciado": "Represente “Multiplicação por 3” por meio de desenho, tabela, cálculo ou esquema.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Explique como você conferiria uma resposta relacionada a “Multiplicação por 3”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Resposta construída com base no texto e no tema.",
+          "justificativa": "Critério: apresentar compreensão clara e coerente."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "A alternativa A apresenta procedimento adequado e fundamentado."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta pessoal coerente.",
+          "justificativa": "Critério: aplicar corretamente o conceito estudado."
+        },
+        {
+          "numero": 4,
+          "resposta": "Produção autoral.",
+          "justificativa": "Critério: clareza, pertinência e relação com o tema."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta pessoal com justificativa.",
+          "justificativa": "Critério: comparar, revisar ou analisar usando evidências."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral.",
+          "justificativa": "Critério: síntese clara e adequada ao 4º ano."
+        }
+      ],
+      "revisao": {
+        "status": "revisao-pedagogica-pendente",
+        "bnccConferida": false,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "gerador-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-4ano-b1-mat-18-multiplicacao-por-4",
+      "titulo": "Multiplicação por 4",
+      "tema": "Multiplicação por 4",
+      "sequencia": "Atividade 18",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "intermediaria",
+      "objetivo": "Compreender e aplicar conhecimentos de Matemática relacionados a multiplicação por 4.",
+      "bncc": [
+        {
+          "codigo": "EF04MA08",
+          "descricaoResumida": "Habilidade do 4º ano relacionada ao estudo de multiplicação por 4."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, responda com atenção e justifique suas ideias quando solicitado.",
+      "textoApoio": {
+        "titulo": "Multiplicação por 4",
+        "conteudo": "O tema “Multiplicação por 4” permite resolver situações do cotidiano usando estratégias, registros, cálculos e diferentes formas de representação."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Explique o que você já sabe sobre “Multiplicação por 4”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual estratégia é mais adequada para resolver uma situação envolvendo “Multiplicação por 4”?",
+          "alternativas": [
+            "Escolher uma estratégia, registrar os cálculos e conferir o resultado",
+            "Escolher qualquer resposta sem justificativa",
+            "Ignorar as informações apresentadas",
+            "Usar apenas uma opinião sem verificar dados"
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "calculo",
+          "enunciado": "Resolva um exemplo criado por você relacionado a “Multiplicação por 4”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "problema",
+          "enunciado": "Crie e resolva um problema do cotidiano envolvendo “Multiplicação por 4”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "representacao",
+          "enunciado": "Represente “Multiplicação por 4” por meio de desenho, tabela, cálculo ou esquema.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Explique como você conferiria uma resposta relacionada a “Multiplicação por 4”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Resposta construída com base no texto e no tema.",
+          "justificativa": "Critério: apresentar compreensão clara e coerente."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "A alternativa A apresenta procedimento adequado e fundamentado."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta pessoal coerente.",
+          "justificativa": "Critério: aplicar corretamente o conceito estudado."
+        },
+        {
+          "numero": 4,
+          "resposta": "Produção autoral.",
+          "justificativa": "Critério: clareza, pertinência e relação com o tema."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta pessoal com justificativa.",
+          "justificativa": "Critério: comparar, revisar ou analisar usando evidências."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral.",
+          "justificativa": "Critério: síntese clara e adequada ao 4º ano."
+        }
+      ],
+      "revisao": {
+        "status": "revisao-pedagogica-pendente",
+        "bnccConferida": false,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "gerador-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-4ano-b1-mat-19-multiplicacao-por-5",
+      "titulo": "Multiplicação por 5",
+      "tema": "Multiplicação por 5",
+      "sequencia": "Atividade 19",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "intermediaria",
+      "objetivo": "Compreender e aplicar conhecimentos de Matemática relacionados a multiplicação por 5.",
+      "bncc": [
+        {
+          "codigo": "EF04MA09",
+          "descricaoResumida": "Habilidade do 4º ano relacionada ao estudo de multiplicação por 5."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, responda com atenção e justifique suas ideias quando solicitado.",
+      "textoApoio": {
+        "titulo": "Multiplicação por 5",
+        "conteudo": "O tema “Multiplicação por 5” permite resolver situações do cotidiano usando estratégias, registros, cálculos e diferentes formas de representação."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Explique o que você já sabe sobre “Multiplicação por 5”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual estratégia é mais adequada para resolver uma situação envolvendo “Multiplicação por 5”?",
+          "alternativas": [
+            "Escolher uma estratégia, registrar os cálculos e conferir o resultado",
+            "Escolher qualquer resposta sem justificativa",
+            "Ignorar as informações apresentadas",
+            "Usar apenas uma opinião sem verificar dados"
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "calculo",
+          "enunciado": "Resolva um exemplo criado por você relacionado a “Multiplicação por 5”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "problema",
+          "enunciado": "Crie e resolva um problema do cotidiano envolvendo “Multiplicação por 5”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "representacao",
+          "enunciado": "Represente “Multiplicação por 5” por meio de desenho, tabela, cálculo ou esquema.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Explique como você conferiria uma resposta relacionada a “Multiplicação por 5”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Resposta construída com base no texto e no tema.",
+          "justificativa": "Critério: apresentar compreensão clara e coerente."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "A alternativa A apresenta procedimento adequado e fundamentado."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta pessoal coerente.",
+          "justificativa": "Critério: aplicar corretamente o conceito estudado."
+        },
+        {
+          "numero": 4,
+          "resposta": "Produção autoral.",
+          "justificativa": "Critério: clareza, pertinência e relação com o tema."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta pessoal com justificativa.",
+          "justificativa": "Critério: comparar, revisar ou analisar usando evidências."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral.",
+          "justificativa": "Critério: síntese clara e adequada ao 4º ano."
+        }
+      ],
+      "revisao": {
+        "status": "revisao-pedagogica-pendente",
+        "bnccConferida": false,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "gerador-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-4ano-b1-mat-20-tabuada-e-regularidades",
+      "titulo": "Tabuada e regularidades",
+      "tema": "Tabuada e regularidades",
+      "sequencia": "Atividade 20",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "intermediaria",
+      "objetivo": "Compreender e aplicar conhecimentos de Matemática relacionados a tabuada e regularidades.",
+      "bncc": [
+        {
+          "codigo": "EF04MA10",
+          "descricaoResumida": "Habilidade do 4º ano relacionada ao estudo de tabuada e regularidades."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, responda com atenção e justifique suas ideias quando solicitado.",
+      "textoApoio": {
+        "titulo": "Tabuada e regularidades",
+        "conteudo": "O tema “Tabuada e regularidades” permite resolver situações do cotidiano usando estratégias, registros, cálculos e diferentes formas de representação."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Explique o que você já sabe sobre “Tabuada e regularidades”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual estratégia é mais adequada para resolver uma situação envolvendo “Tabuada e regularidades”?",
+          "alternativas": [
+            "Escolher uma estratégia, registrar os cálculos e conferir o resultado",
+            "Escolher qualquer resposta sem justificativa",
+            "Ignorar as informações apresentadas",
+            "Usar apenas uma opinião sem verificar dados"
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "calculo",
+          "enunciado": "Resolva um exemplo criado por você relacionado a “Tabuada e regularidades”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "problema",
+          "enunciado": "Crie e resolva um problema do cotidiano envolvendo “Tabuada e regularidades”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "representacao",
+          "enunciado": "Represente “Tabuada e regularidades” por meio de desenho, tabela, cálculo ou esquema.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Explique como você conferiria uma resposta relacionada a “Tabuada e regularidades”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Resposta construída com base no texto e no tema.",
+          "justificativa": "Critério: apresentar compreensão clara e coerente."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "A alternativa A apresenta procedimento adequado e fundamentado."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta pessoal coerente.",
+          "justificativa": "Critério: aplicar corretamente o conceito estudado."
+        },
+        {
+          "numero": 4,
+          "resposta": "Produção autoral.",
+          "justificativa": "Critério: clareza, pertinência e relação com o tema."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta pessoal com justificativa.",
+          "justificativa": "Critério: comparar, revisar ou analisar usando evidências."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral.",
+          "justificativa": "Critério: síntese clara e adequada ao 4º ano."
+        }
+      ],
+      "revisao": {
+        "status": "revisao-pedagogica-pendente",
+        "bnccConferida": false,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "gerador-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-4ano-b1-mat-21-introducao-a-divisao",
+      "titulo": "Introdução à divisão",
+      "tema": "Introdução à divisão",
+      "sequencia": "Atividade 21",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "intermediaria",
+      "objetivo": "Compreender e aplicar conhecimentos de Matemática relacionados a introdução à divisão.",
+      "bncc": [
+        {
+          "codigo": "EF04MA01",
+          "descricaoResumida": "Habilidade do 4º ano relacionada ao estudo de introdução à divisão."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, responda com atenção e justifique suas ideias quando solicitado.",
+      "textoApoio": {
+        "titulo": "Introdução à divisão",
+        "conteudo": "O tema “Introdução à divisão” permite resolver situações do cotidiano usando estratégias, registros, cálculos e diferentes formas de representação."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Explique o que você já sabe sobre “Introdução à divisão”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual estratégia é mais adequada para resolver uma situação envolvendo “Introdução à divisão”?",
+          "alternativas": [
+            "Escolher uma estratégia, registrar os cálculos e conferir o resultado",
+            "Escolher qualquer resposta sem justificativa",
+            "Ignorar as informações apresentadas",
+            "Usar apenas uma opinião sem verificar dados"
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "calculo",
+          "enunciado": "Resolva um exemplo criado por você relacionado a “Introdução à divisão”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "problema",
+          "enunciado": "Crie e resolva um problema do cotidiano envolvendo “Introdução à divisão”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "representacao",
+          "enunciado": "Represente “Introdução à divisão” por meio de desenho, tabela, cálculo ou esquema.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Explique como você conferiria uma resposta relacionada a “Introdução à divisão”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Resposta construída com base no texto e no tema.",
+          "justificativa": "Critério: apresentar compreensão clara e coerente."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "A alternativa A apresenta procedimento adequado e fundamentado."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta pessoal coerente.",
+          "justificativa": "Critério: aplicar corretamente o conceito estudado."
+        },
+        {
+          "numero": 4,
+          "resposta": "Produção autoral.",
+          "justificativa": "Critério: clareza, pertinência e relação com o tema."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta pessoal com justificativa.",
+          "justificativa": "Critério: comparar, revisar ou analisar usando evidências."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral.",
+          "justificativa": "Critério: síntese clara e adequada ao 4º ano."
+        }
+      ],
+      "revisao": {
+        "status": "revisao-pedagogica-pendente",
+        "bnccConferida": false,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "gerador-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-4ano-b1-mat-22-reparticao-em-partes-iguais",
+      "titulo": "Repartição em partes iguais",
+      "tema": "Repartição em partes iguais",
+      "sequencia": "Atividade 22",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "intermediaria",
+      "objetivo": "Compreender e aplicar conhecimentos de Matemática relacionados a repartição em partes iguais.",
+      "bncc": [
+        {
+          "codigo": "EF04MA02",
+          "descricaoResumida": "Habilidade do 4º ano relacionada ao estudo de repartição em partes iguais."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, responda com atenção e justifique suas ideias quando solicitado.",
+      "textoApoio": {
+        "titulo": "Repartição em partes iguais",
+        "conteudo": "O tema “Repartição em partes iguais” permite resolver situações do cotidiano usando estratégias, registros, cálculos e diferentes formas de representação."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Explique o que você já sabe sobre “Repartição em partes iguais”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual estratégia é mais adequada para resolver uma situação envolvendo “Repartição em partes iguais”?",
+          "alternativas": [
+            "Escolher uma estratégia, registrar os cálculos e conferir o resultado",
+            "Escolher qualquer resposta sem justificativa",
+            "Ignorar as informações apresentadas",
+            "Usar apenas uma opinião sem verificar dados"
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "calculo",
+          "enunciado": "Resolva um exemplo criado por você relacionado a “Repartição em partes iguais”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "problema",
+          "enunciado": "Crie e resolva um problema do cotidiano envolvendo “Repartição em partes iguais”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "representacao",
+          "enunciado": "Represente “Repartição em partes iguais” por meio de desenho, tabela, cálculo ou esquema.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Explique como você conferiria uma resposta relacionada a “Repartição em partes iguais”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Resposta construída com base no texto e no tema.",
+          "justificativa": "Critério: apresentar compreensão clara e coerente."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "A alternativa A apresenta procedimento adequado e fundamentado."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta pessoal coerente.",
+          "justificativa": "Critério: aplicar corretamente o conceito estudado."
+        },
+        {
+          "numero": 4,
+          "resposta": "Produção autoral.",
+          "justificativa": "Critério: clareza, pertinência e relação com o tema."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta pessoal com justificativa.",
+          "justificativa": "Critério: comparar, revisar ou analisar usando evidências."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral.",
+          "justificativa": "Critério: síntese clara e adequada ao 4º ano."
+        }
+      ],
+      "revisao": {
+        "status": "revisao-pedagogica-pendente",
+        "bnccConferida": false,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "gerador-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-4ano-b1-mat-23-medidas-de-comprimento",
+      "titulo": "Medidas de comprimento",
+      "tema": "Medidas de comprimento",
+      "sequencia": "Atividade 23",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "desafiadora",
+      "objetivo": "Compreender e aplicar conhecimentos de Matemática relacionados a medidas de comprimento.",
+      "bncc": [
+        {
+          "codigo": "EF04MA03",
+          "descricaoResumida": "Habilidade do 4º ano relacionada ao estudo de medidas de comprimento."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, responda com atenção e justifique suas ideias quando solicitado.",
+      "textoApoio": {
+        "titulo": "Medidas de comprimento",
+        "conteudo": "O tema “Medidas de comprimento” permite resolver situações do cotidiano usando estratégias, registros, cálculos e diferentes formas de representação."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Explique o que você já sabe sobre “Medidas de comprimento”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual estratégia é mais adequada para resolver uma situação envolvendo “Medidas de comprimento”?",
+          "alternativas": [
+            "Escolher uma estratégia, registrar os cálculos e conferir o resultado",
+            "Escolher qualquer resposta sem justificativa",
+            "Ignorar as informações apresentadas",
+            "Usar apenas uma opinião sem verificar dados"
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "calculo",
+          "enunciado": "Resolva um exemplo criado por você relacionado a “Medidas de comprimento”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "problema",
+          "enunciado": "Crie e resolva um problema do cotidiano envolvendo “Medidas de comprimento”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "representacao",
+          "enunciado": "Represente “Medidas de comprimento” por meio de desenho, tabela, cálculo ou esquema.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Explique como você conferiria uma resposta relacionada a “Medidas de comprimento”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Resposta construída com base no texto e no tema.",
+          "justificativa": "Critério: apresentar compreensão clara e coerente."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "A alternativa A apresenta procedimento adequado e fundamentado."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta pessoal coerente.",
+          "justificativa": "Critério: aplicar corretamente o conceito estudado."
+        },
+        {
+          "numero": 4,
+          "resposta": "Produção autoral.",
+          "justificativa": "Critério: clareza, pertinência e relação com o tema."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta pessoal com justificativa.",
+          "justificativa": "Critério: comparar, revisar ou analisar usando evidências."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral.",
+          "justificativa": "Critério: síntese clara e adequada ao 4º ano."
+        }
+      ],
+      "revisao": {
+        "status": "revisao-pedagogica-pendente",
+        "bnccConferida": false,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "gerador-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-4ano-b1-mat-24-uso-da-regua",
+      "titulo": "Uso da régua",
+      "tema": "Uso da régua",
+      "sequencia": "Atividade 24",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "desafiadora",
+      "objetivo": "Compreender e aplicar conhecimentos de Matemática relacionados a uso da régua.",
+      "bncc": [
+        {
+          "codigo": "EF04MA04",
+          "descricaoResumida": "Habilidade do 4º ano relacionada ao estudo de uso da régua."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, responda com atenção e justifique suas ideias quando solicitado.",
+      "textoApoio": {
+        "titulo": "Uso da régua",
+        "conteudo": "O tema “Uso da régua” permite resolver situações do cotidiano usando estratégias, registros, cálculos e diferentes formas de representação."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Explique o que você já sabe sobre “Uso da régua”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual estratégia é mais adequada para resolver uma situação envolvendo “Uso da régua”?",
+          "alternativas": [
+            "Escolher uma estratégia, registrar os cálculos e conferir o resultado",
+            "Escolher qualquer resposta sem justificativa",
+            "Ignorar as informações apresentadas",
+            "Usar apenas uma opinião sem verificar dados"
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "calculo",
+          "enunciado": "Resolva um exemplo criado por você relacionado a “Uso da régua”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "problema",
+          "enunciado": "Crie e resolva um problema do cotidiano envolvendo “Uso da régua”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "representacao",
+          "enunciado": "Represente “Uso da régua” por meio de desenho, tabela, cálculo ou esquema.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Explique como você conferiria uma resposta relacionada a “Uso da régua”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Resposta construída com base no texto e no tema.",
+          "justificativa": "Critério: apresentar compreensão clara e coerente."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "A alternativa A apresenta procedimento adequado e fundamentado."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta pessoal coerente.",
+          "justificativa": "Critério: aplicar corretamente o conceito estudado."
+        },
+        {
+          "numero": 4,
+          "resposta": "Produção autoral.",
+          "justificativa": "Critério: clareza, pertinência e relação com o tema."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta pessoal com justificativa.",
+          "justificativa": "Critério: comparar, revisar ou analisar usando evidências."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral.",
+          "justificativa": "Critério: síntese clara e adequada ao 4º ano."
+        }
+      ],
+      "revisao": {
+        "status": "revisao-pedagogica-pendente",
+        "bnccConferida": false,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "gerador-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-4ano-b1-mat-25-perimetro-em-malha-quadriculada",
+      "titulo": "Perímetro em malha quadriculada",
+      "tema": "Perímetro em malha quadriculada",
+      "sequencia": "Atividade 25",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "desafiadora",
+      "objetivo": "Compreender e aplicar conhecimentos de Matemática relacionados a perímetro em malha quadriculada.",
+      "bncc": [
+        {
+          "codigo": "EF04MA05",
+          "descricaoResumida": "Habilidade do 4º ano relacionada ao estudo de perímetro em malha quadriculada."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, responda com atenção e justifique suas ideias quando solicitado.",
+      "textoApoio": {
+        "titulo": "Perímetro em malha quadriculada",
+        "conteudo": "O tema “Perímetro em malha quadriculada” permite resolver situações do cotidiano usando estratégias, registros, cálculos e diferentes formas de representação."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Explique o que você já sabe sobre “Perímetro em malha quadriculada”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual estratégia é mais adequada para resolver uma situação envolvendo “Perímetro em malha quadriculada”?",
+          "alternativas": [
+            "Escolher uma estratégia, registrar os cálculos e conferir o resultado",
+            "Escolher qualquer resposta sem justificativa",
+            "Ignorar as informações apresentadas",
+            "Usar apenas uma opinião sem verificar dados"
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "calculo",
+          "enunciado": "Resolva um exemplo criado por você relacionado a “Perímetro em malha quadriculada”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "problema",
+          "enunciado": "Crie e resolva um problema do cotidiano envolvendo “Perímetro em malha quadriculada”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "representacao",
+          "enunciado": "Represente “Perímetro em malha quadriculada” por meio de desenho, tabela, cálculo ou esquema.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Explique como você conferiria uma resposta relacionada a “Perímetro em malha quadriculada”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Resposta construída com base no texto e no tema.",
+          "justificativa": "Critério: apresentar compreensão clara e coerente."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "A alternativa A apresenta procedimento adequado e fundamentado."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta pessoal coerente.",
+          "justificativa": "Critério: aplicar corretamente o conceito estudado."
+        },
+        {
+          "numero": 4,
+          "resposta": "Produção autoral.",
+          "justificativa": "Critério: clareza, pertinência e relação com o tema."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta pessoal com justificativa.",
+          "justificativa": "Critério: comparar, revisar ou analisar usando evidências."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral.",
+          "justificativa": "Critério: síntese clara e adequada ao 4º ano."
+        }
+      ],
+      "revisao": {
+        "status": "revisao-pedagogica-pendente",
+        "bnccConferida": false,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "gerador-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-4ano-b1-mat-26-figuras-planas",
+      "titulo": "Figuras planas",
+      "tema": "Figuras planas",
+      "sequencia": "Atividade 26",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "desafiadora",
+      "objetivo": "Compreender e aplicar conhecimentos de Matemática relacionados a figuras planas.",
+      "bncc": [
+        {
+          "codigo": "EF04MA06",
+          "descricaoResumida": "Habilidade do 4º ano relacionada ao estudo de figuras planas."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, responda com atenção e justifique suas ideias quando solicitado.",
+      "textoApoio": {
+        "titulo": "Figuras planas",
+        "conteudo": "O tema “Figuras planas” permite resolver situações do cotidiano usando estratégias, registros, cálculos e diferentes formas de representação."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Explique o que você já sabe sobre “Figuras planas”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual estratégia é mais adequada para resolver uma situação envolvendo “Figuras planas”?",
+          "alternativas": [
+            "Escolher uma estratégia, registrar os cálculos e conferir o resultado",
+            "Escolher qualquer resposta sem justificativa",
+            "Ignorar as informações apresentadas",
+            "Usar apenas uma opinião sem verificar dados"
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "calculo",
+          "enunciado": "Resolva um exemplo criado por você relacionado a “Figuras planas”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "problema",
+          "enunciado": "Crie e resolva um problema do cotidiano envolvendo “Figuras planas”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "representacao",
+          "enunciado": "Represente “Figuras planas” por meio de desenho, tabela, cálculo ou esquema.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Explique como você conferiria uma resposta relacionada a “Figuras planas”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Resposta construída com base no texto e no tema.",
+          "justificativa": "Critério: apresentar compreensão clara e coerente."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "A alternativa A apresenta procedimento adequado e fundamentado."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta pessoal coerente.",
+          "justificativa": "Critério: aplicar corretamente o conceito estudado."
+        },
+        {
+          "numero": 4,
+          "resposta": "Produção autoral.",
+          "justificativa": "Critério: clareza, pertinência e relação com o tema."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta pessoal com justificativa.",
+          "justificativa": "Critério: comparar, revisar ou analisar usando evidências."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral.",
+          "justificativa": "Critério: síntese clara e adequada ao 4º ano."
+        }
+      ],
+      "revisao": {
+        "status": "revisao-pedagogica-pendente",
+        "bnccConferida": false,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "gerador-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-4ano-b1-mat-27-localizacao-em-mapas-simples",
+      "titulo": "Localização em mapas simples",
+      "tema": "Localização em mapas simples",
+      "sequencia": "Atividade 27",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "desafiadora",
+      "objetivo": "Compreender e aplicar conhecimentos de Matemática relacionados a localização em mapas simples.",
+      "bncc": [
+        {
+          "codigo": "EF04MA07",
+          "descricaoResumida": "Habilidade do 4º ano relacionada ao estudo de localização em mapas simples."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, responda com atenção e justifique suas ideias quando solicitado.",
+      "textoApoio": {
+        "titulo": "Localização em mapas simples",
+        "conteudo": "O tema “Localização em mapas simples” permite resolver situações do cotidiano usando estratégias, registros, cálculos e diferentes formas de representação."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Explique o que você já sabe sobre “Localização em mapas simples”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual estratégia é mais adequada para resolver uma situação envolvendo “Localização em mapas simples”?",
+          "alternativas": [
+            "Escolher uma estratégia, registrar os cálculos e conferir o resultado",
+            "Escolher qualquer resposta sem justificativa",
+            "Ignorar as informações apresentadas",
+            "Usar apenas uma opinião sem verificar dados"
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "calculo",
+          "enunciado": "Resolva um exemplo criado por você relacionado a “Localização em mapas simples”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "problema",
+          "enunciado": "Crie e resolva um problema do cotidiano envolvendo “Localização em mapas simples”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "representacao",
+          "enunciado": "Represente “Localização em mapas simples” por meio de desenho, tabela, cálculo ou esquema.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Explique como você conferiria uma resposta relacionada a “Localização em mapas simples”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Resposta construída com base no texto e no tema.",
+          "justificativa": "Critério: apresentar compreensão clara e coerente."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "A alternativa A apresenta procedimento adequado e fundamentado."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta pessoal coerente.",
+          "justificativa": "Critério: aplicar corretamente o conceito estudado."
+        },
+        {
+          "numero": 4,
+          "resposta": "Produção autoral.",
+          "justificativa": "Critério: clareza, pertinência e relação com o tema."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta pessoal com justificativa.",
+          "justificativa": "Critério: comparar, revisar ou analisar usando evidências."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral.",
+          "justificativa": "Critério: síntese clara e adequada ao 4º ano."
+        }
+      ],
+      "revisao": {
+        "status": "revisao-pedagogica-pendente",
+        "bnccConferida": false,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "gerador-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-4ano-b1-mat-28-tabelas-simples",
+      "titulo": "Tabelas simples",
+      "tema": "Tabelas simples",
+      "sequencia": "Atividade 28",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "desafiadora",
+      "objetivo": "Compreender e aplicar conhecimentos de Matemática relacionados a tabelas simples.",
+      "bncc": [
+        {
+          "codigo": "EF04MA08",
+          "descricaoResumida": "Habilidade do 4º ano relacionada ao estudo de tabelas simples."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, responda com atenção e justifique suas ideias quando solicitado.",
+      "textoApoio": {
+        "titulo": "Tabelas simples",
+        "conteudo": "O tema “Tabelas simples” permite resolver situações do cotidiano usando estratégias, registros, cálculos e diferentes formas de representação."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Explique o que você já sabe sobre “Tabelas simples”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual estratégia é mais adequada para resolver uma situação envolvendo “Tabelas simples”?",
+          "alternativas": [
+            "Escolher uma estratégia, registrar os cálculos e conferir o resultado",
+            "Escolher qualquer resposta sem justificativa",
+            "Ignorar as informações apresentadas",
+            "Usar apenas uma opinião sem verificar dados"
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "calculo",
+          "enunciado": "Resolva um exemplo criado por você relacionado a “Tabelas simples”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "problema",
+          "enunciado": "Crie e resolva um problema do cotidiano envolvendo “Tabelas simples”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "representacao",
+          "enunciado": "Represente “Tabelas simples” por meio de desenho, tabela, cálculo ou esquema.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Explique como você conferiria uma resposta relacionada a “Tabelas simples”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Resposta construída com base no texto e no tema.",
+          "justificativa": "Critério: apresentar compreensão clara e coerente."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "A alternativa A apresenta procedimento adequado e fundamentado."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta pessoal coerente.",
+          "justificativa": "Critério: aplicar corretamente o conceito estudado."
+        },
+        {
+          "numero": 4,
+          "resposta": "Produção autoral.",
+          "justificativa": "Critério: clareza, pertinência e relação com o tema."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta pessoal com justificativa.",
+          "justificativa": "Critério: comparar, revisar ou analisar usando evidências."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral.",
+          "justificativa": "Critério: síntese clara e adequada ao 4º ano."
+        }
+      ],
+      "revisao": {
+        "status": "revisao-pedagogica-pendente",
+        "bnccConferida": false,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "gerador-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-4ano-b1-mat-29-graficos-de-colunas",
+      "titulo": "Gráficos de colunas",
+      "tema": "Gráficos de colunas",
+      "sequencia": "Atividade 29",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "desafiadora",
+      "objetivo": "Compreender e aplicar conhecimentos de Matemática relacionados a gráficos de colunas.",
+      "bncc": [
+        {
+          "codigo": "EF04MA09",
+          "descricaoResumida": "Habilidade do 4º ano relacionada ao estudo de gráficos de colunas."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, responda com atenção e justifique suas ideias quando solicitado.",
+      "textoApoio": {
+        "titulo": "Gráficos de colunas",
+        "conteudo": "O tema “Gráficos de colunas” permite resolver situações do cotidiano usando estratégias, registros, cálculos e diferentes formas de representação."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Explique o que você já sabe sobre “Gráficos de colunas”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual estratégia é mais adequada para resolver uma situação envolvendo “Gráficos de colunas”?",
+          "alternativas": [
+            "Escolher uma estratégia, registrar os cálculos e conferir o resultado",
+            "Escolher qualquer resposta sem justificativa",
+            "Ignorar as informações apresentadas",
+            "Usar apenas uma opinião sem verificar dados"
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "calculo",
+          "enunciado": "Resolva um exemplo criado por você relacionado a “Gráficos de colunas”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "problema",
+          "enunciado": "Crie e resolva um problema do cotidiano envolvendo “Gráficos de colunas”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "representacao",
+          "enunciado": "Represente “Gráficos de colunas” por meio de desenho, tabela, cálculo ou esquema.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Explique como você conferiria uma resposta relacionada a “Gráficos de colunas”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Resposta construída com base no texto e no tema.",
+          "justificativa": "Critério: apresentar compreensão clara e coerente."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "A alternativa A apresenta procedimento adequado e fundamentado."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta pessoal coerente.",
+          "justificativa": "Critério: aplicar corretamente o conceito estudado."
+        },
+        {
+          "numero": 4,
+          "resposta": "Produção autoral.",
+          "justificativa": "Critério: clareza, pertinência e relação com o tema."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta pessoal com justificativa.",
+          "justificativa": "Critério: comparar, revisar ou analisar usando evidências."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral.",
+          "justificativa": "Critério: síntese clara e adequada ao 4º ano."
+        }
+      ],
+      "revisao": {
+        "status": "revisao-pedagogica-pendente",
+        "bnccConferida": false,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "gerador-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-4ano-b1-mat-30-resolucao-de-problemas-mistos",
+      "titulo": "Resolução de problemas mistos",
+      "tema": "Resolução de problemas mistos",
+      "sequencia": "Atividade 30",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "desafiadora",
+      "objetivo": "Compreender e aplicar conhecimentos de Matemática relacionados a resolução de problemas mistos.",
+      "bncc": [
+        {
+          "codigo": "EF04MA10",
+          "descricaoResumida": "Habilidade do 4º ano relacionada ao estudo de resolução de problemas mistos."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, responda com atenção e justifique suas ideias quando solicitado.",
+      "textoApoio": {
+        "titulo": "Resolução de problemas mistos",
+        "conteudo": "O tema “Resolução de problemas mistos” permite resolver situações do cotidiano usando estratégias, registros, cálculos e diferentes formas de representação."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Explique o que você já sabe sobre “Resolução de problemas mistos”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual estratégia é mais adequada para resolver uma situação envolvendo “Resolução de problemas mistos”?",
+          "alternativas": [
+            "Escolher uma estratégia, registrar os cálculos e conferir o resultado",
+            "Escolher qualquer resposta sem justificativa",
+            "Ignorar as informações apresentadas",
+            "Usar apenas uma opinião sem verificar dados"
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "calculo",
+          "enunciado": "Resolva um exemplo criado por você relacionado a “Resolução de problemas mistos”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "problema",
+          "enunciado": "Crie e resolva um problema do cotidiano envolvendo “Resolução de problemas mistos”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "representacao",
+          "enunciado": "Represente “Resolução de problemas mistos” por meio de desenho, tabela, cálculo ou esquema.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Explique como você conferiria uma resposta relacionada a “Resolução de problemas mistos”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Resposta construída com base no texto e no tema.",
+          "justificativa": "Critério: apresentar compreensão clara e coerente."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "A alternativa A apresenta procedimento adequado e fundamentado."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta pessoal coerente.",
+          "justificativa": "Critério: aplicar corretamente o conceito estudado."
+        },
+        {
+          "numero": 4,
+          "resposta": "Produção autoral.",
+          "justificativa": "Critério: clareza, pertinência e relação com o tema."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta pessoal com justificativa.",
+          "justificativa": "Critério: comparar, revisar ou analisar usando evidências."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral.",
+          "justificativa": "Critério: síntese clara e adequada ao 4º ano."
+        }
+      ],
+      "revisao": {
+        "status": "revisao-pedagogica-pendente",
+        "bnccConferida": false,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "gerador-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    }
+  ]
+}
