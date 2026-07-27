@@ -283,6 +283,51 @@ test('HTML final não contém IDs duplicados, links vazios ou textos substituíd
   assert.doesNotMatch(home, /FEITO PARA PROFESSORES|Conheça a plataforma|NOSSOS SERVIÇOS|Tudo o que você precisa, em um só lugar/);
 });
 
+test('HTML, JavaScript e JSON permanecem em UTF-8 sem textos corrompidos', async () => {
+  const collectJsonFiles = async directory => {
+    const files = [];
+    const entries = await readdir(directory, { withFileTypes: true });
+
+    for (const entry of entries) {
+      const entryUrl = new URL(entry.name, directory);
+      if (entry.isDirectory()) {
+        files.push(...await collectJsonFiles(new URL(`${entry.name}/`, directory)));
+      } else if (entry.name.endsWith('.json')) {
+        files.push(entryUrl);
+      }
+    }
+
+    return files;
+  };
+
+  const sourceFiles = [
+    'index.html',
+    'biblioteca.html',
+    'script.js',
+    'biblioteca.js',
+    'biblioteca-fixes.js',
+    'photo-activity.js',
+    'ai-content.js',
+    'package.json'
+  ].map(file => new URL(`../${file}`, import.meta.url));
+  sourceFiles.push(new URL('./library.test.mjs', import.meta.url));
+  sourceFiles.push(...await collectJsonFiles(new URL('../data/', import.meta.url)));
+
+  const windows1252Continuation = '\u0080-\u00BF\u0192\u02C6\u02DC\u0152\u0153\u0160\u0161\u0178\u017D\u017E\u2013\u2014\u2018\u2019\u201A\u201C\u201D\u201E\u2020\u2021\u2022\u2026\u2030\u2039\u203A\u20AC\u2122';
+  const mojibake = new RegExp(`(?:\\u00C2|\\u00C3|\\u00E2|\\u00F0)[${windows1252Continuation}]|\\uFFFD`, 'u');
+
+  for (const file of sourceFiles) {
+    const bytes = await readFile(file);
+    assert.notDeepEqual([...bytes.subarray(0, 3)], [0xEF, 0xBB, 0xBF], `${file.pathname} contém BOM`);
+    assert.doesNotMatch(bytes.toString('utf8'), mojibake, `${file.pathname} contém texto corrompido`);
+  }
+
+  for (const file of ['index.html', 'biblioteca.html']) {
+    const html = await readFile(new URL(`../${file}`, import.meta.url), 'utf8');
+    assert.match(html, /^<!DOCTYPE html>[\s\S]*?<head>\s*<meta charset="UTF-8">/);
+  }
+});
+
 test('Links da Biblioteca e responsividade principal permanecem definidos', async () => {
   const [html, css, photoCss, libraryCss] = await Promise.all([
     readFile(new URL('../index.html', import.meta.url), 'utf8'),
@@ -560,9 +605,10 @@ test('Impressão da coleção usa A4 e gabarito separado sem marca promocional',
   assert.doesNotMatch(script.match(/function openCollectionPreview[\s\S]*?function resetFilters/)[0], /worksheet-brand|logotipo|marca-d’água|publicidade|rodapé promocional/i);
 });
 
-test('Lote de Matemática e Língua Portuguesa preserva 50 atividades e 300 questões', async () => {
+test('Lote de Matemática e Língua Portuguesa preserva 60 atividades e 360 questões', async () => {
   const files = [
     ['matematica.json', '4ano-3bimestre-matematica', 'Matemática', 20, 120],
+    ['matematica-extra.json', '4ano-3bimestre-matematica-extra', 'Matemática', 10, 60],
     ['lingua-portuguesa.json', '4ano-3bimestre-lingua-portuguesa', 'Língua Portuguesa', 20, 120],
     ['lingua-portuguesa-extra.json', '4ano-3bimestre-lingua-portuguesa-extra', 'Língua Portuguesa', 10, 60]
   ];
@@ -595,15 +641,21 @@ test('Lote de Matemática e Língua Portuguesa preserva 50 atividades e 300 ques
     });
   }
 
-  assert.equal(allIds.length, 50);
-  assert.equal(new Set(allIds).size, 50);
-  assert.equal(totalQuestions, 300);
+  assert.equal(allIds.length, 60);
+  assert.equal(new Set(allIds).size, 60);
+  assert.equal(totalQuestions, 360);
 });
 
-test('Matemática possui 20 atividades autorais, 120 questões e figuras válidas', async () => {
-  const raw = await readFile(new URL('../data/atividades/fundamental-anos-iniciais/4-ano/3-bimestre/matematica.json', import.meta.url), 'utf8');
+test('Matemática possui 30 atividades autorais, 180 questões e figuras válidas', async () => {
+  const [raw, extraRaw] = await Promise.all([
+    readFile(new URL('../data/atividades/fundamental-anos-iniciais/4-ano/3-bimestre/matematica.json', import.meta.url), 'utf8'),
+    readFile(new URL('../data/atividades/fundamental-anos-iniciais/4-ano/3-bimestre/matematica-extra.json', import.meta.url), 'utf8')
+  ]);
+  assert.doesNotMatch(raw, /\uFFFD/);
+  assert.doesNotMatch(extraRaw, /\uFFFD/);
   const collection = JSON.parse(raw);
-  const activities = collection.atividades;
+  const extraCollection = JSON.parse(extraRaw);
+  const activities = [...collection.atividades, ...extraCollection.atividades];
   const ids = activities.map(activity => activity.id);
   const titles = activities.map(activity => activity.titulo.trim().toLocaleLowerCase('pt-BR'));
   const normalizedPrompts = activities.flatMap(activity =>
@@ -612,11 +664,11 @@ test('Matemática possui 20 atividades autorais, 120 questões e figuras válida
     )
   );
 
-  assert.equal(activities.length, 20);
-  assert.equal(activities.reduce((total, activity) => total + activity.questoes.length, 0), 120);
-  assert.equal(new Set(ids).size, 20);
-  assert.equal(new Set(titles).size, 20);
-  assert.equal(new Set(normalizedPrompts).size, 120);
+  assert.equal(activities.length, 30);
+  assert.equal(activities.reduce((total, activity) => total + activity.questoes.length, 0), 180);
+  assert.equal(new Set(ids).size, 30);
+  assert.equal(new Set(titles).size, 30);
+  assert.equal(new Set(normalizedPrompts).size, 180);
 
   for (const activity of activities) {
     assert.equal(activity.quantidadeQuestoes, 6);
@@ -653,7 +705,8 @@ test('Matemática possui 20 atividades autorais, 120 questões e figuras válida
   const libraryScript = await readFile(new URL('../biblioteca.js', import.meta.url), 'utf8');
   const fixesScript = await readFile(new URL('../biblioteca-fixes.js', import.meta.url), 'utf8');
   assert.match(libraryScript, /'Matemática':\s*\{[\s\S]*?count:\s*20,/);
-  assert.match(fixesScript, /EXPECTED_MATH_ACTIVITIES\s*=\s*20/);
+  assert.match(fixesScript, /EXPECTED_MATH_ACTIVITIES\s*=\s*30/);
+  assert.match(fixesScript, /collectionRegistry\['Matemática'\]\.extraPath\s*=\s*'data\/atividades\/fundamental-anos-iniciais\/4-ano\/3-bimestre\/matematica-extra\.json'/);
 });
 
 test('Língua Portuguesa possui 30 atividades autorais, 180 questões e figuras válidas', async () => {
@@ -751,7 +804,7 @@ test('Língua Portuguesa possui 30 atividades autorais, 180 questões e figuras 
   const fixesScript = await readFile(new URL('../biblioteca-fixes.js', import.meta.url), 'utf8');
   assert.match(libraryScript, /'Língua Portuguesa':\s*\{[\s\S]*?count:\s*20,/);
   assert.match(fixesScript, /EXPECTED_PORTUGUESE_ACTIVITIES\s*=\s*30/);
-  assert.match(fixesScript, /EXPECTED_MATH_ACTIVITIES\s*=\s*20/);
+  assert.match(fixesScript, /EXPECTED_MATH_ACTIVITIES\s*=\s*30/);
 });
 
 test('Matemática e Língua Portuguesa carregam somente com a disciplina correspondente', async () => {

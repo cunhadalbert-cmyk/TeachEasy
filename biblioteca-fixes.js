@@ -1,6 +1,7 @@
 (() => {
-  const EXPECTED_MATH_ACTIVITIES = 20;
+  const EXPECTED_MATH_ACTIVITIES = 30;
   collectionRegistry['Matemática'].count = EXPECTED_MATH_ACTIVITIES;
+  collectionRegistry['Matemática'].extraPath = 'data/atividades/fundamental-anos-iniciais/4-ano/3-bimestre/matematica-extra.json';
 
   const EXPECTED_PORTUGUESE_ACTIVITIES = 30;
   collectionRegistry['Língua Portuguesa'].count = EXPECTED_PORTUGUESE_ACTIVITIES;
@@ -81,7 +82,7 @@
           if (config.extraPath) {
             const extraResponse = await fetch(config.extraPath);
             if (!extraResponse.ok) {
-              throw new Error('Não foi possível carregar as atividades extras de Língua Portuguesa.');
+              throw new Error(`Não foi possível carregar as atividades extras de ${config.collection}.`);
             }
 
             const extraCollection = await extraResponse.json();
