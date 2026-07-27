@@ -1,0 +1,3672 @@
+{
+  "schemaVersion": "1.0",
+  "colecao": "4ano-3bimestre-geografia",
+  "idioma": "pt-BR",
+  "etapa": "Ensino Fundamental — Anos Iniciais",
+  "ano": "4º ano",
+  "bimestre": 3,
+  "disciplina": "Geografia",
+  "statusBimestre": "sugerido",
+  "atividades": [
+    {
+      "id": "efi-4ano-b3-geo-01-migracoes-internas-no-brasil",
+      "titulo": "Migrações internas no Brasil",
+      "tema": "Migração e população",
+      "sequencia": "Atividade 1",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "intermediaria",
+      "objetivo": "Compreender por que pessoas mudam de cidade, estado ou região e reconhecer efeitos das migrações.",
+      "bncc": [
+        {
+          "codigo": "EF04GE01",
+          "descricaoResumida": "Selecionar, em seus lugares de vivência e em suas histórias familiares, componentes de culturas afro-brasileiras, indígenas, mestiças e migrantes."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, responda às questões e relacione o conteúdo ao espaço onde você vive.",
+      "textoApoio": {
+        "titulo": "Para compreender: Migrações internas no Brasil",
+        "conteudo": "A Geografia ajuda a compreender como as pessoas vivem, trabalham e transformam os lugares. No estudo de migração e população, observamos relações entre sociedade, natureza e território. Essas relações aparecem no cotidiano, nos mapas, nas paisagens e nas escolhas feitas pela comunidade.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "De acordo com o texto de apoio, o que a Geografia ajuda a compreender sobre migração e população?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual alternativa apresenta uma ideia diretamente relacionada ao tema “Migrações internas no Brasil”?",
+          "alternativas": [
+            "Observar como pessoas, natureza e território se relacionam.",
+            "Decorar palavras sem analisar o lugar.",
+            "Ignorar mudanças ocorridas nas paisagens.",
+            "Estudar somente acontecimentos sem localização."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Cite um exemplo de migração e população que possa ser observado no lugar onde você vive.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Explique uma diferença ou relação entre dois espaços, grupos ou situações ligados ao tema “Migrações internas no Brasil”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "situacao-problema",
+          "enunciado": "Imagine que a turma fará uma pesquisa sobre “Migrações internas no Brasil”. Que informação deveria ser registrada para compreender melhor esse tema?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Produza uma frase, pequeno texto ou esquema mostrando o que você aprendeu sobre migração e população.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Espera-se que o estudante mencione a compreensão das relações entre pessoas, natureza, território, paisagens e modos de vida.",
+          "justificativa": "A resposta deve retomar informações explícitas do texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "O estudo geográfico analisa relações entre sociedade, natureza e território."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta pessoal coerente com o tema.",
+          "justificativa": "O exemplo deve estar ligado ao espaço vivido pelo estudante."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta variável.",
+          "justificativa": "Critério de correção: apresentar comparação ou relação pertinente, com pelo menos uma característica de cada situação."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta possível: localização, pessoas envolvidas, características da paisagem, atividades realizadas, mudanças observadas ou registros em mapa.",
+          "justificativa": "A informação escolhida deve contribuir para investigar o tema geograficamente."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção pessoal.",
+          "justificativa": "Critério de correção: clareza, relação com o tema e uso adequado dos conceitos trabalhados."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-4ano-b3-geo-02-historias-de-familias-migrantes",
+      "titulo": "Histórias de famílias migrantes",
+      "tema": "Migração e identidade",
+      "sequencia": "Atividade 2",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "intermediaria",
+      "objetivo": "Identificar marcas das migrações nas histórias das famílias e da comunidade.",
+      "bncc": [
+        {
+          "codigo": "EF04GE01",
+          "descricaoResumida": "Reconhecer elementos culturais presentes nas histórias familiares e na comunidade."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, responda às questões e relacione o conteúdo ao espaço onde você vive.",
+      "textoApoio": {
+        "titulo": "Para compreender: Histórias de famílias migrantes",
+        "conteudo": "A Geografia ajuda a compreender como as pessoas vivem, trabalham e transformam os lugares. No estudo de migração e identidade, observamos relações entre sociedade, natureza e território. Essas relações aparecem no cotidiano, nos mapas, nas paisagens e nas escolhas feitas pela comunidade.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "De acordo com o texto de apoio, o que a Geografia ajuda a compreender sobre migração e identidade?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual alternativa apresenta uma ideia diretamente relacionada ao tema “Histórias de famílias migrantes”?",
+          "alternativas": [
+            "Observar como pessoas, natureza e território se relacionam.",
+            "Decorar palavras sem analisar o lugar.",
+            "Ignorar mudanças ocorridas nas paisagens.",
+            "Estudar somente acontecimentos sem localização."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Cite um exemplo de migração e identidade que possa ser observado no lugar onde você vive.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Explique uma diferença ou relação entre dois espaços, grupos ou situações ligados ao tema “Histórias de famílias migrantes”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "situacao-problema",
+          "enunciado": "Imagine que a turma fará uma pesquisa sobre “Histórias de famílias migrantes”. Que informação deveria ser registrada para compreender melhor esse tema?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Produza uma frase, pequeno texto ou esquema mostrando o que você aprendeu sobre migração e identidade.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Espera-se que o estudante mencione a compreensão das relações entre pessoas, natureza, território, paisagens e modos de vida.",
+          "justificativa": "A resposta deve retomar informações explícitas do texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "O estudo geográfico analisa relações entre sociedade, natureza e território."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta pessoal coerente com o tema.",
+          "justificativa": "O exemplo deve estar ligado ao espaço vivido pelo estudante."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta variável.",
+          "justificativa": "Critério de correção: apresentar comparação ou relação pertinente, com pelo menos uma característica de cada situação."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta possível: localização, pessoas envolvidas, características da paisagem, atividades realizadas, mudanças observadas ou registros em mapa.",
+          "justificativa": "A informação escolhida deve contribuir para investigar o tema geograficamente."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção pessoal.",
+          "justificativa": "Critério de correção: clareza, relação com o tema e uso adequado dos conceitos trabalhados."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-4ano-b3-geo-03-diversidade-cultural-brasileira",
+      "titulo": "Diversidade cultural brasileira",
+      "tema": "Cultura e território",
+      "sequencia": "Atividade 3",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "desafiadora",
+      "objetivo": "Valorizar a diversidade cultural e relacioná-la aos diferentes territórios brasileiros.",
+      "bncc": [
+        {
+          "codigo": "EF04GE01",
+          "descricaoResumida": "Reconhecer contribuições de diferentes grupos para a formação cultural brasileira."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, responda às questões e relacione o conteúdo ao espaço onde você vive.",
+      "textoApoio": {
+        "titulo": "Para compreender: Diversidade cultural brasileira",
+        "conteudo": "A Geografia ajuda a compreender como as pessoas vivem, trabalham e transformam os lugares. No estudo de cultura e território, observamos relações entre sociedade, natureza e território. Essas relações aparecem no cotidiano, nos mapas, nas paisagens e nas escolhas feitas pela comunidade.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "De acordo com o texto de apoio, o que a Geografia ajuda a compreender sobre cultura e território?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual alternativa apresenta uma ideia diretamente relacionada ao tema “Diversidade cultural brasileira”?",
+          "alternativas": [
+            "Observar como pessoas, natureza e território se relacionam.",
+            "Decorar palavras sem analisar o lugar.",
+            "Ignorar mudanças ocorridas nas paisagens.",
+            "Estudar somente acontecimentos sem localização."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Cite um exemplo de cultura e território que possa ser observado no lugar onde você vive.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Explique uma diferença ou relação entre dois espaços, grupos ou situações ligados ao tema “Diversidade cultural brasileira”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "situacao-problema",
+          "enunciado": "Imagine que a turma fará uma pesquisa sobre “Diversidade cultural brasileira”. Que informação deveria ser registrada para compreender melhor esse tema?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Produza uma frase, pequeno texto ou esquema mostrando o que você aprendeu sobre cultura e território.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Espera-se que o estudante mencione a compreensão das relações entre pessoas, natureza, território, paisagens e modos de vida.",
+          "justificativa": "A resposta deve retomar informações explícitas do texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "O estudo geográfico analisa relações entre sociedade, natureza e território."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta pessoal coerente com o tema.",
+          "justificativa": "O exemplo deve estar ligado ao espaço vivido pelo estudante."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta variável.",
+          "justificativa": "Critério de correção: apresentar comparação ou relação pertinente, com pelo menos uma característica de cada situação."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta possível: localização, pessoas envolvidas, características da paisagem, atividades realizadas, mudanças observadas ou registros em mapa.",
+          "justificativa": "A informação escolhida deve contribuir para investigar o tema geograficamente."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção pessoal.",
+          "justificativa": "Critério de correção: clareza, relação com o tema e uso adequado dos conceitos trabalhados."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-4ano-b3-geo-04-povos-indigenas-e-seus-territorios",
+      "titulo": "Povos indígenas e seus territórios",
+      "tema": "Territórios indígenas",
+      "sequencia": "Atividade 4",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "facil",
+      "objetivo": "Reconhecer a importância dos territórios indígenas para a cultura, a memória e a vida comunitária.",
+      "bncc": [
+        {
+          "codigo": "EF04GE06",
+          "descricaoResumida": "Identificar e descrever territórios étnico-culturais existentes no Brasil."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, responda às questões e relacione o conteúdo ao espaço onde você vive.",
+      "textoApoio": {
+        "titulo": "Para compreender: Povos indígenas e seus territórios",
+        "conteudo": "A Geografia ajuda a compreender como as pessoas vivem, trabalham e transformam os lugares. No estudo de territórios indígenas, observamos relações entre sociedade, natureza e território. Essas relações aparecem no cotidiano, nos mapas, nas paisagens e nas escolhas feitas pela comunidade.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "De acordo com o texto de apoio, o que a Geografia ajuda a compreender sobre territórios indígenas?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual alternativa apresenta uma ideia diretamente relacionada ao tema “Povos indígenas e seus territórios”?",
+          "alternativas": [
+            "Observar como pessoas, natureza e território se relacionam.",
+            "Decorar palavras sem analisar o lugar.",
+            "Ignorar mudanças ocorridas nas paisagens.",
+            "Estudar somente acontecimentos sem localização."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Cite um exemplo de territórios indígenas que possa ser observado no lugar onde você vive.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Explique uma diferença ou relação entre dois espaços, grupos ou situações ligados ao tema “Povos indígenas e seus territórios”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "situacao-problema",
+          "enunciado": "Imagine que a turma fará uma pesquisa sobre “Povos indígenas e seus territórios”. Que informação deveria ser registrada para compreender melhor esse tema?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Produza uma frase, pequeno texto ou esquema mostrando o que você aprendeu sobre territórios indígenas.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Espera-se que o estudante mencione a compreensão das relações entre pessoas, natureza, território, paisagens e modos de vida.",
+          "justificativa": "A resposta deve retomar informações explícitas do texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "O estudo geográfico analisa relações entre sociedade, natureza e território."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta pessoal coerente com o tema.",
+          "justificativa": "O exemplo deve estar ligado ao espaço vivido pelo estudante."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta variável.",
+          "justificativa": "Critério de correção: apresentar comparação ou relação pertinente, com pelo menos uma característica de cada situação."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta possível: localização, pessoas envolvidas, características da paisagem, atividades realizadas, mudanças observadas ou registros em mapa.",
+          "justificativa": "A informação escolhida deve contribuir para investigar o tema geograficamente."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção pessoal.",
+          "justificativa": "Critério de correção: clareza, relação com o tema e uso adequado dos conceitos trabalhados."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-4ano-b3-geo-05-comunidades-quilombolas",
+      "titulo": "Comunidades quilombolas",
+      "tema": "Territórios quilombolas",
+      "sequencia": "Atividade 5",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "intermediaria",
+      "objetivo": "Compreender o significado histórico e cultural dos territórios quilombolas.",
+      "bncc": [
+        {
+          "codigo": "EF04GE06",
+          "descricaoResumida": "Identificar e descrever territórios étnico-culturais existentes no Brasil."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, responda às questões e relacione o conteúdo ao espaço onde você vive.",
+      "textoApoio": {
+        "titulo": "Para compreender: Comunidades quilombolas",
+        "conteudo": "A Geografia ajuda a compreender como as pessoas vivem, trabalham e transformam os lugares. No estudo de territórios quilombolas, observamos relações entre sociedade, natureza e território. Essas relações aparecem no cotidiano, nos mapas, nas paisagens e nas escolhas feitas pela comunidade.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "De acordo com o texto de apoio, o que a Geografia ajuda a compreender sobre territórios quilombolas?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual alternativa apresenta uma ideia diretamente relacionada ao tema “Comunidades quilombolas”?",
+          "alternativas": [
+            "Observar como pessoas, natureza e território se relacionam.",
+            "Decorar palavras sem analisar o lugar.",
+            "Ignorar mudanças ocorridas nas paisagens.",
+            "Estudar somente acontecimentos sem localização."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Cite um exemplo de territórios quilombolas que possa ser observado no lugar onde você vive.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Explique uma diferença ou relação entre dois espaços, grupos ou situações ligados ao tema “Comunidades quilombolas”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "situacao-problema",
+          "enunciado": "Imagine que a turma fará uma pesquisa sobre “Comunidades quilombolas”. Que informação deveria ser registrada para compreender melhor esse tema?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Produza uma frase, pequeno texto ou esquema mostrando o que você aprendeu sobre territórios quilombolas.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Espera-se que o estudante mencione a compreensão das relações entre pessoas, natureza, território, paisagens e modos de vida.",
+          "justificativa": "A resposta deve retomar informações explícitas do texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "O estudo geográfico analisa relações entre sociedade, natureza e território."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta pessoal coerente com o tema.",
+          "justificativa": "O exemplo deve estar ligado ao espaço vivido pelo estudante."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta variável.",
+          "justificativa": "Critério de correção: apresentar comparação ou relação pertinente, com pelo menos uma característica de cada situação."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta possível: localização, pessoas envolvidas, características da paisagem, atividades realizadas, mudanças observadas ou registros em mapa.",
+          "justificativa": "A informação escolhida deve contribuir para investigar o tema geograficamente."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção pessoal.",
+          "justificativa": "Critério de correção: clareza, relação com o tema e uso adequado dos conceitos trabalhados."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-4ano-b3-geo-06-o-municipio-e-seus-espacos",
+      "titulo": "O município e seus espaços",
+      "tema": "Organização municipal",
+      "sequencia": "Atividade 6",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "intermediaria",
+      "objetivo": "Reconhecer espaços, serviços e responsabilidades presentes no município.",
+      "bncc": [
+        {
+          "codigo": "EF04GE03",
+          "descricaoResumida": "Distinguir funções e papéis dos órgãos do poder público municipal."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, responda às questões e relacione o conteúdo ao espaço onde você vive.",
+      "textoApoio": {
+        "titulo": "Para compreender: O município e seus espaços",
+        "conteudo": "A Geografia ajuda a compreender como as pessoas vivem, trabalham e transformam os lugares. No estudo de organização municipal, observamos relações entre sociedade, natureza e território. Essas relações aparecem no cotidiano, nos mapas, nas paisagens e nas escolhas feitas pela comunidade.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "De acordo com o texto de apoio, o que a Geografia ajuda a compreender sobre organização municipal?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual alternativa apresenta uma ideia diretamente relacionada ao tema “O município e seus espaços”?",
+          "alternativas": [
+            "Observar como pessoas, natureza e território se relacionam.",
+            "Decorar palavras sem analisar o lugar.",
+            "Ignorar mudanças ocorridas nas paisagens.",
+            "Estudar somente acontecimentos sem localização."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Cite um exemplo de organização municipal que possa ser observado no lugar onde você vive.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Explique uma diferença ou relação entre dois espaços, grupos ou situações ligados ao tema “O município e seus espaços”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "situacao-problema",
+          "enunciado": "Imagine que a turma fará uma pesquisa sobre “O município e seus espaços”. Que informação deveria ser registrada para compreender melhor esse tema?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Produza uma frase, pequeno texto ou esquema mostrando o que você aprendeu sobre organização municipal.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Espera-se que o estudante mencione a compreensão das relações entre pessoas, natureza, território, paisagens e modos de vida.",
+          "justificativa": "A resposta deve retomar informações explícitas do texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "O estudo geográfico analisa relações entre sociedade, natureza e território."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta pessoal coerente com o tema.",
+          "justificativa": "O exemplo deve estar ligado ao espaço vivido pelo estudante."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta variável.",
+          "justificativa": "Critério de correção: apresentar comparação ou relação pertinente, com pelo menos uma característica de cada situação."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta possível: localização, pessoas envolvidas, características da paisagem, atividades realizadas, mudanças observadas ou registros em mapa.",
+          "justificativa": "A informação escolhida deve contribuir para investigar o tema geograficamente."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção pessoal.",
+          "justificativa": "Critério de correção: clareza, relação com o tema e uso adequado dos conceitos trabalhados."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-4ano-b3-geo-07-prefeitura-e-camara-municipal",
+      "titulo": "Prefeitura e Câmara Municipal",
+      "tema": "Poder público municipal",
+      "sequencia": "Atividade 7",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "desafiadora",
+      "objetivo": "Diferenciar as funções básicas da prefeitura e da Câmara Municipal.",
+      "bncc": [
+        {
+          "codigo": "EF04GE03",
+          "descricaoResumida": "Distinguir funções e papéis dos órgãos do poder público municipal."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, responda às questões e relacione o conteúdo ao espaço onde você vive.",
+      "textoApoio": {
+        "titulo": "Para compreender: Prefeitura e Câmara Municipal",
+        "conteudo": "A Geografia ajuda a compreender como as pessoas vivem, trabalham e transformam os lugares. No estudo de poder público municipal, observamos relações entre sociedade, natureza e território. Essas relações aparecem no cotidiano, nos mapas, nas paisagens e nas escolhas feitas pela comunidade.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "De acordo com o texto de apoio, o que a Geografia ajuda a compreender sobre poder público municipal?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual alternativa apresenta uma ideia diretamente relacionada ao tema “Prefeitura e Câmara Municipal”?",
+          "alternativas": [
+            "Observar como pessoas, natureza e território se relacionam.",
+            "Decorar palavras sem analisar o lugar.",
+            "Ignorar mudanças ocorridas nas paisagens.",
+            "Estudar somente acontecimentos sem localização."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Cite um exemplo de poder público municipal que possa ser observado no lugar onde você vive.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Explique uma diferença ou relação entre dois espaços, grupos ou situações ligados ao tema “Prefeitura e Câmara Municipal”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "situacao-problema",
+          "enunciado": "Imagine que a turma fará uma pesquisa sobre “Prefeitura e Câmara Municipal”. Que informação deveria ser registrada para compreender melhor esse tema?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Produza uma frase, pequeno texto ou esquema mostrando o que você aprendeu sobre poder público municipal.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Espera-se que o estudante mencione a compreensão das relações entre pessoas, natureza, território, paisagens e modos de vida.",
+          "justificativa": "A resposta deve retomar informações explícitas do texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "O estudo geográfico analisa relações entre sociedade, natureza e território."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta pessoal coerente com o tema.",
+          "justificativa": "O exemplo deve estar ligado ao espaço vivido pelo estudante."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta variável.",
+          "justificativa": "Critério de correção: apresentar comparação ou relação pertinente, com pelo menos uma característica de cada situação."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta possível: localização, pessoas envolvidas, características da paisagem, atividades realizadas, mudanças observadas ou registros em mapa.",
+          "justificativa": "A informação escolhida deve contribuir para investigar o tema geograficamente."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção pessoal.",
+          "justificativa": "Critério de correção: clareza, relação com o tema e uso adequado dos conceitos trabalhados."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-4ano-b3-geo-08-participacao-dos-moradores",
+      "titulo": "Participação dos moradores",
+      "tema": "Cidadania no município",
+      "sequencia": "Atividade 8",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "facil",
+      "objetivo": "Identificar formas de participação dos cidadãos nas decisões do município.",
+      "bncc": [
+        {
+          "codigo": "EF04GE03",
+          "descricaoResumida": "Distinguir funções do poder público municipal e canais de participação social."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, responda às questões e relacione o conteúdo ao espaço onde você vive.",
+      "textoApoio": {
+        "titulo": "Para compreender: Participação dos moradores",
+        "conteudo": "A Geografia ajuda a compreender como as pessoas vivem, trabalham e transformam os lugares. No estudo de cidadania no município, observamos relações entre sociedade, natureza e território. Essas relações aparecem no cotidiano, nos mapas, nas paisagens e nas escolhas feitas pela comunidade.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "De acordo com o texto de apoio, o que a Geografia ajuda a compreender sobre cidadania no município?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual alternativa apresenta uma ideia diretamente relacionada ao tema “Participação dos moradores”?",
+          "alternativas": [
+            "Observar como pessoas, natureza e território se relacionam.",
+            "Decorar palavras sem analisar o lugar.",
+            "Ignorar mudanças ocorridas nas paisagens.",
+            "Estudar somente acontecimentos sem localização."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Cite um exemplo de cidadania no município que possa ser observado no lugar onde você vive.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Explique uma diferença ou relação entre dois espaços, grupos ou situações ligados ao tema “Participação dos moradores”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "situacao-problema",
+          "enunciado": "Imagine que a turma fará uma pesquisa sobre “Participação dos moradores”. Que informação deveria ser registrada para compreender melhor esse tema?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Produza uma frase, pequeno texto ou esquema mostrando o que você aprendeu sobre cidadania no município.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Espera-se que o estudante mencione a compreensão das relações entre pessoas, natureza, território, paisagens e modos de vida.",
+          "justificativa": "A resposta deve retomar informações explícitas do texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "O estudo geográfico analisa relações entre sociedade, natureza e território."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta pessoal coerente com o tema.",
+          "justificativa": "O exemplo deve estar ligado ao espaço vivido pelo estudante."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta variável.",
+          "justificativa": "Critério de correção: apresentar comparação ou relação pertinente, com pelo menos uma característica de cada situação."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta possível: localização, pessoas envolvidas, características da paisagem, atividades realizadas, mudanças observadas ou registros em mapa.",
+          "justificativa": "A informação escolhida deve contribuir para investigar o tema geograficamente."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção pessoal.",
+          "justificativa": "Critério de correção: clareza, relação com o tema e uso adequado dos conceitos trabalhados."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-4ano-b3-geo-09-campo-e-cidade-relacoes",
+      "titulo": "Campo e cidade: relações",
+      "tema": "Interdependência campo-cidade",
+      "sequencia": "Atividade 9",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "intermediaria",
+      "objetivo": "Analisar trocas de produtos, serviços e pessoas entre o campo e a cidade.",
+      "bncc": [
+        {
+          "codigo": "EF04GE04",
+          "descricaoResumida": "Reconhecer especificidades e analisar a interdependência do campo e da cidade."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, responda às questões e relacione o conteúdo ao espaço onde você vive.",
+      "textoApoio": {
+        "titulo": "Para compreender: Campo e cidade: relações",
+        "conteudo": "A Geografia ajuda a compreender como as pessoas vivem, trabalham e transformam os lugares. No estudo de interdependência campo-cidade, observamos relações entre sociedade, natureza e território. Essas relações aparecem no cotidiano, nos mapas, nas paisagens e nas escolhas feitas pela comunidade.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "De acordo com o texto de apoio, o que a Geografia ajuda a compreender sobre interdependência campo-cidade?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual alternativa apresenta uma ideia diretamente relacionada ao tema “Campo e cidade: relações”?",
+          "alternativas": [
+            "Observar como pessoas, natureza e território se relacionam.",
+            "Decorar palavras sem analisar o lugar.",
+            "Ignorar mudanças ocorridas nas paisagens.",
+            "Estudar somente acontecimentos sem localização."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Cite um exemplo de interdependência campo-cidade que possa ser observado no lugar onde você vive.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Explique uma diferença ou relação entre dois espaços, grupos ou situações ligados ao tema “Campo e cidade: relações”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "situacao-problema",
+          "enunciado": "Imagine que a turma fará uma pesquisa sobre “Campo e cidade: relações”. Que informação deveria ser registrada para compreender melhor esse tema?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Produza uma frase, pequeno texto ou esquema mostrando o que você aprendeu sobre interdependência campo-cidade.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Espera-se que o estudante mencione a compreensão das relações entre pessoas, natureza, território, paisagens e modos de vida.",
+          "justificativa": "A resposta deve retomar informações explícitas do texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "O estudo geográfico analisa relações entre sociedade, natureza e território."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta pessoal coerente com o tema.",
+          "justificativa": "O exemplo deve estar ligado ao espaço vivido pelo estudante."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta variável.",
+          "justificativa": "Critério de correção: apresentar comparação ou relação pertinente, com pelo menos uma característica de cada situação."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta possível: localização, pessoas envolvidas, características da paisagem, atividades realizadas, mudanças observadas ou registros em mapa.",
+          "justificativa": "A informação escolhida deve contribuir para investigar o tema geograficamente."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção pessoal.",
+          "justificativa": "Critério de correção: clareza, relação com o tema e uso adequado dos conceitos trabalhados."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-4ano-b3-geo-10-produtos-do-campo-na-cidade",
+      "titulo": "Produtos do campo na cidade",
+      "tema": "Produção e consumo",
+      "sequencia": "Atividade 10",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "intermediaria",
+      "objetivo": "Identificar a origem rural de alimentos e matérias-primas consumidos nas cidades.",
+      "bncc": [
+        {
+          "codigo": "EF04GE04",
+          "descricaoResumida": "Reconhecer a interdependência entre campo e cidade."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, responda às questões e relacione o conteúdo ao espaço onde você vive.",
+      "textoApoio": {
+        "titulo": "Para compreender: Produtos do campo na cidade",
+        "conteudo": "A Geografia ajuda a compreender como as pessoas vivem, trabalham e transformam os lugares. No estudo de produção e consumo, observamos relações entre sociedade, natureza e território. Essas relações aparecem no cotidiano, nos mapas, nas paisagens e nas escolhas feitas pela comunidade.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "De acordo com o texto de apoio, o que a Geografia ajuda a compreender sobre produção e consumo?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual alternativa apresenta uma ideia diretamente relacionada ao tema “Produtos do campo na cidade”?",
+          "alternativas": [
+            "Observar como pessoas, natureza e território se relacionam.",
+            "Decorar palavras sem analisar o lugar.",
+            "Ignorar mudanças ocorridas nas paisagens.",
+            "Estudar somente acontecimentos sem localização."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Cite um exemplo de produção e consumo que possa ser observado no lugar onde você vive.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Explique uma diferença ou relação entre dois espaços, grupos ou situações ligados ao tema “Produtos do campo na cidade”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "situacao-problema",
+          "enunciado": "Imagine que a turma fará uma pesquisa sobre “Produtos do campo na cidade”. Que informação deveria ser registrada para compreender melhor esse tema?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Produza uma frase, pequeno texto ou esquema mostrando o que você aprendeu sobre produção e consumo.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Espera-se que o estudante mencione a compreensão das relações entre pessoas, natureza, território, paisagens e modos de vida.",
+          "justificativa": "A resposta deve retomar informações explícitas do texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "O estudo geográfico analisa relações entre sociedade, natureza e território."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta pessoal coerente com o tema.",
+          "justificativa": "O exemplo deve estar ligado ao espaço vivido pelo estudante."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta variável.",
+          "justificativa": "Critério de correção: apresentar comparação ou relação pertinente, com pelo menos uma característica de cada situação."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta possível: localização, pessoas envolvidas, características da paisagem, atividades realizadas, mudanças observadas ou registros em mapa.",
+          "justificativa": "A informação escolhida deve contribuir para investigar o tema geograficamente."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção pessoal.",
+          "justificativa": "Critério de correção: clareza, relação com o tema e uso adequado dos conceitos trabalhados."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-4ano-b3-geo-11-servicos-da-cidade-no-campo",
+      "titulo": "Serviços da cidade no campo",
+      "tema": "Redes de serviços",
+      "sequencia": "Atividade 11",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "desafiadora",
+      "objetivo": "Compreender como serviços urbanos também atendem moradores e produtores rurais.",
+      "bncc": [
+        {
+          "codigo": "EF04GE04",
+          "descricaoResumida": "Reconhecer fluxos de produtos, informações e serviços entre campo e cidade."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, responda às questões e relacione o conteúdo ao espaço onde você vive.",
+      "textoApoio": {
+        "titulo": "Para compreender: Serviços da cidade no campo",
+        "conteudo": "A Geografia ajuda a compreender como as pessoas vivem, trabalham e transformam os lugares. No estudo de redes de serviços, observamos relações entre sociedade, natureza e território. Essas relações aparecem no cotidiano, nos mapas, nas paisagens e nas escolhas feitas pela comunidade.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "De acordo com o texto de apoio, o que a Geografia ajuda a compreender sobre redes de serviços?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual alternativa apresenta uma ideia diretamente relacionada ao tema “Serviços da cidade no campo”?",
+          "alternativas": [
+            "Observar como pessoas, natureza e território se relacionam.",
+            "Decorar palavras sem analisar o lugar.",
+            "Ignorar mudanças ocorridas nas paisagens.",
+            "Estudar somente acontecimentos sem localização."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Cite um exemplo de redes de serviços que possa ser observado no lugar onde você vive.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Explique uma diferença ou relação entre dois espaços, grupos ou situações ligados ao tema “Serviços da cidade no campo”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "situacao-problema",
+          "enunciado": "Imagine que a turma fará uma pesquisa sobre “Serviços da cidade no campo”. Que informação deveria ser registrada para compreender melhor esse tema?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Produza uma frase, pequeno texto ou esquema mostrando o que você aprendeu sobre redes de serviços.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Espera-se que o estudante mencione a compreensão das relações entre pessoas, natureza, território, paisagens e modos de vida.",
+          "justificativa": "A resposta deve retomar informações explícitas do texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "O estudo geográfico analisa relações entre sociedade, natureza e território."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta pessoal coerente com o tema.",
+          "justificativa": "O exemplo deve estar ligado ao espaço vivido pelo estudante."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta variável.",
+          "justificativa": "Critério de correção: apresentar comparação ou relação pertinente, com pelo menos uma característica de cada situação."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta possível: localização, pessoas envolvidas, características da paisagem, atividades realizadas, mudanças observadas ou registros em mapa.",
+          "justificativa": "A informação escolhida deve contribuir para investigar o tema geograficamente."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção pessoal.",
+          "justificativa": "Critério de correção: clareza, relação com o tema e uso adequado dos conceitos trabalhados."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-4ano-b3-geo-12-unidades-da-federacao",
+      "titulo": "Unidades da Federação",
+      "tema": "Estados e Distrito Federal",
+      "sequencia": "Atividade 12",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "facil",
+      "objetivo": "Reconhecer estados, municípios e Distrito Federal como partes da organização territorial do Brasil.",
+      "bncc": [
+        {
+          "codigo": "EF04GE05",
+          "descricaoResumida": "Distinguir unidades político-administrativas oficiais do Brasil."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, responda às questões e relacione o conteúdo ao espaço onde você vive.",
+      "textoApoio": {
+        "titulo": "Para compreender: Unidades da Federação",
+        "conteudo": "A Geografia ajuda a compreender como as pessoas vivem, trabalham e transformam os lugares. No estudo de estados e distrito federal, observamos relações entre sociedade, natureza e território. Essas relações aparecem no cotidiano, nos mapas, nas paisagens e nas escolhas feitas pela comunidade.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "De acordo com o texto de apoio, o que a Geografia ajuda a compreender sobre estados e distrito federal?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual alternativa apresenta uma ideia diretamente relacionada ao tema “Unidades da Federação”?",
+          "alternativas": [
+            "Observar como pessoas, natureza e território se relacionam.",
+            "Decorar palavras sem analisar o lugar.",
+            "Ignorar mudanças ocorridas nas paisagens.",
+            "Estudar somente acontecimentos sem localização."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Cite um exemplo de estados e distrito federal que possa ser observado no lugar onde você vive.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Explique uma diferença ou relação entre dois espaços, grupos ou situações ligados ao tema “Unidades da Federação”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "situacao-problema",
+          "enunciado": "Imagine que a turma fará uma pesquisa sobre “Unidades da Federação”. Que informação deveria ser registrada para compreender melhor esse tema?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Produza uma frase, pequeno texto ou esquema mostrando o que você aprendeu sobre estados e distrito federal.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Espera-se que o estudante mencione a compreensão das relações entre pessoas, natureza, território, paisagens e modos de vida.",
+          "justificativa": "A resposta deve retomar informações explícitas do texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "O estudo geográfico analisa relações entre sociedade, natureza e território."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta pessoal coerente com o tema.",
+          "justificativa": "O exemplo deve estar ligado ao espaço vivido pelo estudante."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta variável.",
+          "justificativa": "Critério de correção: apresentar comparação ou relação pertinente, com pelo menos uma característica de cada situação."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta possível: localização, pessoas envolvidas, características da paisagem, atividades realizadas, mudanças observadas ou registros em mapa.",
+          "justificativa": "A informação escolhida deve contribuir para investigar o tema geograficamente."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção pessoal.",
+          "justificativa": "Critério de correção: clareza, relação com o tema e uso adequado dos conceitos trabalhados."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-4ano-b3-geo-13-regioes-brasileiras",
+      "titulo": "Regiões brasileiras",
+      "tema": "Regionalização do Brasil",
+      "sequencia": "Atividade 13",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "intermediaria",
+      "objetivo": "Identificar as cinco regiões brasileiras e compreender que elas reúnem diferentes estados.",
+      "bncc": [
+        {
+          "codigo": "EF04GE05",
+          "descricaoResumida": "Distinguir unidades político-administrativas e formas de regionalização do Brasil."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, responda às questões e relacione o conteúdo ao espaço onde você vive.",
+      "textoApoio": {
+        "titulo": "Para compreender: Regiões brasileiras",
+        "conteudo": "A Geografia ajuda a compreender como as pessoas vivem, trabalham e transformam os lugares. No estudo de regionalização do brasil, observamos relações entre sociedade, natureza e território. Essas relações aparecem no cotidiano, nos mapas, nas paisagens e nas escolhas feitas pela comunidade.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "De acordo com o texto de apoio, o que a Geografia ajuda a compreender sobre regionalização do brasil?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual alternativa apresenta uma ideia diretamente relacionada ao tema “Regiões brasileiras”?",
+          "alternativas": [
+            "Observar como pessoas, natureza e território se relacionam.",
+            "Decorar palavras sem analisar o lugar.",
+            "Ignorar mudanças ocorridas nas paisagens.",
+            "Estudar somente acontecimentos sem localização."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Cite um exemplo de regionalização do brasil que possa ser observado no lugar onde você vive.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Explique uma diferença ou relação entre dois espaços, grupos ou situações ligados ao tema “Regiões brasileiras”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "situacao-problema",
+          "enunciado": "Imagine que a turma fará uma pesquisa sobre “Regiões brasileiras”. Que informação deveria ser registrada para compreender melhor esse tema?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Produza uma frase, pequeno texto ou esquema mostrando o que você aprendeu sobre regionalização do brasil.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Espera-se que o estudante mencione a compreensão das relações entre pessoas, natureza, território, paisagens e modos de vida.",
+          "justificativa": "A resposta deve retomar informações explícitas do texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "O estudo geográfico analisa relações entre sociedade, natureza e território."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta pessoal coerente com o tema.",
+          "justificativa": "O exemplo deve estar ligado ao espaço vivido pelo estudante."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta variável.",
+          "justificativa": "Critério de correção: apresentar comparação ou relação pertinente, com pelo menos uma característica de cada situação."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta possível: localização, pessoas envolvidas, características da paisagem, atividades realizadas, mudanças observadas ou registros em mapa.",
+          "justificativa": "A informação escolhida deve contribuir para investigar o tema geograficamente."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção pessoal.",
+          "justificativa": "Critério de correção: clareza, relação com o tema e uso adequado dos conceitos trabalhados."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-4ano-b3-geo-14-limites-e-fronteiras",
+      "titulo": "Limites e fronteiras",
+      "tema": "Divisão territorial",
+      "sequencia": "Atividade 14",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "intermediaria",
+      "objetivo": "Compreender a função dos limites territoriais representados em mapas.",
+      "bncc": [
+        {
+          "codigo": "EF04GE05",
+          "descricaoResumida": "Reconhecer limites entre municípios, estados e países."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, responda às questões e relacione o conteúdo ao espaço onde você vive.",
+      "textoApoio": {
+        "titulo": "Para compreender: Limites e fronteiras",
+        "conteudo": "A Geografia ajuda a compreender como as pessoas vivem, trabalham e transformam os lugares. No estudo de divisão territorial, observamos relações entre sociedade, natureza e território. Essas relações aparecem no cotidiano, nos mapas, nas paisagens e nas escolhas feitas pela comunidade.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "De acordo com o texto de apoio, o que a Geografia ajuda a compreender sobre divisão territorial?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual alternativa apresenta uma ideia diretamente relacionada ao tema “Limites e fronteiras”?",
+          "alternativas": [
+            "Observar como pessoas, natureza e território se relacionam.",
+            "Decorar palavras sem analisar o lugar.",
+            "Ignorar mudanças ocorridas nas paisagens.",
+            "Estudar somente acontecimentos sem localização."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Cite um exemplo de divisão territorial que possa ser observado no lugar onde você vive.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Explique uma diferença ou relação entre dois espaços, grupos ou situações ligados ao tema “Limites e fronteiras”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "situacao-problema",
+          "enunciado": "Imagine que a turma fará uma pesquisa sobre “Limites e fronteiras”. Que informação deveria ser registrada para compreender melhor esse tema?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Produza uma frase, pequeno texto ou esquema mostrando o que você aprendeu sobre divisão territorial.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Espera-se que o estudante mencione a compreensão das relações entre pessoas, natureza, território, paisagens e modos de vida.",
+          "justificativa": "A resposta deve retomar informações explícitas do texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "O estudo geográfico analisa relações entre sociedade, natureza e território."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta pessoal coerente com o tema.",
+          "justificativa": "O exemplo deve estar ligado ao espaço vivido pelo estudante."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta variável.",
+          "justificativa": "Critério de correção: apresentar comparação ou relação pertinente, com pelo menos uma característica de cada situação."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta possível: localização, pessoas envolvidas, características da paisagem, atividades realizadas, mudanças observadas ou registros em mapa.",
+          "justificativa": "A informação escolhida deve contribuir para investigar o tema geograficamente."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção pessoal.",
+          "justificativa": "Critério de correção: clareza, relação com o tema e uso adequado dos conceitos trabalhados."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-4ano-b3-geo-15-localizacao-pelo-mapa",
+      "titulo": "Localização pelo mapa",
+      "tema": "Orientação cartográfica",
+      "sequencia": "Atividade 15",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "desafiadora",
+      "objetivo": "Usar pontos cardeais e referências espaciais para localizar lugares em mapas.",
+      "bncc": [
+        {
+          "codigo": "EF04GE09",
+          "descricaoResumida": "Utilizar direções cardeais na localização de componentes físicos e humanos."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, responda às questões e relacione o conteúdo ao espaço onde você vive.",
+      "textoApoio": {
+        "titulo": "Para compreender: Localização pelo mapa",
+        "conteudo": "A Geografia ajuda a compreender como as pessoas vivem, trabalham e transformam os lugares. No estudo de orientação cartográfica, observamos relações entre sociedade, natureza e território. Essas relações aparecem no cotidiano, nos mapas, nas paisagens e nas escolhas feitas pela comunidade.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "De acordo com o texto de apoio, o que a Geografia ajuda a compreender sobre orientação cartográfica?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual alternativa apresenta uma ideia diretamente relacionada ao tema “Localização pelo mapa”?",
+          "alternativas": [
+            "Observar como pessoas, natureza e território se relacionam.",
+            "Decorar palavras sem analisar o lugar.",
+            "Ignorar mudanças ocorridas nas paisagens.",
+            "Estudar somente acontecimentos sem localização."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Cite um exemplo de orientação cartográfica que possa ser observado no lugar onde você vive.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Explique uma diferença ou relação entre dois espaços, grupos ou situações ligados ao tema “Localização pelo mapa”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "situacao-problema",
+          "enunciado": "Imagine que a turma fará uma pesquisa sobre “Localização pelo mapa”. Que informação deveria ser registrada para compreender melhor esse tema?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Produza uma frase, pequeno texto ou esquema mostrando o que você aprendeu sobre orientação cartográfica.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Espera-se que o estudante mencione a compreensão das relações entre pessoas, natureza, território, paisagens e modos de vida.",
+          "justificativa": "A resposta deve retomar informações explícitas do texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "O estudo geográfico analisa relações entre sociedade, natureza e território."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta pessoal coerente com o tema.",
+          "justificativa": "O exemplo deve estar ligado ao espaço vivido pelo estudante."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta variável.",
+          "justificativa": "Critério de correção: apresentar comparação ou relação pertinente, com pelo menos uma característica de cada situação."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta possível: localização, pessoas envolvidas, características da paisagem, atividades realizadas, mudanças observadas ou registros em mapa.",
+          "justificativa": "A informação escolhida deve contribuir para investigar o tema geograficamente."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção pessoal.",
+          "justificativa": "Critério de correção: clareza, relação com o tema e uso adequado dos conceitos trabalhados."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-4ano-b3-geo-16-pontos-cardeais-no-cotidiano",
+      "titulo": "Pontos cardeais no cotidiano",
+      "tema": "Orientação espacial",
+      "sequencia": "Atividade 16",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "facil",
+      "objetivo": "Aplicar norte, sul, leste e oeste em situações de orientação cotidiana.",
+      "bncc": [
+        {
+          "codigo": "EF04GE09",
+          "descricaoResumida": "Utilizar direções cardeais na localização de componentes físicos e humanos."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, responda às questões e relacione o conteúdo ao espaço onde você vive.",
+      "textoApoio": {
+        "titulo": "Para compreender: Pontos cardeais no cotidiano",
+        "conteudo": "A Geografia ajuda a compreender como as pessoas vivem, trabalham e transformam os lugares. No estudo de orientação espacial, observamos relações entre sociedade, natureza e território. Essas relações aparecem no cotidiano, nos mapas, nas paisagens e nas escolhas feitas pela comunidade.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "De acordo com o texto de apoio, o que a Geografia ajuda a compreender sobre orientação espacial?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual alternativa apresenta uma ideia diretamente relacionada ao tema “Pontos cardeais no cotidiano”?",
+          "alternativas": [
+            "Observar como pessoas, natureza e território se relacionam.",
+            "Decorar palavras sem analisar o lugar.",
+            "Ignorar mudanças ocorridas nas paisagens.",
+            "Estudar somente acontecimentos sem localização."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Cite um exemplo de orientação espacial que possa ser observado no lugar onde você vive.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Explique uma diferença ou relação entre dois espaços, grupos ou situações ligados ao tema “Pontos cardeais no cotidiano”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "situacao-problema",
+          "enunciado": "Imagine que a turma fará uma pesquisa sobre “Pontos cardeais no cotidiano”. Que informação deveria ser registrada para compreender melhor esse tema?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Produza uma frase, pequeno texto ou esquema mostrando o que você aprendeu sobre orientação espacial.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Espera-se que o estudante mencione a compreensão das relações entre pessoas, natureza, território, paisagens e modos de vida.",
+          "justificativa": "A resposta deve retomar informações explícitas do texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "O estudo geográfico analisa relações entre sociedade, natureza e território."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta pessoal coerente com o tema.",
+          "justificativa": "O exemplo deve estar ligado ao espaço vivido pelo estudante."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta variável.",
+          "justificativa": "Critério de correção: apresentar comparação ou relação pertinente, com pelo menos uma característica de cada situação."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta possível: localização, pessoas envolvidas, características da paisagem, atividades realizadas, mudanças observadas ou registros em mapa.",
+          "justificativa": "A informação escolhida deve contribuir para investigar o tema geograficamente."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção pessoal.",
+          "justificativa": "Critério de correção: clareza, relação com o tema e uso adequado dos conceitos trabalhados."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-4ano-b3-geo-17-legenda-titulo-e-escala",
+      "titulo": "Legenda, título e escala",
+      "tema": "Elementos do mapa",
+      "sequencia": "Atividade 17",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "intermediaria",
+      "objetivo": "Interpretar título, legenda, símbolos e escala simples em representações cartográficas.",
+      "bncc": [
+        {
+          "codigo": "EF04GE10",
+          "descricaoResumida": "Comparar tipos variados de mapas e identificar suas características."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, responda às questões e relacione o conteúdo ao espaço onde você vive.",
+      "textoApoio": {
+        "titulo": "Para compreender: Legenda, título e escala",
+        "conteudo": "A Geografia ajuda a compreender como as pessoas vivem, trabalham e transformam os lugares. No estudo de elementos do mapa, observamos relações entre sociedade, natureza e território. Essas relações aparecem no cotidiano, nos mapas, nas paisagens e nas escolhas feitas pela comunidade.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "De acordo com o texto de apoio, o que a Geografia ajuda a compreender sobre elementos do mapa?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual alternativa apresenta uma ideia diretamente relacionada ao tema “Legenda, título e escala”?",
+          "alternativas": [
+            "Observar como pessoas, natureza e território se relacionam.",
+            "Decorar palavras sem analisar o lugar.",
+            "Ignorar mudanças ocorridas nas paisagens.",
+            "Estudar somente acontecimentos sem localização."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Cite um exemplo de elementos do mapa que possa ser observado no lugar onde você vive.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Explique uma diferença ou relação entre dois espaços, grupos ou situações ligados ao tema “Legenda, título e escala”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "situacao-problema",
+          "enunciado": "Imagine que a turma fará uma pesquisa sobre “Legenda, título e escala”. Que informação deveria ser registrada para compreender melhor esse tema?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Produza uma frase, pequeno texto ou esquema mostrando o que você aprendeu sobre elementos do mapa.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Espera-se que o estudante mencione a compreensão das relações entre pessoas, natureza, território, paisagens e modos de vida.",
+          "justificativa": "A resposta deve retomar informações explícitas do texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "O estudo geográfico analisa relações entre sociedade, natureza e território."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta pessoal coerente com o tema.",
+          "justificativa": "O exemplo deve estar ligado ao espaço vivido pelo estudante."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta variável.",
+          "justificativa": "Critério de correção: apresentar comparação ou relação pertinente, com pelo menos uma característica de cada situação."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta possível: localização, pessoas envolvidas, características da paisagem, atividades realizadas, mudanças observadas ou registros em mapa.",
+          "justificativa": "A informação escolhida deve contribuir para investigar o tema geograficamente."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção pessoal.",
+          "justificativa": "Critério de correção: clareza, relação com o tema e uso adequado dos conceitos trabalhados."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-4ano-b3-geo-18-mapas-fisicos-e-politicos",
+      "titulo": "Mapas físicos e políticos",
+      "tema": "Tipos de mapas",
+      "sequencia": "Atividade 18",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "intermediaria",
+      "objetivo": "Diferenciar mapas físicos, políticos e temáticos de acordo com sua finalidade.",
+      "bncc": [
+        {
+          "codigo": "EF04GE10",
+          "descricaoResumida": "Comparar tipos variados de mapas e identificar suas características."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, responda às questões e relacione o conteúdo ao espaço onde você vive.",
+      "textoApoio": {
+        "titulo": "Para compreender: Mapas físicos e políticos",
+        "conteudo": "A Geografia ajuda a compreender como as pessoas vivem, trabalham e transformam os lugares. No estudo de tipos de mapas, observamos relações entre sociedade, natureza e território. Essas relações aparecem no cotidiano, nos mapas, nas paisagens e nas escolhas feitas pela comunidade.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "De acordo com o texto de apoio, o que a Geografia ajuda a compreender sobre tipos de mapas?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual alternativa apresenta uma ideia diretamente relacionada ao tema “Mapas físicos e políticos”?",
+          "alternativas": [
+            "Observar como pessoas, natureza e território se relacionam.",
+            "Decorar palavras sem analisar o lugar.",
+            "Ignorar mudanças ocorridas nas paisagens.",
+            "Estudar somente acontecimentos sem localização."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Cite um exemplo de tipos de mapas que possa ser observado no lugar onde você vive.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Explique uma diferença ou relação entre dois espaços, grupos ou situações ligados ao tema “Mapas físicos e políticos”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "situacao-problema",
+          "enunciado": "Imagine que a turma fará uma pesquisa sobre “Mapas físicos e políticos”. Que informação deveria ser registrada para compreender melhor esse tema?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Produza uma frase, pequeno texto ou esquema mostrando o que você aprendeu sobre tipos de mapas.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Espera-se que o estudante mencione a compreensão das relações entre pessoas, natureza, território, paisagens e modos de vida.",
+          "justificativa": "A resposta deve retomar informações explícitas do texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "O estudo geográfico analisa relações entre sociedade, natureza e território."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta pessoal coerente com o tema.",
+          "justificativa": "O exemplo deve estar ligado ao espaço vivido pelo estudante."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta variável.",
+          "justificativa": "Critério de correção: apresentar comparação ou relação pertinente, com pelo menos uma característica de cada situação."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta possível: localização, pessoas envolvidas, características da paisagem, atividades realizadas, mudanças observadas ou registros em mapa.",
+          "justificativa": "A informação escolhida deve contribuir para investigar o tema geograficamente."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção pessoal.",
+          "justificativa": "Critério de correção: clareza, relação com o tema e uso adequado dos conceitos trabalhados."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-4ano-b3-geo-19-paisagens-naturais-e-culturais",
+      "titulo": "Paisagens naturais e culturais",
+      "tema": "Transformação da paisagem",
+      "sequencia": "Atividade 19",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "desafiadora",
+      "objetivo": "Distinguir elementos naturais e elementos construídos nas paisagens.",
+      "bncc": [
+        {
+          "codigo": "EF04GE11",
+          "descricaoResumida": "Identificar características das paisagens naturais e antrópicas."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, responda às questões e relacione o conteúdo ao espaço onde você vive.",
+      "textoApoio": {
+        "titulo": "Para compreender: Paisagens naturais e culturais",
+        "conteudo": "A Geografia ajuda a compreender como as pessoas vivem, trabalham e transformam os lugares. No estudo de transformação da paisagem, observamos relações entre sociedade, natureza e território. Essas relações aparecem no cotidiano, nos mapas, nas paisagens e nas escolhas feitas pela comunidade.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "De acordo com o texto de apoio, o que a Geografia ajuda a compreender sobre transformação da paisagem?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual alternativa apresenta uma ideia diretamente relacionada ao tema “Paisagens naturais e culturais”?",
+          "alternativas": [
+            "Observar como pessoas, natureza e território se relacionam.",
+            "Decorar palavras sem analisar o lugar.",
+            "Ignorar mudanças ocorridas nas paisagens.",
+            "Estudar somente acontecimentos sem localização."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Cite um exemplo de transformação da paisagem que possa ser observado no lugar onde você vive.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Explique uma diferença ou relação entre dois espaços, grupos ou situações ligados ao tema “Paisagens naturais e culturais”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "situacao-problema",
+          "enunciado": "Imagine que a turma fará uma pesquisa sobre “Paisagens naturais e culturais”. Que informação deveria ser registrada para compreender melhor esse tema?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Produza uma frase, pequeno texto ou esquema mostrando o que você aprendeu sobre transformação da paisagem.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Espera-se que o estudante mencione a compreensão das relações entre pessoas, natureza, território, paisagens e modos de vida.",
+          "justificativa": "A resposta deve retomar informações explícitas do texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "O estudo geográfico analisa relações entre sociedade, natureza e território."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta pessoal coerente com o tema.",
+          "justificativa": "O exemplo deve estar ligado ao espaço vivido pelo estudante."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta variável.",
+          "justificativa": "Critério de correção: apresentar comparação ou relação pertinente, com pelo menos uma característica de cada situação."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta possível: localização, pessoas envolvidas, características da paisagem, atividades realizadas, mudanças observadas ou registros em mapa.",
+          "justificativa": "A informação escolhida deve contribuir para investigar o tema geograficamente."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção pessoal.",
+          "justificativa": "Critério de correção: clareza, relação com o tema e uso adequado dos conceitos trabalhados."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-4ano-b3-geo-20-mudancas-na-paisagem-do-bairro",
+      "titulo": "Mudanças na paisagem do bairro",
+      "tema": "Paisagem e tempo",
+      "sequencia": "Atividade 20",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "facil",
+      "objetivo": "Analisar mudanças ocorridas na paisagem do bairro ao longo do tempo.",
+      "bncc": [
+        {
+          "codigo": "EF04GE11",
+          "descricaoResumida": "Identificar características e transformações das paisagens."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, responda às questões e relacione o conteúdo ao espaço onde você vive.",
+      "textoApoio": {
+        "titulo": "Para compreender: Mudanças na paisagem do bairro",
+        "conteudo": "A Geografia ajuda a compreender como as pessoas vivem, trabalham e transformam os lugares. No estudo de paisagem e tempo, observamos relações entre sociedade, natureza e território. Essas relações aparecem no cotidiano, nos mapas, nas paisagens e nas escolhas feitas pela comunidade.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "De acordo com o texto de apoio, o que a Geografia ajuda a compreender sobre paisagem e tempo?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual alternativa apresenta uma ideia diretamente relacionada ao tema “Mudanças na paisagem do bairro”?",
+          "alternativas": [
+            "Observar como pessoas, natureza e território se relacionam.",
+            "Decorar palavras sem analisar o lugar.",
+            "Ignorar mudanças ocorridas nas paisagens.",
+            "Estudar somente acontecimentos sem localização."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Cite um exemplo de paisagem e tempo que possa ser observado no lugar onde você vive.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Explique uma diferença ou relação entre dois espaços, grupos ou situações ligados ao tema “Mudanças na paisagem do bairro”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "situacao-problema",
+          "enunciado": "Imagine que a turma fará uma pesquisa sobre “Mudanças na paisagem do bairro”. Que informação deveria ser registrada para compreender melhor esse tema?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Produza uma frase, pequeno texto ou esquema mostrando o que você aprendeu sobre paisagem e tempo.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Espera-se que o estudante mencione a compreensão das relações entre pessoas, natureza, território, paisagens e modos de vida.",
+          "justificativa": "A resposta deve retomar informações explícitas do texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "O estudo geográfico analisa relações entre sociedade, natureza e território."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta pessoal coerente com o tema.",
+          "justificativa": "O exemplo deve estar ligado ao espaço vivido pelo estudante."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta variável.",
+          "justificativa": "Critério de correção: apresentar comparação ou relação pertinente, com pelo menos uma característica de cada situação."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta possível: localização, pessoas envolvidas, características da paisagem, atividades realizadas, mudanças observadas ou registros em mapa.",
+          "justificativa": "A informação escolhida deve contribuir para investigar o tema geograficamente."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção pessoal.",
+          "justificativa": "Critério de correção: clareza, relação com o tema e uso adequado dos conceitos trabalhados."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-4ano-b3-geo-21-preservacao-dos-rios",
+      "titulo": "Preservação dos rios",
+      "tema": "Conservação ambiental",
+      "sequencia": "Atividade 21",
+      "tipoSequencia": "Ampliação",
+      "dificuldade": "intermediaria",
+      "objetivo": "Relacionar atitudes humanas à conservação ou à poluição dos rios.",
+      "bncc": [
+        {
+          "codigo": "EF04GE11",
+          "descricaoResumida": "Identificar características das paisagens e ações de conservação."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, responda às questões e relacione o conteúdo ao espaço onde você vive.",
+      "textoApoio": {
+        "titulo": "Para compreender: Preservação dos rios",
+        "conteudo": "A Geografia ajuda a compreender como as pessoas vivem, trabalham e transformam os lugares. No estudo de conservação ambiental, observamos relações entre sociedade, natureza e território. Essas relações aparecem no cotidiano, nos mapas, nas paisagens e nas escolhas feitas pela comunidade.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "De acordo com o texto de apoio, o que a Geografia ajuda a compreender sobre conservação ambiental?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual alternativa apresenta uma ideia diretamente relacionada ao tema “Preservação dos rios”?",
+          "alternativas": [
+            "Observar como pessoas, natureza e território se relacionam.",
+            "Decorar palavras sem analisar o lugar.",
+            "Ignorar mudanças ocorridas nas paisagens.",
+            "Estudar somente acontecimentos sem localização."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Cite um exemplo de conservação ambiental que possa ser observado no lugar onde você vive.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Explique uma diferença ou relação entre dois espaços, grupos ou situações ligados ao tema “Preservação dos rios”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "situacao-problema",
+          "enunciado": "Imagine que a turma fará uma pesquisa sobre “Preservação dos rios”. Que informação deveria ser registrada para compreender melhor esse tema?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Produza uma frase, pequeno texto ou esquema mostrando o que você aprendeu sobre conservação ambiental.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Espera-se que o estudante mencione a compreensão das relações entre pessoas, natureza, território, paisagens e modos de vida.",
+          "justificativa": "A resposta deve retomar informações explícitas do texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "O estudo geográfico analisa relações entre sociedade, natureza e território."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta pessoal coerente com o tema.",
+          "justificativa": "O exemplo deve estar ligado ao espaço vivido pelo estudante."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta variável.",
+          "justificativa": "Critério de correção: apresentar comparação ou relação pertinente, com pelo menos uma característica de cada situação."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta possível: localização, pessoas envolvidas, características da paisagem, atividades realizadas, mudanças observadas ou registros em mapa.",
+          "justificativa": "A informação escolhida deve contribuir para investigar o tema geograficamente."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção pessoal.",
+          "justificativa": "Critério de correção: clareza, relação com o tema e uso adequado dos conceitos trabalhados."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-4ano-b3-geo-22-conservacao-do-solo",
+      "titulo": "Conservação do solo",
+      "tema": "Solo e ambiente",
+      "sequencia": "Atividade 22",
+      "tipoSequencia": "Ampliação",
+      "dificuldade": "intermediaria",
+      "objetivo": "Reconhecer práticas que ajudam a evitar erosão e degradação do solo.",
+      "bncc": [
+        {
+          "codigo": "EF04GE11",
+          "descricaoResumida": "Identificar características das paisagens e ações de conservação ambiental."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, responda às questões e relacione o conteúdo ao espaço onde você vive.",
+      "textoApoio": {
+        "titulo": "Para compreender: Conservação do solo",
+        "conteudo": "A Geografia ajuda a compreender como as pessoas vivem, trabalham e transformam os lugares. No estudo de solo e ambiente, observamos relações entre sociedade, natureza e território. Essas relações aparecem no cotidiano, nos mapas, nas paisagens e nas escolhas feitas pela comunidade.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "De acordo com o texto de apoio, o que a Geografia ajuda a compreender sobre solo e ambiente?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual alternativa apresenta uma ideia diretamente relacionada ao tema “Conservação do solo”?",
+          "alternativas": [
+            "Observar como pessoas, natureza e território se relacionam.",
+            "Decorar palavras sem analisar o lugar.",
+            "Ignorar mudanças ocorridas nas paisagens.",
+            "Estudar somente acontecimentos sem localização."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Cite um exemplo de solo e ambiente que possa ser observado no lugar onde você vive.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Explique uma diferença ou relação entre dois espaços, grupos ou situações ligados ao tema “Conservação do solo”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "situacao-problema",
+          "enunciado": "Imagine que a turma fará uma pesquisa sobre “Conservação do solo”. Que informação deveria ser registrada para compreender melhor esse tema?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Produza uma frase, pequeno texto ou esquema mostrando o que você aprendeu sobre solo e ambiente.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Espera-se que o estudante mencione a compreensão das relações entre pessoas, natureza, território, paisagens e modos de vida.",
+          "justificativa": "A resposta deve retomar informações explícitas do texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "O estudo geográfico analisa relações entre sociedade, natureza e território."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta pessoal coerente com o tema.",
+          "justificativa": "O exemplo deve estar ligado ao espaço vivido pelo estudante."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta variável.",
+          "justificativa": "Critério de correção: apresentar comparação ou relação pertinente, com pelo menos uma característica de cada situação."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta possível: localização, pessoas envolvidas, características da paisagem, atividades realizadas, mudanças observadas ou registros em mapa.",
+          "justificativa": "A informação escolhida deve contribuir para investigar o tema geograficamente."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção pessoal.",
+          "justificativa": "Critério de correção: clareza, relação com o tema e uso adequado dos conceitos trabalhados."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-4ano-b3-geo-23-trabalho-no-campo",
+      "titulo": "Trabalho no campo",
+      "tema": "Atividades econômicas rurais",
+      "sequencia": "Atividade 23",
+      "tipoSequencia": "Ampliação",
+      "dificuldade": "desafiadora",
+      "objetivo": "Identificar diferentes atividades de trabalho realizadas no espaço rural.",
+      "bncc": [
+        {
+          "codigo": "EF04GE07",
+          "descricaoResumida": "Comparar características do trabalho no campo e na cidade."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, responda às questões e relacione o conteúdo ao espaço onde você vive.",
+      "textoApoio": {
+        "titulo": "Para compreender: Trabalho no campo",
+        "conteudo": "A Geografia ajuda a compreender como as pessoas vivem, trabalham e transformam os lugares. No estudo de atividades econômicas rurais, observamos relações entre sociedade, natureza e território. Essas relações aparecem no cotidiano, nos mapas, nas paisagens e nas escolhas feitas pela comunidade.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "De acordo com o texto de apoio, o que a Geografia ajuda a compreender sobre atividades econômicas rurais?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual alternativa apresenta uma ideia diretamente relacionada ao tema “Trabalho no campo”?",
+          "alternativas": [
+            "Observar como pessoas, natureza e território se relacionam.",
+            "Decorar palavras sem analisar o lugar.",
+            "Ignorar mudanças ocorridas nas paisagens.",
+            "Estudar somente acontecimentos sem localização."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Cite um exemplo de atividades econômicas rurais que possa ser observado no lugar onde você vive.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Explique uma diferença ou relação entre dois espaços, grupos ou situações ligados ao tema “Trabalho no campo”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "situacao-problema",
+          "enunciado": "Imagine que a turma fará uma pesquisa sobre “Trabalho no campo”. Que informação deveria ser registrada para compreender melhor esse tema?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Produza uma frase, pequeno texto ou esquema mostrando o que você aprendeu sobre atividades econômicas rurais.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Espera-se que o estudante mencione a compreensão das relações entre pessoas, natureza, território, paisagens e modos de vida.",
+          "justificativa": "A resposta deve retomar informações explícitas do texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "O estudo geográfico analisa relações entre sociedade, natureza e território."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta pessoal coerente com o tema.",
+          "justificativa": "O exemplo deve estar ligado ao espaço vivido pelo estudante."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta variável.",
+          "justificativa": "Critério de correção: apresentar comparação ou relação pertinente, com pelo menos uma característica de cada situação."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta possível: localização, pessoas envolvidas, características da paisagem, atividades realizadas, mudanças observadas ou registros em mapa.",
+          "justificativa": "A informação escolhida deve contribuir para investigar o tema geograficamente."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção pessoal.",
+          "justificativa": "Critério de correção: clareza, relação com o tema e uso adequado dos conceitos trabalhados."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-4ano-b3-geo-24-trabalho-na-cidade",
+      "titulo": "Trabalho na cidade",
+      "tema": "Atividades econômicas urbanas",
+      "sequencia": "Atividade 24",
+      "tipoSequencia": "Ampliação",
+      "dificuldade": "facil",
+      "objetivo": "Reconhecer atividades dos setores de comércio, serviços e indústria nas cidades.",
+      "bncc": [
+        {
+          "codigo": "EF04GE07",
+          "descricaoResumida": "Comparar características do trabalho no campo e na cidade."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, responda às questões e relacione o conteúdo ao espaço onde você vive.",
+      "textoApoio": {
+        "titulo": "Para compreender: Trabalho na cidade",
+        "conteudo": "A Geografia ajuda a compreender como as pessoas vivem, trabalham e transformam os lugares. No estudo de atividades econômicas urbanas, observamos relações entre sociedade, natureza e território. Essas relações aparecem no cotidiano, nos mapas, nas paisagens e nas escolhas feitas pela comunidade.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "De acordo com o texto de apoio, o que a Geografia ajuda a compreender sobre atividades econômicas urbanas?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual alternativa apresenta uma ideia diretamente relacionada ao tema “Trabalho na cidade”?",
+          "alternativas": [
+            "Observar como pessoas, natureza e território se relacionam.",
+            "Decorar palavras sem analisar o lugar.",
+            "Ignorar mudanças ocorridas nas paisagens.",
+            "Estudar somente acontecimentos sem localização."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Cite um exemplo de atividades econômicas urbanas que possa ser observado no lugar onde você vive.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Explique uma diferença ou relação entre dois espaços, grupos ou situações ligados ao tema “Trabalho na cidade”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "situacao-problema",
+          "enunciado": "Imagine que a turma fará uma pesquisa sobre “Trabalho na cidade”. Que informação deveria ser registrada para compreender melhor esse tema?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Produza uma frase, pequeno texto ou esquema mostrando o que você aprendeu sobre atividades econômicas urbanas.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Espera-se que o estudante mencione a compreensão das relações entre pessoas, natureza, território, paisagens e modos de vida.",
+          "justificativa": "A resposta deve retomar informações explícitas do texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "O estudo geográfico analisa relações entre sociedade, natureza e território."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta pessoal coerente com o tema.",
+          "justificativa": "O exemplo deve estar ligado ao espaço vivido pelo estudante."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta variável.",
+          "justificativa": "Critério de correção: apresentar comparação ou relação pertinente, com pelo menos uma característica de cada situação."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta possível: localização, pessoas envolvidas, características da paisagem, atividades realizadas, mudanças observadas ou registros em mapa.",
+          "justificativa": "A informação escolhida deve contribuir para investigar o tema geograficamente."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção pessoal.",
+          "justificativa": "Critério de correção: clareza, relação com o tema e uso adequado dos conceitos trabalhados."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-4ano-b3-geo-25-producao-circulacao-e-consumo",
+      "titulo": "Produção, circulação e consumo",
+      "tema": "Cadeias produtivas",
+      "sequencia": "Atividade 25",
+      "tipoSequencia": "Ampliação",
+      "dificuldade": "intermediaria",
+      "objetivo": "Acompanhar etapas de produção, transporte, venda e consumo de um produto.",
+      "bncc": [
+        {
+          "codigo": "EF04GE08",
+          "descricaoResumida": "Descrever e discutir o processo de produção, circulação e consumo de produtos."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, responda às questões e relacione o conteúdo ao espaço onde você vive.",
+      "textoApoio": {
+        "titulo": "Para compreender: Produção, circulação e consumo",
+        "conteudo": "A Geografia ajuda a compreender como as pessoas vivem, trabalham e transformam os lugares. No estudo de cadeias produtivas, observamos relações entre sociedade, natureza e território. Essas relações aparecem no cotidiano, nos mapas, nas paisagens e nas escolhas feitas pela comunidade.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "De acordo com o texto de apoio, o que a Geografia ajuda a compreender sobre cadeias produtivas?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual alternativa apresenta uma ideia diretamente relacionada ao tema “Produção, circulação e consumo”?",
+          "alternativas": [
+            "Observar como pessoas, natureza e território se relacionam.",
+            "Decorar palavras sem analisar o lugar.",
+            "Ignorar mudanças ocorridas nas paisagens.",
+            "Estudar somente acontecimentos sem localização."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Cite um exemplo de cadeias produtivas que possa ser observado no lugar onde você vive.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Explique uma diferença ou relação entre dois espaços, grupos ou situações ligados ao tema “Produção, circulação e consumo”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "situacao-problema",
+          "enunciado": "Imagine que a turma fará uma pesquisa sobre “Produção, circulação e consumo”. Que informação deveria ser registrada para compreender melhor esse tema?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Produza uma frase, pequeno texto ou esquema mostrando o que você aprendeu sobre cadeias produtivas.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Espera-se que o estudante mencione a compreensão das relações entre pessoas, natureza, território, paisagens e modos de vida.",
+          "justificativa": "A resposta deve retomar informações explícitas do texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "O estudo geográfico analisa relações entre sociedade, natureza e território."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta pessoal coerente com o tema.",
+          "justificativa": "O exemplo deve estar ligado ao espaço vivido pelo estudante."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta variável.",
+          "justificativa": "Critério de correção: apresentar comparação ou relação pertinente, com pelo menos uma característica de cada situação."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta possível: localização, pessoas envolvidas, características da paisagem, atividades realizadas, mudanças observadas ou registros em mapa.",
+          "justificativa": "A informação escolhida deve contribuir para investigar o tema geograficamente."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção pessoal.",
+          "justificativa": "Critério de correção: clareza, relação com o tema e uso adequado dos conceitos trabalhados."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-4ano-b3-geo-26-do-leite-ao-mercado",
+      "titulo": "Do leite ao mercado",
+      "tema": "Cadeia produtiva",
+      "sequencia": "Atividade 26",
+      "tipoSequencia": "Ampliação",
+      "dificuldade": "intermediaria",
+      "objetivo": "Compreender as etapas que levam o leite do campo até o consumidor.",
+      "bncc": [
+        {
+          "codigo": "EF04GE08",
+          "descricaoResumida": "Descrever o processo de produção, circulação e consumo de diferentes produtos."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, responda às questões e relacione o conteúdo ao espaço onde você vive.",
+      "textoApoio": {
+        "titulo": "Para compreender: Do leite ao mercado",
+        "conteudo": "A Geografia ajuda a compreender como as pessoas vivem, trabalham e transformam os lugares. No estudo de cadeia produtiva, observamos relações entre sociedade, natureza e território. Essas relações aparecem no cotidiano, nos mapas, nas paisagens e nas escolhas feitas pela comunidade.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "De acordo com o texto de apoio, o que a Geografia ajuda a compreender sobre cadeia produtiva?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual alternativa apresenta uma ideia diretamente relacionada ao tema “Do leite ao mercado”?",
+          "alternativas": [
+            "Observar como pessoas, natureza e território se relacionam.",
+            "Decorar palavras sem analisar o lugar.",
+            "Ignorar mudanças ocorridas nas paisagens.",
+            "Estudar somente acontecimentos sem localização."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Cite um exemplo de cadeia produtiva que possa ser observado no lugar onde você vive.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Explique uma diferença ou relação entre dois espaços, grupos ou situações ligados ao tema “Do leite ao mercado”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "situacao-problema",
+          "enunciado": "Imagine que a turma fará uma pesquisa sobre “Do leite ao mercado”. Que informação deveria ser registrada para compreender melhor esse tema?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Produza uma frase, pequeno texto ou esquema mostrando o que você aprendeu sobre cadeia produtiva.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Espera-se que o estudante mencione a compreensão das relações entre pessoas, natureza, território, paisagens e modos de vida.",
+          "justificativa": "A resposta deve retomar informações explícitas do texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "O estudo geográfico analisa relações entre sociedade, natureza e território."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta pessoal coerente com o tema.",
+          "justificativa": "O exemplo deve estar ligado ao espaço vivido pelo estudante."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta variável.",
+          "justificativa": "Critério de correção: apresentar comparação ou relação pertinente, com pelo menos uma característica de cada situação."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta possível: localização, pessoas envolvidas, características da paisagem, atividades realizadas, mudanças observadas ou registros em mapa.",
+          "justificativa": "A informação escolhida deve contribuir para investigar o tema geograficamente."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção pessoal.",
+          "justificativa": "Critério de correção: clareza, relação com o tema e uso adequado dos conceitos trabalhados."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-4ano-b3-geo-27-do-algodao-a-camiseta",
+      "titulo": "Do algodão à camiseta",
+      "tema": "Indústria e circulação",
+      "sequencia": "Atividade 27",
+      "tipoSequencia": "Ampliação",
+      "dificuldade": "desafiadora",
+      "objetivo": "Identificar transformações e trabalhos envolvidos na produção de uma camiseta.",
+      "bncc": [
+        {
+          "codigo": "EF04GE08",
+          "descricaoResumida": "Descrever o processo de produção, circulação e consumo de diferentes produtos."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, responda às questões e relacione o conteúdo ao espaço onde você vive.",
+      "textoApoio": {
+        "titulo": "Para compreender: Do algodão à camiseta",
+        "conteudo": "A Geografia ajuda a compreender como as pessoas vivem, trabalham e transformam os lugares. No estudo de indústria e circulação, observamos relações entre sociedade, natureza e território. Essas relações aparecem no cotidiano, nos mapas, nas paisagens e nas escolhas feitas pela comunidade.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "De acordo com o texto de apoio, o que a Geografia ajuda a compreender sobre indústria e circulação?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual alternativa apresenta uma ideia diretamente relacionada ao tema “Do algodão à camiseta”?",
+          "alternativas": [
+            "Observar como pessoas, natureza e território se relacionam.",
+            "Decorar palavras sem analisar o lugar.",
+            "Ignorar mudanças ocorridas nas paisagens.",
+            "Estudar somente acontecimentos sem localização."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Cite um exemplo de indústria e circulação que possa ser observado no lugar onde você vive.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Explique uma diferença ou relação entre dois espaços, grupos ou situações ligados ao tema “Do algodão à camiseta”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "situacao-problema",
+          "enunciado": "Imagine que a turma fará uma pesquisa sobre “Do algodão à camiseta”. Que informação deveria ser registrada para compreender melhor esse tema?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Produza uma frase, pequeno texto ou esquema mostrando o que você aprendeu sobre indústria e circulação.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Espera-se que o estudante mencione a compreensão das relações entre pessoas, natureza, território, paisagens e modos de vida.",
+          "justificativa": "A resposta deve retomar informações explícitas do texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "O estudo geográfico analisa relações entre sociedade, natureza e território."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta pessoal coerente com o tema.",
+          "justificativa": "O exemplo deve estar ligado ao espaço vivido pelo estudante."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta variável.",
+          "justificativa": "Critério de correção: apresentar comparação ou relação pertinente, com pelo menos uma característica de cada situação."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta possível: localização, pessoas envolvidas, características da paisagem, atividades realizadas, mudanças observadas ou registros em mapa.",
+          "justificativa": "A informação escolhida deve contribuir para investigar o tema geograficamente."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção pessoal.",
+          "justificativa": "Critério de correção: clareza, relação com o tema e uso adequado dos conceitos trabalhados."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-4ano-b3-geo-28-transportes-e-circulacao",
+      "titulo": "Transportes e circulação",
+      "tema": "Redes de transporte",
+      "sequencia": "Atividade 28",
+      "tipoSequencia": "Ampliação",
+      "dificuldade": "facil",
+      "objetivo": "Comparar meios de transporte e sua importância para conectar diferentes lugares.",
+      "bncc": [
+        {
+          "codigo": "EF04GE08",
+          "descricaoResumida": "Analisar circulação de produtos, pessoas e mercadorias."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, responda às questões e relacione o conteúdo ao espaço onde você vive.",
+      "textoApoio": {
+        "titulo": "Para compreender: Transportes e circulação",
+        "conteudo": "A Geografia ajuda a compreender como as pessoas vivem, trabalham e transformam os lugares. No estudo de redes de transporte, observamos relações entre sociedade, natureza e território. Essas relações aparecem no cotidiano, nos mapas, nas paisagens e nas escolhas feitas pela comunidade.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "De acordo com o texto de apoio, o que a Geografia ajuda a compreender sobre redes de transporte?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual alternativa apresenta uma ideia diretamente relacionada ao tema “Transportes e circulação”?",
+          "alternativas": [
+            "Observar como pessoas, natureza e território se relacionam.",
+            "Decorar palavras sem analisar o lugar.",
+            "Ignorar mudanças ocorridas nas paisagens.",
+            "Estudar somente acontecimentos sem localização."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Cite um exemplo de redes de transporte que possa ser observado no lugar onde você vive.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Explique uma diferença ou relação entre dois espaços, grupos ou situações ligados ao tema “Transportes e circulação”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "situacao-problema",
+          "enunciado": "Imagine que a turma fará uma pesquisa sobre “Transportes e circulação”. Que informação deveria ser registrada para compreender melhor esse tema?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Produza uma frase, pequeno texto ou esquema mostrando o que você aprendeu sobre redes de transporte.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Espera-se que o estudante mencione a compreensão das relações entre pessoas, natureza, território, paisagens e modos de vida.",
+          "justificativa": "A resposta deve retomar informações explícitas do texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "O estudo geográfico analisa relações entre sociedade, natureza e território."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta pessoal coerente com o tema.",
+          "justificativa": "O exemplo deve estar ligado ao espaço vivido pelo estudante."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta variável.",
+          "justificativa": "Critério de correção: apresentar comparação ou relação pertinente, com pelo menos uma característica de cada situação."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta possível: localização, pessoas envolvidas, características da paisagem, atividades realizadas, mudanças observadas ou registros em mapa.",
+          "justificativa": "A informação escolhida deve contribuir para investigar o tema geograficamente."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção pessoal.",
+          "justificativa": "Critério de correção: clareza, relação com o tema e uso adequado dos conceitos trabalhados."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-4ano-b3-geo-29-comunicacao-entre-lugares",
+      "titulo": "Comunicação entre lugares",
+      "tema": "Redes de comunicação",
+      "sequencia": "Atividade 29",
+      "tipoSequencia": "Ampliação",
+      "dificuldade": "intermediaria",
+      "objetivo": "Reconhecer como meios de comunicação aproximam pessoas e territórios.",
+      "bncc": [
+        {
+          "codigo": "EF04GE02",
+          "descricaoResumida": "Descrever processos migratórios e relações entre diferentes lugares."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, responda às questões e relacione o conteúdo ao espaço onde você vive.",
+      "textoApoio": {
+        "titulo": "Para compreender: Comunicação entre lugares",
+        "conteudo": "A Geografia ajuda a compreender como as pessoas vivem, trabalham e transformam os lugares. No estudo de redes de comunicação, observamos relações entre sociedade, natureza e território. Essas relações aparecem no cotidiano, nos mapas, nas paisagens e nas escolhas feitas pela comunidade.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "De acordo com o texto de apoio, o que a Geografia ajuda a compreender sobre redes de comunicação?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual alternativa apresenta uma ideia diretamente relacionada ao tema “Comunicação entre lugares”?",
+          "alternativas": [
+            "Observar como pessoas, natureza e território se relacionam.",
+            "Decorar palavras sem analisar o lugar.",
+            "Ignorar mudanças ocorridas nas paisagens.",
+            "Estudar somente acontecimentos sem localização."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Cite um exemplo de redes de comunicação que possa ser observado no lugar onde você vive.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Explique uma diferença ou relação entre dois espaços, grupos ou situações ligados ao tema “Comunicação entre lugares”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "situacao-problema",
+          "enunciado": "Imagine que a turma fará uma pesquisa sobre “Comunicação entre lugares”. Que informação deveria ser registrada para compreender melhor esse tema?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Produza uma frase, pequeno texto ou esquema mostrando o que você aprendeu sobre redes de comunicação.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Espera-se que o estudante mencione a compreensão das relações entre pessoas, natureza, território, paisagens e modos de vida.",
+          "justificativa": "A resposta deve retomar informações explícitas do texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "O estudo geográfico analisa relações entre sociedade, natureza e território."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta pessoal coerente com o tema.",
+          "justificativa": "O exemplo deve estar ligado ao espaço vivido pelo estudante."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta variável.",
+          "justificativa": "Critério de correção: apresentar comparação ou relação pertinente, com pelo menos uma característica de cada situação."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta possível: localização, pessoas envolvidas, características da paisagem, atividades realizadas, mudanças observadas ou registros em mapa.",
+          "justificativa": "A informação escolhida deve contribuir para investigar o tema geograficamente."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção pessoal.",
+          "justificativa": "Critério de correção: clareza, relação com o tema e uso adequado dos conceitos trabalhados."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-4ano-b3-geo-30-geografia-do-lugar-onde-vivemos",
+      "titulo": "Geografia do lugar onde vivemos",
+      "tema": "Lugar e pertencimento",
+      "sequencia": "Atividade 30",
+      "tipoSequencia": "Ampliação",
+      "dificuldade": "intermediaria",
+      "objetivo": "Observar e registrar características naturais, culturais e sociais do lugar onde se vive.",
+      "bncc": [
+        {
+          "codigo": "EF04GE01",
+          "descricaoResumida": "Selecionar elementos culturais e territoriais presentes nos lugares de vivência."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, responda às questões e relacione o conteúdo ao espaço onde você vive.",
+      "textoApoio": {
+        "titulo": "Para compreender: Geografia do lugar onde vivemos",
+        "conteudo": "A Geografia ajuda a compreender como as pessoas vivem, trabalham e transformam os lugares. No estudo de lugar e pertencimento, observamos relações entre sociedade, natureza e território. Essas relações aparecem no cotidiano, nos mapas, nas paisagens e nas escolhas feitas pela comunidade.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "De acordo com o texto de apoio, o que a Geografia ajuda a compreender sobre lugar e pertencimento?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual alternativa apresenta uma ideia diretamente relacionada ao tema “Geografia do lugar onde vivemos”?",
+          "alternativas": [
+            "Observar como pessoas, natureza e território se relacionam.",
+            "Decorar palavras sem analisar o lugar.",
+            "Ignorar mudanças ocorridas nas paisagens.",
+            "Estudar somente acontecimentos sem localização."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Cite um exemplo de lugar e pertencimento que possa ser observado no lugar onde você vive.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Explique uma diferença ou relação entre dois espaços, grupos ou situações ligados ao tema “Geografia do lugar onde vivemos”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "situacao-problema",
+          "enunciado": "Imagine que a turma fará uma pesquisa sobre “Geografia do lugar onde vivemos”. Que informação deveria ser registrada para compreender melhor esse tema?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Produza uma frase, pequeno texto ou esquema mostrando o que você aprendeu sobre lugar e pertencimento.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Espera-se que o estudante mencione a compreensão das relações entre pessoas, natureza, território, paisagens e modos de vida.",
+          "justificativa": "A resposta deve retomar informações explícitas do texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "O estudo geográfico analisa relações entre sociedade, natureza e território."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta pessoal coerente com o tema.",
+          "justificativa": "O exemplo deve estar ligado ao espaço vivido pelo estudante."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta variável.",
+          "justificativa": "Critério de correção: apresentar comparação ou relação pertinente, com pelo menos uma característica de cada situação."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta possível: localização, pessoas envolvidas, características da paisagem, atividades realizadas, mudanças observadas ou registros em mapa.",
+          "justificativa": "A informação escolhida deve contribuir para investigar o tema geograficamente."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção pessoal.",
+          "justificativa": "Critério de correção: clareza, relação com o tema e uso adequado dos conceitos trabalhados."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    }
+  ]
+}

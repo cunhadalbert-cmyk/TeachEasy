@@ -1,0 +1,3672 @@
+{
+  "schemaVersion": "1.0",
+  "colecao": "3ano-3bimestre-historia",
+  "idioma": "pt-BR",
+  "etapa": "Ensino Fundamental — Anos Iniciais",
+  "ano": "3º ano",
+  "bimestre": 3,
+  "disciplina": "História",
+  "statusBimestre": "sugerido",
+  "atividades": [
+    {
+      "id": "efi-3ano-b3-his-01-memorias-da-familia",
+      "titulo": "Memórias da família",
+      "tema": "Memória e identidade",
+      "sequencia": "Atividade 1",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "facil",
+      "objetivo": "Reconhecer relatos, fotografias e objetos como fontes da história familiar.",
+      "bncc": [
+        {
+          "codigo": "EF03HI01",
+          "descricaoResumida": "Identificar grupos populacionais que formam a cidade e o município, considerando seus modos de vida."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, observe as informações históricas e responda com atenção.",
+      "textoApoio": {
+        "titulo": "Para compreender: Memórias da família",
+        "conteudo": "A História ajuda a compreender como as pessoas viveram em outros tempos e como a comunidade se transformou. No estudo de memória e identidade, usamos fontes como fotografias, objetos, documentos e relatos orais. Essas fontes permitem observar mudanças, permanências e diferentes experiências. Conhecer o passado também ajuda a valorizar a diversidade e a cuidar dos lugares de memória.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto, quais fontes podem ser usadas para estudar memória e identidade?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual atitude ajuda a estudar corretamente o tema “Memórias da família”?",
+          "alternativas": [
+            "Comparar fontes e observar mudanças e permanências.",
+            "Inventar informações sem consultar nenhuma fonte.",
+            "Ignorar os relatos das pessoas da comunidade.",
+            "Considerar apenas o presente e esquecer o passado."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Cite um exemplo relacionado a memória e identidade que possa ser observado na sua família, escola ou comunidade.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Explique uma mudança e uma permanência relacionadas ao tema “Memórias da família”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "pesquisa",
+          "enunciado": "Que fonte histórica você escolheria para pesquisar “Memórias da família”? Explique por quê.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Escreva um pequeno texto sobre o que podemos aprender ao estudar memória e identidade.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Fotografias, objetos, documentos e relatos orais.",
+          "justificativa": "Essas fontes são citadas diretamente no texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "O estudo histórico exige comparação de fontes e observação de mudanças e permanências."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta pessoal coerente com o tema.",
+          "justificativa": "O exemplo deve estar relacionado à família, à escola ou à comunidade."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta pessoal.",
+          "justificativa": "Critério: indicar claramente uma transformação e um aspecto que permaneceu."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta possível: fotografia, objeto, documento ou entrevista.",
+          "justificativa": "A justificativa deve explicar que informação a fonte pode oferecer."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral.",
+          "justificativa": "Critério: clareza, coerência histórica e relação com o tema estudado."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-3ano-b3-his-02-objetos-que-contam-historias",
+      "titulo": "Objetos que contam histórias",
+      "tema": "Fontes históricas",
+      "sequencia": "Atividade 2",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "intermediaria",
+      "objetivo": "Compreender que objetos antigos ajudam a conhecer modos de vida de outros tempos.",
+      "bncc": [
+        {
+          "codigo": "EF03HI02",
+          "descricaoResumida": "Selecionar fontes de diferentes naturezas para compreender fatos da história local."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, observe as informações históricas e responda com atenção.",
+      "textoApoio": {
+        "titulo": "Para compreender: Objetos que contam histórias",
+        "conteudo": "A História ajuda a compreender como as pessoas viveram em outros tempos e como a comunidade se transformou. No estudo de fontes históricas, usamos fontes como fotografias, objetos, documentos e relatos orais. Essas fontes permitem observar mudanças, permanências e diferentes experiências. Conhecer o passado também ajuda a valorizar a diversidade e a cuidar dos lugares de memória.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto, quais fontes podem ser usadas para estudar fontes históricas?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual atitude ajuda a estudar corretamente o tema “Objetos que contam histórias”?",
+          "alternativas": [
+            "Comparar fontes e observar mudanças e permanências.",
+            "Inventar informações sem consultar nenhuma fonte.",
+            "Ignorar os relatos das pessoas da comunidade.",
+            "Considerar apenas o presente e esquecer o passado."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Cite um exemplo relacionado a fontes históricas que possa ser observado na sua família, escola ou comunidade.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Explique uma mudança e uma permanência relacionadas ao tema “Objetos que contam histórias”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "pesquisa",
+          "enunciado": "Que fonte histórica você escolheria para pesquisar “Objetos que contam histórias”? Explique por quê.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Escreva um pequeno texto sobre o que podemos aprender ao estudar fontes históricas.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Fotografias, objetos, documentos e relatos orais.",
+          "justificativa": "Essas fontes são citadas diretamente no texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "O estudo histórico exige comparação de fontes e observação de mudanças e permanências."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta pessoal coerente com o tema.",
+          "justificativa": "O exemplo deve estar relacionado à família, à escola ou à comunidade."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta pessoal.",
+          "justificativa": "Critério: indicar claramente uma transformação e um aspecto que permaneceu."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta possível: fotografia, objeto, documento ou entrevista.",
+          "justificativa": "A justificativa deve explicar que informação a fonte pode oferecer."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral.",
+          "justificativa": "Critério: clareza, coerência histórica e relação com o tema estudado."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-3ano-b3-his-03-fotografias-de-ontem-e-de-hoje",
+      "titulo": "Fotografias de ontem e de hoje",
+      "tema": "Mudanças e permanências",
+      "sequencia": "Atividade 3",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "intermediaria",
+      "objetivo": "Comparar fotografias para perceber mudanças e permanências na vida cotidiana.",
+      "bncc": [
+        {
+          "codigo": "EF03HI02",
+          "descricaoResumida": "Comparar fontes históricas e reconhecer informações sobre o passado."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, observe as informações históricas e responda com atenção.",
+      "textoApoio": {
+        "titulo": "Para compreender: Fotografias de ontem e de hoje",
+        "conteudo": "A História ajuda a compreender como as pessoas viveram em outros tempos e como a comunidade se transformou. No estudo de mudanças e permanências, usamos fontes como fotografias, objetos, documentos e relatos orais. Essas fontes permitem observar mudanças, permanências e diferentes experiências. Conhecer o passado também ajuda a valorizar a diversidade e a cuidar dos lugares de memória.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto, quais fontes podem ser usadas para estudar mudanças e permanências?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual atitude ajuda a estudar corretamente o tema “Fotografias de ontem e de hoje”?",
+          "alternativas": [
+            "Comparar fontes e observar mudanças e permanências.",
+            "Inventar informações sem consultar nenhuma fonte.",
+            "Ignorar os relatos das pessoas da comunidade.",
+            "Considerar apenas o presente e esquecer o passado."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Cite um exemplo relacionado a mudanças e permanências que possa ser observado na sua família, escola ou comunidade.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Explique uma mudança e uma permanência relacionadas ao tema “Fotografias de ontem e de hoje”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "pesquisa",
+          "enunciado": "Que fonte histórica você escolheria para pesquisar “Fotografias de ontem e de hoje”? Explique por quê.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Escreva um pequeno texto sobre o que podemos aprender ao estudar mudanças e permanências.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Fotografias, objetos, documentos e relatos orais.",
+          "justificativa": "Essas fontes são citadas diretamente no texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "O estudo histórico exige comparação de fontes e observação de mudanças e permanências."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta pessoal coerente com o tema.",
+          "justificativa": "O exemplo deve estar relacionado à família, à escola ou à comunidade."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta pessoal.",
+          "justificativa": "Critério: indicar claramente uma transformação e um aspecto que permaneceu."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta possível: fotografia, objeto, documento ou entrevista.",
+          "justificativa": "A justificativa deve explicar que informação a fonte pode oferecer."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral.",
+          "justificativa": "Critério: clareza, coerência histórica e relação com o tema estudado."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-3ano-b3-his-04-historias-contadas-pelos-mais-velhos",
+      "titulo": "Histórias contadas pelos mais velhos",
+      "tema": "Relatos orais",
+      "sequencia": "Atividade 4",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "desafiadora",
+      "objetivo": "Valorizar relatos orais como fontes para conhecer a história da comunidade.",
+      "bncc": [
+        {
+          "codigo": "EF03HI03",
+          "descricaoResumida": "Identificar e comparar pontos de vista sobre acontecimentos da comunidade."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, observe as informações históricas e responda com atenção.",
+      "textoApoio": {
+        "titulo": "Para compreender: Histórias contadas pelos mais velhos",
+        "conteudo": "A História ajuda a compreender como as pessoas viveram em outros tempos e como a comunidade se transformou. No estudo de relatos orais, usamos fontes como fotografias, objetos, documentos e relatos orais. Essas fontes permitem observar mudanças, permanências e diferentes experiências. Conhecer o passado também ajuda a valorizar a diversidade e a cuidar dos lugares de memória.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto, quais fontes podem ser usadas para estudar relatos orais?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual atitude ajuda a estudar corretamente o tema “Histórias contadas pelos mais velhos”?",
+          "alternativas": [
+            "Comparar fontes e observar mudanças e permanências.",
+            "Inventar informações sem consultar nenhuma fonte.",
+            "Ignorar os relatos das pessoas da comunidade.",
+            "Considerar apenas o presente e esquecer o passado."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Cite um exemplo relacionado a relatos orais que possa ser observado na sua família, escola ou comunidade.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Explique uma mudança e uma permanência relacionadas ao tema “Histórias contadas pelos mais velhos”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "pesquisa",
+          "enunciado": "Que fonte histórica você escolheria para pesquisar “Histórias contadas pelos mais velhos”? Explique por quê.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Escreva um pequeno texto sobre o que podemos aprender ao estudar relatos orais.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Fotografias, objetos, documentos e relatos orais.",
+          "justificativa": "Essas fontes são citadas diretamente no texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "O estudo histórico exige comparação de fontes e observação de mudanças e permanências."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta pessoal coerente com o tema.",
+          "justificativa": "O exemplo deve estar relacionado à família, à escola ou à comunidade."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta pessoal.",
+          "justificativa": "Critério: indicar claramente uma transformação e um aspecto que permaneceu."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta possível: fotografia, objeto, documento ou entrevista.",
+          "justificativa": "A justificativa deve explicar que informação a fonte pode oferecer."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral.",
+          "justificativa": "Critério: clareza, coerência histórica e relação com o tema estudado."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-3ano-b3-his-05-a-origem-do-bairro",
+      "titulo": "A origem do bairro",
+      "tema": "História local",
+      "sequencia": "Atividade 5",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "facil",
+      "objetivo": "Investigar como o bairro surgiu e se transformou ao longo do tempo.",
+      "bncc": [
+        {
+          "codigo": "EF03HI04",
+          "descricaoResumida": "Identificar patrimônios históricos e culturais da cidade ou região."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, observe as informações históricas e responda com atenção.",
+      "textoApoio": {
+        "titulo": "Para compreender: A origem do bairro",
+        "conteudo": "A História ajuda a compreender como as pessoas viveram em outros tempos e como a comunidade se transformou. No estudo de história local, usamos fontes como fotografias, objetos, documentos e relatos orais. Essas fontes permitem observar mudanças, permanências e diferentes experiências. Conhecer o passado também ajuda a valorizar a diversidade e a cuidar dos lugares de memória.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto, quais fontes podem ser usadas para estudar história local?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual atitude ajuda a estudar corretamente o tema “A origem do bairro”?",
+          "alternativas": [
+            "Comparar fontes e observar mudanças e permanências.",
+            "Inventar informações sem consultar nenhuma fonte.",
+            "Ignorar os relatos das pessoas da comunidade.",
+            "Considerar apenas o presente e esquecer o passado."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Cite um exemplo relacionado a história local que possa ser observado na sua família, escola ou comunidade.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Explique uma mudança e uma permanência relacionadas ao tema “A origem do bairro”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "pesquisa",
+          "enunciado": "Que fonte histórica você escolheria para pesquisar “A origem do bairro”? Explique por quê.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Escreva um pequeno texto sobre o que podemos aprender ao estudar história local.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Fotografias, objetos, documentos e relatos orais.",
+          "justificativa": "Essas fontes são citadas diretamente no texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "O estudo histórico exige comparação de fontes e observação de mudanças e permanências."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta pessoal coerente com o tema.",
+          "justificativa": "O exemplo deve estar relacionado à família, à escola ou à comunidade."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta pessoal.",
+          "justificativa": "Critério: indicar claramente uma transformação e um aspecto que permaneceu."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta possível: fotografia, objeto, documento ou entrevista.",
+          "justificativa": "A justificativa deve explicar que informação a fonte pode oferecer."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral.",
+          "justificativa": "Critério: clareza, coerência histórica e relação com o tema estudado."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-3ano-b3-his-06-lugares-de-memoria-da-cidade",
+      "titulo": "Lugares de memória da cidade",
+      "tema": "Patrimônio cultural",
+      "sequencia": "Atividade 6",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "intermediaria",
+      "objetivo": "Reconhecer praças, igrejas, monumentos e construções como lugares de memória.",
+      "bncc": [
+        {
+          "codigo": "EF03HI04",
+          "descricaoResumida": "Identificar patrimônios históricos e culturais da cidade ou região."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, observe as informações históricas e responda com atenção.",
+      "textoApoio": {
+        "titulo": "Para compreender: Lugares de memória da cidade",
+        "conteudo": "A História ajuda a compreender como as pessoas viveram em outros tempos e como a comunidade se transformou. No estudo de patrimônio cultural, usamos fontes como fotografias, objetos, documentos e relatos orais. Essas fontes permitem observar mudanças, permanências e diferentes experiências. Conhecer o passado também ajuda a valorizar a diversidade e a cuidar dos lugares de memória.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto, quais fontes podem ser usadas para estudar patrimônio cultural?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual atitude ajuda a estudar corretamente o tema “Lugares de memória da cidade”?",
+          "alternativas": [
+            "Comparar fontes e observar mudanças e permanências.",
+            "Inventar informações sem consultar nenhuma fonte.",
+            "Ignorar os relatos das pessoas da comunidade.",
+            "Considerar apenas o presente e esquecer o passado."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Cite um exemplo relacionado a patrimônio cultural que possa ser observado na sua família, escola ou comunidade.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Explique uma mudança e uma permanência relacionadas ao tema “Lugares de memória da cidade”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "pesquisa",
+          "enunciado": "Que fonte histórica você escolheria para pesquisar “Lugares de memória da cidade”? Explique por quê.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Escreva um pequeno texto sobre o que podemos aprender ao estudar patrimônio cultural.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Fotografias, objetos, documentos e relatos orais.",
+          "justificativa": "Essas fontes são citadas diretamente no texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "O estudo histórico exige comparação de fontes e observação de mudanças e permanências."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta pessoal coerente com o tema.",
+          "justificativa": "O exemplo deve estar relacionado à família, à escola ou à comunidade."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta pessoal.",
+          "justificativa": "Critério: indicar claramente uma transformação e um aspecto que permaneceu."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta possível: fotografia, objeto, documento ou entrevista.",
+          "justificativa": "A justificativa deve explicar que informação a fonte pode oferecer."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral.",
+          "justificativa": "Critério: clareza, coerência histórica e relação com o tema estudado."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-3ano-b3-his-07-monumentos-e-seus-significados",
+      "titulo": "Monumentos e seus significados",
+      "tema": "Monumentos",
+      "sequencia": "Atividade 7",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "intermediaria",
+      "objetivo": "Analisar por que alguns acontecimentos e pessoas são lembrados em monumentos.",
+      "bncc": [
+        {
+          "codigo": "EF03HI05",
+          "descricaoResumida": "Identificar marcos históricos dos lugares de vivência e compreender seus significados."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, observe as informações históricas e responda com atenção.",
+      "textoApoio": {
+        "titulo": "Para compreender: Monumentos e seus significados",
+        "conteudo": "A História ajuda a compreender como as pessoas viveram em outros tempos e como a comunidade se transformou. No estudo de monumentos, usamos fontes como fotografias, objetos, documentos e relatos orais. Essas fontes permitem observar mudanças, permanências e diferentes experiências. Conhecer o passado também ajuda a valorizar a diversidade e a cuidar dos lugares de memória.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto, quais fontes podem ser usadas para estudar monumentos?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual atitude ajuda a estudar corretamente o tema “Monumentos e seus significados”?",
+          "alternativas": [
+            "Comparar fontes e observar mudanças e permanências.",
+            "Inventar informações sem consultar nenhuma fonte.",
+            "Ignorar os relatos das pessoas da comunidade.",
+            "Considerar apenas o presente e esquecer o passado."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Cite um exemplo relacionado a monumentos que possa ser observado na sua família, escola ou comunidade.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Explique uma mudança e uma permanência relacionadas ao tema “Monumentos e seus significados”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "pesquisa",
+          "enunciado": "Que fonte histórica você escolheria para pesquisar “Monumentos e seus significados”? Explique por quê.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Escreva um pequeno texto sobre o que podemos aprender ao estudar monumentos.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Fotografias, objetos, documentos e relatos orais.",
+          "justificativa": "Essas fontes são citadas diretamente no texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "O estudo histórico exige comparação de fontes e observação de mudanças e permanências."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta pessoal coerente com o tema.",
+          "justificativa": "O exemplo deve estar relacionado à família, à escola ou à comunidade."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta pessoal.",
+          "justificativa": "Critério: indicar claramente uma transformação e um aspecto que permaneceu."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta possível: fotografia, objeto, documento ou entrevista.",
+          "justificativa": "A justificativa deve explicar que informação a fonte pode oferecer."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral.",
+          "justificativa": "Critério: clareza, coerência histórica e relação com o tema estudado."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-3ano-b3-his-08-nomes-de-ruas-e-pracas",
+      "titulo": "Nomes de ruas e praças",
+      "tema": "Marcos da cidade",
+      "sequencia": "Atividade 8",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "desafiadora",
+      "objetivo": "Investigar o significado dos nomes de ruas, praças e espaços públicos.",
+      "bncc": [
+        {
+          "codigo": "EF03HI05",
+          "descricaoResumida": "Identificar marcos históricos dos lugares de vivência e compreender seus significados."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, observe as informações históricas e responda com atenção.",
+      "textoApoio": {
+        "titulo": "Para compreender: Nomes de ruas e praças",
+        "conteudo": "A História ajuda a compreender como as pessoas viveram em outros tempos e como a comunidade se transformou. No estudo de marcos da cidade, usamos fontes como fotografias, objetos, documentos e relatos orais. Essas fontes permitem observar mudanças, permanências e diferentes experiências. Conhecer o passado também ajuda a valorizar a diversidade e a cuidar dos lugares de memória.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto, quais fontes podem ser usadas para estudar marcos da cidade?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual atitude ajuda a estudar corretamente o tema “Nomes de ruas e praças”?",
+          "alternativas": [
+            "Comparar fontes e observar mudanças e permanências.",
+            "Inventar informações sem consultar nenhuma fonte.",
+            "Ignorar os relatos das pessoas da comunidade.",
+            "Considerar apenas o presente e esquecer o passado."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Cite um exemplo relacionado a marcos da cidade que possa ser observado na sua família, escola ou comunidade.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Explique uma mudança e uma permanência relacionadas ao tema “Nomes de ruas e praças”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "pesquisa",
+          "enunciado": "Que fonte histórica você escolheria para pesquisar “Nomes de ruas e praças”? Explique por quê.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Escreva um pequeno texto sobre o que podemos aprender ao estudar marcos da cidade.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Fotografias, objetos, documentos e relatos orais.",
+          "justificativa": "Essas fontes são citadas diretamente no texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "O estudo histórico exige comparação de fontes e observação de mudanças e permanências."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta pessoal coerente com o tema.",
+          "justificativa": "O exemplo deve estar relacionado à família, à escola ou à comunidade."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta pessoal.",
+          "justificativa": "Critério: indicar claramente uma transformação e um aspecto que permaneceu."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta possível: fotografia, objeto, documento ou entrevista.",
+          "justificativa": "A justificativa deve explicar que informação a fonte pode oferecer."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral.",
+          "justificativa": "Critério: clareza, coerência histórica e relação com o tema estudado."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-3ano-b3-his-09-a-cidade-muda-com-o-tempo",
+      "titulo": "A cidade muda com o tempo",
+      "tema": "Transformações urbanas",
+      "sequencia": "Atividade 9",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "facil",
+      "objetivo": "Perceber transformações nas construções, nos serviços e nos modos de viver.",
+      "bncc": [
+        {
+          "codigo": "EF03HI06",
+          "descricaoResumida": "Identificar mudanças e permanências nos lugares de vivência."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, observe as informações históricas e responda com atenção.",
+      "textoApoio": {
+        "titulo": "Para compreender: A cidade muda com o tempo",
+        "conteudo": "A História ajuda a compreender como as pessoas viveram em outros tempos e como a comunidade se transformou. No estudo de transformações urbanas, usamos fontes como fotografias, objetos, documentos e relatos orais. Essas fontes permitem observar mudanças, permanências e diferentes experiências. Conhecer o passado também ajuda a valorizar a diversidade e a cuidar dos lugares de memória.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto, quais fontes podem ser usadas para estudar transformações urbanas?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual atitude ajuda a estudar corretamente o tema “A cidade muda com o tempo”?",
+          "alternativas": [
+            "Comparar fontes e observar mudanças e permanências.",
+            "Inventar informações sem consultar nenhuma fonte.",
+            "Ignorar os relatos das pessoas da comunidade.",
+            "Considerar apenas o presente e esquecer o passado."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Cite um exemplo relacionado a transformações urbanas que possa ser observado na sua família, escola ou comunidade.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Explique uma mudança e uma permanência relacionadas ao tema “A cidade muda com o tempo”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "pesquisa",
+          "enunciado": "Que fonte histórica você escolheria para pesquisar “A cidade muda com o tempo”? Explique por quê.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Escreva um pequeno texto sobre o que podemos aprender ao estudar transformações urbanas.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Fotografias, objetos, documentos e relatos orais.",
+          "justificativa": "Essas fontes são citadas diretamente no texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "O estudo histórico exige comparação de fontes e observação de mudanças e permanências."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta pessoal coerente com o tema.",
+          "justificativa": "O exemplo deve estar relacionado à família, à escola ou à comunidade."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta pessoal.",
+          "justificativa": "Critério: indicar claramente uma transformação e um aspecto que permaneceu."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta possível: fotografia, objeto, documento ou entrevista.",
+          "justificativa": "A justificativa deve explicar que informação a fonte pode oferecer."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral.",
+          "justificativa": "Critério: clareza, coerência histórica e relação com o tema estudado."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-3ano-b3-his-10-transportes-de-antigamente-e-de-hoje",
+      "titulo": "Transportes de antigamente e de hoje",
+      "tema": "Transportes",
+      "sequencia": "Atividade 10",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "intermediaria",
+      "objetivo": "Comparar meios de transporte de diferentes épocas.",
+      "bncc": [
+        {
+          "codigo": "EF03HI06",
+          "descricaoResumida": "Identificar mudanças e permanências nos lugares de vivência."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, observe as informações históricas e responda com atenção.",
+      "textoApoio": {
+        "titulo": "Para compreender: Transportes de antigamente e de hoje",
+        "conteudo": "A História ajuda a compreender como as pessoas viveram em outros tempos e como a comunidade se transformou. No estudo de transportes, usamos fontes como fotografias, objetos, documentos e relatos orais. Essas fontes permitem observar mudanças, permanências e diferentes experiências. Conhecer o passado também ajuda a valorizar a diversidade e a cuidar dos lugares de memória.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto, quais fontes podem ser usadas para estudar transportes?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual atitude ajuda a estudar corretamente o tema “Transportes de antigamente e de hoje”?",
+          "alternativas": [
+            "Comparar fontes e observar mudanças e permanências.",
+            "Inventar informações sem consultar nenhuma fonte.",
+            "Ignorar os relatos das pessoas da comunidade.",
+            "Considerar apenas o presente e esquecer o passado."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Cite um exemplo relacionado a transportes que possa ser observado na sua família, escola ou comunidade.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Explique uma mudança e uma permanência relacionadas ao tema “Transportes de antigamente e de hoje”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "pesquisa",
+          "enunciado": "Que fonte histórica você escolheria para pesquisar “Transportes de antigamente e de hoje”? Explique por quê.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Escreva um pequeno texto sobre o que podemos aprender ao estudar transportes.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Fotografias, objetos, documentos e relatos orais.",
+          "justificativa": "Essas fontes são citadas diretamente no texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "O estudo histórico exige comparação de fontes e observação de mudanças e permanências."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta pessoal coerente com o tema.",
+          "justificativa": "O exemplo deve estar relacionado à família, à escola ou à comunidade."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta pessoal.",
+          "justificativa": "Critério: indicar claramente uma transformação e um aspecto que permaneceu."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta possível: fotografia, objeto, documento ou entrevista.",
+          "justificativa": "A justificativa deve explicar que informação a fonte pode oferecer."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral.",
+          "justificativa": "Critério: clareza, coerência histórica e relação com o tema estudado."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-3ano-b3-his-11-a-iluminacao-das-ruas",
+      "titulo": "A iluminação das ruas",
+      "tema": "Serviços urbanos",
+      "sequencia": "Atividade 11",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "intermediaria",
+      "objetivo": "Compreender como a iluminação pública transformou a vida nas cidades.",
+      "bncc": [
+        {
+          "codigo": "EF03HI06",
+          "descricaoResumida": "Identificar mudanças e permanências nos lugares de vivência."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, observe as informações históricas e responda com atenção.",
+      "textoApoio": {
+        "titulo": "Para compreender: A iluminação das ruas",
+        "conteudo": "A História ajuda a compreender como as pessoas viveram em outros tempos e como a comunidade se transformou. No estudo de serviços urbanos, usamos fontes como fotografias, objetos, documentos e relatos orais. Essas fontes permitem observar mudanças, permanências e diferentes experiências. Conhecer o passado também ajuda a valorizar a diversidade e a cuidar dos lugares de memória.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto, quais fontes podem ser usadas para estudar serviços urbanos?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual atitude ajuda a estudar corretamente o tema “A iluminação das ruas”?",
+          "alternativas": [
+            "Comparar fontes e observar mudanças e permanências.",
+            "Inventar informações sem consultar nenhuma fonte.",
+            "Ignorar os relatos das pessoas da comunidade.",
+            "Considerar apenas o presente e esquecer o passado."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Cite um exemplo relacionado a serviços urbanos que possa ser observado na sua família, escola ou comunidade.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Explique uma mudança e uma permanência relacionadas ao tema “A iluminação das ruas”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "pesquisa",
+          "enunciado": "Que fonte histórica você escolheria para pesquisar “A iluminação das ruas”? Explique por quê.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Escreva um pequeno texto sobre o que podemos aprender ao estudar serviços urbanos.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Fotografias, objetos, documentos e relatos orais.",
+          "justificativa": "Essas fontes são citadas diretamente no texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "O estudo histórico exige comparação de fontes e observação de mudanças e permanências."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta pessoal coerente com o tema.",
+          "justificativa": "O exemplo deve estar relacionado à família, à escola ou à comunidade."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta pessoal.",
+          "justificativa": "Critério: indicar claramente uma transformação e um aspecto que permaneceu."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta possível: fotografia, objeto, documento ou entrevista.",
+          "justificativa": "A justificativa deve explicar que informação a fonte pode oferecer."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral.",
+          "justificativa": "Critério: clareza, coerência histórica e relação com o tema estudado."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-3ano-b3-his-12-o-abastecimento-de-agua",
+      "titulo": "O abastecimento de água",
+      "tema": "Serviços públicos",
+      "sequencia": "Atividade 12",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "desafiadora",
+      "objetivo": "Reconhecer mudanças na forma de obter e distribuir água.",
+      "bncc": [
+        {
+          "codigo": "EF03HI06",
+          "descricaoResumida": "Identificar mudanças e permanências nos lugares de vivência."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, observe as informações históricas e responda com atenção.",
+      "textoApoio": {
+        "titulo": "Para compreender: O abastecimento de água",
+        "conteudo": "A História ajuda a compreender como as pessoas viveram em outros tempos e como a comunidade se transformou. No estudo de serviços públicos, usamos fontes como fotografias, objetos, documentos e relatos orais. Essas fontes permitem observar mudanças, permanências e diferentes experiências. Conhecer o passado também ajuda a valorizar a diversidade e a cuidar dos lugares de memória.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto, quais fontes podem ser usadas para estudar serviços públicos?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual atitude ajuda a estudar corretamente o tema “O abastecimento de água”?",
+          "alternativas": [
+            "Comparar fontes e observar mudanças e permanências.",
+            "Inventar informações sem consultar nenhuma fonte.",
+            "Ignorar os relatos das pessoas da comunidade.",
+            "Considerar apenas o presente e esquecer o passado."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Cite um exemplo relacionado a serviços públicos que possa ser observado na sua família, escola ou comunidade.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Explique uma mudança e uma permanência relacionadas ao tema “O abastecimento de água”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "pesquisa",
+          "enunciado": "Que fonte histórica você escolheria para pesquisar “O abastecimento de água”? Explique por quê.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Escreva um pequeno texto sobre o que podemos aprender ao estudar serviços públicos.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Fotografias, objetos, documentos e relatos orais.",
+          "justificativa": "Essas fontes são citadas diretamente no texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "O estudo histórico exige comparação de fontes e observação de mudanças e permanências."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta pessoal coerente com o tema.",
+          "justificativa": "O exemplo deve estar relacionado à família, à escola ou à comunidade."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta pessoal.",
+          "justificativa": "Critério: indicar claramente uma transformação e um aspecto que permaneceu."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta possível: fotografia, objeto, documento ou entrevista.",
+          "justificativa": "A justificativa deve explicar que informação a fonte pode oferecer."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral.",
+          "justificativa": "Critério: clareza, coerência histórica e relação com o tema estudado."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-3ano-b3-his-13-trabalho-na-comunidade",
+      "titulo": "Trabalho na comunidade",
+      "tema": "Trabalho",
+      "sequencia": "Atividade 13",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "facil",
+      "objetivo": "Identificar diferentes formas de trabalho existentes na comunidade.",
+      "bncc": [
+        {
+          "codigo": "EF03HI07",
+          "descricaoResumida": "Identificar semelhanças e diferenças entre comunidades e suas formas de trabalho."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, observe as informações históricas e responda com atenção.",
+      "textoApoio": {
+        "titulo": "Para compreender: Trabalho na comunidade",
+        "conteudo": "A História ajuda a compreender como as pessoas viveram em outros tempos e como a comunidade se transformou. No estudo de trabalho, usamos fontes como fotografias, objetos, documentos e relatos orais. Essas fontes permitem observar mudanças, permanências e diferentes experiências. Conhecer o passado também ajuda a valorizar a diversidade e a cuidar dos lugares de memória.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto, quais fontes podem ser usadas para estudar trabalho?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual atitude ajuda a estudar corretamente o tema “Trabalho na comunidade”?",
+          "alternativas": [
+            "Comparar fontes e observar mudanças e permanências.",
+            "Inventar informações sem consultar nenhuma fonte.",
+            "Ignorar os relatos das pessoas da comunidade.",
+            "Considerar apenas o presente e esquecer o passado."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Cite um exemplo relacionado a trabalho que possa ser observado na sua família, escola ou comunidade.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Explique uma mudança e uma permanência relacionadas ao tema “Trabalho na comunidade”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "pesquisa",
+          "enunciado": "Que fonte histórica você escolheria para pesquisar “Trabalho na comunidade”? Explique por quê.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Escreva um pequeno texto sobre o que podemos aprender ao estudar trabalho.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Fotografias, objetos, documentos e relatos orais.",
+          "justificativa": "Essas fontes são citadas diretamente no texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "O estudo histórico exige comparação de fontes e observação de mudanças e permanências."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta pessoal coerente com o tema.",
+          "justificativa": "O exemplo deve estar relacionado à família, à escola ou à comunidade."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta pessoal.",
+          "justificativa": "Critério: indicar claramente uma transformação e um aspecto que permaneceu."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta possível: fotografia, objeto, documento ou entrevista.",
+          "justificativa": "A justificativa deve explicar que informação a fonte pode oferecer."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral.",
+          "justificativa": "Critério: clareza, coerência histórica e relação com o tema estudado."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-3ano-b3-his-14-profissoes-que-desapareceram",
+      "titulo": "Profissões que desapareceram",
+      "tema": "Mudanças no trabalho",
+      "sequencia": "Atividade 14",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "intermediaria",
+      "objetivo": "Perceber que algumas profissões mudaram ou deixaram de existir.",
+      "bncc": [
+        {
+          "codigo": "EF03HI07",
+          "descricaoResumida": "Identificar semelhanças e diferenças entre comunidades e suas formas de trabalho."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, observe as informações históricas e responda com atenção.",
+      "textoApoio": {
+        "titulo": "Para compreender: Profissões que desapareceram",
+        "conteudo": "A História ajuda a compreender como as pessoas viveram em outros tempos e como a comunidade se transformou. No estudo de mudanças no trabalho, usamos fontes como fotografias, objetos, documentos e relatos orais. Essas fontes permitem observar mudanças, permanências e diferentes experiências. Conhecer o passado também ajuda a valorizar a diversidade e a cuidar dos lugares de memória.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto, quais fontes podem ser usadas para estudar mudanças no trabalho?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual atitude ajuda a estudar corretamente o tema “Profissões que desapareceram”?",
+          "alternativas": [
+            "Comparar fontes e observar mudanças e permanências.",
+            "Inventar informações sem consultar nenhuma fonte.",
+            "Ignorar os relatos das pessoas da comunidade.",
+            "Considerar apenas o presente e esquecer o passado."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Cite um exemplo relacionado a mudanças no trabalho que possa ser observado na sua família, escola ou comunidade.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Explique uma mudança e uma permanência relacionadas ao tema “Profissões que desapareceram”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "pesquisa",
+          "enunciado": "Que fonte histórica você escolheria para pesquisar “Profissões que desapareceram”? Explique por quê.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Escreva um pequeno texto sobre o que podemos aprender ao estudar mudanças no trabalho.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Fotografias, objetos, documentos e relatos orais.",
+          "justificativa": "Essas fontes são citadas diretamente no texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "O estudo histórico exige comparação de fontes e observação de mudanças e permanências."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta pessoal coerente com o tema.",
+          "justificativa": "O exemplo deve estar relacionado à família, à escola ou à comunidade."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta pessoal.",
+          "justificativa": "Critério: indicar claramente uma transformação e um aspecto que permaneceu."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta possível: fotografia, objeto, documento ou entrevista.",
+          "justificativa": "A justificativa deve explicar que informação a fonte pode oferecer."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral.",
+          "justificativa": "Critério: clareza, coerência histórica e relação com o tema estudado."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-3ano-b3-his-15-profissoes-que-surgiram",
+      "titulo": "Profissões que surgiram",
+      "tema": "Novas profissões",
+      "sequencia": "Atividade 15",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "intermediaria",
+      "objetivo": "Relacionar novas profissões às mudanças tecnológicas e sociais.",
+      "bncc": [
+        {
+          "codigo": "EF03HI07",
+          "descricaoResumida": "Identificar semelhanças e diferenças entre comunidades e suas formas de trabalho."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, observe as informações históricas e responda com atenção.",
+      "textoApoio": {
+        "titulo": "Para compreender: Profissões que surgiram",
+        "conteudo": "A História ajuda a compreender como as pessoas viveram em outros tempos e como a comunidade se transformou. No estudo de novas profissões, usamos fontes como fotografias, objetos, documentos e relatos orais. Essas fontes permitem observar mudanças, permanências e diferentes experiências. Conhecer o passado também ajuda a valorizar a diversidade e a cuidar dos lugares de memória.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto, quais fontes podem ser usadas para estudar novas profissões?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual atitude ajuda a estudar corretamente o tema “Profissões que surgiram”?",
+          "alternativas": [
+            "Comparar fontes e observar mudanças e permanências.",
+            "Inventar informações sem consultar nenhuma fonte.",
+            "Ignorar os relatos das pessoas da comunidade.",
+            "Considerar apenas o presente e esquecer o passado."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Cite um exemplo relacionado a novas profissões que possa ser observado na sua família, escola ou comunidade.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Explique uma mudança e uma permanência relacionadas ao tema “Profissões que surgiram”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "pesquisa",
+          "enunciado": "Que fonte histórica você escolheria para pesquisar “Profissões que surgiram”? Explique por quê.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Escreva um pequeno texto sobre o que podemos aprender ao estudar novas profissões.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Fotografias, objetos, documentos e relatos orais.",
+          "justificativa": "Essas fontes são citadas diretamente no texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "O estudo histórico exige comparação de fontes e observação de mudanças e permanências."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta pessoal coerente com o tema.",
+          "justificativa": "O exemplo deve estar relacionado à família, à escola ou à comunidade."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta pessoal.",
+          "justificativa": "Critério: indicar claramente uma transformação e um aspecto que permaneceu."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta possível: fotografia, objeto, documento ou entrevista.",
+          "justificativa": "A justificativa deve explicar que informação a fonte pode oferecer."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral.",
+          "justificativa": "Critério: clareza, coerência histórica e relação com o tema estudado."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-3ano-b3-his-16-trabalho-no-campo-e-na-cidade",
+      "titulo": "Trabalho no campo e na cidade",
+      "tema": "Campo e cidade",
+      "sequencia": "Atividade 16",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "desafiadora",
+      "objetivo": "Comparar formas de trabalho em espaços rurais e urbanos.",
+      "bncc": [
+        {
+          "codigo": "EF03HI08",
+          "descricaoResumida": "Identificar modos de vida na cidade e no campo no presente e no passado."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, observe as informações históricas e responda com atenção.",
+      "textoApoio": {
+        "titulo": "Para compreender: Trabalho no campo e na cidade",
+        "conteudo": "A História ajuda a compreender como as pessoas viveram em outros tempos e como a comunidade se transformou. No estudo de campo e cidade, usamos fontes como fotografias, objetos, documentos e relatos orais. Essas fontes permitem observar mudanças, permanências e diferentes experiências. Conhecer o passado também ajuda a valorizar a diversidade e a cuidar dos lugares de memória.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto, quais fontes podem ser usadas para estudar campo e cidade?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual atitude ajuda a estudar corretamente o tema “Trabalho no campo e na cidade”?",
+          "alternativas": [
+            "Comparar fontes e observar mudanças e permanências.",
+            "Inventar informações sem consultar nenhuma fonte.",
+            "Ignorar os relatos das pessoas da comunidade.",
+            "Considerar apenas o presente e esquecer o passado."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Cite um exemplo relacionado a campo e cidade que possa ser observado na sua família, escola ou comunidade.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Explique uma mudança e uma permanência relacionadas ao tema “Trabalho no campo e na cidade”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "pesquisa",
+          "enunciado": "Que fonte histórica você escolheria para pesquisar “Trabalho no campo e na cidade”? Explique por quê.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Escreva um pequeno texto sobre o que podemos aprender ao estudar campo e cidade.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Fotografias, objetos, documentos e relatos orais.",
+          "justificativa": "Essas fontes são citadas diretamente no texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "O estudo histórico exige comparação de fontes e observação de mudanças e permanências."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta pessoal coerente com o tema.",
+          "justificativa": "O exemplo deve estar relacionado à família, à escola ou à comunidade."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta pessoal.",
+          "justificativa": "Critério: indicar claramente uma transformação e um aspecto que permaneceu."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta possível: fotografia, objeto, documento ou entrevista.",
+          "justificativa": "A justificativa deve explicar que informação a fonte pode oferecer."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral.",
+          "justificativa": "Critério: clareza, coerência histórica e relação com o tema estudado."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-3ano-b3-his-17-brincadeiras-de-outras-geracoes",
+      "titulo": "Brincadeiras de outras gerações",
+      "tema": "Infância",
+      "sequencia": "Atividade 17",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "facil",
+      "objetivo": "Comparar brincadeiras atuais com brincadeiras de outras gerações.",
+      "bncc": [
+        {
+          "codigo": "EF03HI09",
+          "descricaoResumida": "Mapear espaços públicos e reconhecer suas funções."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, observe as informações históricas e responda com atenção.",
+      "textoApoio": {
+        "titulo": "Para compreender: Brincadeiras de outras gerações",
+        "conteudo": "A História ajuda a compreender como as pessoas viveram em outros tempos e como a comunidade se transformou. No estudo de infância, usamos fontes como fotografias, objetos, documentos e relatos orais. Essas fontes permitem observar mudanças, permanências e diferentes experiências. Conhecer o passado também ajuda a valorizar a diversidade e a cuidar dos lugares de memória.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto, quais fontes podem ser usadas para estudar infância?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual atitude ajuda a estudar corretamente o tema “Brincadeiras de outras gerações”?",
+          "alternativas": [
+            "Comparar fontes e observar mudanças e permanências.",
+            "Inventar informações sem consultar nenhuma fonte.",
+            "Ignorar os relatos das pessoas da comunidade.",
+            "Considerar apenas o presente e esquecer o passado."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Cite um exemplo relacionado a infância que possa ser observado na sua família, escola ou comunidade.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Explique uma mudança e uma permanência relacionadas ao tema “Brincadeiras de outras gerações”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "pesquisa",
+          "enunciado": "Que fonte histórica você escolheria para pesquisar “Brincadeiras de outras gerações”? Explique por quê.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Escreva um pequeno texto sobre o que podemos aprender ao estudar infância.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Fotografias, objetos, documentos e relatos orais.",
+          "justificativa": "Essas fontes são citadas diretamente no texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "O estudo histórico exige comparação de fontes e observação de mudanças e permanências."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta pessoal coerente com o tema.",
+          "justificativa": "O exemplo deve estar relacionado à família, à escola ou à comunidade."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta pessoal.",
+          "justificativa": "Critério: indicar claramente uma transformação e um aspecto que permaneceu."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta possível: fotografia, objeto, documento ou entrevista.",
+          "justificativa": "A justificativa deve explicar que informação a fonte pode oferecer."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral.",
+          "justificativa": "Critério: clareza, coerência histórica e relação com o tema estudado."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-3ano-b3-his-18-a-escola-antigamente",
+      "titulo": "A escola antigamente",
+      "tema": "História da escola",
+      "sequencia": "Atividade 18",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "intermediaria",
+      "objetivo": "Comparar materiais, regras e rotinas escolares de diferentes épocas.",
+      "bncc": [
+        {
+          "codigo": "EF03HI09",
+          "descricaoResumida": "Reconhecer espaços de sociabilidade e suas transformações."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, observe as informações históricas e responda com atenção.",
+      "textoApoio": {
+        "titulo": "Para compreender: A escola antigamente",
+        "conteudo": "A História ajuda a compreender como as pessoas viveram em outros tempos e como a comunidade se transformou. No estudo de história da escola, usamos fontes como fotografias, objetos, documentos e relatos orais. Essas fontes permitem observar mudanças, permanências e diferentes experiências. Conhecer o passado também ajuda a valorizar a diversidade e a cuidar dos lugares de memória.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto, quais fontes podem ser usadas para estudar história da escola?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual atitude ajuda a estudar corretamente o tema “A escola antigamente”?",
+          "alternativas": [
+            "Comparar fontes e observar mudanças e permanências.",
+            "Inventar informações sem consultar nenhuma fonte.",
+            "Ignorar os relatos das pessoas da comunidade.",
+            "Considerar apenas o presente e esquecer o passado."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Cite um exemplo relacionado a história da escola que possa ser observado na sua família, escola ou comunidade.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Explique uma mudança e uma permanência relacionadas ao tema “A escola antigamente”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "pesquisa",
+          "enunciado": "Que fonte histórica você escolheria para pesquisar “A escola antigamente”? Explique por quê.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Escreva um pequeno texto sobre o que podemos aprender ao estudar história da escola.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Fotografias, objetos, documentos e relatos orais.",
+          "justificativa": "Essas fontes são citadas diretamente no texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "O estudo histórico exige comparação de fontes e observação de mudanças e permanências."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta pessoal coerente com o tema.",
+          "justificativa": "O exemplo deve estar relacionado à família, à escola ou à comunidade."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta pessoal.",
+          "justificativa": "Critério: indicar claramente uma transformação e um aspecto que permaneceu."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta possível: fotografia, objeto, documento ou entrevista.",
+          "justificativa": "A justificativa deve explicar que informação a fonte pode oferecer."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral.",
+          "justificativa": "Critério: clareza, coerência histórica e relação com o tema estudado."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-3ano-b3-his-19-festas-e-tradicoes-da-comunidade",
+      "titulo": "Festas e tradições da comunidade",
+      "tema": "Tradições culturais",
+      "sequencia": "Atividade 19",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "intermediaria",
+      "objetivo": "Valorizar festas, celebrações e costumes como parte da história local.",
+      "bncc": [
+        {
+          "codigo": "EF03HI04",
+          "descricaoResumida": "Identificar patrimônios históricos e culturais da cidade ou região."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, observe as informações históricas e responda com atenção.",
+      "textoApoio": {
+        "titulo": "Para compreender: Festas e tradições da comunidade",
+        "conteudo": "A História ajuda a compreender como as pessoas viveram em outros tempos e como a comunidade se transformou. No estudo de tradições culturais, usamos fontes como fotografias, objetos, documentos e relatos orais. Essas fontes permitem observar mudanças, permanências e diferentes experiências. Conhecer o passado também ajuda a valorizar a diversidade e a cuidar dos lugares de memória.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto, quais fontes podem ser usadas para estudar tradições culturais?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual atitude ajuda a estudar corretamente o tema “Festas e tradições da comunidade”?",
+          "alternativas": [
+            "Comparar fontes e observar mudanças e permanências.",
+            "Inventar informações sem consultar nenhuma fonte.",
+            "Ignorar os relatos das pessoas da comunidade.",
+            "Considerar apenas o presente e esquecer o passado."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Cite um exemplo relacionado a tradições culturais que possa ser observado na sua família, escola ou comunidade.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Explique uma mudança e uma permanência relacionadas ao tema “Festas e tradições da comunidade”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "pesquisa",
+          "enunciado": "Que fonte histórica você escolheria para pesquisar “Festas e tradições da comunidade”? Explique por quê.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Escreva um pequeno texto sobre o que podemos aprender ao estudar tradições culturais.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Fotografias, objetos, documentos e relatos orais.",
+          "justificativa": "Essas fontes são citadas diretamente no texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "O estudo histórico exige comparação de fontes e observação de mudanças e permanências."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta pessoal coerente com o tema.",
+          "justificativa": "O exemplo deve estar relacionado à família, à escola ou à comunidade."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta pessoal.",
+          "justificativa": "Critério: indicar claramente uma transformação e um aspecto que permaneceu."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta possível: fotografia, objeto, documento ou entrevista.",
+          "justificativa": "A justificativa deve explicar que informação a fonte pode oferecer."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral.",
+          "justificativa": "Critério: clareza, coerência histórica e relação com o tema estudado."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-3ano-b3-his-20-receitas-que-atravessam-geracoes",
+      "titulo": "Receitas que atravessam gerações",
+      "tema": "Cultura alimentar",
+      "sequencia": "Atividade 20",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "desafiadora",
+      "objetivo": "Reconhecer receitas familiares como expressão de memória e cultura.",
+      "bncc": [
+        {
+          "codigo": "EF03HI03",
+          "descricaoResumida": "Identificar diferentes pontos de vista e experiências na comunidade."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, observe as informações históricas e responda com atenção.",
+      "textoApoio": {
+        "titulo": "Para compreender: Receitas que atravessam gerações",
+        "conteudo": "A História ajuda a compreender como as pessoas viveram em outros tempos e como a comunidade se transformou. No estudo de cultura alimentar, usamos fontes como fotografias, objetos, documentos e relatos orais. Essas fontes permitem observar mudanças, permanências e diferentes experiências. Conhecer o passado também ajuda a valorizar a diversidade e a cuidar dos lugares de memória.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto, quais fontes podem ser usadas para estudar cultura alimentar?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual atitude ajuda a estudar corretamente o tema “Receitas que atravessam gerações”?",
+          "alternativas": [
+            "Comparar fontes e observar mudanças e permanências.",
+            "Inventar informações sem consultar nenhuma fonte.",
+            "Ignorar os relatos das pessoas da comunidade.",
+            "Considerar apenas o presente e esquecer o passado."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Cite um exemplo relacionado a cultura alimentar que possa ser observado na sua família, escola ou comunidade.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Explique uma mudança e uma permanência relacionadas ao tema “Receitas que atravessam gerações”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "pesquisa",
+          "enunciado": "Que fonte histórica você escolheria para pesquisar “Receitas que atravessam gerações”? Explique por quê.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Escreva um pequeno texto sobre o que podemos aprender ao estudar cultura alimentar.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Fotografias, objetos, documentos e relatos orais.",
+          "justificativa": "Essas fontes são citadas diretamente no texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "O estudo histórico exige comparação de fontes e observação de mudanças e permanências."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta pessoal coerente com o tema.",
+          "justificativa": "O exemplo deve estar relacionado à família, à escola ou à comunidade."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta pessoal.",
+          "justificativa": "Critério: indicar claramente uma transformação e um aspecto que permaneceu."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta possível: fotografia, objeto, documento ou entrevista.",
+          "justificativa": "A justificativa deve explicar que informação a fonte pode oferecer."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral.",
+          "justificativa": "Critério: clareza, coerência histórica e relação com o tema estudado."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-3ano-b3-his-21-povos-indigenas-e-a-historia-local",
+      "titulo": "Povos indígenas e a história local",
+      "tema": "Povos indígenas",
+      "sequencia": "Atividade 21",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "facil",
+      "objetivo": "Reconhecer a presença e as contribuições dos povos indígenas na formação local.",
+      "bncc": [
+        {
+          "codigo": "EF03HI01",
+          "descricaoResumida": "Identificar grupos populacionais que formam a cidade e o município."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, observe as informações históricas e responda com atenção.",
+      "textoApoio": {
+        "titulo": "Para compreender: Povos indígenas e a história local",
+        "conteudo": "A História ajuda a compreender como as pessoas viveram em outros tempos e como a comunidade se transformou. No estudo de povos indígenas, usamos fontes como fotografias, objetos, documentos e relatos orais. Essas fontes permitem observar mudanças, permanências e diferentes experiências. Conhecer o passado também ajuda a valorizar a diversidade e a cuidar dos lugares de memória.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto, quais fontes podem ser usadas para estudar povos indígenas?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual atitude ajuda a estudar corretamente o tema “Povos indígenas e a história local”?",
+          "alternativas": [
+            "Comparar fontes e observar mudanças e permanências.",
+            "Inventar informações sem consultar nenhuma fonte.",
+            "Ignorar os relatos das pessoas da comunidade.",
+            "Considerar apenas o presente e esquecer o passado."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Cite um exemplo relacionado a povos indígenas que possa ser observado na sua família, escola ou comunidade.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Explique uma mudança e uma permanência relacionadas ao tema “Povos indígenas e a história local”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "pesquisa",
+          "enunciado": "Que fonte histórica você escolheria para pesquisar “Povos indígenas e a história local”? Explique por quê.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Escreva um pequeno texto sobre o que podemos aprender ao estudar povos indígenas.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Fotografias, objetos, documentos e relatos orais.",
+          "justificativa": "Essas fontes são citadas diretamente no texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "O estudo histórico exige comparação de fontes e observação de mudanças e permanências."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta pessoal coerente com o tema.",
+          "justificativa": "O exemplo deve estar relacionado à família, à escola ou à comunidade."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta pessoal.",
+          "justificativa": "Critério: indicar claramente uma transformação e um aspecto que permaneceu."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta possível: fotografia, objeto, documento ou entrevista.",
+          "justificativa": "A justificativa deve explicar que informação a fonte pode oferecer."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral.",
+          "justificativa": "Critério: clareza, coerência histórica e relação com o tema estudado."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-3ano-b3-his-22-povos-africanos-e-afro-brasileiros",
+      "titulo": "Povos africanos e afro-brasileiros",
+      "tema": "Cultura afro-brasileira",
+      "sequencia": "Atividade 22",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "intermediaria",
+      "objetivo": "Reconhecer contribuições africanas e afro-brasileiras para a cultura e a história.",
+      "bncc": [
+        {
+          "codigo": "EF03HI01",
+          "descricaoResumida": "Identificar grupos populacionais que formam a cidade e o município."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, observe as informações históricas e responda com atenção.",
+      "textoApoio": {
+        "titulo": "Para compreender: Povos africanos e afro-brasileiros",
+        "conteudo": "A História ajuda a compreender como as pessoas viveram em outros tempos e como a comunidade se transformou. No estudo de cultura afro-brasileira, usamos fontes como fotografias, objetos, documentos e relatos orais. Essas fontes permitem observar mudanças, permanências e diferentes experiências. Conhecer o passado também ajuda a valorizar a diversidade e a cuidar dos lugares de memória.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto, quais fontes podem ser usadas para estudar cultura afro-brasileira?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual atitude ajuda a estudar corretamente o tema “Povos africanos e afro-brasileiros”?",
+          "alternativas": [
+            "Comparar fontes e observar mudanças e permanências.",
+            "Inventar informações sem consultar nenhuma fonte.",
+            "Ignorar os relatos das pessoas da comunidade.",
+            "Considerar apenas o presente e esquecer o passado."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Cite um exemplo relacionado a cultura afro-brasileira que possa ser observado na sua família, escola ou comunidade.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Explique uma mudança e uma permanência relacionadas ao tema “Povos africanos e afro-brasileiros”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "pesquisa",
+          "enunciado": "Que fonte histórica você escolheria para pesquisar “Povos africanos e afro-brasileiros”? Explique por quê.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Escreva um pequeno texto sobre o que podemos aprender ao estudar cultura afro-brasileira.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Fotografias, objetos, documentos e relatos orais.",
+          "justificativa": "Essas fontes são citadas diretamente no texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "O estudo histórico exige comparação de fontes e observação de mudanças e permanências."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta pessoal coerente com o tema.",
+          "justificativa": "O exemplo deve estar relacionado à família, à escola ou à comunidade."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta pessoal.",
+          "justificativa": "Critério: indicar claramente uma transformação e um aspecto que permaneceu."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta possível: fotografia, objeto, documento ou entrevista.",
+          "justificativa": "A justificativa deve explicar que informação a fonte pode oferecer."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral.",
+          "justificativa": "Critério: clareza, coerência histórica e relação com o tema estudado."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-3ano-b3-his-23-imigrantes-na-formacao-da-comunidade",
+      "titulo": "Imigrantes na formação da comunidade",
+      "tema": "Imigração",
+      "sequencia": "Atividade 23",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "intermediaria",
+      "objetivo": "Compreender contribuições de grupos imigrantes para a comunidade.",
+      "bncc": [
+        {
+          "codigo": "EF03HI01",
+          "descricaoResumida": "Identificar grupos populacionais que formam a cidade e o município."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, observe as informações históricas e responda com atenção.",
+      "textoApoio": {
+        "titulo": "Para compreender: Imigrantes na formação da comunidade",
+        "conteudo": "A História ajuda a compreender como as pessoas viveram em outros tempos e como a comunidade se transformou. No estudo de imigração, usamos fontes como fotografias, objetos, documentos e relatos orais. Essas fontes permitem observar mudanças, permanências e diferentes experiências. Conhecer o passado também ajuda a valorizar a diversidade e a cuidar dos lugares de memória.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto, quais fontes podem ser usadas para estudar imigração?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual atitude ajuda a estudar corretamente o tema “Imigrantes na formação da comunidade”?",
+          "alternativas": [
+            "Comparar fontes e observar mudanças e permanências.",
+            "Inventar informações sem consultar nenhuma fonte.",
+            "Ignorar os relatos das pessoas da comunidade.",
+            "Considerar apenas o presente e esquecer o passado."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Cite um exemplo relacionado a imigração que possa ser observado na sua família, escola ou comunidade.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Explique uma mudança e uma permanência relacionadas ao tema “Imigrantes na formação da comunidade”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "pesquisa",
+          "enunciado": "Que fonte histórica você escolheria para pesquisar “Imigrantes na formação da comunidade”? Explique por quê.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Escreva um pequeno texto sobre o que podemos aprender ao estudar imigração.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Fotografias, objetos, documentos e relatos orais.",
+          "justificativa": "Essas fontes são citadas diretamente no texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "O estudo histórico exige comparação de fontes e observação de mudanças e permanências."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta pessoal coerente com o tema.",
+          "justificativa": "O exemplo deve estar relacionado à família, à escola ou à comunidade."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta pessoal.",
+          "justificativa": "Critério: indicar claramente uma transformação e um aspecto que permaneceu."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta possível: fotografia, objeto, documento ou entrevista.",
+          "justificativa": "A justificativa deve explicar que informação a fonte pode oferecer."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral.",
+          "justificativa": "Critério: clareza, coerência histórica e relação com o tema estudado."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-3ano-b3-his-24-migracoes-dentro-do-brasil",
+      "titulo": "Migrações dentro do Brasil",
+      "tema": "Migração interna",
+      "sequencia": "Atividade 24",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "desafiadora",
+      "objetivo": "Compreender por que pessoas mudam de cidade ou região.",
+      "bncc": [
+        {
+          "codigo": "EF03HI03",
+          "descricaoResumida": "Identificar diferentes experiências e pontos de vista na comunidade."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, observe as informações históricas e responda com atenção.",
+      "textoApoio": {
+        "titulo": "Para compreender: Migrações dentro do Brasil",
+        "conteudo": "A História ajuda a compreender como as pessoas viveram em outros tempos e como a comunidade se transformou. No estudo de migração interna, usamos fontes como fotografias, objetos, documentos e relatos orais. Essas fontes permitem observar mudanças, permanências e diferentes experiências. Conhecer o passado também ajuda a valorizar a diversidade e a cuidar dos lugares de memória.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto, quais fontes podem ser usadas para estudar migração interna?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual atitude ajuda a estudar corretamente o tema “Migrações dentro do Brasil”?",
+          "alternativas": [
+            "Comparar fontes e observar mudanças e permanências.",
+            "Inventar informações sem consultar nenhuma fonte.",
+            "Ignorar os relatos das pessoas da comunidade.",
+            "Considerar apenas o presente e esquecer o passado."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Cite um exemplo relacionado a migração interna que possa ser observado na sua família, escola ou comunidade.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Explique uma mudança e uma permanência relacionadas ao tema “Migrações dentro do Brasil”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "pesquisa",
+          "enunciado": "Que fonte histórica você escolheria para pesquisar “Migrações dentro do Brasil”? Explique por quê.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Escreva um pequeno texto sobre o que podemos aprender ao estudar migração interna.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Fotografias, objetos, documentos e relatos orais.",
+          "justificativa": "Essas fontes são citadas diretamente no texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "O estudo histórico exige comparação de fontes e observação de mudanças e permanências."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta pessoal coerente com o tema.",
+          "justificativa": "O exemplo deve estar relacionado à família, à escola ou à comunidade."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta pessoal.",
+          "justificativa": "Critério: indicar claramente uma transformação e um aspecto que permaneceu."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta possível: fotografia, objeto, documento ou entrevista.",
+          "justificativa": "A justificativa deve explicar que informação a fonte pode oferecer."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral.",
+          "justificativa": "Critério: clareza, coerência histórica e relação com o tema estudado."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-3ano-b3-his-25-direitos-das-criancas",
+      "titulo": "Direitos das crianças",
+      "tema": "Cidadania",
+      "sequencia": "Atividade 25",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "facil",
+      "objetivo": "Reconhecer direitos básicos das crianças e sua importância histórica.",
+      "bncc": [
+        {
+          "codigo": "EF03HI10",
+          "descricaoResumida": "Identificar diferenças entre espaços domésticos, públicos e áreas de preservação."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, observe as informações históricas e responda com atenção.",
+      "textoApoio": {
+        "titulo": "Para compreender: Direitos das crianças",
+        "conteudo": "A História ajuda a compreender como as pessoas viveram em outros tempos e como a comunidade se transformou. No estudo de cidadania, usamos fontes como fotografias, objetos, documentos e relatos orais. Essas fontes permitem observar mudanças, permanências e diferentes experiências. Conhecer o passado também ajuda a valorizar a diversidade e a cuidar dos lugares de memória.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto, quais fontes podem ser usadas para estudar cidadania?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual atitude ajuda a estudar corretamente o tema “Direitos das crianças”?",
+          "alternativas": [
+            "Comparar fontes e observar mudanças e permanências.",
+            "Inventar informações sem consultar nenhuma fonte.",
+            "Ignorar os relatos das pessoas da comunidade.",
+            "Considerar apenas o presente e esquecer o passado."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Cite um exemplo relacionado a cidadania que possa ser observado na sua família, escola ou comunidade.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Explique uma mudança e uma permanência relacionadas ao tema “Direitos das crianças”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "pesquisa",
+          "enunciado": "Que fonte histórica você escolheria para pesquisar “Direitos das crianças”? Explique por quê.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Escreva um pequeno texto sobre o que podemos aprender ao estudar cidadania.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Fotografias, objetos, documentos e relatos orais.",
+          "justificativa": "Essas fontes são citadas diretamente no texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "O estudo histórico exige comparação de fontes e observação de mudanças e permanências."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta pessoal coerente com o tema.",
+          "justificativa": "O exemplo deve estar relacionado à família, à escola ou à comunidade."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta pessoal.",
+          "justificativa": "Critério: indicar claramente uma transformação e um aspecto que permaneceu."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta possível: fotografia, objeto, documento ou entrevista.",
+          "justificativa": "A justificativa deve explicar que informação a fonte pode oferecer."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral.",
+          "justificativa": "Critério: clareza, coerência histórica e relação com o tema estudado."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-3ano-b3-his-26-espacos-publicos-e-espacos-privados",
+      "titulo": "Espaços públicos e espaços privados",
+      "tema": "Espaços de convivência",
+      "sequencia": "Atividade 26",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "intermediaria",
+      "objetivo": "Diferenciar espaços públicos e privados e compreender suas regras de uso.",
+      "bncc": [
+        {
+          "codigo": "EF03HI10",
+          "descricaoResumida": "Identificar diferenças entre espaços domésticos, públicos e áreas de preservação."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, observe as informações históricas e responda com atenção.",
+      "textoApoio": {
+        "titulo": "Para compreender: Espaços públicos e espaços privados",
+        "conteudo": "A História ajuda a compreender como as pessoas viveram em outros tempos e como a comunidade se transformou. No estudo de espaços de convivência, usamos fontes como fotografias, objetos, documentos e relatos orais. Essas fontes permitem observar mudanças, permanências e diferentes experiências. Conhecer o passado também ajuda a valorizar a diversidade e a cuidar dos lugares de memória.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto, quais fontes podem ser usadas para estudar espaços de convivência?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual atitude ajuda a estudar corretamente o tema “Espaços públicos e espaços privados”?",
+          "alternativas": [
+            "Comparar fontes e observar mudanças e permanências.",
+            "Inventar informações sem consultar nenhuma fonte.",
+            "Ignorar os relatos das pessoas da comunidade.",
+            "Considerar apenas o presente e esquecer o passado."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Cite um exemplo relacionado a espaços de convivência que possa ser observado na sua família, escola ou comunidade.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Explique uma mudança e uma permanência relacionadas ao tema “Espaços públicos e espaços privados”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "pesquisa",
+          "enunciado": "Que fonte histórica você escolheria para pesquisar “Espaços públicos e espaços privados”? Explique por quê.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Escreva um pequeno texto sobre o que podemos aprender ao estudar espaços de convivência.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Fotografias, objetos, documentos e relatos orais.",
+          "justificativa": "Essas fontes são citadas diretamente no texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "O estudo histórico exige comparação de fontes e observação de mudanças e permanências."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta pessoal coerente com o tema.",
+          "justificativa": "O exemplo deve estar relacionado à família, à escola ou à comunidade."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta pessoal.",
+          "justificativa": "Critério: indicar claramente uma transformação e um aspecto que permaneceu."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta possível: fotografia, objeto, documento ou entrevista.",
+          "justificativa": "A justificativa deve explicar que informação a fonte pode oferecer."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral.",
+          "justificativa": "Critério: clareza, coerência histórica e relação com o tema estudado."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-3ano-b3-his-27-cuidando-do-patrimonio",
+      "titulo": "Cuidando do patrimônio",
+      "tema": "Preservação",
+      "sequencia": "Atividade 27",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "intermediaria",
+      "objetivo": "Compreender a responsabilidade coletiva pela preservação do patrimônio.",
+      "bncc": [
+        {
+          "codigo": "EF03HI04",
+          "descricaoResumida": "Identificar patrimônios históricos e culturais da cidade ou região."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, observe as informações históricas e responda com atenção.",
+      "textoApoio": {
+        "titulo": "Para compreender: Cuidando do patrimônio",
+        "conteudo": "A História ajuda a compreender como as pessoas viveram em outros tempos e como a comunidade se transformou. No estudo de preservação, usamos fontes como fotografias, objetos, documentos e relatos orais. Essas fontes permitem observar mudanças, permanências e diferentes experiências. Conhecer o passado também ajuda a valorizar a diversidade e a cuidar dos lugares de memória.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto, quais fontes podem ser usadas para estudar preservação?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual atitude ajuda a estudar corretamente o tema “Cuidando do patrimônio”?",
+          "alternativas": [
+            "Comparar fontes e observar mudanças e permanências.",
+            "Inventar informações sem consultar nenhuma fonte.",
+            "Ignorar os relatos das pessoas da comunidade.",
+            "Considerar apenas o presente e esquecer o passado."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Cite um exemplo relacionado a preservação que possa ser observado na sua família, escola ou comunidade.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Explique uma mudança e uma permanência relacionadas ao tema “Cuidando do patrimônio”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "pesquisa",
+          "enunciado": "Que fonte histórica você escolheria para pesquisar “Cuidando do patrimônio”? Explique por quê.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Escreva um pequeno texto sobre o que podemos aprender ao estudar preservação.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Fotografias, objetos, documentos e relatos orais.",
+          "justificativa": "Essas fontes são citadas diretamente no texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "O estudo histórico exige comparação de fontes e observação de mudanças e permanências."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta pessoal coerente com o tema.",
+          "justificativa": "O exemplo deve estar relacionado à família, à escola ou à comunidade."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta pessoal.",
+          "justificativa": "Critério: indicar claramente uma transformação e um aspecto que permaneceu."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta possível: fotografia, objeto, documento ou entrevista.",
+          "justificativa": "A justificativa deve explicar que informação a fonte pode oferecer."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral.",
+          "justificativa": "Critério: clareza, coerência histórica e relação com o tema estudado."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-3ano-b3-his-28-linha-do-tempo-da-comunidade",
+      "titulo": "Linha do tempo da comunidade",
+      "tema": "Tempo histórico",
+      "sequencia": "Atividade 28",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "desafiadora",
+      "objetivo": "Organizar acontecimentos em sequência cronológica.",
+      "bncc": [
+        {
+          "codigo": "EF03HI05",
+          "descricaoResumida": "Identificar marcos históricos dos lugares de vivência."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, observe as informações históricas e responda com atenção.",
+      "textoApoio": {
+        "titulo": "Para compreender: Linha do tempo da comunidade",
+        "conteudo": "A História ajuda a compreender como as pessoas viveram em outros tempos e como a comunidade se transformou. No estudo de tempo histórico, usamos fontes como fotografias, objetos, documentos e relatos orais. Essas fontes permitem observar mudanças, permanências e diferentes experiências. Conhecer o passado também ajuda a valorizar a diversidade e a cuidar dos lugares de memória.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto, quais fontes podem ser usadas para estudar tempo histórico?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual atitude ajuda a estudar corretamente o tema “Linha do tempo da comunidade”?",
+          "alternativas": [
+            "Comparar fontes e observar mudanças e permanências.",
+            "Inventar informações sem consultar nenhuma fonte.",
+            "Ignorar os relatos das pessoas da comunidade.",
+            "Considerar apenas o presente e esquecer o passado."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Cite um exemplo relacionado a tempo histórico que possa ser observado na sua família, escola ou comunidade.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Explique uma mudança e uma permanência relacionadas ao tema “Linha do tempo da comunidade”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "pesquisa",
+          "enunciado": "Que fonte histórica você escolheria para pesquisar “Linha do tempo da comunidade”? Explique por quê.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Escreva um pequeno texto sobre o que podemos aprender ao estudar tempo histórico.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Fotografias, objetos, documentos e relatos orais.",
+          "justificativa": "Essas fontes são citadas diretamente no texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "O estudo histórico exige comparação de fontes e observação de mudanças e permanências."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta pessoal coerente com o tema.",
+          "justificativa": "O exemplo deve estar relacionado à família, à escola ou à comunidade."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta pessoal.",
+          "justificativa": "Critério: indicar claramente uma transformação e um aspecto que permaneceu."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta possível: fotografia, objeto, documento ou entrevista.",
+          "justificativa": "A justificativa deve explicar que informação a fonte pode oferecer."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral.",
+          "justificativa": "Critério: clareza, coerência histórica e relação com o tema estudado."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-3ano-b3-his-29-uma-entrevista-sobre-o-passado",
+      "titulo": "Uma entrevista sobre o passado",
+      "tema": "Pesquisa histórica",
+      "sequencia": "Atividade 29",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "facil",
+      "objetivo": "Planejar uma entrevista para investigar mudanças na comunidade.",
+      "bncc": [
+        {
+          "codigo": "EF03HI02",
+          "descricaoResumida": "Selecionar fontes de diferentes naturezas para compreender fatos da história local."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, observe as informações históricas e responda com atenção.",
+      "textoApoio": {
+        "titulo": "Para compreender: Uma entrevista sobre o passado",
+        "conteudo": "A História ajuda a compreender como as pessoas viveram em outros tempos e como a comunidade se transformou. No estudo de pesquisa histórica, usamos fontes como fotografias, objetos, documentos e relatos orais. Essas fontes permitem observar mudanças, permanências e diferentes experiências. Conhecer o passado também ajuda a valorizar a diversidade e a cuidar dos lugares de memória.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto, quais fontes podem ser usadas para estudar pesquisa histórica?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual atitude ajuda a estudar corretamente o tema “Uma entrevista sobre o passado”?",
+          "alternativas": [
+            "Comparar fontes e observar mudanças e permanências.",
+            "Inventar informações sem consultar nenhuma fonte.",
+            "Ignorar os relatos das pessoas da comunidade.",
+            "Considerar apenas o presente e esquecer o passado."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Cite um exemplo relacionado a pesquisa histórica que possa ser observado na sua família, escola ou comunidade.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Explique uma mudança e uma permanência relacionadas ao tema “Uma entrevista sobre o passado”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "pesquisa",
+          "enunciado": "Que fonte histórica você escolheria para pesquisar “Uma entrevista sobre o passado”? Explique por quê.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Escreva um pequeno texto sobre o que podemos aprender ao estudar pesquisa histórica.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Fotografias, objetos, documentos e relatos orais.",
+          "justificativa": "Essas fontes são citadas diretamente no texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "O estudo histórico exige comparação de fontes e observação de mudanças e permanências."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta pessoal coerente com o tema.",
+          "justificativa": "O exemplo deve estar relacionado à família, à escola ou à comunidade."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta pessoal.",
+          "justificativa": "Critério: indicar claramente uma transformação e um aspecto que permaneceu."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta possível: fotografia, objeto, documento ou entrevista.",
+          "justificativa": "A justificativa deve explicar que informação a fonte pode oferecer."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral.",
+          "justificativa": "Critério: clareza, coerência histórica e relação com o tema estudado."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-3ano-b3-his-30-museu-da-turma",
+      "titulo": "Museu da turma",
+      "tema": "Síntese histórica",
+      "sequencia": "Atividade 30",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "intermediaria",
+      "objetivo": "Organizar uma exposição com objetos, textos e imagens sobre memórias da comunidade.",
+      "bncc": [
+        {
+          "codigo": "EF03HI04",
+          "descricaoResumida": "Reconhecer e valorizar patrimônios históricos e culturais."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, observe as informações históricas e responda com atenção.",
+      "textoApoio": {
+        "titulo": "Para compreender: Museu da turma",
+        "conteudo": "A História ajuda a compreender como as pessoas viveram em outros tempos e como a comunidade se transformou. No estudo de síntese histórica, usamos fontes como fotografias, objetos, documentos e relatos orais. Essas fontes permitem observar mudanças, permanências e diferentes experiências. Conhecer o passado também ajuda a valorizar a diversidade e a cuidar dos lugares de memória.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto, quais fontes podem ser usadas para estudar síntese histórica?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual atitude ajuda a estudar corretamente o tema “Museu da turma”?",
+          "alternativas": [
+            "Comparar fontes e observar mudanças e permanências.",
+            "Inventar informações sem consultar nenhuma fonte.",
+            "Ignorar os relatos das pessoas da comunidade.",
+            "Considerar apenas o presente e esquecer o passado."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Cite um exemplo relacionado a síntese histórica que possa ser observado na sua família, escola ou comunidade.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Explique uma mudança e uma permanência relacionadas ao tema “Museu da turma”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "pesquisa",
+          "enunciado": "Que fonte histórica você escolheria para pesquisar “Museu da turma”? Explique por quê.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Escreva um pequeno texto sobre o que podemos aprender ao estudar síntese histórica.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Fotografias, objetos, documentos e relatos orais.",
+          "justificativa": "Essas fontes são citadas diretamente no texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "O estudo histórico exige comparação de fontes e observação de mudanças e permanências."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta pessoal coerente com o tema.",
+          "justificativa": "O exemplo deve estar relacionado à família, à escola ou à comunidade."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta pessoal.",
+          "justificativa": "Critério: indicar claramente uma transformação e um aspecto que permaneceu."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta possível: fotografia, objeto, documento ou entrevista.",
+          "justificativa": "A justificativa deve explicar que informação a fonte pode oferecer."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral.",
+          "justificativa": "Critério: clareza, coerência histórica e relação com o tema estudado."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    }
+  ]
+}

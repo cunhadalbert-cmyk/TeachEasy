@@ -169,8 +169,8 @@ function normalizeCollectionActivity(activity, collection, config) {
   return {
     id: activity.id,
     stage: 'Ensino Fundamental I',
-    grade: '4º ano',
-    term: 3,
+    grade: config.grade || collection.ano || '4º ano',
+    term: collection.bimestre || 3,
     subject: collection.disciplina,
     topic: activity.titulo,
     difficulty: difficultyLabel(activity.dificuldade),
