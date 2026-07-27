@@ -2317,3 +2317,40 @@ body:not(.library-page) .footer span {
 .home-library-copy > span {
   color: #fff;
 }
+
+/* TEACHEASY HERO PROFESSORA - POSICAO FINAL */
+@media (min-width: 901px) {
+  .slide:first-child {
+    background-position: center center;
+  }
+
+  .slide:first-child .slide-overlay-teacher {
+    top: 50%;
+    left: clamp(58px, 6vw, 96px);
+    right: auto;
+    width: min(370px, 29vw);
+    max-width: 370px;
+    padding: 0;
+    transform: translateY(-50%);
+    color: #000;
+    text-align: left;
+    text-shadow: none;
+  }
+
+  .slide:first-child .slide-overlay-teacher h2 {
+    max-width: 360px;
+    font-size: clamp(34px, 3vw, 50px);
+    line-height: 1;
+  }
+
+  .slide:first-child .slide-overlay-teacher p {
+    max-width: 350px;
+    font-size: clamp(17px, 1.45vw, 21px);
+  }
+
+  .slide:first-child .slide-overlay-teacher .slide-support {
+    max-width: 350px;
+    font-size: clamp(14px, 1.15vw, 17px);
+  }
+}
+/* FIM TEACHEASY HERO PROFESSORA */
