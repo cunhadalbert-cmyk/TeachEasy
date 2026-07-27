@@ -612,10 +612,10 @@ test('Matemática possui 20 atividades autorais, 120 questões e figuras válida
     )
   );
 
-  assert.equal(activities.length, 30);
-  assert.equal(activities.reduce((total, activity) => total + activity.questoes.length, 0), 180);
-  assert.equal(new Set(ids).size, 30);
-  assert.equal(new Set(titles).size, 30);
+  assert.equal(activities.length, 20);
+  assert.equal(activities.reduce((total, activity) => total + activity.questoes.length, 0), 120);
+  assert.equal(new Set(ids).size, 20);
+  assert.equal(new Set(titles).size, 20);
   assert.equal(new Set(normalizedPrompts).size, 120);
 
   for (const activity of activities) {
@@ -657,10 +657,20 @@ test('Matemática possui 20 atividades autorais, 120 questões e figuras válida
 });
 
 test('Língua Portuguesa possui 30 atividades autorais, 180 questões e figuras válidas', async () => {
-  const raw = await readFile(new URL('../data/atividades/fundamental-anos-iniciais/4-ano/3-bimestre/lingua-portuguesa.json', import.meta.url), 'utf8');
+  const [raw, extraRaw] = await Promise.all([
+    readFile(new URL('../data/atividades/fundamental-anos-iniciais/4-ano/3-bimestre/lingua-portuguesa.json', import.meta.url), 'utf8'),
+    readFile(new URL('../data/atividades/fundamental-anos-iniciais/4-ano/3-bimestre/lingua-portuguesa-extra.json', import.meta.url), 'utf8')
+  ]);
+
   assert.doesNotMatch(raw, /\uFFFD/);
+  assert.doesNotMatch(extraRaw, /\uFFFD/);
+
   const collection = JSON.parse(raw);
-  const activities = collection.atividades;
+  const extraCollection = JSON.parse(extraRaw);
+  const activities = [
+    ...collection.atividades,
+    ...extraCollection.atividades
+  ];
   const normalize = value => value.normalize('NFKC').trim().replace(/\s+/g, ' ').toLocaleLowerCase('pt-BR');
   const ids = activities.map(activity => activity.id);
   const titles = activities.map(activity => normalize(activity.titulo));
