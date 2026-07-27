@@ -842,6 +842,59 @@ test('Matemática e Língua Portuguesa carregam somente com a disciplina corresp
   await window.happyDOM.close();
 });
 
+test('História e Geografia do 4º ano e coleções do 3º ano estão completas', async () => {
+  const files = [
+    ['4-ano', 'historia.json', '4ano-3bimestre-historia', '4º ano', 'História'],
+    ['4-ano', 'geografia.json', '4ano-3bimestre-geografia', '4º ano', 'Geografia'],
+    ['3-ano', 'lingua-portuguesa.json', '3ano-3bimestre-lingua-portuguesa', '3º ano', 'Língua Portuguesa'],
+    ['3-ano', 'matematica.json', '3ano-3bimestre-matematica', '3º ano', 'Matemática'],
+    ['3-ano', 'historia.json', '3ano-3bimestre-historia', '3º ano', 'História'],
+    ['3-ano', 'ciencias.json', '3ano-3bimestre-ciencias', '3º ano', 'Ciências']
+  ];
+  const allIds = [];
+
+  for (const [gradePath, filename, collectionId, grade, subject] of files) {
+    const raw = await readFile(new URL(
+      `../data/atividades/fundamental-anos-iniciais/${gradePath}/3-bimestre/${filename}`,
+      import.meta.url
+    ), 'utf8');
+    assert.doesNotMatch(raw, /\uFFFD/);
+    assert.match(raw, /\n$/);
+    const collection = JSON.parse(raw);
+    assert.equal(collection.schemaVersion, '1.0');
+    assert.equal(collection.colecao, collectionId);
+    assert.equal(collection.ano, grade);
+    assert.equal(collection.bimestre, 3);
+    assert.equal(collection.disciplina, subject);
+    assert.equal(collection.atividades.length, 30);
+    assert.equal(collection.atividades.reduce((total, activity) => total + activity.questoes.length, 0), 180);
+    assert.equal(collection.atividades.reduce((total, activity) => total + activity.gabarito.length, 0), 180);
+
+    for (const activity of collection.atividades) {
+      allIds.push(activity.id);
+      assert.equal(activity.quantidadeQuestoes, 6);
+      assert.equal(activity.questoes.length, 6);
+      assert.equal(activity.gabarito.length, 6);
+      assert.ok(activity.objetivo.trim());
+      assert.ok(activity.bncc.length > 0);
+      assert.equal(activity.possuiGabarito, true);
+      assert.deepEqual(activity.questoes.map(question => question.numero), [1, 2, 3, 4, 5, 6]);
+      assert.deepEqual(activity.gabarito.map(answer => answer.numero), [1, 2, 3, 4, 5, 6]);
+    }
+  }
+
+  assert.equal(allIds.length, 180);
+  assert.equal(new Set(allIds).size, 180);
+
+  const fixesScript = await readFile(new URL('../biblioteca-fixes.js', import.meta.url), 'utf8');
+  files.forEach(([gradePath, filename, collectionId]) => {
+    assert.match(fixesScript, new RegExp(
+      `data/atividades/fundamental-anos-iniciais/${gradePath}/3-bimestre/${filename.replace('.', '\\.')}`
+    ));
+    assert.match(fixesScript, new RegExp(collectionId));
+  });
+});
+
 test('Coleções mantêm responsividade e quebra de página de impressão', async () => {
   const css = await readFile(new URL('../biblioteca.css', import.meta.url), 'utf8');
   assert.match(css, /@media \(max-width:\s*680px\)[\s\S]*\.activity-grid\s*\{[^}]*grid-template-columns:\s*1fr/s);

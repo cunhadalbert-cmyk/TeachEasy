@@ -1,0 +1,3672 @@
+{
+  "schemaVersion": "1.0",
+  "colecao": "3ano-3bimestre-ciencias",
+  "idioma": "pt-BR",
+  "etapa": "Ensino Fundamental — Anos Iniciais",
+  "ano": "3º ano",
+  "bimestre": 3,
+  "disciplina": "Ciências",
+  "statusBimestre": "sugerido",
+  "atividades": [
+    {
+      "id": "efi-3ano-b3-cie-01-os-seres-vivos-e-o-ambiente",
+      "titulo": "Os seres vivos e o ambiente",
+      "tema": "Relações ecológicas",
+      "sequencia": "Atividade 1",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "facil",
+      "objetivo": "Reconhecer que os seres vivos dependem do ambiente e de outros seres vivos.",
+      "bncc": [
+        {
+          "codigo": "EF03CI04",
+          "descricaoResumida": "Identificar características do modo de vida dos animais mais comuns no ambiente próximo."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, observe as informações científicas e responda com atenção.",
+      "textoApoio": {
+        "titulo": "Para compreender: Os seres vivos e o ambiente",
+        "conteudo": "As Ciências ajudam a compreender o mundo natural e os cuidados com a vida. No estudo de relações ecológicas, observamos características, fazemos comparações e registramos informações. Essas observações permitem entender como os seres vivos, o corpo humano e os elementos do ambiente se relacionam. Também aprendemos atitudes que ajudam a preservar a saúde e a natureza.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto, o que fazemos ao estudar relações ecológicas?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual atitude combina com o estudo de “Os seres vivos e o ambiente”?",
+          "alternativas": [
+            "Observar, comparar e registrar informações.",
+            "Ignorar as características dos seres vivos e do ambiente.",
+            "Inventar respostas sem observar ou pesquisar.",
+            "Desperdiçar recursos naturais."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Cite um exemplo relacionado a relações ecológicas que você observa no dia a dia.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Explique uma característica importante do tema “Os seres vivos e o ambiente”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "investigacao",
+          "enunciado": "Que observação ou experiência simples poderia ajudar a estudar “Os seres vivos e o ambiente”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Escreva uma atitude de cuidado relacionada a relações ecológicas.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Observamos características, fazemos comparações e registramos informações.",
+          "justificativa": "A resposta aparece diretamente no texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "A investigação científica envolve observação, comparação e registro."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta pessoal coerente com o tema.",
+          "justificativa": "O exemplo deve estar relacionado ao cotidiano do estudante."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta pessoal.",
+          "justificativa": "Critério: apresentar uma característica correta e relacionada ao conteúdo estudado."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta possível: observação, comparação, registro, desenho ou experiência segura.",
+          "justificativa": "A proposta deve ser simples, segura e adequada ao tema."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral.",
+          "justificativa": "Critério: indicar uma atitude de cuidado com a saúde, os seres vivos ou o ambiente."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-3ano-b3-cie-02-o-que-os-animais-comem",
+      "titulo": "O que os animais comem",
+      "tema": "Alimentação dos animais",
+      "sequencia": "Atividade 2",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "intermediaria",
+      "objetivo": "Classificar animais conforme seus hábitos alimentares.",
+      "bncc": [
+        {
+          "codigo": "EF03CI04",
+          "descricaoResumida": "Identificar características do modo de vida dos animais mais comuns no ambiente próximo."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, observe as informações científicas e responda com atenção.",
+      "textoApoio": {
+        "titulo": "Para compreender: O que os animais comem",
+        "conteudo": "As Ciências ajudam a compreender o mundo natural e os cuidados com a vida. No estudo de alimentação dos animais, observamos características, fazemos comparações e registramos informações. Essas observações permitem entender como os seres vivos, o corpo humano e os elementos do ambiente se relacionam. Também aprendemos atitudes que ajudam a preservar a saúde e a natureza.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto, o que fazemos ao estudar alimentação dos animais?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual atitude combina com o estudo de “O que os animais comem”?",
+          "alternativas": [
+            "Observar, comparar e registrar informações.",
+            "Ignorar as características dos seres vivos e do ambiente.",
+            "Inventar respostas sem observar ou pesquisar.",
+            "Desperdiçar recursos naturais."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Cite um exemplo relacionado a alimentação dos animais que você observa no dia a dia.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Explique uma característica importante do tema “O que os animais comem”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "investigacao",
+          "enunciado": "Que observação ou experiência simples poderia ajudar a estudar “O que os animais comem”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Escreva uma atitude de cuidado relacionada a alimentação dos animais.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Observamos características, fazemos comparações e registramos informações.",
+          "justificativa": "A resposta aparece diretamente no texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "A investigação científica envolve observação, comparação e registro."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta pessoal coerente com o tema.",
+          "justificativa": "O exemplo deve estar relacionado ao cotidiano do estudante."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta pessoal.",
+          "justificativa": "Critério: apresentar uma característica correta e relacionada ao conteúdo estudado."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta possível: observação, comparação, registro, desenho ou experiência segura.",
+          "justificativa": "A proposta deve ser simples, segura e adequada ao tema."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral.",
+          "justificativa": "Critério: indicar uma atitude de cuidado com a saúde, os seres vivos ou o ambiente."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-3ano-b3-cie-03-animais-herbivoros-carnivoros-e-onivoros",
+      "titulo": "Animais herbívoros, carnívoros e onívoros",
+      "tema": "Classificação alimentar",
+      "sequencia": "Atividade 3",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "intermediaria",
+      "objetivo": "Diferenciar animais herbívoros, carnívoros e onívoros.",
+      "bncc": [
+        {
+          "codigo": "EF03CI04",
+          "descricaoResumida": "Reconhecer características relacionadas à alimentação dos animais."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, observe as informações científicas e responda com atenção.",
+      "textoApoio": {
+        "titulo": "Para compreender: Animais herbívoros, carnívoros e onívoros",
+        "conteudo": "As Ciências ajudam a compreender o mundo natural e os cuidados com a vida. No estudo de classificação alimentar, observamos características, fazemos comparações e registramos informações. Essas observações permitem entender como os seres vivos, o corpo humano e os elementos do ambiente se relacionam. Também aprendemos atitudes que ajudam a preservar a saúde e a natureza.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto, o que fazemos ao estudar classificação alimentar?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual atitude combina com o estudo de “Animais herbívoros, carnívoros e onívoros”?",
+          "alternativas": [
+            "Observar, comparar e registrar informações.",
+            "Ignorar as características dos seres vivos e do ambiente.",
+            "Inventar respostas sem observar ou pesquisar.",
+            "Desperdiçar recursos naturais."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Cite um exemplo relacionado a classificação alimentar que você observa no dia a dia.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Explique uma característica importante do tema “Animais herbívoros, carnívoros e onívoros”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "investigacao",
+          "enunciado": "Que observação ou experiência simples poderia ajudar a estudar “Animais herbívoros, carnívoros e onívoros”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Escreva uma atitude de cuidado relacionada a classificação alimentar.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Observamos características, fazemos comparações e registramos informações.",
+          "justificativa": "A resposta aparece diretamente no texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "A investigação científica envolve observação, comparação e registro."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta pessoal coerente com o tema.",
+          "justificativa": "O exemplo deve estar relacionado ao cotidiano do estudante."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta pessoal.",
+          "justificativa": "Critério: apresentar uma característica correta e relacionada ao conteúdo estudado."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta possível: observação, comparação, registro, desenho ou experiência segura.",
+          "justificativa": "A proposta deve ser simples, segura e adequada ao tema."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral.",
+          "justificativa": "Critério: indicar uma atitude de cuidado com a saúde, os seres vivos ou o ambiente."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-3ano-b3-cie-04-como-os-animais-se-locomovem",
+      "titulo": "Como os animais se locomovem",
+      "tema": "Locomoção animal",
+      "sequencia": "Atividade 4",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "desafiadora",
+      "objetivo": "Comparar diferentes formas de locomoção dos animais.",
+      "bncc": [
+        {
+          "codigo": "EF03CI04",
+          "descricaoResumida": "Identificar características do modo de vida dos animais."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, observe as informações científicas e responda com atenção.",
+      "textoApoio": {
+        "titulo": "Para compreender: Como os animais se locomovem",
+        "conteudo": "As Ciências ajudam a compreender o mundo natural e os cuidados com a vida. No estudo de locomoção animal, observamos características, fazemos comparações e registramos informações. Essas observações permitem entender como os seres vivos, o corpo humano e os elementos do ambiente se relacionam. Também aprendemos atitudes que ajudam a preservar a saúde e a natureza.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto, o que fazemos ao estudar locomoção animal?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual atitude combina com o estudo de “Como os animais se locomovem”?",
+          "alternativas": [
+            "Observar, comparar e registrar informações.",
+            "Ignorar as características dos seres vivos e do ambiente.",
+            "Inventar respostas sem observar ou pesquisar.",
+            "Desperdiçar recursos naturais."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Cite um exemplo relacionado a locomoção animal que você observa no dia a dia.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Explique uma característica importante do tema “Como os animais se locomovem”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "investigacao",
+          "enunciado": "Que observação ou experiência simples poderia ajudar a estudar “Como os animais se locomovem”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Escreva uma atitude de cuidado relacionada a locomoção animal.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Observamos características, fazemos comparações e registramos informações.",
+          "justificativa": "A resposta aparece diretamente no texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "A investigação científica envolve observação, comparação e registro."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta pessoal coerente com o tema.",
+          "justificativa": "O exemplo deve estar relacionado ao cotidiano do estudante."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta pessoal.",
+          "justificativa": "Critério: apresentar uma característica correta e relacionada ao conteúdo estudado."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta possível: observação, comparação, registro, desenho ou experiência segura.",
+          "justificativa": "A proposta deve ser simples, segura e adequada ao tema."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral.",
+          "justificativa": "Critério: indicar uma atitude de cuidado com a saúde, os seres vivos ou o ambiente."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-3ano-b3-cie-05-onde-vivem-os-animais",
+      "titulo": "Onde vivem os animais",
+      "tema": "Habitat",
+      "sequencia": "Atividade 5",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "facil",
+      "objetivo": "Relacionar animais aos ambientes em que vivem.",
+      "bncc": [
+        {
+          "codigo": "EF03CI04",
+          "descricaoResumida": "Reconhecer relações entre os animais e seus habitats."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, observe as informações científicas e responda com atenção.",
+      "textoApoio": {
+        "titulo": "Para compreender: Onde vivem os animais",
+        "conteudo": "As Ciências ajudam a compreender o mundo natural e os cuidados com a vida. No estudo de habitat, observamos características, fazemos comparações e registramos informações. Essas observações permitem entender como os seres vivos, o corpo humano e os elementos do ambiente se relacionam. Também aprendemos atitudes que ajudam a preservar a saúde e a natureza.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto, o que fazemos ao estudar habitat?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual atitude combina com o estudo de “Onde vivem os animais”?",
+          "alternativas": [
+            "Observar, comparar e registrar informações.",
+            "Ignorar as características dos seres vivos e do ambiente.",
+            "Inventar respostas sem observar ou pesquisar.",
+            "Desperdiçar recursos naturais."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Cite um exemplo relacionado a habitat que você observa no dia a dia.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Explique uma característica importante do tema “Onde vivem os animais”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "investigacao",
+          "enunciado": "Que observação ou experiência simples poderia ajudar a estudar “Onde vivem os animais”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Escreva uma atitude de cuidado relacionada a habitat.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Observamos características, fazemos comparações e registramos informações.",
+          "justificativa": "A resposta aparece diretamente no texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "A investigação científica envolve observação, comparação e registro."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta pessoal coerente com o tema.",
+          "justificativa": "O exemplo deve estar relacionado ao cotidiano do estudante."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta pessoal.",
+          "justificativa": "Critério: apresentar uma característica correta e relacionada ao conteúdo estudado."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta possível: observação, comparação, registro, desenho ou experiência segura.",
+          "justificativa": "A proposta deve ser simples, segura e adequada ao tema."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral.",
+          "justificativa": "Critério: indicar uma atitude de cuidado com a saúde, os seres vivos ou o ambiente."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-3ano-b3-cie-06-animais-vertebrados",
+      "titulo": "Animais vertebrados",
+      "tema": "Vertebrados",
+      "sequencia": "Atividade 6",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "intermediaria",
+      "objetivo": "Reconhecer características gerais dos animais vertebrados.",
+      "bncc": [
+        {
+          "codigo": "EF03CI06",
+          "descricaoResumida": "Comparar alguns animais e organizar grupos com base em características externas."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, observe as informações científicas e responda com atenção.",
+      "textoApoio": {
+        "titulo": "Para compreender: Animais vertebrados",
+        "conteudo": "As Ciências ajudam a compreender o mundo natural e os cuidados com a vida. No estudo de vertebrados, observamos características, fazemos comparações e registramos informações. Essas observações permitem entender como os seres vivos, o corpo humano e os elementos do ambiente se relacionam. Também aprendemos atitudes que ajudam a preservar a saúde e a natureza.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto, o que fazemos ao estudar vertebrados?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual atitude combina com o estudo de “Animais vertebrados”?",
+          "alternativas": [
+            "Observar, comparar e registrar informações.",
+            "Ignorar as características dos seres vivos e do ambiente.",
+            "Inventar respostas sem observar ou pesquisar.",
+            "Desperdiçar recursos naturais."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Cite um exemplo relacionado a vertebrados que você observa no dia a dia.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Explique uma característica importante do tema “Animais vertebrados”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "investigacao",
+          "enunciado": "Que observação ou experiência simples poderia ajudar a estudar “Animais vertebrados”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Escreva uma atitude de cuidado relacionada a vertebrados.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Observamos características, fazemos comparações e registramos informações.",
+          "justificativa": "A resposta aparece diretamente no texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "A investigação científica envolve observação, comparação e registro."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta pessoal coerente com o tema.",
+          "justificativa": "O exemplo deve estar relacionado ao cotidiano do estudante."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta pessoal.",
+          "justificativa": "Critério: apresentar uma característica correta e relacionada ao conteúdo estudado."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta possível: observação, comparação, registro, desenho ou experiência segura.",
+          "justificativa": "A proposta deve ser simples, segura e adequada ao tema."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral.",
+          "justificativa": "Critério: indicar uma atitude de cuidado com a saúde, os seres vivos ou o ambiente."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-3ano-b3-cie-07-animais-invertebrados",
+      "titulo": "Animais invertebrados",
+      "tema": "Invertebrados",
+      "sequencia": "Atividade 7",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "intermediaria",
+      "objetivo": "Reconhecer características gerais dos animais invertebrados.",
+      "bncc": [
+        {
+          "codigo": "EF03CI06",
+          "descricaoResumida": "Comparar alguns animais e organizar grupos com base em características externas."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, observe as informações científicas e responda com atenção.",
+      "textoApoio": {
+        "titulo": "Para compreender: Animais invertebrados",
+        "conteudo": "As Ciências ajudam a compreender o mundo natural e os cuidados com a vida. No estudo de invertebrados, observamos características, fazemos comparações e registramos informações. Essas observações permitem entender como os seres vivos, o corpo humano e os elementos do ambiente se relacionam. Também aprendemos atitudes que ajudam a preservar a saúde e a natureza.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto, o que fazemos ao estudar invertebrados?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual atitude combina com o estudo de “Animais invertebrados”?",
+          "alternativas": [
+            "Observar, comparar e registrar informações.",
+            "Ignorar as características dos seres vivos e do ambiente.",
+            "Inventar respostas sem observar ou pesquisar.",
+            "Desperdiçar recursos naturais."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Cite um exemplo relacionado a invertebrados que você observa no dia a dia.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Explique uma característica importante do tema “Animais invertebrados”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "investigacao",
+          "enunciado": "Que observação ou experiência simples poderia ajudar a estudar “Animais invertebrados”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Escreva uma atitude de cuidado relacionada a invertebrados.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Observamos características, fazemos comparações e registramos informações.",
+          "justificativa": "A resposta aparece diretamente no texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "A investigação científica envolve observação, comparação e registro."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta pessoal coerente com o tema.",
+          "justificativa": "O exemplo deve estar relacionado ao cotidiano do estudante."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta pessoal.",
+          "justificativa": "Critério: apresentar uma característica correta e relacionada ao conteúdo estudado."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta possível: observação, comparação, registro, desenho ou experiência segura.",
+          "justificativa": "A proposta deve ser simples, segura e adequada ao tema."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral.",
+          "justificativa": "Critério: indicar uma atitude de cuidado com a saúde, os seres vivos ou o ambiente."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-3ano-b3-cie-08-mamiferos",
+      "titulo": "Mamíferos",
+      "tema": "Grupos de animais",
+      "sequencia": "Atividade 8",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "desafiadora",
+      "objetivo": "Identificar características comuns dos mamíferos.",
+      "bncc": [
+        {
+          "codigo": "EF03CI06",
+          "descricaoResumida": "Agrupar animais segundo características externas comuns."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, observe as informações científicas e responda com atenção.",
+      "textoApoio": {
+        "titulo": "Para compreender: Mamíferos",
+        "conteudo": "As Ciências ajudam a compreender o mundo natural e os cuidados com a vida. No estudo de grupos de animais, observamos características, fazemos comparações e registramos informações. Essas observações permitem entender como os seres vivos, o corpo humano e os elementos do ambiente se relacionam. Também aprendemos atitudes que ajudam a preservar a saúde e a natureza.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto, o que fazemos ao estudar grupos de animais?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual atitude combina com o estudo de “Mamíferos”?",
+          "alternativas": [
+            "Observar, comparar e registrar informações.",
+            "Ignorar as características dos seres vivos e do ambiente.",
+            "Inventar respostas sem observar ou pesquisar.",
+            "Desperdiçar recursos naturais."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Cite um exemplo relacionado a grupos de animais que você observa no dia a dia.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Explique uma característica importante do tema “Mamíferos”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "investigacao",
+          "enunciado": "Que observação ou experiência simples poderia ajudar a estudar “Mamíferos”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Escreva uma atitude de cuidado relacionada a grupos de animais.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Observamos características, fazemos comparações e registramos informações.",
+          "justificativa": "A resposta aparece diretamente no texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "A investigação científica envolve observação, comparação e registro."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta pessoal coerente com o tema.",
+          "justificativa": "O exemplo deve estar relacionado ao cotidiano do estudante."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta pessoal.",
+          "justificativa": "Critério: apresentar uma característica correta e relacionada ao conteúdo estudado."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta possível: observação, comparação, registro, desenho ou experiência segura.",
+          "justificativa": "A proposta deve ser simples, segura e adequada ao tema."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral.",
+          "justificativa": "Critério: indicar uma atitude de cuidado com a saúde, os seres vivos ou o ambiente."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-3ano-b3-cie-09-aves",
+      "titulo": "Aves",
+      "tema": "Grupos de animais",
+      "sequencia": "Atividade 9",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "facil",
+      "objetivo": "Identificar características comuns das aves.",
+      "bncc": [
+        {
+          "codigo": "EF03CI06",
+          "descricaoResumida": "Agrupar animais segundo características externas comuns."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, observe as informações científicas e responda com atenção.",
+      "textoApoio": {
+        "titulo": "Para compreender: Aves",
+        "conteudo": "As Ciências ajudam a compreender o mundo natural e os cuidados com a vida. No estudo de grupos de animais, observamos características, fazemos comparações e registramos informações. Essas observações permitem entender como os seres vivos, o corpo humano e os elementos do ambiente se relacionam. Também aprendemos atitudes que ajudam a preservar a saúde e a natureza.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto, o que fazemos ao estudar grupos de animais?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual atitude combina com o estudo de “Aves”?",
+          "alternativas": [
+            "Observar, comparar e registrar informações.",
+            "Ignorar as características dos seres vivos e do ambiente.",
+            "Inventar respostas sem observar ou pesquisar.",
+            "Desperdiçar recursos naturais."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Cite um exemplo relacionado a grupos de animais que você observa no dia a dia.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Explique uma característica importante do tema “Aves”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "investigacao",
+          "enunciado": "Que observação ou experiência simples poderia ajudar a estudar “Aves”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Escreva uma atitude de cuidado relacionada a grupos de animais.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Observamos características, fazemos comparações e registramos informações.",
+          "justificativa": "A resposta aparece diretamente no texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "A investigação científica envolve observação, comparação e registro."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta pessoal coerente com o tema.",
+          "justificativa": "O exemplo deve estar relacionado ao cotidiano do estudante."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta pessoal.",
+          "justificativa": "Critério: apresentar uma característica correta e relacionada ao conteúdo estudado."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta possível: observação, comparação, registro, desenho ou experiência segura.",
+          "justificativa": "A proposta deve ser simples, segura e adequada ao tema."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral.",
+          "justificativa": "Critério: indicar uma atitude de cuidado com a saúde, os seres vivos ou o ambiente."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-3ano-b3-cie-10-peixes",
+      "titulo": "Peixes",
+      "tema": "Grupos de animais",
+      "sequencia": "Atividade 10",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "intermediaria",
+      "objetivo": "Identificar características comuns dos peixes.",
+      "bncc": [
+        {
+          "codigo": "EF03CI06",
+          "descricaoResumida": "Agrupar animais segundo características externas comuns."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, observe as informações científicas e responda com atenção.",
+      "textoApoio": {
+        "titulo": "Para compreender: Peixes",
+        "conteudo": "As Ciências ajudam a compreender o mundo natural e os cuidados com a vida. No estudo de grupos de animais, observamos características, fazemos comparações e registramos informações. Essas observações permitem entender como os seres vivos, o corpo humano e os elementos do ambiente se relacionam. Também aprendemos atitudes que ajudam a preservar a saúde e a natureza.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto, o que fazemos ao estudar grupos de animais?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual atitude combina com o estudo de “Peixes”?",
+          "alternativas": [
+            "Observar, comparar e registrar informações.",
+            "Ignorar as características dos seres vivos e do ambiente.",
+            "Inventar respostas sem observar ou pesquisar.",
+            "Desperdiçar recursos naturais."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Cite um exemplo relacionado a grupos de animais que você observa no dia a dia.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Explique uma característica importante do tema “Peixes”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "investigacao",
+          "enunciado": "Que observação ou experiência simples poderia ajudar a estudar “Peixes”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Escreva uma atitude de cuidado relacionada a grupos de animais.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Observamos características, fazemos comparações e registramos informações.",
+          "justificativa": "A resposta aparece diretamente no texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "A investigação científica envolve observação, comparação e registro."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta pessoal coerente com o tema.",
+          "justificativa": "O exemplo deve estar relacionado ao cotidiano do estudante."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta pessoal.",
+          "justificativa": "Critério: apresentar uma característica correta e relacionada ao conteúdo estudado."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta possível: observação, comparação, registro, desenho ou experiência segura.",
+          "justificativa": "A proposta deve ser simples, segura e adequada ao tema."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral.",
+          "justificativa": "Critério: indicar uma atitude de cuidado com a saúde, os seres vivos ou o ambiente."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-3ano-b3-cie-11-repteis",
+      "titulo": "Répteis",
+      "tema": "Grupos de animais",
+      "sequencia": "Atividade 11",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "intermediaria",
+      "objetivo": "Identificar características comuns dos répteis.",
+      "bncc": [
+        {
+          "codigo": "EF03CI06",
+          "descricaoResumida": "Agrupar animais segundo características externas comuns."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, observe as informações científicas e responda com atenção.",
+      "textoApoio": {
+        "titulo": "Para compreender: Répteis",
+        "conteudo": "As Ciências ajudam a compreender o mundo natural e os cuidados com a vida. No estudo de grupos de animais, observamos características, fazemos comparações e registramos informações. Essas observações permitem entender como os seres vivos, o corpo humano e os elementos do ambiente se relacionam. Também aprendemos atitudes que ajudam a preservar a saúde e a natureza.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto, o que fazemos ao estudar grupos de animais?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual atitude combina com o estudo de “Répteis”?",
+          "alternativas": [
+            "Observar, comparar e registrar informações.",
+            "Ignorar as características dos seres vivos e do ambiente.",
+            "Inventar respostas sem observar ou pesquisar.",
+            "Desperdiçar recursos naturais."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Cite um exemplo relacionado a grupos de animais que você observa no dia a dia.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Explique uma característica importante do tema “Répteis”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "investigacao",
+          "enunciado": "Que observação ou experiência simples poderia ajudar a estudar “Répteis”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Escreva uma atitude de cuidado relacionada a grupos de animais.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Observamos características, fazemos comparações e registramos informações.",
+          "justificativa": "A resposta aparece diretamente no texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "A investigação científica envolve observação, comparação e registro."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta pessoal coerente com o tema.",
+          "justificativa": "O exemplo deve estar relacionado ao cotidiano do estudante."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta pessoal.",
+          "justificativa": "Critério: apresentar uma característica correta e relacionada ao conteúdo estudado."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta possível: observação, comparação, registro, desenho ou experiência segura.",
+          "justificativa": "A proposta deve ser simples, segura e adequada ao tema."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral.",
+          "justificativa": "Critério: indicar uma atitude de cuidado com a saúde, os seres vivos ou o ambiente."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-3ano-b3-cie-12-anfibios",
+      "titulo": "Anfíbios",
+      "tema": "Grupos de animais",
+      "sequencia": "Atividade 12",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "desafiadora",
+      "objetivo": "Identificar características comuns dos anfíbios.",
+      "bncc": [
+        {
+          "codigo": "EF03CI06",
+          "descricaoResumida": "Agrupar animais segundo características externas comuns."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, observe as informações científicas e responda com atenção.",
+      "textoApoio": {
+        "titulo": "Para compreender: Anfíbios",
+        "conteudo": "As Ciências ajudam a compreender o mundo natural e os cuidados com a vida. No estudo de grupos de animais, observamos características, fazemos comparações e registramos informações. Essas observações permitem entender como os seres vivos, o corpo humano e os elementos do ambiente se relacionam. Também aprendemos atitudes que ajudam a preservar a saúde e a natureza.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto, o que fazemos ao estudar grupos de animais?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual atitude combina com o estudo de “Anfíbios”?",
+          "alternativas": [
+            "Observar, comparar e registrar informações.",
+            "Ignorar as características dos seres vivos e do ambiente.",
+            "Inventar respostas sem observar ou pesquisar.",
+            "Desperdiçar recursos naturais."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Cite um exemplo relacionado a grupos de animais que você observa no dia a dia.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Explique uma característica importante do tema “Anfíbios”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "investigacao",
+          "enunciado": "Que observação ou experiência simples poderia ajudar a estudar “Anfíbios”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Escreva uma atitude de cuidado relacionada a grupos de animais.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Observamos características, fazemos comparações e registramos informações.",
+          "justificativa": "A resposta aparece diretamente no texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "A investigação científica envolve observação, comparação e registro."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta pessoal coerente com o tema.",
+          "justificativa": "O exemplo deve estar relacionado ao cotidiano do estudante."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta pessoal.",
+          "justificativa": "Critério: apresentar uma característica correta e relacionada ao conteúdo estudado."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta possível: observação, comparação, registro, desenho ou experiência segura.",
+          "justificativa": "A proposta deve ser simples, segura e adequada ao tema."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral.",
+          "justificativa": "Critério: indicar uma atitude de cuidado com a saúde, os seres vivos ou o ambiente."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-3ano-b3-cie-13-o-ciclo-de-vida-dos-animais",
+      "titulo": "O ciclo de vida dos animais",
+      "tema": "Ciclo de vida",
+      "sequencia": "Atividade 13",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "facil",
+      "objetivo": "Compreender que os animais nascem, crescem, reproduzem-se e morrem.",
+      "bncc": [
+        {
+          "codigo": "EF03CI05",
+          "descricaoResumida": "Descrever e comunicar alterações que ocorrem desde o nascimento em animais de diferentes meios."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, observe as informações científicas e responda com atenção.",
+      "textoApoio": {
+        "titulo": "Para compreender: O ciclo de vida dos animais",
+        "conteudo": "As Ciências ajudam a compreender o mundo natural e os cuidados com a vida. No estudo de ciclo de vida, observamos características, fazemos comparações e registramos informações. Essas observações permitem entender como os seres vivos, o corpo humano e os elementos do ambiente se relacionam. Também aprendemos atitudes que ajudam a preservar a saúde e a natureza.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto, o que fazemos ao estudar ciclo de vida?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual atitude combina com o estudo de “O ciclo de vida dos animais”?",
+          "alternativas": [
+            "Observar, comparar e registrar informações.",
+            "Ignorar as características dos seres vivos e do ambiente.",
+            "Inventar respostas sem observar ou pesquisar.",
+            "Desperdiçar recursos naturais."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Cite um exemplo relacionado a ciclo de vida que você observa no dia a dia.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Explique uma característica importante do tema “O ciclo de vida dos animais”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "investigacao",
+          "enunciado": "Que observação ou experiência simples poderia ajudar a estudar “O ciclo de vida dos animais”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Escreva uma atitude de cuidado relacionada a ciclo de vida.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Observamos características, fazemos comparações e registramos informações.",
+          "justificativa": "A resposta aparece diretamente no texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "A investigação científica envolve observação, comparação e registro."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta pessoal coerente com o tema.",
+          "justificativa": "O exemplo deve estar relacionado ao cotidiano do estudante."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta pessoal.",
+          "justificativa": "Critério: apresentar uma característica correta e relacionada ao conteúdo estudado."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta possível: observação, comparação, registro, desenho ou experiência segura.",
+          "justificativa": "A proposta deve ser simples, segura e adequada ao tema."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral.",
+          "justificativa": "Critério: indicar uma atitude de cuidado com a saúde, os seres vivos ou o ambiente."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-3ano-b3-cie-14-a-metamorfose-da-borboleta",
+      "titulo": "A metamorfose da borboleta",
+      "tema": "Metamorfose",
+      "sequencia": "Atividade 14",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "intermediaria",
+      "objetivo": "Reconhecer as etapas da metamorfose da borboleta.",
+      "bncc": [
+        {
+          "codigo": "EF03CI05",
+          "descricaoResumida": "Descrever mudanças que ocorrem no desenvolvimento dos animais."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, observe as informações científicas e responda com atenção.",
+      "textoApoio": {
+        "titulo": "Para compreender: A metamorfose da borboleta",
+        "conteudo": "As Ciências ajudam a compreender o mundo natural e os cuidados com a vida. No estudo de metamorfose, observamos características, fazemos comparações e registramos informações. Essas observações permitem entender como os seres vivos, o corpo humano e os elementos do ambiente se relacionam. Também aprendemos atitudes que ajudam a preservar a saúde e a natureza.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto, o que fazemos ao estudar metamorfose?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual atitude combina com o estudo de “A metamorfose da borboleta”?",
+          "alternativas": [
+            "Observar, comparar e registrar informações.",
+            "Ignorar as características dos seres vivos e do ambiente.",
+            "Inventar respostas sem observar ou pesquisar.",
+            "Desperdiçar recursos naturais."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Cite um exemplo relacionado a metamorfose que você observa no dia a dia.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Explique uma característica importante do tema “A metamorfose da borboleta”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "investigacao",
+          "enunciado": "Que observação ou experiência simples poderia ajudar a estudar “A metamorfose da borboleta”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Escreva uma atitude de cuidado relacionada a metamorfose.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Observamos características, fazemos comparações e registramos informações.",
+          "justificativa": "A resposta aparece diretamente no texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "A investigação científica envolve observação, comparação e registro."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta pessoal coerente com o tema.",
+          "justificativa": "O exemplo deve estar relacionado ao cotidiano do estudante."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta pessoal.",
+          "justificativa": "Critério: apresentar uma característica correta e relacionada ao conteúdo estudado."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta possível: observação, comparação, registro, desenho ou experiência segura.",
+          "justificativa": "A proposta deve ser simples, segura e adequada ao tema."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral.",
+          "justificativa": "Critério: indicar uma atitude de cuidado com a saúde, os seres vivos ou o ambiente."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-3ano-b3-cie-15-o-desenvolvimento-do-sapo",
+      "titulo": "O desenvolvimento do sapo",
+      "tema": "Metamorfose",
+      "sequencia": "Atividade 15",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "intermediaria",
+      "objetivo": "Compreender as mudanças do girino até o sapo adulto.",
+      "bncc": [
+        {
+          "codigo": "EF03CI05",
+          "descricaoResumida": "Descrever mudanças que ocorrem no desenvolvimento dos animais."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, observe as informações científicas e responda com atenção.",
+      "textoApoio": {
+        "titulo": "Para compreender: O desenvolvimento do sapo",
+        "conteudo": "As Ciências ajudam a compreender o mundo natural e os cuidados com a vida. No estudo de metamorfose, observamos características, fazemos comparações e registramos informações. Essas observações permitem entender como os seres vivos, o corpo humano e os elementos do ambiente se relacionam. Também aprendemos atitudes que ajudam a preservar a saúde e a natureza.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto, o que fazemos ao estudar metamorfose?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual atitude combina com o estudo de “O desenvolvimento do sapo”?",
+          "alternativas": [
+            "Observar, comparar e registrar informações.",
+            "Ignorar as características dos seres vivos e do ambiente.",
+            "Inventar respostas sem observar ou pesquisar.",
+            "Desperdiçar recursos naturais."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Cite um exemplo relacionado a metamorfose que você observa no dia a dia.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Explique uma característica importante do tema “O desenvolvimento do sapo”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "investigacao",
+          "enunciado": "Que observação ou experiência simples poderia ajudar a estudar “O desenvolvimento do sapo”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Escreva uma atitude de cuidado relacionada a metamorfose.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Observamos características, fazemos comparações e registramos informações.",
+          "justificativa": "A resposta aparece diretamente no texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "A investigação científica envolve observação, comparação e registro."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta pessoal coerente com o tema.",
+          "justificativa": "O exemplo deve estar relacionado ao cotidiano do estudante."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta pessoal.",
+          "justificativa": "Critério: apresentar uma característica correta e relacionada ao conteúdo estudado."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta possível: observação, comparação, registro, desenho ou experiência segura.",
+          "justificativa": "A proposta deve ser simples, segura e adequada ao tema."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral.",
+          "justificativa": "Critério: indicar uma atitude de cuidado com a saúde, os seres vivos ou o ambiente."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-3ano-b3-cie-16-o-corpo-humano-e-os-sentidos",
+      "titulo": "O corpo humano e os sentidos",
+      "tema": "Corpo humano",
+      "sequencia": "Atividade 16",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "desafiadora",
+      "objetivo": "Reconhecer os órgãos dos sentidos e suas funções.",
+      "bncc": [
+        {
+          "codigo": "EF03CI03",
+          "descricaoResumida": "Discutir hábitos necessários para a manutenção da saúde auditiva e visual."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, observe as informações científicas e responda com atenção.",
+      "textoApoio": {
+        "titulo": "Para compreender: O corpo humano e os sentidos",
+        "conteudo": "As Ciências ajudam a compreender o mundo natural e os cuidados com a vida. No estudo de corpo humano, observamos características, fazemos comparações e registramos informações. Essas observações permitem entender como os seres vivos, o corpo humano e os elementos do ambiente se relacionam. Também aprendemos atitudes que ajudam a preservar a saúde e a natureza.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto, o que fazemos ao estudar corpo humano?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual atitude combina com o estudo de “O corpo humano e os sentidos”?",
+          "alternativas": [
+            "Observar, comparar e registrar informações.",
+            "Ignorar as características dos seres vivos e do ambiente.",
+            "Inventar respostas sem observar ou pesquisar.",
+            "Desperdiçar recursos naturais."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Cite um exemplo relacionado a corpo humano que você observa no dia a dia.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Explique uma característica importante do tema “O corpo humano e os sentidos”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "investigacao",
+          "enunciado": "Que observação ou experiência simples poderia ajudar a estudar “O corpo humano e os sentidos”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Escreva uma atitude de cuidado relacionada a corpo humano.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Observamos características, fazemos comparações e registramos informações.",
+          "justificativa": "A resposta aparece diretamente no texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "A investigação científica envolve observação, comparação e registro."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta pessoal coerente com o tema.",
+          "justificativa": "O exemplo deve estar relacionado ao cotidiano do estudante."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta pessoal.",
+          "justificativa": "Critério: apresentar uma característica correta e relacionada ao conteúdo estudado."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta possível: observação, comparação, registro, desenho ou experiência segura.",
+          "justificativa": "A proposta deve ser simples, segura e adequada ao tema."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral.",
+          "justificativa": "Critério: indicar uma atitude de cuidado com a saúde, os seres vivos ou o ambiente."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-3ano-b3-cie-17-a-visao",
+      "titulo": "A visão",
+      "tema": "Órgãos dos sentidos",
+      "sequencia": "Atividade 17",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "facil",
+      "objetivo": "Compreender a função dos olhos e cuidados com a visão.",
+      "bncc": [
+        {
+          "codigo": "EF03CI03",
+          "descricaoResumida": "Discutir hábitos necessários para a manutenção da saúde visual."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, observe as informações científicas e responda com atenção.",
+      "textoApoio": {
+        "titulo": "Para compreender: A visão",
+        "conteudo": "As Ciências ajudam a compreender o mundo natural e os cuidados com a vida. No estudo de órgãos dos sentidos, observamos características, fazemos comparações e registramos informações. Essas observações permitem entender como os seres vivos, o corpo humano e os elementos do ambiente se relacionam. Também aprendemos atitudes que ajudam a preservar a saúde e a natureza.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto, o que fazemos ao estudar órgãos dos sentidos?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual atitude combina com o estudo de “A visão”?",
+          "alternativas": [
+            "Observar, comparar e registrar informações.",
+            "Ignorar as características dos seres vivos e do ambiente.",
+            "Inventar respostas sem observar ou pesquisar.",
+            "Desperdiçar recursos naturais."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Cite um exemplo relacionado a órgãos dos sentidos que você observa no dia a dia.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Explique uma característica importante do tema “A visão”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "investigacao",
+          "enunciado": "Que observação ou experiência simples poderia ajudar a estudar “A visão”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Escreva uma atitude de cuidado relacionada a órgãos dos sentidos.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Observamos características, fazemos comparações e registramos informações.",
+          "justificativa": "A resposta aparece diretamente no texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "A investigação científica envolve observação, comparação e registro."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta pessoal coerente com o tema.",
+          "justificativa": "O exemplo deve estar relacionado ao cotidiano do estudante."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta pessoal.",
+          "justificativa": "Critério: apresentar uma característica correta e relacionada ao conteúdo estudado."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta possível: observação, comparação, registro, desenho ou experiência segura.",
+          "justificativa": "A proposta deve ser simples, segura e adequada ao tema."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral.",
+          "justificativa": "Critério: indicar uma atitude de cuidado com a saúde, os seres vivos ou o ambiente."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-3ano-b3-cie-18-a-audicao",
+      "titulo": "A audição",
+      "tema": "Órgãos dos sentidos",
+      "sequencia": "Atividade 18",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "intermediaria",
+      "objetivo": "Compreender a função dos ouvidos e cuidados com a audição.",
+      "bncc": [
+        {
+          "codigo": "EF03CI03",
+          "descricaoResumida": "Discutir hábitos necessários para a manutenção da saúde auditiva."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, observe as informações científicas e responda com atenção.",
+      "textoApoio": {
+        "titulo": "Para compreender: A audição",
+        "conteudo": "As Ciências ajudam a compreender o mundo natural e os cuidados com a vida. No estudo de órgãos dos sentidos, observamos características, fazemos comparações e registramos informações. Essas observações permitem entender como os seres vivos, o corpo humano e os elementos do ambiente se relacionam. Também aprendemos atitudes que ajudam a preservar a saúde e a natureza.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto, o que fazemos ao estudar órgãos dos sentidos?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual atitude combina com o estudo de “A audição”?",
+          "alternativas": [
+            "Observar, comparar e registrar informações.",
+            "Ignorar as características dos seres vivos e do ambiente.",
+            "Inventar respostas sem observar ou pesquisar.",
+            "Desperdiçar recursos naturais."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Cite um exemplo relacionado a órgãos dos sentidos que você observa no dia a dia.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Explique uma característica importante do tema “A audição”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "investigacao",
+          "enunciado": "Que observação ou experiência simples poderia ajudar a estudar “A audição”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Escreva uma atitude de cuidado relacionada a órgãos dos sentidos.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Observamos características, fazemos comparações e registramos informações.",
+          "justificativa": "A resposta aparece diretamente no texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "A investigação científica envolve observação, comparação e registro."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta pessoal coerente com o tema.",
+          "justificativa": "O exemplo deve estar relacionado ao cotidiano do estudante."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta pessoal.",
+          "justificativa": "Critério: apresentar uma característica correta e relacionada ao conteúdo estudado."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta possível: observação, comparação, registro, desenho ou experiência segura.",
+          "justificativa": "A proposta deve ser simples, segura e adequada ao tema."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral.",
+          "justificativa": "Critério: indicar uma atitude de cuidado com a saúde, os seres vivos ou o ambiente."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-3ano-b3-cie-19-o-olfato-e-o-paladar",
+      "titulo": "O olfato e o paladar",
+      "tema": "Órgãos dos sentidos",
+      "sequencia": "Atividade 19",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "intermediaria",
+      "objetivo": "Relacionar olfato e paladar à percepção dos alimentos.",
+      "bncc": [
+        {
+          "codigo": "EF03CI03",
+          "descricaoResumida": "Reconhecer funções dos sentidos e hábitos de cuidado."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, observe as informações científicas e responda com atenção.",
+      "textoApoio": {
+        "titulo": "Para compreender: O olfato e o paladar",
+        "conteudo": "As Ciências ajudam a compreender o mundo natural e os cuidados com a vida. No estudo de órgãos dos sentidos, observamos características, fazemos comparações e registramos informações. Essas observações permitem entender como os seres vivos, o corpo humano e os elementos do ambiente se relacionam. Também aprendemos atitudes que ajudam a preservar a saúde e a natureza.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto, o que fazemos ao estudar órgãos dos sentidos?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual atitude combina com o estudo de “O olfato e o paladar”?",
+          "alternativas": [
+            "Observar, comparar e registrar informações.",
+            "Ignorar as características dos seres vivos e do ambiente.",
+            "Inventar respostas sem observar ou pesquisar.",
+            "Desperdiçar recursos naturais."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Cite um exemplo relacionado a órgãos dos sentidos que você observa no dia a dia.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Explique uma característica importante do tema “O olfato e o paladar”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "investigacao",
+          "enunciado": "Que observação ou experiência simples poderia ajudar a estudar “O olfato e o paladar”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Escreva uma atitude de cuidado relacionada a órgãos dos sentidos.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Observamos características, fazemos comparações e registramos informações.",
+          "justificativa": "A resposta aparece diretamente no texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "A investigação científica envolve observação, comparação e registro."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta pessoal coerente com o tema.",
+          "justificativa": "O exemplo deve estar relacionado ao cotidiano do estudante."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta pessoal.",
+          "justificativa": "Critério: apresentar uma característica correta e relacionada ao conteúdo estudado."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta possível: observação, comparação, registro, desenho ou experiência segura.",
+          "justificativa": "A proposta deve ser simples, segura e adequada ao tema."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral.",
+          "justificativa": "Critério: indicar uma atitude de cuidado com a saúde, os seres vivos ou o ambiente."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-3ano-b3-cie-20-o-tato",
+      "titulo": "O tato",
+      "tema": "Órgãos dos sentidos",
+      "sequencia": "Atividade 20",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "desafiadora",
+      "objetivo": "Compreender a função da pele na percepção do ambiente.",
+      "bncc": [
+        {
+          "codigo": "EF03CI03",
+          "descricaoResumida": "Reconhecer funções dos sentidos e hábitos de cuidado."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, observe as informações científicas e responda com atenção.",
+      "textoApoio": {
+        "titulo": "Para compreender: O tato",
+        "conteudo": "As Ciências ajudam a compreender o mundo natural e os cuidados com a vida. No estudo de órgãos dos sentidos, observamos características, fazemos comparações e registramos informações. Essas observações permitem entender como os seres vivos, o corpo humano e os elementos do ambiente se relacionam. Também aprendemos atitudes que ajudam a preservar a saúde e a natureza.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto, o que fazemos ao estudar órgãos dos sentidos?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual atitude combina com o estudo de “O tato”?",
+          "alternativas": [
+            "Observar, comparar e registrar informações.",
+            "Ignorar as características dos seres vivos e do ambiente.",
+            "Inventar respostas sem observar ou pesquisar.",
+            "Desperdiçar recursos naturais."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Cite um exemplo relacionado a órgãos dos sentidos que você observa no dia a dia.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Explique uma característica importante do tema “O tato”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "investigacao",
+          "enunciado": "Que observação ou experiência simples poderia ajudar a estudar “O tato”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Escreva uma atitude de cuidado relacionada a órgãos dos sentidos.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Observamos características, fazemos comparações e registramos informações.",
+          "justificativa": "A resposta aparece diretamente no texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "A investigação científica envolve observação, comparação e registro."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta pessoal coerente com o tema.",
+          "justificativa": "O exemplo deve estar relacionado ao cotidiano do estudante."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta pessoal.",
+          "justificativa": "Critério: apresentar uma característica correta e relacionada ao conteúdo estudado."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta possível: observação, comparação, registro, desenho ou experiência segura.",
+          "justificativa": "A proposta deve ser simples, segura e adequada ao tema."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral.",
+          "justificativa": "Critério: indicar uma atitude de cuidado com a saúde, os seres vivos ou o ambiente."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-3ano-b3-cie-21-cuidados-com-a-saude",
+      "titulo": "Cuidados com a saúde",
+      "tema": "Saúde",
+      "sequencia": "Atividade 21",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "facil",
+      "objetivo": "Identificar hábitos que contribuem para a manutenção da saúde.",
+      "bncc": [
+        {
+          "codigo": "EF03CI03",
+          "descricaoResumida": "Discutir hábitos necessários para a manutenção da saúde."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, observe as informações científicas e responda com atenção.",
+      "textoApoio": {
+        "titulo": "Para compreender: Cuidados com a saúde",
+        "conteudo": "As Ciências ajudam a compreender o mundo natural e os cuidados com a vida. No estudo de saúde, observamos características, fazemos comparações e registramos informações. Essas observações permitem entender como os seres vivos, o corpo humano e os elementos do ambiente se relacionam. Também aprendemos atitudes que ajudam a preservar a saúde e a natureza.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto, o que fazemos ao estudar saúde?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual atitude combina com o estudo de “Cuidados com a saúde”?",
+          "alternativas": [
+            "Observar, comparar e registrar informações.",
+            "Ignorar as características dos seres vivos e do ambiente.",
+            "Inventar respostas sem observar ou pesquisar.",
+            "Desperdiçar recursos naturais."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Cite um exemplo relacionado a saúde que você observa no dia a dia.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Explique uma característica importante do tema “Cuidados com a saúde”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "investigacao",
+          "enunciado": "Que observação ou experiência simples poderia ajudar a estudar “Cuidados com a saúde”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Escreva uma atitude de cuidado relacionada a saúde.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Observamos características, fazemos comparações e registramos informações.",
+          "justificativa": "A resposta aparece diretamente no texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "A investigação científica envolve observação, comparação e registro."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta pessoal coerente com o tema.",
+          "justificativa": "O exemplo deve estar relacionado ao cotidiano do estudante."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta pessoal.",
+          "justificativa": "Critério: apresentar uma característica correta e relacionada ao conteúdo estudado."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta possível: observação, comparação, registro, desenho ou experiência segura.",
+          "justificativa": "A proposta deve ser simples, segura e adequada ao tema."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral.",
+          "justificativa": "Critério: indicar uma atitude de cuidado com a saúde, os seres vivos ou o ambiente."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-3ano-b3-cie-22-alimentacao-saudavel",
+      "titulo": "Alimentação saudável",
+      "tema": "Nutrição",
+      "sequencia": "Atividade 22",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "intermediaria",
+      "objetivo": "Reconhecer a importância de uma alimentação variada e equilibrada.",
+      "bncc": [
+        {
+          "codigo": "EF03CI03",
+          "descricaoResumida": "Relacionar hábitos saudáveis ao bem-estar do corpo."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, observe as informações científicas e responda com atenção.",
+      "textoApoio": {
+        "titulo": "Para compreender: Alimentação saudável",
+        "conteudo": "As Ciências ajudam a compreender o mundo natural e os cuidados com a vida. No estudo de nutrição, observamos características, fazemos comparações e registramos informações. Essas observações permitem entender como os seres vivos, o corpo humano e os elementos do ambiente se relacionam. Também aprendemos atitudes que ajudam a preservar a saúde e a natureza.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto, o que fazemos ao estudar nutrição?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual atitude combina com o estudo de “Alimentação saudável”?",
+          "alternativas": [
+            "Observar, comparar e registrar informações.",
+            "Ignorar as características dos seres vivos e do ambiente.",
+            "Inventar respostas sem observar ou pesquisar.",
+            "Desperdiçar recursos naturais."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Cite um exemplo relacionado a nutrição que você observa no dia a dia.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Explique uma característica importante do tema “Alimentação saudável”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "investigacao",
+          "enunciado": "Que observação ou experiência simples poderia ajudar a estudar “Alimentação saudável”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Escreva uma atitude de cuidado relacionada a nutrição.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Observamos características, fazemos comparações e registramos informações.",
+          "justificativa": "A resposta aparece diretamente no texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "A investigação científica envolve observação, comparação e registro."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta pessoal coerente com o tema.",
+          "justificativa": "O exemplo deve estar relacionado ao cotidiano do estudante."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta pessoal.",
+          "justificativa": "Critério: apresentar uma característica correta e relacionada ao conteúdo estudado."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta possível: observação, comparação, registro, desenho ou experiência segura.",
+          "justificativa": "A proposta deve ser simples, segura e adequada ao tema."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral.",
+          "justificativa": "Critério: indicar uma atitude de cuidado com a saúde, os seres vivos ou o ambiente."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-3ano-b3-cie-23-higiene-do-corpo",
+      "titulo": "Higiene do corpo",
+      "tema": "Higiene",
+      "sequencia": "Atividade 23",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "intermediaria",
+      "objetivo": "Compreender a importância dos hábitos de higiene pessoal.",
+      "bncc": [
+        {
+          "codigo": "EF03CI03",
+          "descricaoResumida": "Discutir hábitos necessários para a manutenção da saúde."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, observe as informações científicas e responda com atenção.",
+      "textoApoio": {
+        "titulo": "Para compreender: Higiene do corpo",
+        "conteudo": "As Ciências ajudam a compreender o mundo natural e os cuidados com a vida. No estudo de higiene, observamos características, fazemos comparações e registramos informações. Essas observações permitem entender como os seres vivos, o corpo humano e os elementos do ambiente se relacionam. Também aprendemos atitudes que ajudam a preservar a saúde e a natureza.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto, o que fazemos ao estudar higiene?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual atitude combina com o estudo de “Higiene do corpo”?",
+          "alternativas": [
+            "Observar, comparar e registrar informações.",
+            "Ignorar as características dos seres vivos e do ambiente.",
+            "Inventar respostas sem observar ou pesquisar.",
+            "Desperdiçar recursos naturais."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Cite um exemplo relacionado a higiene que você observa no dia a dia.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Explique uma característica importante do tema “Higiene do corpo”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "investigacao",
+          "enunciado": "Que observação ou experiência simples poderia ajudar a estudar “Higiene do corpo”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Escreva uma atitude de cuidado relacionada a higiene.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Observamos características, fazemos comparações e registramos informações.",
+          "justificativa": "A resposta aparece diretamente no texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "A investigação científica envolve observação, comparação e registro."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta pessoal coerente com o tema.",
+          "justificativa": "O exemplo deve estar relacionado ao cotidiano do estudante."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta pessoal.",
+          "justificativa": "Critério: apresentar uma característica correta e relacionada ao conteúdo estudado."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta possível: observação, comparação, registro, desenho ou experiência segura.",
+          "justificativa": "A proposta deve ser simples, segura e adequada ao tema."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral.",
+          "justificativa": "Critério: indicar uma atitude de cuidado com a saúde, os seres vivos ou o ambiente."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-3ano-b3-cie-24-a-agua-no-dia-a-dia",
+      "titulo": "A água no dia a dia",
+      "tema": "Água",
+      "sequencia": "Atividade 24",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "desafiadora",
+      "objetivo": "Identificar usos da água e atitudes de consumo consciente.",
+      "bncc": [
+        {
+          "codigo": "EF03CI07",
+          "descricaoResumida": "Identificar características da Terra e observar a presença de água no planeta."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, observe as informações científicas e responda com atenção.",
+      "textoApoio": {
+        "titulo": "Para compreender: A água no dia a dia",
+        "conteudo": "As Ciências ajudam a compreender o mundo natural e os cuidados com a vida. No estudo de água, observamos características, fazemos comparações e registramos informações. Essas observações permitem entender como os seres vivos, o corpo humano e os elementos do ambiente se relacionam. Também aprendemos atitudes que ajudam a preservar a saúde e a natureza.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto, o que fazemos ao estudar água?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual atitude combina com o estudo de “A água no dia a dia”?",
+          "alternativas": [
+            "Observar, comparar e registrar informações.",
+            "Ignorar as características dos seres vivos e do ambiente.",
+            "Inventar respostas sem observar ou pesquisar.",
+            "Desperdiçar recursos naturais."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Cite um exemplo relacionado a água que você observa no dia a dia.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Explique uma característica importante do tema “A água no dia a dia”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "investigacao",
+          "enunciado": "Que observação ou experiência simples poderia ajudar a estudar “A água no dia a dia”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Escreva uma atitude de cuidado relacionada a água.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Observamos características, fazemos comparações e registramos informações.",
+          "justificativa": "A resposta aparece diretamente no texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "A investigação científica envolve observação, comparação e registro."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta pessoal coerente com o tema.",
+          "justificativa": "O exemplo deve estar relacionado ao cotidiano do estudante."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta pessoal.",
+          "justificativa": "Critério: apresentar uma característica correta e relacionada ao conteúdo estudado."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta possível: observação, comparação, registro, desenho ou experiência segura.",
+          "justificativa": "A proposta deve ser simples, segura e adequada ao tema."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral.",
+          "justificativa": "Critério: indicar uma atitude de cuidado com a saúde, os seres vivos ou o ambiente."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-3ano-b3-cie-25-economizando-agua",
+      "titulo": "Economizando água",
+      "tema": "Consumo consciente",
+      "sequencia": "Atividade 25",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "facil",
+      "objetivo": "Reconhecer ações que evitam o desperdício de água.",
+      "bncc": [
+        {
+          "codigo": "EF03CI07",
+          "descricaoResumida": "Relacionar a presença da água à vida e ao uso responsável dos recursos."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, observe as informações científicas e responda com atenção.",
+      "textoApoio": {
+        "titulo": "Para compreender: Economizando água",
+        "conteudo": "As Ciências ajudam a compreender o mundo natural e os cuidados com a vida. No estudo de consumo consciente, observamos características, fazemos comparações e registramos informações. Essas observações permitem entender como os seres vivos, o corpo humano e os elementos do ambiente se relacionam. Também aprendemos atitudes que ajudam a preservar a saúde e a natureza.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto, o que fazemos ao estudar consumo consciente?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual atitude combina com o estudo de “Economizando água”?",
+          "alternativas": [
+            "Observar, comparar e registrar informações.",
+            "Ignorar as características dos seres vivos e do ambiente.",
+            "Inventar respostas sem observar ou pesquisar.",
+            "Desperdiçar recursos naturais."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Cite um exemplo relacionado a consumo consciente que você observa no dia a dia.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Explique uma característica importante do tema “Economizando água”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "investigacao",
+          "enunciado": "Que observação ou experiência simples poderia ajudar a estudar “Economizando água”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Escreva uma atitude de cuidado relacionada a consumo consciente.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Observamos características, fazemos comparações e registramos informações.",
+          "justificativa": "A resposta aparece diretamente no texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "A investigação científica envolve observação, comparação e registro."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta pessoal coerente com o tema.",
+          "justificativa": "O exemplo deve estar relacionado ao cotidiano do estudante."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta pessoal.",
+          "justificativa": "Critério: apresentar uma característica correta e relacionada ao conteúdo estudado."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta possível: observação, comparação, registro, desenho ou experiência segura.",
+          "justificativa": "A proposta deve ser simples, segura e adequada ao tema."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral.",
+          "justificativa": "Critério: indicar uma atitude de cuidado com a saúde, os seres vivos ou o ambiente."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-3ano-b3-cie-26-o-solo",
+      "titulo": "O solo",
+      "tema": "Solo",
+      "sequencia": "Atividade 26",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "intermediaria",
+      "objetivo": "Reconhecer características e usos do solo.",
+      "bncc": [
+        {
+          "codigo": "EF03CI09",
+          "descricaoResumida": "Comparar diferentes amostras de solo com base em características como cor, textura e permeabilidade."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, observe as informações científicas e responda com atenção.",
+      "textoApoio": {
+        "titulo": "Para compreender: O solo",
+        "conteudo": "As Ciências ajudam a compreender o mundo natural e os cuidados com a vida. No estudo de solo, observamos características, fazemos comparações e registramos informações. Essas observações permitem entender como os seres vivos, o corpo humano e os elementos do ambiente se relacionam. Também aprendemos atitudes que ajudam a preservar a saúde e a natureza.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto, o que fazemos ao estudar solo?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual atitude combina com o estudo de “O solo”?",
+          "alternativas": [
+            "Observar, comparar e registrar informações.",
+            "Ignorar as características dos seres vivos e do ambiente.",
+            "Inventar respostas sem observar ou pesquisar.",
+            "Desperdiçar recursos naturais."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Cite um exemplo relacionado a solo que você observa no dia a dia.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Explique uma característica importante do tema “O solo”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "investigacao",
+          "enunciado": "Que observação ou experiência simples poderia ajudar a estudar “O solo”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Escreva uma atitude de cuidado relacionada a solo.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Observamos características, fazemos comparações e registramos informações.",
+          "justificativa": "A resposta aparece diretamente no texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "A investigação científica envolve observação, comparação e registro."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta pessoal coerente com o tema.",
+          "justificativa": "O exemplo deve estar relacionado ao cotidiano do estudante."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta pessoal.",
+          "justificativa": "Critério: apresentar uma característica correta e relacionada ao conteúdo estudado."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta possível: observação, comparação, registro, desenho ou experiência segura.",
+          "justificativa": "A proposta deve ser simples, segura e adequada ao tema."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral.",
+          "justificativa": "Critério: indicar uma atitude de cuidado com a saúde, os seres vivos ou o ambiente."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-3ano-b3-cie-27-tipos-de-solo",
+      "titulo": "Tipos de solo",
+      "tema": "Características do solo",
+      "sequencia": "Atividade 27",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "intermediaria",
+      "objetivo": "Comparar solos arenosos, argilosos e humosos.",
+      "bncc": [
+        {
+          "codigo": "EF03CI09",
+          "descricaoResumida": "Comparar diferentes amostras de solo com base em características observáveis."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, observe as informações científicas e responda com atenção.",
+      "textoApoio": {
+        "titulo": "Para compreender: Tipos de solo",
+        "conteudo": "As Ciências ajudam a compreender o mundo natural e os cuidados com a vida. No estudo de características do solo, observamos características, fazemos comparações e registramos informações. Essas observações permitem entender como os seres vivos, o corpo humano e os elementos do ambiente se relacionam. Também aprendemos atitudes que ajudam a preservar a saúde e a natureza.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto, o que fazemos ao estudar características do solo?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual atitude combina com o estudo de “Tipos de solo”?",
+          "alternativas": [
+            "Observar, comparar e registrar informações.",
+            "Ignorar as características dos seres vivos e do ambiente.",
+            "Inventar respostas sem observar ou pesquisar.",
+            "Desperdiçar recursos naturais."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Cite um exemplo relacionado a características do solo que você observa no dia a dia.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Explique uma característica importante do tema “Tipos de solo”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "investigacao",
+          "enunciado": "Que observação ou experiência simples poderia ajudar a estudar “Tipos de solo”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Escreva uma atitude de cuidado relacionada a características do solo.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Observamos características, fazemos comparações e registramos informações.",
+          "justificativa": "A resposta aparece diretamente no texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "A investigação científica envolve observação, comparação e registro."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta pessoal coerente com o tema.",
+          "justificativa": "O exemplo deve estar relacionado ao cotidiano do estudante."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta pessoal.",
+          "justificativa": "Critério: apresentar uma característica correta e relacionada ao conteúdo estudado."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta possível: observação, comparação, registro, desenho ou experiência segura.",
+          "justificativa": "A proposta deve ser simples, segura e adequada ao tema."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral.",
+          "justificativa": "Critério: indicar uma atitude de cuidado com a saúde, os seres vivos ou o ambiente."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-3ano-b3-cie-28-a-importancia-do-solo-para-as-plantas",
+      "titulo": "A importância do solo para as plantas",
+      "tema": "Solo e plantas",
+      "sequencia": "Atividade 28",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "desafiadora",
+      "objetivo": "Relacionar o solo ao crescimento e à sobrevivência das plantas.",
+      "bncc": [
+        {
+          "codigo": "EF03CI10",
+          "descricaoResumida": "Identificar os diferentes usos do solo e sua importância para a agricultura e para a vida."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, observe as informações científicas e responda com atenção.",
+      "textoApoio": {
+        "titulo": "Para compreender: A importância do solo para as plantas",
+        "conteudo": "As Ciências ajudam a compreender o mundo natural e os cuidados com a vida. No estudo de solo e plantas, observamos características, fazemos comparações e registramos informações. Essas observações permitem entender como os seres vivos, o corpo humano e os elementos do ambiente se relacionam. Também aprendemos atitudes que ajudam a preservar a saúde e a natureza.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto, o que fazemos ao estudar solo e plantas?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual atitude combina com o estudo de “A importância do solo para as plantas”?",
+          "alternativas": [
+            "Observar, comparar e registrar informações.",
+            "Ignorar as características dos seres vivos e do ambiente.",
+            "Inventar respostas sem observar ou pesquisar.",
+            "Desperdiçar recursos naturais."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Cite um exemplo relacionado a solo e plantas que você observa no dia a dia.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Explique uma característica importante do tema “A importância do solo para as plantas”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "investigacao",
+          "enunciado": "Que observação ou experiência simples poderia ajudar a estudar “A importância do solo para as plantas”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Escreva uma atitude de cuidado relacionada a solo e plantas.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Observamos características, fazemos comparações e registramos informações.",
+          "justificativa": "A resposta aparece diretamente no texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "A investigação científica envolve observação, comparação e registro."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta pessoal coerente com o tema.",
+          "justificativa": "O exemplo deve estar relacionado ao cotidiano do estudante."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta pessoal.",
+          "justificativa": "Critério: apresentar uma característica correta e relacionada ao conteúdo estudado."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta possível: observação, comparação, registro, desenho ou experiência segura.",
+          "justificativa": "A proposta deve ser simples, segura e adequada ao tema."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral.",
+          "justificativa": "Critério: indicar uma atitude de cuidado com a saúde, os seres vivos ou o ambiente."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-3ano-b3-cie-29-cuidados-com-o-ambiente",
+      "titulo": "Cuidados com o ambiente",
+      "tema": "Preservação ambiental",
+      "sequencia": "Atividade 29",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "facil",
+      "objetivo": "Identificar atitudes de preservação do ambiente.",
+      "bncc": [
+        {
+          "codigo": "EF03CI10",
+          "descricaoResumida": "Reconhecer usos do solo e práticas de cuidado com o ambiente."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, observe as informações científicas e responda com atenção.",
+      "textoApoio": {
+        "titulo": "Para compreender: Cuidados com o ambiente",
+        "conteudo": "As Ciências ajudam a compreender o mundo natural e os cuidados com a vida. No estudo de preservação ambiental, observamos características, fazemos comparações e registramos informações. Essas observações permitem entender como os seres vivos, o corpo humano e os elementos do ambiente se relacionam. Também aprendemos atitudes que ajudam a preservar a saúde e a natureza.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto, o que fazemos ao estudar preservação ambiental?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual atitude combina com o estudo de “Cuidados com o ambiente”?",
+          "alternativas": [
+            "Observar, comparar e registrar informações.",
+            "Ignorar as características dos seres vivos e do ambiente.",
+            "Inventar respostas sem observar ou pesquisar.",
+            "Desperdiçar recursos naturais."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Cite um exemplo relacionado a preservação ambiental que você observa no dia a dia.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Explique uma característica importante do tema “Cuidados com o ambiente”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "investigacao",
+          "enunciado": "Que observação ou experiência simples poderia ajudar a estudar “Cuidados com o ambiente”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Escreva uma atitude de cuidado relacionada a preservação ambiental.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Observamos características, fazemos comparações e registramos informações.",
+          "justificativa": "A resposta aparece diretamente no texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "A investigação científica envolve observação, comparação e registro."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta pessoal coerente com o tema.",
+          "justificativa": "O exemplo deve estar relacionado ao cotidiano do estudante."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta pessoal.",
+          "justificativa": "Critério: apresentar uma característica correta e relacionada ao conteúdo estudado."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta possível: observação, comparação, registro, desenho ou experiência segura.",
+          "justificativa": "A proposta deve ser simples, segura e adequada ao tema."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral.",
+          "justificativa": "Critério: indicar uma atitude de cuidado com a saúde, os seres vivos ou o ambiente."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-3ano-b3-cie-30-projeto-observando-a-natureza",
+      "titulo": "Projeto: observando a natureza",
+      "tema": "Investigação científica",
+      "sequencia": "Atividade 30",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "intermediaria",
+      "objetivo": "Registrar observações sobre seres vivos, água, solo e ambiente.",
+      "bncc": [
+        {
+          "codigo": "EF03CI05",
+          "descricaoResumida": "Descrever e comunicar observações sobre seres vivos e ambientes."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, observe as informações científicas e responda com atenção.",
+      "textoApoio": {
+        "titulo": "Para compreender: Projeto: observando a natureza",
+        "conteudo": "As Ciências ajudam a compreender o mundo natural e os cuidados com a vida. No estudo de investigação científica, observamos características, fazemos comparações e registramos informações. Essas observações permitem entender como os seres vivos, o corpo humano e os elementos do ambiente se relacionam. Também aprendemos atitudes que ajudam a preservar a saúde e a natureza.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto, o que fazemos ao estudar investigação científica?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual atitude combina com o estudo de “Projeto: observando a natureza”?",
+          "alternativas": [
+            "Observar, comparar e registrar informações.",
+            "Ignorar as características dos seres vivos e do ambiente.",
+            "Inventar respostas sem observar ou pesquisar.",
+            "Desperdiçar recursos naturais."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Cite um exemplo relacionado a investigação científica que você observa no dia a dia.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Explique uma característica importante do tema “Projeto: observando a natureza”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "investigacao",
+          "enunciado": "Que observação ou experiência simples poderia ajudar a estudar “Projeto: observando a natureza”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Escreva uma atitude de cuidado relacionada a investigação científica.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Observamos características, fazemos comparações e registramos informações.",
+          "justificativa": "A resposta aparece diretamente no texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "A investigação científica envolve observação, comparação e registro."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta pessoal coerente com o tema.",
+          "justificativa": "O exemplo deve estar relacionado ao cotidiano do estudante."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta pessoal.",
+          "justificativa": "Critério: apresentar uma característica correta e relacionada ao conteúdo estudado."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta possível: observação, comparação, registro, desenho ou experiência segura.",
+          "justificativa": "A proposta deve ser simples, segura e adequada ao tema."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção autoral.",
+          "justificativa": "Critério: indicar uma atitude de cuidado com a saúde, os seres vivos ou o ambiente."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    }
+  ]
+}

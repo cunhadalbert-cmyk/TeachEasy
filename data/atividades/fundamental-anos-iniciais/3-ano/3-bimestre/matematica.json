@@ -1,0 +1,3672 @@
+{
+  "schemaVersion": "1.0",
+  "colecao": "3ano-3bimestre-matematica",
+  "idioma": "pt-BR",
+  "etapa": "Ensino Fundamental — Anos Iniciais",
+  "ano": "3º ano",
+  "bimestre": 3,
+  "disciplina": "Matemática",
+  "statusBimestre": "sugerido",
+  "atividades": [
+    {
+      "id": "efi-3ano-b3-mat-01-leitura-e-escrita-de-numeros-ate-1.000",
+      "titulo": "Leitura e escrita de números até 1.000",
+      "tema": "Sistema de numeração decimal",
+      "sequencia": "Atividade 1",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "facil",
+      "objetivo": "Ler, escrever e representar números naturais até 1.000.",
+      "bncc": [
+        {
+          "codigo": "EF03MA01",
+          "descricaoResumida": "Ler, escrever e comparar números naturais até a ordem de unidade de milhar."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia cada questão com atenção, registre os cálculos e confira suas respostas.",
+      "textoApoio": {
+        "titulo": "Para compreender: Leitura e escrita de números até 1.000",
+        "conteudo": "Na Matemática, estudar sistema de numeração decimal ajuda a resolver situações do dia a dia. É importante observar os dados, escolher uma estratégia e conferir o resultado. Desenhos, cálculos, tabelas e explicações podem ser usados para mostrar o raciocínio.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto de apoio, o que é importante fazer ao resolver uma atividade sobre sistema de numeração decimal?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual atitude ajuda a resolver corretamente uma situação de “Leitura e escrita de números até 1.000”?",
+          "alternativas": [
+            "Observar os dados, escolher uma estratégia e conferir o resultado.",
+            "Responder sem ler o enunciado.",
+            "Usar qualquer número sem justificar.",
+            "Ignorar unidades e informações."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "calculo",
+          "enunciado": "Resolva um exemplo simples relacionado a sistema de numeração decimal e registre seu cálculo.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "problema",
+          "enunciado": "Crie ou resolva uma situação-problema envolvendo sistema de numeração decimal.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "estrategia",
+          "enunciado": "Explique qual estratégia você usou para pensar em “Leitura e escrita de números até 1.000”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "verificacao",
+          "enunciado": "Mostre uma maneira de conferir uma resposta relacionada a sistema de numeração decimal.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Espera-se que o estudante mencione observar os dados, escolher uma estratégia e conferir o resultado.",
+          "justificativa": "A resposta deve retomar informações explícitas do texto."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "Essa atitude organiza o raciocínio e ajuda a evitar erros."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta variável, de acordo com o exemplo criado.",
+          "justificativa": "Critério de correção: cálculo coerente com o tema e resultado correto."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta variável.",
+          "justificativa": "Critério de correção: situação compreensível, operação adequada e resposta compatível."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta pessoal.",
+          "justificativa": "Critério de correção: explicar uma estratégia matemática pertinente."
+        },
+        {
+          "numero": 6,
+          "resposta": "Resposta variável.",
+          "justificativa": "Critério de correção: apresentar uma verificação válida, como operação inversa, estimativa ou comparação."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-3ano-b3-mat-02-valor-posicional",
+      "titulo": "Valor posicional",
+      "tema": "Composição e decomposição",
+      "sequencia": "Atividade 2",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "intermediaria",
+      "objetivo": "Compreender o valor de cada algarismo conforme sua posição.",
+      "bncc": [
+        {
+          "codigo": "EF03MA02",
+          "descricaoResumida": "Identificar características do sistema de numeração decimal usando composição e decomposição."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia cada questão com atenção, registre os cálculos e confira suas respostas.",
+      "textoApoio": {
+        "titulo": "Para compreender: Valor posicional",
+        "conteudo": "Na Matemática, estudar composição e decomposição ajuda a resolver situações do dia a dia. É importante observar os dados, escolher uma estratégia e conferir o resultado. Desenhos, cálculos, tabelas e explicações podem ser usados para mostrar o raciocínio.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto de apoio, o que é importante fazer ao resolver uma atividade sobre composição e decomposição?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual atitude ajuda a resolver corretamente uma situação de “Valor posicional”?",
+          "alternativas": [
+            "Observar os dados, escolher uma estratégia e conferir o resultado.",
+            "Responder sem ler o enunciado.",
+            "Usar qualquer número sem justificar.",
+            "Ignorar unidades e informações."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "calculo",
+          "enunciado": "Resolva um exemplo simples relacionado a composição e decomposição e registre seu cálculo.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "problema",
+          "enunciado": "Crie ou resolva uma situação-problema envolvendo composição e decomposição.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "estrategia",
+          "enunciado": "Explique qual estratégia você usou para pensar em “Valor posicional”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "verificacao",
+          "enunciado": "Mostre uma maneira de conferir uma resposta relacionada a composição e decomposição.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Espera-se que o estudante mencione observar os dados, escolher uma estratégia e conferir o resultado.",
+          "justificativa": "A resposta deve retomar informações explícitas do texto."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "Essa atitude organiza o raciocínio e ajuda a evitar erros."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta variável, de acordo com o exemplo criado.",
+          "justificativa": "Critério de correção: cálculo coerente com o tema e resultado correto."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta variável.",
+          "justificativa": "Critério de correção: situação compreensível, operação adequada e resposta compatível."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta pessoal.",
+          "justificativa": "Critério de correção: explicar uma estratégia matemática pertinente."
+        },
+        {
+          "numero": 6,
+          "resposta": "Resposta variável.",
+          "justificativa": "Critério de correção: apresentar uma verificação válida, como operação inversa, estimativa ou comparação."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-3ano-b3-mat-03-comparacao-de-numeros",
+      "titulo": "Comparação de números",
+      "tema": "Ordem e comparação",
+      "sequencia": "Atividade 3",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "intermediaria",
+      "objetivo": "Comparar números usando maior que, menor que e igual a.",
+      "bncc": [
+        {
+          "codigo": "EF03MA01",
+          "descricaoResumida": "Comparar e ordenar números naturais até a unidade de milhar."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia cada questão com atenção, registre os cálculos e confira suas respostas.",
+      "textoApoio": {
+        "titulo": "Para compreender: Comparação de números",
+        "conteudo": "Na Matemática, estudar ordem e comparação ajuda a resolver situações do dia a dia. É importante observar os dados, escolher uma estratégia e conferir o resultado. Desenhos, cálculos, tabelas e explicações podem ser usados para mostrar o raciocínio.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto de apoio, o que é importante fazer ao resolver uma atividade sobre ordem e comparação?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual atitude ajuda a resolver corretamente uma situação de “Comparação de números”?",
+          "alternativas": [
+            "Observar os dados, escolher uma estratégia e conferir o resultado.",
+            "Responder sem ler o enunciado.",
+            "Usar qualquer número sem justificar.",
+            "Ignorar unidades e informações."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "calculo",
+          "enunciado": "Resolva um exemplo simples relacionado a ordem e comparação e registre seu cálculo.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "problema",
+          "enunciado": "Crie ou resolva uma situação-problema envolvendo ordem e comparação.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "estrategia",
+          "enunciado": "Explique qual estratégia você usou para pensar em “Comparação de números”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "verificacao",
+          "enunciado": "Mostre uma maneira de conferir uma resposta relacionada a ordem e comparação.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Espera-se que o estudante mencione observar os dados, escolher uma estratégia e conferir o resultado.",
+          "justificativa": "A resposta deve retomar informações explícitas do texto."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "Essa atitude organiza o raciocínio e ajuda a evitar erros."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta variável, de acordo com o exemplo criado.",
+          "justificativa": "Critério de correção: cálculo coerente com o tema e resultado correto."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta variável.",
+          "justificativa": "Critério de correção: situação compreensível, operação adequada e resposta compatível."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta pessoal.",
+          "justificativa": "Critério de correção: explicar uma estratégia matemática pertinente."
+        },
+        {
+          "numero": 6,
+          "resposta": "Resposta variável.",
+          "justificativa": "Critério de correção: apresentar uma verificação válida, como operação inversa, estimativa ou comparação."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-3ano-b3-mat-04-sequencias-numericas",
+      "titulo": "Sequências numéricas",
+      "tema": "Sequências",
+      "sequencia": "Atividade 4",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "desafiadora",
+      "objetivo": "Reconhecer padrões e completar sequências numéricas.",
+      "bncc": [
+        {
+          "codigo": "EF03MA10",
+          "descricaoResumida": "Identificar regularidades em sequências ordenadas de números naturais."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia cada questão com atenção, registre os cálculos e confira suas respostas.",
+      "textoApoio": {
+        "titulo": "Para compreender: Sequências numéricas",
+        "conteudo": "Na Matemática, estudar sequências ajuda a resolver situações do dia a dia. É importante observar os dados, escolher uma estratégia e conferir o resultado. Desenhos, cálculos, tabelas e explicações podem ser usados para mostrar o raciocínio.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto de apoio, o que é importante fazer ao resolver uma atividade sobre sequências?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual atitude ajuda a resolver corretamente uma situação de “Sequências numéricas”?",
+          "alternativas": [
+            "Observar os dados, escolher uma estratégia e conferir o resultado.",
+            "Responder sem ler o enunciado.",
+            "Usar qualquer número sem justificar.",
+            "Ignorar unidades e informações."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "calculo",
+          "enunciado": "Resolva um exemplo simples relacionado a sequências e registre seu cálculo.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "problema",
+          "enunciado": "Crie ou resolva uma situação-problema envolvendo sequências.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "estrategia",
+          "enunciado": "Explique qual estratégia você usou para pensar em “Sequências numéricas”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "verificacao",
+          "enunciado": "Mostre uma maneira de conferir uma resposta relacionada a sequências.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Espera-se que o estudante mencione observar os dados, escolher uma estratégia e conferir o resultado.",
+          "justificativa": "A resposta deve retomar informações explícitas do texto."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "Essa atitude organiza o raciocínio e ajuda a evitar erros."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta variável, de acordo com o exemplo criado.",
+          "justificativa": "Critério de correção: cálculo coerente com o tema e resultado correto."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta variável.",
+          "justificativa": "Critério de correção: situação compreensível, operação adequada e resposta compatível."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta pessoal.",
+          "justificativa": "Critério de correção: explicar uma estratégia matemática pertinente."
+        },
+        {
+          "numero": 6,
+          "resposta": "Resposta variável.",
+          "justificativa": "Critério de correção: apresentar uma verificação válida, como operação inversa, estimativa ou comparação."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-3ano-b3-mat-05-adicao-com-reagrupamento",
+      "titulo": "Adição com reagrupamento",
+      "tema": "Adição",
+      "sequencia": "Atividade 5",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "facil",
+      "objetivo": "Resolver adições com e sem reagrupamento.",
+      "bncc": [
+        {
+          "codigo": "EF03MA05",
+          "descricaoResumida": "Utilizar diferentes procedimentos de cálculo mental e escrito para resolver adições."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia cada questão com atenção, registre os cálculos e confira suas respostas.",
+      "textoApoio": {
+        "titulo": "Para compreender: Adição com reagrupamento",
+        "conteudo": "Na Matemática, estudar adição ajuda a resolver situações do dia a dia. É importante observar os dados, escolher uma estratégia e conferir o resultado. Desenhos, cálculos, tabelas e explicações podem ser usados para mostrar o raciocínio.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto de apoio, o que é importante fazer ao resolver uma atividade sobre adição?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual atitude ajuda a resolver corretamente uma situação de “Adição com reagrupamento”?",
+          "alternativas": [
+            "Observar os dados, escolher uma estratégia e conferir o resultado.",
+            "Responder sem ler o enunciado.",
+            "Usar qualquer número sem justificar.",
+            "Ignorar unidades e informações."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "calculo",
+          "enunciado": "Resolva um exemplo simples relacionado a adição e registre seu cálculo.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "problema",
+          "enunciado": "Crie ou resolva uma situação-problema envolvendo adição.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "estrategia",
+          "enunciado": "Explique qual estratégia você usou para pensar em “Adição com reagrupamento”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "verificacao",
+          "enunciado": "Mostre uma maneira de conferir uma resposta relacionada a adição.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Espera-se que o estudante mencione observar os dados, escolher uma estratégia e conferir o resultado.",
+          "justificativa": "A resposta deve retomar informações explícitas do texto."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "Essa atitude organiza o raciocínio e ajuda a evitar erros."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta variável, de acordo com o exemplo criado.",
+          "justificativa": "Critério de correção: cálculo coerente com o tema e resultado correto."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta variável.",
+          "justificativa": "Critério de correção: situação compreensível, operação adequada e resposta compatível."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta pessoal.",
+          "justificativa": "Critério de correção: explicar uma estratégia matemática pertinente."
+        },
+        {
+          "numero": 6,
+          "resposta": "Resposta variável.",
+          "justificativa": "Critério de correção: apresentar uma verificação válida, como operação inversa, estimativa ou comparação."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-3ano-b3-mat-06-subtracao-com-reagrupamento",
+      "titulo": "Subtração com reagrupamento",
+      "tema": "Subtração",
+      "sequencia": "Atividade 6",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "facil",
+      "objetivo": "Resolver subtrações com e sem reagrupamento.",
+      "bncc": [
+        {
+          "codigo": "EF03MA05",
+          "descricaoResumida": "Utilizar diferentes procedimentos de cálculo mental e escrito para resolver subtrações."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia cada questão com atenção, registre os cálculos e confira suas respostas.",
+      "textoApoio": {
+        "titulo": "Para compreender: Subtração com reagrupamento",
+        "conteudo": "Na Matemática, estudar subtração ajuda a resolver situações do dia a dia. É importante observar os dados, escolher uma estratégia e conferir o resultado. Desenhos, cálculos, tabelas e explicações podem ser usados para mostrar o raciocínio.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto de apoio, o que é importante fazer ao resolver uma atividade sobre subtração?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual atitude ajuda a resolver corretamente uma situação de “Subtração com reagrupamento”?",
+          "alternativas": [
+            "Observar os dados, escolher uma estratégia e conferir o resultado.",
+            "Responder sem ler o enunciado.",
+            "Usar qualquer número sem justificar.",
+            "Ignorar unidades e informações."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "calculo",
+          "enunciado": "Resolva um exemplo simples relacionado a subtração e registre seu cálculo.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "problema",
+          "enunciado": "Crie ou resolva uma situação-problema envolvendo subtração.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "estrategia",
+          "enunciado": "Explique qual estratégia você usou para pensar em “Subtração com reagrupamento”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "verificacao",
+          "enunciado": "Mostre uma maneira de conferir uma resposta relacionada a subtração.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Espera-se que o estudante mencione observar os dados, escolher uma estratégia e conferir o resultado.",
+          "justificativa": "A resposta deve retomar informações explícitas do texto."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "Essa atitude organiza o raciocínio e ajuda a evitar erros."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta variável, de acordo com o exemplo criado.",
+          "justificativa": "Critério de correção: cálculo coerente com o tema e resultado correto."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta variável.",
+          "justificativa": "Critério de correção: situação compreensível, operação adequada e resposta compatível."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta pessoal.",
+          "justificativa": "Critério de correção: explicar uma estratégia matemática pertinente."
+        },
+        {
+          "numero": 6,
+          "resposta": "Resposta variável.",
+          "justificativa": "Critério de correção: apresentar uma verificação válida, como operação inversa, estimativa ou comparação."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-3ano-b3-mat-07-problemas-de-adicao",
+      "titulo": "Problemas de adição",
+      "tema": "Situações-problema",
+      "sequencia": "Atividade 7",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "intermediaria",
+      "objetivo": "Resolver problemas de juntar, acrescentar e comparar quantidades.",
+      "bncc": [
+        {
+          "codigo": "EF03MA06",
+          "descricaoResumida": "Resolver e elaborar problemas de adição e subtração com diferentes significados."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia cada questão com atenção, registre os cálculos e confira suas respostas.",
+      "textoApoio": {
+        "titulo": "Para compreender: Problemas de adição",
+        "conteudo": "Na Matemática, estudar situações-problema ajuda a resolver situações do dia a dia. É importante observar os dados, escolher uma estratégia e conferir o resultado. Desenhos, cálculos, tabelas e explicações podem ser usados para mostrar o raciocínio.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto de apoio, o que é importante fazer ao resolver uma atividade sobre situações-problema?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual atitude ajuda a resolver corretamente uma situação de “Problemas de adição”?",
+          "alternativas": [
+            "Observar os dados, escolher uma estratégia e conferir o resultado.",
+            "Responder sem ler o enunciado.",
+            "Usar qualquer número sem justificar.",
+            "Ignorar unidades e informações."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "calculo",
+          "enunciado": "Resolva um exemplo simples relacionado a situações-problema e registre seu cálculo.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "problema",
+          "enunciado": "Crie ou resolva uma situação-problema envolvendo situações-problema.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "estrategia",
+          "enunciado": "Explique qual estratégia você usou para pensar em “Problemas de adição”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "verificacao",
+          "enunciado": "Mostre uma maneira de conferir uma resposta relacionada a situações-problema.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Espera-se que o estudante mencione observar os dados, escolher uma estratégia e conferir o resultado.",
+          "justificativa": "A resposta deve retomar informações explícitas do texto."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "Essa atitude organiza o raciocínio e ajuda a evitar erros."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta variável, de acordo com o exemplo criado.",
+          "justificativa": "Critério de correção: cálculo coerente com o tema e resultado correto."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta variável.",
+          "justificativa": "Critério de correção: situação compreensível, operação adequada e resposta compatível."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta pessoal.",
+          "justificativa": "Critério de correção: explicar uma estratégia matemática pertinente."
+        },
+        {
+          "numero": 6,
+          "resposta": "Resposta variável.",
+          "justificativa": "Critério de correção: apresentar uma verificação válida, como operação inversa, estimativa ou comparação."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-3ano-b3-mat-08-problemas-de-subtracao",
+      "titulo": "Problemas de subtração",
+      "tema": "Situações-problema",
+      "sequencia": "Atividade 8",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "intermediaria",
+      "objetivo": "Resolver problemas de retirar, completar e comparar.",
+      "bncc": [
+        {
+          "codigo": "EF03MA06",
+          "descricaoResumida": "Resolver e elaborar problemas de adição e subtração com diferentes significados."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia cada questão com atenção, registre os cálculos e confira suas respostas.",
+      "textoApoio": {
+        "titulo": "Para compreender: Problemas de subtração",
+        "conteudo": "Na Matemática, estudar situações-problema ajuda a resolver situações do dia a dia. É importante observar os dados, escolher uma estratégia e conferir o resultado. Desenhos, cálculos, tabelas e explicações podem ser usados para mostrar o raciocínio.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto de apoio, o que é importante fazer ao resolver uma atividade sobre situações-problema?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual atitude ajuda a resolver corretamente uma situação de “Problemas de subtração”?",
+          "alternativas": [
+            "Observar os dados, escolher uma estratégia e conferir o resultado.",
+            "Responder sem ler o enunciado.",
+            "Usar qualquer número sem justificar.",
+            "Ignorar unidades e informações."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "calculo",
+          "enunciado": "Resolva um exemplo simples relacionado a situações-problema e registre seu cálculo.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "problema",
+          "enunciado": "Crie ou resolva uma situação-problema envolvendo situações-problema.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "estrategia",
+          "enunciado": "Explique qual estratégia você usou para pensar em “Problemas de subtração”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "verificacao",
+          "enunciado": "Mostre uma maneira de conferir uma resposta relacionada a situações-problema.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Espera-se que o estudante mencione observar os dados, escolher uma estratégia e conferir o resultado.",
+          "justificativa": "A resposta deve retomar informações explícitas do texto."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "Essa atitude organiza o raciocínio e ajuda a evitar erros."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta variável, de acordo com o exemplo criado.",
+          "justificativa": "Critério de correção: cálculo coerente com o tema e resultado correto."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta variável.",
+          "justificativa": "Critério de correção: situação compreensível, operação adequada e resposta compatível."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta pessoal.",
+          "justificativa": "Critério de correção: explicar uma estratégia matemática pertinente."
+        },
+        {
+          "numero": 6,
+          "resposta": "Resposta variável.",
+          "justificativa": "Critério de correção: apresentar uma verificação válida, como operação inversa, estimativa ou comparação."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-3ano-b3-mat-09-multiplicacao-como-adicao-de-parcelas-igua",
+      "titulo": "Multiplicação como adição de parcelas iguais",
+      "tema": "Multiplicação",
+      "sequencia": "Atividade 9",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "desafiadora",
+      "objetivo": "Compreender a multiplicação como soma de parcelas iguais.",
+      "bncc": [
+        {
+          "codigo": "EF03MA07",
+          "descricaoResumida": "Resolver e elaborar problemas de multiplicação com significados de adição de parcelas iguais."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia cada questão com atenção, registre os cálculos e confira suas respostas.",
+      "textoApoio": {
+        "titulo": "Para compreender: Multiplicação como adição de parcelas iguais",
+        "conteudo": "Na Matemática, estudar multiplicação ajuda a resolver situações do dia a dia. É importante observar os dados, escolher uma estratégia e conferir o resultado. Desenhos, cálculos, tabelas e explicações podem ser usados para mostrar o raciocínio.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto de apoio, o que é importante fazer ao resolver uma atividade sobre multiplicação?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual atitude ajuda a resolver corretamente uma situação de “Multiplicação como adição de parcelas iguais”?",
+          "alternativas": [
+            "Observar os dados, escolher uma estratégia e conferir o resultado.",
+            "Responder sem ler o enunciado.",
+            "Usar qualquer número sem justificar.",
+            "Ignorar unidades e informações."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "calculo",
+          "enunciado": "Resolva um exemplo simples relacionado a multiplicação e registre seu cálculo.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "problema",
+          "enunciado": "Crie ou resolva uma situação-problema envolvendo multiplicação.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "estrategia",
+          "enunciado": "Explique qual estratégia você usou para pensar em “Multiplicação como adição de parcelas iguais”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "verificacao",
+          "enunciado": "Mostre uma maneira de conferir uma resposta relacionada a multiplicação.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Espera-se que o estudante mencione observar os dados, escolher uma estratégia e conferir o resultado.",
+          "justificativa": "A resposta deve retomar informações explícitas do texto."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "Essa atitude organiza o raciocínio e ajuda a evitar erros."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta variável, de acordo com o exemplo criado.",
+          "justificativa": "Critério de correção: cálculo coerente com o tema e resultado correto."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta variável.",
+          "justificativa": "Critério de correção: situação compreensível, operação adequada e resposta compatível."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta pessoal.",
+          "justificativa": "Critério de correção: explicar uma estratégia matemática pertinente."
+        },
+        {
+          "numero": 6,
+          "resposta": "Resposta variável.",
+          "justificativa": "Critério de correção: apresentar uma verificação válida, como operação inversa, estimativa ou comparação."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-3ano-b3-mat-10-tabuada-do-2-3-4-e-5",
+      "titulo": "Tabuada do 2, 3, 4 e 5",
+      "tema": "Fatos básicos",
+      "sequencia": "Atividade 10",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "facil",
+      "objetivo": "Consolidar fatos básicos de multiplicação.",
+      "bncc": [
+        {
+          "codigo": "EF03MA03",
+          "descricaoResumida": "Construir e utilizar fatos básicos da adição e multiplicação."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia cada questão com atenção, registre os cálculos e confira suas respostas.",
+      "textoApoio": {
+        "titulo": "Para compreender: Tabuada do 2, 3, 4 e 5",
+        "conteudo": "Na Matemática, estudar fatos básicos ajuda a resolver situações do dia a dia. É importante observar os dados, escolher uma estratégia e conferir o resultado. Desenhos, cálculos, tabelas e explicações podem ser usados para mostrar o raciocínio.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto de apoio, o que é importante fazer ao resolver uma atividade sobre fatos básicos?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual atitude ajuda a resolver corretamente uma situação de “Tabuada do 2, 3, 4 e 5”?",
+          "alternativas": [
+            "Observar os dados, escolher uma estratégia e conferir o resultado.",
+            "Responder sem ler o enunciado.",
+            "Usar qualquer número sem justificar.",
+            "Ignorar unidades e informações."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "calculo",
+          "enunciado": "Resolva um exemplo simples relacionado a fatos básicos e registre seu cálculo.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "problema",
+          "enunciado": "Crie ou resolva uma situação-problema envolvendo fatos básicos.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "estrategia",
+          "enunciado": "Explique qual estratégia você usou para pensar em “Tabuada do 2, 3, 4 e 5”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "verificacao",
+          "enunciado": "Mostre uma maneira de conferir uma resposta relacionada a fatos básicos.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Espera-se que o estudante mencione observar os dados, escolher uma estratégia e conferir o resultado.",
+          "justificativa": "A resposta deve retomar informações explícitas do texto."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "Essa atitude organiza o raciocínio e ajuda a evitar erros."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta variável, de acordo com o exemplo criado.",
+          "justificativa": "Critério de correção: cálculo coerente com o tema e resultado correto."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta variável.",
+          "justificativa": "Critério de correção: situação compreensível, operação adequada e resposta compatível."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta pessoal.",
+          "justificativa": "Critério de correção: explicar uma estratégia matemática pertinente."
+        },
+        {
+          "numero": 6,
+          "resposta": "Resposta variável.",
+          "justificativa": "Critério de correção: apresentar uma verificação válida, como operação inversa, estimativa ou comparação."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-3ano-b3-mat-11-divisao-como-reparticao",
+      "titulo": "Divisão como repartição",
+      "tema": "Divisão",
+      "sequencia": "Atividade 11",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "facil",
+      "objetivo": "Compreender a divisão como repartição em partes iguais.",
+      "bncc": [
+        {
+          "codigo": "EF03MA08",
+          "descricaoResumida": "Resolver e elaborar problemas de divisão por meio de repartição equitativa e medida."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia cada questão com atenção, registre os cálculos e confira suas respostas.",
+      "textoApoio": {
+        "titulo": "Para compreender: Divisão como repartição",
+        "conteudo": "Na Matemática, estudar divisão ajuda a resolver situações do dia a dia. É importante observar os dados, escolher uma estratégia e conferir o resultado. Desenhos, cálculos, tabelas e explicações podem ser usados para mostrar o raciocínio.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto de apoio, o que é importante fazer ao resolver uma atividade sobre divisão?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual atitude ajuda a resolver corretamente uma situação de “Divisão como repartição”?",
+          "alternativas": [
+            "Observar os dados, escolher uma estratégia e conferir o resultado.",
+            "Responder sem ler o enunciado.",
+            "Usar qualquer número sem justificar.",
+            "Ignorar unidades e informações."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "calculo",
+          "enunciado": "Resolva um exemplo simples relacionado a divisão e registre seu cálculo.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "problema",
+          "enunciado": "Crie ou resolva uma situação-problema envolvendo divisão.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "estrategia",
+          "enunciado": "Explique qual estratégia você usou para pensar em “Divisão como repartição”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "verificacao",
+          "enunciado": "Mostre uma maneira de conferir uma resposta relacionada a divisão.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Espera-se que o estudante mencione observar os dados, escolher uma estratégia e conferir o resultado.",
+          "justificativa": "A resposta deve retomar informações explícitas do texto."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "Essa atitude organiza o raciocínio e ajuda a evitar erros."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta variável, de acordo com o exemplo criado.",
+          "justificativa": "Critério de correção: cálculo coerente com o tema e resultado correto."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta variável.",
+          "justificativa": "Critério de correção: situação compreensível, operação adequada e resposta compatível."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta pessoal.",
+          "justificativa": "Critério de correção: explicar uma estratégia matemática pertinente."
+        },
+        {
+          "numero": 6,
+          "resposta": "Resposta variável.",
+          "justificativa": "Critério de correção: apresentar uma verificação válida, como operação inversa, estimativa ou comparação."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-3ano-b3-mat-12-dobro-triplo-e-metade",
+      "titulo": "Dobro, triplo e metade",
+      "tema": "Relações multiplicativas",
+      "sequencia": "Atividade 12",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "intermediaria",
+      "objetivo": "Calcular dobro, triplo e metade em situações cotidianas.",
+      "bncc": [
+        {
+          "codigo": "EF03MA07",
+          "descricaoResumida": "Resolver problemas envolvendo dobro, triplo e metade."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia cada questão com atenção, registre os cálculos e confira suas respostas.",
+      "textoApoio": {
+        "titulo": "Para compreender: Dobro, triplo e metade",
+        "conteudo": "Na Matemática, estudar relações multiplicativas ajuda a resolver situações do dia a dia. É importante observar os dados, escolher uma estratégia e conferir o resultado. Desenhos, cálculos, tabelas e explicações podem ser usados para mostrar o raciocínio.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto de apoio, o que é importante fazer ao resolver uma atividade sobre relações multiplicativas?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual atitude ajuda a resolver corretamente uma situação de “Dobro, triplo e metade”?",
+          "alternativas": [
+            "Observar os dados, escolher uma estratégia e conferir o resultado.",
+            "Responder sem ler o enunciado.",
+            "Usar qualquer número sem justificar.",
+            "Ignorar unidades e informações."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "calculo",
+          "enunciado": "Resolva um exemplo simples relacionado a relações multiplicativas e registre seu cálculo.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "problema",
+          "enunciado": "Crie ou resolva uma situação-problema envolvendo relações multiplicativas.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "estrategia",
+          "enunciado": "Explique qual estratégia você usou para pensar em “Dobro, triplo e metade”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "verificacao",
+          "enunciado": "Mostre uma maneira de conferir uma resposta relacionada a relações multiplicativas.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Espera-se que o estudante mencione observar os dados, escolher uma estratégia e conferir o resultado.",
+          "justificativa": "A resposta deve retomar informações explícitas do texto."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "Essa atitude organiza o raciocínio e ajuda a evitar erros."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta variável, de acordo com o exemplo criado.",
+          "justificativa": "Critério de correção: cálculo coerente com o tema e resultado correto."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta variável.",
+          "justificativa": "Critério de correção: situação compreensível, operação adequada e resposta compatível."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta pessoal.",
+          "justificativa": "Critério de correção: explicar uma estratégia matemática pertinente."
+        },
+        {
+          "numero": 6,
+          "resposta": "Resposta variável.",
+          "justificativa": "Critério de correção: apresentar uma verificação válida, como operação inversa, estimativa ou comparação."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-3ano-b3-mat-13-metade-e-terca-parte",
+      "titulo": "Metade e terça parte",
+      "tema": "Frações simples",
+      "sequencia": "Atividade 13",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "intermediaria",
+      "objetivo": "Reconhecer metade e terça parte de quantidades.",
+      "bncc": [
+        {
+          "codigo": "EF03MA09",
+          "descricaoResumida": "Associar quociente de divisão a ideias de metade, terça, quarta, quinta e décima partes."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia cada questão com atenção, registre os cálculos e confira suas respostas.",
+      "textoApoio": {
+        "titulo": "Para compreender: Metade e terça parte",
+        "conteudo": "Na Matemática, estudar frações simples ajuda a resolver situações do dia a dia. É importante observar os dados, escolher uma estratégia e conferir o resultado. Desenhos, cálculos, tabelas e explicações podem ser usados para mostrar o raciocínio.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto de apoio, o que é importante fazer ao resolver uma atividade sobre frações simples?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual atitude ajuda a resolver corretamente uma situação de “Metade e terça parte”?",
+          "alternativas": [
+            "Observar os dados, escolher uma estratégia e conferir o resultado.",
+            "Responder sem ler o enunciado.",
+            "Usar qualquer número sem justificar.",
+            "Ignorar unidades e informações."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "calculo",
+          "enunciado": "Resolva um exemplo simples relacionado a frações simples e registre seu cálculo.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "problema",
+          "enunciado": "Crie ou resolva uma situação-problema envolvendo frações simples.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "estrategia",
+          "enunciado": "Explique qual estratégia você usou para pensar em “Metade e terça parte”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "verificacao",
+          "enunciado": "Mostre uma maneira de conferir uma resposta relacionada a frações simples.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Espera-se que o estudante mencione observar os dados, escolher uma estratégia e conferir o resultado.",
+          "justificativa": "A resposta deve retomar informações explícitas do texto."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "Essa atitude organiza o raciocínio e ajuda a evitar erros."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta variável, de acordo com o exemplo criado.",
+          "justificativa": "Critério de correção: cálculo coerente com o tema e resultado correto."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta variável.",
+          "justificativa": "Critério de correção: situação compreensível, operação adequada e resposta compatível."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta pessoal.",
+          "justificativa": "Critério de correção: explicar uma estratégia matemática pertinente."
+        },
+        {
+          "numero": 6,
+          "resposta": "Resposta variável.",
+          "justificativa": "Critério de correção: apresentar uma verificação válida, como operação inversa, estimativa ou comparação."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-3ano-b3-mat-14-quarta-parte-e-quinta-parte",
+      "titulo": "Quarta parte e quinta parte",
+      "tema": "Frações simples",
+      "sequencia": "Atividade 14",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "desafiadora",
+      "objetivo": "Determinar quarta e quinta partes em situações simples.",
+      "bncc": [
+        {
+          "codigo": "EF03MA09",
+          "descricaoResumida": "Associar quociente de divisão a partes de uma quantidade."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia cada questão com atenção, registre os cálculos e confira suas respostas.",
+      "textoApoio": {
+        "titulo": "Para compreender: Quarta parte e quinta parte",
+        "conteudo": "Na Matemática, estudar frações simples ajuda a resolver situações do dia a dia. É importante observar os dados, escolher uma estratégia e conferir o resultado. Desenhos, cálculos, tabelas e explicações podem ser usados para mostrar o raciocínio.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto de apoio, o que é importante fazer ao resolver uma atividade sobre frações simples?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual atitude ajuda a resolver corretamente uma situação de “Quarta parte e quinta parte”?",
+          "alternativas": [
+            "Observar os dados, escolher uma estratégia e conferir o resultado.",
+            "Responder sem ler o enunciado.",
+            "Usar qualquer número sem justificar.",
+            "Ignorar unidades e informações."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "calculo",
+          "enunciado": "Resolva um exemplo simples relacionado a frações simples e registre seu cálculo.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "problema",
+          "enunciado": "Crie ou resolva uma situação-problema envolvendo frações simples.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "estrategia",
+          "enunciado": "Explique qual estratégia você usou para pensar em “Quarta parte e quinta parte”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "verificacao",
+          "enunciado": "Mostre uma maneira de conferir uma resposta relacionada a frações simples.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Espera-se que o estudante mencione observar os dados, escolher uma estratégia e conferir o resultado.",
+          "justificativa": "A resposta deve retomar informações explícitas do texto."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "Essa atitude organiza o raciocínio e ajuda a evitar erros."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta variável, de acordo com o exemplo criado.",
+          "justificativa": "Critério de correção: cálculo coerente com o tema e resultado correto."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta variável.",
+          "justificativa": "Critério de correção: situação compreensível, operação adequada e resposta compatível."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta pessoal.",
+          "justificativa": "Critério de correção: explicar uma estratégia matemática pertinente."
+        },
+        {
+          "numero": 6,
+          "resposta": "Resposta variável.",
+          "justificativa": "Critério de correção: apresentar uma verificação válida, como operação inversa, estimativa ou comparação."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-3ano-b3-mat-15-sistema-monetario-brasileiro",
+      "titulo": "Sistema monetário brasileiro",
+      "tema": "Dinheiro",
+      "sequencia": "Atividade 15",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "facil",
+      "objetivo": "Reconhecer cédulas, moedas e valores em reais.",
+      "bncc": [
+        {
+          "codigo": "EF03MA24",
+          "descricaoResumida": "Resolver e elaborar problemas que envolvam comparação e equivalência de valores monetários."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia cada questão com atenção, registre os cálculos e confira suas respostas.",
+      "textoApoio": {
+        "titulo": "Para compreender: Sistema monetário brasileiro",
+        "conteudo": "Na Matemática, estudar dinheiro ajuda a resolver situações do dia a dia. É importante observar os dados, escolher uma estratégia e conferir o resultado. Desenhos, cálculos, tabelas e explicações podem ser usados para mostrar o raciocínio.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto de apoio, o que é importante fazer ao resolver uma atividade sobre dinheiro?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual atitude ajuda a resolver corretamente uma situação de “Sistema monetário brasileiro”?",
+          "alternativas": [
+            "Observar os dados, escolher uma estratégia e conferir o resultado.",
+            "Responder sem ler o enunciado.",
+            "Usar qualquer número sem justificar.",
+            "Ignorar unidades e informações."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "calculo",
+          "enunciado": "Resolva um exemplo simples relacionado a dinheiro e registre seu cálculo.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "problema",
+          "enunciado": "Crie ou resolva uma situação-problema envolvendo dinheiro.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "estrategia",
+          "enunciado": "Explique qual estratégia você usou para pensar em “Sistema monetário brasileiro”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "verificacao",
+          "enunciado": "Mostre uma maneira de conferir uma resposta relacionada a dinheiro.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Espera-se que o estudante mencione observar os dados, escolher uma estratégia e conferir o resultado.",
+          "justificativa": "A resposta deve retomar informações explícitas do texto."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "Essa atitude organiza o raciocínio e ajuda a evitar erros."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta variável, de acordo com o exemplo criado.",
+          "justificativa": "Critério de correção: cálculo coerente com o tema e resultado correto."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta variável.",
+          "justificativa": "Critério de correção: situação compreensível, operação adequada e resposta compatível."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta pessoal.",
+          "justificativa": "Critério de correção: explicar uma estratégia matemática pertinente."
+        },
+        {
+          "numero": 6,
+          "resposta": "Resposta variável.",
+          "justificativa": "Critério de correção: apresentar uma verificação válida, como operação inversa, estimativa ou comparação."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-3ano-b3-mat-16-compras-e-troco",
+      "titulo": "Compras e troco",
+      "tema": "Sistema monetário",
+      "sequencia": "Atividade 16",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "facil",
+      "objetivo": "Calcular valores totais e trocos simples.",
+      "bncc": [
+        {
+          "codigo": "EF03MA24",
+          "descricaoResumida": "Resolver problemas envolvendo compra, venda e troco."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia cada questão com atenção, registre os cálculos e confira suas respostas.",
+      "textoApoio": {
+        "titulo": "Para compreender: Compras e troco",
+        "conteudo": "Na Matemática, estudar sistema monetário ajuda a resolver situações do dia a dia. É importante observar os dados, escolher uma estratégia e conferir o resultado. Desenhos, cálculos, tabelas e explicações podem ser usados para mostrar o raciocínio.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto de apoio, o que é importante fazer ao resolver uma atividade sobre sistema monetário?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual atitude ajuda a resolver corretamente uma situação de “Compras e troco”?",
+          "alternativas": [
+            "Observar os dados, escolher uma estratégia e conferir o resultado.",
+            "Responder sem ler o enunciado.",
+            "Usar qualquer número sem justificar.",
+            "Ignorar unidades e informações."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "calculo",
+          "enunciado": "Resolva um exemplo simples relacionado a sistema monetário e registre seu cálculo.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "problema",
+          "enunciado": "Crie ou resolva uma situação-problema envolvendo sistema monetário.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "estrategia",
+          "enunciado": "Explique qual estratégia você usou para pensar em “Compras e troco”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "verificacao",
+          "enunciado": "Mostre uma maneira de conferir uma resposta relacionada a sistema monetário.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Espera-se que o estudante mencione observar os dados, escolher uma estratégia e conferir o resultado.",
+          "justificativa": "A resposta deve retomar informações explícitas do texto."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "Essa atitude organiza o raciocínio e ajuda a evitar erros."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta variável, de acordo com o exemplo criado.",
+          "justificativa": "Critério de correção: cálculo coerente com o tema e resultado correto."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta variável.",
+          "justificativa": "Critério de correção: situação compreensível, operação adequada e resposta compatível."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta pessoal.",
+          "justificativa": "Critério de correção: explicar uma estratégia matemática pertinente."
+        },
+        {
+          "numero": 6,
+          "resposta": "Resposta variável.",
+          "justificativa": "Critério de correção: apresentar uma verificação válida, como operação inversa, estimativa ou comparação."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-3ano-b3-mat-17-medidas-de-comprimento",
+      "titulo": "Medidas de comprimento",
+      "tema": "Grandezas e medidas",
+      "sequencia": "Atividade 17",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "intermediaria",
+      "objetivo": "Utilizar centímetro, metro e quilômetro em situações cotidianas.",
+      "bncc": [
+        {
+          "codigo": "EF03MA19",
+          "descricaoResumida": "Estimar, medir e comparar comprimentos usando unidades padronizadas."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia cada questão com atenção, registre os cálculos e confira suas respostas.",
+      "textoApoio": {
+        "titulo": "Para compreender: Medidas de comprimento",
+        "conteudo": "Na Matemática, estudar grandezas e medidas ajuda a resolver situações do dia a dia. É importante observar os dados, escolher uma estratégia e conferir o resultado. Desenhos, cálculos, tabelas e explicações podem ser usados para mostrar o raciocínio.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto de apoio, o que é importante fazer ao resolver uma atividade sobre grandezas e medidas?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual atitude ajuda a resolver corretamente uma situação de “Medidas de comprimento”?",
+          "alternativas": [
+            "Observar os dados, escolher uma estratégia e conferir o resultado.",
+            "Responder sem ler o enunciado.",
+            "Usar qualquer número sem justificar.",
+            "Ignorar unidades e informações."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "calculo",
+          "enunciado": "Resolva um exemplo simples relacionado a grandezas e medidas e registre seu cálculo.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "problema",
+          "enunciado": "Crie ou resolva uma situação-problema envolvendo grandezas e medidas.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "estrategia",
+          "enunciado": "Explique qual estratégia você usou para pensar em “Medidas de comprimento”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "verificacao",
+          "enunciado": "Mostre uma maneira de conferir uma resposta relacionada a grandezas e medidas.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Espera-se que o estudante mencione observar os dados, escolher uma estratégia e conferir o resultado.",
+          "justificativa": "A resposta deve retomar informações explícitas do texto."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "Essa atitude organiza o raciocínio e ajuda a evitar erros."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta variável, de acordo com o exemplo criado.",
+          "justificativa": "Critério de correção: cálculo coerente com o tema e resultado correto."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta variável.",
+          "justificativa": "Critério de correção: situação compreensível, operação adequada e resposta compatível."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta pessoal.",
+          "justificativa": "Critério de correção: explicar uma estratégia matemática pertinente."
+        },
+        {
+          "numero": 6,
+          "resposta": "Resposta variável.",
+          "justificativa": "Critério de correção: apresentar uma verificação válida, como operação inversa, estimativa ou comparação."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-3ano-b3-mat-18-medidas-de-massa",
+      "titulo": "Medidas de massa",
+      "tema": "Grandezas e medidas",
+      "sequencia": "Atividade 18",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "intermediaria",
+      "objetivo": "Reconhecer grama e quilograma.",
+      "bncc": [
+        {
+          "codigo": "EF03MA20",
+          "descricaoResumida": "Estimar e medir massa usando unidades padronizadas."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia cada questão com atenção, registre os cálculos e confira suas respostas.",
+      "textoApoio": {
+        "titulo": "Para compreender: Medidas de massa",
+        "conteudo": "Na Matemática, estudar grandezas e medidas ajuda a resolver situações do dia a dia. É importante observar os dados, escolher uma estratégia e conferir o resultado. Desenhos, cálculos, tabelas e explicações podem ser usados para mostrar o raciocínio.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto de apoio, o que é importante fazer ao resolver uma atividade sobre grandezas e medidas?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual atitude ajuda a resolver corretamente uma situação de “Medidas de massa”?",
+          "alternativas": [
+            "Observar os dados, escolher uma estratégia e conferir o resultado.",
+            "Responder sem ler o enunciado.",
+            "Usar qualquer número sem justificar.",
+            "Ignorar unidades e informações."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "calculo",
+          "enunciado": "Resolva um exemplo simples relacionado a grandezas e medidas e registre seu cálculo.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "problema",
+          "enunciado": "Crie ou resolva uma situação-problema envolvendo grandezas e medidas.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "estrategia",
+          "enunciado": "Explique qual estratégia você usou para pensar em “Medidas de massa”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "verificacao",
+          "enunciado": "Mostre uma maneira de conferir uma resposta relacionada a grandezas e medidas.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Espera-se que o estudante mencione observar os dados, escolher uma estratégia e conferir o resultado.",
+          "justificativa": "A resposta deve retomar informações explícitas do texto."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "Essa atitude organiza o raciocínio e ajuda a evitar erros."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta variável, de acordo com o exemplo criado.",
+          "justificativa": "Critério de correção: cálculo coerente com o tema e resultado correto."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta variável.",
+          "justificativa": "Critério de correção: situação compreensível, operação adequada e resposta compatível."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta pessoal.",
+          "justificativa": "Critério de correção: explicar uma estratégia matemática pertinente."
+        },
+        {
+          "numero": 6,
+          "resposta": "Resposta variável.",
+          "justificativa": "Critério de correção: apresentar uma verificação válida, como operação inversa, estimativa ou comparação."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-3ano-b3-mat-19-medidas-de-capacidade",
+      "titulo": "Medidas de capacidade",
+      "tema": "Grandezas e medidas",
+      "sequencia": "Atividade 19",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "desafiadora",
+      "objetivo": "Reconhecer litro e mililitro.",
+      "bncc": [
+        {
+          "codigo": "EF03MA20",
+          "descricaoResumida": "Estimar e medir capacidade usando unidades padronizadas."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia cada questão com atenção, registre os cálculos e confira suas respostas.",
+      "textoApoio": {
+        "titulo": "Para compreender: Medidas de capacidade",
+        "conteudo": "Na Matemática, estudar grandezas e medidas ajuda a resolver situações do dia a dia. É importante observar os dados, escolher uma estratégia e conferir o resultado. Desenhos, cálculos, tabelas e explicações podem ser usados para mostrar o raciocínio.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto de apoio, o que é importante fazer ao resolver uma atividade sobre grandezas e medidas?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual atitude ajuda a resolver corretamente uma situação de “Medidas de capacidade”?",
+          "alternativas": [
+            "Observar os dados, escolher uma estratégia e conferir o resultado.",
+            "Responder sem ler o enunciado.",
+            "Usar qualquer número sem justificar.",
+            "Ignorar unidades e informações."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "calculo",
+          "enunciado": "Resolva um exemplo simples relacionado a grandezas e medidas e registre seu cálculo.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "problema",
+          "enunciado": "Crie ou resolva uma situação-problema envolvendo grandezas e medidas.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "estrategia",
+          "enunciado": "Explique qual estratégia você usou para pensar em “Medidas de capacidade”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "verificacao",
+          "enunciado": "Mostre uma maneira de conferir uma resposta relacionada a grandezas e medidas.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Espera-se que o estudante mencione observar os dados, escolher uma estratégia e conferir o resultado.",
+          "justificativa": "A resposta deve retomar informações explícitas do texto."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "Essa atitude organiza o raciocínio e ajuda a evitar erros."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta variável, de acordo com o exemplo criado.",
+          "justificativa": "Critério de correção: cálculo coerente com o tema e resultado correto."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta variável.",
+          "justificativa": "Critério de correção: situação compreensível, operação adequada e resposta compatível."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta pessoal.",
+          "justificativa": "Critério de correção: explicar uma estratégia matemática pertinente."
+        },
+        {
+          "numero": 6,
+          "resposta": "Resposta variável.",
+          "justificativa": "Critério de correção: apresentar uma verificação válida, como operação inversa, estimativa ou comparação."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-3ano-b3-mat-20-horas-e-minutos",
+      "titulo": "Horas e minutos",
+      "tema": "Medida de tempo",
+      "sequencia": "Atividade 20",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "facil",
+      "objetivo": "Ler horas em relógios e calcular intervalos simples.",
+      "bncc": [
+        {
+          "codigo": "EF03MA22",
+          "descricaoResumida": "Ler e registrar medidas e intervalos de tempo."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia cada questão com atenção, registre os cálculos e confira suas respostas.",
+      "textoApoio": {
+        "titulo": "Para compreender: Horas e minutos",
+        "conteudo": "Na Matemática, estudar medida de tempo ajuda a resolver situações do dia a dia. É importante observar os dados, escolher uma estratégia e conferir o resultado. Desenhos, cálculos, tabelas e explicações podem ser usados para mostrar o raciocínio.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto de apoio, o que é importante fazer ao resolver uma atividade sobre medida de tempo?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual atitude ajuda a resolver corretamente uma situação de “Horas e minutos”?",
+          "alternativas": [
+            "Observar os dados, escolher uma estratégia e conferir o resultado.",
+            "Responder sem ler o enunciado.",
+            "Usar qualquer número sem justificar.",
+            "Ignorar unidades e informações."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "calculo",
+          "enunciado": "Resolva um exemplo simples relacionado a medida de tempo e registre seu cálculo.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "problema",
+          "enunciado": "Crie ou resolva uma situação-problema envolvendo medida de tempo.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "estrategia",
+          "enunciado": "Explique qual estratégia você usou para pensar em “Horas e minutos”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "verificacao",
+          "enunciado": "Mostre uma maneira de conferir uma resposta relacionada a medida de tempo.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Espera-se que o estudante mencione observar os dados, escolher uma estratégia e conferir o resultado.",
+          "justificativa": "A resposta deve retomar informações explícitas do texto."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "Essa atitude organiza o raciocínio e ajuda a evitar erros."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta variável, de acordo com o exemplo criado.",
+          "justificativa": "Critério de correção: cálculo coerente com o tema e resultado correto."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta variável.",
+          "justificativa": "Critério de correção: situação compreensível, operação adequada e resposta compatível."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta pessoal.",
+          "justificativa": "Critério de correção: explicar uma estratégia matemática pertinente."
+        },
+        {
+          "numero": 6,
+          "resposta": "Resposta variável.",
+          "justificativa": "Critério de correção: apresentar uma verificação válida, como operação inversa, estimativa ou comparação."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-3ano-b3-mat-21-calendario-e-duracao",
+      "titulo": "Calendário e duração",
+      "tema": "Tempo",
+      "sequencia": "Atividade 21",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "facil",
+      "objetivo": "Interpretar calendários e intervalos em dias.",
+      "bncc": [
+        {
+          "codigo": "EF03MA22",
+          "descricaoResumida": "Ler datas em calendários e calcular duração de eventos."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia cada questão com atenção, registre os cálculos e confira suas respostas.",
+      "textoApoio": {
+        "titulo": "Para compreender: Calendário e duração",
+        "conteudo": "Na Matemática, estudar tempo ajuda a resolver situações do dia a dia. É importante observar os dados, escolher uma estratégia e conferir o resultado. Desenhos, cálculos, tabelas e explicações podem ser usados para mostrar o raciocínio.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto de apoio, o que é importante fazer ao resolver uma atividade sobre tempo?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual atitude ajuda a resolver corretamente uma situação de “Calendário e duração”?",
+          "alternativas": [
+            "Observar os dados, escolher uma estratégia e conferir o resultado.",
+            "Responder sem ler o enunciado.",
+            "Usar qualquer número sem justificar.",
+            "Ignorar unidades e informações."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "calculo",
+          "enunciado": "Resolva um exemplo simples relacionado a tempo e registre seu cálculo.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "problema",
+          "enunciado": "Crie ou resolva uma situação-problema envolvendo tempo.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "estrategia",
+          "enunciado": "Explique qual estratégia você usou para pensar em “Calendário e duração”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "verificacao",
+          "enunciado": "Mostre uma maneira de conferir uma resposta relacionada a tempo.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Espera-se que o estudante mencione observar os dados, escolher uma estratégia e conferir o resultado.",
+          "justificativa": "A resposta deve retomar informações explícitas do texto."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "Essa atitude organiza o raciocínio e ajuda a evitar erros."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta variável, de acordo com o exemplo criado.",
+          "justificativa": "Critério de correção: cálculo coerente com o tema e resultado correto."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta variável.",
+          "justificativa": "Critério de correção: situação compreensível, operação adequada e resposta compatível."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta pessoal.",
+          "justificativa": "Critério de correção: explicar uma estratégia matemática pertinente."
+        },
+        {
+          "numero": 6,
+          "resposta": "Resposta variável.",
+          "justificativa": "Critério de correção: apresentar uma verificação válida, como operação inversa, estimativa ou comparação."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-3ano-b3-mat-22-figuras-geometricas-planas",
+      "titulo": "Figuras geométricas planas",
+      "tema": "Geometria",
+      "sequencia": "Atividade 22",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "intermediaria",
+      "objetivo": "Identificar triângulos, quadriláteros e círculos.",
+      "bncc": [
+        {
+          "codigo": "EF03MA15",
+          "descricaoResumida": "Classificar e comparar figuras planas em relação a lados e vértices."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia cada questão com atenção, registre os cálculos e confira suas respostas.",
+      "textoApoio": {
+        "titulo": "Para compreender: Figuras geométricas planas",
+        "conteudo": "Na Matemática, estudar geometria ajuda a resolver situações do dia a dia. É importante observar os dados, escolher uma estratégia e conferir o resultado. Desenhos, cálculos, tabelas e explicações podem ser usados para mostrar o raciocínio.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto de apoio, o que é importante fazer ao resolver uma atividade sobre geometria?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual atitude ajuda a resolver corretamente uma situação de “Figuras geométricas planas”?",
+          "alternativas": [
+            "Observar os dados, escolher uma estratégia e conferir o resultado.",
+            "Responder sem ler o enunciado.",
+            "Usar qualquer número sem justificar.",
+            "Ignorar unidades e informações."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "calculo",
+          "enunciado": "Resolva um exemplo simples relacionado a geometria e registre seu cálculo.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "problema",
+          "enunciado": "Crie ou resolva uma situação-problema envolvendo geometria.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "estrategia",
+          "enunciado": "Explique qual estratégia você usou para pensar em “Figuras geométricas planas”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "verificacao",
+          "enunciado": "Mostre uma maneira de conferir uma resposta relacionada a geometria.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Espera-se que o estudante mencione observar os dados, escolher uma estratégia e conferir o resultado.",
+          "justificativa": "A resposta deve retomar informações explícitas do texto."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "Essa atitude organiza o raciocínio e ajuda a evitar erros."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta variável, de acordo com o exemplo criado.",
+          "justificativa": "Critério de correção: cálculo coerente com o tema e resultado correto."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta variável.",
+          "justificativa": "Critério de correção: situação compreensível, operação adequada e resposta compatível."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta pessoal.",
+          "justificativa": "Critério de correção: explicar uma estratégia matemática pertinente."
+        },
+        {
+          "numero": 6,
+          "resposta": "Resposta variável.",
+          "justificativa": "Critério de correção: apresentar uma verificação válida, como operação inversa, estimativa ou comparação."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-3ano-b3-mat-23-solidos-geometricos",
+      "titulo": "Sólidos geométricos",
+      "tema": "Geometria espacial",
+      "sequencia": "Atividade 23",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "intermediaria",
+      "objetivo": "Reconhecer cubo, paralelepípedo, cilindro, cone e esfera.",
+      "bncc": [
+        {
+          "codigo": "EF03MA14",
+          "descricaoResumida": "Descrever características de figuras geométricas espaciais."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia cada questão com atenção, registre os cálculos e confira suas respostas.",
+      "textoApoio": {
+        "titulo": "Para compreender: Sólidos geométricos",
+        "conteudo": "Na Matemática, estudar geometria espacial ajuda a resolver situações do dia a dia. É importante observar os dados, escolher uma estratégia e conferir o resultado. Desenhos, cálculos, tabelas e explicações podem ser usados para mostrar o raciocínio.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto de apoio, o que é importante fazer ao resolver uma atividade sobre geometria espacial?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual atitude ajuda a resolver corretamente uma situação de “Sólidos geométricos”?",
+          "alternativas": [
+            "Observar os dados, escolher uma estratégia e conferir o resultado.",
+            "Responder sem ler o enunciado.",
+            "Usar qualquer número sem justificar.",
+            "Ignorar unidades e informações."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "calculo",
+          "enunciado": "Resolva um exemplo simples relacionado a geometria espacial e registre seu cálculo.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "problema",
+          "enunciado": "Crie ou resolva uma situação-problema envolvendo geometria espacial.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "estrategia",
+          "enunciado": "Explique qual estratégia você usou para pensar em “Sólidos geométricos”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "verificacao",
+          "enunciado": "Mostre uma maneira de conferir uma resposta relacionada a geometria espacial.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Espera-se que o estudante mencione observar os dados, escolher uma estratégia e conferir o resultado.",
+          "justificativa": "A resposta deve retomar informações explícitas do texto."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "Essa atitude organiza o raciocínio e ajuda a evitar erros."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta variável, de acordo com o exemplo criado.",
+          "justificativa": "Critério de correção: cálculo coerente com o tema e resultado correto."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta variável.",
+          "justificativa": "Critério de correção: situação compreensível, operação adequada e resposta compatível."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta pessoal.",
+          "justificativa": "Critério de correção: explicar uma estratégia matemática pertinente."
+        },
+        {
+          "numero": 6,
+          "resposta": "Resposta variável.",
+          "justificativa": "Critério de correção: apresentar uma verificação válida, como operação inversa, estimativa ou comparação."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-3ano-b3-mat-24-simetria",
+      "titulo": "Simetria",
+      "tema": "Geometria",
+      "sequencia": "Atividade 24",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "desafiadora",
+      "objetivo": "Identificar e completar figuras simétricas.",
+      "bncc": [
+        {
+          "codigo": "EF03MA16",
+          "descricaoResumida": "Reconhecer figuras congruentes por sobreposição e simetria."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia cada questão com atenção, registre os cálculos e confira suas respostas.",
+      "textoApoio": {
+        "titulo": "Para compreender: Simetria",
+        "conteudo": "Na Matemática, estudar geometria ajuda a resolver situações do dia a dia. É importante observar os dados, escolher uma estratégia e conferir o resultado. Desenhos, cálculos, tabelas e explicações podem ser usados para mostrar o raciocínio.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto de apoio, o que é importante fazer ao resolver uma atividade sobre geometria?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual atitude ajuda a resolver corretamente uma situação de “Simetria”?",
+          "alternativas": [
+            "Observar os dados, escolher uma estratégia e conferir o resultado.",
+            "Responder sem ler o enunciado.",
+            "Usar qualquer número sem justificar.",
+            "Ignorar unidades e informações."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "calculo",
+          "enunciado": "Resolva um exemplo simples relacionado a geometria e registre seu cálculo.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "problema",
+          "enunciado": "Crie ou resolva uma situação-problema envolvendo geometria.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "estrategia",
+          "enunciado": "Explique qual estratégia você usou para pensar em “Simetria”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "verificacao",
+          "enunciado": "Mostre uma maneira de conferir uma resposta relacionada a geometria.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Espera-se que o estudante mencione observar os dados, escolher uma estratégia e conferir o resultado.",
+          "justificativa": "A resposta deve retomar informações explícitas do texto."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "Essa atitude organiza o raciocínio e ajuda a evitar erros."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta variável, de acordo com o exemplo criado.",
+          "justificativa": "Critério de correção: cálculo coerente com o tema e resultado correto."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta variável.",
+          "justificativa": "Critério de correção: situação compreensível, operação adequada e resposta compatível."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta pessoal.",
+          "justificativa": "Critério de correção: explicar uma estratégia matemática pertinente."
+        },
+        {
+          "numero": 6,
+          "resposta": "Resposta variável.",
+          "justificativa": "Critério de correção: apresentar uma verificação válida, como operação inversa, estimativa ou comparação."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-3ano-b3-mat-25-localizacao-e-deslocamento",
+      "titulo": "Localização e deslocamento",
+      "tema": "Orientação espacial",
+      "sequencia": "Atividade 25",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "facil",
+      "objetivo": "Usar referências como direita, esquerda, frente e atrás.",
+      "bncc": [
+        {
+          "codigo": "EF03MA12",
+          "descricaoResumida": "Descrever e representar localização e movimentação de pessoas e objetos."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia cada questão com atenção, registre os cálculos e confira suas respostas.",
+      "textoApoio": {
+        "titulo": "Para compreender: Localização e deslocamento",
+        "conteudo": "Na Matemática, estudar orientação espacial ajuda a resolver situações do dia a dia. É importante observar os dados, escolher uma estratégia e conferir o resultado. Desenhos, cálculos, tabelas e explicações podem ser usados para mostrar o raciocínio.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto de apoio, o que é importante fazer ao resolver uma atividade sobre orientação espacial?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual atitude ajuda a resolver corretamente uma situação de “Localização e deslocamento”?",
+          "alternativas": [
+            "Observar os dados, escolher uma estratégia e conferir o resultado.",
+            "Responder sem ler o enunciado.",
+            "Usar qualquer número sem justificar.",
+            "Ignorar unidades e informações."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "calculo",
+          "enunciado": "Resolva um exemplo simples relacionado a orientação espacial e registre seu cálculo.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "problema",
+          "enunciado": "Crie ou resolva uma situação-problema envolvendo orientação espacial.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "estrategia",
+          "enunciado": "Explique qual estratégia você usou para pensar em “Localização e deslocamento”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "verificacao",
+          "enunciado": "Mostre uma maneira de conferir uma resposta relacionada a orientação espacial.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Espera-se que o estudante mencione observar os dados, escolher uma estratégia e conferir o resultado.",
+          "justificativa": "A resposta deve retomar informações explícitas do texto."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "Essa atitude organiza o raciocínio e ajuda a evitar erros."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta variável, de acordo com o exemplo criado.",
+          "justificativa": "Critério de correção: cálculo coerente com o tema e resultado correto."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta variável.",
+          "justificativa": "Critério de correção: situação compreensível, operação adequada e resposta compatível."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta pessoal.",
+          "justificativa": "Critério de correção: explicar uma estratégia matemática pertinente."
+        },
+        {
+          "numero": 6,
+          "resposta": "Resposta variável.",
+          "justificativa": "Critério de correção: apresentar uma verificação válida, como operação inversa, estimativa ou comparação."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-3ano-b3-mat-26-tabelas-simples",
+      "titulo": "Tabelas simples",
+      "tema": "Tratamento da informação",
+      "sequencia": "Atividade 26",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "facil",
+      "objetivo": "Ler e interpretar informações em tabelas simples.",
+      "bncc": [
+        {
+          "codigo": "EF03MA26",
+          "descricaoResumida": "Resolver problemas cujos dados estão apresentados em tabelas de dupla entrada, gráficos de barras ou colunas."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia cada questão com atenção, registre os cálculos e confira suas respostas.",
+      "textoApoio": {
+        "titulo": "Para compreender: Tabelas simples",
+        "conteudo": "Na Matemática, estudar tratamento da informação ajuda a resolver situações do dia a dia. É importante observar os dados, escolher uma estratégia e conferir o resultado. Desenhos, cálculos, tabelas e explicações podem ser usados para mostrar o raciocínio.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto de apoio, o que é importante fazer ao resolver uma atividade sobre tratamento da informação?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual atitude ajuda a resolver corretamente uma situação de “Tabelas simples”?",
+          "alternativas": [
+            "Observar os dados, escolher uma estratégia e conferir o resultado.",
+            "Responder sem ler o enunciado.",
+            "Usar qualquer número sem justificar.",
+            "Ignorar unidades e informações."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "calculo",
+          "enunciado": "Resolva um exemplo simples relacionado a tratamento da informação e registre seu cálculo.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "problema",
+          "enunciado": "Crie ou resolva uma situação-problema envolvendo tratamento da informação.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "estrategia",
+          "enunciado": "Explique qual estratégia você usou para pensar em “Tabelas simples”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "verificacao",
+          "enunciado": "Mostre uma maneira de conferir uma resposta relacionada a tratamento da informação.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Espera-se que o estudante mencione observar os dados, escolher uma estratégia e conferir o resultado.",
+          "justificativa": "A resposta deve retomar informações explícitas do texto."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "Essa atitude organiza o raciocínio e ajuda a evitar erros."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta variável, de acordo com o exemplo criado.",
+          "justificativa": "Critério de correção: cálculo coerente com o tema e resultado correto."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta variável.",
+          "justificativa": "Critério de correção: situação compreensível, operação adequada e resposta compatível."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta pessoal.",
+          "justificativa": "Critério de correção: explicar uma estratégia matemática pertinente."
+        },
+        {
+          "numero": 6,
+          "resposta": "Resposta variável.",
+          "justificativa": "Critério de correção: apresentar uma verificação válida, como operação inversa, estimativa ou comparação."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-3ano-b3-mat-27-graficos-de-colunas",
+      "titulo": "Gráficos de colunas",
+      "tema": "Tratamento da informação",
+      "sequencia": "Atividade 27",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "intermediaria",
+      "objetivo": "Interpretar gráficos de colunas.",
+      "bncc": [
+        {
+          "codigo": "EF03MA27",
+          "descricaoResumida": "Ler, interpretar e comparar dados apresentados em gráficos."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia cada questão com atenção, registre os cálculos e confira suas respostas.",
+      "textoApoio": {
+        "titulo": "Para compreender: Gráficos de colunas",
+        "conteudo": "Na Matemática, estudar tratamento da informação ajuda a resolver situações do dia a dia. É importante observar os dados, escolher uma estratégia e conferir o resultado. Desenhos, cálculos, tabelas e explicações podem ser usados para mostrar o raciocínio.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto de apoio, o que é importante fazer ao resolver uma atividade sobre tratamento da informação?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual atitude ajuda a resolver corretamente uma situação de “Gráficos de colunas”?",
+          "alternativas": [
+            "Observar os dados, escolher uma estratégia e conferir o resultado.",
+            "Responder sem ler o enunciado.",
+            "Usar qualquer número sem justificar.",
+            "Ignorar unidades e informações."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "calculo",
+          "enunciado": "Resolva um exemplo simples relacionado a tratamento da informação e registre seu cálculo.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "problema",
+          "enunciado": "Crie ou resolva uma situação-problema envolvendo tratamento da informação.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "estrategia",
+          "enunciado": "Explique qual estratégia você usou para pensar em “Gráficos de colunas”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "verificacao",
+          "enunciado": "Mostre uma maneira de conferir uma resposta relacionada a tratamento da informação.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Espera-se que o estudante mencione observar os dados, escolher uma estratégia e conferir o resultado.",
+          "justificativa": "A resposta deve retomar informações explícitas do texto."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "Essa atitude organiza o raciocínio e ajuda a evitar erros."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta variável, de acordo com o exemplo criado.",
+          "justificativa": "Critério de correção: cálculo coerente com o tema e resultado correto."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta variável.",
+          "justificativa": "Critério de correção: situação compreensível, operação adequada e resposta compatível."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta pessoal.",
+          "justificativa": "Critério de correção: explicar uma estratégia matemática pertinente."
+        },
+        {
+          "numero": 6,
+          "resposta": "Resposta variável.",
+          "justificativa": "Critério de correção: apresentar uma verificação válida, como operação inversa, estimativa ou comparação."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-3ano-b3-mat-28-nocoes-de-probabilidade",
+      "titulo": "Noções de probabilidade",
+      "tema": "Probabilidade",
+      "sequencia": "Atividade 28",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "intermediaria",
+      "objetivo": "Classificar acontecimentos como certos, possíveis ou impossíveis.",
+      "bncc": [
+        {
+          "codigo": "EF03MA25",
+          "descricaoResumida": "Identificar eventos que podem ser classificados como certos, possíveis e impossíveis."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia cada questão com atenção, registre os cálculos e confira suas respostas.",
+      "textoApoio": {
+        "titulo": "Para compreender: Noções de probabilidade",
+        "conteudo": "Na Matemática, estudar probabilidade ajuda a resolver situações do dia a dia. É importante observar os dados, escolher uma estratégia e conferir o resultado. Desenhos, cálculos, tabelas e explicações podem ser usados para mostrar o raciocínio.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto de apoio, o que é importante fazer ao resolver uma atividade sobre probabilidade?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual atitude ajuda a resolver corretamente uma situação de “Noções de probabilidade”?",
+          "alternativas": [
+            "Observar os dados, escolher uma estratégia e conferir o resultado.",
+            "Responder sem ler o enunciado.",
+            "Usar qualquer número sem justificar.",
+            "Ignorar unidades e informações."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "calculo",
+          "enunciado": "Resolva um exemplo simples relacionado a probabilidade e registre seu cálculo.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "problema",
+          "enunciado": "Crie ou resolva uma situação-problema envolvendo probabilidade.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "estrategia",
+          "enunciado": "Explique qual estratégia você usou para pensar em “Noções de probabilidade”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "verificacao",
+          "enunciado": "Mostre uma maneira de conferir uma resposta relacionada a probabilidade.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Espera-se que o estudante mencione observar os dados, escolher uma estratégia e conferir o resultado.",
+          "justificativa": "A resposta deve retomar informações explícitas do texto."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "Essa atitude organiza o raciocínio e ajuda a evitar erros."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta variável, de acordo com o exemplo criado.",
+          "justificativa": "Critério de correção: cálculo coerente com o tema e resultado correto."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta variável.",
+          "justificativa": "Critério de correção: situação compreensível, operação adequada e resposta compatível."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta pessoal.",
+          "justificativa": "Critério de correção: explicar uma estratégia matemática pertinente."
+        },
+        {
+          "numero": 6,
+          "resposta": "Resposta variável.",
+          "justificativa": "Critério de correção: apresentar uma verificação válida, como operação inversa, estimativa ou comparação."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-3ano-b3-mat-29-estimativa-e-calculo-mental",
+      "titulo": "Estimativa e cálculo mental",
+      "tema": "Estratégias de cálculo",
+      "sequencia": "Atividade 29",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "desafiadora",
+      "objetivo": "Usar estimativas e cálculo mental em situações simples.",
+      "bncc": [
+        {
+          "codigo": "EF03MA04",
+          "descricaoResumida": "Estabelecer relações entre números e usar estratégias de cálculo mental e escrito."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia cada questão com atenção, registre os cálculos e confira suas respostas.",
+      "textoApoio": {
+        "titulo": "Para compreender: Estimativa e cálculo mental",
+        "conteudo": "Na Matemática, estudar estratégias de cálculo ajuda a resolver situações do dia a dia. É importante observar os dados, escolher uma estratégia e conferir o resultado. Desenhos, cálculos, tabelas e explicações podem ser usados para mostrar o raciocínio.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto de apoio, o que é importante fazer ao resolver uma atividade sobre estratégias de cálculo?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual atitude ajuda a resolver corretamente uma situação de “Estimativa e cálculo mental”?",
+          "alternativas": [
+            "Observar os dados, escolher uma estratégia e conferir o resultado.",
+            "Responder sem ler o enunciado.",
+            "Usar qualquer número sem justificar.",
+            "Ignorar unidades e informações."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "calculo",
+          "enunciado": "Resolva um exemplo simples relacionado a estratégias de cálculo e registre seu cálculo.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "problema",
+          "enunciado": "Crie ou resolva uma situação-problema envolvendo estratégias de cálculo.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "estrategia",
+          "enunciado": "Explique qual estratégia você usou para pensar em “Estimativa e cálculo mental”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "verificacao",
+          "enunciado": "Mostre uma maneira de conferir uma resposta relacionada a estratégias de cálculo.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Espera-se que o estudante mencione observar os dados, escolher uma estratégia e conferir o resultado.",
+          "justificativa": "A resposta deve retomar informações explícitas do texto."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "Essa atitude organiza o raciocínio e ajuda a evitar erros."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta variável, de acordo com o exemplo criado.",
+          "justificativa": "Critério de correção: cálculo coerente com o tema e resultado correto."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta variável.",
+          "justificativa": "Critério de correção: situação compreensível, operação adequada e resposta compatível."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta pessoal.",
+          "justificativa": "Critério de correção: explicar uma estratégia matemática pertinente."
+        },
+        {
+          "numero": 6,
+          "resposta": "Resposta variável.",
+          "justificativa": "Critério de correção: apresentar uma verificação válida, como operação inversa, estimativa ou comparação."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-3ano-b3-mat-30-revisao-integrada-de-matematica",
+      "titulo": "Revisão integrada de Matemática",
+      "tema": "Revisão",
+      "sequencia": "Atividade 30",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "facil",
+      "objetivo": "Aplicar diferentes conhecimentos matemáticos em uma atividade de revisão.",
+      "bncc": [
+        {
+          "codigo": "EF03MA06",
+          "descricaoResumida": "Resolver problemas integrando números, operações, medidas, geometria e dados."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia cada questão com atenção, registre os cálculos e confira suas respostas.",
+      "textoApoio": {
+        "titulo": "Para compreender: Revisão integrada de Matemática",
+        "conteudo": "Na Matemática, estudar revisão ajuda a resolver situações do dia a dia. É importante observar os dados, escolher uma estratégia e conferir o resultado. Desenhos, cálculos, tabelas e explicações podem ser usados para mostrar o raciocínio.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "Segundo o texto de apoio, o que é importante fazer ao resolver uma atividade sobre revisão?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual atitude ajuda a resolver corretamente uma situação de “Revisão integrada de Matemática”?",
+          "alternativas": [
+            "Observar os dados, escolher uma estratégia e conferir o resultado.",
+            "Responder sem ler o enunciado.",
+            "Usar qualquer número sem justificar.",
+            "Ignorar unidades e informações."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "calculo",
+          "enunciado": "Resolva um exemplo simples relacionado a revisão e registre seu cálculo.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "problema",
+          "enunciado": "Crie ou resolva uma situação-problema envolvendo revisão.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "estrategia",
+          "enunciado": "Explique qual estratégia você usou para pensar em “Revisão integrada de Matemática”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "verificacao",
+          "enunciado": "Mostre uma maneira de conferir uma resposta relacionada a revisão.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Espera-se que o estudante mencione observar os dados, escolher uma estratégia e conferir o resultado.",
+          "justificativa": "A resposta deve retomar informações explícitas do texto."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "Essa atitude organiza o raciocínio e ajuda a evitar erros."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta variável, de acordo com o exemplo criado.",
+          "justificativa": "Critério de correção: cálculo coerente com o tema e resultado correto."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta variável.",
+          "justificativa": "Critério de correção: situação compreensível, operação adequada e resposta compatível."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta pessoal.",
+          "justificativa": "Critério de correção: explicar uma estratégia matemática pertinente."
+        },
+        {
+          "numero": 6,
+          "resposta": "Resposta variável.",
+          "justificativa": "Critério de correção: apresentar uma verificação válida, como operação inversa, estimativa ou comparação."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    }
+  ]
+}

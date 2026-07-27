@@ -1,0 +1,3672 @@
+{
+  "schemaVersion": "1.0",
+  "colecao": "3ano-3bimestre-lingua-portuguesa",
+  "idioma": "pt-BR",
+  "etapa": "Ensino Fundamental — Anos Iniciais",
+  "ano": "3º ano",
+  "bimestre": 3,
+  "disciplina": "Língua Portuguesa",
+  "statusBimestre": "sugerido",
+  "atividades": [
+    {
+      "id": "efi-3ano-b3-lp-01-leitura-de-conto-popular",
+      "titulo": "Leitura de conto popular",
+      "tema": "Conto popular",
+      "sequencia": "Atividade 1",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "facil",
+      "objetivo": "Compreender a estrutura básica de um conto popular e localizar informações explícitas.",
+      "bncc": [
+        {
+          "codigo": "EF35LP26",
+          "descricaoResumida": "Ler e compreender narrativas ficcionais, observando enredo, personagens, tempo e espaço."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio com atenção e responda às questões com frases completas.",
+      "textoApoio": {
+        "titulo": "Para compreender: Leitura de conto popular",
+        "conteudo": "Em Língua Portuguesa, estudar conto popular ajuda a compreender melhor os textos e a produzir mensagens claras. Durante a leitura, é importante observar palavras, frases, organização e finalidade do texto. Esses conhecimentos também ajudam na escrita e na comunicação do dia a dia.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "De acordo com o texto de apoio, por que estudar conto popular é importante?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual alternativa está diretamente relacionada ao tema “Leitura de conto popular”?",
+          "alternativas": [
+            "Observar como o texto é organizado e qual é sua finalidade.",
+            "Copiar palavras sem compreender o texto.",
+            "Ignorar as informações principais.",
+            "Ler apenas o título e não continuar."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Dê um exemplo relacionado a conto popular.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "analise",
+          "enunciado": "Explique com suas palavras uma característica importante de conto popular.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "aplicacao",
+          "enunciado": "Crie uma frase ou pequeno exemplo usando corretamente o conteúdo estudado em “Leitura de conto popular”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Produza um pequeno texto ou resposta mostrando o que você aprendeu sobre conto popular.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Espera-se que o estudante mencione que o estudo ajuda na leitura, na compreensão, na escrita e na comunicação.",
+          "justificativa": "A resposta deve retomar informações explícitas do texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "A alternativa apresenta uma atitude adequada de leitura e análise textual."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta pessoal coerente com o tema.",
+          "justificativa": "O exemplo deve demonstrar compreensão do conteúdo."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta variável.",
+          "justificativa": "Critério de correção: explicar ao menos uma característica pertinente do tema."
+        },
+        {
+          "numero": 5,
+          "resposta": "Produção pessoal.",
+          "justificativa": "Critério de correção: uso correto do conteúdo trabalhado e clareza da frase."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção pessoal.",
+          "justificativa": "Critério de correção: coerência, clareza, relação com o tema e organização da escrita."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-3ano-b3-lp-02-personagens-e-caracteristicas",
+      "titulo": "Personagens e características",
+      "tema": "Personagens",
+      "sequencia": "Atividade 2",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "intermediaria",
+      "objetivo": "Reconhecer características dos personagens e relacioná-las às suas ações.",
+      "bncc": [
+        {
+          "codigo": "EF35LP26",
+          "descricaoResumida": "Identificar personagens, características e ações em textos narrativos."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio com atenção e responda às questões com frases completas.",
+      "textoApoio": {
+        "titulo": "Para compreender: Personagens e características",
+        "conteudo": "Em Língua Portuguesa, estudar personagens ajuda a compreender melhor os textos e a produzir mensagens claras. Durante a leitura, é importante observar palavras, frases, organização e finalidade do texto. Esses conhecimentos também ajudam na escrita e na comunicação do dia a dia.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "De acordo com o texto de apoio, por que estudar personagens é importante?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual alternativa está diretamente relacionada ao tema “Personagens e características”?",
+          "alternativas": [
+            "Observar como o texto é organizado e qual é sua finalidade.",
+            "Copiar palavras sem compreender o texto.",
+            "Ignorar as informações principais.",
+            "Ler apenas o título e não continuar."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Dê um exemplo relacionado a personagens.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "analise",
+          "enunciado": "Explique com suas palavras uma característica importante de personagens.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "aplicacao",
+          "enunciado": "Crie uma frase ou pequeno exemplo usando corretamente o conteúdo estudado em “Personagens e características”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Produza um pequeno texto ou resposta mostrando o que você aprendeu sobre personagens.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Espera-se que o estudante mencione que o estudo ajuda na leitura, na compreensão, na escrita e na comunicação.",
+          "justificativa": "A resposta deve retomar informações explícitas do texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "A alternativa apresenta uma atitude adequada de leitura e análise textual."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta pessoal coerente com o tema.",
+          "justificativa": "O exemplo deve demonstrar compreensão do conteúdo."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta variável.",
+          "justificativa": "Critério de correção: explicar ao menos uma característica pertinente do tema."
+        },
+        {
+          "numero": 5,
+          "resposta": "Produção pessoal.",
+          "justificativa": "Critério de correção: uso correto do conteúdo trabalhado e clareza da frase."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção pessoal.",
+          "justificativa": "Critério de correção: coerência, clareza, relação com o tema e organização da escrita."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-3ano-b3-lp-03-sequencia-dos-acontecimentos",
+      "titulo": "Sequência dos acontecimentos",
+      "tema": "Sequência narrativa",
+      "sequencia": "Atividade 3",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "intermediaria",
+      "objetivo": "Organizar acontecimentos de uma narrativa em ordem lógica e temporal.",
+      "bncc": [
+        {
+          "codigo": "EF35LP29",
+          "descricaoResumida": "Identificar a sequência de fatos em narrativas."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio com atenção e responda às questões com frases completas.",
+      "textoApoio": {
+        "titulo": "Para compreender: Sequência dos acontecimentos",
+        "conteudo": "Em Língua Portuguesa, estudar sequência narrativa ajuda a compreender melhor os textos e a produzir mensagens claras. Durante a leitura, é importante observar palavras, frases, organização e finalidade do texto. Esses conhecimentos também ajudam na escrita e na comunicação do dia a dia.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "De acordo com o texto de apoio, por que estudar sequência narrativa é importante?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual alternativa está diretamente relacionada ao tema “Sequência dos acontecimentos”?",
+          "alternativas": [
+            "Observar como o texto é organizado e qual é sua finalidade.",
+            "Copiar palavras sem compreender o texto.",
+            "Ignorar as informações principais.",
+            "Ler apenas o título e não continuar."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Dê um exemplo relacionado a sequência narrativa.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "analise",
+          "enunciado": "Explique com suas palavras uma característica importante de sequência narrativa.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "aplicacao",
+          "enunciado": "Crie uma frase ou pequeno exemplo usando corretamente o conteúdo estudado em “Sequência dos acontecimentos”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Produza um pequeno texto ou resposta mostrando o que você aprendeu sobre sequência narrativa.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Espera-se que o estudante mencione que o estudo ajuda na leitura, na compreensão, na escrita e na comunicação.",
+          "justificativa": "A resposta deve retomar informações explícitas do texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "A alternativa apresenta uma atitude adequada de leitura e análise textual."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta pessoal coerente com o tema.",
+          "justificativa": "O exemplo deve demonstrar compreensão do conteúdo."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta variável.",
+          "justificativa": "Critério de correção: explicar ao menos uma característica pertinente do tema."
+        },
+        {
+          "numero": 5,
+          "resposta": "Produção pessoal.",
+          "justificativa": "Critério de correção: uso correto do conteúdo trabalhado e clareza da frase."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção pessoal.",
+          "justificativa": "Critério de correção: coerência, clareza, relação com o tema e organização da escrita."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-3ano-b3-lp-04-inicio-meio-e-fim",
+      "titulo": "Início, meio e fim",
+      "tema": "Estrutura narrativa",
+      "sequencia": "Atividade 4",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "desafiadora",
+      "objetivo": "Identificar início, desenvolvimento e desfecho em textos narrativos.",
+      "bncc": [
+        {
+          "codigo": "EF35LP29",
+          "descricaoResumida": "Reconhecer partes de uma narrativa."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio com atenção e responda às questões com frases completas.",
+      "textoApoio": {
+        "titulo": "Para compreender: Início, meio e fim",
+        "conteudo": "Em Língua Portuguesa, estudar estrutura narrativa ajuda a compreender melhor os textos e a produzir mensagens claras. Durante a leitura, é importante observar palavras, frases, organização e finalidade do texto. Esses conhecimentos também ajudam na escrita e na comunicação do dia a dia.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "De acordo com o texto de apoio, por que estudar estrutura narrativa é importante?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual alternativa está diretamente relacionada ao tema “Início, meio e fim”?",
+          "alternativas": [
+            "Observar como o texto é organizado e qual é sua finalidade.",
+            "Copiar palavras sem compreender o texto.",
+            "Ignorar as informações principais.",
+            "Ler apenas o título e não continuar."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Dê um exemplo relacionado a estrutura narrativa.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "analise",
+          "enunciado": "Explique com suas palavras uma característica importante de estrutura narrativa.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "aplicacao",
+          "enunciado": "Crie uma frase ou pequeno exemplo usando corretamente o conteúdo estudado em “Início, meio e fim”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Produza um pequeno texto ou resposta mostrando o que você aprendeu sobre estrutura narrativa.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Espera-se que o estudante mencione que o estudo ajuda na leitura, na compreensão, na escrita e na comunicação.",
+          "justificativa": "A resposta deve retomar informações explícitas do texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "A alternativa apresenta uma atitude adequada de leitura e análise textual."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta pessoal coerente com o tema.",
+          "justificativa": "O exemplo deve demonstrar compreensão do conteúdo."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta variável.",
+          "justificativa": "Critério de correção: explicar ao menos uma característica pertinente do tema."
+        },
+        {
+          "numero": 5,
+          "resposta": "Produção pessoal.",
+          "justificativa": "Critério de correção: uso correto do conteúdo trabalhado e clareza da frase."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção pessoal.",
+          "justificativa": "Critério de correção: coerência, clareza, relação com o tema e organização da escrita."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-3ano-b3-lp-05-fabulas-e-ensinamentos",
+      "titulo": "Fábulas e ensinamentos",
+      "tema": "Fábula",
+      "sequencia": "Atividade 5",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "facil",
+      "objetivo": "Compreender a moral de uma fábula e relacioná-la às ações das personagens.",
+      "bncc": [
+        {
+          "codigo": "EF35LP26",
+          "descricaoResumida": "Ler e compreender fábulas, observando seus elementos e ensinamentos."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio com atenção e responda às questões com frases completas.",
+      "textoApoio": {
+        "titulo": "Para compreender: Fábulas e ensinamentos",
+        "conteudo": "Em Língua Portuguesa, estudar fábula ajuda a compreender melhor os textos e a produzir mensagens claras. Durante a leitura, é importante observar palavras, frases, organização e finalidade do texto. Esses conhecimentos também ajudam na escrita e na comunicação do dia a dia.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "De acordo com o texto de apoio, por que estudar fábula é importante?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual alternativa está diretamente relacionada ao tema “Fábulas e ensinamentos”?",
+          "alternativas": [
+            "Observar como o texto é organizado e qual é sua finalidade.",
+            "Copiar palavras sem compreender o texto.",
+            "Ignorar as informações principais.",
+            "Ler apenas o título e não continuar."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Dê um exemplo relacionado a fábula.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "analise",
+          "enunciado": "Explique com suas palavras uma característica importante de fábula.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "aplicacao",
+          "enunciado": "Crie uma frase ou pequeno exemplo usando corretamente o conteúdo estudado em “Fábulas e ensinamentos”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Produza um pequeno texto ou resposta mostrando o que você aprendeu sobre fábula.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Espera-se que o estudante mencione que o estudo ajuda na leitura, na compreensão, na escrita e na comunicação.",
+          "justificativa": "A resposta deve retomar informações explícitas do texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "A alternativa apresenta uma atitude adequada de leitura e análise textual."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta pessoal coerente com o tema.",
+          "justificativa": "O exemplo deve demonstrar compreensão do conteúdo."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta variável.",
+          "justificativa": "Critério de correção: explicar ao menos uma característica pertinente do tema."
+        },
+        {
+          "numero": 5,
+          "resposta": "Produção pessoal.",
+          "justificativa": "Critério de correção: uso correto do conteúdo trabalhado e clareza da frase."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção pessoal.",
+          "justificativa": "Critério de correção: coerência, clareza, relação com o tema e organização da escrita."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-3ano-b3-lp-06-moral-da-historia",
+      "titulo": "Moral da história",
+      "tema": "Moral",
+      "sequencia": "Atividade 6",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "facil",
+      "objetivo": "Identificar e explicar a moral presente em uma fábula.",
+      "bncc": [
+        {
+          "codigo": "EF35LP26",
+          "descricaoResumida": "Inferir o ensinamento presente em narrativas curtas."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio com atenção e responda às questões com frases completas.",
+      "textoApoio": {
+        "titulo": "Para compreender: Moral da história",
+        "conteudo": "Em Língua Portuguesa, estudar moral ajuda a compreender melhor os textos e a produzir mensagens claras. Durante a leitura, é importante observar palavras, frases, organização e finalidade do texto. Esses conhecimentos também ajudam na escrita e na comunicação do dia a dia.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "De acordo com o texto de apoio, por que estudar moral é importante?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual alternativa está diretamente relacionada ao tema “Moral da história”?",
+          "alternativas": [
+            "Observar como o texto é organizado e qual é sua finalidade.",
+            "Copiar palavras sem compreender o texto.",
+            "Ignorar as informações principais.",
+            "Ler apenas o título e não continuar."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Dê um exemplo relacionado a moral.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "analise",
+          "enunciado": "Explique com suas palavras uma característica importante de moral.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "aplicacao",
+          "enunciado": "Crie uma frase ou pequeno exemplo usando corretamente o conteúdo estudado em “Moral da história”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Produza um pequeno texto ou resposta mostrando o que você aprendeu sobre moral.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Espera-se que o estudante mencione que o estudo ajuda na leitura, na compreensão, na escrita e na comunicação.",
+          "justificativa": "A resposta deve retomar informações explícitas do texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "A alternativa apresenta uma atitude adequada de leitura e análise textual."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta pessoal coerente com o tema.",
+          "justificativa": "O exemplo deve demonstrar compreensão do conteúdo."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta variável.",
+          "justificativa": "Critério de correção: explicar ao menos uma característica pertinente do tema."
+        },
+        {
+          "numero": 5,
+          "resposta": "Produção pessoal.",
+          "justificativa": "Critério de correção: uso correto do conteúdo trabalhado e clareza da frase."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção pessoal.",
+          "justificativa": "Critério de correção: coerência, clareza, relação com o tema e organização da escrita."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-3ano-b3-lp-07-poema-e-versos",
+      "titulo": "Poema e versos",
+      "tema": "Poema",
+      "sequencia": "Atividade 7",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "intermediaria",
+      "objetivo": "Reconhecer versos e estrofes e perceber efeitos sonoros em poemas.",
+      "bncc": [
+        {
+          "codigo": "EF35LP23",
+          "descricaoResumida": "Apreciar poemas, observando versos, estrofes, rimas e efeitos sonoros."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio com atenção e responda às questões com frases completas.",
+      "textoApoio": {
+        "titulo": "Para compreender: Poema e versos",
+        "conteudo": "Em Língua Portuguesa, estudar poema ajuda a compreender melhor os textos e a produzir mensagens claras. Durante a leitura, é importante observar palavras, frases, organização e finalidade do texto. Esses conhecimentos também ajudam na escrita e na comunicação do dia a dia.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "De acordo com o texto de apoio, por que estudar poema é importante?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual alternativa está diretamente relacionada ao tema “Poema e versos”?",
+          "alternativas": [
+            "Observar como o texto é organizado e qual é sua finalidade.",
+            "Copiar palavras sem compreender o texto.",
+            "Ignorar as informações principais.",
+            "Ler apenas o título e não continuar."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Dê um exemplo relacionado a poema.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "analise",
+          "enunciado": "Explique com suas palavras uma característica importante de poema.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "aplicacao",
+          "enunciado": "Crie uma frase ou pequeno exemplo usando corretamente o conteúdo estudado em “Poema e versos”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Produza um pequeno texto ou resposta mostrando o que você aprendeu sobre poema.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Espera-se que o estudante mencione que o estudo ajuda na leitura, na compreensão, na escrita e na comunicação.",
+          "justificativa": "A resposta deve retomar informações explícitas do texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "A alternativa apresenta uma atitude adequada de leitura e análise textual."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta pessoal coerente com o tema.",
+          "justificativa": "O exemplo deve demonstrar compreensão do conteúdo."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta variável.",
+          "justificativa": "Critério de correção: explicar ao menos uma característica pertinente do tema."
+        },
+        {
+          "numero": 5,
+          "resposta": "Produção pessoal.",
+          "justificativa": "Critério de correção: uso correto do conteúdo trabalhado e clareza da frase."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção pessoal.",
+          "justificativa": "Critério de correção: coerência, clareza, relação com o tema e organização da escrita."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-3ano-b3-lp-08-rimas-em-poemas",
+      "titulo": "Rimas em poemas",
+      "tema": "Rima",
+      "sequencia": "Atividade 8",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "intermediaria",
+      "objetivo": "Localizar palavras que rimam e criar novas rimas.",
+      "bncc": [
+        {
+          "codigo": "EF35LP23",
+          "descricaoResumida": "Identificar rimas e recursos sonoros em textos poéticos."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio com atenção e responda às questões com frases completas.",
+      "textoApoio": {
+        "titulo": "Para compreender: Rimas em poemas",
+        "conteudo": "Em Língua Portuguesa, estudar rima ajuda a compreender melhor os textos e a produzir mensagens claras. Durante a leitura, é importante observar palavras, frases, organização e finalidade do texto. Esses conhecimentos também ajudam na escrita e na comunicação do dia a dia.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "De acordo com o texto de apoio, por que estudar rima é importante?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual alternativa está diretamente relacionada ao tema “Rimas em poemas”?",
+          "alternativas": [
+            "Observar como o texto é organizado e qual é sua finalidade.",
+            "Copiar palavras sem compreender o texto.",
+            "Ignorar as informações principais.",
+            "Ler apenas o título e não continuar."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Dê um exemplo relacionado a rima.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "analise",
+          "enunciado": "Explique com suas palavras uma característica importante de rima.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "aplicacao",
+          "enunciado": "Crie uma frase ou pequeno exemplo usando corretamente o conteúdo estudado em “Rimas em poemas”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Produza um pequeno texto ou resposta mostrando o que você aprendeu sobre rima.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Espera-se que o estudante mencione que o estudo ajuda na leitura, na compreensão, na escrita e na comunicação.",
+          "justificativa": "A resposta deve retomar informações explícitas do texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "A alternativa apresenta uma atitude adequada de leitura e análise textual."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta pessoal coerente com o tema.",
+          "justificativa": "O exemplo deve demonstrar compreensão do conteúdo."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta variável.",
+          "justificativa": "Critério de correção: explicar ao menos uma característica pertinente do tema."
+        },
+        {
+          "numero": 5,
+          "resposta": "Produção pessoal.",
+          "justificativa": "Critério de correção: uso correto do conteúdo trabalhado e clareza da frase."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção pessoal.",
+          "justificativa": "Critério de correção: coerência, clareza, relação com o tema e organização da escrita."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-3ano-b3-lp-09-texto-instrucional",
+      "titulo": "Texto instrucional",
+      "tema": "Instrução",
+      "sequencia": "Atividade 9",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "desafiadora",
+      "objetivo": "Compreender a função e a sequência de instruções em receitas e orientações.",
+      "bncc": [
+        {
+          "codigo": "EF03LP14",
+          "descricaoResumida": "Planejar e produzir textos instrucionais com organização adequada."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio com atenção e responda às questões com frases completas.",
+      "textoApoio": {
+        "titulo": "Para compreender: Texto instrucional",
+        "conteudo": "Em Língua Portuguesa, estudar instrução ajuda a compreender melhor os textos e a produzir mensagens claras. Durante a leitura, é importante observar palavras, frases, organização e finalidade do texto. Esses conhecimentos também ajudam na escrita e na comunicação do dia a dia.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "De acordo com o texto de apoio, por que estudar instrução é importante?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual alternativa está diretamente relacionada ao tema “Texto instrucional”?",
+          "alternativas": [
+            "Observar como o texto é organizado e qual é sua finalidade.",
+            "Copiar palavras sem compreender o texto.",
+            "Ignorar as informações principais.",
+            "Ler apenas o título e não continuar."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Dê um exemplo relacionado a instrução.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "analise",
+          "enunciado": "Explique com suas palavras uma característica importante de instrução.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "aplicacao",
+          "enunciado": "Crie uma frase ou pequeno exemplo usando corretamente o conteúdo estudado em “Texto instrucional”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Produza um pequeno texto ou resposta mostrando o que você aprendeu sobre instrução.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Espera-se que o estudante mencione que o estudo ajuda na leitura, na compreensão, na escrita e na comunicação.",
+          "justificativa": "A resposta deve retomar informações explícitas do texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "A alternativa apresenta uma atitude adequada de leitura e análise textual."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta pessoal coerente com o tema.",
+          "justificativa": "O exemplo deve demonstrar compreensão do conteúdo."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta variável.",
+          "justificativa": "Critério de correção: explicar ao menos uma característica pertinente do tema."
+        },
+        {
+          "numero": 5,
+          "resposta": "Produção pessoal.",
+          "justificativa": "Critério de correção: uso correto do conteúdo trabalhado e clareza da frase."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção pessoal.",
+          "justificativa": "Critério de correção: coerência, clareza, relação com o tema e organização da escrita."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-3ano-b3-lp-10-receita-culinaria",
+      "titulo": "Receita culinária",
+      "tema": "Receita",
+      "sequencia": "Atividade 10",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "facil",
+      "objetivo": "Identificar partes de uma receita e organizar etapas de preparo.",
+      "bncc": [
+        {
+          "codigo": "EF03LP14",
+          "descricaoResumida": "Ler e produzir receitas, observando ingredientes e modo de preparo."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio com atenção e responda às questões com frases completas.",
+      "textoApoio": {
+        "titulo": "Para compreender: Receita culinária",
+        "conteudo": "Em Língua Portuguesa, estudar receita ajuda a compreender melhor os textos e a produzir mensagens claras. Durante a leitura, é importante observar palavras, frases, organização e finalidade do texto. Esses conhecimentos também ajudam na escrita e na comunicação do dia a dia.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "De acordo com o texto de apoio, por que estudar receita é importante?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual alternativa está diretamente relacionada ao tema “Receita culinária”?",
+          "alternativas": [
+            "Observar como o texto é organizado e qual é sua finalidade.",
+            "Copiar palavras sem compreender o texto.",
+            "Ignorar as informações principais.",
+            "Ler apenas o título e não continuar."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Dê um exemplo relacionado a receita.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "analise",
+          "enunciado": "Explique com suas palavras uma característica importante de receita.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "aplicacao",
+          "enunciado": "Crie uma frase ou pequeno exemplo usando corretamente o conteúdo estudado em “Receita culinária”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Produza um pequeno texto ou resposta mostrando o que você aprendeu sobre receita.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Espera-se que o estudante mencione que o estudo ajuda na leitura, na compreensão, na escrita e na comunicação.",
+          "justificativa": "A resposta deve retomar informações explícitas do texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "A alternativa apresenta uma atitude adequada de leitura e análise textual."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta pessoal coerente com o tema.",
+          "justificativa": "O exemplo deve demonstrar compreensão do conteúdo."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta variável.",
+          "justificativa": "Critério de correção: explicar ao menos uma característica pertinente do tema."
+        },
+        {
+          "numero": 5,
+          "resposta": "Produção pessoal.",
+          "justificativa": "Critério de correção: uso correto do conteúdo trabalhado e clareza da frase."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção pessoal.",
+          "justificativa": "Critério de correção: coerência, clareza, relação com o tema e organização da escrita."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-3ano-b3-lp-11-regras-de-brincadeira",
+      "titulo": "Regras de brincadeira",
+      "tema": "Regras",
+      "sequencia": "Atividade 11",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "facil",
+      "objetivo": "Compreender a função das regras e registrar orientações com clareza.",
+      "bncc": [
+        {
+          "codigo": "EF03LP14",
+          "descricaoResumida": "Ler e produzir textos de regras e instruções."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio com atenção e responda às questões com frases completas.",
+      "textoApoio": {
+        "titulo": "Para compreender: Regras de brincadeira",
+        "conteudo": "Em Língua Portuguesa, estudar regras ajuda a compreender melhor os textos e a produzir mensagens claras. Durante a leitura, é importante observar palavras, frases, organização e finalidade do texto. Esses conhecimentos também ajudam na escrita e na comunicação do dia a dia.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "De acordo com o texto de apoio, por que estudar regras é importante?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual alternativa está diretamente relacionada ao tema “Regras de brincadeira”?",
+          "alternativas": [
+            "Observar como o texto é organizado e qual é sua finalidade.",
+            "Copiar palavras sem compreender o texto.",
+            "Ignorar as informações principais.",
+            "Ler apenas o título e não continuar."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Dê um exemplo relacionado a regras.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "analise",
+          "enunciado": "Explique com suas palavras uma característica importante de regras.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "aplicacao",
+          "enunciado": "Crie uma frase ou pequeno exemplo usando corretamente o conteúdo estudado em “Regras de brincadeira”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Produza um pequeno texto ou resposta mostrando o que você aprendeu sobre regras.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Espera-se que o estudante mencione que o estudo ajuda na leitura, na compreensão, na escrita e na comunicação.",
+          "justificativa": "A resposta deve retomar informações explícitas do texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "A alternativa apresenta uma atitude adequada de leitura e análise textual."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta pessoal coerente com o tema.",
+          "justificativa": "O exemplo deve demonstrar compreensão do conteúdo."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta variável.",
+          "justificativa": "Critério de correção: explicar ao menos uma característica pertinente do tema."
+        },
+        {
+          "numero": 5,
+          "resposta": "Produção pessoal.",
+          "justificativa": "Critério de correção: uso correto do conteúdo trabalhado e clareza da frase."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção pessoal.",
+          "justificativa": "Critério de correção: coerência, clareza, relação com o tema e organização da escrita."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-3ano-b3-lp-12-bilhete-e-recado",
+      "titulo": "Bilhete e recado",
+      "tema": "Bilhete",
+      "sequencia": "Atividade 12",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "intermediaria",
+      "objetivo": "Reconhecer remetente, destinatário, assunto e finalidade de um bilhete.",
+      "bncc": [
+        {
+          "codigo": "EF03LP13",
+          "descricaoResumida": "Planejar e produzir bilhetes e mensagens curtas adequadas à situação comunicativa."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio com atenção e responda às questões com frases completas.",
+      "textoApoio": {
+        "titulo": "Para compreender: Bilhete e recado",
+        "conteudo": "Em Língua Portuguesa, estudar bilhete ajuda a compreender melhor os textos e a produzir mensagens claras. Durante a leitura, é importante observar palavras, frases, organização e finalidade do texto. Esses conhecimentos também ajudam na escrita e na comunicação do dia a dia.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "De acordo com o texto de apoio, por que estudar bilhete é importante?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual alternativa está diretamente relacionada ao tema “Bilhete e recado”?",
+          "alternativas": [
+            "Observar como o texto é organizado e qual é sua finalidade.",
+            "Copiar palavras sem compreender o texto.",
+            "Ignorar as informações principais.",
+            "Ler apenas o título e não continuar."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Dê um exemplo relacionado a bilhete.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "analise",
+          "enunciado": "Explique com suas palavras uma característica importante de bilhete.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "aplicacao",
+          "enunciado": "Crie uma frase ou pequeno exemplo usando corretamente o conteúdo estudado em “Bilhete e recado”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Produza um pequeno texto ou resposta mostrando o que você aprendeu sobre bilhete.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Espera-se que o estudante mencione que o estudo ajuda na leitura, na compreensão, na escrita e na comunicação.",
+          "justificativa": "A resposta deve retomar informações explícitas do texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "A alternativa apresenta uma atitude adequada de leitura e análise textual."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta pessoal coerente com o tema.",
+          "justificativa": "O exemplo deve demonstrar compreensão do conteúdo."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta variável.",
+          "justificativa": "Critério de correção: explicar ao menos uma característica pertinente do tema."
+        },
+        {
+          "numero": 5,
+          "resposta": "Produção pessoal.",
+          "justificativa": "Critério de correção: uso correto do conteúdo trabalhado e clareza da frase."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção pessoal.",
+          "justificativa": "Critério de correção: coerência, clareza, relação com o tema e organização da escrita."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-3ano-b3-lp-13-convite",
+      "titulo": "Convite",
+      "tema": "Convite",
+      "sequencia": "Atividade 13",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "intermediaria",
+      "objetivo": "Identificar data, horário, local e finalidade em convites.",
+      "bncc": [
+        {
+          "codigo": "EF03LP13",
+          "descricaoResumida": "Ler e produzir convites com informações essenciais."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio com atenção e responda às questões com frases completas.",
+      "textoApoio": {
+        "titulo": "Para compreender: Convite",
+        "conteudo": "Em Língua Portuguesa, estudar convite ajuda a compreender melhor os textos e a produzir mensagens claras. Durante a leitura, é importante observar palavras, frases, organização e finalidade do texto. Esses conhecimentos também ajudam na escrita e na comunicação do dia a dia.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "De acordo com o texto de apoio, por que estudar convite é importante?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual alternativa está diretamente relacionada ao tema “Convite”?",
+          "alternativas": [
+            "Observar como o texto é organizado e qual é sua finalidade.",
+            "Copiar palavras sem compreender o texto.",
+            "Ignorar as informações principais.",
+            "Ler apenas o título e não continuar."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Dê um exemplo relacionado a convite.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "analise",
+          "enunciado": "Explique com suas palavras uma característica importante de convite.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "aplicacao",
+          "enunciado": "Crie uma frase ou pequeno exemplo usando corretamente o conteúdo estudado em “Convite”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Produza um pequeno texto ou resposta mostrando o que você aprendeu sobre convite.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Espera-se que o estudante mencione que o estudo ajuda na leitura, na compreensão, na escrita e na comunicação.",
+          "justificativa": "A resposta deve retomar informações explícitas do texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "A alternativa apresenta uma atitude adequada de leitura e análise textual."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta pessoal coerente com o tema.",
+          "justificativa": "O exemplo deve demonstrar compreensão do conteúdo."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta variável.",
+          "justificativa": "Critério de correção: explicar ao menos uma característica pertinente do tema."
+        },
+        {
+          "numero": 5,
+          "resposta": "Produção pessoal.",
+          "justificativa": "Critério de correção: uso correto do conteúdo trabalhado e clareza da frase."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção pessoal.",
+          "justificativa": "Critério de correção: coerência, clareza, relação com o tema e organização da escrita."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-3ano-b3-lp-14-noticia-curta",
+      "titulo": "Notícia curta",
+      "tema": "Notícia",
+      "sequencia": "Atividade 14",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "desafiadora",
+      "objetivo": "Reconhecer título, fato principal, local e participantes em uma notícia.",
+      "bncc": [
+        {
+          "codigo": "EF03LP18",
+          "descricaoResumida": "Ler e compreender notícias voltadas ao público infantil."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio com atenção e responda às questões com frases completas.",
+      "textoApoio": {
+        "titulo": "Para compreender: Notícia curta",
+        "conteudo": "Em Língua Portuguesa, estudar notícia ajuda a compreender melhor os textos e a produzir mensagens claras. Durante a leitura, é importante observar palavras, frases, organização e finalidade do texto. Esses conhecimentos também ajudam na escrita e na comunicação do dia a dia.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "De acordo com o texto de apoio, por que estudar notícia é importante?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual alternativa está diretamente relacionada ao tema “Notícia curta”?",
+          "alternativas": [
+            "Observar como o texto é organizado e qual é sua finalidade.",
+            "Copiar palavras sem compreender o texto.",
+            "Ignorar as informações principais.",
+            "Ler apenas o título e não continuar."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Dê um exemplo relacionado a notícia.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "analise",
+          "enunciado": "Explique com suas palavras uma característica importante de notícia.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "aplicacao",
+          "enunciado": "Crie uma frase ou pequeno exemplo usando corretamente o conteúdo estudado em “Notícia curta”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Produza um pequeno texto ou resposta mostrando o que você aprendeu sobre notícia.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Espera-se que o estudante mencione que o estudo ajuda na leitura, na compreensão, na escrita e na comunicação.",
+          "justificativa": "A resposta deve retomar informações explícitas do texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "A alternativa apresenta uma atitude adequada de leitura e análise textual."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta pessoal coerente com o tema.",
+          "justificativa": "O exemplo deve demonstrar compreensão do conteúdo."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta variável.",
+          "justificativa": "Critério de correção: explicar ao menos uma característica pertinente do tema."
+        },
+        {
+          "numero": 5,
+          "resposta": "Produção pessoal.",
+          "justificativa": "Critério de correção: uso correto do conteúdo trabalhado e clareza da frase."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção pessoal.",
+          "justificativa": "Critério de correção: coerência, clareza, relação com o tema e organização da escrita."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-3ano-b3-lp-15-titulo-e-assunto",
+      "titulo": "Título e assunto",
+      "tema": "Título",
+      "sequencia": "Atividade 15",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "facil",
+      "objetivo": "Inferir o assunto de um texto a partir de seu título.",
+      "bncc": [
+        {
+          "codigo": "EF03LP18",
+          "descricaoResumida": "Relacionar títulos ao assunto principal de textos."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio com atenção e responda às questões com frases completas.",
+      "textoApoio": {
+        "titulo": "Para compreender: Título e assunto",
+        "conteudo": "Em Língua Portuguesa, estudar título ajuda a compreender melhor os textos e a produzir mensagens claras. Durante a leitura, é importante observar palavras, frases, organização e finalidade do texto. Esses conhecimentos também ajudam na escrita e na comunicação do dia a dia.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "De acordo com o texto de apoio, por que estudar título é importante?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual alternativa está diretamente relacionada ao tema “Título e assunto”?",
+          "alternativas": [
+            "Observar como o texto é organizado e qual é sua finalidade.",
+            "Copiar palavras sem compreender o texto.",
+            "Ignorar as informações principais.",
+            "Ler apenas o título e não continuar."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Dê um exemplo relacionado a título.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "analise",
+          "enunciado": "Explique com suas palavras uma característica importante de título.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "aplicacao",
+          "enunciado": "Crie uma frase ou pequeno exemplo usando corretamente o conteúdo estudado em “Título e assunto”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Produza um pequeno texto ou resposta mostrando o que você aprendeu sobre título.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Espera-se que o estudante mencione que o estudo ajuda na leitura, na compreensão, na escrita e na comunicação.",
+          "justificativa": "A resposta deve retomar informações explícitas do texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "A alternativa apresenta uma atitude adequada de leitura e análise textual."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta pessoal coerente com o tema.",
+          "justificativa": "O exemplo deve demonstrar compreensão do conteúdo."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta variável.",
+          "justificativa": "Critério de correção: explicar ao menos uma característica pertinente do tema."
+        },
+        {
+          "numero": 5,
+          "resposta": "Produção pessoal.",
+          "justificativa": "Critério de correção: uso correto do conteúdo trabalhado e clareza da frase."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção pessoal.",
+          "justificativa": "Critério de correção: coerência, clareza, relação com o tema e organização da escrita."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-3ano-b3-lp-16-informacao-principal",
+      "titulo": "Informação principal",
+      "tema": "Compreensão",
+      "sequencia": "Atividade 16",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "facil",
+      "objetivo": "Localizar a informação principal em textos curtos.",
+      "bncc": [
+        {
+          "codigo": "EF35LP03",
+          "descricaoResumida": "Identificar a ideia central de textos."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio com atenção e responda às questões com frases completas.",
+      "textoApoio": {
+        "titulo": "Para compreender: Informação principal",
+        "conteudo": "Em Língua Portuguesa, estudar compreensão ajuda a compreender melhor os textos e a produzir mensagens claras. Durante a leitura, é importante observar palavras, frases, organização e finalidade do texto. Esses conhecimentos também ajudam na escrita e na comunicação do dia a dia.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "De acordo com o texto de apoio, por que estudar compreensão é importante?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual alternativa está diretamente relacionada ao tema “Informação principal”?",
+          "alternativas": [
+            "Observar como o texto é organizado e qual é sua finalidade.",
+            "Copiar palavras sem compreender o texto.",
+            "Ignorar as informações principais.",
+            "Ler apenas o título e não continuar."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Dê um exemplo relacionado a compreensão.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "analise",
+          "enunciado": "Explique com suas palavras uma característica importante de compreensão.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "aplicacao",
+          "enunciado": "Crie uma frase ou pequeno exemplo usando corretamente o conteúdo estudado em “Informação principal”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Produza um pequeno texto ou resposta mostrando o que você aprendeu sobre compreensão.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Espera-se que o estudante mencione que o estudo ajuda na leitura, na compreensão, na escrita e na comunicação.",
+          "justificativa": "A resposta deve retomar informações explícitas do texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "A alternativa apresenta uma atitude adequada de leitura e análise textual."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta pessoal coerente com o tema.",
+          "justificativa": "O exemplo deve demonstrar compreensão do conteúdo."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta variável.",
+          "justificativa": "Critério de correção: explicar ao menos uma característica pertinente do tema."
+        },
+        {
+          "numero": 5,
+          "resposta": "Produção pessoal.",
+          "justificativa": "Critério de correção: uso correto do conteúdo trabalhado e clareza da frase."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção pessoal.",
+          "justificativa": "Critério de correção: coerência, clareza, relação com o tema e organização da escrita."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-3ano-b3-lp-17-informacoes-explicitas",
+      "titulo": "Informações explícitas",
+      "tema": "Localização de informações",
+      "sequencia": "Atividade 17",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "intermediaria",
+      "objetivo": "Encontrar informações diretamente apresentadas em diferentes gêneros.",
+      "bncc": [
+        {
+          "codigo": "EF15LP03",
+          "descricaoResumida": "Localizar informações explícitas em textos."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio com atenção e responda às questões com frases completas.",
+      "textoApoio": {
+        "titulo": "Para compreender: Informações explícitas",
+        "conteudo": "Em Língua Portuguesa, estudar localização de informações ajuda a compreender melhor os textos e a produzir mensagens claras. Durante a leitura, é importante observar palavras, frases, organização e finalidade do texto. Esses conhecimentos também ajudam na escrita e na comunicação do dia a dia.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "De acordo com o texto de apoio, por que estudar localização de informações é importante?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual alternativa está diretamente relacionada ao tema “Informações explícitas”?",
+          "alternativas": [
+            "Observar como o texto é organizado e qual é sua finalidade.",
+            "Copiar palavras sem compreender o texto.",
+            "Ignorar as informações principais.",
+            "Ler apenas o título e não continuar."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Dê um exemplo relacionado a localização de informações.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "analise",
+          "enunciado": "Explique com suas palavras uma característica importante de localização de informações.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "aplicacao",
+          "enunciado": "Crie uma frase ou pequeno exemplo usando corretamente o conteúdo estudado em “Informações explícitas”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Produza um pequeno texto ou resposta mostrando o que você aprendeu sobre localização de informações.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Espera-se que o estudante mencione que o estudo ajuda na leitura, na compreensão, na escrita e na comunicação.",
+          "justificativa": "A resposta deve retomar informações explícitas do texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "A alternativa apresenta uma atitude adequada de leitura e análise textual."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta pessoal coerente com o tema.",
+          "justificativa": "O exemplo deve demonstrar compreensão do conteúdo."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta variável.",
+          "justificativa": "Critério de correção: explicar ao menos uma característica pertinente do tema."
+        },
+        {
+          "numero": 5,
+          "resposta": "Produção pessoal.",
+          "justificativa": "Critério de correção: uso correto do conteúdo trabalhado e clareza da frase."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção pessoal.",
+          "justificativa": "Critério de correção: coerência, clareza, relação com o tema e organização da escrita."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-3ano-b3-lp-18-inferencia-pelo-contexto",
+      "titulo": "Inferência pelo contexto",
+      "tema": "Inferência",
+      "sequencia": "Atividade 18",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "intermediaria",
+      "objetivo": "Deduzir informações usando pistas do texto.",
+      "bncc": [
+        {
+          "codigo": "EF35LP04",
+          "descricaoResumida": "Inferir informações implícitas em textos."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio com atenção e responda às questões com frases completas.",
+      "textoApoio": {
+        "titulo": "Para compreender: Inferência pelo contexto",
+        "conteudo": "Em Língua Portuguesa, estudar inferência ajuda a compreender melhor os textos e a produzir mensagens claras. Durante a leitura, é importante observar palavras, frases, organização e finalidade do texto. Esses conhecimentos também ajudam na escrita e na comunicação do dia a dia.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "De acordo com o texto de apoio, por que estudar inferência é importante?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual alternativa está diretamente relacionada ao tema “Inferência pelo contexto”?",
+          "alternativas": [
+            "Observar como o texto é organizado e qual é sua finalidade.",
+            "Copiar palavras sem compreender o texto.",
+            "Ignorar as informações principais.",
+            "Ler apenas o título e não continuar."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Dê um exemplo relacionado a inferência.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "analise",
+          "enunciado": "Explique com suas palavras uma característica importante de inferência.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "aplicacao",
+          "enunciado": "Crie uma frase ou pequeno exemplo usando corretamente o conteúdo estudado em “Inferência pelo contexto”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Produza um pequeno texto ou resposta mostrando o que você aprendeu sobre inferência.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Espera-se que o estudante mencione que o estudo ajuda na leitura, na compreensão, na escrita e na comunicação.",
+          "justificativa": "A resposta deve retomar informações explícitas do texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "A alternativa apresenta uma atitude adequada de leitura e análise textual."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta pessoal coerente com o tema.",
+          "justificativa": "O exemplo deve demonstrar compreensão do conteúdo."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta variável.",
+          "justificativa": "Critério de correção: explicar ao menos uma característica pertinente do tema."
+        },
+        {
+          "numero": 5,
+          "resposta": "Produção pessoal.",
+          "justificativa": "Critério de correção: uso correto do conteúdo trabalhado e clareza da frase."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção pessoal.",
+          "justificativa": "Critério de correção: coerência, clareza, relação com o tema e organização da escrita."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-3ano-b3-lp-19-significado-de-palavras",
+      "titulo": "Significado de palavras",
+      "tema": "Vocabulário",
+      "sequencia": "Atividade 19",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "desafiadora",
+      "objetivo": "Compreender palavras desconhecidas a partir das frases em que aparecem.",
+      "bncc": [
+        {
+          "codigo": "EF35LP05",
+          "descricaoResumida": "Inferir o sentido de palavras pelo contexto."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio com atenção e responda às questões com frases completas.",
+      "textoApoio": {
+        "titulo": "Para compreender: Significado de palavras",
+        "conteudo": "Em Língua Portuguesa, estudar vocabulário ajuda a compreender melhor os textos e a produzir mensagens claras. Durante a leitura, é importante observar palavras, frases, organização e finalidade do texto. Esses conhecimentos também ajudam na escrita e na comunicação do dia a dia.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "De acordo com o texto de apoio, por que estudar vocabulário é importante?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual alternativa está diretamente relacionada ao tema “Significado de palavras”?",
+          "alternativas": [
+            "Observar como o texto é organizado e qual é sua finalidade.",
+            "Copiar palavras sem compreender o texto.",
+            "Ignorar as informações principais.",
+            "Ler apenas o título e não continuar."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Dê um exemplo relacionado a vocabulário.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "analise",
+          "enunciado": "Explique com suas palavras uma característica importante de vocabulário.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "aplicacao",
+          "enunciado": "Crie uma frase ou pequeno exemplo usando corretamente o conteúdo estudado em “Significado de palavras”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Produza um pequeno texto ou resposta mostrando o que você aprendeu sobre vocabulário.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Espera-se que o estudante mencione que o estudo ajuda na leitura, na compreensão, na escrita e na comunicação.",
+          "justificativa": "A resposta deve retomar informações explícitas do texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "A alternativa apresenta uma atitude adequada de leitura e análise textual."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta pessoal coerente com o tema.",
+          "justificativa": "O exemplo deve demonstrar compreensão do conteúdo."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta variável.",
+          "justificativa": "Critério de correção: explicar ao menos uma característica pertinente do tema."
+        },
+        {
+          "numero": 5,
+          "resposta": "Produção pessoal.",
+          "justificativa": "Critério de correção: uso correto do conteúdo trabalhado e clareza da frase."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção pessoal.",
+          "justificativa": "Critério de correção: coerência, clareza, relação com o tema e organização da escrita."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-3ano-b3-lp-20-sinonimos",
+      "titulo": "Sinônimos",
+      "tema": "Sinônimos",
+      "sequencia": "Atividade 20",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "facil",
+      "objetivo": "Reconhecer e empregar palavras de sentido semelhante.",
+      "bncc": [
+        {
+          "codigo": "EF03LP09",
+          "descricaoResumida": "Identificar relações de sentido entre palavras."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio com atenção e responda às questões com frases completas.",
+      "textoApoio": {
+        "titulo": "Para compreender: Sinônimos",
+        "conteudo": "Em Língua Portuguesa, estudar sinônimos ajuda a compreender melhor os textos e a produzir mensagens claras. Durante a leitura, é importante observar palavras, frases, organização e finalidade do texto. Esses conhecimentos também ajudam na escrita e na comunicação do dia a dia.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "De acordo com o texto de apoio, por que estudar sinônimos é importante?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual alternativa está diretamente relacionada ao tema “Sinônimos”?",
+          "alternativas": [
+            "Observar como o texto é organizado e qual é sua finalidade.",
+            "Copiar palavras sem compreender o texto.",
+            "Ignorar as informações principais.",
+            "Ler apenas o título e não continuar."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Dê um exemplo relacionado a sinônimos.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "analise",
+          "enunciado": "Explique com suas palavras uma característica importante de sinônimos.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "aplicacao",
+          "enunciado": "Crie uma frase ou pequeno exemplo usando corretamente o conteúdo estudado em “Sinônimos”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Produza um pequeno texto ou resposta mostrando o que você aprendeu sobre sinônimos.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Espera-se que o estudante mencione que o estudo ajuda na leitura, na compreensão, na escrita e na comunicação.",
+          "justificativa": "A resposta deve retomar informações explícitas do texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "A alternativa apresenta uma atitude adequada de leitura e análise textual."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta pessoal coerente com o tema.",
+          "justificativa": "O exemplo deve demonstrar compreensão do conteúdo."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta variável.",
+          "justificativa": "Critério de correção: explicar ao menos uma característica pertinente do tema."
+        },
+        {
+          "numero": 5,
+          "resposta": "Produção pessoal.",
+          "justificativa": "Critério de correção: uso correto do conteúdo trabalhado e clareza da frase."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção pessoal.",
+          "justificativa": "Critério de correção: coerência, clareza, relação com o tema e organização da escrita."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-3ano-b3-lp-21-antonimos",
+      "titulo": "Antônimos",
+      "tema": "Antônimos",
+      "sequencia": "Atividade 21",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "facil",
+      "objetivo": "Reconhecer e empregar antônimos em frases.",
+      "bncc": [
+        {
+          "codigo": "EF03LP09",
+          "descricaoResumida": "Identificar palavras de sentidos opostos."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio com atenção e responda às questões com frases completas.",
+      "textoApoio": {
+        "titulo": "Para compreender: Antônimos",
+        "conteudo": "Em Língua Portuguesa, estudar antônimos ajuda a compreender melhor os textos e a produzir mensagens claras. Durante a leitura, é importante observar palavras, frases, organização e finalidade do texto. Esses conhecimentos também ajudam na escrita e na comunicação do dia a dia.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "De acordo com o texto de apoio, por que estudar antônimos é importante?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual alternativa está diretamente relacionada ao tema “Antônimos”?",
+          "alternativas": [
+            "Observar como o texto é organizado e qual é sua finalidade.",
+            "Copiar palavras sem compreender o texto.",
+            "Ignorar as informações principais.",
+            "Ler apenas o título e não continuar."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Dê um exemplo relacionado a antônimos.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "analise",
+          "enunciado": "Explique com suas palavras uma característica importante de antônimos.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "aplicacao",
+          "enunciado": "Crie uma frase ou pequeno exemplo usando corretamente o conteúdo estudado em “Antônimos”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Produza um pequeno texto ou resposta mostrando o que você aprendeu sobre antônimos.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Espera-se que o estudante mencione que o estudo ajuda na leitura, na compreensão, na escrita e na comunicação.",
+          "justificativa": "A resposta deve retomar informações explícitas do texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "A alternativa apresenta uma atitude adequada de leitura e análise textual."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta pessoal coerente com o tema.",
+          "justificativa": "O exemplo deve demonstrar compreensão do conteúdo."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta variável.",
+          "justificativa": "Critério de correção: explicar ao menos uma característica pertinente do tema."
+        },
+        {
+          "numero": 5,
+          "resposta": "Produção pessoal.",
+          "justificativa": "Critério de correção: uso correto do conteúdo trabalhado e clareza da frase."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção pessoal.",
+          "justificativa": "Critério de correção: coerência, clareza, relação com o tema e organização da escrita."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-3ano-b3-lp-22-substantivos-comuns-e-proprios",
+      "titulo": "Substantivos comuns e próprios",
+      "tema": "Substantivos",
+      "sequencia": "Atividade 22",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "intermediaria",
+      "objetivo": "Diferenciar substantivos comuns e próprios em textos.",
+      "bncc": [
+        {
+          "codigo": "EF03LP08",
+          "descricaoResumida": "Identificar substantivos e sua função na nomeação."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio com atenção e responda às questões com frases completas.",
+      "textoApoio": {
+        "titulo": "Para compreender: Substantivos comuns e próprios",
+        "conteudo": "Em Língua Portuguesa, estudar substantivos ajuda a compreender melhor os textos e a produzir mensagens claras. Durante a leitura, é importante observar palavras, frases, organização e finalidade do texto. Esses conhecimentos também ajudam na escrita e na comunicação do dia a dia.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "De acordo com o texto de apoio, por que estudar substantivos é importante?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual alternativa está diretamente relacionada ao tema “Substantivos comuns e próprios”?",
+          "alternativas": [
+            "Observar como o texto é organizado e qual é sua finalidade.",
+            "Copiar palavras sem compreender o texto.",
+            "Ignorar as informações principais.",
+            "Ler apenas o título e não continuar."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Dê um exemplo relacionado a substantivos.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "analise",
+          "enunciado": "Explique com suas palavras uma característica importante de substantivos.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "aplicacao",
+          "enunciado": "Crie uma frase ou pequeno exemplo usando corretamente o conteúdo estudado em “Substantivos comuns e próprios”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Produza um pequeno texto ou resposta mostrando o que você aprendeu sobre substantivos.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Espera-se que o estudante mencione que o estudo ajuda na leitura, na compreensão, na escrita e na comunicação.",
+          "justificativa": "A resposta deve retomar informações explícitas do texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "A alternativa apresenta uma atitude adequada de leitura e análise textual."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta pessoal coerente com o tema.",
+          "justificativa": "O exemplo deve demonstrar compreensão do conteúdo."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta variável.",
+          "justificativa": "Critério de correção: explicar ao menos uma característica pertinente do tema."
+        },
+        {
+          "numero": 5,
+          "resposta": "Produção pessoal.",
+          "justificativa": "Critério de correção: uso correto do conteúdo trabalhado e clareza da frase."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção pessoal.",
+          "justificativa": "Critério de correção: coerência, clareza, relação com o tema e organização da escrita."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-3ano-b3-lp-23-adjetivos",
+      "titulo": "Adjetivos",
+      "tema": "Adjetivos",
+      "sequencia": "Atividade 23",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "intermediaria",
+      "objetivo": "Reconhecer adjetivos e sua função na descrição.",
+      "bncc": [
+        {
+          "codigo": "EF03LP09",
+          "descricaoResumida": "Identificar palavras que caracterizam seres e objetos."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio com atenção e responda às questões com frases completas.",
+      "textoApoio": {
+        "titulo": "Para compreender: Adjetivos",
+        "conteudo": "Em Língua Portuguesa, estudar adjetivos ajuda a compreender melhor os textos e a produzir mensagens claras. Durante a leitura, é importante observar palavras, frases, organização e finalidade do texto. Esses conhecimentos também ajudam na escrita e na comunicação do dia a dia.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "De acordo com o texto de apoio, por que estudar adjetivos é importante?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual alternativa está diretamente relacionada ao tema “Adjetivos”?",
+          "alternativas": [
+            "Observar como o texto é organizado e qual é sua finalidade.",
+            "Copiar palavras sem compreender o texto.",
+            "Ignorar as informações principais.",
+            "Ler apenas o título e não continuar."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Dê um exemplo relacionado a adjetivos.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "analise",
+          "enunciado": "Explique com suas palavras uma característica importante de adjetivos.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "aplicacao",
+          "enunciado": "Crie uma frase ou pequeno exemplo usando corretamente o conteúdo estudado em “Adjetivos”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Produza um pequeno texto ou resposta mostrando o que você aprendeu sobre adjetivos.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Espera-se que o estudante mencione que o estudo ajuda na leitura, na compreensão, na escrita e na comunicação.",
+          "justificativa": "A resposta deve retomar informações explícitas do texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "A alternativa apresenta uma atitude adequada de leitura e análise textual."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta pessoal coerente com o tema.",
+          "justificativa": "O exemplo deve demonstrar compreensão do conteúdo."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta variável.",
+          "justificativa": "Critério de correção: explicar ao menos uma característica pertinente do tema."
+        },
+        {
+          "numero": 5,
+          "resposta": "Produção pessoal.",
+          "justificativa": "Critério de correção: uso correto do conteúdo trabalhado e clareza da frase."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção pessoal.",
+          "justificativa": "Critério de correção: coerência, clareza, relação com o tema e organização da escrita."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-3ano-b3-lp-24-verbos-e-acoes",
+      "titulo": "Verbos e ações",
+      "tema": "Verbos",
+      "sequencia": "Atividade 24",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "desafiadora",
+      "objetivo": "Reconhecer palavras que indicam ações, estados e acontecimentos.",
+      "bncc": [
+        {
+          "codigo": "EF03LP08",
+          "descricaoResumida": "Identificar verbos em frases e textos."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio com atenção e responda às questões com frases completas.",
+      "textoApoio": {
+        "titulo": "Para compreender: Verbos e ações",
+        "conteudo": "Em Língua Portuguesa, estudar verbos ajuda a compreender melhor os textos e a produzir mensagens claras. Durante a leitura, é importante observar palavras, frases, organização e finalidade do texto. Esses conhecimentos também ajudam na escrita e na comunicação do dia a dia.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "De acordo com o texto de apoio, por que estudar verbos é importante?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual alternativa está diretamente relacionada ao tema “Verbos e ações”?",
+          "alternativas": [
+            "Observar como o texto é organizado e qual é sua finalidade.",
+            "Copiar palavras sem compreender o texto.",
+            "Ignorar as informações principais.",
+            "Ler apenas o título e não continuar."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Dê um exemplo relacionado a verbos.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "analise",
+          "enunciado": "Explique com suas palavras uma característica importante de verbos.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "aplicacao",
+          "enunciado": "Crie uma frase ou pequeno exemplo usando corretamente o conteúdo estudado em “Verbos e ações”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Produza um pequeno texto ou resposta mostrando o que você aprendeu sobre verbos.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Espera-se que o estudante mencione que o estudo ajuda na leitura, na compreensão, na escrita e na comunicação.",
+          "justificativa": "A resposta deve retomar informações explícitas do texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "A alternativa apresenta uma atitude adequada de leitura e análise textual."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta pessoal coerente com o tema.",
+          "justificativa": "O exemplo deve demonstrar compreensão do conteúdo."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta variável.",
+          "justificativa": "Critério de correção: explicar ao menos uma característica pertinente do tema."
+        },
+        {
+          "numero": 5,
+          "resposta": "Produção pessoal.",
+          "justificativa": "Critério de correção: uso correto do conteúdo trabalhado e clareza da frase."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção pessoal.",
+          "justificativa": "Critério de correção: coerência, clareza, relação com o tema e organização da escrita."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-3ano-b3-lp-25-tempo-verbal",
+      "titulo": "Tempo verbal",
+      "tema": "Tempo verbal",
+      "sequencia": "Atividade 25",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "facil",
+      "objetivo": "Distinguir ações no passado, presente e futuro.",
+      "bncc": [
+        {
+          "codigo": "EF03LP08",
+          "descricaoResumida": "Observar marcas de tempo em verbos."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio com atenção e responda às questões com frases completas.",
+      "textoApoio": {
+        "titulo": "Para compreender: Tempo verbal",
+        "conteudo": "Em Língua Portuguesa, estudar tempo verbal ajuda a compreender melhor os textos e a produzir mensagens claras. Durante a leitura, é importante observar palavras, frases, organização e finalidade do texto. Esses conhecimentos também ajudam na escrita e na comunicação do dia a dia.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "De acordo com o texto de apoio, por que estudar tempo verbal é importante?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual alternativa está diretamente relacionada ao tema “Tempo verbal”?",
+          "alternativas": [
+            "Observar como o texto é organizado e qual é sua finalidade.",
+            "Copiar palavras sem compreender o texto.",
+            "Ignorar as informações principais.",
+            "Ler apenas o título e não continuar."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Dê um exemplo relacionado a tempo verbal.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "analise",
+          "enunciado": "Explique com suas palavras uma característica importante de tempo verbal.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "aplicacao",
+          "enunciado": "Crie uma frase ou pequeno exemplo usando corretamente o conteúdo estudado em “Tempo verbal”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Produza um pequeno texto ou resposta mostrando o que você aprendeu sobre tempo verbal.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Espera-se que o estudante mencione que o estudo ajuda na leitura, na compreensão, na escrita e na comunicação.",
+          "justificativa": "A resposta deve retomar informações explícitas do texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "A alternativa apresenta uma atitude adequada de leitura e análise textual."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta pessoal coerente com o tema.",
+          "justificativa": "O exemplo deve demonstrar compreensão do conteúdo."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta variável.",
+          "justificativa": "Critério de correção: explicar ao menos uma característica pertinente do tema."
+        },
+        {
+          "numero": 5,
+          "resposta": "Produção pessoal.",
+          "justificativa": "Critério de correção: uso correto do conteúdo trabalhado e clareza da frase."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção pessoal.",
+          "justificativa": "Critério de correção: coerência, clareza, relação com o tema e organização da escrita."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-3ano-b3-lp-26-pontuacao-em-frases",
+      "titulo": "Pontuação em frases",
+      "tema": "Pontuação",
+      "sequencia": "Atividade 26",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "facil",
+      "objetivo": "Empregar ponto final, interrogação e exclamação adequadamente.",
+      "bncc": [
+        {
+          "codigo": "EF03LP07",
+          "descricaoResumida": "Usar sinais de pontuação em textos."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio com atenção e responda às questões com frases completas.",
+      "textoApoio": {
+        "titulo": "Para compreender: Pontuação em frases",
+        "conteudo": "Em Língua Portuguesa, estudar pontuação ajuda a compreender melhor os textos e a produzir mensagens claras. Durante a leitura, é importante observar palavras, frases, organização e finalidade do texto. Esses conhecimentos também ajudam na escrita e na comunicação do dia a dia.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "De acordo com o texto de apoio, por que estudar pontuação é importante?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual alternativa está diretamente relacionada ao tema “Pontuação em frases”?",
+          "alternativas": [
+            "Observar como o texto é organizado e qual é sua finalidade.",
+            "Copiar palavras sem compreender o texto.",
+            "Ignorar as informações principais.",
+            "Ler apenas o título e não continuar."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Dê um exemplo relacionado a pontuação.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "analise",
+          "enunciado": "Explique com suas palavras uma característica importante de pontuação.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "aplicacao",
+          "enunciado": "Crie uma frase ou pequeno exemplo usando corretamente o conteúdo estudado em “Pontuação em frases”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Produza um pequeno texto ou resposta mostrando o que você aprendeu sobre pontuação.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Espera-se que o estudante mencione que o estudo ajuda na leitura, na compreensão, na escrita e na comunicação.",
+          "justificativa": "A resposta deve retomar informações explícitas do texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "A alternativa apresenta uma atitude adequada de leitura e análise textual."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta pessoal coerente com o tema.",
+          "justificativa": "O exemplo deve demonstrar compreensão do conteúdo."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta variável.",
+          "justificativa": "Critério de correção: explicar ao menos uma característica pertinente do tema."
+        },
+        {
+          "numero": 5,
+          "resposta": "Produção pessoal.",
+          "justificativa": "Critério de correção: uso correto do conteúdo trabalhado e clareza da frase."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção pessoal.",
+          "justificativa": "Critério de correção: coerência, clareza, relação com o tema e organização da escrita."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-3ano-b3-lp-27-paragrafo-e-organizacao",
+      "titulo": "Parágrafo e organização",
+      "tema": "Parágrafo",
+      "sequencia": "Atividade 27",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "intermediaria",
+      "objetivo": "Compreender o uso do parágrafo na organização das ideias.",
+      "bncc": [
+        {
+          "codigo": "EF35LP09",
+          "descricaoResumida": "Organizar textos em unidades de sentido."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio com atenção e responda às questões com frases completas.",
+      "textoApoio": {
+        "titulo": "Para compreender: Parágrafo e organização",
+        "conteudo": "Em Língua Portuguesa, estudar parágrafo ajuda a compreender melhor os textos e a produzir mensagens claras. Durante a leitura, é importante observar palavras, frases, organização e finalidade do texto. Esses conhecimentos também ajudam na escrita e na comunicação do dia a dia.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "De acordo com o texto de apoio, por que estudar parágrafo é importante?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual alternativa está diretamente relacionada ao tema “Parágrafo e organização”?",
+          "alternativas": [
+            "Observar como o texto é organizado e qual é sua finalidade.",
+            "Copiar palavras sem compreender o texto.",
+            "Ignorar as informações principais.",
+            "Ler apenas o título e não continuar."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Dê um exemplo relacionado a parágrafo.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "analise",
+          "enunciado": "Explique com suas palavras uma característica importante de parágrafo.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "aplicacao",
+          "enunciado": "Crie uma frase ou pequeno exemplo usando corretamente o conteúdo estudado em “Parágrafo e organização”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Produza um pequeno texto ou resposta mostrando o que você aprendeu sobre parágrafo.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Espera-se que o estudante mencione que o estudo ajuda na leitura, na compreensão, na escrita e na comunicação.",
+          "justificativa": "A resposta deve retomar informações explícitas do texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "A alternativa apresenta uma atitude adequada de leitura e análise textual."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta pessoal coerente com o tema.",
+          "justificativa": "O exemplo deve demonstrar compreensão do conteúdo."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta variável.",
+          "justificativa": "Critério de correção: explicar ao menos uma característica pertinente do tema."
+        },
+        {
+          "numero": 5,
+          "resposta": "Produção pessoal.",
+          "justificativa": "Critério de correção: uso correto do conteúdo trabalhado e clareza da frase."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção pessoal.",
+          "justificativa": "Critério de correção: coerência, clareza, relação com o tema e organização da escrita."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-3ano-b3-lp-28-ortografia-m-antes-de-p-e-b",
+      "titulo": "Ortografia: M antes de P e B",
+      "tema": "Ortografia",
+      "sequencia": "Atividade 28",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "intermediaria",
+      "objetivo": "Aplicar a regra do uso de M antes de P e B.",
+      "bncc": [
+        {
+          "codigo": "EF03LP01",
+          "descricaoResumida": "Ler e escrever palavras com correspondências regulares contextuais."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio com atenção e responda às questões com frases completas.",
+      "textoApoio": {
+        "titulo": "Para compreender: Ortografia: M antes de P e B",
+        "conteudo": "Em Língua Portuguesa, estudar ortografia ajuda a compreender melhor os textos e a produzir mensagens claras. Durante a leitura, é importante observar palavras, frases, organização e finalidade do texto. Esses conhecimentos também ajudam na escrita e na comunicação do dia a dia.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "De acordo com o texto de apoio, por que estudar ortografia é importante?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual alternativa está diretamente relacionada ao tema “Ortografia: M antes de P e B”?",
+          "alternativas": [
+            "Observar como o texto é organizado e qual é sua finalidade.",
+            "Copiar palavras sem compreender o texto.",
+            "Ignorar as informações principais.",
+            "Ler apenas o título e não continuar."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Dê um exemplo relacionado a ortografia.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "analise",
+          "enunciado": "Explique com suas palavras uma característica importante de ortografia.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "aplicacao",
+          "enunciado": "Crie uma frase ou pequeno exemplo usando corretamente o conteúdo estudado em “Ortografia: M antes de P e B”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Produza um pequeno texto ou resposta mostrando o que você aprendeu sobre ortografia.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Espera-se que o estudante mencione que o estudo ajuda na leitura, na compreensão, na escrita e na comunicação.",
+          "justificativa": "A resposta deve retomar informações explícitas do texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "A alternativa apresenta uma atitude adequada de leitura e análise textual."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta pessoal coerente com o tema.",
+          "justificativa": "O exemplo deve demonstrar compreensão do conteúdo."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta variável.",
+          "justificativa": "Critério de correção: explicar ao menos uma característica pertinente do tema."
+        },
+        {
+          "numero": 5,
+          "resposta": "Produção pessoal.",
+          "justificativa": "Critério de correção: uso correto do conteúdo trabalhado e clareza da frase."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção pessoal.",
+          "justificativa": "Critério de correção: coerência, clareza, relação com o tema e organização da escrita."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-3ano-b3-lp-29-ortografia-r-e-rr",
+      "titulo": "Ortografia: R e RR",
+      "tema": "Ortografia",
+      "sequencia": "Atividade 29",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "desafiadora",
+      "objetivo": "Diferenciar o uso de R e RR em palavras.",
+      "bncc": [
+        {
+          "codigo": "EF03LP01",
+          "descricaoResumida": "Ler e escrever palavras com regularidades ortográficas."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio com atenção e responda às questões com frases completas.",
+      "textoApoio": {
+        "titulo": "Para compreender: Ortografia: R e RR",
+        "conteudo": "Em Língua Portuguesa, estudar ortografia ajuda a compreender melhor os textos e a produzir mensagens claras. Durante a leitura, é importante observar palavras, frases, organização e finalidade do texto. Esses conhecimentos também ajudam na escrita e na comunicação do dia a dia.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "De acordo com o texto de apoio, por que estudar ortografia é importante?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual alternativa está diretamente relacionada ao tema “Ortografia: R e RR”?",
+          "alternativas": [
+            "Observar como o texto é organizado e qual é sua finalidade.",
+            "Copiar palavras sem compreender o texto.",
+            "Ignorar as informações principais.",
+            "Ler apenas o título e não continuar."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Dê um exemplo relacionado a ortografia.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "analise",
+          "enunciado": "Explique com suas palavras uma característica importante de ortografia.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "aplicacao",
+          "enunciado": "Crie uma frase ou pequeno exemplo usando corretamente o conteúdo estudado em “Ortografia: R e RR”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Produza um pequeno texto ou resposta mostrando o que você aprendeu sobre ortografia.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Espera-se que o estudante mencione que o estudo ajuda na leitura, na compreensão, na escrita e na comunicação.",
+          "justificativa": "A resposta deve retomar informações explícitas do texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "A alternativa apresenta uma atitude adequada de leitura e análise textual."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta pessoal coerente com o tema.",
+          "justificativa": "O exemplo deve demonstrar compreensão do conteúdo."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta variável.",
+          "justificativa": "Critério de correção: explicar ao menos uma característica pertinente do tema."
+        },
+        {
+          "numero": 5,
+          "resposta": "Produção pessoal.",
+          "justificativa": "Critério de correção: uso correto do conteúdo trabalhado e clareza da frase."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção pessoal.",
+          "justificativa": "Critério de correção: coerência, clareza, relação com o tema e organização da escrita."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-3ano-b3-lp-30-producao-de-pequeno-relato",
+      "titulo": "Produção de pequeno relato",
+      "tema": "Relato pessoal",
+      "sequencia": "Atividade 30",
+      "tipoSequencia": "Coleção principal",
+      "dificuldade": "facil",
+      "objetivo": "Produzir pequeno relato com sequência temporal e clareza.",
+      "bncc": [
+        {
+          "codigo": "EF03LP12",
+          "descricaoResumida": "Planejar e produzir relatos de experiências pessoais."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio com atenção e responda às questões com frases completas.",
+      "textoApoio": {
+        "titulo": "Para compreender: Produção de pequeno relato",
+        "conteudo": "Em Língua Portuguesa, estudar relato pessoal ajuda a compreender melhor os textos e a produzir mensagens claras. Durante a leitura, é importante observar palavras, frases, organização e finalidade do texto. Esses conhecimentos também ajudam na escrita e na comunicação do dia a dia.",
+        "fonte": "Texto autoral TeachEasy"
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "compreensao",
+          "enunciado": "De acordo com o texto de apoio, por que estudar relato pessoal é importante?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual alternativa está diretamente relacionada ao tema “Produção de pequeno relato”?",
+          "alternativas": [
+            "Observar como o texto é organizado e qual é sua finalidade.",
+            "Copiar palavras sem compreender o texto.",
+            "Ignorar as informações principais.",
+            "Ler apenas o título e não continuar."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Dê um exemplo relacionado a relato pessoal.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "analise",
+          "enunciado": "Explique com suas palavras uma característica importante de relato pessoal.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "aplicacao",
+          "enunciado": "Crie uma frase ou pequeno exemplo usando corretamente o conteúdo estudado em “Produção de pequeno relato”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Produza um pequeno texto ou resposta mostrando o que você aprendeu sobre relato pessoal.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Espera-se que o estudante mencione que o estudo ajuda na leitura, na compreensão, na escrita e na comunicação.",
+          "justificativa": "A resposta deve retomar informações explícitas do texto de apoio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "A alternativa apresenta uma atitude adequada de leitura e análise textual."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta pessoal coerente com o tema.",
+          "justificativa": "O exemplo deve demonstrar compreensão do conteúdo."
+        },
+        {
+          "numero": 4,
+          "resposta": "Resposta variável.",
+          "justificativa": "Critério de correção: explicar ao menos uma característica pertinente do tema."
+        },
+        {
+          "numero": 5,
+          "resposta": "Produção pessoal.",
+          "justificativa": "Critério de correção: uso correto do conteúdo trabalhado e clareza da frase."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção pessoal.",
+          "justificativa": "Critério de correção: coerência, clareza, relação com o tema e organização da escrita."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    }
+  ]
+}
