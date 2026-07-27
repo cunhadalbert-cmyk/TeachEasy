@@ -354,8 +354,13 @@
   };
 
   function isSupportedCollectionPeriod() {
-    return navigation.stage === 'Ensino Fundamental I'
-      && ['1º ano', '3º ano', '4º ano'].includes(navigation.grade)
+    if (navigation.stage !== 'Ensino Fundamental I') return false;
+
+    if (navigation.grade === '4º ano') {
+      return ['1', '2', '3', '4'].includes(navigation.term);
+    }
+
+    return ['1º ano', '3º ano'].includes(navigation.grade)
       && navigation.term === '3';
   }
 
@@ -365,6 +370,7 @@
     const selectedSubject = String(filterForm.elements.subject.value || '');
     return collectionConfigs.filter(config =>
       config.grade === navigation.grade
+      && Number(config.term || 3) === Number(navigation.term)
       && (!selectedSubject || config.collection.endsWith(subjectCollectionSuffix(selectedSubject)))
     );
   }
@@ -418,7 +424,7 @@
             .filter(activity => !(
               activity.stage === 'Ensino Fundamental I'
               && activity.grade === config.grade
-              && activity.term === 3
+              && activity.term === Number(config.term || 3)
               && activity.subject === collection.disciplina
             ))
             .concat(normalized);
