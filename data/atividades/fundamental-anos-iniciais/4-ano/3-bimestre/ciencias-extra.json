@@ -1,0 +1,2352 @@
+{
+  "schemaVersion": "1.0",
+  "colecao": "4ano-3bimestre-ciencias-extra",
+  "idioma": "pt-BR",
+  "etapa": "Ensino Fundamental — Anos Iniciais",
+  "ano": "4º ano",
+  "bimestre": 3,
+  "disciplina": "Ciências",
+  "statusBimestre": "sugerido",
+  "atividades": [
+    {
+      "id": "efi-4ano-b3-cie-cadeia-alimentar-floresta-extra",
+      "titulo": "Cadeia alimentar na floresta",
+      "tema": "Cadeias alimentares",
+      "sequencia": "Extra 1",
+      "tipoSequencia": "Ampliação",
+      "dificuldade": "intermediaria",
+      "objetivo": "Analisar relações alimentares entre seres vivos de uma floresta.",
+      "bncc": [
+        {
+          "codigo": "EF04CI04",
+          "descricaoResumida": "Analisar relações alimentares entre seres vivos de uma floresta."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia cada questão com atenção e justifique as respostas quando solicitado.",
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "resposta-curta",
+          "enunciado": "Explique com suas palavras o que você aprendeu sobre cadeias alimentares.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual alternativa está correta sobre cadeias alimentares?",
+          "alternativas": [
+            "Capim → gafanhoto → sapo → cobra.",
+            "Esse conteúdo não possui relação com a natureza.",
+            "Todos os seres vivos produzem o próprio alimento.",
+            "Os fenômenos naturais nunca apresentam mudanças."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "completar",
+          "enunciado": "Complete uma frase científica correta relacionada a cadeias alimentares.",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "verdadeiro-falso",
+          "enunciado": "Marque V ou F.\n(   ) Capim → gafanhoto → sapo → cobra.\n(   ) Observar e registrar ajuda a compreender fenômenos.\n(   ) Não precisamos de evidências para explicar a natureza.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "situacao-problema",
+          "enunciado": "Uma turma observou uma situação relacionada a cadeias alimentares. Quais informações devem ser registradas para explicar o fenômeno?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "discursiva",
+          "enunciado": "Relacione cadeias alimentares a uma situação do cotidiano e proponha uma atitude de investigação ou cuidado.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Analisar relações alimentares entre seres vivos de uma floresta.",
+          "justificativa": "Avaliar a compreensão da ideia central."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "Capim → gafanhoto → sapo → cobra."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta variável e coerente com o conteúdo.",
+          "justificativa": "Aceitar formulações cientificamente corretas."
+        },
+        {
+          "numero": 4,
+          "resposta": "V, V, F.",
+          "justificativa": "Explicações científicas devem usar observações e evidências."
+        },
+        {
+          "numero": 5,
+          "resposta": "Registrar elementos envolvidos, local, horário, sequência e mudanças observadas.",
+          "justificativa": "Dados objetivos permitem comparação."
+        },
+        {
+          "numero": 6,
+          "resposta": "Resposta pessoal coerente.",
+          "justificativa": "Avaliar clareza, relação com o tema e viabilidade da atitude proposta."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-4ano-b3-cie-cadeia-alimentar-lagoa-extra",
+      "titulo": "Quem come quem na lagoa?",
+      "tema": "Cadeias alimentares",
+      "sequencia": "Extra 2",
+      "tipoSequencia": "Ampliação",
+      "dificuldade": "intermediaria",
+      "objetivo": "Identificar produtores e consumidores em uma cadeia alimentar aquática.",
+      "bncc": [
+        {
+          "codigo": "EF04CI04",
+          "descricaoResumida": "Identificar produtores e consumidores em uma cadeia alimentar aquática."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia cada questão com atenção e justifique as respostas quando solicitado.",
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "resposta-curta",
+          "enunciado": "Explique com suas palavras o que você aprendeu sobre cadeias alimentares.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual alternativa está correta sobre cadeias alimentares?",
+          "alternativas": [
+            "Algas → girino → peixe → garça.",
+            "Esse conteúdo não possui relação com a natureza.",
+            "Todos os seres vivos produzem o próprio alimento.",
+            "Os fenômenos naturais nunca apresentam mudanças."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "completar",
+          "enunciado": "Complete uma frase científica correta relacionada a cadeias alimentares.",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "verdadeiro-falso",
+          "enunciado": "Marque V ou F.\n(   ) Algas → girino → peixe → garça.\n(   ) Observar e registrar ajuda a compreender fenômenos.\n(   ) Não precisamos de evidências para explicar a natureza.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "situacao-problema",
+          "enunciado": "Uma turma observou uma situação relacionada a cadeias alimentares. Quais informações devem ser registradas para explicar o fenômeno?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "discursiva",
+          "enunciado": "Relacione cadeias alimentares a uma situação do cotidiano e proponha uma atitude de investigação ou cuidado.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Identificar produtores e consumidores em uma cadeia alimentar aquática.",
+          "justificativa": "Avaliar a compreensão da ideia central."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "Algas → girino → peixe → garça."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta variável e coerente com o conteúdo.",
+          "justificativa": "Aceitar formulações cientificamente corretas."
+        },
+        {
+          "numero": 4,
+          "resposta": "V, V, F.",
+          "justificativa": "Explicações científicas devem usar observações e evidências."
+        },
+        {
+          "numero": 5,
+          "resposta": "Registrar elementos envolvidos, local, horário, sequência e mudanças observadas.",
+          "justificativa": "Dados objetivos permitem comparação."
+        },
+        {
+          "numero": 6,
+          "resposta": "Resposta pessoal coerente.",
+          "justificativa": "Avaliar clareza, relação com o tema e viabilidade da atitude proposta."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-4ano-b3-cie-produtores-consumidores-extra",
+      "titulo": "Produtores e consumidores",
+      "tema": "Relações alimentares",
+      "sequencia": "Extra 3",
+      "tipoSequencia": "Ampliação",
+      "dificuldade": "intermediaria",
+      "objetivo": "Distinguir produtores, consumidores e decompositores.",
+      "bncc": [
+        {
+          "codigo": "EF04CI04",
+          "descricaoResumida": "Distinguir produtores, consumidores e decompositores."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia cada questão com atenção e justifique as respostas quando solicitado.",
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "resposta-curta",
+          "enunciado": "Explique com suas palavras o que você aprendeu sobre relações alimentares.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual alternativa está correta sobre relações alimentares?",
+          "alternativas": [
+            "Planta → coelho → raposa; fungos decompõem restos.",
+            "Esse conteúdo não possui relação com a natureza.",
+            "Todos os seres vivos produzem o próprio alimento.",
+            "Os fenômenos naturais nunca apresentam mudanças."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "completar",
+          "enunciado": "Complete uma frase científica correta relacionada a relações alimentares.",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "verdadeiro-falso",
+          "enunciado": "Marque V ou F.\n(   ) Planta → coelho → raposa; fungos decompõem restos.\n(   ) Observar e registrar ajuda a compreender fenômenos.\n(   ) Não precisamos de evidências para explicar a natureza.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "situacao-problema",
+          "enunciado": "Uma turma observou uma situação relacionada a relações alimentares. Quais informações devem ser registradas para explicar o fenômeno?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "discursiva",
+          "enunciado": "Relacione relações alimentares a uma situação do cotidiano e proponha uma atitude de investigação ou cuidado.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Distinguir produtores, consumidores e decompositores.",
+          "justificativa": "Avaliar a compreensão da ideia central."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "Planta → coelho → raposa; fungos decompõem restos."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta variável e coerente com o conteúdo.",
+          "justificativa": "Aceitar formulações cientificamente corretas."
+        },
+        {
+          "numero": 4,
+          "resposta": "V, V, F.",
+          "justificativa": "Explicações científicas devem usar observações e evidências."
+        },
+        {
+          "numero": 5,
+          "resposta": "Registrar elementos envolvidos, local, horário, sequência e mudanças observadas.",
+          "justificativa": "Dados objetivos permitem comparação."
+        },
+        {
+          "numero": 6,
+          "resposta": "Resposta pessoal coerente.",
+          "justificativa": "Avaliar clareza, relação com o tema e viabilidade da atitude proposta."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-4ano-b3-cie-teia-alimentar-extra",
+      "titulo": "Uma teia alimentar no jardim",
+      "tema": "Teias alimentares",
+      "sequencia": "Extra 4",
+      "tipoSequencia": "Ampliação",
+      "dificuldade": "desafiadora",
+      "objetivo": "Compreender que um ser vivo pode participar de diferentes cadeias alimentares.",
+      "bncc": [
+        {
+          "codigo": "EF04CI04",
+          "descricaoResumida": "Compreender que um ser vivo pode participar de diferentes cadeias alimentares."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia cada questão com atenção e justifique as respostas quando solicitado.",
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "resposta-curta",
+          "enunciado": "Explique com suas palavras o que você aprendeu sobre teias alimentares.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual alternativa está correta sobre teias alimentares?",
+          "alternativas": [
+            "Folhas alimentam lagartas; pássaros comem lagartas e aranhas.",
+            "Esse conteúdo não possui relação com a natureza.",
+            "Todos os seres vivos produzem o próprio alimento.",
+            "Os fenômenos naturais nunca apresentam mudanças."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "completar",
+          "enunciado": "Complete uma frase científica correta relacionada a teias alimentares.",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "verdadeiro-falso",
+          "enunciado": "Marque V ou F.\n(   ) Folhas alimentam lagartas; pássaros comem lagartas e aranhas.\n(   ) Observar e registrar ajuda a compreender fenômenos.\n(   ) Não precisamos de evidências para explicar a natureza.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "situacao-problema",
+          "enunciado": "Uma turma observou uma situação relacionada a teias alimentares. Quais informações devem ser registradas para explicar o fenômeno?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "discursiva",
+          "enunciado": "Relacione teias alimentares a uma situação do cotidiano e proponha uma atitude de investigação ou cuidado.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Compreender que um ser vivo pode participar de diferentes cadeias alimentares.",
+          "justificativa": "Avaliar a compreensão da ideia central."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "Folhas alimentam lagartas; pássaros comem lagartas e aranhas."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta variável e coerente com o conteúdo.",
+          "justificativa": "Aceitar formulações cientificamente corretas."
+        },
+        {
+          "numero": 4,
+          "resposta": "V, V, F.",
+          "justificativa": "Explicações científicas devem usar observações e evidências."
+        },
+        {
+          "numero": 5,
+          "resposta": "Registrar elementos envolvidos, local, horário, sequência e mudanças observadas.",
+          "justificativa": "Dados objetivos permitem comparação."
+        },
+        {
+          "numero": 6,
+          "resposta": "Resposta pessoal coerente.",
+          "justificativa": "Avaliar clareza, relação com o tema e viabilidade da atitude proposta."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-4ano-b3-cie-energia-sol-extra",
+      "titulo": "A energia começa no Sol",
+      "tema": "Fluxo de energia",
+      "sequencia": "Extra 5",
+      "tipoSequencia": "Ampliação",
+      "dificuldade": "intermediaria",
+      "objetivo": "Relacionar o Sol ao início do fluxo de energia nas cadeias alimentares.",
+      "bncc": [
+        {
+          "codigo": "EF04CI04",
+          "descricaoResumida": "Relacionar o Sol ao início do fluxo de energia nas cadeias alimentares."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia cada questão com atenção e justifique as respostas quando solicitado.",
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "resposta-curta",
+          "enunciado": "Explique com suas palavras o que você aprendeu sobre fluxo de energia.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual alternativa está correta sobre fluxo de energia?",
+          "alternativas": [
+            "Sol → milho → galinha → ser humano.",
+            "Esse conteúdo não possui relação com a natureza.",
+            "Todos os seres vivos produzem o próprio alimento.",
+            "Os fenômenos naturais nunca apresentam mudanças."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "completar",
+          "enunciado": "Complete uma frase científica correta relacionada a fluxo de energia.",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "verdadeiro-falso",
+          "enunciado": "Marque V ou F.\n(   ) Sol → milho → galinha → ser humano.\n(   ) Observar e registrar ajuda a compreender fenômenos.\n(   ) Não precisamos de evidências para explicar a natureza.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "situacao-problema",
+          "enunciado": "Uma turma observou uma situação relacionada a fluxo de energia. Quais informações devem ser registradas para explicar o fenômeno?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "discursiva",
+          "enunciado": "Relacione fluxo de energia a uma situação do cotidiano e proponha uma atitude de investigação ou cuidado.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Relacionar o Sol ao início do fluxo de energia nas cadeias alimentares.",
+          "justificativa": "Avaliar a compreensão da ideia central."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "Sol → milho → galinha → ser humano."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta variável e coerente com o conteúdo.",
+          "justificativa": "Aceitar formulações cientificamente corretas."
+        },
+        {
+          "numero": 4,
+          "resposta": "V, V, F.",
+          "justificativa": "Explicações científicas devem usar observações e evidências."
+        },
+        {
+          "numero": 5,
+          "resposta": "Registrar elementos envolvidos, local, horário, sequência e mudanças observadas.",
+          "justificativa": "Dados objetivos permitem comparação."
+        },
+        {
+          "numero": 6,
+          "resposta": "Resposta pessoal coerente.",
+          "justificativa": "Avaliar clareza, relação com o tema e viabilidade da atitude proposta."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-4ano-b3-cie-equilibrio-ambiental-extra",
+      "titulo": "Mudanças na cadeia alimentar",
+      "tema": "Equilíbrio ambiental",
+      "sequencia": "Extra 6",
+      "tipoSequencia": "Ampliação",
+      "dificuldade": "intermediaria",
+      "objetivo": "Prever efeitos de alterações em populações de uma cadeia alimentar.",
+      "bncc": [
+        {
+          "codigo": "EF04CI05",
+          "descricaoResumida": "Prever efeitos de alterações em populações de uma cadeia alimentar."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia cada questão com atenção e justifique as respostas quando solicitado.",
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "resposta-curta",
+          "enunciado": "Explique com suas palavras o que você aprendeu sobre equilíbrio ambiental.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual alternativa está correta sobre equilíbrio ambiental?",
+          "alternativas": [
+            "Capim → rato → coruja.",
+            "Esse conteúdo não possui relação com a natureza.",
+            "Todos os seres vivos produzem o próprio alimento.",
+            "Os fenômenos naturais nunca apresentam mudanças."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "completar",
+          "enunciado": "Complete uma frase científica correta relacionada a equilíbrio ambiental.",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "verdadeiro-falso",
+          "enunciado": "Marque V ou F.\n(   ) Capim → rato → coruja.\n(   ) Observar e registrar ajuda a compreender fenômenos.\n(   ) Não precisamos de evidências para explicar a natureza.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "situacao-problema",
+          "enunciado": "Uma turma observou uma situação relacionada a equilíbrio ambiental. Quais informações devem ser registradas para explicar o fenômeno?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "discursiva",
+          "enunciado": "Relacione equilíbrio ambiental a uma situação do cotidiano e proponha uma atitude de investigação ou cuidado.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Prever efeitos de alterações em populações de uma cadeia alimentar.",
+          "justificativa": "Avaliar a compreensão da ideia central."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "Capim → rato → coruja."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta variável e coerente com o conteúdo.",
+          "justificativa": "Aceitar formulações cientificamente corretas."
+        },
+        {
+          "numero": 4,
+          "resposta": "V, V, F.",
+          "justificativa": "Explicações científicas devem usar observações e evidências."
+        },
+        {
+          "numero": 5,
+          "resposta": "Registrar elementos envolvidos, local, horário, sequência e mudanças observadas.",
+          "justificativa": "Dados objetivos permitem comparação."
+        },
+        {
+          "numero": 6,
+          "resposta": "Resposta pessoal coerente.",
+          "justificativa": "Avaliar clareza, relação com o tema e viabilidade da atitude proposta."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-4ano-b3-cie-desaparecimento-predador-extra",
+      "titulo": "E se o predador desaparecer?",
+      "tema": "Equilíbrio ambiental",
+      "sequencia": "Extra 7",
+      "tipoSequencia": "Ampliação",
+      "dificuldade": "intermediaria",
+      "objetivo": "Analisar consequências da retirada de um predador do ambiente.",
+      "bncc": [
+        {
+          "codigo": "EF04CI05",
+          "descricaoResumida": "Analisar consequências da retirada de um predador do ambiente."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia cada questão com atenção e justifique as respostas quando solicitado.",
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "resposta-curta",
+          "enunciado": "Explique com suas palavras o que você aprendeu sobre equilíbrio ambiental.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual alternativa está correta sobre equilíbrio ambiental?",
+          "alternativas": [
+            "Folhas → lagartas → pássaros.",
+            "Esse conteúdo não possui relação com a natureza.",
+            "Todos os seres vivos produzem o próprio alimento.",
+            "Os fenômenos naturais nunca apresentam mudanças."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "completar",
+          "enunciado": "Complete uma frase científica correta relacionada a equilíbrio ambiental.",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "verdadeiro-falso",
+          "enunciado": "Marque V ou F.\n(   ) Folhas → lagartas → pássaros.\n(   ) Observar e registrar ajuda a compreender fenômenos.\n(   ) Não precisamos de evidências para explicar a natureza.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "situacao-problema",
+          "enunciado": "Uma turma observou uma situação relacionada a equilíbrio ambiental. Quais informações devem ser registradas para explicar o fenômeno?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "discursiva",
+          "enunciado": "Relacione equilíbrio ambiental a uma situação do cotidiano e proponha uma atitude de investigação ou cuidado.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Analisar consequências da retirada de um predador do ambiente.",
+          "justificativa": "Avaliar a compreensão da ideia central."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "Folhas → lagartas → pássaros."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta variável e coerente com o conteúdo.",
+          "justificativa": "Aceitar formulações cientificamente corretas."
+        },
+        {
+          "numero": 4,
+          "resposta": "V, V, F.",
+          "justificativa": "Explicações científicas devem usar observações e evidências."
+        },
+        {
+          "numero": 5,
+          "resposta": "Registrar elementos envolvidos, local, horário, sequência e mudanças observadas.",
+          "justificativa": "Dados objetivos permitem comparação."
+        },
+        {
+          "numero": 6,
+          "resposta": "Resposta pessoal coerente.",
+          "justificativa": "Avaliar clareza, relação com o tema e viabilidade da atitude proposta."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-4ano-b3-cie-uso-agrotoxico-extra",
+      "titulo": "Agrotóxicos e a teia alimentar",
+      "tema": "Impactos ambientais",
+      "sequencia": "Extra 8",
+      "tipoSequencia": "Ampliação",
+      "dificuldade": "desafiadora",
+      "objetivo": "Reconhecer impactos de substâncias tóxicas nas relações alimentares.",
+      "bncc": [
+        {
+          "codigo": "EF04CI05",
+          "descricaoResumida": "Reconhecer impactos de substâncias tóxicas nas relações alimentares."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia cada questão com atenção e justifique as respostas quando solicitado.",
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "resposta-curta",
+          "enunciado": "Explique com suas palavras o que você aprendeu sobre impactos ambientais.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual alternativa está correta sobre impactos ambientais?",
+          "alternativas": [
+            "Plantas → insetos → sapos → serpentes.",
+            "Esse conteúdo não possui relação com a natureza.",
+            "Todos os seres vivos produzem o próprio alimento.",
+            "Os fenômenos naturais nunca apresentam mudanças."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "completar",
+          "enunciado": "Complete uma frase científica correta relacionada a impactos ambientais.",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "verdadeiro-falso",
+          "enunciado": "Marque V ou F.\n(   ) Plantas → insetos → sapos → serpentes.\n(   ) Observar e registrar ajuda a compreender fenômenos.\n(   ) Não precisamos de evidências para explicar a natureza.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "situacao-problema",
+          "enunciado": "Uma turma observou uma situação relacionada a impactos ambientais. Quais informações devem ser registradas para explicar o fenômeno?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "discursiva",
+          "enunciado": "Relacione impactos ambientais a uma situação do cotidiano e proponha uma atitude de investigação ou cuidado.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Reconhecer impactos de substâncias tóxicas nas relações alimentares.",
+          "justificativa": "Avaliar a compreensão da ideia central."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "Plantas → insetos → sapos → serpentes."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta variável e coerente com o conteúdo.",
+          "justificativa": "Aceitar formulações cientificamente corretas."
+        },
+        {
+          "numero": 4,
+          "resposta": "V, V, F.",
+          "justificativa": "Explicações científicas devem usar observações e evidências."
+        },
+        {
+          "numero": 5,
+          "resposta": "Registrar elementos envolvidos, local, horário, sequência e mudanças observadas.",
+          "justificativa": "Dados objetivos permitem comparação."
+        },
+        {
+          "numero": 6,
+          "resposta": "Resposta pessoal coerente.",
+          "justificativa": "Avaliar clareza, relação com o tema e viabilidade da atitude proposta."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-4ano-b3-cie-decompositores-solo-extra",
+      "titulo": "Decompositores e fertilidade do solo",
+      "tema": "Decomposição",
+      "sequencia": "Extra 9",
+      "tipoSequencia": "Ampliação",
+      "dificuldade": "intermediaria",
+      "objetivo": "Explicar a importância da decomposição para a reciclagem de nutrientes.",
+      "bncc": [
+        {
+          "codigo": "EF04CI06",
+          "descricaoResumida": "Explicar a importância da decomposição para a reciclagem de nutrientes."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia cada questão com atenção e justifique as respostas quando solicitado.",
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "resposta-curta",
+          "enunciado": "Explique com suas palavras o que você aprendeu sobre decomposição.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual alternativa está correta sobre decomposição?",
+          "alternativas": [
+            "Fungos e bactérias transformam restos em nutrientes.",
+            "Esse conteúdo não possui relação com a natureza.",
+            "Todos os seres vivos produzem o próprio alimento.",
+            "Os fenômenos naturais nunca apresentam mudanças."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "completar",
+          "enunciado": "Complete uma frase científica correta relacionada a decomposição.",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "verdadeiro-falso",
+          "enunciado": "Marque V ou F.\n(   ) Fungos e bactérias transformam restos em nutrientes.\n(   ) Observar e registrar ajuda a compreender fenômenos.\n(   ) Não precisamos de evidências para explicar a natureza.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "situacao-problema",
+          "enunciado": "Uma turma observou uma situação relacionada a decomposição. Quais informações devem ser registradas para explicar o fenômeno?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "discursiva",
+          "enunciado": "Relacione decomposição a uma situação do cotidiano e proponha uma atitude de investigação ou cuidado.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Explicar a importância da decomposição para a reciclagem de nutrientes.",
+          "justificativa": "Avaliar a compreensão da ideia central."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "Fungos e bactérias transformam restos em nutrientes."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta variável e coerente com o conteúdo.",
+          "justificativa": "Aceitar formulações cientificamente corretas."
+        },
+        {
+          "numero": 4,
+          "resposta": "V, V, F.",
+          "justificativa": "Explicações científicas devem usar observações e evidências."
+        },
+        {
+          "numero": 5,
+          "resposta": "Registrar elementos envolvidos, local, horário, sequência e mudanças observadas.",
+          "justificativa": "Dados objetivos permitem comparação."
+        },
+        {
+          "numero": 6,
+          "resposta": "Resposta pessoal coerente.",
+          "justificativa": "Avaliar clareza, relação com o tema e viabilidade da atitude proposta."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-4ano-b3-cie-compostagem-escola-extra",
+      "titulo": "Compostagem na escola",
+      "tema": "Compostagem",
+      "sequencia": "Extra 10",
+      "tipoSequencia": "Ampliação",
+      "dificuldade": "intermediaria",
+      "objetivo": "Relacionar compostagem, decomposição e redução de resíduos.",
+      "bncc": [
+        {
+          "codigo": "EF04CI06",
+          "descricaoResumida": "Relacionar compostagem, decomposição e redução de resíduos."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia cada questão com atenção e justifique as respostas quando solicitado.",
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "resposta-curta",
+          "enunciado": "Explique com suas palavras o que você aprendeu sobre compostagem.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual alternativa está correta sobre compostagem?",
+          "alternativas": [
+            "Resíduos orgânicos → decomposição → composto.",
+            "Esse conteúdo não possui relação com a natureza.",
+            "Todos os seres vivos produzem o próprio alimento.",
+            "Os fenômenos naturais nunca apresentam mudanças."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "completar",
+          "enunciado": "Complete uma frase científica correta relacionada a compostagem.",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "verdadeiro-falso",
+          "enunciado": "Marque V ou F.\n(   ) Resíduos orgânicos → decomposição → composto.\n(   ) Observar e registrar ajuda a compreender fenômenos.\n(   ) Não precisamos de evidências para explicar a natureza.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "situacao-problema",
+          "enunciado": "Uma turma observou uma situação relacionada a compostagem. Quais informações devem ser registradas para explicar o fenômeno?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "discursiva",
+          "enunciado": "Relacione compostagem a uma situação do cotidiano e proponha uma atitude de investigação ou cuidado.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Relacionar compostagem, decomposição e redução de resíduos.",
+          "justificativa": "Avaliar a compreensão da ideia central."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "Resíduos orgânicos → decomposição → composto."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta variável e coerente com o conteúdo.",
+          "justificativa": "Aceitar formulações cientificamente corretas."
+        },
+        {
+          "numero": 4,
+          "resposta": "V, V, F.",
+          "justificativa": "Explicações científicas devem usar observações e evidências."
+        },
+        {
+          "numero": 5,
+          "resposta": "Registrar elementos envolvidos, local, horário, sequência e mudanças observadas.",
+          "justificativa": "Dados objetivos permitem comparação."
+        },
+        {
+          "numero": 6,
+          "resposta": "Resposta pessoal coerente.",
+          "justificativa": "Avaliar clareza, relação com o tema e viabilidade da atitude proposta."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-4ano-b3-cie-conservacao-alimentos-extra",
+      "titulo": "Por que guardamos alimentos na geladeira?",
+      "tema": "Conservação dos alimentos",
+      "sequencia": "Extra 11",
+      "tipoSequencia": "Ampliação",
+      "dificuldade": "intermediaria",
+      "objetivo": "Relacionar temperatura e velocidade de decomposição dos alimentos.",
+      "bncc": [
+        {
+          "codigo": "EF04CI06",
+          "descricaoResumida": "Relacionar temperatura e velocidade de decomposição dos alimentos."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia cada questão com atenção e justifique as respostas quando solicitado.",
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "resposta-curta",
+          "enunciado": "Explique com suas palavras o que você aprendeu sobre conservação dos alimentos.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual alternativa está correta sobre conservação dos alimentos?",
+          "alternativas": [
+            "Temperaturas baixas retardam a decomposição.",
+            "Esse conteúdo não possui relação com a natureza.",
+            "Todos os seres vivos produzem o próprio alimento.",
+            "Os fenômenos naturais nunca apresentam mudanças."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "completar",
+          "enunciado": "Complete uma frase científica correta relacionada a conservação dos alimentos.",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "verdadeiro-falso",
+          "enunciado": "Marque V ou F.\n(   ) Temperaturas baixas retardam a decomposição.\n(   ) Observar e registrar ajuda a compreender fenômenos.\n(   ) Não precisamos de evidências para explicar a natureza.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "situacao-problema",
+          "enunciado": "Uma turma observou uma situação relacionada a conservação dos alimentos. Quais informações devem ser registradas para explicar o fenômeno?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "discursiva",
+          "enunciado": "Relacione conservação dos alimentos a uma situação do cotidiano e proponha uma atitude de investigação ou cuidado.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Relacionar temperatura e velocidade de decomposição dos alimentos.",
+          "justificativa": "Avaliar a compreensão da ideia central."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "Temperaturas baixas retardam a decomposição."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta variável e coerente com o conteúdo.",
+          "justificativa": "Aceitar formulações cientificamente corretas."
+        },
+        {
+          "numero": 4,
+          "resposta": "V, V, F.",
+          "justificativa": "Explicações científicas devem usar observações e evidências."
+        },
+        {
+          "numero": 5,
+          "resposta": "Registrar elementos envolvidos, local, horário, sequência e mudanças observadas.",
+          "justificativa": "Dados objetivos permitem comparação."
+        },
+        {
+          "numero": 6,
+          "resposta": "Resposta pessoal coerente.",
+          "justificativa": "Avaliar clareza, relação com o tema e viabilidade da atitude proposta."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-4ano-b3-cie-microrganismos-uteis-extra",
+      "titulo": "Microrganismos úteis",
+      "tema": "Microrganismos",
+      "sequencia": "Extra 12",
+      "tipoSequencia": "Ampliação",
+      "dificuldade": "desafiadora",
+      "objetivo": "Reconhecer usos benéficos de fungos e bactérias.",
+      "bncc": [
+        {
+          "codigo": "EF04CI06",
+          "descricaoResumida": "Reconhecer usos benéficos de fungos e bactérias."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia cada questão com atenção e justifique as respostas quando solicitado.",
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "resposta-curta",
+          "enunciado": "Explique com suas palavras o que você aprendeu sobre microrganismos.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual alternativa está correta sobre microrganismos?",
+          "alternativas": [
+            "Alguns microrganismos ajudam a produzir alimentos.",
+            "Esse conteúdo não possui relação com a natureza.",
+            "Todos os seres vivos produzem o próprio alimento.",
+            "Os fenômenos naturais nunca apresentam mudanças."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "completar",
+          "enunciado": "Complete uma frase científica correta relacionada a microrganismos.",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "verdadeiro-falso",
+          "enunciado": "Marque V ou F.\n(   ) Alguns microrganismos ajudam a produzir alimentos.\n(   ) Observar e registrar ajuda a compreender fenômenos.\n(   ) Não precisamos de evidências para explicar a natureza.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "situacao-problema",
+          "enunciado": "Uma turma observou uma situação relacionada a microrganismos. Quais informações devem ser registradas para explicar o fenômeno?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "discursiva",
+          "enunciado": "Relacione microrganismos a uma situação do cotidiano e proponha uma atitude de investigação ou cuidado.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Reconhecer usos benéficos de fungos e bactérias.",
+          "justificativa": "Avaliar a compreensão da ideia central."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "Alguns microrganismos ajudam a produzir alimentos."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta variável e coerente com o conteúdo.",
+          "justificativa": "Aceitar formulações cientificamente corretas."
+        },
+        {
+          "numero": 4,
+          "resposta": "V, V, F.",
+          "justificativa": "Explicações científicas devem usar observações e evidências."
+        },
+        {
+          "numero": 5,
+          "resposta": "Registrar elementos envolvidos, local, horário, sequência e mudanças observadas.",
+          "justificativa": "Dados objetivos permitem comparação."
+        },
+        {
+          "numero": 6,
+          "resposta": "Resposta pessoal coerente.",
+          "justificativa": "Avaliar clareza, relação com o tema e viabilidade da atitude proposta."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-4ano-b3-cie-pontos-cardeais-extra",
+      "titulo": "Localização pelos pontos cardeais",
+      "tema": "Orientação espacial",
+      "sequencia": "Extra 13",
+      "tipoSequencia": "Ampliação",
+      "dificuldade": "intermediaria",
+      "objetivo": "Identificar os pontos cardeais com base no nascer e no pôr do Sol.",
+      "bncc": [
+        {
+          "codigo": "EF04CI09",
+          "descricaoResumida": "Identificar os pontos cardeais com base no nascer e no pôr do Sol."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia cada questão com atenção e justifique as respostas quando solicitado.",
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "resposta-curta",
+          "enunciado": "Explique com suas palavras o que você aprendeu sobre orientação espacial.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual alternativa está correta sobre orientação espacial?",
+          "alternativas": [
+            "O sol nasce aproximadamente no leste e se põe no oeste.",
+            "Esse conteúdo não possui relação com a natureza.",
+            "Todos os seres vivos produzem o próprio alimento.",
+            "Os fenômenos naturais nunca apresentam mudanças."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "completar",
+          "enunciado": "Complete uma frase científica correta relacionada a orientação espacial.",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "verdadeiro-falso",
+          "enunciado": "Marque V ou F.\n(   ) O sol nasce aproximadamente no leste e se põe no oeste.\n(   ) Observar e registrar ajuda a compreender fenômenos.\n(   ) Não precisamos de evidências para explicar a natureza.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "situacao-problema",
+          "enunciado": "Uma turma observou uma situação relacionada a orientação espacial. Quais informações devem ser registradas para explicar o fenômeno?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "discursiva",
+          "enunciado": "Relacione orientação espacial a uma situação do cotidiano e proponha uma atitude de investigação ou cuidado.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Identificar os pontos cardeais com base no nascer e no pôr do Sol.",
+          "justificativa": "Avaliar a compreensão da ideia central."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "O sol nasce aproximadamente no leste e se põe no oeste."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta variável e coerente com o conteúdo.",
+          "justificativa": "Aceitar formulações cientificamente corretas."
+        },
+        {
+          "numero": 4,
+          "resposta": "V, V, F.",
+          "justificativa": "Explicações científicas devem usar observações e evidências."
+        },
+        {
+          "numero": 5,
+          "resposta": "Registrar elementos envolvidos, local, horário, sequência e mudanças observadas.",
+          "justificativa": "Dados objetivos permitem comparação."
+        },
+        {
+          "numero": 6,
+          "resposta": "Resposta pessoal coerente.",
+          "justificativa": "Avaliar clareza, relação com o tema e viabilidade da atitude proposta."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-4ano-b3-cie-gnomon-manha-tarde-extra",
+      "titulo": "A sombra ao longo do dia",
+      "tema": "Sombras e orientação",
+      "sequencia": "Extra 14",
+      "tipoSequencia": "Ampliação",
+      "dificuldade": "intermediaria",
+      "objetivo": "Observar mudanças na direção e no comprimento das sombras.",
+      "bncc": [
+        {
+          "codigo": "EF04CI09",
+          "descricaoResumida": "Observar mudanças na direção e no comprimento das sombras."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia cada questão com atenção e justifique as respostas quando solicitado.",
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "resposta-curta",
+          "enunciado": "Explique com suas palavras o que você aprendeu sobre sombras e orientação.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual alternativa está correta sobre sombras e orientação?",
+          "alternativas": [
+            "A sombra muda de direção e tamanho ao longo do dia.",
+            "Esse conteúdo não possui relação com a natureza.",
+            "Todos os seres vivos produzem o próprio alimento.",
+            "Os fenômenos naturais nunca apresentam mudanças."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "completar",
+          "enunciado": "Complete uma frase científica correta relacionada a sombras e orientação.",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "verdadeiro-falso",
+          "enunciado": "Marque V ou F.\n(   ) A sombra muda de direção e tamanho ao longo do dia.\n(   ) Observar e registrar ajuda a compreender fenômenos.\n(   ) Não precisamos de evidências para explicar a natureza.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "situacao-problema",
+          "enunciado": "Uma turma observou uma situação relacionada a sombras e orientação. Quais informações devem ser registradas para explicar o fenômeno?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "discursiva",
+          "enunciado": "Relacione sombras e orientação a uma situação do cotidiano e proponha uma atitude de investigação ou cuidado.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Observar mudanças na direção e no comprimento das sombras.",
+          "justificativa": "Avaliar a compreensão da ideia central."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "A sombra muda de direção e tamanho ao longo do dia."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta variável e coerente com o conteúdo.",
+          "justificativa": "Aceitar formulações cientificamente corretas."
+        },
+        {
+          "numero": 4,
+          "resposta": "V, V, F.",
+          "justificativa": "Explicações científicas devem usar observações e evidências."
+        },
+        {
+          "numero": 5,
+          "resposta": "Registrar elementos envolvidos, local, horário, sequência e mudanças observadas.",
+          "justificativa": "Dados objetivos permitem comparação."
+        },
+        {
+          "numero": 6,
+          "resposta": "Resposta pessoal coerente.",
+          "justificativa": "Avaliar clareza, relação com o tema e viabilidade da atitude proposta."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-4ano-b3-cie-bussola-extra",
+      "titulo": "Como funciona uma bússola?",
+      "tema": "Orientação por bússola",
+      "sequencia": "Extra 15",
+      "tipoSequencia": "Ampliação",
+      "dificuldade": "intermediaria",
+      "objetivo": "Comparar orientação pela bússola e pela posição aparente do Sol.",
+      "bncc": [
+        {
+          "codigo": "EF04CI10",
+          "descricaoResumida": "Comparar orientação pela bússola e pela posição aparente do Sol."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia cada questão com atenção e justifique as respostas quando solicitado.",
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "resposta-curta",
+          "enunciado": "Explique com suas palavras o que você aprendeu sobre orientação por bússola.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual alternativa está correta sobre orientação por bússola?",
+          "alternativas": [
+            "A agulha imantada indica aproximadamente o eixo norte-sul.",
+            "Esse conteúdo não possui relação com a natureza.",
+            "Todos os seres vivos produzem o próprio alimento.",
+            "Os fenômenos naturais nunca apresentam mudanças."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "completar",
+          "enunciado": "Complete uma frase científica correta relacionada a orientação por bússola.",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "verdadeiro-falso",
+          "enunciado": "Marque V ou F.\n(   ) A agulha imantada indica aproximadamente o eixo norte-sul.\n(   ) Observar e registrar ajuda a compreender fenômenos.\n(   ) Não precisamos de evidências para explicar a natureza.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "situacao-problema",
+          "enunciado": "Uma turma observou uma situação relacionada a orientação por bússola. Quais informações devem ser registradas para explicar o fenômeno?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "discursiva",
+          "enunciado": "Relacione orientação por bússola a uma situação do cotidiano e proponha uma atitude de investigação ou cuidado.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Comparar orientação pela bússola e pela posição aparente do Sol.",
+          "justificativa": "Avaliar a compreensão da ideia central."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "A agulha imantada indica aproximadamente o eixo norte-sul."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta variável e coerente com o conteúdo.",
+          "justificativa": "Aceitar formulações cientificamente corretas."
+        },
+        {
+          "numero": 4,
+          "resposta": "V, V, F.",
+          "justificativa": "Explicações científicas devem usar observações e evidências."
+        },
+        {
+          "numero": 5,
+          "resposta": "Registrar elementos envolvidos, local, horário, sequência e mudanças observadas.",
+          "justificativa": "Dados objetivos permitem comparação."
+        },
+        {
+          "numero": 6,
+          "resposta": "Resposta pessoal coerente.",
+          "justificativa": "Avaliar clareza, relação com o tema e viabilidade da atitude proposta."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-4ano-b3-cie-mapa-escola-extra",
+      "titulo": "Criando um mapa da escola",
+      "tema": "Representação espacial",
+      "sequencia": "Extra 16",
+      "tipoSequencia": "Ampliação",
+      "dificuldade": "desafiadora",
+      "objetivo": "Utilizar pontos cardeais para descrever posições em um mapa.",
+      "bncc": [
+        {
+          "codigo": "EF04CI10",
+          "descricaoResumida": "Utilizar pontos cardeais para descrever posições em um mapa."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia cada questão com atenção e justifique as respostas quando solicitado.",
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "resposta-curta",
+          "enunciado": "Explique com suas palavras o que você aprendeu sobre representação espacial.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual alternativa está correta sobre representação espacial?",
+          "alternativas": [
+            "Norte, sul, leste e oeste ajudam a localizar espaços.",
+            "Esse conteúdo não possui relação com a natureza.",
+            "Todos os seres vivos produzem o próprio alimento.",
+            "Os fenômenos naturais nunca apresentam mudanças."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "completar",
+          "enunciado": "Complete uma frase científica correta relacionada a representação espacial.",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "verdadeiro-falso",
+          "enunciado": "Marque V ou F.\n(   ) Norte, sul, leste e oeste ajudam a localizar espaços.\n(   ) Observar e registrar ajuda a compreender fenômenos.\n(   ) Não precisamos de evidências para explicar a natureza.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "situacao-problema",
+          "enunciado": "Uma turma observou uma situação relacionada a representação espacial. Quais informações devem ser registradas para explicar o fenômeno?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "discursiva",
+          "enunciado": "Relacione representação espacial a uma situação do cotidiano e proponha uma atitude de investigação ou cuidado.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Utilizar pontos cardeais para descrever posições em um mapa.",
+          "justificativa": "Avaliar a compreensão da ideia central."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "Norte, sul, leste e oeste ajudam a localizar espaços."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta variável e coerente com o conteúdo.",
+          "justificativa": "Aceitar formulações cientificamente corretas."
+        },
+        {
+          "numero": 4,
+          "resposta": "V, V, F.",
+          "justificativa": "Explicações científicas devem usar observações e evidências."
+        },
+        {
+          "numero": 5,
+          "resposta": "Registrar elementos envolvidos, local, horário, sequência e mudanças observadas.",
+          "justificativa": "Dados objetivos permitem comparação."
+        },
+        {
+          "numero": 6,
+          "resposta": "Resposta pessoal coerente.",
+          "justificativa": "Avaliar clareza, relação com o tema e viabilidade da atitude proposta."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-4ano-b3-cie-calendarios-extra",
+      "titulo": "Calendários e ciclos da natureza",
+      "tema": "Calendários e cultura",
+      "sequencia": "Extra 17",
+      "tipoSequencia": "Ampliação",
+      "dificuldade": "intermediaria",
+      "objetivo": "Relacionar calendários a ciclos do Sol e da Lua.",
+      "bncc": [
+        {
+          "codigo": "EF04CI11",
+          "descricaoResumida": "Relacionar calendários a ciclos do Sol e da Lua."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia cada questão com atenção e justifique as respostas quando solicitado.",
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "resposta-curta",
+          "enunciado": "Explique com suas palavras o que você aprendeu sobre calendários e cultura.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual alternativa está correta sobre calendários e cultura?",
+          "alternativas": [
+            "Calendários organizam o tempo com base em ciclos naturais.",
+            "Esse conteúdo não possui relação com a natureza.",
+            "Todos os seres vivos produzem o próprio alimento.",
+            "Os fenômenos naturais nunca apresentam mudanças."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "completar",
+          "enunciado": "Complete uma frase científica correta relacionada a calendários e cultura.",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "verdadeiro-falso",
+          "enunciado": "Marque V ou F.\n(   ) Calendários organizam o tempo com base em ciclos naturais.\n(   ) Observar e registrar ajuda a compreender fenômenos.\n(   ) Não precisamos de evidências para explicar a natureza.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "situacao-problema",
+          "enunciado": "Uma turma observou uma situação relacionada a calendários e cultura. Quais informações devem ser registradas para explicar o fenômeno?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "discursiva",
+          "enunciado": "Relacione calendários e cultura a uma situação do cotidiano e proponha uma atitude de investigação ou cuidado.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Relacionar calendários a ciclos do Sol e da Lua.",
+          "justificativa": "Avaliar a compreensão da ideia central."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "Calendários organizam o tempo com base em ciclos naturais."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta variável e coerente com o conteúdo.",
+          "justificativa": "Aceitar formulações cientificamente corretas."
+        },
+        {
+          "numero": 4,
+          "resposta": "V, V, F.",
+          "justificativa": "Explicações científicas devem usar observações e evidências."
+        },
+        {
+          "numero": 5,
+          "resposta": "Registrar elementos envolvidos, local, horário, sequência e mudanças observadas.",
+          "justificativa": "Dados objetivos permitem comparação."
+        },
+        {
+          "numero": 6,
+          "resposta": "Resposta pessoal coerente.",
+          "justificativa": "Avaliar clareza, relação com o tema e viabilidade da atitude proposta."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-4ano-b3-cie-fases-lua-extra",
+      "titulo": "Observando as fases da Lua",
+      "tema": "Lua e passagem do tempo",
+      "sequencia": "Extra 18",
+      "tipoSequencia": "Ampliação",
+      "dificuldade": "intermediaria",
+      "objetivo": "Reconhecer a repetição das fases da Lua ao longo do tempo.",
+      "bncc": [
+        {
+          "codigo": "EF04CI11",
+          "descricaoResumida": "Reconhecer a repetição das fases da Lua ao longo do tempo."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia cada questão com atenção e justifique as respostas quando solicitado.",
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "resposta-curta",
+          "enunciado": "Explique com suas palavras o que você aprendeu sobre lua e passagem do tempo.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual alternativa está correta sobre lua e passagem do tempo?",
+          "alternativas": [
+            "Nova → crescente → cheia → minguante.",
+            "Esse conteúdo não possui relação com a natureza.",
+            "Todos os seres vivos produzem o próprio alimento.",
+            "Os fenômenos naturais nunca apresentam mudanças."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "completar",
+          "enunciado": "Complete uma frase científica correta relacionada a lua e passagem do tempo.",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "verdadeiro-falso",
+          "enunciado": "Marque V ou F.\n(   ) Nova → crescente → cheia → minguante.\n(   ) Observar e registrar ajuda a compreender fenômenos.\n(   ) Não precisamos de evidências para explicar a natureza.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "situacao-problema",
+          "enunciado": "Uma turma observou uma situação relacionada a lua e passagem do tempo. Quais informações devem ser registradas para explicar o fenômeno?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "discursiva",
+          "enunciado": "Relacione lua e passagem do tempo a uma situação do cotidiano e proponha uma atitude de investigação ou cuidado.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Reconhecer a repetição das fases da Lua ao longo do tempo.",
+          "justificativa": "Avaliar a compreensão da ideia central."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "Nova → crescente → cheia → minguante."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta variável e coerente com o conteúdo.",
+          "justificativa": "Aceitar formulações cientificamente corretas."
+        },
+        {
+          "numero": 4,
+          "resposta": "V, V, F.",
+          "justificativa": "Explicações científicas devem usar observações e evidências."
+        },
+        {
+          "numero": 5,
+          "resposta": "Registrar elementos envolvidos, local, horário, sequência e mudanças observadas.",
+          "justificativa": "Dados objetivos permitem comparação."
+        },
+        {
+          "numero": 6,
+          "resposta": "Resposta pessoal coerente.",
+          "justificativa": "Avaliar clareza, relação com o tema e viabilidade da atitude proposta."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-4ano-b3-cie-movimento-sol-extra",
+      "titulo": "O caminho aparente do Sol",
+      "tema": "Movimentos aparentes",
+      "sequencia": "Extra 19",
+      "tipoSequencia": "Ampliação",
+      "dificuldade": "intermediaria",
+      "objetivo": "Descrever a mudança aparente da posição do Sol durante o dia.",
+      "bncc": [
+        {
+          "codigo": "EF04CI11",
+          "descricaoResumida": "Descrever a mudança aparente da posição do Sol durante o dia."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia cada questão com atenção e justifique as respostas quando solicitado.",
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "resposta-curta",
+          "enunciado": "Explique com suas palavras o que você aprendeu sobre movimentos aparentes.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual alternativa está correta sobre movimentos aparentes?",
+          "alternativas": [
+            "O sol parece se deslocar de leste para oeste.",
+            "Esse conteúdo não possui relação com a natureza.",
+            "Todos os seres vivos produzem o próprio alimento.",
+            "Os fenômenos naturais nunca apresentam mudanças."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "completar",
+          "enunciado": "Complete uma frase científica correta relacionada a movimentos aparentes.",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "verdadeiro-falso",
+          "enunciado": "Marque V ou F.\n(   ) O sol parece se deslocar de leste para oeste.\n(   ) Observar e registrar ajuda a compreender fenômenos.\n(   ) Não precisamos de evidências para explicar a natureza.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "situacao-problema",
+          "enunciado": "Uma turma observou uma situação relacionada a movimentos aparentes. Quais informações devem ser registradas para explicar o fenômeno?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "discursiva",
+          "enunciado": "Relacione movimentos aparentes a uma situação do cotidiano e proponha uma atitude de investigação ou cuidado.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Descrever a mudança aparente da posição do Sol durante o dia.",
+          "justificativa": "Avaliar a compreensão da ideia central."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "O sol parece se deslocar de leste para oeste."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta variável e coerente com o conteúdo.",
+          "justificativa": "Aceitar formulações cientificamente corretas."
+        },
+        {
+          "numero": 4,
+          "resposta": "V, V, F.",
+          "justificativa": "Explicações científicas devem usar observações e evidências."
+        },
+        {
+          "numero": 5,
+          "resposta": "Registrar elementos envolvidos, local, horário, sequência e mudanças observadas.",
+          "justificativa": "Dados objetivos permitem comparação."
+        },
+        {
+          "numero": 6,
+          "resposta": "Resposta pessoal coerente.",
+          "justificativa": "Avaliar clareza, relação com o tema e viabilidade da atitude proposta."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    },
+    {
+      "id": "efi-4ano-b3-cie-investigacao-sombras-extra",
+      "titulo": "Experimento com sombras",
+      "tema": "Investigação científica",
+      "sequencia": "Extra 20",
+      "tipoSequencia": "Ampliação",
+      "dificuldade": "desafiadora",
+      "objetivo": "Planejar e registrar uma investigação sobre sombras.",
+      "bncc": [
+        {
+          "codigo": "EF04CI09",
+          "descricaoResumida": "Planejar e registrar uma investigação sobre sombras."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia cada questão com atenção e justifique as respostas quando solicitado.",
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "resposta-curta",
+          "enunciado": "Explique com suas palavras o que você aprendeu sobre investigação científica.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual alternativa está correta sobre investigação científica?",
+          "alternativas": [
+            "Medir a sombra em horários diferentes e comparar.",
+            "Esse conteúdo não possui relação com a natureza.",
+            "Todos os seres vivos produzem o próprio alimento.",
+            "Os fenômenos naturais nunca apresentam mudanças."
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "completar",
+          "enunciado": "Complete uma frase científica correta relacionada a investigação científica.",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "verdadeiro-falso",
+          "enunciado": "Marque V ou F.\n(   ) Medir a sombra em horários diferentes e comparar.\n(   ) Observar e registrar ajuda a compreender fenômenos.\n(   ) Não precisamos de evidências para explicar a natureza.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "situacao-problema",
+          "enunciado": "Uma turma observou uma situação relacionada a investigação científica. Quais informações devem ser registradas para explicar o fenômeno?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "discursiva",
+          "enunciado": "Relacione investigação científica a uma situação do cotidiano e proponha uma atitude de investigação ou cuidado.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Planejar e registrar uma investigação sobre sombras.",
+          "justificativa": "Avaliar a compreensão da ideia central."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "Medir a sombra em horários diferentes e comparar."
+        },
+        {
+          "numero": 3,
+          "resposta": "Resposta variável e coerente com o conteúdo.",
+          "justificativa": "Aceitar formulações cientificamente corretas."
+        },
+        {
+          "numero": 4,
+          "resposta": "V, V, F.",
+          "justificativa": "Explicações científicas devem usar observações e evidências."
+        },
+        {
+          "numero": 5,
+          "resposta": "Registrar elementos envolvidos, local, horário, sequência e mudanças observadas.",
+          "justificativa": "Dados objetivos permitem comparação."
+        },
+        {
+          "numero": 6,
+          "resposta": "Resposta pessoal coerente.",
+          "justificativa": "Avaliar clareza, relação com o tema e viabilidade da atitude proposta."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      }
+    }
+  ]
+}
