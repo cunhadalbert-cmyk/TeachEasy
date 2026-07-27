@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="640" viewBox="0 0 820 640">
+  <rect width="820" height="640" fill="#fff"/>
+  <defs>
+    <pattern id="agua" width="14" height="14" patternUnits="userSpaceOnUse">
+      <circle cx="4" cy="4" r="2.7" fill="#1e6eb5"/>
+    </pattern>
+    <pattern id="faixa" width="12" height="12" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="12" stroke="#2e7d45" stroke-width="3"/>
+    </pattern>
+  </defs>
+
+  <g stroke="#171717" stroke-width="4" font-family="Arial, sans-serif" fill="#171717">
+    <rect x="18" y="18" width="784" height="604" fill="#fff"/>
+    <rect x="18" y="18" width="784" height="92" fill="url(#faixa)"/>
+    <text x="52" y="78" font-size="42" font-weight="bold" stroke="none">FECHE A TORNEIRA</text>
+
+    <!-- torneira -->
+    <g transform="translate(85 150)">
+      <path d="M30 80h160v48H30Z" fill="#fff"/>
+      <path d="M190 62h52v84h-52Z" fill="#fff"/>
+      <path d="M82 80V45h70v35" fill="none"/>
+      <rect x="72" y="18" width="90" height="28" rx="14" fill="url(#agua)"/>
+      <path d="M216 146v40" fill="none" stroke-dasharray="10 8" stroke="#1e6eb5"/>
+      <path d="M216 190c-19 26-25 35-25 48a25 25 0 0 0 50 0c0-13-6-22-25-48Z" fill="url(#agua)"/>
+    </g>
+
+    <!-- pessoa escovando os dentes -->
+    <g transform="translate(445 138)">
+      <circle cx="74" cy="62" r="34" fill="#fff"/>
+      <path d="M74 96v112M74 122l-44 42M74 122l58-32M74 208l-30 72M74 208l30 72" fill="none"/>
+      <!-- escova -->
+      <path d="M126 92l72-38" fill="none" stroke="#1e6eb5" stroke-width="8"/>
+      <rect x="190" y="45" width="35" height="19" rx="4" fill="#fff" stroke="#1e6eb5"/>
+      <path d="M197 47v15M205 45v17M213 45v15" stroke="#1e6eb5" stroke-width="3"/>
+      <path d="M126 92l-22 1" fill="none"/>
+      <text x="-10" y="300" font-size="20" stroke="none" fill="#444">Escove os dentes com a torneira fechada.</text>
+    </g>
+
+    <text x="52" y="468" font-size="33" stroke="none">Enquanto você escova os dentes,</text>
+    <text x="52" y="510" font-size="33" stroke="none">a água limpa vai embora pelo ralo.</text>
+
+    <rect x="52" y="540" width="716" height="56" fill="url(#agua)"/>
+    <rect x="62" y="550" width="696" height="36" fill="#fff" stroke-width="2"/>
+    <text x="82" y="577" font-size="25" font-weight="bold" stroke="none">Escola Caminhos convida os alunos do 4º ano</text>
+  </g>
+</svg>

@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="620" viewBox="0 0 1000 620">
+  <rect width="1000" height="620" fill="#fff"/>
+  <defs>
+    <pattern id="azul" width="14" height="14" patternUnits="userSpaceOnUse">
+      <circle cx="4" cy="4" r="2.5" fill="#2463a6"/>
+    </pattern>
+    <pattern id="dourado" width="12" height="12" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="12" stroke="#8a6426" stroke-width="3"/>
+    </pattern>
+    <marker id="seta" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#333"/>
+    </marker>
+  </defs>
+
+  <g font-family="Arial, sans-serif" fill="#171717">
+    <text x="42" y="52" font-size="30" font-weight="bold">TRILHA DAS PALAVRAS</text>
+
+    <!-- percurso -->
+    <g stroke="#222" stroke-width="4">
+      <path d="M240 110H270M390 110H420M540 110H570M690 110H720M780 140V190M720 220H690M570 220H540M420 220H390M270 220H240"
+            fill="none" stroke-dasharray="9 7" marker-end="url(#seta)"/>
+    </g>
+
+    <g stroke="#222" stroke-width="4" text-anchor="middle" font-size="26">
+      <rect x="40" y="80" width="200" height="60" rx="8" fill="url(#azul)"/>
+      <text x="140" y="119" stroke="none">Saída</text>
+
+      <rect x="270" y="80" width="120" height="60" rx="8" fill="#fff"/>
+      <text x="330" y="119" stroke="none">2</text>
+
+      <rect x="420" y="80" width="120" height="60" rx="8" fill="url(#dourado)"/>
+      <text x="480" y="119" stroke="none">3</text>
+
+      <rect x="570" y="80" width="120" height="60" rx="8" fill="#fff"/>
+      <text x="630" y="119" stroke="none">4</text>
+
+      <rect x="720" y="80" width="120" height="60" rx="8" fill="url(#azul)"/>
+      <text x="780" y="119" stroke="none">5</text>
+
+      <rect x="720" y="190" width="120" height="60" rx="8" fill="#fff"/>
+      <text x="780" y="229" stroke="none">6</text>
+
+      <rect x="570" y="190" width="120" height="60" rx="8" fill="url(#dourado)"/>
+      <text x="630" y="229" stroke="none">7</text>
+
+      <rect x="420" y="190" width="120" height="60" rx="8" fill="#fff"/>
+      <text x="480" y="229" stroke="none">8</text>
+
+      <rect x="270" y="190" width="120" height="60" rx="8" fill="url(#azul)"/>
+      <text x="330" y="229" stroke="none">9</text>
+
+      <rect x="40" y="190" width="200" height="60" rx="8" fill="#fff"/>
+      <text x="140" y="229" stroke="none">Chegada</text>
+    </g>
+
+    <text x="42" y="330" font-size="28" font-weight="bold">MATERIAL</text>
+
+    <!-- dado -->
+    <g transform="translate(55 365)" stroke="#222" stroke-width="4">
+      <rect x="0" y="0" width="92" height="92" rx="14" fill="#fff"/>
+      <circle cx="25" cy="25" r="7" fill="#222" stroke="none"/>
+      <circle cx="46" cy="46" r="7" fill="#222" stroke="none"/>
+      <circle cx="67" cy="67" r="7" fill="#222" stroke="none"/>
+      <text x="0" y="132" font-size="24" stroke="none">1 dado</text>
+    </g>
+
+    <!-- peões -->
+    <g transform="translate(270 365)" stroke="#222" stroke-width="4">
+      <path d="M30 0c22 0 34 20 22 40-8 14-7 28-4 36H12c3-8 4-22-4-36C-4 20 8 0 30 0Z" fill="url(#azul)"/>
+      <rect x="0" y="78" width="60" height="16" rx="8" fill="#fff"/>
+      <path d="M92 0c22 0 34 20 22 40-8 14-7 28-4 36H74c3-8 4-22-4-36C58 20 70 0 92 0Z" fill="url(#dourado)"/>
+      <rect x="62" y="78" width="60" height="16" rx="8" fill="#fff"/>
+      <text x="0" y="132" font-size="24" stroke="none">2 peões</text>
+    </g>
+
+    <!-- tabuleiro -->
+    <g transform="translate(500 365)" stroke="#222" stroke-width="4">
+      <rect x="0" y="8" width="126" height="86" fill="#fff"/>
+      <path d="M0 37h126M42 8v86M84 8v86" fill="none"/>
+      <text x="0" y="132" font-size="24" stroke="none">1 tabuleiro</text>
+    </g>
+
+    <!-- lista -->
+    <g transform="translate(760 365)" stroke="#222" stroke-width="4">
+      <rect x="0" y="4" width="96" height="90" fill="#fff"/>
+      <path d="M17 30h62M17 52h62M17 74h42" fill="none"/>
+      <text x="0" y="132" font-size="24" stroke="none">1 lista de</text>
+      <text x="0" y="160" font-size="24" stroke="none">palavras</text>
+    </g>
+
+    <text x="42" y="585" font-size="21" fill="#444">Casas com trama: sorteie uma palavra e separe suas sílabas.</text>
+  </g>
+</svg>

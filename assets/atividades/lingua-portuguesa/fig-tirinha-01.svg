@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="400" viewBox="0 0 1200 400">
+  <rect width="1200" height="400" fill="#fff"/>
+  <defs>
+    <pattern id="terra" width="12" height="12" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="12" stroke="#8a6426" stroke-width="3"/>
+    </pattern>
+    <pattern id="folha" width="14" height="14" patternUnits="userSpaceOnUse">
+      <circle cx="4" cy="4" r="2.5" fill="#2e7d45"/>
+    </pattern>
+  </defs>
+
+  <g stroke="#171717" stroke-width="4" fill="none">
+    <rect x="12" y="12" width="282" height="376" rx="4"/>
+    <rect x="312" y="12" width="282" height="376" rx="4"/>
+    <rect x="612" y="12" width="282" height="376" rx="4"/>
+    <rect x="912" y="12" width="276" height="376" rx="4"/>
+  </g>
+
+  <g font-family="Arial, sans-serif" fill="#171717" stroke="#171717" stroke-width="4">
+    <!-- Quadrinho 1 -->
+    <g transform="translate(28 30)">
+      <circle cx="72" cy="170" r="25" fill="#fff"/>
+      <path d="M72 195v78M72 213l-34 28M72 213l34 28M72 273l-22 58M72 273l22 58" fill="none"/>
+      <path d="M160 292h78l-10-70h-58Z" fill="url(#terra)"/>
+      <path d="M199 222v-50" fill="none"/>
+      <path d="M199 194c-24-3-34-24-34-24 24-8 36 14 34 24Z" fill="url(#folha)"/>
+      <path d="M199 193c14 18 9 35 5 44" fill="none"/>
+      <path d="M105 72h128v58H118l-19 22 6-22Z" fill="#fff"/>
+      <text x="129" y="109" font-size="25" stroke="none">Coitada!</text>
+    </g>
+
+    <!-- Quadrinho 2 -->
+    <g transform="translate(328 30)">
+      <circle cx="72" cy="170" r="25" fill="#fff"/>
+      <path d="M72 195v78M72 213l-30 28M72 213l42 18M72 273l-22 58M72 273l22 58" fill="none"/>
+      <path d="M114 210h64v50h-64Z" fill="#fff"/>
+      <path d="M178 220l34-14v34Z" fill="#fff"/>
+      <ellipse cx="186" cy="85" rx="62" ry="34" fill="#fff"/>
+      <circle cx="135" cy="128" r="10" fill="#fff"/>
+      <circle cx="119" cy="145" r="6" fill="#fff"/>
+      <text x="151" y="94" font-size="25" stroke="none">Água!</text>
+    </g>
+
+    <!-- Quadrinho 3 -->
+    <g transform="translate(628 30)">
+      <circle cx="66" cy="176" r="25" fill="#fff"/>
+      <path d="M66 201v72M66 218l-30 25M66 218l45 4M66 273l-22 58M66 273l22 58" fill="none"/>
+      <path d="M108 207h62v48h-62Z" fill="#fff"/>
+      <path d="M170 216l34-14v34Z" fill="#fff"/>
+      <path d="M204 227c5 22 10 44 8 65M217 225c7 22 12 44 10 67" fill="none" stroke="#1e6eb5"/>
+      <path d="M180 326h74l-10-68h-54Z" fill="url(#terra)"/>
+      <text x="52" y="75" font-size="34" font-weight="bold" stroke="none">TCHIBUM!</text>
+    </g>
+
+    <!-- Quadrinho 4 -->
+    <g transform="translate(928 30)">
+      <circle cx="66" cy="176" r="25" fill="#fff"/>
+      <path d="M66 201v72M66 218l-30 25M66 218l34 25M66 273l-22 58M66 273l22 58" fill="none"/>
+      <path d="M157 326h78l-10-68h-58Z" fill="url(#terra)"/>
+      <path d="M196 258v-105" fill="none"/>
+      <path d="M196 198c-28-6-36-34-36-34 29-5 38 27 36 34Z" fill="url(#folha)"/>
+      <path d="M196 214c28-6 36-34 36-34-29-5-38 27-36 34Z" fill="url(#folha)"/>
+      <path d="M95 68h142v58H108l-19 22 6-22Z" fill="#fff"/>
+      <text x="118" y="105" font-size="25" stroke="none">Que linda!</text>
+    </g>
+  </g>
+</svg>

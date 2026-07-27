@@ -105,7 +105,7 @@ const collectionRegistry = {
   'Língua Portuguesa': {
     path: 'data/atividades/fundamental-anos-iniciais/4-ano/3-bimestre/lingua-portuguesa.json',
     collection: '4ano-3bimestre-lingua-portuguesa',
-    count: 7,
+    count: 20,
     symbol: '📖',
     colors: ['#ffe2e8', '#eee3ff']
   }

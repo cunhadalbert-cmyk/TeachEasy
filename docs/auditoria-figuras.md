@@ -9,6 +9,19 @@ Gerado automaticamente. Arquivos JSON verificados: 3.
 | Ciências | efi-4ano-b3-cie-decomposicao-c | 5 | figura-03 | assets/atividades/ciencias/figura-03.png | OK | OK — site, PDF e Word |
 | Ciências | efi-4ano-b3-cie-microrganismos-saude-a | 3 | figura-04 | assets/atividades/ciencias/figura-04.png | OK | OK — site, PDF e Word |
 | Ciências | efi-4ano-b3-cie-microrganismos-saude-b | 5 | figura-05 | assets/atividades/ciencias/figura-05.png | OK | OK — site, PDF e Word |
+| Língua Portuguesa | efi-4ano-b3-lp-quadrinhos-a | 1 | lp-fig-tirinha-01 | assets/atividades/lingua-portuguesa/fig-tirinha-01.svg | OK | OK — site, PDF e Word |
+| Língua Portuguesa | efi-4ano-b3-lp-quadrinhos-a | 2 | lp-fig-tirinha-01 | assets/atividades/lingua-portuguesa/fig-tirinha-01.svg | OK | OK — site, PDF e Word |
+| Língua Portuguesa | efi-4ano-b3-lp-quadrinhos-a | 3 | lp-fig-tirinha-01 | assets/atividades/lingua-portuguesa/fig-tirinha-01.svg | OK | OK — site, PDF e Word |
+| Língua Portuguesa | efi-4ano-b3-lp-quadrinhos-a | 4 | lp-fig-tirinha-01 | assets/atividades/lingua-portuguesa/fig-tirinha-01.svg | OK | OK — site, PDF e Word |
+| Língua Portuguesa | efi-4ano-b3-lp-quadrinhos-a | 5 | lp-fig-tirinha-01 | assets/atividades/lingua-portuguesa/fig-tirinha-01.svg | OK | OK — site, PDF e Word |
+| Língua Portuguesa | efi-4ano-b3-lp-quadrinhos-a | 6 | lp-fig-tirinha-01 | assets/atividades/lingua-portuguesa/fig-tirinha-01.svg | OK | OK — site, PDF e Word |
+| Língua Portuguesa | efi-4ano-b3-lp-instrucional-b | 1 | lp-fig-jogo-01 | assets/atividades/lingua-portuguesa/fig-jogo-01.svg | OK | OK — site, PDF e Word |
+| Língua Portuguesa | efi-4ano-b3-lp-instrucional-b | 5 | lp-fig-jogo-01 | assets/atividades/lingua-portuguesa/fig-jogo-01.svg | OK | OK — site, PDF e Word |
+| Língua Portuguesa | efi-4ano-b3-lp-campanha-educativa-b | 1 | lp-fig-campanha-01 | assets/atividades/lingua-portuguesa/fig-campanha-01.svg | OK | OK — site, PDF e Word |
+| Língua Portuguesa | efi-4ano-b3-lp-campanha-educativa-b | 2 | lp-fig-campanha-01 | assets/atividades/lingua-portuguesa/fig-campanha-01.svg | OK | OK — site, PDF e Word |
+| Língua Portuguesa | efi-4ano-b3-lp-campanha-educativa-b | 3 | lp-fig-campanha-01 | assets/atividades/lingua-portuguesa/fig-campanha-01.svg | OK | OK — site, PDF e Word |
+| Língua Portuguesa | efi-4ano-b3-lp-campanha-educativa-b | 4 | lp-fig-campanha-01 | assets/atividades/lingua-portuguesa/fig-campanha-01.svg | OK | OK — site, PDF e Word |
+| Língua Portuguesa | efi-4ano-b3-lp-campanha-educativa-b | 5 | lp-fig-campanha-01 | assets/atividades/lingua-portuguesa/fig-campanha-01.svg | OK | OK — site, PDF e Word |
 | Matemática | efi-4ano-b3-mat-numeros-ate-dez-milhar-d | 3 | fig-num-01 | assets/atividades/matematica/fig-num-01.svg | OK | OK — site, PDF e Word |
 | Matemática | efi-4ano-b3-mat-fracoes-unitarias-h | 1 | fig-fracao-01 | assets/atividades/matematica/fig-fracao-01.svg | OK | OK — site, PDF e Word |
 | Matemática | efi-4ano-b3-mat-probabilidade-eventos-i | 1 | fig-probabilidade-01 | assets/atividades/matematica/fig-probabilidade-01.svg | OK | OK — site, PDF e Word |
