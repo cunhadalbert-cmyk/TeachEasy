@@ -86,20 +86,62 @@ function libraryDemo() {
 }
 
 function coloringDemo() {
-  const categories = ['Animais', 'Alfabeto', 'Números', 'Natureza', 'Profissões', 'Datas comemorativas'];
+  const categories = ['Animais', 'Alfabeto', 'NÃºmeros', 'Natureza', 'ProfissÃµes', 'Datas comemorativas'];
   demoContainer.innerHTML = `
     <div class="demo-showcase">
       <div class="demo-category-grid">${categories.map(category => `<button class="demo-category" type="button">${category}</button>`).join('')}</div>
-      <button class="demo-surprise" type="button">✨ Surpreenda-me</button>
+      <button class="demo-surprise" type="button">âœ¨ Surpreenda-me</button>
+      <button class="btn btn-primary coloring-open-library" type="button">Abrir os 300 desenhos</button>
       <p class="demo-surprise-result" aria-live="polite"></p>
     </div>`;
+
   const buttons = [...demoContainer.querySelectorAll('.demo-category')];
+  let selectedCategory = '';
+
   const select = button => {
+    selectedCategory = button.textContent;
     buttons.forEach(item => item.classList.toggle('active', item === button));
-    demoContainer.querySelector('.demo-surprise-result').textContent = `Categoria escolhida: ${button.textContent}`;
+    demoContainer.querySelector('.demo-surprise-result').textContent = `Categoria escolhida: ${selectedCategory}`;
   };
+
+  const loadLibrary = async () => {
+    demoContainer.innerHTML = '<div class="demo-showcase"><p>Carregando os 300 desenhos para colorir...</p></div>';
+
+    if (!document.querySelector('link[data-coloring-pages]')) {
+      const stylesheet = document.createElement('link');
+      stylesheet.rel = 'stylesheet';
+      stylesheet.href = 'coloring-pages.css';
+      stylesheet.dataset.coloringPages = 'true';
+      document.head.appendChild(stylesheet);
+    }
+
+    if (!window.ColoringPages) {
+      await new Promise((resolve, reject) => {
+        const script = document.createElement('script');
+        script.src = 'coloring-pages.js';
+        script.dataset.coloringPages = 'true';
+        script.onload = resolve;
+        script.onerror = reject;
+        document.body.appendChild(script);
+      });
+    }
+
+    demoContainer.innerHTML = '';
+    window.ColoringPages.renderLibrary(demoContainer);
+
+    if (selectedCategory) {
+      const tab = [...demoContainer.querySelectorAll('.coloring-category-tab')]
+        .find(item => item.textContent.includes(selectedCategory));
+      if (tab) tab.click();
+    }
+  };
+
   buttons.forEach(button => button.addEventListener('click', () => select(button)));
-  demoContainer.querySelector('.demo-surprise').addEventListener('click', () => select(buttons[Math.floor(Math.random() * buttons.length)]));
+  demoContainer.querySelector('.demo-surprise').addEventListener('click', () => {
+    const button = buttons[Math.floor(Math.random() * buttons.length)];
+    select(button);
+  });
+  demoContainer.querySelector('.coloring-open-library').addEventListener('click', loadLibrary);
 }
 
 function gamesDemo() {
