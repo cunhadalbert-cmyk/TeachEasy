@@ -268,6 +268,141 @@
       grade: '1º ano',
       symbol: '🗺️',
       colors: ['#d8efff', '#dff3dc']
+    },
+    {
+      path: 'data/atividades/fundamental-anos-iniciais/1-ano/1-bimestre/lingua-portuguesa.json',
+      collection: '1ano-1bimestre-lingua-portuguesa',
+      count: 30,
+      grade: '1º ano',
+      term: 1,
+      symbol: '📖',
+      colors: ['#ffe2e8', '#eee3ff']
+    },
+    {
+      path: 'data/atividades/fundamental-anos-iniciais/1-ano/1-bimestre/matematica.json',
+      collection: '1ano-1bimestre-matematica',
+      count: 30,
+      grade: '1º ano',
+      term: 1,
+      symbol: '➗',
+      colors: ['#e1ebff', '#fff1bd']
+    },
+    {
+      path: 'data/atividades/fundamental-anos-iniciais/1-ano/1-bimestre/historia.json',
+      collection: '1ano-1bimestre-historia',
+      count: 30,
+      grade: '1º ano',
+      term: 1,
+      symbol: '🏺',
+      colors: ['#f1dfc8', '#ffe7cf']
+    },
+    {
+      path: 'data/atividades/fundamental-anos-iniciais/1-ano/1-bimestre/geografia.json',
+      collection: '1ano-1bimestre-geografia',
+      count: 30,
+      grade: '1º ano',
+      term: 1,
+      symbol: '🗺️',
+      colors: ['#d8efff', '#dff3dc']
+    },
+    {
+      path: 'data/atividades/fundamental-anos-iniciais/1-ano/1-bimestre/ciencias.json',
+      collection: '1ano-1bimestre-ciencias',
+      count: 30,
+      grade: '1º ano',
+      term: 1,
+      symbol: '🔬',
+      colors: ['#d9f1e1', '#e8f0ff']
+    },
+    {
+      path: 'data/atividades/fundamental-anos-iniciais/1-ano/2-bimestre/lingua-portuguesa.json',
+      collection: '1ano-2bimestre-lingua-portuguesa',
+      count: 30,
+      grade: '1º ano',
+      term: 2,
+      symbol: '📖',
+      colors: ['#ffe2e8', '#eee3ff']
+    },
+    {
+      path: 'data/atividades/fundamental-anos-iniciais/1-ano/2-bimestre/matematica.json',
+      collection: '1ano-2bimestre-matematica',
+      count: 30,
+      grade: '1º ano',
+      term: 2,
+      symbol: '➗',
+      colors: ['#e1ebff', '#fff1bd']
+    },
+    {
+      path: 'data/atividades/fundamental-anos-iniciais/1-ano/2-bimestre/historia.json',
+      collection: '1ano-2bimestre-historia',
+      count: 30,
+      grade: '1º ano',
+      term: 2,
+      symbol: '🏺',
+      colors: ['#f1dfc8', '#ffe7cf']
+    },
+    {
+      path: 'data/atividades/fundamental-anos-iniciais/1-ano/2-bimestre/geografia.json',
+      collection: '1ano-2bimestre-geografia',
+      count: 30,
+      grade: '1º ano',
+      term: 2,
+      symbol: '🗺️',
+      colors: ['#d8efff', '#dff3dc']
+    },
+    {
+      path: 'data/atividades/fundamental-anos-iniciais/1-ano/2-bimestre/ciencias.json',
+      collection: '1ano-2bimestre-ciencias',
+      count: 30,
+      grade: '1º ano',
+      term: 2,
+      symbol: '🔬',
+      colors: ['#d9f1e1', '#e8f0ff']
+    },
+    {
+      path: 'data/atividades/fundamental-anos-iniciais/1-ano/4-bimestre/lingua-portuguesa.json',
+      collection: '1ano-4bimestre-lingua-portuguesa',
+      count: 30,
+      grade: '1º ano',
+      term: 4,
+      symbol: '📖',
+      colors: ['#ffe2e8', '#eee3ff']
+    },
+    {
+      path: 'data/atividades/fundamental-anos-iniciais/1-ano/4-bimestre/matematica.json',
+      collection: '1ano-4bimestre-matematica',
+      count: 30,
+      grade: '1º ano',
+      term: 4,
+      symbol: '➗',
+      colors: ['#e1ebff', '#fff1bd']
+    },
+    {
+      path: 'data/atividades/fundamental-anos-iniciais/1-ano/4-bimestre/historia.json',
+      collection: '1ano-4bimestre-historia',
+      count: 30,
+      grade: '1º ano',
+      term: 4,
+      symbol: '🏺',
+      colors: ['#f1dfc8', '#ffe7cf']
+    },
+    {
+      path: 'data/atividades/fundamental-anos-iniciais/1-ano/4-bimestre/geografia.json',
+      collection: '1ano-4bimestre-geografia',
+      count: 30,
+      grade: '1º ano',
+      term: 4,
+      symbol: '🗺️',
+      colors: ['#d8efff', '#dff3dc']
+    },
+    {
+      path: 'data/atividades/fundamental-anos-iniciais/1-ano/4-bimestre/ciencias.json',
+      collection: '1ano-4bimestre-ciencias',
+      count: 30,
+      grade: '1º ano',
+      term: 4,
+      symbol: '🔬',
+      colors: ['#d9f1e1', '#e8f0ff']
     }
   ];
 
@@ -355,13 +490,8 @@
 
   function isSupportedCollectionPeriod() {
     if (navigation.stage !== 'Ensino Fundamental I') return false;
-
-    if (navigation.grade === '4º ano') {
-      return ['1', '2', '3', '4'].includes(navigation.term);
-    }
-
-    return ['1º ano', '3º ano'].includes(navigation.grade)
-      && navigation.term === '3';
+    if (['1º ano', '4º ano'].includes(navigation.grade)) return ['1', '2', '3', '4'].includes(navigation.term);
+    return navigation.grade === '3º ano' && navigation.term === '3';
   }
 
   function configsForCurrentFilter() {
