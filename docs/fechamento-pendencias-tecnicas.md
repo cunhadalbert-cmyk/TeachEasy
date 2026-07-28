@@ -1,0 +1,1126 @@
+# Fechamento das pendências técnicas — TeachEasy
+
+Data: 27/07/2026
+
+## Resultado técnico
+
+- Coleções verificadas: 100
+- Atividades verificadas: 3000
+- Atividades tecnicamente aprovadas: 3000
+- Questões verificadas: 18000
+- Respostas de gabarito verificadas: 18000
+- Erros estruturais: 0
+- Códigos BNCC com formato/ano incompatível: 44
+- Atividades com linguagem potencialmente genérica: 0
+- Atividades candidatas a apoio visual: 1037
+
+- Status técnico: CONCLUÍDO
+
+## O que este fechamento comprova
+
+- Os arquivos existem e podem ser carregados.
+- Cada atividade possui ID, título, seis questões e seis respostas.
+- O total geral permanece em 100 coleções, 3.000 atividades e 18.000 questões.
+- Os códigos BNCC foram verificados quanto ao formato e compatibilidade com o ano.
+- Atividades com linguagem genérica foram localizadas para revisão editorial.
+- Atividades que podem precisar de figuras foram localizadas por critérios objetivos.
+
+## Limite de honestidade
+
+- Formato válido de um código BNCC não comprova que a habilidade escolhida corresponde pedagogicamente à atividade.
+- Revisão pedagógica humana e conferência individual da BNCC não devem ser marcadas como concluídas automaticamente.
+
+## Códigos BNCC para conferência
+
+- `efi-3ano-b3-lp-01-leitura-de-conto-popular` — código `EF35LP26` — 3º ano, Língua Portuguesa
+- `efi-3ano-b3-lp-02-personagens-e-caracteristicas` — código `EF35LP26` — 3º ano, Língua Portuguesa
+- `efi-3ano-b3-lp-03-sequencia-dos-acontecimentos` — código `EF35LP29` — 3º ano, Língua Portuguesa
+- `efi-3ano-b3-lp-04-inicio-meio-e-fim` — código `EF35LP29` — 3º ano, Língua Portuguesa
+- `efi-3ano-b3-lp-05-fabulas-e-ensinamentos` — código `EF35LP26` — 3º ano, Língua Portuguesa
+- `efi-3ano-b3-lp-06-moral-da-historia` — código `EF35LP26` — 3º ano, Língua Portuguesa
+- `efi-3ano-b3-lp-07-poema-e-versos` — código `EF35LP23` — 3º ano, Língua Portuguesa
+- `efi-3ano-b3-lp-08-rimas-em-poemas` — código `EF35LP23` — 3º ano, Língua Portuguesa
+- `efi-3ano-b3-lp-16-informacao-principal` — código `EF35LP03` — 3º ano, Língua Portuguesa
+- `efi-3ano-b3-lp-17-informacoes-explicitas` — código `EF15LP03` — 3º ano, Língua Portuguesa
+- `efi-3ano-b3-lp-18-inferencia-pelo-contexto` — código `EF35LP04` — 3º ano, Língua Portuguesa
+- `efi-3ano-b3-lp-19-significado-de-palavras` — código `EF35LP05` — 3º ano, Língua Portuguesa
+- `efi-3ano-b3-lp-27-paragrafo-e-organizacao` — código `EF35LP09` — 3º ano, Língua Portuguesa
+- `efi-4ano-b3-lp-noticia-c` — código `EF15LP05` — 4º ano, Língua Portuguesa
+- `efi-4ano-b3-lp-noticia-c` — código `EF15LP06` — 4º ano, Língua Portuguesa
+- `efi-4ano-b3-lp-texto-literario-b` — código `EF35LP21` — 4º ano, Língua Portuguesa
+- `efi-4ano-b3-lp-texto-literario-b` — código `EF35LP26` — 4º ano, Língua Portuguesa
+- `efi-4ano-b3-lp-narrativa-c` — código `EF35LP25` — 4º ano, Língua Portuguesa
+- `efi-4ano-b3-lp-narrativa-c` — código `EF35LP26` — 4º ano, Língua Portuguesa
+- `efi-4ano-b3-lp-carta-pessoal-a` — código `EF35LP16` — 4º ano, Língua Portuguesa
+- `efi-4ano-b3-lp-poema-a` — código `EF35LP23` — 4º ano, Língua Portuguesa
+- `efi-4ano-b3-lp-poema-a` — código `EF35LP27` — 4º ano, Língua Portuguesa
+- `efi-4ano-b3-lp-quadrinhos-a` — código `EF15LP14` — 4º ano, Língua Portuguesa
+- `efi-4ano-b3-lp-quadrinhos-a` — código `EF15LP04` — 4º ano, Língua Portuguesa
+- `efi-4ano-b3-lp-relato-pessoal-b` — código `EF35LP29` — 4º ano, Língua Portuguesa
+- `efi-4ano-b3-lp-relato-pessoal-b` — código `EF35LP09` — 4º ano, Língua Portuguesa
+- `efi-4ano-b3-lp-conto-popular-b` — código `EF35LP29` — 4º ano, Língua Portuguesa
+- `efi-4ano-b3-lp-conto-popular-b` — código `EF35LP21` — 4º ano, Língua Portuguesa
+- `efi-4ano-b3-lp-entrevista-b` — código `EF35LP10` — 4º ano, Língua Portuguesa
+- `efi-4ano-b3-lp-campanha-educativa-b` — código `EF15LP04` — 4º ano, Língua Portuguesa
+- `efi-4ano-b3-lp-pontuacao-dialogo-b` — código `EF35LP30` — 4º ano, Língua Portuguesa
+- `efi-4ano-b3-lp-coesao-b` — código `EF35LP06` — 4º ano, Língua Portuguesa
+- `efi-4ano-b3-lp-coesao-b` — código `EF35LP14` — 4º ano, Língua Portuguesa
+- `efi-4ano-b3-lp-paragrafo-c` — código `EF35LP09` — 4º ano, Língua Portuguesa
+- `efi-4ano-b3-lp-paragrafo-c` — código `EF35LP07` — 4º ano, Língua Portuguesa
+- `efi-4ano-b3-lp-cartaz-feira-extra` — código `EF15LP04` — 4º ano, Língua Portuguesa
+- `efi-4ano-b3-lp-legenda-mapa-extra` — código `EF15LP04` — 4º ano, Língua Portuguesa
+- `efi-4ano-b3-lp-infografico-reciclagem-extra` — código `EF15LP04` — 4º ano, Língua Portuguesa
+- `efi-4ano-b3-lp-calendario-aviso-extra` — código `EF15LP03` — 4º ano, Língua Portuguesa
+- `efi-4ano-b3-lp-sequencia-emocoes-extra` — código `EF15LP14` — 4º ano, Língua Portuguesa
+- `efi-4ano-b3-lp-sequencia-emocoes-extra` — código `EF15LP04` — 4º ano, Língua Portuguesa
+- `efi-4ano-b3-lp-foto-legenda-noticia-extra` — código `EF15LP04` — 4º ano, Língua Portuguesa
+- `efi-4ano-b3-lp-pronomes-sequencia-extra` — código `EF35LP06` — 4º ano, Língua Portuguesa
+- `efi-4ano-b3-lp-pronomes-sequencia-extra` — código `EF35LP14` — 4º ano, Língua Portuguesa
+
+## Atividades com linguagem potencialmente genérica
+
+- Nenhuma atividade sinalizada.
+
+## Atividades candidatas a figuras
+
+- `efi-1ano-b1-lingua-portuguesa-28-leitura-e-compreensao-sequencia-de-cenas` — 1º ano, 1º bimestre, Língua Portuguesa: sequência visual
+- `efi-1ano-b1-lingua-portuguesa-29-analise-da-linguagem-em-sequencia-de-cenas` — 1º ano, 1º bimestre, Língua Portuguesa: sequência visual
+- `efi-1ano-b1-lingua-portuguesa-30-producao-textual-sobre-sequencia-de-cenas` — 1º ano, 1º bimestre, Língua Portuguesa: sequência visual
+- `efi-1ano-b1-matematica-01-representacao-de-numeros-ate-20` — 1º ano, 1º bimestre, Matemática: gráfico ou tabela
+- `efi-1ano-b1-matematica-03-problemas-envolvendo-numeros-ate-20` — 1º ano, 1º bimestre, Matemática: gráfico ou tabela
+- `efi-1ano-b1-matematica-04-representacao-de-contagem` — 1º ano, 1º bimestre, Matemática: gráfico ou tabela
+- `efi-1ano-b1-matematica-06-problemas-envolvendo-contagem` — 1º ano, 1º bimestre, Matemática: gráfico ou tabela
+- `efi-1ano-b1-matematica-07-representacao-de-comparacao-de-quantidades` — 1º ano, 1º bimestre, Matemática: gráfico ou tabela
+- `efi-1ano-b1-matematica-09-problemas-envolvendo-comparacao-de-quantidades` — 1º ano, 1º bimestre, Matemática: gráfico ou tabela
+- `efi-1ano-b1-matematica-10-representacao-de-ordem-numerica` — 1º ano, 1º bimestre, Matemática: gráfico ou tabela
+- `efi-1ano-b1-matematica-12-problemas-envolvendo-ordem-numerica` — 1º ano, 1º bimestre, Matemática: gráfico ou tabela
+- `efi-1ano-b1-matematica-13-representacao-de-adicao-ate-10` — 1º ano, 1º bimestre, Matemática: gráfico ou tabela
+- `efi-1ano-b1-matematica-15-problemas-envolvendo-adicao-ate-10` — 1º ano, 1º bimestre, Matemática: gráfico ou tabela
+- `efi-1ano-b1-matematica-16-representacao-de-subtracao-ate-10` — 1º ano, 1º bimestre, Matemática: gráfico ou tabela
+- `efi-1ano-b1-matematica-18-problemas-envolvendo-subtracao-ate-10` — 1º ano, 1º bimestre, Matemática: gráfico ou tabela
+- `efi-1ano-b1-matematica-19-representacao-de-formas-geometricas` — 1º ano, 1º bimestre, Matemática: gráfico ou tabela
+- `efi-1ano-b1-matematica-21-problemas-envolvendo-formas-geometricas` — 1º ano, 1º bimestre, Matemática: gráfico ou tabela
+- `efi-1ano-b1-matematica-22-representacao-de-posicao-no-espaco` — 1º ano, 1º bimestre, Matemática: gráfico ou tabela
+- `efi-1ano-b1-matematica-24-problemas-envolvendo-posicao-no-espaco` — 1º ano, 1º bimestre, Matemática: gráfico ou tabela
+- `efi-1ano-b1-matematica-25-representacao-de-medidas-comparativas` — 1º ano, 1º bimestre, Matemática: gráfico ou tabela
+- `efi-1ano-b1-matematica-27-problemas-envolvendo-medidas-comparativas` — 1º ano, 1º bimestre, Matemática: gráfico ou tabela
+- `efi-1ano-b1-matematica-28-representacao-de-dados-com-figuras` — 1º ano, 1º bimestre, Matemática: gráfico ou tabela
+- `efi-1ano-b1-matematica-29-estrategias-de-calculo-com-dados-com-figuras` — 1º ano, 1º bimestre, Matemática: gráfico ou tabela
+- `efi-1ano-b1-matematica-30-problemas-envolvendo-dados-com-figuras` — 1º ano, 1º bimestre, Matemática: gráfico ou tabela
+- `efi-1ano-b1-historia-25-fontes-historicas-sobre-linha-do-tempo` — 1º ano, 1º bimestre, História: tempo e calendário
+- `efi-1ano-b1-historia-26-mudancas-e-permanencias-em-linha-do-tempo` — 1º ano, 1º bimestre, História: tempo e calendário
+- `efi-1ano-b1-historia-27-registro-e-reflexao-sobre-linha-do-tempo` — 1º ano, 1º bimestre, História: tempo e calendário
+- `efi-1ano-b1-geografia-01-observacao-espacial-de-corpo-no-espaco` — 1º ano, 1º bimestre, Geografia: mapa ou localização
+- `efi-1ano-b1-geografia-02-representacao-geografica-de-corpo-no-espaco` — 1º ano, 1º bimestre, Geografia: mapa ou localização, gráfico ou tabela, ciências visuais
+- `efi-1ano-b1-geografia-04-observacao-espacial-de-direita-e-esquerda` — 1º ano, 1º bimestre, Geografia: mapa ou localização
+- `efi-1ano-b1-geografia-05-representacao-geografica-de-direita-e-esquerda` — 1º ano, 1º bimestre, Geografia: mapa ou localização, gráfico ou tabela, ciências visuais
+- `efi-1ano-b1-geografia-07-observacao-espacial-de-sala-de-aula` — 1º ano, 1º bimestre, Geografia: mapa ou localização
+- `efi-1ano-b1-geografia-08-representacao-geografica-de-sala-de-aula` — 1º ano, 1º bimestre, Geografia: mapa ou localização, gráfico ou tabela, ciências visuais
+- `efi-1ano-b1-geografia-10-observacao-espacial-de-casa` — 1º ano, 1º bimestre, Geografia: mapa ou localização
+- `efi-1ano-b1-geografia-11-representacao-geografica-de-casa` — 1º ano, 1º bimestre, Geografia: mapa ou localização, gráfico ou tabela, ciências visuais
+- `efi-1ano-b1-geografia-13-observacao-espacial-de-rua` — 1º ano, 1º bimestre, Geografia: mapa ou localização
+- `efi-1ano-b1-geografia-14-representacao-geografica-de-rua` — 1º ano, 1º bimestre, Geografia: mapa ou localização, gráfico ou tabela, ciências visuais
+- `efi-1ano-b1-geografia-16-observacao-espacial-de-bairro` — 1º ano, 1º bimestre, Geografia: mapa ou localização
+- `efi-1ano-b1-geografia-17-representacao-geografica-de-bairro` — 1º ano, 1º bimestre, Geografia: mapa ou localização, gráfico ou tabela, ciências visuais
+- `efi-1ano-b1-geografia-19-observacao-espacial-de-paisagem` — 1º ano, 1º bimestre, Geografia: mapa ou localização
+- `efi-1ano-b1-geografia-20-representacao-geografica-de-paisagem` — 1º ano, 1º bimestre, Geografia: mapa ou localização, gráfico ou tabela, ciências visuais
+- `efi-1ano-b1-geografia-22-observacao-espacial-de-elementos-naturais` — 1º ano, 1º bimestre, Geografia: mapa ou localização
+- `efi-1ano-b1-geografia-23-representacao-geografica-de-elementos-naturais` — 1º ano, 1º bimestre, Geografia: mapa ou localização, gráfico ou tabela, ciências visuais
+- `efi-1ano-b1-geografia-25-observacao-espacial-de-dia-e-noite` — 1º ano, 1º bimestre, Geografia: mapa ou localização
+- `efi-1ano-b1-geografia-26-representacao-geografica-de-dia-e-noite` — 1º ano, 1º bimestre, Geografia: mapa ou localização, gráfico ou tabela, ciências visuais
+- `efi-1ano-b1-geografia-28-observacao-espacial-de-mapa-da-sala` — 1º ano, 1º bimestre, Geografia: mapa ou localização
+- `efi-1ano-b1-geografia-29-representacao-geografica-de-mapa-da-sala` — 1º ano, 1º bimestre, Geografia: mapa ou localização, gráfico ou tabela, ciências visuais
+- `efi-1ano-b1-geografia-30-problemas-e-solucoes-em-mapa-da-sala` — 1º ano, 1º bimestre, Geografia: mapa ou localização
+- `efi-1ano-b1-ciencias-01-observacao-e-hipotese-sobre-corpo-humano` — 1º ano, 1º bimestre, Ciências: ciências visuais
+- `efi-1ano-b1-ciencias-02-investigacao-cientifica-de-corpo-humano` — 1º ano, 1º bimestre, Ciências: gráfico ou tabela, ciências visuais, sequência visual
+- `efi-1ano-b1-ciencias-03-aplicacao-de-corpo-humano-no-cotidiano` — 1º ano, 1º bimestre, Ciências: ciências visuais
+- `efi-1ano-b1-ciencias-05-investigacao-cientifica-de-sentidos` — 1º ano, 1º bimestre, Ciências: gráfico ou tabela, sequência visual
+- `efi-1ano-b1-ciencias-08-investigacao-cientifica-de-higiene` — 1º ano, 1º bimestre, Ciências: gráfico ou tabela, sequência visual
+- `efi-1ano-b1-ciencias-11-investigacao-cientifica-de-alimentacao-saudavel` — 1º ano, 1º bimestre, Ciências: gráfico ou tabela, sequência visual
+- `efi-1ano-b1-ciencias-14-investigacao-cientifica-de-sono` — 1º ano, 1º bimestre, Ciências: gráfico ou tabela, sequência visual
+- `efi-1ano-b1-ciencias-17-investigacao-cientifica-de-seres-vivos` — 1º ano, 1º bimestre, Ciências: gráfico ou tabela, sequência visual
+- `efi-1ano-b1-ciencias-20-investigacao-cientifica-de-animais` — 1º ano, 1º bimestre, Ciências: gráfico ou tabela, sequência visual
+- `efi-1ano-b1-ciencias-23-investigacao-cientifica-de-plantas` — 1º ano, 1º bimestre, Ciências: gráfico ou tabela, sequência visual
+- `efi-1ano-b1-ciencias-26-investigacao-cientifica-de-dia-e-noite` — 1º ano, 1º bimestre, Ciências: gráfico ou tabela, sequência visual
+- `efi-1ano-b1-ciencias-29-investigacao-cientifica-de-materiais-dos-objetos` — 1º ano, 1º bimestre, Ciências: gráfico ou tabela, sequência visual
+- `efi-1ano-b2-matematica-01-representacao-de-numeros-ate-50` — 1º ano, 2º bimestre, Matemática: gráfico ou tabela
+- `efi-1ano-b2-matematica-03-problemas-envolvendo-numeros-ate-50` — 1º ano, 2º bimestre, Matemática: gráfico ou tabela
+- `efi-1ano-b2-matematica-04-representacao-de-dezenas-e-unidades` — 1º ano, 2º bimestre, Matemática: gráfico ou tabela
+- `efi-1ano-b2-matematica-06-problemas-envolvendo-dezenas-e-unidades` — 1º ano, 2º bimestre, Matemática: gráfico ou tabela
+- `efi-1ano-b2-matematica-07-representacao-de-composicao-numerica` — 1º ano, 2º bimestre, Matemática: gráfico ou tabela
+- `efi-1ano-b2-matematica-09-problemas-envolvendo-composicao-numerica` — 1º ano, 2º bimestre, Matemática: gráfico ou tabela
+- `efi-1ano-b2-matematica-10-representacao-de-sequencias` — 1º ano, 2º bimestre, Matemática: gráfico ou tabela
+- `efi-1ano-b2-matematica-12-problemas-envolvendo-sequencias` — 1º ano, 2º bimestre, Matemática: gráfico ou tabela
+- `efi-1ano-b2-matematica-13-representacao-de-adicao` — 1º ano, 2º bimestre, Matemática: gráfico ou tabela
+- `efi-1ano-b2-matematica-15-problemas-envolvendo-adicao` — 1º ano, 2º bimestre, Matemática: gráfico ou tabela
+- `efi-1ano-b2-matematica-16-representacao-de-subtracao` — 1º ano, 2º bimestre, Matemática: gráfico ou tabela
+- `efi-1ano-b2-matematica-18-problemas-envolvendo-subtracao` — 1º ano, 2º bimestre, Matemática: gráfico ou tabela
+- `efi-1ano-b2-matematica-19-representacao-de-dobro-e-metade` — 1º ano, 2º bimestre, Matemática: gráfico ou tabela
+- `efi-1ano-b2-matematica-21-problemas-envolvendo-dobro-e-metade` — 1º ano, 2º bimestre, Matemática: gráfico ou tabela
+- `efi-1ano-b2-matematica-22-representacao-de-comprimento` — 1º ano, 2º bimestre, Matemática: gráfico ou tabela
+- `efi-1ano-b2-matematica-24-problemas-envolvendo-comprimento` — 1º ano, 2º bimestre, Matemática: gráfico ou tabela
+- `efi-1ano-b2-matematica-25-representacao-de-calendario` — 1º ano, 2º bimestre, Matemática: gráfico ou tabela, tempo e calendário
+- `efi-1ano-b2-matematica-26-estrategias-de-calculo-com-calendario` — 1º ano, 2º bimestre, Matemática: tempo e calendário
+- `efi-1ano-b2-matematica-27-problemas-envolvendo-calendario` — 1º ano, 2º bimestre, Matemática: gráfico ou tabela, tempo e calendário
+- `efi-1ano-b2-matematica-28-representacao-de-dinheiro` — 1º ano, 2º bimestre, Matemática: gráfico ou tabela, dinheiro
+- `efi-1ano-b2-matematica-29-estrategias-de-calculo-com-dinheiro` — 1º ano, 2º bimestre, Matemática: dinheiro
+- `efi-1ano-b2-matematica-30-problemas-envolvendo-dinheiro` — 1º ano, 2º bimestre, Matemática: gráfico ou tabela, dinheiro
+- `efi-1ano-b2-geografia-01-observacao-espacial-de-paisagem-natural` — 1º ano, 2º bimestre, Geografia: mapa ou localização
+- `efi-1ano-b2-geografia-02-representacao-geografica-de-paisagem-natural` — 1º ano, 2º bimestre, Geografia: mapa ou localização, gráfico ou tabela, ciências visuais
+- `efi-1ano-b2-geografia-04-observacao-espacial-de-paisagem-modificada` — 1º ano, 2º bimestre, Geografia: mapa ou localização
+- `efi-1ano-b2-geografia-05-representacao-geografica-de-paisagem-modificada` — 1º ano, 2º bimestre, Geografia: mapa ou localização, gráfico ou tabela, ciências visuais
+- `efi-1ano-b2-geografia-07-observacao-espacial-de-campo-e-cidade` — 1º ano, 2º bimestre, Geografia: mapa ou localização
+- `efi-1ano-b2-geografia-08-representacao-geografica-de-campo-e-cidade` — 1º ano, 2º bimestre, Geografia: mapa ou localização, gráfico ou tabela, ciências visuais
+- `efi-1ano-b2-geografia-10-observacao-espacial-de-moradias` — 1º ano, 2º bimestre, Geografia: mapa ou localização
+- `efi-1ano-b2-geografia-11-representacao-geografica-de-moradias` — 1º ano, 2º bimestre, Geografia: mapa ou localização, gráfico ou tabela, ciências visuais
+- `efi-1ano-b2-geografia-13-observacao-espacial-de-trabalho` — 1º ano, 2º bimestre, Geografia: mapa ou localização
+- `efi-1ano-b2-geografia-14-representacao-geografica-de-trabalho` — 1º ano, 2º bimestre, Geografia: mapa ou localização, gráfico ou tabela, ciências visuais
+- `efi-1ano-b2-geografia-16-observacao-espacial-de-transportes` — 1º ano, 2º bimestre, Geografia: mapa ou localização
+- `efi-1ano-b2-geografia-17-representacao-geografica-de-transportes` — 1º ano, 2º bimestre, Geografia: mapa ou localização, gráfico ou tabela, ciências visuais
+- `efi-1ano-b2-geografia-19-observacao-espacial-de-servicos-do-bairro` — 1º ano, 2º bimestre, Geografia: mapa ou localização
+- `efi-1ano-b2-geografia-20-representacao-geografica-de-servicos-do-bairro` — 1º ano, 2º bimestre, Geografia: mapa ou localização, gráfico ou tabela, ciências visuais
+- `efi-1ano-b2-geografia-22-observacao-espacial-de-pontos-de-referencia` — 1º ano, 2º bimestre, Geografia: mapa ou localização
+- `efi-1ano-b2-geografia-23-representacao-geografica-de-pontos-de-referencia` — 1º ano, 2º bimestre, Geografia: mapa ou localização, gráfico ou tabela, ciências visuais
+- `efi-1ano-b2-geografia-25-observacao-espacial-de-planta-da-sala` — 1º ano, 2º bimestre, Geografia: mapa ou localização, ciências visuais
+- `efi-1ano-b2-geografia-26-representacao-geografica-de-planta-da-sala` — 1º ano, 2º bimestre, Geografia: mapa ou localização, gráfico ou tabela, ciências visuais
+- `efi-1ano-b2-geografia-27-problemas-e-solucoes-em-planta-da-sala` — 1º ano, 2º bimestre, Geografia: mapa ou localização, ciências visuais
+- `efi-1ano-b2-geografia-28-observacao-espacial-de-cuidado-com-o-espaco` — 1º ano, 2º bimestre, Geografia: mapa ou localização
+- `efi-1ano-b2-geografia-29-representacao-geografica-de-cuidado-com-o-espaco` — 1º ano, 2º bimestre, Geografia: mapa ou localização, gráfico ou tabela, ciências visuais
+- `efi-1ano-b2-ciencias-02-investigacao-cientifica-de-ciclo-de-vida` — 1º ano, 2º bimestre, Ciências: gráfico ou tabela, sequência visual
+- `efi-1ano-b2-ciencias-05-investigacao-cientifica-de-sementes` — 1º ano, 2º bimestre, Ciências: gráfico ou tabela, sequência visual
+- `efi-1ano-b2-ciencias-08-investigacao-cientifica-de-germinacao` — 1º ano, 2º bimestre, Ciências: gráfico ou tabela, sequência visual
+- `efi-1ano-b2-ciencias-11-investigacao-cientifica-de-animais-e-movimentos` — 1º ano, 2º bimestre, Ciências: gráfico ou tabela, sequência visual
+- `efi-1ano-b2-ciencias-14-investigacao-cientifica-de-habitat` — 1º ano, 2º bimestre, Ciências: gráfico ou tabela, sequência visual
+- `efi-1ano-b2-ciencias-17-investigacao-cientifica-de-agua` — 1º ano, 2º bimestre, Ciências: gráfico ou tabela, sequência visual
+- `efi-1ano-b2-ciencias-20-investigacao-cientifica-de-ar-e-vento` — 1º ano, 2º bimestre, Ciências: gráfico ou tabela, sequência visual
+- `efi-1ano-b2-ciencias-23-investigacao-cientifica-de-solo` — 1º ano, 2º bimestre, Ciências: gráfico ou tabela, sequência visual
+- `efi-1ano-b2-ciencias-26-investigacao-cientifica-de-materiais` — 1º ano, 2º bimestre, Ciências: gráfico ou tabela, sequência visual
+- `efi-1ano-b2-ciencias-29-investigacao-cientifica-de-reciclagem` — 1º ano, 2º bimestre, Ciências: gráfico ou tabela, sequência visual
+- `efi-1ano-b3-lp-09-pequenas-historias-descoberta` — 1º ano, 3º bimestre, Língua Portuguesa: ciências visuais
+- `efi-1ano-b3-lp-19-pequenas-historias-pratica` — 1º ano, 3º bimestre, Língua Portuguesa: ciências visuais
+- `efi-1ano-b3-lp-29-pequenas-historias-desafio` — 1º ano, 3º bimestre, Língua Portuguesa: ciências visuais
+- `efi-1ano-b3-mat-01-numeros-ate-50-descoberta` — 1º ano, 3º bimestre, Matemática: sequência visual
+- `efi-1ano-b3-mat-02-comparacao-de-quantidades-descoberta` — 1º ano, 3º bimestre, Matemática: sequência visual
+- `efi-1ano-b3-mat-03-sequencias-numericas-descoberta` — 1º ano, 3º bimestre, Matemática: sequência visual
+- `efi-1ano-b3-mat-04-adicao-no-cotidiano-descoberta` — 1º ano, 3º bimestre, Matemática: sequência visual
+- `efi-1ano-b3-mat-05-subtracao-no-cotidiano-descoberta` — 1º ano, 3º bimestre, Matemática: sequência visual
+- `efi-1ano-b3-mat-06-dezena-e-unidade-descoberta` — 1º ano, 3º bimestre, Matemática: sequência visual
+- `efi-1ano-b3-mat-07-formas-geometricas-descoberta` — 1º ano, 3º bimestre, Matemática: geometria, sequência visual
+- `efi-1ano-b3-mat-08-comprimento-e-comparacao-descoberta` — 1º ano, 3º bimestre, Matemática: sequência visual
+- `efi-1ano-b3-mat-09-dias-e-horarios-descoberta` — 1º ano, 3º bimestre, Matemática: sequência visual
+- `efi-1ano-b3-mat-10-tabelas-e-graficos-simples-descoberta` — 1º ano, 3º bimestre, Matemática: gráfico ou tabela, sequência visual
+- `efi-1ano-b3-mat-11-numeros-ate-50-pratica` — 1º ano, 3º bimestre, Matemática: sequência visual
+- `efi-1ano-b3-mat-12-comparacao-de-quantidades-pratica` — 1º ano, 3º bimestre, Matemática: sequência visual
+- `efi-1ano-b3-mat-13-sequencias-numericas-pratica` — 1º ano, 3º bimestre, Matemática: sequência visual
+- `efi-1ano-b3-mat-14-adicao-no-cotidiano-pratica` — 1º ano, 3º bimestre, Matemática: sequência visual
+- `efi-1ano-b3-mat-15-subtracao-no-cotidiano-pratica` — 1º ano, 3º bimestre, Matemática: sequência visual
+- `efi-1ano-b3-mat-16-dezena-e-unidade-pratica` — 1º ano, 3º bimestre, Matemática: sequência visual
+- `efi-1ano-b3-mat-17-formas-geometricas-pratica` — 1º ano, 3º bimestre, Matemática: geometria, sequência visual
+- `efi-1ano-b3-mat-18-comprimento-e-comparacao-pratica` — 1º ano, 3º bimestre, Matemática: sequência visual
+- `efi-1ano-b3-mat-19-dias-e-horarios-pratica` — 1º ano, 3º bimestre, Matemática: sequência visual
+- `efi-1ano-b3-mat-20-tabelas-e-graficos-simples-pratica` — 1º ano, 3º bimestre, Matemática: gráfico ou tabela, sequência visual
+- `efi-1ano-b3-mat-21-numeros-ate-50-desafio` — 1º ano, 3º bimestre, Matemática: sequência visual
+- `efi-1ano-b3-mat-22-comparacao-de-quantidades-desafio` — 1º ano, 3º bimestre, Matemática: sequência visual
+- `efi-1ano-b3-mat-23-sequencias-numericas-desafio` — 1º ano, 3º bimestre, Matemática: sequência visual
+- `efi-1ano-b3-mat-24-adicao-no-cotidiano-desafio` — 1º ano, 3º bimestre, Matemática: sequência visual
+- `efi-1ano-b3-mat-25-subtracao-no-cotidiano-desafio` — 1º ano, 3º bimestre, Matemática: sequência visual
+- `efi-1ano-b3-mat-26-dezena-e-unidade-desafio` — 1º ano, 3º bimestre, Matemática: sequência visual
+- `efi-1ano-b3-mat-27-formas-geometricas-desafio` — 1º ano, 3º bimestre, Matemática: geometria, sequência visual
+- `efi-1ano-b3-mat-28-comprimento-e-comparacao-desafio` — 1º ano, 3º bimestre, Matemática: sequência visual
+- `efi-1ano-b3-mat-29-dias-e-horarios-desafio` — 1º ano, 3º bimestre, Matemática: sequência visual
+- `efi-1ano-b3-mat-30-tabelas-e-graficos-simples-desafio` — 1º ano, 3º bimestre, Matemática: gráfico ou tabela, sequência visual
+- `efi-1ano-b3-geo-08-frente-atras-direita-e-esquerda-descoberta` — 1º ano, 3º bimestre, Geografia: mapa ou localização
+- `efi-1ano-b3-geo-18-frente-atras-direita-e-esquerda-pratica` — 1º ano, 3º bimestre, Geografia: mapa ou localização
+- `efi-1ano-b3-geo-28-frente-atras-direita-e-esquerda-desafio` — 1º ano, 3º bimestre, Geografia: mapa ou localização
+- `efi-1ano-b3-cie-01-partes-do-corpo-descoberta` — 1º ano, 3º bimestre, Ciências: ciências visuais
+- `efi-1ano-b3-cie-11-partes-do-corpo-pratica` — 1º ano, 3º bimestre, Ciências: ciências visuais
+- `efi-1ano-b3-cie-21-partes-do-corpo-desafio` — 1º ano, 3º bimestre, Ciências: ciências visuais
+- `efi-1ano-b4-lingua-portuguesa-07-leitura-e-compreensao-ordem-dos-fatos` — 1º ano, 4º bimestre, Língua Portuguesa: sequência visual
+- `efi-1ano-b4-lingua-portuguesa-08-analise-da-linguagem-em-ordem-dos-fatos` — 1º ano, 4º bimestre, Língua Portuguesa: sequência visual
+- `efi-1ano-b4-lingua-portuguesa-09-producao-textual-sobre-ordem-dos-fatos` — 1º ano, 4º bimestre, Língua Portuguesa: sequência visual
+- `efi-1ano-b4-matematica-01-representacao-de-numeros-ate-100` — 1º ano, 4º bimestre, Matemática: gráfico ou tabela
+- `efi-1ano-b4-matematica-03-problemas-envolvendo-numeros-ate-100` — 1º ano, 4º bimestre, Matemática: gráfico ou tabela
+- `efi-1ano-b4-matematica-04-representacao-de-dezenas` — 1º ano, 4º bimestre, Matemática: gráfico ou tabela
+- `efi-1ano-b4-matematica-06-problemas-envolvendo-dezenas` — 1º ano, 4º bimestre, Matemática: gráfico ou tabela
+- `efi-1ano-b4-matematica-07-representacao-de-ordem-crescente` — 1º ano, 4º bimestre, Matemática: gráfico ou tabela
+- `efi-1ano-b4-matematica-09-problemas-envolvendo-ordem-crescente` — 1º ano, 4º bimestre, Matemática: gráfico ou tabela
+- `efi-1ano-b4-matematica-10-representacao-de-adicao-ate-100` — 1º ano, 4º bimestre, Matemática: gráfico ou tabela
+- `efi-1ano-b4-matematica-12-problemas-envolvendo-adicao-ate-100` — 1º ano, 4º bimestre, Matemática: gráfico ou tabela
+- `efi-1ano-b4-matematica-13-representacao-de-subtracao-ate-100` — 1º ano, 4º bimestre, Matemática: gráfico ou tabela
+- `efi-1ano-b4-matematica-15-problemas-envolvendo-subtracao-ate-100` — 1º ano, 4º bimestre, Matemática: gráfico ou tabela
+- `efi-1ano-b4-matematica-16-representacao-de-multiplicacao-por-agrupamento` — 1º ano, 4º bimestre, Matemática: gráfico ou tabela
+- `efi-1ano-b4-matematica-18-problemas-envolvendo-multiplicacao-por-agrupamento` — 1º ano, 4º bimestre, Matemática: gráfico ou tabela
+- `efi-1ano-b4-matematica-19-representacao-de-divisao-por-reparticao` — 1º ano, 4º bimestre, Matemática: gráfico ou tabela
+- `efi-1ano-b4-matematica-21-problemas-envolvendo-divisao-por-reparticao` — 1º ano, 4º bimestre, Matemática: gráfico ou tabela
+- `efi-1ano-b4-matematica-22-representacao-de-medidas` — 1º ano, 4º bimestre, Matemática: gráfico ou tabela
+- `efi-1ano-b4-matematica-24-problemas-envolvendo-medidas` — 1º ano, 4º bimestre, Matemática: gráfico ou tabela
+- `efi-1ano-b4-matematica-25-representacao-de-horas` — 1º ano, 4º bimestre, Matemática: gráfico ou tabela, tempo e calendário
+- `efi-1ano-b4-matematica-26-estrategias-de-calculo-com-horas` — 1º ano, 4º bimestre, Matemática: tempo e calendário
+- `efi-1ano-b4-matematica-27-problemas-envolvendo-horas` — 1º ano, 4º bimestre, Matemática: gráfico ou tabela, tempo e calendário
+- `efi-1ano-b4-matematica-28-representacao-de-graficos` — 1º ano, 4º bimestre, Matemática: gráfico ou tabela
+- `efi-1ano-b4-matematica-30-problemas-envolvendo-graficos` — 1º ano, 4º bimestre, Matemática: gráfico ou tabela
+- `efi-1ano-b4-geografia-01-observacao-espacial-de-municipio` — 1º ano, 4º bimestre, Geografia: mapa ou localização
+- `efi-1ano-b4-geografia-02-representacao-geografica-de-municipio` — 1º ano, 4º bimestre, Geografia: mapa ou localização, gráfico ou tabela, ciências visuais
+- `efi-1ano-b4-geografia-04-observacao-espacial-de-zona-urbana` — 1º ano, 4º bimestre, Geografia: mapa ou localização
+- `efi-1ano-b4-geografia-05-representacao-geografica-de-zona-urbana` — 1º ano, 4º bimestre, Geografia: mapa ou localização, gráfico ou tabela, ciências visuais
+- `efi-1ano-b4-geografia-07-observacao-espacial-de-zona-rural` — 1º ano, 4º bimestre, Geografia: mapa ou localização
+- `efi-1ano-b4-geografia-08-representacao-geografica-de-zona-rural` — 1º ano, 4º bimestre, Geografia: mapa ou localização, gráfico ou tabela, ciências visuais
+- `efi-1ano-b4-geografia-10-observacao-espacial-de-paisagens-locais` — 1º ano, 4º bimestre, Geografia: mapa ou localização
+- `efi-1ano-b4-geografia-11-representacao-geografica-de-paisagens-locais` — 1º ano, 4º bimestre, Geografia: mapa ou localização, gráfico ou tabela, ciências visuais
+- `efi-1ano-b4-geografia-13-observacao-espacial-de-clima` — 1º ano, 4º bimestre, Geografia: mapa ou localização
+- `efi-1ano-b4-geografia-14-representacao-geografica-de-clima` — 1º ano, 4º bimestre, Geografia: mapa ou localização, gráfico ou tabela, ciências visuais
+- `efi-1ano-b4-geografia-16-observacao-espacial-de-servicos-publicos` — 1º ano, 4º bimestre, Geografia: mapa ou localização
+- `efi-1ano-b4-geografia-17-representacao-geografica-de-servicos-publicos` — 1º ano, 4º bimestre, Geografia: mapa ou localização, gráfico ou tabela, ciências visuais
+- `efi-1ano-b4-geografia-19-observacao-espacial-de-transito` — 1º ano, 4º bimestre, Geografia: mapa ou localização
+- `efi-1ano-b4-geografia-20-representacao-geografica-de-transito` — 1º ano, 4º bimestre, Geografia: mapa ou localização, gráfico ou tabela, ciências visuais
+- `efi-1ano-b4-geografia-22-observacao-espacial-de-acessibilidade` — 1º ano, 4º bimestre, Geografia: mapa ou localização
+- `efi-1ano-b4-geografia-23-representacao-geografica-de-acessibilidade` — 1º ano, 4º bimestre, Geografia: mapa ou localização, gráfico ou tabela, ciências visuais
+- `efi-1ano-b4-geografia-25-observacao-espacial-de-orientacao` — 1º ano, 4º bimestre, Geografia: mapa ou localização
+- `efi-1ano-b4-geografia-26-representacao-geografica-de-orientacao` — 1º ano, 4º bimestre, Geografia: mapa ou localização, gráfico ou tabela, ciências visuais
+- `efi-1ano-b4-geografia-28-observacao-espacial-de-preservacao-ambiental` — 1º ano, 4º bimestre, Geografia: mapa ou localização
+- `efi-1ano-b4-geografia-29-representacao-geografica-de-preservacao-ambiental` — 1º ano, 4º bimestre, Geografia: mapa ou localização, gráfico ou tabela, ciências visuais
+- `efi-1ano-b4-ciencias-02-investigacao-cientifica-de-ambientes-naturais` — 1º ano, 4º bimestre, Ciências: gráfico ou tabela, sequência visual
+- `efi-1ano-b4-ciencias-05-investigacao-cientifica-de-relacoes-entre-seres-vivos` — 1º ano, 4º bimestre, Ciências: gráfico ou tabela, sequência visual
+- `efi-1ano-b4-ciencias-08-investigacao-cientifica-de-habitos-saudaveis` — 1º ano, 4º bimestre, Ciências: gráfico ou tabela, sequência visual
+- `efi-1ano-b4-ciencias-11-investigacao-cientifica-de-vacinacao` — 1º ano, 4º bimestre, Ciências: gráfico ou tabela, sequência visual
+- `efi-1ano-b4-ciencias-14-investigacao-cientifica-de-fontes-de-luz` — 1º ano, 4º bimestre, Ciências: gráfico ou tabela, sequência visual
+- `efi-1ano-b4-ciencias-17-investigacao-cientifica-de-sons` — 1º ano, 4º bimestre, Ciências: gráfico ou tabela, sequência visual
+- `efi-1ano-b4-ciencias-20-investigacao-cientifica-de-flutuacao` — 1º ano, 4º bimestre, Ciências: gráfico ou tabela, sequência visual
+- `efi-1ano-b4-ciencias-23-investigacao-cientifica-de-misturas` — 1º ano, 4º bimestre, Ciências: gráfico ou tabela, sequência visual
+- `efi-1ano-b4-ciencias-26-investigacao-cientifica-de-energia` — 1º ano, 4º bimestre, Ciências: gráfico ou tabela, sequência visual
+- `efi-1ano-b4-ciencias-29-investigacao-cientifica-de-coleta-seletiva` — 1º ano, 4º bimestre, Ciências: gráfico ou tabela, sequência visual
+- `efi-2ano-b1-matematica-01-representacao-de-numeros-ate-100` — 2º ano, 1º bimestre, Matemática: gráfico ou tabela
+- `efi-2ano-b1-matematica-03-problemas-envolvendo-numeros-ate-100` — 2º ano, 1º bimestre, Matemática: gráfico ou tabela
+- `efi-2ano-b1-matematica-04-representacao-de-dezenas-e-unidades` — 2º ano, 1º bimestre, Matemática: gráfico ou tabela
+- `efi-2ano-b1-matematica-06-problemas-envolvendo-dezenas-e-unidades` — 2º ano, 1º bimestre, Matemática: gráfico ou tabela
+- `efi-2ano-b1-matematica-07-representacao-de-comparacao-de-numeros` — 2º ano, 1º bimestre, Matemática: gráfico ou tabela
+- `efi-2ano-b1-matematica-09-problemas-envolvendo-comparacao-de-numeros` — 2º ano, 1º bimestre, Matemática: gráfico ou tabela
+- `efi-2ano-b1-matematica-10-representacao-de-sequencias` — 2º ano, 1º bimestre, Matemática: gráfico ou tabela
+- `efi-2ano-b1-matematica-12-problemas-envolvendo-sequencias` — 2º ano, 1º bimestre, Matemática: gráfico ou tabela
+- `efi-2ano-b1-matematica-13-representacao-de-adicao-sem-reagrupamento` — 2º ano, 1º bimestre, Matemática: gráfico ou tabela
+- `efi-2ano-b1-matematica-15-problemas-envolvendo-adicao-sem-reagrupamento` — 2º ano, 1º bimestre, Matemática: gráfico ou tabela
+- `efi-2ano-b1-matematica-16-representacao-de-subtracao-sem-reagrupamento` — 2º ano, 1º bimestre, Matemática: gráfico ou tabela
+- `efi-2ano-b1-matematica-18-problemas-envolvendo-subtracao-sem-reagrupamento` — 2º ano, 1º bimestre, Matemática: gráfico ou tabela
+- `efi-2ano-b1-matematica-19-representacao-de-problemas-simples` — 2º ano, 1º bimestre, Matemática: gráfico ou tabela
+- `efi-2ano-b1-matematica-21-problemas-envolvendo-problemas-simples` — 2º ano, 1º bimestre, Matemática: gráfico ou tabela
+- `efi-2ano-b1-matematica-22-representacao-de-formas-geometricas` — 2º ano, 1º bimestre, Matemática: gráfico ou tabela
+- `efi-2ano-b1-matematica-24-problemas-envolvendo-formas-geometricas` — 2º ano, 1º bimestre, Matemática: gráfico ou tabela
+- `efi-2ano-b1-matematica-25-representacao-de-medidas-de-comprimento` — 2º ano, 1º bimestre, Matemática: gráfico ou tabela
+- `efi-2ano-b1-matematica-27-problemas-envolvendo-medidas-de-comprimento` — 2º ano, 1º bimestre, Matemática: gráfico ou tabela
+- `efi-2ano-b1-matematica-28-representacao-de-tabelas-simples` — 2º ano, 1º bimestre, Matemática: gráfico ou tabela
+- `efi-2ano-b1-matematica-30-problemas-envolvendo-tabelas-simples` — 2º ano, 1º bimestre, Matemática: gráfico ou tabela
+- `efi-2ano-b1-historia-10-fontes-historicas-sobre-linha-do-tempo` — 2º ano, 1º bimestre, História: tempo e calendário
+- `efi-2ano-b1-historia-11-mudancas-e-permanencias-em-linha-do-tempo` — 2º ano, 1º bimestre, História: tempo e calendário
+- `efi-2ano-b1-historia-12-registro-e-reflexao-sobre-linha-do-tempo` — 2º ano, 1º bimestre, História: tempo e calendário
+- `efi-2ano-b1-geografia-01-observacao-espacial-de-casa-e-escola` — 2º ano, 1º bimestre, Geografia: mapa ou localização
+- `efi-2ano-b1-geografia-02-representacao-geografica-de-casa-e-escola` — 2º ano, 1º bimestre, Geografia: mapa ou localização, gráfico ou tabela, ciências visuais
+- `efi-2ano-b1-geografia-04-observacao-espacial-de-bairro` — 2º ano, 1º bimestre, Geografia: mapa ou localização
+- `efi-2ano-b1-geografia-05-representacao-geografica-de-bairro` — 2º ano, 1º bimestre, Geografia: mapa ou localização, gráfico ou tabela, ciências visuais
+- `efi-2ano-b1-geografia-07-observacao-espacial-de-pontos-de-referencia` — 2º ano, 1º bimestre, Geografia: mapa ou localização
+- `efi-2ano-b1-geografia-08-representacao-geografica-de-pontos-de-referencia` — 2º ano, 1º bimestre, Geografia: mapa ou localização, gráfico ou tabela, ciências visuais
+- `efi-2ano-b1-geografia-10-observacao-espacial-de-paisagens-naturais` — 2º ano, 1º bimestre, Geografia: mapa ou localização
+- `efi-2ano-b1-geografia-11-representacao-geografica-de-paisagens-naturais` — 2º ano, 1º bimestre, Geografia: mapa ou localização, gráfico ou tabela, ciências visuais
+- `efi-2ano-b1-geografia-13-observacao-espacial-de-paisagens-modificadas` — 2º ano, 1º bimestre, Geografia: mapa ou localização
+- `efi-2ano-b1-geografia-14-representacao-geografica-de-paisagens-modificadas` — 2º ano, 1º bimestre, Geografia: mapa ou localização, gráfico ou tabela, ciências visuais
+- `efi-2ano-b1-geografia-16-observacao-espacial-de-campo-e-cidade` — 2º ano, 1º bimestre, Geografia: mapa ou localização
+- `efi-2ano-b1-geografia-17-representacao-geografica-de-campo-e-cidade` — 2º ano, 1º bimestre, Geografia: mapa ou localização, gráfico ou tabela, ciências visuais
+- `efi-2ano-b1-geografia-19-observacao-espacial-de-meios-de-transporte` — 2º ano, 1º bimestre, Geografia: mapa ou localização
+- `efi-2ano-b1-geografia-20-representacao-geografica-de-meios-de-transporte` — 2º ano, 1º bimestre, Geografia: mapa ou localização, gráfico ou tabela, ciências visuais
+- `efi-2ano-b1-geografia-22-observacao-espacial-de-servicos-publicos` — 2º ano, 1º bimestre, Geografia: mapa ou localização
+- `efi-2ano-b1-geografia-23-representacao-geografica-de-servicos-publicos` — 2º ano, 1º bimestre, Geografia: mapa ou localização, gráfico ou tabela, ciências visuais
+- `efi-2ano-b1-geografia-25-observacao-espacial-de-mapas-simples` — 2º ano, 1º bimestre, Geografia: mapa ou localização
+- `efi-2ano-b1-geografia-26-representacao-geografica-de-mapas-simples` — 2º ano, 1º bimestre, Geografia: mapa ou localização, gráfico ou tabela, ciências visuais
+- `efi-2ano-b1-geografia-28-observacao-espacial-de-cuidado-com-os-lugares` — 2º ano, 1º bimestre, Geografia: mapa ou localização
+- `efi-2ano-b1-geografia-29-representacao-geografica-de-cuidado-com-os-lugares` — 2º ano, 1º bimestre, Geografia: mapa ou localização, gráfico ou tabela, ciências visuais
+- `efi-2ano-b1-ciencias-01-observacao-e-hipotese-sobre-corpo-humano` — 2º ano, 1º bimestre, Ciências: ciências visuais
+- `efi-2ano-b1-ciencias-02-investigacao-cientifica-de-corpo-humano` — 2º ano, 1º bimestre, Ciências: gráfico ou tabela, ciências visuais, sequência visual
+- `efi-2ano-b1-ciencias-03-aplicacao-de-corpo-humano-no-cotidiano` — 2º ano, 1º bimestre, Ciências: ciências visuais
+- `efi-2ano-b1-ciencias-05-investigacao-cientifica-de-habitos-de-higiene` — 2º ano, 1º bimestre, Ciências: gráfico ou tabela, sequência visual
+- `efi-2ano-b1-ciencias-08-investigacao-cientifica-de-alimentacao` — 2º ano, 1º bimestre, Ciências: gráfico ou tabela, sequência visual
+- `efi-2ano-b1-ciencias-11-investigacao-cientifica-de-animais-e-plantas` — 2º ano, 1º bimestre, Ciências: gráfico ou tabela, sequência visual
+- `efi-2ano-b1-ciencias-14-investigacao-cientifica-de-ambientes` — 2º ano, 1º bimestre, Ciências: gráfico ou tabela, sequência visual
+- `efi-2ano-b1-ciencias-17-investigacao-cientifica-de-agua` — 2º ano, 1º bimestre, Ciências: gráfico ou tabela, sequência visual
+- `efi-2ano-b1-ciencias-20-investigacao-cientifica-de-ar` — 2º ano, 1º bimestre, Ciências: gráfico ou tabela, sequência visual
+- `efi-2ano-b1-ciencias-23-investigacao-cientifica-de-solo` — 2º ano, 1º bimestre, Ciências: gráfico ou tabela, sequência visual
+- `efi-2ano-b1-ciencias-26-investigacao-cientifica-de-materiais` — 2º ano, 1º bimestre, Ciências: gráfico ou tabela, sequência visual
+- `efi-2ano-b1-ciencias-29-investigacao-cientifica-de-cuidados-com-a-saude` — 2º ano, 1º bimestre, Ciências: gráfico ou tabela, sequência visual
+- `efi-2ano-b2-matematica-01-representacao-de-numeros-ate-200` — 2º ano, 2º bimestre, Matemática: gráfico ou tabela
+- `efi-2ano-b2-matematica-03-problemas-envolvendo-numeros-ate-200` — 2º ano, 2º bimestre, Matemática: gráfico ou tabela
+- `efi-2ano-b2-matematica-04-representacao-de-centenas-dezenas-e-unidades` — 2º ano, 2º bimestre, Matemática: gráfico ou tabela
+- `efi-2ano-b2-matematica-06-problemas-envolvendo-centenas-dezenas-e-unidades` — 2º ano, 2º bimestre, Matemática: gráfico ou tabela
+- `efi-2ano-b2-matematica-07-representacao-de-adicao-com-reagrupamento` — 2º ano, 2º bimestre, Matemática: gráfico ou tabela
+- `efi-2ano-b2-matematica-09-problemas-envolvendo-adicao-com-reagrupamento` — 2º ano, 2º bimestre, Matemática: gráfico ou tabela
+- `efi-2ano-b2-matematica-10-representacao-de-subtracao-com-reagrupamento` — 2º ano, 2º bimestre, Matemática: gráfico ou tabela
+- `efi-2ano-b2-matematica-12-problemas-envolvendo-subtracao-com-reagrupamento` — 2º ano, 2º bimestre, Matemática: gráfico ou tabela
+- `efi-2ano-b2-matematica-13-representacao-de-dobro-e-triplo` — 2º ano, 2º bimestre, Matemática: gráfico ou tabela
+- `efi-2ano-b2-matematica-15-problemas-envolvendo-dobro-e-triplo` — 2º ano, 2º bimestre, Matemática: gráfico ou tabela
+- `efi-2ano-b2-matematica-16-representacao-de-metade` — 2º ano, 2º bimestre, Matemática: gráfico ou tabela
+- `efi-2ano-b2-matematica-18-problemas-envolvendo-metade` — 2º ano, 2º bimestre, Matemática: gráfico ou tabela
+- `efi-2ano-b2-matematica-19-representacao-de-multiplicacao-por-2` — 2º ano, 2º bimestre, Matemática: gráfico ou tabela
+- `efi-2ano-b2-matematica-21-problemas-envolvendo-multiplicacao-por-2` — 2º ano, 2º bimestre, Matemática: gráfico ou tabela
+- `efi-2ano-b2-matematica-22-representacao-de-divisao-por-2` — 2º ano, 2º bimestre, Matemática: gráfico ou tabela
+- `efi-2ano-b2-matematica-24-problemas-envolvendo-divisao-por-2` — 2º ano, 2º bimestre, Matemática: gráfico ou tabela
+- `efi-2ano-b2-matematica-25-representacao-de-sistema-monetario` — 2º ano, 2º bimestre, Matemática: gráfico ou tabela, dinheiro
+- `efi-2ano-b2-matematica-26-estrategias-de-calculo-com-sistema-monetario` — 2º ano, 2º bimestre, Matemática: dinheiro
+- `efi-2ano-b2-matematica-27-problemas-envolvendo-sistema-monetario` — 2º ano, 2º bimestre, Matemática: gráfico ou tabela, dinheiro
+- `efi-2ano-b2-matematica-28-representacao-de-graficos` — 2º ano, 2º bimestre, Matemática: gráfico ou tabela
+- `efi-2ano-b2-matematica-30-problemas-envolvendo-graficos` — 2º ano, 2º bimestre, Matemática: gráfico ou tabela
+- `efi-2ano-b2-geografia-01-observacao-espacial-de-zona-urbana-e-rural` — 2º ano, 2º bimestre, Geografia: mapa ou localização
+- `efi-2ano-b2-geografia-02-representacao-geografica-de-zona-urbana-e-rural` — 2º ano, 2º bimestre, Geografia: mapa ou localização, gráfico ou tabela, ciências visuais
+- `efi-2ano-b2-geografia-04-observacao-espacial-de-tipos-de-moradia` — 2º ano, 2º bimestre, Geografia: mapa ou localização
+- `efi-2ano-b2-geografia-05-representacao-geografica-de-tipos-de-moradia` — 2º ano, 2º bimestre, Geografia: mapa ou localização, gráfico ou tabela, ciências visuais
+- `efi-2ano-b2-geografia-07-observacao-espacial-de-trabalho-no-campo` — 2º ano, 2º bimestre, Geografia: mapa ou localização
+- `efi-2ano-b2-geografia-08-representacao-geografica-de-trabalho-no-campo` — 2º ano, 2º bimestre, Geografia: mapa ou localização, gráfico ou tabela, ciências visuais
+- `efi-2ano-b2-geografia-10-observacao-espacial-de-trabalho-na-cidade` — 2º ano, 2º bimestre, Geografia: mapa ou localização
+- `efi-2ano-b2-geografia-11-representacao-geografica-de-trabalho-na-cidade` — 2º ano, 2º bimestre, Geografia: mapa ou localização, gráfico ou tabela, ciências visuais
+- `efi-2ano-b2-geografia-13-observacao-espacial-de-producao-de-alimentos` — 2º ano, 2º bimestre, Geografia: mapa ou localização
+- `efi-2ano-b2-geografia-14-representacao-geografica-de-producao-de-alimentos` — 2º ano, 2º bimestre, Geografia: mapa ou localização, gráfico ou tabela, ciências visuais
+- `efi-2ano-b2-geografia-16-observacao-espacial-de-transito` — 2º ano, 2º bimestre, Geografia: mapa ou localização
+- `efi-2ano-b2-geografia-17-representacao-geografica-de-transito` — 2º ano, 2º bimestre, Geografia: mapa ou localização, gráfico ou tabela, ciências visuais
+- `efi-2ano-b2-geografia-19-observacao-espacial-de-orientacao` — 2º ano, 2º bimestre, Geografia: mapa ou localização
+- `efi-2ano-b2-geografia-20-representacao-geografica-de-orientacao` — 2º ano, 2º bimestre, Geografia: mapa ou localização, gráfico ou tabela, ciências visuais
+- `efi-2ano-b2-geografia-22-observacao-espacial-de-legendas` — 2º ano, 2º bimestre, Geografia: mapa ou localização
+- `efi-2ano-b2-geografia-23-representacao-geografica-de-legendas` — 2º ano, 2º bimestre, Geografia: mapa ou localização, gráfico ou tabela, ciências visuais
+- `efi-2ano-b2-geografia-25-observacao-espacial-de-plantas-e-mapas` — 2º ano, 2º bimestre, Geografia: mapa ou localização
+- `efi-2ano-b2-geografia-26-representacao-geografica-de-plantas-e-mapas` — 2º ano, 2º bimestre, Geografia: mapa ou localização, gráfico ou tabela, ciências visuais
+- `efi-2ano-b2-geografia-28-observacao-espacial-de-problemas-ambientais` — 2º ano, 2º bimestre, Geografia: mapa ou localização
+- `efi-2ano-b2-geografia-29-representacao-geografica-de-problemas-ambientais` — 2º ano, 2º bimestre, Geografia: mapa ou localização, gráfico ou tabela, ciências visuais
+- `efi-2ano-b2-ciencias-02-investigacao-cientifica-de-ciclo-de-vida` — 2º ano, 2º bimestre, Ciências: gráfico ou tabela, sequência visual
+- `efi-2ano-b2-ciencias-05-investigacao-cientifica-de-germinacao` — 2º ano, 2º bimestre, Ciências: gráfico ou tabela, sequência visual
+- `efi-2ano-b2-ciencias-08-investigacao-cientifica-de-habitat` — 2º ano, 2º bimestre, Ciências: gráfico ou tabela, sequência visual
+- `efi-2ano-b2-ciencias-10-observacao-e-hipotese-sobre-cadeia-alimentar-simples` — 2º ano, 2º bimestre, Ciências: ciências visuais
+- `efi-2ano-b2-ciencias-11-investigacao-cientifica-de-cadeia-alimentar-simples` — 2º ano, 2º bimestre, Ciências: gráfico ou tabela, ciências visuais, sequência visual
+- `efi-2ano-b2-ciencias-12-aplicacao-de-cadeia-alimentar-simples-no-cotidiano` — 2º ano, 2º bimestre, Ciências: ciências visuais
+- `efi-2ano-b2-ciencias-14-investigacao-cientifica-de-estados-da-agua` — 2º ano, 2º bimestre, Ciências: gráfico ou tabela, sequência visual
+- `efi-2ano-b2-ciencias-17-investigacao-cientifica-de-economia-de-agua` — 2º ano, 2º bimestre, Ciências: gráfico ou tabela, sequência visual
+- `efi-2ano-b2-ciencias-20-investigacao-cientifica-de-vento` — 2º ano, 2º bimestre, Ciências: gráfico ou tabela, sequência visual
+- `efi-2ano-b2-ciencias-23-investigacao-cientifica-de-tipos-de-solo` — 2º ano, 2º bimestre, Ciências: gráfico ou tabela, sequência visual
+- `efi-2ano-b2-ciencias-26-investigacao-cientifica-de-reciclagem` — 2º ano, 2º bimestre, Ciências: gráfico ou tabela, sequência visual
+- `efi-2ano-b2-ciencias-29-investigacao-cientifica-de-prevencao-de-acidentes` — 2º ano, 2º bimestre, Ciências: gráfico ou tabela, sequência visual
+- `efi-2ano-b3-matematica-01-representacao-de-numeros-ate-500` — 2º ano, 3º bimestre, Matemática: gráfico ou tabela
+- `efi-2ano-b3-matematica-03-problemas-envolvendo-numeros-ate-500` — 2º ano, 3º bimestre, Matemática: gráfico ou tabela
+- `efi-2ano-b3-matematica-04-representacao-de-valor-posicional` — 2º ano, 3º bimestre, Matemática: gráfico ou tabela
+- `efi-2ano-b3-matematica-06-problemas-envolvendo-valor-posicional` — 2º ano, 3º bimestre, Matemática: gráfico ou tabela
+- `efi-2ano-b3-matematica-07-representacao-de-adicao-e-subtracao` — 2º ano, 3º bimestre, Matemática: gráfico ou tabela
+- `efi-2ano-b3-matematica-09-problemas-envolvendo-adicao-e-subtracao` — 2º ano, 3º bimestre, Matemática: gráfico ou tabela
+- `efi-2ano-b3-matematica-10-representacao-de-multiplicacao-por-3` — 2º ano, 3º bimestre, Matemática: gráfico ou tabela
+- `efi-2ano-b3-matematica-12-problemas-envolvendo-multiplicacao-por-3` — 2º ano, 3º bimestre, Matemática: gráfico ou tabela
+- `efi-2ano-b3-matematica-13-representacao-de-multiplicacao-por-4` — 2º ano, 3º bimestre, Matemática: gráfico ou tabela
+- `efi-2ano-b3-matematica-15-problemas-envolvendo-multiplicacao-por-4` — 2º ano, 3º bimestre, Matemática: gráfico ou tabela
+- `efi-2ano-b3-matematica-16-representacao-de-divisao-por-agrupamento` — 2º ano, 3º bimestre, Matemática: gráfico ou tabela
+- `efi-2ano-b3-matematica-18-problemas-envolvendo-divisao-por-agrupamento` — 2º ano, 3º bimestre, Matemática: gráfico ou tabela
+- `efi-2ano-b3-matematica-19-representacao-de-medidas-de-tempo` — 2º ano, 3º bimestre, Matemática: gráfico ou tabela
+- `efi-2ano-b3-matematica-21-problemas-envolvendo-medidas-de-tempo` — 2º ano, 3º bimestre, Matemática: gráfico ou tabela
+- `efi-2ano-b3-matematica-22-representacao-de-horas-e-minutos` — 2º ano, 3º bimestre, Matemática: gráfico ou tabela, tempo e calendário
+- `efi-2ano-b3-matematica-23-estrategias-de-calculo-com-horas-e-minutos` — 2º ano, 3º bimestre, Matemática: tempo e calendário
+- `efi-2ano-b3-matematica-24-problemas-envolvendo-horas-e-minutos` — 2º ano, 3º bimestre, Matemática: gráfico ou tabela, tempo e calendário
+- `efi-2ano-b3-matematica-25-representacao-de-comprimento-e-massa` — 2º ano, 3º bimestre, Matemática: gráfico ou tabela
+- `efi-2ano-b3-matematica-27-problemas-envolvendo-comprimento-e-massa` — 2º ano, 3º bimestre, Matemática: gráfico ou tabela
+- `efi-2ano-b3-matematica-28-representacao-de-problemas-com-graficos` — 2º ano, 3º bimestre, Matemática: gráfico ou tabela
+- `efi-2ano-b3-matematica-30-problemas-envolvendo-problemas-com-graficos` — 2º ano, 3º bimestre, Matemática: gráfico ou tabela
+- `efi-2ano-b3-geografia-01-observacao-espacial-de-municipio` — 2º ano, 3º bimestre, Geografia: mapa ou localização
+- `efi-2ano-b3-geografia-02-representacao-geografica-de-municipio` — 2º ano, 3º bimestre, Geografia: mapa ou localização, gráfico ou tabela, ciências visuais
+- `efi-2ano-b3-geografia-04-observacao-espacial-de-bairros-e-limites` — 2º ano, 3º bimestre, Geografia: mapa ou localização
+- `efi-2ano-b3-geografia-05-representacao-geografica-de-bairros-e-limites` — 2º ano, 3º bimestre, Geografia: mapa ou localização, gráfico ou tabela, ciências visuais
+- `efi-2ano-b3-geografia-07-observacao-espacial-de-rios-e-relevo` — 2º ano, 3º bimestre, Geografia: mapa ou localização
+- `efi-2ano-b3-geografia-08-representacao-geografica-de-rios-e-relevo` — 2º ano, 3º bimestre, Geografia: mapa ou localização, gráfico ou tabela, ciências visuais
+- `efi-2ano-b3-geografia-10-observacao-espacial-de-clima` — 2º ano, 3º bimestre, Geografia: mapa ou localização
+- `efi-2ano-b3-geografia-11-representacao-geografica-de-clima` — 2º ano, 3º bimestre, Geografia: mapa ou localização, gráfico ou tabela, ciências visuais
+- `efi-2ano-b3-geografia-13-observacao-espacial-de-atividades-economicas` — 2º ano, 3º bimestre, Geografia: mapa ou localização
+- `efi-2ano-b3-geografia-14-representacao-geografica-de-atividades-economicas` — 2º ano, 3º bimestre, Geografia: mapa ou localização, gráfico ou tabela, ciências visuais
+- `efi-2ano-b3-geografia-16-observacao-espacial-de-comercio` — 2º ano, 3º bimestre, Geografia: mapa ou localização
+- `efi-2ano-b3-geografia-17-representacao-geografica-de-comercio` — 2º ano, 3º bimestre, Geografia: mapa ou localização, gráfico ou tabela, ciências visuais
+- `efi-2ano-b3-geografia-19-observacao-espacial-de-industria` — 2º ano, 3º bimestre, Geografia: mapa ou localização
+- `efi-2ano-b3-geografia-20-representacao-geografica-de-industria` — 2º ano, 3º bimestre, Geografia: mapa ou localização, gráfico ou tabela, ciências visuais
+- `efi-2ano-b3-geografia-22-observacao-espacial-de-agricultura` — 2º ano, 3º bimestre, Geografia: mapa ou localização
+- `efi-2ano-b3-geografia-23-representacao-geografica-de-agricultura` — 2º ano, 3º bimestre, Geografia: mapa ou localização, gráfico ou tabela, ciências visuais
+- `efi-2ano-b3-geografia-25-observacao-espacial-de-transportes` — 2º ano, 3º bimestre, Geografia: mapa ou localização
+- `efi-2ano-b3-geografia-26-representacao-geografica-de-transportes` — 2º ano, 3º bimestre, Geografia: mapa ou localização, gráfico ou tabela, ciências visuais
+- `efi-2ano-b3-geografia-28-observacao-espacial-de-preservacao-ambiental` — 2º ano, 3º bimestre, Geografia: mapa ou localização
+- `efi-2ano-b3-geografia-29-representacao-geografica-de-preservacao-ambiental` — 2º ano, 3º bimestre, Geografia: mapa ou localização, gráfico ou tabela, ciências visuais
+- `efi-2ano-b3-ciencias-02-investigacao-cientifica-de-seres-vivos-e-ambiente` — 2º ano, 3º bimestre, Ciências: gráfico ou tabela, sequência visual
+- `efi-2ano-b3-ciencias-05-investigacao-cientifica-de-plantas-e-fotossintese-inicial` — 2º ano, 3º bimestre, Ciências: gráfico ou tabela, sequência visual
+- `efi-2ano-b3-ciencias-08-investigacao-cientifica-de-animais-vertebrados-e-invertebrados` — 2º ano, 3º bimestre, Ciências: gráfico ou tabela, sequência visual
+- `efi-2ano-b3-ciencias-11-investigacao-cientifica-de-alimentacao-dos-animais` — 2º ano, 3º bimestre, Ciências: gráfico ou tabela, sequência visual
+- `efi-2ano-b3-ciencias-14-investigacao-cientifica-de-luz-e-sombra` — 2º ano, 3º bimestre, Ciências: gráfico ou tabela, sequência visual
+- `efi-2ano-b3-ciencias-17-investigacao-cientifica-de-som` — 2º ano, 3º bimestre, Ciências: gráfico ou tabela, sequência visual
+- `efi-2ano-b3-ciencias-20-investigacao-cientifica-de-calor-e-frio` — 2º ano, 3º bimestre, Ciências: gráfico ou tabela, sequência visual
+- `efi-2ano-b3-ciencias-23-investigacao-cientifica-de-misturas` — 2º ano, 3º bimestre, Ciências: gráfico ou tabela, sequência visual
+- `efi-2ano-b3-ciencias-26-investigacao-cientifica-de-imas` — 2º ano, 3º bimestre, Ciências: gráfico ou tabela, sequência visual
+- `efi-2ano-b3-ciencias-29-investigacao-cientifica-de-energia-no-cotidiano` — 2º ano, 3º bimestre, Ciências: gráfico ou tabela, sequência visual
+- `efi-2ano-b4-matematica-01-representacao-de-numeros-ate-1000` — 2º ano, 4º bimestre, Matemática: gráfico ou tabela
+- `efi-2ano-b4-matematica-03-problemas-envolvendo-numeros-ate-1000` — 2º ano, 4º bimestre, Matemática: gráfico ou tabela
+- `efi-2ano-b4-matematica-04-representacao-de-centena` — 2º ano, 4º bimestre, Matemática: gráfico ou tabela
+- `efi-2ano-b4-matematica-06-problemas-envolvendo-centena` — 2º ano, 4º bimestre, Matemática: gráfico ou tabela
+- `efi-2ano-b4-matematica-07-representacao-de-adicao-com-reserva` — 2º ano, 4º bimestre, Matemática: gráfico ou tabela
+- `efi-2ano-b4-matematica-09-problemas-envolvendo-adicao-com-reserva` — 2º ano, 4º bimestre, Matemática: gráfico ou tabela
+- `efi-2ano-b4-matematica-10-representacao-de-subtracao-com-troca` — 2º ano, 4º bimestre, Matemática: gráfico ou tabela
+- `efi-2ano-b4-matematica-12-problemas-envolvendo-subtracao-com-troca` — 2º ano, 4º bimestre, Matemática: gráfico ou tabela
+- `efi-2ano-b4-matematica-13-representacao-de-multiplicacao-por-5` — 2º ano, 4º bimestre, Matemática: gráfico ou tabela
+- `efi-2ano-b4-matematica-15-problemas-envolvendo-multiplicacao-por-5` — 2º ano, 4º bimestre, Matemática: gráfico ou tabela
+- `efi-2ano-b4-matematica-16-representacao-de-multiplicacao-por-10` — 2º ano, 4º bimestre, Matemática: gráfico ou tabela
+- `efi-2ano-b4-matematica-18-problemas-envolvendo-multiplicacao-por-10` — 2º ano, 4º bimestre, Matemática: gráfico ou tabela
+- `efi-2ano-b4-matematica-19-representacao-de-divisao-simples` — 2º ano, 4º bimestre, Matemática: gráfico ou tabela
+- `efi-2ano-b4-matematica-21-problemas-envolvendo-divisao-simples` — 2º ano, 4º bimestre, Matemática: gráfico ou tabela
+- `efi-2ano-b4-matematica-22-representacao-de-fracoes-metade-e-quarto` — 2º ano, 4º bimestre, Matemática: gráfico ou tabela
+- `efi-2ano-b4-matematica-24-problemas-envolvendo-fracoes-metade-e-quarto` — 2º ano, 4º bimestre, Matemática: gráfico ou tabela
+- `efi-2ano-b4-matematica-25-representacao-de-medidas-de-capacidade` — 2º ano, 4º bimestre, Matemática: gráfico ou tabela
+- `efi-2ano-b4-matematica-27-problemas-envolvendo-medidas-de-capacidade` — 2º ano, 4º bimestre, Matemática: gráfico ou tabela
+- `efi-2ano-b4-matematica-28-representacao-de-revisao-de-problemas` — 2º ano, 4º bimestre, Matemática: gráfico ou tabela
+- `efi-2ano-b4-matematica-30-problemas-envolvendo-revisao-de-problemas` — 2º ano, 4º bimestre, Matemática: gráfico ou tabela
+- `efi-2ano-b4-geografia-01-observacao-espacial-de-brasil-e-municipio` — 2º ano, 4º bimestre, Geografia: mapa ou localização
+- `efi-2ano-b4-geografia-02-representacao-geografica-de-brasil-e-municipio` — 2º ano, 4º bimestre, Geografia: mapa ou localização, gráfico ou tabela, ciências visuais
+- `efi-2ano-b4-geografia-04-observacao-espacial-de-regiao-onde-vivemos` — 2º ano, 4º bimestre, Geografia: mapa ou localização
+- `efi-2ano-b4-geografia-05-representacao-geografica-de-regiao-onde-vivemos` — 2º ano, 4º bimestre, Geografia: mapa ou localização, gráfico ou tabela, ciências visuais
+- `efi-2ano-b4-geografia-07-observacao-espacial-de-paisagens-brasileiras` — 2º ano, 4º bimestre, Geografia: mapa ou localização
+- `efi-2ano-b4-geografia-08-representacao-geografica-de-paisagens-brasileiras` — 2º ano, 4º bimestre, Geografia: mapa ou localização, gráfico ou tabela, ciências visuais
+- `efi-2ano-b4-geografia-10-observacao-espacial-de-campo-e-cidade-conectados` — 2º ano, 4º bimestre, Geografia: mapa ou localização
+- `efi-2ano-b4-geografia-11-representacao-geografica-de-campo-e-cidade-conectados` — 2º ano, 4º bimestre, Geografia: mapa ou localização, gráfico ou tabela, ciências visuais
+- `efi-2ano-b4-geografia-13-observacao-espacial-de-recursos-naturais` — 2º ano, 4º bimestre, Geografia: mapa ou localização
+- `efi-2ano-b4-geografia-14-representacao-geografica-de-recursos-naturais` — 2º ano, 4º bimestre, Geografia: mapa ou localização, gráfico ou tabela, ciências visuais
+- `efi-2ano-b4-geografia-16-observacao-espacial-de-agua-e-energia` — 2º ano, 4º bimestre, Geografia: mapa ou localização
+- `efi-2ano-b4-geografia-17-representacao-geografica-de-agua-e-energia` — 2º ano, 4º bimestre, Geografia: mapa ou localização, gráfico ou tabela, ciências visuais
+- `efi-2ano-b4-geografia-19-observacao-espacial-de-lixo-e-reciclagem` — 2º ano, 4º bimestre, Geografia: mapa ou localização
+- `efi-2ano-b4-geografia-20-representacao-geografica-de-lixo-e-reciclagem` — 2º ano, 4º bimestre, Geografia: mapa ou localização, gráfico ou tabela, ciências visuais
+- `efi-2ano-b4-geografia-22-observacao-espacial-de-mobilidade-urbana` — 2º ano, 4º bimestre, Geografia: mapa ou localização
+- `efi-2ano-b4-geografia-23-representacao-geografica-de-mobilidade-urbana` — 2º ano, 4º bimestre, Geografia: mapa ou localização, gráfico ou tabela, ciências visuais
+- `efi-2ano-b4-geografia-25-observacao-espacial-de-acessibilidade` — 2º ano, 4º bimestre, Geografia: mapa ou localização
+- `efi-2ano-b4-geografia-26-representacao-geografica-de-acessibilidade` — 2º ano, 4º bimestre, Geografia: mapa ou localização, gráfico ou tabela, ciências visuais
+- `efi-2ano-b4-geografia-28-observacao-espacial-de-acoes-de-preservacao` — 2º ano, 4º bimestre, Geografia: mapa ou localização
+- `efi-2ano-b4-geografia-29-representacao-geografica-de-acoes-de-preservacao` — 2º ano, 4º bimestre, Geografia: mapa ou localização, gráfico ou tabela, ciências visuais
+- `efi-2ano-b4-ciencias-02-investigacao-cientifica-de-saude-e-prevencao` — 2º ano, 4º bimestre, Ciências: gráfico ou tabela, sequência visual
+- `efi-2ano-b4-ciencias-05-investigacao-cientifica-de-vacinacao` — 2º ano, 4º bimestre, Ciências: gráfico ou tabela, sequência visual
+- `efi-2ano-b4-ciencias-08-investigacao-cientifica-de-alimentacao-equilibrada` — 2º ano, 4º bimestre, Ciências: gráfico ou tabela, sequência visual
+- `efi-2ano-b4-ciencias-10-observacao-e-hipotese-sobre-sistema-solar-inicial` — 2º ano, 4º bimestre, Ciências: ciências visuais
+- `efi-2ano-b4-ciencias-11-investigacao-cientifica-de-sistema-solar-inicial` — 2º ano, 4º bimestre, Ciências: gráfico ou tabela, ciências visuais, sequência visual
+- `efi-2ano-b4-ciencias-12-aplicacao-de-sistema-solar-inicial-no-cotidiano` — 2º ano, 4º bimestre, Ciências: ciências visuais
+- `efi-2ano-b4-ciencias-14-investigacao-cientifica-de-sol-terra-e-lua` — 2º ano, 4º bimestre, Ciências: gráfico ou tabela, sequência visual
+- `efi-2ano-b4-ciencias-17-investigacao-cientifica-de-dia-e-noite` — 2º ano, 4º bimestre, Ciências: gráfico ou tabela, sequência visual
+- `efi-2ano-b4-ciencias-20-investigacao-cientifica-de-estacoes-do-ano` — 2º ano, 4º bimestre, Ciências: gráfico ou tabela, sequência visual
+- `efi-2ano-b4-ciencias-23-investigacao-cientifica-de-materiais-e-transformacoes` — 2º ano, 4º bimestre, Ciências: gráfico ou tabela, sequência visual
+- `efi-2ano-b4-ciencias-26-investigacao-cientifica-de-uso-consciente-de-energia` — 2º ano, 4º bimestre, Ciências: gráfico ou tabela, sequência visual
+- `efi-2ano-b4-ciencias-29-investigacao-cientifica-de-preservacao-da-vida` — 2º ano, 4º bimestre, Ciências: gráfico ou tabela, sequência visual
+- `efi-3ano-b1-lingua-portuguesa-07-leitura-e-compreensao-ordem-dos-fatos` — 3º ano, 1º bimestre, Língua Portuguesa: sequência visual
+- `efi-3ano-b1-lingua-portuguesa-08-analise-da-linguagem-em-ordem-dos-fatos` — 3º ano, 1º bimestre, Língua Portuguesa: sequência visual
+- `efi-3ano-b1-lingua-portuguesa-09-producao-textual-sobre-ordem-dos-fatos` — 3º ano, 1º bimestre, Língua Portuguesa: sequência visual
+- `efi-3ano-b1-matematica-01-representacao-de-numeros-ate-1000` — 3º ano, 1º bimestre, Matemática: gráfico ou tabela
+- `efi-3ano-b1-matematica-03-problemas-envolvendo-numeros-ate-1000` — 3º ano, 1º bimestre, Matemática: gráfico ou tabela
+- `efi-3ano-b1-matematica-04-representacao-de-valor-posicional` — 3º ano, 1º bimestre, Matemática: gráfico ou tabela
+- `efi-3ano-b1-matematica-06-problemas-envolvendo-valor-posicional` — 3º ano, 1º bimestre, Matemática: gráfico ou tabela
+- `efi-3ano-b1-matematica-07-representacao-de-adicao` — 3º ano, 1º bimestre, Matemática: gráfico ou tabela
+- `efi-3ano-b1-matematica-09-problemas-envolvendo-adicao` — 3º ano, 1º bimestre, Matemática: gráfico ou tabela
+- `efi-3ano-b1-matematica-10-representacao-de-subtracao` — 3º ano, 1º bimestre, Matemática: gráfico ou tabela
+- `efi-3ano-b1-matematica-12-problemas-envolvendo-subtracao` — 3º ano, 1º bimestre, Matemática: gráfico ou tabela
+- `efi-3ano-b1-matematica-13-representacao-de-multiplicacao-por-2-e-3` — 3º ano, 1º bimestre, Matemática: gráfico ou tabela
+- `efi-3ano-b1-matematica-15-problemas-envolvendo-multiplicacao-por-2-e-3` — 3º ano, 1º bimestre, Matemática: gráfico ou tabela
+- `efi-3ano-b1-matematica-16-representacao-de-divisao-simples` — 3º ano, 1º bimestre, Matemática: gráfico ou tabela
+- `efi-3ano-b1-matematica-18-problemas-envolvendo-divisao-simples` — 3º ano, 1º bimestre, Matemática: gráfico ou tabela
+- `efi-3ano-b1-matematica-19-representacao-de-problemas` — 3º ano, 1º bimestre, Matemática: gráfico ou tabela
+- `efi-3ano-b1-matematica-21-problemas-envolvendo-problemas` — 3º ano, 1º bimestre, Matemática: gráfico ou tabela
+- `efi-3ano-b1-matematica-22-representacao-de-medidas-de-comprimento` — 3º ano, 1º bimestre, Matemática: gráfico ou tabela
+- `efi-3ano-b1-matematica-24-problemas-envolvendo-medidas-de-comprimento` — 3º ano, 1º bimestre, Matemática: gráfico ou tabela
+- `efi-3ano-b1-matematica-25-representacao-de-tempo` — 3º ano, 1º bimestre, Matemática: gráfico ou tabela
+- `efi-3ano-b1-matematica-27-problemas-envolvendo-tempo` — 3º ano, 1º bimestre, Matemática: gráfico ou tabela
+- `efi-3ano-b1-matematica-28-representacao-de-tabelas-e-graficos` — 3º ano, 1º bimestre, Matemática: gráfico ou tabela
+- `efi-3ano-b1-matematica-30-problemas-envolvendo-tabelas-e-graficos` — 3º ano, 1º bimestre, Matemática: gráfico ou tabela
+- `efi-3ano-b1-historia-07-fontes-historicas-sobre-linha-do-tempo` — 3º ano, 1º bimestre, História: tempo e calendário
+- `efi-3ano-b1-historia-08-mudancas-e-permanencias-em-linha-do-tempo` — 3º ano, 1º bimestre, História: tempo e calendário
+- `efi-3ano-b1-historia-09-registro-e-reflexao-sobre-linha-do-tempo` — 3º ano, 1º bimestre, História: tempo e calendário
+- `efi-3ano-b1-geografia-01-observacao-espacial-de-municipio` — 3º ano, 1º bimestre, Geografia: mapa ou localização
+- `efi-3ano-b1-geografia-02-representacao-geografica-de-municipio` — 3º ano, 1º bimestre, Geografia: mapa ou localização, gráfico ou tabela, ciências visuais
+- `efi-3ano-b1-geografia-04-observacao-espacial-de-bairro-e-cidade` — 3º ano, 1º bimestre, Geografia: mapa ou localização
+- `efi-3ano-b1-geografia-05-representacao-geografica-de-bairro-e-cidade` — 3º ano, 1º bimestre, Geografia: mapa ou localização, gráfico ou tabela, ciências visuais
+- `efi-3ano-b1-geografia-07-observacao-espacial-de-paisagens` — 3º ano, 1º bimestre, Geografia: mapa ou localização
+- `efi-3ano-b1-geografia-08-representacao-geografica-de-paisagens` — 3º ano, 1º bimestre, Geografia: mapa ou localização, gráfico ou tabela, ciências visuais
+- `efi-3ano-b1-geografia-10-observacao-espacial-de-campo-e-cidade` — 3º ano, 1º bimestre, Geografia: mapa ou localização
+- `efi-3ano-b1-geografia-11-representacao-geografica-de-campo-e-cidade` — 3º ano, 1º bimestre, Geografia: mapa ou localização, gráfico ou tabela, ciências visuais
+- `efi-3ano-b1-geografia-13-observacao-espacial-de-pontos-cardeais` — 3º ano, 1º bimestre, Geografia: mapa ou localização
+- `efi-3ano-b1-geografia-14-representacao-geografica-de-pontos-cardeais` — 3º ano, 1º bimestre, Geografia: mapa ou localização, gráfico ou tabela, ciências visuais
+- `efi-3ano-b1-geografia-15-problemas-e-solucoes-em-pontos-cardeais` — 3º ano, 1º bimestre, Geografia: mapa ou localização
+- `efi-3ano-b1-geografia-16-observacao-espacial-de-mapas-e-legendas` — 3º ano, 1º bimestre, Geografia: mapa ou localização
+- `efi-3ano-b1-geografia-17-representacao-geografica-de-mapas-e-legendas` — 3º ano, 1º bimestre, Geografia: mapa ou localização, gráfico ou tabela, ciências visuais
+- `efi-3ano-b1-geografia-19-observacao-espacial-de-relevo` — 3º ano, 1º bimestre, Geografia: mapa ou localização
+- `efi-3ano-b1-geografia-20-representacao-geografica-de-relevo` — 3º ano, 1º bimestre, Geografia: mapa ou localização, gráfico ou tabela, ciências visuais
+- `efi-3ano-b1-geografia-22-observacao-espacial-de-rios` — 3º ano, 1º bimestre, Geografia: mapa ou localização
+- `efi-3ano-b1-geografia-23-representacao-geografica-de-rios` — 3º ano, 1º bimestre, Geografia: mapa ou localização, gráfico ou tabela, ciências visuais
+- `efi-3ano-b1-geografia-25-observacao-espacial-de-clima` — 3º ano, 1º bimestre, Geografia: mapa ou localização
+- `efi-3ano-b1-geografia-26-representacao-geografica-de-clima` — 3º ano, 1º bimestre, Geografia: mapa ou localização, gráfico ou tabela, ciências visuais
+- `efi-3ano-b1-geografia-28-observacao-espacial-de-preservacao-ambiental` — 3º ano, 1º bimestre, Geografia: mapa ou localização
+- `efi-3ano-b1-geografia-29-representacao-geografica-de-preservacao-ambiental` — 3º ano, 1º bimestre, Geografia: mapa ou localização, gráfico ou tabela, ciências visuais
+- `efi-3ano-b1-ciencias-02-investigacao-cientifica-de-seres-vivos` — 3º ano, 1º bimestre, Ciências: gráfico ou tabela, sequência visual
+- `efi-3ano-b1-ciencias-05-investigacao-cientifica-de-cadeias-alimentares` — 3º ano, 1º bimestre, Ciências: gráfico ou tabela, sequência visual
+- `efi-3ano-b1-ciencias-08-investigacao-cientifica-de-plantas` — 3º ano, 1º bimestre, Ciências: gráfico ou tabela, sequência visual
+- `efi-3ano-b1-ciencias-11-investigacao-cientifica-de-animais-vertebrados` — 3º ano, 1º bimestre, Ciências: gráfico ou tabela, sequência visual
+- `efi-3ano-b1-ciencias-14-investigacao-cientifica-de-agua` — 3º ano, 1º bimestre, Ciências: gráfico ou tabela, sequência visual
+- `efi-3ano-b1-ciencias-17-investigacao-cientifica-de-ar` — 3º ano, 1º bimestre, Ciências: gráfico ou tabela, sequência visual
+- `efi-3ano-b1-ciencias-20-investigacao-cientifica-de-solo` — 3º ano, 1º bimestre, Ciências: gráfico ou tabela, sequência visual
+- `efi-3ano-b1-ciencias-22-observacao-e-hipotese-sobre-corpo-humano` — 3º ano, 1º bimestre, Ciências: ciências visuais
+- `efi-3ano-b1-ciencias-23-investigacao-cientifica-de-corpo-humano` — 3º ano, 1º bimestre, Ciências: gráfico ou tabela, ciências visuais, sequência visual
+- `efi-3ano-b1-ciencias-24-aplicacao-de-corpo-humano-no-cotidiano` — 3º ano, 1º bimestre, Ciências: ciências visuais
+- `efi-3ano-b1-ciencias-26-investigacao-cientifica-de-alimentacao` — 3º ano, 1º bimestre, Ciências: gráfico ou tabela, sequência visual
+- `efi-3ano-b1-ciencias-29-investigacao-cientifica-de-habitos-saudaveis` — 3º ano, 1º bimestre, Ciências: gráfico ou tabela, sequência visual
+- `efi-3ano-b2-matematica-01-representacao-de-numeros-ate-5000` — 3º ano, 2º bimestre, Matemática: gráfico ou tabela
+- `efi-3ano-b2-matematica-03-problemas-envolvendo-numeros-ate-5000` — 3º ano, 2º bimestre, Matemática: gráfico ou tabela
+- `efi-3ano-b2-matematica-04-representacao-de-composicao-e-decomposicao` — 3º ano, 2º bimestre, Matemática: gráfico ou tabela
+- `efi-3ano-b2-matematica-06-problemas-envolvendo-composicao-e-decomposicao` — 3º ano, 2º bimestre, Matemática: gráfico ou tabela
+- `efi-3ano-b2-matematica-07-representacao-de-adicao-com-reserva` — 3º ano, 2º bimestre, Matemática: gráfico ou tabela
+- `efi-3ano-b2-matematica-09-problemas-envolvendo-adicao-com-reserva` — 3º ano, 2º bimestre, Matemática: gráfico ou tabela
+- `efi-3ano-b2-matematica-10-representacao-de-subtracao-com-troca` — 3º ano, 2º bimestre, Matemática: gráfico ou tabela
+- `efi-3ano-b2-matematica-12-problemas-envolvendo-subtracao-com-troca` — 3º ano, 2º bimestre, Matemática: gráfico ou tabela
+- `efi-3ano-b2-matematica-13-representacao-de-multiplicacao-por-4-e-5` — 3º ano, 2º bimestre, Matemática: gráfico ou tabela
+- `efi-3ano-b2-matematica-15-problemas-envolvendo-multiplicacao-por-4-e-5` — 3º ano, 2º bimestre, Matemática: gráfico ou tabela
+- `efi-3ano-b2-matematica-16-representacao-de-divisao-por-agrupamento` — 3º ano, 2º bimestre, Matemática: gráfico ou tabela
+- `efi-3ano-b2-matematica-18-problemas-envolvendo-divisao-por-agrupamento` — 3º ano, 2º bimestre, Matemática: gráfico ou tabela
+- `efi-3ano-b2-matematica-19-representacao-de-fracoes-simples` — 3º ano, 2º bimestre, Matemática: gráfico ou tabela
+- `efi-3ano-b2-matematica-21-problemas-envolvendo-fracoes-simples` — 3º ano, 2º bimestre, Matemática: gráfico ou tabela
+- `efi-3ano-b2-matematica-22-representacao-de-sistema-monetario` — 3º ano, 2º bimestre, Matemática: gráfico ou tabela, dinheiro
+- `efi-3ano-b2-matematica-23-estrategias-de-calculo-com-sistema-monetario` — 3º ano, 2º bimestre, Matemática: dinheiro
+- `efi-3ano-b2-matematica-24-problemas-envolvendo-sistema-monetario` — 3º ano, 2º bimestre, Matemática: gráfico ou tabela, dinheiro
+- `efi-3ano-b2-matematica-25-representacao-de-massa-e-capacidade` — 3º ano, 2º bimestre, Matemática: gráfico ou tabela
+- `efi-3ano-b2-matematica-27-problemas-envolvendo-massa-e-capacidade` — 3º ano, 2º bimestre, Matemática: gráfico ou tabela
+- `efi-3ano-b2-matematica-28-representacao-de-graficos-de-colunas` — 3º ano, 2º bimestre, Matemática: gráfico ou tabela
+- `efi-3ano-b2-matematica-29-estrategias-de-calculo-com-graficos-de-colunas` — 3º ano, 2º bimestre, Matemática: gráfico ou tabela
+- `efi-3ano-b2-matematica-30-problemas-envolvendo-graficos-de-colunas` — 3º ano, 2º bimestre, Matemática: gráfico ou tabela
+- `efi-3ano-b2-geografia-01-observacao-espacial-de-territorio-municipal` — 3º ano, 2º bimestre, Geografia: mapa ou localização
+- `efi-3ano-b2-geografia-02-representacao-geografica-de-territorio-municipal` — 3º ano, 2º bimestre, Geografia: mapa ou localização, gráfico ou tabela, ciências visuais
+- `efi-3ano-b2-geografia-03-problemas-e-solucoes-em-territorio-municipal` — 3º ano, 2º bimestre, Geografia: mapa ou localização
+- `efi-3ano-b2-geografia-04-observacao-espacial-de-zona-urbana-e-rural` — 3º ano, 2º bimestre, Geografia: mapa ou localização
+- `efi-3ano-b2-geografia-05-representacao-geografica-de-zona-urbana-e-rural` — 3º ano, 2º bimestre, Geografia: mapa ou localização, gráfico ou tabela, ciências visuais
+- `efi-3ano-b2-geografia-07-observacao-espacial-de-agricultura` — 3º ano, 2º bimestre, Geografia: mapa ou localização
+- `efi-3ano-b2-geografia-08-representacao-geografica-de-agricultura` — 3º ano, 2º bimestre, Geografia: mapa ou localização, gráfico ou tabela, ciências visuais
+- `efi-3ano-b2-geografia-10-observacao-espacial-de-pecuaria` — 3º ano, 2º bimestre, Geografia: mapa ou localização
+- `efi-3ano-b2-geografia-11-representacao-geografica-de-pecuaria` — 3º ano, 2º bimestre, Geografia: mapa ou localização, gráfico ou tabela, ciências visuais
+- `efi-3ano-b2-geografia-13-observacao-espacial-de-industria` — 3º ano, 2º bimestre, Geografia: mapa ou localização
+- `efi-3ano-b2-geografia-14-representacao-geografica-de-industria` — 3º ano, 2º bimestre, Geografia: mapa ou localização, gráfico ou tabela, ciências visuais
+- `efi-3ano-b2-geografia-16-observacao-espacial-de-comercio` — 3º ano, 2º bimestre, Geografia: mapa ou localização
+- `efi-3ano-b2-geografia-17-representacao-geografica-de-comercio` — 3º ano, 2º bimestre, Geografia: mapa ou localização, gráfico ou tabela, ciências visuais
+- `efi-3ano-b2-geografia-19-observacao-espacial-de-transportes` — 3º ano, 2º bimestre, Geografia: mapa ou localização
+- `efi-3ano-b2-geografia-20-representacao-geografica-de-transportes` — 3º ano, 2º bimestre, Geografia: mapa ou localização, gráfico ou tabela, ciências visuais
+- `efi-3ano-b2-geografia-22-observacao-espacial-de-servicos-publicos` — 3º ano, 2º bimestre, Geografia: mapa ou localização
+- `efi-3ano-b2-geografia-23-representacao-geografica-de-servicos-publicos` — 3º ano, 2º bimestre, Geografia: mapa ou localização, gráfico ou tabela, ciências visuais
+- `efi-3ano-b2-geografia-25-observacao-espacial-de-problemas-urbanos` — 3º ano, 2º bimestre, Geografia: mapa ou localização
+- `efi-3ano-b2-geografia-26-representacao-geografica-de-problemas-urbanos` — 3º ano, 2º bimestre, Geografia: mapa ou localização, gráfico ou tabela, ciências visuais
+- `efi-3ano-b2-geografia-28-observacao-espacial-de-recursos-naturais` — 3º ano, 2º bimestre, Geografia: mapa ou localização
+- `efi-3ano-b2-geografia-29-representacao-geografica-de-recursos-naturais` — 3º ano, 2º bimestre, Geografia: mapa ou localização, gráfico ou tabela, ciências visuais
+- `efi-3ano-b2-ciencias-02-investigacao-cientifica-de-ciclo-de-vida` — 3º ano, 2º bimestre, Ciências: gráfico ou tabela, sequência visual
+- `efi-3ano-b2-ciencias-05-investigacao-cientifica-de-reproducao-das-plantas` — 3º ano, 2º bimestre, Ciências: gráfico ou tabela, sequência visual
+- `efi-3ano-b2-ciencias-08-investigacao-cientifica-de-habitats` — 3º ano, 2º bimestre, Ciências: gráfico ou tabela, sequência visual
+- `efi-3ano-b2-ciencias-11-investigacao-cientifica-de-adaptacao-dos-animais` — 3º ano, 2º bimestre, Ciências: gráfico ou tabela, sequência visual
+- `efi-3ano-b2-ciencias-14-investigacao-cientifica-de-estados-fisicos-da-agua` — 3º ano, 2º bimestre, Ciências: gráfico ou tabela, sequência visual
+- `efi-3ano-b2-ciencias-16-observacao-e-hipotese-sobre-ciclo-da-agua` — 3º ano, 2º bimestre, Ciências: ciências visuais
+- `efi-3ano-b2-ciencias-17-investigacao-cientifica-de-ciclo-da-agua` — 3º ano, 2º bimestre, Ciências: gráfico ou tabela, ciências visuais, sequência visual
+- `efi-3ano-b2-ciencias-18-aplicacao-de-ciclo-da-agua-no-cotidiano` — 3º ano, 2º bimestre, Ciências: ciências visuais
+- `efi-3ano-b2-ciencias-20-investigacao-cientifica-de-luz` — 3º ano, 2º bimestre, Ciências: gráfico ou tabela, sequência visual
+- `efi-3ano-b2-ciencias-23-investigacao-cientifica-de-som` — 3º ano, 2º bimestre, Ciências: gráfico ou tabela, sequência visual
+- `efi-3ano-b2-ciencias-26-investigacao-cientifica-de-calor` — 3º ano, 2º bimestre, Ciências: gráfico ou tabela, sequência visual
+- `efi-3ano-b2-ciencias-29-investigacao-cientifica-de-materiais-e-transformacoes` — 3º ano, 2º bimestre, Ciências: gráfico ou tabela, sequência visual
+- `efi-3ano-b3-lp-03-sequencia-dos-acontecimentos` — 3º ano, 3º bimestre, Língua Portuguesa: sequência visual
+- `efi-3ano-b3-lp-09-texto-instrucional` — 3º ano, 3º bimestre, Língua Portuguesa: sequência visual
+- `efi-3ano-b3-lp-17-informacoes-explicitas` — 3º ano, 3º bimestre, Língua Portuguesa: mapa ou localização
+- `efi-3ano-b3-lp-30-producao-de-pequeno-relato` — 3º ano, 3º bimestre, Língua Portuguesa: sequência visual
+- `efi-3ano-b3-mat-01-leitura-e-escrita-de-numeros-ate-1.000` — 3º ano, 3º bimestre, Matemática: gráfico ou tabela
+- `efi-3ano-b3-mat-02-valor-posicional` — 3º ano, 3º bimestre, Matemática: gráfico ou tabela
+- `efi-3ano-b3-mat-03-comparacao-de-numeros` — 3º ano, 3º bimestre, Matemática: gráfico ou tabela
+- `efi-3ano-b3-mat-04-sequencias-numericas` — 3º ano, 3º bimestre, Matemática: gráfico ou tabela
+- `efi-3ano-b3-mat-05-adicao-com-reagrupamento` — 3º ano, 3º bimestre, Matemática: gráfico ou tabela
+- `efi-3ano-b3-mat-06-subtracao-com-reagrupamento` — 3º ano, 3º bimestre, Matemática: gráfico ou tabela
+- `efi-3ano-b3-mat-07-problemas-de-adicao` — 3º ano, 3º bimestre, Matemática: gráfico ou tabela
+- `efi-3ano-b3-mat-08-problemas-de-subtracao` — 3º ano, 3º bimestre, Matemática: gráfico ou tabela
+- `efi-3ano-b3-mat-09-multiplicacao-como-adicao-de-parcelas-igua` — 3º ano, 3º bimestre, Matemática: gráfico ou tabela
+- `efi-3ano-b3-mat-10-tabuada-do-2-3-4-e-5` — 3º ano, 3º bimestre, Matemática: gráfico ou tabela
+- `efi-3ano-b3-mat-11-divisao-como-reparticao` — 3º ano, 3º bimestre, Matemática: gráfico ou tabela
+- `efi-3ano-b3-mat-12-dobro-triplo-e-metade` — 3º ano, 3º bimestre, Matemática: gráfico ou tabela
+- `efi-3ano-b3-mat-13-metade-e-terca-parte` — 3º ano, 3º bimestre, Matemática: gráfico ou tabela
+- `efi-3ano-b3-mat-14-quarta-parte-e-quinta-parte` — 3º ano, 3º bimestre, Matemática: gráfico ou tabela
+- `efi-3ano-b3-mat-15-sistema-monetario-brasileiro` — 3º ano, 3º bimestre, Matemática: gráfico ou tabela, dinheiro
+- `efi-3ano-b3-mat-16-compras-e-troco` — 3º ano, 3º bimestre, Matemática: gráfico ou tabela, dinheiro
+- `efi-3ano-b3-mat-17-medidas-de-comprimento` — 3º ano, 3º bimestre, Matemática: gráfico ou tabela
+- `efi-3ano-b3-mat-18-medidas-de-massa` — 3º ano, 3º bimestre, Matemática: gráfico ou tabela
+- `efi-3ano-b3-mat-19-medidas-de-capacidade` — 3º ano, 3º bimestre, Matemática: gráfico ou tabela
+- `efi-3ano-b3-mat-20-horas-e-minutos` — 3º ano, 3º bimestre, Matemática: gráfico ou tabela, tempo e calendário
+- `efi-3ano-b3-mat-21-calendario-e-duracao` — 3º ano, 3º bimestre, Matemática: gráfico ou tabela, tempo e calendário
+- `efi-3ano-b3-mat-22-figuras-geometricas-planas` — 3º ano, 3º bimestre, Matemática: gráfico ou tabela
+- `efi-3ano-b3-mat-23-solidos-geometricos` — 3º ano, 3º bimestre, Matemática: gráfico ou tabela
+- `efi-3ano-b3-mat-24-simetria` — 3º ano, 3º bimestre, Matemática: gráfico ou tabela
+- `efi-3ano-b3-mat-25-localizacao-e-deslocamento` — 3º ano, 3º bimestre, Matemática: mapa ou localização, gráfico ou tabela
+- `efi-3ano-b3-mat-26-tabelas-simples` — 3º ano, 3º bimestre, Matemática: gráfico ou tabela
+- `efi-3ano-b3-mat-27-graficos-de-colunas` — 3º ano, 3º bimestre, Matemática: gráfico ou tabela
+- `efi-3ano-b3-mat-28-nocoes-de-probabilidade` — 3º ano, 3º bimestre, Matemática: gráfico ou tabela
+- `efi-3ano-b3-mat-29-estimativa-e-calculo-mental` — 3º ano, 3º bimestre, Matemática: gráfico ou tabela
+- `efi-3ano-b3-mat-30-revisao-integrada-de-matematica` — 3º ano, 3º bimestre, Matemática: gráfico ou tabela
+- `efi-3ano-b3-his-28-linha-do-tempo-da-comunidade` — 3º ano, 3º bimestre, História: tempo e calendário, sequência visual
+- `efi-3ano-b3-geo-09-povos-do-campo-e-da-floresta` — 3º ano, 3º bimestre, Geografia: mapa ou localização
+- `efi-3ano-b3-geo-12-a-acao-humana-transforma-a-paisagem` — 3º ano, 3º bimestre, Geografia: mapa ou localização, ciências visuais
+- `efi-3ano-b3-geo-16-maquete-e-planta-da-sala` — 3º ano, 3º bimestre, Geografia: mapa ou localização, ciências visuais
+- `efi-3ano-b3-geo-17-fotografia-aerea-e-mapa` — 3º ano, 3º bimestre, Geografia: mapa ou localização
+- `efi-3ano-b3-geo-18-croqui-do-caminho-da-escola` — 3º ano, 3º bimestre, Geografia: mapa ou localização
+- `efi-3ano-b3-geo-19-simbolos-e-legendas` — 3º ano, 3º bimestre, Geografia: mapa ou localização
+- `efi-3ano-b3-geo-20-mapa-dos-servicos-do-bairro` — 3º ano, 3º bimestre, Geografia: mapa ou localização
+- `efi-3ano-b3-geo-21-orientacao-no-espaco` — 3º ano, 3º bimestre, Geografia: mapa ou localização
+- `efi-3ano-b3-geo-26-agua-no-campo-e-na-cidade` — 3º ano, 3º bimestre, Geografia: mapa ou localização, ciências visuais
+- `efi-3ano-b3-cie-01-os-seres-vivos-e-o-ambiente` — 3º ano, 3º bimestre, Ciências: ciências visuais
+- `efi-3ano-b3-cie-02-o-que-os-animais-comem` — 3º ano, 3º bimestre, Ciências: ciências visuais
+- `efi-3ano-b3-cie-03-animais-herbivoros-carnivoros-e-onivoros` — 3º ano, 3º bimestre, Ciências: ciências visuais
+- `efi-3ano-b3-cie-04-como-os-animais-se-locomovem` — 3º ano, 3º bimestre, Ciências: ciências visuais
+- `efi-3ano-b3-cie-05-onde-vivem-os-animais` — 3º ano, 3º bimestre, Ciências: ciências visuais
+- `efi-3ano-b3-cie-06-animais-vertebrados` — 3º ano, 3º bimestre, Ciências: ciências visuais
+- `efi-3ano-b3-cie-07-animais-invertebrados` — 3º ano, 3º bimestre, Ciências: ciências visuais
+- `efi-3ano-b3-cie-08-mamiferos` — 3º ano, 3º bimestre, Ciências: ciências visuais
+- `efi-3ano-b3-cie-09-aves` — 3º ano, 3º bimestre, Ciências: ciências visuais
+- `efi-3ano-b3-cie-10-peixes` — 3º ano, 3º bimestre, Ciências: ciências visuais
+- `efi-3ano-b3-cie-11-repteis` — 3º ano, 3º bimestre, Ciências: ciências visuais
+- `efi-3ano-b3-cie-12-anfibios` — 3º ano, 3º bimestre, Ciências: ciências visuais
+- `efi-3ano-b3-cie-13-o-ciclo-de-vida-dos-animais` — 3º ano, 3º bimestre, Ciências: ciências visuais
+- `efi-3ano-b3-cie-14-a-metamorfose-da-borboleta` — 3º ano, 3º bimestre, Ciências: ciências visuais
+- `efi-3ano-b3-cie-15-o-desenvolvimento-do-sapo` — 3º ano, 3º bimestre, Ciências: ciências visuais
+- `efi-3ano-b3-cie-16-o-corpo-humano-e-os-sentidos` — 3º ano, 3º bimestre, Ciências: ciências visuais
+- `efi-3ano-b3-cie-17-a-visao` — 3º ano, 3º bimestre, Ciências: ciências visuais
+- `efi-3ano-b3-cie-18-a-audicao` — 3º ano, 3º bimestre, Ciências: ciências visuais
+- `efi-3ano-b3-cie-19-o-olfato-e-o-paladar` — 3º ano, 3º bimestre, Ciências: ciências visuais
+- `efi-3ano-b3-cie-20-o-tato` — 3º ano, 3º bimestre, Ciências: ciências visuais
+- `efi-3ano-b3-cie-21-cuidados-com-a-saude` — 3º ano, 3º bimestre, Ciências: ciências visuais
+- `efi-3ano-b3-cie-22-alimentacao-saudavel` — 3º ano, 3º bimestre, Ciências: ciências visuais
+- `efi-3ano-b3-cie-23-higiene-do-corpo` — 3º ano, 3º bimestre, Ciências: ciências visuais
+- `efi-3ano-b3-cie-24-a-agua-no-dia-a-dia` — 3º ano, 3º bimestre, Ciências: ciências visuais
+- `efi-3ano-b3-cie-25-economizando-agua` — 3º ano, 3º bimestre, Ciências: ciências visuais
+- `efi-3ano-b3-cie-26-o-solo` — 3º ano, 3º bimestre, Ciências: ciências visuais
+- `efi-3ano-b3-cie-27-tipos-de-solo` — 3º ano, 3º bimestre, Ciências: ciências visuais
+- `efi-3ano-b3-cie-28-a-importancia-do-solo-para-as-plantas` — 3º ano, 3º bimestre, Ciências: ciências visuais
+- `efi-3ano-b3-cie-29-cuidados-com-o-ambiente` — 3º ano, 3º bimestre, Ciências: ciências visuais
+- `efi-3ano-b3-cie-30-projeto-observando-a-natureza` — 3º ano, 3º bimestre, Ciências: ciências visuais
+- `efi-3ano-b4-matematica-01-representacao-de-numeros-ate-10000` — 3º ano, 4º bimestre, Matemática: gráfico ou tabela
+- `efi-3ano-b4-matematica-03-problemas-envolvendo-numeros-ate-10000` — 3º ano, 4º bimestre, Matemática: gráfico ou tabela
+- `efi-3ano-b4-matematica-04-representacao-de-multiplicacao-por-6-7-8-e-9` — 3º ano, 4º bimestre, Matemática: gráfico ou tabela
+- `efi-3ano-b4-matematica-06-problemas-envolvendo-multiplicacao-por-6-7-8-e-9` — 3º ano, 4º bimestre, Matemática: gráfico ou tabela
+- `efi-3ano-b4-matematica-07-representacao-de-divisao-exata` — 3º ano, 4º bimestre, Matemática: gráfico ou tabela
+- `efi-3ano-b4-matematica-09-problemas-envolvendo-divisao-exata` — 3º ano, 4º bimestre, Matemática: gráfico ou tabela
+- `efi-3ano-b4-matematica-10-representacao-de-resto-na-divisao` — 3º ano, 4º bimestre, Matemática: gráfico ou tabela
+- `efi-3ano-b4-matematica-12-problemas-envolvendo-resto-na-divisao` — 3º ano, 4º bimestre, Matemática: gráfico ou tabela
+- `efi-3ano-b4-matematica-13-representacao-de-fracoes` — 3º ano, 4º bimestre, Matemática: gráfico ou tabela
+- `efi-3ano-b4-matematica-15-problemas-envolvendo-fracoes` — 3º ano, 4º bimestre, Matemática: gráfico ou tabela
+- `efi-3ano-b4-matematica-16-representacao-de-medidas-de-area` — 3º ano, 4º bimestre, Matemática: gráfico ou tabela
+- `efi-3ano-b4-matematica-18-problemas-envolvendo-medidas-de-area` — 3º ano, 4º bimestre, Matemática: gráfico ou tabela
+- `efi-3ano-b4-matematica-19-representacao-de-perimetro` — 3º ano, 4º bimestre, Matemática: gráfico ou tabela, geometria
+- `efi-3ano-b4-matematica-20-estrategias-de-calculo-com-perimetro` — 3º ano, 4º bimestre, Matemática: geometria
+- `efi-3ano-b4-matematica-21-problemas-envolvendo-perimetro` — 3º ano, 4º bimestre, Matemática: gráfico ou tabela, geometria
+- `efi-3ano-b4-matematica-22-representacao-de-horas-e-minutos` — 3º ano, 4º bimestre, Matemática: gráfico ou tabela, tempo e calendário
+- `efi-3ano-b4-matematica-23-estrategias-de-calculo-com-horas-e-minutos` — 3º ano, 4º bimestre, Matemática: tempo e calendário
+- `efi-3ano-b4-matematica-24-problemas-envolvendo-horas-e-minutos` — 3º ano, 4º bimestre, Matemática: gráfico ou tabela, tempo e calendário
+- `efi-3ano-b4-matematica-25-representacao-de-situacoes-de-compra-e-troco` — 3º ano, 4º bimestre, Matemática: gráfico ou tabela, dinheiro
+- `efi-3ano-b4-matematica-26-estrategias-de-calculo-com-situacoes-de-compra-e-troco` — 3º ano, 4º bimestre, Matemática: dinheiro
+- `efi-3ano-b4-matematica-27-problemas-envolvendo-situacoes-de-compra-e-troco` — 3º ano, 4º bimestre, Matemática: gráfico ou tabela, dinheiro
+- `efi-3ano-b4-matematica-28-representacao-de-problemas-com-duas-operacoes` — 3º ano, 4º bimestre, Matemática: gráfico ou tabela
+- `efi-3ano-b4-matematica-30-problemas-envolvendo-problemas-com-duas-operacoes` — 3º ano, 4º bimestre, Matemática: gráfico ou tabela
+- `efi-3ano-b4-geografia-01-observacao-espacial-de-brasil-e-regioes` — 3º ano, 4º bimestre, Geografia: mapa ou localização
+- `efi-3ano-b4-geografia-02-representacao-geografica-de-brasil-e-regioes` — 3º ano, 4º bimestre, Geografia: mapa ou localização, gráfico ou tabela, ciências visuais
+- `efi-3ano-b4-geografia-03-problemas-e-solucoes-em-brasil-e-regioes` — 3º ano, 4º bimestre, Geografia: mapa ou localização
+- `efi-3ano-b4-geografia-04-observacao-espacial-de-paisagens-brasileiras` — 3º ano, 4º bimestre, Geografia: mapa ou localização
+- `efi-3ano-b4-geografia-05-representacao-geografica-de-paisagens-brasileiras` — 3º ano, 4º bimestre, Geografia: mapa ou localização, gráfico ou tabela, ciências visuais
+- `efi-3ano-b4-geografia-07-observacao-espacial-de-populacao` — 3º ano, 4º bimestre, Geografia: mapa ou localização
+- `efi-3ano-b4-geografia-08-representacao-geografica-de-populacao` — 3º ano, 4º bimestre, Geografia: mapa ou localização, gráfico ou tabela, ciências visuais
+- `efi-3ano-b4-geografia-10-observacao-espacial-de-migracoes-internas` — 3º ano, 4º bimestre, Geografia: mapa ou localização
+- `efi-3ano-b4-geografia-11-representacao-geografica-de-migracoes-internas` — 3º ano, 4º bimestre, Geografia: mapa ou localização, gráfico ou tabela, ciências visuais
+- `efi-3ano-b4-geografia-13-observacao-espacial-de-producao-no-campo` — 3º ano, 4º bimestre, Geografia: mapa ou localização
+- `efi-3ano-b4-geografia-14-representacao-geografica-de-producao-no-campo` — 3º ano, 4º bimestre, Geografia: mapa ou localização, gráfico ou tabela, ciências visuais
+- `efi-3ano-b4-geografia-16-observacao-espacial-de-producao-industrial` — 3º ano, 4º bimestre, Geografia: mapa ou localização
+- `efi-3ano-b4-geografia-17-representacao-geografica-de-producao-industrial` — 3º ano, 4º bimestre, Geografia: mapa ou localização, gráfico ou tabela, ciências visuais
+- `efi-3ano-b4-geografia-19-observacao-espacial-de-energia` — 3º ano, 4º bimestre, Geografia: mapa ou localização
+- `efi-3ano-b4-geografia-20-representacao-geografica-de-energia` — 3º ano, 4º bimestre, Geografia: mapa ou localização, gráfico ou tabela, ciências visuais
+- `efi-3ano-b4-geografia-22-observacao-espacial-de-agua` — 3º ano, 4º bimestre, Geografia: mapa ou localização
+- `efi-3ano-b4-geografia-23-representacao-geografica-de-agua` — 3º ano, 4º bimestre, Geografia: mapa ou localização, gráfico ou tabela, ciências visuais
+- `efi-3ano-b4-geografia-25-observacao-espacial-de-mobilidade-urbana` — 3º ano, 4º bimestre, Geografia: mapa ou localização
+- `efi-3ano-b4-geografia-26-representacao-geografica-de-mobilidade-urbana` — 3º ano, 4º bimestre, Geografia: mapa ou localização, gráfico ou tabela, ciências visuais
+- `efi-3ano-b4-geografia-28-observacao-espacial-de-sustentabilidade` — 3º ano, 4º bimestre, Geografia: mapa ou localização
+- `efi-3ano-b4-geografia-29-representacao-geografica-de-sustentabilidade` — 3º ano, 4º bimestre, Geografia: mapa ou localização, gráfico ou tabela, ciências visuais
+- `efi-3ano-b4-ciencias-01-observacao-e-hipotese-sobre-corpo-humano-e-sistemas` — 3º ano, 4º bimestre, Ciências: ciências visuais
+- `efi-3ano-b4-ciencias-02-investigacao-cientifica-de-corpo-humano-e-sistemas` — 3º ano, 4º bimestre, Ciências: gráfico ou tabela, ciências visuais, sequência visual
+- `efi-3ano-b4-ciencias-03-aplicacao-de-corpo-humano-e-sistemas-no-cotidiano` — 3º ano, 4º bimestre, Ciências: ciências visuais
+- `efi-3ano-b4-ciencias-05-investigacao-cientifica-de-digestao-inicial` — 3º ano, 4º bimestre, Ciências: gráfico ou tabela, sequência visual
+- `efi-3ano-b4-ciencias-08-investigacao-cientifica-de-respiracao-inicial` — 3º ano, 4º bimestre, Ciências: gráfico ou tabela, sequência visual
+- `efi-3ano-b4-ciencias-11-investigacao-cientifica-de-saude-e-prevencao` — 3º ano, 4º bimestre, Ciências: gráfico ou tabela, sequência visual
+- `efi-3ano-b4-ciencias-14-investigacao-cientifica-de-vacinacao` — 3º ano, 4º bimestre, Ciências: gráfico ou tabela, sequência visual
+- `efi-3ano-b4-ciencias-17-investigacao-cientifica-de-sol-terra-e-lua` — 3º ano, 4º bimestre, Ciências: gráfico ou tabela, sequência visual
+- `efi-3ano-b4-ciencias-20-investigacao-cientifica-de-movimentos-da-terra` — 3º ano, 4º bimestre, Ciências: gráfico ou tabela, sequência visual
+- `efi-3ano-b4-ciencias-23-investigacao-cientifica-de-fontes-de-energia` — 3º ano, 4º bimestre, Ciências: gráfico ou tabela, sequência visual
+- `efi-3ano-b4-ciencias-26-investigacao-cientifica-de-reciclagem` — 3º ano, 4º bimestre, Ciências: gráfico ou tabela, sequência visual
+- `efi-3ano-b4-ciencias-29-investigacao-cientifica-de-preservacao-da-biodiversidade` — 3º ano, 4º bimestre, Ciências: gráfico ou tabela, sequência visual
+- `efi-4ano-b1-lp-03-sequencia-dos-acontecimentos` — 4º ano, 1º bimestre, Língua Portuguesa: sequência visual
+- `efi-4ano-b1-mat-01-numeros-ate-10-mil` — 4º ano, 1º bimestre, Matemática: gráfico ou tabela
+- `efi-4ano-b1-mat-02-leitura-e-escrita-de-numeros` — 4º ano, 1º bimestre, Matemática: gráfico ou tabela
+- `efi-4ano-b1-mat-03-valor-posicional` — 4º ano, 1º bimestre, Matemática: gráfico ou tabela
+- `efi-4ano-b1-mat-04-composicao-e-decomposicao` — 4º ano, 1º bimestre, Matemática: gráfico ou tabela
+- `efi-4ano-b1-mat-05-comparacao-de-numeros` — 4º ano, 1º bimestre, Matemática: gráfico ou tabela
+- `efi-4ano-b1-mat-06-ordenacao-numerica` — 4º ano, 1º bimestre, Matemática: gráfico ou tabela
+- `efi-4ano-b1-mat-07-adicao-com-reagrupamento` — 4º ano, 1º bimestre, Matemática: gráfico ou tabela
+- `efi-4ano-b1-mat-08-subtracao-com-reagrupamento` — 4º ano, 1º bimestre, Matemática: gráfico ou tabela
+- `efi-4ano-b1-mat-09-problemas-de-adicao` — 4º ano, 1º bimestre, Matemática: gráfico ou tabela
+- `efi-4ano-b1-mat-10-problemas-de-subtracao` — 4º ano, 1º bimestre, Matemática: gráfico ou tabela
+- `efi-4ano-b1-mat-11-estimativa-de-resultados` — 4º ano, 1º bimestre, Matemática: gráfico ou tabela
+- `efi-4ano-b1-mat-12-calculo-mental` — 4º ano, 1º bimestre, Matemática: gráfico ou tabela
+- `efi-4ano-b1-mat-13-sequencias-numericas` — 4º ano, 1º bimestre, Matemática: gráfico ou tabela
+- `efi-4ano-b1-mat-14-dobro-e-metade` — 4º ano, 1º bimestre, Matemática: gráfico ou tabela
+- `efi-4ano-b1-mat-15-triplo-e-terca-parte` — 4º ano, 1º bimestre, Matemática: gráfico ou tabela
+- `efi-4ano-b1-mat-16-multiplicacao-por-2` — 4º ano, 1º bimestre, Matemática: gráfico ou tabela
+- `efi-4ano-b1-mat-17-multiplicacao-por-3` — 4º ano, 1º bimestre, Matemática: gráfico ou tabela
+- `efi-4ano-b1-mat-18-multiplicacao-por-4` — 4º ano, 1º bimestre, Matemática: gráfico ou tabela
+- `efi-4ano-b1-mat-19-multiplicacao-por-5` — 4º ano, 1º bimestre, Matemática: gráfico ou tabela
+- `efi-4ano-b1-mat-20-tabuada-e-regularidades` — 4º ano, 1º bimestre, Matemática: gráfico ou tabela
+- `efi-4ano-b1-mat-21-introducao-a-divisao` — 4º ano, 1º bimestre, Matemática: gráfico ou tabela
+- `efi-4ano-b1-mat-22-reparticao-em-partes-iguais` — 4º ano, 1º bimestre, Matemática: gráfico ou tabela
+- `efi-4ano-b1-mat-23-medidas-de-comprimento` — 4º ano, 1º bimestre, Matemática: gráfico ou tabela
+- `efi-4ano-b1-mat-24-uso-da-regua` — 4º ano, 1º bimestre, Matemática: gráfico ou tabela
+- `efi-4ano-b1-mat-25-perimetro-em-malha-quadriculada` — 4º ano, 1º bimestre, Matemática: gráfico ou tabela, geometria
+- `efi-4ano-b1-mat-26-figuras-planas` — 4º ano, 1º bimestre, Matemática: gráfico ou tabela
+- `efi-4ano-b1-mat-27-localizacao-em-mapas-simples` — 4º ano, 1º bimestre, Matemática: mapa ou localização, gráfico ou tabela
+- `efi-4ano-b1-mat-28-tabelas-simples` — 4º ano, 1º bimestre, Matemática: gráfico ou tabela
+- `efi-4ano-b1-mat-29-graficos-de-colunas` — 4º ano, 1º bimestre, Matemática: gráfico ou tabela
+- `efi-4ano-b1-mat-30-resolucao-de-problemas-mistos` — 4º ano, 1º bimestre, Matemática: gráfico ou tabela
+- `efi-4ano-b1-his-12-linha-do-tempo-pessoal` — 4º ano, 1º bimestre, História: tempo e calendário
+- `efi-4ano-b1-his-30-producao-de-linha-do-tempo` — 4º ano, 1º bimestre, História: tempo e calendário
+- `efi-4ano-b1-geo-08-endereco-e-localizacao` — 4º ano, 1º bimestre, Geografia: mapa ou localização
+- `efi-4ano-b1-geo-10-croqui-simples` — 4º ano, 1º bimestre, Geografia: mapa ou localização
+- `efi-4ano-b1-geo-22-pontos-cardeais` — 4º ano, 1º bimestre, Geografia: mapa ou localização
+- `efi-4ano-b1-geo-23-legenda-em-mapas` — 4º ano, 1º bimestre, Geografia: mapa ou localização
+- `efi-4ano-b1-cie-19-ciclo-da-agua` — 4º ano, 1º bimestre, Ciências: ciências visuais
+- `efi-4ano-b2-mat-01-multiplicacao-por-6` — 4º ano, 2º bimestre, Matemática: gráfico ou tabela
+- `efi-4ano-b2-mat-02-multiplicacao-por-7` — 4º ano, 2º bimestre, Matemática: gráfico ou tabela
+- `efi-4ano-b2-mat-03-multiplicacao-por-8` — 4º ano, 2º bimestre, Matemática: gráfico ou tabela
+- `efi-4ano-b2-mat-04-multiplicacao-por-9` — 4º ano, 2º bimestre, Matemática: gráfico ou tabela
+- `efi-4ano-b2-mat-05-propriedades-da-multiplicacao` — 4º ano, 2º bimestre, Matemática: gráfico ou tabela
+- `efi-4ano-b2-mat-06-divisao-exata` — 4º ano, 2º bimestre, Matemática: gráfico ou tabela
+- `efi-4ano-b2-mat-07-divisao-com-resto` — 4º ano, 2º bimestre, Matemática: gráfico ou tabela
+- `efi-4ano-b2-mat-08-relacao-entre-multiplicacao-e-divisao` — 4º ano, 2º bimestre, Matemática: gráfico ou tabela
+- `efi-4ano-b2-mat-09-problemas-multiplicativos` — 4º ano, 2º bimestre, Matemática: gráfico ou tabela
+- `efi-4ano-b2-mat-10-problemas-de-divisao` — 4º ano, 2º bimestre, Matemática: gráfico ou tabela
+- `efi-4ano-b2-mat-11-fracoes-como-parte-do-todo` — 4º ano, 2º bimestre, Matemática: gráfico ou tabela
+- `efi-4ano-b2-mat-12-metade-terco-e-quarto` — 4º ano, 2º bimestre, Matemática: gráfico ou tabela
+- `efi-4ano-b2-mat-13-comparacao-de-fracoes-simples` — 4º ano, 2º bimestre, Matemática: gráfico ou tabela
+- `efi-4ano-b2-mat-14-fracoes-em-figuras` — 4º ano, 2º bimestre, Matemática: gráfico ou tabela
+- `efi-4ano-b2-mat-15-fracoes-no-cotidiano` — 4º ano, 2º bimestre, Matemática: gráfico ou tabela
+- `efi-4ano-b2-mat-16-sistema-monetario` — 4º ano, 2º bimestre, Matemática: gráfico ou tabela, dinheiro
+- `efi-4ano-b2-mat-17-calculo-com-dinheiro` — 4º ano, 2º bimestre, Matemática: gráfico ou tabela, dinheiro
+- `efi-4ano-b2-mat-18-troco` — 4º ano, 2º bimestre, Matemática: gráfico ou tabela, dinheiro
+- `efi-4ano-b2-mat-19-planejamento-de-compras` — 4º ano, 2º bimestre, Matemática: gráfico ou tabela
+- `efi-4ano-b2-mat-20-problemas-com-valores` — 4º ano, 2º bimestre, Matemática: gráfico ou tabela
+- `efi-4ano-b2-mat-21-medidas-de-massa` — 4º ano, 2º bimestre, Matemática: gráfico ou tabela
+- `efi-4ano-b2-mat-22-quilograma-e-grama` — 4º ano, 2º bimestre, Matemática: gráfico ou tabela
+- `efi-4ano-b2-mat-23-medidas-de-capacidade` — 4º ano, 2º bimestre, Matemática: gráfico ou tabela
+- `efi-4ano-b2-mat-24-litro-e-mililitro` — 4º ano, 2º bimestre, Matemática: gráfico ou tabela
+- `efi-4ano-b2-mat-25-medidas-de-tempo` — 4º ano, 2º bimestre, Matemática: gráfico ou tabela
+- `efi-4ano-b2-mat-26-horas-e-minutos` — 4º ano, 2º bimestre, Matemática: gráfico ou tabela, tempo e calendário
+- `efi-4ano-b2-mat-27-calendario` — 4º ano, 2º bimestre, Matemática: gráfico ou tabela, tempo e calendário
+- `efi-4ano-b2-mat-28-angulos-intuitivos` — 4º ano, 2º bimestre, Matemática: gráfico ou tabela
+- `efi-4ano-b2-mat-29-simetria` — 4º ano, 2º bimestre, Matemática: gráfico ou tabela
+- `efi-4ano-b2-mat-30-graficos-e-tabelas` — 4º ano, 2º bimestre, Matemática: gráfico ou tabela
+- `efi-4ano-b3-lp-pesquisa-registro-b` — 4º ano, 3º bimestre, Língua Portuguesa: gráfico ou tabela
+- `efi-4ano-b3-lp-texto-literario-b` — 4º ano, 3º bimestre, Língua Portuguesa: sequência visual
+- `efi-4ano-b3-lp-acentuacao-dicionario-a` — 4º ano, 3º bimestre, Língua Portuguesa: gráfico ou tabela
+- `efi-4ano-b3-lp-carta-pessoal-a` — 4º ano, 3º bimestre, Língua Portuguesa: tempo e calendário
+- `efi-4ano-b3-lp-verbete-a` — 4º ano, 3º bimestre, Língua Portuguesa: mapa ou localização, ciências visuais
+- `efi-4ano-b3-lp-relato-pessoal-b` — 4º ano, 3º bimestre, Língua Portuguesa: sequência visual
+- `efi-4ano-b3-lp-coesao-b` — 4º ano, 3º bimestre, Língua Portuguesa: ciências visuais
+- `efi-4ano-b3-mat-compras-troco-a` — 4º ano, 3º bimestre, Matemática: dinheiro
+- `efi-4ano-b3-mat-planejando-compra-b` — 4º ano, 3º bimestre, Matemática: dinheiro
+- `efi-4ano-b3-mat-feira-escola-c` — 4º ano, 3º bimestre, Matemática: dinheiro
+- `efi-4ano-b3-mat-tempo-duracao-m` — 4º ano, 3º bimestre, Matemática: tempo e calendário
+- `efi-4ano-b3-mat-padroes-sequencias-o` — 4º ano, 3º bimestre, Matemática: sequência visual
+- `efi-4ano-b3-mat-compras-troco-extra` — 4º ano, 3º bimestre, Matemática: dinheiro
+- `efi-4ano-b3-mat-precos-pagamento-extra` — 4º ano, 3º bimestre, Matemática: dinheiro
+- `efi-4ano-b3-mat-comprimento-extra` — 4º ano, 3º bimestre, Matemática: dinheiro
+- `efi-4ano-b3-mat-perimetro-extra` — 4º ano, 3º bimestre, Matemática: geometria
+- `efi-4ano-b3-mat-tabelas-graficos-extra` — 4º ano, 3º bimestre, Matemática: gráfico ou tabela
+- `efi-4ano-b3-mat-sequencias-padroes-extra` — 4º ano, 3º bimestre, Matemática: sequência visual
+- `efi-4ano-b3-his-linha-do-tempo-da-comunidade` — 4º ano, 3º bimestre, História: tempo e calendário, sequência visual
+- `efi-4ano-b3-his-estradas-e-integracao-de-regioes` — 4º ano, 3º bimestre, História: mapa ou localização
+- `efi-4ano-b3-geo-01-migracoes-internas-no-brasil` — 4º ano, 3º bimestre, Geografia: mapa ou localização
+- `efi-4ano-b3-geo-02-historias-de-familias-migrantes` — 4º ano, 3º bimestre, Geografia: mapa ou localização
+- `efi-4ano-b3-geo-03-diversidade-cultural-brasileira` — 4º ano, 3º bimestre, Geografia: mapa ou localização
+- `efi-4ano-b3-geo-04-povos-indigenas-e-seus-territorios` — 4º ano, 3º bimestre, Geografia: mapa ou localização
+- `efi-4ano-b3-geo-05-comunidades-quilombolas` — 4º ano, 3º bimestre, Geografia: mapa ou localização
+- `efi-4ano-b3-geo-06-o-municipio-e-seus-espacos` — 4º ano, 3º bimestre, Geografia: mapa ou localização
+- `efi-4ano-b3-geo-07-prefeitura-e-camara-municipal` — 4º ano, 3º bimestre, Geografia: mapa ou localização
+- `efi-4ano-b3-geo-08-participacao-dos-moradores` — 4º ano, 3º bimestre, Geografia: mapa ou localização
+- `efi-4ano-b3-geo-09-campo-e-cidade-relacoes` — 4º ano, 3º bimestre, Geografia: mapa ou localização
+- `efi-4ano-b3-geo-10-produtos-do-campo-na-cidade` — 4º ano, 3º bimestre, Geografia: mapa ou localização
+- `efi-4ano-b3-geo-11-servicos-da-cidade-no-campo` — 4º ano, 3º bimestre, Geografia: mapa ou localização
+- `efi-4ano-b3-geo-12-unidades-da-federacao` — 4º ano, 3º bimestre, Geografia: mapa ou localização
+- `efi-4ano-b3-geo-13-regioes-brasileiras` — 4º ano, 3º bimestre, Geografia: mapa ou localização
+- `efi-4ano-b3-geo-14-limites-e-fronteiras` — 4º ano, 3º bimestre, Geografia: mapa ou localização
+- `efi-4ano-b3-geo-15-localizacao-pelo-mapa` — 4º ano, 3º bimestre, Geografia: mapa ou localização
+- `efi-4ano-b3-geo-16-pontos-cardeais-no-cotidiano` — 4º ano, 3º bimestre, Geografia: mapa ou localização
+- `efi-4ano-b3-geo-17-legenda-titulo-e-escala` — 4º ano, 3º bimestre, Geografia: mapa ou localização
+- `efi-4ano-b3-geo-18-mapas-fisicos-e-politicos` — 4º ano, 3º bimestre, Geografia: mapa ou localização
+- `efi-4ano-b3-geo-19-paisagens-naturais-e-culturais` — 4º ano, 3º bimestre, Geografia: mapa ou localização
+- `efi-4ano-b3-geo-20-mudancas-na-paisagem-do-bairro` — 4º ano, 3º bimestre, Geografia: mapa ou localização
+- `efi-4ano-b3-geo-21-preservacao-dos-rios` — 4º ano, 3º bimestre, Geografia: mapa ou localização
+- `efi-4ano-b3-geo-22-conservacao-do-solo` — 4º ano, 3º bimestre, Geografia: mapa ou localização
+- `efi-4ano-b3-geo-23-trabalho-no-campo` — 4º ano, 3º bimestre, Geografia: mapa ou localização
+- `efi-4ano-b3-geo-24-trabalho-na-cidade` — 4º ano, 3º bimestre, Geografia: mapa ou localização
+- `efi-4ano-b3-geo-25-producao-circulacao-e-consumo` — 4º ano, 3º bimestre, Geografia: mapa ou localização
+- `efi-4ano-b3-geo-26-do-leite-ao-mercado` — 4º ano, 3º bimestre, Geografia: mapa ou localização
+- `efi-4ano-b3-geo-27-do-algodao-a-camiseta` — 4º ano, 3º bimestre, Geografia: mapa ou localização
+- `efi-4ano-b3-geo-28-transportes-e-circulacao` — 4º ano, 3º bimestre, Geografia: mapa ou localização
+- `efi-4ano-b3-geo-29-comunicacao-entre-lugares` — 4º ano, 3º bimestre, Geografia: mapa ou localização
+- `efi-4ano-b3-geo-30-geografia-do-lugar-onde-vivemos` — 4º ano, 3º bimestre, Geografia: mapa ou localização
+- `efi-4ano-b3-cie-cadeia-alimentar-floresta-extra` — 4º ano, 3º bimestre, Ciências: ciências visuais
+- `efi-4ano-b3-cie-cadeia-alimentar-lagoa-extra` — 4º ano, 3º bimestre, Ciências: ciências visuais
+- `efi-4ano-b3-cie-produtores-consumidores-extra` — 4º ano, 3º bimestre, Ciências: mapa ou localização, ciências visuais
+- `efi-4ano-b3-cie-teia-alimentar-extra` — 4º ano, 3º bimestre, Ciências: ciências visuais
+- `efi-4ano-b3-cie-equilibrio-ambiental-extra` — 4º ano, 3º bimestre, Ciências: ciências visuais
+- `efi-4ano-b3-cie-uso-agrotoxico-extra` — 4º ano, 3º bimestre, Ciências: ciências visuais
+- `efi-4ano-b3-cie-pontos-cardeais-extra` — 4º ano, 3º bimestre, Ciências: mapa ou localização
+- `efi-4ano-b3-cie-mapa-escola-extra` — 4º ano, 3º bimestre, Ciências: mapa ou localização
+- `efi-4ano-b3-cie-fases-lua-extra` — 4º ano, 3º bimestre, Ciências: ciências visuais
+- `efi-4ano-b3-cie-extra-23-uma-teia-de-relacoes-alimentares` — 4º ano, 3º bimestre, Ciências: ciências visuais
+- `efi-4ano-b4-lp-12-leitura-de-grafico-em-texto` — 4º ano, 4º bimestre, Língua Portuguesa: gráfico ou tabela
+- `efi-4ano-b4-mat-01-numeros-ate-100-mil` — 4º ano, 4º bimestre, Matemática: gráfico ou tabela
+- `efi-4ano-b4-mat-02-arredondamento` — 4º ano, 4º bimestre, Matemática: gráfico ou tabela
+- `efi-4ano-b4-mat-03-estimativa` — 4º ano, 4º bimestre, Matemática: gráfico ou tabela
+- `efi-4ano-b4-mat-04-algoritmos-de-multiplicacao` — 4º ano, 4º bimestre, Matemática: gráfico ou tabela
+- `efi-4ano-b4-mat-05-multiplicacao-por-dois-algarismos` — 4º ano, 4º bimestre, Matemática: gráfico ou tabela
+- `efi-4ano-b4-mat-06-divisao-por-um-algarismo` — 4º ano, 4º bimestre, Matemática: gráfico ou tabela
+- `efi-4ano-b4-mat-07-estrategias-de-divisao` — 4º ano, 4º bimestre, Matemática: gráfico ou tabela
+- `efi-4ano-b4-mat-08-problemas-com-varias-operacoes` — 4º ano, 4º bimestre, Matemática: gráfico ou tabela
+- `efi-4ano-b4-mat-09-expressoes-numericas-simples` — 4º ano, 4º bimestre, Matemática: gráfico ou tabela
+- `efi-4ano-b4-mat-10-padroes-numericos` — 4º ano, 4º bimestre, Matemática: gráfico ou tabela
+- `efi-4ano-b4-mat-11-fracoes-equivalentes-intuitivas` — 4º ano, 4º bimestre, Matemática: gráfico ou tabela
+- `efi-4ano-b4-mat-12-adicao-de-fracoes-com-mesmo-denominador` — 4º ano, 4º bimestre, Matemática: gráfico ou tabela
+- `efi-4ano-b4-mat-13-numeros-decimais-no-dinheiro` — 4º ano, 4º bimestre, Matemática: gráfico ou tabela, dinheiro
+- `efi-4ano-b4-mat-14-decimos-e-centesimos` — 4º ano, 4º bimestre, Matemática: gráfico ou tabela
+- `efi-4ano-b4-mat-15-comparacao-de-decimais` — 4º ano, 4º bimestre, Matemática: gráfico ou tabela
+- `efi-4ano-b4-mat-16-medidas-de-area` — 4º ano, 4º bimestre, Matemática: gráfico ou tabela
+- `efi-4ano-b4-mat-17-area-em-malha-quadriculada` — 4º ano, 4º bimestre, Matemática: gráfico ou tabela
+- `efi-4ano-b4-mat-18-perimetro-e-area` — 4º ano, 4º bimestre, Matemática: gráfico ou tabela, geometria
+- `efi-4ano-b4-mat-19-poligonos` — 4º ano, 4º bimestre, Matemática: gráfico ou tabela
+- `efi-4ano-b4-mat-20-classificacao-de-triangulos` — 4º ano, 4º bimestre, Matemática: gráfico ou tabela
+- `efi-4ano-b4-mat-21-quadrilateros` — 4º ano, 4º bimestre, Matemática: gráfico ou tabela
+- `efi-4ano-b4-mat-22-solidos-geometricos` — 4º ano, 4º bimestre, Matemática: gráfico ou tabela
+- `efi-4ano-b4-mat-23-planificacoes` — 4º ano, 4º bimestre, Matemática: gráfico ou tabela
+- `efi-4ano-b4-mat-24-volume-intuitivo` — 4º ano, 4º bimestre, Matemática: gráfico ou tabela
+- `efi-4ano-b4-mat-25-probabilidade-simples` — 4º ano, 4º bimestre, Matemática: gráfico ou tabela
+- `efi-4ano-b4-mat-26-eventos-possiveis-e-impossiveis` — 4º ano, 4º bimestre, Matemática: gráfico ou tabela
+- `efi-4ano-b4-mat-27-pesquisa-estatistica` — 4º ano, 4º bimestre, Matemática: gráfico ou tabela
+- `efi-4ano-b4-mat-28-grafico-de-barras-duplas` — 4º ano, 4º bimestre, Matemática: gráfico ou tabela
+- `efi-4ano-b4-mat-29-media-intuitiva` — 4º ano, 4º bimestre, Matemática: gráfico ou tabela
+- `efi-4ano-b4-mat-30-desafio-matematico-final` — 4º ano, 4º bimestre, Matemática: gráfico ou tabela
+- `efi-4ano-b4-his-26-linha-do-tempo-do-municipio` — 4º ano, 4º bimestre, História: tempo e calendário
+- `efi-4ano-b4-geo-01-regioes-do-brasil` — 4º ano, 4º bimestre, Geografia: mapa ou localização
+- `efi-4ano-b4-cie-07-sistema-solar` — 4º ano, 4º bimestre, Ciências: ciências visuais
+- `efi-4ano-b4-cie-11-pontos-cardeais-pelo-sol` — 4º ano, 4º bimestre, Ciências: mapa ou localização
+- `efi-5ano-b1-matematica-01-representacao-de-numeros-naturais` — 5º ano, 1º bimestre, Matemática: gráfico ou tabela
+- `efi-5ano-b1-matematica-03-problemas-envolvendo-numeros-naturais` — 5º ano, 1º bimestre, Matemática: gráfico ou tabela
+- `efi-5ano-b1-matematica-04-representacao-de-valor-posicional` — 5º ano, 1º bimestre, Matemática: gráfico ou tabela
+- `efi-5ano-b1-matematica-06-problemas-envolvendo-valor-posicional` — 5º ano, 1º bimestre, Matemática: gráfico ou tabela
+- `efi-5ano-b1-matematica-07-representacao-de-adicao-e-subtracao` — 5º ano, 1º bimestre, Matemática: gráfico ou tabela
+- `efi-5ano-b1-matematica-09-problemas-envolvendo-adicao-e-subtracao` — 5º ano, 1º bimestre, Matemática: gráfico ou tabela
+- `efi-5ano-b1-matematica-10-representacao-de-multiplicacao` — 5º ano, 1º bimestre, Matemática: gráfico ou tabela
+- `efi-5ano-b1-matematica-12-problemas-envolvendo-multiplicacao` — 5º ano, 1º bimestre, Matemática: gráfico ou tabela
+- `efi-5ano-b1-matematica-13-representacao-de-divisao` — 5º ano, 1º bimestre, Matemática: gráfico ou tabela
+- `efi-5ano-b1-matematica-15-problemas-envolvendo-divisao` — 5º ano, 1º bimestre, Matemática: gráfico ou tabela
+- `efi-5ano-b1-matematica-16-representacao-de-expressoes-numericas` — 5º ano, 1º bimestre, Matemática: gráfico ou tabela
+- `efi-5ano-b1-matematica-18-problemas-envolvendo-expressoes-numericas` — 5º ano, 1º bimestre, Matemática: gráfico ou tabela
+- `efi-5ano-b1-matematica-19-representacao-de-fracoes` — 5º ano, 1º bimestre, Matemática: gráfico ou tabela
+- `efi-5ano-b1-matematica-21-problemas-envolvendo-fracoes` — 5º ano, 1º bimestre, Matemática: gráfico ou tabela
+- `efi-5ano-b1-matematica-22-representacao-de-numeros-decimais` — 5º ano, 1º bimestre, Matemática: gráfico ou tabela
+- `efi-5ano-b1-matematica-24-problemas-envolvendo-numeros-decimais` — 5º ano, 1º bimestre, Matemática: gráfico ou tabela
+- `efi-5ano-b1-matematica-25-representacao-de-perimetro-e-area` — 5º ano, 1º bimestre, Matemática: gráfico ou tabela, geometria
+- `efi-5ano-b1-matematica-26-estrategias-de-calculo-com-perimetro-e-area` — 5º ano, 1º bimestre, Matemática: geometria
+- `efi-5ano-b1-matematica-27-problemas-envolvendo-perimetro-e-area` — 5º ano, 1º bimestre, Matemática: gráfico ou tabela, geometria
+- `efi-5ano-b1-matematica-28-representacao-de-graficos` — 5º ano, 1º bimestre, Matemática: gráfico ou tabela
+- `efi-5ano-b1-matematica-30-problemas-envolvendo-graficos` — 5º ano, 1º bimestre, Matemática: gráfico ou tabela
+- `efi-5ano-b1-geografia-01-observacao-espacial-de-territorio-brasileiro` — 5º ano, 1º bimestre, Geografia: mapa ou localização
+- `efi-5ano-b1-geografia-02-representacao-geografica-de-territorio-brasileiro` — 5º ano, 1º bimestre, Geografia: mapa ou localização, gráfico ou tabela, ciências visuais
+- `efi-5ano-b1-geografia-03-problemas-e-solucoes-em-territorio-brasileiro` — 5º ano, 1º bimestre, Geografia: mapa ou localização
+- `efi-5ano-b1-geografia-04-observacao-espacial-de-regioes-do-brasil` — 5º ano, 1º bimestre, Geografia: mapa ou localização
+- `efi-5ano-b1-geografia-05-representacao-geografica-de-regioes-do-brasil` — 5º ano, 1º bimestre, Geografia: mapa ou localização, gráfico ou tabela, ciências visuais
+- `efi-5ano-b1-geografia-06-problemas-e-solucoes-em-regioes-do-brasil` — 5º ano, 1º bimestre, Geografia: mapa ou localização
+- `efi-5ano-b1-geografia-07-observacao-espacial-de-populacao` — 5º ano, 1º bimestre, Geografia: mapa ou localização
+- `efi-5ano-b1-geografia-08-representacao-geografica-de-populacao` — 5º ano, 1º bimestre, Geografia: mapa ou localização, gráfico ou tabela, ciências visuais
+- `efi-5ano-b1-geografia-10-observacao-espacial-de-migracao` — 5º ano, 1º bimestre, Geografia: mapa ou localização
+- `efi-5ano-b1-geografia-11-representacao-geografica-de-migracao` — 5º ano, 1º bimestre, Geografia: mapa ou localização, gráfico ou tabela, ciências visuais
+- `efi-5ano-b1-geografia-13-observacao-espacial-de-urbanizacao` — 5º ano, 1º bimestre, Geografia: mapa ou localização
+- `efi-5ano-b1-geografia-14-representacao-geografica-de-urbanizacao` — 5º ano, 1º bimestre, Geografia: mapa ou localização, gráfico ou tabela, ciências visuais
+- `efi-5ano-b1-geografia-16-observacao-espacial-de-campo-e-cidade` — 5º ano, 1º bimestre, Geografia: mapa ou localização
+- `efi-5ano-b1-geografia-17-representacao-geografica-de-campo-e-cidade` — 5º ano, 1º bimestre, Geografia: mapa ou localização, gráfico ou tabela, ciências visuais
+- `efi-5ano-b1-geografia-19-observacao-espacial-de-atividades-economicas` — 5º ano, 1º bimestre, Geografia: mapa ou localização
+- `efi-5ano-b1-geografia-20-representacao-geografica-de-atividades-economicas` — 5º ano, 1º bimestre, Geografia: mapa ou localização, gráfico ou tabela, ciências visuais
+- `efi-5ano-b1-geografia-22-observacao-espacial-de-relevo` — 5º ano, 1º bimestre, Geografia: mapa ou localização
+- `efi-5ano-b1-geografia-23-representacao-geografica-de-relevo` — 5º ano, 1º bimestre, Geografia: mapa ou localização, gráfico ou tabela, ciências visuais
+- `efi-5ano-b1-geografia-25-observacao-espacial-de-hidrografia` — 5º ano, 1º bimestre, Geografia: mapa ou localização
+- `efi-5ano-b1-geografia-26-representacao-geografica-de-hidrografia` — 5º ano, 1º bimestre, Geografia: mapa ou localização, gráfico ou tabela, ciências visuais
+- `efi-5ano-b1-geografia-28-observacao-espacial-de-clima` — 5º ano, 1º bimestre, Geografia: mapa ou localização
+- `efi-5ano-b1-geografia-29-representacao-geografica-de-clima` — 5º ano, 1º bimestre, Geografia: mapa ou localização, gráfico ou tabela, ciências visuais
+- `efi-5ano-b1-ciencias-02-investigacao-cientifica-de-celulas-e-seres-vivos` — 5º ano, 1º bimestre, Ciências: gráfico ou tabela, sequência visual
+- `efi-5ano-b1-ciencias-04-observacao-e-hipotese-sobre-sistemas-do-corpo-humano` — 5º ano, 1º bimestre, Ciências: ciências visuais
+- `efi-5ano-b1-ciencias-05-investigacao-cientifica-de-sistemas-do-corpo-humano` — 5º ano, 1º bimestre, Ciências: gráfico ou tabela, ciências visuais, sequência visual
+- `efi-5ano-b1-ciencias-06-aplicacao-de-sistemas-do-corpo-humano-no-cotidiano` — 5º ano, 1º bimestre, Ciências: ciências visuais
+- `efi-5ano-b1-ciencias-08-investigacao-cientifica-de-alimentacao` — 5º ano, 1º bimestre, Ciências: gráfico ou tabela, sequência visual
+- `efi-5ano-b1-ciencias-11-investigacao-cientifica-de-respiracao` — 5º ano, 1º bimestre, Ciências: gráfico ou tabela, sequência visual
+- `efi-5ano-b1-ciencias-14-investigacao-cientifica-de-circulacao` — 5º ano, 1º bimestre, Ciências: gráfico ou tabela, sequência visual
+- `efi-5ano-b1-ciencias-17-investigacao-cientifica-de-agua` — 5º ano, 1º bimestre, Ciências: gráfico ou tabela, sequência visual
+- `efi-5ano-b1-ciencias-20-investigacao-cientifica-de-energia` — 5º ano, 1º bimestre, Ciências: gráfico ou tabela, sequência visual
+- `efi-5ano-b1-ciencias-23-investigacao-cientifica-de-materia` — 5º ano, 1º bimestre, Ciências: gráfico ou tabela, sequência visual
+- `efi-5ano-b1-ciencias-26-investigacao-cientifica-de-ecossistemas` — 5º ano, 1º bimestre, Ciências: gráfico ou tabela, sequência visual
+- `efi-5ano-b1-ciencias-29-investigacao-cientifica-de-saude` — 5º ano, 1º bimestre, Ciências: gráfico ou tabela, sequência visual
+- `efi-5ano-b2-matematica-01-representacao-de-divisibilidade` — 5º ano, 2º bimestre, Matemática: gráfico ou tabela
+- `efi-5ano-b2-matematica-03-problemas-envolvendo-divisibilidade` — 5º ano, 2º bimestre, Matemática: gráfico ou tabela
+- `efi-5ano-b2-matematica-04-representacao-de-multiplos-e-divisores` — 5º ano, 2º bimestre, Matemática: gráfico ou tabela
+- `efi-5ano-b2-matematica-06-problemas-envolvendo-multiplos-e-divisores` — 5º ano, 2º bimestre, Matemática: gráfico ou tabela
+- `efi-5ano-b2-matematica-07-representacao-de-fracoes-equivalentes` — 5º ano, 2º bimestre, Matemática: gráfico ou tabela
+- `efi-5ano-b2-matematica-09-problemas-envolvendo-fracoes-equivalentes` — 5º ano, 2º bimestre, Matemática: gráfico ou tabela
+- `efi-5ano-b2-matematica-10-representacao-de-adicao-de-fracoes` — 5º ano, 2º bimestre, Matemática: gráfico ou tabela
+- `efi-5ano-b2-matematica-12-problemas-envolvendo-adicao-de-fracoes` — 5º ano, 2º bimestre, Matemática: gráfico ou tabela
+- `efi-5ano-b2-matematica-13-representacao-de-subtracao-de-fracoes` — 5º ano, 2º bimestre, Matemática: gráfico ou tabela
+- `efi-5ano-b2-matematica-15-problemas-envolvendo-subtracao-de-fracoes` — 5º ano, 2º bimestre, Matemática: gráfico ou tabela
+- `efi-5ano-b2-matematica-16-representacao-de-decimais` — 5º ano, 2º bimestre, Matemática: gráfico ou tabela
+- `efi-5ano-b2-matematica-18-problemas-envolvendo-decimais` — 5º ano, 2º bimestre, Matemática: gráfico ou tabela
+- `efi-5ano-b2-matematica-19-representacao-de-porcentagem-inicial` — 5º ano, 2º bimestre, Matemática: gráfico ou tabela
+- `efi-5ano-b2-matematica-21-problemas-envolvendo-porcentagem-inicial` — 5º ano, 2º bimestre, Matemática: gráfico ou tabela
+- `efi-5ano-b2-matematica-22-representacao-de-medidas-de-massa` — 5º ano, 2º bimestre, Matemática: gráfico ou tabela
+- `efi-5ano-b2-matematica-24-problemas-envolvendo-medidas-de-massa` — 5º ano, 2º bimestre, Matemática: gráfico ou tabela
+- `efi-5ano-b2-matematica-25-representacao-de-medidas-de-capacidade` — 5º ano, 2º bimestre, Matemática: gráfico ou tabela
+- `efi-5ano-b2-matematica-27-problemas-envolvendo-medidas-de-capacidade` — 5º ano, 2º bimestre, Matemática: gráfico ou tabela
+- `efi-5ano-b2-matematica-28-representacao-de-probabilidade` — 5º ano, 2º bimestre, Matemática: gráfico ou tabela
+- `efi-5ano-b2-matematica-30-problemas-envolvendo-probabilidade` — 5º ano, 2º bimestre, Matemática: gráfico ou tabela
+- `efi-5ano-b2-geografia-01-observacao-espacial-de-regioes-brasileiras` — 5º ano, 2º bimestre, Geografia: mapa ou localização
+- `efi-5ano-b2-geografia-02-representacao-geografica-de-regioes-brasileiras` — 5º ano, 2º bimestre, Geografia: mapa ou localização, gráfico ou tabela, ciências visuais
+- `efi-5ano-b2-geografia-03-problemas-e-solucoes-em-regioes-brasileiras` — 5º ano, 2º bimestre, Geografia: mapa ou localização
+- `efi-5ano-b2-geografia-04-observacao-espacial-de-populacao-urbana` — 5º ano, 2º bimestre, Geografia: mapa ou localização
+- `efi-5ano-b2-geografia-05-representacao-geografica-de-populacao-urbana` — 5º ano, 2º bimestre, Geografia: mapa ou localização, gráfico ou tabela, ciências visuais
+- `efi-5ano-b2-geografia-07-observacao-espacial-de-populacao-rural` — 5º ano, 2º bimestre, Geografia: mapa ou localização
+- `efi-5ano-b2-geografia-08-representacao-geografica-de-populacao-rural` — 5º ano, 2º bimestre, Geografia: mapa ou localização, gráfico ou tabela, ciências visuais
+- `efi-5ano-b2-geografia-10-observacao-espacial-de-industria` — 5º ano, 2º bimestre, Geografia: mapa ou localização
+- `efi-5ano-b2-geografia-11-representacao-geografica-de-industria` — 5º ano, 2º bimestre, Geografia: mapa ou localização, gráfico ou tabela, ciências visuais
+- `efi-5ano-b2-geografia-13-observacao-espacial-de-agropecuaria` — 5º ano, 2º bimestre, Geografia: mapa ou localização
+- `efi-5ano-b2-geografia-14-representacao-geografica-de-agropecuaria` — 5º ano, 2º bimestre, Geografia: mapa ou localização, gráfico ou tabela, ciências visuais
+- `efi-5ano-b2-geografia-16-observacao-espacial-de-comercio` — 5º ano, 2º bimestre, Geografia: mapa ou localização
+- `efi-5ano-b2-geografia-17-representacao-geografica-de-comercio` — 5º ano, 2º bimestre, Geografia: mapa ou localização, gráfico ou tabela, ciências visuais
+- `efi-5ano-b2-geografia-19-observacao-espacial-de-transportes` — 5º ano, 2º bimestre, Geografia: mapa ou localização
+- `efi-5ano-b2-geografia-20-representacao-geografica-de-transportes` — 5º ano, 2º bimestre, Geografia: mapa ou localização, gráfico ou tabela, ciências visuais
+- `efi-5ano-b2-geografia-22-observacao-espacial-de-energia` — 5º ano, 2º bimestre, Geografia: mapa ou localização
+- `efi-5ano-b2-geografia-23-representacao-geografica-de-energia` — 5º ano, 2º bimestre, Geografia: mapa ou localização, gráfico ou tabela, ciências visuais
+- `efi-5ano-b2-geografia-25-observacao-espacial-de-recursos-naturais` — 5º ano, 2º bimestre, Geografia: mapa ou localização
+- `efi-5ano-b2-geografia-26-representacao-geografica-de-recursos-naturais` — 5º ano, 2º bimestre, Geografia: mapa ou localização, gráfico ou tabela, ciências visuais
+- `efi-5ano-b2-geografia-28-observacao-espacial-de-impactos-ambientais` — 5º ano, 2º bimestre, Geografia: mapa ou localização
+- `efi-5ano-b2-geografia-29-representacao-geografica-de-impactos-ambientais` — 5º ano, 2º bimestre, Geografia: mapa ou localização, gráfico ou tabela, ciências visuais
+- `efi-5ano-b2-ciencias-02-investigacao-cientifica-de-sistema-digestorio` — 5º ano, 2º bimestre, Ciências: gráfico ou tabela, sequência visual
+- `efi-5ano-b2-ciencias-05-investigacao-cientifica-de-sistema-respiratorio` — 5º ano, 2º bimestre, Ciências: gráfico ou tabela, sequência visual
+- `efi-5ano-b2-ciencias-08-investigacao-cientifica-de-sistema-circulatorio` — 5º ano, 2º bimestre, Ciências: gráfico ou tabela, sequência visual
+- `efi-5ano-b2-ciencias-11-investigacao-cientifica-de-nutricao` — 5º ano, 2º bimestre, Ciências: gráfico ou tabela, sequência visual
+- `efi-5ano-b2-ciencias-14-investigacao-cientifica-de-micro-organismos` — 5º ano, 2º bimestre, Ciências: gráfico ou tabela, sequência visual
+- `efi-5ano-b2-ciencias-17-investigacao-cientifica-de-doencas-e-prevencao` — 5º ano, 2º bimestre, Ciências: gráfico ou tabela, sequência visual
+- `efi-5ano-b2-ciencias-20-investigacao-cientifica-de-vacinacao` — 5º ano, 2º bimestre, Ciências: gráfico ou tabela, sequência visual
+- `efi-5ano-b2-ciencias-23-investigacao-cientifica-de-misturas` — 5º ano, 2º bimestre, Ciências: gráfico ou tabela, sequência visual
+- `efi-5ano-b2-ciencias-26-investigacao-cientifica-de-transformacoes-quimicas-simples` — 5º ano, 2º bimestre, Ciências: gráfico ou tabela, sequência visual
+- `efi-5ano-b2-ciencias-29-investigacao-cientifica-de-fontes-de-energia` — 5º ano, 2º bimestre, Ciências: gráfico ou tabela, sequência visual
+- `efi-5ano-b3-matematica-01-representacao-de-operacoes-com-decimais` — 5º ano, 3º bimestre, Matemática: gráfico ou tabela
+- `efi-5ano-b3-matematica-03-problemas-envolvendo-operacoes-com-decimais` — 5º ano, 3º bimestre, Matemática: gráfico ou tabela
+- `efi-5ano-b3-matematica-04-representacao-de-fracoes-e-decimais` — 5º ano, 3º bimestre, Matemática: gráfico ou tabela
+- `efi-5ano-b3-matematica-06-problemas-envolvendo-fracoes-e-decimais` — 5º ano, 3º bimestre, Matemática: gráfico ou tabela
+- `efi-5ano-b3-matematica-07-representacao-de-porcentagem` — 5º ano, 3º bimestre, Matemática: gráfico ou tabela
+- `efi-5ano-b3-matematica-09-problemas-envolvendo-porcentagem` — 5º ano, 3º bimestre, Matemática: gráfico ou tabela
+- `efi-5ano-b3-matematica-10-representacao-de-razao-simples` — 5º ano, 3º bimestre, Matemática: gráfico ou tabela
+- `efi-5ano-b3-matematica-12-problemas-envolvendo-razao-simples` — 5º ano, 3º bimestre, Matemática: gráfico ou tabela
+- `efi-5ano-b3-matematica-13-representacao-de-escala` — 5º ano, 3º bimestre, Matemática: gráfico ou tabela
+- `efi-5ano-b3-matematica-15-problemas-envolvendo-escala` — 5º ano, 3º bimestre, Matemática: gráfico ou tabela
+- `efi-5ano-b3-matematica-16-representacao-de-angulos` — 5º ano, 3º bimestre, Matemática: gráfico ou tabela
+- `efi-5ano-b3-matematica-18-problemas-envolvendo-angulos` — 5º ano, 3º bimestre, Matemática: gráfico ou tabela
+- `efi-5ano-b3-matematica-19-representacao-de-poligonos` — 5º ano, 3º bimestre, Matemática: gráfico ou tabela
+- `efi-5ano-b3-matematica-21-problemas-envolvendo-poligonos` — 5º ano, 3º bimestre, Matemática: gráfico ou tabela
+- `efi-5ano-b3-matematica-22-representacao-de-area-de-figuras` — 5º ano, 3º bimestre, Matemática: gráfico ou tabela
+- `efi-5ano-b3-matematica-24-problemas-envolvendo-area-de-figuras` — 5º ano, 3º bimestre, Matemática: gráfico ou tabela
+- `efi-5ano-b3-matematica-25-representacao-de-volume-inicial` — 5º ano, 3º bimestre, Matemática: gráfico ou tabela
+- `efi-5ano-b3-matematica-27-problemas-envolvendo-volume-inicial` — 5º ano, 3º bimestre, Matemática: gráfico ou tabela
+- `efi-5ano-b3-matematica-28-representacao-de-estatistica` — 5º ano, 3º bimestre, Matemática: gráfico ou tabela
+- `efi-5ano-b3-matematica-29-estrategias-de-calculo-com-estatistica` — 5º ano, 3º bimestre, Matemática: gráfico ou tabela
+- `efi-5ano-b3-matematica-30-problemas-envolvendo-estatistica` — 5º ano, 3º bimestre, Matemática: gráfico ou tabela
+- `efi-5ano-b3-geografia-01-observacao-espacial-de-globalizacao` — 5º ano, 3º bimestre, Geografia: mapa ou localização
+- `efi-5ano-b3-geografia-02-representacao-geografica-de-globalizacao` — 5º ano, 3º bimestre, Geografia: mapa ou localização, gráfico ou tabela, ciências visuais
+- `efi-5ano-b3-geografia-04-observacao-espacial-de-redes-de-transporte` — 5º ano, 3º bimestre, Geografia: mapa ou localização
+- `efi-5ano-b3-geografia-05-representacao-geografica-de-redes-de-transporte` — 5º ano, 3º bimestre, Geografia: mapa ou localização, gráfico ou tabela, ciências visuais
+- `efi-5ano-b3-geografia-07-observacao-espacial-de-comunicacao` — 5º ano, 3º bimestre, Geografia: mapa ou localização
+- `efi-5ano-b3-geografia-08-representacao-geografica-de-comunicacao` — 5º ano, 3º bimestre, Geografia: mapa ou localização, gráfico ou tabela, ciências visuais
+- `efi-5ano-b3-geografia-10-observacao-espacial-de-industria-e-tecnologia` — 5º ano, 3º bimestre, Geografia: mapa ou localização
+- `efi-5ano-b3-geografia-11-representacao-geografica-de-industria-e-tecnologia` — 5º ano, 3º bimestre, Geografia: mapa ou localização, gráfico ou tabela, ciências visuais
+- `efi-5ano-b3-geografia-13-observacao-espacial-de-regioes-metropolitanas` — 5º ano, 3º bimestre, Geografia: mapa ou localização
+- `efi-5ano-b3-geografia-14-representacao-geografica-de-regioes-metropolitanas` — 5º ano, 3º bimestre, Geografia: mapa ou localização, gráfico ou tabela, ciências visuais
+- `efi-5ano-b3-geografia-15-problemas-e-solucoes-em-regioes-metropolitanas` — 5º ano, 3º bimestre, Geografia: mapa ou localização
+- `efi-5ano-b3-geografia-16-observacao-espacial-de-migracoes-internas` — 5º ano, 3º bimestre, Geografia: mapa ou localização
+- `efi-5ano-b3-geografia-17-representacao-geografica-de-migracoes-internas` — 5º ano, 3º bimestre, Geografia: mapa ou localização, gráfico ou tabela, ciências visuais
+- `efi-5ano-b3-geografia-19-observacao-espacial-de-desigualdade-regional` — 5º ano, 3º bimestre, Geografia: mapa ou localização
+- `efi-5ano-b3-geografia-20-representacao-geografica-de-desigualdade-regional` — 5º ano, 3º bimestre, Geografia: mapa ou localização, gráfico ou tabela, ciências visuais
+- `efi-5ano-b3-geografia-22-observacao-espacial-de-biomas-brasileiros` — 5º ano, 3º bimestre, Geografia: mapa ou localização
+- `efi-5ano-b3-geografia-23-representacao-geografica-de-biomas-brasileiros` — 5º ano, 3º bimestre, Geografia: mapa ou localização, gráfico ou tabela, ciências visuais
+- `efi-5ano-b3-geografia-25-observacao-espacial-de-agua-e-saneamento` — 5º ano, 3º bimestre, Geografia: mapa ou localização
+- `efi-5ano-b3-geografia-26-representacao-geografica-de-agua-e-saneamento` — 5º ano, 3º bimestre, Geografia: mapa ou localização, gráfico ou tabela, ciências visuais
+- `efi-5ano-b3-geografia-28-observacao-espacial-de-sustentabilidade` — 5º ano, 3º bimestre, Geografia: mapa ou localização
+- `efi-5ano-b3-geografia-29-representacao-geografica-de-sustentabilidade` — 5º ano, 3º bimestre, Geografia: mapa ou localização, gráfico ou tabela, ciências visuais
+- `efi-5ano-b3-ciencias-02-investigacao-cientifica-de-sistema-nervoso` — 5º ano, 3º bimestre, Ciências: gráfico ou tabela, sequência visual
+- `efi-5ano-b3-ciencias-05-investigacao-cientifica-de-sistema-locomotor` — 5º ano, 3º bimestre, Ciências: gráfico ou tabela, sequência visual
+- `efi-5ano-b3-ciencias-08-investigacao-cientifica-de-puberdade` — 5º ano, 3º bimestre, Ciências: gráfico ou tabela, sequência visual
+- `efi-5ano-b3-ciencias-11-investigacao-cientifica-de-reproducao-humana` — 5º ano, 3º bimestre, Ciências: gráfico ou tabela, sequência visual
+- `efi-5ano-b3-ciencias-14-investigacao-cientifica-de-terra-e-universo` — 5º ano, 3º bimestre, Ciências: gráfico ou tabela, sequência visual
+- `efi-5ano-b3-ciencias-16-observacao-e-hipotese-sobre-sistema-solar` — 5º ano, 3º bimestre, Ciências: ciências visuais
+- `efi-5ano-b3-ciencias-17-investigacao-cientifica-de-sistema-solar` — 5º ano, 3º bimestre, Ciências: gráfico ou tabela, ciências visuais, sequência visual
+- `efi-5ano-b3-ciencias-18-aplicacao-de-sistema-solar-no-cotidiano` — 5º ano, 3º bimestre, Ciências: ciências visuais
+- `efi-5ano-b3-ciencias-20-investigacao-cientifica-de-movimentos-da-terra` — 5º ano, 3º bimestre, Ciências: gráfico ou tabela, sequência visual
+- `efi-5ano-b3-ciencias-22-observacao-e-hipotese-sobre-fases-da-lua` — 5º ano, 3º bimestre, Ciências: ciências visuais
+- `efi-5ano-b3-ciencias-23-investigacao-cientifica-de-fases-da-lua` — 5º ano, 3º bimestre, Ciências: gráfico ou tabela, ciências visuais, sequência visual
+- `efi-5ano-b3-ciencias-24-aplicacao-de-fases-da-lua-no-cotidiano` — 5º ano, 3º bimestre, Ciências: ciências visuais
+- `efi-5ano-b3-ciencias-26-investigacao-cientifica-de-eletricidade` — 5º ano, 3º bimestre, Ciências: gráfico ou tabela, sequência visual
+- `efi-5ano-b3-ciencias-29-investigacao-cientifica-de-magnetismo` — 5º ano, 3º bimestre, Ciências: gráfico ou tabela, sequência visual
+- `efi-5ano-b4-matematica-01-representacao-de-revisao-das-quatro-operacoes` — 5º ano, 4º bimestre, Matemática: gráfico ou tabela
+- `efi-5ano-b4-matematica-03-problemas-envolvendo-revisao-das-quatro-operacoes` — 5º ano, 4º bimestre, Matemática: gráfico ou tabela
+- `efi-5ano-b4-matematica-04-representacao-de-problemas-com-fracoes` — 5º ano, 4º bimestre, Matemática: gráfico ou tabela
+- `efi-5ano-b4-matematica-06-problemas-envolvendo-problemas-com-fracoes` — 5º ano, 4º bimestre, Matemática: gráfico ou tabela
+- `efi-5ano-b4-matematica-07-representacao-de-problemas-com-decimais` — 5º ano, 4º bimestre, Matemática: gráfico ou tabela
+- `efi-5ano-b4-matematica-09-problemas-envolvendo-problemas-com-decimais` — 5º ano, 4º bimestre, Matemática: gráfico ou tabela
+- `efi-5ano-b4-matematica-10-representacao-de-porcentagem-aplicada` — 5º ano, 4º bimestre, Matemática: gráfico ou tabela
+- `efi-5ano-b4-matematica-12-problemas-envolvendo-porcentagem-aplicada` — 5º ano, 4º bimestre, Matemática: gráfico ou tabela
+- `efi-5ano-b4-matematica-13-representacao-de-medidas-de-tempo` — 5º ano, 4º bimestre, Matemática: gráfico ou tabela
+- `efi-5ano-b4-matematica-15-problemas-envolvendo-medidas-de-tempo` — 5º ano, 4º bimestre, Matemática: gráfico ou tabela
+- `efi-5ano-b4-matematica-16-representacao-de-medidas-de-superficie` — 5º ano, 4º bimestre, Matemática: gráfico ou tabela
+- `efi-5ano-b4-matematica-18-problemas-envolvendo-medidas-de-superficie` — 5º ano, 4º bimestre, Matemática: gráfico ou tabela
+- `efi-5ano-b4-matematica-19-representacao-de-solidos-geometricos` — 5º ano, 4º bimestre, Matemática: gráfico ou tabela
+- `efi-5ano-b4-matematica-21-problemas-envolvendo-solidos-geometricos` — 5º ano, 4º bimestre, Matemática: gráfico ou tabela
+- `efi-5ano-b4-matematica-22-representacao-de-planificacao` — 5º ano, 4º bimestre, Matemática: gráfico ou tabela, geometria
+- `efi-5ano-b4-matematica-23-estrategias-de-calculo-com-planificacao` — 5º ano, 4º bimestre, Matemática: geometria
+- `efi-5ano-b4-matematica-24-problemas-envolvendo-planificacao` — 5º ano, 4º bimestre, Matemática: gráfico ou tabela, geometria
+- `efi-5ano-b4-matematica-25-representacao-de-graficos-e-tabelas` — 5º ano, 4º bimestre, Matemática: gráfico ou tabela
+- `efi-5ano-b4-matematica-27-problemas-envolvendo-graficos-e-tabelas` — 5º ano, 4º bimestre, Matemática: gráfico ou tabela
+- `efi-5ano-b4-matematica-28-representacao-de-resolucao-de-problemas` — 5º ano, 4º bimestre, Matemática: gráfico ou tabela
+- `efi-5ano-b4-matematica-30-problemas-envolvendo-resolucao-de-problemas` — 5º ano, 4º bimestre, Matemática: gráfico ou tabela
+- `efi-5ano-b4-geografia-01-observacao-espacial-de-brasil-no-mundo` — 5º ano, 4º bimestre, Geografia: mapa ou localização
+- `efi-5ano-b4-geografia-02-representacao-geografica-de-brasil-no-mundo` — 5º ano, 4º bimestre, Geografia: mapa ou localização, gráfico ou tabela, ciências visuais
+- `efi-5ano-b4-geografia-04-observacao-espacial-de-america-do-sul` — 5º ano, 4º bimestre, Geografia: mapa ou localização
+- `efi-5ano-b4-geografia-05-representacao-geografica-de-america-do-sul` — 5º ano, 4º bimestre, Geografia: mapa ou localização, gráfico ou tabela, ciências visuais
+- `efi-5ano-b4-geografia-07-observacao-espacial-de-fronteiras` — 5º ano, 4º bimestre, Geografia: mapa ou localização
+- `efi-5ano-b4-geografia-08-representacao-geografica-de-fronteiras` — 5º ano, 4º bimestre, Geografia: mapa ou localização, gráfico ou tabela, ciências visuais
+- `efi-5ano-b4-geografia-10-observacao-espacial-de-comercio-internacional` — 5º ano, 4º bimestre, Geografia: mapa ou localização
+- `efi-5ano-b4-geografia-11-representacao-geografica-de-comercio-internacional` — 5º ano, 4º bimestre, Geografia: mapa ou localização, gráfico ou tabela, ciências visuais
+- `efi-5ano-b4-geografia-13-observacao-espacial-de-fontes-de-energia` — 5º ano, 4º bimestre, Geografia: mapa ou localização
+- `efi-5ano-b4-geografia-14-representacao-geografica-de-fontes-de-energia` — 5º ano, 4º bimestre, Geografia: mapa ou localização, gráfico ou tabela, ciências visuais
+- `efi-5ano-b4-geografia-16-observacao-espacial-de-mudancas-climaticas` — 5º ano, 4º bimestre, Geografia: mapa ou localização
+- `efi-5ano-b4-geografia-17-representacao-geografica-de-mudancas-climaticas` — 5º ano, 4º bimestre, Geografia: mapa ou localização, gráfico ou tabela, ciências visuais
+- `efi-5ano-b4-geografia-19-observacao-espacial-de-desmatamento` — 5º ano, 4º bimestre, Geografia: mapa ou localização
+- `efi-5ano-b4-geografia-20-representacao-geografica-de-desmatamento` — 5º ano, 4º bimestre, Geografia: mapa ou localização, gráfico ou tabela, ciências visuais
+- `efi-5ano-b4-geografia-22-observacao-espacial-de-conservacao-dos-biomas` — 5º ano, 4º bimestre, Geografia: mapa ou localização
+- `efi-5ano-b4-geografia-23-representacao-geografica-de-conservacao-dos-biomas` — 5º ano, 4º bimestre, Geografia: mapa ou localização, gráfico ou tabela, ciências visuais
+- `efi-5ano-b4-geografia-25-observacao-espacial-de-consumo-consciente` — 5º ano, 4º bimestre, Geografia: mapa ou localização
+- `efi-5ano-b4-geografia-26-representacao-geografica-de-consumo-consciente` — 5º ano, 4º bimestre, Geografia: mapa ou localização, gráfico ou tabela, ciências visuais
+- `efi-5ano-b4-geografia-28-observacao-espacial-de-planejamento-urbano` — 5º ano, 4º bimestre, Geografia: mapa ou localização
+- `efi-5ano-b4-geografia-29-representacao-geografica-de-planejamento-urbano` — 5º ano, 4º bimestre, Geografia: mapa ou localização, gráfico ou tabela, ciências visuais
+- `efi-5ano-b4-ciencias-02-investigacao-cientifica-de-cadeias-e-teias-alimentares` — 5º ano, 4º bimestre, Ciências: gráfico ou tabela, sequência visual
+- `efi-5ano-b4-ciencias-05-investigacao-cientifica-de-relacoes-ecologicas` — 5º ano, 4º bimestre, Ciências: gráfico ou tabela, sequência visual
+- `efi-5ano-b4-ciencias-08-investigacao-cientifica-de-biodiversidade` — 5º ano, 4º bimestre, Ciências: gráfico ou tabela, sequência visual
+- `efi-5ano-b4-ciencias-11-investigacao-cientifica-de-biomas-brasileiros` — 5º ano, 4º bimestre, Ciências: gráfico ou tabela, sequência visual
+- `efi-5ano-b4-ciencias-14-investigacao-cientifica-de-poluicao` — 5º ano, 4º bimestre, Ciências: gráfico ou tabela, sequência visual
+- `efi-5ano-b4-ciencias-17-investigacao-cientifica-de-mudancas-climaticas` — 5º ano, 4º bimestre, Ciências: gráfico ou tabela, sequência visual
+- `efi-5ano-b4-ciencias-20-investigacao-cientifica-de-consumo-de-energia` — 5º ano, 4º bimestre, Ciências: gráfico ou tabela, sequência visual
+- `efi-5ano-b4-ciencias-23-investigacao-cientifica-de-tecnologia-e-ciencia` — 5º ano, 4º bimestre, Ciências: gráfico ou tabela, sequência visual
+- `efi-5ano-b4-ciencias-26-investigacao-cientifica-de-saude-coletiva` — 5º ano, 4º bimestre, Ciências: gráfico ou tabela, sequência visual
+- `efi-5ano-b4-ciencias-29-investigacao-cientifica-de-preservacao-ambiental` — 5º ano, 4º bimestre, Ciências: gráfico ou tabela, sequência visual
+
+## Erros estruturais
+
+- Nenhum erro estrutural encontrado.
