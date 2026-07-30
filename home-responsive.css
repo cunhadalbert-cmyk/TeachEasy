@@ -29,6 +29,13 @@ body:not(.library-page) .slide::after {
 body:not(.library-page) .slide-overlay,
 body:not(.library-page) .slide-feature-rotator,
 body:not(.library-page) .carousel-chips { display: none !important; }
+
+/* Mantém exatamente as mensagens aprovadas do primeiro slide. */
+body:not(.library-page) .slide:first-child .slide-overlay-teacher,
+body:not(.library-page) .slide:first-child .slide-feature-rotator {
+  display: block !important;
+}
+
 body:not(.library-page) .carousel-arrow {
   top: 50%; width: clamp(44px,5vw,58px); height: clamp(44px,5vw,58px);
   display: grid; place-items: center; padding: 0 0 4px;
