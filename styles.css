@@ -2354,3 +2354,64 @@ body:not(.library-page) .footer span {
   }
 }
 /* FIM TEACHEASY HERO PROFESSORA */
+
+/* TEACHEASY CAROUSEL TEXT RESTORATION */
+.slide:first-child .slide-overlay-teacher {
+  color: #111;
+}
+
+.slide:first-child .slide-overlay-teacher .slide-kicker,
+.slide:first-child .slide-overlay-teacher h2 em,
+.slide:first-child .slide-overlay-teacher p strong {
+  color: var(--wine);
+}
+
+.slide:first-child .slide-overlay-teacher h2 {
+  color: #111;
+}
+
+.slide:first-child .slide-overlay-teacher p {
+  color: #111;
+  font-weight: 600;
+}
+
+.slide:first-child .slide-overlay-teacher .slide-support {
+  display: block;
+  margin-top: 18px;
+  color: var(--wine-dark);
+  font-size: clamp(17px, 1.35vw, 21px);
+  font-weight: 800;
+  line-height: 1.35;
+}
+
+.slide:first-child .slide-feature-rotator .feature-message small {
+  color: var(--wine-dark);
+  font-size: 12px;
+}
+
+.slide:first-child .slide-feature-rotator .feature-message strong {
+  color: #111;
+  font-size: clamp(23px, 2vw, 31px);
+}
+
+@media (max-width: 900px) {
+  .slide:first-child .slide-overlay-teacher {
+    left: 26px;
+    width: min(360px, calc(100% - 52px));
+  }
+
+  .slide:first-child .slide-feature-rotator .feature-message strong {
+    font-size: 23px;
+  }
+}
+
+@media (max-width: 560px) {
+  .slide:first-child .slide-overlay-teacher .slide-support {
+    font-size: 17px;
+  }
+
+  .slide:first-child .slide-feature-rotator .feature-message strong {
+    font-size: 19px;
+  }
+}
+/* FIM TEACHEASY CAROUSEL TEXT RESTORATION */
