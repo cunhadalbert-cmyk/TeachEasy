@@ -30,7 +30,6 @@ body:not(.library-page) .slide-overlay,
 body:not(.library-page) .slide-feature-rotator,
 body:not(.library-page) .carousel-chips { display: none !important; }
 
-/* Mantém as mensagens aprovadas do primeiro slide e exibe as frases dos demais. */
 body:not(.library-page) .slide:first-child .slide-overlay-teacher,
 body:not(.library-page) .slide:first-child .slide-feature-rotator,
 body:not(.library-page) .slide:nth-child(2) .slide-overlay-content,
@@ -39,7 +38,6 @@ body:not(.library-page) .slide:nth-child(4) .slide-overlay-time {
   display: block !important;
 }
 
-/* Garante que frases de slides inativos nunca apareçam sobre a imagem ativa. */
 body:not(.library-page) .slide:not(.active) .slide-overlay,
 body:not(.library-page) .slide:not(.active) .slide-feature-rotator {
   visibility: hidden !important;
@@ -47,7 +45,6 @@ body:not(.library-page) .slide:not(.active) .slide-feature-rotator {
   pointer-events: none !important;
 }
 
-/* Remove somente as setas; os pontos e a troca automática continuam ativos. */
 body:not(.library-page) .carousel-arrow { display: none !important; }
 
 body:not(.library-page) .carousel-dots {
@@ -76,7 +73,6 @@ body:not(.library-page) dialog {
 }
 
 @media (max-width: 980px) {
-  body:not(.library-page) .carousel { height: clamp(360px, 70vw, 560px); }
   body:not(.library-page) .cards-grid,
   body:not(.library-page) .service-grid { grid-template-columns: repeat(2, minmax(0,1fr)); }
 }
@@ -86,84 +82,145 @@ body:not(.library-page) dialog {
   body:not(.library-page) .brand { min-width: 0; }
   body:not(.library-page) .brand strong { font-size: 25px; }
   body:not(.library-page) .brand span { font-size: 12px; line-height: 1.2; }
-  body:not(.library-page) .carousel { height: min(92vw, 430px); min-height: 330px; }
-  body:not(.library-page) .slide:nth-child(1) { background-position: 74% center; }
-  body:not(.library-page) .slide:nth-child(2) { background-position: center; }
-  body:not(.library-page) .slide:nth-child(3) { background-position: 60% center; }
-  body:not(.library-page) .slide:nth-child(4) { background-position: center; }
 
-  /* No celular, mantém somente a mensagem principal do primeiro slide. */
-  body:not(.library-page) .slide:first-child .slide-feature-rotator {
-    display: none !important;
+  /* O carrossel inteiro mantém a proporção horizontal do desktop. */
+  body:not(.library-page) .carousel {
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: none !important;
+    aspect-ratio: 2 / 1;
+    overflow: hidden;
+  }
+  body:not(.library-page) .slide {
+    background-size: cover !important;
+    background-position: center center !important;
   }
 
-  /* Mantém no celular o mesmo conceito visual do desktop: texto direto sobre a foto. */
-  body:not(.library-page) .slide.active .slide-overlay {
-    width: min(48vw, 220px) !important;
-    max-width: 220px !important;
+  /* Neutraliza as regras antigas de celular e reduz o layout do desktop inteiro. */
+  body:not(.library-page) .slide.active .slide-overlay,
+  body:not(.library-page) .slide.active .slide-feature-rotator {
     margin: 0 !important;
     padding: 0 !important;
+    border: 0 !important;
     border-radius: 0 !important;
     background: transparent !important;
     box-shadow: none !important;
     backdrop-filter: none !important;
     overflow: visible !important;
-    text-align: left !important;
+    animation: none !important;
+    opacity: 1 !important;
   }
 
   body:not(.library-page) .slide:first-child .slide-overlay-teacher {
     top: 50% !important;
+    left: 6% !important;
     right: auto !important;
     bottom: auto !important;
-    left: 18px !important;
-    transform: translateY(-50%) !important;
+    width: 370px !important;
+    max-width: 370px !important;
+    transform: translateY(-50%) scale(.65) !important;
+    transform-origin: left center !important;
     color: #000 !important;
-    text-shadow: 0 1px 10px rgba(255,255,255,.92) !important;
+    text-align: left !important;
+    text-shadow: none !important;
+  }
+  body:not(.library-page) .slide:first-child .slide-overlay-teacher h2 {
+    max-width: 360px !important;
+    font-size: 50px !important;
+    line-height: 1 !important;
+  }
+  body:not(.library-page) .slide:first-child .slide-overlay-teacher p {
+    max-width: 350px !important;
+    font-size: 20px !important;
+    line-height: 1.35 !important;
+  }
+  body:not(.library-page) .slide:first-child .slide-overlay-teacher .slide-support {
+    display: block !important;
+    max-width: 350px !important;
+    font-size: 16px !important;
+    line-height: 1.35 !important;
   }
 
-  body:not(.library-page) .slide:nth-child(2) .slide-overlay-content,
-  body:not(.library-page) .slide:nth-child(3) .slide-overlay-evaluation,
-  body:not(.library-page) .slide:nth-child(4) .slide-overlay-time {
-    top: 50% !important;
+  body:not(.library-page) .slide:first-child .slide-feature-rotator {
+    top: 14% !important;
+    right: 4% !important;
+    left: auto !important;
+    bottom: auto !important;
+    width: 370px !important;
+    min-height: 370px !important;
+    transform: scale(.36) !important;
+    transform-origin: top right !important;
+  }
+
+  body:not(.library-page) .slide:nth-child(2) .slide-overlay-content {
+    top: 24% !important;
+    left: 7% !important;
     right: auto !important;
     bottom: auto !important;
-    left: 18px !important;
-    transform: translateY(-50%) !important;
-    text-shadow: 0 2px 12px rgba(0,0,0,.62) !important;
+    width: 430px !important;
+    max-width: 430px !important;
+    transform: scale(.65) !important;
+    transform-origin: left top !important;
+    text-align: left !important;
+  }
+  body:not(.library-page) .slide:nth-child(2) .slide-overlay-content h2 {
+    font-size: 56px !important;
+    line-height: .98 !important;
+  }
+  body:not(.library-page) .slide:nth-child(2) .slide-overlay-content p {
+    max-width: 390px !important;
+    font-size: 21px !important;
+    line-height: 1.35 !important;
   }
 
-  body:not(.library-page) .slide.active .slide-overlay .slide-kicker {
-    display: block;
-    margin-bottom: 5px;
-    font-size: 9px !important;
-    line-height: 1.15 !important;
-    letter-spacing: .08em;
+  body:not(.library-page) .slide:nth-child(3) .slide-overlay-evaluation {
+    top: 15% !important;
+    right: 7% !important;
+    left: auto !important;
+    bottom: auto !important;
+    width: 360px !important;
+    max-width: 360px !important;
+    transform: scale(.65) !important;
+    transform-origin: right top !important;
+    text-align: left !important;
+  }
+  body:not(.library-page) .slide:nth-child(3) .slide-overlay-evaluation h2 {
+    font-size: 50px !important;
+    line-height: .98 !important;
+  }
+  body:not(.library-page) .slide:nth-child(3) .slide-overlay-evaluation p {
+    max-width: 360px !important;
+    font-size: 20px !important;
+    line-height: 1.35 !important;
   }
 
-  body:not(.library-page) .slide.active .slide-overlay h2 {
-    margin: 0 0 6px !important;
-    max-width: 220px !important;
-    font-size: clamp(20px, 6vw, 27px) !important;
-    line-height: 1.02 !important;
+  body:not(.library-page) .slide:nth-child(4) .slide-overlay-time {
+    top: 15% !important;
+    left: 7% !important;
+    right: auto !important;
+    bottom: auto !important;
+    width: 500px !important;
+    max-width: 500px !important;
+    transform: scale(.65) !important;
+    transform-origin: left top !important;
+    text-align: left !important;
+  }
+  body:not(.library-page) .slide:nth-child(4) .slide-overlay-time span {
+    font-size: 64px !important;
+    line-height: .92 !important;
   }
 
-  body:not(.library-page) .slide.active .slide-overlay p,
-  body:not(.library-page) .slide.active .slide-overlay .slide-support,
-  body:not(.library-page) .slide.active .slide-overlay-time span {
-    margin: 0 !important;
-    max-width: 220px !important;
-    font-size: 12px !important;
-    line-height: 1.25 !important;
+  body:not(.library-page) .carousel-dots {
+    bottom: 6px;
+    padding: 4px 6px;
+    gap: 6px;
   }
-
-  body:not(.library-page) .slide:first-child .slide-overlay-teacher .slide-support {
-    display: block;
-    margin-top: 7px !important;
-    font-size: 10px !important;
-    line-height: 1.2 !important;
+  body:not(.library-page) .carousel-dots button {
+    width: 7px;
+    height: 7px;
   }
+  body:not(.library-page) .carousel-dots button.active { width: 18px; }
 
-  body:not(.library-page) .carousel-dots { bottom: 12px; }
   body:not(.library-page) .section { padding: 44px 0; }
   body:not(.library-page) .cards-grid,
   body:not(.library-page) .service-grid,
@@ -177,27 +234,17 @@ body:not(.library-page) dialog {
   body:not(.library-page) .photo-launcher-copy { min-width: 0; }
 }
 
-@media (max-width: 420px) {
-  body:not(.library-page) .carousel { height: 360px; }
-  body:not(.library-page) .slide.active .slide-overlay {
-    width: 46vw !important;
-    max-width: 180px !important;
+@media (max-width: 480px) {
+  body:not(.library-page) .slide:first-child .slide-overlay-teacher {
+    transform: translateY(-50%) scale(.50) !important;
   }
-  body:not(.library-page) .slide:first-child .slide-overlay-teacher,
+  body:not(.library-page) .slide:first-child .slide-feature-rotator {
+    transform: scale(.28) !important;
+  }
   body:not(.library-page) .slide:nth-child(2) .slide-overlay-content,
   body:not(.library-page) .slide:nth-child(3) .slide-overlay-evaluation,
   body:not(.library-page) .slide:nth-child(4) .slide-overlay-time {
-    left: 14px !important;
-  }
-  body:not(.library-page) .slide.active .slide-overlay h2 {
-    max-width: 180px !important;
-    font-size: 20px !important;
-  }
-  body:not(.library-page) .slide.active .slide-overlay p,
-  body:not(.library-page) .slide.active .slide-overlay .slide-support,
-  body:not(.library-page) .slide.active .slide-overlay-time span {
-    max-width: 180px !important;
-    font-size: 11px !important;
+    transform: scale(.50) !important;
   }
   body:not(.library-page) .container { width: min(100% - 20px,1240px); }
   body:not(.library-page) .home-library-highlight {
