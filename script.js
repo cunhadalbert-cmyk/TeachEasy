@@ -67,6 +67,12 @@
     body:not(.library-page) .carousel-chips {
       display: none !important;
     }
+
+    /* Keep the first-slide teacher copy and progressive messages visible. */
+    body:not(.library-page) .slide:first-child .slide-overlay-teacher,
+    body:not(.library-page) .slide:first-child .slide-feature-rotator {
+      display: block !important;
+    }
     body:not(.library-page) .carousel-arrow {
       top: 50%;
       width: clamp(44px,5vw,58px);
