@@ -83,7 +83,6 @@ body:not(.library-page) dialog {
   body:not(.library-page) .brand strong { font-size: 25px; }
   body:not(.library-page) .brand span { font-size: 12px; line-height: 1.2; }
 
-  /* O carrossel inteiro mantém a proporção horizontal do desktop. */
   body:not(.library-page) .carousel {
     height: auto !important;
     min-height: 0 !important;
@@ -95,8 +94,13 @@ body:not(.library-page) dialog {
     background-size: cover !important;
     background-position: center center !important;
   }
+  body:not(.library-page) .slide:first-child {
+    background-size: 100% 100%, contain !important;
+    background-position: center center, center center !important;
+    background-repeat: no-repeat, no-repeat !important;
+    background-color: #eef1ec !important;
+  }
 
-  /* Neutraliza as regras antigas de celular e reduz o layout do desktop inteiro. */
   body:not(.library-page) .slide.active .slide-overlay,
   body:not(.library-page) .slide.active .slide-feature-rotator {
     margin: 0 !important;
@@ -118,7 +122,7 @@ body:not(.library-page) dialog {
     bottom: auto !important;
     width: 370px !important;
     max-width: 370px !important;
-    transform: translateY(-50%) scale(.65) !important;
+    transform: translateY(-50%) scale(.70) !important;
     transform-origin: left center !important;
     color: #000 !important;
     text-align: left !important;
@@ -126,18 +130,18 @@ body:not(.library-page) dialog {
   }
   body:not(.library-page) .slide:first-child .slide-overlay-teacher h2 {
     max-width: 360px !important;
-    font-size: 50px !important;
+    font-size: 54px !important;
     line-height: 1 !important;
   }
   body:not(.library-page) .slide:first-child .slide-overlay-teacher p {
     max-width: 350px !important;
-    font-size: 20px !important;
+    font-size: 22px !important;
     line-height: 1.35 !important;
   }
   body:not(.library-page) .slide:first-child .slide-overlay-teacher .slide-support {
     display: block !important;
     max-width: 350px !important;
-    font-size: 16px !important;
+    font-size: 18px !important;
     line-height: 1.35 !important;
   }
 
@@ -236,7 +240,7 @@ body:not(.library-page) dialog {
 
 @media (max-width: 480px) {
   body:not(.library-page) .slide:first-child .slide-overlay-teacher {
-    transform: translateY(-50%) scale(.50) !important;
+    transform: translateY(-50%) scale(.58) !important;
   }
   body:not(.library-page) .slide:first-child .slide-feature-rotator {
     transform: scale(.28) !important;
