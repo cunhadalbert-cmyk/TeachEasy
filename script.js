@@ -77,10 +77,10 @@
       display: block !important;
     }
     body:not(.library-page) .carousel-arrow {
+      display: none !important;
       top: 50%;
       width: clamp(44px,5vw,58px);
       height: clamp(44px,5vw,58px);
-      display: grid;
       place-items: center;
       padding: 0 0 4px;
       background: rgba(255,255,255,.94);
