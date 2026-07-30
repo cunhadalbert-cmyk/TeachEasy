@@ -78,6 +78,16 @@
         box-shadow: 0 8px 24px rgba(47,71,54,.08) !important;
       }
 
+      body:not(.library-page) .home-library-highlight::after {
+        display: none !important;
+        content: none !important;
+      }
+
+      body:not(.library-page) .initial-service-card[data-service="library-demo"],
+      body:not(.library-page) .initial-service-card[data-service="ai-demo"] {
+        display: none !important;
+      }
+
       body:not(.library-page) .feature-card,
       body:not(.library-page) .service-card {
         transition: transform .22s ease, box-shadow .22s ease;
