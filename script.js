@@ -38,79 +38,84 @@
       body:not(.library-page) .slide:first-child .slide-overlay {
         display: block !important;
         position: absolute;
-        top: 50%;
-        left: clamp(56px, 7vw, 110px);
+        left: clamp(70px, 7vw, 118px);
+        top: 18%;
         z-index: 4;
-        width: min(390px, 31vw);
-        max-width: 390px !important;
-        padding: clamp(18px, 2.2vw, 28px);
-        border: 1px solid rgba(255,255,255,.24);
-        border-radius: 18px;
-        background: linear-gradient(135deg, rgba(34,49,38,.78), rgba(34,49,38,.46));
-        box-shadow: 0 14px 36px rgba(0,0,0,.18);
-        backdrop-filter: blur(5px);
-        transform: translateY(-50%);
+        width: min(430px, 31vw);
+        max-width: 430px !important;
+        padding: 0;
+        background: none !important;
+        border: 0 !important;
+        box-shadow: none !important;
+        backdrop-filter: none !important;
         color: #fff;
+        text-shadow: 0 2px 12px rgba(0,0,0,.72);
       }
 
-      body:not(.library-page) .slide:first-child .slide-overlay .slide-kicker {
+      body:not(.library-page) .slide:first-child .slide-kicker {
         display: inline-block;
         margin-bottom: 8px;
+        color: #fff;
         font-size: 12px;
         font-weight: 800;
-        letter-spacing: .13em;
+        letter-spacing: .14em;
       }
 
       body:not(.library-page) .slide:first-child .slide-overlay h2 {
         margin: 0 0 10px;
-        font-size: clamp(28px, 3vw, 42px);
+        color: #fff;
+        font-size: clamp(30px, 3.2vw, 46px);
         line-height: 1.04;
       }
 
       body:not(.library-page) .slide:first-child .slide-overlay p {
-        margin: 0 0 8px;
+        margin: 0 0 7px;
+        color: #fff;
         font-size: clamp(16px, 1.45vw, 20px);
-        line-height: 1.38;
+        line-height: 1.35;
       }
 
-      body:not(.library-page) .slide:first-child .slide-overlay .slide-support {
+      body:not(.library-page) .slide:first-child .slide-support {
         display: block;
+        max-width: 360px;
+        color: rgba(255,255,255,.94);
         font-size: 13px;
         line-height: 1.35;
-        opacity: .88;
       }
 
       body:not(.library-page) .slide:first-child .slide-feature-rotator {
         display: block !important;
         position: absolute;
-        left: clamp(56px, 7vw, 110px);
-        bottom: 26px;
+        left: clamp(70px, 7vw, 118px);
+        bottom: 42px;
         z-index: 4;
-        width: min(390px, 31vw);
-        min-height: 54px;
-        padding: 10px 15px;
-        overflow: hidden;
-        border: 1px solid rgba(255,255,255,.22);
-        border-radius: 14px;
-        background: rgba(34,49,38,.58);
-        backdrop-filter: blur(5px);
+        width: min(410px, 30vw);
+        min-height: 44px;
+        padding: 0;
+        background: none !important;
+        border: 0 !important;
+        box-shadow: none !important;
+        backdrop-filter: none !important;
         color: #fff;
+        text-shadow: 0 2px 10px rgba(0,0,0,.78);
       }
 
       body:not(.library-page) .slide:first-child .slide-feature-rotator .feature-message {
-        inset: 10px 15px !important;
+        inset: 0 !important;
       }
 
       body:not(.library-page) .slide:first-child .slide-feature-rotator small {
         display: block;
+        color: #f6d5dc;
         font-size: 10px;
-        letter-spacing: .11em;
-        opacity: .82;
+        font-weight: 800;
+        letter-spacing: .13em;
       }
 
       body:not(.library-page) .slide:first-child .slide-feature-rotator strong {
         display: block;
-        font-size: 14px;
+        color: #fff;
+        font-size: 15px;
         line-height: 1.25;
       }
 
@@ -188,14 +193,10 @@
           height: clamp(340px, 55vw, 500px) !important;
         }
 
-        body:not(.library-page) .slide:first-child .slide-overlay {
-          left: 58px;
-          width: min(350px, 43vw);
-        }
-
+        body:not(.library-page) .slide:first-child .slide-overlay,
         body:not(.library-page) .slide:first-child .slide-feature-rotator {
           left: 58px;
-          width: min(350px, 43vw);
+          width: min(350px, 42vw);
         }
       }
 
@@ -210,36 +211,28 @@
         }
 
         body:not(.library-page) .slide:first-child .slide-overlay {
-          top: auto;
-          left: 14px;
-          right: 62px;
-          bottom: 42px;
-          width: auto;
-          max-width: none !important;
-          padding: 13px 15px;
-          border-radius: 14px;
-          background: linear-gradient(135deg, rgba(34,49,38,.78), rgba(34,49,38,.52));
-          transform: none;
+          left: 18px;
+          top: 18px;
+          width: min(245px, 64vw);
+          max-width: 245px !important;
+          text-shadow: 0 2px 9px rgba(0,0,0,.82);
         }
 
-        body:not(.library-page) .slide:first-child .slide-overlay .slide-kicker,
-        body:not(.library-page) .slide:first-child .slide-overlay .slide-support {
-          display: none;
+        body:not(.library-page) .slide:first-child .slide-kicker,
+        body:not(.library-page) .slide:first-child .slide-support,
+        body:not(.library-page) .slide:first-child .slide-feature-rotator {
+          display: none !important;
         }
 
         body:not(.library-page) .slide:first-child .slide-overlay h2 {
           margin-bottom: 5px;
-          font-size: clamp(22px, 7vw, 29px);
+          font-size: clamp(23px, 7vw, 30px);
         }
 
         body:not(.library-page) .slide:first-child .slide-overlay p {
           margin: 0;
-          font-size: 14px;
-          line-height: 1.28;
-        }
-
-        body:not(.library-page) .slide:first-child .slide-feature-rotator {
-          display: none !important;
+          font-size: 13px;
+          line-height: 1.25;
         }
 
         body:not(.library-page) .section {
@@ -267,14 +260,13 @@
         }
 
         body:not(.library-page) .slide:first-child .slide-overlay {
-          left: 10px;
-          right: 52px;
-          bottom: 38px;
-          padding: 10px 12px;
+          left: 14px;
+          top: 14px;
+          width: 210px;
         }
 
         body:not(.library-page) .slide:first-child .slide-overlay h2 {
-          font-size: 21px;
+          font-size: 22px;
         }
 
         body:not(.library-page) .slide:first-child .slide-overlay p {
