@@ -1,16 +1,16 @@
 (() => {
   'use strict';
 
-  const responsiveStylesheet = document.createElement('link');
-  responsiveStylesheet.rel = 'stylesheet';
-  responsiveStylesheet.href = 'home-responsive.css';
-  responsiveStylesheet.dataset.teacheasyStyles = 'home-responsive';
-  document.head.appendChild(responsiveStylesheet);
+  if (!document.querySelector('link[data-teacheasy-styles="home-responsive"], link[href="home-responsive.css"]')) {
+    const responsiveStylesheet = document.createElement('link');
+    responsiveStylesheet.rel = 'stylesheet';
+    responsiveStylesheet.href = 'home-responsive.css';
+    responsiveStylesheet.dataset.teacheasyStyles = 'home-responsive';
+    document.head.appendChild(responsiveStylesheet);
+  }
 
   const slides = [...document.querySelectorAll('.slide')];
   const dots = [...document.querySelectorAll('.carousel-dots button')];
-  const prev = document.querySelector('.prev');
-  const next = document.querySelector('.next');
   const carousel = document.querySelector('.carousel');
   let currentSlide = 0;
   let carouselTimer;
@@ -56,14 +56,6 @@
     carousel.setAttribute('aria-roledescription', 'carrossel');
     carousel.setAttribute('aria-label', 'Destaques do TeachEasy');
 
-    prev?.addEventListener('click', event => {
-      event.stopPropagation();
-      changeSlide(-1);
-    });
-    next?.addEventListener('click', event => {
-      event.stopPropagation();
-      changeSlide(1);
-    });
     dots.forEach(dot => dot.addEventListener('click', event => {
       event.stopPropagation();
       showSlide(Number(dot.dataset.slide));
