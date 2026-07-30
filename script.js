@@ -86,7 +86,8 @@
       body:not(.library-page) .slide:first-child .slide-feature-rotator {
         display: block !important;
         position: absolute;
-        left: clamp(70px, 7vw, 118px);
+        right: clamp(70px, 7vw, 118px);
+        left: auto;
         bottom: 42px;
         z-index: 4;
         width: min(410px, 30vw);
@@ -97,6 +98,7 @@
         box-shadow: none !important;
         backdrop-filter: none !important;
         color: #fff;
+        text-align: right;
         text-shadow: 0 2px 10px rgba(0,0,0,.78);
       }
 
@@ -193,9 +195,14 @@
           height: clamp(340px, 55vw, 500px) !important;
         }
 
-        body:not(.library-page) .slide:first-child .slide-overlay,
-        body:not(.library-page) .slide:first-child .slide-feature-rotator {
+        body:not(.library-page) .slide:first-child .slide-overlay {
           left: 58px;
+          width: min(350px, 42vw);
+        }
+
+        body:not(.library-page) .slide:first-child .slide-feature-rotator {
+          right: 58px;
+          left: auto;
           width: min(350px, 42vw);
         }
       }
