@@ -87,9 +87,9 @@ body:not(.library-page) dialog {
   body:not(.library-page) .brand strong { font-size: 25px; }
   body:not(.library-page) .brand span { font-size: 12px; line-height: 1.2; }
   body:not(.library-page) .carousel { height: min(92vw, 430px); min-height: 330px; }
-  body:not(.library-page) .slide:nth-child(1) { background-position: 62% center; }
+  body:not(.library-page) .slide:nth-child(1) { background-position: 74% center; }
   body:not(.library-page) .slide:nth-child(2) { background-position: center; }
-  body:not(.library-page) .slide:nth-child(3) { background-position: 58% center; }
+  body:not(.library-page) .slide:nth-child(3) { background-position: 60% center; }
   body:not(.library-page) .slide:nth-child(4) { background-position: center; }
 
   /* No celular, mantém somente a mensagem principal do primeiro slide. */
@@ -97,53 +97,70 @@ body:not(.library-page) dialog {
     display: none !important;
   }
 
-  /* Organiza cada frase em um único bloco compacto na parte inferior. */
+  /* Mantém no celular o mesmo conceito visual do desktop: texto direto sobre a foto. */
   body:not(.library-page) .slide.active .slide-overlay {
-    top: auto !important;
-    right: 16px !important;
-    bottom: 52px !important;
-    left: 16px !important;
-    width: auto !important;
-    max-width: none !important;
+    width: min(48vw, 220px) !important;
+    max-width: 220px !important;
     margin: 0 !important;
-    padding: 14px 16px !important;
-    transform: none !important;
-    border-radius: 16px;
-    background: rgba(255,255,255,.90);
-    color: #111 !important;
+    padding: 0 !important;
+    border-radius: 0 !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    backdrop-filter: none !important;
+    overflow: visible !important;
     text-align: left !important;
-    text-shadow: none !important;
-    box-shadow: 0 8px 24px rgba(0,0,0,.18);
-    backdrop-filter: blur(8px);
-    overflow: hidden;
+  }
+
+  body:not(.library-page) .slide:first-child .slide-overlay-teacher {
+    top: 50% !important;
+    right: auto !important;
+    bottom: auto !important;
+    left: 18px !important;
+    transform: translateY(-50%) !important;
+    color: #000 !important;
+    text-shadow: 0 1px 10px rgba(255,255,255,.92) !important;
+  }
+
+  body:not(.library-page) .slide:nth-child(2) .slide-overlay-content,
+  body:not(.library-page) .slide:nth-child(3) .slide-overlay-evaluation,
+  body:not(.library-page) .slide:nth-child(4) .slide-overlay-time {
+    top: 50% !important;
+    right: auto !important;
+    bottom: auto !important;
+    left: 18px !important;
+    transform: translateY(-50%) !important;
+    text-shadow: 0 2px 12px rgba(0,0,0,.62) !important;
   }
 
   body:not(.library-page) .slide.active .slide-overlay .slide-kicker {
     display: block;
     margin-bottom: 5px;
-    font-size: 10px !important;
-    line-height: 1.2 !important;
+    font-size: 9px !important;
+    line-height: 1.15 !important;
     letter-spacing: .08em;
   }
 
   body:not(.library-page) .slide.active .slide-overlay h2 {
     margin: 0 0 6px !important;
-    max-width: none !important;
-    font-size: clamp(22px, 7vw, 30px) !important;
-    line-height: 1.05 !important;
+    max-width: 220px !important;
+    font-size: clamp(20px, 6vw, 27px) !important;
+    line-height: 1.02 !important;
   }
 
   body:not(.library-page) .slide.active .slide-overlay p,
   body:not(.library-page) .slide.active .slide-overlay .slide-support,
   body:not(.library-page) .slide.active .slide-overlay-time span {
     margin: 0 !important;
-    max-width: none !important;
-    font-size: 14px !important;
-    line-height: 1.3 !important;
+    max-width: 220px !important;
+    font-size: 12px !important;
+    line-height: 1.25 !important;
   }
 
-  body:not(.library-page) .slide.active .slide-overlay-time {
-    padding-block: 18px !important;
+  body:not(.library-page) .slide:first-child .slide-overlay-teacher .slide-support {
+    display: block;
+    margin-top: 7px !important;
+    font-size: 10px !important;
+    line-height: 1.2 !important;
   }
 
   body:not(.library-page) .carousel-dots { bottom: 12px; }
@@ -163,18 +180,24 @@ body:not(.library-page) dialog {
 @media (max-width: 420px) {
   body:not(.library-page) .carousel { height: 360px; }
   body:not(.library-page) .slide.active .slide-overlay {
-    right: 12px !important;
-    bottom: 48px !important;
-    left: 12px !important;
-    padding: 12px 14px !important;
+    width: 46vw !important;
+    max-width: 180px !important;
+  }
+  body:not(.library-page) .slide:first-child .slide-overlay-teacher,
+  body:not(.library-page) .slide:nth-child(2) .slide-overlay-content,
+  body:not(.library-page) .slide:nth-child(3) .slide-overlay-evaluation,
+  body:not(.library-page) .slide:nth-child(4) .slide-overlay-time {
+    left: 14px !important;
   }
   body:not(.library-page) .slide.active .slide-overlay h2 {
-    font-size: 22px !important;
+    max-width: 180px !important;
+    font-size: 20px !important;
   }
   body:not(.library-page) .slide.active .slide-overlay p,
   body:not(.library-page) .slide.active .slide-overlay .slide-support,
   body:not(.library-page) .slide.active .slide-overlay-time span {
-    font-size: 13px !important;
+    max-width: 180px !important;
+    font-size: 11px !important;
   }
   body:not(.library-page) .container { width: min(100% - 20px,1240px); }
   body:not(.library-page) .home-library-highlight {
