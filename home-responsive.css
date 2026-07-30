@@ -89,12 +89,11 @@ body:not(.library-page) dialog {
     max-height: none !important;
     aspect-ratio: 2 / 1;
     overflow: hidden;
+    background: #eef1ec;
   }
+
+  /* Cada slide tem duas camadas: gradiente e foto. O gradiente ocupa tudo e a foto aparece inteira. */
   body:not(.library-page) .slide {
-    background-size: cover !important;
-    background-position: center center !important;
-  }
-  body:not(.library-page) .slide:first-child {
     background-size: 100% 100%, contain !important;
     background-position: center center, center center !important;
     background-repeat: no-repeat, no-repeat !important;
@@ -117,34 +116,38 @@ body:not(.library-page) dialog {
 
   body:not(.library-page) .slide:first-child .slide-overlay-teacher {
     top: 50% !important;
-    left: 6% !important;
+    left: 5% !important;
     right: auto !important;
     bottom: auto !important;
-    width: 370px !important;
-    max-width: 370px !important;
-    transform: translateY(-50%) scale(.70) !important;
+    width: min(46vw, 220px) !important;
+    max-width: 220px !important;
+    transform: translateY(-50%) !important;
     transform-origin: left center !important;
     color: #000 !important;
     text-align: left !important;
     text-shadow: none !important;
   }
   body:not(.library-page) .slide:first-child .slide-overlay-teacher h2 {
-    max-width: 360px !important;
-    font-size: 54px !important;
+    max-width: 220px !important;
+    margin: 0 0 6px !important;
+    font-size: clamp(20px, 6vw, 30px) !important;
     line-height: 1 !important;
   }
   body:not(.library-page) .slide:first-child .slide-overlay-teacher p {
-    max-width: 350px !important;
-    font-size: 22px !important;
-    line-height: 1.35 !important;
+    max-width: 210px !important;
+    margin: 0 0 5px !important;
+    font-size: clamp(12px, 3.4vw, 17px) !important;
+    line-height: 1.25 !important;
   }
   body:not(.library-page) .slide:first-child .slide-overlay-teacher .slide-support {
     display: block !important;
-    max-width: 350px !important;
-    font-size: 18px !important;
-    line-height: 1.35 !important;
+    max-width: 210px !important;
+    margin-top: 4px !important;
+    font-size: clamp(10px, 2.8vw, 14px) !important;
+    line-height: 1.2 !important;
   }
 
+  /* Mantém a frase ao lado da caneta no tamanho já aprovado. */
   body:not(.library-page) .slide:first-child .slide-feature-rotator {
     top: 14% !important;
     right: 4% !important;
@@ -161,20 +164,19 @@ body:not(.library-page) dialog {
     left: 7% !important;
     right: auto !important;
     bottom: auto !important;
-    width: 430px !important;
-    max-width: 430px !important;
-    transform: scale(.65) !important;
-    transform-origin: left top !important;
+    width: min(48vw, 230px) !important;
+    max-width: 230px !important;
+    transform: none !important;
     text-align: left !important;
   }
   body:not(.library-page) .slide:nth-child(2) .slide-overlay-content h2 {
-    font-size: 56px !important;
+    font-size: clamp(21px, 6vw, 31px) !important;
     line-height: .98 !important;
   }
   body:not(.library-page) .slide:nth-child(2) .slide-overlay-content p {
-    max-width: 390px !important;
-    font-size: 21px !important;
-    line-height: 1.35 !important;
+    max-width: 220px !important;
+    font-size: clamp(12px, 3.4vw, 17px) !important;
+    line-height: 1.25 !important;
   }
 
   body:not(.library-page) .slide:nth-child(3) .slide-overlay-evaluation {
@@ -182,20 +184,19 @@ body:not(.library-page) dialog {
     right: 7% !important;
     left: auto !important;
     bottom: auto !important;
-    width: 360px !important;
-    max-width: 360px !important;
-    transform: scale(.65) !important;
-    transform-origin: right top !important;
+    width: min(46vw, 220px) !important;
+    max-width: 220px !important;
+    transform: none !important;
     text-align: left !important;
   }
   body:not(.library-page) .slide:nth-child(3) .slide-overlay-evaluation h2 {
-    font-size: 50px !important;
+    font-size: clamp(20px, 5.8vw, 30px) !important;
     line-height: .98 !important;
   }
   body:not(.library-page) .slide:nth-child(3) .slide-overlay-evaluation p {
-    max-width: 360px !important;
-    font-size: 20px !important;
-    line-height: 1.35 !important;
+    max-width: 210px !important;
+    font-size: clamp(12px, 3.2vw, 16px) !important;
+    line-height: 1.25 !important;
   }
 
   body:not(.library-page) .slide:nth-child(4) .slide-overlay-time {
@@ -203,14 +204,13 @@ body:not(.library-page) dialog {
     left: 7% !important;
     right: auto !important;
     bottom: auto !important;
-    width: 500px !important;
-    max-width: 500px !important;
-    transform: scale(.65) !important;
-    transform-origin: left top !important;
+    width: min(52vw, 250px) !important;
+    max-width: 250px !important;
+    transform: none !important;
     text-align: left !important;
   }
   body:not(.library-page) .slide:nth-child(4) .slide-overlay-time span {
-    font-size: 64px !important;
+    font-size: clamp(24px, 7vw, 36px) !important;
     line-height: .92 !important;
   }
 
@@ -238,17 +238,13 @@ body:not(.library-page) dialog {
   body:not(.library-page) .photo-launcher-copy { min-width: 0; }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 420px) {
   body:not(.library-page) .slide:first-child .slide-overlay-teacher {
-    transform: translateY(-50%) scale(.58) !important;
+    left: 4% !important;
+    width: 47vw !important;
   }
   body:not(.library-page) .slide:first-child .slide-feature-rotator {
     transform: scale(.28) !important;
-  }
-  body:not(.library-page) .slide:nth-child(2) .slide-overlay-content,
-  body:not(.library-page) .slide:nth-child(3) .slide-overlay-evaluation,
-  body:not(.library-page) .slide:nth-child(4) .slide-overlay-time {
-    transform: scale(.50) !important;
   }
   body:not(.library-page) .container { width: min(100% - 20px,1240px); }
   body:not(.library-page) .home-library-highlight {
