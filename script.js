@@ -33,10 +33,7 @@
     });
   }
 
-  function stopCarousel() {
-    window.clearTimeout(carouselTimer);
-  }
-
+  function stopCarousel() { window.clearTimeout(carouselTimer); }
   function restartCarousel() {
     stopCarousel();
     if (!slides.length || reduceMotion || document.hidden) return;
@@ -45,87 +42,51 @@
       restartCarousel();
     }, currentSlide === 0 ? 10000 : 6000);
   }
-
-  function changeSlide(direction) {
-    showSlide(currentSlide + direction);
-    restartCarousel();
-  }
+  function changeSlide(direction) { showSlide(currentSlide + direction); restartCarousel(); }
 
   if (carousel && slides.length) {
     carousel.setAttribute('role', 'region');
     carousel.setAttribute('aria-roledescription', 'carrossel');
     carousel.setAttribute('aria-label', 'Destaques do TeachEasy');
-
     dots.forEach(dot => dot.addEventListener('click', event => {
       event.stopPropagation();
       showSlide(Number(dot.dataset.slide));
       restartCarousel();
     }));
-
     carousel.addEventListener('keydown', event => {
-      if (event.key === 'ArrowLeft') {
-        event.preventDefault();
-        changeSlide(-1);
-      }
-      if (event.key === 'ArrowRight') {
-        event.preventDefault();
-        changeSlide(1);
-      }
+      if (event.key === 'ArrowLeft') { event.preventDefault(); changeSlide(-1); }
+      if (event.key === 'ArrowRight') { event.preventDefault(); changeSlide(1); }
     });
     carousel.setAttribute('tabindex', '0');
-
     carousel.addEventListener('touchstart', event => {
       const touch = event.changedTouches[0];
       touchStartX = touch.clientX;
       touchStartY = touch.clientY;
       stopCarousel();
     }, { passive: true });
-
     carousel.addEventListener('touchend', event => {
       const touch = event.changedTouches[0];
       const deltaX = touch.clientX - touchStartX;
       const deltaY = touch.clientY - touchStartY;
-      if (Math.abs(deltaX) > 48 && Math.abs(deltaX) > Math.abs(deltaY)) {
-        changeSlide(deltaX > 0 ? -1 : 1);
-      } else {
-        restartCarousel();
-      }
+      if (Math.abs(deltaX) > 48 && Math.abs(deltaX) > Math.abs(deltaY)) changeSlide(deltaX > 0 ? -1 : 1);
+      else restartCarousel();
     }, { passive: true });
-
     carousel.addEventListener('mouseenter', stopCarousel);
     carousel.addEventListener('mouseleave', restartCarousel);
     carousel.addEventListener('focusin', stopCarousel);
     carousel.addEventListener('focusout', restartCarousel);
     document.addEventListener('visibilitychange', restartCarousel);
-
     showSlide(0);
     restartCarousel();
   }
 
   const demoDetails = {
-    'coloring-demo': ['🎨', 'Desenhos para colorir', 'Escolha uma categoria ou veja todos os desenhos disponíveis.'],
+    'coloring-demo': ['🎨', 'Desenhos para colorir', 'Abra a biblioteca completa de desenhos.'],
     'games-demo': ['🎲', 'Jogos pedagógicos', 'Veja materiais lúdicos que podem ser impressos e usados com a turma.']
   };
   const demoCards = [...document.querySelectorAll('.initial-service-card[data-service]')];
   const demoDialog = document.querySelector('#service-dialog');
   const demoContainer = demoDialog?.querySelector('.service-dialog-columns');
-
-  function coloringDemo() {
-    if (!demoContainer) return;
-    const categories = ['Todos', 'Natureza', 'Matemática', 'Números', 'Datas comemorativas', 'Veículos'];
-    demoContainer.innerHTML = `<div class="demo-showcase"><div class="demo-category-grid">${categories.map(category => `<button class="demo-category" type="button">${category}</button>`).join('')}</div><button class="demo-surprise" type="button">✨ Surpreenda-me</button><p class="demo-surprise-result" aria-live="polite"></p></div>`;
-    const buttons = [...demoContainer.querySelectorAll('.demo-category')];
-    const select = button => {
-      buttons.forEach(item => item.classList.toggle('active', item === button));
-      const result = demoContainer.querySelector('.demo-surprise-result');
-      if (result) result.textContent = button.textContent === 'Todos' ? 'Mostrando todos os desenhos.' : `Categoria escolhida: ${button.textContent}`;
-    };
-    buttons.forEach(button => button.addEventListener('click', () => select(button)));
-    demoContainer.querySelector('.demo-surprise')?.addEventListener('click', () => {
-      if (!buttons.length) return;
-      select(buttons[Math.floor(Math.random() * buttons.length)]);
-    });
-  }
 
   function gamesDemo() {
     if (!demoContainer) return;
@@ -134,6 +95,10 @@
   }
 
   function openDemo(key) {
+    if (key === 'coloring-demo') {
+      window.location.href = 'desenhos.html';
+      return;
+    }
     if (!demoDialog || !demoContainer || !demoDetails[key]) return;
     const [icon, title, description] = demoDetails[key];
     const iconNode = demoDialog.querySelector('.service-dialog-icon');
@@ -142,8 +107,7 @@
     if (iconNode) iconNode.textContent = icon;
     if (titleNode) titleNode.textContent = title;
     if (descriptionNode) descriptionNode.textContent = description;
-    if (key === 'coloring-demo') coloringDemo();
-    else gamesDemo();
+    gamesDemo();
     demoDialog.showModal();
   }
 
@@ -157,7 +121,5 @@
   });
 
   demoDialog?.querySelector('.service-dialog-close')?.addEventListener('click', () => demoDialog.close());
-  demoDialog?.addEventListener('click', event => {
-    if (event.target === demoDialog) demoDialog.close();
-  });
+  demoDialog?.addEventListener('click', event => { if (event.target === demoDialog) demoDialog.close(); });
 })();
