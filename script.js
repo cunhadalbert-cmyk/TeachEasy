@@ -68,9 +68,12 @@
       display: none !important;
     }
 
-    /* Keep the first-slide teacher copy and progressive messages visible. */
+    /* Keep every intended carousel message visible while old controls stay hidden. */
     body:not(.library-page) .slide:first-child .slide-overlay-teacher,
-    body:not(.library-page) .slide:first-child .slide-feature-rotator {
+    body:not(.library-page) .slide:first-child .slide-feature-rotator,
+    body:not(.library-page) .slide:nth-child(2) .slide-overlay-content,
+    body:not(.library-page) .slide:nth-child(3) .slide-overlay-evaluation,
+    body:not(.library-page) .slide:nth-child(4) .slide-overlay-time {
       display: block !important;
     }
     body:not(.library-page) .carousel-arrow {
