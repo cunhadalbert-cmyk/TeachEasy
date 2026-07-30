@@ -2378,7 +2378,7 @@ body:not(.library-page) .footer span {
 .slide:first-child .slide-overlay-teacher .slide-support {
   display: block;
   margin-top: 18px;
-  color: var(--wine-dark);
+  color: #111;
   font-size: clamp(17px, 1.35vw, 21px);
   font-weight: 800;
   line-height: 1.35;
