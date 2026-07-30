@@ -103,7 +103,7 @@
   }
 
   const demoDetails = {
-    'coloring-demo': ['🎨', 'Desenhos para colorir', 'Escolha uma categoria ou deixe o TeachEasy sugerir um tema.'],
+    'coloring-demo': ['🎨', 'Desenhos para colorir', 'Escolha uma categoria ou veja todos os desenhos disponíveis.'],
     'games-demo': ['🎲', 'Jogos pedagógicos', 'Veja materiais lúdicos que podem ser impressos e usados com a turma.']
   };
   const demoCards = [...document.querySelectorAll('.initial-service-card[data-service]')];
@@ -112,13 +112,13 @@
 
   function coloringDemo() {
     if (!demoContainer) return;
-    const categories = ['Animais', 'Alfabeto', 'Números', 'Natureza', 'Profissões', 'Datas comemorativas'];
+    const categories = ['Todos', 'Natureza', 'Matemática', 'Números', 'Datas comemorativas', 'Veículos'];
     demoContainer.innerHTML = `<div class="demo-showcase"><div class="demo-category-grid">${categories.map(category => `<button class="demo-category" type="button">${category}</button>`).join('')}</div><button class="demo-surprise" type="button">✨ Surpreenda-me</button><p class="demo-surprise-result" aria-live="polite"></p></div>`;
     const buttons = [...demoContainer.querySelectorAll('.demo-category')];
     const select = button => {
       buttons.forEach(item => item.classList.toggle('active', item === button));
       const result = demoContainer.querySelector('.demo-surprise-result');
-      if (result) result.textContent = `Categoria escolhida: ${button.textContent}`;
+      if (result) result.textContent = button.textContent === 'Todos' ? 'Mostrando todos os desenhos.' : `Categoria escolhida: ${button.textContent}`;
     };
     buttons.forEach(button => button.addEventListener('click', () => select(button)));
     demoContainer.querySelector('.demo-surprise')?.addEventListener('click', () => {
