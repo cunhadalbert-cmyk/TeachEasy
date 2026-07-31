@@ -1,14 +1,6 @@
 (() => {
   'use strict';
 
-  if (!document.querySelector('link[data-teacheasy-styles="home-responsive"], link[href="home-responsive.css"]')) {
-    const responsiveStylesheet = document.createElement('link');
-    responsiveStylesheet.rel = 'stylesheet';
-    responsiveStylesheet.href = 'home-responsive.css';
-    responsiveStylesheet.dataset.teacheasyStyles = 'home-responsive';
-    document.head.appendChild(responsiveStylesheet);
-  }
-
   const modalStyle = document.createElement('style');
   modalStyle.textContent = `.coloring-library-demo{width:min(1080px,100%)}.coloring-demo-toolbar{display:flex;align-items:center;justify-content:space-between;gap:16px;margin:18px 0}.coloring-demo-toolbar .demo-surprise-result{margin:0;font-weight:800}.coloring-demo-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;max-height:58vh;overflow-y:auto;padding:4px}.coloring-demo-card{overflow:hidden;border:1px solid rgba(74,7,21,.14);border-radius:18px;background:#fff;box-shadow:0 8px 22px rgba(74,7,21,.08)}.coloring-preview-button{display:grid;width:100%;padding:0;border:0;background:#fff;color:#35121c;cursor:pointer;text-align:left}.coloring-preview-button img{width:100%;aspect-ratio:4/3;padding:12px;object-fit:contain;background:#fff;box-sizing:border-box}.coloring-preview-button strong,.coloring-preview-button span{padding-inline:14px}.coloring-preview-button strong{padding-top:12px;font-size:1rem}.coloring-preview-button span{padding-top:4px;padding-bottom:12px;color:#76525d;font-size:.9rem}.coloring-card-actions{display:grid;grid-template-columns:1fr 1fr;gap:8px;padding:0 12px 12px}.coloring-card-actions button,.coloring-card-actions a,.coloring-pagination button{display:inline-flex;align-items:center;justify-content:center;min-height:40px;padding:6px 10px;border:0;border-radius:10px;background:#6d1027;color:#fff;font:inherit;font-weight:800;text-decoration:none;cursor:pointer}.coloring-pagination{display:flex;align-items:center;justify-content:center;gap:12px;margin-top:18px}.coloring-pagination span{min-width:110px;text-align:center;font-weight:800}.coloring-pagination button:disabled{opacity:.4;cursor:not-allowed}.coloring-loading,.coloring-error{grid-column:1/-1;padding:32px 18px;text-align:center;font-weight:800}.coloring-error{color:#8b1d35}@media(max-width:820px){.coloring-demo-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:560px){.coloring-demo-toolbar{align-items:stretch;flex-direction:column}.coloring-demo-grid{grid-template-columns:1fr}.coloring-card-actions{grid-template-columns:1fr}}`;
   document.head.appendChild(modalStyle);
@@ -16,6 +8,8 @@
   const slides = [...document.querySelectorAll('.slide')];
   const dots = [...document.querySelectorAll('.carousel-dots button')];
   const carousel = document.querySelector('.carousel');
+  const prevArrow = document.querySelector('.carousel-arrow.prev');
+  const nextArrow = document.querySelector('.carousel-arrow.next');
   let currentSlide = 0;
   let carouselTimer;
   let touchStartX = 0;
@@ -57,6 +51,13 @@
       showSlide(Number(dot.dataset.slide));
       restartCarousel();
     }));
+    [[prevArrow, -1], [nextArrow, 1]].forEach(([arrow, direction]) => {
+      if (!arrow) return;
+      arrow.addEventListener('click', event => {
+        event.stopPropagation();
+        changeSlide(direction);
+      });
+    });
     carousel.addEventListener('keydown', event => {
       if (event.key === 'ArrowLeft') { event.preventDefault(); changeSlide(-1); }
       if (event.key === 'ArrowRight') { event.preventDefault(); changeSlide(1); }

@@ -39,25 +39,12 @@ button{font:inherit}
 }
 
 .site-header{
-  position:sticky;top:0;background:rgba(255,255,255,.96);
   backdrop-filter:blur(10px);z-index:50;border-bottom:1px solid var(--border);
 }
-.header-inner{min-height:92px}
-.brand{display:flex;align-items:center;gap:12px}
-.brand-mark{font-size:42px}
 .brand strong{
   display:block;font-family:"Libre Franklin",sans-serif;
-  color:var(--green-700);font-size:31px;line-height:1.1;
 }
 .brand span{display:block;color:var(--muted);font-size:15px}
-.main-nav{display:flex;gap:28px;font-size:17px;font-weight:600}
-.main-nav a{
-  padding:12px 4px;border-bottom:3px solid transparent;transition:.25s ease;
-}
-.main-nav a:hover,.main-nav a:focus{
-  border-color:var(--wine);
-  color:var(--wine);
-}
 
 .home-library-highlight {
   position: relative;
@@ -72,13 +59,8 @@ button{font:inherit}
   overflow: hidden;
   border: 2px solid rgba(255, 255, 255, .72);
   border-radius: 44px;
-  background: linear-gradient(90deg, #570b20 0%, #820f2d 52%, #a32345 100%);
   color: #fff;
   text-align: left;
-  box-shadow:
-    0 22px 36px rgba(68, 6, 24, .30),
-    0 8px 16px rgba(48, 5, 18, .22),
-    0 0 28px rgba(185, 45, 82, .20);
   transition: transform .2s ease, box-shadow .2s ease;
 }
 
@@ -141,26 +123,15 @@ button{font:inherit}
   font-family: "Libre Franklin", sans-serif;
   font-size: clamp(30px, 4vw, 46px);
   line-height: 1.1;
-  color: #fff;
   text-shadow: 0 3px 10px rgba(33, 2, 11, .28);
 }
 
 .home-library-copy > span {
-  color: #fff5f1;
   font-size: clamp(17px, 2vw, 21px);
   line-height: 1.4;
   text-shadow: 0 2px 7px rgba(33, 2, 11, .24);
 }
 
-.security-badge{display:flex;align-items:center;gap:8px;color:var(--green-700)}
-.security-badge span{font-size:30px}
-.security-badge small{font-size:14px;line-height:1.25}
-.menu-toggle{display:none;background:none;border:0;font-size:30px;color:var(--wine)}
-
-.hero{
-  background:linear-gradient(135deg,#fffaf1 0%,#f7f0e5 62%,#eef3ec 100%);
-  padding:46px 0 38px;
-}
 .hero-grid{display:grid;grid-template-columns:1fr 1.12fr;gap:46px;align-items:center}
 .eyebrow,.section-heading span{
   display:inline-block;color:var(--wine);font-size:14px;font-weight:800;letter-spacing:.14em;
@@ -181,7 +152,6 @@ button{font:inherit}
 }
 .btn:hover,.btn:focus{transform:translateY(-3px);box-shadow:0 12px 26px rgba(52,75,58,.18)}
 .btn-primary{background:var(--green-700);color:#fff}
-.btn-secondary{background:var(--wine);color:#fff}
 .btn-outline{
   background:rgba(255,255,255,.7);
   border:2px solid #d8c0c6;
@@ -191,66 +161,29 @@ button{font:inherit}
   background:var(--wine-soft);
   border-color:var(--wine);
 }
-.btn-small{padding:9px 16px}
 .btn-large{min-height:56px;font-size:19px}
 .trust-row{display:flex;gap:20px;flex-wrap:wrap;margin-top:28px;color:var(--muted);font-size:15px}
 
 .carousel{
   position:relative;min-height:480px;border-radius:26px;overflow:hidden;
-  box-shadow:var(--shadow);background:#50644f;
 }
 .slides,.slide{position:absolute;inset:0}
-.slide{
-  opacity:0;transform:scale(1.02);transition:opacity .55s ease,transform .55s ease;
-  background-size:cover;background-position:center;
-}
-.slide:nth-child(1){background-image:linear-gradient(90deg,rgba(45,62,48,.88),rgba(45,62,48,.18)),url('https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=1200&q=80')}
-.slide:nth-child(2){background-image:linear-gradient(90deg,rgba(45,62,48,.88),rgba(45,62,48,.18)),url('https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=1200&q=80')}
-.slide:nth-child(3){background-image:linear-gradient(90deg,rgba(45,62,48,.88),rgba(45,62,48,.18)),url('https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1200&q=80')}
-.slide:nth-child(4){background-image:linear-gradient(90deg,rgba(45,62,48,.88),rgba(45,62,48,.18)),url('https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=1200&q=80')}
-.slide.active{opacity:1;transform:scale(1)}
-.slide-overlay{max-width:58%;padding:38px;color:#fff}
-.slide-badge{
-  display:inline-block;background:rgba(122,46,58,.94);padding:7px 12px;border-radius:999px;
-  font-size:13px;font-weight:800;
-}
-.slide h2{font-size:40px;line-height:1.08;margin:18px 0 14px}
-.slide p{font-size:19px;line-height:1.55}
 .carousel-arrow{
   position:absolute;top:48%;transform:translateY(-50%);z-index:5;width:48px;height:48px;
   border-radius:50%;border:0;background:#fff;color:var(--wine);font-size:36px;cursor:pointer;box-shadow:var(--shadow)
 }
 .carousel-arrow:hover{transform:translateY(-50%) scale(1.08);background:var(--wine-soft)}
 .prev{left:12px}.next{right:12px}
-.carousel-chips{
-  position:absolute;left:20px;right:20px;bottom:20px;z-index:5;display:grid;grid-template-columns:repeat(3,1fr);gap:10px;
-}
-.carousel-chips button{
-  border:1px solid rgba(255,255,255,.65);border-radius:14px;background:rgba(255,255,255,.92);
-  padding:14px 12px;font-weight:700;color:var(--green-900);cursor:pointer;transition:.25s ease;
-}
-.carousel-chips button:hover{
-  transform:translateY(-4px);
-  box-shadow:0 14px 24px rgba(0,0,0,.14);
-  border-color:var(--wine);
-  color:var(--wine);
-}
 .carousel-dots{position:absolute;left:50%;bottom:-30px;transform:translateX(-50%);display:flex;gap:10px}
 .carousel-dots button{width:12px;height:12px;border-radius:50%;border:0;background:#c7c6b8;cursor:pointer}
-.carousel-dots button.active{background:var(--wine)}
 
 .section{padding:60px 0}
 .cards-grid,.service-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
 .feature-card,.service-card{
   border:1px solid var(--border);border-radius:var(--radius);padding:28px;background:#fff;transition:.25s ease;
-  min-height:280px;
-}
-.feature-card:hover,.service-card:hover{
-  transform:translateY(-8px);box-shadow:var(--shadow);border-color:#d0a2ad;
 }
 .icon{
   width:62px;height:62px;border-radius:50%;display:grid;place-items:center;background:var(--green-100);
-  font-size:30px;margin-bottom:20px;border:1px solid #dde6dc;
 }
 .feature-card:hover .icon,
 .service-card:hover .icon{
@@ -258,7 +191,6 @@ button{font:inherit}
   border-color:#e2bcc4;
 }
 .feature-card h3,.service-card h3{font-size:25px;margin:0 0 10px}
-.feature-card p,.service-card p{font-size:17px;color:var(--muted)}
 .feature-card a,.service-card a{color:var(--wine);font-weight:800}
 
 .section-soft{background:linear-gradient(90deg,#f6f1e9,#fff)}
@@ -316,25 +248,15 @@ button{font:inherit}
 
 @media (max-width: 980px){
   body{font-size:17px}
-  .main-nav,.security-badge{display:none}
-  .menu-toggle{display:block}
-  .main-nav.open{
-    display:flex;position:absolute;top:92px;left:20px;right:20px;flex-direction:column;
-    background:#fff;padding:20px;border-radius:16px;box-shadow:var(--shadow)
-  }
   .hero-grid,.split{grid-template-columns:1fr}
-  .carousel{min-height:500px}
-  .cards-grid,.service-grid{grid-template-columns:repeat(2,1fr)}
   .stats-grid{grid-template-columns:repeat(2,1fr)}
 }
 
 @media (max-width: 680px){
   .container{width:min(100% - 24px,1240px)}
   .home-library-highlight{
-    grid-template-columns: 78px 1fr;
     width:100%;
     min-height:148px;
-    padding:18px 16px;
     gap:14px;
     border-radius:28px;
   }
@@ -345,74 +267,18 @@ button{font:inherit}
   .home-library-copy > span{font-size:15px;line-height:1.35}
   .teacheasy-workflow{padding:10px;border-radius:22px}
   .teacheasy-workflow img{border-radius:15px}
-  .header-inner{min-height:78px}
-  .brand strong{font-size:26px}
-  .brand span{font-size:13px}
   .hero{padding-top:34px}
   .hero h1{font-size:43px}
   .hero-text,.hero-highlight{font-size:20px}
-  .slide-overlay{max-width:84%;padding:28px}
-  .slide h2{font-size:34px}
-  .carousel-chips{grid-template-columns:1fr}
-  .carousel-chips button:nth-child(n+2){display:none}
-  .cards-grid,.service-grid,.stats-grid{grid-template-columns:1fr}
-  .feature-card,.service-card{min-height:auto}
   .section{padding:42px 0}
   #sobre.section{padding-bottom:34px}
   .split-copy h2,.section-heading h2{font-size:36px}
 }
 
 /* Full-width image-only hero carousel */
-.hero {
-  padding: 0;
-}
-
-.hero .container {
-  width: 100%;
-  max-width: none;
-}
-
-.hero-grid {
-  display: block;
-}
-
-.hero-copy,
-.slide-overlay,
-.carousel-chips {
-  display: none;
-}
-
-.carousel {
-  width: 100%;
-  min-height: clamp(420px, 65vw, 760px);
-  border-radius: 0;
-  box-shadow: none;
-}
-
-.carousel-dots {
-  bottom: 24px;
-  z-index: 6;
-}
 
 .carousel-dots button {
-  background: rgba(255, 255, 255, .65);
   box-shadow: 0 1px 5px rgba(0, 0, 0, .28);
-}
-
-.carousel-dots button.active {
-  background: var(--white);
-}
-
-@media (max-width: 980px) {
-  .carousel {
-    min-height: clamp(400px, 75vw, 620px);
-  }
-}
-
-@media (max-width: 680px) {
-  .carousel {
-    min-height: 72vh;
-  }
 }
 
 /* Hero image generated for TeachEasy */
@@ -433,93 +299,17 @@ button{font:inherit}
   background-image: url('assets/professora-asiatica-alunos-4k.png');
 }
 
-.brand strong {
-  color: var(--wine);
-}
-
-/* Gentle motion for every carousel image */
-.slide {
-  background-size: 108% auto;
-  background-position: 46% center;
-}
-
-.slide.active {
-  animation: carousel-image-pan 8s ease-in-out infinite alternate;
-}
-
-@keyframes carousel-image-pan {
-  from {
-    background-position: 46% center;
-  }
-  to {
-    background-position: 54% center;
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .slide.active {
-    animation: none;
-    background-position: center;
-  }
-}
-
 /* Keep animated images covering every viewport */
-.slide {
-  background-size: cover;
-}
-
-/* Visible Ken Burns motion for every active slide */
-.slide {
-  transform-origin: center;
-  will-change: transform;
-}
-
-.slide.active {
-  animation: carousel-visible-pan 5.5s ease-in-out infinite alternate;
-}
-
-@keyframes carousel-visible-pan {
-  from {
-    transform: scale(1.07) translate3d(-1.5%, 0, 0);
-  }
-  to {
-    transform: scale(1.11) translate3d(1.5%, 0, 0);
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .slide.active {
-    animation: none;
-    transform: scale(1);
-  }
-}
 
 /* Smooth crossfade between carousel slides */
-.slide {
-  transition: opacity 1.4s cubic-bezier(.4, 0, .2, 1);
-}
-
-.slide.active {
-  z-index: 1;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .slide {
-    transition-duration: .2s;
-  }
-}
 
 /* Minimal centered TeachEasy brand header */
 .site-header {
   position: relative;
   top: auto;
-  background: linear-gradient(180deg, #fffdf9 0%, #ffffff 100%);
-  border-bottom: 1px solid rgba(122, 46, 58, .12);
-  box-shadow: 0 8px 28px rgba(47, 71, 54, .06);
 }
 
 .header-inner {
-  min-height: 118px;
   justify-content: center;
   text-align: center;
 }
@@ -560,9 +350,6 @@ button{font:inherit}
 }
 
 @media (max-width: 680px) {
-  .header-inner {
-    min-height: 102px;
-  }
 
   .brand {
     padding: 17px 20px 15px;
@@ -581,10 +368,6 @@ button{font:inherit}
 .site-header {
   z-index: 12;
   border-bottom: 0;
-  box-shadow:
-    0 5px 10px rgba(33, 47, 37, .13),
-    0 14px 28px rgba(33, 47, 37, .16),
-    0 28px 52px rgba(33, 47, 37, .10);
 }
 
 .site-header::after {
@@ -592,10 +375,7 @@ button{font:inherit}
   position: absolute;
   left: 0;
   right: 0;
-  bottom: -26px;
-  height: 26px;
   pointer-events: none;
-  background: linear-gradient(180deg, rgba(38, 52, 42, .14), rgba(38, 52, 42, 0));
 }
 
 .hero {
@@ -604,13 +384,6 @@ button{font:inherit}
 }
 
 /* Depth only on the TeachEasy name */
-.site-header {
-  box-shadow: none;
-}
-
-.site-header::after {
-  display: none;
-}
 
 .brand strong {
   text-shadow:
@@ -620,12 +393,6 @@ button{font:inherit}
 }
 
 /* Keep depth on both the white bar and TeachEasy name */
-.site-header {
-  box-shadow:
-    0 5px 10px rgba(33, 47, 37, .13),
-    0 14px 28px rgba(33, 47, 37, .16),
-    0 28px 52px rgba(33, 47, 37, .10);
-}
 
 .site-header::after {
   display: block;
@@ -633,28 +400,14 @@ button{font:inherit}
 
 /* Focused teacher message on the first carousel slide */
 .slide:first-child .slide-overlay-teacher {
-  display: block;
   position: absolute;
-  top: 50%;
-  right: clamp(88px, 8vw, 132px);
-  left: auto;
   z-index: 3;
-  width: min(410px, 34vw);
   max-width: none;
-  padding: 30px 32px 32px;
-  color: var(--green-900);
-  transform: translateY(-50%);
-  border: 1px solid rgba(255, 255, 255, .62);
-  border-radius: 22px;
-  background: linear-gradient(135deg, rgba(255, 253, 248, .90), rgba(255, 255, 255, .70));
-  box-shadow: 0 22px 54px rgba(36, 51, 41, .18);
-  backdrop-filter: blur(10px);
 }
 
 .slide-kicker {
   display: block;
   margin-bottom: 12px;
-  color: var(--wine);
   font-size: 12px;
   font-weight: 800;
   letter-spacing: .18em;
@@ -662,7 +415,6 @@ button{font:inherit}
 
 .slide:first-child .slide-overlay-teacher h2 {
   margin: 0 0 18px;
-  color: var(--green-900);
   font-family: "Libre Franklin", sans-serif;
   font-size: clamp(35px, 3.3vw, 54px);
   font-weight: 700;
@@ -671,24 +423,15 @@ button{font:inherit}
 }
 
 .slide:first-child .slide-overlay-teacher h2 em {
-  color: var(--wine);
   font-family: Georgia, "Times New Roman", serif;
-  font-weight: 600;
 }
 
-.sli…2801 tokens truncated…play: block;
+.slide:nth-child(4) .slide-overlay-time {
   position: absolute;
-  right: clamp(72px, 8vw, 132px);
-  bottom: 96px;
-  left: auto;
   z-index: 4;
   max-width: none;
   padding: 0;
-  opacity: 0;
-  color: #fff;
   transform: translateX(140px);
-  text-align: right;
-  text-shadow: 0 4px 18px rgba(0, 0, 0, .78);
 }
 
 .slide:nth-child(4).active .slide-overlay-time {
@@ -697,9 +440,7 @@ button{font:inherit}
 
 .slide:nth-child(4) .slide-overlay-time span {
   display: block;
-  color: #fff;
   font-family: "Libre Franklin", sans-serif;
-  font-size: clamp(46px, 6.2vw, 92px);
   font-weight: 700;
   line-height: .92;
   letter-spacing: -.055em;
@@ -710,46 +451,10 @@ button{font:inherit}
   display: block;
   width: 74px;
   height: 4px;
-  margin: 0 0 16px auto;
-  background: #f2c977;
 }
 
 @keyframes time-is-life-in {
   to { opacity: 1; transform: translateX(0); }
-}
-
-@media (max-width: 900px) {
-  .slide:nth-child(3) .slide-overlay-evaluation {
-    top: 11%;
-    right: 28px;
-    width: min(360px, calc(100% - 56px));
-  }
-
-  .slide:nth-child(4) .slide-overlay-time {
-    right: 28px;
-    bottom: 74px;
-  }
-}
-
-@media (max-width: 560px) {
-  .slide:nth-child(3) .slide-overlay-evaluation {
-    top: 9%;
-    right: 22px;
-    width: calc(100% - 44px);
-  }
-
-  .slide:nth-child(3) .slide-overlay-evaluation h2 {
-    font-size: 36px;
-  }
-
-  .slide:nth-child(4) .slide-overlay-time {
-    right: 22px;
-    bottom: 64px;
-  }
-
-  .slide:nth-child(4) .slide-overlay-time span {
-    font-size: 48px;
-  }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -769,81 +474,34 @@ button{font:inherit}
   line-height: 1.35;
 }
 
-+.slide:first-child .slide-overlay-teacher p {
+.slide:first-child .slide-overlay-teacher p {
   margin: 0 0 14px;
-  color: var(--green-700);
   font-size: clamp(18px, 1.5vw, 22px);
   line-height: 1.35;
 }
 
 .slide:first-child .slide-overlay-teacher p strong {
-  color: var(--wine);
   font-weight: 700;
 }
 
 .slide-support {
   display: block;
   padding-top: 13px;
-  border-top: 1px solid rgba(86, 112, 90, .22);
-  color: var(--muted);
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 1.45;
 }
 
 @media (max-width: 900px) {
   .slide:first-child .slide-overlay-teacher {
-    top: auto;
-    right: 20px;
-    bottom: 34px;
-    width: min(430px, calc(100% - 40px));
-    padding: 24px 26px;
     transform: none;
   }
 }
 
-@media (max-width: 560px) {
-  .slide:first-child .slide-overlay-teacher {
-    right: 14px;
-    bottom: 28px;
-    width: calc(100% - 28px);
-    padding: 20px 22px;
-  }
-
-  .slide:first-child .slide-overlay-teacher h2 {
-    font-size: 34px;
-  }
-
-  .slide-support {
-    font-size: 12px;
-  }
-}
-
-
 /* Open typography beside the teacher's right arm */
 .slide:first-child .slide-overlay-teacher {
-  top: 48%;
-  right: clamp(100px, 9vw, 145px);
-  width: min(390px, 32vw);
-  padding: 0;
   border: 0;
   border-radius: 0;
   background: transparent;
   box-shadow: none;
   backdrop-filter: none;
-  color: #111;
-  text-shadow:
-    0 1px 1px rgba(255, 255, 255, .96),
-    0 3px 12px rgba(255, 255, 255, .86),
-    0 8px 24px rgba(255, 255, 255, .70);
-}
-
-.slide-kicker,
-.slide:first-child .slide-overlay-teacher h2,
-.slide:first-child .slide-overlay-teacher h2 em,
-.slide:first-child .slide-overlay-teacher p,
-.slide:first-child .slide-overlay-teacher p strong {
-  color: #111;
 }
 
 .slide:first-child .slide-overlay-teacher h2 em {
@@ -854,49 +512,25 @@ button{font:inherit}
   margin-top: 18px;
   padding: 15px 0 0;
   border-top: 2px solid rgba(17, 17, 17, .72);
-  color: #0c0c0c;
   font-size: clamp(16px, 1.35vw, 19px);
   font-weight: 800;
   line-height: 1.35;
-  letter-spacing: -.015em;
-}
-
-.site-header {
-  box-shadow:
-    0 6px 12px rgba(24, 35, 28, .22),
-    0 16px 32px rgba(24, 35, 28, .22),
-    0 30px 58px rgba(24, 35, 28, .16);
 }
 
 .site-header::after {
   height: 32px;
   bottom: -32px;
-  background: linear-gradient(180deg, rgba(21, 31, 24, .24), rgba(21, 31, 24, 0));
 }
 
 @media (max-width: 900px) {
   .slide:first-child .slide-overlay-teacher {
-    right: 28px;
-    bottom: 44px;
     width: min(410px, calc(100% - 56px));
     padding: 0;
   }
 }
 
-@media (max-width: 560px) {
-  .slide:first-child .slide-overlay-teacher {
-    right: 22px;
-    bottom: 38px;
-    width: calc(100% - 44px);
-    padding: 0;
-  }
-}
-
-
 /* Text on the opposite side, pure black without glow */
 .slide:first-child .slide-overlay-teacher {
-  left: clamp(140px, 12vw, 190px);
-  right: auto;
   color: #000;
   text-shadow: none;
 }
@@ -923,25 +557,32 @@ button{font:inherit}
   }
 }
 
-@media (max-width: 560px) {
-  .slide:first-child .slide-overlay-teacher {
-    left: 22px;
-    right: auto;
-  }
-}
+/* Higher message and keyboard/pointer navigable carousel */
 
-
-/* Higher message and click-to-advance carousel */
-.slide:first-child .slide-overlay-teacher {
-  top: 34%;
-}
-
+/* Setas: visiveis apenas em telas grandes com ponteiro preciso.
+   No celular a navegacao e por deslize + indicadores. */
 .carousel-arrow {
   display: none;
 }
 
-.carousel {
-  cursor: pointer;
+@media (min-width: 901px) and (hover: hover) and (pointer: fine) {
+  .carousel-arrow {
+    display: grid;
+    place-items: center;
+    opacity: 0;
+    transition: opacity .25s ease, transform .25s ease, background .25s ease;
+  }
+
+  .carousel:hover .carousel-arrow,
+  .carousel:focus-within .carousel-arrow {
+    opacity: 1;
+  }
+
+  .carousel-arrow:focus-visible {
+    opacity: 1;
+    outline: 3px solid var(--wine);
+    outline-offset: 3px;
+  }
 }
 
 .carousel:focus-visible {
@@ -956,14 +597,9 @@ button{font:inherit}
   }
 }
 
-
 /* Uniformed students and content-generation message on slide two */
-.slide:nth-child(2) {
-  background-position: center;
-}
 
 .slide:nth-child(2) .slide-overlay-content {
-  display: block;
   position: absolute;
   top: 24%;
   left: clamp(94px, 9vw, 150px);
@@ -1020,67 +656,38 @@ button{font:inherit}
   }
 }
 
-@media (max-width: 560px) {
-  .slide:nth-child(2) .slide-overlay-content {
-    left: 22px;
-    bottom: 58px;
-    width: calc(100% - 44px);
-  }
-
-  .slide:nth-child(2) .slide-overlay-content h2 {
-    font-size: 38px;
-  }
-}
-
-
 /* One-at-a-time feature messages on the right side of slide one */
 .slide-feature-rotator {
   position: absolute;
-  top: 30%;
   right: clamp(92px, 9vw, 150px);
   z-index: 4;
-  width: min(380px, 31vw);
-  min-height: 150px;
   pointer-events: none;
 }
 
 .feature-message {
   position: absolute;
-  inset: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 10px;
-  opacity: 0;
   color: #000;
-  transform: translateX(70px);
   animation: feature-message-slide 20s cubic-bezier(.22, 1, .36, 1) infinite;
-  animation-delay: var(--feature-delay);
 }
 
 .feature-message::before {
   content: "";
-  width: 46px;
-  height: 3px;
-  margin-bottom: 2px;
   border-radius: 999px;
   background: var(--wine);
 }
 
 .feature-message small {
   color: var(--wine-dark);
-  font-size: 12px;
   font-weight: 800;
-  letter-spacing: .18em;
 }
 
 .feature-message strong {
-  max-width: 360px;
   color: #000;
   font-family: "Libre Franklin", sans-serif;
-  font-size: clamp(25px, 2.4vw, 38px);
   font-weight: 700;
-  line-height: 1.08;
   letter-spacing: -.04em;
 }
 
@@ -1101,49 +708,22 @@ button{font:inherit}
 
 @media (max-width: 900px) {
   .slide-feature-rotator {
-    top: 18%;
     right: 28px;
-    width: min(330px, calc(100% - 56px));
   }
 
-  .feature-message strong {
-    font-size: 27px;
-  }
 }
 
 @media (max-width: 560px) {
-  .slide-feature-rotator {
-    top: 13%;
-    right: 22px;
-    width: calc(100% - 44px);
-  }
-
-  .feature-message {
-    align-items: flex-end;
-    text-align: right;
-  }
 
   .feature-message::before {
     margin-left: auto;
   }
 
-  .feature-message strong {
-    max-width: 280px;
-    font-size: 23px;
-  }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .feature-message {
-    animation-name: feature-message-fade;
-  }
 
-  @keyframes feature-message-fade {
-    0%, 24%, 100% { opacity: 0; transform: none; }
-    4%, 20% { opacity: 1; transform: none; }
-  }
 }
-
 
 /* Progressive feature stack: each message enters and remains */
 .slide-feature-rotator {
@@ -1241,26 +821,6 @@ button{font:inherit}
   }
 }
 
-@media (max-width: 560px) {
-  .slide-feature-rotator {
-    top: 7%;
-    min-height: 300px;
-  }
-
-  .feature-message {
-    min-height: 64px;
-  }
-
-  .feature-message:nth-child(2) { top: 70px; }
-  .feature-message:nth-child(3) { top: 140px; }
-  .feature-message:nth-child(4) { top: 210px; }
-
-  .feature-message strong {
-    max-width: 270px;
-    font-size: 18px;
-  }
-}
-
 @media (prefers-reduced-motion: reduce) {
   .feature-message:nth-child(1),
   .feature-message:nth-child(2),
@@ -1272,10 +832,8 @@ button{font:inherit}
   }
 }
 
-
 /* Impact message on slide three */
 .slide:nth-child(3) .slide-overlay-evaluation {
-  display: block;
   position: absolute;
   top: 15%;
   right: clamp(82px, 8vw, 140px);
@@ -1285,7 +843,6 @@ button{font:inherit}
   max-width: none;
   padding: 0;
   color: #111;
-  opacity: 0;
   transform: translateY(-18px);
 }
 
@@ -1351,23 +908,6 @@ button{font:inherit}
   }
 }
 
-@media (max-width: 560px) {
-  .slide:nth-child(3) .slide-overlay-evaluation p {
-    font-size: 16px;
-  }
-
-  .slide:nth-child(4) .slide-overlay-time {
-    top: 10%;
-    left: 22px;
-    right: auto;
-    bottom: auto;
-  }
-
-  .slide:nth-child(4) .slide-overlay-time span {
-    font-size: 43px;
-  }
-}
-
 /* Seamless television-style carousel dissolve */
 .slide {
   z-index: 0;
@@ -1426,7 +966,6 @@ button{font:inherit}
 }
 
 .initial-services-heading {
-  max-width: 790px;
   margin: 0 auto 36px;
 }
 
@@ -1449,9 +988,7 @@ button{font:inherit}
   flex-direction: column;
   overflow: hidden;
   padding: 30px 28px 27px;
-  border-color: rgba(86, 112, 90, .20);
   background: var(--demo-card-background, rgba(255, 255, 255, .88));
-  box-shadow: 0 14px 34px rgba(47, 71, 54, .12);
   backdrop-filter: blur(8px);
 }
 
@@ -1641,7 +1178,6 @@ button.demo-category{cursor:pointer}
 
 .service-dialog {
   width: min(850px, calc(100% - 32px));
-  max-height: min(760px, calc(100vh - 32px));
   overflow: auto;
   padding: 42px;
   border: 1px solid rgba(86, 112, 90, .18);
@@ -1773,10 +1309,6 @@ button.demo-category{cursor:pointer}
 /* Sombra mais escura nos oito cards */
 .initial-service-card,
 .service-card {
-  box-shadow:
-    0 24px 48px rgba(17, 39, 29, 0.26),
-    0 10px 20px rgba(17, 39, 29, 0.18),
-    0 3px 7px rgba(17, 39, 29, 0.15);
   border-color: rgba(45, 76, 58, 0.28);
   transition: transform .35s ease, box-shadow .35s ease, border-color .35s ease;
 }
@@ -1801,10 +1333,6 @@ body:not(.library-page) .site-header {
 
 body:not(.library-page) .site-header {
   border-bottom-color: rgba(255, 255, 255, .24);
-  box-shadow:
-    0 6px 12px rgba(43, 4, 15, .28),
-    0 16px 32px rgba(43, 4, 15, .22),
-    0 30px 58px rgba(43, 4, 15, .18);
 }
 
 body:not(.library-page) .site-header::after {
@@ -1856,9 +1384,6 @@ body:not(.library-page) .footer span {
   background: linear-gradient(90deg, #4a0715 0%, #7a1730 48%, #a34058 100%);
   color: #fff;
   cursor: pointer;
-  box-shadow:
-    0 24px 44px rgba(0, 0, 0, .28),
-    0 12px 24px rgba(90, 15, 31, .34);
   transition: transform 200ms ease, box-shadow 200ms ease;
 }
 
@@ -1950,7 +1475,6 @@ body:not(.library-page) .footer span {
 
 .ai-content-dialog {
   width: min(1080px, calc(100% - 32px));
-  max-height: calc(100vh - 32px);
   padding: 0;
   overflow: auto;
   border: 0;
@@ -2269,7 +1793,6 @@ body:not(.library-page) .footer span {
 @media (max-width: 560px) {
   .ai-content-dialog {
     width: calc(100% - 16px);
-    max-height: calc(100vh - 16px);
     border-radius: 20px;
   }
 
@@ -2320,9 +1843,6 @@ body:not(.library-page) .footer span {
 
 /* TEACHEASY HERO PROFESSORA - POSICAO FINAL */
 @media (min-width: 901px) {
-  .slide:first-child {
-    background-position: center center;
-  }
 
   .slide:first-child .slide-overlay-teacher {
     top: 50%;

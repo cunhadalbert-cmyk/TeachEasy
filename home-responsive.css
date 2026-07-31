@@ -26,9 +26,6 @@ body:not(.library-page) .slide::after {
   background: linear-gradient(180deg, rgba(0,0,0,.04), rgba(0,0,0,.12));
   pointer-events: none;
 }
-body:not(.library-page) .slide-overlay,
-body:not(.library-page) .slide-feature-rotator,
-body:not(.library-page) .carousel-chips { display: none !important; }
 
 body:not(.library-page) .slide:first-child .slide-overlay-teacher,
 body:not(.library-page) .slide:first-child .slide-feature-rotator,
@@ -45,7 +42,9 @@ body:not(.library-page) .slide:not(.active) .slide-feature-rotator {
   pointer-events: none !important;
 }
 
-body:not(.library-page) .carousel-arrow { display: none !important; }
+@media (max-width: 900px) {
+  body:not(.library-page) .carousel-arrow { display: none !important; }
+}
 
 body:not(.library-page) .carousel-dots {
   left: 50%; bottom: 18px; z-index: 8; padding: 9px 12px;
@@ -99,20 +98,44 @@ body:not(.library-page) .demo-category {
   body:not(.library-page) .brand strong { font-size: 25px; }
   body:not(.library-page) .brand span { font-size: 12px; line-height: 1.2; }
 
+  /* Carrossel no celular.
+     As fotos sao 1672x941 (16:9). A proporcao 3/2 corta so ~8% das laterais,
+     mantendo cada professora inteira no enquadramento, e da altura suficiente
+     para o texto. NUNCA usar background-size com dois valores aqui: cada slide
+     tem uma unica camada de imagem, entao "100% 100%" a estica e achata. */
   body:not(.library-page) .carousel {
     height: auto !important;
     min-height: 0 !important;
     max-height: none !important;
-    aspect-ratio: 2 / 1;
+    aspect-ratio: 3 / 2;
     overflow: hidden;
-    background: #eef1ec;
+    background: #2f4736;
   }
 
   body:not(.library-page) .slide {
-    background-size: 100% 100%, contain !important;
-    background-position: center center, center center !important;
-    background-repeat: no-repeat, no-repeat !important;
-    background-color: #eef1ec !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-color: #2f4736 !important;
+  }
+
+  /* Ponto focal por slide: mantem a professora centralizada no corte. */
+  body:not(.library-page) .slide:nth-child(1) { background-position: 40% center !important; }
+  body:not(.library-page) .slide:nth-child(2) { background-position: 52% center !important; }
+  body:not(.library-page) .slide:nth-child(3) { background-position: 50% center !important; }
+  body:not(.library-page) .slide:nth-child(4) { background-position: 44% center !important; }
+
+  /* Deriva mais suave no celular: so escala, sem deslocamento lateral,
+     para nao comer as margens ja apertadas do corte. */
+  body:not(.library-page) .slide,
+  body:not(.library-page) .slide.active {
+    animation: carousel-drift-mobile 20s ease-in-out infinite alternate !important;
+  }
+
+  /* Gradiente de leitura: escurece so onde o texto encosta. */
+  body:not(.library-page) .slide::after {
+    background:
+      linear-gradient(180deg, rgba(0,0,0,.42) 0%, rgba(0,0,0,.06) 26%, rgba(0,0,0,0) 44%),
+      linear-gradient(0deg, rgba(0,0,0,.78) 0%, rgba(0,0,0,.44) 26%, rgba(0,0,0,0) 56%);
   }
 
   body:not(.library-page) .slide.active .slide-overlay,
@@ -129,103 +152,119 @@ body:not(.library-page) .demo-category {
     opacity: 1 !important;
   }
 
-  body:not(.library-page) .slide:first-child .slide-overlay-teacher {
-    top: 50% !important;
-    left: 5% !important;
-    right: auto !important;
-    bottom: auto !important;
-    width: min(46vw, 220px) !important;
-    max-width: 220px !important;
-    transform: translateY(-50%) !important;
-    transform-origin: left center !important;
-    color: #000 !important;
+  /* ------------------------------------------------------------------
+     Textos dos slides no celular.
+     O layout do desktop coloca o texto AO LADO da professora. Numa caixa
+     de ~390x260 nao ha lateral livre: o cartao cai em cima do rosto dela.
+     No celular o texto vai para o rodape, sobre o gradiente, em branco e
+     ocupando a largura toda. Assim a foto fica inteira e o texto legivel.
+     ------------------------------------------------------------------ */
+  body:not(.library-page) .slide .slide-overlay {
+    top: auto !important;
+    right: 20px !important;
+    bottom: 34px !important;
+    left: 20px !important;
+    width: auto !important;
+    max-width: none !important;
+    transform: none !important;
     text-align: left !important;
-    text-shadow: none !important;
+    color: #fff !important;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, .55) !important;
   }
-  body:not(.library-page) .slide:first-child .slide-overlay-teacher h2 {
-    max-width: 220px !important;
-    margin: 0 0 6px !important;
-    font-size: clamp(20px, 6vw, 30px) !important;
+
+  body:not(.library-page) .slide .slide-overlay .slide-kicker,
+  body:not(.library-page) .slide .slide-overlay h2,
+  body:not(.library-page) .slide .slide-overlay h2 em,
+  body:not(.library-page) .slide .slide-overlay p,
+  body:not(.library-page) .slide .slide-overlay p strong,
+  body:not(.library-page) .slide .slide-overlay span,
+  body:not(.library-page) .slide .slide-overlay .slide-support {
+    color: #fff !important;
+    text-shadow: inherit !important;
+  }
+
+  body:not(.library-page) .slide .slide-overlay .slide-kicker {
+    margin-bottom: 6px !important;
+    font-size: clamp(9px, 2.6vw, 11px) !important;
+    letter-spacing: .16em !important;
+  }
+
+  body:not(.library-page) .slide .slide-overlay h2 {
+    max-width: 100% !important;
+    margin: 0 0 7px !important;
+    font-size: clamp(24px, 7vw, 34px) !important;
     line-height: 1 !important;
   }
-  body:not(.library-page) .slide:first-child .slide-overlay-teacher p {
-    max-width: 210px !important;
-    margin: 0 0 5px !important;
-    font-size: clamp(12px, 3.4vw, 17px) !important;
-    line-height: 1.25 !important;
-  }
-  body:not(.library-page) .slide:first-child .slide-overlay-teacher .slide-support {
-    display: block !important;
-    max-width: 210px !important;
-    margin-top: 4px !important;
-    font-size: clamp(10px, 2.8vw, 14px) !important;
-    line-height: 1.2 !important;
+
+  body:not(.library-page) .slide .slide-overlay h2 em {
+    color: #f2c977 !important;
   }
 
-  body:not(.library-page) .slide:first-child .slide-feature-rotator {
-    top: 14% !important;
-    right: 4% !important;
-    left: auto !important;
-    bottom: auto !important;
-    width: 370px !important;
-    min-height: 370px !important;
-    transform: scale(.36) !important;
-    transform-origin: top right !important;
+  body:not(.library-page) .slide .slide-overlay p {
+    max-width: 100% !important;
+    margin: 0 !important;
+    font-size: clamp(13px, 3.6vw, 17px) !important;
+    line-height: 1.3 !important;
   }
 
-  body:not(.library-page) .slide:nth-child(2) .slide-overlay-content {
-    top: 24% !important;
-    left: 7% !important;
-    right: auto !important;
-    bottom: auto !important;
-    width: min(48vw, 230px) !important;
-    max-width: 230px !important;
-    transform: none !important;
-    text-align: left !important;
-  }
-  body:not(.library-page) .slide:nth-child(2) .slide-overlay-content h2 {
-    font-size: clamp(21px, 6vw, 31px) !important;
-    line-height: .98 !important;
-  }
-  body:not(.library-page) .slide:nth-child(2) .slide-overlay-content p {
-    max-width: 220px !important;
-    font-size: clamp(12px, 3.4vw, 17px) !important;
-    line-height: 1.25 !important;
+  /* Linha de apoio do slide 1: sai no celular. Numa caixa de ~260px de altura
+     ela empurra o titulo para cima do rotator, e o conteudo dela ja aparece
+     nas mensagens rotativas ("PDF, Word editavel ou ambos", etc). */
+  body:not(.library-page) .slide .slide-overlay .slide-support {
+    display: none !important;
   }
 
-  body:not(.library-page) .slide:nth-child(3) .slide-overlay-evaluation {
-    top: 15% !important;
-    right: 7% !important;
-    left: auto !important;
-    bottom: auto !important;
-    width: min(46vw, 220px) !important;
-    max-width: 220px !important;
-    transform: none !important;
-    text-align: left !important;
-  }
-  body:not(.library-page) .slide:nth-child(3) .slide-overlay-evaluation h2 {
-    font-size: clamp(20px, 5.8vw, 30px) !important;
-    line-height: .98 !important;
-  }
-  body:not(.library-page) .slide:nth-child(3) .slide-overlay-evaluation p {
-    max-width: 210px !important;
-    font-size: clamp(12px, 3.2vw, 16px) !important;
-    line-height: 1.25 !important;
-  }
-
-  body:not(.library-page) .slide:nth-child(4) .slide-overlay-time {
-    top: 15% !important;
-    left: 7% !important;
-    right: auto !important;
-    bottom: auto !important;
-    width: min(52vw, 250px) !important;
-    max-width: 250px !important;
-    transform: none !important;
-    text-align: left !important;
-  }
+  /* Slide 4: "TEMPO E VIDA" e uma frase solta, sem h2/p. */
   body:not(.library-page) .slide:nth-child(4) .slide-overlay-time span {
-    font-size: clamp(24px, 7vw, 36px) !important;
-    line-height: .92 !important;
+    font-size: clamp(30px, 8.6vw, 44px) !important;
+    line-height: .95 !important;
+  }
+  body:not(.library-page) .slide:nth-child(4) .slide-overlay-time span::before {
+    width: 52px !important;
+    margin: 0 0 10px !important;
+    background: #f2c977 !important;
+  }
+
+  /* Rotator do slide 1: uma mensagem por vez, no topo, fora do rodape.
+     Substitui o transform: scale(.36) que encolhia a pilha inteira. */
+  body:not(.library-page) .slide:first-child .slide-feature-rotator {
+    top: 14px !important;
+    right: 16px !important;
+    left: auto !important;
+    bottom: auto !important;
+    width: min(58vw, 250px) !important;
+    min-height: 54px !important;
+    transform: none !important;
+  }
+  body:not(.library-page) .slide:first-child .feature-message {
+    inset: 0 !important;
+    top: 0 !important;
+    min-height: 0 !important;
+    align-items: flex-end !important;
+    justify-content: flex-start !important;
+    gap: 4px !important;
+    text-align: right !important;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, .55) !important;
+    animation-name: feature-message-slide !important;
+    animation-duration: 20s !important;
+    animation-delay: var(--feature-delay) !important;
+  }
+  body:not(.library-page) .slide:first-child .feature-message::before {
+    width: 26px !important;
+    height: 2px !important;
+    margin: 0 0 2px auto !important;
+    background: #f2c977 !important;
+  }
+  body:not(.library-page) .slide:first-child .feature-message small {
+    color: #fff !important;
+    font-size: clamp(8px, 2.3vw, 10px) !important;
+    letter-spacing: .14em !important;
+  }
+  body:not(.library-page) .slide:first-child .feature-message strong {
+    max-width: 100% !important;
+    color: #fff !important;
+    font-size: clamp(13px, 3.8vw, 17px) !important;
+    line-height: 1.12 !important;
   }
 
   body:not(.library-page) .carousel-dots {
@@ -261,12 +300,16 @@ body:not(.library-page) .demo-category {
 }
 
 @media (max-width: 420px) {
-  body:not(.library-page) .slide:first-child .slide-overlay-teacher {
-    left: 4% !important;
-    width: 47vw !important;
+  /* Telas bem estreitas: aperta as margens laterais. */
+  body:not(.library-page) .slide .slide-overlay {
+    right: 15px !important;
+    left: 15px !important;
+    bottom: 30px !important;
   }
   body:not(.library-page) .slide:first-child .slide-feature-rotator {
-    transform: scale(.28) !important;
+    top: 10px !important;
+    right: 12px !important;
+    width: min(62vw, 210px) !important;
   }
   body:not(.library-page) .container { width: min(100% - 20px,1240px); }
   body:not(.library-page) .home-library-highlight {
@@ -283,4 +326,9 @@ body:not(.library-page) .demo-category {
     animation-iteration-count: 1 !important;
     transition-duration: .01ms !important;
   }
+}
+
+@keyframes carousel-drift-mobile {
+  from { transform: scale(1.02); }
+  to   { transform: scale(1.05); }
 }
