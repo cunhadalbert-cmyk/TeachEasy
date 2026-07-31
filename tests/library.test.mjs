@@ -166,37 +166,33 @@ test('Destaque da Biblioteca fica na página inicial junto aos quatro serviços'
   await window.happyDOM.close();
 });
 
-test('Quatro atalhos abrem demonstrações distintas e úteis', async () => {
+test('Os dois atalhos de demonstração abrem experiências distintas', async () => {
   const window = await createInteractiveHomePage();
   const cards = [...window.document.querySelectorAll('.initial-service-card')];
-  assert.equal(cards.length, 4);
+  assert.equal(cards.length, 2);
   assert.equal(window.document.querySelectorAll('.service-number').length, 0);
   assert.deepEqual(
     cards.map(card => card.querySelector('h3').textContent),
-    ['Visualizar atividades da biblioteca', 'Desenhos para colorir', 'Jogos pedagógicos', 'Veja a IA criando']
+    ['Desenhos para colorir', 'Jogos pedagógicos']
   );
 
-  cards[0].click();
-  const dialog = window.document.querySelector('#service-dialog');
-  assert.equal(dialog.open, true);
-  const firstActivity = dialog.querySelector('.demo-slide strong').textContent;
-  dialog.querySelector('.demo-next').click();
-  assert.notEqual(dialog.querySelector('.demo-slide strong').textContent, firstActivity);
-  dialog.close();
+  // A biblioteca e a criação com IA deixaram de ser cards e viraram
+  // destaques próprios: banner com link e seção com diálogo dedicado.
+  assert.equal(window.document.querySelectorAll('.home-library-highlight').length, 1);
+  assert.equal(window.document.querySelectorAll('#ai-content-launcher').length, 1);
 
-  cards[1].click();
-  assert.equal(dialog.querySelectorAll('.demo-category').length, 6);
+  const dialog = window.document.querySelector('#service-dialog');
+
+  cards[0].click();
+  assert.equal(dialog.open, true);
+  assert.equal(dialog.querySelectorAll('.demo-category').length, 7);
   assert.match(dialog.textContent, /Surpreenda-me/);
   dialog.close();
 
-  cards[2].click();
+  cards[1].click();
+  assert.equal(dialog.open, true);
   assert.equal(dialog.querySelectorAll('.demo-game').length, 6);
   assert.match(dialog.textContent, /Caça-palavras|Jogo da memória/);
-  dialog.close();
-
-  cards[3].click();
-  assert.equal(dialog.querySelectorAll('.ai-demo-step').length, 4);
-  assert.match(dialog.textContent, /Professor informa o pedido|Pronta para revisar/);
   await window.happyDOM.close();
 });
 

@@ -19,9 +19,6 @@
   font: inherit;
   text-align: left;
   cursor: pointer;
-  box-shadow:
-    0 24px 44px rgba(0, 0, 0, .28),
-    0 12px 24px rgba(90, 15, 31, .34);
   transition: transform 200ms ease, box-shadow 200ms ease;
 }
 
@@ -86,7 +83,6 @@
 
 .photo-activity-dialog {
   width: min(760px, calc(100% - 28px));
-  max-height: calc(100vh - 28px);
   overflow: auto;
   padding: 0;
   border: 0;

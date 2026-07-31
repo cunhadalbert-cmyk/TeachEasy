@@ -1,0 +1,114 @@
+/*
+ * Amplia somente a biblioteca de desenhos.
+ * Não altera carrossel, cards principais, filtros ou funcionamento.
+ */
+
+#service-dialog:has(.coloring-library-demo) {
+  width: min(1480px, calc(100vw - 32px));
+  max-width: none;
+  height: min(94vh, 1040px);
+  max-height: 94vh;
+  padding: 26px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  box-sizing: border-box;
+  overscroll-behavior: contain;
+}
+
+#service-dialog:has(.coloring-library-demo) .service-dialog-columns,
+#service-dialog:has(.coloring-library-demo) .coloring-library-demo {
+  display: block;
+  width: 100%;
+  max-width: none;
+}
+
+#service-dialog:has(.coloring-library-demo) .coloring-library-demo {
+  padding-bottom: 24px;
+}
+
+#service-dialog:has(.coloring-library-demo) .demo-category-grid {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(115px, 1fr));
+  gap: 12px;
+  width: 100%;
+}
+
+#service-dialog:has(.coloring-library-demo) .demo-category {
+  width: 100%;
+  min-height: 62px;
+  padding: 10px 12px;
+  white-space: normal;
+  overflow-wrap: normal;
+  word-break: normal;
+  hyphens: none;
+}
+
+#service-dialog:has(.coloring-library-demo) .coloring-demo-toolbar {
+  width: 100%;
+}
+
+#service-dialog:has(.coloring-library-demo) .coloring-demo-grid {
+  width: 100%;
+  grid-template-columns: repeat(4, minmax(200px, 1fr));
+  gap: 18px;
+  max-height: none;
+  overflow: visible;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+#service-dialog:has(.coloring-library-demo) .coloring-demo-card {
+  width: 100%;
+}
+
+#service-dialog:has(.coloring-library-demo) .coloring-preview-button img {
+  width: 100%;
+  min-height: 210px;
+  aspect-ratio: 4 / 3;
+  object-fit: contain;
+}
+
+#service-dialog:has(.coloring-library-demo) .coloring-pagination {
+  width: 100%;
+  padding-bottom: 8px;
+}
+
+@media (max-width: 1100px) {
+  #service-dialog:has(.coloring-library-demo) .demo-category-grid {
+    grid-template-columns: repeat(4, minmax(120px, 1fr));
+  }
+
+  #service-dialog:has(.coloring-library-demo) .coloring-demo-grid {
+    grid-template-columns: repeat(3, minmax(180px, 1fr));
+  }
+}
+
+@media (max-width: 760px) {
+  #service-dialog:has(.coloring-library-demo) {
+    width: calc(100vw - 14px);
+    height: 95vh;
+    max-height: 95vh;
+    padding: 18px 12px;
+  }
+
+  #service-dialog:has(.coloring-library-demo) .demo-category-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  #service-dialog:has(.coloring-library-demo) .coloring-demo-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    max-height: none;
+    overflow: visible;
+    gap: 12px;
+  }
+
+  #service-dialog:has(.coloring-library-demo) .coloring-preview-button img {
+    min-height: 145px;
+  }
+}
+
+@media (max-width: 480px) {
+  #service-dialog:has(.coloring-library-demo) .coloring-demo-grid {
+    grid-template-columns: 1fr;
+  }
+}
