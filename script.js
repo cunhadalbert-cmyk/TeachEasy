@@ -1,4 +1,4 @@
-﻿(() => {
+(() => {
   'use strict';
 
   if (!document.querySelector('link[data-teacheasy-styles="home-responsive"], link[href="home-responsive.css"]')) {
@@ -132,7 +132,7 @@
     const printWindow = window.open('', '_blank', 'width=900,height=1100');
     if (!printWindow) return;
     const absoluteImageUrl = new URL(item.arquivo, window.location.href).href;
-    printWindow.document.write(`<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><title>${escapeHtml(item.titulo)}</title><style>@page{size:A4;margin:12mm}html,body{margin:0;width:100%;height:100%}body{display:grid;place-items:center;background:#fff}img{display:block;max-width:190mm;max-height:270mm;width:100%;height:100%;object-fit:contain}</style></head><body><img src="${absoluteImageUrl}" alt="${escapeHtml(item.titulo)}"><script>window.onload=()=>setTimeout(()=>window.print(),400)<\/script></body></html>`);
+    printWindow.document.write(`<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><title>${escapeHtml(item.titulo)}</title><style>@page{size:A4;margin:18mm}html,body{margin:0;width:100%;height:100%}body{display:grid;place-items:center;background:#fff}img{display:block;max-width:174mm;max-height:261mm;width:100%;height:100%;object-fit:contain}</style></head><body><img src="${absoluteImageUrl}" alt="${escapeHtml(item.titulo)}"><script>window.onload=()=>setTimeout(()=>window.print(),400)<\/script></body></html>`);
     printWindow.document.close();
   }
 
