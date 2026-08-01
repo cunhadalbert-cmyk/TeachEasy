@@ -2,7 +2,7 @@
   'use strict';
 
   const modalStyle = document.createElement('style');
-  modalStyle.textContent = `.coloring-library-demo{width:min(1080px,100%)}.coloring-demo-toolbar{display:flex;align-items:center;justify-content:space-between;gap:16px;margin:18px 0}.coloring-demo-toolbar .demo-surprise-result{margin:0;font-weight:800}.coloring-demo-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;max-height:58vh;overflow-y:auto;padding:4px}.coloring-demo-card{overflow:hidden;border:1px solid rgba(74,7,21,.14);border-radius:18px;background:#fff;box-shadow:0 8px 22px rgba(74,7,21,.08)}.coloring-preview-button{display:grid;width:100%;padding:0;border:0;background:#fff;color:#35121c;cursor:pointer;text-align:left}.coloring-preview-button img{width:100%;aspect-ratio:4/3;padding:12px;object-fit:contain;background:#fff;box-sizing:border-box}.coloring-preview-button strong,.coloring-preview-button span{padding-inline:14px}.coloring-preview-button strong{padding-top:12px;font-size:1rem}.coloring-preview-button span{padding-top:4px;padding-bottom:12px;color:#76525d;font-size:.9rem}.coloring-card-actions{display:grid;grid-template-columns:1fr 1fr;gap:8px;padding:0 12px 12px}.coloring-card-actions button,.coloring-card-actions a,.coloring-pagination button{display:inline-flex;align-items:center;justify-content:center;min-height:40px;padding:6px 10px;border:0;border-radius:10px;background:#6d1027;color:#fff;font:inherit;font-weight:800;text-decoration:none;cursor:pointer}.coloring-pagination{display:flex;align-items:center;justify-content:center;gap:12px;margin-top:18px}.coloring-pagination span{min-width:110px;text-align:center;font-weight:800}.coloring-pagination button:disabled{opacity:.4;cursor:not-allowed}.coloring-loading,.coloring-error{grid-column:1/-1;padding:32px 18px;text-align:center;font-weight:800}.coloring-error{color:#8b1d35}@media(max-width:820px){.coloring-demo-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:560px){.coloring-demo-toolbar{align-items:stretch;flex-direction:column}.coloring-demo-grid{grid-template-columns:1fr}.coloring-card-actions{grid-template-columns:1fr}}`;
+  modalStyle.textContent = `.coloring-library-demo{width:min(1080px,100%)}.coloring-demo-toolbar{display:flex;align-items:center;justify-content:space-between;gap:16px;margin:18px 0}.coloring-demo-toolbar .demo-surprise-result{margin:0;font-weight:800}.coloring-demo-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;max-height:58vh;overflow-y:auto;padding:4px}.coloring-demo-card{overflow:hidden;border:1px solid rgba(74,7,21,.14);border-radius:18px;background:#fff;box-shadow:0 8px 22px rgba(74,7,21,.08)}.coloring-preview-button{display:grid;width:100%;padding:0;border:0;background:#fff;color:#35121c;cursor:pointer;text-align:left}.coloring-preview-button img{width:100%;aspect-ratio:4/3;padding:12px;object-fit:contain;background:#fff;box-sizing:border-box}.coloring-preview-button strong,.coloring-preview-button span{padding-inline:14px}.coloring-preview-button strong{padding-top:12px;font-size:1rem}.coloring-preview-button span{padding-top:4px;padding-bottom:12px;color:#76525d;font-size:.9rem}.coloring-card-actions{display:grid;grid-template-columns:1fr 1fr;gap:8px;padding:0 12px 12px}.coloring-card-actions button,.coloring-card-actions a,.coloring-pagination button{display:inline-flex;align-items:center;justify-content:center;min-height:40px;padding:6px 10px;border:0;border-radius:10px;background:#6d1027;color:#fff;font:inherit;font-weight:800;text-decoration:none;cursor:pointer}.coloring-pagination{display:flex;align-items:center;justify-content:center;gap:12px;margin-top:18px}.coloring-pagination span{min-width:110px;text-align:center;font-weight:800}.coloring-pagination button:disabled{opacity:.4;cursor:not-allowed}.coloring-loading,.coloring-error{grid-column:1/-1;padding:32px 18px;text-align:center;font-weight:800}.coloring-error{color:#8b1d35}.demo-game-link{display:flex;align-items:center;justify-content:center;min-height:100%;padding:24px;color:inherit;text-decoration:none;border-radius:inherit}.demo-game-link:focus-visible{outline:4px solid #6d1027;outline-offset:3px}@media(max-width:820px){.coloring-demo-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:560px){.coloring-demo-toolbar{align-items:stretch;flex-direction:column}.coloring-demo-grid{grid-template-columns:1fr}.coloring-card-actions{grid-template-columns:1fr}}`;
   document.head.appendChild(modalStyle);
 
   const slides = [...document.querySelectorAll('.slide')];
@@ -113,18 +113,15 @@
     if (drawingCache.has(slug)) return drawingCache.get(slug);
     const response = await fetch(`assets/desenhos/${slug}/index.json`, { cache: 'force-cache' });
     if (!response.ok) throw new Error(`Não foi possível carregar a categoria ${slug}.`);
-    const items = (await response.json()).map(item => ({
-      ...item,
-      arquivo: `assets/desenhos/${slug}/${item.arquivo}`
-    }));
+    const items = (await response.json()).map(item => ({ ...item, arquivo: `assets/desenhos/${slug}/${item.arquivo}` }));
     drawingCache.set(slug, items);
     return items;
   }
 
   async function loadDrawings(category) {
     if (category === 'Todos') {
-      const categoryLists = await Promise.all(drawingCategories.map(item => loadDrawingCategory(item.slug)));
-      return categoryLists.flat();
+      const lists = await Promise.all(drawingCategories.map(item => loadDrawingCategory(item.slug)));
+      return lists.flat();
     }
     const selected = drawingCategories.find(item => item.label === category);
     return selected ? loadDrawingCategory(selected.slug) : [];
@@ -133,8 +130,8 @@
   function printDrawing(item) {
     const printWindow = window.open('', '_blank', 'width=900,height=1100');
     if (!printWindow) return;
-    const absoluteImageUrl = new URL(item.arquivo, window.location.href).href;
-    printWindow.document.write(`<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><title>${escapeHtml(item.titulo)}</title><style>@page{size:A4;margin:0}*{box-sizing:border-box}html,body{margin:0;width:210mm;height:297mm;background:#fff}body{padding:12mm;display:flex;align-items:center;justify-content:center;overflow:hidden}.print-sheet{width:186mm;height:273mm;padding:8mm;border:.45mm solid #222;display:flex;align-items:center;justify-content:center;background:#fff;overflow:hidden}.print-sheet img{display:block;max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain}@media screen{body{margin:0 auto;box-shadow:0 0 18px rgba(0,0,0,.18)}}</style></head><body><div class="print-sheet"><img src="${absoluteImageUrl}" alt="${escapeHtml(item.titulo)}"></div><script>window.onload=()=>setTimeout(()=>window.print(),400)<\/script></body></html>`);
+    const imageUrl = new URL(item.arquivo, window.location.href).href;
+    printWindow.document.write(`<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><title>${escapeHtml(item.titulo)}</title><style>@page{size:A4;margin:0}*{box-sizing:border-box}html,body{margin:0;width:210mm;height:297mm;background:#fff}body{padding:12mm;display:flex;align-items:center;justify-content:center;overflow:hidden}.print-sheet{width:186mm;height:273mm;padding:8mm;border:.45mm solid #222;display:flex;align-items:center;justify-content:center;background:#fff;overflow:hidden}.print-sheet img{display:block;max-width:100%;max-height:100%;object-fit:contain}</style></head><body><div class="print-sheet"><img src="${imageUrl}" alt="${escapeHtml(item.titulo)}"></div><script>window.onload=()=>setTimeout(()=>window.print(),400)<\/script></body></html>`);
     printWindow.document.close();
   }
 
@@ -142,7 +139,6 @@
     if (!demoContainer) return;
     const categories = ['Todos', ...drawingCategories.map(item => item.label)];
     demoContainer.innerHTML = `<div class="demo-showcase coloring-library-demo"><div class="demo-category-grid">${categories.map(category => `<button class="demo-category" type="button" data-category="${category}">${category}</button>`).join('')}</div><div class="coloring-demo-toolbar"><button class="demo-surprise" type="button">✨ Surpreenda-me</button><p class="demo-surprise-result" aria-live="polite"></p></div><div class="coloring-demo-grid" aria-live="polite"></div><div class="coloring-pagination"><button class="coloring-page-prev" type="button">Anterior</button><span class="coloring-page-status"></span><button class="coloring-page-next" type="button">Próxima</button></div></div>`;
-
     const categoryButtons = [...demoContainer.querySelectorAll('.demo-category')];
     const grid = demoContainer.querySelector('.coloring-demo-grid');
     const result = demoContainer.querySelector('.demo-surprise-result');
@@ -150,7 +146,6 @@
     const nextButton = demoContainer.querySelector('.coloring-page-next');
     const pageStatus = demoContainer.querySelector('.coloring-page-status');
     const pageSize = 12;
-    let activeCategory = 'Todos';
     let visibleDrawings = [];
     let currentPage = 1;
     let requestId = 0;
@@ -166,19 +161,15 @@
       nextButton.disabled = currentPage >= pageCount;
       grid.innerHTML = pageItems.map((item, index) => {
         const drawingIndex = start + index;
-        return `<article class="coloring-demo-card"><button class="coloring-preview-button" type="button" data-print-index="${drawingIndex}"><img src="${item.arquivo}" alt="Desenho para colorir: ${escapeHtml(item.titulo)}" loading="lazy" decoding="async"><strong>${escapeHtml(item.titulo)}</strong><span>${escapeHtml(item.categoria)}</span></button><div class="coloring-card-actions"><button type="button" data-print-index="${drawingIndex}">Imprimir A4</button><a href="${item.arquivo}" download="${item.id}.webp">Baixar imagem</a></div></article>`;
+        return `<article class="coloring-demo-card"><button class="coloring-preview-button" type="button" data-print-index="${drawingIndex}"><img src="${item.arquivo}" alt="Desenho para colorir: ${escapeHtml(item.titulo)}" loading="lazy"><strong>${escapeHtml(item.titulo)}</strong><span>${escapeHtml(item.categoria)}</span></button><div class="coloring-card-actions"><button type="button" data-print-index="${drawingIndex}">Imprimir A4</button><a href="${item.arquivo}" download="${item.id}.webp">Baixar imagem</a></div></article>`;
       }).join('');
     };
 
     const selectCategory = async category => {
-      activeCategory = category;
       currentPage = 1;
       const currentRequest = ++requestId;
       categoryButtons.forEach(button => button.classList.toggle('active', button.dataset.category === category));
       result.textContent = 'Carregando desenhos...';
-      pageStatus.textContent = '';
-      previousButton.disabled = true;
-      nextButton.disabled = true;
       grid.innerHTML = '<p class="coloring-loading">Carregando desenhos...</p>';
       try {
         const items = await loadDrawings(category);
@@ -209,17 +200,24 @@
         const item = allDrawings[Math.floor(Math.random() * allDrawings.length)];
         result.textContent = `Sugestão: ${item.titulo}`;
         printDrawing(item);
-      } catch (error) {
+      } catch {
         result.textContent = 'Não foi possível escolher um desenho agora.';
       }
     });
-    selectCategory(activeCategory);
+    selectCategory('Todos');
   }
 
   function gamesDemo() {
     if (!demoContainer) return;
-    const games = ['🔎 Caça-palavras', '✏️ Cruzadinhas', '🧠 Jogo da memória', '🎟️ Bingo educativo', '🖼️ Associação de imagens', '✂️ Recorte e montagem'];
-    demoContainer.innerHTML = `<div class="demo-showcase"><div class="demo-game-grid">${games.map(game => `<div class="demo-game">${game}</div>`).join('')}</div></div>`;
+    const games = [
+      { icon: '🔎', label: 'Caça-palavras' },
+      { icon: '✏️', label: 'Cruzadinhas' },
+      { icon: '🧠', label: 'Jogo da memória', href: 'jogo-memoria.html' },
+      { icon: '🎟️', label: 'Bingo educativo' },
+      { icon: '🖼️', label: 'Associação de imagens' },
+      { icon: '✂️', label: 'Recorte e montagem' }
+    ];
+    demoContainer.innerHTML = `<div class="demo-showcase"><div class="demo-game-grid">${games.map(game => game.href ? `<div class="demo-game"><a class="demo-game-link" href="${game.href}" aria-label="Abrir ${game.label}">${game.icon} ${game.label}</a></div>` : `<div class="demo-game">${game.icon} ${game.label}</div>`).join('')}</div></div>`;
   }
 
   function openDemo(key) {
