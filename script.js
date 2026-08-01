@@ -2,7 +2,7 @@
   'use strict';
 
   const modalStyle = document.createElement('style');
-  modalStyle.textContent = `.coloring-library-demo{width:min(1080px,100%)}.coloring-demo-toolbar{display:flex;align-items:center;justify-content:space-between;gap:16px;margin:18px 0}.coloring-demo-toolbar .demo-surprise-result{margin:0;font-weight:800}.coloring-demo-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;max-height:58vh;overflow-y:auto;padding:4px}.coloring-demo-card{overflow:hidden;border:1px solid rgba(74,7,21,.14);border-radius:18px;background:#fff;box-shadow:0 8px 22px rgba(74,7,21,.08)}.coloring-preview-button{display:grid;width:100%;padding:0;border:0;background:#fff;color:#35121c;cursor:pointer;text-align:left}.coloring-preview-button img{width:100%;aspect-ratio:4/3;padding:12px;object-fit:contain;background:#fff;box-sizing:border-box}.coloring-preview-button strong,.coloring-preview-button span{padding-inline:14px}.coloring-preview-button strong{padding-top:12px;font-size:1rem}.coloring-preview-button span{padding-top:4px;padding-bottom:12px;color:#76525d;font-size:.9rem}.coloring-card-actions{display:grid;grid-template-columns:1fr 1fr;gap:8px;padding:0 12px 12px}.coloring-card-actions button,.coloring-card-actions a,.coloring-pagination button{display:inline-flex;align-items:center;justify-content:center;min-height:40px;padding:6px 10px;border:0;border-radius:10px;background:#6d1027;color:#fff;font:inherit;font-weight:800;text-decoration:none;cursor:pointer}.coloring-pagination{display:flex;align-items:center;justify-content:center;gap:12px;margin-top:18px}.coloring-pagination span{min-width:110px;text-align:center;font-weight:800}.coloring-pagination button:disabled{opacity:.4;cursor:not-allowed}.coloring-loading,.coloring-error{grid-column:1/-1;padding:32px 18px;text-align:center;font-weight:800}.coloring-error{color:#8b1d35}@media(max-width:820px){.coloring-demo-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:560px){.coloring-demo-toolbar{align-items:stretch;flex-direction:column}.coloring-demo-grid{grid-template-columns:1fr}.coloring-card-actions{grid-template-columns:1fr}}`;
+  modalStyle.textContent = `.coloring-library-demo{width:min(1080px,100%)}.coloring-demo-toolbar{display:flex;align-items:center;justify-content:space-between;gap:16px;margin:18px 0}.coloring-demo-toolbar .demo-surprise-result{margin:0;font-weight:800}.coloring-demo-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;max-height:58vh;overflow-y:auto;padding:4px}.coloring-demo-card{overflow:hidden;border:1px solid rgba(74,7,21,.14);border-radius:18px;background:#fff;box-shadow:0 8px 22px rgba(74,7,21,.08)}.coloring-preview-button{display:grid;width:100%;padding:0;border:0;background:#fff;color:#35121c;cursor:pointer;text-align:left}.coloring-preview-button img{width:100%;aspect-ratio:4/3;padding:12px;object-fit:contain;background:#fff;box-sizing:border-box}.coloring-preview-button strong,.coloring-preview-button span{padding-inline:14px}.coloring-preview-button strong{padding-top:12px;font-size:1rem}.coloring-preview-button span{padding-top:4px;padding-bottom:12px;color:#76525d;font-size:.9rem}.coloring-card-actions{display:grid;grid-template-columns:1fr 1fr;gap:8px;padding:0 12px 12px}.coloring-card-actions button,.coloring-card-actions a,.coloring-pagination button{display:inline-flex;align-items:center;justify-content:center;min-height:40px;padding:6px 10px;border:0;border-radius:10px;background:#6d1027;color:#fff;font:inherit;font-weight:800;text-decoration:none;cursor:pointer}.coloring-pagination{display:flex;align-items:center;justify-content:center;gap:12px;margin-top:18px}.coloring-pagination span{min-width:110px;text-align:center;font-weight:800}.coloring-pagination button:disabled{opacity:.4;cursor:not-allowed}.coloring-loading,.coloring-error{grid-column:1/-1;padding:32px 18px;text-align:center;font-weight:800}.coloring-error{color:#8b1d35}.memory-showcase{width:min(1120px,100%)}.memory-game-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;max-height:66vh;overflow:auto;padding:5px}.memory-game-card{display:flex;flex-direction:column;overflow:hidden;border:1px solid #cfe8fb;border-radius:22px;background:#fff;box-shadow:0 10px 28px rgba(29,101,151,.12);transition:transform .2s ease,box-shadow .2s ease}.memory-game-card:hover{transform:translateY(-4px);box-shadow:0 16px 32px rgba(29,101,151,.18)}.memory-card-heading{padding:14px 14px 10px;text-align:center}.memory-card-heading strong{display:block;color:#1268b3;font-size:1.12rem}.memory-card-heading span{display:block;margin-top:3px;color:#6c7480;font-size:.86rem}.memory-mini-board{display:grid;grid-template-columns:repeat(4,1fr);gap:7px;padding:4px 14px 14px}.memory-tile{display:grid;place-items:center;aspect-ratio:1;border:2px solid #b9ddf8;border-radius:13px;background:linear-gradient(145deg,#fff,#f1f9ff);font-size:clamp(1.35rem,3vw,2rem);box-shadow:0 4px 10px rgba(19,104,179,.08)}.memory-card-action{margin:auto 14px 14px;padding:11px 14px;border:0;border-radius:12px;background:#0875c9;color:#fff;font:inherit;font-weight:800;cursor:pointer}.memory-card-action:hover{background:#045f9f}.memory-card-action:focus-visible{outline:3px solid #ff9f43;outline-offset:2px}.memory-game-card.featured{grid-column:span 2}.memory-game-card.featured .memory-mini-board{grid-template-columns:repeat(6,1fr)}@media(max-width:900px){.memory-game-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.memory-game-card.featured{grid-column:span 2}}@media(max-width:820px){.coloring-demo-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:620px){.memory-game-grid{grid-template-columns:1fr}.memory-game-card.featured{grid-column:auto}.memory-game-card.featured .memory-mini-board{grid-template-columns:repeat(4,1fr)}}@media(max-width:560px){.coloring-demo-toolbar{align-items:stretch;flex-direction:column}.coloring-demo-grid{grid-template-columns:1fr}.coloring-card-actions{grid-template-columns:1fr}}`;
   document.head.appendChild(modalStyle);
 
   const slides = [...document.querySelectorAll('.slide')];
@@ -87,7 +87,7 @@
 
   const demoDetails = {
     'coloring-demo': ['🎨', 'Desenhos para colorir', '247 desenhos organizados por categoria para visualizar, baixar e imprimir.'],
-    'games-demo': ['🎲', 'Jogos pedagógicos', 'Veja materiais lúdicos que podem ser impressos e usados com a turma.']
+    'games-demo': ['🧠', 'Jogos da memória', 'Escolha um tema e veja modelos lúdicos prontos para trabalhar com a turma.']
   };
   const demoCards = [...document.querySelectorAll('.initial-service-card[data-service]')];
   const demoDialog = document.querySelector('#service-dialog');
@@ -104,8 +104,8 @@
   const drawingCache = new Map();
 
   function escapeHtml(value) {
-    return String(value).replace(/[&<>'"]/g, character => ({
-      '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;'
+    return String(value).replace(/[&<>'\"]/g, character => ({
+      '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '\"': '&quot;'
     })[character]);
   }
 
@@ -218,8 +218,21 @@
 
   function gamesDemo() {
     if (!demoContainer) return;
-    const games = ['🔎 Caça-palavras', '✏️ Cruzadinhas', '🧠 Jogo da memória', '🎟️ Bingo educativo', '🖼️ Associação de imagens', '✂️ Recorte e montagem'];
-    demoContainer.innerHTML = `<div class="demo-showcase"><div class="demo-game-grid">${games.map(game => `<div class="demo-game">${game}</div>`).join('')}</div></div>`;
+    const games = [
+      { title: 'Animais', note: 'Cachorro, gato, coelho, leão, elefante e pássaro', tiles: ['🐶','🐶','🐱','🐱','🐰','🐰','🦁','🦁','🐘','🐘','🐦','🐦'], featured: true },
+      { title: 'Matemática', note: 'Números, quantidades e operações', tiles: ['1️⃣','1️⃣','2️⃣','2️⃣','3️⃣','3️⃣','➕','➕','➖','➖','✖️','✖️'] },
+      { title: 'Natureza', note: 'Elementos naturais e seres vivos', tiles: ['☀️','☀️','🌈','🌈','🌳','🌳','🌸','🌸','☁️','☁️','🦋','🦋'] },
+      { title: 'Veículos', note: 'Transportes terrestres, marítimos e aéreos', tiles: ['🚗','🚗','🚌','🚌','🚲','🚲','✈️','✈️','🚢','🚢','🚂','🚂'] },
+      { title: 'Profissões', note: 'Profissões importantes para a comunidade', tiles: ['👩‍🏫','👩‍🏫','👨‍⚕️','👨‍⚕️','👩‍🚒','👩‍🚒','👮','👮','👩‍🍳','👩‍🍳','🧑‍🌾','🧑‍🌾'], featured: true }
+    ];
+    demoContainer.innerHTML = `<div class="demo-showcase memory-showcase"><div class="memory-game-grid">${games.map(game => `<article class="memory-game-card${game.featured ? ' featured' : ''}"><header class="memory-card-heading"><strong>Jogo da Memória — ${game.title}</strong><span>${game.note}</span></header><div class="memory-mini-board" aria-label="Prévia do jogo da memória de ${game.title}">${game.tiles.map(tile => `<span class="memory-tile" aria-hidden="true">${tile}</span>`).join('')}</div><button class="memory-card-action" type="button" data-memory-theme="${game.title}">Usar este modelo</button></article>`).join('')}</div></div>`;
+    demoContainer.querySelectorAll('[data-memory-theme]').forEach(button => {
+      button.addEventListener('click', () => {
+        const theme = button.dataset.memoryTheme;
+        button.textContent = `${theme} selecionado ✓`;
+        button.setAttribute('aria-pressed', 'true');
+      });
+    });
   }
 
   function openDemo(key) {
