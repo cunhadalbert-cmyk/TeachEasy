@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Jogos da memória TeachEasy prontos para imprimir.">
+  <title>Jogos da Memória — TeachEasy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Libre+Franklin:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="jogos-memoria.css">
+</head>
+<body>
+  <header class="memory-site-header">
+    <a class="memory-back" href="index.html" aria-label="Voltar para a página inicial">← Voltar</a>
+    <div class="memory-brand" aria-label="TeachEasy">
+      <span class="memory-book" aria-hidden="true">
+        <svg viewBox="0 0 92 70" focusable="false">
+          <path class="book-left" d="M10 10c13 0 24 3 33 11v39c-9-8-20-11-33-11z"/>
+          <path class="book-right" d="M82 10c-13 0-24 3-33 11v39c9-8 20-11 33-11z"/>
+          <path class="book-base" d="M8 52c14 0 27 4 38 12 11-8 24-12 38-12"/>
+        </svg>
+      </span>
+      <strong><span>Teach</span>Easy</strong>
+    </div>
+    <button class="print-all" type="button" onclick="window.print()">Imprimir jogos</button>
+  </header>
+
+  <main class="memory-page">
+    <section class="memory-intro" aria-labelledby="memory-title">
+      <span>TEACHEASY • JOGOS PEDAGÓGICOS</span>
+      <h1 id="memory-title">Jogos da Memória</h1>
+      <p>Cartelas prontas para usar com 12 cards, 6 pares e visual infantil no padrão aprovado.</p>
+    </section>
+
+    <nav class="memory-tabs" aria-label="Temas dos jogos da memória">
+      <a href="#matematica">Matemática</a>
+      <a href="#natureza">Natureza</a>
+      <a href="#veiculos">Veículos</a>
+      <a href="#profissoes">Profissões</a>
+      <a href="#animais">Animais</a>
+    </nav>
+
+    <section class="memory-sheet math" id="matematica" aria-labelledby="matematica-title">
+      <div class="sheet-logo" aria-hidden="true"><span class="book-mark">📖</span><strong><span>Teach</span>Easy</strong></div>
+      <h2 class="sheet-title banner" id="matematica-title">Jogo da Memória - Matemática</h2>
+      <div class="memory-grid">
+        <article class="memory-card"><strong class="number red">1</strong><span class="icon-img">🍎</span></article>
+        <article class="memory-card"><strong class="number red">1</strong><span class="icon-img">🍎</span></article>
+        <article class="memory-card"><strong class="number blue">2</strong><span class="stars">⭐ ⭐</span></article>
+        <article class="memory-card"><strong class="number blue">2</strong><span class="stars">⭐ ⭐</span></article>
+        <article class="memory-card"><strong class="number green">3</strong><span class="pencils">✏️ ✏️ ✏️</span></article>
+        <article class="memory-card"><strong class="number green">3</strong><span class="pencils">✏️ ✏️ ✏️</span></article>
+        <article class="memory-card"><span class="symbol purple">+</span></article>
+        <article class="memory-card"><span class="symbol purple">+</span></article>
+        <article class="memory-card"><span class="symbol orange">−</span></article>
+        <article class="memory-card"><span class="symbol orange">−</span></article>
+        <article class="memory-card"><span class="symbol lime">×</span></article>
+        <article class="memory-card"><span class="symbol lime">×</span></article>
+      </div>
+    </section>
+
+    <section class="memory-sheet" id="natureza" aria-labelledby="natureza-title">
+      <div class="sheet-logo" aria-hidden="true"><span class="book-mark">📖</span><strong><span>Teach</span>Easy</strong></div>
+      <h2 class="sheet-title" id="natureza-title">Jogo da Memória - Natureza</h2>
+      <div class="memory-grid">
+        <article class="memory-card nature-card"><span class="big-icon">☀️</span></article>
+        <article class="memory-card nature-card"><span class="big-icon">☀️</span></article>
+        <article class="memory-card nature-card"><span class="big-icon">🌈</span></article>
+        <article class="memory-card nature-card"><span class="big-icon">🌈</span></article>
+        <article class="memory-card nature-card"><span class="big-icon">🌳</span></article>
+        <article class="memory-card nature-card"><span class="big-icon">🌳</span></article>
+        <article class="memory-card nature-card"><span class="big-icon">🌸</span></article>
+        <article class="memory-card nature-card"><span class="big-icon">🌸</span></article>
+        <article class="memory-card nature-card"><span class="big-icon">☁️</span></article>
+        <article class="memory-card nature-card"><span class="big-icon">☁️</span></article>
+        <article class="memory-card nature-card"><span class="big-icon">🦋</span></article>
+        <article class="memory-card nature-card"><span class="big-icon">🦋</span></article>
+      </div>
+    </section>
+
+    <section class="memory-sheet" id="veiculos" aria-labelledby="veiculos-title">
+      <div class="sheet-logo" aria-hidden="true"><span class="book-mark">📖</span><strong><span>Teach</span>Easy</strong></div>
+      <h2 class="sheet-title" id="veiculos-title">Jogo da Memória - <em>Veículos</em></h2>
+      <div class="memory-grid">
+        <article class="memory-card vehicle-card"><span class="big-icon">🚗</span></article>
+        <article class="memory-card vehicle-card"><span class="big-icon">🚗</span></article>
+        <article class="memory-card vehicle-card"><span class="big-icon">🚌</span><small>ESCOLAR</small></article>
+        <article class="memory-card vehicle-card"><span class="big-icon">🚌</span><small>ESCOLAR</small></article>
+        <article class="memory-card vehicle-card"><span class="big-icon">🚲</span></article>
+        <article class="memory-card vehicle-card"><span class="big-icon">🚲</span></article>
+        <article class="memory-card vehicle-card"><span class="big-icon">✈️</span></article>
+        <article class="memory-card vehicle-card"><span class="big-icon">✈️</span></article>
+        <article class="memory-card vehicle-card"><span class="big-icon">⛵</span></article>
+        <article class="memory-card vehicle-card"><span class="big-icon">⛵</span></article>
+        <article class="memory-card vehicle-card"><span class="big-icon">🚂</span></article>
+        <article class="memory-card vehicle-card"><span class="big-icon">🚂</span></article>
+      </div>
+    </section>
+
+    <section class="memory-sheet" id="profissoes" aria-labelledby="profissoes-title">
+      <div class="sheet-logo" aria-hidden="true"><span class="book-mark">📖</span><strong><span>Teach</span>Easy</strong></div>
+      <h2 class="sheet-title banner" id="profissoes-title">Jogo da Memória - Profissões</h2>
+      <div class="memory-grid">
+        <article class="memory-card profession-card"><span class="big-icon">👩‍🏫</span><strong>Professora</strong></article>
+        <article class="memory-card profession-card"><span class="big-icon">👩‍🏫</span><strong>Professora</strong></article>
+        <article class="memory-card profession-card"><span class="big-icon">🧑‍⚕️</span><strong>Médico</strong></article>
+        <article class="memory-card profession-card"><span class="big-icon">🧑‍⚕️</span><strong>Médico</strong></article>
+        <article class="memory-card profession-card"><span class="big-icon">👨‍🚒</span><strong>Bombeiro</strong></article>
+        <article class="memory-card profession-card"><span class="big-icon">👨‍🚒</span><strong>Bombeiro</strong></article>
+        <article class="memory-card profession-card"><span class="big-icon">👮‍♀️</span><strong>Policial</strong></article>
+        <article class="memory-card profession-card"><span class="big-icon">👮‍♀️</span><strong>Policial</strong></article>
+        <article class="memory-card profession-card"><span class="big-icon">👩‍🍳</span><strong>Cozinheira</strong></article>
+        <article class="memory-card profession-card"><span class="big-icon">👩‍🍳</span><strong>Cozinheira</strong></article>
+        <article class="memory-card profession-card"><span class="big-icon">🧑‍🌾</span><strong>Agricultor</strong></article>
+        <article class="memory-card profession-card"><span class="big-icon">🧑‍🌾</span><strong>Agricultor</strong></article>
+      </div>
+    </section>
+
+    <section class="memory-sheet" id="animais" aria-labelledby="animais-title">
+      <div class="sheet-logo" aria-hidden="true"><span class="book-mark">📖</span><strong><span>Teach</span>Easy</strong></div>
+      <h2 class="sheet-title" id="animais-title">Jogo da Memória - Animais</h2>
+      <div class="memory-grid">
+        <article class="memory-card animal-card"><span class="big-icon">🐶</span></article>
+        <article class="memory-card animal-card"><span class="big-icon">🐶</span></article>
+        <article class="memory-card animal-card"><span class="big-icon">🐱</span></article>
+        <article class="memory-card animal-card"><span class="big-icon">🐱</span></article>
+        <article class="memory-card animal-card"><span class="big-icon">🐰</span></article>
+        <article class="memory-card animal-card"><span class="big-icon">🐰</span></article>
+        <article class="memory-card animal-card"><span class="big-icon">🦁</span></article>
+        <article class="memory-card animal-card"><span class="big-icon">🦁</span></article>
+        <article class="memory-card animal-card"><span class="big-icon">🐘</span></article>
+        <article class="memory-card animal-card"><span class="big-icon">🐘</span></article>
+        <article class="memory-card animal-card"><span class="big-icon">🐦</span></article>
+        <article class="memory-card animal-card"><span class="big-icon">🐦</span></article>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
