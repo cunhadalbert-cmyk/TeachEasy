@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Jogo da Memória do alfabeto para imprimir, recortar e jogar.">
+  <title>Jogo da Memória do Alfabeto | TeachEasy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Libre+Franklin:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="jogo-memoria.css">
+</head>
+<body>
+  <a class="skip-link" href="#folha">Pular para o jogo</a>
+
+  <header class="game-header no-print">
+    <a class="brand" href="index.html" aria-label="Voltar para a página inicial do TeachEasy">
+      <strong>TeachEasy</strong>
+      <span>O caminho mais rápido do professor.</span>
+    </a>
+    <a class="back-link" href="jogo-memoria.html">← Memória dos animais</a>
+  </header>
+
+  <main class="game-shell">
+    <section class="game-intro no-print" aria-labelledby="game-title">
+      <span class="eyebrow">JOGOS PEDAGÓGICOS PARA IMPRIMIR</span>
+      <h1 id="game-title">Jogo da Memória — Alfabeto</h1>
+      <p>A criança deverá relacionar cada letra à figura cujo nome começa com ela. Imprima em A4, recorte e jogue fisicamente.</p>
+
+      <div class="game-actions">
+        <button class="action-button secondary" id="shuffle" type="button">Embaralhar cartas</button>
+        <button class="action-button primary" id="print" type="button">🖨 Imprimir jogo</button>
+      </div>
+    </section>
+
+    <section class="sheet-wrap">
+      <article class="print-sheet" id="folha" aria-label="Folha A4 do jogo da memória do alfabeto">
+        <header class="sheet-header">
+          <div>
+            <span class="sheet-brand">TeachEasy</span>
+            <h2>Jogo da Memória — Alfabeto</h2>
+          </div>
+          <p>Nome: ____________________________________ &nbsp; Data: ____/____/______</p>
+        </header>
+
+        <div class="instructions">
+          <strong>Como jogar:</strong>
+          <span>Recorte, misture e encontre cada letra junto da figura que começa com ela.</span>
+        </div>
+
+        <section class="memory-grid" id="memory-grid" aria-label="Doze cartas para recortar"></section>
+
+        <footer class="sheet-footer">
+          <span>TeachEasy — O caminho mais rápido do professor.</span>
+          <span>6 pares • letra + figura</span>
+        </footer>
+      </article>
+    </section>
+  </main>
+
+  <script src="jogo-memoria-alfabeto.js"></script>
+</body>
+</html>
