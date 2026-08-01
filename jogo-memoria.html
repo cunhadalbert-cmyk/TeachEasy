@@ -3,17 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Jogo da Memória educativo do TeachEasy.">
-  <title>Jogo da Memória | TeachEasy</title>
+  <meta name="description" content="Jogo da Memória de animais para imprimir, recortar e jogar.">
+  <title>Jogo da Memória para Imprimir | TeachEasy</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Libre+Franklin:wght@600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Libre+Franklin:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="jogo-memoria.css">
 </head>
 <body>
-  <a class="skip-link" href="#jogo">Pular para o jogo</a>
+  <a class="skip-link" href="#folha">Pular para o jogo</a>
 
-  <header class="game-header">
+  <header class="game-header no-print">
     <a class="brand" href="index.html" aria-label="Voltar para a página inicial do TeachEasy">
       <strong>TeachEasy</strong>
       <span>O caminho mais rápido do professor.</span>
@@ -21,37 +21,42 @@
     <a class="back-link" href="index.html">← Voltar ao início</a>
   </header>
 
-  <main id="jogo" class="game-shell">
-    <section class="game-intro" aria-labelledby="game-title">
-      <span class="eyebrow">JOGOS EDUCATIVOS</span>
-      <h1 id="game-title">Jogo da Memória</h1>
-      <p>Encontre os pares de animais. Vire duas cartas por vez e complete o desafio com o menor número de jogadas.</p>
+  <main class="game-shell">
+    <section class="game-intro no-print" aria-labelledby="game-title">
+      <span class="eyebrow">JOGOS PEDAGÓGICOS PARA IMPRIMIR</span>
+      <h1 id="game-title">Jogo da Memória — Animais</h1>
+      <p>Imprima a folha em tamanho A4, recorte as cartas nas linhas indicadas e use o jogo fisicamente com a turma.</p>
+
+      <div class="game-actions">
+        <button class="action-button secondary" id="shuffle" type="button">Embaralhar cartas</button>
+        <button class="action-button primary" id="print" type="button">🖨 Imprimir jogo</button>
+      </div>
     </section>
 
-    <section class="game-panel" aria-label="Painel do jogo">
-      <div class="game-stats" aria-live="polite">
-        <div><span>Jogadas</span><strong id="moves">0</strong></div>
-        <div><span>Pares</span><strong><span id="matches">0</span>/6</strong></div>
-        <div><span>Tempo</span><strong id="timer">00:00</strong></div>
-      </div>
+    <section class="sheet-wrap">
+      <article class="print-sheet" id="folha" aria-label="Folha A4 do jogo da memória">
+        <header class="sheet-header">
+          <div>
+            <span class="sheet-brand">TeachEasy</span>
+            <h2>Jogo da Memória — Animais</h2>
+          </div>
+          <p>Nome: ____________________________________ &nbsp; Data: ____/____/______</p>
+        </header>
 
-      <button class="restart-button" id="restart" type="button">Reiniciar jogo</button>
+        <div class="instructions">
+          <strong>Como jogar:</strong>
+          <span>Recorte as cartas, misture, vire todas para baixo e encontre os pares iguais.</span>
+        </div>
 
-      <div class="memory-grid" id="memory-grid" aria-label="Cartas do jogo da memória"></div>
+        <section class="memory-grid" id="memory-grid" aria-label="Doze cartas para recortar"></section>
 
-      <p class="game-message" id="game-message" role="status" aria-live="polite">Escolha uma carta para começar.</p>
+        <footer class="sheet-footer">
+          <span>TeachEasy — O caminho mais rápido do professor.</span>
+          <span>6 pares • 12 cartas</span>
+        </footer>
+      </article>
     </section>
   </main>
-
-  <dialog class="win-dialog" id="win-dialog" aria-labelledby="win-title">
-    <div class="win-content">
-      <span aria-hidden="true" class="win-icon">🏆</span>
-      <h2 id="win-title">Parabéns!</h2>
-      <p id="win-summary">Você encontrou todos os pares.</p>
-      <button class="restart-button" id="play-again" type="button">Jogar novamente</button>
-      <a href="index.html">Voltar ao TeachEasy</a>
-    </div>
-  </dialog>
 
   <script src="jogo-memoria.js"></script>
 </body>
