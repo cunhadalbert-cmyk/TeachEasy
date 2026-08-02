@@ -23,36 +23,36 @@
 
     .pedagogical-games-demo{width:min(1080px,100%)}
     .pedagogical-games-intro{margin:0 auto 18px;max-width:760px;text-align:center;color:#31566f;font-weight:700;line-height:1.5}
-    .pedagogical-games-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
-    .pedagogical-game-card{display:grid;gap:12px;padding:18px;border:2px solid #bfe6ff;border-radius:22px;background:#fff;box-shadow:0 10px 24px rgba(29,91,140,.12)}
-    .pedagogical-game-card header{display:flex;align-items:center;gap:12px}
-    .pedagogical-game-icon{display:grid;place-items:center;width:52px;height:52px;border-radius:16px;background:#e7f6ff;font-size:2rem}
-    .pedagogical-game-card h3{margin:0;color:#075aa8;font-size:clamp(1.15rem,2vw,1.45rem)}
-    .pedagogical-game-card p{margin:0;color:#4a6072;line-height:1.45}
-    .pedagogical-game-card ul{display:grid;gap:7px;margin:0;padding:0;list-style:none;color:#3c5365;font-weight:700}
-    .pedagogical-game-card li{display:flex;gap:8px;align-items:flex-start}
-    .pedagogical-game-card li::before{content:'✓';color:#0876cf;font-weight:900}
-    .pedagogical-game-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:4px}
+    .pedagogical-games-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+    .pedagogical-game-tile{display:grid;place-items:center;gap:12px;min-height:150px;padding:18px;border:2px solid #dbe6dd;border-radius:22px;background:#fff;color:#254332;font:inherit;font-weight:900;font-size:clamp(1.15rem,2.2vw,1.55rem);line-height:1.35;text-align:center;cursor:pointer;box-shadow:0 10px 24px rgba(29,91,140,.08);transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease}
+    .pedagogical-game-tile:hover,.pedagogical-game-tile:focus-visible{transform:translateY(-3px);border-color:#0876cf;box-shadow:0 14px 30px rgba(29,91,140,.16);outline:0}
+    .pedagogical-game-tile span{display:block;font-size:2rem}
+    .pedagogical-game-panel{margin-top:18px;padding:20px;border:2px solid #bfe6ff;border-radius:22px;background:#f8fcff;color:#25465c;box-shadow:0 10px 24px rgba(29,91,140,.10)}
+    .pedagogical-game-panel h3{margin:0 0 10px;color:#075aa8;font-size:clamp(1.3rem,2.5vw,1.8rem)}
+    .pedagogical-game-panel p{margin:0 0 14px;line-height:1.5}
+    .pedagogical-game-panel-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+    .pedagogical-game-box{padding:14px;border-radius:16px;background:#fff;border:1px solid #d6eaf8}
+    .pedagogical-game-box strong{display:block;margin-bottom:8px;color:#075aa8}
+    .pedagogical-game-box ul,.pedagogical-game-box ol{margin:0;padding-left:22px}
+    .pedagogical-game-box li{margin:7px 0;font-weight:700}
+    .pedagogical-game-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
     .pedagogical-game-actions button{min-height:42px;padding:9px 14px;border:0;border-radius:12px;background:#0876cf;color:#fff;font:inherit;font-weight:900;cursor:pointer}
     .pedagogical-game-actions button.secondary{background:#6d1027}
-    .pedagogical-game-preview{margin-top:6px;padding:14px;border-radius:16px;background:#f2f9ff;color:#25465c;line-height:1.5}
-    .pedagogical-game-preview strong{display:block;margin-bottom:6px;color:#075aa8}
-    .pedagogical-game-preview ol{margin:8px 0 0;padding-left:22px}
-    .pedagogical-game-preview li{display:list-item;font-weight:600}
-    .pedagogical-game-preview li::before{content:none}
-
     @media(max-width:820px){
       .coloring-demo-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
-      .pedagogical-games-grid{grid-template-columns:1fr}
+      .pedagogical-games-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+      .pedagogical-game-panel-grid{grid-template-columns:1fr}
     }
     @media(max-width:560px){
       .coloring-demo-toolbar{align-items:stretch;flex-direction:column}
       .coloring-demo-grid{grid-template-columns:1fr}
       .coloring-card-actions{grid-template-columns:1fr}
-      .pedagogical-game-card{padding:15px}
+      .pedagogical-games-grid{grid-template-columns:1fr}
+      .pedagogical-game-tile{min-height:118px}
       .pedagogical-game-actions{flex-direction:column}
       .pedagogical-game-actions button{width:100%}
     }
+    @media(prefers-reduced-motion:reduce){.pedagogical-game-tile{transition:none}}
   `;
   document.head.appendChild(style);
 
@@ -138,7 +138,7 @@
 
   const demoDetails = {
     'coloring-demo': ['🎨', 'Desenhos para colorir', '247 desenhos organizados por categoria para visualizar, baixar e imprimir.'],
-    'games-demo': ['🎲', 'Jogos pedagógicos', 'Caça-palavras, cruzadinhas, bingo educativo, associação de imagens, recorte e montagem.']
+    'games-demo': ['🎲', 'Jogos pedagógicos', 'Veja materiais lúdicos que podem ser impressos e usados com a turma.']
   };
   const demoCards = [...document.querySelectorAll('.initial-service-card[data-service]')];
   const demoDialog = document.querySelector('#service-dialog');
@@ -276,7 +276,15 @@
       steps: ['1 horizontal: lugar com muitas árvores.', '2 vertical: líquido essencial para a vida.', '3 horizontal: cuidar e não jogar lixo.']
     },
     {
-      icon: '🎯',
+      icon: '🧠',
+      title: 'Jogo da memória',
+      description: 'Cartas em pares para trabalhar atenção, associação visual, vocabulário e concentração.',
+      uses: ['Pares de imagem + palavra', 'Pares de número + quantidade', 'Pares de pergunta + resposta'],
+      preview: 'Tema: Animais',
+      steps: ['Recorte as cartas em pares.', 'Vire todas para baixo.', 'Cada aluno vira duas cartas e tenta formar o par correto.']
+    },
+    {
+      icon: '🎟️',
       title: 'Bingo educativo',
       description: 'Cartelas pedagógicas para revisar conteúdos de forma lúdica em sala de aula.',
       uses: ['Bingo de números e operações', 'Bingo de letras, sílabas e palavras', 'Bingo de figuras, animais e profissões'],
@@ -284,7 +292,7 @@
       steps: ['O professor sorteia uma conta.', 'O aluno marca o resultado na cartela.', 'Vence quem completar linha, coluna ou cartela cheia.']
     },
     {
-      icon: '🧩',
+      icon: '🖼️',
       title: 'Associação de imagens',
       description: 'Atividade para ligar imagem, palavra, conceito ou resposta correta.',
       uses: ['Imagem + palavra', 'Figura + som inicial', 'Objeto + função', 'Animal + habitat'],
@@ -310,26 +318,40 @@
     printWindow.document.close();
   }
 
+  function renderGamePanel(index) {
+    const game = pedagogicalGames[index];
+    const panel = demoContainer.querySelector('.pedagogical-game-panel');
+    if (!panel || !game) return;
+    panel.hidden = false;
+    panel.innerHTML = `<h3>${game.icon} ${escapeHtml(game.title)}</h3><p>${escapeHtml(game.description)}</p><div class="pedagogical-game-panel-grid"><section class="pedagogical-game-box"><strong>Como usar em sala</strong><ul>${game.uses.map(item => `<li>${escapeHtml(item)}</li>`).join('')}</ul></section><section class="pedagogical-game-box"><strong>${escapeHtml(game.preview)}</strong><ol>${game.steps.map(item => `<li>${escapeHtml(item)}</li>`).join('')}</ol></section></div><div class="pedagogical-game-actions"><button type="button" data-game-print="${index}">Imprimir modelo</button><button class="secondary" type="button" data-game-copy="${index}">Copiar ideia</button></div>`;
+    panel.scrollIntoView({ behavior: reduceMotion ? 'auto' : 'smooth', block: 'nearest' });
+  }
+
   function gamesDemo() {
     if (!demoContainer) return;
-    demoContainer.innerHTML = `<div class="demo-showcase pedagogical-games-demo"><p class="pedagogical-games-intro">Escolha um dos cinco jogos pedagógicos aprovados. Cada card mantém o padrão do TeachEasy e traz uma ideia pronta para o professor imprimir ou adaptar.</p><div class="pedagogical-games-grid">${pedagogicalGames.map((game, index) => `<article class="pedagogical-game-card"><header><span class="pedagogical-game-icon" aria-hidden="true">${game.icon}</span><h3>${escapeHtml(game.title)}</h3></header><p>${escapeHtml(game.description)}</p><ul>${game.uses.map(item => `<li>${escapeHtml(item)}</li>`).join('')}</ul><div class="pedagogical-game-preview"><strong>${escapeHtml(game.preview)}</strong><ol>${game.steps.map(item => `<li>${escapeHtml(item)}</li>`).join('')}</ol></div><div class="pedagogical-game-actions"><button type="button" data-game-print="${index}">Imprimir modelo</button><button class="secondary" type="button" data-game-copy="${index}">Copiar ideia</button></div></article>`).join('')}</div></div>`;
+    demoContainer.innerHTML = `<div class="demo-showcase pedagogical-games-demo"><p class="pedagogical-games-intro">Clique em um jogo para abrir o modelo, imprimir ou copiar a ideia.</p><div class="pedagogical-games-grid">${pedagogicalGames.map((game, index) => `<button class="pedagogical-game-tile" type="button" data-game-open="${index}" aria-label="Abrir ${escapeHtml(game.title)}"><span aria-hidden="true">${game.icon}</span>${escapeHtml(game.title)}</button>`).join('')}</div><section class="pedagogical-game-panel" aria-live="polite" hidden></section></div>`;
 
-    demoContainer.querySelectorAll('[data-game-print]').forEach(button => {
-      button.addEventListener('click', () => printGame(pedagogicalGames[Number(button.dataset.gamePrint)]));
+    demoContainer.querySelectorAll('[data-game-open]').forEach(button => {
+      button.addEventListener('click', () => renderGamePanel(Number(button.dataset.gameOpen)));
     });
-    demoContainer.querySelectorAll('[data-game-copy]').forEach(button => {
-      button.addEventListener('click', async () => {
-        const game = pedagogicalGames[Number(button.dataset.gameCopy)];
-        const text = `${game.title}\n${game.description}\n\n${game.preview}\n${game.steps.join('\n')}`;
-        try {
-          await navigator.clipboard.writeText(text);
-          button.textContent = 'Copiado!';
-          window.setTimeout(() => { button.textContent = 'Copiar ideia'; }, 1400);
-        } catch {
-          button.textContent = 'Não copiou';
-          window.setTimeout(() => { button.textContent = 'Copiar ideia'; }, 1400);
-        }
-      });
+    demoContainer.addEventListener('click', async event => {
+      const printButton = event.target.closest('[data-game-print]');
+      if (printButton) {
+        printGame(pedagogicalGames[Number(printButton.dataset.gamePrint)]);
+        return;
+      }
+      const copyButton = event.target.closest('[data-game-copy]');
+      if (!copyButton) return;
+      const game = pedagogicalGames[Number(copyButton.dataset.gameCopy)];
+      const text = `${game.title}\n${game.description}\n\n${game.preview}\n${game.steps.join('\n')}`;
+      try {
+        await navigator.clipboard.writeText(text);
+        copyButton.textContent = 'Copiado!';
+        window.setTimeout(() => { copyButton.textContent = 'Copiar ideia'; }, 1400);
+      } catch {
+        copyButton.textContent = 'Não copiou';
+        window.setTimeout(() => { copyButton.textContent = 'Copiar ideia'; }, 1400);
+      }
     });
   }
 
