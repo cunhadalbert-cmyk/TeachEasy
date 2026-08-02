@@ -1874,15 +1874,3 @@ body:not(.library-page) .footer span {
   }
 }
 /* FIM TEACHEASY HERO PROFESSORA */
-
-/* Ajuste TeachEasy: card clicável dos jogos pedagógicos */
-.initial-service-card[href] {
-  text-decoration: none;
-  color: inherit;
-  display: block;
-}
-.initial-service-card[href]:hover,
-.initial-service-card[href]:focus-visible {
-  outline: 3px solid rgba(8, 118, 207, .28);
-  outline-offset: 4px;
-}
