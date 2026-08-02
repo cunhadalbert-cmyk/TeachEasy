@@ -1,4 +1,4 @@
-﻿const area = document.getElementById("area-jogo");
+const area = document.getElementById("area-jogo");
 const titulo = document.getElementById("jogo-titulo");
 const descricao = document.getElementById("jogo-descricao");
 const conteudo = document.getElementById("jogo-conteudo");
@@ -10,6 +10,8 @@ let jogoAtual = "caca";
 let primeiraCarta = null;
 let travado = false;
 let associacaoSelecionada = null;
+let paresEncontrados = 0;
+let totalPares = 0;
 
 const jogos = {
   caca: {
@@ -47,6 +49,9 @@ const jogos = {
 document.querySelectorAll(".jogo-card").forEach(botao => {
   botao.addEventListener("click", () => abrirJogo(botao.dataset.jogo));
 });
+
+const jogoPedido = new URLSearchParams(window.location.search).get("jogo");
+if (jogoPedido && jogos[jogoPedido]) abrirJogo(jogoPedido);
 
 fechar.addEventListener("click", () => {
   area.hidden = true;
@@ -93,6 +98,7 @@ function renderCaca() {
       <div class="lista-palavras">
         <span>GATO</span><span>LEÃO</span><span>PEIXE</span><span>AVE</span><span>FLOR</span><span>ESCOLA</span>
       </div>
+      <p class="dica-grade">Na grade, as palavras aparecem sem acento.</p>
     </div>
     <div class="caixa">
       <h3>Grade do caça-palavras</h3>
@@ -154,6 +160,7 @@ function conferirCruzadinha() {
 function renderMemoria() {
   primeiraCarta = null;
   travado = false;
+  paresEncontrados = 0;
 
   const pares = [
     { id: "cao", texto: "🐶" },
@@ -165,6 +172,7 @@ function renderMemoria() {
   ];
 
   const cartas = embaralhar([...pares, ...pares]);
+  totalPares = pares.length;
 
   conteudo.innerHTML = `
     <div class="caixa">
@@ -173,7 +181,10 @@ function renderMemoria() {
         ${cartas.map(carta => `<button class="memoria-card" type="button" data-id="${carta.id}" data-texto="${carta.texto}">?</button>`).join("")}
       </div>
     </div>
-    <div class="caixa" id="resultado-memoria">Clique em duas cartas.</div>
+    <div class="caixa">
+      <p id="resultado-memoria">Clique em duas cartas.</p>
+      <p class="placar-memoria">Pares encontrados: <span id="placar-memoria">0</span> de ${pares.length}</p>
+    </div>
   `;
 
   conteudo.querySelectorAll(".memoria-card").forEach(card => {
@@ -199,7 +210,10 @@ function virarCarta(card) {
     card.classList.add("par");
     primeiraCarta = null;
     travado = false;
-    document.getElementById("resultado-memoria").textContent = "Par encontrado!";
+    paresEncontrados++;
+    document.getElementById("placar-memoria").textContent = paresEncontrados;
+    document.getElementById("resultado-memoria").textContent =
+      paresEncontrados === totalPares ? "Você encontrou todos os pares!" : "Par encontrado!";
     return;
   }
 

@@ -218,8 +218,20 @@
 
   function gamesDemo() {
     if (!demoContainer) return;
-    const games = ['🔎 Caça-palavras', '✏️ Cruzadinhas', '🧠 Jogo da memória', '🎟️ Bingo educativo', '🖼️ Associação de imagens', '✂️ Recorte e montagem'];
-    demoContainer.innerHTML = `<div class="demo-showcase"><div class="demo-game-grid">${games.map(game => `<div class="demo-game">${game}</div>`).join('')}</div></div>`;
+    const games = [
+      ['caca', '🔎 Caça-palavras'],
+      ['cruzadinha', '✏️ Cruzadinhas'],
+      ['memoria', '🧠 Jogo da memória'],
+      ['bingo', '🎟️ Bingo educativo'],
+      ['associacao', '🖼️ Associação de imagens'],
+      ['recorte', '✂️ Recorte e montagem']
+    ];
+    const cards = games
+      .map(([chave, rotulo]) => `<a class="demo-game" href="jogos-pedagogicos.html?jogo=${chave}">${rotulo}</a>`)
+      .join('');
+    demoContainer.innerHTML = `<div class="demo-showcase"><div class="demo-game-grid">${cards}</div>` +
+      `<p class="demo-game-note"><a href="jogos-pedagogicos.html">Abrir a página de jogos</a>` +
+      ` ou <a href="jogos-memoria.html">ver as folhas de memória para imprimir</a>.</p></div>`;
   }
 
   function openDemo(key) {
@@ -232,7 +244,8 @@
     if (titleNode) titleNode.textContent = title;
     if (descriptionNode) descriptionNode.textContent = description;
     if (key === 'coloring-demo') coloringDemo();
-    else gamesDemo();
+    else if (key === 'games-demo') gamesDemo();
+    else return;
     demoDialog.showModal();
   }
 

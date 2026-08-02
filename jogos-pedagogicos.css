@@ -1,4 +1,4 @@
-﻿:root {
+:root {
   --vinho: #6d1027;
   --azul: #0876cf;
   --azul-claro: #bfe6ff;
@@ -393,5 +393,40 @@ body {
 
   .word-grid button {
     font-size: .85rem;
+  }
+}
+
+.atalho-memoria {
+  margin: 14px 0 0;
+  font-weight: 700;
+}
+
+.atalho-memoria a {
+  color: var(--azul);
+}
+
+.placar-memoria {
+  font-weight: 800;
+}
+
+@media print {
+  .topo,
+  .hero-jogos,
+  .grade-jogos,
+  .acoes,
+  #fechar-jogo {
+    display: none;
+  }
+
+  .area-jogo {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-shadow: none;
+  }
+
+  .memoria-card {
+    color: transparent;
   }
 }
