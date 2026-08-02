@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jogos pedagógicos — TeachEasy</title>
+  <meta name="description" content="Jogos pedagógicos clicáveis do TeachEasy para professores.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="jogos-pedagogicos.css">
+</head>
+<body>
+  <header class="topo">
+    <a href="index.html" class="logo">
+      <strong>TeachEasy</strong>
+      <span>O caminho mais rápido do professor.</span>
+    </a>
+  </header>
+
+  <main class="pagina">
+    <section class="hero-jogos">
+      <div class="icone">🎲</div>
+      <span>DEMONSTRAÇÃO TEACHEASY</span>
+      <h1>Jogos pedagógicos</h1>
+      <p>Escolha um jogo, clique e use o modelo pronto em sala de aula.</p>
+    </section>
+
+    <section class="grade-jogos" aria-label="Lista de jogos pedagógicos">
+      <button class="jogo-card" type="button" data-jogo="caca">
+        <span>🔎</span>
+        <strong>Caça-palavras</strong>
+      </button>
+
+      <button class="jogo-card" type="button" data-jogo="cruzadinha">
+        <span>✏️</span>
+        <strong>Cruzadinhas</strong>
+      </button>
+
+      <button class="jogo-card" type="button" data-jogo="memoria">
+        <span>🧠</span>
+        <strong>Jogo da memória</strong>
+      </button>
+
+      <button class="jogo-card" type="button" data-jogo="bingo">
+        <span>🎟️</span>
+        <strong>Bingo educativo</strong>
+      </button>
+
+      <button class="jogo-card" type="button" data-jogo="associacao">
+        <span>🖼️</span>
+        <strong>Associação de imagens</strong>
+      </button>
+
+      <button class="jogo-card" type="button" data-jogo="recorte">
+        <span>✂️</span>
+        <strong>Recorte e montagem</strong>
+      </button>
+    </section>
+
+    <section id="area-jogo" class="area-jogo" hidden>
+      <div class="area-cabecalho">
+        <div>
+          <span id="jogo-etiqueta">JOGO</span>
+          <h2 id="jogo-titulo"></h2>
+          <p id="jogo-descricao"></p>
+        </div>
+        <button id="fechar-jogo" type="button">Fechar</button>
+      </div>
+
+      <div id="jogo-conteudo" class="jogo-conteudo"></div>
+
+      <div class="acoes">
+        <button id="imprimir-jogo" type="button">Imprimir modelo</button>
+        <button id="novo-jogo" type="button">Gerar novamente</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="jogos-pedagogicos.js"></script>
+</body>
+</html>

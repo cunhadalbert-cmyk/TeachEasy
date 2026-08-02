@@ -1,0 +1,266 @@
+:root {
+  --blue: #0868c9;
+  --blue-dark: #063c9c;
+  --blue-soft: #bfe5ff;
+  --orange: #ff6b12;
+  --green: #62be2f;
+  --text: #17345d;
+  --shadow: 0 16px 30px rgba(34, 85, 130, .13);
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  font-family: "DM Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: var(--text);
+  background:
+    radial-gradient(circle at top, #fff 0, #fff 42%, #f7fbff 100%);
+}
+
+.memory-site-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: 16px;
+  padding: 16px clamp(16px, 4vw, 42px);
+  background: rgba(255, 255, 255, .93);
+  border-bottom: 1px solid #d9ecfb;
+  backdrop-filter: blur(12px);
+}
+
+.memory-back,
+.print-all {
+  justify-self: start;
+  min-height: 44px;
+  border: 0;
+  border-radius: 999px;
+  padding: 10px 18px;
+  color: #fff;
+  background: linear-gradient(135deg, var(--blue), var(--blue-dark));
+  font-weight: 800;
+  cursor: pointer;
+  box-shadow: 0 8px 18px rgba(8, 104, 201, .18);
+}
+
+.print-all { justify-self: end; }
+
+.memory-brand,
+.sheet-logo {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-family: "Libre Franklin", sans-serif;
+  font-weight: 800;
+  letter-spacing: -.04em;
+}
+
+.memory-brand strong,
+.sheet-logo strong {
+  color: var(--orange);
+  font-size: clamp(34px, 5vw, 60px);
+  line-height: 1;
+}
+
+.memory-brand strong span,
+.sheet-logo strong span { color: var(--blue); }
+.memory-book { width: clamp(52px, 7vw, 82px); }
+.memory-book svg { display: block; width: 100%; }
+.book-left { fill: #0c82d8; }
+.book-right { fill: #68bf36; }
+.book-base { fill: none; stroke: var(--orange); stroke-width: 7; stroke-linecap: round; stroke-linejoin: round; }
+.book-mark { font-size: clamp(28px, 4vw, 46px); }
+
+.memory-page {
+  width: min(1280px, calc(100% - 32px));
+  margin: 0 auto 70px;
+}
+
+.memory-intro {
+  padding: 54px 0 24px;
+  text-align: center;
+}
+
+.memory-intro span {
+  color: var(--orange);
+  font-weight: 900;
+  letter-spacing: .14em;
+  font-size: 14px;
+}
+
+.memory-intro h1 {
+  margin: 8px 0 10px;
+  font-family: "Libre Franklin", sans-serif;
+  font-size: clamp(42px, 7vw, 82px);
+  color: var(--blue-dark);
+  letter-spacing: -.05em;
+}
+
+.memory-intro p {
+  margin: 0 auto;
+  max-width: 760px;
+  font-size: clamp(18px, 2.4vw, 24px);
+  color: #46617d;
+}
+
+.memory-tabs {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 10px 0 36px;
+}
+
+.memory-tabs a {
+  display: inline-flex;
+  min-height: 46px;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #d7efff;
+  border-radius: 999px;
+  padding: 8px 18px;
+  color: var(--blue-dark);
+  background: #fff;
+  font-weight: 900;
+  text-decoration: none;
+}
+
+.memory-sheet {
+  page-break-inside: avoid;
+  margin: 0 auto 42px;
+  padding: clamp(22px, 3vw, 38px);
+  border: 1px solid #dff1ff;
+  border-radius: 36px;
+  background: #fff;
+  box-shadow: var(--shadow);
+}
+
+.sheet-logo { width: 100%; }
+.sheet-logo strong { font-size: clamp(34px, 5vw, 62px); }
+
+.sheet-title {
+  margin: 18px auto 24px;
+  font-family: "Libre Franklin", sans-serif;
+  font-size: clamp(32px, 5.8vw, 66px);
+  line-height: 1.08;
+  text-align: center;
+  color: var(--blue-dark);
+  letter-spacing: -.05em;
+}
+
+.sheet-title em {
+  color: var(--orange);
+  font-style: normal;
+}
+
+.sheet-title.banner {
+  width: fit-content;
+  max-width: 100%;
+  padding: 14px clamp(20px, 4vw, 48px) 18px;
+  color: #fff;
+  background: linear-gradient(180deg, #1188df, #0759b8);
+  border-radius: 28px;
+  text-shadow: 0 4px 0 rgba(3, 46, 114, .25);
+}
+
+.memory-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: clamp(10px, 1.7vw, 22px);
+}
+
+.memory-card {
+  aspect-ratio: 1 / 1;
+  display: grid;
+  place-items: center;
+  align-content: center;
+  gap: clamp(4px, .8vw, 10px);
+  min-width: 0;
+  overflow: hidden;
+  border: clamp(4px, .6vw, 7px) solid var(--blue-soft);
+  border-radius: clamp(16px, 2.2vw, 30px);
+  background: linear-gradient(180deg, #fff 0%, #fefefe 60%, #f8fdff 100%);
+  box-shadow:
+    inset 0 0 0 2px rgba(255, 255, 255, .92),
+    0 9px 16px rgba(41, 102, 154, .12);
+}
+
+.number,
+.symbol,
+.big-icon {
+  display: block;
+  font-family: "Libre Franklin", sans-serif;
+  font-weight: 900;
+  line-height: .9;
+  filter: drop-shadow(0 5px 0 rgba(0, 0, 0, .12));
+}
+
+.number { font-size: clamp(54px, 11vw, 124px); }
+.symbol { font-size: clamp(82px, 15vw, 178px); }
+.big-icon { font-size: clamp(58px, 11vw, 132px); }
+.icon-img { font-size: clamp(58px, 9vw, 112px); line-height: 1; }
+.stars,
+.pencils { font-size: clamp(32px, 6vw, 68px); line-height: 1; white-space: nowrap; }
+.red { color: #f44336; }
+.blue { color: #098de8; }
+.green { color: #58b92f; }
+.purple { color: #a53ad4; }
+.orange { color: #ff9100; }
+.lime { color: #63c62e; }
+
+.profession-card strong,
+.vehicle-card small {
+  display: block;
+  color: var(--blue-dark);
+  font-size: clamp(13px, 2vw, 22px);
+  font-weight: 900;
+  line-height: 1.05;
+  text-align: center;
+}
+
+.vehicle-card small {
+  margin-top: -6px;
+  color: #111;
+  background: #ffdf3b;
+  border: 2px solid #f4a600;
+  border-radius: 999px;
+  padding: 3px 8px;
+}
+
+@media (max-width: 760px) {
+  .memory-site-header {
+    position: static;
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .memory-back,
+  .print-all { justify-self: center; }
+  .memory-page { width: min(100% - 18px, 1280px); }
+  .memory-sheet { padding: 14px; border-radius: 24px; }
+  .memory-grid { gap: 8px; }
+  .sheet-title.banner { border-radius: 20px; }
+}
+
+@media print {
+  body { background: #fff; }
+  .memory-site-header,
+  .memory-intro,
+  .memory-tabs { display: none; }
+  .memory-page { width: 100%; margin: 0; }
+  .memory-sheet {
+    min-height: 100vh;
+    margin: 0;
+    padding: 14mm 10mm;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+    break-after: page;
+  }
+  .memory-sheet:last-child { break-after: auto; }
+  .memory-card { box-shadow: none; }
+}
