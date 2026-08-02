@@ -21,36 +21,38 @@
     .coloring-loading,.coloring-error{grid-column:1/-1;padding:32px 18px;text-align:center;font-weight:800}
     .coloring-error{color:#8b1d35}
 
-    .memory-demo{width:min(1080px,100%)}
-    .memory-tabs{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-bottom:18px}
-    .memory-tab{border:2px solid #9dd2ff;border-radius:999px;background:#fff;color:#075aa8;padding:10px 16px;font:inherit;font-weight:800;cursor:pointer}
-    .memory-tab.active{background:#0876cf;color:#fff;border-color:#0876cf}
-    .memory-status{display:flex;align-items:center;justify-content:space-between;gap:16px;margin:0 0 16px;font-weight:800;color:#17496f}
-    .memory-reset{border:0;border-radius:12px;background:#ff7a00;color:#fff;padding:10px 16px;font:inherit;font-weight:800;cursor:pointer}
-    .memory-board{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
-    .memory-card{position:relative;aspect-ratio:1/1;border:0;border-radius:20px;background:transparent;cursor:pointer;perspective:900px;padding:0}
-    .memory-card-inner{position:absolute;inset:0;transition:transform .38s;transform-style:preserve-3d}
-    .memory-card.flipped .memory-card-inner,.memory-card.matched .memory-card-inner{transform:rotateY(180deg)}
-    .memory-face{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;border-radius:20px;backface-visibility:hidden;box-shadow:0 8px 20px rgba(29,91,140,.15)}
-    .memory-back{background:linear-gradient(145deg,#0876cf,#35a4ef);color:#fff;border:4px solid #bfe6ff;font-size:clamp(2rem,5vw,4rem)}
-    .memory-front{transform:rotateY(180deg);background:#fff;border:4px solid #bfe6ff;flex-direction:column;padding:10px;text-align:center}
-    .memory-emoji{font-size:clamp(2.4rem,6vw,4.8rem);line-height:1}
-    .memory-label{margin-top:8px;color:#17496f;font-weight:900;font-size:clamp(.78rem,1.6vw,1rem)}
-    .memory-card.matched .memory-front{outline:4px solid #64c96b;outline-offset:-4px}
-    .memory-title{text-align:center;margin:0 0 16px;color:#075aa8;font-size:clamp(1.35rem,3vw,2rem)}
+    .pedagogical-games-demo{width:min(1080px,100%)}
+    .pedagogical-games-intro{margin:0 auto 18px;max-width:760px;text-align:center;color:#31566f;font-weight:700;line-height:1.5}
+    .pedagogical-games-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+    .pedagogical-game-card{display:grid;gap:12px;padding:18px;border:2px solid #bfe6ff;border-radius:22px;background:#fff;box-shadow:0 10px 24px rgba(29,91,140,.12)}
+    .pedagogical-game-card header{display:flex;align-items:center;gap:12px}
+    .pedagogical-game-icon{display:grid;place-items:center;width:52px;height:52px;border-radius:16px;background:#e7f6ff;font-size:2rem}
+    .pedagogical-game-card h3{margin:0;color:#075aa8;font-size:clamp(1.15rem,2vw,1.45rem)}
+    .pedagogical-game-card p{margin:0;color:#4a6072;line-height:1.45}
+    .pedagogical-game-card ul{display:grid;gap:7px;margin:0;padding:0;list-style:none;color:#3c5365;font-weight:700}
+    .pedagogical-game-card li{display:flex;gap:8px;align-items:flex-start}
+    .pedagogical-game-card li::before{content:'✓';color:#0876cf;font-weight:900}
+    .pedagogical-game-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:4px}
+    .pedagogical-game-actions button{min-height:42px;padding:9px 14px;border:0;border-radius:12px;background:#0876cf;color:#fff;font:inherit;font-weight:900;cursor:pointer}
+    .pedagogical-game-actions button.secondary{background:#6d1027}
+    .pedagogical-game-preview{margin-top:6px;padding:14px;border-radius:16px;background:#f2f9ff;color:#25465c;line-height:1.5}
+    .pedagogical-game-preview strong{display:block;margin-bottom:6px;color:#075aa8}
+    .pedagogical-game-preview ol{margin:8px 0 0;padding-left:22px}
+    .pedagogical-game-preview li{display:list-item;font-weight:600}
+    .pedagogical-game-preview li::before{content:none}
 
     @media(max-width:820px){
       .coloring-demo-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
-      .memory-board{grid-template-columns:repeat(3,minmax(0,1fr))}
+      .pedagogical-games-grid{grid-template-columns:1fr}
     }
     @media(max-width:560px){
       .coloring-demo-toolbar{align-items:stretch;flex-direction:column}
       .coloring-demo-grid{grid-template-columns:1fr}
       .coloring-card-actions{grid-template-columns:1fr}
-      .memory-board{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
-      .memory-status{align-items:stretch;flex-direction:column;text-align:center}
+      .pedagogical-game-card{padding:15px}
+      .pedagogical-game-actions{flex-direction:column}
+      .pedagogical-game-actions button{width:100%}
     }
-    @media(prefers-reduced-motion:reduce){.memory-card-inner{transition:none}}
   `;
   document.head.appendChild(style);
 
@@ -136,7 +138,7 @@
 
   const demoDetails = {
     'coloring-demo': ['🎨', 'Desenhos para colorir', '247 desenhos organizados por categoria para visualizar, baixar e imprimir.'],
-    'games-demo': ['🧠', 'Jogos da memória', 'Escolha um tema e encontre todos os pares.']
+    'games-demo': ['🎲', 'Jogos pedagógicos', 'Caça-palavras, cruzadinhas, bingo educativo, associação de imagens, recorte e montagem.']
   };
   const demoCards = [...document.querySelectorAll('.initial-service-card[data-service]')];
   const demoDialog = document.querySelector('#service-dialog');
@@ -153,7 +155,7 @@
   const drawingCache = new Map();
 
   function escapeHtml(value) {
-    return String(value).replace(/[&<>'"]/g, character => ({
+    return String(value).replace(/[&<>'\"]/g, character => ({
       '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;'
     })[character]);
   }
@@ -256,93 +258,79 @@
     selectCategory('Todos');
   }
 
-  const memoryThemes = {
-    Animais: [['🐶','Pingo'],['🐱','Gato'],['🐰','Coelho'],['🦁','Leão'],['🐘','Elefante'],['🐦','Pássaro']],
-    Matemática: [['1️⃣','Número 1'],['2️⃣','Número 2'],['3️⃣','Número 3'],['➕','Adição'],['➖','Subtração'],['✖️','Multiplicação']],
-    Natureza: [['☀️','Sol'],['🌈','Arco-íris'],['🌳','Árvore'],['🌸','Flor'],['☁️','Nuvem'],['🦋','Borboleta']],
-    Veículos: [['🚗','Carro'],['🚌','Ônibus'],['🚲','Bicicleta'],['✈️','Avião'],['🚢','Navio'],['🚂','Trem']],
-    Profissões: [['👩‍🏫','Professora'],['🧑‍⚕️','Médico'],['🧑‍🚒','Bombeiro'],['👮‍♀️','Policial'],['👩‍🍳','Cozinheira'],['🧑‍🌾','Agricultor']]
-  };
+  const pedagogicalGames = [
+    {
+      icon: '🔎',
+      title: 'Caça-palavras',
+      description: 'Atividade para encontrar palavras escondidas e reforçar vocabulário por tema.',
+      uses: ['Português: sílabas, substantivos e verbos', 'Ciências: animais, plantas e corpo humano', 'História e Geografia: datas, lugares e conceitos'],
+      preview: 'Tema: Animais',
+      steps: ['Encontre: GATO, SAPO, LEÃO, PEIXE e AVE.', 'Circule cada palavra encontrada.', 'Escolha uma palavra e escreva uma frase.']
+    },
+    {
+      icon: '✏️',
+      title: 'Cruzadinhas',
+      description: 'Jogo de perguntas e respostas para completar palavras nos espaços da cruzadinha.',
+      uses: ['Trabalha leitura e interpretação', 'Ajuda na escrita correta das palavras', 'Pode ser usado como revisão antes da prova'],
+      preview: 'Tema: Meio ambiente',
+      steps: ['1 horizontal: lugar com muitas árvores.', '2 vertical: líquido essencial para a vida.', '3 horizontal: cuidar e não jogar lixo.']
+    },
+    {
+      icon: '🎯',
+      title: 'Bingo educativo',
+      description: 'Cartelas pedagógicas para revisar conteúdos de forma lúdica em sala de aula.',
+      uses: ['Bingo de números e operações', 'Bingo de letras, sílabas e palavras', 'Bingo de figuras, animais e profissões'],
+      preview: 'Tema: Matemática',
+      steps: ['O professor sorteia uma conta.', 'O aluno marca o resultado na cartela.', 'Vence quem completar linha, coluna ou cartela cheia.']
+    },
+    {
+      icon: '🧩',
+      title: 'Associação de imagens',
+      description: 'Atividade para ligar imagem, palavra, conceito ou resposta correta.',
+      uses: ['Imagem + palavra', 'Figura + som inicial', 'Objeto + função', 'Animal + habitat'],
+      preview: 'Tema: Profissões',
+      steps: ['Ligue o bombeiro ao caminhão de bombeiros.', 'Ligue a professora ao quadro.', 'Ligue o médico ao estetoscópio.']
+    },
+    {
+      icon: '✂️',
+      title: 'Recorte e montagem',
+      description: 'Material para imprimir, recortar, ordenar, colar e montar com apoio visual.',
+      uses: ['Sequência de histórias', 'Ciclo da água e ciclo de vida', 'Formas geométricas e partes do corpo'],
+      preview: 'Tema: Sequência lógica',
+      steps: ['Recorte as figuras.', 'Organize na ordem correta.', 'Cole no caderno e explique o que aconteceu.']
+    }
+  ];
 
-  function shuffle(items) {
-    return [...items].sort(() => Math.random() - 0.5);
+  function printGame(game) {
+    const printWindow = window.open('', '_blank', 'width=900,height=1100');
+    if (!printWindow) return;
+    const useItems = game.uses.map(item => `<li>${escapeHtml(item)}</li>`).join('');
+    const stepItems = game.steps.map(item => `<li>${escapeHtml(item)}</li>`).join('');
+    printWindow.document.write(`<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><title>${escapeHtml(game.title)}</title><style>@page{size:A4;margin:14mm}*{box-sizing:border-box}body{font-family:Arial,sans-serif;color:#263847}.sheet{border:2px solid #9dd2ff;border-radius:18px;padding:20px;min-height:250mm}.brand{font-size:22px;font-weight:900;color:#075aa8}.subtitle{color:#6d1027;font-weight:800;margin:4px 0 24px}h1{font-size:30px;margin:0 0 12px;color:#075aa8}.icon{font-size:42px}.box{border:1px solid #bfe6ff;border-radius:14px;padding:14px;margin:14px 0;background:#f6fbff}li{margin:8px 0;font-size:17px}.footer{margin-top:24px;font-weight:800;color:#6d1027}</style></head><body><main class="sheet"><div class="brand">TeachEasy</div><div class="subtitle">O caminho mais rápido do professor.</div><div class="icon">${game.icon}</div><h1>${escapeHtml(game.title)}</h1><p>${escapeHtml(game.description)}</p><section class="box"><strong>Como usar em sala:</strong><ul>${useItems}</ul></section><section class="box"><strong>Modelo rápido:</strong><p>${escapeHtml(game.preview)}</p><ol>${stepItems}</ol></section><p class="footer">Professor(a): ____________________ Turma: ______ Data: ____/____/______</p></main><script>window.onload=()=>setTimeout(()=>window.print(),350)<\/script></body></html>`);
+    printWindow.document.close();
   }
 
   function gamesDemo() {
     if (!demoContainer) return;
-    demoContainer.innerHTML = `<div class="demo-showcase memory-demo"><h3 class="memory-title">TeachEasy — Jogo da Memória</h3><div class="memory-tabs">${Object.keys(memoryThemes).map((theme, index) => `<button class="memory-tab${index === 0 ? ' active' : ''}" type="button" data-theme="${theme}">${theme}</button>`).join('')}</div><div class="memory-status"><span class="memory-counter" aria-live="polite"></span><button class="memory-reset" type="button">🔄 Embaralhar novamente</button></div><div class="memory-board" aria-label="Tabuleiro do jogo da memória"></div></div>`;
+    demoContainer.innerHTML = `<div class="demo-showcase pedagogical-games-demo"><p class="pedagogical-games-intro">Escolha um dos cinco jogos pedagógicos aprovados. Cada card mantém o padrão do TeachEasy e traz uma ideia pronta para o professor imprimir ou adaptar.</p><div class="pedagogical-games-grid">${pedagogicalGames.map((game, index) => `<article class="pedagogical-game-card"><header><span class="pedagogical-game-icon" aria-hidden="true">${game.icon}</span><h3>${escapeHtml(game.title)}</h3></header><p>${escapeHtml(game.description)}</p><ul>${game.uses.map(item => `<li>${escapeHtml(item)}</li>`).join('')}</ul><div class="pedagogical-game-preview"><strong>${escapeHtml(game.preview)}</strong><ol>${game.steps.map(item => `<li>${escapeHtml(item)}</li>`).join('')}</ol></div><div class="pedagogical-game-actions"><button type="button" data-game-print="${index}">Imprimir modelo</button><button class="secondary" type="button" data-game-copy="${index}">Copiar ideia</button></div></article>`).join('')}</div></div>`;
 
-    const board = demoContainer.querySelector('.memory-board');
-    const counter = demoContainer.querySelector('.memory-counter');
-    const resetButton = demoContainer.querySelector('.memory-reset');
-    const tabs = [...demoContainer.querySelectorAll('.memory-tab')];
-    let activeTheme = 'Animais';
-    let firstCard = null;
-    let secondCard = null;
-    let lockBoard = false;
-    let moves = 0;
-    let matches = 0;
-
-    const updateCounter = () => {
-      counter.textContent = `Jogadas: ${moves} • Pares encontrados: ${matches} de 6`;
-    };
-
-    const resetTurn = () => {
-      firstCard = null;
-      secondCard = null;
-      lockBoard = false;
-    };
-
-    const flipCard = card => {
-      if (lockBoard || card === firstCard || card.classList.contains('matched')) return;
-      card.classList.add('flipped');
-      if (!firstCard) {
-        firstCard = card;
-        return;
-      }
-      secondCard = card;
-      lockBoard = true;
-      moves += 1;
-      const isMatch = firstCard.dataset.pair === secondCard.dataset.pair;
-      if (isMatch) {
-        firstCard.classList.add('matched');
-        secondCard.classList.add('matched');
-        matches += 1;
-        updateCounter();
-        resetTurn();
-        if (matches === 6) counter.textContent = `🎉 Parabéns! Você encontrou todos os pares em ${moves} jogadas.`;
-      } else {
-        updateCounter();
-        window.setTimeout(() => {
-          firstCard?.classList.remove('flipped');
-          secondCard?.classList.remove('flipped');
-          resetTurn();
-        }, 850);
-      }
-    };
-
-    const renderBoard = () => {
-      moves = 0;
-      matches = 0;
-      resetTurn();
-      const cards = shuffle(memoryThemes[activeTheme].flatMap(([emoji, label], pair) => [
-        { emoji, label, pair }, { emoji, label, pair }
-      ]));
-      board.innerHTML = cards.map((card, index) => `<button class="memory-card" type="button" data-pair="${card.pair}" aria-label="Carta ${index + 1}"><span class="memory-card-inner"><span class="memory-face memory-back">?</span><span class="memory-face memory-front"><span class="memory-emoji">${card.emoji}</span><span class="memory-label">${card.label}</span></span></span></button>`).join('');
-      updateCounter();
-    };
-
-    board.addEventListener('click', event => {
-      const card = event.target.closest('.memory-card');
-      if (card) flipCard(card);
+    demoContainer.querySelectorAll('[data-game-print]').forEach(button => {
+      button.addEventListener('click', () => printGame(pedagogicalGames[Number(button.dataset.gamePrint)]));
     });
-    resetButton.addEventListener('click', renderBoard);
-    tabs.forEach(tab => tab.addEventListener('click', () => {
-      activeTheme = tab.dataset.theme;
-      tabs.forEach(item => item.classList.toggle('active', item === tab));
-      renderBoard();
-    }));
-    renderBoard();
+    demoContainer.querySelectorAll('[data-game-copy]').forEach(button => {
+      button.addEventListener('click', async () => {
+        const game = pedagogicalGames[Number(button.dataset.gameCopy)];
+        const text = `${game.title}\n${game.description}\n\n${game.preview}\n${game.steps.join('\n')}`;
+        try {
+          await navigator.clipboard.writeText(text);
+          button.textContent = 'Copiado!';
+          window.setTimeout(() => { button.textContent = 'Copiar ideia'; }, 1400);
+        } catch {
+          button.textContent = 'Não copiou';
+          window.setTimeout(() => { button.textContent = 'Copiar ideia'; }, 1400);
+        }
+      });
+    });
   }
 
   function openDemo(key) {
