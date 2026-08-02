@@ -1,0 +1,161 @@
+﻿.te-inline-game-area {
+  margin: 28px 0 0;
+  padding: 22px;
+  border: 2px solid #bfe6ff;
+  border-radius: 24px;
+  background: #f7fcff;
+  box-shadow: 0 16px 36px rgba(8, 118, 207, .12);
+}
+
+.te-inline-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+  margin-bottom: 18px;
+}
+
+.te-inline-header h2 {
+  margin: 6px 0;
+  color: #0876cf;
+  font-size: clamp(1.7rem, 3vw, 2.5rem);
+}
+
+.te-inline-header p {
+  margin: 0;
+  color: #51665a;
+  font-weight: 700;
+}
+
+.te-close-game,
+.te-inline-actions button {
+  border: 0;
+  border-radius: 14px;
+  background: #6d1027;
+  color: #fff;
+  padding: 11px 16px;
+  font: inherit;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.te-inline-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.te-inline-actions button:first-child {
+  background: #0876cf;
+}
+
+.te-game-box {
+  display: grid;
+  gap: 14px;
+  padding: 18px;
+  border-radius: 18px;
+  background: #fff;
+  border: 1px solid #dceee2;
+}
+
+.te-word-grid,
+.te-memory-board,
+.te-bingo-board,
+.te-association-board {
+  display: grid;
+  gap: 10px;
+  max-width: 620px;
+}
+
+.te-word-grid {
+  grid-template-columns: repeat(10, 1fr);
+}
+
+.te-memory-board {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.te-bingo-board {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.te-association-board {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.te-word-grid button,
+.te-bingo-board button,
+.te-memory-board button,
+.te-association-board button {
+  border: 2px solid #bfe6ff;
+  border-radius: 12px;
+  background: #fff;
+  color: #244431;
+  min-height: 48px;
+  font: inherit;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.te-word-grid button.ativo,
+.te-bingo-board button.ativo,
+.te-memory-board button.aberta,
+.te-memory-board button.par {
+  background: #0876cf;
+  color: #fff;
+}
+
+.te-association-board button.selecionado {
+  background: #fff7d6;
+}
+
+.te-association-board button.correto {
+  background: #dff7df;
+  border-color: #64c96b;
+}
+
+.te-cut-board {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.te-cut-board span {
+  min-width: 120px;
+  padding: 16px;
+  border: 2px dashed #0876cf;
+  border-radius: 16px;
+  text-align: center;
+  font-weight: 900;
+  background: #fff;
+}
+
+.te-game-box label {
+  display: grid;
+  gap: 6px;
+  font-weight: 900;
+}
+
+.te-game-box input {
+  min-height: 44px;
+  border: 2px solid #bfe6ff;
+  border-radius: 12px;
+  padding: 8px 12px;
+  font: inherit;
+}
+
+@media (max-width: 640px) {
+  .te-inline-header {
+    flex-direction: column;
+  }
+
+  .te-word-grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .te-memory-board,
+  .te-bingo-board,
+  .te-association-board {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
