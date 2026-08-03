@@ -185,9 +185,9 @@
   function prepararCards() {
     const dialog = document.querySelector("#service-dialog");
 
-    if (!dialog || !dialog.open) return;
+    if (!dialog) return;
 
-    const candidatos = [...dialog.querySelectorAll("article, li, .pedagogical-game-card, .demo-game-card, [data-game], [data-jogo]")];
+    const candidatos = [...dialog.querySelectorAll("button, article, li, div, .pedagogical-game-card, .demo-game-card, [data-game], [data-jogo]")];
 
     candidatos.forEach((card) => {
       if (card.dataset.teJogoAtivo === "true") return;
