@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recorte e Montagem | TeachEasy</title>
+  <meta name="description" content="Atividade pedagógica infantil de recorte e montagem com linhas pontilhadas.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=Libre+Franklin:wght@700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #6d1027;
+      --bg: #fff8f3;
+      --accent: #2a9d8f;
+      --yellow: #ffb703;
+      --border: #e6edd8;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Plus Jakarta Sans', system-ui, sans-serif; background: var(--bg); color: #20352b; min-height: 100vh; display: flex; flex-direction: column; }
+    
+    header { background: #fff; border-bottom: 1px solid var(--border); padding: 16px 24px; display: flex; align-items: center; justify-content: space-between; }
+    .back-btn { text-decoration: none; color: var(--primary); font-weight: 800; font-size: 0.95rem; }
+    .print-btn { background: var(--primary); color: #fff; border: 0; border-radius: 99px; padding: 10px 20px; font-weight: 800; cursor: pointer; }
+    
+    main { max-width: 850px; width: calc(100% - 32px); margin: 32px auto; flex: 1; }
+    .game-header { text-align: center; margin-bottom: 28px; }
+    .game-header h1 { font-family: 'Libre Franklin', sans-serif; font-size: 2.5rem; color: var(--primary); margin-bottom: 8px; }
+    
+    .craft-container { background: #fff; border-radius: 24px; border: 2px solid var(--border); padding: 32px; box-shadow: 0 10px 30px rgba(0,0,0,0.04); }
+    .craft-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+    .craft-piece { border: 3px dashed #888; border-radius: 16px; padding: 24px; text-align: center; background: #fafafa; }
+    .craft-piece span { font-size: 3.5rem; display: block; margin-bottom: 8px; }
+    .craft-piece p { font-size: 0.9rem; font-weight: 700; color: #555; }
+
+    @media print {
+      header, .print-btn { display: none; }
+      body { background: #fff; }
+      .craft-container { border: 0; box-shadow: none; padding: 0; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <a href="../jogos.html" class="back-btn">← Voltar aos Jogos</a>
+    <strong>TeachEasy • Recorte e Montagem</strong>
+    <button class="print-btn" onclick="window.print()">🖨 Imprimir Atividade</button>
+  </header>
+
+  <main>
+    <div class="game-header">
+      <h1>✂️ Recorte e Monte as Figuras</h1>
+      <p>Use a tesoura infantil para recortar nas linhas pontilhadas e colar!</p>
+    </div>
+
+    <div class="craft-container">
+      <div class="craft-grid">
+        <div class="craft-piece">
+          <span>🔵</span>
+          <p>✂️ Recorte o Círculo Azul</p>
+        </div>
+        <div class="craft-piece">
+          <span>🔺</span>
+          <p>✂️ Recorte o Triângulo Vermelho</p>
+        </div>
+        <div class="craft-piece">
+          <span>⭐</span>
+          <p>✂️ Recorte a Estrela Amarela</p>
+        </div>
+        <div class="craft-piece">
+          <span>🟩</span>
+          <p>✂️ Recorte o Quadrado Verde</p>
+        </div>
+        <div class="craft-piece">
+          <span>🌸</span>
+          <p>✂️ Recorte a Flor Rosa</p>
+        </div>
+        <div class="craft-piece">
+          <span>🌙</span>
+          <p>✂️ Recorte a Lua</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer style="text-align:center; padding:24px; color:#88998f; font-size:0.85rem;">
+    <p>© TeachEasy • Plataforma de Recursos Didáticos para Educadores</p>
+  </footer>
+
+</body>
+</html>

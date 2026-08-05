@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bingo Educativo Infantil | TeachEasy</title>
+  <meta name="description" content="Cartelas de bingo educativo de figuras e números para alunos imprimirem ou jogarem.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=Libre+Franklin:wght@700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #6d1027;
+      --bg: #fff8f3;
+      --accent: #2a9d8f;
+      --border: #e6edd8;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Plus Jakarta Sans', system-ui, sans-serif; background: var(--bg); color: #20352b; min-height: 100vh; display: flex; flex-direction: column; }
+    
+    header { background: #fff; border-bottom: 1px solid var(--border); padding: 16px 24px; display: flex; align-items: center; justify-content: space-between; }
+    .back-btn { text-decoration: none; color: var(--primary); font-weight: 800; font-size: 0.95rem; }
+    .print-btn { background: var(--primary); color: #fff; border: 0; border-radius: 99px; padding: 10px 20px; font-weight: 800; cursor: pointer; }
+    
+    main { max-width: 900px; width: calc(100% - 32px); margin: 32px auto; flex: 1; }
+    .game-header { text-align: center; margin-bottom: 28px; }
+    .game-header h1 { font-family: 'Libre Franklin', sans-serif; font-size: 2.5rem; color: var(--primary); margin-bottom: 8px; }
+    
+    .bingo-card { background: #fff; border-radius: 24px; border: 3px solid var(--primary); padding: 28px; max-width: 500px; margin: 0 auto; box-shadow: 0 10px 30px rgba(0,0,0,0.06); }
+    .bingo-title { text-align: center; font-family: 'Libre Franklin', sans-serif; font-size: 2rem; color: var(--primary); margin-bottom: 20px; letter-spacing: 0.1em; }
+    .bingo-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; }
+    .bingo-item { aspect-ratio: 1; border: 2px solid #e6edd8; border-radius: 14px; background: #f9fbf5; display: grid; place-items: center; font-size: 2rem; font-weight: 800; cursor: pointer; transition: all 0.2s; }
+    .bingo-item.marked { background: var(--accent); color: #fff; border-color: #1e7066; transform: scale(0.95); }
+
+    @media print {
+      header, .print-btn { display: none; }
+      body { background: #fff; }
+      .bingo-card { border: 2px solid #000; box-shadow: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <a href="../jogos.html" class="back-btn">← Voltar aos Jogos</a>
+    <strong>TeachEasy • Bingo Educativo</strong>
+    <button class="print-btn" onclick="window.print()">🖨 Imprimir Cartelas</button>
+  </header>
+
+  <main>
+    <div class="game-header">
+      <h1>🎯 Bingo das Figuras e Frutas</h1>
+      <p>Marque as figuras sorteadas pelo professor!</p>
+    </div>
+
+    <div class="bingo-card">
+      <div class="bingo-title">CARTELA 01</div>
+      <div class="bingo-grid">
+        <div class="bingo-item" onclick="this.classList.toggle('marked')">🍎</div>
+        <div class="bingo-item" onclick="this.classList.toggle('marked')">🍌</div>
+        <div class="bingo-item" onclick="this.classList.toggle('marked')">🚗</div>
+        <div class="bingo-item" onclick="this.classList.toggle('marked')">🐶</div>
+        <div class="bingo-item" onclick="this.classList.toggle('marked')">🐱</div>
+        <div class="bingo-item" onclick="this.classList.toggle('marked')">⭐</div>
+        <div class="bingo-item" onclick="this.classList.toggle('marked')">⚽</div>
+        <div class="bingo-item" onclick="this.classList.toggle('marked')">🎈</div>
+        <div class="bingo-item" onclick="this.classList.toggle('marked')">🎨</div>
+        <div class="bingo-item" onclick="this.classList.toggle('marked')">🔔</div>
+        <div class="bingo-item" onclick="this.classList.toggle('marked')">🐟</div>
+        <div class="bingo-item" onclick="this.classList.toggle('marked')">🍇</div>
+      </div>
+    </div>
+  </main>
+
+  <footer style="text-align:center; padding:24px; color:#88998f; font-size:0.85rem;">
+    <p>© TeachEasy • Plataforma de Recursos Didáticos para Educadores</p>
+  </footer>
+
+</body>
+</html>

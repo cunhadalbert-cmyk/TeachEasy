@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Caça-Palavras Pedagógico | TeachEasy</title>
+  <meta name="description" content="Atividade de Caça-Palavras pronta para jogar na tela ou imprimir para a sala de aula.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=Libre+Franklin:wght@700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #6d1027;
+      --primary-dark: #4a0715;
+      --bg: #fff8f3;
+      --card-bg: #ffffff;
+      --text: #20352b;
+      --accent: #2a9d8f;
+      --yellow: #ffb703;
+      --border: #e6edd8;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Plus Jakarta Sans', system-ui, sans-serif; background: var(--bg); color: var(--text); min-height: 100vh; display: flex; flex-direction: column; }
+    
+    header { background: #fff; border-bottom: 1px solid var(--border); padding: 16px 24px; display: flex; align-items: center; justify-content: space-between; }
+    .back-btn { text-decoration: none; color: var(--primary); font-weight: 800; display: inline-flex; align-items: center; gap: 8px; font-size: 0.95rem; }
+    .back-btn:hover { text-decoration: underline; }
+    .print-btn { background: var(--primary); color: #fff; border: 0; border-radius: 99px; padding: 10px 20px; font-weight: 800; cursor: pointer; }
+    .print-btn:hover { background: var(--primary-dark); }
+    
+    main { max-width: 960px; width: calc(100% - 32px); margin: 32px auto; flex: 1; }
+    .game-header { text-align: center; margin-bottom: 28px; }
+    .game-header h1 { font-family: 'Libre Franklin', sans-serif; font-size: clamp(2rem, 4vw, 3rem); color: var(--primary); margin-bottom: 8px; }
+    .game-header p { font-size: 1.1rem; color: #5c6b63; }
+    
+    .grid-layout { display: grid; grid-template-columns: 1fr 280px; gap: 24px; background: #fff; padding: 28px; border-radius: 24px; border: 2px solid var(--border); box-shadow: 0 10px 30px rgba(0,0,0,0.04); }
+    @media (max-width: 768px) { .grid-layout { grid-template-columns: 1fr; } }
+    
+    .word-search-board { display: grid; grid-template-columns: repeat(10, 1fr); gap: 6px; user-select: none; }
+    .cell { aspect-ratio: 1; background: #f9fbf5; border: 2px solid #e1ebda; border-radius: 10px; display: grid; place-items: center; font-size: 1.25rem; font-weight: 800; color: #1a3328; cursor: pointer; transition: all 0.15s; }
+    .cell:hover { background: #e8f5e9; border-color: var(--accent); }
+    .cell.selected { background: var(--yellow); color: #4a2800; border-color: #e6a100; transform: scale(1.05); }
+    .cell.found { background: var(--accent); color: #fff; border-color: #1e7066; }
+    
+    .word-list-box { background: #f9fbf5; border: 1px solid var(--border); border-radius: 16px; padding: 20px; }
+    .word-list-box h3 { font-size: 1.1rem; margin-bottom: 14px; color: var(--primary); border-bottom: 2px solid var(--primary); padding-bottom: 6px; }
+    .word-item { padding: 8px 12px; margin-bottom: 6px; background: #fff; border-radius: 8px; font-weight: 700; display: flex; justify-content: space-between; border: 1px solid #e6edd8; }
+    .word-item.done { text-decoration: line-through; opacity: 0.5; background: #e8f5e9; }
+    
+    footer { text-align: center; padding: 24px; color: #88998f; font-size: 0.85rem; }
+    
+    @media print {
+      header, footer, .print-btn { display: none; }
+      body { background: #fff; }
+      main { margin: 0; width: 100%; }
+      .grid-layout { border: 0; box-shadow: none; padding: 0; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <a href="../jogos.html" class="back-btn">← Voltar aos Jogos</a>
+    <strong>TeachEasy • Caça-Palavras</strong>
+    <button class="print-btn" onclick="window.print()">🖨 Imprimir</button>
+  </header>
+
+  <main>
+    <div class="game-header">
+      <h1>🔍 Caça-Palavras: Escola e Valores</h1>
+      <p>Encontre as palavras escondidas na grade abaixo clicando nas letras!</p>
+    </div>
+
+    <div class="grid-layout">
+      <div class="word-search-board" id="board">
+        <!-- 10x10 Grid -->
+      </div>
+
+      <div class="word-list-box">
+        <h3>Palavras para encontrar:</h3>
+        <div id="word-list"></div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>© TeachEasy • Plataforma de Recursos Didáticos para Educadores</p>
+  </footer>
+
+  <script>
+    const words = ["ESCOLA", "AMIGO", "LEITURA", "APRENDER", "LIVRO", "AULA"];
+    const gridData = [
+      ["E","S","C","O","L","A","X","Y","Z","A"],
+      ["A","M","I","G","O","K","L","M","N","P"],
+      ["L","E","I","T","U","R","A","B","C","D"],
+      ["A","P","R","E","N","D","E","R","E","F"],
+      ["L","I","V","R","O","H","I","J","K","L"],
+      ["A","U","L","A","M","N","O","P","Q","R"],
+      ["S","T","U","V","W","X","Y","Z","A","B"],
+      ["C","D","E","F","G","H","I","J","K","L"],
+      ["M","N","O","P","Q","R","S","T","U","V"],
+      ["W","X","Y","Z","A","B","C","D","E","F"]
+    ];
+
+    const board = document.getElementById("board");
+    const wordList = document.getElementById("word-list");
+
+    words.forEach(w => {
+      const item = document.createElement("div");
+      item.className = "word-item";
+      item.id = "word-" + w;
+      item.innerHTML = `<span>${w}</span><span>⚪</span>`;
+      wordList.appendChild(item);
+    });
+
+    gridData.forEach((row, r) => {
+      row.forEach((letter, c) => {
+        const cell = document.createElement("div");
+        cell.className = "cell";
+        cell.textContent = letter;
+        cell.onclick = () => {
+          cell.classList.toggle("selected");
+          checkWords();
+        };
+        board.appendChild(cell);
+      });
+    });
+
+    function checkWords() {
+      // Basic visual demo toggle
+    }
+  </script>
+</body>
+</html>
