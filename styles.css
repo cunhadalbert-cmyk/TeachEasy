@@ -1874,3 +1874,105 @@ body:not(.library-page) .footer span {
   }
 }
 /* FIM TEACHEASY HERO PROFESSORA */
+
+/* HIGHLIGHT JOGOS PEDAGÓGICOS (HOME) */
+.home-games-highlight {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(120px, 180px) 1fr;
+  align-items: center;
+  width: 100%;
+  margin: 0 0 30px;
+  min-height: 210px;
+  padding: 24px 38px;
+  gap: 28px;
+  overflow: hidden;
+  border: 2px solid rgba(255, 255, 255, .72);
+  border-radius: 44px;
+  background: linear-gradient(135deg, #2f4736, #56705a 60%, #7e9880);
+  color: #fff;
+  text-align: left;
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.home-games-highlight::after {
+  content: "";
+  position: absolute;
+  inset: 2px;
+  pointer-events: none;
+  border: 1px solid rgba(255, 255, 255, .20);
+  border-radius: 40px;
+}
+
+.home-games-highlight:hover,
+.home-games-highlight:focus-visible {
+  transform: translateY(-5px);
+  box-shadow:
+    0 28px 44px rgba(47, 71, 54, .36),
+    0 10px 20px rgba(35, 54, 41, .25),
+    0 0 34px rgba(86, 112, 90, .26);
+}
+
+.home-games-highlight:focus-visible {
+  outline: 4px solid rgba(86, 112, 90, .30);
+  outline-offset: 5px;
+}
+
+.home-games-illustration {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  place-items: center;
+}
+
+.home-games-illustration svg {
+  display: block;
+  width: 100%;
+  max-width: 170px;
+  filter: drop-shadow(0 12px 12px rgba(18, 30, 22, .30));
+}
+
+.games-card-back { fill: #fcebd9; stroke: rgba(255,255,255,.6); stroke-width: 3; }
+.games-card-front { fill: #ffffff; stroke: #2a9d8f; stroke-width: 4; }
+.games-star-center { fill: #ffb703; }
+.games-star-icon { fill: #ffffff; }
+.games-check { fill: #fff; stroke: #94d2bd; stroke-width: 4; }
+.games-check-mark { fill: none; stroke: #2a9d8f; stroke-width: 7; stroke-linecap: round; stroke-linejoin: round; }
+.games-spark { fill: none; stroke: #ffd96a; stroke-width: 7; stroke-linecap: round; }
+
+.home-games-copy {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  gap: 12px;
+}
+
+.home-games-highlight strong {
+  font-family: "Libre Franklin", sans-serif;
+  font-size: clamp(30px, 4vw, 46px);
+  line-height: 1.1;
+  color: #fff;
+  text-shadow: 0 3px 10px rgba(18, 30, 22, .28);
+}
+
+.home-games-copy > span {
+  font-size: clamp(17px, 2vw, 21px);
+  line-height: 1.4;
+  color: #fff;
+  text-shadow: 0 2px 7px rgba(18, 30, 22, .24);
+}
+
+@media (max-width: 680px) {
+  .home-games-highlight {
+    width: 100%;
+    min-height: 148px;
+    gap: 14px;
+    border-radius: 28px;
+  }
+  .home-games-highlight::after { border-radius: 24px; }
+  .home-games-illustration svg { max-width: 82px; }
+  .home-games-highlight strong { font-size: clamp(24px, 7vw, 32px); }
+  .home-games-copy { gap: 7px; }
+  .home-games-copy > span { font-size: 15px; line-height: 1.35; }
+}
+

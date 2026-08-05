@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cruzadinhas Pedagógicas | TeachEasy</title>
+  <meta name="description" content="Cruzadinha infantil pronta para preencher e imprimir.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=Libre+Franklin:wght@700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #6d1027;
+      --primary-dark: #4a0715;
+      --bg: #fff8f3;
+      --accent: #2a9d8f;
+      --border: #e6edd8;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Plus Jakarta Sans', system-ui, sans-serif; background: var(--bg); color: #20352b; min-height: 100vh; display: flex; flex-direction: column; }
+
+    header { background: #fff; border-bottom: 1px solid var(--border); padding: 16px 24px; display: flex; align-items: center; justify-content: space-between; }
+    .back-btn { text-decoration: none; color: var(--primary); font-weight: 800; font-size: 0.95rem; }
+    .back-btn:hover { text-decoration: underline; }
+    .print-btn { background: var(--primary); color: #fff; border: 0; border-radius: 99px; padding: 10px 20px; font-weight: 800; cursor: pointer; }
+
+    main { max-width: 900px; width: calc(100% - 32px); margin: 32px auto; flex: 1; }
+    .game-header { text-align: center; margin-bottom: 28px; }
+    .game-header h1 { font-family: 'Libre Franklin', sans-serif; font-size: 2.5rem; color: var(--primary); margin-bottom: 8px; }
+
+    .crossword-box { background: #fff; border-radius: 24px; border: 2px solid var(--border); padding: 32px; display: grid; grid-template-columns: 1fr 300px; gap: 32px; box-shadow: 0 10px 30px rgba(0,0,0,0.04); }
+    @media (max-width: 768px) { .crossword-box { grid-template-columns: 1fr; } }
+
+    .grid { display: grid; grid-template-columns: repeat(6, 48px); gap: 6px; justify-content: center; }
+    .cell { width: 48px; height: 48px; border: 2px solid #ccc; border-radius: 8px; font-size: 1.4rem; font-weight: 800; text-align: center; text-transform: uppercase; background: #fff; }
+    .cell.block { background: #20352b; border-color: #20352b; }
+    .cell:focus { border-color: var(--accent); outline: none; background: #e8f5e9; }
+
+    .hints { background: #f9fbf5; padding: 20px; border-radius: 16px; border: 1px solid var(--border); }
+    .hints h3 { color: var(--primary); margin-bottom: 12px; }
+    .hints ol { padding-left: 20px; font-size: 0.95rem; line-height: 1.8; font-weight: 600; }
+
+    @media print {
+      header, .print-btn { display: none; }
+      body { background: #fff; }
+      .crossword-box { border: 0; box-shadow: none; padding: 0; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <a href="../jogos.html" class="back-btn">← Voltar aos Jogos</a>
+    <strong>TeachEasy • Cruzadinhas</strong>
+    <button class="print-btn" onclick="window.print()">🖨 Imprimir</button>
+  </header>
+
+  <main>
+    <div class="game-header">
+      <h1>✏️ Cruzadinha Infantil</h1>
+      <p>Preencha os quadrados com a ajuda das dicas ao lado!</p>
+    </div>
+
+    <div class="crossword-box">
+      <div class="grid">
+        <input class="cell" maxlength="1" value="L"><input class="cell" maxlength="1" value="I"><input class="cell" maxlength="1" value="V"><input class="cell" maxlength="1" value="R"><input class="cell" maxlength="1" value="O"><div class="cell block"></div>
+        <input class="cell" maxlength="1"><div class="cell block"></div><div class="cell block"></div><div class="cell block"></div><div class="cell block"></div><div class="cell block"></div>
+        <input class="cell" maxlength="1" value="P"><input class="cell" maxlength="1" value="E"><input class="cell" maxlength="1" value="N"><input class="cell" maxlength="1" value="S"><input class="cell" maxlength="1" value="A"><input class="cell" maxlength="1" value="R">
+        <div class="cell block"></div><div class="cell block"></div><div class="cell block"></div><div class="cell block"></div><div class="cell block"></div><input class="cell" maxlength="1">
+        <input class="cell" maxlength="1" value="A"><input class="cell" maxlength="1" value="L"><input class="cell" maxlength="1" value="U"><input class="cell" maxlength="1" value="N"><input class="cell" maxlength="1" value="O"><input class="cell" maxlength="1">
+      </div>
+
+      <div class="hints">
+        <h3>Horizontais</h3>
+        <ol>
+          <li>Objeto de leitura da escola.</li>
+          <li>Ação de raciocinar.</li>
+          <li>Estudante da sala de aula.</li>
+        </ol>
+        <br>
+        <h3>Verticais</h3>
+        <ol start="4">
+          <li>Instrumento usado para desenhar.</li>
+        </ol>
+      </div>
+    </div>
+  </main>
+
+  <footer style="text-align:center; padding:24px; color:#88998f; font-size:0.85rem;">
+    <p>© TeachEasy • Plataforma de Recursos Didáticos para Educadores</p>
+  </footer>
+
+</body>
+</html>
