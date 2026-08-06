@@ -4,7 +4,7 @@
   "etapa": "Educação Infantil",
   "bimestre": 3,
   "faixaEtaria": "1 ano e 7 meses a 3 anos e 11 meses",
-  "quantidadeAtividades": 10,
+  "quantidadeAtividades": 30,
   "atividades": [
     {
       "id": "familia-dos-dedoches-3b",
@@ -264,6 +264,526 @@
       ],
       "adaptacaoAutismo": "Usar rotina visual, linguagem objetiva, poucas opções por vez, antecipação das etapas e possibilidade de pausa sensorial.",
       "registroPortfolio": "Registrar como a criança participou de “Dia e Noite dos Bichos”, destacando iniciativa, compreensão e apoios utilizados.",
+      "imprimivel": true
+    },
+    {
+      "id": "maternal-3b-clube-dos-bons-amigos",
+      "titulo": "Clube dos Bons Amigos",
+      "faixaEtaria": "1 ano e 7 meses a 3 anos e 11 meses",
+      "campoExperiencia": "O eu, o outro e o nós",
+      "objetivoPedagogico": "Explorar e reconhecer com apoio ao resolver situações de convivência com diálogo e cuidado.",
+      "ilustracao": {
+        "descricao": "Crianças e bichinhos conversando em roda, adequada ao Maternal.",
+        "padraoVisual": "Fundo branco, traço infantil arredondado, cores vivas e suaves, elementos grandes, expressão alegre, organização limpa e sem poluição visual.",
+        "simbolo": "🐶"
+      },
+      "materiais": [
+        "Cartões ilustrados grandes",
+        "Materiais manipuláveis seguros",
+        "Folha ou painel para registro"
+      ],
+      "passoAPasso": [
+        "Apresentar “Clube dos Bons Amigos” com a ilustração central.",
+        "Explicar e demonstrar uma etapa por vez.",
+        "Permitir exploração, escolha e participação ativa.",
+        "Retomar a descoberta com perguntas simples e registro."
+      ],
+      "adaptacaoAutismo": "Antecipar a sequência com apoio visual, reduzir estímulos, oferecer poucas escolhas, respeitar o tempo de resposta e permitir pausa sensorial.",
+      "registroPortfolio": "Registrar a participação em “Clube dos Bons Amigos”, observando autonomia, comunicação, estratégia e apoios necessários.",
+      "imprimivel": true
+    },
+    {
+      "id": "maternal-3b-meu-album-especial",
+      "titulo": "Meu Álbum Especial",
+      "faixaEtaria": "1 ano e 7 meses a 3 anos e 11 meses",
+      "campoExperiencia": "Corpo, gestos e movimentos",
+      "objetivoPedagogico": "Explorar e reconhecer com apoio ao reconhecer identidade, preferências e conquistas.",
+      "ilustracao": {
+        "descricao": "Álbum aberto com desenhos, fotos simbólicas e estrelas, adequada ao Maternal.",
+        "padraoVisual": "Fundo branco, traço infantil arredondado, cores vivas e suaves, elementos grandes, expressão alegre, organização limpa e sem poluição visual.",
+        "simbolo": "🐱"
+      },
+      "materiais": [
+        "Cartões ilustrados grandes",
+        "Materiais manipuláveis seguros",
+        "Folha ou painel para registro"
+      ],
+      "passoAPasso": [
+        "Apresentar “Meu Álbum Especial” com a ilustração central.",
+        "Explicar e demonstrar uma etapa por vez.",
+        "Permitir exploração, escolha e participação ativa.",
+        "Retomar a descoberta com perguntas simples e registro."
+      ],
+      "adaptacaoAutismo": "Antecipar a sequência com apoio visual, reduzir estímulos, oferecer poucas escolhas, respeitar o tempo de resposta e permitir pausa sensorial.",
+      "registroPortfolio": "Registrar a participação em “Meu Álbum Especial”, observando autonomia, comunicação, estratégia e apoios necessários.",
+      "imprimivel": false
+    },
+    {
+      "id": "maternal-3b-corrida-da-tartaruga",
+      "titulo": "Corrida da Tartaruga",
+      "faixaEtaria": "1 ano e 7 meses a 3 anos e 11 meses",
+      "campoExperiencia": "Traços, sons, cores e formas",
+      "objetivoPedagogico": "Explorar e reconhecer com apoio ao controlar velocidade, direção e equilíbrio.",
+      "ilustracao": {
+        "descricao": "Tartaruga percorrendo pista com curvas e sinais, adequada ao Maternal.",
+        "padraoVisual": "Fundo branco, traço infantil arredondado, cores vivas e suaves, elementos grandes, expressão alegre, organização limpa e sem poluição visual.",
+        "simbolo": "🐼"
+      },
+      "materiais": [
+        "Cartões ilustrados grandes",
+        "Materiais manipuláveis seguros",
+        "Folha ou painel para registro"
+      ],
+      "passoAPasso": [
+        "Apresentar “Corrida da Tartaruga” com a ilustração central.",
+        "Explicar e demonstrar uma etapa por vez.",
+        "Permitir exploração, escolha e participação ativa.",
+        "Retomar a descoberta com perguntas simples e registro."
+      ],
+      "adaptacaoAutismo": "Antecipar a sequência com apoio visual, reduzir estímulos, oferecer poucas escolhas, respeitar o tempo de resposta e permitir pausa sensorial.",
+      "registroPortfolio": "Registrar a participação em “Corrida da Tartaruga”, observando autonomia, comunicação, estratégia e apoios necessários.",
+      "imprimivel": true
+    },
+    {
+      "id": "maternal-3b-voo-do-papagaio",
+      "titulo": "Voo do Papagaio",
+      "faixaEtaria": "1 ano e 7 meses a 3 anos e 11 meses",
+      "campoExperiencia": "Escuta, fala, pensamento e imaginação",
+      "objetivoPedagogico": "Explorar e reconhecer com apoio ao imitar movimentos e posições de aves.",
+      "ilustracao": {
+        "descricao": "Papagaio colorido guiando movimentos com asas e corpo, adequada ao Maternal.",
+        "padraoVisual": "Fundo branco, traço infantil arredondado, cores vivas e suaves, elementos grandes, expressão alegre, organização limpa e sem poluição visual.",
+        "simbolo": "🐸"
+      },
+      "materiais": [
+        "Cartões ilustrados grandes",
+        "Materiais manipuláveis seguros",
+        "Folha ou painel para registro"
+      ],
+      "passoAPasso": [
+        "Apresentar “Voo do Papagaio” com a ilustração central.",
+        "Explicar e demonstrar uma etapa por vez.",
+        "Permitir exploração, escolha e participação ativa.",
+        "Retomar a descoberta com perguntas simples e registro."
+      ],
+      "adaptacaoAutismo": "Antecipar a sequência com apoio visual, reduzir estímulos, oferecer poucas escolhas, respeitar o tempo de resposta e permitir pausa sensorial.",
+      "registroPortfolio": "Registrar a participação em “Voo do Papagaio”, observando autonomia, comunicação, estratégia e apoios necessários.",
+      "imprimivel": true
+    },
+    {
+      "id": "maternal-3b-atelie-da-melancia",
+      "titulo": "Ateliê da Melancia",
+      "faixaEtaria": "1 ano e 7 meses a 3 anos e 11 meses",
+      "campoExperiencia": "Espaços, tempos, quantidades, relações e transformações",
+      "objetivoPedagogico": "Explorar e reconhecer com apoio ao explorar formas, sementes, cores e impressão.",
+      "ilustracao": {
+        "descricao": "Fatias de melancia formando estampas alegres, adequada ao Maternal.",
+        "padraoVisual": "Fundo branco, traço infantil arredondado, cores vivas e suaves, elementos grandes, expressão alegre, organização limpa e sem poluição visual.",
+        "simbolo": "🦄"
+      },
+      "materiais": [
+        "Cartões ilustrados grandes",
+        "Materiais manipuláveis seguros",
+        "Folha ou painel para registro"
+      ],
+      "passoAPasso": [
+        "Apresentar “Ateliê da Melancia” com a ilustração central.",
+        "Explicar e demonstrar uma etapa por vez.",
+        "Permitir exploração, escolha e participação ativa.",
+        "Retomar a descoberta com perguntas simples e registro."
+      ],
+      "adaptacaoAutismo": "Antecipar a sequência com apoio visual, reduzir estímulos, oferecer poucas escolhas, respeitar o tempo de resposta e permitir pausa sensorial.",
+      "registroPortfolio": "Registrar a participação em “Ateliê da Melancia”, observando autonomia, comunicação, estratégia e apoios necessários.",
+      "imprimivel": true
+    },
+    {
+      "id": "maternal-3b-tambor-do-macaco",
+      "titulo": "Tambor do Macaco",
+      "faixaEtaria": "1 ano e 7 meses a 3 anos e 11 meses",
+      "campoExperiencia": "O eu, o outro e o nós",
+      "objetivoPedagogico": "Explorar e reconhecer com apoio ao criar e repetir sequências rítmicas.",
+      "ilustracao": {
+        "descricao": "Macaco simpático tocando tambor com cartões de ritmo, adequada ao Maternal.",
+        "padraoVisual": "Fundo branco, traço infantil arredondado, cores vivas e suaves, elementos grandes, expressão alegre, organização limpa e sem poluição visual.",
+        "simbolo": "🐝"
+      },
+      "materiais": [
+        "Cartões ilustrados grandes",
+        "Materiais manipuláveis seguros",
+        "Folha ou painel para registro"
+      ],
+      "passoAPasso": [
+        "Apresentar “Tambor do Macaco” com a ilustração central.",
+        "Explicar e demonstrar uma etapa por vez.",
+        "Permitir exploração, escolha e participação ativa.",
+        "Retomar a descoberta com perguntas simples e registro."
+      ],
+      "adaptacaoAutismo": "Antecipar a sequência com apoio visual, reduzir estímulos, oferecer poucas escolhas, respeitar o tempo de resposta e permitir pausa sensorial.",
+      "registroPortfolio": "Registrar a participação em “Tambor do Macaco”, observando autonomia, comunicação, estratégia e apoios necessários.",
+      "imprimivel": false
+    },
+    {
+      "id": "maternal-3b-aventura-do-gato-curioso",
+      "titulo": "Aventura do Gato Curioso",
+      "faixaEtaria": "1 ano e 7 meses a 3 anos e 11 meses",
+      "campoExperiencia": "Corpo, gestos e movimentos",
+      "objetivoPedagogico": "Explorar e reconhecer com apoio ao antecipar acontecimentos e recontar uma história.",
+      "ilustracao": {
+        "descricao": "Gatinho seguindo pistas em três cenários simples, adequada ao Maternal.",
+        "padraoVisual": "Fundo branco, traço infantil arredondado, cores vivas e suaves, elementos grandes, expressão alegre, organização limpa e sem poluição visual.",
+        "simbolo": "🐞"
+      },
+      "materiais": [
+        "Cartões ilustrados grandes",
+        "Materiais manipuláveis seguros",
+        "Folha ou painel para registro"
+      ],
+      "passoAPasso": [
+        "Apresentar “Aventura do Gato Curioso” com a ilustração central.",
+        "Explicar e demonstrar uma etapa por vez.",
+        "Permitir exploração, escolha e participação ativa.",
+        "Retomar a descoberta com perguntas simples e registro."
+      ],
+      "adaptacaoAutismo": "Antecipar a sequência com apoio visual, reduzir estímulos, oferecer poucas escolhas, respeitar o tempo de resposta e permitir pausa sensorial.",
+      "registroPortfolio": "Registrar a participação em “Aventura do Gato Curioso”, observando autonomia, comunicação, estratégia e apoios necessários.",
+      "imprimivel": true
+    },
+    {
+      "id": "maternal-3b-palavras-do-jardim",
+      "titulo": "Palavras do Jardim",
+      "faixaEtaria": "1 ano e 7 meses a 3 anos e 11 meses",
+      "campoExperiencia": "Traços, sons, cores e formas",
+      "objetivoPedagogico": "Explorar e reconhecer com apoio ao nomear, comparar e brincar com sons de palavras.",
+      "ilustracao": {
+        "descricao": "Flores com figuras e letras grandes no centro, adequada ao Maternal.",
+        "padraoVisual": "Fundo branco, traço infantil arredondado, cores vivas e suaves, elementos grandes, expressão alegre, organização limpa e sem poluição visual.",
+        "simbolo": "🦖"
+      },
+      "materiais": [
+        "Cartões ilustrados grandes",
+        "Materiais manipuláveis seguros",
+        "Folha ou painel para registro"
+      ],
+      "passoAPasso": [
+        "Apresentar “Palavras do Jardim” com a ilustração central.",
+        "Explicar e demonstrar uma etapa por vez.",
+        "Permitir exploração, escolha e participação ativa.",
+        "Retomar a descoberta com perguntas simples e registro."
+      ],
+      "adaptacaoAutismo": "Antecipar a sequência com apoio visual, reduzir estímulos, oferecer poucas escolhas, respeitar o tempo de resposta e permitir pausa sensorial.",
+      "registroPortfolio": "Registrar a participação em “Palavras do Jardim”, observando autonomia, comunicação, estratégia e apoios necessários.",
+      "imprimivel": true
+    },
+    {
+      "id": "maternal-3b-mercado-das-macas",
+      "titulo": "Mercado das Maçãs",
+      "faixaEtaria": "1 ano e 7 meses a 3 anos e 11 meses",
+      "campoExperiencia": "Escuta, fala, pensamento e imaginação",
+      "objetivoPedagogico": "Explorar e reconhecer com apoio ao contar, agrupar e comparar pequenas quantidades.",
+      "ilustracao": {
+        "descricao": "Banca infantil com maçãs e cartões numéricos, adequada ao Maternal.",
+        "padraoVisual": "Fundo branco, traço infantil arredondado, cores vivas e suaves, elementos grandes, expressão alegre, organização limpa e sem poluição visual.",
+        "simbolo": "🐢"
+      },
+      "materiais": [
+        "Cartões ilustrados grandes",
+        "Materiais manipuláveis seguros",
+        "Folha ou painel para registro"
+      ],
+      "passoAPasso": [
+        "Apresentar “Mercado das Maçãs” com a ilustração central.",
+        "Explicar e demonstrar uma etapa por vez.",
+        "Permitir exploração, escolha e participação ativa.",
+        "Retomar a descoberta com perguntas simples e registro."
+      ],
+      "adaptacaoAutismo": "Antecipar a sequência com apoio visual, reduzir estímulos, oferecer poucas escolhas, respeitar o tempo de resposta e permitir pausa sensorial.",
+      "registroPortfolio": "Registrar a participação em “Mercado das Maçãs”, observando autonomia, comunicação, estratégia e apoios necessários.",
+      "imprimivel": true
+    },
+    {
+      "id": "maternal-3b-mapa-da-floresta",
+      "titulo": "Mapa da Floresta",
+      "faixaEtaria": "1 ano e 7 meses a 3 anos e 11 meses",
+      "campoExperiencia": "Espaços, tempos, quantidades, relações e transformações",
+      "objetivoPedagogico": "Explorar e reconhecer com apoio ao interpretar caminhos e referências espaciais.",
+      "ilustracao": {
+        "descricao": "Mapa limpo com árvores, ponte, lago e setas, adequada ao Maternal.",
+        "padraoVisual": "Fundo branco, traço infantil arredondado, cores vivas e suaves, elementos grandes, expressão alegre, organização limpa e sem poluição visual.",
+        "simbolo": "🦜"
+      },
+      "materiais": [
+        "Cartões ilustrados grandes",
+        "Materiais manipuláveis seguros",
+        "Folha ou painel para registro"
+      ],
+      "passoAPasso": [
+        "Apresentar “Mapa da Floresta” com a ilustração central.",
+        "Explicar e demonstrar uma etapa por vez.",
+        "Permitir exploração, escolha e participação ativa.",
+        "Retomar a descoberta com perguntas simples e registro."
+      ],
+      "adaptacaoAutismo": "Antecipar a sequência com apoio visual, reduzir estímulos, oferecer poucas escolhas, respeitar o tempo de resposta e permitir pausa sensorial.",
+      "registroPortfolio": "Registrar a participação em “Mapa da Floresta”, observando autonomia, comunicação, estratégia e apoios necessários.",
+      "imprimivel": false
+    },
+    {
+      "id": "maternal-3b-familia-dos-ursos",
+      "titulo": "Família dos Ursos",
+      "faixaEtaria": "1 ano e 7 meses a 3 anos e 11 meses",
+      "campoExperiencia": "O eu, o outro e o nós",
+      "objetivoPedagogico": "Explorar e reconhecer com apoio ao comparar tamanhos e organizar sequências.",
+      "ilustracao": {
+        "descricao": "Três ursos simpáticos em tamanhos diferentes, adequada ao Maternal.",
+        "padraoVisual": "Fundo branco, traço infantil arredondado, cores vivas e suaves, elementos grandes, expressão alegre, organização limpa e sem poluição visual.",
+        "simbolo": "🍎"
+      },
+      "materiais": [
+        "Cartões ilustrados grandes",
+        "Materiais manipuláveis seguros",
+        "Folha ou painel para registro"
+      ],
+      "passoAPasso": [
+        "Apresentar “Família dos Ursos” com a ilustração central.",
+        "Explicar e demonstrar uma etapa por vez.",
+        "Permitir exploração, escolha e participação ativa.",
+        "Retomar a descoberta com perguntas simples e registro."
+      ],
+      "adaptacaoAutismo": "Antecipar a sequência com apoio visual, reduzir estímulos, oferecer poucas escolhas, respeitar o tempo de resposta e permitir pausa sensorial.",
+      "registroPortfolio": "Registrar a participação em “Família dos Ursos”, observando autonomia, comunicação, estratégia e apoios necessários.",
+      "imprimivel": true
+    },
+    {
+      "id": "maternal-3b-laboratorio-das-bolhas",
+      "titulo": "Laboratório das Bolhas",
+      "faixaEtaria": "1 ano e 7 meses a 3 anos e 11 meses",
+      "campoExperiencia": "Corpo, gestos e movimentos",
+      "objetivoPedagogico": "Explorar e reconhecer com apoio ao observar tamanho, duração e movimento de bolhas.",
+      "ilustracao": {
+        "descricao": "Crianças investigando bolhas grandes e pequenas, adequada ao Maternal.",
+        "padraoVisual": "Fundo branco, traço infantil arredondado, cores vivas e suaves, elementos grandes, expressão alegre, organização limpa e sem poluição visual.",
+        "simbolo": "🍉"
+      },
+      "materiais": [
+        "Cartões ilustrados grandes",
+        "Materiais manipuláveis seguros",
+        "Folha ou painel para registro"
+      ],
+      "passoAPasso": [
+        "Apresentar “Laboratório das Bolhas” com a ilustração central.",
+        "Explicar e demonstrar uma etapa por vez.",
+        "Permitir exploração, escolha e participação ativa.",
+        "Retomar a descoberta com perguntas simples e registro."
+      ],
+      "adaptacaoAutismo": "Antecipar a sequência com apoio visual, reduzir estímulos, oferecer poucas escolhas, respeitar o tempo de resposta e permitir pausa sensorial.",
+      "registroPortfolio": "Registrar a participação em “Laboratório das Bolhas”, observando autonomia, comunicação, estratégia e apoios necessários.",
+      "imprimivel": true
+    },
+    {
+      "id": "maternal-3b-robo-das-formas",
+      "titulo": "Robô das Formas",
+      "faixaEtaria": "1 ano e 7 meses a 3 anos e 11 meses",
+      "campoExperiencia": "Traços, sons, cores e formas",
+      "objetivoPedagogico": "Explorar e reconhecer com apoio ao construir imagens usando formas geométricas.",
+      "ilustracao": {
+        "descricao": "Robô alegre feito de círculos, quadrados e triângulos, adequada ao Maternal.",
+        "padraoVisual": "Fundo branco, traço infantil arredondado, cores vivas e suaves, elementos grandes, expressão alegre, organização limpa e sem poluição visual.",
+        "simbolo": "🥕"
+      },
+      "materiais": [
+        "Cartões ilustrados grandes",
+        "Materiais manipuláveis seguros",
+        "Folha ou painel para registro"
+      ],
+      "passoAPasso": [
+        "Apresentar “Robô das Formas” com a ilustração central.",
+        "Explicar e demonstrar uma etapa por vez.",
+        "Permitir exploração, escolha e participação ativa.",
+        "Retomar a descoberta com perguntas simples e registro."
+      ],
+      "adaptacaoAutismo": "Antecipar a sequência com apoio visual, reduzir estímulos, oferecer poucas escolhas, respeitar o tempo de resposta e permitir pausa sensorial.",
+      "registroPortfolio": "Registrar a participação em “Robô das Formas”, observando autonomia, comunicação, estratégia e apoios necessários.",
+      "imprimivel": true
+    },
+    {
+      "id": "maternal-3b-chuva-de-letras",
+      "titulo": "Chuva de Letras",
+      "faixaEtaria": "1 ano e 7 meses a 3 anos e 11 meses",
+      "campoExperiencia": "Escuta, fala, pensamento e imaginação",
+      "objetivoPedagogico": "Explorar e reconhecer com apoio ao reconhecer letras conhecidas em brincadeira visual.",
+      "ilustracao": {
+        "descricao": "Guarda-chuva recebendo gotas com letras grandes, adequada ao Maternal.",
+        "padraoVisual": "Fundo branco, traço infantil arredondado, cores vivas e suaves, elementos grandes, expressão alegre, organização limpa e sem poluição visual.",
+        "simbolo": "🌼"
+      },
+      "materiais": [
+        "Cartões ilustrados grandes",
+        "Materiais manipuláveis seguros",
+        "Folha ou painel para registro"
+      ],
+      "passoAPasso": [
+        "Apresentar “Chuva de Letras” com a ilustração central.",
+        "Explicar e demonstrar uma etapa por vez.",
+        "Permitir exploração, escolha e participação ativa.",
+        "Retomar a descoberta com perguntas simples e registro."
+      ],
+      "adaptacaoAutismo": "Antecipar a sequência com apoio visual, reduzir estímulos, oferecer poucas escolhas, respeitar o tempo de resposta e permitir pausa sensorial.",
+      "registroPortfolio": "Registrar a participação em “Chuva de Letras”, observando autonomia, comunicação, estratégia e apoios necessários.",
+      "imprimivel": false
+    },
+    {
+      "id": "maternal-3b-trenzinho-das-historias",
+      "titulo": "Trenzinho das Histórias",
+      "faixaEtaria": "1 ano e 7 meses a 3 anos e 11 meses",
+      "campoExperiencia": "Espaços, tempos, quantidades, relações e transformações",
+      "objetivoPedagogico": "Explorar e reconhecer com apoio ao organizar começo, meio e fim.",
+      "ilustracao": {
+        "descricao": "Três vagões mostrando cenas sequenciais de uma aventura, adequada ao Maternal.",
+        "padraoVisual": "Fundo branco, traço infantil arredondado, cores vivas e suaves, elementos grandes, expressão alegre, organização limpa e sem poluição visual.",
+        "simbolo": "🌞"
+      },
+      "materiais": [
+        "Cartões ilustrados grandes",
+        "Materiais manipuláveis seguros",
+        "Folha ou painel para registro"
+      ],
+      "passoAPasso": [
+        "Apresentar “Trenzinho das Histórias” com a ilustração central.",
+        "Explicar e demonstrar uma etapa por vez.",
+        "Permitir exploração, escolha e participação ativa.",
+        "Retomar a descoberta com perguntas simples e registro."
+      ],
+      "adaptacaoAutismo": "Antecipar a sequência com apoio visual, reduzir estímulos, oferecer poucas escolhas, respeitar o tempo de resposta e permitir pausa sensorial.",
+      "registroPortfolio": "Registrar a participação em “Trenzinho das Histórias”, observando autonomia, comunicação, estratégia e apoios necessários.",
+      "imprimivel": true
+    },
+    {
+      "id": "maternal-3b-bicicleta-das-direcoes",
+      "titulo": "Bicicleta das Direções",
+      "faixaEtaria": "1 ano e 7 meses a 3 anos e 11 meses",
+      "campoExperiencia": "O eu, o outro e o nós",
+      "objetivoPedagogico": "Explorar e reconhecer com apoio ao seguir comandos de frente, atrás, direita e esquerda.",
+      "ilustracao": {
+        "descricao": "Bicicleta infantil seguindo placas coloridas, adequada ao Maternal.",
+        "padraoVisual": "Fundo branco, traço infantil arredondado, cores vivas e suaves, elementos grandes, expressão alegre, organização limpa e sem poluição visual.",
+        "simbolo": "☁️"
+      },
+      "materiais": [
+        "Cartões ilustrados grandes",
+        "Materiais manipuláveis seguros",
+        "Folha ou painel para registro"
+      ],
+      "passoAPasso": [
+        "Apresentar “Bicicleta das Direções” com a ilustração central.",
+        "Explicar e demonstrar uma etapa por vez.",
+        "Permitir exploração, escolha e participação ativa.",
+        "Retomar a descoberta com perguntas simples e registro."
+      ],
+      "adaptacaoAutismo": "Antecipar a sequência com apoio visual, reduzir estímulos, oferecer poucas escolhas, respeitar o tempo de resposta e permitir pausa sensorial.",
+      "registroPortfolio": "Registrar a participação em “Bicicleta das Direções”, observando autonomia, comunicação, estratégia e apoios necessários.",
+      "imprimivel": true
+    },
+    {
+      "id": "maternal-3b-cesta-dos-alimentos",
+      "titulo": "Cesta dos Alimentos",
+      "faixaEtaria": "1 ano e 7 meses a 3 anos e 11 meses",
+      "campoExperiencia": "Corpo, gestos e movimentos",
+      "objetivoPedagogico": "Explorar e reconhecer com apoio ao classificar alimentos por características observáveis.",
+      "ilustracao": {
+        "descricao": "Cestas com frutas, legumes e outros alimentos ilustrados, adequada ao Maternal.",
+        "padraoVisual": "Fundo branco, traço infantil arredondado, cores vivas e suaves, elementos grandes, expressão alegre, organização limpa e sem poluição visual.",
+        "simbolo": "⚽"
+      },
+      "materiais": [
+        "Cartões ilustrados grandes",
+        "Materiais manipuláveis seguros",
+        "Folha ou painel para registro"
+      ],
+      "passoAPasso": [
+        "Apresentar “Cesta dos Alimentos” com a ilustração central.",
+        "Explicar e demonstrar uma etapa por vez.",
+        "Permitir exploração, escolha e participação ativa.",
+        "Retomar a descoberta com perguntas simples e registro."
+      ],
+      "adaptacaoAutismo": "Antecipar a sequência com apoio visual, reduzir estímulos, oferecer poucas escolhas, respeitar o tempo de resposta e permitir pausa sensorial.",
+      "registroPortfolio": "Registrar a participação em “Cesta dos Alimentos”, observando autonomia, comunicação, estratégia e apoios necessários.",
+      "imprimivel": true
+    },
+    {
+      "id": "maternal-3b-planeta-dos-animais",
+      "titulo": "Planeta dos Animais",
+      "faixaEtaria": "1 ano e 7 meses a 3 anos e 11 meses",
+      "campoExperiencia": "Traços, sons, cores e formas",
+      "objetivoPedagogico": "Explorar e reconhecer com apoio ao relacionar animais a diferentes ambientes.",
+      "ilustracao": {
+        "descricao": "Planeta alegre com floresta, água, campo e céu, adequada ao Maternal.",
+        "padraoVisual": "Fundo branco, traço infantil arredondado, cores vivas e suaves, elementos grandes, expressão alegre, organização limpa e sem poluição visual.",
+        "simbolo": "🪁"
+      },
+      "materiais": [
+        "Cartões ilustrados grandes",
+        "Materiais manipuláveis seguros",
+        "Folha ou painel para registro"
+      ],
+      "passoAPasso": [
+        "Apresentar “Planeta dos Animais” com a ilustração central.",
+        "Explicar e demonstrar uma etapa por vez.",
+        "Permitir exploração, escolha e participação ativa.",
+        "Retomar a descoberta com perguntas simples e registro."
+      ],
+      "adaptacaoAutismo": "Antecipar a sequência com apoio visual, reduzir estímulos, oferecer poucas escolhas, respeitar o tempo de resposta e permitir pausa sensorial.",
+      "registroPortfolio": "Registrar a participação em “Planeta dos Animais”, observando autonomia, comunicação, estratégia e apoios necessários.",
+      "imprimivel": false
+    },
+    {
+      "id": "maternal-3b-teatro-das-sombras",
+      "titulo": "Teatro das Sombras",
+      "faixaEtaria": "1 ano e 7 meses a 3 anos e 11 meses",
+      "campoExperiencia": "Escuta, fala, pensamento e imaginação",
+      "objetivoPedagogico": "Explorar e reconhecer com apoio ao criar personagens e narrativas com silhuetas.",
+      "ilustracao": {
+        "descricao": "Tela clara com sombras de animais e crianças, adequada ao Maternal.",
+        "padraoVisual": "Fundo branco, traço infantil arredondado, cores vivas e suaves, elementos grandes, expressão alegre, organização limpa e sem poluição visual.",
+        "simbolo": "🧩"
+      },
+      "materiais": [
+        "Cartões ilustrados grandes",
+        "Materiais manipuláveis seguros",
+        "Folha ou painel para registro"
+      ],
+      "passoAPasso": [
+        "Apresentar “Teatro das Sombras” com a ilustração central.",
+        "Explicar e demonstrar uma etapa por vez.",
+        "Permitir exploração, escolha e participação ativa.",
+        "Retomar a descoberta com perguntas simples e registro."
+      ],
+      "adaptacaoAutismo": "Antecipar a sequência com apoio visual, reduzir estímulos, oferecer poucas escolhas, respeitar o tempo de resposta e permitir pausa sensorial.",
+      "registroPortfolio": "Registrar a participação em “Teatro das Sombras”, observando autonomia, comunicação, estratégia e apoios necessários.",
+      "imprimivel": true
+    },
+    {
+      "id": "maternal-3b-relogio-da-rotina",
+      "titulo": "Relógio da Rotina",
+      "faixaEtaria": "1 ano e 7 meses a 3 anos e 11 meses",
+      "campoExperiencia": "Espaços, tempos, quantidades, relações e transformações",
+      "objetivoPedagogico": "Explorar e reconhecer com apoio ao ordenar acontecimentos do dia.",
+      "ilustracao": {
+        "descricao": "Relógio grande cercado por cenas de rotina infantil, adequada ao Maternal.",
+        "padraoVisual": "Fundo branco, traço infantil arredondado, cores vivas e suaves, elementos grandes, expressão alegre, organização limpa e sem poluição visual.",
+        "simbolo": "🎈"
+      },
+      "materiais": [
+        "Cartões ilustrados grandes",
+        "Materiais manipuláveis seguros",
+        "Folha ou painel para registro"
+      ],
+      "passoAPasso": [
+        "Apresentar “Relógio da Rotina” com a ilustração central.",
+        "Explicar e demonstrar uma etapa por vez.",
+        "Permitir exploração, escolha e participação ativa.",
+        "Retomar a descoberta com perguntas simples e registro."
+      ],
+      "adaptacaoAutismo": "Antecipar a sequência com apoio visual, reduzir estímulos, oferecer poucas escolhas, respeitar o tempo de resposta e permitir pausa sensorial.",
+      "registroPortfolio": "Registrar a participação em “Relógio da Rotina”, observando autonomia, comunicação, estratégia e apoios necessários.",
       "imprimivel": true
     }
   ]

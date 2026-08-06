@@ -15,7 +15,7 @@ const files = grades.flatMap(([file, collection]) => [1, 2, 3, 4].map(term => [
   term
 ]));
 
-test('Os quatro bimestres de Maternal, Pré I e Pré II possuem dez atividades válidas cada', () => {
+test('O primeiro bimestre possui dez e os demais possuem trinta atividades por turma', () => {
   let total = 0;
 
   const allIds = new Set();
@@ -28,8 +28,9 @@ test('Os quatro bimestres de Maternal, Pré I e Pré II possuem dez atividades v
     assert.equal(collection.etapa, 'Educação Infantil');
     assert.equal(collection.colecao, expectedCollection);
     if (term > 1) assert.equal(collection.bimestre, term);
-    assert.equal(collection.quantidadeAtividades, 10);
-    assert.equal(collection.atividades.length, 10);
+    const expectedCount = term === 1 ? 10 : 30;
+    assert.equal(collection.quantidadeAtividades, expectedCount);
+    assert.equal(collection.atividades.length, expectedCount);
 
     const ids = new Set();
     for (const activity of collection.atividades) {
@@ -54,7 +55,7 @@ test('Os quatro bimestres de Maternal, Pré I e Pré II possuem dez atividades v
     total += collection.atividades.length;
   }
 
-  assert.equal(total, 120);
+  assert.equal(total, 300);
 });
 
 test('A Biblioteca carrega e exibe as coleções de Educação Infantil', () => {
@@ -77,7 +78,7 @@ test('Os novos bimestres usam ilustrações variadas e os cinco campos de experi
     const symbols = new Set(collection.atividades.map(activity => activity.ilustracao.simbolo));
     const fields = new Set(collection.atividades.map(activity => activity.campoExperiencia));
 
-    assert.equal(symbols.size, 10, `${file} deve ter uma ilustração diferente por atividade`);
+    assert.equal(symbols.size, 30, `${file} deve ter uma ilustração diferente por atividade`);
     assert.equal(fields.size, 5, `${file} deve contemplar os cinco campos de experiência`);
     for (const activity of collection.atividades) {
       assert.match(activity.ilustracao.padraoVisual, /traço infantil arredondado/);
