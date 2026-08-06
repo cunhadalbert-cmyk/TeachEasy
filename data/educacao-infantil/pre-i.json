@@ -1,0 +1,258 @@
+{
+  "schemaVersion": 1,
+  "colecao": "Pré I",
+  "etapa": "Educação Infantil",
+  "faixaEtaria": "4 anos",
+  "quantidadeAtividades": 10,
+  "atividades": [
+    {
+      "id": "roda-das-emocoes",
+      "titulo": "Roda das Emoções",
+      "faixaEtaria": "4 anos",
+      "campoExperiencia": "O eu, o outro e o nós",
+      "objetivoPedagogico": "Reconhecer e nomear sentimentos.",
+      "ilustracao": {
+        "descricao": "Carinhas grandes de alegria, tristeza, raiva, medo e calma.",
+        "padraoVisual": "Fundo branco, traço infantil arredondado, cores vivas e suaves, elementos grandes e organização limpa."
+      },
+      "materiais": [
+        "Cartões de emoções",
+        "espelho",
+        "folha"
+      ],
+      "passoAPasso": [
+        "Apresentar emoções",
+        "Conversar",
+        "Imitar",
+        "Marcar a emoção do dia."
+      ],
+      "adaptacaoAutismo": "Usar poucas opções e rotina previsível.",
+      "registroPortfolio": "Identificou emoções básicas.",
+      "imprimivel": true
+    },
+    {
+      "id": "minha-familia-e-quem-cuida-de-mim",
+      "titulo": "Minha Família e Quem Cuida de Mim",
+      "faixaEtaria": "4 anos",
+      "campoExperiencia": "O eu, o outro e o nós",
+      "objetivoPedagogico": "Reconhecer pessoas importantes do convívio.",
+      "ilustracao": {
+        "descricao": "Criança com familiares e cuidadores diversos.",
+        "padraoVisual": "Fundo branco, traço infantil arredondado, cores vivas e suaves, elementos grandes e organização limpa."
+      },
+      "materiais": [
+        "Folha",
+        "lápis",
+        "cola",
+        "fotos"
+      ],
+      "passoAPasso": [
+        "Conversar",
+        "Desenhar ou colar",
+        "Nomear",
+        "Compartilhar."
+      ],
+      "adaptacaoAutismo": "Permitir figuras prontas e apoio individual.",
+      "registroPortfolio": "Representou pessoas significativas.",
+      "imprimivel": true
+    },
+    {
+      "id": "caminho-do-equilibrio",
+      "titulo": "Caminho do Equilíbrio",
+      "faixaEtaria": "4 anos",
+      "campoExperiencia": "Corpo, gestos e movimentos",
+      "objetivoPedagogico": "Desenvolver equilíbrio e coordenação ampla.",
+      "ilustracao": {
+        "descricao": "Criança em trilha com pegadas e setas.",
+        "padraoVisual": "Fundo branco, traço infantil arredondado, cores vivas e suaves, elementos grandes e organização limpa."
+      },
+      "materiais": [
+        "Fita",
+        "bambolês",
+        "cones"
+      ],
+      "passoAPasso": [
+        "Montar percurso",
+        "Caminhar",
+        "Pular",
+        "Agachar."
+      ],
+      "adaptacaoAutismo": "Reduzir percurso e oferecer apoio.",
+      "registroPortfolio": "Participou do circuito motor.",
+      "imprimivel": true
+    },
+    {
+      "id": "danca-dos-bichos",
+      "titulo": "Dança dos Bichos",
+      "faixaEtaria": "4 anos",
+      "campoExperiencia": "Corpo, gestos e movimentos",
+      "objetivoPedagogico": "Explorar movimentos por imitação.",
+      "ilustracao": {
+        "descricao": "Animais pulando, rastejando e batendo asas.",
+        "padraoVisual": "Fundo branco, traço infantil arredondado, cores vivas e suaves, elementos grandes e organização limpa."
+      },
+      "materiais": [
+        "Música",
+        "cartões de animais"
+      ],
+      "passoAPasso": [
+        "Mostrar animal",
+        "Imitar",
+        "Alternar rápido e lento."
+      ],
+      "adaptacaoAutismo": "Antecipar movimentos e usar sequência curta.",
+      "registroPortfolio": "Imitou movimentos variados.",
+      "imprimivel": true
+    },
+    {
+      "id": "pintando-com-formas",
+      "titulo": "Pintando com Formas",
+      "faixaEtaria": "4 anos",
+      "campoExperiencia": "Traços, sons, cores e formas",
+      "objetivoPedagogico": "Reconhecer formas geométricas simples.",
+      "ilustracao": {
+        "descricao": "Círculo, quadrado, triângulo e retângulo.",
+        "padraoVisual": "Fundo branco, traço infantil arredondado, cores vivas e suaves, elementos grandes e organização limpa."
+      },
+      "materiais": [
+        "Tinta",
+        "moldes",
+        "folha"
+      ],
+      "passoAPasso": [
+        "Apresentar",
+        "Localizar",
+        "Carimbar",
+        "Pintar."
+      ],
+      "adaptacaoAutismo": "Usar menos formas e alto contraste.",
+      "registroPortfolio": "Reconheceu e representou formas.",
+      "imprimivel": true
+    },
+    {
+      "id": "jardim-de-colagem",
+      "titulo": "Jardim de Colagem",
+      "faixaEtaria": "4 anos",
+      "campoExperiencia": "Traços, sons, cores e formas",
+      "objetivoPedagogico": "Estimular criatividade e coordenação fina.",
+      "ilustracao": {
+        "descricao": "Flores, sol, borboletas e joaninhas.",
+        "padraoVisual": "Fundo branco, traço infantil arredondado, cores vivas e suaves, elementos grandes e organização limpa."
+      },
+      "materiais": [
+        "Papel",
+        "cola",
+        "tesoura",
+        "folha"
+      ],
+      "passoAPasso": [
+        "Recortar",
+        "Montar",
+        "Conversar sobre cores",
+        "Expor."
+      ],
+      "adaptacaoAutismo": "Oferecer peças maiores e pré-recortadas.",
+      "registroPortfolio": "Produziu colagem organizada.",
+      "imprimivel": true
+    },
+    {
+      "id": "sequencia-da-historia",
+      "titulo": "Sequência da História",
+      "faixaEtaria": "4 anos",
+      "campoExperiencia": "Escuta, fala, pensamento e imaginação",
+      "objetivoPedagogico": "Desenvolver memória e noção de sequência.",
+      "ilustracao": {
+        "descricao": "Três cenas de uma história curta.",
+        "padraoVisual": "Fundo branco, traço infantil arredondado, cores vivas e suaves, elementos grandes e organização limpa."
+      },
+      "materiais": [
+        "Cartões",
+        "livro",
+        "folha"
+      ],
+      "passoAPasso": [
+        "Contar",
+        "Embaralhar",
+        "Ordenar",
+        "Recontar."
+      ],
+      "adaptacaoAutismo": "Usar menos cenas e perguntas guiadas.",
+      "registroPortfolio": "Organizou sequência lógica.",
+      "imprimivel": true
+    },
+    {
+      "id": "meu-nome-colorido",
+      "titulo": "Meu Nome Colorido",
+      "faixaEtaria": "4 anos",
+      "campoExperiencia": "Escuta, fala, pensamento e imaginação",
+      "objetivoPedagogico": "Reconhecer o nome próprio e letras.",
+      "ilustracao": {
+        "descricao": "Letras grandes e coloridas.",
+        "padraoVisual": "Fundo branco, traço infantil arredondado, cores vivas e suaves, elementos grandes e organização limpa."
+      },
+      "materiais": [
+        "Ficha",
+        "letras móveis",
+        "lápis"
+      ],
+      "passoAPasso": [
+        "Apresentar nome",
+        "Identificar inicial",
+        "Montar",
+        "Pintar."
+      ],
+      "adaptacaoAutismo": "Usar modelo visual fixo e repetição.",
+      "registroPortfolio": "Reconheceu o nome próprio.",
+      "imprimivel": true
+    },
+    {
+      "id": "contando-frutas",
+      "titulo": "Contando Frutas",
+      "faixaEtaria": "4 anos",
+      "campoExperiencia": "Espaços, tempos, quantidades, relações e transformações",
+      "objetivoPedagogico": "Relacionar número e quantidade.",
+      "ilustracao": {
+        "descricao": "Frutas grandes e coloridas.",
+        "padraoVisual": "Fundo branco, traço infantil arredondado, cores vivas e suaves, elementos grandes e organização limpa."
+      },
+      "materiais": [
+        "Figuras",
+        "números",
+        "folha"
+      ],
+      "passoAPasso": [
+        "Contar",
+        "Ligar",
+        "Colorir",
+        "Comparar."
+      ],
+      "adaptacaoAutismo": "Começar de 1 a 3.",
+      "registroPortfolio": "Relacionou números e quantidades.",
+      "imprimivel": true
+    },
+    {
+      "id": "grande-pequeno-e-medio",
+      "titulo": "Grande, Pequeno e Médio",
+      "faixaEtaria": "4 anos",
+      "campoExperiencia": "Espaços, tempos, quantidades, relações e transformações",
+      "objetivoPedagogico": "Classificar por tamanho.",
+      "ilustracao": {
+        "descricao": "Animais e objetos em três tamanhos.",
+        "padraoVisual": "Fundo branco, traço infantil arredondado, cores vivas e suaves, elementos grandes e organização limpa."
+      },
+      "materiais": [
+        "Cartões",
+        "folha",
+        "cola"
+      ],
+      "passoAPasso": [
+        "Observar",
+        "Classificar",
+        "Colar."
+      ],
+      "adaptacaoAutismo": "Começar com grande e pequeno.",
+      "registroPortfolio": "Classificou objetos por tamanho.",
+      "imprimivel": true
+    }
+  ]
+}

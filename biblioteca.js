@@ -113,6 +113,120 @@ const collectionRegistry = {
 const loadedCollections = new Set();
 const collectionPromises = new Map();
 
+const earlyChildhoodRegistry = {
+  'Maternal': {
+    path: 'data/educacao-infantil/educacao-infantil.json',
+    collection: 'educacao-infantil-criancas-bem-pequenas',
+    symbol: '🧸',
+    colors: ['#fff0c7', '#dff3ee']
+  },
+  'Pré I': {
+    path: 'data/educacao-infantil/pre-i.json',
+    collection: 'educacao-infantil-pre-i',
+    symbol: '🎨',
+    colors: ['#ffe1e8', '#e7e0ff']
+  },
+  'Pré II': {
+    path: 'data/educacao-infantil/pre-ii.json',
+    collection: 'educacao-infantil-pre-ii',
+    symbol: '🌟',
+    colors: ['#dfeeff', '#fff0bd']
+  }
+};
+
+function selectedEarlyChildhoodConfig() {
+  if (navigation.stage !== 'Educação Infantil'
+    || !navigation.grade
+    || navigation.term !== '1') return null;
+  return earlyChildhoodRegistry[navigation.grade] || null;
+}
+
+function validateEarlyChildhoodCollection(collection) {
+  if (collection.schemaVersion !== 1
+    || collection.etapa !== 'Educação Infantil'
+    || collection.quantidadeAtividades !== 10
+    || !Array.isArray(collection.atividades)
+    || collection.atividades.length !== 10) {
+    throw new Error('Estrutura da coleção de Educação Infantil inválida.');
+  }
+
+  const ids = new Set();
+  collection.atividades.forEach(activity => {
+    const required = [
+      'id', 'titulo', 'faixaEtaria', 'campoExperiencia',
+      'objetivoPedagogico', 'ilustracao', 'materiais',
+      'passoAPasso', 'adaptacaoAutismo', 'registroPortfolio'
+    ];
+    if (ids.has(activity.id) || required.some(field => activity[field] == null)) {
+      throw new Error('Atividade de Educação Infantil inválida ou duplicada.');
+    }
+    ids.add(activity.id);
+  });
+}
+
+function normalizeEarlyChildhoodActivity(activity, collection, config) {
+  return {
+    id: `${navigation.grade}-${activity.id}`,
+    stage: 'Educação Infantil',
+    grade: navigation.grade,
+    term: 1,
+    subject: activity.campoExperiencia,
+    topic: activity.titulo,
+    difficulty: 'Adequada à faixa etária',
+    bncc: '',
+    symbol: config.symbol,
+    colors: config.colors,
+    questions: [],
+    answers: [],
+    hasAnswerKey: false,
+    hasFigures: false,
+    hasAdapted: true,
+    description: activity.objetivoPedagogico,
+    earlyChildhoodActivity: true,
+    earlyChildhoodDetails: {
+      faixaEtaria: activity.faixaEtaria,
+      ilustracao: activity.ilustracao,
+      materiais: activity.materiais,
+      passoAPasso: activity.passoAPasso,
+      adaptacaoAutismo: activity.adaptacaoAutismo,
+      registroPortfolio: activity.registroPortfolio,
+      imprimivel: Boolean(activity.imprimivel)
+    }
+  };
+}
+
+async function ensureEarlyChildhoodCollection() {
+  const config = selectedEarlyChildhoodConfig();
+  if (!config || loadedCollections.has(config.collection)) return;
+
+  const response = await fetch(config.path);
+  if (!response.ok) throw new Error('Não foi possível carregar a coleção de Educação Infantil.');
+
+  const collection = await response.json();
+  validateEarlyChildhoodCollection(collection);
+
+  activities = activities
+    .filter(activity => !(activity.stage === 'Educação Infantil' && activity.grade === navigation.grade))
+    .concat(collection.atividades.map(activity =>
+      normalizeEarlyChildhoodActivity(activity, collection, config)
+    ));
+
+  loadedCollections.add(config.collection);
+
+  const subjectSelect = filterForm.elements.subject;
+  const existing = new Set([...subjectSelect.options].map(option => option.value));
+  collection.atividades
+    .map(activity => activity.campoExperiencia)
+    .filter(subject => !existing.has(subject))
+    .forEach(subject => {
+      const option = document.createElement('option');
+      option.value = subject;
+      option.textContent = subject;
+      subjectSelect.append(option);
+      existing.add(subject);
+    });
+}
+
 function difficultyLabel(value) {
   return {
     facil: 'Fácil',
@@ -198,6 +312,7 @@ function selectedCollectionConfig() {
 }
 
 async function ensureSelectedCollection() {
+  await ensureEarlyChildhoodCollection();
   const config = selectedCollectionConfig();
   if (!config || loadedCollections.has(config.collection)) return;
   if (!collectionPromises.has(config.collection)) {
@@ -454,7 +569,45 @@ function answerMarkup(activity) {
   return activity.answers.map(answer => `<li>${answer}</li>`).join('');
 }
 
+function openEarlyChildhoodPreview(activity) {
+  const details = activity.earlyChildhoodDetails;
+  previewContent.innerHTML = `
+    <div class="preview-shell early-childhood-preview">
+      <div class="preview-topline">${activity.stage} · ${activity.grade} · ${activity.term}º bimestre</div>
+      <h2 id="preview-title">${activity.topic}</h2>
+      <p class="preview-summary">${activity.subject} · ${details.faixaEtaria}</p>
+
+      <section class="worksheet-page">
+        <h3>Objetivo pedagógico</h3>
+        <p>${activity.description}</p>
+
+        <h3>Proposta de ilustração</h3>
+        <p>${details.ilustracao.descricao}</p>
+        <p><strong>Padrão visual:</strong> ${details.ilustracao.padraoVisual}</p>
+
+        <h3>Materiais</h3>
+        <ul>${details.materiais.map(item => `<li>${item}</li>`).join('')}</ul>
+
+        <h3>Passo a passo</h3>
+        <ol>${details.passoAPasso.map(item => `<li>${item}</li>`).join('')}</ol>
+
+        <h3>Adaptação para autismo e inclusão</h3>
+        <p>${details.adaptacaoAutismo}</p>
+
+        <h3>Registro para portfólio</h3>
+        <p>${details.registroPortfolio}</p>
+
+        <p><strong>Material imprimível:</strong> ${details.imprimivel ? 'Sim' : 'Não obrigatório'}</p>
+      </section>
+    </div>`;
+  preview.showModal();
+}
+
 function openPreview(activity) {
+  if (activity.earlyChildhoodActivity) {
+    openEarlyChildhoodPreview(activity);
+    return;
+  }
   if (activity.collectionActivity) {
     openCollectionPreview(activity);
     return;
@@ -690,6 +843,7 @@ function renderNavigation() {
         navigation.term = String(term);
         currentPage = 1;
         renderNavigation();
+        ensureSelectedCollection().catch(() => {}).finally(renderActivities);
       })
     ));
     return;
