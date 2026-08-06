@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jogo da Memória dos Bebês para Imprimir | TeachEasy</title>
+  <meta name="description" content="Cartas do Jogo da Memória dos Bebês prontas para imprimir e recortar.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: #f4f6f8;
+      color: #2b2d42;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+      font-family: "Fredoka", system-ui, sans-serif;
+    }
+    .toolbar {
+      width: min(100%, 900px);
+      margin-bottom: 20px;
+      padding: 16px 24px;
+      border-radius: 16px;
+      background: #fff;
+      box-shadow: 0 4px 15px rgba(0,0,0,.1);
+      text-align: center;
+    }
+    .toolbar h1 { font-size: clamp(1.5rem, 4vw, 2rem); }
+    .toolbar p { margin-top: 6px; }
+    .toolbar-actions {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 12px;
+    }
+    .toolbar a,
+    .toolbar button {
+      min-height: 46px;
+      padding: 12px 22px;
+      border: 0;
+      border-radius: 12px;
+      color: #fff;
+      font: inherit;
+      font-weight: 700;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    .back-button { background: #0876cf; }
+    .print-button { background: #ff5e7e; }
+    .a4-page {
+      width: 210mm;
+      min-height: 297mm;
+      padding: 13mm;
+      background: #fff;
+      box-shadow: 0 0 20px rgba(0,0,0,.1);
+    }
+    .page-header {
+      margin-bottom: 10mm;
+      padding-bottom: 4mm;
+      border-bottom: 3px dashed #ff5e7e;
+      text-align: center;
+    }
+    .page-title { color: #ff5e7e; font-size: 23pt; }
+    .page-header p { margin-top: 2mm; }
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 7mm;
+      justify-items: center;
+    }
+    .printable-card {
+      position: relative;
+      width: 40mm;
+      height: 48mm;
+      padding: 3mm;
+      overflow: visible;
+      border: 2px dashed #4dabf7;
+      border-radius: 10px;
+      background: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      break-inside: avoid;
+    }
+    .printable-card::before {
+      content: "✂️";
+      position: absolute;
+      top: -9px;
+      right: -9px;
+      padding: 1px;
+      background: #fff;
+      font-size: 10pt;
+    }
+    .card-media {
+      width: 32mm;
+      height: 32mm;
+      display: grid;
+      place-items: center;
+    }
+    .card-media img {
+      width: 32mm;
+      height: 32mm;
+      object-fit: contain;
+    }
+    .fallback {
+      display: none;
+      font-size: 25mm;
+      line-height: 1;
+    }
+    .card-media.missing img { display: none; }
+    .card-media.missing .fallback { display: block; }
+    .card-label {
+      width: 100%;
+      padding: 1.5mm 1mm;
+      border-radius: 4px;
+      background: #f1f3f5;
+      font-size: 8.5pt;
+      font-weight: 700;
+      text-align: center;
+    }
+    @page { size: A4 portrait; margin: 0; }
+    @media (max-width: 850px) {
+      body { padding: 10px; }
+      .a4-page {
+        width: 100%;
+        min-height: auto;
+        padding: 18px;
+      }
+      .cards-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 16px;
+      }
+      .printable-card {
+        width: min(40mm, 100%);
+        height: 48mm;
+      }
+    }
+    @media print {
+      body { padding: 0; background: #fff; }
+      .no-print { display: none !important; }
+      .a4-page {
+        width: 210mm;
+        min-height: 297mm;
+        padding: 13mm;
+        box-shadow: none;
+      }
+      .cards-grid { grid-template-columns: repeat(4, 1fr); gap: 7mm; }
+    }
+  </style>
+</head>
+<body>
+  <div class="toolbar no-print">
+    <h1>🖨️ Cartas do Jogo da Memória para Imprimir</h1>
+    <p>Imprima e recorte nas linhas pontilhadas.</p>
+    <div class="toolbar-actions">
+      <a class="back-button" href="index.html">← Voltar ao Jogo da Memória</a>
+      <button class="print-button" type="button" onclick="window.print()">🖨️ Imprimir / Salvar PDF</button>
+    </div>
+  </div>
+
+  <main class="a4-page">
+    <header class="page-header">
+      <h1 class="page-title">🧩 Jogo da Memória dos Bebês</h1>
+      <p>✂️ Recorte nas linhas pontilhadas para brincar!</p>
+    </header>
+
+    <section class="cards-grid" aria-label="Dezesseis cartas em oito pares">
+      <article class="printable-card"><div class="card-media"><img src="baby_bugs_bunny.jpg" alt="Pernalonga Bebê"><span class="fallback" aria-hidden="true">🐰</span></div><span class="card-label">Pernalonga Bebê</span></article>
+      <article class="printable-card"><div class="card-media"><img src="baby_bugs_bunny.jpg" alt="Pernalonga Bebê"><span class="fallback" aria-hidden="true">🐰</span></div><span class="card-label">Pernalonga Bebê</span></article>
+      <article class="printable-card"><div class="card-media"><img src="baby_lola_bunny.jpg" alt="Lola Bunny Bebê"><span class="fallback" aria-hidden="true">🐇</span></div><span class="card-label">Lola Bunny Bebê</span></article>
+      <article class="printable-card"><div class="card-media"><img src="baby_lola_bunny.jpg" alt="Lola Bunny Bebê"><span class="fallback" aria-hidden="true">🐇</span></div><span class="card-label">Lola Bunny Bebê</span></article>
+      <article class="printable-card"><div class="card-media"><img src="baby_tweety.jpg" alt="Piu-Piu Bebê"><span class="fallback" aria-hidden="true">🐥</span></div><span class="card-label">Piu-Piu Bebê</span></article>
+      <article class="printable-card"><div class="card-media"><img src="baby_tweety.jpg" alt="Piu-Piu Bebê"><span class="fallback" aria-hidden="true">🐥</span></div><span class="card-label">Piu-Piu Bebê</span></article>
+      <article class="printable-card"><div class="card-media"><img src="baby_taz.jpg" alt="Taz Bebê"><span class="fallback" aria-hidden="true">🦡</span></div><span class="card-label">Taz Bebê</span></article>
+      <article class="printable-card"><div class="card-media"><img src="baby_taz.jpg" alt="Taz Bebê"><span class="fallback" aria-hidden="true">🦡</span></div><span class="card-label">Taz Bebê</span></article>
+      <article class="printable-card"><div class="card-media"><img src="baby_roadrunner.jpg" alt="Bip-Bip Bebê"><span class="fallback" aria-hidden="true">🐦</span></div><span class="card-label">Bip-Bip Bebê</span></article>
+      <article class="printable-card"><div class="card-media"><img src="baby_roadrunner.jpg" alt="Bip-Bip Bebê"><span class="fallback" aria-hidden="true">🐦</span></div><span class="card-label">Bip-Bip Bebê</span></article>
+      <article class="printable-card"><div class="card-media"><img src="baby_coyote.jpg" alt="Coyote Bebê"><span class="fallback" aria-hidden="true">🐺</span></div><span class="card-label">Coyote Bebê</span></article>
+      <article class="printable-card"><div class="card-media"><img src="baby_coyote.jpg" alt="Coyote Bebê"><span class="fallback" aria-hidden="true">🐺</span></div><span class="card-label">Coyote Bebê</span></article>
+      <article class="printable-card"><div class="card-media"><img src="baby_sylvester.jpg" alt="Frajola Bebê"><span class="fallback" aria-hidden="true">🐈‍⬛</span></div><span class="card-label">Frajola Bebê</span></article>
+      <article class="printable-card"><div class="card-media"><img src="baby_sylvester.jpg" alt="Frajola Bebê"><span class="fallback" aria-hidden="true">🐈‍⬛</span></div><span class="card-label">Frajola Bebê</span></article>
+      <article class="printable-card"><div class="card-media"><img src="baby_daffy.jpg" alt="Patolino Bebê"><span class="fallback" aria-hidden="true">🦆</span></div><span class="card-label">Patolino Bebê</span></article>
+      <article class="printable-card"><div class="card-media"><img src="baby_daffy.jpg" alt="Patolino Bebê"><span class="fallback" aria-hidden="true">🦆</span></div><span class="card-label">Patolino Bebê</span></article>
+    </section>
+  </main>
+
+  <script>
+    document.querySelectorAll(".card-media img").forEach((image) => {
+      image.addEventListener("error", () => image.parentElement.classList.add("missing"));
+    });
+  </script>
+</body>
+</html>
