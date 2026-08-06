@@ -58,3 +58,11 @@ test('A Biblioteca carrega e exibe as coleções de Educação Infantil', () => 
   assert.match(source, /ensureEarlyChildhoodCollection/);
   assert.match(source, /openEarlyChildhoodPreview/);
 });
+
+test('O workflow obrigatório da main permanece configurado', () => {
+  const workflow = fs.readFileSync(path.join(root, '.github', 'workflows', 'validate.yml'), 'utf8');
+
+  assert.match(workflow, /pull_request:/);
+  assert.match(workflow, /name: HTML, JavaScript and functional tests/);
+  assert.match(workflow, /npm run validate/);
+});
