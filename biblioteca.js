@@ -115,19 +115,19 @@ const collectionPromises = new Map();
 
 const earlyChildhoodRegistry = {
   'Maternal': {
-    path: 'data/educacao-infantil/educacao-infantil.json',
+    file: 'educacao-infantil',
     collection: 'educacao-infantil-criancas-bem-pequenas',
     symbol: '🧸',
     colors: ['#fff0c7', '#dff3ee']
   },
   'Pré I': {
-    path: 'data/educacao-infantil/pre-i.json',
+    file: 'pre-i',
     collection: 'educacao-infantil-pre-i',
     symbol: '🎨',
     colors: ['#ffe1e8', '#e7e0ff']
   },
   'Pré II': {
-    path: 'data/educacao-infantil/pre-ii.json',
+    file: 'pre-ii',
     collection: 'educacao-infantil-pre-ii',
     symbol: '🌟',
     colors: ['#dfeeff', '#fff0bd']
@@ -137,8 +137,15 @@ const earlyChildhoodRegistry = {
 function selectedEarlyChildhoodConfig() {
   if (navigation.stage !== 'Educação Infantil'
     || !navigation.grade
-    || navigation.term !== '1') return null;
-  return earlyChildhoodRegistry[navigation.grade] || null;
+    || !navigation.term) return null;
+  const base = earlyChildhoodRegistry[navigation.grade];
+  if (!base) return null;
+  const suffix = navigation.term === '1' ? '' : `-${navigation.term}b`;
+  return {
+    ...base,
+    path: `data/educacao-infantil/${base.file}${suffix}.json`,
+    collection: `${base.collection}-${navigation.term}b`
+  };
 }
 
 function validateEarlyChildhoodCollection(collection) {
@@ -169,12 +176,12 @@ function normalizeEarlyChildhoodActivity(activity, collection, config) {
     id: `${navigation.grade}-${activity.id}`,
     stage: 'Educação Infantil',
     grade: navigation.grade,
-    term: 1,
+    term: Number(navigation.term),
     subject: activity.campoExperiencia,
     topic: activity.titulo,
     difficulty: 'Adequada à faixa etária',
     bncc: '',
-    symbol: config.symbol,
+    symbol: activity.ilustracao.simbolo || config.symbol,
     colors: config.colors,
     questions: [],
     answers: [],
