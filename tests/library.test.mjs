@@ -166,33 +166,26 @@ test('Destaque da Biblioteca fica na página inicial junto aos quatro serviços'
   await window.happyDOM.close();
 });
 
-test('Os dois atalhos de demonstração abrem experiências distintas', async () => {
+test('Atalhos da página inicial abrem as experiências aprovadas', async () => {
   const window = await createInteractiveHomePage();
   const cards = [...window.document.querySelectorAll('.initial-service-card')];
-  assert.equal(cards.length, 2);
+  assert.equal(cards.length, 1);
   assert.equal(window.document.querySelectorAll('.service-number').length, 0);
-  assert.deepEqual(
-    cards.map(card => card.querySelector('h3').textContent),
-    ['Desenhos para colorir', 'Jogos pedagógicos']
-  );
+  assert.equal(cards[0].querySelector('h3').textContent, 'Desenhos para colorir');
 
-  // A biblioteca e a criação com IA deixaram de ser cards e viraram
-  // destaques próprios: banner com link e seção com diálogo dedicado.
+  // Biblioteca, Jogos Pedagógicos e criação com IA usam acessos próprios.
   assert.equal(window.document.querySelectorAll('.home-library-highlight').length, 1);
+  const gamesLink = window.document.querySelector('.home-games-highlight');
+  assert.ok(gamesLink);
+  assert.equal(gamesLink.getAttribute('href'), 'public/jogos-pedagogicos/jogos.html');
+  assert.equal(window.document.querySelectorAll('[data-service="games-demo"]').length, 0);
   assert.equal(window.document.querySelectorAll('#ai-content-launcher').length, 1);
 
   const dialog = window.document.querySelector('#service-dialog');
-
   cards[0].click();
   assert.equal(dialog.open, true);
   assert.equal(dialog.querySelectorAll('.demo-category').length, 7);
   assert.match(dialog.textContent, /Surpreenda-me/);
-  dialog.close();
-
-  cards[1].click();
-  assert.equal(dialog.open, true);
-  assert.equal(dialog.querySelectorAll('.demo-game').length, 6);
-  assert.match(dialog.textContent, /Caça-palavras|Jogo da memória/);
   await window.happyDOM.close();
 });
 
