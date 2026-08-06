@@ -3,397 +3,124 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="TeachEasy — O caminho mais rápido do professor.">
-  <title>TeachEasy — O caminho mais rápido do professor</title>
+  <meta name="description" content="Biblioteca demonstrativa de atividades pedagógicas do TeachEasy.">
+  <title>Biblioteca de Atividades — TeachEasy</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Libre+Franklin:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="photo-activity.css">
-  <link rel="stylesheet" href="coloring-wide.css">
-  <link rel="stylesheet" href="home-responsive.css" data-teacheasy-styles="home-responsive">
-  <link rel="stylesheet" href="jogos-inline.css">
+  <link rel="stylesheet" href="biblioteca.css">
 </head>
-<body>
-  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+<body class="library-page">
+  <a class="skip-link" href="#biblioteca">Pular para a biblioteca</a>
 
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="index.html" aria-label="Página inicial TeachEasy">
+  <header class="library-header">
+    <div class="container library-header-inner">
+      <a class="brand" href="index.html" aria-label="Voltar para o início do TeachEasy">
         <strong>TeachEasy</strong>
-        <span>O caminho mais rápido do professor.</span>
+        <span>Biblioteca de Atividades</span>
       </a>
+      <a class="btn btn-outline" href="index.html">← Voltar ao início</a>
     </div>
   </header>
 
-  <main id="conteudo">
-    <section class="hero">
-      <div class="container hero-grid">
-        <div class="hero-copy">
-          <span class="eyebrow">INTELIGÊNCIA ARTIFICIAL PARA PROFESSORES</span>
-          <h1>Crie materiais escolares <em>em minutos</em></h1>
-          <p class="hero-text">Gere planejamentos, atividades, avaliações, relatórios e materiais inclusivos com IA.</p>
-          <p class="hero-highlight">Mais tempo para ensinar.</p>
-
-          <div class="hero-actions">
-            <a class="btn btn-primary btn-large" href="#solucoes">Comece grátis <span>→</span></a>
-            <button class="btn btn-outline btn-large" type="button">▶ Ver demonstração</button>
-          </div>
-
-          <div class="trust-row" role="group" aria-label="Benefícios">
-            <span>▣ Sem cartão de crédito</span>
-            <span>✓ Cancelamento fácil</span>
-            <span>🛡 Segurança de dados</span>
-          </div>
+  <main id="biblioteca">
+    <section class="library-hero">
+      <div class="container library-hero-grid">
+        <div>
+          <span class="library-eyebrow">CONTEÚDO PEDAGÓGICO ORGANIZADO</span>
+          <h1>Encontre a atividade certa para sua turma.</h1>
+          <p class="library-hero-description">
+            Escolha a etapa, o ano e o bimestre. Depois, encontre a atividade ideal com
+            <span class="library-hero-highlights" role="group" aria-label="BNCC, Gabaritos, Figuras e Inclusão">
+              <span>BNCC</span><i aria-hidden="true">|</i>
+              <span>Gabaritos</span><i aria-hidden="true">|</i>
+              <span>Figuras</span><i aria-hidden="true">|</i>
+              <span>Inclusão</span>
+            </span>.
+          </p>
         </div>
 
-        <section class="carousel" aria-label="Recursos em destaque">
-          <button class="carousel-arrow prev" type="button" aria-label="Slide anterior">‹</button>
-
-          <div class="slides">
-            <article class="slide active" data-title="Portfólio do Estudante Autista">
-              <div class="slide-overlay slide-overlay-teacher">
-                <span class="slide-kicker">PARA QUEM ENSINA</span>
-                <h2>Seu tempo vale <em>mais.</em></h2>
-                <p>Menos horas preparando.<br><strong>Mais tempo para você.</strong></p>
-                <span class="slide-support">Planejamentos, atividades e avaliações com geração rápida.</span>
-              </div>
-
-              <div class="slide-feature-rotator" role="group" aria-label="Recursos do TeachEasy">
-                <span class="feature-message" style="--feature-delay: 0s">
-                  <small>EDUCAÇÃO INFANTIL</small>
-                  <strong>Conteúdo para cada fase da aprendizagem.</strong>
-                </span>
-                <span class="feature-message" style="--feature-delay: 5s">
-                  <small>ALINHAMENTO PEDAGÓGICO</small>
-                  <strong>BNCC integrada ao planejamento.</strong>
-                </span>
-                <span class="feature-message" style="--feature-delay: 10s">
-                  <small>EDUCAÇÃO INCLUSIVA</small>
-                  <strong>Adaptação para autismo e inclusão.</strong>
-                </span>
-                <span class="feature-message" style="--feature-delay: 15s">
-                  <small>FORMATO DE ENTREGA</small>
-                  <strong>PDF, Word editável ou ambos.</strong>
-                </span>
-              </div>
-            </article>
-
-            <article class="slide" data-title="Criação de Atividades">
-              <div class="slide-overlay slide-overlay-content">
-                <span class="slide-kicker">GERAÇÃO DE CONTEÚDO</span>
-                <h2>Sua ideia vira <em>material de aula.</em></h2>
-                <p>Conteúdo sob medida para ensinar do seu jeito.</p>
-              </div>
-            </article>
-
-            <article class="slide" data-title="Avaliações com Gabarito">
-              <div class="slide-overlay slide-overlay-evaluation">
-                <span class="slide-kicker">CONTEÚDO PRONTO PARA USAR</span>
-                <h2>Sua aula feita<br><em>em segundos.</em></h2>
-                <p>Com figuras coloridas e bem organizada.</p>
-              </div>
-            </article>
-
-            <article class="slide" data-title="Relatórios Pedagógicos">
-              <div class="slide-overlay slide-overlay-time">
-                <span>TEMPO É VIDA</span>
-              </div>
-            </article>
-          </div>
-
-          <button class="carousel-arrow next" type="button" aria-label="Próximo slide">›</button>
-
-          <div class="carousel-dots" role="group" aria-label="Selecionar slide">
-            <button class="active" type="button" data-slide="0" aria-label="Slide 1"></button>
-            <button type="button" data-slide="1" aria-label="Slide 2"></button>
-            <button type="button" data-slide="2" aria-label="Slide 3"></button>
-            <button type="button" data-slide="3" aria-label="Slide 4"></button>
-          </div>
-        </section>
       </div>
     </section>
 
-    <section id="solucoes" class="section initial-services">
+    <section class="library-content section">
       <div class="container">
-        <div class="section-heading initial-services-heading">
-          <span>COMECE PELO QUE VOCÊ MAIS PRECISA</span>
-          <h2>Cinco serviços para facilitar a sua rotina</h2>
-          <p>Você informa a turma, o tema e o objetivo. O TeachEasy organiza o material para você revisar, adaptar e aplicar.</p>
-        </div>
-
-        <a class="home-library-highlight" href="biblioteca.html" aria-label="Abrir Biblioteca de Atividades">
-          <span class="home-library-illustration" aria-hidden="true">
-            <svg viewBox="0 0 180 150" role="img">
-              <path class="library-spark library-spark-one" d="M23 22v18M14 31h18"/>
-              <path class="library-spark library-spark-two" d="M155 18v14M148 25h14"/>
-              <path class="library-page-back" d="M40 30h73l24 22v75H40z"/>
-              <path class="library-page-fold" d="M113 30v23h24"/>
-              <path class="library-book library-book-three" d="M26 104h112a9 9 0 0 1 9 9v12a9 9 0 0 1-9 9H26z"/>
-              <path class="library-book library-book-two" d="M34 82h107a9 9 0 0 1 9 9v10a9 9 0 0 1-9 9H34z"/>
-              <path class="library-book library-book-one" d="M25 60h111a9 9 0 0 1 9 9v10a9 9 0 0 1-9 9H25z"/>
-              <path class="library-book-line" d="M47 71h70M55 94h64M45 118h73"/>
-              <circle class="library-check" cx="137" cy="43" r="23"/>
-              <path class="library-check-mark" d="m126 43 8 8 15-18"/>
-            </svg>
-          </span>
-          <span class="home-library-copy">
-            <strong>Biblioteca de Atividades</strong>
-            <span>Encontre atividades prontas por etapa, ano e bimestre.</span>
-          </span>
-        </a>
-        <div class="photo-activity-feature">
-          <button class="photo-activity-launcher" id="photo-activity-launcher" type="button">
-            <img
-              class="photo-launcher-illustration"
-              src="assets/photo-activity-illustration.png"
-              alt="Foto de um conteúdo se transformando em uma nova atividade"
-              width="320"
-              height="213"
-            >
-            <span class="photo-launcher-copy">
-              <span class="photo-launcher-badge">NOVIDADE!</span>
-              <strong>Criar atividade por foto</strong>
-              <small>Envie uma foto do conteúdo e a IA gera uma atividade personalizada para você!</small>
-            </span>
-          </button>
-        </div>
-
-        <dialog class="photo-activity-dialog" id="photo-activity-dialog" aria-labelledby="photo-activity-title">
-          <button class="photo-dialog-close" type="button" aria-label="Fechar criação por foto">×</button>
-          <div class="photo-dialog-content">
-            <div class="photo-dialog-intro">
-              <span class="eyebrow">CRIAÇÃO ASSISTIDA</span>
-              <h2 id="photo-activity-title">Criar atividade por foto</h2>
-              <p>Use uma imagem como referência. A prévia cria novas questões e sugere figuras quando forem úteis.</p>
-            </div>
-
-            <form class="photo-activity-form" id="photo-activity-form">
-              <label class="photo-upload-field">
-                <span>Imagem de referência</span>
-                <input id="photo-reference" name="photo" type="file" accept=".jpg,.jpeg,.png,image/jpeg,image/png" required>
-                <small>JPG, JPEG ou PNG.</small>
-              </label>
-              <label>
-                <span>Ano ou série</span>
-                <select name="grade" required>
-                  <option value="">Escolha uma opção</option>
-                  <option>Educação Infantil</option>
-                  <option>1º ano</option><option>2º ano</option><option>3º ano</option>
-                  <option>4º ano</option><option>5º ano</option><option>6º ano</option>
-                  <option>7º ano</option><option>8º ano</option><option>9º ano</option>
-                  <option>1ª série</option><option>2ª série</option><option>3ª série</option>
-                </select>
-              </label>
-              <label>
-                <span>Quantidade de questões</span>
-                <input name="questionCount" type="number" min="1" max="20" value="5" required>
-              </label>
-              <fieldset class="photo-options">
-                <legend>Opções</legend>
-                <label><input name="answerKey" type="checkbox" checked> Incluir gabarito</label>
-                <label><input name="adapted" type="checkbox"> Gerar versão adaptada</label>
-              </fieldset>
-              <p class="photo-form-error" id="photo-form-error" role="alert" hidden></p>
-              <button class="btn btn-primary" type="submit">Gerar prévia</button>
-            </form>
-
-            <section class="photo-generated-preview" id="photo-generated-preview" aria-live="polite" hidden>
-              <div class="school-header" id="school-header" hidden>
-                <strong>Nome da escola</strong>
-                <span>Professor(a): ____________________ Turma: ______ Data: ____/____/______</span>
-              </div>
-              <div id="photo-preview-content"></div>
-              <div class="photo-preview-actions">
-                <button class="btn btn-outline" id="photo-regenerate" type="button">Gerar novamente</button>
-                <label class="school-header-toggle">
-                  <input id="school-header-toggle" type="checkbox"> Adicionar cabeçalho da escola
-                </label>
-                <button class="btn btn-outline" id="photo-download-pdf" type="button">Baixar PDF</button>
-                <button class="btn btn-primary" id="photo-download-word" type="button">Baixar Word</button>
-              </div>
-            </section>
+        <div class="library-toolbar">
+          <div>
+            <span class="library-eyebrow">BIBLIOTECA</span>
+            <h2 id="library-step-title">Escolha uma etapa</h2>
+            <p id="library-step-help">1.712 atividades-base. Inclusão e autismo estão disponíveis em todas as etapas.</p>
           </div>
-        </dialog>
-
-        <section class="ai-content-feature" role="button" tabindex="0" aria-labelledby="ai-content-feature-title" aria-haspopup="dialog">
-          <span class="ai-content-illustration" aria-hidden="true">
-            <svg viewBox="0 0 180 150">
-              <path class="ai-spark ai-spark-one" d="M28 20v20M18 30h20"/>
-              <path class="ai-spark ai-spark-two" d="M150 24v16M142 32h16"/>
-              <path class="ai-page" d="M42 24h76l24 24v82H42z"/>
-              <path class="ai-page-fold" d="M118 24v25h24"/>
-              <path class="ai-line" d="M60 66h62M60 83h62M60 100h42"/>
-              <circle class="ai-magic" cx="128" cy="111" r="23"/>
-              <path class="ai-magic-mark" d="m118 112 7 7 14-17"/>
-            </svg>
-          </span>
-          <div class="ai-content-feature-copy">
-            <span>CRIAÇÃO PERSONALIZADA</span>
-            <h3 id="ai-content-feature-title">Criar com a IA</h3>
-            <p>Informe o que você precisa e a IA prepara o material para a sua turma.</p>
+          <div class="selection-summary" aria-live="polite">
+            <span>Minha seleção</span>
+            <strong><b id="selection-count">0</b> atividades</strong>
           </div>
-          <button class="btn ai-content-launcher" id="ai-content-launcher" type="button">
-            Fazer solicitação
-          </button>
-        </section>
+        </div>
+        <nav class="library-breadcrumb" id="library-breadcrumb" aria-label="Caminho da biblioteca"></nav>
+        <button class="btn btn-outline library-back" id="library-back" type="button" hidden>← Voltar</button>
+        <div class="library-choice-grid" id="library-choice-grid"></div>
 
-        <dialog class="ai-content-dialog" id="ai-content-dialog" aria-labelledby="ai-content-title">
-          <button class="ai-content-close" type="button" aria-label="Fechar criação com a IA">×</button>
-          <div class="ai-content-dialog-body">
-            <header class="ai-content-intro">
-              <span>CRIAÇÃO PERSONALIZADA</span>
-              <h2 id="ai-content-title">Criar com a IA</h2>
-              <p>Descreva o material. Você poderá revisar, editar e pedir alterações antes de baixar.</p>
-            </header>
+        <form class="library-filters" id="library-filters" hidden>
+          <label>
+            <span>Disciplina</span>
+            <select name="subject">
+              <option value="">Todas as disciplinas</option>
+            </select>
+          </label>
 
-            <form class="ai-content-form" id="ai-content-form">
-              <label class="ai-prompt-field">
-                <textarea name="request" rows="5" required aria-label="Descreva o conteúdo que deseja criar" placeholder="Crie uma atividade de Ciências para o 4º ano sobre o ciclo da água, com 8 questões, figuras, gabarito e uma versão adaptada para aluno com autismo."></textarea>
-              </label>
+          <label class="filter-search">
+            <span>Tema ou conteúdo</span>
+            <input name="query" type="search" placeholder="Ex.: frações, leitura, ecossistemas">
+          </label>
 
-              <div class="ai-content-form-grid">
-                <label><span>Tipo de material</span><select name="materialType" required>
-                  <option value="">Selecione</option><option>Atividade</option><option>Prova</option>
-                  <option>Plano de aula</option><option>Sequência didática</option>
-                  <option>Exercício de revisão</option><option>Trabalho</option>
-                  <option>Relatório</option><option>Portfólio do estudante</option>
-                </select></label>
-                <label><span>Etapa de ensino</span><select name="stage" required>
-                  <option value="">Selecione</option><option>Educação Infantil</option>
-                  <option>Ensino Fundamental — Anos Iniciais</option>
-                  <option>Ensino Fundamental — Anos Finais</option><option>Ensino Médio</option>
-                </select></label>
-                <label><span>Ano ou série</span><input name="grade" type="text" required placeholder="Ex.: 4º ano"></label>
-                <label><span>Disciplina</span><input name="subject" type="text" required placeholder="Ex.: Ciências"></label>
-                <label><span>Conteúdo ou tema</span><input name="topic" type="text" required placeholder="Ex.: Ciclo da água"></label>
-                <label><span>Objetivo da atividade</span><input name="objective" type="text" placeholder="Ex.: Compreender as etapas do ciclo"></label>
-                <label><span>Quantidade de questões</span><input name="questionCount" type="number" min="1" max="30" value="8"></label>
-                <label><span>Nível de dificuldade</span><select name="difficulty">
-                  <option>Fácil</option><option selected>Intermediário</option><option>Avançado</option>
-                </select></label>
-                <label><span>Tipo de questões</span><select name="questionType">
-                  <option>Mistas</option><option>Objetivas</option><option>Discursivas</option>
-                </select></label>
-              </div>
+          <fieldset class="filter-toggles">
+            <legend>Recursos</legend>
+            <label><input type="checkbox" name="answerKey"> Gabarito</label>
+            <label><input type="checkbox" name="figures"> Figuras</label>
+            <label><input type="checkbox" name="adapted"> Autismo e inclusão</label>
+          </fieldset>
 
-              <fieldset class="ai-content-options">
-                <legend>Recursos do material</legend>
-                <label><input name="figures" type="checkbox"> Incluir figuras</label>
-                <label><input name="answerKey" type="checkbox" checked> Incluir gabarito</label>
-                <label><input name="adapted" type="checkbox"> Criar versão adaptada para inclusão</label>
-              </fieldset>
-
-              <section class="ai-school-header-upload" aria-labelledby="ai-school-header-title">
-                <div>
-                  <h3 id="ai-school-header-title">Cabeçalho da escola</h3>
-                  <p>Envie o cabeçalho que deseja usar na atividade.</p>
-                </div>
-                <input id="ai-school-header-file" name="schoolHeader" type="file" accept=".png,.jpg,.jpeg,.pdf,image/png,image/jpeg,application/pdf" hidden>
-                <div class="ai-header-file-actions">
-                  <label class="btn btn-outline ai-header-select" for="ai-school-header-file">Selecionar cabeçalho</label>
-                  <button class="btn btn-outline" id="ai-header-remove" type="button" hidden>Remover arquivo</button>
-                </div>
-                <div class="ai-header-file-preview" id="ai-header-file-preview" hidden>
-                  <strong id="ai-header-file-name"></strong>
-                  <img id="ai-header-image-preview" src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="Prévia do cabeçalho da escola" hidden>
-                  <p id="ai-header-pdf-message" hidden>Arquivo PDF carregado.</p>
-                </div>
-                <label class="ai-use-header-option" hidden>
-                  <input id="ai-use-school-header" type="checkbox" checked>
-                  Usar este cabeçalho no material gerado
-                </label>
-              </section>
-
-              <button class="btn btn-primary ai-create-submit" type="submit">Criar conteúdo</button>
-            </form>
-
-            <section class="ai-content-preview" id="ai-content-preview" aria-live="polite" hidden>
-              <div class="ai-preview-status">Prévia pronta para revisão</div>
-              <article class="ai-preview-document" id="ai-preview-document" contenteditable="false"></article>
-              <label class="ai-change-request">
-                <span>O que você quer alterar?</span>
-                <textarea id="ai-change-request" rows="2" placeholder="Ex.: deixe as questões mais simples e inclua uma questão com desenho."></textarea>
-              </label>
-              <div class="ai-preview-actions">
-                <button class="btn btn-outline" id="ai-edit-content" type="button">Editar conteúdo</button>
-                <button class="btn btn-outline" id="ai-request-change" type="button">Pedir alteração à IA</button>
-                <button class="btn btn-outline" id="ai-regenerate-content" type="button">Gerar novamente</button>
-                <button class="btn btn-outline" id="ai-download-pdf" type="button">Baixar em PDF</button>
-                <button class="btn btn-primary" id="ai-download-word" type="button">Baixar em Word</button>
-              </div>
-            </section>
+          <div class="filter-actions">
+            <button class="btn btn-primary" type="submit">Aplicar filtros</button>
+            <button class="btn btn-outline filter-reset" type="reset">Limpar filtros</button>
           </div>
-        </dialog>
+        </form>
 
-        <div class="cards-grid initial-services-grid">
-          <article class="feature-card initial-service-card" role="button" tabindex="0" data-service="coloring-demo" data-demo-theme="mint" aria-haspopup="dialog">
-            <div class="icon">🎨</div>
-            <h3>Desenhos para colorir</h3>
-            <p>Encontre imagens para imprimir por tema, idade e conteúdo pedagógico.</p>
-            <span class="service-open-hint">Abrir desenhos <b>&rarr;</b></span>
-          </article>
-
-          <article class="feature-card initial-service-card" role="button" tabindex="0" data-service="games-demo" data-demo-theme="blue" aria-haspopup="dialog">
-            <div class="icon">🎲</div>
-            <h3>Jogos pedagógicos</h3>
-            <p>Encontre jogos simples e materiais lúdicos prontos para imprimir.</p>
-            <span class="service-open-hint">Ver jogos <b>→</b></span>
-          </article>
+        <div class="active-filter-summary" id="active-filter-summary" aria-live="polite"></div>
+        <div class="activity-grid" id="activity-grid"></div>
+        <div class="library-pagination" id="library-pagination" hidden>
+          <button class="btn btn-outline" id="previous-page" type="button">← Anterior</button>
+          <span id="page-status"></span>
+          <button class="btn btn-outline" id="next-page" type="button">Próxima →</button>
         </div>
-      </div>
-    </section>
 
-    <dialog id="service-dialog" class="service-dialog" aria-labelledby="service-dialog-title">
-      <button class="service-dialog-close" type="button" aria-label="Fechar detalhes">×</button>
-      <div class="service-dialog-icon" aria-hidden="true"></div>
-      <span class="service-dialog-kicker">DEMONSTRAÇÃO TEACHEASY</span>
-      <h2 id="service-dialog-title"></h2>
-      <p class="service-dialog-description"></p>
-
-      <div class="service-dialog-columns"></div>
-
-    </dialog>
-
-    <section id="sobre" class="section section-soft">
-      <div class="container split">
-        <figure class="teacheasy-workflow">
-          <img src="assets/fluxo-teacheasy.png" alt="Professora utilizando o TeachEasy em seu computador">
-        </figure>
-
-        <div class="split-copy">
-          <h2>Mais tempo para o que realmente importa: você.</h2>
-          <p>O TeachEasy usa inteligência artificial para ajudar professores a produzir materiais de qualidade com rapidez, clareza e segurança.</p>
-          <ul class="check-list">
-            <li>Alinhado à BNCC e às principais metodologias</li>
-            <li>Conteúdo seguro, ético e revisável</li>
-            <li>Interface simples e com letras maiores</li>
-            <li>Apoio real para o dia a dia do professor</li>
-          </ul>
+        <div class="empty-state" id="empty-state" hidden>
+          <span>🔎</span>
+          <h3>Nenhuma atividade encontrada</h3>
+          <p>Tente remover alguns filtros para visualizar outras opções.</p>
+          <button class="btn btn-outline" type="button" id="empty-reset">Limpar filtros</button>
         </div>
-      </div>
-    </section>
-
-    <section class="stats">
-      <div class="container stats-grid">
-        <div><strong>+ 25.000</strong><span>professores usam e recomendam</span></div>
-        <div><strong>+ 2.500</strong><span>escolas parceiras em todo o Brasil</span></div>
-        <div><strong>4,9/5</strong><span>avaliação dos professores</span></div>
-        <div><strong>100% seguro</strong><span>dados protegidos com privacidade</span></div>
       </div>
     </section>
   </main>
 
-  <footer class="footer">
+  <dialog class="activity-preview" id="activity-preview" aria-labelledby="preview-title">
+    <button class="preview-close" type="button" aria-label="Fechar visualização">×</button>
+    <div id="preview-content"></div>
+  </dialog>
+
+  <div class="library-toast" id="library-toast" role="status" aria-live="polite"></div>
+
+  <footer class="footer library-footer">
     <div class="container">
       <strong>TeachEasy</strong>
-      <span>O caminho mais rápido do professor.</span>
+      <span>Biblioteca demonstrativa — conteúdo para professores.</span>
     </div>
   </footer>
 
-  <script src="photo-activity.js"></script>
-  <script src="ai-content.js"></script>
-  <script src="script.js"></script>
-  <script src="jogos-inline.js"></script>
+  <script src="biblioteca.js"></script>
+  <script src="biblioteca-fixes.js"></script>
 </body>
 </html>
+
