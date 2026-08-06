@@ -1,0 +1,38 @@
+name: Gerar ZIP da auditoria
+
+on:
+  push:
+    branches:
+      - audit/correcao-completa-teacheasy
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  gerar-zip:
+    name: Gerar pacote TeachEasy auditado
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Baixar repositório
+        uses: actions/checkout@v4
+
+      - name: Preparar pacote
+        run: |
+          mkdir -p pacote/TeachEasy-auditoria
+          rsync -av --exclude='.git' --exclude='node_modules' --exclude='.npm-cache' ./ pacote/TeachEasy-auditoria/
+
+      - name: Compactar projeto
+        run: |
+          cd pacote
+          zip -r TeachEasy-auditoria.zip TeachEasy-auditoria
+
+      - name: Publicar ZIP
+        uses: actions/upload-artifact@v4
+        with:
+          name: TeachEasy-auditoria
+          path: pacote/TeachEasy-auditoria.zip
+          if-no-files-found: error
+          retention-days: 7
