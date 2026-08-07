@@ -63,7 +63,7 @@ test('A Biblioteca carrega e exibe as coleções de Educação Infantil', () => 
   assert.match(source, /file: 'educacao-infantil'/);
   assert.match(source, /file: 'pre-i'/);
   assert.match(source, /file: 'pre-ii'/);
-  assert.match(source, /path: \`data\\/educacao-infantil\\/\\\$\\{base\\.file\\}\\\$\\{suffix\\}\\.json\`/);
+  assert.match(source, /path: `data\/educacao-infantil\/\$\{base\.file\}\$\{suffix\}\.json`/);
   assert.match(source, /ensureEarlyChildhoodCollection/);
   assert.match(source, /openEarlyChildhoodPreview/);
 });
