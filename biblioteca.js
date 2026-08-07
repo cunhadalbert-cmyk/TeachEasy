@@ -21,6 +21,7 @@ const activitySeeds = [
   ['EFII04', 'Ensino Fundamental II', '7º ano', 3, 'Língua Portuguesa', 'Notícia e opinião', 'Desafiadora', 'EF07LP01', '🎙️', ['#dbe9ff', '#ffe2d8']],
   ['EFII05', 'Ensino Fundamental II', '8º ano', 1, 'Geografia', 'População e migrações', 'Desafiadora', 'EF08GE01', '🌎', ['#d7efff', '#dff3dc']],
   ['EFII06', 'Ensino Fundamental II', '9º ano', 3, 'Matemática', 'Funções e gráficos', 'Desafiadora', 'EF09MA06', '📊', ['#dbe9ff', '#eadfff']],
+  ['EFII07', 'Ensino Fundamental II', '6º ano', 1, 'Inglês', 'Identity and everyday language', 'Média', 'EF06LI01', '💬', ['#dbe9ff', '#ffe2d8']],
   ['EM01', 'Ensino Médio', '1ª série', 1, 'Biologia', 'Ecologia e relações ecológicas', 'Desafiadora', 'EM13CNT202', '🌿', ['#dff3dc', '#fff0b7']],
   ['EM02', 'Ensino Médio', '2ª série', 2, 'Física', 'Movimento e velocidade', 'Desafiadora', 'EM13CNT204', '🚀', ['#dbe9ff', '#e7dfff']],
   ['EM03', 'Ensino Médio', '3ª série', 3, 'Química', 'Funções orgânicas', 'Desafiadora', 'EM13CNT104', '⚗️', ['#d9f2ef', '#f5def2']],
@@ -109,6 +110,23 @@ const collectionRegistry = {
     symbol: '📖',
     colors: ['#ffe2e8', '#eee3ff']
   }
+};
+
+const finalYearsSubjects = {
+  'Língua Portuguesa': { file: 'lingua-portuguesa', symbol: '📚', colors: ['#ffe2e8', '#eee3ff'] },
+  'Matemática': { file: 'matematica', symbol: '📐', colors: ['#e1ebff', '#fff1bd'] },
+  'Ciências': { file: 'ciencias', symbol: '🔬', colors: ['#d9f1e1', '#e8f0ff'] },
+  'História': { file: 'historia', symbol: '🏺', colors: ['#f4dfc7', '#f2ddec'] },
+  'Geografia': { file: 'geografia', symbol: '🌎', colors: ['#d7efff', '#dff3dc'] },
+  'Inglês': { file: 'ingles', symbol: '💬', colors: ['#dbe9ff', '#ffe2d8'] }
+};
+const highSchoolSubjects = {
+  'Língua Portuguesa': { file: 'lingua-portuguesa', symbol: '📚', colors: ['#ffe2e8', '#eee3ff'] },
+  'Matemática': { file: 'matematica', symbol: '📐', colors: ['#e1ebff', '#fff1bd'] },
+  'Ciências': { file: 'ciencias', symbol: '🔬', colors: ['#d9f1e1', '#e8f0ff'] },
+  'História': { file: 'historia', symbol: '🏺', colors: ['#f4dfc7', '#f2ddec'] },
+  'Geografia': { file: 'geografia', symbol: '🌎', colors: ['#d7efff', '#dff3dc'] },
+  'Inglês': { file: 'ingles', symbol: '💬', colors: ['#dbe9ff', '#ffe2d8'] }
 };
 const loadedCollections = new Set();
 const collectionPromises = new Map();
@@ -286,7 +304,7 @@ async function validateCollectionAssets(collection) {
 function normalizeCollectionActivity(activity, collection, config) {
   return {
     id: activity.id,
-    stage: 'Ensino Fundamental I',
+    stage: config.stage || 'Ensino Fundamental I',
     grade: config.grade || collection.ano || '4º ano',
     term: collection.bimestre || 3,
     subject: collection.disciplina,
@@ -309,10 +327,47 @@ function normalizeCollectionActivity(activity, collection, config) {
 }
 
 function selectedCollectionConfig() {
+  const subject = filterForm.elements.subject.value;
+  if (navigation.stage === 'Ensino Médio'
+    && navigation.grade
+    && navigation.term
+    && highSchoolSubjects[subject]) {
+    const grade = Number.parseInt(navigation.grade, 10);
+    const term = Number(navigation.term);
+    const selected = highSchoolSubjects[subject];
+    return {
+      path: `data/atividades/ensino-medio/${grade}-serie/${term}-bimestre/${selected.file}.json`,
+      collection: `em-${grade}serie-${term}bimestre-${selected.file}`,
+      count: 50,
+      symbol: selected.symbol,
+      colors: selected.colors,
+      stage: 'Ensino Médio',
+      grade: navigation.grade,
+      term
+    };
+  }
+  if (navigation.stage === 'Ensino Fundamental II'
+    && navigation.grade
+    && navigation.term
+    && finalYearsSubjects[subject]) {
+    const grade = Number.parseInt(navigation.grade, 10);
+    const term = Number(navigation.term);
+    const selected = finalYearsSubjects[subject];
+    return {
+      path: `data/atividades/fundamental-anos-finais/${grade}-ano/${term}-bimestre/${selected.file}.json`,
+      collection: `${grade}ano-${term}bimestre-${selected.file}`,
+      count: 40,
+      symbol: selected.symbol,
+      colors: selected.colors,
+      stage: 'Ensino Fundamental II',
+      grade: navigation.grade,
+      term
+    };
+  }
   if (navigation.stage !== 'Ensino Fundamental I'
     || navigation.grade !== '4º ano'
     || navigation.term !== '3') return null;
-  return collectionRegistry[filterForm.elements.subject.value] || null;
+  return collectionRegistry[subject] || null;
 }
 
 async function ensureSelectedCollection() {
@@ -331,9 +386,9 @@ async function ensureSelectedCollection() {
       })
       .then(collection => {
         activities = activities
-          .filter(activity => !(activity.stage === 'Ensino Fundamental I'
-            && activity.grade === '4º ano'
-            && activity.term === 3
+          .filter(activity => !(activity.stage === (config.stage || 'Ensino Fundamental I')
+            && activity.grade === (config.grade || collection.ano || '4º ano')
+            && activity.term === (config.term || collection.bimestre || 3)
             && activity.subject === collection.disciplina))
           .concat(collection.atividades.map(activity => normalizeCollectionActivity(activity, collection, config)));
         loadedCollections.add(config.collection);
@@ -379,8 +434,8 @@ const navigation = { stage: '', grade: '', term: '' };
 const stages = [
   { name: 'Educação Infantil', label: 'Educação Infantil', detail: 'Maternal, Pré I e Pré II', count: 288, theme: 'infantil' },
   { name: 'Ensino Fundamental I', label: 'Ensino Fundamental — Anos Iniciais', detail: '1º ao 5º ano', count: 800, theme: 'iniciais' },
-  { name: 'Ensino Fundamental II', label: 'Ensino Fundamental — Anos Finais', detail: '6º ao 9º ano', count: 384, theme: 'finais' },
-  { name: 'Ensino Médio', label: 'Ensino Médio', detail: '1ª à 3ª série', count: 240, theme: 'medio' }
+  { name: 'Ensino Fundamental II', label: 'Ensino Fundamental — Anos Finais', detail: '6º ao 9º ano', count: 3840, theme: 'finais' },
+  { name: 'Ensino Médio', label: 'Ensino Médio', detail: '1ª à 3ª série', count: 3600, theme: 'medio' }
 ];
 
 const gradesByStage = {
@@ -406,6 +461,27 @@ function populateSelect(name, values) {
 }
 
 populateSelect('subject', uniqueSorted('subject'));
+
+function syncSubjectOptions() {
+  const select = filterForm.elements.subject;
+  const previous = select.value;
+  const values = navigation.stage === 'Ensino Fundamental II'
+    ? Object.keys(finalYearsSubjects)
+    : navigation.stage === 'Ensino Médio'
+      ? Object.keys(highSchoolSubjects)
+      : uniqueSorted('subject');
+  const defaultOption = document.createElement('option');
+  defaultOption.value = '';
+  defaultOption.textContent = 'Todas as disciplinas';
+  const options = values.map(value => {
+    const option = document.createElement('option');
+    option.value = value;
+    option.textContent = value;
+    return option;
+  });
+  select.replaceChildren(defaultOption, ...options);
+  select.value = values.includes(previous) ? previous : '';
+}
 
 function getFilters() {
   const data = new FormData(filterForm);
@@ -801,6 +877,7 @@ function stageLabel(name) {
 }
 
 function renderNavigation() {
+  syncSubjectOptions();
   const atActivities = Boolean(navigation.term);
   filterForm.hidden = !atActivities;
   activityGrid.hidden = !atActivities;

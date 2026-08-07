@@ -928,10 +928,19 @@
     const select = filterForm.elements.subject;
     const currentValue = select.value;
     const allOption = select.querySelector('option[value="]');
-    const values = navigation.stage === 'Ensino Fundamental I'
-      && ['1º ano', '2º ano', '3º ano', '4º ano', '5º ano'].includes(navigation.grade)
+    const isInitialYears = navigation.stage === 'Ensino Fundamental I'
+      && ['1º ano', '2º ano', '3º ano', '4º ano', '5º ano'].includes(navigation.grade);
+    const isFinalYears = navigation.stage === 'Ensino Fundamental II'
+      && ['6º ano', '7º ano', '8º ano', '9º ano'].includes(navigation.grade);
+    const isHighSchool = navigation.stage === 'Ensino Médio'
+      && ['1ª série', '2ª série', '3ª série'].includes(navigation.grade);
+    const values = isInitialYears
       ? [...PRIMARY_SUBJECTS_FUNDAMENTAL_I]
-      : uniqueSorted('subject');
+      : isFinalYears
+        ? Object.keys(finalYearsSubjects)
+        : isHighSchool
+          ? Object.keys(highSchoolSubjects)
+          : uniqueSorted('subject');
 
     select.replaceChildren(allOption || new Option('Todas as disciplinas', ''));
     values.forEach(value => select.append(new Option(value, value)));
@@ -1117,4 +1126,3 @@
 
   renderActivities();
 })();
-
