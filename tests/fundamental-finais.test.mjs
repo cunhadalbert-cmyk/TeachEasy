@@ -65,6 +65,7 @@ test('Anos Finais possuem 3.840 atividades em 96 coleções completas', () => {
 
 test('Biblioteca carrega uma coleção de Anos Finais por seleção', () => {
   const source = fs.readFileSync(path.join(root, 'biblioteca.js'), 'utf8');
+  const fixes = fs.readFileSync(path.join(root, 'biblioteca-fixes.js'), 'utf8');
   assert.match(source, /finalYearsSubjects/);
   assert.match(source, /navigation\.stage === 'Ensino Fundamental II'/);
   assert.match(source, /fundamental-anos-finais\/\$\{grade\}-ano/);
@@ -74,4 +75,7 @@ test('Biblioteca carrega uma coleção de Anos Finais por seleção', () => {
   assert.match(source, /select\.replaceChildren\(defaultOption, \.\.\.options\)/);
   assert.match(source, /count: 40/);
   assert.match(source, /count: 3840/);
+  assert.match(fixes, /const isFinalYears = navigation\.stage === 'Ensino Fundamental II'/);
+  assert.match(fixes, /\['6º ano', '7º ano', '8º ano', '9º ano'\]/);
+  assert.match(fixes, /isFinalYears[\s\S]*Object\.keys\(finalYearsSubjects\)/);
 });
