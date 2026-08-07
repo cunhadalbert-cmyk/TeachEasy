@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Libre+Franklin:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css?v=20260807-autismo-v3">
-  <link rel="stylesheet" href="biblioteca.css?v=20260807-autismo-v3">
+  <link rel="stylesheet" href="biblioteca.css?v=20260807-autismo-v4">
 </head>
 <body class="library-page">
   <a class="skip-link" href="#biblioteca">Pular para a biblioteca</a>
@@ -48,11 +48,19 @@
       <div class="container">
         <section class="autism-category-banner" id="autism-category-banner" aria-labelledby="autism-category-title" hidden>
           <span class="autism-category-symbol" aria-hidden="true">∞</span>
-          <div>
+          <div class="autism-category-copy">
             <span class="autism-category-eyebrow">CATEGORIA INCLUSIVA</span>
             <h2 id="autism-category-title">Atividades adaptadas para autismo</h2>
             <p>Apoio visual, comandos curtos, organização por etapas e tempo flexível para favorecer a participação de cada estudante.</p>
           </div>
+          <section class="autism-featured-section" id="autism-featured-section" aria-labelledby="autism-featured-title" hidden>
+            <div class="autism-featured-header">
+              <span class="library-eyebrow">ATIVIDADES DISPONÍVEIS</span>
+              <h2 id="autism-featured-title">Atividades adaptadas prontas para usar</h2>
+              <p>Escolha uma atividade para visualizar a versão com apoio visual, comandos curtos, uma etapa por vez e tempo flexível.</p>
+            </div>
+            <div class="activity-grid autism-featured-grid" id="autism-featured-grid"></div>
+          </section>
         </section>
 
         <div class="library-toolbar">
@@ -69,15 +77,6 @@
         <nav class="library-breadcrumb" id="library-breadcrumb" aria-label="Caminho da biblioteca"></nav>
         <button class="btn btn-outline library-back" id="library-back" type="button" hidden>← Voltar</button>
         <div class="library-choice-grid" id="library-choice-grid"></div>
-
-        <section class="autism-featured-section" id="autism-featured-section" aria-labelledby="autism-featured-title" hidden>
-          <div class="autism-featured-header">
-            <span class="library-eyebrow">ATIVIDADES DISPONÍVEIS</span>
-            <h2 id="autism-featured-title">Atividades adaptadas prontas para usar</h2>
-            <p>Escolha uma atividade para visualizar a versão com apoio visual, comandos curtos, uma etapa por vez e tempo flexível.</p>
-          </div>
-          <div class="activity-grid autism-featured-grid" id="autism-featured-grid"></div>
-        </section>
 
         <form class="library-filters" id="library-filters" hidden>
           <label>
