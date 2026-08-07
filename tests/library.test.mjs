@@ -500,6 +500,7 @@ test('Categoria de autismo abre todas as etapas com o filtro adaptado permanente
   assert.equal(window.document.querySelector('[name="adapted"]').disabled, true);
   const featuredSection = window.document.querySelector('#autism-featured-section');
   assert.equal(featuredSection.hidden, false);
+  assert.equal(featuredSection.closest('#autism-category-banner'), window.document.querySelector('#autism-category-banner'));
   assert.equal(featuredSection.querySelectorAll('.autism-featured-card').length, 8);
   assert.deepEqual(
     [...new Set([...featuredSection.querySelectorAll('.autism-featured-card')]
@@ -548,7 +549,7 @@ test('Página inicial e Biblioteca versionam os arquivos da categoria de autismo
   ]);
   assert.match(home, /styles\.css\?v=20260807-autismo-v3/);
   assert.match(library, /styles\.css\?v=20260807-autismo-v3/);
-  assert.match(library, /biblioteca\.css\?v=20260807-autismo-v3/);
+  assert.match(library, /biblioteca\.css\?v=20260807-autismo-v4/);
   assert.match(library, /biblioteca\.js\?v=20260807-autismo-v3/);
   assert.match(library, /biblioteca-fixes\.js\?v=20260807-autismo-v3/);
 });
