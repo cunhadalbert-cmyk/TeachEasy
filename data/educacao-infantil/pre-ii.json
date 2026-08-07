@@ -28,7 +28,12 @@
       ],
       "adaptacaoAutismo": "Permitir participação por escolha visual.",
       "registroPortfolio": "Reconheceu atitudes de amizade.",
-      "imprimivel": true
+      "imprimivel": true,
+      "bncc": [
+        {
+          "codigo": "EI03EO03"
+        }
+      ]
     },
     {
       "id": "regras-da-turma-em-imagens",
@@ -53,7 +58,12 @@
       ],
       "adaptacaoAutismo": "Usar frases curtas e pictogramas.",
       "registroPortfolio": "Compreendeu combinados básicos.",
-      "imprimivel": true
+      "imprimivel": true,
+      "bncc": [
+        {
+          "codigo": "EI03EO07"
+        }
+      ]
     },
     {
       "id": "circuito-dos-comandos",
@@ -79,7 +89,12 @@
       ],
       "adaptacaoAutismo": "Usar sequência visual e poucos comandos.",
       "registroPortfolio": "Executou comandos motores.",
-      "imprimivel": true
+      "imprimivel": true,
+      "bncc": [
+        {
+          "codigo": "EI03CG02"
+        }
+      ]
     },
     {
       "id": "estatua-musical-das-emocoes",
@@ -103,7 +118,12 @@
       ],
       "adaptacaoAutismo": "Antecipar a pausa e permitir observação.",
       "registroPortfolio": "Representou emoções corporalmente.",
-      "imprimivel": true
+      "imprimivel": true,
+      "bncc": [
+        {
+          "codigo": "EI03CG03"
+        }
+      ]
     },
     {
       "id": "mistura-de-cores",
@@ -129,7 +149,12 @@
       ],
       "adaptacaoAutismo": "Oferecer roteiro visual e instrumentos alternativos.",
       "registroPortfolio": "Registrou transformações de cores.",
-      "imprimivel": true
+      "imprimivel": true,
+      "bncc": [
+        {
+          "codigo": "EI03TS02"
+        }
+      ]
     },
     {
       "id": "construcao-com-formas",
@@ -155,7 +180,15 @@
       ],
       "adaptacaoAutismo": "Disponibilizar modelo parcial.",
       "registroPortfolio": "Compôs imagem com formas.",
-      "imprimivel": true
+      "imprimivel": true,
+      "bncc": [
+        {
+          "codigo": "EI03TS02"
+        },
+        {
+          "codigo": "EI03ET05"
+        }
+      ]
     },
     {
       "id": "reconto-com-inicio-meio-e-fim",
@@ -180,7 +213,12 @@
       ],
       "adaptacaoAutismo": "Usar perguntas objetivas e cartões de apoio.",
       "registroPortfolio": "Recontou narrativa em sequência.",
-      "imprimivel": true
+      "imprimivel": true,
+      "bncc": [
+        {
+          "codigo": "EI03EF05"
+        }
+      ]
     },
     {
       "id": "caca-a-letra-inicial",
@@ -205,7 +243,12 @@
       ],
       "adaptacaoAutismo": "Trabalhar uma letra por vez.",
       "registroPortfolio": "Relacionou sons iniciais a letras.",
-      "imprimivel": true
+      "imprimivel": true,
+      "bncc": [
+        {
+          "codigo": "EI03EF09"
+        }
+      ]
     },
     {
       "id": "trilha-dos-numeros-ate-10",
@@ -230,7 +273,12 @@
       ],
       "adaptacaoAutismo": "Usar números menores e linha numérica.",
       "registroPortfolio": "Reconheceu números e quantidades.",
-      "imprimivel": true
+      "imprimivel": true,
+      "bncc": [
+        {
+          "codigo": "EI03ET07"
+        }
+      ]
     },
     {
       "id": "antes-depois-e-agora",
@@ -255,7 +303,12 @@
       ],
       "adaptacaoAutismo": "Usar duas cenas inicialmente.",
       "registroPortfolio": "Organizou acontecimentos no tempo.",
-      "imprimivel": true
+      "imprimivel": true,
+      "bncc": [
+        {
+          "codigo": "EI03ET04"
+        }
+      ]
     }
   ]
 }
