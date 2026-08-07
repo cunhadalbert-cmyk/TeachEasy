@@ -936,13 +936,15 @@
       && ['6º ano', '7º ano', '8º ano', '9º ano'].includes(navigation.grade);
     const isHighSchool = navigation.stage === 'Ensino Médio'
       && ['1ª série', '2ª série', '3ª série'].includes(navigation.grade);
-    const values = isInitialYears
-      ? [...PRIMARY_SUBJECTS_FUNDAMENTAL_I]
-      : isFinalYears
-        ? Object.keys(finalYearsSubjects)
-        : isHighSchool
-          ? Object.keys(highSchoolSubjects)
-          : uniqueSorted('subject');
+    const values = isEarlyChildhood
+      ? earlyChildhoodSubjects
+      : isInitialYears
+        ? [...PRIMARY_SUBJECTS_FUNDAMENTAL_I]
+        : isFinalYears
+          ? Object.keys(finalYearsSubjects)
+          : isHighSchool
+            ? Object.keys(highSchoolSubjects)
+            : uniqueSorted('subject');
 
     select.replaceChildren(allOption || new Option('Todas as disciplinas', ''));
     values.forEach(value => select.append(new Option(value, value)));
