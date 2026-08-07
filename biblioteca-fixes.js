@@ -928,6 +928,8 @@
     const select = filterForm.elements.subject;
     const currentValue = select.value;
     const allOption = select.querySelector('option[value="]');
+    const isEarlyChildhood = navigation.stage === 'Educação Infantil'
+      && ['Maternal', 'Pré I', 'Pré II'].includes(navigation.grade);
     const isInitialYears = navigation.stage === 'Ensino Fundamental I'
       && ['1º ano', '2º ano', '3º ano', '4º ano', '5º ano'].includes(navigation.grade);
     const isFinalYears = navigation.stage === 'Ensino Fundamental II'
