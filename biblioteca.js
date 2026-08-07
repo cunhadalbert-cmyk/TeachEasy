@@ -446,6 +446,7 @@ const pageStatus = document.querySelector('#page-status');
 const autismCategoryBanner = document.querySelector('#autism-category-banner');
 const autismFeaturedSection = document.querySelector('#autism-featured-section');
 const autismFeaturedGrid = document.querySelector('#autism-featured-grid');
+const libraryToolbar = document.querySelector('.library-toolbar');
 
 const favorites = new Set();
 const selectedActivities = new Set();
@@ -950,6 +951,8 @@ function renderNavigation() {
   renderAutismFeaturedActivities();
   syncSubjectOptions();
   const atActivities = Boolean(navigation.term);
+  const atAutismCategory = autismCategory && !navigation.stage;
+  libraryToolbar.hidden = atAutismCategory;
   filterForm.hidden = !atActivities;
   activityGrid.hidden = !atActivities;
   activeFilterSummary.hidden = !atActivities;
@@ -965,17 +968,23 @@ function renderNavigation() {
   breadcrumb.textContent = crumbs.join(' → ');
 
   if (!navigation.stage) {
-    stepTitle.textContent = autismCategory ? 'Escolha uma etapa' : 'Escolha uma categoria ou etapa';
-    stepHelp.textContent = autismCategory
-      ? 'Todas as atividades desta categoria possuem versão adaptada para autismo e inclusão.'
-      : '10.740 atividades educacionais organizadas por etapa, bimestre e recursos de inclusão.';
+    if (autismCategory) {
+      stepTitle.textContent = 'Atividades para autismo';
+      stepHelp.textContent = 'Atividades adaptadas prontas para visualizar.';
+      choiceGrid.replaceChildren();
+      choiceGrid.hidden = true;
+      return;
+    }
+
+    stepTitle.textContent = 'Escolha uma categoria ou etapa';
+    stepHelp.textContent = '10.740 atividades educacionais organizadas por etapa, bimestre e recursos de inclusão.';
     const stageCards = stages.map(stage =>
       choiceCard(stage.label, stage.detail, () => {
         navigation.stage = stage.name;
         renderNavigation();
       }, stage.count, stage.theme)
     );
-    choiceGrid.replaceChildren(...(autismCategory ? stageCards : [
+    choiceGrid.replaceChildren(...[
       choiceCard(
         'Autismo e inclusão',
         'Atividades adaptadas com apoio visual, comandos curtos e tempo flexível',
@@ -984,7 +993,7 @@ function renderNavigation() {
         'autismo'
       ),
       ...stageCards
-    ]));
+    ]);
     return;
   }
 
