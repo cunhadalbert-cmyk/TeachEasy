@@ -1,3 +1,4 @@
+// Revisão BNCC de História e Geografia validada automaticamente.
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
