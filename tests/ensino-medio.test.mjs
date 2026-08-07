@@ -112,3 +112,30 @@ test('História e Geografia possuem conteúdo aprofundado e BNCC conferida', () 
   }
   assert.equal(total, 1200);
 });
+
+test('Ciências e Inglês possuem conteúdo aprofundado e BNCC conferida', () => {
+  const validScience = /^EM13CNT(10[1-7]|20[1-9]|30[1-9]|310)$/;
+  const validLanguages = /^EM13LGG(10[1-5]|20[1-4]|30[1-5]|40[1-3]|60[1-4]|70[1-4])$/;
+  let total = 0;
+  for (const grade of grades) for (const term of terms) {
+    for (const [filename, subject] of [['ciencias.json', 'Ciências'], ['ingles.json', 'Inglês']]) {
+      const collection = JSON.parse(fs.readFileSync(path.join(base, `${grade}-serie`, `${term}-bimestre`, filename), 'utf8'));
+      assert.equal(collection.bnccConferida, true);
+      assert.match(collection.referenciaBncc, /BNCC.*EM13(CNT|LGG).*MEC/);
+      for (const activity of collection.atividades) {
+        const code = activity.bncc[0].codigo;
+        assert.equal(activity.bnccConferida, true);
+        assert.equal(subject === 'Ciências' ? validScience.test(code) : validLanguages.test(code), true,
+          `${activity.id} usa habilidade inexistente: ${code}`);
+        assert.equal(activity.questoes.some(item =>
+          /Explique o conceito central|Identifique duas evidências importantes|Apply the language in a real-life situation/.test(item.enunciado)
+        ), false, `${activity.id} ainda possui pergunta genérica`);
+        assert.equal(activity.gabarito.some(item =>
+          /Resposta autoral coerente|Resposta fundamentada na habilidade/.test(item.resposta)
+        ), false, `${activity.id} ainda possui gabarito genérico`);
+      }
+      total += collection.atividades.length;
+    }
+  }
+  assert.equal(total, 1200);
+});
