@@ -173,9 +173,13 @@ function validateEarlyChildhoodCollection(collection) {
     const required = [
       'id', 'titulo', 'faixaEtaria', 'campoExperiencia',
       'objetivoPedagogico', 'ilustracao', 'materiais',
-      'passoAPasso', 'adaptacaoAutismo', 'registroPortfolio'
+      'passoAPasso', 'adaptacaoAutismo', 'registroPortfolio', 'bncc'
     ];
-    if (ids.has(activity.id) || required.some(field => activity[field] == null)) {
+    if (ids.has(activity.id)
+      || required.some(field => activity[field] == null)
+      || !Array.isArray(activity.bncc)
+      || activity.bncc.length === 0
+      || activity.bncc.some(item => !/^EI0[23](EO|CG|TS|EF|ET)\\d{2}$/.test(item.codigo))) {
       throw new Error('Atividade de Educação Infantil inválida ou duplicada.');
     }
     ids.add(activity.id);
@@ -191,7 +195,7 @@ function normalizeEarlyChildhoodActivity(activity, collection, config) {
     subject: activity.campoExperiencia,
     topic: activity.titulo,
     difficulty: 'Adequada à faixa etária',
-    bncc: '',
+    bncc: activity.bncc.map(item => item.codigo).join(', '),
     symbol: config.symbol,
     colors: config.colors,
     questions: [],

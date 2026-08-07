@@ -33,13 +33,21 @@ test('Educação Infantil, Pré I e Pré II possuem dez atividades válidas cada
       for (const field of [
         'titulo', 'faixaEtaria', 'campoExperiencia', 'objetivoPedagogico',
         'ilustracao', 'materiais', 'passoAPasso', 'adaptacaoAutismo',
-        'registroPortfolio', 'imprimivel'
+        'registroPortfolio', 'imprimivel', 'bncc'
       ]) {
         assert.notEqual(activity[field], undefined, `${activity.id} sem ${field}`);
       }
 
       assert.ok(Array.isArray(activity.materiais) && activity.materiais.length > 0);
       assert.ok(Array.isArray(activity.passoAPasso) && activity.passoAPasso.length > 0);
+      assert.ok(Array.isArray(activity.bncc) && activity.bncc.length > 0);
+
+      const expectedAgePrefix = file === 'educacao-infantil.json' ? 'EI02' : 'EI03';
+      for (const skill of activity.bncc) {
+        assert.match(skill.codigo, /^EI0[23](EO|CG|TS|EF|ET)\d{2}$/);
+        assert.equal(skill.codigo.startsWith(expectedAgePrefix), true,
+          `${activity.id} usa código incompatível com a faixa etária: ${skill.codigo}`);
+      }
     }
 
     total += collection.atividades.length;
@@ -65,4 +73,10 @@ test('O workflow obrigatório da main permanece configurado', () => {
   assert.match(workflow, /pull_request:/);
   assert.match(workflow, /name: HTML, JavaScript and functional tests/);
   assert.match(workflow, /npm run validate/);
+});
+
+test('A Biblioteca preserva e exibe os códigos BNCC da Educação Infantil', () => {
+  const source = fs.readFileSync(path.join(root, 'biblioteca.js'), 'utf8');
+  assert.match(source, /bncc: activity\.bncc\.map\(item => item\.codigo\)\.join\(', '\)/);
+  assert.doesNotMatch(source, /bncc: ''[\s\S]{0,300}earlyChildhoodActivity: true/);
 });

@@ -28,7 +28,12 @@
       ],
       "adaptacaoAutismo": "Usar poucas opções e rotina previsível.",
       "registroPortfolio": "Identificou emoções básicas.",
-      "imprimivel": true
+      "imprimivel": true,
+      "bncc": [
+        {
+          "codigo": "EI03EO04"
+        }
+      ]
     },
     {
       "id": "minha-familia-e-quem-cuida-de-mim",
@@ -54,7 +59,12 @@
       ],
       "adaptacaoAutismo": "Permitir figuras prontas e apoio individual.",
       "registroPortfolio": "Representou pessoas significativas.",
-      "imprimivel": true
+      "imprimivel": true,
+      "bncc": [
+        {
+          "codigo": "EI03EO06"
+        }
+      ]
     },
     {
       "id": "caminho-do-equilibrio",
@@ -79,7 +89,12 @@
       ],
       "adaptacaoAutismo": "Reduzir percurso e oferecer apoio.",
       "registroPortfolio": "Participou do circuito motor.",
-      "imprimivel": true
+      "imprimivel": true,
+      "bncc": [
+        {
+          "codigo": "EI03CG02"
+        }
+      ]
     },
     {
       "id": "danca-dos-bichos",
@@ -102,7 +117,12 @@
       ],
       "adaptacaoAutismo": "Antecipar movimentos e usar sequência curta.",
       "registroPortfolio": "Imitou movimentos variados.",
-      "imprimivel": true
+      "imprimivel": true,
+      "bncc": [
+        {
+          "codigo": "EI03CG03"
+        }
+      ]
     },
     {
       "id": "pintando-com-formas",
@@ -127,7 +147,12 @@
       ],
       "adaptacaoAutismo": "Usar menos formas e alto contraste.",
       "registroPortfolio": "Reconheceu e representou formas.",
-      "imprimivel": true
+      "imprimivel": true,
+      "bncc": [
+        {
+          "codigo": "EI03TS02"
+        }
+      ]
     },
     {
       "id": "jardim-de-colagem",
@@ -153,7 +178,15 @@
       ],
       "adaptacaoAutismo": "Oferecer peças maiores e pré-recortadas.",
       "registroPortfolio": "Produziu colagem organizada.",
-      "imprimivel": true
+      "imprimivel": true,
+      "bncc": [
+        {
+          "codigo": "EI03CG05"
+        },
+        {
+          "codigo": "EI03TS02"
+        }
+      ]
     },
     {
       "id": "sequencia-da-historia",
@@ -178,7 +211,12 @@
       ],
       "adaptacaoAutismo": "Usar menos cenas e perguntas guiadas.",
       "registroPortfolio": "Organizou sequência lógica.",
-      "imprimivel": true
+      "imprimivel": true,
+      "bncc": [
+        {
+          "codigo": "EI03EF04"
+        }
+      ]
     },
     {
       "id": "meu-nome-colorido",
@@ -203,7 +241,12 @@
       ],
       "adaptacaoAutismo": "Usar modelo visual fixo e repetição.",
       "registroPortfolio": "Reconheceu o nome próprio.",
-      "imprimivel": true
+      "imprimivel": true,
+      "bncc": [
+        {
+          "codigo": "EI03EF09"
+        }
+      ]
     },
     {
       "id": "contando-frutas",
@@ -228,7 +271,12 @@
       ],
       "adaptacaoAutismo": "Começar de 1 a 3.",
       "registroPortfolio": "Relacionou números e quantidades.",
-      "imprimivel": true
+      "imprimivel": true,
+      "bncc": [
+        {
+          "codigo": "EI03ET07"
+        }
+      ]
     },
     {
       "id": "grande-pequeno-e-medio",
@@ -252,7 +300,12 @@
       ],
       "adaptacaoAutismo": "Começar com grande e pequeno.",
       "registroPortfolio": "Classificou objetos por tamanho.",
-      "imprimivel": true
+      "imprimivel": true,
+      "bncc": [
+        {
+          "codigo": "EI03ET05"
+        }
+      ]
     }
   ]
 }

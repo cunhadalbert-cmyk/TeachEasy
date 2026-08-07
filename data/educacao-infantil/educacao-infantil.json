@@ -28,7 +28,12 @@
       ],
       "adaptacaoAutismo": "Apresentar uma emoção por vez e usar cartões visuais.",
       "registroPortfolio": "Observou a própria imagem e imitou expressões com apoio.",
-      "imprimivel": true
+      "imprimivel": true,
+      "bncc": [
+        {
+          "codigo": "EI02EO05"
+        }
+      ]
     },
     {
       "id": "caixa-do-carinho",
@@ -52,7 +57,12 @@
       ],
       "adaptacaoAutismo": "Não exigir contato físico; aceitar gesto, desenho ou cartão.",
       "registroPortfolio": "Reconheceu gestos de cuidado com apoio visual.",
-      "imprimivel": true
+      "imprimivel": true,
+      "bncc": [
+        {
+          "codigo": "EI02EO01"
+        }
+      ]
     },
     {
       "id": "caminho-das-pegadas",
@@ -77,7 +87,12 @@
       ],
       "adaptacaoAutismo": "Manter percurso curto, com começo e fim visíveis.",
       "registroPortfolio": "Percorreu o caminho com avanços no equilíbrio.",
-      "imprimivel": true
+      "imprimivel": true,
+      "bncc": [
+        {
+          "codigo": "EI02CG02"
+        }
+      ]
     },
     {
       "id": "bola-que-vai-e-volta",
@@ -100,7 +115,12 @@
       ],
       "adaptacaoAutismo": "Iniciar individualmente com o professor.",
       "registroPortfolio": "Participou da troca de bola com atenção.",
-      "imprimivel": false
+      "imprimivel": false,
+      "bncc": [
+        {
+          "codigo": "EI02EO03"
+        }
+      ]
     },
     {
       "id": "pintura-com-os-dedos",
@@ -125,7 +145,12 @@
       ],
       "adaptacaoAutismo": "Oferecer pincel, esponja ou luva para sensibilidade tátil.",
       "registroPortfolio": "Explorou cores e texturas com movimentos intencionais.",
-      "imprimivel": false
+      "imprimivel": false,
+      "bncc": [
+        {
+          "codigo": "EI02TS02"
+        }
+      ]
     },
     {
       "id": "sons-dos-animais",
@@ -149,7 +174,12 @@
       ],
       "adaptacaoAutismo": "Controlar volume e antecipar os sons.",
       "registroPortfolio": "Reconheceu e imitou sons com apoio.",
-      "imprimivel": true
+      "imprimivel": true,
+      "bncc": [
+        {
+          "codigo": "EI02TS03"
+        }
+      ]
     },
     {
       "id": "historia-com-fantoches",
@@ -173,7 +203,12 @@
       ],
       "adaptacaoAutismo": "Usar poucos personagens e repetir a história.",
       "registroPortfolio": "Manteve atenção e interagiu com personagens.",
-      "imprimivel": true
+      "imprimivel": true,
+      "bncc": [
+        {
+          "codigo": "EI02EF03"
+        }
+      ]
     },
     {
       "id": "onde-esta-o-objeto",
@@ -198,7 +233,12 @@
       ],
       "adaptacaoAutismo": "Usar objetos de interesse e pistas visuais.",
       "registroPortfolio": "Localizou objetos e respondeu a comandos.",
-      "imprimivel": true
+      "imprimivel": true,
+      "bncc": [
+        {
+          "codigo": "EI02ET04"
+        }
+      ]
     },
     {
       "id": "separando-por-cores",
@@ -222,7 +262,12 @@
       ],
       "adaptacaoAutismo": "Usar poucos objetos e cores contrastantes.",
       "registroPortfolio": "Agrupou objetos por cor.",
-      "imprimivel": true
+      "imprimivel": true,
+      "bncc": [
+        {
+          "codigo": "EI02ET05"
+        }
+      ]
     },
     {
       "id": "cheio-e-vazio",
@@ -247,7 +292,12 @@
       ],
       "adaptacaoAutismo": "Usar materiais conhecidos e sequência visual.",
       "registroPortfolio": "Explorou as noções de cheio e vazio.",
-      "imprimivel": true
+      "imprimivel": true,
+      "bncc": [
+        {
+          "codigo": "EI02ET01"
+        }
+      ]
     }
   ]
 }
