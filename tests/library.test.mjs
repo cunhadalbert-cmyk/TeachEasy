@@ -523,6 +523,24 @@ test('Cartão de autismo da Biblioteca ativa a categoria sem esconder as etapas'
   await window.happyDOM.close();
 });
 
+test('Inicialização complementar preserva a navegação e não abre atividades antes da escolha', async () => {
+  const fixesScript = await readFile(new URL('../biblioteca-fixes.js', import.meta.url), 'utf8');
+  assert.match(fixesScript, /renderNavigation\(\);\s*\}\)\(\);\s*$/);
+  assert.doesNotMatch(fixesScript, /renderActivities\(\);\s*\}\)\(\);\s*$/);
+});
+
+test('Página inicial e Biblioteca versionam os arquivos da categoria de autismo', async () => {
+  const [home, library] = await Promise.all([
+    readFile(new URL('../index.html', import.meta.url), 'utf8'),
+    readFile(new URL('../biblioteca.html', import.meta.url), 'utf8')
+  ]);
+  assert.match(home, /styles\.css\?v=20260807-autismo-v2/);
+  assert.match(library, /styles\.css\?v=20260807-autismo-v2/);
+  assert.match(library, /biblioteca\.css\?v=20260807-autismo-v2/);
+  assert.match(library, /biblioteca\.js\?v=20260807-autismo-v2/);
+  assert.match(library, /biblioteca-fixes\.js\?v=20260807-autismo-v2/);
+});
+
 test('Visualização contém atividade, gabarito separado e versão adaptada', async () => {
   const window = await createLibraryPage();
   openActivities(window, 'Educação Infantil', 'Maternal');
