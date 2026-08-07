@@ -258,6 +258,57 @@
   line-height: 1.5;
 }
 
+.autism-featured-section {
+  margin: 46px 0 12px;
+  padding: 38px;
+  border: 1px solid rgba(8, 127, 189, .2);
+  border-radius: 30px;
+  background: linear-gradient(180deg, #f2faff 0%, #f7fffd 100%);
+  box-shadow: 0 18px 38px rgba(5, 75, 147, .1);
+}
+
+.autism-featured-section[hidden] {
+  display: none;
+}
+
+.autism-featured-header {
+  max-width: 820px;
+  margin-bottom: 28px;
+}
+
+.autism-featured-header h2 {
+  margin: 7px 0 10px;
+  color: #064b63;
+  font-family: "Libre Franklin", sans-serif;
+  font-size: clamp(27px, 4vw, 40px);
+  line-height: 1.12;
+}
+
+.autism-featured-header p {
+  margin: 0;
+  color: #42615b;
+  font-size: 17px;
+  line-height: 1.55;
+}
+
+.autism-featured-grid {
+  margin-top: 0;
+}
+
+.autism-featured-card {
+  border-top: 6px solid #087fbd;
+}
+
+.autism-featured-card .activity-card-actions {
+  grid-template-columns: 1fr;
+}
+
+.autism-featured-card .preview-button {
+  border-color: #087fbd;
+  background: #087fbd;
+  color: #fff;
+}
+
 @media (max-width: 680px) {
   .library-choice-card[data-theme="autismo"] {
     min-height: 210px;
@@ -282,6 +333,12 @@
     width: 76px;
     height: 76px;
     font-size: 54px;
+  }
+
+  .autism-featured-section {
+    margin-top: 32px;
+    padding: 26px 18px;
+    border-radius: 24px;
   }
 }
 
