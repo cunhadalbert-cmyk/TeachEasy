@@ -8,8 +8,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Libre+Franklin:wght@600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=20260807-autismo-v2">
-  <link rel="stylesheet" href="biblioteca.css?v=20260807-autismo-v2">
+  <link rel="stylesheet" href="styles.css?v=20260807-autismo-v3">
+  <link rel="stylesheet" href="biblioteca.css?v=20260807-autismo-v3">
 </head>
 <body class="library-page">
   <a class="skip-link" href="#biblioteca">Pular para a biblioteca</a>
@@ -70,6 +70,15 @@
         <button class="btn btn-outline library-back" id="library-back" type="button" hidden>← Voltar</button>
         <div class="library-choice-grid" id="library-choice-grid"></div>
 
+        <section class="autism-featured-section" id="autism-featured-section" aria-labelledby="autism-featured-title" hidden>
+          <div class="autism-featured-header">
+            <span class="library-eyebrow">ATIVIDADES DISPONÍVEIS</span>
+            <h2 id="autism-featured-title">Atividades adaptadas prontas para usar</h2>
+            <p>Escolha uma atividade para visualizar a versão com apoio visual, comandos curtos, uma etapa por vez e tempo flexível.</p>
+          </div>
+          <div class="activity-grid autism-featured-grid" id="autism-featured-grid"></div>
+        </section>
+
         <form class="library-filters" id="library-filters" hidden>
           <label>
             <span>Disciplina</span>
@@ -128,7 +137,7 @@
     </div>
   </footer>
 
-  <script src="biblioteca.js?v=20260807-autismo-v2"></script>
-  <script src="biblioteca-fixes.js?v=20260807-autismo-v2"></script>
+  <script src="biblioteca.js?v=20260807-autismo-v3"></script>
+  <script src="biblioteca-fixes.js?v=20260807-autismo-v3"></script>
 </body>
 </html>
