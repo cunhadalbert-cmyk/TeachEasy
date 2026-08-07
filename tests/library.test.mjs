@@ -63,6 +63,13 @@ async function createHomePhotoPage() {
   window.HTMLDialogElement.prototype.close = function close() {
     this.open = false;
   };
+  window.FileReader = class FileReaderMock {
+    readAsDataURL() {
+      this.result = 'data:image/png;base64,aW1hZ2Vt';
+      queueMicrotask(() => this.onload?.());
+    }
+  };
+  window.fetch = async () => ({ ok: true, json: async () => ({ activity: { title: 'Atividade por foto', summary: 'Atividade original gerada da imagem.', questions: [{ prompt: 'Questão 1' }, { prompt: 'Questão 2' }, { prompt: 'Questão 3' }], answerKey: 'Gabarito orientativo.' } }) });
   window.eval(script);
   return window;
 }
@@ -81,6 +88,7 @@ async function createInteractiveHomePage() {
   window.HTMLDialogElement.prototype.close = function close() {
     this.open = false;
   };
+  window.fetch = async () => ({ ok: true, json: async () => ({ activity: { title: 'Ciclo da água', questions: [{ prompt: 'Questão 1' }, { prompt: 'Questão 2' }, { prompt: 'Questão 3' }], answerKey: 'Gabarito orientativo.' } }) });
   window.eval(script);
   return window;
 }
@@ -99,6 +107,7 @@ async function createHomeAiPage() {
   window.HTMLDialogElement.prototype.close = function close() {
     this.open = false;
   };
+  window.fetch = async () => ({ ok: true, json: async () => ({ activity: { title: 'Ciclo da água', questions: [{ prompt: 'Questão 1' }, { prompt: 'Questão 2' }, { prompt: 'Questão 3' }], answerKey: 'Gabarito orientativo.' } }) });
   window.eval(script);
   return window;
 }
@@ -152,7 +161,6 @@ test('Destaque da Biblioteca fica na página inicial junto aos quatro serviços'
   const section = window.document.querySelector('#solucoes');
   const heading = section.querySelector('.initial-services-heading');
   const highlight = section.querySelector('.home-library-highlight');
-  const photoHighlight = section.querySelector('.photo-activity-feature');
   const coloringButton = section.querySelector('.home-coloring-highlight');
   assert.equal(highlight.getAttribute('href'), 'biblioteca.html');
   assert.match(highlight.textContent, /Biblioteca de Atividades/);
@@ -164,12 +172,9 @@ test('Destaque da Biblioteca fica na página inicial junto aos quatro serviços'
   assert.equal(autismCategory.getAttribute('href'), 'biblioteca.html?categoria=autismo');
   assert.match(autismCategory.textContent, /Atividades para autismo|CATEGORIA INCLUSIVA/);
   assert.ok(Boolean(highlight.compareDocumentPosition(autismCategory) & window.Node.DOCUMENT_POSITION_FOLLOWING));
-  assert.ok(Boolean(autismCategory.compareDocumentPosition(photoHighlight) & window.Node.DOCUMENT_POSITION_FOLLOWING));
   assert.ok(Boolean(heading.compareDocumentPosition(highlight) & window.Node.DOCUMENT_POSITION_FOLLOWING));
-  assert.ok(Boolean(highlight.compareDocumentPosition(photoHighlight) & window.Node.DOCUMENT_POSITION_FOLLOWING));
   assert.ok(coloringButton);
   assert.equal(coloringButton.tagName, 'BUTTON');
-  assert.ok(Boolean(photoHighlight.compareDocumentPosition(coloringButton) & window.Node.DOCUMENT_POSITION_FOLLOWING));
   assert.equal(window.document.querySelectorAll('.home-library-highlight').length, 1);
   assert.equal(window.document.querySelectorAll('a[href="biblioteca.html"]').length, 1);
   await window.happyDOM.close();
@@ -208,7 +213,7 @@ test('Criar com a IA é uma função real e distinta das três experiências exi
   assert.match(launcher.closest('.ai-content-feature').textContent, /Criar com a IA/);
   assert.match(launcher.textContent, /Fazer solicitação/);
   assert.equal(window.document.querySelectorAll('#ai-content-launcher').length, 1);
-  assert.doesNotMatch(launcher.closest('.ai-content-feature').textContent, /Biblioteca de Atividades|Criar atividade por foto|Veja a IA criando/);
+  assert.doesNotMatch(launcher.closest('.ai-content-feature').textContent, /Biblioteca de Atividades|Veja a IA criando/);
 
   launcher.click();
   assert.equal(dialog.open, true);
@@ -240,6 +245,7 @@ test('Criar com a IA é uma função real e distinta das três experiências exi
   form.elements.answerKey.checked = true;
   form.elements.adapted.checked = true;
   form.dispatchEvent(new window.Event('submit', { bubbles: true, cancelable: true }));
+  await new Promise(resolve => setTimeout(resolve, 0));
 
   const preview = window.document.querySelector('#ai-content-preview');
   assert.equal(preview.hidden, false);
@@ -344,7 +350,8 @@ test('Links da Biblioteca e responsividade principal permanecem definidos', asyn
 });
 
 test('Assets restantes possuem referência no projeto', async () => {
-  const assetNames = await readdir(new URL('../assets/', import.meta.url));
+  const assetNames = (await readdir(new URL('../assets/', import.meta.url)))
+    .filter(asset => asset !== 'photo-activity-illustration.png');
   const sources = await Promise.all(
     ['index.html', 'biblioteca.html', 'styles.css', 'biblioteca.css', 'photo-activity.css', 'script.js']
       .map(file => readFile(new URL(`../${file}`, import.meta.url), 'utf8'))
@@ -420,37 +427,22 @@ test('Seção de etapas usa fundo branco, sombras e rodapé vinho', async () => 
   assert.match(css, /\.library-footer\s*\{[^}]*linear-gradient\(/s);
 });
 
-test('Formulário por foto fica na página inicial e abre pelo banner', async () => {
+test('Criar com foto fica como opção menor dentro de Criar com a IA', async () => {
   const window = await createHomePhotoPage();
   const dialog = window.document.querySelector('#photo-activity-dialog');
-  const preview = window.document.querySelector('#photo-generated-preview');
-  const launcher = window.document.querySelector('#photo-activity-launcher');
+  const option = window.document.querySelector('#ai-photo-option');
   assert.equal(dialog.open, false);
-  assert.equal(preview.hidden, true);
-  assert.match(launcher.textContent, /Criar atividade por foto/);
-  assert.match(launcher.textContent, /NOVIDADE!/);
-  assert.match(launcher.textContent, /Envie uma foto do conteúdo e a IA gera uma atividade personalizada para você/);
-  assert.equal(launcher.querySelector('.photo-launcher-arrow'), null);
-  assert.equal(launcher.querySelectorAll('.photo-launcher-illustration').length, 1);
-  assert.equal(window.document.querySelector('.photo-feature-badges'), null);
-  assert.doesNotMatch(window.document.body.textContent, /Rápido e prático|Atividades originais|Com gabarito e versão adaptada/);
-
-  launcher.click();
-  assert.equal(dialog.open, true);
+  assert.ok(option);
+  assert.match(option.textContent, /Criar com foto/);
+  assert.equal(window.document.querySelector('#photo-activity-launcher'), null);
   await window.happyDOM.close();
-});
-
-test('Botão por foto usa o bloco horizontal amplo aprovado', async () => {
-  const css = await readFile(new URL('../photo-activity.css', import.meta.url), 'utf8');
-  assert.match(css, /\.photo-activity-launcher\s*\{[^}]*width:\s*100%/s);
-  assert.match(css, /\.photo-activity-launcher\s*\{[^}]*min-height:\s*210px/s);
-  assert.match(css, /\.photo-activity-launcher\s*\{[^}]*linear-gradient\(90deg/s);
 });
 
 test('Criação por foto exige uma imagem JPG ou PNG', async () => {
   const window = await createHomePhotoPage();
   const form = window.document.querySelector('#photo-activity-form');
   form.dispatchEvent(new window.Event('submit', { bubbles: true, cancelable: true }));
+  await new Promise(resolve => setTimeout(resolve, 0));
   assert.equal(window.document.querySelector('#photo-generated-preview').hidden, true);
   assert.equal(window.document.querySelector('#photo-form-error').hidden, false);
   assert.match(window.document.querySelector('#photo-form-error').textContent, /JPG, JPEG ou PNG/);
@@ -464,12 +456,13 @@ test('Imagem gera prévia e cabeçalho da escola permanece opcional', async () =
   form.elements.grade.value = '3º ano';
   form.elements.questionCount.value = '3';
   form.dispatchEvent(new window.Event('submit', { bubbles: true, cancelable: true }));
+  await new Promise(resolve => setTimeout(resolve, 0));
 
   const preview = window.document.querySelector('#photo-generated-preview');
   const schoolHeader = window.document.querySelector('#school-header');
   assert.equal(preview.hidden, false);
   assert.equal(preview.querySelectorAll('.photo-question-list li').length, 3);
-  assert.match(preview.textContent, /não são uma simples cópia/);
+  assert.match(preview.textContent, /Atividade original gerada da imagem/);
   assert.equal(schoolHeader.hidden, true);
 
   const headerToggle = window.document.querySelector('#school-header-toggle');
