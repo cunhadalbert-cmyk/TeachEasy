@@ -12,8 +12,10 @@ const aiHeaderName = document.querySelector('#ai-header-file-name');
 const aiHeaderRemove = document.querySelector('#ai-header-remove');
 const aiUseHeader = document.querySelector('#ai-use-school-header');
 const aiUseHeaderOption = document.querySelector('.ai-use-header-option');
+const aiPhotoDialog = document.querySelector('#photo-activity-dialog');
 let aiGeneration = 0;
 let schoolHeaderAsset = null;
+let lastAiPayload = null;
 
 function escapeContent(value = '') {
   return value.replace(/[&<>"']/g, character => ({
@@ -49,7 +51,7 @@ function buildQuestions(data) {
   }).join('');
 }
 
-function renderAiPreview() {
+function renderAiPreview(activity) {
   const data = Object.fromEntries(new FormData(aiForm));
   data.figures = aiForm.elements.figures.checked;
   data.answerKey = aiForm.elements.answerKey.checked;
@@ -60,12 +62,12 @@ function renderAiPreview() {
     ${buildSchoolHeader()}
     <section class="generated-material">
       <small>${escapeContent(data.materialType)} · ${escapeContent(data.stage)} · ${escapeContent(data.grade)}</small>
-      <h2>${escapeContent(data.topic)}</h2>
+      <h2>${escapeContent(activity?.title || data.topic)}</h2>
       <p><strong>Disciplina:</strong> ${escapeContent(data.subject)} · <strong>Dificuldade:</strong> ${escapeContent(data.difficulty)}</p>
       ${data.objective ? `<p><strong>Objetivo:</strong> ${escapeContent(data.objective)}</p>` : ''}
       ${data.figures ? '<div class="generated-figure" role="img" aria-label="Espaço sugerido para figura pedagógica">Figura pedagógica sugerida para este conteúdo</div>' : ''}
-      <ol class="generated-questions">${buildQuestions(data)}</ol>
-      ${data.answerKey ? `<section class="generated-answer-key"><h3>Gabarito</h3><p>Respostas orientadoras para revisão do professor.</p></section>` : ''}
+      <ol class="generated-questions">${Array.isArray(activity?.questions) && activity.questions.length ? activity.questions.map(question => `<li><p>${escapeContent(question.prompt || question)}</p><div class="answer-lines"></div></li>`).join('') : buildQuestions(data)}</ol>
+      ${data.answerKey ? `<section class="generated-answer-key"><h3>Gabarito</h3><p>${escapeContent(activity?.answerKey || 'Respostas orientadoras para revisão do professor.')}</p></section>` : ''}
       ${data.adapted ? `<section class="generated-adapted"><h3>Versão adaptada para inclusão</h3><p>Comandos curtos, apoio visual, linguagem direta e menor carga por bloco.</p></section>` : ''}
     </section>`;
 
@@ -105,9 +107,24 @@ aiDialog.querySelector('.ai-content-close').addEventListener('click', () => aiDi
 aiDialog.addEventListener('click', event => {
   if (event.target === aiDialog) aiDialog.close();
 });
-aiForm.addEventListener('submit', event => {
+aiForm.addEventListener('submit', async event => {
   event.preventDefault();
-  renderAiPreview();
+  const formData = Object.fromEntries(new FormData(aiForm));
+  lastAiPayload = { mode: 'text', ...formData, figures: aiForm.elements.figures.checked, answerKey: aiForm.elements.answerKey.checked, adapted: aiForm.elements.adapted.checked };
+  const submit = aiForm.querySelector('[type="submit"]');
+  submit.disabled = true;
+  submit.textContent = 'Criando com a IA...';
+  try {
+    const response = await fetch('/api/generate-activity', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(lastAiPayload) });
+    const result = await response.json();
+    if (!response.ok) throw new Error(result.error || 'Não foi possível criar o material agora.');
+    renderAiPreview(result.activity);
+  } catch (error) {
+    alert(error.message || 'Não foi possível criar o material agora.');
+  } finally {
+    submit.disabled = false;
+    submit.textContent = 'Criar conteúdo';
+  }
 });
 aiHeaderFile.addEventListener('change', () => {
   const file = aiHeaderFile.files[0];
@@ -159,7 +176,11 @@ document.querySelector('#ai-request-change').addEventListener('click', () => {
   aiDocument.insertAdjacentHTML('beforeend', `<aside class="generated-adjustment"><strong>Ajuste solicitado à IA:</strong> ${escapeContent(request)}</aside>`);
   aiChangeRequest.value = '';
 });
-document.querySelector('#ai-regenerate-content').addEventListener('click', renderAiPreview);
+document.querySelector('#ai-regenerate-content').addEventListener('click', () => aiForm.requestSubmit());
+document.querySelector('#ai-photo-option').addEventListener('click', () => {
+  aiDialog.close();
+  aiPhotoDialog.showModal();
+});
 document.querySelector('#ai-download-pdf').addEventListener('click', () => {
   const printWindow = window.open('', '_blank');
   printWindow.document.write(`<title>Material escolar</title><style>body{font-family:Arial;max-width:800px;margin:40px auto;line-height:1.5}li{margin:16px 0}</style>${aiDocument.innerHTML}`);
