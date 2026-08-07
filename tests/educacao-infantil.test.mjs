@@ -60,9 +60,10 @@ test('A Biblioteca carrega e exibe as coleções de Educação Infantil', () => 
   const source = fs.readFileSync(path.join(root, 'biblioteca.js'), 'utf8');
 
   assert.match(source, /earlyChildhoodRegistry/);
-  assert.match(source, /data\/educacao-infantil\/educacao-infantil\.json/);
-  assert.match(source, /data\/educacao-infantil\/pre-i\.json/);
-  assert.match(source, /data\/educacao-infantil\/pre-ii\.json/);
+  assert.match(source, /file: 'educacao-infantil'/);
+  assert.match(source, /file: 'pre-i'/);
+  assert.match(source, /file: 'pre-ii'/);
+  assert.match(source, /path: `data\/educacao-infantil\/\$\{base\.file\}\$\{suffix\}\.json`/);
   assert.match(source, /ensureEarlyChildhoodCollection/);
   assert.match(source, /openEarlyChildhoodPreview/);
 });
@@ -79,4 +80,48 @@ test('A Biblioteca preserva e exibe os códigos BNCC da Educação Infantil', ()
   const source = fs.readFileSync(path.join(root, 'biblioteca.js'), 'utf8');
   assert.match(source, /bncc: activity\.bncc\.map\(item => item\.codigo\)\.join\(', '\)/);
   assert.doesNotMatch(source, /bncc: ''[\s\S]{0,300}earlyChildhoodActivity: true/);
+});
+
+test('Educação Infantil possui 300 atividades nos quatro bimestres com BNCC compatível', () => {
+  const stems = [
+    ['educacao-infantil', 'EI02'],
+    ['pre-i', 'EI03'],
+    ['pre-ii', 'EI03']
+  ];
+  const ids = new Set();
+  let total = 0;
+
+  for (const [stem, prefix] of stems) for (let term = 1; term <= 4; term += 1) {
+    const filename = term === 1 ? `${stem}.json` : `${stem}-${term}b.json`;
+    const collection = JSON.parse(fs.readFileSync(
+      path.join(root, 'data', 'educacao-infantil', filename), 'utf8'
+    ));
+    const expected = term === 1 ? 10 : 30;
+    assert.equal(collection.quantidadeAtividades, expected);
+    assert.equal(collection.atividades.length, expected);
+
+    for (const activity of collection.atividades) {
+      const globalId = `${stem}-${term}-${activity.id}`;
+      assert.equal(ids.has(globalId), false, `ID duplicado: ${globalId}`);
+      ids.add(globalId);
+      assert.ok(Array.isArray(activity.bncc) && activity.bncc.length > 0);
+      for (const skill of activity.bncc) {
+        assert.match(skill.codigo, /^EI0[23](EO|CG|TS|EF|ET)\d{2}$/);
+        assert.equal(skill.codigo.startsWith(prefix), true);
+      }
+    }
+    total += collection.atividades.length;
+  }
+
+  assert.equal(total, 300);
+  assert.equal(ids.size, 300);
+});
+
+test('Biblioteca libera os quatro bimestres da Educação Infantil', () => {
+  const source = fs.readFileSync(path.join(root, 'biblioteca.js'), 'utf8');
+  assert.match(source, /const suffix = navigation\.term === '1' \? '' :/);
+  assert.match(source, /expectedCount = navigation\.term === '1' \? 10 : 30/);
+  assert.match(source, /term: Number\(navigation\.term\)/);
+  assert.match(source, /count: 300/);
+  assert.match(source, /bncc: activity\.bncc\.map\(item => item\.codigo\)\.join/);
 });

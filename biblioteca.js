@@ -133,19 +133,19 @@ const collectionPromises = new Map();
 
 const earlyChildhoodRegistry = {
   'Maternal': {
-    path: 'data/educacao-infantil/educacao-infantil.json',
+    file: 'educacao-infantil',
     collection: 'educacao-infantil-criancas-bem-pequenas',
     symbol: '🧸',
     colors: ['#fff0c7', '#dff3ee']
   },
   'Pré I': {
-    path: 'data/educacao-infantil/pre-i.json',
+    file: 'pre-i',
     collection: 'educacao-infantil-pre-i',
     symbol: '🎨',
     colors: ['#ffe1e8', '#e7e0ff']
   },
   'Pré II': {
-    path: 'data/educacao-infantil/pre-ii.json',
+    file: 'pre-ii',
     collection: 'educacao-infantil-pre-ii',
     symbol: '🌟',
     colors: ['#dfeeff', '#fff0bd']
@@ -155,16 +155,27 @@ const earlyChildhoodRegistry = {
 function selectedEarlyChildhoodConfig() {
   if (navigation.stage !== 'Educação Infantil'
     || !navigation.grade
-    || navigation.term !== '1') return null;
-  return earlyChildhoodRegistry[navigation.grade] || null;
+    || !navigation.term) return null;
+  const base = earlyChildhoodRegistry[navigation.grade];
+  if (!base) return null;
+  const suffix = navigation.term === '1' ? '' : `-${navigation.term}b`;
+  return {
+    ...base,
+    path: `data/educacao-infantil/${base.file}${suffix}.json`,
+    collection: navigation.term === '1'
+      ? base.collection
+      : `${base.collection}-${navigation.term}b`
+  };
 }
 
 function validateEarlyChildhoodCollection(collection) {
+  const expectedCount = navigation.term === '1' ? 10 : 30;
+  const expectedPrefix = navigation.grade === 'Maternal' ? 'EI02' : 'EI03';
   if (collection.schemaVersion !== 1
     || collection.etapa !== 'Educação Infantil'
-    || collection.quantidadeAtividades !== 10
+    || collection.quantidadeAtividades !== expectedCount
     || !Array.isArray(collection.atividades)
-    || collection.atividades.length !== 10) {
+    || collection.atividades.length !== expectedCount) {
     throw new Error('Estrutura da coleção de Educação Infantil inválida.');
   }
 
@@ -179,7 +190,9 @@ function validateEarlyChildhoodCollection(collection) {
       || required.some(field => activity[field] == null)
       || !Array.isArray(activity.bncc)
       || activity.bncc.length === 0
-      || activity.bncc.some(item => !/^EI0[23](EO|CG|TS|EF|ET)\\d{2}$/.test(item.codigo))) {
+      || activity.bncc.some(item =>
+        !/^EI0[23](EO|CG|TS|EF|ET)\d{2}$/.test(item.codigo)
+        || !item.codigo.startsWith(expectedPrefix))) {
       throw new Error('Atividade de Educação Infantil inválida ou duplicada.');
     }
     ids.add(activity.id);
@@ -191,12 +204,12 @@ function normalizeEarlyChildhoodActivity(activity, collection, config) {
     id: `${navigation.grade}-${activity.id}`,
     stage: 'Educação Infantil',
     grade: navigation.grade,
-    term: 1,
+    term: Number(navigation.term),
     subject: activity.campoExperiencia,
     topic: activity.titulo,
     difficulty: 'Adequada à faixa etária',
     bncc: activity.bncc.map(item => item.codigo).join(', '),
-    symbol: config.symbol,
+    symbol: activity.ilustracao.simbolo || config.symbol,
     colors: config.colors,
     questions: [],
     answers: [],
@@ -432,8 +445,8 @@ const pageSize = 5;
 const navigation = { stage: '', grade: '', term: '' };
 
 const stages = [
-  { name: 'Educação Infantil', label: 'Educação Infantil', detail: 'Maternal, Pré I e Pré II', count: 288, theme: 'infantil' },
-  { name: 'Ensino Fundamental I', label: 'Ensino Fundamental — Anos Iniciais', detail: '1º ao 5º ano', count: 800, theme: 'iniciais' },
+  { name: 'Educação Infantil', label: 'Educação Infantil', detail: 'Maternal, Pré I e Pré II', count: 300, theme: 'infantil' },
+  { name: 'Ensino Fundamental I', label: 'Ensino Fundamental — Anos Iniciais', detail: '1º ao 5º ano', count: 3000, theme: 'iniciais' },
   { name: 'Ensino Fundamental II', label: 'Ensino Fundamental — Anos Finais', detail: '6º ao 9º ano', count: 3840, theme: 'finais' },
   { name: 'Ensino Médio', label: 'Ensino Médio', detail: '1ª à 3ª série', count: 3600, theme: 'medio' }
 ];
