@@ -147,6 +147,144 @@
   background: #eee6ef;
 }
 
+.library-choice-card[data-theme="autismo"] {
+  position: relative;
+  grid-column: 1 / -1;
+  min-height: 220px;
+  padding-left: 150px;
+  overflow: hidden;
+  border-color: #087fbd;
+  background: linear-gradient(135deg, #064b93 0%, #087fbd 52%, #10a89a 100%);
+  color: #fff;
+}
+
+.library-choice-card[data-theme="autismo"]::before {
+  content: "∞";
+  position: absolute;
+  left: 35px;
+  top: 50%;
+  display: grid;
+  width: 88px;
+  height: 88px;
+  place-items: center;
+  transform: translateY(-50%);
+  border: 7px solid transparent;
+  border-radius: 50%;
+  background:
+    linear-gradient(#fff, #fff) padding-box,
+    linear-gradient(135deg, #ef476f, #ffd166, #06d6a0, #118ab2, #8a4fff) border-box;
+  color: #087fbd;
+  font-size: 64px;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.library-choice-card[data-theme="autismo"]::after {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto;
+  height: 8px;
+  background: linear-gradient(90deg, #ef476f 0 20%, #ffd166 20% 40%, #06d6a0 40% 60%, #118ab2 60% 80%, #8a4fff 80% 100%);
+}
+
+.library-choice-card[data-theme="autismo"] strong,
+.library-choice-card[data-theme="autismo"] span,
+.library-choice-card[data-theme="autismo"] small {
+  color: #fff;
+  text-shadow: 0 2px 7px rgba(2, 42, 83, .32);
+}
+
+.autism-category-banner {
+  position: relative;
+  display: grid;
+  grid-template-columns: 110px 1fr;
+  align-items: center;
+  gap: 24px;
+  margin: 0 0 34px;
+  padding: 28px 34px;
+  overflow: hidden;
+  border-radius: 28px;
+  background: linear-gradient(135deg, #064b93 0%, #087fbd 52%, #10a89a 100%);
+  color: #fff;
+  box-shadow: 0 18px 38px rgba(5, 75, 147, .24);
+}
+
+.autism-category-banner::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto;
+  height: 8px;
+  background: linear-gradient(90deg, #ef476f 0 20%, #ffd166 20% 40%, #06d6a0 40% 60%, #118ab2 60% 80%, #8a4fff 80% 100%);
+}
+
+.autism-category-symbol {
+  display: grid;
+  width: 92px;
+  height: 92px;
+  place-items: center;
+  border: 7px solid transparent;
+  border-radius: 50%;
+  background:
+    linear-gradient(#fff, #fff) padding-box,
+    linear-gradient(135deg, #ef476f, #ffd166, #06d6a0, #118ab2, #8a4fff) border-box;
+  color: #087fbd;
+  font-size: 66px;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.autism-category-eyebrow {
+  display: block;
+  margin-bottom: 5px;
+  color: #ffe08a;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: .12em;
+}
+
+.autism-category-banner h2 {
+  margin: 0;
+  color: #fff;
+  font-family: "Libre Franklin", sans-serif;
+  font-size: clamp(27px, 4vw, 43px);
+  line-height: 1.1;
+}
+
+.autism-category-banner p {
+  max-width: 820px;
+  margin: 10px 0 0;
+  color: #f3fbff;
+  font-size: 17px;
+  line-height: 1.5;
+}
+
+@media (max-width: 680px) {
+  .library-choice-card[data-theme="autismo"] {
+    min-height: 210px;
+    padding: 118px 24px 24px;
+  }
+
+  .library-choice-card[data-theme="autismo"]::before {
+    left: 24px;
+    top: 24px;
+    width: 70px;
+    height: 70px;
+    transform: none;
+    font-size: 52px;
+  }
+
+  .autism-category-banner {
+    grid-template-columns: 1fr;
+    padding: 28px 24px;
+  }
+
+  .autism-category-symbol {
+    width: 76px;
+    height: 76px;
+    font-size: 54px;
+  }
+}
+
 .library-choice-card:hover,
 .library-choice-card:focus-visible {
   transform: translateY(-4px);
