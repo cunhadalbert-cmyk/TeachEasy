@@ -445,8 +445,8 @@ const pageSize = 5;
 const navigation = { stage: '', grade: '', term: '' };
 
 const stages = [
-  { name: 'Educação Infantil', label: 'Educação Infantil', detail: 'Maternal, Pré I e Pré II', count: 288, theme: 'infantil' },
-  { name: 'Ensino Fundamental I', label: 'Ensino Fundamental — Anos Iniciais', detail: '1º ao 5º ano', count: 800, theme: 'iniciais' },
+  { name: 'Educação Infantil', label: 'Educação Infantil', detail: 'Maternal, Pré I e Pré II', count: 300, theme: 'infantil' },
+  { name: 'Ensino Fundamental I', label: 'Ensino Fundamental — Anos Iniciais', detail: '1º ao 5º ano', count: 3000, theme: 'iniciais' },
   { name: 'Ensino Fundamental II', label: 'Ensino Fundamental — Anos Finais', detail: '6º ao 9º ano', count: 3840, theme: 'finais' },
   { name: 'Ensino Médio', label: 'Ensino Médio', detail: '1ª à 3ª série', count: 3600, theme: 'medio' }
 ];
