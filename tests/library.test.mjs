@@ -135,7 +135,7 @@ test('Biblioteca começa com a categoria de autismo separada das quatro etapas',
   assert.equal(window.document.querySelector('.library-filters').hidden, true);
   assert.equal(window.document.querySelector('.library-pagination').hidden, true);
   assert.equal(window.document.querySelector('.library-back').hidden, true);
-  assert.equal(window.document.querySelector('.activity-grid').hidden, true);
+  assert.equal(window.document.querySelector('#activity-grid').hidden, true);
   assert.equal(window.document.querySelectorAll('.activity-library-card').length, 0);
   assert.equal(window.document.querySelector('.library-goal-card'), null);
   assert.equal(window.document.querySelector('#photo-activity-launcher'), null);
@@ -498,8 +498,20 @@ test('Categoria de autismo abre todas as etapas com o filtro adaptado permanente
   assert.equal(window.document.querySelectorAll('.library-choice-card').length, 4);
   assert.equal(window.document.querySelector('[name="adapted"]').checked, true);
   assert.equal(window.document.querySelector('[name="adapted"]').disabled, true);
+  const featuredSection = window.document.querySelector('#autism-featured-section');
+  assert.equal(featuredSection.hidden, false);
+  assert.equal(featuredSection.querySelectorAll('.autism-featured-card').length, 8);
+  assert.deepEqual(
+    [...new Set([...featuredSection.querySelectorAll('.autism-featured-card')]
+      .map(card => card.dataset.featuredStage))],
+    ['Educação Infantil', 'Ensino Fundamental I', 'Ensino Fundamental II', 'Ensino Médio']
+  );
+  featuredSection.querySelector('.preview-button').click();
+  assert.match(window.document.querySelector('#activity-preview').textContent, /Versão adaptada para autismo e inclusão/);
+  window.document.querySelector('.preview-close').click();
 
   clickChoice(window, 'Anos Iniciais');
+  assert.equal(featuredSection.hidden, true);
   clickChoice(window, '1º ano');
   clickChoice(window, '1º bimestre');
   assert.match(window.document.querySelector('#active-filter-summary').textContent, /Autismo e inclusão/);
@@ -534,11 +546,11 @@ test('Página inicial e Biblioteca versionam os arquivos da categoria de autismo
     readFile(new URL('../index.html', import.meta.url), 'utf8'),
     readFile(new URL('../biblioteca.html', import.meta.url), 'utf8')
   ]);
-  assert.match(home, /styles\.css\?v=20260807-autismo-v2/);
-  assert.match(library, /styles\.css\?v=20260807-autismo-v2/);
-  assert.match(library, /biblioteca\.css\?v=20260807-autismo-v2/);
-  assert.match(library, /biblioteca\.js\?v=20260807-autismo-v2/);
-  assert.match(library, /biblioteca-fixes\.js\?v=20260807-autismo-v2/);
+  assert.match(home, /styles\.css\?v=20260807-autismo-v3/);
+  assert.match(library, /styles\.css\?v=20260807-autismo-v3/);
+  assert.match(library, /biblioteca\.css\?v=20260807-autismo-v3/);
+  assert.match(library, /biblioteca\.js\?v=20260807-autismo-v3/);
+  assert.match(library, /biblioteca-fixes\.js\?v=20260807-autismo-v3/);
 });
 
 test('Visualização contém atividade, gabarito separado e versão adaptada', async () => {
