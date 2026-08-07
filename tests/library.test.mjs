@@ -490,12 +490,14 @@ test('Navegação progressiva abre ano, bimestre e só então os filtros', async
   await window.happyDOM.close();
 });
 
-test('Categoria de autismo abre todas as etapas com o filtro adaptado permanente', async () => {
+test('Categoria de autismo abre somente as atividades adaptadas dentro do card', async () => {
   const window = await createLibraryPage({ url: 'https://teacheasy.test/biblioteca.html?categoria=autismo' });
   assert.equal(window.document.querySelector('#autism-category-banner').hidden, false);
   assert.match(window.document.querySelector('#autism-category-title').textContent, /Atividades adaptadas para autismo/);
   assert.match(window.document.querySelector('#library-breadcrumb').textContent, /Autismo e inclusão/);
-  assert.equal(window.document.querySelectorAll('.library-choice-card').length, 4);
+  assert.equal(window.document.querySelectorAll('.library-choice-card').length, 0);
+  assert.equal(window.document.querySelector('.library-choice-grid').hidden, true);
+  assert.equal(window.document.querySelector('.library-toolbar').hidden, true);
   assert.equal(window.document.querySelector('[name="adapted"]').checked, true);
   assert.equal(window.document.querySelector('[name="adapted"]').disabled, true);
   const featuredSection = window.document.querySelector('#autism-featured-section');
@@ -510,29 +512,21 @@ test('Categoria de autismo abre todas as etapas com o filtro adaptado permanente
   featuredSection.querySelector('.preview-button').click();
   assert.match(window.document.querySelector('#activity-preview').textContent, /Versão adaptada para autismo e inclusão/);
   window.document.querySelector('.preview-close').click();
-
-  clickChoice(window, 'Anos Iniciais');
-  assert.equal(featuredSection.hidden, true);
-  clickChoice(window, '1º ano');
-  clickChoice(window, '1º bimestre');
-  assert.match(window.document.querySelector('#active-filter-summary').textContent, /Autismo e inclusão/);
-  assert.ok(window.document.querySelectorAll('.activity-library-card').length > 0);
-  for (const card of window.document.querySelectorAll('.activity-library-card')) {
-    assert.match(card.textContent, /Versão adaptada/);
-  }
   await window.happyDOM.close();
 });
 
-test('Cartão de autismo da Biblioteca ativa a categoria sem esconder as etapas', async () => {
+test('Cartão de autismo abre e fecha sem misturar as etapas escolares', async () => {
   const window = await createLibraryPage();
   clickChoice(window, 'Autismo e inclusão');
   assert.equal(window.document.querySelector('#autism-category-banner').hidden, false);
-  assert.equal(window.document.querySelectorAll('.library-choice-card').length, 4);
-  assert.deepEqual(
-    [...window.document.querySelectorAll('.library-choice-card')].map(card => card.dataset.theme),
-    ['infantil', 'iniciais', 'finais', 'medio']
-  );
+  assert.equal(window.document.querySelectorAll('.library-choice-card').length, 0);
+  assert.equal(window.document.querySelector('#autism-featured-section').hidden, false);
+  assert.equal(window.document.querySelector('.library-toolbar').hidden, true);
   assert.equal(window.document.querySelector('.library-back').hidden, false);
+  window.document.querySelector('.library-back').click();
+  assert.equal(window.document.querySelector('#autism-category-banner').hidden, true);
+  assert.equal(window.document.querySelectorAll('.library-choice-card').length, 5);
+  assert.equal(window.document.querySelector('.library-toolbar').hidden, false);
   await window.happyDOM.close();
 });
 
@@ -550,7 +544,7 @@ test('Página inicial e Biblioteca versionam os arquivos da categoria de autismo
   assert.match(home, /styles\.css\?v=20260807-autismo-v3/);
   assert.match(library, /styles\.css\?v=20260807-autismo-v3/);
   assert.match(library, /biblioteca\.css\?v=20260807-autismo-v4/);
-  assert.match(library, /biblioteca\.js\?v=20260807-autismo-v3/);
+  assert.match(library, /biblioteca\.js\?v=20260807-autismo-v4/);
   assert.match(library, /biblioteca-fixes\.js\?v=20260807-autismo-v3/);
 });
 
