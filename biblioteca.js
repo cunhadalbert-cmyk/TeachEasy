@@ -152,6 +152,14 @@ const earlyChildhoodRegistry = {
   }
 };
 
+const earlyChildhoodSubjects = [
+  'O eu, o outro e o nós',
+  'Corpo, gestos e movimentos',
+  'Traços, sons, cores e formas',
+  'Escuta, fala, pensamento e imaginação',
+  'Espaços, tempos, quantidades, relações e transformações'
+];
+
 function selectedEarlyChildhoodConfig() {
   if (navigation.stage !== 'Educação Infantil'
     || !navigation.grade
@@ -250,8 +258,7 @@ async function ensureEarlyChildhoodCollection() {
 
   const subjectSelect = filterForm.elements.subject;
   const existing = new Set([...subjectSelect.options].map(option => option.value));
-  collection.atividades
-    .map(activity => activity.campoExperiencia)
+  [...new Set(collection.atividades.map(activity => activity.campoExperiencia))]
     .filter(subject => !existing.has(subject))
     .forEach(subject => {
       const option = document.createElement('option');
@@ -478,11 +485,13 @@ populateSelect('subject', uniqueSorted('subject'));
 function syncSubjectOptions() {
   const select = filterForm.elements.subject;
   const previous = select.value;
-  const values = navigation.stage === 'Ensino Fundamental II'
-    ? Object.keys(finalYearsSubjects)
-    : navigation.stage === 'Ensino Médio'
-      ? Object.keys(highSchoolSubjects)
-      : uniqueSorted('subject');
+  const values = navigation.stage === 'Educação Infantil'
+    ? earlyChildhoodSubjects
+    : navigation.stage === 'Ensino Fundamental II'
+      ? Object.keys(finalYearsSubjects)
+      : navigation.stage === 'Ensino Médio'
+        ? Object.keys(highSchoolSubjects)
+        : uniqueSorted('subject');
   const defaultOption = document.createElement('option');
   defaultOption.value = '';
   defaultOption.textContent = 'Todas as disciplinas';
