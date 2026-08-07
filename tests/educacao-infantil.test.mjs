@@ -125,3 +125,13 @@ test('Biblioteca libera os quatro bimestres da Educação Infantil', () => {
   assert.match(source, /count: 300/);
   assert.match(source, /bncc: activity\.bncc\.map\(item => item\.codigo\)\.join/);
 });
+
+test('Filtro infantil exibe somente cinco campos de experiência sem duplicação', () => {
+  const source = fs.readFileSync(path.join(root, 'biblioteca.js'), 'utf8');
+  const fixes = fs.readFileSync(path.join(root, 'biblioteca-fixes.js'), 'utf8');
+  assert.match(source, /const earlyChildhoodSubjects = \[/);
+  assert.match(source, /\[\.\.\.new Set\(collection\.atividades\.map/);
+  assert.match(source, /navigation\.stage === 'Educação Infantil'[\s\S]{0,100}earlyChildhoodSubjects/);
+  assert.match(fixes, /const isEarlyChildhood = navigation\.stage === 'Educação Infantil'/);
+  assert.match(fixes, /const values = isEarlyChildhood[\s\S]{0,80}earlyChildhoodSubjects/);
+});
