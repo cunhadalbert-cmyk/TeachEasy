@@ -68,6 +68,8 @@ test('A Biblioteca carrega e exibe as coleções de Educação Infantil', () => 
   assert.match(source, /data\/educacao-infantil\/\$\{base\.file\}/);
   assert.match(source, /base\.file.*suffix/);
   assert.match(source, /activity\.ilustracao\.simbolo/);
+  assert.match(source, /navigation\.term === '1' \? 10 : 30/);
+  assert.match(source, /collection\.quantidadeAtividades !== expectedCount/);
   assert.match(source, /ensureEarlyChildhoodCollection/);
   assert.match(source, /openEarlyChildhoodPreview/);
 });

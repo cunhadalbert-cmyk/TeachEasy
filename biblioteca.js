@@ -149,11 +149,12 @@ function selectedEarlyChildhoodConfig() {
 }
 
 function validateEarlyChildhoodCollection(collection) {
+  const expectedCount = navigation.term === '1' ? 10 : 30;
   if (collection.schemaVersion !== 1
     || collection.etapa !== 'Educação Infantil'
-    || collection.quantidadeAtividades !== 10
+    || collection.quantidadeAtividades !== expectedCount
     || !Array.isArray(collection.atividades)
-    || collection.atividades.length !== 10) {
+    || collection.atividades.length !== expectedCount) {
     throw new Error('Estrutura da coleção de Educação Infantil inválida.');
   }
 
