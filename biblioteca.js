@@ -191,7 +191,7 @@ function validateEarlyChildhoodCollection(collection) {
       || !Array.isArray(activity.bncc)
       || activity.bncc.length === 0
       || activity.bncc.some(item =>
-        !/^EI0[23](EO|CG|TS|EF|ET)\\d{2}$/.test(item.codigo)
+        !/^EI0[23](EO|CG|TS|EF|ET)\d{2}$/.test(item.codigo)
         || !item.codigo.startsWith(expectedPrefix))) {
       throw new Error('Atividade de Educação Infantil inválida ou duplicada.');
     }
