@@ -8,6 +8,8 @@ const base = path.join(root, 'data', 'atividades', 'ensino-medio');
 const grades = [1, 2, 3];
 const terms = [1, 2, 3, 4];
 const subjects = [['lingua-portuguesa.json', 'Língua Portuguesa'], ['matematica.json', 'Matemática'], ['ciencias.json', 'Ciências'], ['historia.json', 'História'], ['geografia.json', 'Geografia'], ['ingles.json', 'Inglês']];
+const officialPortugueseCodes = new Set(['EM13LP01', 'EM13LP02', 'EM13LP03', 'EM13LP04', 'EM13LP05', 'EM13LP06', 'EM13LP07', 'EM13LP08', 'EM13LP12', 'EM13LP15']);
+const officialMathCodes = new Set(['EM13MAT101', 'EM13MAT102', 'EM13MAT103', 'EM13MAT104', 'EM13MAT105', 'EM13MAT201', 'EM13MAT202', 'EM13MAT203', 'EM13MAT301', 'EM13MAT302']);
 
 test('Ensino Médio possui 3.600 atividades em 72 coleções completas', () => {
   const ids = new Set(); let files = 0; let total = 0;
@@ -29,6 +31,20 @@ test('Ensino Médio possui 3.600 atividades em 72 coleções completas', () => {
     files += 1; total += collection.atividades.length;
   }
   assert.equal(files, 72); assert.equal(total, 3600);
+});
+
+test('Português e Matemática usam habilidades existentes da BNCC', () => {
+  for (const grade of grades) for (const term of terms) {
+    for (const [filename, validCodes] of [['lingua-portuguesa.json', officialPortugueseCodes], ['matematica.json', officialMathCodes]]) {
+      const collection = JSON.parse(fs.readFileSync(path.join(base, `${grade}-serie`, `${term}-bimestre`, filename), 'utf8'));
+      for (const activity of collection.atividades) {
+        const skill = activity.bncc[0];
+        assert.equal(validCodes.has(skill.codigo), true, `Código BNCC inválido: ${skill.codigo}`);
+        assert.ok(skill.descricaoResumida.length > 60);
+        assert.match(activity.objetivo, new RegExp(skill.codigo));
+      }
+    }
+  }
 });
 
 test('Biblioteca carrega apenas as seis disciplinas do Ensino Médio', () => {
