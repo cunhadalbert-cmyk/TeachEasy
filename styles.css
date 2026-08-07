@@ -1999,6 +1999,117 @@ body:not(.library-page) .footer span {
 /* FIM TEACHEASY HERO PROFESSORA */
 
 /* HIGHLIGHT JOGOS PEDAGÓGICOS (HOME) */
+.home-coloring-highlight {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(120px, 180px) 1fr auto;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+  min-height: 210px;
+  padding: 24px 38px;
+  gap: 28px;
+  overflow: hidden;
+  border: 2px solid rgba(255, 255, 255, .78);
+  border-radius: 44px;
+  background: linear-gradient(135deg, #dff4e8, #a8d9bd 58%, #74ae8d);
+  color: #193e2a;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.home-coloring-highlight::after {
+  content: "";
+  position: absolute;
+  inset: 2px;
+  pointer-events: none;
+  border: 1px solid rgba(255, 255, 255, .5);
+  border-radius: 40px;
+}
+
+.home-coloring-highlight:hover,
+.home-coloring-highlight:focus-visible {
+  transform: translateY(-5px);
+  box-shadow:
+    0 28px 44px rgba(47, 71, 54, .26),
+    0 10px 20px rgba(35, 54, 41, .18),
+    0 0 34px rgba(86, 150, 111, .22);
+}
+
+.home-coloring-highlight:focus-visible {
+  outline: 4px solid rgba(47, 109, 74, .38);
+  outline-offset: 5px;
+}
+
+.home-coloring-illustration,
+.home-coloring-copy,
+.home-coloring-arrow {
+  position: relative;
+  z-index: 1;
+}
+
+.home-coloring-illustration {
+  display: grid;
+  width: min(100%, 128px);
+  aspect-ratio: 1;
+  place-items: center;
+  border: 2px solid rgba(47, 109, 74, .16);
+  border-radius: 50%;
+  background: rgba(255, 255, 255, .7);
+  box-shadow: 0 12px 20px rgba(44, 100, 68, .18);
+  font-size: clamp(54px, 6vw, 78px);
+}
+
+.home-coloring-copy {
+  display: grid;
+  gap: 12px;
+}
+
+.home-coloring-copy strong {
+  font-family: "Libre Franklin", sans-serif;
+  font-size: clamp(30px, 4vw, 46px);
+  line-height: 1.1;
+}
+
+.home-coloring-copy > span {
+  max-width: 760px;
+  font-size: clamp(17px, 2vw, 21px);
+  line-height: 1.4;
+}
+
+.home-coloring-arrow {
+  display: grid;
+  width: 52px;
+  height: 52px;
+  place-items: center;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, .74);
+  color: #7a1730;
+  font-size: 30px;
+  font-weight: 800;
+  transition: transform .2s ease;
+}
+
+.home-coloring-highlight:hover .home-coloring-arrow { transform: translateX(6px); }
+
+@media (max-width: 680px) {
+  .home-coloring-highlight {
+    min-height: 148px;
+    padding: 18px 16px;
+    grid-template-columns: 72px minmax(0, 1fr) auto;
+    gap: 14px;
+    border-radius: 28px;
+  }
+  .home-coloring-highlight::after { border-radius: 24px; }
+  .home-coloring-illustration { width: 72px; font-size: 40px; }
+  .home-coloring-copy { min-width: 0; gap: 7px; }
+  .home-coloring-copy strong { font-size: clamp(24px, 7vw, 32px); }
+  .home-coloring-copy > span { font-size: 15px; line-height: 1.35; }
+  .home-coloring-arrow { width: 38px; height: 38px; font-size: 23px; }
+}
+
 .home-games-highlight {
   position: relative;
   display: grid;

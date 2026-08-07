@@ -89,7 +89,7 @@
     'coloring-demo': ['🎨', 'Desenhos para colorir', '247 desenhos organizados por categoria para visualizar, baixar e imprimir.'],
     'games-demo': ['🎲', 'Jogos pedagógicos', 'Veja materiais lúdicos que podem ser impressos e usados com a turma.']
   };
-  const demoCards = [...document.querySelectorAll('.initial-service-card[data-service]')];
+  const demoCards = [...document.querySelectorAll('[data-service]')];
   const demoDialog = document.querySelector('#service-dialog');
   const demoContainer = demoDialog?.querySelector('.service-dialog-columns');
 
@@ -238,6 +238,7 @@
 
   demoCards.forEach(card => {
     card.addEventListener('click', () => openDemo(card.dataset.service));
+    if (card.tagName === 'BUTTON') return;
     card.addEventListener('keydown', event => {
       if (event.key !== 'Enter' && event.key !== ' ') return;
       event.preventDefault();
