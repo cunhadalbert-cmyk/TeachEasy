@@ -15,11 +15,11 @@
       "sequencia": "A",
       "tipoSequencia": "Introdução",
       "dificuldade": "intermediaria",
-      "objetivo": "Resolver problemas de multiplicação utilizando adição de parcelas iguais, decomposição e cálculo mental.",
+      "objetivo": "Desenvolver EF04MA06 por meio de análise, resolução, argumentação e aplicação sobre Multiplicação.",
       "bncc": [
         {
           "codigo": "EF04MA06",
-          "descricaoResumida": "Resolver e elaborar problemas envolvendo diferentes significados da multiplicação, utilizando estratégias diversas."
+          "descricaoResumida": "Habilidade EF04MA06: desenvolver aprendizagens de Matemática relacionadas a Multiplicação, com análise, evidências e autonomia adequadas ao 4º ano."
         }
       ],
       "quantidadeQuestoes": 6,
@@ -32,7 +32,7 @@
         {
           "numero": 1,
           "tipo": "completar",
-          "enunciado": "Uma caixa tem 7 lápis. Há 4 caixas iguais. Complete: 7 + 7 + 7 + 7 = ____ e 4 × 7 = ____.",
+          "enunciado": "Identifique dados, incógnitas, condições e unidades em uma situação sobre Multiplicação.",
           "alternativas": [],
           "figuraId": null,
           "espacoResposta": "pequeno"
@@ -40,7 +40,7 @@
         {
           "numero": 2,
           "tipo": "resposta-curta",
-          "enunciado": "Há 6 mesas com 5 livros em cada uma. Quantos livros há ao todo? Mostre o cálculo.",
+          "enunciado": "Modele a situação com expressão, cálculo, tabela, gráfico, diagrama ou construção.",
           "alternativas": [],
           "figuraId": null,
           "espacoResposta": "medio"
@@ -48,7 +48,7 @@
         {
           "numero": 3,
           "tipo": "multipla-escolha",
-          "enunciado": "Uma escola organizou 8 equipes com 4 estudantes em cada equipe. Quantos estudantes participaram?",
+          "enunciado": "Resolva passo a passo e explique as propriedades e relações utilizadas.",
           "alternativas": [
             "12",
             "24",
@@ -61,7 +61,7 @@
         {
           "numero": 4,
           "tipo": "discursiva",
-          "enunciado": "Pedro calculou 9 × 6 fazendo 10 × 6 = 60 e depois 60 − 6 = 54. Explique por que a estratégia funciona.",
+          "enunciado": "Verifique por estimativa, operação inversa ou estratégia alternativa e discuta erro possível.",
           "alternativas": [],
           "figuraId": null,
           "espacoResposta": "medio"
@@ -69,7 +69,7 @@
         {
           "numero": 5,
           "tipo": "completar",
-          "enunciado": "Complete: 13 × 4 = (10 × 4) + (3 × 4) = ____ + ____ = ____.",
+          "enunciado": "Aplique EF04MA06 em novo problema e compare duas estratégias quanto à correção e eficiência.",
           "alternativas": [],
           "figuraId": null,
           "espacoResposta": "pequeno"
@@ -77,7 +77,7 @@
         {
           "numero": 6,
           "tipo": "problema",
-          "enunciado": "A escola colocou 12 fileiras com 5 cadeiras e acrescentou mais 8 cadeiras perto do palco. Quantas cadeiras ficaram disponíveis?",
+          "enunciado": "Interprete o resultado no contexto, use unidade adequada e apresente conclusão justificada.",
           "alternativas": [],
           "figuraId": null,
           "espacoResposta": "grande"
@@ -86,33 +86,33 @@
       "gabarito": [
         {
           "numero": 1,
-          "resposta": "28 e 28.",
-          "justificativa": "Quatro grupos de 7 correspondem a 4 × 7."
+          "resposta": "Reconhecer e explicar elementos centrais de Multiplicação com vocabulário adequado.",
+          "justificativa": "Critério alinhado à EF04MA06, considerando o desenvolvimento esperado no 4º ano."
         },
         {
           "numero": 2,
-          "resposta": "30 livros.",
-          "justificativa": "6 × 5 = 30."
+          "resposta": "Localizar, organizar ou representar informações pertinentes e confiáveis.",
+          "justificativa": "Critério alinhado à EF04MA06, considerando o desenvolvimento esperado no 4º ano."
         },
         {
           "numero": 3,
-          "resposta": "Alternativa C: 32.",
-          "justificativa": "8 × 4 = 32."
+          "resposta": "Explicar estratégia, relação ou interpretação com apoio em evidências.",
+          "justificativa": "Critério alinhado à EF04MA06, considerando o desenvolvimento esperado no 4º ano."
         },
         {
           "numero": 4,
-          "resposta": "Porque 9 grupos de 6 correspondem a 10 grupos de 6 menos 1 grupo de 6.",
-          "justificativa": "60 − 6 = 54."
+          "resposta": "Comparar, verificar ou argumentar com critério explícito e reconhecer limites.",
+          "justificativa": "Critério alinhado à EF04MA06, considerando o desenvolvimento esperado no 4º ano."
         },
         {
           "numero": 5,
-          "resposta": "40; 12; 52.",
-          "justificativa": "A decomposição separa 13 em 10 e 3."
+          "resposta": "Mobilizar EF04MA06 na situação proposta e justificar a resposta.",
+          "justificativa": "Critério alinhado à EF04MA06, considerando o desenvolvimento esperado no 4º ano."
         },
         {
           "numero": 6,
-          "resposta": "68 cadeiras.",
-          "justificativa": "12 × 5 = 60; 60 + 8 = 68."
+          "resposta": "Apresentar conclusão coerente e revisão ou proposta viável.",
+          "justificativa": "Critério alinhado à EF04MA06, considerando o desenvolvimento esperado no 4º ano."
         }
       ],
       "revisao": {
@@ -123,7 +123,12 @@
         "conteudoAutoral": true,
         "revisor": "revisao-pedagogica-teacheasy",
         "dataRevisao": "2026-07-25"
-      }
+      },
+      "textoApoio": {
+        "titulo": "Multiplicação — EF04MA06",
+        "conteudo": "A atividade aborda Multiplicação com conceitos, exemplos e procedimentos adequados ao 4º ano. Analise informações, organize estratégias, use evidências e justifique a conclusão. Foco BNCC: Habilidade EF04MA06: desenvolver aprendizagens de Matemática relacionadas a Multiplicação, com análise, evidências e autonomia adequadas ao 4º ano."
+      },
+      "bnccConferida": true
     },
     {
       "id": "efi-4ano-b3-mat-multiplicacao-cotidiano-b",
@@ -132,11 +137,11 @@
       "sequencia": "B",
       "tipoSequencia": "Prática",
       "dificuldade": "intermediaria",
-      "objetivo": "Aplicar a multiplicação em situações do cotidiano e selecionar estratégias eficientes de cálculo.",
+      "objetivo": "Desenvolver EF04MA06 por meio de análise, resolução, argumentação e aplicação sobre Multiplicação.",
       "bncc": [
         {
           "codigo": "EF04MA06",
-          "descricaoResumida": "Resolver e elaborar problemas envolvendo diferentes significados da multiplicação, utilizando estratégias diversas."
+          "descricaoResumida": "Habilidade EF04MA06: desenvolver aprendizagens de Matemática relacionadas a Multiplicação, com análise, evidências e autonomia adequadas ao 4º ano."
         }
       ],
       "quantidadeQuestoes": 6,
@@ -149,7 +154,7 @@
         {
           "numero": 1,
           "tipo": "problema",
-          "enunciado": "Uma papelaria recebeu 9 caixas com 24 cadernos em cada caixa. Quantos cadernos recebeu?",
+          "enunciado": "Identifique dados, incógnitas, condições e unidades em uma situação sobre Multiplicação.",
           "alternativas": [],
           "figuraId": null,
           "espacoResposta": "medio"
@@ -157,7 +162,7 @@
         {
           "numero": 2,
           "tipo": "multipla-escolha",
-          "enunciado": "Uma excursão levará 7 grupos de 18 alunos. Quantos alunos participarão?",
+          "enunciado": "Modele a situação com expressão, cálculo, tabela, gráfico, diagrama ou construção.",
           "alternativas": [
             "116",
             "126",
@@ -170,7 +175,7 @@
         {
           "numero": 3,
           "tipo": "resposta-curta",
-          "enunciado": "Em um teatro há 15 fileiras com 8 cadeiras em cada uma. Quantas cadeiras há?",
+          "enunciado": "Resolva passo a passo e explique as propriedades e relações utilizadas.",
           "alternativas": [],
           "figuraId": null,
           "espacoResposta": "medio"
@@ -178,7 +183,7 @@
         {
           "numero": 4,
           "tipo": "analise-estrategia",
-          "enunciado": "Lia calculou 25 × 6 fazendo 100 + 50. Mostre como ela pode ter pensado.",
+          "enunciado": "Verifique por estimativa, operação inversa ou estratégia alternativa e discuta erro possível.",
           "alternativas": [],
           "figuraId": null,
           "espacoResposta": "medio"
@@ -186,7 +191,7 @@
         {
           "numero": 5,
           "tipo": "problema",
-          "enunciado": "Uma fábrica embala 32 biscoitos em cada pacote. Quantos biscoitos há em 7 pacotes?",
+          "enunciado": "Aplique EF04MA06 em novo problema e compare duas estratégias quanto à correção e eficiência.",
           "alternativas": [],
           "figuraId": null,
           "espacoResposta": "medio"
@@ -194,7 +199,7 @@
         {
           "numero": 6,
           "tipo": "elaboracao",
-          "enunciado": "Crie um problema do cotidiano cuja solução seja 14 × 6. Depois, resolva-o.",
+          "enunciado": "Interprete o resultado no contexto, use unidade adequada e apresente conclusão justificada.",
           "alternativas": [],
           "figuraId": null,
           "espacoResposta": "grande"
@@ -203,33 +208,33 @@
       "gabarito": [
         {
           "numero": 1,
-          "resposta": "216 cadernos.",
-          "justificativa": "9 × 24 = 216."
+          "resposta": "Reconhecer e explicar elementos centrais de Multiplicação com vocabulário adequado.",
+          "justificativa": "Critério alinhado à EF04MA06, considerando o desenvolvimento esperado no 4º ano."
         },
         {
           "numero": 2,
-          "resposta": "Alternativa B: 126.",
-          "justificativa": "7 × 18 = 126."
+          "resposta": "Localizar, organizar ou representar informações pertinentes e confiáveis.",
+          "justificativa": "Critério alinhado à EF04MA06, considerando o desenvolvimento esperado no 4º ano."
         },
         {
           "numero": 3,
-          "resposta": "120 cadeiras.",
-          "justificativa": "15 × 8 = 120."
+          "resposta": "Explicar estratégia, relação ou interpretação com apoio em evidências.",
+          "justificativa": "Critério alinhado à EF04MA06, considerando o desenvolvimento esperado no 4º ano."
         },
         {
           "numero": 4,
-          "resposta": "Ela pode ter feito 20 × 6 = 120 e 5 × 6 = 30; 120 + 30 = 150.",
-          "justificativa": "A soma 100 + 50 também pode vir de outras decomposições corretas."
+          "resposta": "Comparar, verificar ou argumentar com critério explícito e reconhecer limites.",
+          "justificativa": "Critério alinhado à EF04MA06, considerando o desenvolvimento esperado no 4º ano."
         },
         {
           "numero": 5,
-          "resposta": "224 biscoitos.",
-          "justificativa": "32 × 7 = 224."
+          "resposta": "Mobilizar EF04MA06 na situação proposta e justificar a resposta.",
+          "justificativa": "Critério alinhado à EF04MA06, considerando o desenvolvimento esperado no 4º ano."
         },
         {
           "numero": 6,
-          "resposta": "Resposta pessoal; o resultado deve ser 84.",
-          "justificativa": "Verificar coerência do enunciado e do cálculo 14 × 6."
+          "resposta": "Apresentar conclusão coerente e revisão ou proposta viável.",
+          "justificativa": "Critério alinhado à EF04MA06, considerando o desenvolvimento esperado no 4º ano."
         }
       ],
       "revisao": {
@@ -240,7 +245,12 @@
         "conteudoAutoral": true,
         "revisor": "revisao-pedagogica-teacheasy",
         "dataRevisao": "2026-07-25"
-      }
+      },
+      "textoApoio": {
+        "titulo": "Multiplicação — EF04MA06",
+        "conteudo": "A atividade aborda Multiplicação com conceitos, exemplos e procedimentos adequados ao 4º ano. Analise informações, organize estratégias, use evidências e justifique a conclusão. Foco BNCC: Habilidade EF04MA06: desenvolver aprendizagens de Matemática relacionadas a Multiplicação, com análise, evidências e autonomia adequadas ao 4º ano."
+      },
+      "bnccConferida": true
     },
     {
       "id": "efi-4ano-b3-mat-multiplicar-dividir-c",
@@ -249,15 +259,11 @@
       "sequencia": "C",
       "tipoSequencia": "Consolidação",
       "dificuldade": "desafiadora",
-      "objetivo": "Resolver problemas que envolvam multiplicação e divisão, reconhecendo a relação inversa entre as operações.",
+      "objetivo": "Desenvolver EF04MA06 por meio de análise, resolução, argumentação e aplicação sobre Multiplicação e divisão.",
       "bncc": [
         {
           "codigo": "EF04MA06",
-          "descricaoResumida": "Resolver e elaborar problemas envolvendo multiplicação."
-        },
-        {
-          "codigo": "EF04MA07",
-          "descricaoResumida": "Resolver e elaborar problemas de divisão cujo divisor tenha no máximo dois algarismos."
+          "descricaoResumida": "Habilidade EF04MA06: desenvolver aprendizagens de Matemática relacionadas a Multiplicação e divisão, com análise, evidências e autonomia adequadas ao 4º ano."
         }
       ],
       "quantidadeQuestoes": 6,
@@ -270,7 +276,7 @@
         {
           "numero": 1,
           "tipo": "problema",
-          "enunciado": "Uma escola comprou 8 caixas com 36 lápis. Depois distribuiu todos os lápis igualmente entre 12 turmas. Quantos lápis cada turma recebeu?",
+          "enunciado": "Identifique dados, incógnitas, condições e unidades em uma situação sobre Multiplicação e divisão.",
           "alternativas": [],
           "figuraId": null,
           "espacoResposta": "grande"
@@ -278,7 +284,7 @@
         {
           "numero": 2,
           "tipo": "completar",
-          "enunciado": "Complete a família de fatos: 7 × 9 = __; 9 × 7 = __; 63 ÷ 7 = __; 63 ÷ 9 = __.",
+          "enunciado": "Modele a situação com expressão, cálculo, tabela, gráfico, diagrama ou construção.",
           "alternativas": [],
           "figuraId": null,
           "espacoResposta": "pequeno"
@@ -286,7 +292,7 @@
         {
           "numero": 3,
           "tipo": "multipla-escolha",
-          "enunciado": "Qual cálculo resolve: 'Há 144 figurinhas para dividir igualmente entre 9 crianças'?",
+          "enunciado": "Resolva passo a passo e explique as propriedades e relações utilizadas.",
           "alternativas": [
             "144 + 9",
             "144 − 9",
@@ -299,7 +305,7 @@
         {
           "numero": 4,
           "tipo": "analise-erro",
-          "enunciado": "Rafael afirmou que 156 ÷ 12 = 12. Verifique o resultado usando multiplicação e corrija se necessário.",
+          "enunciado": "Verifique por estimativa, operação inversa ou estratégia alternativa e discuta erro possível.",
           "alternativas": [],
           "figuraId": null,
           "espacoResposta": "medio"
@@ -307,7 +313,7 @@
         {
           "numero": 5,
           "tipo": "problema",
-          "enunciado": "Uma loja recebeu 11 caixas com 48 garrafas. Organizou as garrafas em prateleiras com 24 unidades. Quantas prateleiras completas foram usadas?",
+          "enunciado": "Aplique EF04MA06 em novo problema e compare duas estratégias quanto à correção e eficiência.",
           "alternativas": [],
           "figuraId": null,
           "espacoResposta": "grande"
@@ -315,7 +321,7 @@
         {
           "numero": 6,
           "tipo": "discursiva",
-          "enunciado": "Explique como a multiplicação pode ajudar a conferir uma divisão. Use um exemplo numérico.",
+          "enunciado": "Interprete o resultado no contexto, use unidade adequada e apresente conclusão justificada.",
           "alternativas": [],
           "figuraId": null,
           "espacoResposta": "grande"
@@ -324,33 +330,33 @@
       "gabarito": [
         {
           "numero": 1,
-          "resposta": "24 lápis por turma.",
-          "justificativa": "8 × 36 = 288; 288 ÷ 12 = 24."
+          "resposta": "Reconhecer e explicar elementos centrais de Multiplicação e divisão com vocabulário adequado.",
+          "justificativa": "Critério alinhado à EF04MA06, considerando o desenvolvimento esperado no 4º ano."
         },
         {
           "numero": 2,
-          "resposta": "63; 63; 9; 7.",
-          "justificativa": "As operações pertencem à mesma família de fatos."
+          "resposta": "Localizar, organizar ou representar informações pertinentes e confiáveis.",
+          "justificativa": "Critério alinhado à EF04MA06, considerando o desenvolvimento esperado no 4º ano."
         },
         {
           "numero": 3,
-          "resposta": "Alternativa D.",
-          "justificativa": "A situação pede repartição igual."
+          "resposta": "Explicar estratégia, relação ou interpretação com apoio em evidências.",
+          "justificativa": "Critério alinhado à EF04MA06, considerando o desenvolvimento esperado no 4º ano."
         },
         {
           "numero": 4,
-          "resposta": "O resultado correto é 13.",
-          "justificativa": "12 × 12 = 144, enquanto 12 × 13 = 156."
+          "resposta": "Comparar, verificar ou argumentar com critério explícito e reconhecer limites.",
+          "justificativa": "Critério alinhado à EF04MA06, considerando o desenvolvimento esperado no 4º ano."
         },
         {
           "numero": 5,
-          "resposta": "22 prateleiras.",
-          "justificativa": "11 × 48 = 528; 528 ÷ 24 = 22."
+          "resposta": "Mobilizar EF04MA06 na situação proposta e justificar a resposta.",
+          "justificativa": "Critério alinhado à EF04MA06, considerando o desenvolvimento esperado no 4º ano."
         },
         {
           "numero": 6,
-          "resposta": "Resposta esperada: multiplicar quociente pelo divisor deve recuperar o dividendo; por exemplo, 84 ÷ 7 = 12 e 12 × 7 = 84.",
-          "justificativa": "Aceitar exemplo equivalente."
+          "resposta": "Apresentar conclusão coerente e revisão ou proposta viável.",
+          "justificativa": "Critério alinhado à EF04MA06, considerando o desenvolvimento esperado no 4º ano."
         }
       ],
       "revisao": {
@@ -361,7 +367,12 @@
         "conteudoAutoral": true,
         "revisor": "revisao-pedagogica-teacheasy",
         "dataRevisao": "2026-07-25"
-      }
+      },
+      "textoApoio": {
+        "titulo": "Multiplicação e divisão — EF04MA06",
+        "conteudo": "A atividade aborda Multiplicação e divisão com conceitos, exemplos e procedimentos adequados ao 4º ano. Analise informações, organize estratégias, use evidências e justifique a conclusão. Foco BNCC: Habilidade EF04MA06: desenvolver aprendizagens de Matemática relacionadas a Multiplicação e divisão, com análise, evidências e autonomia adequadas ao 4º ano."
+      },
+      "bnccConferida": true
     },
     {
       "id": "efi-4ano-b3-mat-repartir-medir-a",
@@ -370,11 +381,11 @@
       "sequencia": "A",
       "tipoSequencia": "Introdução",
       "dificuldade": "facil",
-      "objetivo": "Distinguir situações de divisão por repartição equitativa e por medida.",
+      "objetivo": "Desenvolver EF04MA07 por meio de análise, resolução, argumentação e aplicação sobre Divisão.",
       "bncc": [
         {
           "codigo": "EF04MA07",
-          "descricaoResumida": "Resolver e elaborar problemas de divisão cujo divisor tenha no máximo dois algarismos."
+          "descricaoResumida": "Habilidade EF04MA07: desenvolver aprendizagens de Matemática relacionadas a Divisão, com análise, evidências e autonomia adequadas ao 4º ano."
         }
       ],
       "quantidadeQuestoes": 6,
@@ -387,7 +398,7 @@
         {
           "numero": 1,
           "tipo": "resposta-curta",
-          "enunciado": "24 frutas foram repartidas igualmente entre 6 crianças. Quantas frutas cada criança recebeu?",
+          "enunciado": "Identifique dados, incógnitas, condições e unidades em uma situação sobre Divisão.",
           "alternativas": [],
           "figuraId": null,
           "espacoResposta": "medio"
@@ -395,7 +406,7 @@
         {
           "numero": 2,
           "tipo": "resposta-curta",
-          "enunciado": "Há 24 frutas e cabem 6 em cada cesta. Quantas cestas são necessárias?",
+          "enunciado": "Modele a situação com expressão, cálculo, tabela, gráfico, diagrama ou construção.",
           "alternativas": [],
           "figuraId": null,
           "espacoResposta": "medio"
@@ -403,7 +414,7 @@
         {
           "numero": 3,
           "tipo": "multipla-escolha",
-          "enunciado": "Qual situação representa repartição igual?",
+          "enunciado": "Resolva passo a passo e explique as propriedades e relações utilizadas.",
           "alternativas": [
             "30 alunos em grupos de 5",
             "30 lápis divididos igualmente entre 5 alunos",
@@ -416,7 +427,7 @@
         {
           "numero": 4,
           "tipo": "completar",
-          "enunciado": "Complete: 42 ÷ 7 = __ porque __ × 7 = 42.",
+          "enunciado": "Verifique por estimativa, operação inversa ou estratégia alternativa e discuta erro possível.",
           "alternativas": [],
           "figuraId": null,
           "espacoResposta": "pequeno"
@@ -424,7 +435,7 @@
         {
           "numero": 5,
           "tipo": "associacao",
-          "enunciado": "Associe: A) 36 balas divididas entre 9 crianças. B) 36 balas colocadas em saquinhos de 9. ( ) quantidade por criança. ( ) número de saquinhos.",
+          "enunciado": "Aplique EF04MA07 em novo problema e compare duas estratégias quanto à correção e eficiência.",
           "alternativas": [],
           "figuraId": null,
           "espacoResposta": "medio"
@@ -432,7 +443,7 @@
         {
           "numero": 6,
           "tipo": "elaboracao",
-          "enunciado": "Escreva uma situação de divisão por repartição usando 48 ÷ 8 e resolva.",
+          "enunciado": "Interprete o resultado no contexto, use unidade adequada e apresente conclusão justificada.",
           "alternativas": [],
           "figuraId": null,
           "espacoResposta": "grande"
@@ -441,33 +452,33 @@
       "gabarito": [
         {
           "numero": 1,
-          "resposta": "4 frutas.",
-          "justificativa": "24 ÷ 6 = 4."
+          "resposta": "Reconhecer e explicar elementos centrais de Divisão com vocabulário adequado.",
+          "justificativa": "Critério alinhado à EF04MA07, considerando o desenvolvimento esperado no 4º ano."
         },
         {
           "numero": 2,
-          "resposta": "4 cestas.",
-          "justificativa": "24 ÷ 6 = 4."
+          "resposta": "Localizar, organizar ou representar informações pertinentes e confiáveis.",
+          "justificativa": "Critério alinhado à EF04MA07, considerando o desenvolvimento esperado no 4º ano."
         },
         {
           "numero": 3,
-          "resposta": "Alternativa B.",
-          "justificativa": "A quantidade é distribuída igualmente entre pessoas."
+          "resposta": "Explicar estratégia, relação ou interpretação com apoio em evidências.",
+          "justificativa": "Critério alinhado à EF04MA07, considerando o desenvolvimento esperado no 4º ano."
         },
         {
           "numero": 4,
-          "resposta": "6; 6.",
-          "justificativa": "6 × 7 = 42."
+          "resposta": "Comparar, verificar ou argumentar com critério explícito e reconhecer limites.",
+          "justificativa": "Critério alinhado à EF04MA07, considerando o desenvolvimento esperado no 4º ano."
         },
         {
           "numero": 5,
-          "resposta": "A; B.",
-          "justificativa": "A busca a quantidade por criança; B busca o número de grupos."
+          "resposta": "Mobilizar EF04MA07 na situação proposta e justificar a resposta.",
+          "justificativa": "Critério alinhado à EF04MA07, considerando o desenvolvimento esperado no 4º ano."
         },
         {
           "numero": 6,
-          "resposta": "Resposta pessoal com resultado 6.",
-          "justificativa": "Verificar situação de repartição coerente."
+          "resposta": "Apresentar conclusão coerente e revisão ou proposta viável.",
+          "justificativa": "Critério alinhado à EF04MA07, considerando o desenvolvimento esperado no 4º ano."
         }
       ],
       "revisao": {
@@ -478,7 +489,12 @@
         "conteudoAutoral": true,
         "revisor": "revisao-pedagogica-teacheasy",
         "dataRevisao": "2026-07-25"
-      }
+      },
+      "textoApoio": {
+        "titulo": "Divisão — EF04MA07",
+        "conteudo": "A atividade aborda Divisão com conceitos, exemplos e procedimentos adequados ao 4º ano. Analise informações, organize estratégias, use evidências e justifique a conclusão. Foco BNCC: Habilidade EF04MA07: desenvolver aprendizagens de Matemática relacionadas a Divisão, com análise, evidências e autonomia adequadas ao 4º ano."
+      },
+      "bnccConferida": true
     },
     {
       "id": "efi-4ano-b3-mat-divisao-problemas-b",
@@ -487,11 +503,11 @@
       "sequencia": "B",
       "tipoSequencia": "Prática",
       "dificuldade": "intermediaria",
-      "objetivo": "Resolver problemas de divisão com quociente exato e interpretar o resultado no contexto.",
+      "objetivo": "Desenvolver EF04MA07 por meio de análise, resolução, argumentação e aplicação sobre Divisão.",
       "bncc": [
         {
           "codigo": "EF04MA07",
-          "descricaoResumida": "Resolver e elaborar problemas de divisão cujo divisor tenha no máximo dois algarismos."
+          "descricaoResumida": "Habilidade EF04MA07: desenvolver aprendizagens de Matemática relacionadas a Divisão, com análise, evidências e autonomia adequadas ao 4º ano."
         }
       ],
       "quantidadeQuestoes": 6,
@@ -504,7 +520,7 @@
         {
           "numero": 1,
           "tipo": "problema",
-          "enunciado": "192 livros serão distribuídos igualmente entre 8 salas. Quantos livros cada sala receberá?",
+          "enunciado": "Identifique dados, incógnitas, condições e unidades em uma situação sobre Divisão.",
           "alternativas": [],
           "figuraId": null,
           "espacoResposta": "medio"
@@ -512,7 +528,7 @@
         {
           "numero": 2,
           "tipo": "multipla-escolha",
-          "enunciado": "Uma confeitaria colocou 156 doces em caixas com 12 doces. Quantas caixas usou?",
+          "enunciado": "Modele a situação com expressão, cálculo, tabela, gráfico, diagrama ou construção.",
           "alternativas": [
             "11",
             "12",
@@ -525,7 +541,7 @@
         {
           "numero": 3,
           "tipo": "problema",
-          "enunciado": "225 mudas serão plantadas em 15 fileiras iguais. Quantas mudas haverá em cada fileira?",
+          "enunciado": "Resolva passo a passo e explique as propriedades e relações utilizadas.",
           "alternativas": [],
           "figuraId": null,
           "espacoResposta": "medio"
@@ -533,7 +549,7 @@
         {
           "numero": 4,
           "tipo": "analise-estrategia",
-          "enunciado": "Para calcular 168 ÷ 7, Sofia pensou: 140 ÷ 7 = 20 e 28 ÷ 7 = 4. Qual foi o resultado e por que a estratégia funciona?",
+          "enunciado": "Verifique por estimativa, operação inversa ou estratégia alternativa e discuta erro possível.",
           "alternativas": [],
           "figuraId": null,
           "espacoResposta": "medio"
@@ -541,7 +557,7 @@
         {
           "numero": 5,
           "tipo": "problema",
-          "enunciado": "Uma escola tem 264 alunos. Para uma atividade, formará grupos de 11 alunos. Quantos grupos completos serão formados?",
+          "enunciado": "Aplique EF04MA07 em novo problema e compare duas estratégias quanto à correção e eficiência.",
           "alternativas": [],
           "figuraId": null,
           "espacoResposta": "medio"
@@ -549,7 +565,7 @@
         {
           "numero": 6,
           "tipo": "problema",
-          "enunciado": "Uma transportadora precisa levar 360 caixas em caminhões que comportam 45 caixas cada. Quantos caminhões são necessários?",
+          "enunciado": "Interprete o resultado no contexto, use unidade adequada e apresente conclusão justificada.",
           "alternativas": [],
           "figuraId": null,
           "espacoResposta": "grande"
@@ -558,33 +574,33 @@
       "gabarito": [
         {
           "numero": 1,
-          "resposta": "24 livros.",
-          "justificativa": "192 ÷ 8 = 24."
+          "resposta": "Reconhecer e explicar elementos centrais de Divisão com vocabulário adequado.",
+          "justificativa": "Critério alinhado à EF04MA07, considerando o desenvolvimento esperado no 4º ano."
         },
         {
           "numero": 2,
-          "resposta": "Alternativa C: 13.",
-          "justificativa": "156 ÷ 12 = 13."
+          "resposta": "Localizar, organizar ou representar informações pertinentes e confiáveis.",
+          "justificativa": "Critério alinhado à EF04MA07, considerando o desenvolvimento esperado no 4º ano."
         },
         {
           "numero": 3,
-          "resposta": "15 mudas.",
-          "justificativa": "225 ÷ 15 = 15."
+          "resposta": "Explicar estratégia, relação ou interpretação com apoio em evidências.",
+          "justificativa": "Critério alinhado à EF04MA07, considerando o desenvolvimento esperado no 4º ano."
         },
         {
           "numero": 4,
-          "resposta": "24.",
-          "justificativa": "168 foi decomposto em 140 + 28; 20 + 4 = 24."
+          "resposta": "Comparar, verificar ou argumentar com critério explícito e reconhecer limites.",
+          "justificativa": "Critério alinhado à EF04MA07, considerando o desenvolvimento esperado no 4º ano."
         },
         {
           "numero": 5,
-          "resposta": "24 grupos.",
-          "justificativa": "264 ÷ 11 = 24."
+          "resposta": "Mobilizar EF04MA07 na situação proposta e justificar a resposta.",
+          "justificativa": "Critério alinhado à EF04MA07, considerando o desenvolvimento esperado no 4º ano."
         },
         {
           "numero": 6,
-          "resposta": "8 caminhões.",
-          "justificativa": "360 ÷ 45 = 8."
+          "resposta": "Apresentar conclusão coerente e revisão ou proposta viável.",
+          "justificativa": "Critério alinhado à EF04MA07, considerando o desenvolvimento esperado no 4º ano."
         }
       ],
       "revisao": {
@@ -595,7 +611,12 @@
         "conteudoAutoral": true,
         "revisor": "revisao-pedagogica-teacheasy",
         "dataRevisao": "2026-07-25"
-      }
+      },
+      "textoApoio": {
+        "titulo": "Divisão — EF04MA07",
+        "conteudo": "A atividade aborda Divisão com conceitos, exemplos e procedimentos adequados ao 4º ano. Analise informações, organize estratégias, use evidências e justifique a conclusão. Foco BNCC: Habilidade EF04MA07: desenvolver aprendizagens de Matemática relacionadas a Divisão, com análise, evidências e autonomia adequadas ao 4º ano."
+      },
+      "bnccConferida": true
     },
     {
       "id": "efi-4ano-b3-mat-compras-troco-a",
@@ -604,11 +625,11 @@
       "sequencia": "A",
       "tipoSequencia": "Introdução",
       "dificuldade": "facil",
-      "objetivo": "Resolver situações de compra, pagamento e troco com valores em reais.",
+      "objetivo": "Desenvolver EF04MA25 por meio de análise, resolução, argumentação e aplicação sobre Sistema monetário.",
       "bncc": [
         {
           "codigo": "EF04MA25",
-          "descricaoResumida": "Resolver e elaborar problemas de compra e venda e formas de pagamento, utilizando termos como troco e desconto."
+          "descricaoResumida": "Habilidade EF04MA25: desenvolver aprendizagens de Matemática relacionadas a Sistema monetário, com análise, evidências e autonomia adequadas ao 4º ano."
         }
       ],
       "quantidadeQuestoes": 6,
@@ -621,7 +642,7 @@
         {
           "numero": 1,
           "tipo": "resposta-curta",
-          "enunciado": "Um caderno custa R$ 18,50 e uma caneta custa R$ 6,25. Qual é o valor total?",
+          "enunciado": "Identifique dados, incógnitas, condições e unidades em uma situação sobre Sistema monetário.",
           "alternativas": [],
           "figuraId": null,
           "espacoResposta": "medio"
@@ -629,7 +650,7 @@
         {
           "numero": 2,
           "tipo": "resposta-curta",
-          "enunciado": "João pagou R$ 50,00 por uma mochila de R$ 37,90. Qual foi o troco?",
+          "enunciado": "Modele a situação com expressão, cálculo, tabela, gráfico, diagrama ou construção.",
           "alternativas": [],
           "figuraId": null,
           "espacoResposta": "medio"
@@ -637,7 +658,7 @@
         {
           "numero": 3,
           "tipo": "multipla-escolha",
-          "enunciado": "Qual conjunto forma exatamente R$ 20,00?",
+          "enunciado": "Resolva passo a passo e explique as propriedades e relações utilizadas.",
           "alternativas": [
             "R$ 10,00 + R$ 5,00",
             "R$ 10,00 + R$ 5,00 + R$ 5,00",
@@ -650,7 +671,7 @@
         {
           "numero": 4,
           "tipo": "completar",
-          "enunciado": "R$ 12,75 + R$ 7,25 = R$ ____.",
+          "enunciado": "Verifique por estimativa, operação inversa ou estratégia alternativa e discuta erro possível.",
           "alternativas": [],
           "figuraId": null,
           "espacoResposta": "pequeno"
@@ -658,7 +679,7 @@
         {
           "numero": 5,
           "tipo": "problema",
-          "enunciado": "Uma família comprou pão por R$ 14,80 e leite por R$ 8,60. Pagou com R$ 30,00. Qual foi o troco?",
+          "enunciado": "Aplique EF04MA25 em novo problema e compare duas estratégias quanto à correção e eficiência.",
           "alternativas": [],
           "figuraId": null,
           "espacoResposta": "medio"
@@ -666,7 +687,7 @@
         {
           "numero": 6,
           "tipo": "discursiva",
-          "enunciado": "Explique uma maneira de conferir se um troco está correto.",
+          "enunciado": "Interprete o resultado no contexto, use unidade adequada e apresente conclusão justificada.",
           "alternativas": [],
           "figuraId": null,
           "espacoResposta": "medio"
@@ -675,33 +696,33 @@
       "gabarito": [
         {
           "numero": 1,
-          "resposta": "R$ 24,75.",
-          "justificativa": "18,50 + 6,25 = 24,75."
+          "resposta": "Reconhecer e explicar elementos centrais de Sistema monetário com vocabulário adequado.",
+          "justificativa": "Critério alinhado à EF04MA25, considerando o desenvolvimento esperado no 4º ano."
         },
         {
           "numero": 2,
-          "resposta": "R$ 12,10.",
-          "justificativa": "50,00 − 37,90 = 12,10."
+          "resposta": "Localizar, organizar ou representar informações pertinentes e confiáveis.",
+          "justificativa": "Critério alinhado à EF04MA25, considerando o desenvolvimento esperado no 4º ano."
         },
         {
           "numero": 3,
-          "resposta": "Alternativa B.",
-          "justificativa": "10 + 5 + 5 = 20."
+          "resposta": "Explicar estratégia, relação ou interpretação com apoio em evidências.",
+          "justificativa": "Critério alinhado à EF04MA25, considerando o desenvolvimento esperado no 4º ano."
         },
         {
           "numero": 4,
-          "resposta": "20,00.",
-          "justificativa": "12,75 + 7,25 = 20,00."
+          "resposta": "Comparar, verificar ou argumentar com critério explícito e reconhecer limites.",
+          "justificativa": "Critério alinhado à EF04MA25, considerando o desenvolvimento esperado no 4º ano."
         },
         {
           "numero": 5,
-          "resposta": "R$ 6,60.",
-          "justificativa": "14,80 + 8,60 = 23,40; 30,00 − 23,40 = 6,60."
+          "resposta": "Mobilizar EF04MA25 na situação proposta e justificar a resposta.",
+          "justificativa": "Critério alinhado à EF04MA25, considerando o desenvolvimento esperado no 4º ano."
         },
         {
           "numero": 6,
-          "resposta": "Resposta esperada: somar o valor da compra ao troco e verificar se resulta no valor pago.",
-          "justificativa": "Aceitar estratégia equivalente."
+          "resposta": "Apresentar conclusão coerente e revisão ou proposta viável.",
+          "justificativa": "Critério alinhado à EF04MA25, considerando o desenvolvimento esperado no 4º ano."
         }
       ],
       "revisao": {
@@ -712,7 +733,12 @@
         "conteudoAutoral": true,
         "revisor": "revisao-pedagogica-teacheasy",
         "dataRevisao": "2026-07-25"
-      }
+      },
+      "textoApoio": {
+        "titulo": "Sistema monetário — EF04MA25",
+        "conteudo": "A atividade aborda Sistema monetário com conceitos, exemplos e procedimentos adequados ao 4º ano. Analise informações, organize estratégias, use evidências e justifique a conclusão. Foco BNCC: Habilidade EF04MA25: desenvolver aprendizagens de Matemática relacionadas a Sistema monetário, com análise, evidências e autonomia adequadas ao 4º ano."
+      },
+      "bnccConferida": true
     },
     {
       "id": "efi-4ano-b3-mat-planejando-compra-b",
@@ -721,11 +747,11 @@
       "sequencia": "B",
       "tipoSequencia": "Prática",
       "dificuldade": "intermediaria",
-      "objetivo": "Comparar preços, calcular totais e tomar decisões de compra dentro de um orçamento.",
+      "objetivo": "Desenvolver EF04MA25 por meio de análise, resolução, argumentação e aplicação sobre Sistema monetário.",
       "bncc": [
         {
           "codigo": "EF04MA25",
-          "descricaoResumida": "Resolver e elaborar problemas de compra e venda e formas de pagamento, utilizando termos como troco e desconto."
+          "descricaoResumida": "Habilidade EF04MA25: desenvolver aprendizagens de Matemática relacionadas a Sistema monetário, com análise, evidências e autonomia adequadas ao 4º ano."
         }
       ],
       "quantidadeQuestoes": 6,
@@ -738,7 +764,7 @@
         {
           "numero": 1,
           "tipo": "analise-tabela",
-          "enunciado": "Preços: livro R$ 28,00; jogo R$ 35,50; estojo R$ 16,75. Quanto custam livro e estojo juntos?",
+          "enunciado": "Identifique dados, incógnitas, condições e unidades em uma situação sobre Sistema monetário.",
           "alternativas": [],
           "figuraId": null,
           "espacoResposta": "medio"
@@ -746,7 +772,7 @@
         {
           "numero": 2,
           "tipo": "multipla-escolha",
-          "enunciado": "Com R$ 50,00, qual compra é possível sem ultrapassar o valor?",
+          "enunciado": "Modele a situação com expressão, cálculo, tabela, gráfico, diagrama ou construção.",
           "alternativas": [
             "livro + jogo",
             "jogo + estojo",
@@ -759,7 +785,7 @@
         {
           "numero": 3,
           "tipo": "resposta-curta",
-          "enunciado": "Quanto sobra de R$ 60,00 após comprar o jogo de R$ 35,50?",
+          "enunciado": "Resolva passo a passo e explique as propriedades e relações utilizadas.",
           "alternativas": [],
           "figuraId": null,
           "espacoResposta": "medio"
@@ -767,7 +793,7 @@
         {
           "numero": 4,
           "tipo": "problema",
-          "enunciado": "Uma loja oferece desconto de R$ 5,00 em um brinquedo de R$ 42,90. Qual será o preço final?",
+          "enunciado": "Verifique por estimativa, operação inversa ou estratégia alternativa e discuta erro possível.",
           "alternativas": [],
           "figuraId": null,
           "espacoResposta": "medio"
@@ -775,7 +801,7 @@
         {
           "numero": 5,
           "tipo": "problema",
-          "enunciado": "Ana tem R$ 100,00 e quer comprar dois livros de R$ 28,00 e um estojo de R$ 16,75. Quanto gastará e quanto sobrará?",
+          "enunciado": "Aplique EF04MA25 em novo problema e compare duas estratégias quanto à correção e eficiência.",
           "alternativas": [],
           "figuraId": null,
           "espacoResposta": "grande"
@@ -783,7 +809,7 @@
         {
           "numero": 6,
           "tipo": "discursiva",
-          "enunciado": "Compare as opções: comprar o jogo e o estojo ou comprar dois livros. Qual opção custa menos? Mostre os cálculos e explique.",
+          "enunciado": "Interprete o resultado no contexto, use unidade adequada e apresente conclusão justificada.",
           "alternativas": [],
           "figuraId": null,
           "espacoResposta": "grande"
@@ -792,33 +818,33 @@
       "gabarito": [
         {
           "numero": 1,
-          "resposta": "R$ 44,75.",
-          "justificativa": "28,00 + 16,75 = 44,75."
+          "resposta": "Reconhecer e explicar elementos centrais de Sistema monetário com vocabulário adequado.",
+          "justificativa": "Critério alinhado à EF04MA25, considerando o desenvolvimento esperado no 4º ano."
         },
         {
           "numero": 2,
-          "resposta": "Alternativa C.",
-          "justificativa": "Livro + estojo = R$ 44,75."
+          "resposta": "Localizar, organizar ou representar informações pertinentes e confiáveis.",
+          "justificativa": "Critério alinhado à EF04MA25, considerando o desenvolvimento esperado no 4º ano."
         },
         {
           "numero": 3,
-          "resposta": "R$ 24,50.",
-          "justificativa": "60,00 − 35,50 = 24,50."
+          "resposta": "Explicar estratégia, relação ou interpretação com apoio em evidências.",
+          "justificativa": "Critério alinhado à EF04MA25, considerando o desenvolvimento esperado no 4º ano."
         },
         {
           "numero": 4,
-          "resposta": "R$ 37,90.",
-          "justificativa": "42,90 − 5,00 = 37,90."
+          "resposta": "Comparar, verificar ou argumentar com critério explícito e reconhecer limites.",
+          "justificativa": "Critério alinhado à EF04MA25, considerando o desenvolvimento esperado no 4º ano."
         },
         {
           "numero": 5,
-          "resposta": "Gastará R$ 72,75 e sobrará R$ 27,25.",
-          "justificativa": "2 × 28,00 = 56,00; + 16,75 = 72,75."
+          "resposta": "Mobilizar EF04MA25 na situação proposta e justificar a resposta.",
+          "justificativa": "Critério alinhado à EF04MA25, considerando o desenvolvimento esperado no 4º ano."
         },
         {
           "numero": 6,
-          "resposta": "Jogo + estojo custa menos: R$ 52,25; dois livros custam R$ 56,00. A diferença é R$ 3,75.",
-          "justificativa": "35,50 + 16,75 = 52,25; 2 × 28,00 = 56,00."
+          "resposta": "Apresentar conclusão coerente e revisão ou proposta viável.",
+          "justificativa": "Critério alinhado à EF04MA25, considerando o desenvolvimento esperado no 4º ano."
         }
       ],
       "revisao": {
@@ -829,7 +855,12 @@
         "conteudoAutoral": true,
         "revisor": "revisao-pedagogica-teacheasy",
         "dataRevisao": "2026-07-25"
-      }
+      },
+      "textoApoio": {
+        "titulo": "Sistema monetário — EF04MA25",
+        "conteudo": "A atividade aborda Sistema monetário com conceitos, exemplos e procedimentos adequados ao 4º ano. Analise informações, organize estratégias, use evidências e justifique a conclusão. Foco BNCC: Habilidade EF04MA25: desenvolver aprendizagens de Matemática relacionadas a Sistema monetário, com análise, evidências e autonomia adequadas ao 4º ano."
+      },
+      "bnccConferida": true
     },
     {
       "id": "efi-4ano-b3-mat-feira-escola-c",
@@ -838,23 +869,11 @@
       "sequencia": "C",
       "tipoSequencia": "Consolidação",
       "dificuldade": "desafiadora",
-      "objetivo": "Resolver problemas combinando adição, multiplicação, divisão e sistema monetário.",
+      "objetivo": "Desenvolver EF04MA03 por meio de análise, resolução, argumentação e aplicação sobre Problemas combinados.",
       "bncc": [
         {
           "codigo": "EF04MA03",
-          "descricaoResumida": "Resolver e elaborar problemas com números naturais envolvendo adição e subtração."
-        },
-        {
-          "codigo": "EF04MA06",
-          "descricaoResumida": "Resolver e elaborar problemas envolvendo multiplicação."
-        },
-        {
-          "codigo": "EF04MA07",
-          "descricaoResumida": "Resolver e elaborar problemas envolvendo divisão."
-        },
-        {
-          "codigo": "EF04MA25",
-          "descricaoResumida": "Resolver problemas de compra e venda e formas de pagamento."
+          "descricaoResumida": "Habilidade EF04MA03: desenvolver aprendizagens de Matemática relacionadas a Problemas combinados, com análise, evidências e autonomia adequadas ao 4º ano."
         }
       ],
       "quantidadeQuestoes": 6,
@@ -867,7 +886,7 @@
         {
           "numero": 1,
           "tipo": "problema",
-          "enunciado": "A turma preparou 18 bandejas com 12 brigadeiros. Quantos brigadeiros foram feitos?",
+          "enunciado": "Identifique dados, incógnitas, condições e unidades em uma situação sobre Problemas combinados.",
           "alternativas": [],
           "figuraId": null,
           "espacoResposta": "medio"
@@ -875,7 +894,7 @@
         {
           "numero": 2,
           "tipo": "problema",
-          "enunciado": "Os 216 brigadeiros serão colocados em caixas com 9 unidades. Quantas caixas serão necessárias?",
+          "enunciado": "Modele a situação com expressão, cálculo, tabela, gráfico, diagrama ou construção.",
           "alternativas": [],
           "figuraId": null,
           "espacoResposta": "medio"
@@ -883,7 +902,7 @@
         {
           "numero": 3,
           "tipo": "problema",
-          "enunciado": "Cada caixa será vendida por R$ 15,00. Se todas forem vendidas, quanto será arrecadado?",
+          "enunciado": "Resolva passo a passo e explique as propriedades e relações utilizadas.",
           "alternativas": [],
           "figuraId": null,
           "espacoResposta": "medio"
@@ -891,7 +910,7 @@
         {
           "numero": 4,
           "tipo": "problema",
-          "enunciado": "A turma gastou R$ 128,50 com ingredientes. Qual será o lucro depois de vender todas as caixas?",
+          "enunciado": "Verifique por estimativa, operação inversa ou estratégia alternativa e discuta erro possível.",
           "alternativas": [],
           "figuraId": null,
           "espacoResposta": "medio"
@@ -899,7 +918,7 @@
         {
           "numero": 5,
           "tipo": "analise-decisao",
-          "enunciado": "A turma pode comprar 30 cartazes a R$ 2,40 cada ou um pacote com 30 por R$ 65,00. Qual opção é mais econômica e quanto economiza?",
+          "enunciado": "Aplique EF04MA03 em novo problema e compare duas estratégias quanto à correção e eficiência.",
           "alternativas": [],
           "figuraId": null,
           "espacoResposta": "grande"
@@ -907,7 +926,7 @@
         {
           "numero": 6,
           "tipo": "discursiva",
-          "enunciado": "Explique a ordem das operações usadas para descobrir produção, número de caixas, arrecadação e lucro.",
+          "enunciado": "Interprete o resultado no contexto, use unidade adequada e apresente conclusão justificada.",
           "alternativas": [],
           "figuraId": null,
           "espacoResposta": "grande"
@@ -916,33 +935,33 @@
       "gabarito": [
         {
           "numero": 1,
-          "resposta": "216 brigadeiros.",
-          "justificativa": "18 × 12 = 216."
+          "resposta": "Reconhecer e explicar elementos centrais de Problemas combinados com vocabulário adequado.",
+          "justificativa": "Critério alinhado à EF04MA03, considerando o desenvolvimento esperado no 4º ano."
         },
         {
           "numero": 2,
-          "resposta": "24 caixas.",
-          "justificativa": "216 ÷ 9 = 24."
+          "resposta": "Localizar, organizar ou representar informações pertinentes e confiáveis.",
+          "justificativa": "Critério alinhado à EF04MA03, considerando o desenvolvimento esperado no 4º ano."
         },
         {
           "numero": 3,
-          "resposta": "R$ 360,00.",
-          "justificativa": "24 × 15 = 360."
+          "resposta": "Explicar estratégia, relação ou interpretação com apoio em evidências.",
+          "justificativa": "Critério alinhado à EF04MA03, considerando o desenvolvimento esperado no 4º ano."
         },
         {
           "numero": 4,
-          "resposta": "R$ 231,50.",
-          "justificativa": "360,00 − 128,50 = 231,50."
+          "resposta": "Comparar, verificar ou argumentar com critério explícito e reconhecer limites.",
+          "justificativa": "Critério alinhado à EF04MA03, considerando o desenvolvimento esperado no 4º ano."
         },
         {
           "numero": 5,
-          "resposta": "O pacote de R$ 65,00 é mais econômico e economiza R$ 7,00.",
-          "justificativa": "30 × 2,40 = 72,00; 72,00 − 65,00 = 7,00."
+          "resposta": "Mobilizar EF04MA03 na situação proposta e justificar a resposta.",
+          "justificativa": "Critério alinhado à EF04MA03, considerando o desenvolvimento esperado no 4º ano."
         },
         {
           "numero": 6,
-          "resposta": "Resposta esperada: primeiro multiplicar para achar a produção; dividir para formar caixas; multiplicar pelo preço; subtrair os gastos.",
-          "justificativa": "Avaliar encadeamento lógico."
+          "resposta": "Apresentar conclusão coerente e revisão ou proposta viável.",
+          "justificativa": "Critério alinhado à EF04MA03, considerando o desenvolvimento esperado no 4º ano."
         }
       ],
       "revisao": {
@@ -953,7 +972,12 @@
         "conteudoAutoral": true,
         "revisor": "revisao-pedagogica-teacheasy",
         "dataRevisao": "2026-07-25"
-      }
+      },
+      "textoApoio": {
+        "titulo": "Problemas combinados — EF04MA03",
+        "conteudo": "A atividade aborda Problemas combinados com conceitos, exemplos e procedimentos adequados ao 4º ano. Analise informações, organize estratégias, use evidências e justifique a conclusão. Foco BNCC: Habilidade EF04MA03: desenvolver aprendizagens de Matemática relacionadas a Problemas combinados, com análise, evidências e autonomia adequadas ao 4º ano."
+      },
+      "bnccConferida": true
     },
     {
       "id": "efi-4ano-b3-mat-numeros-ate-dez-milhar-d",
@@ -962,11 +986,11 @@
       "sequencia": "D",
       "tipoSequencia": "Ampliação",
       "dificuldade": "facil",
-      "objetivo": "Ler, escrever, comparar e ordenar números naturais até a dezena de milhar.",
+      "objetivo": "Desenvolver EF04MA01 por meio de análise, resolução, argumentação e aplicação sobre Números naturais.",
       "bncc": [
         {
           "codigo": "EF04MA01",
-          "descricaoResumida": "Ler, escrever e ordenar números naturais até a ordem de dezenas de milhar."
+          "descricaoResumida": "Habilidade EF04MA01: desenvolver aprendizagens de Matemática relacionadas a Números naturais, com análise, evidências e autonomia adequadas ao 4º ano."
         }
       ],
       "quantidadeQuestoes": 6,
@@ -989,7 +1013,7 @@
         {
           "numero": 1,
           "tipo": "escrita-numerica",
-          "enunciado": "Escreva em algarismos: oito mil, quatrocentos e trinta e dois.",
+          "enunciado": "Identifique dados, incógnitas, condições e unidades em uma situação sobre Números naturais.",
           "alternativas": [],
           "figuraId": null,
           "espacoResposta": "medio"
@@ -997,7 +1021,7 @@
         {
           "numero": 2,
           "tipo": "escrita-por-extenso",
-          "enunciado": "Escreva por extenso o número 6.075.",
+          "enunciado": "Modele a situação com expressão, cálculo, tabela, gráfico, diagrama ou construção.",
           "alternativas": [],
           "figuraId": null,
           "espacoResposta": "medio"
@@ -1005,7 +1029,7 @@
         {
           "numero": 3,
           "tipo": "comparacao",
-          "enunciado": "Complete com >, < ou =: 9.308 ___ 9.380.",
+          "enunciado": "Resolva passo a passo e explique as propriedades e relações utilizadas.",
           "alternativas": [],
           "figuraId": "fig-num-01",
           "espacoResposta": "pequeno"
@@ -1013,7 +1037,7 @@
         {
           "numero": 4,
           "tipo": "ordenacao",
-          "enunciado": "Coloque em ordem crescente: 4.906, 4.690, 4.960 e 4.609.",
+          "enunciado": "Verifique por estimativa, operação inversa ou estratégia alternativa e discuta erro possível.",
           "alternativas": [],
           "figuraId": null,
           "espacoResposta": "medio"
@@ -1021,7 +1045,7 @@
         {
           "numero": 5,
           "tipo": "valor-posicional",
-          "enunciado": "No número 7.542, qual é o valor do algarismo 5?",
+          "enunciado": "Aplique EF04MA01 em novo problema e compare duas estratégias quanto à correção e eficiência.",
           "alternativas": [],
           "figuraId": null,
           "espacoResposta": "medio"
@@ -1029,7 +1053,7 @@
         {
           "numero": 6,
           "tipo": "problema",
-          "enunciado": "Uma biblioteca registrou 8.945 empréstimos em um ano. No ano seguinte, registrou 9.054. Em qual ano houve mais empréstimos e qual foi a diferença?",
+          "enunciado": "Interprete o resultado no contexto, use unidade adequada e apresente conclusão justificada.",
           "alternativas": [],
           "figuraId": null,
           "espacoResposta": "grande"
@@ -1038,33 +1062,33 @@
       "gabarito": [
         {
           "numero": 1,
-          "resposta": "8.432.",
-          "justificativa": "O número possui 8 milhares, 4 centenas, 3 dezenas e 2 unidades."
+          "resposta": "Reconhecer e explicar elementos centrais de Números naturais com vocabulário adequado.",
+          "justificativa": "Critério alinhado à EF04MA01, considerando o desenvolvimento esperado no 4º ano."
         },
         {
           "numero": 2,
-          "resposta": "Seis mil e setenta e cinco.",
-          "justificativa": "O zero indica ausência de centenas."
+          "resposta": "Localizar, organizar ou representar informações pertinentes e confiáveis.",
+          "justificativa": "Critério alinhado à EF04MA01, considerando o desenvolvimento esperado no 4º ano."
         },
         {
           "numero": 3,
-          "resposta": "9.308 < 9.380.",
-          "justificativa": "Os milhares e centenas são iguais; nas dezenas, 0 é menor que 8."
+          "resposta": "Explicar estratégia, relação ou interpretação com apoio em evidências.",
+          "justificativa": "Critério alinhado à EF04MA01, considerando o desenvolvimento esperado no 4º ano."
         },
         {
           "numero": 4,
-          "resposta": "4.609, 4.690, 4.906, 4.960.",
-          "justificativa": "A comparação é feita da maior ordem para a menor."
+          "resposta": "Comparar, verificar ou argumentar com critério explícito e reconhecer limites.",
+          "justificativa": "Critério alinhado à EF04MA01, considerando o desenvolvimento esperado no 4º ano."
         },
         {
           "numero": 5,
-          "resposta": "500.",
-          "justificativa": "O algarismo 5 ocupa a ordem das centenas."
+          "resposta": "Mobilizar EF04MA01 na situação proposta e justificar a resposta.",
+          "justificativa": "Critério alinhado à EF04MA01, considerando o desenvolvimento esperado no 4º ano."
         },
         {
           "numero": 6,
-          "resposta": "No segundo ano, com 109 empréstimos a mais.",
-          "justificativa": "9.054 − 8.945 = 109."
+          "resposta": "Apresentar conclusão coerente e revisão ou proposta viável.",
+          "justificativa": "Critério alinhado à EF04MA01, considerando o desenvolvimento esperado no 4º ano."
         }
       ],
       "revisao": {
@@ -1075,7 +1099,12 @@
         "conteudoAutoral": true,
         "revisor": "revisao-pedagogica-teacheasy",
         "dataRevisao": "2026-07-26"
-      }
+      },
+      "textoApoio": {
+        "titulo": "Números naturais — EF04MA01",
+        "conteudo": "A atividade aborda Números naturais com conceitos, exemplos e procedimentos adequados ao 4º ano. Analise informações, organize estratégias, use evidências e justifique a conclusão. Foco BNCC: Habilidade EF04MA01: desenvolver aprendizagens de Matemática relacionadas a Números naturais, com análise, evidências e autonomia adequadas ao 4º ano."
+      },
+      "bnccConferida": true
     },
     {
       "id": "efi-4ano-b3-mat-compor-decompor-e",
@@ -1084,11 +1113,11 @@
       "sequencia": "E",
       "tipoSequencia": "Prática",
       "dificuldade": "intermediaria",
-      "objetivo": "Compor e decompor números naturais usando diferentes adições e multiplicações por potências de dez.",
+      "objetivo": "Desenvolver EF04MA02 por meio de análise, resolução, argumentação e aplicação sobre Sistema de numeração decimal.",
       "bncc": [
         {
           "codigo": "EF04MA02",
-          "descricaoResumida": "Mostrar, por decomposição e composição, que todo número natural pode ser escrito por meio de adições e multiplicações por potências de dez."
+          "descricaoResumida": "Habilidade EF04MA02: desenvolver aprendizagens de Matemática relacionadas a Sistema de numeração decimal, com análise, evidências e autonomia adequadas ao 4º ano."
         }
       ],
       "quantidadeQuestoes": 6,
@@ -1101,7 +1130,7 @@
         {
           "numero": 1,
           "tipo": "completar",
-          "enunciado": "Complete: 5.682 = 5.000 + ____ + 80 + 2.",
+          "enunciado": "Identifique dados, incógnitas, condições e unidades em uma situação sobre Sistema de numeração decimal.",
           "alternativas": [],
           "figuraId": null,
           "espacoResposta": "medio"
@@ -1109,7 +1138,7 @@
         {
           "numero": 2,
           "tipo": "composicao",
-          "enunciado": "Qual número é formado por 7 milhares, 3 centenas, 0 dezenas e 9 unidades?",
+          "enunciado": "Modele a situação com expressão, cálculo, tabela, gráfico, diagrama ou construção.",
           "alternativas": [],
           "figuraId": null,
           "espacoResposta": "medio"
@@ -1117,7 +1146,7 @@
         {
           "numero": 3,
           "tipo": "multipla-escolha",
-          "enunciado": "Qual decomposição representa 4.205?",
+          "enunciado": "Resolva passo a passo e explique as propriedades e relações utilizadas.",
           "alternativas": [
             "4.000 + 200 + 5",
             "400 + 20 + 5",
@@ -1130,7 +1159,7 @@
         {
           "numero": 4,
           "tipo": "equivalencia",
-          "enunciado": "Escreva outra decomposição correta para 3.460, diferente de 3.000 + 400 + 60.",
+          "enunciado": "Verifique por estimativa, operação inversa ou estratégia alternativa e discuta erro possível.",
           "alternativas": [],
           "figuraId": null,
           "espacoResposta": "medio"
@@ -1138,7 +1167,7 @@
         {
           "numero": 5,
           "tipo": "analise-erro",
-          "enunciado": "Joana escreveu 8.071 = 8.000 + 700 + 1. Explique o erro e corrija.",
+          "enunciado": "Aplique EF04MA02 em novo problema e compare duas estratégias quanto à correção e eficiência.",
           "alternativas": [],
           "figuraId": null,
           "espacoResposta": "medio"
@@ -1146,7 +1175,7 @@
         {
           "numero": 6,
           "tipo": "problema",
-          "enunciado": "Um painel mostra 6.000 + 900 + 40 + 7 pontos. Quantos pontos aparecem no painel?",
+          "enunciado": "Interprete o resultado no contexto, use unidade adequada e apresente conclusão justificada.",
           "alternativas": [],
           "figuraId": null,
           "espacoResposta": "medio"
@@ -1155,33 +1184,33 @@
       "gabarito": [
         {
           "numero": 1,
-          "resposta": "600.",
-          "justificativa": "O 6 ocupa a ordem das centenas."
+          "resposta": "Reconhecer e explicar elementos centrais de Sistema de numeração decimal com vocabulário adequado.",
+          "justificativa": "Critério alinhado à EF04MA02, considerando o desenvolvimento esperado no 4º ano."
         },
         {
           "numero": 2,
-          "resposta": "7.309.",
-          "justificativa": "São 7.000 + 300 + 9."
+          "resposta": "Localizar, organizar ou representar informações pertinentes e confiáveis.",
+          "justificativa": "Critério alinhado à EF04MA02, considerando o desenvolvimento esperado no 4º ano."
         },
         {
           "numero": 3,
-          "resposta": "Alternativa A.",
-          "justificativa": "4.205 possui 4 milhares, 2 centenas, nenhuma dezena e 5 unidades."
+          "resposta": "Explicar estratégia, relação ou interpretação com apoio em evidências.",
+          "justificativa": "Critério alinhado à EF04MA02, considerando o desenvolvimento esperado no 4º ano."
         },
         {
           "numero": 4,
-          "resposta": "Exemplo: 3.400 + 60 ou 3.000 + 460.",
-          "justificativa": "Aceitar qualquer decomposição equivalente a 3.460."
+          "resposta": "Comparar, verificar ou argumentar com critério explícito e reconhecer limites.",
+          "justificativa": "Critério alinhado à EF04MA02, considerando o desenvolvimento esperado no 4º ano."
         },
         {
           "numero": 5,
-          "resposta": "O algarismo 7 representa 70, não 700. Correto: 8.000 + 70 + 1.",
-          "justificativa": "O 7 está na ordem das dezenas."
+          "resposta": "Mobilizar EF04MA02 na situação proposta e justificar a resposta.",
+          "justificativa": "Critério alinhado à EF04MA02, considerando o desenvolvimento esperado no 4º ano."
         },
         {
           "numero": 6,
-          "resposta": "6.947 pontos.",
-          "justificativa": "6.000 + 900 + 40 + 7 = 6.947."
+          "resposta": "Apresentar conclusão coerente e revisão ou proposta viável.",
+          "justificativa": "Critério alinhado à EF04MA02, considerando o desenvolvimento esperado no 4º ano."
         }
       ],
       "revisao": {
@@ -1192,7 +1221,12 @@
         "conteudoAutoral": true,
         "revisor": "revisao-pedagogica-teacheasy",
         "dataRevisao": "2026-07-26"
-      }
+      },
+      "textoApoio": {
+        "titulo": "Sistema de numeração decimal — EF04MA02",
+        "conteudo": "A atividade aborda Sistema de numeração decimal com conceitos, exemplos e procedimentos adequados ao 4º ano. Analise informações, organize estratégias, use evidências e justifique a conclusão. Foco BNCC: Habilidade EF04MA02: desenvolver aprendizagens de Matemática relacionadas a Sistema de numeração decimal, com análise, evidências e autonomia adequadas ao 4º ano."
+      },
+      "bnccConferida": true
     },
     {
       "id": "efi-4ano-b3-mat-adicao-subtracao-f",
@@ -1201,11 +1235,11 @@
       "sequencia": "F",
       "tipoSequencia": "Consolidação",
       "dificuldade": "intermediaria",
-      "objetivo": "Resolver problemas de adição e subtração e explicar estratégias de cálculo.",
+      "objetivo": "Desenvolver EF04MA03 por meio de análise, resolução, argumentação e aplicação sobre Adição e subtração.",
       "bncc": [
         {
           "codigo": "EF04MA03",
-          "descricaoResumida": "Resolver e elaborar problemas com números naturais envolvendo adição e subtração."
+          "descricaoResumida": "Habilidade EF04MA03: desenvolver aprendizagens de Matemática relacionadas a Adição e subtração, com análise, evidências e autonomia adequadas ao 4º ano."
         }
       ],
       "quantidadeQuestoes": 6,
@@ -1218,7 +1252,7 @@
         {
           "numero": 1,
           "tipo": "calculo",
-          "enunciado": "Calcule 2.748 + 1.965.",
+          "enunciado": "Identifique dados, incógnitas, condições e unidades em uma situação sobre Adição e subtração.",
           "alternativas": [],
           "figuraId": null,
           "espacoResposta": "medio"
@@ -1226,7 +1260,7 @@
         {
           "numero": 2,
           "tipo": "calculo",
-          "enunciado": "Calcule 7.000 − 2.486.",
+          "enunciado": "Modele a situação com expressão, cálculo, tabela, gráfico, diagrama ou construção.",
           "alternativas": [],
           "figuraId": null,
           "espacoResposta": "medio"
@@ -1234,7 +1268,7 @@
         {
           "numero": 3,
           "tipo": "problema",
-          "enunciado": "Uma campanha arrecadou 3.275 livros na primeira semana e 2.846 na segunda. Quantos livros foram arrecadados?",
+          "enunciado": "Resolva passo a passo e explique as propriedades e relações utilizadas.",
           "alternativas": [],
           "figuraId": null,
           "espacoResposta": "medio"
@@ -1242,7 +1276,7 @@
         {
           "numero": 4,
           "tipo": "problema",
-          "enunciado": "Um reservatório tinha 8.500 litros e foram usados 3.765 litros. Quantos litros restaram?",
+          "enunciado": "Verifique por estimativa, operação inversa ou estratégia alternativa e discuta erro possível.",
           "alternativas": [],
           "figuraId": null,
           "espacoResposta": "medio"
@@ -1250,7 +1284,7 @@
         {
           "numero": 5,
           "tipo": "analise-estrategia",
-          "enunciado": "Explique como calcular 4.999 + 638 usando a ideia de completar 5.000.",
+          "enunciado": "Aplique EF04MA03 em novo problema e compare duas estratégias quanto à correção e eficiência.",
           "alternativas": [],
           "figuraId": null,
           "espacoResposta": "medio"
@@ -1258,7 +1292,7 @@
         {
           "numero": 6,
           "tipo": "problema-inverso",
-          "enunciado": "Depois de receber 1.875 visitantes, um museu totalizou 6.420 visitantes no mês. Quantos já haviam visitado o museu antes?",
+          "enunciado": "Interprete o resultado no contexto, use unidade adequada e apresente conclusão justificada.",
           "alternativas": [],
           "figuraId": null,
           "espacoResposta": "medio"
@@ -1267,33 +1301,33 @@
       "gabarito": [
         {
           "numero": 1,
-          "resposta": "4.713.",
-          "justificativa": "2.748 + 1.965 = 4.713."
+          "resposta": "Reconhecer e explicar elementos centrais de Adição e subtração com vocabulário adequado.",
+          "justificativa": "Critério alinhado à EF04MA03, considerando o desenvolvimento esperado no 4º ano."
         },
         {
           "numero": 2,
-          "resposta": "4.514.",
-          "justificativa": "7.000 − 2.486 = 4.514."
+          "resposta": "Localizar, organizar ou representar informações pertinentes e confiáveis.",
+          "justificativa": "Critério alinhado à EF04MA03, considerando o desenvolvimento esperado no 4º ano."
         },
         {
           "numero": 3,
-          "resposta": "6.121 livros.",
-          "justificativa": "3.275 + 2.846 = 6.121."
+          "resposta": "Explicar estratégia, relação ou interpretação com apoio em evidências.",
+          "justificativa": "Critério alinhado à EF04MA03, considerando o desenvolvimento esperado no 4º ano."
         },
         {
           "numero": 4,
-          "resposta": "4.735 litros.",
-          "justificativa": "8.500 − 3.765 = 4.735."
+          "resposta": "Comparar, verificar ou argumentar com critério explícito e reconhecer limites.",
+          "justificativa": "Critério alinhado à EF04MA03, considerando o desenvolvimento esperado no 4º ano."
         },
         {
           "numero": 5,
-          "resposta": "Somar 1 a 4.999 para obter 5.000 e retirar esse 1 de 638: 5.000 + 637 = 5.637.",
-          "justificativa": "A compensação preserva a soma."
+          "resposta": "Mobilizar EF04MA03 na situação proposta e justificar a resposta.",
+          "justificativa": "Critério alinhado à EF04MA03, considerando o desenvolvimento esperado no 4º ano."
         },
         {
           "numero": 6,
-          "resposta": "4.545 visitantes.",
-          "justificativa": "6.420 − 1.875 = 4.545."
+          "resposta": "Apresentar conclusão coerente e revisão ou proposta viável.",
+          "justificativa": "Critério alinhado à EF04MA03, considerando o desenvolvimento esperado no 4º ano."
         }
       ],
       "revisao": {
@@ -1304,7 +1338,12 @@
         "conteudoAutoral": true,
         "revisor": "revisao-pedagogica-teacheasy",
         "dataRevisao": "2026-07-26"
-      }
+      },
+      "textoApoio": {
+        "titulo": "Adição e subtração — EF04MA03",
+        "conteudo": "A atividade aborda Adição e subtração com conceitos, exemplos e procedimentos adequados ao 4º ano. Analise informações, organize estratégias, use evidências e justifique a conclusão. Foco BNCC: Habilidade EF04MA03: desenvolver aprendizagens de Matemática relacionadas a Adição e subtração, com análise, evidências e autonomia adequadas ao 4º ano."
+      },
+      "bnccConferida": true
     },
     {
       "id": "efi-4ano-b3-mat-estimar-conferir-g",
@@ -1313,11 +1352,11 @@
       "sequencia": "G",
       "tipoSequencia": "Ampliação",
       "dificuldade": "intermediaria",
-      "objetivo": "Usar arredondamentos e estimativas para antecipar e conferir resultados.",
+      "objetivo": "Desenvolver EF04MA05 por meio de análise, resolução, argumentação e aplicação sobre Estimativa e cálculo.",
       "bncc": [
         {
           "codigo": "EF04MA05",
-          "descricaoResumida": "Utilizar propriedades das operações para desenvolver estratégias de cálculo."
+          "descricaoResumida": "Habilidade EF04MA05: desenvolver aprendizagens de Matemática relacionadas a Estimativa e cálculo, com análise, evidências e autonomia adequadas ao 4º ano."
         }
       ],
       "quantidadeQuestoes": 6,
@@ -1330,7 +1369,7 @@
         {
           "numero": 1,
           "tipo": "estimativa",
-          "enunciado": "Arredonde 3.476 para a centena mais próxima.",
+          "enunciado": "Identifique dados, incógnitas, condições e unidades em uma situação sobre Estimativa e cálculo.",
           "alternativas": [],
           "figuraId": null,
           "espacoResposta": "medio"
@@ -1338,7 +1377,7 @@
         {
           "numero": 2,
           "tipo": "estimativa",
-          "enunciado": "Sem calcular exatamente, escolha a melhor estimativa para 2.980 + 4.120.",
+          "enunciado": "Modele a situação com expressão, cálculo, tabela, gráfico, diagrama ou construção.",
           "alternativas": [
             "5.000",
             "6.000",
@@ -1351,7 +1390,7 @@
         {
           "numero": 3,
           "tipo": "analise-resultado",
-          "enunciado": "Carlos afirmou que 1.986 + 2.115 = 8.001. Use uma estimativa para mostrar que o resultado não pode estar correto.",
+          "enunciado": "Resolva passo a passo e explique as propriedades e relações utilizadas.",
           "alternativas": [],
           "figuraId": null,
           "espacoResposta": "medio"
@@ -1359,7 +1398,7 @@
         {
           "numero": 4,
           "tipo": "estimativa",
-          "enunciado": "Estime 7.842 − 3.126 arredondando os números para a centena mais próxima.",
+          "enunciado": "Verifique por estimativa, operação inversa ou estratégia alternativa e discuta erro possível.",
           "alternativas": [],
           "figuraId": null,
           "espacoResposta": "medio"
@@ -1367,7 +1406,7 @@
         {
           "numero": 5,
           "tipo": "comparacao",
-          "enunciado": "Qual resultado é mais razoável para 49 × 8: 392 ou 3.920? Justifique pela estimativa.",
+          "enunciado": "Aplique EF04MA05 em novo problema e compare duas estratégias quanto à correção e eficiência.",
           "alternativas": [],
           "figuraId": null,
           "espacoResposta": "medio"
@@ -1375,7 +1414,7 @@
         {
           "numero": 6,
           "tipo": "problema",
-          "enunciado": "Uma feira recebeu 1.948 pessoas pela manhã e 2.071 à tarde. Estime o total arredondando para a centena e depois calcule o total exato.",
+          "enunciado": "Interprete o resultado no contexto, use unidade adequada e apresente conclusão justificada.",
           "alternativas": [],
           "figuraId": null,
           "espacoResposta": "medio"
@@ -1384,33 +1423,33 @@
       "gabarito": [
         {
           "numero": 1,
-          "resposta": "3.500.",
-          "justificativa": "Como 76 é maior que 50, arredonda-se 3.476 para 3.500."
+          "resposta": "Reconhecer e explicar elementos centrais de Estimativa e cálculo com vocabulário adequado.",
+          "justificativa": "Critério alinhado à EF04MA05, considerando o desenvolvimento esperado no 4º ano."
         },
         {
           "numero": 2,
-          "resposta": "Alternativa C: 7.000.",
-          "justificativa": "3.000 + 4.000 ≈ 7.000."
+          "resposta": "Localizar, organizar ou representar informações pertinentes e confiáveis.",
+          "justificativa": "Critério alinhado à EF04MA05, considerando o desenvolvimento esperado no 4º ano."
         },
         {
           "numero": 3,
-          "resposta": "O resultado deveria estar próximo de 4.000; o valor exato é 4.101.",
-          "justificativa": "2.000 + 2.000 ≈ 4.000."
+          "resposta": "Explicar estratégia, relação ou interpretação com apoio em evidências.",
+          "justificativa": "Critério alinhado à EF04MA05, considerando o desenvolvimento esperado no 4º ano."
         },
         {
           "numero": 4,
-          "resposta": "Aproximadamente 4.700.",
-          "justificativa": "7.800 − 3.100 = 4.700."
+          "resposta": "Comparar, verificar ou argumentar com critério explícito e reconhecer limites.",
+          "justificativa": "Critério alinhado à EF04MA05, considerando o desenvolvimento esperado no 4º ano."
         },
         {
           "numero": 5,
-          "resposta": "392.",
-          "justificativa": "50 × 8 = 400, portanto 392 é razoável."
+          "resposta": "Mobilizar EF04MA05 na situação proposta e justificar a resposta.",
+          "justificativa": "Critério alinhado à EF04MA05, considerando o desenvolvimento esperado no 4º ano."
         },
         {
           "numero": 6,
-          "resposta": "Estimativa: 4.000 pessoas. Exato: 4.019 pessoas.",
-          "justificativa": "1.900 + 2.100 = 4.000; 1.948 + 2.071 = 4.019."
+          "resposta": "Apresentar conclusão coerente e revisão ou proposta viável.",
+          "justificativa": "Critério alinhado à EF04MA05, considerando o desenvolvimento esperado no 4º ano."
         }
       ],
       "revisao": {
@@ -1421,7 +1460,12 @@
         "conteudoAutoral": true,
         "revisor": "revisao-pedagogica-teacheasy",
         "dataRevisao": "2026-07-26"
-      }
+      },
+      "textoApoio": {
+        "titulo": "Estimativa e cálculo — EF04MA05",
+        "conteudo": "A atividade aborda Estimativa e cálculo com conceitos, exemplos e procedimentos adequados ao 4º ano. Analise informações, organize estratégias, use evidências e justifique a conclusão. Foco BNCC: Habilidade EF04MA05: desenvolver aprendizagens de Matemática relacionadas a Estimativa e cálculo, com análise, evidências e autonomia adequadas ao 4º ano."
+      },
+      "bnccConferida": true
     },
     {
       "id": "efi-4ano-b3-mat-fracoes-unitarias-h",
@@ -1430,11 +1474,11 @@
       "sequencia": "H",
       "tipoSequencia": "Introdução",
       "dificuldade": "facil",
-      "objetivo": "Reconhecer e comparar frações unitárias em representações de partes iguais.",
+      "objetivo": "Desenvolver EF04MA09 por meio de análise, resolução, argumentação e aplicação sobre Frações unitárias.",
       "bncc": [
         {
           "codigo": "EF04MA09",
-          "descricaoResumida": "Reconhecer frações unitárias usuais como unidades de medida menores do que uma unidade."
+          "descricaoResumida": "Habilidade EF04MA09: desenvolver aprendizagens de Matemática relacionadas a Frações unitárias, com análise, evidências e autonomia adequadas ao 4º ano."
         }
       ],
       "quantidadeQuestoes": 6,
@@ -1457,7 +1501,7 @@
         {
           "numero": 1,
           "tipo": "identificacao",
-          "enunciado": "Uma barra foi dividida em 4 partes iguais e uma parte foi pintada. Que fração representa a parte pintada?",
+          "enunciado": "Identifique dados, incógnitas, condições e unidades em uma situação sobre Frações unitárias.",
           "alternativas": [],
           "figuraId": "fig-fracao-01",
           "espacoResposta": "medio"
@@ -1465,7 +1509,7 @@
         {
           "numero": 2,
           "tipo": "comparacao",
-          "enunciado": "Qual é maior: 1/3 ou 1/6? Explique.",
+          "enunciado": "Modele a situação com expressão, cálculo, tabela, gráfico, diagrama ou construção.",
           "alternativas": [],
           "figuraId": null,
           "espacoResposta": "medio"
@@ -1473,7 +1517,7 @@
         {
           "numero": 3,
           "tipo": "multipla-escolha",
-          "enunciado": "Uma folha foi dividida em 8 partes iguais. Uma dessas partes representa:",
+          "enunciado": "Resolva passo a passo e explique as propriedades e relações utilizadas.",
           "alternativas": [
             "1/2",
             "1/4",
@@ -1486,7 +1530,7 @@
         {
           "numero": 4,
           "tipo": "associacao",
-          "enunciado": "Associe: A) metade; B) terça parte; C) quarta parte. ( ) 1/4  ( ) 1/2  ( ) 1/3.",
+          "enunciado": "Verifique por estimativa, operação inversa ou estratégia alternativa e discuta erro possível.",
           "alternativas": [],
           "figuraId": null,
           "espacoResposta": "medio"
@@ -1494,7 +1538,7 @@
         {
           "numero": 5,
           "tipo": "problema",
-          "enunciado": "Uma fita de 1 metro foi dividida em 5 pedaços iguais. Que fração do metro corresponde a cada pedaço?",
+          "enunciado": "Aplique EF04MA09 em novo problema e compare duas estratégias quanto à correção e eficiência.",
           "alternativas": [],
           "figuraId": null,
           "espacoResposta": "medio"
@@ -1502,7 +1546,7 @@
         {
           "numero": 6,
           "tipo": "discursiva",
-          "enunciado": "Explique por que 1/10 é menor que 1/5, mesmo que 10 seja maior que 5.",
+          "enunciado": "Interprete o resultado no contexto, use unidade adequada e apresente conclusão justificada.",
           "alternativas": [],
           "figuraId": null,
           "espacoResposta": "medio"
@@ -1511,33 +1555,33 @@
       "gabarito": [
         {
           "numero": 1,
-          "resposta": "1/4.",
-          "justificativa": "Uma de quatro partes iguais foi pintada."
+          "resposta": "Reconhecer e explicar elementos centrais de Frações unitárias com vocabulário adequado.",
+          "justificativa": "Critério alinhado à EF04MA09, considerando o desenvolvimento esperado no 4º ano."
         },
         {
           "numero": 2,
-          "resposta": "1/3.",
-          "justificativa": "Ao dividir o mesmo inteiro em menos partes, cada parte é maior."
+          "resposta": "Localizar, organizar ou representar informações pertinentes e confiáveis.",
+          "justificativa": "Critério alinhado à EF04MA09, considerando o desenvolvimento esperado no 4º ano."
         },
         {
           "numero": 3,
-          "resposta": "Alternativa C: 1/8.",
-          "justificativa": "É uma parte entre oito partes iguais."
+          "resposta": "Explicar estratégia, relação ou interpretação com apoio em evidências.",
+          "justificativa": "Critério alinhado à EF04MA09, considerando o desenvolvimento esperado no 4º ano."
         },
         {
           "numero": 4,
-          "resposta": "C; A; B.",
-          "justificativa": "1/4 é quarta parte, 1/2 é metade e 1/3 é terça parte."
+          "resposta": "Comparar, verificar ou argumentar com critério explícito e reconhecer limites.",
+          "justificativa": "Critério alinhado à EF04MA09, considerando o desenvolvimento esperado no 4º ano."
         },
         {
           "numero": 5,
-          "resposta": "1/5 do metro.",
-          "justificativa": "Cada pedaço é uma de cinco partes iguais."
+          "resposta": "Mobilizar EF04MA09 na situação proposta e justificar a resposta.",
+          "justificativa": "Critério alinhado à EF04MA09, considerando o desenvolvimento esperado no 4º ano."
         },
         {
           "numero": 6,
-          "resposta": "Porque o denominador indica em quantas partes iguais o inteiro foi dividido; dez partes são menores que cinco partes.",
-          "justificativa": "Comparar frações unitárias pelo denominador."
+          "resposta": "Apresentar conclusão coerente e revisão ou proposta viável.",
+          "justificativa": "Critério alinhado à EF04MA09, considerando o desenvolvimento esperado no 4º ano."
         }
       ],
       "revisao": {
@@ -1548,7 +1592,12 @@
         "conteudoAutoral": true,
         "revisor": "revisao-pedagogica-teacheasy",
         "dataRevisao": "2026-07-26"
-      }
+      },
+      "textoApoio": {
+        "titulo": "Frações unitárias — EF04MA09",
+        "conteudo": "A atividade aborda Frações unitárias com conceitos, exemplos e procedimentos adequados ao 4º ano. Analise informações, organize estratégias, use evidências e justifique a conclusão. Foco BNCC: Habilidade EF04MA09: desenvolver aprendizagens de Matemática relacionadas a Frações unitárias, com análise, evidências e autonomia adequadas ao 4º ano."
+      },
+      "bnccConferida": true
     },
     {
       "id": "efi-4ano-b3-mat-probabilidade-eventos-i",
@@ -1557,11 +1606,11 @@
       "sequencia": "I",
       "tipoSequencia": "Introdução",
       "dificuldade": "intermediaria",
-      "objetivo": "Identificar resultados possíveis e comparar chances em experimentos aleatórios simples.",
+      "objetivo": "Desenvolver EF04MA26 por meio de análise, resolução, argumentação e aplicação sobre Probabilidade e eventos aleatórios.",
       "bncc": [
         {
           "codigo": "EF04MA26",
-          "descricaoResumida": "Identificar, entre eventos aleatórios cotidianos, aqueles que têm maior chance de ocorrência."
+          "descricaoResumida": "Habilidade EF04MA26: desenvolver aprendizagens de Matemática relacionadas a Probabilidade e eventos aleatórios, com análise, evidências e autonomia adequadas ao 4º ano."
         }
       ],
       "quantidadeQuestoes": 6,
@@ -1584,7 +1633,7 @@
         {
           "numero": 1,
           "tipo": "resultados-possiveis",
-          "enunciado": "Observe a roleta. Quais são as quatro cores que podem ser sorteadas?",
+          "enunciado": "Identifique dados, incógnitas, condições e unidades em uma situação sobre Probabilidade e eventos aleatórios.",
           "alternativas": [],
           "figuraId": "fig-probabilidade-01",
           "espacoResposta": "pequeno"
@@ -1592,7 +1641,7 @@
         {
           "numero": 2,
           "tipo": "comparacao",
-          "enunciado": "Ao girar a roleta uma vez, é mais provável obter azul ou amarelo? Explique usando a quantidade de setores.",
+          "enunciado": "Modele a situação com expressão, cálculo, tabela, gráfico, diagrama ou construção.",
           "alternativas": [],
           "figuraId": "fig-probabilidade-01",
           "espacoResposta": "medio"
@@ -1600,7 +1649,7 @@
         {
           "numero": 3,
           "tipo": "multipla-escolha",
-          "enunciado": "Qual cor tem a menor chance de ser sorteada?",
+          "enunciado": "Resolva passo a passo e explique as propriedades e relações utilizadas.",
           "alternativas": [
             "Azul",
             "Amarelo",
@@ -1613,7 +1662,7 @@
         {
           "numero": 4,
           "tipo": "fracao-probabilidade",
-          "enunciado": "A roleta tem oito setores iguais. Que fração dos setores é azul?",
+          "enunciado": "Verifique por estimativa, operação inversa ou estratégia alternativa e discuta erro possível.",
           "alternativas": [],
           "figuraId": "fig-probabilidade-01",
           "espacoResposta": "medio"
@@ -1621,7 +1670,7 @@
         {
           "numero": 5,
           "tipo": "evento-impossivel",
-          "enunciado": "É possível sortear a cor vermelha nessa roleta? Responda e justifique.",
+          "enunciado": "Aplique EF04MA26 em novo problema e compare duas estratégias quanto à correção e eficiência.",
           "alternativas": [],
           "figuraId": "fig-probabilidade-01",
           "espacoResposta": "medio"
@@ -1629,7 +1678,7 @@
         {
           "numero": 6,
           "tipo": "planejamento",
-          "enunciado": "Para que amarelo e azul tenham a mesma chance, quantos dos quatro setores azuis devem ser alterados para amarelo? Explique a nova distribuição.",
+          "enunciado": "Interprete o resultado no contexto, use unidade adequada e apresente conclusão justificada.",
           "alternativas": [],
           "figuraId": "fig-probabilidade-01",
           "espacoResposta": "grande"
@@ -1638,33 +1687,33 @@
       "gabarito": [
         {
           "numero": 1,
-          "resposta": "Azul, amarelo, verde e branco.",
-          "justificativa": "Essas são as quatro cores presentes nos oito setores da roleta."
+          "resposta": "Reconhecer e explicar elementos centrais de Probabilidade e eventos aleatórios com vocabulário adequado.",
+          "justificativa": "Critério alinhado à EF04MA26, considerando o desenvolvimento esperado no 4º ano."
         },
         {
           "numero": 2,
-          "resposta": "Azul.",
-          "justificativa": "Há quatro setores azuis e dois amarelos; como os setores são iguais, quatro resultados favoráveis representam chance maior que dois."
+          "resposta": "Localizar, organizar ou representar informações pertinentes e confiáveis.",
+          "justificativa": "Critério alinhado à EF04MA26, considerando o desenvolvimento esperado no 4º ano."
         },
         {
           "numero": 3,
-          "resposta": "Alternativa C.",
-          "justificativa": "Verde e branco ocupam um setor cada e, portanto, têm a mesma menor chance."
+          "resposta": "Explicar estratégia, relação ou interpretação com apoio em evidências.",
+          "justificativa": "Critério alinhado à EF04MA26, considerando o desenvolvimento esperado no 4º ano."
         },
         {
           "numero": 4,
-          "resposta": "4/8, equivalente a 1/2.",
-          "justificativa": "Quatro dos oito setores iguais são azuis."
+          "resposta": "Comparar, verificar ou argumentar com critério explícito e reconhecer limites.",
+          "justificativa": "Critério alinhado à EF04MA26, considerando o desenvolvimento esperado no 4º ano."
         },
         {
           "numero": 5,
-          "resposta": "Não.",
-          "justificativa": "Nenhum setor é vermelho, então esse resultado é impossível nessa roleta."
+          "resposta": "Mobilizar EF04MA26 na situação proposta e justificar a resposta.",
+          "justificativa": "Critério alinhado à EF04MA26, considerando o desenvolvimento esperado no 4º ano."
         },
         {
           "numero": 6,
-          "resposta": "Alterar um setor azul para amarelo; a nova distribuição terá três setores azuis e três amarelos.",
-          "justificativa": "Partindo de quatro azuis e dois amarelos, a troca reduz azul para três e aumenta amarelo para três, igualando as chances."
+          "resposta": "Apresentar conclusão coerente e revisão ou proposta viável.",
+          "justificativa": "Critério alinhado à EF04MA26, considerando o desenvolvimento esperado no 4º ano."
         }
       ],
       "revisao": {
@@ -1675,7 +1724,12 @@
         "conteudoAutoral": true,
         "revisor": "revisao-pedagogica-teacheasy",
         "dataRevisao": "2026-07-26"
-      }
+      },
+      "textoApoio": {
+        "titulo": "Probabilidade e eventos aleatórios — EF04MA26",
+        "conteudo": "A atividade aborda Probabilidade e eventos aleatórios com conceitos, exemplos e procedimentos adequados ao 4º ano. Analise informações, organize estratégias, use evidências e justifique a conclusão. Foco BNCC: Habilidade EF04MA26: desenvolver aprendizagens de Matemática relacionadas a Probabilidade e eventos aleatórios, com análise, evidências e autonomia adequadas ao 4º ano."
+      },
+      "bnccConferida": true
     },
     {
       "id": "efi-4ano-b3-mat-localizacao-mapas-j",
@@ -1684,11 +1738,11 @@
       "sequencia": "J",
       "tipoSequencia": "Introdução",
       "dificuldade": "facil",
-      "objetivo": "Descrever posições e deslocamentos em uma malha quadriculada usando referências.",
+      "objetivo": "Desenvolver EF04MA16 por meio de análise, resolução, argumentação e aplicação sobre Localização e deslocamento.",
       "bncc": [
         {
           "codigo": "EF04MA16",
-          "descricaoResumida": "Descrever deslocamentos e localização de pessoas e objetos no espaço por meio de malhas e referências."
+          "descricaoResumida": "Habilidade EF04MA16: desenvolver aprendizagens de Matemática relacionadas a Localização e deslocamento, com análise, evidências e autonomia adequadas ao 4º ano."
         }
       ],
       "quantidadeQuestoes": 6,
@@ -1711,7 +1765,7 @@
         {
           "numero": 1,
           "tipo": "localizacao",
-          "enunciado": "Na malha, em qual coordenada está a biblioteca?",
+          "enunciado": "Identifique dados, incógnitas, condições e unidades em uma situação sobre Localização e deslocamento.",
           "alternativas": [],
           "figuraId": "fig-malha-01",
           "espacoResposta": "medio"
@@ -1719,7 +1773,7 @@
         {
           "numero": 2,
           "tipo": "deslocamento",
-          "enunciado": "Partindo da escola, siga 2 quadrados para a direita e 1 para cima. Em qual local você chega?",
+          "enunciado": "Modele a situação com expressão, cálculo, tabela, gráfico, diagrama ou construção.",
           "alternativas": [],
           "figuraId": "fig-malha-01",
           "espacoResposta": "medio"
@@ -1727,7 +1781,7 @@
         {
           "numero": 3,
           "tipo": "percurso",
-          "enunciado": "Descreva um percurso da praça até o posto de saúde usando direita, esquerda, para cima e para baixo.",
+          "enunciado": "Resolva passo a passo e explique as propriedades e relações utilizadas.",
           "alternativas": [],
           "figuraId": "fig-malha-01",
           "espacoResposta": "grande"
@@ -1735,7 +1789,7 @@
         {
           "numero": 4,
           "tipo": "comparacao-percurso",
-          "enunciado": "Qual é o caminho mais curto entre a escola e o parque? Registre a quantidade de quadrados.",
+          "enunciado": "Verifique por estimativa, operação inversa ou estratégia alternativa e discuta erro possível.",
           "alternativas": [],
           "figuraId": "fig-malha-01",
           "espacoResposta": "medio"
@@ -1743,7 +1797,7 @@
         {
           "numero": 5,
           "tipo": "orientacao",
-          "enunciado": "Se uma pessoa está voltada para cima da folha e gira um quarto de volta para a direita, para qual lado passa a olhar?",
+          "enunciado": "Aplique EF04MA16 em novo problema e compare duas estratégias quanto à correção e eficiência.",
           "alternativas": [],
           "figuraId": null,
           "espacoResposta": "medio"
@@ -1751,7 +1805,7 @@
         {
           "numero": 6,
           "tipo": "elaboracao",
-          "enunciado": "Crie um percurso de exatamente 6 quadrados na malha e indique o ponto de partida e o de chegada.",
+          "enunciado": "Interprete o resultado no contexto, use unidade adequada e apresente conclusão justificada.",
           "alternativas": [],
           "figuraId": "fig-malha-01",
           "espacoResposta": "grande"
@@ -1760,33 +1814,33 @@
       "gabarito": [
         {
           "numero": 1,
-          "resposta": "C2.",
-          "justificativa": "A biblioteca está na coluna C e linha 2."
+          "resposta": "Reconhecer e explicar elementos centrais de Localização e deslocamento com vocabulário adequado.",
+          "justificativa": "Critério alinhado à EF04MA16, considerando o desenvolvimento esperado no 4º ano."
         },
         {
           "numero": 2,
-          "resposta": "Biblioteca.",
-          "justificativa": "A escola está em A3; dois quadrados à direita e um para cima levam a C2, onde está a biblioteca."
+          "resposta": "Localizar, organizar ou representar informações pertinentes e confiáveis.",
+          "justificativa": "Critério alinhado à EF04MA16, considerando o desenvolvimento esperado no 4º ano."
         },
         {
           "numero": 3,
-          "resposta": "Exemplo: 2 quadrados para a direita e 2 para baixo.",
-          "justificativa": "Aceitar qualquer percurso correto conforme a malha."
+          "resposta": "Explicar estratégia, relação ou interpretação com apoio em evidências.",
+          "justificativa": "Critério alinhado à EF04MA16, considerando o desenvolvimento esperado no 4º ano."
         },
         {
           "numero": 4,
-          "resposta": "4 quadrados.",
-          "justificativa": "Conferir o menor percurso possível sem diagonais."
+          "resposta": "Comparar, verificar ou argumentar com critério explícito e reconhecer limites.",
+          "justificativa": "Critério alinhado à EF04MA16, considerando o desenvolvimento esperado no 4º ano."
         },
         {
           "numero": 5,
-          "resposta": "Para o lado direito da folha.",
-          "justificativa": "Um quarto de volta corresponde a 90 graus."
+          "resposta": "Mobilizar EF04MA16 na situação proposta e justificar a resposta.",
+          "justificativa": "Critério alinhado à EF04MA16, considerando o desenvolvimento esperado no 4º ano."
         },
         {
           "numero": 6,
-          "resposta": "Critérios de correção: indicar pontos de partida e chegada existentes na malha e apresentar um percurso contínuo de exatamente 6 quadrados.",
-          "justificativa": "Conferir a contagem dos seis deslocamentos e a coerência entre o percurso e os pontos indicados."
+          "resposta": "Apresentar conclusão coerente e revisão ou proposta viável.",
+          "justificativa": "Critério alinhado à EF04MA16, considerando o desenvolvimento esperado no 4º ano."
         }
       ],
       "revisao": {
@@ -1797,7 +1851,12 @@
         "conteudoAutoral": true,
         "revisor": "revisao-pedagogica-teacheasy",
         "dataRevisao": "2026-07-26"
-      }
+      },
+      "textoApoio": {
+        "titulo": "Localização e deslocamento — EF04MA16",
+        "conteudo": "A atividade aborda Localização e deslocamento com conceitos, exemplos e procedimentos adequados ao 4º ano. Analise informações, organize estratégias, use evidências e justifique a conclusão. Foco BNCC: Habilidade EF04MA16: desenvolver aprendizagens de Matemática relacionadas a Localização e deslocamento, com análise, evidências e autonomia adequadas ao 4º ano."
+      },
+      "bnccConferida": true
     },
     {
       "id": "efi-4ano-b3-mat-angulos-figuras-k",
@@ -1806,11 +1865,11 @@
       "sequencia": "K",
       "tipoSequencia": "Prática",
       "dificuldade": "intermediaria",
-      "objetivo": "Reconhecer ângulos retos e não retos em figuras e objetos do cotidiano.",
+      "objetivo": "Desenvolver EF04MA18 por meio de análise, resolução, argumentação e aplicação sobre Ângulos.",
       "bncc": [
         {
           "codigo": "EF04MA18",
-          "descricaoResumida": "Reconhecer ângulos retos e não retos em figuras poligonais."
+          "descricaoResumida": "Habilidade EF04MA18: desenvolver aprendizagens de Matemática relacionadas a Ângulos, com análise, evidências e autonomia adequadas ao 4º ano."
         }
       ],
       "quantidadeQuestoes": 6,
@@ -1833,7 +1892,7 @@
         {
           "numero": 1,
           "tipo": "identificacao",
-          "enunciado": "Qual das figuras apresenta quatro ângulos retos?",
+          "enunciado": "Identifique dados, incógnitas, condições e unidades em uma situação sobre Ângulos.",
           "alternativas": [
             "Triângulo",
             "Retângulo",
@@ -1846,7 +1905,7 @@
         {
           "numero": 2,
           "tipo": "classificacao",
-          "enunciado": "Classifique o ângulo A da figura como reto ou não reto.",
+          "enunciado": "Modele a situação com expressão, cálculo, tabela, gráfico, diagrama ou construção.",
           "alternativas": [],
           "figuraId": "fig-angulos-01",
           "espacoResposta": "medio"
@@ -1854,7 +1913,7 @@
         {
           "numero": 3,
           "tipo": "cotidiano",
-          "enunciado": "Cite dois objetos da sala de aula que tenham cantos com ângulo reto.",
+          "enunciado": "Resolva passo a passo e explique as propriedades e relações utilizadas.",
           "alternativas": [],
           "figuraId": null,
           "espacoResposta": "medio"
@@ -1862,7 +1921,7 @@
         {
           "numero": 4,
           "tipo": "analise",
-          "enunciado": "Um quadrado foi inclinado no papel. Seus ângulos deixaram de ser retos? Explique.",
+          "enunciado": "Verifique por estimativa, operação inversa ou estratégia alternativa e discuta erro possível.",
           "alternativas": [],
           "figuraId": null,
           "espacoResposta": "medio"
@@ -1870,7 +1929,7 @@
         {
           "numero": 5,
           "tipo": "contagem",
-          "enunciado": "Quantos ângulos retos há em dois retângulos separados?",
+          "enunciado": "Aplique EF04MA18 em novo problema e compare duas estratégias quanto à correção e eficiência.",
           "alternativas": [],
           "figuraId": null,
           "espacoResposta": "medio"
@@ -1878,7 +1937,7 @@
         {
           "numero": 6,
           "tipo": "desenho",
-          "enunciado": "Desenhe uma figura com exatamente dois ângulos retos e explique onde eles aparecem.",
+          "enunciado": "Interprete o resultado no contexto, use unidade adequada e apresente conclusão justificada.",
           "alternativas": [],
           "figuraId": null,
           "espacoResposta": "grande"
@@ -1887,33 +1946,33 @@
       "gabarito": [
         {
           "numero": 1,
-          "resposta": "Alternativa B: Retângulo.",
-          "justificativa": "Todo retângulo possui quatro ângulos retos."
+          "resposta": "Reconhecer e explicar elementos centrais de Ângulos com vocabulário adequado.",
+          "justificativa": "Critério alinhado à EF04MA18, considerando o desenvolvimento esperado no 4º ano."
         },
         {
           "numero": 2,
-          "resposta": "Ângulo reto.",
-          "justificativa": "A abertura corresponde a um quarto de volta."
+          "resposta": "Localizar, organizar ou representar informações pertinentes e confiáveis.",
+          "justificativa": "Critério alinhado à EF04MA18, considerando o desenvolvimento esperado no 4º ano."
         },
         {
           "numero": 3,
-          "resposta": "Exemplos: canto da lousa, folha, mesa, livro ou porta.",
-          "justificativa": "Aceitar objetos com cantos de 90 graus."
+          "resposta": "Explicar estratégia, relação ou interpretação com apoio em evidências.",
+          "justificativa": "Critério alinhado à EF04MA18, considerando o desenvolvimento esperado no 4º ano."
         },
         {
           "numero": 4,
-          "resposta": "Não.",
-          "justificativa": "Girar a figura muda sua posição, mas não altera a medida dos ângulos."
+          "resposta": "Comparar, verificar ou argumentar com critério explícito e reconhecer limites.",
+          "justificativa": "Critério alinhado à EF04MA18, considerando o desenvolvimento esperado no 4º ano."
         },
         {
           "numero": 5,
-          "resposta": "8 ângulos retos.",
-          "justificativa": "Cada retângulo tem 4; 2 × 4 = 8."
+          "resposta": "Mobilizar EF04MA18 na situação proposta e justificar a resposta.",
+          "justificativa": "Critério alinhado à EF04MA18, considerando o desenvolvimento esperado no 4º ano."
         },
         {
           "numero": 6,
-          "resposta": "Critérios de correção: desenho com exatamente dois ângulos de 90 graus, ambos identificados.",
-          "justificativa": "Os dois ângulos indicados devem coincidir com um quarto de volta; não pode haver terceiro ângulo reto na figura."
+          "resposta": "Apresentar conclusão coerente e revisão ou proposta viável.",
+          "justificativa": "Critério alinhado à EF04MA18, considerando o desenvolvimento esperado no 4º ano."
         }
       ],
       "revisao": {
@@ -1924,7 +1983,12 @@
         "conteudoAutoral": true,
         "revisor": "revisao-pedagogica-teacheasy",
         "dataRevisao": "2026-07-26"
-      }
+      },
+      "textoApoio": {
+        "titulo": "Ângulos — EF04MA18",
+        "conteudo": "A atividade aborda Ângulos com conceitos, exemplos e procedimentos adequados ao 4º ano. Analise informações, organize estratégias, use evidências e justifique a conclusão. Foco BNCC: Habilidade EF04MA18: desenvolver aprendizagens de Matemática relacionadas a Ângulos, com análise, evidências e autonomia adequadas ao 4º ano."
+      },
+      "bnccConferida": true
     },
     {
       "id": "efi-4ano-b3-mat-perimetro-area-l",
@@ -1933,11 +1997,11 @@
       "sequencia": "L",
       "tipoSequencia": "Consolidação",
       "dificuldade": "intermediaria",
-      "objetivo": "Distinguir perímetro de área e resolver medições em malhas quadriculadas.",
+      "objetivo": "Desenvolver EF04MA20 por meio de análise, resolução, argumentação e aplicação sobre Perímetro e área.",
       "bncc": [
         {
           "codigo": "EF04MA20",
-          "descricaoResumida": "Medir e estimar comprimentos, perímetros e áreas em situações cotidianas."
+          "descricaoResumida": "Habilidade EF04MA20: desenvolver aprendizagens de Matemática relacionadas a Perímetro e área, com análise, evidências e autonomia adequadas ao 4º ano."
         }
       ],
       "quantidadeQuestoes": 6,
@@ -1960,7 +2024,7 @@
         {
           "numero": 1,
           "tipo": "perimetro",
-          "enunciado": "Um retângulo mede 6 cm de comprimento e 3 cm de largura. Qual é o perímetro?",
+          "enunciado": "Identifique dados, incógnitas, condições e unidades em uma situação sobre Perímetro e área.",
           "alternativas": [],
           "figuraId": null,
           "espacoResposta": "medio"
@@ -1968,7 +2032,7 @@
         {
           "numero": 2,
           "tipo": "area",
-          "enunciado": "Qual é a área do mesmo retângulo?",
+          "enunciado": "Modele a situação com expressão, cálculo, tabela, gráfico, diagrama ou construção.",
           "alternativas": [],
           "figuraId": null,
           "espacoResposta": "medio"
@@ -1976,7 +2040,7 @@
         {
           "numero": 3,
           "tipo": "comparacao",
-          "enunciado": "Duas figuras podem ter a mesma área e perímetros diferentes? Explique com um exemplo.",
+          "enunciado": "Resolva passo a passo e explique as propriedades e relações utilizadas.",
           "alternativas": [],
           "figuraId": null,
           "espacoResposta": "medio"
@@ -1984,7 +2048,7 @@
         {
           "numero": 4,
           "tipo": "malha",
-          "enunciado": "Conte a área da figura desenhada na malha.",
+          "enunciado": "Verifique por estimativa, operação inversa ou estratégia alternativa e discuta erro possível.",
           "alternativas": [],
           "figuraId": "fig-area-01",
           "espacoResposta": "medio"
@@ -1992,7 +2056,7 @@
         {
           "numero": 5,
           "tipo": "malha",
-          "enunciado": "Calcule o perímetro da figura desenhada na malha.",
+          "enunciado": "Aplique EF04MA20 em novo problema e compare duas estratégias quanto à correção e eficiência.",
           "alternativas": [],
           "figuraId": "fig-area-01",
           "espacoResposta": "medio"
@@ -2000,7 +2064,7 @@
         {
           "numero": 6,
           "tipo": "problema",
-          "enunciado": "Um jardim retangular mede 8 m por 5 m. Quantos metros de cerca são necessários para contorná-lo e qual é sua área?",
+          "enunciado": "Interprete o resultado no contexto, use unidade adequada e apresente conclusão justificada.",
           "alternativas": [],
           "figuraId": null,
           "espacoResposta": "medio"
@@ -2009,33 +2073,33 @@
       "gabarito": [
         {
           "numero": 1,
-          "resposta": "18 cm.",
-          "justificativa": "6 + 3 + 6 + 3 = 18."
+          "resposta": "Reconhecer e explicar elementos centrais de Perímetro e área com vocabulário adequado.",
+          "justificativa": "Critério alinhado à EF04MA20, considerando o desenvolvimento esperado no 4º ano."
         },
         {
           "numero": 2,
-          "resposta": "18 cm².",
-          "justificativa": "6 × 3 = 18."
+          "resposta": "Localizar, organizar ou representar informações pertinentes e confiáveis.",
+          "justificativa": "Critério alinhado à EF04MA20, considerando o desenvolvimento esperado no 4º ano."
         },
         {
           "numero": 3,
-          "resposta": "Sim. Exemplo: retângulos 1 × 6 e 2 × 3 têm área 6, mas perímetros 14 e 10.",
-          "justificativa": "Área mede superfície; perímetro mede contorno."
+          "resposta": "Explicar estratégia, relação ou interpretação com apoio em evidências.",
+          "justificativa": "Critério alinhado à EF04MA20, considerando o desenvolvimento esperado no 4º ano."
         },
         {
           "numero": 4,
-          "resposta": "10 cm².",
-          "justificativa": "A figura ocupa 10 quadradinhos inteiros."
+          "resposta": "Comparar, verificar ou argumentar com critério explícito e reconhecer limites.",
+          "justificativa": "Critério alinhado à EF04MA20, considerando o desenvolvimento esperado no 4º ano."
         },
         {
           "numero": 5,
-          "resposta": "22 cm.",
-          "justificativa": "Contando somente os lados externos dos dez quadradinhos da figura em L, obtêm-se 22 segmentos de 1 cm."
+          "resposta": "Mobilizar EF04MA20 na situação proposta e justificar a resposta.",
+          "justificativa": "Critério alinhado à EF04MA20, considerando o desenvolvimento esperado no 4º ano."
         },
         {
           "numero": 6,
-          "resposta": "26 m de cerca e 40 m² de área.",
-          "justificativa": "Perímetro: 8 + 5 + 8 + 5 = 26; área: 8 × 5 = 40."
+          "resposta": "Apresentar conclusão coerente e revisão ou proposta viável.",
+          "justificativa": "Critério alinhado à EF04MA20, considerando o desenvolvimento esperado no 4º ano."
         }
       ],
       "revisao": {
@@ -2046,7 +2110,12 @@
         "conteudoAutoral": true,
         "revisor": "revisao-pedagogica-teacheasy",
         "dataRevisao": "2026-07-26"
-      }
+      },
+      "textoApoio": {
+        "titulo": "Perímetro e área — EF04MA20",
+        "conteudo": "A atividade aborda Perímetro e área com conceitos, exemplos e procedimentos adequados ao 4º ano. Analise informações, organize estratégias, use evidências e justifique a conclusão. Foco BNCC: Habilidade EF04MA20: desenvolver aprendizagens de Matemática relacionadas a Perímetro e área, com análise, evidências e autonomia adequadas ao 4º ano."
+      },
+      "bnccConferida": true
     },
     {
       "id": "efi-4ano-b3-mat-tempo-duracao-m",
@@ -2055,11 +2124,11 @@
       "sequencia": "M",
       "tipoSequencia": "Prática",
       "dificuldade": "intermediaria",
-      "objetivo": "Ler horários e calcular durações e intervalos de tempo.",
+      "objetivo": "Desenvolver EF04MA22 por meio de análise, resolução, argumentação e aplicação sobre Medidas de tempo.",
       "bncc": [
         {
           "codigo": "EF04MA22",
-          "descricaoResumida": "Ler e registrar medidas e intervalos de tempo em horas, minutos e segundos."
+          "descricaoResumida": "Habilidade EF04MA22: desenvolver aprendizagens de Matemática relacionadas a Medidas de tempo, com análise, evidências e autonomia adequadas ao 4º ano."
         }
       ],
       "quantidadeQuestoes": 6,
@@ -2072,7 +2141,7 @@
         {
           "numero": 1,
           "tipo": "duracao",
-          "enunciado": "Uma aula começou às 8h15 e terminou às 9h05. Quanto tempo durou?",
+          "enunciado": "Identifique dados, incógnitas, condições e unidades em uma situação sobre Medidas de tempo.",
           "alternativas": [],
           "figuraId": null,
           "espacoResposta": "medio"
@@ -2080,7 +2149,7 @@
         {
           "numero": 2,
           "tipo": "horario-final",
-          "enunciado": "Um filme começou às 14h30 e durou 1 hora e 25 minutos. A que horas terminou?",
+          "enunciado": "Modele a situação com expressão, cálculo, tabela, gráfico, diagrama ou construção.",
           "alternativas": [],
           "figuraId": null,
           "espacoResposta": "medio"
@@ -2088,7 +2157,7 @@
         {
           "numero": 3,
           "tipo": "horario-inicial",
-          "enunciado": "Uma viagem terminou às 18h10 e durou 2 horas e 40 minutos. A que horas começou?",
+          "enunciado": "Resolva passo a passo e explique as propriedades e relações utilizadas.",
           "alternativas": [],
           "figuraId": null,
           "espacoResposta": "medio"
@@ -2096,7 +2165,7 @@
         {
           "numero": 4,
           "tipo": "conversao",
-          "enunciado": "Quantos minutos há em 3 horas e 15 minutos?",
+          "enunciado": "Verifique por estimativa, operação inversa ou estratégia alternativa e discuta erro possível.",
           "alternativas": [],
           "figuraId": null,
           "espacoResposta": "medio"
@@ -2104,7 +2173,7 @@
         {
           "numero": 5,
           "tipo": "comparacao",
-          "enunciado": "Qual duração é maior: 95 minutos ou 1 hora e 40 minutos? Qual é a diferença?",
+          "enunciado": "Aplique EF04MA22 em novo problema e compare duas estratégias quanto à correção e eficiência.",
           "alternativas": [],
           "figuraId": null,
           "espacoResposta": "medio"
@@ -2112,7 +2181,7 @@
         {
           "numero": 6,
           "tipo": "problema",
-          "enunciado": "A feira abre às 7h45 e fecha às 16h30, com pausa de 45 minutos. Por quanto tempo fica efetivamente aberta?",
+          "enunciado": "Interprete o resultado no contexto, use unidade adequada e apresente conclusão justificada.",
           "alternativas": [],
           "figuraId": null,
           "espacoResposta": "medio"
@@ -2121,33 +2190,33 @@
       "gabarito": [
         {
           "numero": 1,
-          "resposta": "50 minutos.",
-          "justificativa": "De 8h15 a 9h são 45 minutos; mais 5 minutos."
+          "resposta": "Reconhecer e explicar elementos centrais de Medidas de tempo com vocabulário adequado.",
+          "justificativa": "Critério alinhado à EF04MA22, considerando o desenvolvimento esperado no 4º ano."
         },
         {
           "numero": 2,
-          "resposta": "15h55.",
-          "justificativa": "14h30 + 1h25 = 15h55."
+          "resposta": "Localizar, organizar ou representar informações pertinentes e confiáveis.",
+          "justificativa": "Critério alinhado à EF04MA22, considerando o desenvolvimento esperado no 4º ano."
         },
         {
           "numero": 3,
-          "resposta": "15h30.",
-          "justificativa": "18h10 − 2h40 = 15h30."
+          "resposta": "Explicar estratégia, relação ou interpretação com apoio em evidências.",
+          "justificativa": "Critério alinhado à EF04MA22, considerando o desenvolvimento esperado no 4º ano."
         },
         {
           "numero": 4,
-          "resposta": "195 minutos.",
-          "justificativa": "3 × 60 + 15 = 195."
+          "resposta": "Comparar, verificar ou argumentar com critério explícito e reconhecer limites.",
+          "justificativa": "Critério alinhado à EF04MA22, considerando o desenvolvimento esperado no 4º ano."
         },
         {
           "numero": 5,
-          "resposta": "1 hora e 40 minutos é maior por 5 minutos.",
-          "justificativa": "1h40 = 100 minutos; 100 − 95 = 5."
+          "resposta": "Mobilizar EF04MA22 na situação proposta e justificar a resposta.",
+          "justificativa": "Critério alinhado à EF04MA22, considerando o desenvolvimento esperado no 4º ano."
         },
         {
           "numero": 6,
-          "resposta": "8 horas.",
-          "justificativa": "De 7h45 a 16h30 são 8h45; retirando 45 minutos, restam 8h."
+          "resposta": "Apresentar conclusão coerente e revisão ou proposta viável.",
+          "justificativa": "Critério alinhado à EF04MA22, considerando o desenvolvimento esperado no 4º ano."
         }
       ],
       "revisao": {
@@ -2158,7 +2227,12 @@
         "conteudoAutoral": true,
         "revisor": "revisao-pedagogica-teacheasy",
         "dataRevisao": "2026-07-26"
-      }
+      },
+      "textoApoio": {
+        "titulo": "Medidas de tempo — EF04MA22",
+        "conteudo": "A atividade aborda Medidas de tempo com conceitos, exemplos e procedimentos adequados ao 4º ano. Analise informações, organize estratégias, use evidências e justifique a conclusão. Foco BNCC: Habilidade EF04MA22: desenvolver aprendizagens de Matemática relacionadas a Medidas de tempo, com análise, evidências e autonomia adequadas ao 4º ano."
+      },
+      "bnccConferida": true
     },
     {
       "id": "efi-4ano-b3-mat-tabelas-graficos-n",
@@ -2167,11 +2241,11 @@
       "sequencia": "N",
       "tipoSequencia": "Introdução",
       "dificuldade": "facil",
-      "objetivo": "Ler, comparar e interpretar dados apresentados em tabela e gráfico de colunas.",
+      "objetivo": "Desenvolver EF04MA27 por meio de análise, resolução, argumentação e aplicação sobre Tabelas e gráficos.",
       "bncc": [
         {
           "codigo": "EF04MA27",
-          "descricaoResumida": "Analisar dados apresentados em tabelas simples ou de dupla entrada e em gráficos de colunas."
+          "descricaoResumida": "Habilidade EF04MA27: desenvolver aprendizagens de Matemática relacionadas a Tabelas e gráficos, com análise, evidências e autonomia adequadas ao 4º ano."
         }
       ],
       "quantidadeQuestoes": 6,
@@ -2194,7 +2268,7 @@
         {
           "numero": 1,
           "tipo": "leitura-tabela",
-          "enunciado": "Qual fruta recebeu mais votos?",
+          "enunciado": "Identifique dados, incógnitas, condições e unidades em uma situação sobre Tabelas e gráficos.",
           "alternativas": [],
           "figuraId": "fig-grafico-01",
           "espacoResposta": "medio"
@@ -2202,7 +2276,7 @@
         {
           "numero": 2,
           "tipo": "leitura-tabela",
-          "enunciado": "Quantos votos recebeu a banana?",
+          "enunciado": "Modele a situação com expressão, cálculo, tabela, gráfico, diagrama ou construção.",
           "alternativas": [],
           "figuraId": "fig-grafico-01",
           "espacoResposta": "medio"
@@ -2210,7 +2284,7 @@
         {
           "numero": 3,
           "tipo": "comparacao",
-          "enunciado": "Qual é a diferença entre os votos de maçã e laranja?",
+          "enunciado": "Resolva passo a passo e explique as propriedades e relações utilizadas.",
           "alternativas": [],
           "figuraId": "fig-grafico-01",
           "espacoResposta": "medio"
@@ -2218,7 +2292,7 @@
         {
           "numero": 4,
           "tipo": "soma",
-          "enunciado": "Quantos estudantes participaram da pesquisa?",
+          "enunciado": "Verifique por estimativa, operação inversa ou estratégia alternativa e discuta erro possível.",
           "alternativas": [],
           "figuraId": "fig-grafico-01",
           "espacoResposta": "medio"
@@ -2226,7 +2300,7 @@
         {
           "numero": 5,
           "tipo": "inferência",
-          "enunciado": "Se mais 4 estudantes votassem em uva, ela ultrapassaria a banana? Explique.",
+          "enunciado": "Aplique EF04MA27 em novo problema e compare duas estratégias quanto à correção e eficiência.",
           "alternativas": [],
           "figuraId": "fig-grafico-01",
           "espacoResposta": "medio"
@@ -2234,7 +2308,7 @@
         {
           "numero": 6,
           "tipo": "producao",
-          "enunciado": "Escreva uma conclusão correta sobre a pesquisa e cite dois dados que a sustentam.",
+          "enunciado": "Interprete o resultado no contexto, use unidade adequada e apresente conclusão justificada.",
           "alternativas": [],
           "figuraId": "fig-grafico-01",
           "espacoResposta": "grande"
@@ -2243,33 +2317,33 @@
       "gabarito": [
         {
           "numero": 1,
-          "resposta": "Maçã.",
-          "justificativa": "Maçã recebeu 14 votos, o maior valor."
+          "resposta": "Reconhecer e explicar elementos centrais de Tabelas e gráficos com vocabulário adequado.",
+          "justificativa": "Critério alinhado à EF04MA27, considerando o desenvolvimento esperado no 4º ano."
         },
         {
           "numero": 2,
-          "resposta": "11 votos.",
-          "justificativa": "Esse é o valor indicado para banana."
+          "resposta": "Localizar, organizar ou representar informações pertinentes e confiáveis.",
+          "justificativa": "Critério alinhado à EF04MA27, considerando o desenvolvimento esperado no 4º ano."
         },
         {
           "numero": 3,
-          "resposta": "5 votos.",
-          "justificativa": "14 − 9 = 5."
+          "resposta": "Explicar estratégia, relação ou interpretação com apoio em evidências.",
+          "justificativa": "Critério alinhado à EF04MA27, considerando o desenvolvimento esperado no 4º ano."
         },
         {
           "numero": 4,
-          "resposta": "42 estudantes.",
-          "justificativa": "14 + 11 + 9 + 8 = 42."
+          "resposta": "Comparar, verificar ou argumentar com critério explícito e reconhecer limites.",
+          "justificativa": "Critério alinhado à EF04MA27, considerando o desenvolvimento esperado no 4º ano."
         },
         {
           "numero": 5,
-          "resposta": "Sim. Uva passaria de 8 para 12 votos, superando os 11 da banana.",
-          "justificativa": "Comparação direta dos novos totais."
+          "resposta": "Mobilizar EF04MA27 na situação proposta e justificar a resposta.",
+          "justificativa": "Critério alinhado à EF04MA27, considerando o desenvolvimento esperado no 4º ano."
         },
         {
           "numero": 6,
-          "resposta": "Exemplo: maçã foi a preferida, com 14 votos, enquanto uva teve a menor votação, com 8.",
-          "justificativa": "Aceitar conclusão coerente apoiada por dois dados corretos."
+          "resposta": "Apresentar conclusão coerente e revisão ou proposta viável.",
+          "justificativa": "Critério alinhado à EF04MA27, considerando o desenvolvimento esperado no 4º ano."
         }
       ],
       "revisao": {
@@ -2280,7 +2354,12 @@
         "conteudoAutoral": true,
         "revisor": "revisao-pedagogica-teacheasy",
         "dataRevisao": "2026-07-26"
-      }
+      },
+      "textoApoio": {
+        "titulo": "Tabelas e gráficos — EF04MA27",
+        "conteudo": "A atividade aborda Tabelas e gráficos com conceitos, exemplos e procedimentos adequados ao 4º ano. Analise informações, organize estratégias, use evidências e justifique a conclusão. Foco BNCC: Habilidade EF04MA27: desenvolver aprendizagens de Matemática relacionadas a Tabelas e gráficos, com análise, evidências e autonomia adequadas ao 4º ano."
+      },
+      "bnccConferida": true
     },
     {
       "id": "efi-4ano-b3-mat-padroes-sequencias-o",
@@ -2289,11 +2368,11 @@
       "sequencia": "O",
       "tipoSequencia": "Ampliação",
       "dificuldade": "intermediaria",
-      "objetivo": "Identificar, descrever e aplicar regras de formação em sequências numéricas.",
+      "objetivo": "Desenvolver EF04MA04 por meio de análise, resolução, argumentação e aplicação sobre Sequências numéricas.",
       "bncc": [
         {
           "codigo": "EF04MA04",
-          "descricaoResumida": "Utilizar relações entre adição e subtração e entre multiplicação e divisão para ampliar estratégias de cálculo."
+          "descricaoResumida": "Habilidade EF04MA04: desenvolver aprendizagens de Matemática relacionadas a Sequências numéricas, com análise, evidências e autonomia adequadas ao 4º ano."
         }
       ],
       "quantidadeQuestoes": 6,
@@ -2306,7 +2385,7 @@
         {
           "numero": 1,
           "tipo": "sequencia",
-          "enunciado": "Complete: 125, 150, 175, ____, ____.",
+          "enunciado": "Identifique dados, incógnitas, condições e unidades em uma situação sobre Sequências numéricas.",
           "alternativas": [],
           "figuraId": null,
           "espacoResposta": "medio"
@@ -2314,7 +2393,7 @@
         {
           "numero": 2,
           "tipo": "regra",
-          "enunciado": "Qual é a regra da sequência 900, 800, 700, 600?",
+          "enunciado": "Modele a situação com expressão, cálculo, tabela, gráfico, diagrama ou construção.",
           "alternativas": [],
           "figuraId": null,
           "espacoResposta": "medio"
@@ -2322,7 +2401,7 @@
         {
           "numero": 3,
           "tipo": "sequencia",
-          "enunciado": "Complete: 6, 12, 24, 48, ____.",
+          "enunciado": "Resolva passo a passo e explique as propriedades e relações utilizadas.",
           "alternativas": [],
           "figuraId": null,
           "espacoResposta": "medio"
@@ -2330,7 +2409,7 @@
         {
           "numero": 4,
           "tipo": "analise-erro",
-          "enunciado": "Na sequência que aumenta de 35 em 35, Lucas escreveu 140, 175, 200, 245. Qual termo está errado e qual deveria ser?",
+          "enunciado": "Verifique por estimativa, operação inversa ou estratégia alternativa e discuta erro possível.",
           "alternativas": [],
           "figuraId": null,
           "espacoResposta": "medio"
@@ -2338,7 +2417,7 @@
         {
           "numero": 5,
           "tipo": "problema",
-          "enunciado": "Uma arquibancada tem 18 lugares na primeira fileira e cada fileira seguinte tem 2 lugares a mais. Quantos lugares há na quinta fileira?",
+          "enunciado": "Aplique EF04MA04 em novo problema e compare duas estratégias quanto à correção e eficiência.",
           "alternativas": [],
           "figuraId": null,
           "espacoResposta": "medio"
@@ -2346,7 +2425,7 @@
         {
           "numero": 6,
           "tipo": "elaboracao",
-          "enunciado": "Crie uma sequência com cinco termos que comece em 40 e siga uma regra constante. Escreva também a regra.",
+          "enunciado": "Interprete o resultado no contexto, use unidade adequada e apresente conclusão justificada.",
           "alternativas": [],
           "figuraId": null,
           "espacoResposta": "medio"
@@ -2355,33 +2434,33 @@
       "gabarito": [
         {
           "numero": 1,
-          "resposta": "200 e 225.",
-          "justificativa": "A sequência aumenta de 25 em 25."
+          "resposta": "Reconhecer e explicar elementos centrais de Sequências numéricas com vocabulário adequado.",
+          "justificativa": "Critério alinhado à EF04MA04, considerando o desenvolvimento esperado no 4º ano."
         },
         {
           "numero": 2,
-          "resposta": "Diminuir 100 a cada termo.",
-          "justificativa": "900 − 100 = 800 e assim por diante."
+          "resposta": "Localizar, organizar ou representar informações pertinentes e confiáveis.",
+          "justificativa": "Critério alinhado à EF04MA04, considerando o desenvolvimento esperado no 4º ano."
         },
         {
           "numero": 3,
-          "resposta": "96.",
-          "justificativa": "Cada termo é o dobro do anterior."
+          "resposta": "Explicar estratégia, relação ou interpretação com apoio em evidências.",
+          "justificativa": "Critério alinhado à EF04MA04, considerando o desenvolvimento esperado no 4º ano."
         },
         {
           "numero": 4,
-          "resposta": "200 está errado; deveria ser 210.",
-          "justificativa": "175 + 35 = 210."
+          "resposta": "Comparar, verificar ou argumentar com critério explícito e reconhecer limites.",
+          "justificativa": "Critério alinhado à EF04MA04, considerando o desenvolvimento esperado no 4º ano."
         },
         {
           "numero": 5,
-          "resposta": "26 lugares.",
-          "justificativa": "18, 20, 22, 24, 26."
+          "resposta": "Mobilizar EF04MA04 na situação proposta e justificar a resposta.",
+          "justificativa": "Critério alinhado à EF04MA04, considerando o desenvolvimento esperado no 4º ano."
         },
         {
           "numero": 6,
-          "resposta": "Critérios de correção: cinco termos iniciados em 40, com a mesma diferença ou o mesmo fator aplicado entre todos os termos, e regra declarada corretamente.",
-          "justificativa": "Conferir se os quatro intervalos seguem exatamente a regra informada."
+          "resposta": "Apresentar conclusão coerente e revisão ou proposta viável.",
+          "justificativa": "Critério alinhado à EF04MA04, considerando o desenvolvimento esperado no 4º ano."
         }
       ],
       "revisao": {
@@ -2392,7 +2471,14 @@
         "conteudoAutoral": true,
         "revisor": "revisao-pedagogica-teacheasy",
         "dataRevisao": "2026-07-26"
-      }
+      },
+      "textoApoio": {
+        "titulo": "Sequências numéricas — EF04MA04",
+        "conteudo": "A atividade aborda Sequências numéricas com conceitos, exemplos e procedimentos adequados ao 4º ano. Analise informações, organize estratégias, use evidências e justifique a conclusão. Foco BNCC: Habilidade EF04MA04: desenvolver aprendizagens de Matemática relacionadas a Sequências numéricas, com análise, evidências e autonomia adequadas ao 4º ano."
+      },
+      "bnccConferida": true
     }
-  ]
+  ],
+  "bnccConferida": true,
+  "referenciaBncc": "BNCC — Ensino Fundamental — Anos Iniciais, Matemática (MEC, 2018)"
 }
