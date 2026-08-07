@@ -432,6 +432,25 @@ function populateSelect(name, values) {
 
 populateSelect('subject', uniqueSorted('subject'));
 
+function syncSubjectOptions() {
+  const select = filterForm.elements.subject;
+  const previous = select.value;
+  const values = navigation.stage === 'Ensino Fundamental II'
+    ? Object.keys(finalYearsSubjects)
+    : uniqueSorted('subject');
+  const defaultOption = document.createElement('option');
+  defaultOption.value = '';
+  defaultOption.textContent = 'Todas as disciplinas';
+  const options = values.map(value => {
+    const option = document.createElement('option');
+    option.value = value;
+    option.textContent = value;
+    return option;
+  });
+  select.replaceChildren(defaultOption, ...options);
+  select.value = values.includes(previous) ? previous : '';
+}
+
 function getFilters() {
   const data = new FormData(filterForm);
   return {
@@ -826,6 +845,7 @@ function stageLabel(name) {
 }
 
 function renderNavigation() {
+  syncSubjectOptions();
   const atActivities = Boolean(navigation.term);
   filterForm.hidden = !atActivities;
   activityGrid.hidden = !atActivities;

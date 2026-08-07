@@ -68,6 +68,10 @@ test('Biblioteca carrega uma coleção de Anos Finais por seleção', () => {
   assert.match(source, /finalYearsSubjects/);
   assert.match(source, /navigation\.stage === 'Ensino Fundamental II'/);
   assert.match(source, /fundamental-anos-finais\/\$\{grade\}-ano/);
+  assert.match(source, /function syncSubjectOptions\(\)/);
+  assert.match(source, /navigation\.stage === 'Ensino Fundamental II'/);
+  assert.match(source, /Object\.keys\(finalYearsSubjects\)/);
+  assert.match(source, /select\.replaceChildren\(defaultOption, \.\.\.options\)/);
   assert.match(source, /count: 40/);
   assert.match(source, /count: 3840/);
 });
