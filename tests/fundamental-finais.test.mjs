@@ -79,3 +79,35 @@ test('Biblioteca carrega uma coleção de Anos Finais por seleção', () => {
   assert.match(fixes, /\['6º ano', '7º ano', '8º ano', '9º ano'\]/);
   assert.match(fixes, /isFinalYears[\s\S]*Object\.keys\(finalYearsSubjects\)/);
 });
+
+test('Anos Finais possuem conteúdo aprofundado e BNCC conferida', () => {
+  const genericQuestion = /Explique a ideia central|Identifique duas informações importantes|Compare dois exemplos|Relacione .+ a uma situação atual|Produza uma conclusão justificada/;
+  const genericAnswer = /Resposta esperada coerente|Resposta autoral coerente|considerando o comando da questão/;
+  let total = 0;
+
+  for (const grade of grades) for (const term of terms) {
+    for (const [filename, subject] of subjects) {
+      const collection = JSON.parse(fs.readFileSync(
+        path.join(base, `${grade}-ano`, `${term}-bimestre`, filename), 'utf8'
+      ));
+      assert.equal(collection.bnccConferida, true);
+      assert.match(collection.referenciaBncc, /BNCC.*Anos Finais.*MEC/);
+
+      for (const activity of collection.atividades) {
+        const skill = activity.bncc[0];
+        assert.equal(activity.bnccConferida, true);
+        assert.match(skill.codigo, new RegExp(`^EF${String(grade).padStart(2, '0')}(LP|MA|CI|HI|GE|LI)\\d{2}$`));
+        assert.ok(skill.descricaoResumida.length > 90);
+        assert.match(activity.objetivo, new RegExp(skill.codigo));
+        assert.ok(activity.textoApoio.conteudo.length > 180);
+        assert.equal(activity.questoes.some(item => genericQuestion.test(item.enunciado)), false,
+          `${activity.id} ainda possui pergunta genérica`);
+        assert.equal(activity.gabarito.some(item => genericAnswer.test(item.resposta)), false,
+          `${activity.id} ainda possui gabarito genérico`);
+      }
+      total += collection.atividades.length;
+    }
+  }
+
+  assert.equal(total, 3840);
+});
