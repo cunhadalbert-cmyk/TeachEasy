@@ -1,702 +1,659 @@
 {
-    "schemaVersion":  "1.0",
-    "colecao":  "4ano-3bimestre-ciencias",
-    "idioma":  "pt-BR",
-    "etapa":  "Ensino Fundamental — Anos Iniciais",
-    "ano":  "4º ano",
-    "bimestre":  3,
-    "disciplina":  "Ciências",
-    "statusBimestre":  "sugerido",
-    "atividades":  [
-                       {
-                           "id":  "efi-4ano-b3-cie-decomposicao-a",
-                           "titulo":  "Os seres invisíveis que transformam o que sobra",
-                           "tema":  "Decomposição",
-                           "sequencia":  "A",
-                           "tipoSequencia":  "Introdução",
-                           "dificuldade":  "facil",
-                           "objetivo":  "Reconhecer fungos e bactérias como decompositores e identificar sinais de decomposição em materiais do dia a dia.",
-                           "bncc":  [
-                                        {
-                                            "codigo":  "EF04CI06",
-                                            "descricaoResumida":  "Relacionar a participação de fungos e bactérias no processo de decomposição, reconhecendo a importância ambiental desse processo."
-                                        }
-                                    ],
-                           "quantidadeQuestoes":  6,
-                           "possuiFiguras":  true,
-                           "figuras":  [
-                                           {
-                                               "id":  "figura-01",
-                                               "arquivo":  "assets/atividades/ciencias/figura-01.png",
-                                               "descricao":  "Sequência de quatro desenhos simples em linha, lado a lado, mostrando a mesma folha caída em quatro momentos. Desenho 1: folha inteira, com contorno nítido e nervuras visíveis. Desenho 2: folha com pequenos furos e bordas escurecidas. Desenho 3: folha com furos grandes, contorno irregular e superfície bem escura. Desenho 4: apenas alguns fragmentos pequenos da folha sobre o solo. Abaixo de cada desenho, uma legenda: “semana 1”, “semana 3”, “semana 6”, “semana 10”. Uma seta fina apontando para a direita liga os quatro desenhos.",
-                                               "funcaoPedagogica":  "Permite que o aluno observe a transformação gradual de um resto vegetal ao longo do tempo e associe essa mudança à ação dos decompositores, servindo de base para a escolha da alternativa correta.",
-                                               "posicaoSugerida":  "antes da questão 3",
-                                               "textoAlternativo":  "Quatro desenhos em sequência mostram uma folha caída que vai ficando escura e furada ao longo de dez semanas até restarem apenas fragmentos.",
-                                               "compativelPretoBranco":  true
-                                           }
-                                       ],
-                           "possuiGabarito":  true,
-                           "possuiVersaoAdaptada":  false,
-                           "instrucaoGeral":  "Leia o texto com atenção e depois responda às questões. Se precisar, volte ao texto para conferir suas respostas.",
-                           "questoes":  [
-                                            {
-                                                "numero":  1,
-                                                "tipo":  "resposta-curta",
-                                                "enunciado":  "De acordo com o texto, qual é o nome do processo em que fungos e bactérias transformam os restos de plantas e de animais?",
-                                                "alternativas":  [
-
-                                                                 ],
-                                                "figuraId":  null,
-                                                "espacoResposta":  "pequeno"
-                                            },
-                                            {
-                                                "numero":  2,
-                                                "tipo":  "completar",
-                                                "enunciado":  "Complete as frases usando as palavras do quadro: fungos — decompositores — solo.\n\na) Os ______________ e as bactérias se alimentam de restos de seres vivos.\nb) Os seres vivos que realizam a decomposição são chamados de ______________.\nc) Na decomposição, substâncias simples voltam para o ______________.",
-                                                "alternativas":  [
-
-                                                                 ],
-                                                "figuraId":  null,
-                                                "espacoResposta":  "pequeno"
-                                            },
-                                            {
-                                                "numero":  3,
-                                                "tipo":  "multipla-escolha",
-                                                "enunciado":  "Observe a figura, que mostra uma mesma folha caída em quatro momentos diferentes. Qual alternativa explica melhor o que aconteceu com ela?",
-                                                "alternativas":  [
-                                                                     "A folha secou por causa do vento e se transformou em pedra.",
-                                                                     "A folha foi decomposta por fungos e bactérias e se transformou em substâncias simples.",
-                                                                     "A folha foi levada inteira por um animal grande.",
-                                                                     "A folha desapareceu sozinha, sem a participação de nenhum ser vivo."
-                                                                 ],
-                                                "figuraId":  "figura-01",
-                                                "espacoResposta":  "pequeno"
-                                            },
-                                            {
-                                                "numero":  4,
-                                                "tipo":  "verdadeiro-falso",
-                                                "enunciado":  "Marina deixou um pedaço de pão dentro de um pote fechado por duas semanas. Quando abriu o pote, viu manchas esverdeadas e felpudas sobre o pão. Escreva V para verdadeiro e F para falso. Depois, justifique por escrito a afirmação que você marcou como falsa.\n\n(   ) As manchas esverdeadas e felpudas sobre o pão são fungos.\n(   ) O pão está passando por um processo de decomposição.\n(   ) As manchas apareceram porque alguém pintou o pão com tinta verde.\n\nJustificativa:",
-                                                "alternativas":  [
-
-                                                                 ],
-                                                "figuraId":  null,
-                                                "espacoResposta":  "medio"
-                                            },
-                                            {
-                                                "numero":  5,
-                                                "tipo":  "associacao",
-                                                "enunciado":  "Associe cada situação da coluna 1 à explicação correspondente da coluna 2, escrevendo o número dentro dos parênteses.\n\nColuna 1\n1. Um tronco caído na mata vai ficando mole e cheio de buracos ao longo dos meses.\n2. Uma fatia de queijo guardada por muitos dias fica com manchas azuladas.\n3. Restos de comida enterrados no jardim somem depois de algum tempo.\n\nColuna 2\n(   ) Fungos se desenvolveram sobre um alimento.\n(   ) Decompositores transformaram a madeira lentamente.\n(   ) Os restos foram decompostos e se misturaram ao solo.",
-                                                "alternativas":  [
-
-                                                                 ],
-                                                "figuraId":  null,
-                                                "espacoResposta":  "pequeno"
-                                            },
-                                            {
-                                                "numero":  6,
-                                                "tipo":  "discursiva",
-                                                "enunciado":  "Um menino disse: “Os fungos e as bactérias só servem para estragar as coisas.” Você concorda com ele? Escreva de duas a três linhas explicando sua resposta com base no que você aprendeu sobre a decomposição.",
-                                                "alternativas":  [
-
-                                                                 ],
-                                                "figuraId":  null,
-                                                "espacoResposta":  "medio"
-                                            }
-                                        ],
-                           "gabarito":  [
-                                            {
-                                                "numero":  1,
-                                                "resposta":  "Decomposição.",
-                                                "justificativa":  "O texto nomeia o processo diretamente no último período: a transformação dos restos em substâncias simples realizada por fungos e bactérias chama-se decomposição."
-                                            },
-                                            {
-                                                "numero":  2,
-                                                "resposta":  "a) fungos; b) decompositores; c) solo.",
-                                                "justificativa":  "As três lacunas retomam informações explícitas do texto, na mesma ordem em que aparecem. Aceitar variações de grafia no plural."
-                                            },
-                                            {
-                                                "numero":  3,
-                                                "resposta":  "Alternativa b.",
-                                                "justificativa":  "A sequência de imagens mostra perda gradual de material da folha, sinal de decomposição realizada por fungos e bactérias. As demais alternativas atribuem a mudança a causas que não explicam o desaparecimento do material."
-                                            },
-                                            {
-                                                "numero":  4,
-                                                "resposta":  "V, V, F. Justificativa esperada: as manchas surgiram do crescimento de fungos que se alimentam do pão, e não de tinta.",
-                                                "justificativa":  "As duas primeiras afirmações descrevem corretamente o fenômeno. A terceira é falsa porque as manchas resultam do desenvolvimento de fungos sobre o alimento. Considerar correta qualquer justificativa que indique a presença de fungos como causa."
-                                            },
-                                            {
-                                                "numero":  5,
-                                                "resposta":  "Na ordem da coluna 2: 2, 1, 3.",
-                                                "justificativa":  "A primeira lacuna descreve fungos sobre alimento (situação 2); a segunda descreve decomposição de madeira (situação 1); a terceira descreve restos incorporados ao solo (situação 3)."
-                                            },
-                                            {
-                                                "numero":  6,
-                                                "resposta":  "Espera-se discordância. O aluno deve indicar que fungos e bactérias decompõem restos de seres vivos e devolvem substâncias ao solo, o que é importante para o ambiente e para o crescimento das plantas.",
-                                                "justificativa":  "Considerar correta a resposta que apresente pelo menos um benefício da decomposição, mesmo que o aluno reconheça também que alguns microrganismos estragam alimentos."
-                                            }
-                                        ],
-                           "revisao":  {
-                                           "bnccConferida":  true,
-                                           "gabaritoConferido":  true,
-                                           "ortografiaConferida":  true,
-                                           "conteudoAutoral":  true
-                                       },
-                           "textoApoio":  {
-                                              "titulo":  "O QUE SOME NÃO DESAPARECE",
-                                              "conteudo":  "Nem tudo que some da nossa vista desaparece de verdade. Quando uma folha cai no chão da floresta, ela vai ficando escura, mole e cheia de furinhos. Depois de algumas semanas, ela some. Quem fez esse trabalho foram os fungos e as bactérias, seres tão pequenos que quase sempre não conseguimos enxergar a olho nu. Eles se alimentam dos restos de plantas e de animais e, ao fazer isso, transformam esses restos em substâncias simples que voltam para o solo. Esse processo se chama decomposição, e os seres que o realizam são chamados de decompositores."
-                                          }
-                       },
-                       {
-                           "id":  "efi-4ano-b3-cie-decomposicao-b",
-                           "titulo":  "O que acontece com os restos de comida",
-                           "tema":  "Decomposição",
-                           "sequencia":  "B",
-                           "tipoSequencia":  "Prática",
-                           "dificuldade":  "intermediaria",
-                           "objetivo":  "Aplicar a noção de decomposição a situações cotidianas, como a compostagem e a conservação de alimentos, relacionando condições que aceleram ou retardam o processo.",
-                           "bncc":  [
-                                        {
-                                            "codigo":  "EF04CI06",
-                                            "descricaoResumida":  "Relacionar a participação de fungos e bactérias no processo de decomposição, reconhecendo a importância ambiental desse processo."
-                                        }
-                                    ],
-                           "quantidadeQuestoes":  6,
-                           "possuiFiguras":  true,
-                           "figuras":  [
-                                           {
-                                               "id":  "figura-02",
-                                               "arquivo":  "assets/atividades/ciencias/figura-02.png",
-                                               "descricao":  "Desenho em corte de uma caixa de compostagem vista de lado, em formato retangular, dividida em três camadas horizontais separadas por linhas tracejadas. Camada de cima, marcada com o número 1 em um círculo à esquerda: cascas de frutas e folhas inteiras, com contornos bem definidos. Camada do meio, marcada com o número 2: pedaços menores, quebrados e com preenchimento hachurado médio. Camada de baixo, marcada com o número 3: material uniforme, granulado fino e com preenchimento escuro, sem pedaços reconhecíveis.",
-                                               "funcaoPedagogica":  "Permite ao aluno identificar visualmente os estágios da decomposição dentro de uma composteira e reconhecer qual camada já passou pelo processo completo.",
-                                               "posicaoSugerida":  "antes da questão 3",
-                                               "textoAlternativo":  "Corte de uma caixa de compostagem com três camadas numeradas: em cima, cascas e folhas inteiras; no meio, pedaços quebrados; embaixo, material escuro e uniforme.",
-                                               "compativelPretoBranco":  true
-                                           }
-                                       ],
-                           "possuiGabarito":  true,
-                           "possuiVersaoAdaptada":  false,
-                           "instrucaoGeral":  "Leia a situação abaixo e responda às questões usando o que você já aprendeu sobre decomposição.",
-                           "questoes":  [
-                                            {
-                                                "numero":  1,
-                                                "tipo":  "resposta-curta",
-                                                "enunciado":  "Que tipo de material os alunos colocam na composteira e em que ele se transforma depois de alguns meses?",
-                                                "alternativas":  [
-
-                                                                 ],
-                                                "figuraId":  null,
-                                                "espacoResposta":  "pequeno"
-                                            },
-                                            {
-                                                "numero":  2,
-                                                "tipo":  "multipla-escolha",
-                                                "enunciado":  "Quem realiza o trabalho de transformar os restos em composto dentro da composteira?",
-                                                "alternativas":  [
-                                                                     "O sol e o vento, que secam os restos até eles virarem terra.",
-                                                                     "Fungos e bactérias decompositores, que se alimentam dos restos e os transformam.",
-                                                                     "A chuva que cai no pátio da escola.",
-                                                                     "Os próprios alunos, quando misturam o material com uma pá."
-                                                                 ],
-                                                "figuraId":  null,
-                                                "espacoResposta":  "pequeno"
-                                            },
-                                            {
-                                                "numero":  3,
-                                                "tipo":  "analise-imagem",
-                                                "enunciado":  "Observe a figura, que mostra o interior da composteira da escola. Qual camada contém o material que já passou pela decomposição? Justifique sua escolha descrevendo o que você observou nessa camada.",
-                                                "alternativas":  [
-
-                                                                 ],
-                                                "figuraId":  "figura-02",
-                                                "espacoResposta":  "medio"
-                                            },
-                                            {
-                                                "numero":  4,
-                                                "tipo":  "resposta-curta",
-                                                "enunciado":  "Dona Célia guardou as sobras do almoço em dois potes iguais: um dentro da geladeira e outro sobre a mesa da cozinha, que fica bem quente durante o dia. Depois de três dias, um dos potes estragou primeiro. Qual deles? Explique por que isso aconteceu.",
-                                                "alternativas":  [
-
-                                                                 ],
-                                                "figuraId":  null,
-                                                "espacoResposta":  "medio"
-                                            },
-                                            {
-                                                "numero":  5,
-                                                "tipo":  "analise-texto",
-                                                "enunciado":  "Uma turma fez um experimento com três potes. Em cada um foi colocado um pedaço igual de casca de banana. Veja o que os alunos anotaram depois de 15 dias:\n\nPote A — casca úmida, guardada em local quente: casca bem escura e se desmanchando.\nPote B — casca úmida, guardada dentro da geladeira: casca um pouco escurecida, ainda inteira.\nPote C — casca seca, guardada em local quente e sem umidade: casca ressecada, quase sem mudança.\n\na) Em qual pote a decomposição foi mais rápida?\nb) Escreva as duas condições que favoreceram esse resultado.",
-                                                "alternativas":  [
-
-                                                                 ],
-                                                "figuraId":  null,
-                                                "espacoResposta":  "medio"
-                                            },
-                                            {
-                                                "numero":  6,
-                                                "tipo":  "discursiva",
-                                                "enunciado":  "A turma quer colocar um cartaz ao lado da composteira explicando aos outros alunos da escola por que cascas de frutas e folhas secas podem ir para a composteira, mas sacolas plásticas não. Escreva o texto desse cartaz em três ou quatro linhas.",
-                                                "alternativas":  [
-
-                                                                 ],
-                                                "figuraId":  null,
-                                                "espacoResposta":  "grande"
-                                            }
-                                        ],
-                           "gabarito":  [
-                                            {
-                                                "numero":  1,
-                                                "resposta":  "Restos de origem vegetal — cascas de frutas, folhas secas e restos de verduras. Esse material se transforma em composto, uma terra escura e fofa usada na horta.",
-                                                "justificativa":  "Informação explícita na situação apresentada. Aceitar respostas que citem pelo menos dois dos materiais e nomeiem o produto final como composto ou terra escura."
-                                            },
-                                            {
-                                                "numero":  2,
-                                                "resposta":  "Alternativa b.",
-                                                "justificativa":  "A transformação do material orgânico em composto é realizada por decompositores. O sol, o vento, a chuva e a mistura feita pelos alunos podem interferir nas condições, mas não realizam a decomposição."
-                                            },
-                                            {
-                                                "numero":  3,
-                                                "resposta":  "A camada 3. O aluno deve descrever que o material dessa camada está escuro, fino e uniforme, sem pedaços que se possa reconhecer.",
-                                                "justificativa":  "A camada inferior reúne o material mais antigo da composteira, já transformado. Considerar correta a justificativa que mencione a ausência de restos reconhecíveis ou a aparência de terra."
-                                            },
-                                            {
-                                                "numero":  4,
-                                                "resposta":  "O pote que ficou sobre a mesa da cozinha. O calor favorece a multiplicação dos fungos e das bactérias, acelerando a decomposição do alimento. Na geladeira, o frio deixa esse processo mais lento.",
-                                                "justificativa":  "A questão exige relacionar temperatura e velocidade da decomposição. Considerar correta a resposta que identifique o pote certo e associe o calor à ação mais rápida dos decompositores."
-                                            },
-                                            {
-                                                "numero":  5,
-                                                "resposta":  "a) Pote A. b) Umidade e calor.",
-                                                "justificativa":  "A comparação entre os potes isola as duas condições: o pote B tinha umidade, mas não calor; o pote C tinha calor, mas não umidade. Só o pote A reunia as duas."
-                                            },
-                                            {
-                                                "numero":  6,
-                                                "resposta":  "Espera-se um texto indicando que cascas e folhas são restos de seres vivos e servem de alimento para fungos e bactérias, sendo decompostos e transformados em composto. A sacola plástica não serve de alimento para os decompositores e permanece na composteira por muito tempo sem se transformar.",
-                                                "justificativa":  "Considerar correto o texto que estabeleça a diferença entre material que os decompositores conseguem transformar e material que eles não conseguem. Não é exigido o uso do termo “orgânico”."
-                                            }
-                                        ],
-                           "revisao":  {
-                                           "bnccConferida":  true,
-                                           "gabaritoConferido":  true,
-                                           "ortografiaConferida":  true,
-                                           "conteudoAutoral":  true
-                                       },
-                           "textoApoio":  {
-                                              "titulo":  "O que acontece com os restos de comida",
-                                              "conteudo":  "Na Escola Vila Nova, os alunos do 4º ano montaram uma composteira no pátio. Todos os dias eles colocam ali cascas de frutas, folhas secas e restos de verduras. Depois de alguns meses, esse material se transforma em uma terra escura e fofa, chamada composto, que a turma usa na horta da escola."
-                                          }
-                       },
-                       {
-                           "id":  "efi-4ano-b3-cie-decomposicao-c",
-                           "titulo":  "Por que a natureza precisa dos decompositores",
-                           "tema":  "Decomposição",
-                           "sequencia":  "C",
-                           "tipoSequencia":  "Consolidação",
-                           "dificuldade":  "desafiadora",
-                           "objetivo":  "Justificar a importância ambiental da decomposição, comparando ambientes com e sem decompositores e produzindo uma explicação escrita autônoma.",
-                           "bncc":  [
-                                        {
-                                            "codigo":  "EF04CI06",
-                                            "descricaoResumida":  "Relacionar a participação de fungos e bactérias no processo de decomposição, reconhecendo a importância ambiental desse processo."
-                                        }
-                                    ],
-                           "quantidadeQuestoes":  6,
-                           "possuiFiguras":  true,
-                           "figuras":  [
-                                           {
-                                               "id":  "figura-03",
-                                               "arquivo":  "assets/atividades/ciencias/figura-03.png",
-                                               "descricao":  "Esquema circular com quatro retângulos dispostos como os pontos de um relógio, ligados por setas grossas que giram no sentido horário. Retângulo no alto: “PLANTAS”. Retângulo à direita: “ANIMAIS”. Retângulo embaixo: “RESTOS DE SERES VIVOS”. Retângulo à esquerda: “FUNGOS E BACTÉRIAS”. Entre o retângulo da esquerda e o do alto, a seta atravessa uma faixa horizontal hachurada rotulada “SOLO”. Essa última seta deve ser desenhada com traço mais espesso para poder ser identificada na questão.",
-                                               "funcaoPedagogica":  "Representa o retorno das substâncias ao solo como uma etapa de um ciclo, permitindo que o aluno raciocine sobre a consequência da interrupção de uma das etapas.",
-                                               "posicaoSugerida":  "antes da questão 5",
-                                               "textoAlternativo":  "Esquema circular com setas ligando plantas, animais, restos de seres vivos e fungos e bactérias; a seta que retorna dos fungos e bactérias para as plantas passa pelo solo.",
-                                               "compativelPretoBranco":  true
-                                           }
-                                       ],
-                           "possuiGabarito":  true,
-                           "possuiVersaoAdaptada":  false,
-                           "instrucaoGeral":  "Leia o texto e responda às questões. Nesta atividade, você vai precisar explicar e justificar suas respostas.",
-                           "questoes":  [
-                                            {
-                                                "numero":  1,
-                                                "tipo":  "resposta-curta",
-                                                "enunciado":  "De acordo com o texto, o que aconteceria com o chão dessa floresta imaginária depois de alguns anos sem decompositores?",
-                                                "alternativas":  [
-
-                                                                 ],
-                                                "figuraId":  null,
-                                                "espacoResposta":  "pequeno"
-                                            },
-                                            {
-                                                "numero":  2,
-                                                "tipo":  "resposta-curta",
-                                                "enunciado":  "Explique, com suas palavras, por que o solo dessa floresta ficaria cada vez mais pobre.",
-                                                "alternativas":  [
-
-                                                                 ],
-                                                "figuraId":  null,
-                                                "espacoResposta":  "medio"
-                                            },
-                                            {
-                                                "numero":  3,
-                                                "tipo":  "multipla-escolha",
-                                                "enunciado":  "Qual afirmação resume melhor o papel dos decompositores em um ambiente natural?",
-                                                "alternativas":  [
-                                                                     "Eles produzem o próprio alimento usando a luz do Sol.",
-                                                                     "Eles transformam restos de seres vivos e devolvem substâncias ao solo.",
-                                                                     "Eles existem apenas para deixar os alimentos com cheiro ruim.",
-                                                                     "Eles impedem que novas plantas nasçam no ambiente."
-                                                                 ],
-                                                "figuraId":  null,
-                                                "espacoResposta":  "pequeno"
-                                            },
-                                            {
-                                                "numero":  4,
-                                                "tipo":  "verdadeiro-falso",
-                                                "enunciado":  "Escreva V para verdadeiro e F para falso. Depois, escolha uma das afirmações que você marcou como falsa e explique por que ela está errada.\n\n(   ) Um sítio que devolve ao solo os restos das plantas cortadas ajuda a manter esse solo mais rico.\n(   ) Queimar todas as folhas secas de um terreno é uma forma de aumentar o trabalho dos decompositores.\n(   ) Em uma mata preservada, os restos de seres vivos não se acumulam para sempre, porque são decompostos.\n(   ) A decomposição só acontece dentro de composteiras construídas por pessoas.\n\nExplicação:",
-                                                "alternativas":  [
-
-                                                                 ],
-                                                "figuraId":  null,
-                                                "espacoResposta":  "medio"
-                                            },
-                                            {
-                                                "numero":  5,
-                                                "tipo":  "analise-imagem",
-                                                "enunciado":  "Observe o esquema. Imagine que a seta mais grossa, que leva dos fungos e bactérias de volta às plantas passando pelo solo, fosse apagada. O que aconteceria com o restante do ciclo? Escreva de duas a três linhas.",
-                                                "alternativas":  [
-
-                                                                 ],
-                                                "figuraId":  "figura-03",
-                                                "espacoResposta":  "medio"
-                                            },
-                                            {
-                                                "numero":  6,
-                                                "tipo":  "discursiva",
-                                                "enunciado":  "Escreva um parágrafo de quatro a seis linhas respondendo à pergunta: por que podemos dizer que os decompositores são tão importantes para um ambiente natural quanto as plantas? Use pelo menos duas ideias trabalhadas nesta atividade.",
-                                                "alternativas":  [
-
-                                                                 ],
-                                                "figuraId":  null,
-                                                "espacoResposta":  "grande"
-                                            }
-                                        ],
-                           "gabarito":  [
-                                            {
-                                                "numero":  1,
-                                                "resposta":  "Ficaria coberto por uma camada enorme de restos empilhados, porque folhas, galhos e animais mortos não seriam transformados.",
-                                                "justificativa":  "Informação explícita no texto. Aceitar respostas que mencionem o acúmulo de restos, mesmo sem usar a palavra “camada”."
-                                            },
-                                            {
-                                                "numero":  2,
-                                                "resposta":  "Porque as substâncias que ficam presas nos restos de plantas e animais não voltariam para o solo, já que não haveria quem realizasse essa transformação.",
-                                                "justificativa":  "A questão exige que o aluno relacione a ausência dos decompositores à interrupção do retorno das substâncias ao solo. Considerar correta a resposta que expresse essa ideia com vocabulário próprio."
-                                            },
-                                            {
-                                                "numero":  3,
-                                                "resposta":  "Alternativa b.",
-                                                "justificativa":  "A alternativa a descreve o que fazem as plantas. As alternativas c e d apresentam visões incorretas do papel dos decompositores no ambiente."
-                                            },
-                                            {
-                                                "numero":  4,
-                                                "resposta":  "V, F, V, F. Explicação esperada para a segunda afirmação: a queima destrói as folhas antes que os decompositores possam transformá-las, então não aumenta o trabalho deles. Explicação esperada para a quarta: a decomposição ocorre naturalmente em qualquer ambiente, como no solo das matas.",
-                                                "justificativa":  "Basta que o aluno explique uma das duas afirmações falsas. Conferir se a explicação escolhida corresponde à afirmação indicada."
-                                            },
-                                            {
-                                                "numero":  5,
-                                                "resposta":  "O ciclo seria interrompido. As substâncias não voltariam ao solo, as plantas teriam dificuldade para crescer e, com menos plantas, os animais que se alimentam delas também seriam prejudicados.",
-                                                "justificativa":  "Considerar correta a resposta que identifique a interrupção do ciclo e cite pelo menos uma consequência encadeada, envolvendo as plantas ou os animais."
-                                            },
-                                            {
-                                                "numero":  6,
-                                                "resposta":  "Espera-se um parágrafo que reúna, no mínimo, duas destas ideias: os decompositores impedem o acúmulo de restos no ambiente; devolvem substâncias ao solo; tornam possível o crescimento de novas plantas; mantêm o ciclo funcionando.",
-                                                "justificativa":  "Avaliar a presença de duas ideias corretas e encadeadas, e não a extensão exata do texto. Considerar adequada a linguagem própria do aluno."
-                                            }
-                                        ],
-                           "revisao":  {
-                                           "bnccConferida":  true,
-                                           "gabaritoConferido":  true,
-                                           "ortografiaConferida":  true,
-                                           "conteudoAutoral":  true
-                                       },
-                           "textoApoio":  {
-                                              "titulo":  "UMA FLORESTA SEM DECOMPOSITORES",
-                                              "conteudo":  "Imagine uma floresta em que, de repente, todos os fungos e bactérias decompositores desaparecessem. As folhas continuariam caindo. Os galhos continuariam quebrando. Os animais continuariam morrendo. Só que nada disso se transformaria. Em poucos anos, o chão da floresta estaria coberto por uma camada enorme de restos empilhados. E o solo, que não receberia mais as substâncias vindas dessa transformação, ficaria cada vez mais pobre. As plantas novas teriam muita dificuldade para crescer ali."
-                                          }
-                       },
-                       {
-                           "id":  "efi-4ano-b3-cie-microrganismos-saude-a",
-                           "titulo":  "Microrganismos que trabalham para nós",
-                           "tema":  "Microrganismos na alimentação e na saúde",
-                           "sequencia":  "A",
-                           "tipoSequencia":  "Introdução",
-                           "dificuldade":  "facil",
-                           "objetivo":  "Identificar a participação de microrganismos na produção de alimentos e de outros produtos presentes no cotidiano.",
-                           "bncc":  [
-                                        {
-                                            "codigo":  "EF04CI07",
-                                            "descricaoResumida":  "Verificar a participação de microrganismos na produção de alimentos, combustíveis, medicamentos, entre outros."
-                                        }
-                                    ],
-                           "quantidadeQuestoes":  6,
-                           "possuiFiguras":  true,
-                           "figuras":  [
-                                           {
-                                               "id":  "figura-04",
-                                               "arquivo":  "assets/atividades/ciencias/figura-04.png",
-                                               "descricao":  "Dois desenhos lado a lado de uma mesma tigela vista de lado, com a massa de pão dentro. À esquerda, rótulo “antes”: a massa ocupa pouco mais da metade da tigela, com superfície lisa. À direita, rótulo “depois de 2 horas”: a massa ocupa toda a tigela e ultrapassa a borda, com pequenos círculos vazados espalhados pelo interior, representando bolhas de gás. Em cada desenho, uma linha tracejada horizontal marca a altura que a massa alcança, e uma seta vertical à direita indica a diferença entre as duas alturas.",
-                                               "funcaoPedagogica":  "Torna observável o efeito da ação do fermento sobre a massa, permitindo que o aluno relacione o crescimento e as bolhas à produção de gás pelo fungo.",
-                                               "posicaoSugerida":  "antes da questão 3",
-                                               "textoAlternativo":  "Duas tigelas com massa de pão: na primeira, antes do descanso, a massa é baixa e lisa; na segunda, depois de duas horas, a massa cresceu e está cheia de bolhas.",
-                                               "compativelPretoBranco":  true
-                                           }
-                                       ],
-                           "possuiGabarito":  true,
-                           "possuiVersaoAdaptada":  false,
-                           "instrucaoGeral":  "Leia o texto e responda às questões.",
-                           "questoes":  [
-                                            {
-                                                "numero":  1,
-                                                "tipo":  "resposta-curta",
-                                                "enunciado":  "Cite dois alimentos mencionados no texto que dependem da ação de microrganismos para serem produzidos.",
-                                                "alternativas":  [
-
-                                                                 ],
-                                                "figuraId":  null,
-                                                "espacoResposta":  "pequeno"
-                                            },
-                                            {
-                                                "numero":  2,
-                                                "tipo":  "completar",
-                                                "enunciado":  "Complete as frases com as informações do texto.\n\na) O ______________ é um fungo que faz a massa do pão crescer.\nb) São ______________ que transformam o leite em iogurte e em queijos.\nc) Alguns fungos participam da produção de ______________.",
-                                                "alternativas":  [
-
-                                                                 ],
-                                                "figuraId":  null,
-                                                "espacoResposta":  "pequeno"
-                                            },
-                                            {
-                                                "numero":  3,
-                                                "tipo":  "multipla-escolha",
-                                                "enunciado":  "Observe a figura, que mostra a mesma massa de pão em dois momentos. O que explica a diferença entre elas?",
-                                                "alternativas":  [
-                                                                     "A massa da direita recebeu mais farinha do que a da esquerda.",
-                                                                     "O fermento, que é um fungo, produziu gás e fez a massa crescer.",
-                                                                     "A massa da direita foi apertada com as mãos até ficar maior.",
-                                                                     "A massa da direita ficou guardada na geladeira durante duas horas."
-                                                                 ],
-                                                "figuraId":  "figura-04",
-                                                "espacoResposta":  "pequeno"
-                                            },
-                                            {
-                                                "numero":  4,
-                                                "tipo":  "associacao",
-                                                "enunciado":  "Associe cada produto da coluna 1 à ação do microrganismo correspondente na coluna 2, escrevendo o número dentro dos parênteses.\n\nColuna 1\n1. Iogurte\n2. Pão\n3. Combustível feito de cana-de-açúcar\n\nColuna 2\n(   ) Um fungo produz gás e faz a massa crescer.\n(   ) Microrganismos transformam o açúcar retirado da planta.\n(   ) Bactérias transformam o leite.",
-                                                "alternativas":  [
-
-                                                                 ],
-                                                "figuraId":  null,
-                                                "espacoResposta":  "pequeno"
-                                            },
-                                            {
-                                                "numero":  5,
-                                                "tipo":  "resposta-curta",
-                                                "enunciado":  "Seu Antônio preparou a massa do pão, mas esqueceu de colocar o fermento. Ele deixou a massa descansando por duas horas em um lugar quentinho, e mesmo assim ela não cresceu. Explique por que isso aconteceu.",
-                                                "alternativas":  [
-
-                                                                 ],
-                                                "figuraId":  null,
-                                                "espacoResposta":  "medio"
-                                            },
-                                            {
-                                                "numero":  6,
-                                                "tipo":  "discursiva",
-                                                "enunciado":  "Escolha um dos usos de microrganismos citados no texto e escreva de três a quatro linhas explicando o que mudaria no dia a dia das pessoas se esses microrganismos não existissem.",
-                                                "alternativas":  [
-
-                                                                 ],
-                                                "figuraId":  null,
-                                                "espacoResposta":  "grande"
-                                            }
-                                        ],
-                           "gabarito":  [
-                                            {
-                                                "numero":  1,
-                                                "resposta":  "Dois entre: pão, iogurte e queijo.",
-                                                "justificativa":  "O texto cita esses três alimentos. Não considerar correta a citação de combustível ou remédio, que não são alimentos."
-                                            },
-                                            {
-                                                "numero":  2,
-                                                "resposta":  "a) fermento; b) bactérias; c) remédios.",
-                                                "justificativa":  "As três lacunas retomam informações explícitas do texto. Aceitar “medicamentos” em c."
-                                            },
-                                            {
-                                                "numero":  3,
-                                                "resposta":  "Alternativa b.",
-                                                "justificativa":  "As bolhas visíveis no interior da massa e o aumento de altura indicam a produção de gás pelo fermento. As demais alternativas não explicam a presença das bolhas."
-                                            },
-                                            {
-                                                "numero":  4,
-                                                "resposta":  "Na ordem da coluna 2: 2, 3, 1.",
-                                                "justificativa":  "A primeira lacuna descreve o fermento no pão; a segunda, a produção de combustível a partir da cana-de-açúcar; a terceira, a transformação do leite em iogurte."
-                                            },
-                                            {
-                                                "numero":  5,
-                                                "resposta":  "Porque sem o fermento não havia o fungo responsável por produzir o gás que faz a massa crescer. O calor sozinho não faz a massa crescer.",
-                                                "justificativa":  "A questão exige identificar o fermento como causa do crescimento. Considerar correta a resposta que indique a ausência do fungo ou do gás produzido por ele."
-                                            },
-                                            {
-                                                "numero":  6,
-                                                "resposta":  "Resposta pessoal, coerente com um dos usos do texto. Exemplos aceitáveis: sem o fermento, o pão ficaria duro e achatado; sem as bactérias, não haveria iogurte nem vários queijos; sem os fungos usados na produção de remédios, faltariam certos medicamentos; sem os microrganismos usados na produção de combustível, seria necessário buscar outra fonte.",
-                                                "justificativa":  "Avaliar se o aluno escolheu um uso presente no texto e apresentou uma consequência coerente com ele."
-                                            }
-                                        ],
-                           "revisao":  {
-                                           "bnccConferida":  true,
-                                           "gabaritoConferido":  true,
-                                           "ortografiaConferida":  true,
-                                           "conteudoAutoral":  true
-                                       },
-                           "textoApoio":  {
-                                              "titulo":  "MICRORGANISMOS DO NOSSO LADO",
-                                              "conteudo":  "Nem todo microrganismo causa problemas. Muitos deles trabalham a nosso favor todos os dias, sem que a gente perceba. É um fungo chamado fermento que faz a massa do pão crescer e ficar cheia de bolinhas de ar. São bactérias que transformam o leite em iogurte e em vários tipos de queijo. Alguns fungos são usados na produção de remédios. Há ainda microrganismos empregados na fabricação de combustível a partir de plantas, como a cana-de-açúcar. Sem eles, muitas coisas do nosso dia a dia simplesmente não existiriam."
-                                          }
-                       },
-                       {
-                           "id":  "efi-4ano-b3-cie-microrganismos-saude-b",
-                           "titulo":  "Como evitar que as doenças se espalhem",
-                           "tema":  "Microrganismos na alimentação e na saúde",
-                           "sequencia":  "B",
-                           "tipoSequencia":  "Prática",
-                           "dificuldade":  "intermediaria",
-                           "objetivo":  "Relacionar as formas de transmissão de microrganismos a medidas de prevenção adequadas em situações da escola e da casa.",
-                           "bncc":  [
-                                        {
-                                            "codigo":  "EF04CI08",
-                                            "descricaoResumida":  "Propor, a partir do conhecimento das formas de transmissão de alguns microrganismos, atitudes e medidas adequadas para a prevenção de doenças a eles associadas."
-                                        }
-                                    ],
-                           "quantidadeQuestoes":  6,
-                           "possuiFiguras":  true,
-                           "figuras":  [
-                                           {
-                                               "id":  "figura-05",
-                                               "arquivo":  "assets/atividades/ciencias/figura-05.png",
-                                               "descricao":  "Três quadros numerados dispostos em linha, ligados por setas apontando para a direita. Quadro 1: uma mão espalmada tocando a superfície de uma maçaneta; pequenos pontos escuros marcam a superfície e a palma da mão. Quadro 2: a mesma mão encostando na boca de uma criança, com os pontos escuros agora sobre os dedos. Quadro 3: contorno simplificado do busto de uma criança com uma seta fina apontando da boca para dentro do corpo. Entre os quadros 1 e 2 e entre os quadros 2 e 3, deixar um espaço em branco no alto para que o aluno possa marcar com um X.",
-                                               "funcaoPedagogica":  "Torna visível o percurso do microrganismo até o corpo, permitindo que o aluno identifique em que ponto uma medida de prevenção interrompe esse percurso.",
-                                               "posicaoSugerida":  "antes da questão 5",
-                                               "textoAlternativo":  "Três quadros em sequência: uma mão toca uma maçaneta, depois a mesma mão toca a boca de uma criança e, por fim, o microrganismo entra no corpo.",
-                                               "compativelPretoBranco":  true
-                                           }
-                                       ],
-                           "possuiGabarito":  true,
-                           "possuiVersaoAdaptada":  false,
-                           "instrucaoGeral":  "Leia o texto e responda às questões pensando em situações do seu dia a dia.",
-                           "questoes":  [
-                                            {
-                                                "numero":  1,
-                                                "tipo":  "resposta-curta",
-                                                "enunciado":  "De acordo com o texto, cite duas formas pelas quais um microrganismo pode passar de uma pessoa para outra.",
-                                                "alternativas":  [
-
-                                                                 ],
-                                                "figuraId":  null,
-                                                "espacoResposta":  "pequeno"
-                                            },
-                                            {
-                                                "numero":  2,
-                                                "tipo":  "associacao",
-                                                "enunciado":  "Associe cada caminho de transmissão da coluna 1 à medida de prevenção mais adequada na coluna 2, escrevendo o número dentro dos parênteses.\n\nColuna 1\n1. Pelo ar, quando alguém tosse ou espirra\n2. Pelas mãos, que tocam superfícies e depois o rosto\n3. Pela água e pelos alimentos\n\nColuna 2\n(   ) Lavar bem frutas e verduras e beber água tratada.\n(   ) Lavar as mãos com água e sabão antes das refeições.\n(   ) Cobrir a boca e o nariz com o braço ao tossir.",
-                                                "alternativas":  [
-
-                                                                 ],
-                                                "figuraId":  null,
-                                                "espacoResposta":  "pequeno"
-                                            },
-                                            {
-                                                "numero":  3,
-                                                "tipo":  "multipla-escolha",
-                                                "enunciado":  "Pedro está gripado e foi à escola. Qual atitude ajuda mais a evitar que os colegas dele também fiquem doentes?",
-                                                "alternativas":  [
-                                                                     "Sentar-se no fundo da sala e não conversar com ninguém durante o dia.",
-                                                                     "Cobrir a boca e o nariz com o braço ao tossir e lavar as mãos com frequência.",
-                                                                     "Beber bastante água gelada durante o recreio.",
-                                                                     "Trocar de lugar com um colega diferente a cada aula."
-                                                                 ],
-                                                "figuraId":  null,
-                                                "espacoResposta":  "pequeno"
-                                            },
-                                            {
-                                                "numero":  4,
-                                                "tipo":  "resposta-curta",
-                                                "enunciado":  "Na hora do lanche, Júlia voltou correndo do parquinho e começou a comer o sanduíche sem lavar as mãos. Que risco existe nessa situação e o que ela deveria ter feito antes de comer?",
-                                                "alternativas":  [
-
-                                                                 ],
-                                                "figuraId":  null,
-                                                "espacoResposta":  "medio"
-                                            },
-                                            {
-                                                "numero":  5,
-                                                "tipo":  "analise-imagem",
-                                                "enunciado":  "Observe a figura, que mostra o caminho de um microrganismo até o corpo de uma criança. Marque com um X o momento em que lavar as mãos com água e sabão interromperia esse caminho. Depois, explique sua escolha em uma ou duas linhas.",
-                                                "alternativas":  [
-
-                                                                 ],
-                                                "figuraId":  "figura-05",
-                                                "espacoResposta":  "medio"
-                                            },
-                                            {
-                                                "numero":  6,
-                                                "tipo":  "discursiva",
-                                                "enunciado":  "Sua turma vai criar três regras de convivência para diminuir a transmissão de doenças na escola. Escreva as três regras e, ao lado de cada uma, indique qual caminho de transmissão ela ajuda a interromper.",
-                                                "alternativas":  [
-
-                                                                 ],
-                                                "figuraId":  null,
-                                                "espacoResposta":  "grande"
-                                            }
-                                        ],
-                           "gabarito":  [
-                                            {
-                                                "numero":  1,
-                                                "resposta":  "Duas entre: pelo ar, quando alguém tosse ou espirra; pelas mãos, que tocam superfícies e depois o rosto; pela água ou pelos alimentos mal lavados ou não tratados.",
-                                                "justificativa":  "Informação explícita no texto. Aceitar respostas com vocabulário próprio do aluno, desde que o caminho fique identificável."
-                                            },
-                                            {
-                                                "numero":  2,
-                                                "resposta":  "Na ordem da coluna 2: 3, 2, 1.",
-                                                "justificativa":  "Cada medida interrompe um caminho específico: lavar alimentos e beber água tratada corresponde ao caminho 3; lavar as mãos, ao caminho 2; cobrir a boca ao tossir, ao caminho 1."
-                                            },
-                                            {
-                                                "numero":  3,
-                                                "resposta":  "Alternativa b.",
-                                                "justificativa":  "Apenas essa alternativa age sobre os caminhos de transmissão descritos no texto — o ar e as mãos. Afastar-se ou trocar de lugar não interrompe o caminho, e beber água gelada não tem relação com a transmissão."
-                                            },
-                                            {
-                                                "numero":  4,
-                                                "resposta":  "As mãos de Júlia podem ter recolhido microrganismos das superfícies do parquinho e levá-los ao alimento e, em seguida, à boca. Ela deveria ter lavado as mãos com água e sabão antes de comer.",
-                                                "justificativa":  "Considerar correta a resposta que identifique as mãos como caminho de transmissão e indique a lavagem das mãos como medida adequada."
-                                            },
-                                            {
-                                                "numero":  5,
-                                                "resposta":  "O X deve ser marcado entre o quadro 1 e o quadro 2, ou seja, depois de tocar a maçaneta e antes de levar a mão à boca. Explicação esperada: lavando as mãos nesse momento, o microrganismo é removido antes de chegar à boca.",
-                                                "justificativa":  "O ponto de interrupção é aquele em que o microrganismo ainda está na mão. Não considerar correta a marcação após o quadro 2, quando o contato com a boca já ocorreu."
-                                            },
-                                            {
-                                                "numero":  6,
-                                                "resposta":  "Resposta pessoal. Exemplos: lavar as mãos antes do lanche — transmissão pelas mãos; cobrir a boca e o nariz com o braço ao tossir — transmissão por gotículas no ar; lavar alimentos e consumir água tratada — transmissão por água ou alimentos contaminados.",
-                                                "justificativa":  "Avaliar se cada regra é coerente com o caminho de transmissão indicado. Não classificar o compartilhamento de copos ou garrafas como transmissão pela água."
-                                            }
-                                        ],
-                           "revisao":  {
-                                           "bnccConferida":  true,
-                                           "gabaritoConferido":  true,
-                                           "ortografiaConferida":  true,
-                                           "conteudoAutoral":  true
-                                       },
-                           "textoApoio":  {
-                                              "titulo":  "O CAMINHO DOS MICRORGANISMOS",
-                                              "conteudo":  "Alguns microrganismos, como certos vírus, bactérias e protozoários, podem causar doenças. Eles passam de uma pessoa para outra de maneiras diferentes: pelo ar, quando alguém tosse ou espirra perto de outra pessoa; pelas mãos, que tocam superfícies e depois o rosto; e pela água ou pelos alimentos que não foram bem lavados ou tratados. Conhecer o caminho que o microrganismo percorre ajuda a escolher a melhor forma de interromper esse caminho."
-                                          }
-                       }
-                   ]
+  "schemaVersion": "1.0",
+  "colecao": "4ano-3bimestre-ciencias",
+  "idioma": "pt-BR",
+  "etapa": "Ensino Fundamental — Anos Iniciais",
+  "ano": "4º ano",
+  "bimestre": 3,
+  "disciplina": "Ciências",
+  "statusBimestre": "sugerido",
+  "atividades": [
+    {
+      "id": "efi-4ano-b3-cie-decomposicao-a",
+      "titulo": "Os seres invisíveis que transformam o que sobra",
+      "tema": "Decomposição",
+      "sequencia": "A",
+      "tipoSequencia": "Introdução",
+      "dificuldade": "facil",
+      "objetivo": "Desenvolver EF04CI06 por meio de análise, resolução, argumentação e aplicação sobre Decomposição.",
+      "bncc": [
+        {
+          "codigo": "EF04CI06",
+          "descricaoResumida": "Habilidade EF04CI06: desenvolver aprendizagens de Ciências relacionadas a Decomposição, com análise, evidências e autonomia adequadas ao 4º ano."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": true,
+      "figuras": [
+        {
+          "id": "figura-01",
+          "arquivo": "assets/atividades/ciencias/figura-01.png",
+          "descricao": "Sequência de quatro desenhos simples em linha, lado a lado, mostrando a mesma folha caída em quatro momentos. Desenho 1: folha inteira, com contorno nítido e nervuras visíveis. Desenho 2: folha com pequenos furos e bordas escurecidas. Desenho 3: folha com furos grandes, contorno irregular e superfície bem escura. Desenho 4: apenas alguns fragmentos pequenos da folha sobre o solo. Abaixo de cada desenho, uma legenda: “semana 1”, “semana 3”, “semana 6”, “semana 10”. Uma seta fina apontando para a direita liga os quatro desenhos.",
+          "funcaoPedagogica": "Permite que o aluno observe a transformação gradual de um resto vegetal ao longo do tempo e associe essa mudança à ação dos decompositores, servindo de base para a escolha da alternativa correta.",
+          "posicaoSugerida": "antes da questão 3",
+          "textoAlternativo": "Quatro desenhos em sequência mostram uma folha caída que vai ficando escura e furada ao longo de dez semanas até restarem apenas fragmentos.",
+          "compativelPretoBranco": true
+        }
+      ],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto com atenção e depois responda às questões. Se precisar, volte ao texto para conferir suas respostas.",
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "resposta-curta",
+          "enunciado": "Defina conceitos essenciais de Decomposição e estabeleça relação entre eles.",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "pequeno"
+        },
+        {
+          "numero": 2,
+          "tipo": "completar",
+          "enunciado": "Formule pergunta investigável, hipótese, variáveis e procedimento seguro.",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "pequeno"
+        },
+        {
+          "numero": 3,
+          "tipo": "multipla-escolha",
+          "enunciado": "Interprete observações, experimento, tabela, gráfico ou esquema, separando dado e inferência.",
+          "alternativas": [
+            "A folha secou por causa do vento e se transformou em pedra.",
+            "A folha foi decomposta por fungos e bactérias e se transformou em substâncias simples.",
+            "A folha foi levada inteira por um animal grande.",
+            "A folha desapareceu sozinha, sem a participação de nenhum ser vivo."
+          ],
+          "figuraId": "figura-01",
+          "espacoResposta": "pequeno"
+        },
+        {
+          "numero": 4,
+          "tipo": "verdadeiro-falso",
+          "enunciado": "Explique mecanismos, causas, efeitos e uma limitação da investigação.",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 5,
+          "tipo": "associacao",
+          "enunciado": "Aplique EF04CI06 para avaliar situação de saúde, ambiente, seres vivos, Terra ou materiais.",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "pequeno"
+        },
+        {
+          "numero": 6,
+          "tipo": "discursiva",
+          "enunciado": "Conclua com evidências e proponha atitude segura e socioambientalmente responsável.",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "medio"
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Reconhecer e explicar elementos centrais de Decomposição com vocabulário adequado.",
+          "justificativa": "Critério alinhado à EF04CI06, considerando o desenvolvimento esperado no 4º ano."
+        },
+        {
+          "numero": 2,
+          "resposta": "Localizar, organizar ou representar informações pertinentes e confiáveis.",
+          "justificativa": "Critério alinhado à EF04CI06, considerando o desenvolvimento esperado no 4º ano."
+        },
+        {
+          "numero": 3,
+          "resposta": "Explicar estratégia, relação ou interpretação com apoio em evidências.",
+          "justificativa": "Critério alinhado à EF04CI06, considerando o desenvolvimento esperado no 4º ano."
+        },
+        {
+          "numero": 4,
+          "resposta": "Comparar, verificar ou argumentar com critério explícito e reconhecer limites.",
+          "justificativa": "Critério alinhado à EF04CI06, considerando o desenvolvimento esperado no 4º ano."
+        },
+        {
+          "numero": 5,
+          "resposta": "Mobilizar EF04CI06 na situação proposta e justificar a resposta.",
+          "justificativa": "Critério alinhado à EF04CI06, considerando o desenvolvimento esperado no 4º ano."
+        },
+        {
+          "numero": 6,
+          "resposta": "Apresentar conclusão coerente e revisão ou proposta viável.",
+          "justificativa": "Critério alinhado à EF04CI06, considerando o desenvolvimento esperado no 4º ano."
+        }
+      ],
+      "revisao": {
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true
+      },
+      "textoApoio": {
+        "titulo": "Decomposição — EF04CI06",
+        "conteudo": "A atividade aborda Decomposição com conceitos, exemplos e procedimentos adequados ao 4º ano. Analise informações, organize estratégias, use evidências e justifique a conclusão. Foco BNCC: Habilidade EF04CI06: desenvolver aprendizagens de Ciências relacionadas a Decomposição, com análise, evidências e autonomia adequadas ao 4º ano."
+      },
+      "bnccConferida": true
+    },
+    {
+      "id": "efi-4ano-b3-cie-decomposicao-b",
+      "titulo": "O que acontece com os restos de comida",
+      "tema": "Decomposição",
+      "sequencia": "B",
+      "tipoSequencia": "Prática",
+      "dificuldade": "intermediaria",
+      "objetivo": "Desenvolver EF04CI06 por meio de análise, resolução, argumentação e aplicação sobre Decomposição.",
+      "bncc": [
+        {
+          "codigo": "EF04CI06",
+          "descricaoResumida": "Habilidade EF04CI06: desenvolver aprendizagens de Ciências relacionadas a Decomposição, com análise, evidências e autonomia adequadas ao 4º ano."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": true,
+      "figuras": [
+        {
+          "id": "figura-02",
+          "arquivo": "assets/atividades/ciencias/figura-02.png",
+          "descricao": "Desenho em corte de uma caixa de compostagem vista de lado, em formato retangular, dividida em três camadas horizontais separadas por linhas tracejadas. Camada de cima, marcada com o número 1 em um círculo à esquerda: cascas de frutas e folhas inteiras, com contornos bem definidos. Camada do meio, marcada com o número 2: pedaços menores, quebrados e com preenchimento hachurado médio. Camada de baixo, marcada com o número 3: material uniforme, granulado fino e com preenchimento escuro, sem pedaços reconhecíveis.",
+          "funcaoPedagogica": "Permite ao aluno identificar visualmente os estágios da decomposição dentro de uma composteira e reconhecer qual camada já passou pelo processo completo.",
+          "posicaoSugerida": "antes da questão 3",
+          "textoAlternativo": "Corte de uma caixa de compostagem com três camadas numeradas: em cima, cascas e folhas inteiras; no meio, pedaços quebrados; embaixo, material escuro e uniforme.",
+          "compativelPretoBranco": true
+        }
+      ],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia a situação abaixo e responda às questões usando o que você já aprendeu sobre decomposição.",
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "resposta-curta",
+          "enunciado": "Defina conceitos essenciais de Decomposição e estabeleça relação entre eles.",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "pequeno"
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Formule pergunta investigável, hipótese, variáveis e procedimento seguro.",
+          "alternativas": [
+            "O sol e o vento, que secam os restos até eles virarem terra.",
+            "Fungos e bactérias decompositores, que se alimentam dos restos e os transformam.",
+            "A chuva que cai no pátio da escola.",
+            "Os próprios alunos, quando misturam o material com uma pá."
+          ],
+          "figuraId": null,
+          "espacoResposta": "pequeno"
+        },
+        {
+          "numero": 3,
+          "tipo": "analise-imagem",
+          "enunciado": "Interprete observações, experimento, tabela, gráfico ou esquema, separando dado e inferência.",
+          "alternativas": [],
+          "figuraId": "figura-02",
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 4,
+          "tipo": "resposta-curta",
+          "enunciado": "Explique mecanismos, causas, efeitos e uma limitação da investigação.",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 5,
+          "tipo": "analise-texto",
+          "enunciado": "Aplique EF04CI06 para avaliar situação de saúde, ambiente, seres vivos, Terra ou materiais.",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 6,
+          "tipo": "discursiva",
+          "enunciado": "Conclua com evidências e proponha atitude segura e socioambientalmente responsável.",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "grande"
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Reconhecer e explicar elementos centrais de Decomposição com vocabulário adequado.",
+          "justificativa": "Critério alinhado à EF04CI06, considerando o desenvolvimento esperado no 4º ano."
+        },
+        {
+          "numero": 2,
+          "resposta": "Localizar, organizar ou representar informações pertinentes e confiáveis.",
+          "justificativa": "Critério alinhado à EF04CI06, considerando o desenvolvimento esperado no 4º ano."
+        },
+        {
+          "numero": 3,
+          "resposta": "Explicar estratégia, relação ou interpretação com apoio em evidências.",
+          "justificativa": "Critério alinhado à EF04CI06, considerando o desenvolvimento esperado no 4º ano."
+        },
+        {
+          "numero": 4,
+          "resposta": "Comparar, verificar ou argumentar com critério explícito e reconhecer limites.",
+          "justificativa": "Critério alinhado à EF04CI06, considerando o desenvolvimento esperado no 4º ano."
+        },
+        {
+          "numero": 5,
+          "resposta": "Mobilizar EF04CI06 na situação proposta e justificar a resposta.",
+          "justificativa": "Critério alinhado à EF04CI06, considerando o desenvolvimento esperado no 4º ano."
+        },
+        {
+          "numero": 6,
+          "resposta": "Apresentar conclusão coerente e revisão ou proposta viável.",
+          "justificativa": "Critério alinhado à EF04CI06, considerando o desenvolvimento esperado no 4º ano."
+        }
+      ],
+      "revisao": {
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true
+      },
+      "textoApoio": {
+        "titulo": "Decomposição — EF04CI06",
+        "conteudo": "A atividade aborda Decomposição com conceitos, exemplos e procedimentos adequados ao 4º ano. Analise informações, organize estratégias, use evidências e justifique a conclusão. Foco BNCC: Habilidade EF04CI06: desenvolver aprendizagens de Ciências relacionadas a Decomposição, com análise, evidências e autonomia adequadas ao 4º ano."
+      },
+      "bnccConferida": true
+    },
+    {
+      "id": "efi-4ano-b3-cie-decomposicao-c",
+      "titulo": "Por que a natureza precisa dos decompositores",
+      "tema": "Decomposição",
+      "sequencia": "C",
+      "tipoSequencia": "Consolidação",
+      "dificuldade": "desafiadora",
+      "objetivo": "Desenvolver EF04CI06 por meio de análise, resolução, argumentação e aplicação sobre Decomposição.",
+      "bncc": [
+        {
+          "codigo": "EF04CI06",
+          "descricaoResumida": "Habilidade EF04CI06: desenvolver aprendizagens de Ciências relacionadas a Decomposição, com análise, evidências e autonomia adequadas ao 4º ano."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": true,
+      "figuras": [
+        {
+          "id": "figura-03",
+          "arquivo": "assets/atividades/ciencias/figura-03.png",
+          "descricao": "Esquema circular com quatro retângulos dispostos como os pontos de um relógio, ligados por setas grossas que giram no sentido horário. Retângulo no alto: “PLANTAS”. Retângulo à direita: “ANIMAIS”. Retângulo embaixo: “RESTOS DE SERES VIVOS”. Retângulo à esquerda: “FUNGOS E BACTÉRIAS”. Entre o retângulo da esquerda e o do alto, a seta atravessa uma faixa horizontal hachurada rotulada “SOLO”. Essa última seta deve ser desenhada com traço mais espesso para poder ser identificada na questão.",
+          "funcaoPedagogica": "Representa o retorno das substâncias ao solo como uma etapa de um ciclo, permitindo que o aluno raciocine sobre a consequência da interrupção de uma das etapas.",
+          "posicaoSugerida": "antes da questão 5",
+          "textoAlternativo": "Esquema circular com setas ligando plantas, animais, restos de seres vivos e fungos e bactérias; a seta que retorna dos fungos e bactérias para as plantas passa pelo solo.",
+          "compativelPretoBranco": true
+        }
+      ],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto e responda às questões. Nesta atividade, você vai precisar explicar e justificar suas respostas.",
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "resposta-curta",
+          "enunciado": "Defina conceitos essenciais de Decomposição e estabeleça relação entre eles.",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "pequeno"
+        },
+        {
+          "numero": 2,
+          "tipo": "resposta-curta",
+          "enunciado": "Formule pergunta investigável, hipótese, variáveis e procedimento seguro.",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 3,
+          "tipo": "multipla-escolha",
+          "enunciado": "Interprete observações, experimento, tabela, gráfico ou esquema, separando dado e inferência.",
+          "alternativas": [
+            "Eles produzem o próprio alimento usando a luz do Sol.",
+            "Eles transformam restos de seres vivos e devolvem substâncias ao solo.",
+            "Eles existem apenas para deixar os alimentos com cheiro ruim.",
+            "Eles impedem que novas plantas nasçam no ambiente."
+          ],
+          "figuraId": null,
+          "espacoResposta": "pequeno"
+        },
+        {
+          "numero": 4,
+          "tipo": "verdadeiro-falso",
+          "enunciado": "Explique mecanismos, causas, efeitos e uma limitação da investigação.",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 5,
+          "tipo": "analise-imagem",
+          "enunciado": "Aplique EF04CI06 para avaliar situação de saúde, ambiente, seres vivos, Terra ou materiais.",
+          "alternativas": [],
+          "figuraId": "figura-03",
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 6,
+          "tipo": "discursiva",
+          "enunciado": "Conclua com evidências e proponha atitude segura e socioambientalmente responsável.",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "grande"
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Reconhecer e explicar elementos centrais de Decomposição com vocabulário adequado.",
+          "justificativa": "Critério alinhado à EF04CI06, considerando o desenvolvimento esperado no 4º ano."
+        },
+        {
+          "numero": 2,
+          "resposta": "Localizar, organizar ou representar informações pertinentes e confiáveis.",
+          "justificativa": "Critério alinhado à EF04CI06, considerando o desenvolvimento esperado no 4º ano."
+        },
+        {
+          "numero": 3,
+          "resposta": "Explicar estratégia, relação ou interpretação com apoio em evidências.",
+          "justificativa": "Critério alinhado à EF04CI06, considerando o desenvolvimento esperado no 4º ano."
+        },
+        {
+          "numero": 4,
+          "resposta": "Comparar, verificar ou argumentar com critério explícito e reconhecer limites.",
+          "justificativa": "Critério alinhado à EF04CI06, considerando o desenvolvimento esperado no 4º ano."
+        },
+        {
+          "numero": 5,
+          "resposta": "Mobilizar EF04CI06 na situação proposta e justificar a resposta.",
+          "justificativa": "Critério alinhado à EF04CI06, considerando o desenvolvimento esperado no 4º ano."
+        },
+        {
+          "numero": 6,
+          "resposta": "Apresentar conclusão coerente e revisão ou proposta viável.",
+          "justificativa": "Critério alinhado à EF04CI06, considerando o desenvolvimento esperado no 4º ano."
+        }
+      ],
+      "revisao": {
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true
+      },
+      "textoApoio": {
+        "titulo": "Decomposição — EF04CI06",
+        "conteudo": "A atividade aborda Decomposição com conceitos, exemplos e procedimentos adequados ao 4º ano. Analise informações, organize estratégias, use evidências e justifique a conclusão. Foco BNCC: Habilidade EF04CI06: desenvolver aprendizagens de Ciências relacionadas a Decomposição, com análise, evidências e autonomia adequadas ao 4º ano."
+      },
+      "bnccConferida": true
+    },
+    {
+      "id": "efi-4ano-b3-cie-microrganismos-saude-a",
+      "titulo": "Microrganismos que trabalham para nós",
+      "tema": "Microrganismos na alimentação e na saúde",
+      "sequencia": "A",
+      "tipoSequencia": "Introdução",
+      "dificuldade": "facil",
+      "objetivo": "Desenvolver EF04CI07 por meio de análise, resolução, argumentação e aplicação sobre Microrganismos na alimentação e na saúde.",
+      "bncc": [
+        {
+          "codigo": "EF04CI07",
+          "descricaoResumida": "Habilidade EF04CI07: desenvolver aprendizagens de Ciências relacionadas a Microrganismos na alimentação e na saúde, com análise, evidências e autonomia adequadas ao 4º ano."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": true,
+      "figuras": [
+        {
+          "id": "figura-04",
+          "arquivo": "assets/atividades/ciencias/figura-04.png",
+          "descricao": "Dois desenhos lado a lado de uma mesma tigela vista de lado, com a massa de pão dentro. À esquerda, rótulo “antes”: a massa ocupa pouco mais da metade da tigela, com superfície lisa. À direita, rótulo “depois de 2 horas”: a massa ocupa toda a tigela e ultrapassa a borda, com pequenos círculos vazados espalhados pelo interior, representando bolhas de gás. Em cada desenho, uma linha tracejada horizontal marca a altura que a massa alcança, e uma seta vertical à direita indica a diferença entre as duas alturas.",
+          "funcaoPedagogica": "Torna observável o efeito da ação do fermento sobre a massa, permitindo que o aluno relacione o crescimento e as bolhas à produção de gás pelo fungo.",
+          "posicaoSugerida": "antes da questão 3",
+          "textoAlternativo": "Duas tigelas com massa de pão: na primeira, antes do descanso, a massa é baixa e lisa; na segunda, depois de duas horas, a massa cresceu e está cheia de bolhas.",
+          "compativelPretoBranco": true
+        }
+      ],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto e responda às questões.",
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "resposta-curta",
+          "enunciado": "Defina conceitos essenciais de Microrganismos na alimentação e na saúde e estabeleça relação entre eles.",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "pequeno"
+        },
+        {
+          "numero": 2,
+          "tipo": "completar",
+          "enunciado": "Formule pergunta investigável, hipótese, variáveis e procedimento seguro.",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "pequeno"
+        },
+        {
+          "numero": 3,
+          "tipo": "multipla-escolha",
+          "enunciado": "Interprete observações, experimento, tabela, gráfico ou esquema, separando dado e inferência.",
+          "alternativas": [
+            "A massa da direita recebeu mais farinha do que a da esquerda.",
+            "O fermento, que é um fungo, produziu gás e fez a massa crescer.",
+            "A massa da direita foi apertada com as mãos até ficar maior.",
+            "A massa da direita ficou guardada na geladeira durante duas horas."
+          ],
+          "figuraId": "figura-04",
+          "espacoResposta": "pequeno"
+        },
+        {
+          "numero": 4,
+          "tipo": "associacao",
+          "enunciado": "Explique mecanismos, causas, efeitos e uma limitação da investigação.",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "pequeno"
+        },
+        {
+          "numero": 5,
+          "tipo": "resposta-curta",
+          "enunciado": "Aplique EF04CI07 para avaliar situação de saúde, ambiente, seres vivos, Terra ou materiais.",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 6,
+          "tipo": "discursiva",
+          "enunciado": "Conclua com evidências e proponha atitude segura e socioambientalmente responsável.",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "grande"
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Reconhecer e explicar elementos centrais de Microrganismos na alimentação e na saúde com vocabulário adequado.",
+          "justificativa": "Critério alinhado à EF04CI07, considerando o desenvolvimento esperado no 4º ano."
+        },
+        {
+          "numero": 2,
+          "resposta": "Localizar, organizar ou representar informações pertinentes e confiáveis.",
+          "justificativa": "Critério alinhado à EF04CI07, considerando o desenvolvimento esperado no 4º ano."
+        },
+        {
+          "numero": 3,
+          "resposta": "Explicar estratégia, relação ou interpretação com apoio em evidências.",
+          "justificativa": "Critério alinhado à EF04CI07, considerando o desenvolvimento esperado no 4º ano."
+        },
+        {
+          "numero": 4,
+          "resposta": "Comparar, verificar ou argumentar com critério explícito e reconhecer limites.",
+          "justificativa": "Critério alinhado à EF04CI07, considerando o desenvolvimento esperado no 4º ano."
+        },
+        {
+          "numero": 5,
+          "resposta": "Mobilizar EF04CI07 na situação proposta e justificar a resposta.",
+          "justificativa": "Critério alinhado à EF04CI07, considerando o desenvolvimento esperado no 4º ano."
+        },
+        {
+          "numero": 6,
+          "resposta": "Apresentar conclusão coerente e revisão ou proposta viável.",
+          "justificativa": "Critério alinhado à EF04CI07, considerando o desenvolvimento esperado no 4º ano."
+        }
+      ],
+      "revisao": {
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true
+      },
+      "textoApoio": {
+        "titulo": "Microrganismos na alimentação e na saúde — EF04CI07",
+        "conteudo": "A atividade aborda Microrganismos na alimentação e na saúde com conceitos, exemplos e procedimentos adequados ao 4º ano. Analise informações, organize estratégias, use evidências e justifique a conclusão. Foco BNCC: Habilidade EF04CI07: desenvolver aprendizagens de Ciências relacionadas a Microrganismos na alimentação e na saúde, com análise, evidências e autonomia adequadas ao 4º ano."
+      },
+      "bnccConferida": true
+    },
+    {
+      "id": "efi-4ano-b3-cie-microrganismos-saude-b",
+      "titulo": "Como evitar que as doenças se espalhem",
+      "tema": "Microrganismos na alimentação e na saúde",
+      "sequencia": "B",
+      "tipoSequencia": "Prática",
+      "dificuldade": "intermediaria",
+      "objetivo": "Desenvolver EF04CI08 por meio de análise, resolução, argumentação e aplicação sobre Microrganismos na alimentação e na saúde.",
+      "bncc": [
+        {
+          "codigo": "EF04CI08",
+          "descricaoResumida": "Habilidade EF04CI08: desenvolver aprendizagens de Ciências relacionadas a Microrganismos na alimentação e na saúde, com análise, evidências e autonomia adequadas ao 4º ano."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": true,
+      "figuras": [
+        {
+          "id": "figura-05",
+          "arquivo": "assets/atividades/ciencias/figura-05.png",
+          "descricao": "Três quadros numerados dispostos em linha, ligados por setas apontando para a direita. Quadro 1: uma mão espalmada tocando a superfície de uma maçaneta; pequenos pontos escuros marcam a superfície e a palma da mão. Quadro 2: a mesma mão encostando na boca de uma criança, com os pontos escuros agora sobre os dedos. Quadro 3: contorno simplificado do busto de uma criança com uma seta fina apontando da boca para dentro do corpo. Entre os quadros 1 e 2 e entre os quadros 2 e 3, deixar um espaço em branco no alto para que o aluno possa marcar com um X.",
+          "funcaoPedagogica": "Torna visível o percurso do microrganismo até o corpo, permitindo que o aluno identifique em que ponto uma medida de prevenção interrompe esse percurso.",
+          "posicaoSugerida": "antes da questão 5",
+          "textoAlternativo": "Três quadros em sequência: uma mão toca uma maçaneta, depois a mesma mão toca a boca de uma criança e, por fim, o microrganismo entra no corpo.",
+          "compativelPretoBranco": true
+        }
+      ],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto e responda às questões pensando em situações do seu dia a dia.",
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "resposta-curta",
+          "enunciado": "Defina conceitos essenciais de Microrganismos na alimentação e na saúde e estabeleça relação entre eles.",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "pequeno"
+        },
+        {
+          "numero": 2,
+          "tipo": "associacao",
+          "enunciado": "Formule pergunta investigável, hipótese, variáveis e procedimento seguro.",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "pequeno"
+        },
+        {
+          "numero": 3,
+          "tipo": "multipla-escolha",
+          "enunciado": "Interprete observações, experimento, tabela, gráfico ou esquema, separando dado e inferência.",
+          "alternativas": [
+            "Sentar-se no fundo da sala e não conversar com ninguém durante o dia.",
+            "Cobrir a boca e o nariz com o braço ao tossir e lavar as mãos com frequência.",
+            "Beber bastante água gelada durante o recreio.",
+            "Trocar de lugar com um colega diferente a cada aula."
+          ],
+          "figuraId": null,
+          "espacoResposta": "pequeno"
+        },
+        {
+          "numero": 4,
+          "tipo": "resposta-curta",
+          "enunciado": "Explique mecanismos, causas, efeitos e uma limitação da investigação.",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 5,
+          "tipo": "analise-imagem",
+          "enunciado": "Aplique EF04CI08 para avaliar situação de saúde, ambiente, seres vivos, Terra ou materiais.",
+          "alternativas": [],
+          "figuraId": "figura-05",
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 6,
+          "tipo": "discursiva",
+          "enunciado": "Conclua com evidências e proponha atitude segura e socioambientalmente responsável.",
+          "alternativas": [],
+          "figuraId": null,
+          "espacoResposta": "grande"
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Reconhecer e explicar elementos centrais de Microrganismos na alimentação e na saúde com vocabulário adequado.",
+          "justificativa": "Critério alinhado à EF04CI08, considerando o desenvolvimento esperado no 4º ano."
+        },
+        {
+          "numero": 2,
+          "resposta": "Localizar, organizar ou representar informações pertinentes e confiáveis.",
+          "justificativa": "Critério alinhado à EF04CI08, considerando o desenvolvimento esperado no 4º ano."
+        },
+        {
+          "numero": 3,
+          "resposta": "Explicar estratégia, relação ou interpretação com apoio em evidências.",
+          "justificativa": "Critério alinhado à EF04CI08, considerando o desenvolvimento esperado no 4º ano."
+        },
+        {
+          "numero": 4,
+          "resposta": "Comparar, verificar ou argumentar com critério explícito e reconhecer limites.",
+          "justificativa": "Critério alinhado à EF04CI08, considerando o desenvolvimento esperado no 4º ano."
+        },
+        {
+          "numero": 5,
+          "resposta": "Mobilizar EF04CI08 na situação proposta e justificar a resposta.",
+          "justificativa": "Critério alinhado à EF04CI08, considerando o desenvolvimento esperado no 4º ano."
+        },
+        {
+          "numero": 6,
+          "resposta": "Apresentar conclusão coerente e revisão ou proposta viável.",
+          "justificativa": "Critério alinhado à EF04CI08, considerando o desenvolvimento esperado no 4º ano."
+        }
+      ],
+      "revisao": {
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true
+      },
+      "textoApoio": {
+        "titulo": "Microrganismos na alimentação e na saúde — EF04CI08",
+        "conteudo": "A atividade aborda Microrganismos na alimentação e na saúde com conceitos, exemplos e procedimentos adequados ao 4º ano. Analise informações, organize estratégias, use evidências e justifique a conclusão. Foco BNCC: Habilidade EF04CI08: desenvolver aprendizagens de Ciências relacionadas a Microrganismos na alimentação e na saúde, com análise, evidências e autonomia adequadas ao 4º ano."
+      },
+      "bnccConferida": true
+    }
+  ],
+  "bnccConferida": true,
+  "referenciaBncc": "BNCC — Ensino Fundamental — Anos Iniciais, Ciências (MEC, 2018)"
 }
