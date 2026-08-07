@@ -444,6 +444,8 @@ const previousPage = document.querySelector('#previous-page');
 const nextPage = document.querySelector('#next-page');
 const pageStatus = document.querySelector('#page-status');
 const autismCategoryBanner = document.querySelector('#autism-category-banner');
+const autismFeaturedSection = document.querySelector('#autism-featured-section');
+const autismFeaturedGrid = document.querySelector('#autism-featured-grid');
 
 const favorites = new Set();
 const selectedActivities = new Set();
@@ -919,8 +921,33 @@ function openAutismCategory() {
   renderNavigation();
 }
 
+function renderAutismFeaturedActivities() {
+  const shouldShow = autismCategory && !navigation.stage;
+  autismFeaturedSection.hidden = !shouldShow;
+  if (!shouldShow) {
+    autismFeaturedGrid.replaceChildren();
+    return;
+  }
+
+  const featured = stages.flatMap(stage =>
+    activities
+      .filter(activity => activity.stage === stage.name && activity.hasAdapted)
+      .slice(0, 2)
+  );
+  const cards = featured.map(activity => {
+    const card = renderCard(activity);
+    card.classList.add('autism-featured-card');
+    card.dataset.featuredStage = activity.stage;
+    card.querySelectorAll('.favorite-button, .favorite-text-button, .add-button')
+      .forEach(button => button.remove());
+    return card;
+  });
+  autismFeaturedGrid.replaceChildren(...cards);
+}
+
 function renderNavigation() {
   syncAutismCategory();
+  renderAutismFeaturedActivities();
   syncSubjectOptions();
   const atActivities = Boolean(navigation.term);
   filterForm.hidden = !atActivities;
