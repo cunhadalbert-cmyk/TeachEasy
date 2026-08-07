@@ -56,8 +56,8 @@ test('Anos Iniciais possuem 3.000 atividades BNCC conferidas em 100 coleções',
         assert.match(skill.codigo, validCode);
         assert.ok(skill.descricaoResumida.length > 60);
         assert.match(activity.objetivo, new RegExp(skill.codigo));
-        assert.equal(activity.questoes.some(item => genericQuestion.test(item.enunciado)), false);
-        assert.equal(activity.gabarito.some(item => genericAnswer.test(item.resposta)), false);
+        assert.equal(activity.questoes.some(item => genericQuestion.test(item.enunciado)), false, `${activity.id} ainda possui pergunta genérica`);
+        assert.equal(activity.gabarito.some(item => genericAnswer.test(item.resposta)), false, `${activity.id} ainda possui gabarito genérico`);
       }
 
       collections += 1;
