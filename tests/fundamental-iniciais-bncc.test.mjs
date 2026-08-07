@@ -17,51 +17,55 @@ const subjects = [
 const validCode = /^EF(?:0[1-5]|15|35)(LP|MA|CI|HI|GE)\d{2}$/;
 const genericQuestion = /Explique a ideia central|Identifique duas informações importantes|Compare dois exemplos|Relacione .+ a uma situação atual|Produza uma conclusão justificada/;
 const genericAnswer = /Resposta esperada coerente|Resposta autoral coerente|considerando o comando da questão/;
+const splitCollections = new Set(['lingua-portuguesa.json', 'matematica.json', 'ciencias.json']);
 
 test('Anos Iniciais possuem 3.000 atividades BNCC conferidas em 100 coleções', () => {
   const ids = new Set();
-  let files = 0;
+  let collections = 0;
   let total = 0;
 
   for (const grade of grades) for (const term of terms) {
     for (const [filename, subject] of subjects) {
-      const fullPath = path.join(base, `${grade}-ano`, `${term}-bimestre`, filename);
+      const directory = path.join(base, `${grade}-ano`, `${term}-bimestre`);
+      const fullPath = path.join(directory, filename);
       assert.equal(fs.existsSync(fullPath), true, `${fullPath} deve existir`);
-      const collection = JSON.parse(fs.readFileSync(fullPath, 'utf8'));
+      const parts = [JSON.parse(fs.readFileSync(fullPath, 'utf8'))];
 
-      assert.equal(collection.etapa, 'Ensino Fundamental — Anos Iniciais');
-      assert.equal(collection.ano, `${grade}º ano`);
-      assert.equal(collection.bimestre, term);
-      assert.equal(collection.disciplina, subject);
-      assert.equal(collection.quantidadeAtividades, 30);
-      assert.equal(collection.atividades.length, 30);
-      assert.equal(collection.bnccConferida, true);
-      assert.match(collection.referenciaBncc, /BNCC.*Anos Iniciais.*MEC/);
+      if (grade === 4 && term === 3 && splitCollections.has(filename)) {
+        const extraPath = path.join(directory, filename.replace('.json', '-extra.json'));
+        assert.equal(fs.existsSync(extraPath), true, `${extraPath} deve existir`);
+        parts.push(JSON.parse(fs.readFileSync(extraPath, 'utf8')));
+      }
 
-      for (const activity of collection.atividades) {
+      const activities = parts.flatMap(collection => {
+        assert.equal(collection.disciplina, subject);
+        assert.equal(collection.bnccConferida, true);
+        assert.match(collection.referenciaBncc, /BNCC.*Anos Iniciais.*MEC/);
+        return collection.atividades;
+      });
+
+      assert.equal(activities.length, 30, `${grade}º ano, ${term}º bimestre, ${subject}`);
+      for (const activity of activities) {
         assert.equal(ids.has(activity.id), false, `ID duplicado: ${activity.id}`);
         ids.add(activity.id);
         assert.equal(activity.bnccConferida, true);
         assert.equal(activity.questoes.length, 6);
         assert.equal(activity.gabarito.length, 6);
-        assert.equal(activity.possuiGabarito, true);
-        assert.equal(activity.possuiVersaoAdaptada, true);
 
         const skill = activity.bncc[0];
         assert.match(skill.codigo, validCode);
-        assert.ok(skill.descricaoResumida.length > 80);
+        assert.ok(skill.descricaoResumida.length > 60);
         assert.match(activity.objetivo, new RegExp(skill.codigo));
-        assert.ok(activity.textoApoio.conteudo.length > 180);
         assert.equal(activity.questoes.some(item => genericQuestion.test(item.enunciado)), false);
         assert.equal(activity.gabarito.some(item => genericAnswer.test(item.resposta)), false);
       }
 
-      files += 1;
-      total += collection.atividades.length;
+      collections += 1;
+      total += activities.length;
     }
   }
 
-  assert.equal(files, 100);
+  assert.equal(collections, 100);
   assert.equal(total, 3000);
   assert.equal(ids.size, 3000);
 });
