@@ -139,3 +139,32 @@ test('Ciências e Inglês possuem conteúdo aprofundado e BNCC conferida', () =>
   }
   assert.equal(total, 1200);
 });
+
+test('As seis disciplinas do Ensino Médio estão integralmente conferidas', () => {
+  const genericQuestion = /Explique o conceito central|Identifique duas evidências importantes|Aplique o conhecimento em uma situação contextualizada|Apply the language in a real-life situation/;
+  const genericAnswer = /Resposta autoral coerente|Resposta fundamentada na habilidade|considerando o comando da questão/;
+  let total = 0;
+
+  for (const grade of grades) for (const term of terms) for (const [filename] of subjects) {
+    const collection = JSON.parse(fs.readFileSync(
+      path.join(base, `${grade}-serie`, `${term}-bimestre`, filename), 'utf8'
+    ));
+    assert.equal(collection.bnccConferida, true);
+    assert.match(collection.referenciaBncc, /BNCC.*MEC/);
+
+    for (const activity of collection.atividades) {
+      const skill = activity.bncc[0];
+      assert.equal(activity.bnccConferida, true);
+      assert.match(skill.codigo, /^EM13/);
+      assert.match(activity.objetivo, new RegExp(skill.codigo));
+      assert.equal(activity.questoes.length, 6);
+      assert.equal(activity.gabarito.length, 6);
+      assert.ok(activity.textoApoio.conteudo.length > 160);
+      assert.equal(activity.questoes.some(item => genericQuestion.test(item.enunciado)), false);
+      assert.equal(activity.gabarito.some(item => genericAnswer.test(item.resposta)), false);
+    }
+    total += collection.atividades.length;
+  }
+
+  assert.equal(total, 3600);
+});
