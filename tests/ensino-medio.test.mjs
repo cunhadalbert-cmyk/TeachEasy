@@ -73,3 +73,41 @@ test('Biblioteca carrega apenas as seis disciplinas do Ensino Médio', () => {
   assert.match(fixes, /const isHighSchool = navigation\.stage === 'Ensino Médio'/);
   assert.match(fixes, /isHighSchool[\s\S]*Object\.keys\(highSchoolSubjects\)/);
 });
+
+test('História e Geografia possuem conteúdo aprofundado e BNCC conferida', () => {
+  const validSkills = new Set([
+    'EM13CHS101', 'EM13CHS102', 'EM13CHS103', 'EM13CHS104', 'EM13CHS105', 'EM13CHS106',
+    'EM13CHS201', 'EM13CHS202', 'EM13CHS203', 'EM13CHS204', 'EM13CHS205', 'EM13CHS206',
+    'EM13CHS301', 'EM13CHS302', 'EM13CHS303', 'EM13CHS304', 'EM13CHS305', 'EM13CHS306',
+    'EM13CHS401', 'EM13CHS402', 'EM13CHS403', 'EM13CHS404',
+    'EM13CHS501', 'EM13CHS502', 'EM13CHS503', 'EM13CHS504',
+    'EM13CHS601', 'EM13CHS602', 'EM13CHS603', 'EM13CHS604', 'EM13CHS605', 'EM13CHS606'
+  ]);
+
+  let total = 0;
+  for (const grade of grades) for (const term of terms) {
+    for (const [filename, subject] of [['historia.json', 'História'], ['geografia.json', 'Geografia']]) {
+      const fullPath = path.join(base, `${grade}-serie`, `${term}-bimestre`, filename);
+      const collection = JSON.parse(fs.readFileSync(fullPath, 'utf8'));
+      assert.equal(collection.disciplina, subject);
+      assert.equal(collection.bnccConferida, true);
+      assert.match(collection.referenciaBncc, /BNCC.*EM13CHS.*MEC/);
+
+      for (const activity of collection.atividades) {
+        assert.equal(activity.bnccConferida, true);
+        assert.equal(validSkills.has(activity.bncc[0].codigo), true,
+          `${activity.id} usa habilidade inexistente: ${activity.bncc[0].codigo}`);
+        assert.equal(activity.questoes.length, 6);
+        assert.equal(activity.gabarito.length, 6);
+        assert.equal(activity.questoes.some(item =>
+          /Explique o conceito central|Identifique duas evidências importantes|Aplique o conhecimento/.test(item.enunciado)
+        ), false, `${activity.id} ainda possui pergunta genérica`);
+        assert.equal(activity.gabarito.some(item =>
+          /Resposta autoral coerente|Resposta fundamentada na habilidade/.test(item.resposta)
+        ), false, `${activity.id} ainda possui gabarito genérico`);
+      }
+      total += collection.atividades.length;
+    }
+  }
+  assert.equal(total, 1200);
+});
