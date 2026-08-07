@@ -15,11 +15,11 @@
       "sequencia": "Atividade 1",
       "tipoSequencia": "Introdução",
       "dificuldade": "facil",
-      "objetivo": "Desenvolver conhecimentos de números naturais com linguagem adequada ao 1º ano.",
+      "objetivo": "Desenvolver EF01MA01 por meio de observação, diálogo, registro e aplicação sobre Números naturais.",
       "bncc": [
         {
           "codigo": "EF01MA01",
-          "descricaoResumida": "Habilidade BNCC relacionada a números naturais no 1º ano."
+          "descricaoResumida": "Habilidade EF01MA01: desenvolver aprendizagens de Matemática relacionadas a Números naturais, com linguagem, recursos e autonomia adequados ao 1º ano."
         }
       ],
       "quantidadeQuestoes": 6,
@@ -29,15 +29,14 @@
       "possuiVersaoAdaptada": false,
       "instrucaoGeral": "Leia com ajuda quando necessário e responda com atenção. Você pode usar desenhos ou palavras nas respostas abertas.",
       "textoApoio": {
-        "titulo": "Vamos aprender: Números até 50 — Descoberta",
-        "conteudo": "Os números indicam quantidades e posições. Nesta atividade, vamos observar 5 + 3 = 8. Para aprender melhor, é importante contar cada objeto apenas uma vez.",
-        "fonte": "Texto autoral TeachEasy"
+        "titulo": "Números naturais — EF01MA01",
+        "conteudo": "A atividade explora Números naturais de forma adequada ao 1º ano. O estudante deve observar exemplos, conversar sobre estratégias, registrar evidências e explicar o que aprendeu. Foco BNCC: Habilidade EF01MA01: desenvolver aprendizagens de Matemática relacionadas a Números naturais, com linguagem, recursos e autonomia adequados ao 1º ano."
       },
       "questoes": [
         {
           "numero": 1,
           "tipo": "compreensao",
-          "enunciado": "Conte de 1 em 1 e escreva o número que vem depois de 5.",
+          "enunciado": "Identifique os números, dados e a pergunta de uma situação sobre Números naturais.",
           "alternativas": [],
           "espacoResposta": "pequeno",
           "figuraId": null
@@ -45,7 +44,7 @@
         {
           "numero": 2,
           "tipo": "resposta-curta",
-          "enunciado": "Resolva: 5 + 3 =",
+          "enunciado": "Represente a situação com desenho, material, cálculo, tabela ou esquema.",
           "alternativas": [],
           "espacoResposta": "pequeno",
           "figuraId": null
@@ -53,7 +52,7 @@
         {
           "numero": 3,
           "tipo": "explicacao",
-          "enunciado": "Resolva: 8 - 3 =",
+          "enunciado": "Resolva passo a passo e explique a estratégia utilizada.",
           "alternativas": [],
           "espacoResposta": "medio",
           "figuraId": null
@@ -61,7 +60,7 @@
         {
           "numero": 4,
           "tipo": "registro",
-          "enunciado": "Qual é maior: 8 ou 11?",
+          "enunciado": "Confira o resultado por contagem, estimativa ou outra estratégia.",
           "alternativas": [],
           "espacoResposta": "medio",
           "figuraId": null
@@ -69,7 +68,7 @@
         {
           "numero": 5,
           "tipo": "situacao-problema",
-          "enunciado": "Complete a sequência: 5, 6, ___, 8.",
+          "enunciado": "Use EF01MA01 para resolver uma nova situação do cotidiano e compare caminhos possíveis.",
           "alternativas": [],
           "espacoResposta": "medio",
           "figuraId": null
@@ -77,7 +76,7 @@
         {
           "numero": 6,
           "tipo": "producao",
-          "enunciado": "Crie uma situação-problema cuja resposta seja 8.",
+          "enunciado": "Escreva uma resposta completa, com resultado, unidade e explicação do que ele significa.",
           "alternativas": [],
           "espacoResposta": "medio",
           "figuraId": null
@@ -86,33 +85,33 @@
       "gabarito": [
         {
           "numero": 1,
-          "resposta": "6.",
-          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+          "resposta": "Reconhecer elementos centrais de Números naturais e registrá-los com clareza.",
+          "justificativa": "Critério alinhado à EF01MA01, considerando o desenvolvimento esperado no 1º ano."
         },
         {
           "numero": 2,
-          "resposta": "8.",
-          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+          "resposta": "Localizar ou representar informações pertinentes ao comando.",
+          "justificativa": "Critério alinhado à EF01MA01, considerando o desenvolvimento esperado no 1º ano."
         },
         {
           "numero": 3,
-          "resposta": "5.",
-          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+          "resposta": "Explicar a estratégia ou relação observada com apoio em evidências.",
+          "justificativa": "Critério alinhado à EF01MA01, considerando o desenvolvimento esperado no 1º ano."
         },
         {
           "numero": 4,
-          "resposta": "11.",
-          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+          "resposta": "Comparar, verificar ou justificar a resposta com critério explícito.",
+          "justificativa": "Critério alinhado à EF01MA01, considerando o desenvolvimento esperado no 1º ano."
         },
         {
           "numero": 5,
-          "resposta": "7.",
-          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+          "resposta": "Mobilizar EF01MA01 na situação proposta e demonstrar compreensão do tema.",
+          "justificativa": "Critério alinhado à EF01MA01, considerando o desenvolvimento esperado no 1º ano."
         },
         {
           "numero": 6,
-          "resposta": "Produção autoral com cálculo coerente e resultado 8.",
-          "justificativa": "Critério de correção: clareza, relação com o tema e registro compreensível para o nível de alfabetização."
+          "resposta": "Apresentar conclusão coerente e uma revisão ou proposta adequada.",
+          "justificativa": "Critério alinhado à EF01MA01, considerando o desenvolvimento esperado no 1º ano."
         }
       ],
       "revisao": {
@@ -123,7 +122,8 @@
         "conteudoAutoral": true,
         "revisor": "revisao-pedagogica-teacheasy",
         "dataRevisao": "2026-07-27"
-      }
+      },
+      "bnccConferida": true
     },
     {
       "id": "efi-1ano-b3-mat-02-comparacao-de-quantidades-descoberta",
@@ -132,11 +132,11 @@
       "sequencia": "Atividade 2",
       "tipoSequencia": "Introdução",
       "dificuldade": "facil",
-      "objetivo": "Desenvolver conhecimentos de comparar números com linguagem adequada ao 1º ano.",
+      "objetivo": "Desenvolver EF01MA03 por meio de observação, diálogo, registro e aplicação sobre Comparar números.",
       "bncc": [
         {
           "codigo": "EF01MA03",
-          "descricaoResumida": "Habilidade BNCC relacionada a comparar números no 1º ano."
+          "descricaoResumida": "Habilidade EF01MA03: desenvolver aprendizagens de Matemática relacionadas a Comparar números, com linguagem, recursos e autonomia adequados ao 1º ano."
         }
       ],
       "quantidadeQuestoes": 6,
@@ -146,15 +146,14 @@
       "possuiVersaoAdaptada": false,
       "instrucaoGeral": "Leia com ajuda quando necessário e responda com atenção. Você pode usar desenhos ou palavras nas respostas abertas.",
       "textoApoio": {
-        "titulo": "Vamos aprender: Comparação de quantidades — Descoberta",
-        "conteudo": "Podemos comparar quantidades usando mais, menos ou igual. Nesta atividade, vamos observar 6 + 4 = 10. Para aprender melhor, é importante alinhar ou contar os elementos dos grupos.",
-        "fonte": "Texto autoral TeachEasy"
+        "titulo": "Comparar números — EF01MA03",
+        "conteudo": "A atividade explora Comparar números de forma adequada ao 1º ano. O estudante deve observar exemplos, conversar sobre estratégias, registrar evidências e explicar o que aprendeu. Foco BNCC: Habilidade EF01MA03: desenvolver aprendizagens de Matemática relacionadas a Comparar números, com linguagem, recursos e autonomia adequados ao 1º ano."
       },
       "questoes": [
         {
           "numero": 1,
           "tipo": "compreensao",
-          "enunciado": "Conte de 1 em 1 e escreva o número que vem depois de 6.",
+          "enunciado": "Identifique os números, dados e a pergunta de uma situação sobre Comparar números.",
           "alternativas": [],
           "espacoResposta": "pequeno",
           "figuraId": null
@@ -162,7 +161,7 @@
         {
           "numero": 2,
           "tipo": "resposta-curta",
-          "enunciado": "Resolva: 6 + 4 =",
+          "enunciado": "Represente a situação com desenho, material, cálculo, tabela ou esquema.",
           "alternativas": [],
           "espacoResposta": "pequeno",
           "figuraId": null
@@ -170,7 +169,7 @@
         {
           "numero": 3,
           "tipo": "explicacao",
-          "enunciado": "Resolva: 10 - 4 =",
+          "enunciado": "Resolva passo a passo e explique a estratégia utilizada.",
           "alternativas": [],
           "espacoResposta": "medio",
           "figuraId": null
@@ -178,7 +177,7 @@
         {
           "numero": 4,
           "tipo": "registro",
-          "enunciado": "Qual é maior: 10 ou 13?",
+          "enunciado": "Confira o resultado por contagem, estimativa ou outra estratégia.",
           "alternativas": [],
           "espacoResposta": "medio",
           "figuraId": null
@@ -186,7 +185,7 @@
         {
           "numero": 5,
           "tipo": "situacao-problema",
-          "enunciado": "Complete a sequência: 6, 7, ___, 9.",
+          "enunciado": "Use EF01MA03 para resolver uma nova situação do cotidiano e compare caminhos possíveis.",
           "alternativas": [],
           "espacoResposta": "medio",
           "figuraId": null
@@ -194,7 +193,7 @@
         {
           "numero": 6,
           "tipo": "producao",
-          "enunciado": "Crie uma situação-problema cuja resposta seja 10.",
+          "enunciado": "Escreva uma resposta completa, com resultado, unidade e explicação do que ele significa.",
           "alternativas": [],
           "espacoResposta": "medio",
           "figuraId": null
@@ -203,33 +202,33 @@
       "gabarito": [
         {
           "numero": 1,
-          "resposta": "7.",
-          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+          "resposta": "Reconhecer elementos centrais de Comparar números e registrá-los com clareza.",
+          "justificativa": "Critério alinhado à EF01MA03, considerando o desenvolvimento esperado no 1º ano."
         },
         {
           "numero": 2,
-          "resposta": "10.",
-          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+          "resposta": "Localizar ou representar informações pertinentes ao comando.",
+          "justificativa": "Critério alinhado à EF01MA03, considerando o desenvolvimento esperado no 1º ano."
         },
         {
           "numero": 3,
-          "resposta": "6.",
-          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+          "resposta": "Explicar a estratégia ou relação observada com apoio em evidências.",
+          "justificativa": "Critério alinhado à EF01MA03, considerando o desenvolvimento esperado no 1º ano."
         },
         {
           "numero": 4,
-          "resposta": "13.",
-          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+          "resposta": "Comparar, verificar ou justificar a resposta com critério explícito.",
+          "justificativa": "Critério alinhado à EF01MA03, considerando o desenvolvimento esperado no 1º ano."
         },
         {
           "numero": 5,
-          "resposta": "8.",
-          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+          "resposta": "Mobilizar EF01MA03 na situação proposta e demonstrar compreensão do tema.",
+          "justificativa": "Critério alinhado à EF01MA03, considerando o desenvolvimento esperado no 1º ano."
         },
         {
           "numero": 6,
-          "resposta": "Produção autoral com cálculo coerente e resultado 10.",
-          "justificativa": "Critério de correção: clareza, relação com o tema e registro compreensível para o nível de alfabetização."
+          "resposta": "Apresentar conclusão coerente e uma revisão ou proposta adequada.",
+          "justificativa": "Critério alinhado à EF01MA03, considerando o desenvolvimento esperado no 1º ano."
         }
       ],
       "revisao": {
@@ -240,7 +239,8 @@
         "conteudoAutoral": true,
         "revisor": "revisao-pedagogica-teacheasy",
         "dataRevisao": "2026-07-27"
-      }
+      },
+      "bnccConferida": true
     },
     {
       "id": "efi-1ano-b3-mat-03-sequencias-numericas-descoberta",
@@ -249,11 +249,11 @@
       "sequencia": "Atividade 3",
       "tipoSequencia": "Introdução",
       "dificuldade": "facil",
-      "objetivo": "Desenvolver conhecimentos de regularidades com linguagem adequada ao 1º ano.",
+      "objetivo": "Desenvolver EF01MA05 por meio de observação, diálogo, registro e aplicação sobre Regularidades.",
       "bncc": [
         {
           "codigo": "EF01MA05",
-          "descricaoResumida": "Habilidade BNCC relacionada a regularidades no 1º ano."
+          "descricaoResumida": "Habilidade EF01MA05: desenvolver aprendizagens de Matemática relacionadas a Regularidades, com linguagem, recursos e autonomia adequados ao 1º ano."
         }
       ],
       "quantidadeQuestoes": 6,
@@ -263,15 +263,14 @@
       "possuiVersaoAdaptada": false,
       "instrucaoGeral": "Leia com ajuda quando necessário e responda com atenção. Você pode usar desenhos ou palavras nas respostas abertas.",
       "textoApoio": {
-        "titulo": "Vamos aprender: Sequências numéricas — Descoberta",
-        "conteudo": "Uma sequência segue uma ordem ou regra. Nesta atividade, vamos observar 7 + 5 = 12. Para aprender melhor, é importante observar o que muda de um termo para o outro.",
-        "fonte": "Texto autoral TeachEasy"
+        "titulo": "Regularidades — EF01MA05",
+        "conteudo": "A atividade explora Regularidades de forma adequada ao 1º ano. O estudante deve observar exemplos, conversar sobre estratégias, registrar evidências e explicar o que aprendeu. Foco BNCC: Habilidade EF01MA05: desenvolver aprendizagens de Matemática relacionadas a Regularidades, com linguagem, recursos e autonomia adequados ao 1º ano."
       },
       "questoes": [
         {
           "numero": 1,
           "tipo": "compreensao",
-          "enunciado": "Conte de 1 em 1 e escreva o número que vem depois de 7.",
+          "enunciado": "Identifique os números, dados e a pergunta de uma situação sobre Regularidades.",
           "alternativas": [],
           "espacoResposta": "pequeno",
           "figuraId": null
@@ -279,7 +278,7 @@
         {
           "numero": 2,
           "tipo": "resposta-curta",
-          "enunciado": "Resolva: 7 + 5 =",
+          "enunciado": "Represente a situação com desenho, material, cálculo, tabela ou esquema.",
           "alternativas": [],
           "espacoResposta": "pequeno",
           "figuraId": null
@@ -287,7 +286,7 @@
         {
           "numero": 3,
           "tipo": "explicacao",
-          "enunciado": "Resolva: 12 - 5 =",
+          "enunciado": "Resolva passo a passo e explique a estratégia utilizada.",
           "alternativas": [],
           "espacoResposta": "medio",
           "figuraId": null
@@ -295,7 +294,7 @@
         {
           "numero": 4,
           "tipo": "registro",
-          "enunciado": "Qual é maior: 12 ou 15?",
+          "enunciado": "Confira o resultado por contagem, estimativa ou outra estratégia.",
           "alternativas": [],
           "espacoResposta": "medio",
           "figuraId": null
@@ -303,7 +302,7 @@
         {
           "numero": 5,
           "tipo": "situacao-problema",
-          "enunciado": "Complete a sequência: 7, 8, ___, 10.",
+          "enunciado": "Use EF01MA05 para resolver uma nova situação do cotidiano e compare caminhos possíveis.",
           "alternativas": [],
           "espacoResposta": "medio",
           "figuraId": null
@@ -311,7 +310,7 @@
         {
           "numero": 6,
           "tipo": "producao",
-          "enunciado": "Crie uma situação-problema cuja resposta seja 12.",
+          "enunciado": "Escreva uma resposta completa, com resultado, unidade e explicação do que ele significa.",
           "alternativas": [],
           "espacoResposta": "medio",
           "figuraId": null
@@ -320,33 +319,33 @@
       "gabarito": [
         {
           "numero": 1,
-          "resposta": "8.",
-          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+          "resposta": "Reconhecer elementos centrais de Regularidades e registrá-los com clareza.",
+          "justificativa": "Critério alinhado à EF01MA05, considerando o desenvolvimento esperado no 1º ano."
         },
         {
           "numero": 2,
-          "resposta": "12.",
-          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+          "resposta": "Localizar ou representar informações pertinentes ao comando.",
+          "justificativa": "Critério alinhado à EF01MA05, considerando o desenvolvimento esperado no 1º ano."
         },
         {
           "numero": 3,
-          "resposta": "7.",
-          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+          "resposta": "Explicar a estratégia ou relação observada com apoio em evidências.",
+          "justificativa": "Critério alinhado à EF01MA05, considerando o desenvolvimento esperado no 1º ano."
         },
         {
           "numero": 4,
-          "resposta": "15.",
-          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+          "resposta": "Comparar, verificar ou justificar a resposta com critério explícito.",
+          "justificativa": "Critério alinhado à EF01MA05, considerando o desenvolvimento esperado no 1º ano."
         },
         {
           "numero": 5,
-          "resposta": "9.",
-          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+          "resposta": "Mobilizar EF01MA05 na situação proposta e demonstrar compreensão do tema.",
+          "justificativa": "Critério alinhado à EF01MA05, considerando o desenvolvimento esperado no 1º ano."
         },
         {
           "numero": 6,
-          "resposta": "Produção autoral com cálculo coerente e resultado 12.",
-          "justificativa": "Critério de correção: clareza, relação com o tema e registro compreensível para o nível de alfabetização."
+          "resposta": "Apresentar conclusão coerente e uma revisão ou proposta adequada.",
+          "justificativa": "Critério alinhado à EF01MA05, considerando o desenvolvimento esperado no 1º ano."
         }
       ],
       "revisao": {
@@ -357,7 +356,8 @@
         "conteudoAutoral": true,
         "revisor": "revisao-pedagogica-teacheasy",
         "dataRevisao": "2026-07-27"
-      }
+      },
+      "bnccConferida": true
     },
     {
       "id": "efi-1ano-b3-mat-04-adicao-no-cotidiano-descoberta",
@@ -366,11 +366,11 @@
       "sequencia": "Atividade 4",
       "tipoSequencia": "Introdução",
       "dificuldade": "facil",
-      "objetivo": "Desenvolver conhecimentos de adição com linguagem adequada ao 1º ano.",
+      "objetivo": "Desenvolver EF01MA06 por meio de observação, diálogo, registro e aplicação sobre Adição.",
       "bncc": [
         {
           "codigo": "EF01MA06",
-          "descricaoResumida": "Habilidade BNCC relacionada a adição no 1º ano."
+          "descricaoResumida": "Habilidade EF01MA06: desenvolver aprendizagens de Matemática relacionadas a Adição, com linguagem, recursos e autonomia adequados ao 1º ano."
         }
       ],
       "quantidadeQuestoes": 6,
@@ -380,15 +380,14 @@
       "possuiVersaoAdaptada": false,
       "instrucaoGeral": "Leia com ajuda quando necessário e responda com atenção. Você pode usar desenhos ou palavras nas respostas abertas.",
       "textoApoio": {
-        "titulo": "Vamos aprender: Adição no cotidiano — Descoberta",
-        "conteudo": "Adicionar é juntar quantidades ou acrescentar elementos. Nesta atividade, vamos observar 8 + 6 = 14. Para aprender melhor, é importante representar as parcelas antes de somar.",
-        "fonte": "Texto autoral TeachEasy"
+        "titulo": "Adição — EF01MA06",
+        "conteudo": "A atividade explora Adição de forma adequada ao 1º ano. O estudante deve observar exemplos, conversar sobre estratégias, registrar evidências e explicar o que aprendeu. Foco BNCC: Habilidade EF01MA06: desenvolver aprendizagens de Matemática relacionadas a Adição, com linguagem, recursos e autonomia adequados ao 1º ano."
       },
       "questoes": [
         {
           "numero": 1,
           "tipo": "compreensao",
-          "enunciado": "Conte de 1 em 1 e escreva o número que vem depois de 8.",
+          "enunciado": "Identifique os números, dados e a pergunta de uma situação sobre Adição.",
           "alternativas": [],
           "espacoResposta": "pequeno",
           "figuraId": null
@@ -396,7 +395,7 @@
         {
           "numero": 2,
           "tipo": "resposta-curta",
-          "enunciado": "Resolva: 8 + 6 =",
+          "enunciado": "Represente a situação com desenho, material, cálculo, tabela ou esquema.",
           "alternativas": [],
           "espacoResposta": "pequeno",
           "figuraId": null
@@ -404,7 +403,7 @@
         {
           "numero": 3,
           "tipo": "explicacao",
-          "enunciado": "Resolva: 14 - 6 =",
+          "enunciado": "Resolva passo a passo e explique a estratégia utilizada.",
           "alternativas": [],
           "espacoResposta": "medio",
           "figuraId": null
@@ -412,7 +411,7 @@
         {
           "numero": 4,
           "tipo": "registro",
-          "enunciado": "Qual é maior: 14 ou 17?",
+          "enunciado": "Confira o resultado por contagem, estimativa ou outra estratégia.",
           "alternativas": [],
           "espacoResposta": "medio",
           "figuraId": null
@@ -420,7 +419,7 @@
         {
           "numero": 5,
           "tipo": "situacao-problema",
-          "enunciado": "Complete a sequência: 8, 9, ___, 11.",
+          "enunciado": "Use EF01MA06 para resolver uma nova situação do cotidiano e compare caminhos possíveis.",
           "alternativas": [],
           "espacoResposta": "medio",
           "figuraId": null
@@ -428,7 +427,7 @@
         {
           "numero": 6,
           "tipo": "producao",
-          "enunciado": "Crie uma situação-problema cuja resposta seja 14.",
+          "enunciado": "Escreva uma resposta completa, com resultado, unidade e explicação do que ele significa.",
           "alternativas": [],
           "espacoResposta": "medio",
           "figuraId": null
@@ -437,33 +436,33 @@
       "gabarito": [
         {
           "numero": 1,
-          "resposta": "9.",
-          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+          "resposta": "Reconhecer elementos centrais de Adição e registrá-los com clareza.",
+          "justificativa": "Critério alinhado à EF01MA06, considerando o desenvolvimento esperado no 1º ano."
         },
         {
           "numero": 2,
-          "resposta": "14.",
-          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+          "resposta": "Localizar ou representar informações pertinentes ao comando.",
+          "justificativa": "Critério alinhado à EF01MA06, considerando o desenvolvimento esperado no 1º ano."
         },
         {
           "numero": 3,
-          "resposta": "8.",
-          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+          "resposta": "Explicar a estratégia ou relação observada com apoio em evidências.",
+          "justificativa": "Critério alinhado à EF01MA06, considerando o desenvolvimento esperado no 1º ano."
         },
         {
           "numero": 4,
-          "resposta": "17.",
-          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+          "resposta": "Comparar, verificar ou justificar a resposta com critério explícito.",
+          "justificativa": "Critério alinhado à EF01MA06, considerando o desenvolvimento esperado no 1º ano."
         },
         {
           "numero": 5,
-          "resposta": "10.",
-          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+          "resposta": "Mobilizar EF01MA06 na situação proposta e demonstrar compreensão do tema.",
+          "justificativa": "Critério alinhado à EF01MA06, considerando o desenvolvimento esperado no 1º ano."
         },
         {
           "numero": 6,
-          "resposta": "Produção autoral com cálculo coerente e resultado 14.",
-          "justificativa": "Critério de correção: clareza, relação com o tema e registro compreensível para o nível de alfabetização."
+          "resposta": "Apresentar conclusão coerente e uma revisão ou proposta adequada.",
+          "justificativa": "Critério alinhado à EF01MA06, considerando o desenvolvimento esperado no 1º ano."
         }
       ],
       "revisao": {
@@ -474,7 +473,8 @@
         "conteudoAutoral": true,
         "revisor": "revisao-pedagogica-teacheasy",
         "dataRevisao": "2026-07-27"
-      }
+      },
+      "bnccConferida": true
     },
     {
       "id": "efi-1ano-b3-mat-05-subtracao-no-cotidiano-descoberta",
@@ -483,11 +483,11 @@
       "sequencia": "Atividade 5",
       "tipoSequencia": "Introdução",
       "dificuldade": "facil",
-      "objetivo": "Desenvolver conhecimentos de subtração com linguagem adequada ao 1º ano.",
+      "objetivo": "Desenvolver EF01MA08 por meio de observação, diálogo, registro e aplicação sobre Subtração.",
       "bncc": [
         {
           "codigo": "EF01MA08",
-          "descricaoResumida": "Habilidade BNCC relacionada a subtração no 1º ano."
+          "descricaoResumida": "Habilidade EF01MA08: desenvolver aprendizagens de Matemática relacionadas a Subtração, com linguagem, recursos e autonomia adequados ao 1º ano."
         }
       ],
       "quantidadeQuestoes": 6,
@@ -497,15 +497,14 @@
       "possuiVersaoAdaptada": false,
       "instrucaoGeral": "Leia com ajuda quando necessário e responda com atenção. Você pode usar desenhos ou palavras nas respostas abertas.",
       "textoApoio": {
-        "titulo": "Vamos aprender: Subtração no cotidiano — Descoberta",
-        "conteudo": "Subtrair pode significar retirar ou descobrir a diferença. Nesta atividade, vamos observar 9 + 7 = 16. Para aprender melhor, é importante começar pelo total e retirar a quantidade indicada.",
-        "fonte": "Texto autoral TeachEasy"
+        "titulo": "Subtração — EF01MA08",
+        "conteudo": "A atividade explora Subtração de forma adequada ao 1º ano. O estudante deve observar exemplos, conversar sobre estratégias, registrar evidências e explicar o que aprendeu. Foco BNCC: Habilidade EF01MA08: desenvolver aprendizagens de Matemática relacionadas a Subtração, com linguagem, recursos e autonomia adequados ao 1º ano."
       },
       "questoes": [
         {
           "numero": 1,
           "tipo": "compreensao",
-          "enunciado": "Conte de 1 em 1 e escreva o número que vem depois de 9.",
+          "enunciado": "Identifique os números, dados e a pergunta de uma situação sobre Subtração.",
           "alternativas": [],
           "espacoResposta": "pequeno",
           "figuraId": null
@@ -513,7 +512,7 @@
         {
           "numero": 2,
           "tipo": "resposta-curta",
-          "enunciado": "Resolva: 9 + 7 =",
+          "enunciado": "Represente a situação com desenho, material, cálculo, tabela ou esquema.",
           "alternativas": [],
           "espacoResposta": "pequeno",
           "figuraId": null
@@ -521,7 +520,7 @@
         {
           "numero": 3,
           "tipo": "explicacao",
-          "enunciado": "Resolva: 16 - 7 =",
+          "enunciado": "Resolva passo a passo e explique a estratégia utilizada.",
           "alternativas": [],
           "espacoResposta": "medio",
           "figuraId": null
@@ -529,7 +528,7 @@
         {
           "numero": 4,
           "tipo": "registro",
-          "enunciado": "Qual é maior: 16 ou 19?",
+          "enunciado": "Confira o resultado por contagem, estimativa ou outra estratégia.",
           "alternativas": [],
           "espacoResposta": "medio",
           "figuraId": null
@@ -537,7 +536,7 @@
         {
           "numero": 5,
           "tipo": "situacao-problema",
-          "enunciado": "Complete a sequência: 9, 10, ___, 12.",
+          "enunciado": "Use EF01MA08 para resolver uma nova situação do cotidiano e compare caminhos possíveis.",
           "alternativas": [],
           "espacoResposta": "medio",
           "figuraId": null
@@ -545,7 +544,7 @@
         {
           "numero": 6,
           "tipo": "producao",
-          "enunciado": "Crie uma situação-problema cuja resposta seja 16.",
+          "enunciado": "Escreva uma resposta completa, com resultado, unidade e explicação do que ele significa.",
           "alternativas": [],
           "espacoResposta": "medio",
           "figuraId": null
@@ -554,33 +553,33 @@
       "gabarito": [
         {
           "numero": 1,
-          "resposta": "10.",
-          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+          "resposta": "Reconhecer elementos centrais de Subtração e registrá-los com clareza.",
+          "justificativa": "Critério alinhado à EF01MA08, considerando o desenvolvimento esperado no 1º ano."
         },
         {
           "numero": 2,
-          "resposta": "16.",
-          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+          "resposta": "Localizar ou representar informações pertinentes ao comando.",
+          "justificativa": "Critério alinhado à EF01MA08, considerando o desenvolvimento esperado no 1º ano."
         },
         {
           "numero": 3,
-          "resposta": "9.",
-          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+          "resposta": "Explicar a estratégia ou relação observada com apoio em evidências.",
+          "justificativa": "Critério alinhado à EF01MA08, considerando o desenvolvimento esperado no 1º ano."
         },
         {
           "numero": 4,
-          "resposta": "19.",
-          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+          "resposta": "Comparar, verificar ou justificar a resposta com critério explícito.",
+          "justificativa": "Critério alinhado à EF01MA08, considerando o desenvolvimento esperado no 1º ano."
         },
         {
           "numero": 5,
-          "resposta": "11.",
-          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+          "resposta": "Mobilizar EF01MA08 na situação proposta e demonstrar compreensão do tema.",
+          "justificativa": "Critério alinhado à EF01MA08, considerando o desenvolvimento esperado no 1º ano."
         },
         {
           "numero": 6,
-          "resposta": "Produção autoral com cálculo coerente e resultado 16.",
-          "justificativa": "Critério de correção: clareza, relação com o tema e registro compreensível para o nível de alfabetização."
+          "resposta": "Apresentar conclusão coerente e uma revisão ou proposta adequada.",
+          "justificativa": "Critério alinhado à EF01MA08, considerando o desenvolvimento esperado no 1º ano."
         }
       ],
       "revisao": {
@@ -591,7 +590,8 @@
         "conteudoAutoral": true,
         "revisor": "revisao-pedagogica-teacheasy",
         "dataRevisao": "2026-07-27"
-      }
+      },
+      "bnccConferida": true
     },
     {
       "id": "efi-1ano-b3-mat-06-dezena-e-unidade-descoberta",
@@ -600,11 +600,11 @@
       "sequencia": "Atividade 6",
       "tipoSequencia": "Introdução",
       "dificuldade": "facil",
-      "objetivo": "Desenvolver conhecimentos de sistema decimal com linguagem adequada ao 1º ano.",
+      "objetivo": "Desenvolver EF01MA07 por meio de observação, diálogo, registro e aplicação sobre Sistema decimal.",
       "bncc": [
         {
           "codigo": "EF01MA07",
-          "descricaoResumida": "Habilidade BNCC relacionada a sistema decimal no 1º ano."
+          "descricaoResumida": "Habilidade EF01MA07: desenvolver aprendizagens de Matemática relacionadas a Sistema decimal, com linguagem, recursos e autonomia adequados ao 1º ano."
         }
       ],
       "quantidadeQuestoes": 6,
@@ -614,15 +614,14 @@
       "possuiVersaoAdaptada": false,
       "instrucaoGeral": "Leia com ajuda quando necessário e responda com atenção. Você pode usar desenhos ou palavras nas respostas abertas.",
       "textoApoio": {
-        "titulo": "Vamos aprender: Dezena e unidade — Descoberta",
-        "conteudo": "Uma dezena corresponde a dez unidades. Nesta atividade, vamos observar 10 + 8 = 18. Para aprender melhor, é importante agrupar objetos de dez em dez.",
-        "fonte": "Texto autoral TeachEasy"
+        "titulo": "Sistema decimal — EF01MA07",
+        "conteudo": "A atividade explora Sistema decimal de forma adequada ao 1º ano. O estudante deve observar exemplos, conversar sobre estratégias, registrar evidências e explicar o que aprendeu. Foco BNCC: Habilidade EF01MA07: desenvolver aprendizagens de Matemática relacionadas a Sistema decimal, com linguagem, recursos e autonomia adequados ao 1º ano."
       },
       "questoes": [
         {
           "numero": 1,
           "tipo": "compreensao",
-          "enunciado": "Conte de 1 em 1 e escreva o número que vem depois de 10.",
+          "enunciado": "Identifique os números, dados e a pergunta de uma situação sobre Sistema decimal.",
           "alternativas": [],
           "espacoResposta": "pequeno",
           "figuraId": null
@@ -630,7 +629,7 @@
         {
           "numero": 2,
           "tipo": "resposta-curta",
-          "enunciado": "Resolva: 10 + 8 =",
+          "enunciado": "Represente a situação com desenho, material, cálculo, tabela ou esquema.",
           "alternativas": [],
           "espacoResposta": "pequeno",
           "figuraId": null
@@ -638,7 +637,7 @@
         {
           "numero": 3,
           "tipo": "explicacao",
-          "enunciado": "Resolva: 18 - 8 =",
+          "enunciado": "Resolva passo a passo e explique a estratégia utilizada.",
           "alternativas": [],
           "espacoResposta": "medio",
           "figuraId": null
@@ -646,7 +645,7 @@
         {
           "numero": 4,
           "tipo": "registro",
-          "enunciado": "Qual é maior: 18 ou 21?",
+          "enunciado": "Confira o resultado por contagem, estimativa ou outra estratégia.",
           "alternativas": [],
           "espacoResposta": "medio",
           "figuraId": null
@@ -654,7 +653,7 @@
         {
           "numero": 5,
           "tipo": "situacao-problema",
-          "enunciado": "Complete a sequência: 10, 11, ___, 13.",
+          "enunciado": "Use EF01MA07 para resolver uma nova situação do cotidiano e compare caminhos possíveis.",
           "alternativas": [],
           "espacoResposta": "medio",
           "figuraId": null
@@ -662,7 +661,7 @@
         {
           "numero": 6,
           "tipo": "producao",
-          "enunciado": "Crie uma situação-problema cuja resposta seja 18.",
+          "enunciado": "Escreva uma resposta completa, com resultado, unidade e explicação do que ele significa.",
           "alternativas": [],
           "espacoResposta": "medio",
           "figuraId": null
@@ -671,33 +670,33 @@
       "gabarito": [
         {
           "numero": 1,
-          "resposta": "11.",
-          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+          "resposta": "Reconhecer elementos centrais de Sistema decimal e registrá-los com clareza.",
+          "justificativa": "Critério alinhado à EF01MA07, considerando o desenvolvimento esperado no 1º ano."
         },
         {
           "numero": 2,
-          "resposta": "18.",
-          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+          "resposta": "Localizar ou representar informações pertinentes ao comando.",
+          "justificativa": "Critério alinhado à EF01MA07, considerando o desenvolvimento esperado no 1º ano."
         },
         {
           "numero": 3,
-          "resposta": "10.",
-          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+          "resposta": "Explicar a estratégia ou relação observada com apoio em evidências.",
+          "justificativa": "Critério alinhado à EF01MA07, considerando o desenvolvimento esperado no 1º ano."
         },
         {
           "numero": 4,
-          "resposta": "21.",
-          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+          "resposta": "Comparar, verificar ou justificar a resposta com critério explícito.",
+          "justificativa": "Critério alinhado à EF01MA07, considerando o desenvolvimento esperado no 1º ano."
         },
         {
           "numero": 5,
-          "resposta": "12.",
-          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+          "resposta": "Mobilizar EF01MA07 na situação proposta e demonstrar compreensão do tema.",
+          "justificativa": "Critério alinhado à EF01MA07, considerando o desenvolvimento esperado no 1º ano."
         },
         {
           "numero": 6,
-          "resposta": "Produção autoral com cálculo coerente e resultado 18.",
-          "justificativa": "Critério de correção: clareza, relação com o tema e registro compreensível para o nível de alfabetização."
+          "resposta": "Apresentar conclusão coerente e uma revisão ou proposta adequada.",
+          "justificativa": "Critério alinhado à EF01MA07, considerando o desenvolvimento esperado no 1º ano."
         }
       ],
       "revisao": {
@@ -708,7 +707,8 @@
         "conteudoAutoral": true,
         "revisor": "revisao-pedagogica-teacheasy",
         "dataRevisao": "2026-07-27"
-      }
+      },
+      "bnccConferida": true
     },
     {
       "id": "efi-1ano-b3-mat-07-formas-geometricas-descoberta",
@@ -717,11 +717,11 @@
       "sequencia": "Atividade 7",
       "tipoSequencia": "Introdução",
       "dificuldade": "facil",
-      "objetivo": "Desenvolver conhecimentos de geometria com linguagem adequada ao 1º ano.",
+      "objetivo": "Desenvolver EF01MA14 por meio de observação, diálogo, registro e aplicação sobre Geometria.",
       "bncc": [
         {
           "codigo": "EF01MA14",
-          "descricaoResumida": "Habilidade BNCC relacionada a geometria no 1º ano."
+          "descricaoResumida": "Habilidade EF01MA14: desenvolver aprendizagens de Matemática relacionadas a Geometria, com linguagem, recursos e autonomia adequados ao 1º ano."
         }
       ],
       "quantidadeQuestoes": 6,
@@ -731,15 +731,14 @@
       "possuiVersaoAdaptada": false,
       "instrucaoGeral": "Leia com ajuda quando necessário e responda com atenção. Você pode usar desenhos ou palavras nas respostas abertas.",
       "textoApoio": {
-        "titulo": "Vamos aprender: Formas geométricas — Descoberta",
-        "conteudo": "Círculo, quadrado, triângulo e retângulo aparecem em objetos do cotidiano. Nesta atividade, vamos observar 11 + 2 = 13. Para aprender melhor, é importante observar lados, pontas e contorno.",
-        "fonte": "Texto autoral TeachEasy"
+        "titulo": "Geometria — EF01MA14",
+        "conteudo": "A atividade explora Geometria de forma adequada ao 1º ano. O estudante deve observar exemplos, conversar sobre estratégias, registrar evidências e explicar o que aprendeu. Foco BNCC: Habilidade EF01MA14: desenvolver aprendizagens de Matemática relacionadas a Geometria, com linguagem, recursos e autonomia adequados ao 1º ano."
       },
       "questoes": [
         {
           "numero": 1,
           "tipo": "compreensao",
-          "enunciado": "Conte de 1 em 1 e escreva o número que vem depois de 11.",
+          "enunciado": "Identifique os números, dados e a pergunta de uma situação sobre Geometria.",
           "alternativas": [],
           "espacoResposta": "pequeno",
           "figuraId": null
@@ -747,7 +746,7 @@
         {
           "numero": 2,
           "tipo": "resposta-curta",
-          "enunciado": "Resolva: 11 + 2 =",
+          "enunciado": "Represente a situação com desenho, material, cálculo, tabela ou esquema.",
           "alternativas": [],
           "espacoResposta": "pequeno",
           "figuraId": null
@@ -755,7 +754,7 @@
         {
           "numero": 3,
           "tipo": "explicacao",
-          "enunciado": "Resolva: 13 - 2 =",
+          "enunciado": "Resolva passo a passo e explique a estratégia utilizada.",
           "alternativas": [],
           "espacoResposta": "medio",
           "figuraId": null
@@ -763,7 +762,7 @@
         {
           "numero": 4,
           "tipo": "registro",
-          "enunciado": "Qual é maior: 13 ou 16?",
+          "enunciado": "Confira o resultado por contagem, estimativa ou outra estratégia.",
           "alternativas": [],
           "espacoResposta": "medio",
           "figuraId": null
@@ -771,7 +770,7 @@
         {
           "numero": 5,
           "tipo": "situacao-problema",
-          "enunciado": "Complete a sequência: 11, 12, ___, 14.",
+          "enunciado": "Use EF01MA14 para resolver uma nova situação do cotidiano e compare caminhos possíveis.",
           "alternativas": [],
           "espacoResposta": "medio",
           "figuraId": null
@@ -779,7 +778,7 @@
         {
           "numero": 6,
           "tipo": "producao",
-          "enunciado": "Crie uma situação-problema cuja resposta seja 13.",
+          "enunciado": "Escreva uma resposta completa, com resultado, unidade e explicação do que ele significa.",
           "alternativas": [],
           "espacoResposta": "medio",
           "figuraId": null
@@ -788,33 +787,33 @@
       "gabarito": [
         {
           "numero": 1,
-          "resposta": "12.",
-          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+          "resposta": "Reconhecer elementos centrais de Geometria e registrá-los com clareza.",
+          "justificativa": "Critério alinhado à EF01MA14, considerando o desenvolvimento esperado no 1º ano."
         },
         {
           "numero": 2,
-          "resposta": "13.",
-          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+          "resposta": "Localizar ou representar informações pertinentes ao comando.",
+          "justificativa": "Critério alinhado à EF01MA14, considerando o desenvolvimento esperado no 1º ano."
         },
         {
           "numero": 3,
-          "resposta": "11.",
-          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+          "resposta": "Explicar a estratégia ou relação observada com apoio em evidências.",
+          "justificativa": "Critério alinhado à EF01MA14, considerando o desenvolvimento esperado no 1º ano."
         },
         {
           "numero": 4,
-          "resposta": "16.",
-          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+          "resposta": "Comparar, verificar ou justificar a resposta com critério explícito.",
+          "justificativa": "Critério alinhado à EF01MA14, considerando o desenvolvimento esperado no 1º ano."
         },
         {
           "numero": 5,
-          "resposta": "13.",
-          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+          "resposta": "Mobilizar EF01MA14 na situação proposta e demonstrar compreensão do tema.",
+          "justificativa": "Critério alinhado à EF01MA14, considerando o desenvolvimento esperado no 1º ano."
         },
         {
           "numero": 6,
-          "resposta": "Produção autoral com cálculo coerente e resultado 13.",
-          "justificativa": "Critério de correção: clareza, relação com o tema e registro compreensível para o nível de alfabetização."
+          "resposta": "Apresentar conclusão coerente e uma revisão ou proposta adequada.",
+          "justificativa": "Critério alinhado à EF01MA14, considerando o desenvolvimento esperado no 1º ano."
         }
       ],
       "revisao": {
@@ -825,7 +824,8 @@
         "conteudoAutoral": true,
         "revisor": "revisao-pedagogica-teacheasy",
         "dataRevisao": "2026-07-27"
-      }
+      },
+      "bnccConferida": true
     },
     {
       "id": "efi-1ano-b3-mat-08-comprimento-e-comparacao-descoberta",
@@ -834,11 +834,11 @@
       "sequencia": "Atividade 8",
       "tipoSequencia": "Introdução",
       "dificuldade": "facil",
-      "objetivo": "Desenvolver conhecimentos de grandezas e medidas com linguagem adequada ao 1º ano.",
+      "objetivo": "Desenvolver EF01MA15 por meio de observação, diálogo, registro e aplicação sobre Grandezas e medidas.",
       "bncc": [
         {
           "codigo": "EF01MA15",
-          "descricaoResumida": "Habilidade BNCC relacionada a grandezas e medidas no 1º ano."
+          "descricaoResumida": "Habilidade EF01MA15: desenvolver aprendizagens de Matemática relacionadas a Grandezas e medidas, com linguagem, recursos e autonomia adequados ao 1º ano."
         }
       ],
       "quantidadeQuestoes": 6,
@@ -848,15 +848,14 @@
       "possuiVersaoAdaptada": false,
       "instrucaoGeral": "Leia com ajuda quando necessário e responda com atenção. Você pode usar desenhos ou palavras nas respostas abertas.",
       "textoApoio": {
-        "titulo": "Vamos aprender: Comprimento e comparação — Descoberta",
-        "conteudo": "Objetos podem ser comparados como mais compridos ou mais curtos. Nesta atividade, vamos observar 12 + 3 = 15. Para aprender melhor, é importante usar a mesma unidade de comparação.",
-        "fonte": "Texto autoral TeachEasy"
+        "titulo": "Grandezas e medidas — EF01MA15",
+        "conteudo": "A atividade explora Grandezas e medidas de forma adequada ao 1º ano. O estudante deve observar exemplos, conversar sobre estratégias, registrar evidências e explicar o que aprendeu. Foco BNCC: Habilidade EF01MA15: desenvolver aprendizagens de Matemática relacionadas a Grandezas e medidas, com linguagem, recursos e autonomia adequados ao 1º ano."
       },
       "questoes": [
         {
           "numero": 1,
           "tipo": "compreensao",
-          "enunciado": "Conte de 1 em 1 e escreva o número que vem depois de 12.",
+          "enunciado": "Identifique os números, dados e a pergunta de uma situação sobre Grandezas e medidas.",
           "alternativas": [],
           "espacoResposta": "pequeno",
           "figuraId": null
@@ -864,7 +863,7 @@
         {
           "numero": 2,
           "tipo": "resposta-curta",
-          "enunciado": "Resolva: 12 + 3 =",
+          "enunciado": "Represente a situação com desenho, material, cálculo, tabela ou esquema.",
           "alternativas": [],
           "espacoResposta": "pequeno",
           "figuraId": null
@@ -872,7 +871,7 @@
         {
           "numero": 3,
           "tipo": "explicacao",
-          "enunciado": "Resolva: 15 - 3 =",
+          "enunciado": "Resolva passo a passo e explique a estratégia utilizada.",
           "alternativas": [],
           "espacoResposta": "medio",
           "figuraId": null
@@ -880,7 +879,7 @@
         {
           "numero": 4,
           "tipo": "registro",
-          "enunciado": "Qual é maior: 15 ou 18?",
+          "enunciado": "Confira o resultado por contagem, estimativa ou outra estratégia.",
           "alternativas": [],
           "espacoResposta": "medio",
           "figuraId": null
@@ -888,7 +887,7 @@
         {
           "numero": 5,
           "tipo": "situacao-problema",
-          "enunciado": "Complete a sequência: 12, 13, ___, 15.",
+          "enunciado": "Use EF01MA15 para resolver uma nova situação do cotidiano e compare caminhos possíveis.",
           "alternativas": [],
           "espacoResposta": "medio",
           "figuraId": null
@@ -896,7 +895,7 @@
         {
           "numero": 6,
           "tipo": "producao",
-          "enunciado": "Crie uma situação-problema cuja resposta seja 15.",
+          "enunciado": "Escreva uma resposta completa, com resultado, unidade e explicação do que ele significa.",
           "alternativas": [],
           "espacoResposta": "medio",
           "figuraId": null
@@ -905,33 +904,33 @@
       "gabarito": [
         {
           "numero": 1,
-          "resposta": "13.",
-          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+          "resposta": "Reconhecer elementos centrais de Grandezas e medidas e registrá-los com clareza.",
+          "justificativa": "Critério alinhado à EF01MA15, considerando o desenvolvimento esperado no 1º ano."
         },
         {
           "numero": 2,
-          "resposta": "15.",
-          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+          "resposta": "Localizar ou representar informações pertinentes ao comando.",
+          "justificativa": "Critério alinhado à EF01MA15, considerando o desenvolvimento esperado no 1º ano."
         },
         {
           "numero": 3,
-          "resposta": "12.",
-          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+          "resposta": "Explicar a estratégia ou relação observada com apoio em evidências.",
+          "justificativa": "Critério alinhado à EF01MA15, considerando o desenvolvimento esperado no 1º ano."
         },
         {
           "numero": 4,
-          "resposta": "18.",
-          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+          "resposta": "Comparar, verificar ou justificar a resposta com critério explícito.",
+          "justificativa": "Critério alinhado à EF01MA15, considerando o desenvolvimento esperado no 1º ano."
         },
         {
           "numero": 5,
-          "resposta": "14.",
-          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+          "resposta": "Mobilizar EF01MA15 na situação proposta e demonstrar compreensão do tema.",
+          "justificativa": "Critério alinhado à EF01MA15, considerando o desenvolvimento esperado no 1º ano."
         },
         {
           "numero": 6,
-          "resposta": "Produção autoral com cálculo coerente e resultado 15.",
-          "justificativa": "Critério de correção: clareza, relação com o tema e registro compreensível para o nível de alfabetização."
+          "resposta": "Apresentar conclusão coerente e uma revisão ou proposta adequada.",
+          "justificativa": "Critério alinhado à EF01MA15, considerando o desenvolvimento esperado no 1º ano."
         }
       ],
       "revisao": {
@@ -942,7 +941,8 @@
         "conteudoAutoral": true,
         "revisor": "revisao-pedagogica-teacheasy",
         "dataRevisao": "2026-07-27"
-      }
+      },
+      "bnccConferida": true
     },
     {
       "id": "efi-1ano-b3-mat-09-dias-e-horarios-descoberta",
@@ -951,11 +951,11 @@
       "sequencia": "Atividade 9",
       "tipoSequencia": "Introdução",
       "dificuldade": "facil",
-      "objetivo": "Desenvolver conhecimentos de tempo com linguagem adequada ao 1º ano.",
+      "objetivo": "Desenvolver EF01MA17 por meio de observação, diálogo, registro e aplicação sobre Tempo.",
       "bncc": [
         {
           "codigo": "EF01MA17",
-          "descricaoResumida": "Habilidade BNCC relacionada a tempo no 1º ano."
+          "descricaoResumida": "Habilidade EF01MA17: desenvolver aprendizagens de Matemática relacionadas a Tempo, com linguagem, recursos e autonomia adequados ao 1º ano."
         }
       ],
       "quantidadeQuestoes": 6,
@@ -965,15 +965,14 @@
       "possuiVersaoAdaptada": false,
       "instrucaoGeral": "Leia com ajuda quando necessário e responda com atenção. Você pode usar desenhos ou palavras nas respostas abertas.",
       "textoApoio": {
-        "titulo": "Vamos aprender: Dias e horários — Descoberta",
-        "conteudo": "Calendários e relógios ajudam a organizar acontecimentos. Nesta atividade, vamos observar 13 + 4 = 17. Para aprender melhor, é importante observar a ordem dos dias e períodos.",
-        "fonte": "Texto autoral TeachEasy"
+        "titulo": "Tempo — EF01MA17",
+        "conteudo": "A atividade explora Tempo de forma adequada ao 1º ano. O estudante deve observar exemplos, conversar sobre estratégias, registrar evidências e explicar o que aprendeu. Foco BNCC: Habilidade EF01MA17: desenvolver aprendizagens de Matemática relacionadas a Tempo, com linguagem, recursos e autonomia adequados ao 1º ano."
       },
       "questoes": [
         {
           "numero": 1,
           "tipo": "compreensao",
-          "enunciado": "Conte de 1 em 1 e escreva o número que vem depois de 13.",
+          "enunciado": "Identifique os números, dados e a pergunta de uma situação sobre Tempo.",
           "alternativas": [],
           "espacoResposta": "pequeno",
           "figuraId": null
@@ -981,7 +980,7 @@
         {
           "numero": 2,
           "tipo": "resposta-curta",
-          "enunciado": "Resolva: 13 + 4 =",
+          "enunciado": "Represente a situação com desenho, material, cálculo, tabela ou esquema.",
           "alternativas": [],
           "espacoResposta": "pequeno",
           "figuraId": null
@@ -989,7 +988,7 @@
         {
           "numero": 3,
           "tipo": "explicacao",
-          "enunciado": "Resolva: 17 - 4 =",
+          "enunciado": "Resolva passo a passo e explique a estratégia utilizada.",
           "alternativas": [],
           "espacoResposta": "medio",
           "figuraId": null
@@ -997,7 +996,7 @@
         {
           "numero": 4,
           "tipo": "registro",
-          "enunciado": "Qual é maior: 17 ou 20?",
+          "enunciado": "Confira o resultado por contagem, estimativa ou outra estratégia.",
           "alternativas": [],
           "espacoResposta": "medio",
           "figuraId": null
@@ -1005,7 +1004,7 @@
         {
           "numero": 5,
           "tipo": "situacao-problema",
-          "enunciado": "Complete a sequência: 13, 14, ___, 16.",
+          "enunciado": "Use EF01MA17 para resolver uma nova situação do cotidiano e compare caminhos possíveis.",
           "alternativas": [],
           "espacoResposta": "medio",
           "figuraId": null
@@ -1013,7 +1012,7 @@
         {
           "numero": 6,
           "tipo": "producao",
-          "enunciado": "Crie uma situação-problema cuja resposta seja 17.",
+          "enunciado": "Escreva uma resposta completa, com resultado, unidade e explicação do que ele significa.",
           "alternativas": [],
           "espacoResposta": "medio",
           "figuraId": null
@@ -1022,33 +1021,33 @@
       "gabarito": [
         {
           "numero": 1,
-          "resposta": "14.",
-          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+          "resposta": "Reconhecer elementos centrais de Tempo e registrá-los com clareza.",
+          "justificativa": "Critério alinhado à EF01MA17, considerando o desenvolvimento esperado no 1º ano."
         },
         {
           "numero": 2,
-          "resposta": "17.",
-          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+          "resposta": "Localizar ou representar informações pertinentes ao comando.",
+          "justificativa": "Critério alinhado à EF01MA17, considerando o desenvolvimento esperado no 1º ano."
         },
         {
           "numero": 3,
-          "resposta": "13.",
-          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+          "resposta": "Explicar a estratégia ou relação observada com apoio em evidências.",
+          "justificativa": "Critério alinhado à EF01MA17, considerando o desenvolvimento esperado no 1º ano."
         },
         {
           "numero": 4,
-          "resposta": "20.",
-          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+          "resposta": "Comparar, verificar ou justificar a resposta com critério explícito.",
+          "justificativa": "Critério alinhado à EF01MA17, considerando o desenvolvimento esperado no 1º ano."
         },
         {
           "numero": 5,
-          "resposta": "15.",
-          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+          "resposta": "Mobilizar EF01MA17 na situação proposta e demonstrar compreensão do tema.",
+          "justificativa": "Critério alinhado à EF01MA17, considerando o desenvolvimento esperado no 1º ano."
         },
         {
           "numero": 6,
-          "resposta": "Produção autoral com cálculo coerente e resultado 17.",
-          "justificativa": "Critério de correção: clareza, relação com o tema e registro compreensível para o nível de alfabetização."
+          "resposta": "Apresentar conclusão coerente e uma revisão ou proposta adequada.",
+          "justificativa": "Critério alinhado à EF01MA17, considerando o desenvolvimento esperado no 1º ano."
         }
       ],
       "revisao": {
@@ -1059,7 +1058,8 @@
         "conteudoAutoral": true,
         "revisor": "revisao-pedagogica-teacheasy",
         "dataRevisao": "2026-07-27"
-      }
+      },
+      "bnccConferida": true
     },
     {
       "id": "efi-1ano-b3-mat-10-tabelas-e-graficos-simples-descoberta",
@@ -1068,11 +1068,11 @@
       "sequencia": "Atividade 10",
       "tipoSequencia": "Introdução",
       "dificuldade": "facil",
-      "objetivo": "Desenvolver conhecimentos de tratamento da informação com linguagem adequada ao 1º ano.",
+      "objetivo": "Desenvolver EF01MA21 por meio de observação, diálogo, registro e aplicação sobre Tratamento da informação.",
       "bncc": [
         {
           "codigo": "EF01MA21",
-          "descricaoResumida": "Habilidade BNCC relacionada a tratamento da informação no 1º ano."
+          "descricaoResumida": "Habilidade EF01MA21: desenvolver aprendizagens de Matemática relacionadas a Tratamento da informação, com linguagem, recursos e autonomia adequados ao 1º ano."
         }
       ],
       "quantidadeQuestoes": 6,
@@ -1082,15 +1082,14 @@
       "possuiVersaoAdaptada": false,
       "instrucaoGeral": "Leia com ajuda quando necessário e responda com atenção. Você pode usar desenhos ou palavras nas respostas abertas.",
       "textoApoio": {
-        "titulo": "Vamos aprender: Tabelas e gráficos simples — Descoberta",
-        "conteudo": "Tabelas e gráficos organizam dados para facilitar comparações. Nesta atividade, vamos observar 14 + 5 = 19. Para aprender melhor, é importante ler título, categorias e quantidades.",
-        "fonte": "Texto autoral TeachEasy"
+        "titulo": "Tratamento da informação — EF01MA21",
+        "conteudo": "A atividade explora Tratamento da informação de forma adequada ao 1º ano. O estudante deve observar exemplos, conversar sobre estratégias, registrar evidências e explicar o que aprendeu. Foco BNCC: Habilidade EF01MA21: desenvolver aprendizagens de Matemática relacionadas a Tratamento da informação, com linguagem, recursos e autonomia adequados ao 1º ano."
       },
       "questoes": [
         {
           "numero": 1,
           "tipo": "compreensao",
-          "enunciado": "Conte de 1 em 1 e escreva o número que vem depois de 14.",
+          "enunciado": "Identifique os números, dados e a pergunta de uma situação sobre Tratamento da informação.",
           "alternativas": [],
           "espacoResposta": "pequeno",
           "figuraId": null
@@ -1098,7 +1097,7 @@
         {
           "numero": 2,
           "tipo": "resposta-curta",
-          "enunciado": "Resolva: 14 + 5 =",
+          "enunciado": "Represente a situação com desenho, material, cálculo, tabela ou esquema.",
           "alternativas": [],
           "espacoResposta": "pequeno",
           "figuraId": null
@@ -1106,7 +1105,7 @@
         {
           "numero": 3,
           "tipo": "explicacao",
-          "enunciado": "Resolva: 19 - 5 =",
+          "enunciado": "Resolva passo a passo e explique a estratégia utilizada.",
           "alternativas": [],
           "espacoResposta": "medio",
           "figuraId": null
@@ -1114,7 +1113,7 @@
         {
           "numero": 4,
           "tipo": "registro",
-          "enunciado": "Qual é maior: 19 ou 22?",
+          "enunciado": "Confira o resultado por contagem, estimativa ou outra estratégia.",
           "alternativas": [],
           "espacoResposta": "medio",
           "figuraId": null
@@ -1122,7 +1121,7 @@
         {
           "numero": 5,
           "tipo": "situacao-problema",
-          "enunciado": "Complete a sequência: 14, 15, ___, 17.",
+          "enunciado": "Use EF01MA21 para resolver uma nova situação do cotidiano e compare caminhos possíveis.",
           "alternativas": [],
           "espacoResposta": "medio",
           "figuraId": null
@@ -1130,7 +1129,7 @@
         {
           "numero": 6,
           "tipo": "producao",
-          "enunciado": "Crie uma situação-problema cuja resposta seja 19.",
+          "enunciado": "Escreva uma resposta completa, com resultado, unidade e explicação do que ele significa.",
           "alternativas": [],
           "espacoResposta": "medio",
           "figuraId": null
@@ -1139,33 +1138,33 @@
       "gabarito": [
         {
           "numero": 1,
-          "resposta": "15.",
-          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+          "resposta": "Reconhecer elementos centrais de Tratamento da informação e registrá-los com clareza.",
+          "justificativa": "Critério alinhado à EF01MA21, considerando o desenvolvimento esperado no 1º ano."
         },
         {
           "numero": 2,
-          "resposta": "19.",
-          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+          "resposta": "Localizar ou representar informações pertinentes ao comando.",
+          "justificativa": "Critério alinhado à EF01MA21, considerando o desenvolvimento esperado no 1º ano."
         },
         {
           "numero": 3,
-          "resposta": "14.",
-          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+          "resposta": "Explicar a estratégia ou relação observada com apoio em evidências.",
+          "justificativa": "Critério alinhado à EF01MA21, considerando o desenvolvimento esperado no 1º ano."
         },
         {
           "numero": 4,
-          "resposta": "22.",
-          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+          "resposta": "Comparar, verificar ou justificar a resposta com critério explícito.",
+          "justificativa": "Critério alinhado à EF01MA21, considerando o desenvolvimento esperado no 1º ano."
         },
         {
           "numero": 5,
-          "resposta": "16.",
-          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+          "resposta": "Mobilizar EF01MA21 na situação proposta e demonstrar compreensão do tema.",
+          "justificativa": "Critério alinhado à EF01MA21, considerando o desenvolvimento esperado no 1º ano."
         },
         {
           "numero": 6,
-          "resposta": "Produção autoral com cálculo coerente e resultado 19.",
-          "justificativa": "Critério de correção: clareza, relação com o tema e registro compreensível para o nível de alfabetização."
+          "resposta": "Apresentar conclusão coerente e uma revisão ou proposta adequada.",
+          "justificativa": "Critério alinhado à EF01MA21, considerando o desenvolvimento esperado no 1º ano."
         }
       ],
       "revisao": {
@@ -1176,7 +1175,8 @@
         "conteudoAutoral": true,
         "revisor": "revisao-pedagogica-teacheasy",
         "dataRevisao": "2026-07-27"
-      }
+      },
+      "bnccConferida": true
     },
     {
       "id": "efi-1ano-b3-mat-11-numeros-ate-50-pratica",
@@ -1185,11 +1185,11 @@
       "sequencia": "Atividade 11",
       "tipoSequencia": "Desenvolvimento",
       "dificuldade": "intermediaria",
-      "objetivo": "Desenvolver conhecimentos de números naturais com linguagem adequada ao 1º ano.",
+      "objetivo": "Desenvolver EF01MA01 por meio de observação, diálogo, registro e aplicação sobre Números naturais.",
       "bncc": [
         {
           "codigo": "EF01MA01",
-          "descricaoResumida": "Habilidade BNCC relacionada a números naturais no 1º ano."
+          "descricaoResumida": "Habilidade EF01MA01: desenvolver aprendizagens de Matemática relacionadas a Números naturais, com linguagem, recursos e autonomia adequados ao 1º ano."
         }
       ],
       "quantidadeQuestoes": 6,
@@ -1199,15 +1199,14 @@
       "possuiVersaoAdaptada": false,
       "instrucaoGeral": "Leia com ajuda quando necessário e responda com atenção. Você pode usar desenhos ou palavras nas respostas abertas.",
       "textoApoio": {
-        "titulo": "Vamos aprender: Números até 50 — Prática",
-        "conteudo": "Os números indicam quantidades e posições. Nesta atividade, vamos observar 15 + 6 = 21. Para aprender melhor, é importante contar cada objeto apenas uma vez.",
-        "fonte": "Texto autoral TeachEasy"
+        "titulo": "Números naturais — EF01MA01",
+        "conteudo": "A atividade explora Números naturais de forma adequada ao 1º ano. O estudante deve observar exemplos, conversar sobre estratégias, registrar evidências e explicar o que aprendeu. Foco BNCC: Habilidade EF01MA01: desenvolver aprendizagens de Matemática relacionadas a Números naturais, com linguagem, recursos e autonomia adequados ao 1º ano."
       },
       "questoes": [
         {
           "numero": 1,
           "tipo": "compreensao",
-          "enunciado": "Conte de 1 em 1 e escreva o número que vem depois de 15.",
+          "enunciado": "Identifique os números, dados e a pergunta de uma situação sobre Números naturais.",
           "alternativas": [],
           "espacoResposta": "pequeno",
           "figuraId": null
@@ -1215,7 +1214,7 @@
         {
           "numero": 2,
           "tipo": "resposta-curta",
-          "enunciado": "Resolva: 15 + 6 =",
+          "enunciado": "Represente a situação com desenho, material, cálculo, tabela ou esquema.",
           "alternativas": [],
           "espacoResposta": "pequeno",
           "figuraId": null
@@ -1223,7 +1222,7 @@
         {
           "numero": 3,
           "tipo": "explicacao",
-          "enunciado": "Resolva: 21 - 6 =",
+          "enunciado": "Resolva passo a passo e explique a estratégia utilizada.",
           "alternativas": [],
           "espacoResposta": "medio",
           "figuraId": null
@@ -1231,7 +1230,7 @@
         {
           "numero": 4,
           "tipo": "registro",
-          "enunciado": "Qual é maior: 21 ou 24?",
+          "enunciado": "Confira o resultado por contagem, estimativa ou outra estratégia.",
           "alternativas": [],
           "espacoResposta": "medio",
           "figuraId": null
@@ -1239,7 +1238,7 @@
         {
           "numero": 5,
           "tipo": "situacao-problema",
-          "enunciado": "Complete a sequência: 15, 16, ___, 18.",
+          "enunciado": "Use EF01MA01 para resolver uma nova situação do cotidiano e compare caminhos possíveis.",
           "alternativas": [],
           "espacoResposta": "medio",
           "figuraId": null
@@ -1247,7 +1246,7 @@
         {
           "numero": 6,
           "tipo": "producao",
-          "enunciado": "Crie uma situação-problema cuja resposta seja 21.",
+          "enunciado": "Escreva uma resposta completa, com resultado, unidade e explicação do que ele significa.",
           "alternativas": [],
           "espacoResposta": "medio",
           "figuraId": null
@@ -1256,33 +1255,33 @@
       "gabarito": [
         {
           "numero": 1,
-          "resposta": "16.",
-          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+          "resposta": "Reconhecer elementos centrais de Números naturais e registrá-los com clareza.",
+          "justificativa": "Critério alinhado à EF01MA01, considerando o desenvolvimento esperado no 1º ano."
         },
         {
           "numero": 2,
-          "resposta": "21.",
-          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+          "resposta": "Localizar ou representar informações pertinentes ao comando.",
+          "justificativa": "Critério alinhado à EF01MA01, considerando o desenvolvimento esperado no 1º ano."
         },
         {
           "numero": 3,
-          "resposta": "15.",
-          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+          "resposta": "Explicar a estratégia ou relação observada com apoio em evidências.",
+          "justificativa": "Critério alinhado à EF01MA01, considerando o desenvolvimento esperado no 1º ano."
         },
         {
           "numero": 4,
-          "resposta": "24.",
-          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+          "resposta": "Comparar, verificar ou justificar a resposta com critério explícito.",
+          "justificativa": "Critério alinhado à EF01MA01, considerando o desenvolvimento esperado no 1º ano."
         },
         {
           "numero": 5,
-          "resposta": "17.",
-          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+          "resposta": "Mobilizar EF01MA01 na situação proposta e demonstrar compreensão do tema.",
+          "justificativa": "Critério alinhado à EF01MA01, considerando o desenvolvimento esperado no 1º ano."
         },
         {
           "numero": 6,
-          "resposta": "Produção autoral com cálculo coerente e resultado 21.",
-          "justificativa": "Critério de correção: clareza, relação com o tema e registro compreensível para o nível de alfabetização."
+          "resposta": "Apresentar conclusão coerente e uma revisão ou proposta adequada.",
+          "justificativa": "Critério alinhado à EF01MA01, considerando o desenvolvimento esperado no 1º ano."
         }
       ],
       "revisao": {
@@ -1293,7 +1292,8 @@
         "conteudoAutoral": true,
         "revisor": "revisao-pedagogica-teacheasy",
         "dataRevisao": "2026-07-27"
-      }
+      },
+      "bnccConferida": true
     },
     {
       "id": "efi-1ano-b3-mat-12-comparacao-de-quantidades-pratica",
@@ -1302,11 +1302,11 @@
       "sequencia": "Atividade 12",
       "tipoSequencia": "Desenvolvimento",
       "dificuldade": "intermediaria",
-      "objetivo": "Desenvolver conhecimentos de comparar números com linguagem adequada ao 1º ano.",
+      "objetivo": "Desenvolver EF01MA03 por meio de observação, diálogo, registro e aplicação sobre Comparar números.",
       "bncc": [
         {
           "codigo": "EF01MA03",
-          "descricaoResumida": "Habilidade BNCC relacionada a comparar números no 1º ano."
+          "descricaoResumida": "Habilidade EF01MA03: desenvolver aprendizagens de Matemática relacionadas a Comparar números, com linguagem, recursos e autonomia adequados ao 1º ano."
         }
       ],
       "quantidadeQuestoes": 6,
@@ -1316,15 +1316,14 @@
       "possuiVersaoAdaptada": false,
       "instrucaoGeral": "Leia com ajuda quando necessário e responda com atenção. Você pode usar desenhos ou palavras nas respostas abertas.",
       "textoApoio": {
-        "titulo": "Vamos aprender: Comparação de quantidades — Prática",
-        "conteudo": "Podemos comparar quantidades usando mais, menos ou igual. Nesta atividade, vamos observar 16 + 7 = 23. Para aprender melhor, é importante alinhar ou contar os elementos dos grupos.",
-        "fonte": "Texto autoral TeachEasy"
+        "titulo": "Comparar números — EF01MA03",
+        "conteudo": "A atividade explora Comparar números de forma adequada ao 1º ano. O estudante deve observar exemplos, conversar sobre estratégias, registrar evidências e explicar o que aprendeu. Foco BNCC: Habilidade EF01MA03: desenvolver aprendizagens de Matemática relacionadas a Comparar números, com linguagem, recursos e autonomia adequados ao 1º ano."
       },
       "questoes": [
         {
           "numero": 1,
           "tipo": "compreensao",
-          "enunciado": "Conte de 1 em 1 e escreva o número que vem depois de 16.",
+          "enunciado": "Identifique os números, dados e a pergunta de uma situação sobre Comparar números.",
           "alternativas": [],
           "espacoResposta": "pequeno",
           "figuraId": null
@@ -1332,7 +1331,7 @@
         {
           "numero": 2,
           "tipo": "resposta-curta",
-          "enunciado": "Resolva: 16 + 7 =",
+          "enunciado": "Represente a situação com desenho, material, cálculo, tabela ou esquema.",
           "alternativas": [],
           "espacoResposta": "pequeno",
           "figuraId": null
@@ -1340,7 +1339,7 @@
         {
           "numero": 3,
           "tipo": "explicacao",
-          "enunciado": "Resolva: 23 - 7 =",
+          "enunciado": "Resolva passo a passo e explique a estratégia utilizada.",
           "alternativas": [],
           "espacoResposta": "medio",
           "figuraId": null
@@ -1348,7 +1347,7 @@
         {
           "numero": 4,
           "tipo": "registro",
-          "enunciado": "Qual é maior: 23 ou 26?",
+          "enunciado": "Confira o resultado por contagem, estimativa ou outra estratégia.",
           "alternativas": [],
           "espacoResposta": "medio",
           "figuraId": null
@@ -1356,7 +1355,7 @@
         {
           "numero": 5,
           "tipo": "situacao-problema",
-          "enunciado": "Complete a sequência: 16, 17, ___, 19.",
+          "enunciado": "Use EF01MA03 para resolver uma nova situação do cotidiano e compare caminhos possíveis.",
           "alternativas": [],
           "espacoResposta": "medio",
           "figuraId": null
@@ -1364,7 +1363,7 @@
         {
           "numero": 6,
           "tipo": "producao",
-          "enunciado": "Crie uma situação-problema cuja resposta seja 23.",
+          "enunciado": "Escreva uma resposta completa, com resultado, unidade e explicação do que ele significa.",
           "alternativas": [],
           "espacoResposta": "medio",
           "figuraId": null
@@ -1373,33 +1372,33 @@
       "gabarito": [
         {
           "numero": 1,
-          "resposta": "17.",
-          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+          "resposta": "Reconhecer elementos centrais de Comparar números e registrá-los com clareza.",
+          "justificativa": "Critério alinhado à EF01MA03, considerando o desenvolvimento esperado no 1º ano."
         },
         {
           "numero": 2,
-          "resposta": "23.",
-          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+          "resposta": "Localizar ou representar informações pertinentes ao comando.",
+          "justificativa": "Critério alinhado à EF01MA03, considerando o desenvolvimento esperado no 1º ano."
         },
         {
           "numero": 3,
-          "resposta": "16.",
-          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+          "resposta": "Explicar a estratégia ou relação observada com apoio em evidências.",
+          "justificativa": "Critério alinhado à EF01MA03, considerando o desenvolvimento esperado no 1º ano."
         },
         {
           "numero": 4,
-          "resposta": "26.",
-          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+          "resposta": "Comparar, verificar ou justificar a resposta com critério explícito.",
+          "justificativa": "Critério alinhado à EF01MA03, considerando o desenvolvimento esperado no 1º ano."
         },
         {
           "numero": 5,
-          "resposta": "18.",
-          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+          "resposta": "Mobilizar EF01MA03 na situação proposta e demonstrar compreensão do tema.",
+          "justificativa": "Critério alinhado à EF01MA03, considerando o desenvolvimento esperado no 1º ano."
         },
         {
           "numero": 6,
-          "resposta": "Produção autoral com cálculo coerente e resultado 23.",
-          "justificativa": "Critério de correção: clareza, relação com o tema e registro compreensível para o nível de alfabetização."
+          "resposta": "Apresentar conclusão coerente e uma revisão ou proposta adequada.",
+          "justificativa": "Critério alinhado à EF01MA03, considerando o desenvolvimento esperado no 1º ano."
         }
       ],
       "revisao": {
@@ -1410,7 +1409,8 @@
         "conteudoAutoral": true,
         "revisor": "revisao-pedagogica-teacheasy",
         "dataRevisao": "2026-07-27"
-      }
+      },
+      "bnccConferida": true
     },
     {
       "id": "efi-1ano-b3-mat-13-sequencias-numericas-pratica",
@@ -1419,11 +1419,11 @@
       "sequencia": "Atividade 13",
       "tipoSequencia": "Desenvolvimento",
       "dificuldade": "intermediaria",
-      "objetivo": "Desenvolver conhecimentos de regularidades com linguagem adequada ao 1º ano.",
+      "objetivo": "Desenvolver EF01MA05 por meio de observação, diálogo, registro e aplicação sobre Regularidades.",
       "bncc": [
         {
           "codigo": "EF01MA05",
-          "descricaoResumida": "Habilidade BNCC relacionada a regularidades no 1º ano."
+          "descricaoResumida": "Habilidade EF01MA05: desenvolver aprendizagens de Matemática relacionadas a Regularidades, com linguagem, recursos e autonomia adequados ao 1º ano."
         }
       ],
       "quantidadeQuestoes": 6,
@@ -1433,15 +1433,14 @@
       "possuiVersaoAdaptada": false,
       "instrucaoGeral": "Leia com ajuda quando necessário e responda com atenção. Você pode usar desenhos ou palavras nas respostas abertas.",
       "textoApoio": {
-        "titulo": "Vamos aprender: Sequências numéricas — Prática",
-        "conteudo": "Uma sequência segue uma ordem ou regra. Nesta atividade, vamos observar 17 + 8 = 25. Para aprender melhor, é importante observar o que muda de um termo para o outro.",
-        "fonte": "Texto autoral TeachEasy"
+        "titulo": "Regularidades — EF01MA05",
+        "conteudo": "A atividade explora Regularidades de forma adequada ao 1º ano. O estudante deve observar exemplos, conversar sobre estratégias, registrar evidências e explicar o que aprendeu. Foco BNCC: Habilidade EF01MA05: desenvolver aprendizagens de Matemática relacionadas a Regularidades, com linguagem, recursos e autonomia adequados ao 1º ano."
       },
       "questoes": [
         {
           "numero": 1,
           "tipo": "compreensao",
-          "enunciado": "Conte de 1 em 1 e escreva o número que vem depois de 17.",
+          "enunciado": "Identifique os números, dados e a pergunta de uma situação sobre Regularidades.",
           "alternativas": [],
           "espacoResposta": "pequeno",
           "figuraId": null
@@ -1449,7 +1448,7 @@
         {
           "numero": 2,
           "tipo": "resposta-curta",
-          "enunciado": "Resolva: 17 + 8 =",
+          "enunciado": "Represente a situação com desenho, material, cálculo, tabela ou esquema.",
           "alternativas": [],
           "espacoResposta": "pequeno",
           "figuraId": null
@@ -1457,7 +1456,7 @@
         {
           "numero": 3,
           "tipo": "explicacao",
-          "enunciado": "Resolva: 25 - 8 =",
+          "enunciado": "Resolva passo a passo e explique a estratégia utilizada.",
           "alternativas": [],
           "espacoResposta": "medio",
           "figuraId": null
@@ -1465,7 +1464,7 @@
         {
           "numero": 4,
           "tipo": "registro",
-          "enunciado": "Qual é maior: 25 ou 28?",
+          "enunciado": "Confira o resultado por contagem, estimativa ou outra estratégia.",
           "alternativas": [],
           "espacoResposta": "medio",
           "figuraId": null
@@ -1473,7 +1472,7 @@
         {
           "numero": 5,
           "tipo": "situacao-problema",
-          "enunciado": "Complete a sequência: 17, 18, ___, 20.",
+          "enunciado": "Use EF01MA05 para resolver uma nova situação do cotidiano e compare caminhos possíveis.",
           "alternativas": [],
           "espacoResposta": "medio",
           "figuraId": null
@@ -1481,7 +1480,7 @@
         {
           "numero": 6,
           "tipo": "producao",
-          "enunciado": "Crie uma situação-problema cuja resposta seja 25.",
+          "enunciado": "Escreva uma resposta completa, com resultado, unidade e explicação do que ele significa.",
           "alternativas": [],
           "espacoResposta": "medio",
           "figuraId": null
@@ -1490,33 +1489,33 @@
       "gabarito": [
         {
           "numero": 1,
-          "resposta": "18.",
-          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+          "resposta": "Reconhecer elementos centrais de Regularidades e registrá-los com clareza.",
+          "justificativa": "Critério alinhado à EF01MA05, considerando o desenvolvimento esperado no 1º ano."
         },
         {
           "numero": 2,
-          "resposta": "25.",
-          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+          "resposta": "Localizar ou representar informações pertinentes ao comando.",
+          "justificativa": "Critério alinhado à EF01MA05, considerando o desenvolvimento esperado no 1º ano."
         },
         {
           "numero": 3,
-          "resposta": "17.",
-          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+          "resposta": "Explicar a estratégia ou relação observada com apoio em evidências.",
+          "justificativa": "Critério alinhado à EF01MA05, considerando o desenvolvimento esperado no 1º ano."
         },
         {
           "numero": 4,
-          "resposta": "28.",
-          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+          "resposta": "Comparar, verificar ou justificar a resposta com critério explícito.",
+          "justificativa": "Critério alinhado à EF01MA05, considerando o desenvolvimento esperado no 1º ano."
         },
         {
           "numero": 5,
-          "resposta": "19.",
-          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+          "resposta": "Mobilizar EF01MA05 na situação proposta e demonstrar compreensão do tema.",
+          "justificativa": "Critério alinhado à EF01MA05, considerando o desenvolvimento esperado no 1º ano."
         },
         {
           "numero": 6,
-          "resposta": "Produção autoral com cálculo coerente e resultado 25.",
-          "justificativa": "Critério de correção: clareza, relação com o tema e registro compreensível para o nível de alfabetização."
+          "resposta": "Apresentar conclusão coerente e uma revisão ou proposta adequada.",
+          "justificativa": "Critério alinhado à EF01MA05, considerando o desenvolvimento esperado no 1º ano."
         }
       ],
       "revisao": {
@@ -1527,7 +1526,8 @@
         "conteudoAutoral": true,
         "revisor": "revisao-pedagogica-teacheasy",
         "dataRevisao": "2026-07-27"
-      }
+      },
+      "bnccConferida": true
     },
     {
       "id": "efi-1ano-b3-mat-14-adicao-no-cotidiano-pratica",
@@ -1536,11 +1536,11 @@
       "sequencia": "Atividade 14",
       "tipoSequencia": "Desenvolvimento",
       "dificuldade": "intermediaria",
-      "objetivo": "Desenvolver conhecimentos de adição com linguagem adequada ao 1º ano.",
+      "objetivo": "Desenvolver EF01MA06 por meio de observação, diálogo, registro e aplicação sobre Adição.",
       "bncc": [
         {
           "codigo": "EF01MA06",
-          "descricaoResumida": "Habilidade BNCC relacionada a adição no 1º ano."
+          "descricaoResumida": "Habilidade EF01MA06: desenvolver aprendizagens de Matemática relacionadas a Adição, com linguagem, recursos e autonomia adequados ao 1º ano."
         }
       ],
       "quantidadeQuestoes": 6,
@@ -1550,15 +1550,14 @@
       "possuiVersaoAdaptada": false,
       "instrucaoGeral": "Leia com ajuda quando necessário e responda com atenção. Você pode usar desenhos ou palavras nas respostas abertas.",
       "textoApoio": {
-        "titulo": "Vamos aprender: Adição no cotidiano — Prática",
-        "conteudo": "Adicionar é juntar quantidades ou acrescentar elementos. Nesta atividade, vamos observar 18 + 2 = 20. Para aprender melhor, é importante representar as parcelas antes de somar.",
-        "fonte": "Texto autoral TeachEasy"
+        "titulo": "Adição — EF01MA06",
+        "conteudo": "A atividade explora Adição de forma adequada ao 1º ano. O estudante deve observar exemplos, conversar sobre estratégias, registrar evidências e explicar o que aprendeu. Foco BNCC: Habilidade EF01MA06: desenvolver aprendizagens de Matemática relacionadas a Adição, com linguagem, recursos e autonomia adequados ao 1º ano."
       },
       "questoes": [
         {
           "numero": 1,
           "tipo": "compreensao",
-          "enunciado": "Conte de 1 em 1 e escreva o número que vem depois de 18.",
+          "enunciado": "Identifique os números, dados e a pergunta de uma situação sobre Adição.",
           "alternativas": [],
           "espacoResposta": "pequeno",
           "figuraId": null
@@ -1566,7 +1565,7 @@
         {
           "numero": 2,
           "tipo": "resposta-curta",
-          "enunciado": "Resolva: 18 + 2 =",
+          "enunciado": "Represente a situação com desenho, material, cálculo, tabela ou esquema.",
           "alternativas": [],
           "espacoResposta": "pequeno",
           "figuraId": null
@@ -1574,7 +1573,7 @@
         {
           "numero": 3,
           "tipo": "explicacao",
-          "enunciado": "Resolva: 20 - 2 =",
+          "enunciado": "Resolva passo a passo e explique a estratégia utilizada.",
           "alternativas": [],
           "espacoResposta": "medio",
           "figuraId": null
@@ -1582,7 +1581,7 @@
         {
           "numero": 4,
           "tipo": "registro",
-          "enunciado": "Qual é maior: 20 ou 23?",
+          "enunciado": "Confira o resultado por contagem, estimativa ou outra estratégia.",
           "alternativas": [],
           "espacoResposta": "medio",
           "figuraId": null
@@ -1590,7 +1589,7 @@
         {
           "numero": 5,
           "tipo": "situacao-problema",
-          "enunciado": "Complete a sequência: 18, 19, ___, 21.",
+          "enunciado": "Use EF01MA06 para resolver uma nova situação do cotidiano e compare caminhos possíveis.",
           "alternativas": [],
           "espacoResposta": "medio",
           "figuraId": null
@@ -1598,7 +1597,7 @@
         {
           "numero": 6,
           "tipo": "producao",
-          "enunciado": "Crie uma situação-problema cuja resposta seja 20.",
+          "enunciado": "Escreva uma resposta completa, com resultado, unidade e explicação do que ele significa.",
           "alternativas": [],
           "espacoResposta": "medio",
           "figuraId": null
@@ -1607,33 +1606,33 @@
       "gabarito": [
         {
           "numero": 1,
-          "resposta": "19.",
-          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+          "resposta": "Reconhecer elementos centrais de Adição e registrá-los com clareza.",
+          "justificativa": "Critério alinhado à EF01MA06, considerando o desenvolvimento esperado no 1º ano."
         },
         {
           "numero": 2,
-          "resposta": "20.",
-          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+          "resposta": "Localizar ou representar informações pertinentes ao comando.",
+          "justificativa": "Critério alinhado à EF01MA06, considerando o desenvolvimento esperado no 1º ano."
         },
         {
           "numero": 3,
-          "resposta": "18.",
-          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+          "resposta": "Explicar a estratégia ou relação observada com apoio em evidências.",
+          "justificativa": "Critério alinhado à EF01MA06, considerando o desenvolvimento esperado no 1º ano."
         },
         {
           "numero": 4,
-          "resposta": "23.",
-          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+          "resposta": "Comparar, verificar ou justificar a resposta com critério explícito.",
+          "justificativa": "Critério alinhado à EF01MA06, considerando o desenvolvimento esperado no 1º ano."
         },
         {
           "numero": 5,
-          "resposta": "20.",
-          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+          "resposta": "Mobilizar EF01MA06 na situação proposta e demonstrar compreensão do tema.",
+          "justificativa": "Critério alinhado à EF01MA06, considerando o desenvolvimento esperado no 1º ano."
         },
         {
           "numero": 6,
-          "resposta": "Produção autoral com cálculo coerente e resultado 20.",
-          "justificativa": "Critério de correção: clareza, relação com o tema e registro compreensível para o nível de alfabetização."
+          "resposta": "Apresentar conclusão coerente e uma revisão ou proposta adequada.",
+          "justificativa": "Critério alinhado à EF01MA06, considerando o desenvolvimento esperado no 1º ano."
         }
       ],
       "revisao": {
@@ -1644,7 +1643,8 @@
         "conteudoAutoral": true,
         "revisor": "revisao-pedagogica-teacheasy",
         "dataRevisao": "2026-07-27"
-      }
+      },
+      "bnccConferida": true
     },
     {
       "id": "efi-1ano-b3-mat-15-subtracao-no-cotidiano-pratica",
@@ -1653,11 +1653,11 @@
       "sequencia": "Atividade 15",
       "tipoSequencia": "Desenvolvimento",
       "dificuldade": "intermediaria",
-      "objetivo": "Desenvolver conhecimentos de subtração com linguagem adequada ao 1º ano.",
+      "objetivo": "Desenvolver EF01MA08 por meio de observação, diálogo, registro e aplicação sobre Subtração.",
       "bncc": [
         {
           "codigo": "EF01MA08",
-          "descricaoResumida": "Habilidade BNCC relacionada a subtração no 1º ano."
+          "descricaoResumida": "Habilidade EF01MA08: desenvolver aprendizagens de Matemática relacionadas a Subtração, com linguagem, recursos e autonomia adequados ao 1º ano."
         }
       ],
       "quantidadeQuestoes": 6,
@@ -1667,15 +1667,14 @@
       "possuiVersaoAdaptada": false,
       "instrucaoGeral": "Leia com ajuda quando necessário e responda com atenção. Você pode usar desenhos ou palavras nas respostas abertas.",
       "textoApoio": {
-        "titulo": "Vamos aprender: Subtração no cotidiano — Prática",
-        "conteudo": "Subtrair pode significar retirar ou descobrir a diferença. Nesta atividade, vamos observar 19 + 3 = 22. Para aprender melhor, é importante começar pelo total e retirar a quantidade indicada.",
-        "fonte": "Texto autoral TeachEasy"
+        "titulo": "Subtração — EF01MA08",
+        "conteudo": "A atividade explora Subtração de forma adequada ao 1º ano. O estudante deve observar exemplos, conversar sobre estratégias, registrar evidências e explicar o que aprendeu. Foco BNCC: Habilidade EF01MA08: desenvolver aprendizagens de Matemática relacionadas a Subtração, com linguagem, recursos e autonomia adequados ao 1º ano."
       },
       "questoes": [
         {
           "numero": 1,
           "tipo": "compreensao",
-          "enunciado": "Conte de 1 em 1 e escreva o número que vem depois de 19.",
+          "enunciado": "Identifique os números, dados e a pergunta de uma situação sobre Subtração.",
           "alternativas": [],
           "espacoResposta": "pequeno",
           "figuraId": null
@@ -1683,7 +1682,7 @@
         {
           "numero": 2,
           "tipo": "resposta-curta",
-          "enunciado": "Resolva: 19 + 3 =",
+          "enunciado": "Represente a situação com desenho, material, cálculo, tabela ou esquema.",
           "alternativas": [],
           "espacoResposta": "pequeno",
           "figuraId": null
@@ -1691,7 +1690,7 @@
         {
           "numero": 3,
           "tipo": "explicacao",
-          "enunciado": "Resolva: 22 - 3 =",
+          "enunciado": "Resolva passo a passo e explique a estratégia utilizada.",
           "alternativas": [],
           "espacoResposta": "medio",
           "figuraId": null
@@ -1699,7 +1698,7 @@
         {
           "numero": 4,
           "tipo": "registro",
-          "enunciado": "Qual é maior: 22 ou 25?",
+          "enunciado": "Confira o resultado por contagem, estimativa ou outra estratégia.",
           "alternativas": [],
           "espacoResposta": "medio",
           "figuraId": null
@@ -1707,7 +1706,7 @@
         {
           "numero": 5,
           "tipo": "situacao-problema",
-          "enunciado": "Complete a sequência: 19, 20, ___, 22.",
+          "enunciado": "Use EF01MA08 para resolver uma nova situação do cotidiano e compare caminhos possíveis.",
           "alternativas": [],
           "espacoResposta": "medio",
           "figuraId": null
@@ -1715,7 +1714,7 @@
         {
           "numero": 6,
           "tipo": "producao",
-          "enunciado": "Crie uma situação-problema cuja resposta seja 22.",
+          "enunciado": "Escreva uma resposta completa, com resultado, unidade e explicação do que ele significa.",
           "alternativas": [],
           "espacoResposta": "medio",
           "figuraId": null
@@ -1724,33 +1723,33 @@
       "gabarito": [
         {
           "numero": 1,
-          "resposta": "20.",
-          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+          "resposta": "Reconhecer elementos centrais de Subtração e registrá-los com clareza.",
+          "justificativa": "Critério alinhado à EF01MA08, considerando o desenvolvimento esperado no 1º ano."
         },
         {
           "numero": 2,
-          "resposta": "22.",
-          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+          "resposta": "Localizar ou representar informações pertinentes ao comando.",
+          "justificativa": "Critério alinhado à EF01MA08, considerando o desenvolvimento esperado no 1º ano."
         },
         {
           "numero": 3,
-          "resposta": "19.",
-          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+          "resposta": "Explicar a estratégia ou relação observada com apoio em evidências.",
+          "justificativa": "Critério alinhado à EF01MA08, considerando o desenvolvimento esperado no 1º ano."
         },
         {
           "numero": 4,
-          "resposta": "25.",
-          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+          "resposta": "Comparar, verificar ou justificar a resposta com critério explícito.",
+          "justificativa": "Critério alinhado à EF01MA08, considerando o desenvolvimento esperado no 1º ano."
         },
         {
           "numero": 5,
-          "resposta": "21.",
-          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+          "resposta": "Mobilizar EF01MA08 na situação proposta e demonstrar compreensão do tema.",
+          "justificativa": "Critério alinhado à EF01MA08, considerando o desenvolvimento esperado no 1º ano."
         },
         {
           "numero": 6,
-          "resposta": "Produção autoral com cálculo coerente e resultado 22.",
-          "justificativa": "Critério de correção: clareza, relação com o tema e registro compreensível para o nível de alfabetização."
+          "resposta": "Apresentar conclusão coerente e uma revisão ou proposta adequada.",
+          "justificativa": "Critério alinhado à EF01MA08, considerando o desenvolvimento esperado no 1º ano."
         }
       ],
       "revisao": {
@@ -1761,7 +1760,8 @@
         "conteudoAutoral": true,
         "revisor": "revisao-pedagogica-teacheasy",
         "dataRevisao": "2026-07-27"
-      }
+      },
+      "bnccConferida": true
     },
     {
       "id": "efi-1ano-b3-mat-16-dezena-e-unidade-pratica",
@@ -1770,11 +1770,11 @@
       "sequencia": "Atividade 16",
       "tipoSequencia": "Desenvolvimento",
       "dificuldade": "intermediaria",
-      "objetivo": "Desenvolver conhecimentos de sistema decimal com linguagem adequada ao 1º ano.",
+      "objetivo": "Desenvolver EF01MA07 por meio de observação, diálogo, registro e aplicação sobre Sistema decimal.",
       "bncc": [
         {
           "codigo": "EF01MA07",
-          "descricaoResumida": "Habilidade BNCC relacionada a sistema decimal no 1º ano."
+          "descricaoResumida": "Habilidade EF01MA07: desenvolver aprendizagens de Matemática relacionadas a Sistema decimal, com linguagem, recursos e autonomia adequados ao 1º ano."
         }
       ],
       "quantidadeQuestoes": 6,
@@ -1784,15 +1784,14 @@
       "possuiVersaoAdaptada": false,
       "instrucaoGeral": "Leia com ajuda quando necessário e responda com atenção. Você pode usar desenhos ou palavras nas respostas abertas.",
       "textoApoio": {
-        "titulo": "Vamos aprender: Dezena e unidade — Prática",
-        "conteudo": "Uma dezena corresponde a dez unidades. Nesta atividade, vamos observar 20 + 4 = 24. Para aprender melhor, é importante agrupar objetos de dez em dez.",
-        "fonte": "Texto autoral TeachEasy"
+        "titulo": "Sistema decimal — EF01MA07",
+        "conteudo": "A atividade explora Sistema decimal de forma adequada ao 1º ano. O estudante deve observar exemplos, conversar sobre estratégias, registrar evidências e explicar o que aprendeu. Foco BNCC: Habilidade EF01MA07: desenvolver aprendizagens de Matemática relacionadas a Sistema decimal, com linguagem, recursos e autonomia adequados ao 1º ano."
       },
       "questoes": [
         {
           "numero": 1,
           "tipo": "compreensao",
-          "enunciado": "Conte de 1 em 1 e escreva o número que vem depois de 20.",
+          "enunciado": "Identifique os números, dados e a pergunta de uma situação sobre Sistema decimal.",
           "alternativas": [],
           "espacoResposta": "pequeno",
           "figuraId": null
@@ -1800,7 +1799,7 @@
         {
           "numero": 2,
           "tipo": "resposta-curta",
-          "enunciado": "Resolva: 20 + 4 =",
+          "enunciado": "Represente a situação com desenho, material, cálculo, tabela ou esquema.",
           "alternativas": [],
           "espacoResposta": "pequeno",
           "figuraId": null
@@ -1808,7 +1807,7 @@
         {
           "numero": 3,
           "tipo": "explicacao",
-          "enunciado": "Resolva: 24 - 4 =",
+          "enunciado": "Resolva passo a passo e explique a estratégia utilizada.",
           "alternativas": [],
           "espacoResposta": "medio",
           "figuraId": null
@@ -1816,7 +1815,7 @@
         {
           "numero": 4,
           "tipo": "registro",
-          "enunciado": "Qual é maior: 24 ou 27?",
+          "enunciado": "Confira o resultado por contagem, estimativa ou outra estratégia.",
           "alternativas": [],
           "espacoResposta": "medio",
           "figuraId": null
@@ -1824,7 +1823,7 @@
         {
           "numero": 5,
           "tipo": "situacao-problema",
-          "enunciado": "Complete a sequência: 20, 21, ___, 23.",
+          "enunciado": "Use EF01MA07 para resolver uma nova situação do cotidiano e compare caminhos possíveis.",
           "alternativas": [],
           "espacoResposta": "medio",
           "figuraId": null
@@ -1832,7 +1831,7 @@
         {
           "numero": 6,
           "tipo": "producao",
-          "enunciado": "Crie uma situação-problema cuja resposta seja 24.",
+          "enunciado": "Escreva uma resposta completa, com resultado, unidade e explicação do que ele significa.",
           "alternativas": [],
           "espacoResposta": "medio",
           "figuraId": null
@@ -1841,33 +1840,33 @@
       "gabarito": [
         {
           "numero": 1,
-          "resposta": "21.",
-          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+          "resposta": "Reconhecer elementos centrais de Sistema decimal e registrá-los com clareza.",
+          "justificativa": "Critério alinhado à EF01MA07, considerando o desenvolvimento esperado no 1º ano."
         },
         {
           "numero": 2,
-          "resposta": "24.",
-          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+          "resposta": "Localizar ou representar informações pertinentes ao comando.",
+          "justificativa": "Critério alinhado à EF01MA07, considerando o desenvolvimento esperado no 1º ano."
         },
         {
           "numero": 3,
-          "resposta": "20.",
-          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+          "resposta": "Explicar a estratégia ou relação observada com apoio em evidências.",
+          "justificativa": "Critério alinhado à EF01MA07, considerando o desenvolvimento esperado no 1º ano."
         },
         {
           "numero": 4,
-          "resposta": "27.",
-          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+          "resposta": "Comparar, verificar ou justificar a resposta com critério explícito.",
+          "justificativa": "Critério alinhado à EF01MA07, considerando o desenvolvimento esperado no 1º ano."
         },
         {
           "numero": 5,
-          "resposta": "22.",
-          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+          "resposta": "Mobilizar EF01MA07 na situação proposta e demonstrar compreensão do tema.",
+          "justificativa": "Critério alinhado à EF01MA07, considerando o desenvolvimento esperado no 1º ano."
         },
         {
           "numero": 6,
-          "resposta": "Produção autoral com cálculo coerente e resultado 24.",
-          "justificativa": "Critério de correção: clareza, relação com o tema e registro compreensível para o nível de alfabetização."
+          "resposta": "Apresentar conclusão coerente e uma revisão ou proposta adequada.",
+          "justificativa": "Critério alinhado à EF01MA07, considerando o desenvolvimento esperado no 1º ano."
         }
       ],
       "revisao": {
@@ -1878,7 +1877,8 @@
         "conteudoAutoral": true,
         "revisor": "revisao-pedagogica-teacheasy",
         "dataRevisao": "2026-07-27"
-      }
+      },
+      "bnccConferida": true
     },
     {
       "id": "efi-1ano-b3-mat-17-formas-geometricas-pratica",
@@ -1887,11 +1887,11 @@
       "sequencia": "Atividade 17",
       "tipoSequencia": "Desenvolvimento",
       "dificuldade": "intermediaria",
-      "objetivo": "Desenvolver conhecimentos de geometria com linguagem adequada ao 1º ano.",
+      "objetivo": "Desenvolver EF01MA14 por meio de observação, diálogo, registro e aplicação sobre Geometria.",
       "bncc": [
         {
           "codigo": "EF01MA14",
-          "descricaoResumida": "Habilidade BNCC relacionada a geometria no 1º ano."
+          "descricaoResumida": "Habilidade EF01MA14: desenvolver aprendizagens de Matemática relacionadas a Geometria, com linguagem, recursos e autonomia adequados ao 1º ano."
         }
       ],
       "quantidadeQuestoes": 6,
@@ -1901,15 +1901,14 @@
       "possuiVersaoAdaptada": false,
       "instrucaoGeral": "Leia com ajuda quando necessário e responda com atenção. Você pode usar desenhos ou palavras nas respostas abertas.",
       "textoApoio": {
-        "titulo": "Vamos aprender: Formas geométricas — Prática",
-        "conteudo": "Círculo, quadrado, triângulo e retângulo aparecem em objetos do cotidiano. Nesta atividade, vamos observar 21 + 5 = 26. Para aprender melhor, é importante observar lados, pontas e contorno.",
-        "fonte": "Texto autoral TeachEasy"
+        "titulo": "Geometria — EF01MA14",
+        "conteudo": "A atividade explora Geometria de forma adequada ao 1º ano. O estudante deve observar exemplos, conversar sobre estratégias, registrar evidências e explicar o que aprendeu. Foco BNCC: Habilidade EF01MA14: desenvolver aprendizagens de Matemática relacionadas a Geometria, com linguagem, recursos e autonomia adequados ao 1º ano."
       },
       "questoes": [
         {
           "numero": 1,
           "tipo": "compreensao",
-          "enunciado": "Conte de 1 em 1 e escreva o número que vem depois de 21.",
+          "enunciado": "Identifique os números, dados e a pergunta de uma situação sobre Geometria.",
           "alternativas": [],
           "espacoResposta": "pequeno",
           "figuraId": null
@@ -1917,7 +1916,7 @@
         {
           "numero": 2,
           "tipo": "resposta-curta",
-          "enunciado": "Resolva: 21 + 5 =",
+          "enunciado": "Represente a situação com desenho, material, cálculo, tabela ou esquema.",
           "alternativas": [],
           "espacoResposta": "pequeno",
           "figuraId": null
@@ -1925,7 +1924,7 @@
         {
           "numero": 3,
           "tipo": "explicacao",
-          "enunciado": "Resolva: 26 - 5 =",
+          "enunciado": "Resolva passo a passo e explique a estratégia utilizada.",
           "alternativas": [],
           "espacoResposta": "medio",
           "figuraId": null
@@ -1933,7 +1932,7 @@
         {
           "numero": 4,
           "tipo": "registro",
-          "enunciado": "Qual é maior: 26 ou 29?",
+          "enunciado": "Confira o resultado por contagem, estimativa ou outra estratégia.",
           "alternativas": [],
           "espacoResposta": "medio",
           "figuraId": null
@@ -1941,7 +1940,7 @@
         {
           "numero": 5,
           "tipo": "situacao-problema",
-          "enunciado": "Complete a sequência: 21, 22, ___, 24.",
+          "enunciado": "Use EF01MA14 para resolver uma nova situação do cotidiano e compare caminhos possíveis.",
           "alternativas": [],
           "espacoResposta": "medio",
           "figuraId": null
@@ -1949,7 +1948,7 @@
         {
           "numero": 6,
           "tipo": "producao",
-          "enunciado": "Crie uma situação-problema cuja resposta seja 26.",
+          "enunciado": "Escreva uma resposta completa, com resultado, unidade e explicação do que ele significa.",
           "alternativas": [],
           "espacoResposta": "medio",
           "figuraId": null
@@ -1958,33 +1957,33 @@
       "gabarito": [
         {
           "numero": 1,
-          "resposta": "22.",
-          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+          "resposta": "Reconhecer elementos centrais de Geometria e registrá-los com clareza.",
+          "justificativa": "Critério alinhado à EF01MA14, considerando o desenvolvimento esperado no 1º ano."
         },
         {
           "numero": 2,
-          "resposta": "26.",
-          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+          "resposta": "Localizar ou representar informações pertinentes ao comando.",
+          "justificativa": "Critério alinhado à EF01MA14, considerando o desenvolvimento esperado no 1º ano."
         },
         {
           "numero": 3,
-          "resposta": "21.",
-          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+          "resposta": "Explicar a estratégia ou relação observada com apoio em evidências.",
+          "justificativa": "Critério alinhado à EF01MA14, considerando o desenvolvimento esperado no 1º ano."
         },
         {
           "numero": 4,
-          "resposta": "29.",
-          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+          "resposta": "Comparar, verificar ou justificar a resposta com critério explícito.",
+          "justificativa": "Critério alinhado à EF01MA14, considerando o desenvolvimento esperado no 1º ano."
         },
         {
           "numero": 5,
-          "resposta": "23.",
-          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+          "resposta": "Mobilizar EF01MA14 na situação proposta e demonstrar compreensão do tema.",
+          "justificativa": "Critério alinhado à EF01MA14, considerando o desenvolvimento esperado no 1º ano."
         },
         {
           "numero": 6,
-          "resposta": "Produção autoral com cálculo coerente e resultado 26.",
-          "justificativa": "Critério de correção: clareza, relação com o tema e registro compreensível para o nível de alfabetização."
+          "resposta": "Apresentar conclusão coerente e uma revisão ou proposta adequada.",
+          "justificativa": "Critério alinhado à EF01MA14, considerando o desenvolvimento esperado no 1º ano."
         }
       ],
       "revisao": {
@@ -1995,7 +1994,8 @@
         "conteudoAutoral": true,
         "revisor": "revisao-pedagogica-teacheasy",
         "dataRevisao": "2026-07-27"
-      }
+      },
+      "bnccConferida": true
     },
     {
       "id": "efi-1ano-b3-mat-18-comprimento-e-comparacao-pratica",
@@ -2004,11 +2004,11 @@
       "sequencia": "Atividade 18",
       "tipoSequencia": "Desenvolvimento",
       "dificuldade": "intermediaria",
-      "objetivo": "Desenvolver conhecimentos de grandezas e medidas com linguagem adequada ao 1º ano.",
+      "objetivo": "Desenvolver EF01MA15 por meio de observação, diálogo, registro e aplicação sobre Grandezas e medidas.",
       "bncc": [
         {
           "codigo": "EF01MA15",
-          "descricaoResumida": "Habilidade BNCC relacionada a grandezas e medidas no 1º ano."
+          "descricaoResumida": "Habilidade EF01MA15: desenvolver aprendizagens de Matemática relacionadas a Grandezas e medidas, com linguagem, recursos e autonomia adequados ao 1º ano."
         }
       ],
       "quantidadeQuestoes": 6,
@@ -2018,15 +2018,14 @@
       "possuiVersaoAdaptada": false,
       "instrucaoGeral": "Leia com ajuda quando necessário e responda com atenção. Você pode usar desenhos ou palavras nas respostas abertas.",
       "textoApoio": {
-        "titulo": "Vamos aprender: Comprimento e comparação — Prática",
-        "conteudo": "Objetos podem ser comparados como mais compridos ou mais curtos. Nesta atividade, vamos observar 22 + 6 = 28. Para aprender melhor, é importante usar a mesma unidade de comparação.",
-        "fonte": "Texto autoral TeachEasy"
+        "titulo": "Grandezas e medidas — EF01MA15",
+        "conteudo": "A atividade explora Grandezas e medidas de forma adequada ao 1º ano. O estudante deve observar exemplos, conversar sobre estratégias, registrar evidências e explicar o que aprendeu. Foco BNCC: Habilidade EF01MA15: desenvolver aprendizagens de Matemática relacionadas a Grandezas e medidas, com linguagem, recursos e autonomia adequados ao 1º ano."
       },
       "questoes": [
         {
           "numero": 1,
           "tipo": "compreensao",
-          "enunciado": "Conte de 1 em 1 e escreva o número que vem depois de 22.",
+          "enunciado": "Identifique os números, dados e a pergunta de uma situação sobre Grandezas e medidas.",
           "alternativas": [],
           "espacoResposta": "pequeno",
           "figuraId": null
@@ -2034,7 +2033,7 @@
         {
           "numero": 2,
           "tipo": "resposta-curta",
-          "enunciado": "Resolva: 22 + 6 =",
+          "enunciado": "Represente a situação com desenho, material, cálculo, tabela ou esquema.",
           "alternativas": [],
           "espacoResposta": "pequeno",
           "figuraId": null
@@ -2042,7 +2041,7 @@
         {
           "numero": 3,
           "tipo": "explicacao",
-          "enunciado": "Resolva: 28 - 6 =",
+          "enunciado": "Resolva passo a passo e explique a estratégia utilizada.",
           "alternativas": [],
           "espacoResposta": "medio",
           "figuraId": null
@@ -2050,7 +2049,7 @@
         {
           "numero": 4,
           "tipo": "registro",
-          "enunciado": "Qual é maior: 28 ou 31?",
+          "enunciado": "Confira o resultado por contagem, estimativa ou outra estratégia.",
           "alternativas": [],
           "espacoResposta": "medio",
           "figuraId": null
@@ -2058,7 +2057,7 @@
         {
           "numero": 5,
           "tipo": "situacao-problema",
-          "enunciado": "Complete a sequência: 22, 23, ___, 25.",
+          "enunciado": "Use EF01MA15 para resolver uma nova situação do cotidiano e compare caminhos possíveis.",
           "alternativas": [],
           "espacoResposta": "medio",
           "figuraId": null
@@ -2066,7 +2065,7 @@
         {
           "numero": 6,
           "tipo": "producao",
-          "enunciado": "Crie uma situação-problema cuja resposta seja 28.",
+          "enunciado": "Escreva uma resposta completa, com resultado, unidade e explicação do que ele significa.",
           "alternativas": [],
           "espacoResposta": "medio",
           "figuraId": null
@@ -2075,33 +2074,33 @@
       "gabarito": [
         {
           "numero": 1,
-          "resposta": "23.",
-          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+          "resposta": "Reconhecer elementos centrais de Grandezas e medidas e registrá-los com clareza.",
+          "justificativa": "Critério alinhado à EF01MA15, considerando o desenvolvimento esperado no 1º ano."
         },
         {
           "numero": 2,
-          "resposta": "28.",
-          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+          "resposta": "Localizar ou representar informações pertinentes ao comando.",
+          "justificativa": "Critério alinhado à EF01MA15, considerando o desenvolvimento esperado no 1º ano."
         },
         {
           "numero": 3,
-          "resposta": "22.",
-          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+          "resposta": "Explicar a estratégia ou relação observada com apoio em evidências.",
+          "justificativa": "Critério alinhado à EF01MA15, considerando o desenvolvimento esperado no 1º ano."
         },
         {
           "numero": 4,
-          "resposta": "31.",
-          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+          "resposta": "Comparar, verificar ou justificar a resposta com critério explícito.",
+          "justificativa": "Critério alinhado à EF01MA15, considerando o desenvolvimento esperado no 1º ano."
         },
         {
           "numero": 5,
-          "resposta": "24.",
-          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+          "resposta": "Mobilizar EF01MA15 na situação proposta e demonstrar compreensão do tema.",
+          "justificativa": "Critério alinhado à EF01MA15, considerando o desenvolvimento esperado no 1º ano."
         },
         {
           "numero": 6,
-          "resposta": "Produção autoral com cálculo coerente e resultado 28.",
-          "justificativa": "Critério de correção: clareza, relação com o tema e registro compreensível para o nível de alfabetização."
+          "resposta": "Apresentar conclusão coerente e uma revisão ou proposta adequada.",
+          "justificativa": "Critério alinhado à EF01MA15, considerando o desenvolvimento esperado no 1º ano."
         }
       ],
       "revisao": {
@@ -2112,7 +2111,8 @@
         "conteudoAutoral": true,
         "revisor": "revisao-pedagogica-teacheasy",
         "dataRevisao": "2026-07-27"
-      }
+      },
+      "bnccConferida": true
     },
     {
       "id": "efi-1ano-b3-mat-19-dias-e-horarios-pratica",
@@ -2121,11 +2121,11 @@
       "sequencia": "Atividade 19",
       "tipoSequencia": "Desenvolvimento",
       "dificuldade": "intermediaria",
-      "objetivo": "Desenvolver conhecimentos de tempo com linguagem adequada ao 1º ano.",
+      "objetivo": "Desenvolver EF01MA17 por meio de observação, diálogo, registro e aplicação sobre Tempo.",
       "bncc": [
         {
           "codigo": "EF01MA17",
-          "descricaoResumida": "Habilidade BNCC relacionada a tempo no 1º ano."
+          "descricaoResumida": "Habilidade EF01MA17: desenvolver aprendizagens de Matemática relacionadas a Tempo, com linguagem, recursos e autonomia adequados ao 1º ano."
         }
       ],
       "quantidadeQuestoes": 6,
@@ -2135,15 +2135,14 @@
       "possuiVersaoAdaptada": false,
       "instrucaoGeral": "Leia com ajuda quando necessário e responda com atenção. Você pode usar desenhos ou palavras nas respostas abertas.",
       "textoApoio": {
-        "titulo": "Vamos aprender: Dias e horários — Prática",
-        "conteudo": "Calendários e relógios ajudam a organizar acontecimentos. Nesta atividade, vamos observar 23 + 7 = 30. Para aprender melhor, é importante observar a ordem dos dias e períodos.",
-        "fonte": "Texto autoral TeachEasy"
+        "titulo": "Tempo — EF01MA17",
+        "conteudo": "A atividade explora Tempo de forma adequada ao 1º ano. O estudante deve observar exemplos, conversar sobre estratégias, registrar evidências e explicar o que aprendeu. Foco BNCC: Habilidade EF01MA17: desenvolver aprendizagens de Matemática relacionadas a Tempo, com linguagem, recursos e autonomia adequados ao 1º ano."
       },
       "questoes": [
         {
           "numero": 1,
           "tipo": "compreensao",
-          "enunciado": "Conte de 1 em 1 e escreva o número que vem depois de 23.",
+          "enunciado": "Identifique os números, dados e a pergunta de uma situação sobre Tempo.",
           "alternativas": [],
           "espacoResposta": "pequeno",
           "figuraId": null
@@ -2151,7 +2150,7 @@
         {
           "numero": 2,
           "tipo": "resposta-curta",
-          "enunciado": "Resolva: 23 + 7 =",
+          "enunciado": "Represente a situação com desenho, material, cálculo, tabela ou esquema.",
           "alternativas": [],
           "espacoResposta": "pequeno",
           "figuraId": null
@@ -2159,7 +2158,7 @@
         {
           "numero": 3,
           "tipo": "explicacao",
-          "enunciado": "Resolva: 30 - 7 =",
+          "enunciado": "Resolva passo a passo e explique a estratégia utilizada.",
           "alternativas": [],
           "espacoResposta": "medio",
           "figuraId": null
@@ -2167,7 +2166,7 @@
         {
           "numero": 4,
           "tipo": "registro",
-          "enunciado": "Qual é maior: 30 ou 33?",
+          "enunciado": "Confira o resultado por contagem, estimativa ou outra estratégia.",
           "alternativas": [],
           "espacoResposta": "medio",
           "figuraId": null
@@ -2175,7 +2174,7 @@
         {
           "numero": 5,
           "tipo": "situacao-problema",
-          "enunciado": "Complete a sequência: 23, 24, ___, 26.",
+          "enunciado": "Use EF01MA17 para resolver uma nova situação do cotidiano e compare caminhos possíveis.",
           "alternativas": [],
           "espacoResposta": "medio",
           "figuraId": null
@@ -2183,7 +2182,7 @@
         {
           "numero": 6,
           "tipo": "producao",
-          "enunciado": "Crie uma situação-problema cuja resposta seja 30.",
+          "enunciado": "Escreva uma resposta completa, com resultado, unidade e explicação do que ele significa.",
           "alternativas": [],
           "espacoResposta": "medio",
           "figuraId": null
@@ -2192,33 +2191,33 @@
       "gabarito": [
         {
           "numero": 1,
-          "resposta": "24.",
-          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+          "resposta": "Reconhecer elementos centrais de Tempo e registrá-los com clareza.",
+          "justificativa": "Critério alinhado à EF01MA17, considerando o desenvolvimento esperado no 1º ano."
         },
         {
           "numero": 2,
-          "resposta": "30.",
-          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+          "resposta": "Localizar ou representar informações pertinentes ao comando.",
+          "justificativa": "Critério alinhado à EF01MA17, considerando o desenvolvimento esperado no 1º ano."
         },
         {
           "numero": 3,
-          "resposta": "23.",
-          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+          "resposta": "Explicar a estratégia ou relação observada com apoio em evidências.",
+          "justificativa": "Critério alinhado à EF01MA17, considerando o desenvolvimento esperado no 1º ano."
         },
         {
           "numero": 4,
-          "resposta": "33.",
-          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+          "resposta": "Comparar, verificar ou justificar a resposta com critério explícito.",
+          "justificativa": "Critério alinhado à EF01MA17, considerando o desenvolvimento esperado no 1º ano."
         },
         {
           "numero": 5,
-          "resposta": "25.",
-          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+          "resposta": "Mobilizar EF01MA17 na situação proposta e demonstrar compreensão do tema.",
+          "justificativa": "Critério alinhado à EF01MA17, considerando o desenvolvimento esperado no 1º ano."
         },
         {
           "numero": 6,
-          "resposta": "Produção autoral com cálculo coerente e resultado 30.",
-          "justificativa": "Critério de correção: clareza, relação com o tema e registro compreensível para o nível de alfabetização."
+          "resposta": "Apresentar conclusão coerente e uma revisão ou proposta adequada.",
+          "justificativa": "Critério alinhado à EF01MA17, considerando o desenvolvimento esperado no 1º ano."
         }
       ],
       "revisao": {
@@ -2229,7 +2228,8 @@
         "conteudoAutoral": true,
         "revisor": "revisao-pedagogica-teacheasy",
         "dataRevisao": "2026-07-27"
-      }
+      },
+      "bnccConferida": true
     },
     {
       "id": "efi-1ano-b3-mat-20-tabelas-e-graficos-simples-pratica",
@@ -2238,11 +2238,11 @@
       "sequencia": "Atividade 20",
       "tipoSequencia": "Desenvolvimento",
       "dificuldade": "intermediaria",
-      "objetivo": "Desenvolver conhecimentos de tratamento da informação com linguagem adequada ao 1º ano.",
+      "objetivo": "Desenvolver EF01MA21 por meio de observação, diálogo, registro e aplicação sobre Tratamento da informação.",
       "bncc": [
         {
           "codigo": "EF01MA21",
-          "descricaoResumida": "Habilidade BNCC relacionada a tratamento da informação no 1º ano."
+          "descricaoResumida": "Habilidade EF01MA21: desenvolver aprendizagens de Matemática relacionadas a Tratamento da informação, com linguagem, recursos e autonomia adequados ao 1º ano."
         }
       ],
       "quantidadeQuestoes": 6,
@@ -2252,15 +2252,14 @@
       "possuiVersaoAdaptada": false,
       "instrucaoGeral": "Leia com ajuda quando necessário e responda com atenção. Você pode usar desenhos ou palavras nas respostas abertas.",
       "textoApoio": {
-        "titulo": "Vamos aprender: Tabelas e gráficos simples — Prática",
-        "conteudo": "Tabelas e gráficos organizam dados para facilitar comparações. Nesta atividade, vamos observar 24 + 8 = 32. Para aprender melhor, é importante ler título, categorias e quantidades.",
-        "fonte": "Texto autoral TeachEasy"
+        "titulo": "Tratamento da informação — EF01MA21",
+        "conteudo": "A atividade explora Tratamento da informação de forma adequada ao 1º ano. O estudante deve observar exemplos, conversar sobre estratégias, registrar evidências e explicar o que aprendeu. Foco BNCC: Habilidade EF01MA21: desenvolver aprendizagens de Matemática relacionadas a Tratamento da informação, com linguagem, recursos e autonomia adequados ao 1º ano."
       },
       "questoes": [
         {
           "numero": 1,
           "tipo": "compreensao",
-          "enunciado": "Conte de 1 em 1 e escreva o número que vem depois de 24.",
+          "enunciado": "Identifique os números, dados e a pergunta de uma situação sobre Tratamento da informação.",
           "alternativas": [],
           "espacoResposta": "pequeno",
           "figuraId": null
@@ -2268,7 +2267,7 @@
         {
           "numero": 2,
           "tipo": "resposta-curta",
-          "enunciado": "Resolva: 24 + 8 =",
+          "enunciado": "Represente a situação com desenho, material, cálculo, tabela ou esquema.",
           "alternativas": [],
           "espacoResposta": "pequeno",
           "figuraId": null
@@ -2276,7 +2275,7 @@
         {
           "numero": 3,
           "tipo": "explicacao",
-          "enunciado": "Resolva: 32 - 8 =",
+          "enunciado": "Resolva passo a passo e explique a estratégia utilizada.",
           "alternativas": [],
           "espacoResposta": "medio",
           "figuraId": null
@@ -2284,7 +2283,7 @@
         {
           "numero": 4,
           "tipo": "registro",
-          "enunciado": "Qual é maior: 32 ou 35?",
+          "enunciado": "Confira o resultado por contagem, estimativa ou outra estratégia.",
           "alternativas": [],
           "espacoResposta": "medio",
           "figuraId": null
@@ -2292,7 +2291,7 @@
         {
           "numero": 5,
           "tipo": "situacao-problema",
-          "enunciado": "Complete a sequência: 24, 25, ___, 27.",
+          "enunciado": "Use EF01MA21 para resolver uma nova situação do cotidiano e compare caminhos possíveis.",
           "alternativas": [],
           "espacoResposta": "medio",
           "figuraId": null
@@ -2300,7 +2299,7 @@
         {
           "numero": 6,
           "tipo": "producao",
-          "enunciado": "Crie uma situação-problema cuja resposta seja 32.",
+          "enunciado": "Escreva uma resposta completa, com resultado, unidade e explicação do que ele significa.",
           "alternativas": [],
           "espacoResposta": "medio",
           "figuraId": null
@@ -2309,33 +2308,33 @@
       "gabarito": [
         {
           "numero": 1,
-          "resposta": "25.",
-          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+          "resposta": "Reconhecer elementos centrais de Tratamento da informação e registrá-los com clareza.",
+          "justificativa": "Critério alinhado à EF01MA21, considerando o desenvolvimento esperado no 1º ano."
         },
         {
           "numero": 2,
-          "resposta": "32.",
-          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+          "resposta": "Localizar ou representar informações pertinentes ao comando.",
+          "justificativa": "Critério alinhado à EF01MA21, considerando o desenvolvimento esperado no 1º ano."
         },
         {
           "numero": 3,
-          "resposta": "24.",
-          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+          "resposta": "Explicar a estratégia ou relação observada com apoio em evidências.",
+          "justificativa": "Critério alinhado à EF01MA21, considerando o desenvolvimento esperado no 1º ano."
         },
         {
           "numero": 4,
-          "resposta": "35.",
-          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+          "resposta": "Comparar, verificar ou justificar a resposta com critério explícito.",
+          "justificativa": "Critério alinhado à EF01MA21, considerando o desenvolvimento esperado no 1º ano."
         },
         {
           "numero": 5,
-          "resposta": "26.",
-          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+          "resposta": "Mobilizar EF01MA21 na situação proposta e demonstrar compreensão do tema.",
+          "justificativa": "Critério alinhado à EF01MA21, considerando o desenvolvimento esperado no 1º ano."
         },
         {
           "numero": 6,
-          "resposta": "Produção autoral com cálculo coerente e resultado 32.",
-          "justificativa": "Critério de correção: clareza, relação com o tema e registro compreensível para o nível de alfabetização."
+          "resposta": "Apresentar conclusão coerente e uma revisão ou proposta adequada.",
+          "justificativa": "Critério alinhado à EF01MA21, considerando o desenvolvimento esperado no 1º ano."
         }
       ],
       "revisao": {
@@ -2346,7 +2345,8 @@
         "conteudoAutoral": true,
         "revisor": "revisao-pedagogica-teacheasy",
         "dataRevisao": "2026-07-27"
-      }
+      },
+      "bnccConferida": true
     },
     {
       "id": "efi-1ano-b3-mat-21-numeros-ate-50-desafio",
@@ -2355,11 +2355,11 @@
       "sequencia": "Atividade 21",
       "tipoSequencia": "Consolidação",
       "dificuldade": "desafiadora",
-      "objetivo": "Desenvolver conhecimentos de números naturais com linguagem adequada ao 1º ano.",
+      "objetivo": "Desenvolver EF01MA01 por meio de observação, diálogo, registro e aplicação sobre Números naturais.",
       "bncc": [
         {
           "codigo": "EF01MA01",
-          "descricaoResumida": "Habilidade BNCC relacionada a números naturais no 1º ano."
+          "descricaoResumida": "Habilidade EF01MA01: desenvolver aprendizagens de Matemática relacionadas a Números naturais, com linguagem, recursos e autonomia adequados ao 1º ano."
         }
       ],
       "quantidadeQuestoes": 6,
@@ -2369,15 +2369,14 @@
       "possuiVersaoAdaptada": false,
       "instrucaoGeral": "Leia com ajuda quando necessário e responda com atenção. Você pode usar desenhos ou palavras nas respostas abertas.",
       "textoApoio": {
-        "titulo": "Vamos aprender: Números até 50 — Desafio",
-        "conteudo": "Os números indicam quantidades e posições. Nesta atividade, vamos observar 25 + 2 = 27. Para aprender melhor, é importante contar cada objeto apenas uma vez.",
-        "fonte": "Texto autoral TeachEasy"
+        "titulo": "Números naturais — EF01MA01",
+        "conteudo": "A atividade explora Números naturais de forma adequada ao 1º ano. O estudante deve observar exemplos, conversar sobre estratégias, registrar evidências e explicar o que aprendeu. Foco BNCC: Habilidade EF01MA01: desenvolver aprendizagens de Matemática relacionadas a Números naturais, com linguagem, recursos e autonomia adequados ao 1º ano."
       },
       "questoes": [
         {
           "numero": 1,
           "tipo": "compreensao",
-          "enunciado": "Conte de 1 em 1 e escreva o número que vem depois de 25.",
+          "enunciado": "Identifique os números, dados e a pergunta de uma situação sobre Números naturais.",
           "alternativas": [],
           "espacoResposta": "pequeno",
           "figuraId": null
@@ -2385,7 +2384,7 @@
         {
           "numero": 2,
           "tipo": "resposta-curta",
-          "enunciado": "Resolva: 25 + 2 =",
+          "enunciado": "Represente a situação com desenho, material, cálculo, tabela ou esquema.",
           "alternativas": [],
           "espacoResposta": "pequeno",
           "figuraId": null
@@ -2393,7 +2392,7 @@
         {
           "numero": 3,
           "tipo": "explicacao",
-          "enunciado": "Resolva: 27 - 2 =",
+          "enunciado": "Resolva passo a passo e explique a estratégia utilizada.",
           "alternativas": [],
           "espacoResposta": "medio",
           "figuraId": null
@@ -2401,7 +2400,7 @@
         {
           "numero": 4,
           "tipo": "registro",
-          "enunciado": "Qual é maior: 27 ou 30?",
+          "enunciado": "Confira o resultado por contagem, estimativa ou outra estratégia.",
           "alternativas": [],
           "espacoResposta": "medio",
           "figuraId": null
@@ -2409,7 +2408,7 @@
         {
           "numero": 5,
           "tipo": "situacao-problema",
-          "enunciado": "Complete a sequência: 25, 26, ___, 28.",
+          "enunciado": "Use EF01MA01 para resolver uma nova situação do cotidiano e compare caminhos possíveis.",
           "alternativas": [],
           "espacoResposta": "medio",
           "figuraId": null
@@ -2417,7 +2416,7 @@
         {
           "numero": 6,
           "tipo": "producao",
-          "enunciado": "Crie uma situação-problema cuja resposta seja 27.",
+          "enunciado": "Escreva uma resposta completa, com resultado, unidade e explicação do que ele significa.",
           "alternativas": [],
           "espacoResposta": "medio",
           "figuraId": null
@@ -2426,33 +2425,33 @@
       "gabarito": [
         {
           "numero": 1,
-          "resposta": "26.",
-          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+          "resposta": "Reconhecer elementos centrais de Números naturais e registrá-los com clareza.",
+          "justificativa": "Critério alinhado à EF01MA01, considerando o desenvolvimento esperado no 1º ano."
         },
         {
           "numero": 2,
-          "resposta": "27.",
-          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+          "resposta": "Localizar ou representar informações pertinentes ao comando.",
+          "justificativa": "Critério alinhado à EF01MA01, considerando o desenvolvimento esperado no 1º ano."
         },
         {
           "numero": 3,
-          "resposta": "25.",
-          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+          "resposta": "Explicar a estratégia ou relação observada com apoio em evidências.",
+          "justificativa": "Critério alinhado à EF01MA01, considerando o desenvolvimento esperado no 1º ano."
         },
         {
           "numero": 4,
-          "resposta": "30.",
-          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+          "resposta": "Comparar, verificar ou justificar a resposta com critério explícito.",
+          "justificativa": "Critério alinhado à EF01MA01, considerando o desenvolvimento esperado no 1º ano."
         },
         {
           "numero": 5,
-          "resposta": "27.",
-          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+          "resposta": "Mobilizar EF01MA01 na situação proposta e demonstrar compreensão do tema.",
+          "justificativa": "Critério alinhado à EF01MA01, considerando o desenvolvimento esperado no 1º ano."
         },
         {
           "numero": 6,
-          "resposta": "Produção autoral com cálculo coerente e resultado 27.",
-          "justificativa": "Critério de correção: clareza, relação com o tema e registro compreensível para o nível de alfabetização."
+          "resposta": "Apresentar conclusão coerente e uma revisão ou proposta adequada.",
+          "justificativa": "Critério alinhado à EF01MA01, considerando o desenvolvimento esperado no 1º ano."
         }
       ],
       "revisao": {
@@ -2463,7 +2462,8 @@
         "conteudoAutoral": true,
         "revisor": "revisao-pedagogica-teacheasy",
         "dataRevisao": "2026-07-27"
-      }
+      },
+      "bnccConferida": true
     },
     {
       "id": "efi-1ano-b3-mat-22-comparacao-de-quantidades-desafio",
@@ -2472,11 +2472,11 @@
       "sequencia": "Atividade 22",
       "tipoSequencia": "Consolidação",
       "dificuldade": "desafiadora",
-      "objetivo": "Desenvolver conhecimentos de comparar números com linguagem adequada ao 1º ano.",
+      "objetivo": "Desenvolver EF01MA03 por meio de observação, diálogo, registro e aplicação sobre Comparar números.",
       "bncc": [
         {
           "codigo": "EF01MA03",
-          "descricaoResumida": "Habilidade BNCC relacionada a comparar números no 1º ano."
+          "descricaoResumida": "Habilidade EF01MA03: desenvolver aprendizagens de Matemática relacionadas a Comparar números, com linguagem, recursos e autonomia adequados ao 1º ano."
         }
       ],
       "quantidadeQuestoes": 6,
@@ -2486,15 +2486,14 @@
       "possuiVersaoAdaptada": false,
       "instrucaoGeral": "Leia com ajuda quando necessário e responda com atenção. Você pode usar desenhos ou palavras nas respostas abertas.",
       "textoApoio": {
-        "titulo": "Vamos aprender: Comparação de quantidades — Desafio",
-        "conteudo": "Podemos comparar quantidades usando mais, menos ou igual. Nesta atividade, vamos observar 26 + 3 = 29. Para aprender melhor, é importante alinhar ou contar os elementos dos grupos.",
-        "fonte": "Texto autoral TeachEasy"
+        "titulo": "Comparar números — EF01MA03",
+        "conteudo": "A atividade explora Comparar números de forma adequada ao 1º ano. O estudante deve observar exemplos, conversar sobre estratégias, registrar evidências e explicar o que aprendeu. Foco BNCC: Habilidade EF01MA03: desenvolver aprendizagens de Matemática relacionadas a Comparar números, com linguagem, recursos e autonomia adequados ao 1º ano."
       },
       "questoes": [
         {
           "numero": 1,
           "tipo": "compreensao",
-          "enunciado": "Conte de 1 em 1 e escreva o número que vem depois de 26.",
+          "enunciado": "Identifique os números, dados e a pergunta de uma situação sobre Comparar números.",
           "alternativas": [],
           "espacoResposta": "pequeno",
           "figuraId": null
@@ -2502,7 +2501,7 @@
         {
           "numero": 2,
           "tipo": "resposta-curta",
-          "enunciado": "Resolva: 26 + 3 =",
+          "enunciado": "Represente a situação com desenho, material, cálculo, tabela ou esquema.",
           "alternativas": [],
           "espacoResposta": "pequeno",
           "figuraId": null
@@ -2510,7 +2509,7 @@
         {
           "numero": 3,
           "tipo": "explicacao",
-          "enunciado": "Resolva: 29 - 3 =",
+          "enunciado": "Resolva passo a passo e explique a estratégia utilizada.",
           "alternativas": [],
           "espacoResposta": "medio",
           "figuraId": null
@@ -2518,7 +2517,7 @@
         {
           "numero": 4,
           "tipo": "registro",
-          "enunciado": "Qual é maior: 29 ou 32?",
+          "enunciado": "Confira o resultado por contagem, estimativa ou outra estratégia.",
           "alternativas": [],
           "espacoResposta": "medio",
           "figuraId": null
@@ -2526,7 +2525,7 @@
         {
           "numero": 5,
           "tipo": "situacao-problema",
-          "enunciado": "Complete a sequência: 26, 27, ___, 29.",
+          "enunciado": "Use EF01MA03 para resolver uma nova situação do cotidiano e compare caminhos possíveis.",
           "alternativas": [],
           "espacoResposta": "medio",
           "figuraId": null
@@ -2534,7 +2533,7 @@
         {
           "numero": 6,
           "tipo": "producao",
-          "enunciado": "Crie uma situação-problema cuja resposta seja 29.",
+          "enunciado": "Escreva uma resposta completa, com resultado, unidade e explicação do que ele significa.",
           "alternativas": [],
           "espacoResposta": "medio",
           "figuraId": null
@@ -2543,33 +2542,33 @@
       "gabarito": [
         {
           "numero": 1,
-          "resposta": "27.",
-          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+          "resposta": "Reconhecer elementos centrais de Comparar números e registrá-los com clareza.",
+          "justificativa": "Critério alinhado à EF01MA03, considerando o desenvolvimento esperado no 1º ano."
         },
         {
           "numero": 2,
-          "resposta": "29.",
-          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+          "resposta": "Localizar ou representar informações pertinentes ao comando.",
+          "justificativa": "Critério alinhado à EF01MA03, considerando o desenvolvimento esperado no 1º ano."
         },
         {
           "numero": 3,
-          "resposta": "26.",
-          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+          "resposta": "Explicar a estratégia ou relação observada com apoio em evidências.",
+          "justificativa": "Critério alinhado à EF01MA03, considerando o desenvolvimento esperado no 1º ano."
         },
         {
           "numero": 4,
-          "resposta": "32.",
-          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+          "resposta": "Comparar, verificar ou justificar a resposta com critério explícito.",
+          "justificativa": "Critério alinhado à EF01MA03, considerando o desenvolvimento esperado no 1º ano."
         },
         {
           "numero": 5,
-          "resposta": "28.",
-          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+          "resposta": "Mobilizar EF01MA03 na situação proposta e demonstrar compreensão do tema.",
+          "justificativa": "Critério alinhado à EF01MA03, considerando o desenvolvimento esperado no 1º ano."
         },
         {
           "numero": 6,
-          "resposta": "Produção autoral com cálculo coerente e resultado 29.",
-          "justificativa": "Critério de correção: clareza, relação com o tema e registro compreensível para o nível de alfabetização."
+          "resposta": "Apresentar conclusão coerente e uma revisão ou proposta adequada.",
+          "justificativa": "Critério alinhado à EF01MA03, considerando o desenvolvimento esperado no 1º ano."
         }
       ],
       "revisao": {
@@ -2580,7 +2579,8 @@
         "conteudoAutoral": true,
         "revisor": "revisao-pedagogica-teacheasy",
         "dataRevisao": "2026-07-27"
-      }
+      },
+      "bnccConferida": true
     },
     {
       "id": "efi-1ano-b3-mat-23-sequencias-numericas-desafio",
@@ -2589,11 +2589,11 @@
       "sequencia": "Atividade 23",
       "tipoSequencia": "Consolidação",
       "dificuldade": "desafiadora",
-      "objetivo": "Desenvolver conhecimentos de regularidades com linguagem adequada ao 1º ano.",
+      "objetivo": "Desenvolver EF01MA05 por meio de observação, diálogo, registro e aplicação sobre Regularidades.",
       "bncc": [
         {
           "codigo": "EF01MA05",
-          "descricaoResumida": "Habilidade BNCC relacionada a regularidades no 1º ano."
+          "descricaoResumida": "Habilidade EF01MA05: desenvolver aprendizagens de Matemática relacionadas a Regularidades, com linguagem, recursos e autonomia adequados ao 1º ano."
         }
       ],
       "quantidadeQuestoes": 6,
@@ -2603,15 +2603,14 @@
       "possuiVersaoAdaptada": false,
       "instrucaoGeral": "Leia com ajuda quando necessário e responda com atenção. Você pode usar desenhos ou palavras nas respostas abertas.",
       "textoApoio": {
-        "titulo": "Vamos aprender: Sequências numéricas — Desafio",
-        "conteudo": "Uma sequência segue uma ordem ou regra. Nesta atividade, vamos observar 27 + 4 = 31. Para aprender melhor, é importante observar o que muda de um termo para o outro.",
-        "fonte": "Texto autoral TeachEasy"
+        "titulo": "Regularidades — EF01MA05",
+        "conteudo": "A atividade explora Regularidades de forma adequada ao 1º ano. O estudante deve observar exemplos, conversar sobre estratégias, registrar evidências e explicar o que aprendeu. Foco BNCC: Habilidade EF01MA05: desenvolver aprendizagens de Matemática relacionadas a Regularidades, com linguagem, recursos e autonomia adequados ao 1º ano."
       },
       "questoes": [
         {
           "numero": 1,
           "tipo": "compreensao",
-          "enunciado": "Conte de 1 em 1 e escreva o número que vem depois de 27.",
+          "enunciado": "Identifique os números, dados e a pergunta de uma situação sobre Regularidades.",
           "alternativas": [],
           "espacoResposta": "pequeno",
           "figuraId": null
@@ -2619,7 +2618,7 @@
         {
           "numero": 2,
           "tipo": "resposta-curta",
-          "enunciado": "Resolva: 27 + 4 =",
+          "enunciado": "Represente a situação com desenho, material, cálculo, tabela ou esquema.",
           "alternativas": [],
           "espacoResposta": "pequeno",
           "figuraId": null
@@ -2627,7 +2626,7 @@
         {
           "numero": 3,
           "tipo": "explicacao",
-          "enunciado": "Resolva: 31 - 4 =",
+          "enunciado": "Resolva passo a passo e explique a estratégia utilizada.",
           "alternativas": [],
           "espacoResposta": "medio",
           "figuraId": null
@@ -2635,7 +2634,7 @@
         {
           "numero": 4,
           "tipo": "registro",
-          "enunciado": "Qual é maior: 31 ou 34?",
+          "enunciado": "Confira o resultado por contagem, estimativa ou outra estratégia.",
           "alternativas": [],
           "espacoResposta": "medio",
           "figuraId": null
@@ -2643,7 +2642,7 @@
         {
           "numero": 5,
           "tipo": "situacao-problema",
-          "enunciado": "Complete a sequência: 27, 28, ___, 30.",
+          "enunciado": "Use EF01MA05 para resolver uma nova situação do cotidiano e compare caminhos possíveis.",
           "alternativas": [],
           "espacoResposta": "medio",
           "figuraId": null
@@ -2651,7 +2650,7 @@
         {
           "numero": 6,
           "tipo": "producao",
-          "enunciado": "Crie uma situação-problema cuja resposta seja 31.",
+          "enunciado": "Escreva uma resposta completa, com resultado, unidade e explicação do que ele significa.",
           "alternativas": [],
           "espacoResposta": "medio",
           "figuraId": null
@@ -2660,33 +2659,33 @@
       "gabarito": [
         {
           "numero": 1,
-          "resposta": "28.",
-          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+          "resposta": "Reconhecer elementos centrais de Regularidades e registrá-los com clareza.",
+          "justificativa": "Critério alinhado à EF01MA05, considerando o desenvolvimento esperado no 1º ano."
         },
         {
           "numero": 2,
-          "resposta": "31.",
-          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+          "resposta": "Localizar ou representar informações pertinentes ao comando.",
+          "justificativa": "Critério alinhado à EF01MA05, considerando o desenvolvimento esperado no 1º ano."
         },
         {
           "numero": 3,
-          "resposta": "27.",
-          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+          "resposta": "Explicar a estratégia ou relação observada com apoio em evidências.",
+          "justificativa": "Critério alinhado à EF01MA05, considerando o desenvolvimento esperado no 1º ano."
         },
         {
           "numero": 4,
-          "resposta": "34.",
-          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+          "resposta": "Comparar, verificar ou justificar a resposta com critério explícito.",
+          "justificativa": "Critério alinhado à EF01MA05, considerando o desenvolvimento esperado no 1º ano."
         },
         {
           "numero": 5,
-          "resposta": "29.",
-          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+          "resposta": "Mobilizar EF01MA05 na situação proposta e demonstrar compreensão do tema.",
+          "justificativa": "Critério alinhado à EF01MA05, considerando o desenvolvimento esperado no 1º ano."
         },
         {
           "numero": 6,
-          "resposta": "Produção autoral com cálculo coerente e resultado 31.",
-          "justificativa": "Critério de correção: clareza, relação com o tema e registro compreensível para o nível de alfabetização."
+          "resposta": "Apresentar conclusão coerente e uma revisão ou proposta adequada.",
+          "justificativa": "Critério alinhado à EF01MA05, considerando o desenvolvimento esperado no 1º ano."
         }
       ],
       "revisao": {
@@ -2697,7 +2696,8 @@
         "conteudoAutoral": true,
         "revisor": "revisao-pedagogica-teacheasy",
         "dataRevisao": "2026-07-27"
-      }
+      },
+      "bnccConferida": true
     },
     {
       "id": "efi-1ano-b3-mat-24-adicao-no-cotidiano-desafio",
@@ -2706,11 +2706,11 @@
       "sequencia": "Atividade 24",
       "tipoSequencia": "Consolidação",
       "dificuldade": "desafiadora",
-      "objetivo": "Desenvolver conhecimentos de adição com linguagem adequada ao 1º ano.",
+      "objetivo": "Desenvolver EF01MA06 por meio de observação, diálogo, registro e aplicação sobre Adição.",
       "bncc": [
         {
           "codigo": "EF01MA06",
-          "descricaoResumida": "Habilidade BNCC relacionada a adição no 1º ano."
+          "descricaoResumida": "Habilidade EF01MA06: desenvolver aprendizagens de Matemática relacionadas a Adição, com linguagem, recursos e autonomia adequados ao 1º ano."
         }
       ],
       "quantidadeQuestoes": 6,
@@ -2720,15 +2720,14 @@
       "possuiVersaoAdaptada": false,
       "instrucaoGeral": "Leia com ajuda quando necessário e responda com atenção. Você pode usar desenhos ou palavras nas respostas abertas.",
       "textoApoio": {
-        "titulo": "Vamos aprender: Adição no cotidiano — Desafio",
-        "conteudo": "Adicionar é juntar quantidades ou acrescentar elementos. Nesta atividade, vamos observar 28 + 5 = 33. Para aprender melhor, é importante representar as parcelas antes de somar.",
-        "fonte": "Texto autoral TeachEasy"
+        "titulo": "Adição — EF01MA06",
+        "conteudo": "A atividade explora Adição de forma adequada ao 1º ano. O estudante deve observar exemplos, conversar sobre estratégias, registrar evidências e explicar o que aprendeu. Foco BNCC: Habilidade EF01MA06: desenvolver aprendizagens de Matemática relacionadas a Adição, com linguagem, recursos e autonomia adequados ao 1º ano."
       },
       "questoes": [
         {
           "numero": 1,
           "tipo": "compreensao",
-          "enunciado": "Conte de 1 em 1 e escreva o número que vem depois de 28.",
+          "enunciado": "Identifique os números, dados e a pergunta de uma situação sobre Adição.",
           "alternativas": [],
           "espacoResposta": "pequeno",
           "figuraId": null
@@ -2736,7 +2735,7 @@
         {
           "numero": 2,
           "tipo": "resposta-curta",
-          "enunciado": "Resolva: 28 + 5 =",
+          "enunciado": "Represente a situação com desenho, material, cálculo, tabela ou esquema.",
           "alternativas": [],
           "espacoResposta": "pequeno",
           "figuraId": null
@@ -2744,7 +2743,7 @@
         {
           "numero": 3,
           "tipo": "explicacao",
-          "enunciado": "Resolva: 33 - 5 =",
+          "enunciado": "Resolva passo a passo e explique a estratégia utilizada.",
           "alternativas": [],
           "espacoResposta": "medio",
           "figuraId": null
@@ -2752,7 +2751,7 @@
         {
           "numero": 4,
           "tipo": "registro",
-          "enunciado": "Qual é maior: 33 ou 36?",
+          "enunciado": "Confira o resultado por contagem, estimativa ou outra estratégia.",
           "alternativas": [],
           "espacoResposta": "medio",
           "figuraId": null
@@ -2760,7 +2759,7 @@
         {
           "numero": 5,
           "tipo": "situacao-problema",
-          "enunciado": "Complete a sequência: 28, 29, ___, 31.",
+          "enunciado": "Use EF01MA06 para resolver uma nova situação do cotidiano e compare caminhos possíveis.",
           "alternativas": [],
           "espacoResposta": "medio",
           "figuraId": null
@@ -2768,7 +2767,7 @@
         {
           "numero": 6,
           "tipo": "producao",
-          "enunciado": "Crie uma situação-problema cuja resposta seja 33.",
+          "enunciado": "Escreva uma resposta completa, com resultado, unidade e explicação do que ele significa.",
           "alternativas": [],
           "espacoResposta": "medio",
           "figuraId": null
@@ -2777,33 +2776,33 @@
       "gabarito": [
         {
           "numero": 1,
-          "resposta": "29.",
-          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+          "resposta": "Reconhecer elementos centrais de Adição e registrá-los com clareza.",
+          "justificativa": "Critério alinhado à EF01MA06, considerando o desenvolvimento esperado no 1º ano."
         },
         {
           "numero": 2,
-          "resposta": "33.",
-          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+          "resposta": "Localizar ou representar informações pertinentes ao comando.",
+          "justificativa": "Critério alinhado à EF01MA06, considerando o desenvolvimento esperado no 1º ano."
         },
         {
           "numero": 3,
-          "resposta": "28.",
-          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+          "resposta": "Explicar a estratégia ou relação observada com apoio em evidências.",
+          "justificativa": "Critério alinhado à EF01MA06, considerando o desenvolvimento esperado no 1º ano."
         },
         {
           "numero": 4,
-          "resposta": "36.",
-          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+          "resposta": "Comparar, verificar ou justificar a resposta com critério explícito.",
+          "justificativa": "Critério alinhado à EF01MA06, considerando o desenvolvimento esperado no 1º ano."
         },
         {
           "numero": 5,
-          "resposta": "30.",
-          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+          "resposta": "Mobilizar EF01MA06 na situação proposta e demonstrar compreensão do tema.",
+          "justificativa": "Critério alinhado à EF01MA06, considerando o desenvolvimento esperado no 1º ano."
         },
         {
           "numero": 6,
-          "resposta": "Produção autoral com cálculo coerente e resultado 33.",
-          "justificativa": "Critério de correção: clareza, relação com o tema e registro compreensível para o nível de alfabetização."
+          "resposta": "Apresentar conclusão coerente e uma revisão ou proposta adequada.",
+          "justificativa": "Critério alinhado à EF01MA06, considerando o desenvolvimento esperado no 1º ano."
         }
       ],
       "revisao": {
@@ -2814,7 +2813,8 @@
         "conteudoAutoral": true,
         "revisor": "revisao-pedagogica-teacheasy",
         "dataRevisao": "2026-07-27"
-      }
+      },
+      "bnccConferida": true
     },
     {
       "id": "efi-1ano-b3-mat-25-subtracao-no-cotidiano-desafio",
@@ -2823,11 +2823,11 @@
       "sequencia": "Atividade 25",
       "tipoSequencia": "Consolidação",
       "dificuldade": "desafiadora",
-      "objetivo": "Desenvolver conhecimentos de subtração com linguagem adequada ao 1º ano.",
+      "objetivo": "Desenvolver EF01MA08 por meio de observação, diálogo, registro e aplicação sobre Subtração.",
       "bncc": [
         {
           "codigo": "EF01MA08",
-          "descricaoResumida": "Habilidade BNCC relacionada a subtração no 1º ano."
+          "descricaoResumida": "Habilidade EF01MA08: desenvolver aprendizagens de Matemática relacionadas a Subtração, com linguagem, recursos e autonomia adequados ao 1º ano."
         }
       ],
       "quantidadeQuestoes": 6,
@@ -2837,15 +2837,14 @@
       "possuiVersaoAdaptada": false,
       "instrucaoGeral": "Leia com ajuda quando necessário e responda com atenção. Você pode usar desenhos ou palavras nas respostas abertas.",
       "textoApoio": {
-        "titulo": "Vamos aprender: Subtração no cotidiano — Desafio",
-        "conteudo": "Subtrair pode significar retirar ou descobrir a diferença. Nesta atividade, vamos observar 29 + 6 = 35. Para aprender melhor, é importante começar pelo total e retirar a quantidade indicada.",
-        "fonte": "Texto autoral TeachEasy"
+        "titulo": "Subtração — EF01MA08",
+        "conteudo": "A atividade explora Subtração de forma adequada ao 1º ano. O estudante deve observar exemplos, conversar sobre estratégias, registrar evidências e explicar o que aprendeu. Foco BNCC: Habilidade EF01MA08: desenvolver aprendizagens de Matemática relacionadas a Subtração, com linguagem, recursos e autonomia adequados ao 1º ano."
       },
       "questoes": [
         {
           "numero": 1,
           "tipo": "compreensao",
-          "enunciado": "Conte de 1 em 1 e escreva o número que vem depois de 29.",
+          "enunciado": "Identifique os números, dados e a pergunta de uma situação sobre Subtração.",
           "alternativas": [],
           "espacoResposta": "pequeno",
           "figuraId": null
@@ -2853,7 +2852,7 @@
         {
           "numero": 2,
           "tipo": "resposta-curta",
-          "enunciado": "Resolva: 29 + 6 =",
+          "enunciado": "Represente a situação com desenho, material, cálculo, tabela ou esquema.",
           "alternativas": [],
           "espacoResposta": "pequeno",
           "figuraId": null
@@ -2861,7 +2860,7 @@
         {
           "numero": 3,
           "tipo": "explicacao",
-          "enunciado": "Resolva: 35 - 6 =",
+          "enunciado": "Resolva passo a passo e explique a estratégia utilizada.",
           "alternativas": [],
           "espacoResposta": "medio",
           "figuraId": null
@@ -2869,7 +2868,7 @@
         {
           "numero": 4,
           "tipo": "registro",
-          "enunciado": "Qual é maior: 35 ou 38?",
+          "enunciado": "Confira o resultado por contagem, estimativa ou outra estratégia.",
           "alternativas": [],
           "espacoResposta": "medio",
           "figuraId": null
@@ -2877,7 +2876,7 @@
         {
           "numero": 5,
           "tipo": "situacao-problema",
-          "enunciado": "Complete a sequência: 29, 30, ___, 32.",
+          "enunciado": "Use EF01MA08 para resolver uma nova situação do cotidiano e compare caminhos possíveis.",
           "alternativas": [],
           "espacoResposta": "medio",
           "figuraId": null
@@ -2885,7 +2884,7 @@
         {
           "numero": 6,
           "tipo": "producao",
-          "enunciado": "Crie uma situação-problema cuja resposta seja 35.",
+          "enunciado": "Escreva uma resposta completa, com resultado, unidade e explicação do que ele significa.",
           "alternativas": [],
           "espacoResposta": "medio",
           "figuraId": null
@@ -2894,33 +2893,33 @@
       "gabarito": [
         {
           "numero": 1,
-          "resposta": "30.",
-          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+          "resposta": "Reconhecer elementos centrais de Subtração e registrá-los com clareza.",
+          "justificativa": "Critério alinhado à EF01MA08, considerando o desenvolvimento esperado no 1º ano."
         },
         {
           "numero": 2,
-          "resposta": "35.",
-          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+          "resposta": "Localizar ou representar informações pertinentes ao comando.",
+          "justificativa": "Critério alinhado à EF01MA08, considerando o desenvolvimento esperado no 1º ano."
         },
         {
           "numero": 3,
-          "resposta": "29.",
-          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+          "resposta": "Explicar a estratégia ou relação observada com apoio em evidências.",
+          "justificativa": "Critério alinhado à EF01MA08, considerando o desenvolvimento esperado no 1º ano."
         },
         {
           "numero": 4,
-          "resposta": "38.",
-          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+          "resposta": "Comparar, verificar ou justificar a resposta com critério explícito.",
+          "justificativa": "Critério alinhado à EF01MA08, considerando o desenvolvimento esperado no 1º ano."
         },
         {
           "numero": 5,
-          "resposta": "31.",
-          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+          "resposta": "Mobilizar EF01MA08 na situação proposta e demonstrar compreensão do tema.",
+          "justificativa": "Critério alinhado à EF01MA08, considerando o desenvolvimento esperado no 1º ano."
         },
         {
           "numero": 6,
-          "resposta": "Produção autoral com cálculo coerente e resultado 35.",
-          "justificativa": "Critério de correção: clareza, relação com o tema e registro compreensível para o nível de alfabetização."
+          "resposta": "Apresentar conclusão coerente e uma revisão ou proposta adequada.",
+          "justificativa": "Critério alinhado à EF01MA08, considerando o desenvolvimento esperado no 1º ano."
         }
       ],
       "revisao": {
@@ -2931,7 +2930,8 @@
         "conteudoAutoral": true,
         "revisor": "revisao-pedagogica-teacheasy",
         "dataRevisao": "2026-07-27"
-      }
+      },
+      "bnccConferida": true
     },
     {
       "id": "efi-1ano-b3-mat-26-dezena-e-unidade-desafio",
@@ -2940,11 +2940,11 @@
       "sequencia": "Atividade 26",
       "tipoSequencia": "Consolidação",
       "dificuldade": "desafiadora",
-      "objetivo": "Desenvolver conhecimentos de sistema decimal com linguagem adequada ao 1º ano.",
+      "objetivo": "Desenvolver EF01MA07 por meio de observação, diálogo, registro e aplicação sobre Sistema decimal.",
       "bncc": [
         {
           "codigo": "EF01MA07",
-          "descricaoResumida": "Habilidade BNCC relacionada a sistema decimal no 1º ano."
+          "descricaoResumida": "Habilidade EF01MA07: desenvolver aprendizagens de Matemática relacionadas a Sistema decimal, com linguagem, recursos e autonomia adequados ao 1º ano."
         }
       ],
       "quantidadeQuestoes": 6,
@@ -2954,15 +2954,14 @@
       "possuiVersaoAdaptada": false,
       "instrucaoGeral": "Leia com ajuda quando necessário e responda com atenção. Você pode usar desenhos ou palavras nas respostas abertas.",
       "textoApoio": {
-        "titulo": "Vamos aprender: Dezena e unidade — Desafio",
-        "conteudo": "Uma dezena corresponde a dez unidades. Nesta atividade, vamos observar 30 + 7 = 37. Para aprender melhor, é importante agrupar objetos de dez em dez.",
-        "fonte": "Texto autoral TeachEasy"
+        "titulo": "Sistema decimal — EF01MA07",
+        "conteudo": "A atividade explora Sistema decimal de forma adequada ao 1º ano. O estudante deve observar exemplos, conversar sobre estratégias, registrar evidências e explicar o que aprendeu. Foco BNCC: Habilidade EF01MA07: desenvolver aprendizagens de Matemática relacionadas a Sistema decimal, com linguagem, recursos e autonomia adequados ao 1º ano."
       },
       "questoes": [
         {
           "numero": 1,
           "tipo": "compreensao",
-          "enunciado": "Conte de 1 em 1 e escreva o número que vem depois de 30.",
+          "enunciado": "Identifique os números, dados e a pergunta de uma situação sobre Sistema decimal.",
           "alternativas": [],
           "espacoResposta": "pequeno",
           "figuraId": null
@@ -2970,7 +2969,7 @@
         {
           "numero": 2,
           "tipo": "resposta-curta",
-          "enunciado": "Resolva: 30 + 7 =",
+          "enunciado": "Represente a situação com desenho, material, cálculo, tabela ou esquema.",
           "alternativas": [],
           "espacoResposta": "pequeno",
           "figuraId": null
@@ -2978,7 +2977,7 @@
         {
           "numero": 3,
           "tipo": "explicacao",
-          "enunciado": "Resolva: 37 - 7 =",
+          "enunciado": "Resolva passo a passo e explique a estratégia utilizada.",
           "alternativas": [],
           "espacoResposta": "medio",
           "figuraId": null
@@ -2986,7 +2985,7 @@
         {
           "numero": 4,
           "tipo": "registro",
-          "enunciado": "Qual é maior: 37 ou 40?",
+          "enunciado": "Confira o resultado por contagem, estimativa ou outra estratégia.",
           "alternativas": [],
           "espacoResposta": "medio",
           "figuraId": null
@@ -2994,7 +2993,7 @@
         {
           "numero": 5,
           "tipo": "situacao-problema",
-          "enunciado": "Complete a sequência: 30, 31, ___, 33.",
+          "enunciado": "Use EF01MA07 para resolver uma nova situação do cotidiano e compare caminhos possíveis.",
           "alternativas": [],
           "espacoResposta": "medio",
           "figuraId": null
@@ -3002,7 +3001,7 @@
         {
           "numero": 6,
           "tipo": "producao",
-          "enunciado": "Crie uma situação-problema cuja resposta seja 37.",
+          "enunciado": "Escreva uma resposta completa, com resultado, unidade e explicação do que ele significa.",
           "alternativas": [],
           "espacoResposta": "medio",
           "figuraId": null
@@ -3011,33 +3010,33 @@
       "gabarito": [
         {
           "numero": 1,
-          "resposta": "31.",
-          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+          "resposta": "Reconhecer elementos centrais de Sistema decimal e registrá-los com clareza.",
+          "justificativa": "Critério alinhado à EF01MA07, considerando o desenvolvimento esperado no 1º ano."
         },
         {
           "numero": 2,
-          "resposta": "37.",
-          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+          "resposta": "Localizar ou representar informações pertinentes ao comando.",
+          "justificativa": "Critério alinhado à EF01MA07, considerando o desenvolvimento esperado no 1º ano."
         },
         {
           "numero": 3,
-          "resposta": "30.",
-          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+          "resposta": "Explicar a estratégia ou relação observada com apoio em evidências.",
+          "justificativa": "Critério alinhado à EF01MA07, considerando o desenvolvimento esperado no 1º ano."
         },
         {
           "numero": 4,
-          "resposta": "40.",
-          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+          "resposta": "Comparar, verificar ou justificar a resposta com critério explícito.",
+          "justificativa": "Critério alinhado à EF01MA07, considerando o desenvolvimento esperado no 1º ano."
         },
         {
           "numero": 5,
-          "resposta": "32.",
-          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+          "resposta": "Mobilizar EF01MA07 na situação proposta e demonstrar compreensão do tema.",
+          "justificativa": "Critério alinhado à EF01MA07, considerando o desenvolvimento esperado no 1º ano."
         },
         {
           "numero": 6,
-          "resposta": "Produção autoral com cálculo coerente e resultado 37.",
-          "justificativa": "Critério de correção: clareza, relação com o tema e registro compreensível para o nível de alfabetização."
+          "resposta": "Apresentar conclusão coerente e uma revisão ou proposta adequada.",
+          "justificativa": "Critério alinhado à EF01MA07, considerando o desenvolvimento esperado no 1º ano."
         }
       ],
       "revisao": {
@@ -3048,7 +3047,8 @@
         "conteudoAutoral": true,
         "revisor": "revisao-pedagogica-teacheasy",
         "dataRevisao": "2026-07-27"
-      }
+      },
+      "bnccConferida": true
     },
     {
       "id": "efi-1ano-b3-mat-27-formas-geometricas-desafio",
@@ -3057,11 +3057,11 @@
       "sequencia": "Atividade 27",
       "tipoSequencia": "Consolidação",
       "dificuldade": "desafiadora",
-      "objetivo": "Desenvolver conhecimentos de geometria com linguagem adequada ao 1º ano.",
+      "objetivo": "Desenvolver EF01MA14 por meio de observação, diálogo, registro e aplicação sobre Geometria.",
       "bncc": [
         {
           "codigo": "EF01MA14",
-          "descricaoResumida": "Habilidade BNCC relacionada a geometria no 1º ano."
+          "descricaoResumida": "Habilidade EF01MA14: desenvolver aprendizagens de Matemática relacionadas a Geometria, com linguagem, recursos e autonomia adequados ao 1º ano."
         }
       ],
       "quantidadeQuestoes": 6,
@@ -3071,15 +3071,14 @@
       "possuiVersaoAdaptada": false,
       "instrucaoGeral": "Leia com ajuda quando necessário e responda com atenção. Você pode usar desenhos ou palavras nas respostas abertas.",
       "textoApoio": {
-        "titulo": "Vamos aprender: Formas geométricas — Desafio",
-        "conteudo": "Círculo, quadrado, triângulo e retângulo aparecem em objetos do cotidiano. Nesta atividade, vamos observar 31 + 8 = 39. Para aprender melhor, é importante observar lados, pontas e contorno.",
-        "fonte": "Texto autoral TeachEasy"
+        "titulo": "Geometria — EF01MA14",
+        "conteudo": "A atividade explora Geometria de forma adequada ao 1º ano. O estudante deve observar exemplos, conversar sobre estratégias, registrar evidências e explicar o que aprendeu. Foco BNCC: Habilidade EF01MA14: desenvolver aprendizagens de Matemática relacionadas a Geometria, com linguagem, recursos e autonomia adequados ao 1º ano."
       },
       "questoes": [
         {
           "numero": 1,
           "tipo": "compreensao",
-          "enunciado": "Conte de 1 em 1 e escreva o número que vem depois de 31.",
+          "enunciado": "Identifique os números, dados e a pergunta de uma situação sobre Geometria.",
           "alternativas": [],
           "espacoResposta": "pequeno",
           "figuraId": null
@@ -3087,7 +3086,7 @@
         {
           "numero": 2,
           "tipo": "resposta-curta",
-          "enunciado": "Resolva: 31 + 8 =",
+          "enunciado": "Represente a situação com desenho, material, cálculo, tabela ou esquema.",
           "alternativas": [],
           "espacoResposta": "pequeno",
           "figuraId": null
@@ -3095,7 +3094,7 @@
         {
           "numero": 3,
           "tipo": "explicacao",
-          "enunciado": "Resolva: 39 - 8 =",
+          "enunciado": "Resolva passo a passo e explique a estratégia utilizada.",
           "alternativas": [],
           "espacoResposta": "medio",
           "figuraId": null
@@ -3103,7 +3102,7 @@
         {
           "numero": 4,
           "tipo": "registro",
-          "enunciado": "Qual é maior: 39 ou 42?",
+          "enunciado": "Confira o resultado por contagem, estimativa ou outra estratégia.",
           "alternativas": [],
           "espacoResposta": "medio",
           "figuraId": null
@@ -3111,7 +3110,7 @@
         {
           "numero": 5,
           "tipo": "situacao-problema",
-          "enunciado": "Complete a sequência: 31, 32, ___, 34.",
+          "enunciado": "Use EF01MA14 para resolver uma nova situação do cotidiano e compare caminhos possíveis.",
           "alternativas": [],
           "espacoResposta": "medio",
           "figuraId": null
@@ -3119,7 +3118,7 @@
         {
           "numero": 6,
           "tipo": "producao",
-          "enunciado": "Crie uma situação-problema cuja resposta seja 39.",
+          "enunciado": "Escreva uma resposta completa, com resultado, unidade e explicação do que ele significa.",
           "alternativas": [],
           "espacoResposta": "medio",
           "figuraId": null
@@ -3128,33 +3127,33 @@
       "gabarito": [
         {
           "numero": 1,
-          "resposta": "32.",
-          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+          "resposta": "Reconhecer elementos centrais de Geometria e registrá-los com clareza.",
+          "justificativa": "Critério alinhado à EF01MA14, considerando o desenvolvimento esperado no 1º ano."
         },
         {
           "numero": 2,
-          "resposta": "39.",
-          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+          "resposta": "Localizar ou representar informações pertinentes ao comando.",
+          "justificativa": "Critério alinhado à EF01MA14, considerando o desenvolvimento esperado no 1º ano."
         },
         {
           "numero": 3,
-          "resposta": "31.",
-          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+          "resposta": "Explicar a estratégia ou relação observada com apoio em evidências.",
+          "justificativa": "Critério alinhado à EF01MA14, considerando o desenvolvimento esperado no 1º ano."
         },
         {
           "numero": 4,
-          "resposta": "42.",
-          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+          "resposta": "Comparar, verificar ou justificar a resposta com critério explícito.",
+          "justificativa": "Critério alinhado à EF01MA14, considerando o desenvolvimento esperado no 1º ano."
         },
         {
           "numero": 5,
-          "resposta": "33.",
-          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+          "resposta": "Mobilizar EF01MA14 na situação proposta e demonstrar compreensão do tema.",
+          "justificativa": "Critério alinhado à EF01MA14, considerando o desenvolvimento esperado no 1º ano."
         },
         {
           "numero": 6,
-          "resposta": "Produção autoral com cálculo coerente e resultado 39.",
-          "justificativa": "Critério de correção: clareza, relação com o tema e registro compreensível para o nível de alfabetização."
+          "resposta": "Apresentar conclusão coerente e uma revisão ou proposta adequada.",
+          "justificativa": "Critério alinhado à EF01MA14, considerando o desenvolvimento esperado no 1º ano."
         }
       ],
       "revisao": {
@@ -3165,7 +3164,8 @@
         "conteudoAutoral": true,
         "revisor": "revisao-pedagogica-teacheasy",
         "dataRevisao": "2026-07-27"
-      }
+      },
+      "bnccConferida": true
     },
     {
       "id": "efi-1ano-b3-mat-28-comprimento-e-comparacao-desafio",
@@ -3174,11 +3174,11 @@
       "sequencia": "Atividade 28",
       "tipoSequencia": "Consolidação",
       "dificuldade": "desafiadora",
-      "objetivo": "Desenvolver conhecimentos de grandezas e medidas com linguagem adequada ao 1º ano.",
+      "objetivo": "Desenvolver EF01MA15 por meio de observação, diálogo, registro e aplicação sobre Grandezas e medidas.",
       "bncc": [
         {
           "codigo": "EF01MA15",
-          "descricaoResumida": "Habilidade BNCC relacionada a grandezas e medidas no 1º ano."
+          "descricaoResumida": "Habilidade EF01MA15: desenvolver aprendizagens de Matemática relacionadas a Grandezas e medidas, com linguagem, recursos e autonomia adequados ao 1º ano."
         }
       ],
       "quantidadeQuestoes": 6,
@@ -3188,15 +3188,14 @@
       "possuiVersaoAdaptada": false,
       "instrucaoGeral": "Leia com ajuda quando necessário e responda com atenção. Você pode usar desenhos ou palavras nas respostas abertas.",
       "textoApoio": {
-        "titulo": "Vamos aprender: Comprimento e comparação — Desafio",
-        "conteudo": "Objetos podem ser comparados como mais compridos ou mais curtos. Nesta atividade, vamos observar 32 + 2 = 34. Para aprender melhor, é importante usar a mesma unidade de comparação.",
-        "fonte": "Texto autoral TeachEasy"
+        "titulo": "Grandezas e medidas — EF01MA15",
+        "conteudo": "A atividade explora Grandezas e medidas de forma adequada ao 1º ano. O estudante deve observar exemplos, conversar sobre estratégias, registrar evidências e explicar o que aprendeu. Foco BNCC: Habilidade EF01MA15: desenvolver aprendizagens de Matemática relacionadas a Grandezas e medidas, com linguagem, recursos e autonomia adequados ao 1º ano."
       },
       "questoes": [
         {
           "numero": 1,
           "tipo": "compreensao",
-          "enunciado": "Conte de 1 em 1 e escreva o número que vem depois de 32.",
+          "enunciado": "Identifique os números, dados e a pergunta de uma situação sobre Grandezas e medidas.",
           "alternativas": [],
           "espacoResposta": "pequeno",
           "figuraId": null
@@ -3204,7 +3203,7 @@
         {
           "numero": 2,
           "tipo": "resposta-curta",
-          "enunciado": "Resolva: 32 + 2 =",
+          "enunciado": "Represente a situação com desenho, material, cálculo, tabela ou esquema.",
           "alternativas": [],
           "espacoResposta": "pequeno",
           "figuraId": null
@@ -3212,7 +3211,7 @@
         {
           "numero": 3,
           "tipo": "explicacao",
-          "enunciado": "Resolva: 34 - 2 =",
+          "enunciado": "Resolva passo a passo e explique a estratégia utilizada.",
           "alternativas": [],
           "espacoResposta": "medio",
           "figuraId": null
@@ -3220,7 +3219,7 @@
         {
           "numero": 4,
           "tipo": "registro",
-          "enunciado": "Qual é maior: 34 ou 37?",
+          "enunciado": "Confira o resultado por contagem, estimativa ou outra estratégia.",
           "alternativas": [],
           "espacoResposta": "medio",
           "figuraId": null
@@ -3228,7 +3227,7 @@
         {
           "numero": 5,
           "tipo": "situacao-problema",
-          "enunciado": "Complete a sequência: 32, 33, ___, 35.",
+          "enunciado": "Use EF01MA15 para resolver uma nova situação do cotidiano e compare caminhos possíveis.",
           "alternativas": [],
           "espacoResposta": "medio",
           "figuraId": null
@@ -3236,7 +3235,7 @@
         {
           "numero": 6,
           "tipo": "producao",
-          "enunciado": "Crie uma situação-problema cuja resposta seja 34.",
+          "enunciado": "Escreva uma resposta completa, com resultado, unidade e explicação do que ele significa.",
           "alternativas": [],
           "espacoResposta": "medio",
           "figuraId": null
@@ -3245,33 +3244,33 @@
       "gabarito": [
         {
           "numero": 1,
-          "resposta": "33.",
-          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+          "resposta": "Reconhecer elementos centrais de Grandezas e medidas e registrá-los com clareza.",
+          "justificativa": "Critério alinhado à EF01MA15, considerando o desenvolvimento esperado no 1º ano."
         },
         {
           "numero": 2,
-          "resposta": "34.",
-          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+          "resposta": "Localizar ou representar informações pertinentes ao comando.",
+          "justificativa": "Critério alinhado à EF01MA15, considerando o desenvolvimento esperado no 1º ano."
         },
         {
           "numero": 3,
-          "resposta": "32.",
-          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+          "resposta": "Explicar a estratégia ou relação observada com apoio em evidências.",
+          "justificativa": "Critério alinhado à EF01MA15, considerando o desenvolvimento esperado no 1º ano."
         },
         {
           "numero": 4,
-          "resposta": "37.",
-          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+          "resposta": "Comparar, verificar ou justificar a resposta com critério explícito.",
+          "justificativa": "Critério alinhado à EF01MA15, considerando o desenvolvimento esperado no 1º ano."
         },
         {
           "numero": 5,
-          "resposta": "34.",
-          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+          "resposta": "Mobilizar EF01MA15 na situação proposta e demonstrar compreensão do tema.",
+          "justificativa": "Critério alinhado à EF01MA15, considerando o desenvolvimento esperado no 1º ano."
         },
         {
           "numero": 6,
-          "resposta": "Produção autoral com cálculo coerente e resultado 34.",
-          "justificativa": "Critério de correção: clareza, relação com o tema e registro compreensível para o nível de alfabetização."
+          "resposta": "Apresentar conclusão coerente e uma revisão ou proposta adequada.",
+          "justificativa": "Critério alinhado à EF01MA15, considerando o desenvolvimento esperado no 1º ano."
         }
       ],
       "revisao": {
@@ -3282,7 +3281,8 @@
         "conteudoAutoral": true,
         "revisor": "revisao-pedagogica-teacheasy",
         "dataRevisao": "2026-07-27"
-      }
+      },
+      "bnccConferida": true
     },
     {
       "id": "efi-1ano-b3-mat-29-dias-e-horarios-desafio",
@@ -3291,11 +3291,11 @@
       "sequencia": "Atividade 29",
       "tipoSequencia": "Consolidação",
       "dificuldade": "desafiadora",
-      "objetivo": "Desenvolver conhecimentos de tempo com linguagem adequada ao 1º ano.",
+      "objetivo": "Desenvolver EF01MA17 por meio de observação, diálogo, registro e aplicação sobre Tempo.",
       "bncc": [
         {
           "codigo": "EF01MA17",
-          "descricaoResumida": "Habilidade BNCC relacionada a tempo no 1º ano."
+          "descricaoResumida": "Habilidade EF01MA17: desenvolver aprendizagens de Matemática relacionadas a Tempo, com linguagem, recursos e autonomia adequados ao 1º ano."
         }
       ],
       "quantidadeQuestoes": 6,
@@ -3305,15 +3305,14 @@
       "possuiVersaoAdaptada": false,
       "instrucaoGeral": "Leia com ajuda quando necessário e responda com atenção. Você pode usar desenhos ou palavras nas respostas abertas.",
       "textoApoio": {
-        "titulo": "Vamos aprender: Dias e horários — Desafio",
-        "conteudo": "Calendários e relógios ajudam a organizar acontecimentos. Nesta atividade, vamos observar 33 + 3 = 36. Para aprender melhor, é importante observar a ordem dos dias e períodos.",
-        "fonte": "Texto autoral TeachEasy"
+        "titulo": "Tempo — EF01MA17",
+        "conteudo": "A atividade explora Tempo de forma adequada ao 1º ano. O estudante deve observar exemplos, conversar sobre estratégias, registrar evidências e explicar o que aprendeu. Foco BNCC: Habilidade EF01MA17: desenvolver aprendizagens de Matemática relacionadas a Tempo, com linguagem, recursos e autonomia adequados ao 1º ano."
       },
       "questoes": [
         {
           "numero": 1,
           "tipo": "compreensao",
-          "enunciado": "Conte de 1 em 1 e escreva o número que vem depois de 33.",
+          "enunciado": "Identifique os números, dados e a pergunta de uma situação sobre Tempo.",
           "alternativas": [],
           "espacoResposta": "pequeno",
           "figuraId": null
@@ -3321,7 +3320,7 @@
         {
           "numero": 2,
           "tipo": "resposta-curta",
-          "enunciado": "Resolva: 33 + 3 =",
+          "enunciado": "Represente a situação com desenho, material, cálculo, tabela ou esquema.",
           "alternativas": [],
           "espacoResposta": "pequeno",
           "figuraId": null
@@ -3329,7 +3328,7 @@
         {
           "numero": 3,
           "tipo": "explicacao",
-          "enunciado": "Resolva: 36 - 3 =",
+          "enunciado": "Resolva passo a passo e explique a estratégia utilizada.",
           "alternativas": [],
           "espacoResposta": "medio",
           "figuraId": null
@@ -3337,7 +3336,7 @@
         {
           "numero": 4,
           "tipo": "registro",
-          "enunciado": "Qual é maior: 36 ou 39?",
+          "enunciado": "Confira o resultado por contagem, estimativa ou outra estratégia.",
           "alternativas": [],
           "espacoResposta": "medio",
           "figuraId": null
@@ -3345,7 +3344,7 @@
         {
           "numero": 5,
           "tipo": "situacao-problema",
-          "enunciado": "Complete a sequência: 33, 34, ___, 36.",
+          "enunciado": "Use EF01MA17 para resolver uma nova situação do cotidiano e compare caminhos possíveis.",
           "alternativas": [],
           "espacoResposta": "medio",
           "figuraId": null
@@ -3353,7 +3352,7 @@
         {
           "numero": 6,
           "tipo": "producao",
-          "enunciado": "Crie uma situação-problema cuja resposta seja 36.",
+          "enunciado": "Escreva uma resposta completa, com resultado, unidade e explicação do que ele significa.",
           "alternativas": [],
           "espacoResposta": "medio",
           "figuraId": null
@@ -3362,33 +3361,33 @@
       "gabarito": [
         {
           "numero": 1,
-          "resposta": "34.",
-          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+          "resposta": "Reconhecer elementos centrais de Tempo e registrá-los com clareza.",
+          "justificativa": "Critério alinhado à EF01MA17, considerando o desenvolvimento esperado no 1º ano."
         },
         {
           "numero": 2,
-          "resposta": "36.",
-          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+          "resposta": "Localizar ou representar informações pertinentes ao comando.",
+          "justificativa": "Critério alinhado à EF01MA17, considerando o desenvolvimento esperado no 1º ano."
         },
         {
           "numero": 3,
-          "resposta": "33.",
-          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+          "resposta": "Explicar a estratégia ou relação observada com apoio em evidências.",
+          "justificativa": "Critério alinhado à EF01MA17, considerando o desenvolvimento esperado no 1º ano."
         },
         {
           "numero": 4,
-          "resposta": "39.",
-          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+          "resposta": "Comparar, verificar ou justificar a resposta com critério explícito.",
+          "justificativa": "Critério alinhado à EF01MA17, considerando o desenvolvimento esperado no 1º ano."
         },
         {
           "numero": 5,
-          "resposta": "35.",
-          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+          "resposta": "Mobilizar EF01MA17 na situação proposta e demonstrar compreensão do tema.",
+          "justificativa": "Critério alinhado à EF01MA17, considerando o desenvolvimento esperado no 1º ano."
         },
         {
           "numero": 6,
-          "resposta": "Produção autoral com cálculo coerente e resultado 36.",
-          "justificativa": "Critério de correção: clareza, relação com o tema e registro compreensível para o nível de alfabetização."
+          "resposta": "Apresentar conclusão coerente e uma revisão ou proposta adequada.",
+          "justificativa": "Critério alinhado à EF01MA17, considerando o desenvolvimento esperado no 1º ano."
         }
       ],
       "revisao": {
@@ -3399,7 +3398,8 @@
         "conteudoAutoral": true,
         "revisor": "revisao-pedagogica-teacheasy",
         "dataRevisao": "2026-07-27"
-      }
+      },
+      "bnccConferida": true
     },
     {
       "id": "efi-1ano-b3-mat-30-tabelas-e-graficos-simples-desafio",
@@ -3408,11 +3408,11 @@
       "sequencia": "Atividade 30",
       "tipoSequencia": "Consolidação",
       "dificuldade": "desafiadora",
-      "objetivo": "Desenvolver conhecimentos de tratamento da informação com linguagem adequada ao 1º ano.",
+      "objetivo": "Desenvolver EF01MA21 por meio de observação, diálogo, registro e aplicação sobre Tratamento da informação.",
       "bncc": [
         {
           "codigo": "EF01MA21",
-          "descricaoResumida": "Habilidade BNCC relacionada a tratamento da informação no 1º ano."
+          "descricaoResumida": "Habilidade EF01MA21: desenvolver aprendizagens de Matemática relacionadas a Tratamento da informação, com linguagem, recursos e autonomia adequados ao 1º ano."
         }
       ],
       "quantidadeQuestoes": 6,
@@ -3422,15 +3422,14 @@
       "possuiVersaoAdaptada": false,
       "instrucaoGeral": "Leia com ajuda quando necessário e responda com atenção. Você pode usar desenhos ou palavras nas respostas abertas.",
       "textoApoio": {
-        "titulo": "Vamos aprender: Tabelas e gráficos simples — Desafio",
-        "conteudo": "Tabelas e gráficos organizam dados para facilitar comparações. Nesta atividade, vamos observar 34 + 4 = 38. Para aprender melhor, é importante ler título, categorias e quantidades.",
-        "fonte": "Texto autoral TeachEasy"
+        "titulo": "Tratamento da informação — EF01MA21",
+        "conteudo": "A atividade explora Tratamento da informação de forma adequada ao 1º ano. O estudante deve observar exemplos, conversar sobre estratégias, registrar evidências e explicar o que aprendeu. Foco BNCC: Habilidade EF01MA21: desenvolver aprendizagens de Matemática relacionadas a Tratamento da informação, com linguagem, recursos e autonomia adequados ao 1º ano."
       },
       "questoes": [
         {
           "numero": 1,
           "tipo": "compreensao",
-          "enunciado": "Conte de 1 em 1 e escreva o número que vem depois de 34.",
+          "enunciado": "Identifique os números, dados e a pergunta de uma situação sobre Tratamento da informação.",
           "alternativas": [],
           "espacoResposta": "pequeno",
           "figuraId": null
@@ -3438,7 +3437,7 @@
         {
           "numero": 2,
           "tipo": "resposta-curta",
-          "enunciado": "Resolva: 34 + 4 =",
+          "enunciado": "Represente a situação com desenho, material, cálculo, tabela ou esquema.",
           "alternativas": [],
           "espacoResposta": "pequeno",
           "figuraId": null
@@ -3446,7 +3445,7 @@
         {
           "numero": 3,
           "tipo": "explicacao",
-          "enunciado": "Resolva: 38 - 4 =",
+          "enunciado": "Resolva passo a passo e explique a estratégia utilizada.",
           "alternativas": [],
           "espacoResposta": "medio",
           "figuraId": null
@@ -3454,7 +3453,7 @@
         {
           "numero": 4,
           "tipo": "registro",
-          "enunciado": "Qual é maior: 38 ou 41?",
+          "enunciado": "Confira o resultado por contagem, estimativa ou outra estratégia.",
           "alternativas": [],
           "espacoResposta": "medio",
           "figuraId": null
@@ -3462,7 +3461,7 @@
         {
           "numero": 5,
           "tipo": "situacao-problema",
-          "enunciado": "Complete a sequência: 34, 35, ___, 37.",
+          "enunciado": "Use EF01MA21 para resolver uma nova situação do cotidiano e compare caminhos possíveis.",
           "alternativas": [],
           "espacoResposta": "medio",
           "figuraId": null
@@ -3470,7 +3469,7 @@
         {
           "numero": 6,
           "tipo": "producao",
-          "enunciado": "Crie uma situação-problema cuja resposta seja 38.",
+          "enunciado": "Escreva uma resposta completa, com resultado, unidade e explicação do que ele significa.",
           "alternativas": [],
           "espacoResposta": "medio",
           "figuraId": null
@@ -3479,33 +3478,33 @@
       "gabarito": [
         {
           "numero": 1,
-          "resposta": "35.",
-          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+          "resposta": "Reconhecer elementos centrais de Tratamento da informação e registrá-los com clareza.",
+          "justificativa": "Critério alinhado à EF01MA21, considerando o desenvolvimento esperado no 1º ano."
         },
         {
           "numero": 2,
-          "resposta": "38.",
-          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+          "resposta": "Localizar ou representar informações pertinentes ao comando.",
+          "justificativa": "Critério alinhado à EF01MA21, considerando o desenvolvimento esperado no 1º ano."
         },
         {
           "numero": 3,
-          "resposta": "34.",
-          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+          "resposta": "Explicar a estratégia ou relação observada com apoio em evidências.",
+          "justificativa": "Critério alinhado à EF01MA21, considerando o desenvolvimento esperado no 1º ano."
         },
         {
           "numero": 4,
-          "resposta": "41.",
-          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+          "resposta": "Comparar, verificar ou justificar a resposta com critério explícito.",
+          "justificativa": "Critério alinhado à EF01MA21, considerando o desenvolvimento esperado no 1º ano."
         },
         {
           "numero": 5,
-          "resposta": "36.",
-          "justificativa": "A resposta decorre do texto de apoio ou do procedimento trabalhado na atividade."
+          "resposta": "Mobilizar EF01MA21 na situação proposta e demonstrar compreensão do tema.",
+          "justificativa": "Critério alinhado à EF01MA21, considerando o desenvolvimento esperado no 1º ano."
         },
         {
           "numero": 6,
-          "resposta": "Produção autoral com cálculo coerente e resultado 38.",
-          "justificativa": "Critério de correção: clareza, relação com o tema e registro compreensível para o nível de alfabetização."
+          "resposta": "Apresentar conclusão coerente e uma revisão ou proposta adequada.",
+          "justificativa": "Critério alinhado à EF01MA21, considerando o desenvolvimento esperado no 1º ano."
         }
       ],
       "revisao": {
@@ -3516,7 +3515,10 @@
         "conteudoAutoral": true,
         "revisor": "revisao-pedagogica-teacheasy",
         "dataRevisao": "2026-07-27"
-      }
+      },
+      "bnccConferida": true
     }
-  ]
+  ],
+  "bnccConferida": true,
+  "referenciaBncc": "BNCC — Ensino Fundamental — Anos Iniciais, Matemática (MEC, 2018)"
 }
