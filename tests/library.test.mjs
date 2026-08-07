@@ -153,7 +153,7 @@ test('Destaque da Biblioteca fica na página inicial junto aos quatro serviços'
   const heading = section.querySelector('.initial-services-heading');
   const highlight = section.querySelector('.home-library-highlight');
   const photoHighlight = section.querySelector('.photo-activity-feature');
-  const services = section.querySelector('.initial-services-grid');
+  const coloringButton = section.querySelector('.home-coloring-highlight');
   assert.equal(highlight.getAttribute('href'), 'biblioteca.html');
   assert.match(highlight.textContent, /Biblioteca de Atividades/);
   assert.match(highlight.textContent, /Encontre atividades prontas por etapa, ano e bimestre/);
@@ -167,7 +167,9 @@ test('Destaque da Biblioteca fica na página inicial junto aos quatro serviços'
   assert.ok(Boolean(autismCategory.compareDocumentPosition(photoHighlight) & window.Node.DOCUMENT_POSITION_FOLLOWING));
   assert.ok(Boolean(heading.compareDocumentPosition(highlight) & window.Node.DOCUMENT_POSITION_FOLLOWING));
   assert.ok(Boolean(highlight.compareDocumentPosition(photoHighlight) & window.Node.DOCUMENT_POSITION_FOLLOWING));
-  assert.ok(Boolean(photoHighlight.compareDocumentPosition(services) & window.Node.DOCUMENT_POSITION_FOLLOWING));
+  assert.ok(coloringButton);
+  assert.equal(coloringButton.tagName, 'BUTTON');
+  assert.ok(Boolean(photoHighlight.compareDocumentPosition(coloringButton) & window.Node.DOCUMENT_POSITION_FOLLOWING));
   assert.equal(window.document.querySelectorAll('.home-library-highlight').length, 1);
   assert.equal(window.document.querySelectorAll('a[href="biblioteca.html"]').length, 1);
   await window.happyDOM.close();
@@ -175,10 +177,13 @@ test('Destaque da Biblioteca fica na página inicial junto aos quatro serviços'
 
 test('Atalhos da página inicial abrem as experiências aprovadas', async () => {
   const window = await createInteractiveHomePage();
-  const cards = [...window.document.querySelectorAll('.initial-service-card')];
-  assert.equal(cards.length, 1);
+  const coloringButton = window.document.querySelector('.home-coloring-highlight');
+  assert.ok(coloringButton);
+  assert.equal(coloringButton.tagName, 'BUTTON');
+  assert.equal(coloringButton.getAttribute('type'), 'button');
+  assert.equal(window.document.querySelectorAll('.initial-service-card').length, 0);
   assert.equal(window.document.querySelectorAll('.service-number').length, 0);
-  assert.equal(cards[0].querySelector('h3').textContent, 'Desenhos para colorir');
+  assert.match(coloringButton.textContent, /Desenhos para colorir/);
 
   // Biblioteca, Jogos Pedagógicos e criação com IA usam acessos próprios.
   assert.equal(window.document.querySelectorAll('.home-library-highlight').length, 1);
@@ -189,7 +194,7 @@ test('Atalhos da página inicial abrem as experiências aprovadas', async () => 
   assert.equal(window.document.querySelectorAll('#ai-content-launcher').length, 1);
 
   const dialog = window.document.querySelector('#service-dialog');
-  cards[0].click();
+  coloringButton.click();
   assert.equal(dialog.open, true);
   assert.equal(dialog.querySelectorAll('.demo-category').length, 7);
   assert.match(dialog.textContent, /Surpreenda-me/);
@@ -341,7 +346,7 @@ test('Links da Biblioteca e responsividade principal permanecem definidos', asyn
 test('Assets restantes possuem referência no projeto', async () => {
   const assetNames = await readdir(new URL('../assets/', import.meta.url));
   const sources = await Promise.all(
-    ['index.html', 'biblioteca.html', 'styles.css', 'biblioteca.css', 'photo-activity.css']
+    ['index.html', 'biblioteca.html', 'styles.css', 'biblioteca.css', 'photo-activity.css', 'script.js']
       .map(file => readFile(new URL(`../${file}`, import.meta.url), 'utf8'))
   );
   const combined = sources.join('\n');
@@ -541,7 +546,7 @@ test('Página inicial e Biblioteca versionam os arquivos da categoria de autismo
     readFile(new URL('../index.html', import.meta.url), 'utf8'),
     readFile(new URL('../biblioteca.html', import.meta.url), 'utf8')
   ]);
-  assert.match(home, /styles\.css\?v=20260807-autismo-v3/);
+  assert.match(home, /styles\.css\?v=20260807-colorir-v4/);
   assert.match(library, /styles\.css\?v=20260807-autismo-v3/);
   assert.match(library, /biblioteca\.css\?v=20260807-autismo-v4/);
   assert.match(library, /biblioteca\.js\?v=20260807-autismo-v4/);
