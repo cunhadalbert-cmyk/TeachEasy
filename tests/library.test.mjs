@@ -3,7 +3,7 @@ import { readFile, readdir } from 'node:fs/promises';
 import test from 'node:test';
 import { Window } from 'happy-dom';
 
-async function createLibraryPage({ missingAsset = '' } = {}) {
+async function createLibraryPage({ missingAsset = '', url = 'https://teacheasy.test/biblioteca.html' } = {}) {
   const [html, script, scienceCollection, mathCollection, portugueseCollection] = await Promise.all([
     readFile(new URL('../biblioteca.html', import.meta.url), 'utf8'),
     readFile(new URL('../biblioteca.js', import.meta.url), 'utf8'),
@@ -11,7 +11,7 @@ async function createLibraryPage({ missingAsset = '' } = {}) {
     readFile(new URL('../data/atividades/fundamental-anos-iniciais/4-ano/3-bimestre/matematica.json', import.meta.url), 'utf8'),
     readFile(new URL('../data/atividades/fundamental-anos-iniciais/4-ano/3-bimestre/lingua-portuguesa.json', import.meta.url), 'utf8')
   ]);
-  const window = new Window({ url: 'https://teacheasy.test/biblioteca.html' });
+  const window = new Window({ url });
   window.document.write(html);
   window.document.close();
 
@@ -122,23 +122,24 @@ function attachReferenceImage(window) {
   Object.defineProperty(input, 'files', { configurable: true, value: [file] });
 }
 
-test('Biblioteca começa com quatro etapas e controles auxiliares ocultos', async () => {
+test('Biblioteca começa com a categoria de autismo separada das quatro etapas', async () => {
   const window = await createLibraryPage();
-  assert.equal(window.document.querySelectorAll('.library-choice-card').length, 4);
-  assert.equal(window.document.querySelector('#library-step-title').textContent, 'Escolha uma etapa');
+  assert.equal(window.document.querySelectorAll('.library-choice-card').length, 5);
+  assert.equal(window.document.querySelector('#library-step-title').textContent, 'Escolha uma categoria ou etapa');
   assert.equal(window.document.querySelectorAll('.choice-symbol').length, 0);
   assert.deepEqual(
     [...window.document.querySelectorAll('.library-choice-card')].map(card => card.dataset.theme),
-    ['infantil', 'iniciais', 'finais', 'medio']
+    ['autismo', 'infantil', 'iniciais', 'finais', 'medio']
   );
+  assert.match(window.document.querySelector('[data-theme="autismo"]').textContent, /Autismo e inclusão|apoio visual/i);
   assert.equal(window.document.querySelector('.library-filters').hidden, true);
   assert.equal(window.document.querySelector('.library-pagination').hidden, true);
   assert.equal(window.document.querySelector('.library-back').hidden, true);
-  assert.equal(window.document.querySelector('.activity-grid').hidden, true);
+  assert.equal(window.document.querySelector('#activity-grid').hidden, true);
   assert.equal(window.document.querySelectorAll('.activity-library-card').length, 0);
   assert.equal(window.document.querySelector('.library-goal-card'), null);
   assert.equal(window.document.querySelector('#photo-activity-launcher'), null);
-  assert.match(window.document.body.textContent, /1.712 atividades-base/);
+  assert.match(window.document.body.textContent, /10.740 atividades educacionais/);
   await window.happyDOM.close();
 });
 
@@ -158,6 +159,12 @@ test('Destaque da Biblioteca fica na página inicial junto aos quatro serviços'
   assert.match(highlight.textContent, /Encontre atividades prontas por etapa, ano e bimestre/);
   assert.equal(highlight.querySelectorAll('.home-library-illustration').length, 1);
   assert.equal(highlight.querySelector('.home-library-arrow'), null);
+  const autismCategory = section.querySelector('.home-autism-highlight');
+  assert.ok(autismCategory);
+  assert.equal(autismCategory.getAttribute('href'), 'biblioteca.html?categoria=autismo');
+  assert.match(autismCategory.textContent, /Atividades para autismo|CATEGORIA INCLUSIVA/);
+  assert.ok(Boolean(highlight.compareDocumentPosition(autismCategory) & window.Node.DOCUMENT_POSITION_FOLLOWING));
+  assert.ok(Boolean(autismCategory.compareDocumentPosition(photoHighlight) & window.Node.DOCUMENT_POSITION_FOLLOWING));
   assert.ok(Boolean(heading.compareDocumentPosition(highlight) & window.Node.DOCUMENT_POSITION_FOLLOWING));
   assert.ok(Boolean(highlight.compareDocumentPosition(photoHighlight) & window.Node.DOCUMENT_POSITION_FOLLOWING));
   assert.ok(Boolean(photoHighlight.compareDocumentPosition(services) & window.Node.DOCUMENT_POSITION_FOLLOWING));
@@ -267,7 +274,7 @@ test('HTML final não contém IDs duplicados, links vazios ou textos substituíd
 
   const home = await readFile(new URL('../index.html', import.meta.url), 'utf8');
   assert.match(home, /COMECE PELO QUE VOCÊ MAIS PRECISA/);
-  assert.match(home, /Cinco serviços para facilitar a sua rotina/);
+  assert.match(home, /Recursos e categorias para facilitar a sua rotina/);
   assert.match(home, /Mais tempo para o que realmente importa: você\./);
   assert.doesNotMatch(home, /FEITO PARA PROFESSORES|Conheça a plataforma|NOSSOS SERVIÇOS|Tudo o que você precisa, em um só lugar/);
 });
@@ -481,6 +488,69 @@ test('Navegação progressiva abre ano, bimestre e só então os filtros', async
   assert.ok(window.document.querySelectorAll('.activity-library-card').length <= 5);
   assert.equal(window.document.querySelector('.library-pagination').hidden, true);
   await window.happyDOM.close();
+});
+
+test('Categoria de autismo abre todas as etapas com o filtro adaptado permanente', async () => {
+  const window = await createLibraryPage({ url: 'https://teacheasy.test/biblioteca.html?categoria=autismo' });
+  assert.equal(window.document.querySelector('#autism-category-banner').hidden, false);
+  assert.match(window.document.querySelector('#autism-category-title').textContent, /Atividades adaptadas para autismo/);
+  assert.match(window.document.querySelector('#library-breadcrumb').textContent, /Autismo e inclusão/);
+  assert.equal(window.document.querySelectorAll('.library-choice-card').length, 4);
+  assert.equal(window.document.querySelector('[name="adapted"]').checked, true);
+  assert.equal(window.document.querySelector('[name="adapted"]').disabled, true);
+  const featuredSection = window.document.querySelector('#autism-featured-section');
+  assert.equal(featuredSection.hidden, false);
+  assert.equal(featuredSection.querySelectorAll('.autism-featured-card').length, 8);
+  assert.deepEqual(
+    [...new Set([...featuredSection.querySelectorAll('.autism-featured-card')]
+      .map(card => card.dataset.featuredStage))],
+    ['Educação Infantil', 'Ensino Fundamental I', 'Ensino Fundamental II', 'Ensino Médio']
+  );
+  featuredSection.querySelector('.preview-button').click();
+  assert.match(window.document.querySelector('#activity-preview').textContent, /Versão adaptada para autismo e inclusão/);
+  window.document.querySelector('.preview-close').click();
+
+  clickChoice(window, 'Anos Iniciais');
+  assert.equal(featuredSection.hidden, true);
+  clickChoice(window, '1º ano');
+  clickChoice(window, '1º bimestre');
+  assert.match(window.document.querySelector('#active-filter-summary').textContent, /Autismo e inclusão/);
+  assert.ok(window.document.querySelectorAll('.activity-library-card').length > 0);
+  for (const card of window.document.querySelectorAll('.activity-library-card')) {
+    assert.match(card.textContent, /Versão adaptada/);
+  }
+  await window.happyDOM.close();
+});
+
+test('Cartão de autismo da Biblioteca ativa a categoria sem esconder as etapas', async () => {
+  const window = await createLibraryPage();
+  clickChoice(window, 'Autismo e inclusão');
+  assert.equal(window.document.querySelector('#autism-category-banner').hidden, false);
+  assert.equal(window.document.querySelectorAll('.library-choice-card').length, 4);
+  assert.deepEqual(
+    [...window.document.querySelectorAll('.library-choice-card')].map(card => card.dataset.theme),
+    ['infantil', 'iniciais', 'finais', 'medio']
+  );
+  assert.equal(window.document.querySelector('.library-back').hidden, false);
+  await window.happyDOM.close();
+});
+
+test('Inicialização complementar preserva a navegação e não abre atividades antes da escolha', async () => {
+  const fixesScript = await readFile(new URL('../biblioteca-fixes.js', import.meta.url), 'utf8');
+  assert.match(fixesScript, /renderNavigation\(\);\s*\}\)\(\);\s*$/);
+  assert.doesNotMatch(fixesScript, /renderActivities\(\);\s*\}\)\(\);\s*$/);
+});
+
+test('Página inicial e Biblioteca versionam os arquivos da categoria de autismo', async () => {
+  const [home, library] = await Promise.all([
+    readFile(new URL('../index.html', import.meta.url), 'utf8'),
+    readFile(new URL('../biblioteca.html', import.meta.url), 'utf8')
+  ]);
+  assert.match(home, /styles\.css\?v=20260807-autismo-v3/);
+  assert.match(library, /styles\.css\?v=20260807-autismo-v3/);
+  assert.match(library, /biblioteca\.css\?v=20260807-autismo-v3/);
+  assert.match(library, /biblioteca\.js\?v=20260807-autismo-v3/);
+  assert.match(library, /biblioteca-fixes\.js\?v=20260807-autismo-v3/);
 });
 
 test('Visualização contém atividade, gabarito separado e versão adaptada', async () => {

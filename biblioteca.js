@@ -443,6 +443,9 @@ const pagination = document.querySelector('#library-pagination');
 const previousPage = document.querySelector('#previous-page');
 const nextPage = document.querySelector('#next-page');
 const pageStatus = document.querySelector('#page-status');
+const autismCategoryBanner = document.querySelector('#autism-category-banner');
+const autismFeaturedSection = document.querySelector('#autism-featured-section');
+const autismFeaturedGrid = document.querySelector('#autism-featured-grid');
 
 const favorites = new Set();
 const selectedActivities = new Set();
@@ -450,6 +453,8 @@ let toastTimer;
 let currentPage = 1;
 const pageSize = 5;
 const navigation = { stage: '', grade: '', term: '' };
+const initialParams = new URLSearchParams(window.location.search);
+let autismCategory = initialParams.get('categoria') === 'autismo';
 
 const stages = [
   { name: 'Educação Infantil', label: 'Educação Infantil', detail: 'Maternal, Pré I e Pré II', count: 300, theme: 'infantil' },
@@ -515,7 +520,7 @@ function getFilters() {
     query: String(data.get('query') || '').trim().toLocaleLowerCase('pt-BR'),
     answerKey: data.has('answerKey'),
     figures: data.has('figures'),
-    adapted: data.has('adapted')
+    adapted: autismCategory || data.has('adapted')
   };
 }
 
@@ -604,7 +609,7 @@ function renderFilterSummary(filters) {
     filters.query && `“${filters.query}”`,
     filters.answerKey && 'com gabarito',
     filters.figures && 'com figuras',
-    filters.adapted && 'com adaptação'
+    filters.adapted && (autismCategory ? 'Autismo e inclusão' : 'com adaptação')
   ].filter(Boolean);
   activeFilterSummary.textContent = labels.length ? `Filtros ativos: ${labels.join(' · ')}` : '';
 }
@@ -898,7 +903,51 @@ function stageLabel(name) {
   return stages.find(stage => stage.name === name)?.label || name;
 }
 
+function syncAutismCategory() {
+  const adaptedInput = filterForm.elements.adapted;
+  document.body.classList.toggle('autism-category-active', autismCategory);
+  autismCategoryBanner.hidden = !autismCategory;
+  adaptedInput.disabled = autismCategory;
+  if (autismCategory) adaptedInput.checked = true;
+}
+
+function openAutismCategory() {
+  autismCategory = true;
+  navigation.stage = '';
+  navigation.grade = '';
+  navigation.term = '';
+  currentPage = 1;
+  syncAutismCategory();
+  renderNavigation();
+}
+
+function renderAutismFeaturedActivities() {
+  const shouldShow = autismCategory && !navigation.stage;
+  autismFeaturedSection.hidden = !shouldShow;
+  if (!shouldShow) {
+    autismFeaturedGrid.replaceChildren();
+    return;
+  }
+
+  const featured = stages.flatMap(stage =>
+    activities
+      .filter(activity => activity.stage === stage.name && activity.hasAdapted)
+      .slice(0, 2)
+  );
+  const cards = featured.map(activity => {
+    const card = renderCard(activity);
+    card.classList.add('autism-featured-card');
+    card.dataset.featuredStage = activity.stage;
+    card.querySelectorAll('.favorite-button, .favorite-text-button, .add-button')
+      .forEach(button => button.remove());
+    return card;
+  });
+  autismFeaturedGrid.replaceChildren(...cards);
+}
+
 function renderNavigation() {
+  syncAutismCategory();
+  renderAutismFeaturedActivities();
   syncSubjectOptions();
   const atActivities = Boolean(navigation.term);
   filterForm.hidden = !atActivities;
@@ -906,23 +955,36 @@ function renderNavigation() {
   activeFilterSummary.hidden = !atActivities;
   pagination.hidden = true;
   choiceGrid.hidden = atActivities;
-  backButton.hidden = !navigation.stage;
+  backButton.hidden = !(navigation.stage || autismCategory);
 
   const crumbs = ['Biblioteca'];
+  if (autismCategory) crumbs.push('Autismo e inclusão');
   if (navigation.stage) crumbs.push(stageLabel(navigation.stage));
   if (navigation.grade) crumbs.push(navigation.grade);
   if (navigation.term) crumbs.push(`${navigation.term}º bimestre`);
   breadcrumb.textContent = crumbs.join(' → ');
 
   if (!navigation.stage) {
-    stepTitle.textContent = 'Escolha uma etapa';
-    stepHelp.textContent = '1.712 atividades-base. Inclusão e autismo estão disponíveis em todas as etapas.';
-    choiceGrid.replaceChildren(...stages.map(stage =>
+    stepTitle.textContent = autismCategory ? 'Escolha uma etapa' : 'Escolha uma categoria ou etapa';
+    stepHelp.textContent = autismCategory
+      ? 'Todas as atividades desta categoria possuem versão adaptada para autismo e inclusão.'
+      : '10.740 atividades educacionais organizadas por etapa, bimestre e recursos de inclusão.';
+    const stageCards = stages.map(stage =>
       choiceCard(stage.label, stage.detail, () => {
         navigation.stage = stage.name;
         renderNavigation();
       }, stage.count, stage.theme)
-    ));
+    );
+    choiceGrid.replaceChildren(...(autismCategory ? stageCards : [
+      choiceCard(
+        'Autismo e inclusão',
+        'Atividades adaptadas com apoio visual, comandos curtos e tempo flexível',
+        openAutismCategory,
+        '',
+        'autismo'
+      ),
+      ...stageCards
+    ]));
     return;
   }
 
@@ -976,7 +1038,12 @@ preview.addEventListener('click', event => {
 backButton.addEventListener('click', () => {
   if (navigation.term) navigation.term = '';
   else if (navigation.grade) navigation.grade = '';
-  else navigation.stage = '';
+  else if (navigation.stage) navigation.stage = '';
+  else if (autismCategory) {
+    autismCategory = false;
+    filterForm.elements.adapted.disabled = false;
+    filterForm.elements.adapted.checked = false;
+  }
   currentPage = 1;
   renderNavigation();
 });
