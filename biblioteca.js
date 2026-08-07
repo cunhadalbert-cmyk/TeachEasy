@@ -120,6 +120,14 @@ const finalYearsSubjects = {
   'Geografia': { file: 'geografia', symbol: '🌎', colors: ['#d7efff', '#dff3dc'] },
   'Inglês': { file: 'ingles', symbol: '💬', colors: ['#dbe9ff', '#ffe2d8'] }
 };
+const highSchoolSubjects = {
+  'Língua Portuguesa': { file: 'lingua-portuguesa', symbol: '📚', colors: ['#ffe2e8', '#eee3ff'] },
+  'Matemática': { file: 'matematica', symbol: '📐', colors: ['#e1ebff', '#fff1bd'] },
+  'Ciências': { file: 'ciencias', symbol: '🔬', colors: ['#d9f1e1', '#e8f0ff'] },
+  'História': { file: 'historia', symbol: '🏺', colors: ['#f4dfc7', '#f2ddec'] },
+  'Geografia': { file: 'geografia', symbol: '🌎', colors: ['#d7efff', '#dff3dc'] },
+  'Inglês': { file: 'ingles', symbol: '💬', colors: ['#dbe9ff', '#ffe2d8'] }
+};
 const loadedCollections = new Set();
 const collectionPromises = new Map();
 
@@ -316,6 +324,24 @@ function normalizeCollectionActivity(activity, collection, config) {
 
 function selectedCollectionConfig() {
   const subject = filterForm.elements.subject.value;
+  if (navigation.stage === 'Ensino Médio'
+    && navigation.grade
+    && navigation.term
+    && highSchoolSubjects[subject]) {
+    const grade = Number.parseInt(navigation.grade, 10);
+    const term = Number(navigation.term);
+    const selected = highSchoolSubjects[subject];
+    return {
+      path: `data/atividades/ensino-medio/${grade}-serie/${term}-bimestre/${selected.file}.json`,
+      collection: `em-${grade}serie-${term}bimestre-${selected.file}`,
+      count: 50,
+      symbol: selected.symbol,
+      colors: selected.colors,
+      stage: 'Ensino Médio',
+      grade: navigation.grade,
+      term
+    };
+  }
   if (navigation.stage === 'Ensino Fundamental II'
     && navigation.grade
     && navigation.term
@@ -405,7 +431,7 @@ const stages = [
   { name: 'Educação Infantil', label: 'Educação Infantil', detail: 'Maternal, Pré I e Pré II', count: 288, theme: 'infantil' },
   { name: 'Ensino Fundamental I', label: 'Ensino Fundamental — Anos Iniciais', detail: '1º ao 5º ano', count: 800, theme: 'iniciais' },
   { name: 'Ensino Fundamental II', label: 'Ensino Fundamental — Anos Finais', detail: '6º ao 9º ano', count: 3840, theme: 'finais' },
-  { name: 'Ensino Médio', label: 'Ensino Médio', detail: '1ª à 3ª série', count: 240, theme: 'medio' }
+  { name: 'Ensino Médio', label: 'Ensino Médio', detail: '1ª à 3ª série', count: 3600, theme: 'medio' }
 ];
 
 const gradesByStage = {
@@ -437,7 +463,9 @@ function syncSubjectOptions() {
   const previous = select.value;
   const values = navigation.stage === 'Ensino Fundamental II'
     ? Object.keys(finalYearsSubjects)
-    : uniqueSorted('subject');
+    : navigation.stage === 'Ensino Médio'
+      ? Object.keys(highSchoolSubjects)
+      : uniqueSorted('subject');
   const defaultOption = document.createElement('option');
   defaultOption.value = '';
   defaultOption.textContent = 'Todas as disciplinas';

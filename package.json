@@ -8,7 +8,7 @@
                     "check:html":  "html-validate index.html biblioteca.html",
                     "check:whitespace":  "node scripts/check-whitespace.mjs",
                     "check:figures":  "node scripts/audit-figures.mjs",
-                    "test":  "node --test tests/library.test.mjs tests/educacao-infantil.test.mjs tests/fundamental-finais.test.mjs",
+                    "test":  "node --test tests/library.test.mjs tests/educacao-infantil.test.mjs tests/fundamental-finais.test.mjs tests/ensino-medio.test.mjs",
                     "validate":  "npm run check:js \u0026\u0026 npm run check:html \u0026\u0026 npm run check:whitespace \u0026\u0026 npm run check:figures \u0026\u0026 npm test"
                 },
     "engines":  {
