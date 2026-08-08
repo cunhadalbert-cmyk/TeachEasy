@@ -281,24 +281,25 @@
 
             <form class="ai-content-form" id="ai-content-form">
               <label class="ai-prompt-field">
-                <textarea name="request" rows="5" required aria-label="Descreva o conteúdo que deseja criar" placeholder="Crie uma atividade de Ciências para o 4º ano sobre o ciclo da água, com 8 questões, figuras, gabarito e uma versão adaptada para aluno com autismo."></textarea>
+                <span>Pedido à IA <small>(opcional)</small></span>
+                <textarea name="request" rows="5" aria-label="Descreva o conteúdo que deseja criar" placeholder="Ex.: Crie uma atividade de Ciências para o 4º ano sobre o ciclo da água, com 8 questões e gabarito."></textarea>
               </label>
 
               <div class="ai-content-form-grid">
-                <label><span>Tipo de material</span><select name="materialType" required>
+                <label><span>Tipo de material <small>(opcional)</small></span><select name="materialType">
                   <option value="">Selecione</option><option>Atividade</option><option>Prova</option>
                   <option>Plano de aula</option><option>Sequência didática</option>
                   <option>Exercício de revisão</option><option>Trabalho</option>
                   <option>Relatório</option><option>Portfólio do estudante</option>
                 </select></label>
-                <label><span>Etapa de ensino</span><select name="stage" required>
+                <label><span>Etapa de ensino <small>(opcional)</small></span><select name="stage">
                   <option value="">Selecione</option><option>Educação Infantil</option>
                   <option>Ensino Fundamental — Anos Iniciais</option>
                   <option>Ensino Fundamental — Anos Finais</option><option>Ensino Médio</option>
                 </select></label>
-                <label><span>Ano ou série</span><input name="grade" type="text" required placeholder="Ex.: 4º ano"></label>
-                <label><span>Disciplina</span><input name="subject" type="text" required placeholder="Ex.: Ciências"></label>
-                <label><span>Conteúdo ou tema</span><input name="topic" type="text" required placeholder="Ex.: Ciclo da água"></label>
+                <label><span>Ano ou série <small>(opcional)</small></span><input name="grade" type="text" placeholder="Ex.: 4º ano"></label>
+                <label><span>Disciplina <small>(opcional)</small></span><input name="subject" type="text" placeholder="Ex.: Ciências"></label>
+                <label><span>Conteúdo ou tema <small>(opcional)</small></span><input name="topic" type="text" placeholder="Ex.: Ciclo da água"></label>
                 <label><span>Objetivo da atividade</span><input name="objective" type="text" placeholder="Ex.: Compreender as etapas do ciclo"></label>
                 <label><span>Quantidade de questões</span><input name="questionCount" type="number" min="1" max="30" value="8"></label>
                 <label><span>Nível de dificuldade</span><select name="difficulty">
