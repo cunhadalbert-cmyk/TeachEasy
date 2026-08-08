@@ -1,4 +1,10 @@
 (() => {
+  const existingAutismActivities = stages.flatMap(stage =>
+    activities
+      .filter(activity => activity.stage === stage.name && activity.hasAdapted)
+      .slice(0, 2)
+  );
+
   const autismSeeds = [
     ['AUT001','Educação Infantil','Maternal',1,'Traços, sons, cores e formas','Pareamento de cores com apoio visual','EI02TS02','🎨'],
     ['AUT002','Educação Infantil','Maternal',1,'O eu, o outro e o nós','Reconhecendo emoções básicas','EI02EO04','🙂'],
@@ -85,6 +91,11 @@
     .filter(activity => !existingIds.has(activity.id))
     .forEach(activity => activities.push(activity));
 
+  const autismCatalog = [...existingAutismActivities, ...autismActivities]
+    .filter((activity, index, list) => list.findIndex(item => item.id === activity.id) === index);
+  const autismPageSize = 5;
+  let autismPage = 1;
+
   const filterToggles = document.querySelector('#library-filters .filter-toggles');
   if (filterToggles && !filterToggles.querySelector('[name="bnccOnly"]')) {
     const label = document.createElement('label');
@@ -113,21 +124,55 @@
     }
   };
 
+  function ensureAutismPagination() {
+    let controls = document.querySelector('#autism-pagination');
+    if (controls) return controls;
+    controls = document.createElement('div');
+    controls.id = 'autism-pagination';
+    controls.className = 'library-pagination';
+    controls.innerHTML = `
+      <button class="btn btn-outline" id="autism-previous-page" type="button">← Anterior</button>
+      <span id="autism-page-status"></span>
+      <button class="btn btn-outline" id="autism-next-page" type="button">Próxima →</button>
+    `;
+    autismFeaturedGrid.insertAdjacentElement('afterend', controls);
+    controls.querySelector('#autism-previous-page').addEventListener('click', () => {
+      if (autismPage > 1) {
+        autismPage -= 1;
+        renderAutismFeaturedActivities();
+        autismFeaturedSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
+    controls.querySelector('#autism-next-page').addEventListener('click', () => {
+      const pageCount = Math.ceil(autismCatalog.length / autismPageSize);
+      if (autismPage < pageCount) {
+        autismPage += 1;
+        renderAutismFeaturedActivities();
+        autismFeaturedSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
+    return controls;
+  }
+
   renderAutismFeaturedActivities = function renderAllAutismActivities() {
     const shouldShow = autismCategory && !navigation.stage;
     autismFeaturedSection.hidden = !shouldShow;
+    const controls = ensureAutismPagination();
+    controls.hidden = !shouldShow;
     if (!shouldShow) {
       autismFeaturedGrid.replaceChildren();
       return;
     }
 
-    const featured = activities.filter(activity => activity.autismSpecific);
     const title = document.querySelector('#autism-featured-title');
     const description = title?.nextElementSibling;
-    if (title) title.textContent = '42 atividades adaptadas prontas para usar';
-    if (description) description.textContent = 'Todas incluem indicação BNCC, apoio visual, comandos curtos, uma etapa por vez, tempo flexível e formas alternativas de resposta.';
+    if (title) title.textContent = '50 atividades adaptadas prontas para usar';
+    if (description) description.textContent = '8 atividades já existentes mais 42 novas, com indicação BNCC, apoio visual, comandos curtos, uma etapa por vez, tempo flexível e formas alternativas de resposta.';
 
-    const cards = featured.map(activity => {
+    const pageCount = Math.ceil(autismCatalog.length / autismPageSize);
+    autismPage = Math.min(Math.max(autismPage, 1), pageCount);
+    const visible = autismCatalog.slice((autismPage - 1) * autismPageSize, autismPage * autismPageSize);
+    const cards = visible.map(activity => {
       const card = renderCard(activity);
       card.classList.add('autism-featured-card');
       card.dataset.featuredStage = activity.stage;
@@ -136,6 +181,12 @@
       return card;
     });
     autismFeaturedGrid.replaceChildren(...cards);
+
+    const previous = controls.querySelector('#autism-previous-page');
+    const next = controls.querySelector('#autism-next-page');
+    controls.querySelector('#autism-page-status').textContent = `Página ${autismPage} de ${pageCount}`;
+    previous.disabled = autismPage === 1;
+    next.disabled = autismPage === pageCount;
   };
 
   if (autismCategory) {
