@@ -1,6 +1,3 @@
-Warning: truncated output (original token count: 15118)
-Total output lines: 1089
-
 import assert from 'node:assert/strict';
 import { readFile, readdir } from 'node:fs/promises';
 import test from 'node:test';
@@ -110,7 +107,7 @@ async function createHomeAiPage() {
   window.HTMLDialogElement.prototype.close = function close() {
     this.open = false;
   };
-  window.fetch = async () => ({ ok: true, json: async () => ({ activity: { title: 'Ciclo da água', questions: [{ prompt: 'Questão 1' }, { prompt: 'Questão 2' }, { prompt: 'Questão 3' }], answerKey: 'Gabarito orientativo.' } }) });
+  window.fetch = async () => ({ ok: true, json: async () => ({ activity: { title: 'Ciclo da água', illustrationDataUrl: 'data:image/png;base64,aW1hZ2Vt', questions: [{ prompt: 'Questão 1' }, { prompt: 'Questão 2' }, { prompt: 'Questão 3' }], answerKey: 'Gabarito orientativo.' } }) });
   window.eval(script);
   return window;
 }
@@ -544,7 +541,16 @@ test('Página inicial e Biblioteca versionam os arquivos da categoria de autismo
     readFile(new URL('../index.html', import.meta.url), 'utf8'),
     readFile(new URL('../biblioteca.html', import.meta.url), 'utf8')
   ]);
-  assert.mat…118 tokens truncated…ities(window, 'Educação Infantil', 'Maternal');
+  assert.match(home, /styles\.css\?v=20260808-material-v2/);
+  assert.match(library, /styles\.css\?v=20260807-autismo-v3/);
+  assert.match(library, /biblioteca\.css\?v=20260807-autismo-v4/);
+  assert.match(library, /biblioteca\.js\?v=20260807-autismo-v4/);
+  assert.match(library, /biblioteca-fixes\.js\?v=20260807-autismo-v3/);
+});
+
+test('Visualização contém atividade, gabarito separado e versão adaptada', async () => {
+  const window = await createLibraryPage();
+  openActivities(window, 'Educação Infantil', 'Maternal');
   const previewButton = window.document.querySelector('.preview-button');
   previewButton.click();
 
