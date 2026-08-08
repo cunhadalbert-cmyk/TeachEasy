@@ -31,7 +31,7 @@ module.exports = async function handler(request, response) {
     const context = isPhoto
       ? `Analise a imagem enviada e crie uma atividade original para ${safeText(input.grade, 80)} com ${questions} questões. ${input.adapted ? 'Faça comandos curtos e uma versão acessível para inclusão.' : ''}`
       : `Crie um material escolar original. Pedido livre: ${safeText(input.request, 1200) || 'Crie uma atividade escolar adequada para uma turma de ensino básico.'}. Tipo: ${safeText(input.materialType, 80) || 'Atividade'}. Etapa: ${safeText(input.stage, 100) || 'não informada'}. Ano: ${safeText(input.grade, 80) || 'não informado'}. Disciplina: ${safeText(input.subject, 80) || 'não informada'}. Tema: ${safeText(input.topic, 180) || 'livre'}. Objetivo: ${safeText(input.objective, 240) || 'promover aprendizagem ativa'}. Dificuldade: ${safeText(input.difficulty, 50) || 'Intermediário'}. Tipo de questões: ${safeText(input.questionType, 50) || 'Mistas'}. Faça ${questions} questões. ${input.adapted ? 'Inclua linguagem acessível.' : ''}`;
-    const content = [{ type: 'input_text', text: `Você é um especialista em educação brasileira. ${context} Não invente códigos BNCC. Retorne apenas JSON com title, summary, questions (lista de objetos com prompt) e answerKey. O conteúdo deve ser apropriado e revisável por professor.` }];
+    const content = [{ type: 'input_text', text: `Você é um especialista em educação brasileira. ${context} Não invente códigos BNCC. Retorne apenas JSON com title, summary, illustration (uma descrição curta para ilustração pedagógica), questions (lista de objetos com prompt) e answerKey. O conteúdo deve ser apropriado e revisável por professor.` }];
     if (isPhoto) content.push({ type: 'input_image', image_url: input.imageDataUrl, detail: 'low' });
     const openAiResponse = await fetch('https://api.openai.com/v1/responses', {
       method: 'POST',
@@ -42,7 +42,7 @@ module.exports = async function handler(request, response) {
     if (!openAiResponse.ok) throw new Error(openAiData.error?.message || 'A IA não respondeu.');
     const activity = JSON.parse(responseText(openAiData) || '{}');
     if (!activity.title || !Array.isArray(activity.questions)) throw new Error('A IA retornou uma resposta incompleta.');
-    return json(response, 200, { activity: { title: safeText(activity.title, 180), summary: safeText(activity.summary, 600), questions: activity.questions.slice(0, questions).map(question => ({ prompt: safeText(question.prompt || question, 700) })), answerKey: safeText(activity.answerKey, 1400) } });
+    return json(response, 200, { activity: { title: safeText(activity.title, 180), summary: safeText(activity.summary, 600), illustration: safeText(activity.illustration, 100), questions: activity.questions.slice(0, questions).map(question => ({ prompt: safeText(question.prompt || question, 700) })), answerKey: safeText(activity.answerKey, 1400) } });
   } catch (error) {
     console.error('activity-generation-failed', error.message || error);
     return json(response, 502, { error: error.message || 'Erro ao gerar atividade.' });
