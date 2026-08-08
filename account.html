@@ -14,10 +14,7 @@
 <body>
   <header class="site-header">
     <div class="container header-inner account-header">
-      <a class="brand" href="index.html" aria-label="Página inicial TeachEasy">
-        <strong>TeachEasy</strong>
-        <span>O caminho mais rápido do professor.</span>
-      </a>
+      <a class="brand" href="index.html" aria-label="Página inicial TeachEasy"><strong>TeachEasy</strong><span>O caminho mais rápido do professor.</span></a>
       <a class="btn btn-outline" href="index.html">Voltar ao site</a>
     </div>
   </header>
@@ -46,7 +43,6 @@
           <button type="button" class="auth-tab active" data-auth-tab="signup">Criar conta</button>
           <button type="button" class="auth-tab" data-auth-tab="login">Entrar</button>
         </div>
-
         <form id="signup-form" class="auth-form">
           <h2 id="auth-title">Criar conta</h2>
           <label><span>Nome</span><input name="displayName" type="text" autocomplete="name" required minlength="2" maxlength="100"></label>
@@ -56,7 +52,6 @@
           <button class="btn btn-primary btn-large" type="submit">Criar minha conta</button>
           <small>Ao criar a conta, o plano permanece aguardando pagamento. Nenhuma cobrança é feita nesta etapa.</small>
         </form>
-
         <form id="login-form" class="auth-form" hidden>
           <h2>Entrar</h2>
           <label><span>E-mail</span><input name="email" type="email" autocomplete="email" required></label>
@@ -72,25 +67,19 @@
         <div><span class="eyebrow">MINHA CONTA</span><h1>Olá, <span id="account-name">professor(a)</span>.</h1><p id="account-email"></p></div>
         <button class="btn btn-outline" id="logout-button" type="button">Sair</button>
       </div>
-
       <div class="dashboard-cards">
         <article class="dashboard-card">
-          <span>Plano</span>
-          <strong>TeachEasy Premium</strong>
-          <p id="subscription-status">Aguardando pagamento</p>
+          <span>Plano</span><strong>TeachEasy Premium</strong><p id="subscription-status">Aguardando pagamento</p>
           <div class="dashboard-price"><del>R$ 24,90</del> <strong>R$ 19,90/mês</strong></div>
-          <button class="btn btn-primary" id="payment-button" type="button" disabled>Pagamento será conectado na próxima etapa</button>
+          <button class="btn btn-primary" id="payment-button" type="button">Assinar por R$ 19,90/mês</button>
         </article>
-
         <article class="dashboard-card usage-card">
           <span>Gerações de IA</span>
           <strong><span id="ai-remaining">0</span> de <span id="ai-limit">60</span> disponíveis</strong>
           <div class="usage-track" aria-hidden="true"><span id="usage-bar"></span></div>
-          <p><span id="ai-used">0</span> usadas neste período.</p>
-          <small id="renewal-date"></small>
+          <p><span id="ai-used">0</span> usadas neste período.</p><small id="renewal-date"></small>
         </article>
       </div>
-
       <aside class="usage-rules">
         <h2>O que consome uma geração?</h2>
         <p>Criar uma nova atividade por texto ou foto consome 1 geração. A ilustração pedagógica necessária faz parte dessa mesma geração. Biblioteca pronta, PDF, Word e gabarito não consomem franquia.</p>
