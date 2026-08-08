@@ -541,7 +541,7 @@ test('Página inicial e Biblioteca versionam os arquivos da categoria de autismo
     readFile(new URL('../index.html', import.meta.url), 'utf8'),
     readFile(new URL('../biblioteca.html', import.meta.url), 'utf8')
   ]);
-  assert.match(home, /styles\.css\?v=20260808-material-v2/);
+  assert.match(home, /styles\.css\?v=20260808-material-v3/);
   assert.match(library, /styles\.css\?v=20260807-autismo-v3/);
   assert.match(library, /biblioteca\.css\?v=20260807-autismo-v4/);
   assert.match(library, /biblioteca\.js\?v=20260807-autismo-v4/);
