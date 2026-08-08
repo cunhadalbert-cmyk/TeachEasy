@@ -8,6 +8,15 @@ function safeText(value, max = 500) {
   return String(value || '').trim().slice(0, max);
 }
 
+function responseText(data) {
+  if (data.output_text) return data.output_text;
+  return (data.output || [])
+    .flatMap(item => item.content || [])
+    .filter(item => item.type === 'output_text')
+    .map(item => item.text || '')
+    .join('\n');
+}
+
 module.exports = async function handler(request, response) {
   if (request.method !== 'POST') return json(response, 405, { error: 'Método não permitido.' });
   if (!process.env.OPENAI_API_KEY) return json(response, 503, { error: 'A criação com IA ainda não foi configurada.' });
@@ -31,7 +40,7 @@ module.exports = async function handler(request, response) {
     });
     const openAiData = await openAiResponse.json();
     if (!openAiResponse.ok) throw new Error(openAiData.error?.message || 'A IA não respondeu.');
-    const activity = JSON.parse(openAiData.output_text || '{}');
+    const activity = JSON.parse(responseText(openAiData) || '{}');
     if (!activity.title || !Array.isArray(activity.questions)) throw new Error('A IA retornou uma resposta incompleta.');
     return json(response, 200, { activity: { title: safeText(activity.title, 180), summary: safeText(activity.summary, 600), questions: activity.questions.slice(0, questions).map(question => ({ prompt: safeText(question.prompt || question, 700) })), answerKey: safeText(activity.answerKey, 1400) } });
   } catch (error) {
