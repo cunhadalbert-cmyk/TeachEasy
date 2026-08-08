@@ -1,4 +1,3 @@
-const photoActivityLauncher = document.querySelector('#photo-activity-launcher');
 const photoActivityDialog = document.querySelector('#photo-activity-dialog');
 const photoDialogClose = document.querySelector('.photo-dialog-close');
 const photoActivityForm = document.querySelector('#photo-activity-form');
@@ -6,11 +5,11 @@ const photoFormError = document.querySelector('#photo-form-error');
 const photoGeneratedPreview = document.querySelector('#photo-generated-preview');
 const photoPreviewContent = document.querySelector('#photo-preview-content');
 const photoRegenerate = document.querySelector('#photo-regenerate');
-const schoolHeaderToggle = document.querySelector('#school-header-toggle');
 const schoolHeader = document.querySelector('#school-header');
 const photoDownloadPdf = document.querySelector('#photo-download-pdf');
 const photoDownloadWord = document.querySelector('#photo-download-word');
 let photoGeneration = 0;
+let lastPhotoPayload = null;
 
 function photoQuestions(count, adapted) {
   const standard = [
@@ -29,32 +28,42 @@ function photoQuestions(count, adapted) {
   return Array.from({ length: count }, (_, index) => source[index % source.length]);
 }
 
-function renderPhotoPreview() {
+function escapeHtml(value = '') {
+  return String(value).replace(/[&<>"']/g, character => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#039;' })[character]);
+}
+
+function renderPhotoPreview(activity) {
   const data = new FormData(photoActivityForm);
   const grade = String(data.get('grade') || 'Ano/série selecionado');
   const count = Math.min(20, Math.max(1, Number(data.get('questionCount')) || 5));
   const adapted = data.has('adapted');
   const answerKey = data.has('answerKey');
   photoGeneration += 1;
+  const title = activity?.title || 'Atividade criada a partir da referência visual';
+  const questions = Array.isArray(activity?.questions) && activity.questions.length
+    ? activity.questions.map(question => question.prompt || question).filter(Boolean)
+    : photoQuestions(count, adapted);
+  const answerKeyContent = activity?.answerKey || 'Respostas avaliadas por compreensão, relação com a referência e clareza do registro.';
 
-  photoPreviewContent.innerHTML = `
+  photoPreviewContent.innerHTML = `<section class="photo-activity-page">
     <div class="photo-preview-heading">
       <span>${grade}</span>
       <small>Prévia demonstrativa · versão ${photoGeneration}</small>
-      <h3>Atividade criada a partir da referência visual</h3>
-      <p>A foto orientou o tema e o contexto. Os enunciados abaixo são novos e não são uma simples cópia do texto da imagem.</p>
+      <h3>${escapeHtml(title)}</h3>
+      <p>${escapeHtml(activity?.summary || 'A foto orientou o tema e o contexto. Os enunciados abaixo são novos e não são uma simples cópia do texto da imagem.')}</p>
     </div>
-    <div class="photo-generated-figure">
-      <strong>Figura de apoio</strong>
-      <span>Incluída automaticamente quando ajuda a compreender o conteúdo.</span>
-    </div>
+    <figure class="photo-generated-figure">
+      <img src="${lastPhotoPayload?.imageDataUrl || ''}" alt="Imagem de referência usada na atividade">
+      <figcaption>Imagem de referência para as questões.</figcaption>
+    </figure>
     <ol class="photo-question-list">
-      ${photoQuestions(count, adapted).map(question => `<li>${question}</li>`).join('')}
+      ${questions.map(question => `<li>${escapeHtml(question)}</li>`).join('')}
     </ol>
+    </section>
     ${answerKey ? `
-      <div class="photo-answer-key">
+      <div class="photo-answer-key photo-answer-key-page">
         <strong>Gabarito orientativo</strong>
-        <p>Respostas avaliadas por compreensão, relação com a referência e clareza do registro.</p>
+        <p>${escapeHtml(answerKeyContent)}</p>
       </div>
     ` : ''}
     ${adapted ? `
@@ -65,6 +74,43 @@ function renderPhotoPreview() {
     ` : ''}
   `;
   photoGeneratedPreview.hidden = false;
+}
+
+function fileToDataUrl(file) {
+  return new Promise((resolve, reject) => {
+    const reader = new FileReader();
+    reader.onload = () => resolve(reader.result);
+    reader.onerror = () => reject(new Error('Não foi possível ler a imagem.'));
+    reader.readAsDataURL(file);
+  });
+}
+
+async function generatePhotoActivity() {
+  const file = photoActivityForm.elements.photo.files?.[0];
+  const data = new FormData(photoActivityForm);
+  const submit = photoActivityForm.querySelector('[type="submit"]');
+  submit.disabled = true;
+  submit.textContent = 'Analisando foto...';
+  try {
+    const imageDataUrl = await fileToDataUrl(file);
+    if (imageDataUrl.length > 6_500_000) throw new Error('A imagem é grande demais. Envie uma foto de até 4 MB.');
+    lastPhotoPayload = {
+      mode: 'photo', imageDataUrl, grade: data.get('grade'), questionCount: Number(data.get('questionCount')),
+      answerKey: data.has('answerKey'), adapted: data.has('adapted')
+    };
+    const response = await fetch('/api/generate-activity', {
+      method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(lastPhotoPayload)
+    });
+    const result = await response.json();
+    if (!response.ok) throw new Error(result.error || 'Não foi possível criar a atividade agora.');
+    renderPhotoPreview(result.activity);
+  } catch (error) {
+    photoFormError.textContent = error.message || 'Não foi possível gerar a atividade.';
+    photoFormError.hidden = false;
+  } finally {
+    submit.disabled = false;
+    submit.textContent = 'Gerar prévia';
+  }
 }
 
 function validatePhotoReference() {
@@ -81,7 +127,7 @@ function validatePhotoReference() {
 }
 
 function downloadWordPreview() {
-  const documentHtml = `<!DOCTYPE html><html><head><meta charset="utf-8"><title>Atividade TeachEasy</title></head><body>${schoolHeader.hidden ? '' : schoolHeader.outerHTML}${photoPreviewContent.innerHTML}</body></html>`;
+  const documentHtml = `<!DOCTYPE html><html><head><meta charset="utf-8"><title>Atividade TeachEasy</title><style>@page{size:A4;margin:8mm}body{font-family:Arial,sans-serif;font-size:10pt;line-height:1.2}.school-header{border-bottom:1px solid #333;padding-bottom:6px;margin-bottom:8px}.photo-question-list li{margin:5px 0}.photo-generated-figure img{max-height:55px;max-width:100%}.photo-answer-key-page{page-break-before:always;break-before:page}.photo-activity-page{page-break-after:always;break-after:page}</style></head><body>${schoolHeader.outerHTML}${photoPreviewContent.innerHTML}</body></html>`;
   const blob = new Blob([documentHtml], { type: 'application/msword' });
   const link = document.createElement('a');
   link.href = URL.createObjectURL(blob);
@@ -90,20 +136,21 @@ function downloadWordPreview() {
   URL.revokeObjectURL(link.href);
 }
 
-photoActivityLauncher.addEventListener('click', () => photoActivityDialog.showModal());
 photoDialogClose.addEventListener('click', () => photoActivityDialog.close());
 photoActivityDialog.addEventListener('click', event => {
   if (event.target === photoActivityDialog) photoActivityDialog.close();
 });
 photoActivityForm.addEventListener('submit', event => {
   event.preventDefault();
-  if (validatePhotoReference()) renderPhotoPreview();
+  if (validatePhotoReference()) generatePhotoActivity();
 });
 photoRegenerate.addEventListener('click', () => {
-  if (validatePhotoReference()) renderPhotoPreview();
+  if (validatePhotoReference()) generatePhotoActivity();
 });
-schoolHeaderToggle.addEventListener('change', () => {
-  schoolHeader.hidden = !schoolHeaderToggle.checked;
+photoDownloadPdf.addEventListener('click', () => {
+  const printWindow = window.open('', '_blank');
+  printWindow.document.write(`<title>Atividade TeachEasy</title><style>@page{size:A4;margin:8mm}body{font-family:Arial,sans-serif;max-width:190mm;margin:0 auto;font-size:10pt;line-height:1.2}.school-header{border-bottom:1px solid #333;padding-bottom:6px;margin-bottom:8px}.photo-question-list li{margin:5px 0}.photo-generated-figure img{max-height:55px;max-width:100%}.photo-answer-key-page{page-break-before:always;break-before:page}.photo-activity-page{page-break-after:always;break-after:page}</style>${schoolHeader.outerHTML}${photoPreviewContent.innerHTML}`);
+  printWindow.document.close();
+  printWindow.print();
 });
-photoDownloadPdf.addEventListener('click', () => window.print());
 photoDownloadWord.addEventListener('click', downloadWordPreview);

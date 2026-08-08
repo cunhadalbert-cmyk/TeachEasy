@@ -1820,9 +1820,22 @@ body:not(.library-page) .footer span {
 }
 
 .generated-school-header {
-  margin-bottom: 28px;
-  padding-bottom: 15px;
+  margin-bottom: 14px;
+  padding-bottom: 9px;
   border-bottom: 2px solid #313b35;
+}
+
+.generated-standard-header strong {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.generated-standard-header div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 8px;
+  font-size: 14px;
 }
 
 .generated-school-header img {
@@ -1853,23 +1866,68 @@ body:not(.library-page) .footer span {
 }
 
 .generated-questions li {
-  margin: 22px 0;
+  margin: 10px 0;
 }
 
 .answer-lines {
-  height: 46px;
+  height: 30px;
   border-bottom: 1px solid #bbc4bd;
 }
 
 .generated-figure {
-  margin: 24px 0;
-  padding: 36px 20px;
-  border: 2px dashed #c8aea9;
-  border-radius: 14px;
-  background: #fff8f5;
-  color: var(--wine);
+  margin: 10px 0;
   text-align: center;
-  font-weight: 800;
+}
+
+.generated-figure img {
+  display: block;
+  width: min(100%, 620px);
+  max-height: 120px;
+  margin: auto;
+}
+
+.generated-figure figcaption {
+  margin-top: 3px;
+  color: #5c6961;
+  font-size: 13px;
+}
+
+.generated-image-notice {
+  margin: 10px 0;
+  padding: 10px 12px;
+  border: 1px solid #d8b8a8;
+  border-radius: 10px;
+  background: #fff8f3;
+  color: #783429;
+  font-size: 14px;
+}
+
+.generated-answer-key-page {
+  break-before: page;
+  page-break-before: always;
+}
+
+.generated-activity-page {
+  break-after: page;
+  page-break-after: always;
+}
+
+@media print {
+  @page { size: A4; margin: 8mm; }
+  .ai-preview-document { padding: 0; border: 0; box-shadow: none; font-family: Arial, sans-serif; font-size: 10pt; line-height: 1.2; }
+  .ai-preview-document .generated-school-header { margin-bottom: 8px; padding-bottom: 6px; }
+  .ai-preview-document .generated-material h2 { margin: 6px 0; }
+  .ai-preview-document .generated-material p { margin: 5px 0; }
+  .ai-preview-document .generated-questions { margin: 6px 0; }
+  .ai-preview-document .generated-questions li { margin: 5px 0; }
+  .ai-preview-document .answer-lines { height: 23px; }
+  .ai-preview-document .generated-figure { margin: 6px 0; }
+  .ai-preview-document .generated-figure img { max-height: 55px; }
+  .ai-preview-document .generated-answer-key-page { break-before: page; page-break-before: always; }
+}
+
+.generated-figure {
+  text-align: center;
 }
 
 .generated-answer-key,

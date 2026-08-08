@@ -1,6 +1,7 @@
 const aiLauncher = document.querySelector('#ai-content-launcher');
 const aiDialog = document.querySelector('#ai-content-dialog');
 const aiForm = document.querySelector('#ai-content-form');
+const aiFormError = document.querySelector('#ai-form-error');
 const aiPreview = document.querySelector('#ai-content-preview');
 const aiDocument = document.querySelector('#ai-preview-document');
 const aiChangeRequest = document.querySelector('#ai-change-request');
@@ -12,8 +13,10 @@ const aiHeaderName = document.querySelector('#ai-header-file-name');
 const aiHeaderRemove = document.querySelector('#ai-header-remove');
 const aiUseHeader = document.querySelector('#ai-use-school-header');
 const aiUseHeaderOption = document.querySelector('.ai-use-header-option');
+const aiPhotoDialog = document.querySelector('#photo-activity-dialog');
 let aiGeneration = 0;
 let schoolHeaderAsset = null;
+let lastAiPayload = null;
 
 function escapeContent(value = '') {
   return value.replace(/[&<>"']/g, character => ({
@@ -22,14 +25,18 @@ function escapeContent(value = '') {
 }
 
 function buildSchoolHeader() {
-  if (!schoolHeaderAsset || !aiUseHeader.checked) return '';
+  const standardHeader = `<header class="generated-school-header generated-standard-header">
+    <strong>ESCOLA: _________________________________________________</strong>
+    <div><span>Nome: ____________________________</span><span>Turma: __________</span><span>Data: ____/____/______</span></div>
+  </header>`;
+  if (!schoolHeaderAsset || !aiUseHeader.checked) return standardHeader;
   if (schoolHeaderAsset.type === 'application/pdf') {
-    return `<header class="generated-school-header generated-school-header-pdf">
+    return `${standardHeader}<header class="generated-school-header generated-school-header-pdf">
       <strong>Cabeçalho escolar anexado</strong>
       <span>${escapeContent(schoolHeaderAsset.name)}</span>
     </header>`;
   }
-  return `<header class="generated-school-header">
+  return `${standardHeader}<header class="generated-school-header">
     <img src="${schoolHeaderAsset.dataUrl}" alt="Cabeçalho enviado pela escola">
   </header>`;
 }
@@ -49,25 +56,26 @@ function buildQuestions(data) {
   }).join('');
 }
 
-function renderAiPreview() {
+function renderAiPreview(activity) {
   const data = Object.fromEntries(new FormData(aiForm));
   data.figures = aiForm.elements.figures.checked;
   data.answerKey = aiForm.elements.answerKey.checked;
   data.adapted = aiForm.elements.adapted.checked;
   aiGeneration += 1;
 
-  aiDocument.innerHTML = `
+  aiDocument.innerHTML = `<section class="generated-activity-page">
     ${buildSchoolHeader()}
     <section class="generated-material">
-      <small>${escapeContent(data.materialType)} · ${escapeContent(data.stage)} · ${escapeContent(data.grade)}</small>
-      <h2>${escapeContent(data.topic)}</h2>
-      <p><strong>Disciplina:</strong> ${escapeContent(data.subject)} · <strong>Dificuldade:</strong> ${escapeContent(data.difficulty)}</p>
+      <small>${escapeContent(data.materialType || 'Atividade')} · ${escapeContent(data.stage || 'Ensino básico')} · ${escapeContent(data.grade || 'Turma')}</small>
+      <h2>${escapeContent(activity?.title || data.topic)}</h2>
+      <p><strong>Disciplina:</strong> ${escapeContent(data.subject || 'A definir')} · <strong>Dificuldade:</strong> ${escapeContent(data.difficulty)}</p>
       ${data.objective ? `<p><strong>Objetivo:</strong> ${escapeContent(data.objective)}</p>` : ''}
-      ${data.figures ? '<div class="generated-figure" role="img" aria-label="Espaço sugerido para figura pedagógica">Figura pedagógica sugerida para este conteúdo</div>' : ''}
-      <ol class="generated-questions">${buildQuestions(data)}</ol>
-      ${data.answerKey ? `<section class="generated-answer-key"><h3>Gabarito</h3><p>Respostas orientadoras para revisão do professor.</p></section>` : ''}
+      ${data.figures && activity?.illustrationDataUrl ? `<figure class="generated-figure"><img src="${activity.illustrationDataUrl}" alt="Ilustração colorida sobre ${escapeContent(activity?.illustration || data.topic || data.subject)}"><figcaption>Figura colorida de apoio para a atividade.</figcaption></figure>` : ''}
+      ${data.figures && activity?.illustrationError ? `<p class="generated-image-notice">${escapeContent(activity.illustrationError)}</p>` : ''}
+      <ol class="generated-questions">${Array.isArray(activity?.questions) && activity.questions.length ? activity.questions.map(question => `<li><p>${escapeContent(question.prompt || question)}</p><div class="answer-lines"></div></li>`).join('') : buildQuestions(data)}</ol>
       ${data.adapted ? `<section class="generated-adapted"><h3>Versão adaptada para inclusão</h3><p>Comandos curtos, apoio visual, linguagem direta e menor carga por bloco.</p></section>` : ''}
-    </section>`;
+    </section></section>
+    ${data.answerKey ? `<section class="generated-answer-key generated-answer-key-page"><h3>Gabarito</h3><p>${escapeContent(activity?.answerKey || 'Respostas orientadoras para revisão do professor.')}</p></section>` : ''}`;
 
   aiForm.hidden = true;
   aiPreview.hidden = false;
@@ -76,9 +84,8 @@ function renderAiPreview() {
 
 function downloadAiContent(extension, mimeType) {
   const cleanDocument = `<!doctype html><html lang="pt-BR"><meta charset="utf-8"><title>Material escolar</title>
-    <style>body{font-family:Arial,sans-serif;max-width:800px;margin:40px auto;color:#17251f;line-height:1.5}
-    h1,h2,h3{color:#541020}.generated-school-header{border-bottom:2px solid #333;margin-bottom:28px;padding-bottom:12px}
-    li{margin:18px 0}.answer-lines{height:45px;border-bottom:1px solid #bbb}.generated-figure{padding:30px;border:1px dashed #888;text-align:center}</style>
+    <style>@page{size:A4;margin:8mm}body{font-family:Arial,sans-serif;max-width:190mm;margin:0 auto;color:#17251f;font-size:10pt;line-height:1.2}
+    h1,h2,h3{color:#541020}.generated-school-header{border-bottom:1px solid #333;margin-bottom:8px;padding-bottom:6px}.generated-standard-header div{display:flex;justify-content:space-between;font-size:9pt}.generated-material h2{margin:6px 0}.generated-material p{margin:5px 0}.generated-questions{margin:6px 0;padding-left:22px}.generated-questions li{margin:5px 0}.generated-questions p{margin:0}.answer-lines{height:23px;border-bottom:1px solid #bbb}.generated-figure{margin:6px 0;text-align:center}.generated-figure img{max-height:55px;max-width:100%}.generated-figure figcaption{font-size:8pt}.generated-answer-key-page{break-before:page;page-break-before:always;padding-top:12mm}.generated-activity-page{break-after:page;page-break-after:always}</style>
     <body>${aiDocument.innerHTML}</body></html>`;
   const blob = new Blob([cleanDocument], { type: mimeType });
   const link = document.createElement('a');
@@ -105,9 +112,27 @@ aiDialog.querySelector('.ai-content-close').addEventListener('click', () => aiDi
 aiDialog.addEventListener('click', event => {
   if (event.target === aiDialog) aiDialog.close();
 });
-aiForm.addEventListener('submit', event => {
+aiForm.addEventListener('submit', async event => {
   event.preventDefault();
-  renderAiPreview();
+  aiFormError.hidden = true;
+  const formData = Object.fromEntries(new FormData(aiForm));
+  lastAiPayload = { mode: 'text', ...formData, figures: aiForm.elements.figures.checked, answerKey: aiForm.elements.answerKey.checked, adapted: aiForm.elements.adapted.checked };
+  const submit = aiForm.querySelector('[type="submit"]');
+  submit.disabled = true;
+  submit.textContent = 'Criando com a IA...';
+  try {
+    const response = await fetch('/api/generate-activity', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(lastAiPayload) });
+    const result = await response.json();
+    if (!response.ok) throw new Error(result.error || 'Não foi possível criar o material agora.');
+    renderAiPreview(result.activity);
+  } catch (error) {
+    aiFormError.textContent = error.message || 'Não foi possível criar o material agora.';
+    aiFormError.hidden = false;
+    aiFormError.focus();
+  } finally {
+    submit.disabled = false;
+    submit.textContent = 'Criar conteúdo';
+  }
 });
 aiHeaderFile.addEventListener('change', () => {
   const file = aiHeaderFile.files[0];
@@ -159,10 +184,14 @@ document.querySelector('#ai-request-change').addEventListener('click', () => {
   aiDocument.insertAdjacentHTML('beforeend', `<aside class="generated-adjustment"><strong>Ajuste solicitado à IA:</strong> ${escapeContent(request)}</aside>`);
   aiChangeRequest.value = '';
 });
-document.querySelector('#ai-regenerate-content').addEventListener('click', renderAiPreview);
+document.querySelector('#ai-regenerate-content').addEventListener('click', () => aiForm.requestSubmit());
+document.querySelector('#ai-photo-option').addEventListener('click', () => {
+  aiDialog.close();
+  aiPhotoDialog.showModal();
+});
 document.querySelector('#ai-download-pdf').addEventListener('click', () => {
   const printWindow = window.open('', '_blank');
-  printWindow.document.write(`<title>Material escolar</title><style>body{font-family:Arial;max-width:800px;margin:40px auto;line-height:1.5}li{margin:16px 0}</style>${aiDocument.innerHTML}`);
+  printWindow.document.write(`<title>Material escolar</title><style>@page{size:A4;margin:8mm}body{font-family:Arial,sans-serif;max-width:190mm;margin:0 auto;color:#17251f;font-size:10pt;line-height:1.2}h1,h2,h3{color:#541020}.generated-school-header{border-bottom:1px solid #333;margin-bottom:8px;padding-bottom:6px}.generated-standard-header div{display:flex;justify-content:space-between;font-size:9pt}.generated-material h2{margin:6px 0}.generated-material p{margin:5px 0}.generated-questions{margin:6px 0;padding-left:22px}.generated-questions li{margin:5px 0}.generated-questions p{margin:0}.answer-lines{height:23px;border-bottom:1px solid #bbb}.generated-figure{margin:6px 0;text-align:center}.generated-figure img{max-height:55px;max-width:100%}.generated-figure figcaption{font-size:8pt}.generated-answer-key-page{break-before:page;page-break-before:always;padding-top:12mm}.generated-activity-page{break-after:page;page-break-after:always}</style>${aiDocument.innerHTML}`);
   printWindow.document.close();
   printWindow.print();
 });
