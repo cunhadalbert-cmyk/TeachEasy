@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Libre+Franklin:wght@600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=20260807-colorir-v4">
+  <link rel="stylesheet" href="styles.css?v=20260808-material-v3">
   <link rel="stylesheet" href="photo-activity.css">
   <link rel="stylesheet" href="coloring-wide.css">
   <link rel="stylesheet" href="home-responsive.css" data-teacheasy-styles="home-responsive">
@@ -190,23 +190,6 @@
           </span>
         </a>
 
-        <div class="photo-activity-feature">
-          <button class="photo-activity-launcher" id="photo-activity-launcher" type="button">
-            <img
-              class="photo-launcher-illustration"
-              src="assets/photo-activity-illustration.png"
-              alt="Foto de um conteúdo se transformando em uma nova atividade"
-              width="320"
-              height="213"
-            >
-            <span class="photo-launcher-copy">
-              <span class="photo-launcher-badge">NOVIDADE!</span>
-              <strong>Criar atividade por foto</strong>
-              <small>Envie uma foto do conteúdo e a IA gera uma atividade personalizada para você!</small>
-            </span>
-          </button>
-        </div>
-
         <dialog class="photo-activity-dialog" id="photo-activity-dialog" aria-labelledby="photo-activity-title">
           <button class="photo-dialog-close" type="button" aria-label="Fechar criação por foto">×</button>
           <div class="photo-dialog-content">
@@ -247,16 +230,13 @@
             </form>
 
             <section class="photo-generated-preview" id="photo-generated-preview" aria-live="polite" hidden>
-              <div class="school-header" id="school-header" hidden>
-                <strong>Nome da escola</strong>
-                <span>Professor(a): ____________________ Turma: ______ Data: ____/____/______</span>
+              <div class="school-header" id="school-header">
+                <strong>ESCOLA: _________________________________________________</strong>
+                <span>Nome: ____________________ &nbsp; Turma: __________ &nbsp; Data: ____/____/______</span>
               </div>
               <div id="photo-preview-content"></div>
               <div class="photo-preview-actions">
                 <button class="btn btn-outline" id="photo-regenerate" type="button">Gerar novamente</button>
-                <label class="school-header-toggle">
-                  <input id="school-header-toggle" type="checkbox"> Adicionar cabeçalho da escola
-                </label>
                 <button class="btn btn-outline" id="photo-download-pdf" type="button">Baixar PDF</button>
                 <button class="btn btn-primary" id="photo-download-word" type="button">Baixar Word</button>
               </div>
@@ -293,28 +273,30 @@
               <span>CRIAÇÃO PERSONALIZADA</span>
               <h2 id="ai-content-title">Criar com a IA</h2>
               <p>Descreva o material. Você poderá revisar, editar e pedir alterações antes de baixar.</p>
+              <button class="btn btn-outline ai-photo-option" id="ai-photo-option" type="button">Criar com foto</button>
             </header>
 
             <form class="ai-content-form" id="ai-content-form">
               <label class="ai-prompt-field">
-                <textarea name="request" rows="5" required aria-label="Descreva o conteúdo que deseja criar" placeholder="Crie uma atividade de Ciências para o 4º ano sobre o ciclo da água, com 8 questões, figuras, gabarito e uma versão adaptada para aluno com autismo."></textarea>
+                <span>Pedido à IA <small>(opcional)</small></span>
+                <textarea name="request" rows="5" aria-label="Descreva o conteúdo que deseja criar" placeholder="Ex.: Crie uma atividade de Ciências para o 4º ano sobre o ciclo da água, com 8 questões e gabarito."></textarea>
               </label>
 
               <div class="ai-content-form-grid">
-                <label><span>Tipo de material</span><select name="materialType" required>
+                <label><span>Tipo de material <small>(opcional)</small></span><select name="materialType">
                   <option value="">Selecione</option><option>Atividade</option><option>Prova</option>
                   <option>Plano de aula</option><option>Sequência didática</option>
                   <option>Exercício de revisão</option><option>Trabalho</option>
                   <option>Relatório</option><option>Portfólio do estudante</option>
                 </select></label>
-                <label><span>Etapa de ensino</span><select name="stage" required>
+                <label><span>Etapa de ensino <small>(opcional)</small></span><select name="stage">
                   <option value="">Selecione</option><option>Educação Infantil</option>
                   <option>Ensino Fundamental — Anos Iniciais</option>
                   <option>Ensino Fundamental — Anos Finais</option><option>Ensino Médio</option>
                 </select></label>
-                <label><span>Ano ou série</span><input name="grade" type="text" required placeholder="Ex.: 4º ano"></label>
-                <label><span>Disciplina</span><input name="subject" type="text" required placeholder="Ex.: Ciências"></label>
-                <label><span>Conteúdo ou tema</span><input name="topic" type="text" required placeholder="Ex.: Ciclo da água"></label>
+                <label><span>Ano ou série <small>(opcional)</small></span><input name="grade" type="text" placeholder="Ex.: 4º ano"></label>
+                <label><span>Disciplina <small>(opcional)</small></span><input name="subject" type="text" placeholder="Ex.: Ciências"></label>
+                <label><span>Conteúdo ou tema <small>(opcional)</small></span><input name="topic" type="text" placeholder="Ex.: Ciclo da água"></label>
                 <label><span>Objetivo da atividade</span><input name="objective" type="text" placeholder="Ex.: Compreender as etapas do ciclo"></label>
                 <label><span>Quantidade de questões</span><input name="questionCount" type="number" min="1" max="30" value="8"></label>
                 <label><span>Nível de dificuldade</span><select name="difficulty">
@@ -327,7 +309,7 @@
 
               <fieldset class="ai-content-options">
                 <legend>Recursos do material</legend>
-                <label><input name="figures" type="checkbox"> Incluir figuras</label>
+                <label><input name="figures" type="checkbox" checked> Incluir figuras</label>
                 <label><input name="answerKey" type="checkbox" checked> Incluir gabarito</label>
                 <label><input name="adapted" type="checkbox"> Criar versão adaptada para inclusão</label>
               </fieldset>
@@ -353,6 +335,7 @@
                 </label>
               </section>
 
+              <p class="photo-form-error" id="ai-form-error" role="alert" tabindex="-1" hidden></p>
               <button class="btn btn-primary ai-create-submit" type="submit">Criar conteúdo</button>
             </form>
 
