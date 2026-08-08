@@ -1,3 +1,6 @@
+Warning: truncated output (original token count: 15118)
+Total output lines: 1089
+
 import assert from 'node:assert/strict';
 import { readFile, readdir } from 'node:fs/promises';
 import test from 'node:test';
@@ -251,6 +254,9 @@ test('Criar com a IA é uma função real e distinta das três experiências exi
   const preview = window.document.querySelector('#ai-content-preview');
   assert.equal(preview.hidden, false);
   assert.equal(preview.querySelectorAll('.generated-questions li').length, 3);
+  assert.equal(preview.querySelectorAll('.generated-standard-header').length, 1);
+  assert.equal(preview.querySelectorAll('.generated-figure img').length, 1);
+  assert.equal(preview.querySelectorAll('.generated-answer-key-page').length, 1);
   assert.match(preview.textContent, /Gabarito|Versão adaptada para inclusão/);
   assert.match(preview.textContent, /Editar conteúdo|Pedir alteração à IA|Gerar novamente|Baixar em PDF|Baixar em Word/);
   assert.doesNotMatch(window.document.querySelector('#ai-preview-document').textContent, /TeachEasy|propaganda|marca d’água/i);
@@ -450,7 +456,7 @@ test('Criação por foto exige uma imagem JPG ou PNG', async () => {
   await window.happyDOM.close();
 });
 
-test('Imagem gera prévia e cabeçalho da escola permanece opcional', async () => {
+test('Imagem gera prévia com cabeçalho padrão e gabarito separado', async () => {
   const window = await createHomePhotoPage();
   const form = window.document.querySelector('#photo-activity-form');
   attachReferenceImage(window);
@@ -464,12 +470,10 @@ test('Imagem gera prévia e cabeçalho da escola permanece opcional', async () =
   assert.equal(preview.hidden, false);
   assert.equal(preview.querySelectorAll('.photo-question-list li').length, 3);
   assert.match(preview.textContent, /Atividade original gerada da imagem/);
-  assert.equal(schoolHeader.hidden, true);
-
-  const headerToggle = window.document.querySelector('#school-header-toggle');
-  headerToggle.checked = true;
-  headerToggle.dispatchEvent(new window.Event('change', { bubbles: true }));
   assert.equal(schoolHeader.hidden, false);
+  assert.match(schoolHeader.textContent, /ESCOLA:|Nome:|Turma:|Data:/);
+  assert.equal(preview.querySelectorAll('.photo-generated-figure img').length, 1);
+  assert.equal(preview.querySelectorAll('.photo-answer-key-page').length, 1);
   await window.happyDOM.close();
 });
 
@@ -540,16 +544,7 @@ test('Página inicial e Biblioteca versionam os arquivos da categoria de autismo
     readFile(new URL('../index.html', import.meta.url), 'utf8'),
     readFile(new URL('../biblioteca.html', import.meta.url), 'utf8')
   ]);
-  assert.match(home, /styles\.css\?v=20260807-colorir-v4/);
-  assert.match(library, /styles\.css\?v=20260807-autismo-v3/);
-  assert.match(library, /biblioteca\.css\?v=20260807-autismo-v4/);
-  assert.match(library, /biblioteca\.js\?v=20260807-autismo-v4/);
-  assert.match(library, /biblioteca-fixes\.js\?v=20260807-autismo-v3/);
-});
-
-test('Visualização contém atividade, gabarito separado e versão adaptada', async () => {
-  const window = await createLibraryPage();
-  openActivities(window, 'Educação Infantil', 'Maternal');
+  assert.mat…118 tokens truncated…ities(window, 'Educação Infantil', 'Maternal');
   const previewButton = window.document.querySelector('.preview-button');
   previewButton.click();
 
