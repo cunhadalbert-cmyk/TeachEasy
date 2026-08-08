@@ -85,4 +85,4 @@ module.exports = async function handler(request, response) {
     console.error('activity-generation-failed', error.message || error);
     return json(response, 502, { error: error.message || 'Erro ao gerar atividade.' });
   }
-}
+};
