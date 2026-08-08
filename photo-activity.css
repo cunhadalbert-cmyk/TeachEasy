@@ -212,6 +212,11 @@
   border-radius: 14px;
   background: #f4ebe7;
 }
+.photo-generated-figure { text-align: center; }
+.photo-generated-figure img { display: block; max-width: 100%; max-height: 180px; margin: auto; object-fit: contain; }
+.photo-generated-figure figcaption { color: #5c6961; font-size: 13px; }
+.photo-answer-key-page { break-before: page; page-break-before: always; }
+.photo-activity-page { break-after: page; page-break-after: always; }
 .photo-question-list { padding-left: 25px; }
 .photo-question-list li { margin: 16px 0; font-size: 17px; line-height: 1.55; }
 .photo-preview-actions {
