@@ -1,6 +1,7 @@
 const aiLauncher = document.querySelector('#ai-content-launcher');
 const aiDialog = document.querySelector('#ai-content-dialog');
 const aiForm = document.querySelector('#ai-content-form');
+const aiFormError = document.querySelector('#ai-form-error');
 const aiPreview = document.querySelector('#ai-content-preview');
 const aiDocument = document.querySelector('#ai-preview-document');
 const aiChangeRequest = document.querySelector('#ai-change-request');
@@ -109,6 +110,7 @@ aiDialog.addEventListener('click', event => {
 });
 aiForm.addEventListener('submit', async event => {
   event.preventDefault();
+  aiFormError.hidden = true;
   const formData = Object.fromEntries(new FormData(aiForm));
   lastAiPayload = { mode: 'text', ...formData, figures: aiForm.elements.figures.checked, answerKey: aiForm.elements.answerKey.checked, adapted: aiForm.elements.adapted.checked };
   const submit = aiForm.querySelector('[type="submit"]');
@@ -120,7 +122,9 @@ aiForm.addEventListener('submit', async event => {
     if (!response.ok) throw new Error(result.error || 'Não foi possível criar o material agora.');
     renderAiPreview(result.activity);
   } catch (error) {
-    alert(error.message || 'Não foi possível criar o material agora.');
+    aiFormError.textContent = error.message || 'Não foi possível criar o material agora.';
+    aiFormError.hidden = false;
+    aiFormError.focus();
   } finally {
     submit.disabled = false;
     submit.textContent = 'Criar conteúdo';
