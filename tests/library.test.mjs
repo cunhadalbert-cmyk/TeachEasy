@@ -219,7 +219,8 @@ test('Criar com a IA é uma função real e distinta das três experiências exi
   assert.equal(dialog.open, true);
   const form = window.document.querySelector('#ai-content-form');
   assert.equal(form.elements.materialType.options.length, 9);
-  assert.ok(form.elements.request.required);
+  assert.equal(form.elements.request.required, false);
+  ['materialType', 'stage', 'grade', 'subject', 'topic'].forEach(name => assert.equal(form.elements[name].required, false));
   assert.match(form.elements.request.placeholder, /ciclo da água/);
   assert.equal(form.elements.notes, undefined);
   assert.equal(form.elements.school, undefined);
