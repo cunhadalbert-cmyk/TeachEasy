@@ -17,6 +17,21 @@ function responseText(data) {
     .join('\n');
 }
 
+async function generateColoredIllustration(activity, input) {
+  const firstQuestion = safeText(activity.questions?.[0]?.prompt || activity.illustration || input.topic || input.request, 650);
+  const prompt = `Crie UMA ilustração escolar colorida, clara e infantil para acompanhar uma atividade brasileira. Ela deve representar exatamente este enunciado: "${firstQuestion}". Se houver uma quantidade, grupos ou objetos no enunciado, desenhe a quantidade correta e deixe cada elemento bem visível para a criança contar. Estilo: ilustração educativa simples, cores alegres, fundo branco ou muito claro, composição horizontal. Não coloque letras, palavras, números, respostas, marcas d'água ou logotipos na imagem.`;
+  const imageResponse = await fetch('https://api.openai.com/v1/images/generations', {
+    method: 'POST',
+    headers: { Authorization: `Bearer ${process.env.OPENAI_API_KEY}`, 'Content-Type': 'application/json' },
+    body: JSON.stringify({ model: 'gpt-image-2', prompt, size: '1024x1024', quality: 'low', output_format: 'png' })
+  });
+  const imageData = await imageResponse.json();
+  if (!imageResponse.ok) throw new Error(imageData.error?.message || 'Não foi possível criar a figura colorida.');
+  const imageBase64 = imageData.data?.[0]?.b64_json;
+  if (!imageBase64) throw new Error('A IA não retornou a figura colorida.');
+  return `data:image/png;base64,${imageBase64}`;
+}
+
 module.exports = async function handler(request, response) {
   if (request.method !== 'POST') return json(response, 405, { error: 'Método não permitido.' });
   if (!process.env.OPENAI_API_KEY) return json(response, 503, { error: 'A criação com IA ainda não foi configurada.' });
@@ -42,7 +57,22 @@ module.exports = async function handler(request, response) {
     if (!openAiResponse.ok) throw new Error(openAiData.error?.message || 'A IA não respondeu.');
     const activity = JSON.parse(responseText(openAiData) || '{}');
     if (!activity.title || !Array.isArray(activity.questions)) throw new Error('A IA retornou uma resposta incompleta.');
-    return json(response, 200, { activity: { title: safeText(activity.title, 180), summary: safeText(activity.summary, 600), illustration: safeText(activity.illustration, 100), questions: activity.questions.slice(0, questions).map(question => ({ prompt: safeText(question.prompt || question, 700) })), answerKey: safeText(activity.answerKey, 1400) } });
+    const normalizedActivity = {
+      title: safeText(activity.title, 180),
+      summary: safeText(activity.summary, 600),
+      illustration: safeText(activity.illustration, 100),
+      questions: activity.questions.slice(0, questions).map(question => ({ prompt: safeText(question.prompt || question, 700) })),
+      answerKey: safeText(activity.answerKey, 1400)
+    };
+    if (!isPhoto && input.figures) {
+      try {
+        normalizedActivity.illustrationDataUrl = await generateColoredIllustration(normalizedActivity, input);
+      } catch (imageError) {
+        console.warn('activity-illustration-failed', imageError.message || imageError);
+        normalizedActivity.illustrationError = 'A atividade foi criada, mas a figura colorida não pôde ser gerada agora. Tente gerar novamente.';
+      }
+    }
+    return json(response, 200, { activity: normalizedActivity });
   } catch (error) {
     console.error('activity-generation-failed', error.message || error);
     return json(response, 502, { error: error.message || 'Erro ao gerar atividade.' });
