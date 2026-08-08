@@ -1892,6 +1892,16 @@ body:not(.library-page) .footer span {
   font-size: 13px;
 }
 
+.generated-image-notice {
+  margin: 10px 0;
+  padding: 10px 12px;
+  border: 1px solid #d8b8a8;
+  border-radius: 10px;
+  background: #fff8f3;
+  color: #783429;
+  font-size: 14px;
+}
+
 .generated-answer-key-page {
   break-before: page;
   page-break-before: always;
