@@ -5,7 +5,6 @@ const photoFormError = document.querySelector('#photo-form-error');
 const photoGeneratedPreview = document.querySelector('#photo-generated-preview');
 const photoPreviewContent = document.querySelector('#photo-preview-content');
 const photoRegenerate = document.querySelector('#photo-regenerate');
-const schoolHeaderToggle = document.querySelector('#school-header-toggle');
 const schoolHeader = document.querySelector('#school-header');
 const photoDownloadPdf = document.querySelector('#photo-download-pdf');
 const photoDownloadWord = document.querySelector('#photo-download-word');
@@ -46,22 +45,23 @@ function renderPhotoPreview(activity) {
     : photoQuestions(count, adapted);
   const answerKeyContent = activity?.answerKey || 'Respostas avaliadas por compreensão, relação com a referência e clareza do registro.';
 
-  photoPreviewContent.innerHTML = `
+  photoPreviewContent.innerHTML = `<section class="photo-activity-page">
     <div class="photo-preview-heading">
       <span>${grade}</span>
       <small>Prévia demonstrativa · versão ${photoGeneration}</small>
       <h3>${escapeHtml(title)}</h3>
       <p>${escapeHtml(activity?.summary || 'A foto orientou o tema e o contexto. Os enunciados abaixo são novos e não são uma simples cópia do texto da imagem.')}</p>
     </div>
-    <div class="photo-generated-figure">
-      <strong>Figura de apoio</strong>
-      <span>Incluída automaticamente quando ajuda a compreender o conteúdo.</span>
-    </div>
+    <figure class="photo-generated-figure">
+      <img src="${lastPhotoPayload?.imageDataUrl || ''}" alt="Imagem de referência usada na atividade">
+      <figcaption>Imagem de referência para as questões.</figcaption>
+    </figure>
     <ol class="photo-question-list">
       ${questions.map(question => `<li>${escapeHtml(question)}</li>`).join('')}
     </ol>
+    </section>
     ${answerKey ? `
-      <div class="photo-answer-key">
+      <div class="photo-answer-key photo-answer-key-page">
         <strong>Gabarito orientativo</strong>
         <p>${escapeHtml(answerKeyContent)}</p>
       </div>
@@ -127,7 +127,7 @@ function validatePhotoReference() {
 }
 
 function downloadWordPreview() {
-  const documentHtml = `<!DOCTYPE html><html><head><meta charset="utf-8"><title>Atividade TeachEasy</title></head><body>${schoolHeader.hidden ? '' : schoolHeader.outerHTML}${photoPreviewContent.innerHTML}</body></html>`;
+  const documentHtml = `<!DOCTYPE html><html><head><meta charset="utf-8"><title>Atividade TeachEasy</title><style>@page{size:A4;margin:8mm}body{font-family:Arial,sans-serif;font-size:10pt;line-height:1.2}.school-header{border-bottom:1px solid #333;padding-bottom:6px;margin-bottom:8px}.photo-question-list li{margin:5px 0}.photo-generated-figure img{max-height:55px;max-width:100%}.photo-answer-key-page{page-break-before:always;break-before:page}.photo-activity-page{page-break-after:always;break-after:page}</style></head><body>${schoolHeader.outerHTML}${photoPreviewContent.innerHTML}</body></html>`;
   const blob = new Blob([documentHtml], { type: 'application/msword' });
   const link = document.createElement('a');
   link.href = URL.createObjectURL(blob);
@@ -147,8 +147,10 @@ photoActivityForm.addEventListener('submit', event => {
 photoRegenerate.addEventListener('click', () => {
   if (validatePhotoReference()) generatePhotoActivity();
 });
-schoolHeaderToggle.addEventListener('change', () => {
-  schoolHeader.hidden = !schoolHeaderToggle.checked;
+photoDownloadPdf.addEventListener('click', () => {
+  const printWindow = window.open('', '_blank');
+  printWindow.document.write(`<title>Atividade TeachEasy</title><style>@page{size:A4;margin:8mm}body{font-family:Arial,sans-serif;max-width:190mm;margin:0 auto;font-size:10pt;line-height:1.2}.school-header{border-bottom:1px solid #333;padding-bottom:6px;margin-bottom:8px}.photo-question-list li{margin:5px 0}.photo-generated-figure img{max-height:55px;max-width:100%}.photo-answer-key-page{page-break-before:always;break-before:page}.photo-activity-page{page-break-after:always;break-after:page}</style>${schoolHeader.outerHTML}${photoPreviewContent.innerHTML}`);
+  printWindow.document.close();
+  printWindow.print();
 });
-photoDownloadPdf.addEventListener('click', () => window.print());
 photoDownloadWord.addEventListener('click', downloadWordPreview);
