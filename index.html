@@ -230,16 +230,13 @@
             </form>
 
             <section class="photo-generated-preview" id="photo-generated-preview" aria-live="polite" hidden>
-              <div class="school-header" id="school-header" hidden>
-                <strong>Nome da escola</strong>
-                <span>Professor(a): ____________________ Turma: ______ Data: ____/____/______</span>
+              <div class="school-header" id="school-header">
+                <strong>ESCOLA: _________________________________________________</strong>
+                <span>Nome: ____________________ &nbsp; Turma: __________ &nbsp; Data: ____/____/______</span>
               </div>
               <div id="photo-preview-content"></div>
               <div class="photo-preview-actions">
                 <button class="btn btn-outline" id="photo-regenerate" type="button">Gerar novamente</button>
-                <label class="school-header-toggle">
-                  <input id="school-header-toggle" type="checkbox"> Adicionar cabeçalho da escola
-                </label>
                 <button class="btn btn-outline" id="photo-download-pdf" type="button">Baixar PDF</button>
                 <button class="btn btn-primary" id="photo-download-word" type="button">Baixar Word</button>
               </div>
@@ -312,7 +309,7 @@
 
               <fieldset class="ai-content-options">
                 <legend>Recursos do material</legend>
-                <label><input name="figures" type="checkbox"> Incluir figuras</label>
+                <label><input name="figures" type="checkbox" checked> Incluir figuras</label>
                 <label><input name="answerKey" type="checkbox" checked> Incluir gabarito</label>
                 <label><input name="adapted" type="checkbox"> Criar versão adaptada para inclusão</label>
               </fieldset>
