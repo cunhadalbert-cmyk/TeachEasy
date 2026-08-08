@@ -35,6 +35,7 @@ module.exports = async function handler(request, response) {
     if (!activity.title || !Array.isArray(activity.questions)) throw new Error('A IA retornou uma resposta incompleta.');
     return json(response, 200, { activity: { title: safeText(activity.title, 180), summary: safeText(activity.summary, 600), questions: activity.questions.slice(0, questions).map(question => ({ prompt: safeText(question.prompt || question, 700) })), answerKey: safeText(activity.answerKey, 1400) } });
   } catch (error) {
-    return json(response, 500, { error: error.message || 'Erro ao gerar atividade.' });
+    console.error('activity-generation-failed', error.message || error);
+    return json(response, 502, { error: error.message || 'Erro ao gerar atividade.' });
   }
 }
