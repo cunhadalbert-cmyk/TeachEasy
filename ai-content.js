@@ -18,8 +18,58 @@ let aiGeneration = 0;
 let schoolHeaderAsset = null;
 let lastAiPayload = null;
 
+function installAiEnhancements() {
+  if (!aiForm || document.querySelector('#ai-illustration-style')) return;
+
+  const style = document.createElement('style');
+  style.textContent = `
+    .ai-photo-guidance{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-top:12px;padding:10px 12px;border:1px solid #e0b94f;border-radius:12px;background:#fff8dc;color:#5b4610;font-size:.92rem;line-height:1.35}
+    .ai-photo-guidance strong{color:#541020}.ai-photo-guidance .ai-photo-option{flex:0 0 auto}
+    .ai-extra-options{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:12px}
+    .ai-extra-options label{display:grid;gap:6px}.ai-extra-options select{width:100%}
+    .generated-figure{display:flex;flex-direction:column;align-items:center;justify-content:center;overflow:hidden;min-height:90px}
+    .generated-figure .generated-illustration-image{display:block;width:auto!important;height:auto!important;max-width:100%!important;max-height:180px!important;object-fit:contain!important;object-position:center}
+    .generated-bncc{margin:8px 0;padding:8px 10px;border-left:4px solid #541020;background:#faf6f7}
+    @media(max-width:640px){.ai-extra-options{grid-template-columns:1fr}.ai-photo-guidance{align-items:flex-start}}
+  `;
+  document.head.appendChild(style);
+
+  const photoButton = document.querySelector('#ai-photo-option');
+  if (photoButton && !photoButton.closest('.ai-photo-guidance')) {
+    const guidance = document.createElement('div');
+    guidance.className = 'ai-photo-guidance';
+    photoButton.parentNode.insertBefore(guidance, photoButton);
+    guidance.append(photoButton);
+    const text = document.createElement('span');
+    text.innerHTML = '<strong>Como usar:</strong> fotografe ou envie uma atividade de referência. A IA analisa a imagem e cria uma nova atividade para a turma escolhida.';
+    guidance.append(text);
+  }
+
+  const options = aiForm.querySelector('.ai-content-options');
+  if (options) {
+    const bnccLabel = document.createElement('label');
+    bnccLabel.innerHTML = '<input name="bncc" type="checkbox"> Alinhar a solicitação à BNCC';
+    options.appendChild(bnccLabel);
+  }
+
+  const extraOptions = document.createElement('div');
+  extraOptions.className = 'ai-extra-options';
+  extraOptions.innerHTML = `
+    <label><span>Estilo da ilustração</span><select name="illustrationStyle" id="ai-illustration-style">
+      <option value="color" selected>Colorida</option>
+      <option value="bw">Preto e branco</option>
+    </select></label>
+    <label><span>Uso da BNCC</span><select name="bnccMode" id="ai-bncc-mode">
+      <option value="reference" selected>Referência pedagógica</option>
+      <option value="skill">Mostrar habilidade quando segura</option>
+    </select></label>`;
+  if (options) options.insertAdjacentElement('afterend', extraOptions);
+}
+
+installAiEnhancements();
+
 function escapeContent(value = '') {
-  return value.replace(/[&<>"']/g, character => ({
+  return String(value).replace(/[&<>"']/g, character => ({
     '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#039;'
   })[character]);
 }
@@ -61,7 +111,9 @@ function renderAiPreview(activity) {
   data.figures = aiForm.elements.figures.checked;
   data.answerKey = aiForm.elements.answerKey.checked;
   data.adapted = aiForm.elements.adapted.checked;
+  data.bncc = aiForm.elements.bncc?.checked || false;
   aiGeneration += 1;
+  const illustrationLabel = data.illustrationStyle === 'bw' ? 'preto e branco' : 'colorida';
 
   aiDocument.innerHTML = `<section class="generated-activity-page">
     ${buildSchoolHeader()}
@@ -70,7 +122,8 @@ function renderAiPreview(activity) {
       <h2>${escapeContent(activity?.title || data.topic)}</h2>
       <p><strong>Disciplina:</strong> ${escapeContent(data.subject || 'A definir')} · <strong>Dificuldade:</strong> ${escapeContent(data.difficulty)}</p>
       ${data.objective ? `<p><strong>Objetivo:</strong> ${escapeContent(data.objective)}</p>` : ''}
-      ${data.figures && activity?.illustrationDataUrl ? `<figure class="generated-figure"><img src="${activity.illustrationDataUrl}" alt="Ilustração colorida sobre ${escapeContent(activity?.illustration || data.topic || data.subject)}"><figcaption>Figura colorida de apoio para a atividade.</figcaption></figure>` : ''}
+      ${data.bncc && activity?.bncc ? `<section class="generated-bncc"><strong>BNCC:</strong> ${escapeContent(activity.bncc)}</section>` : ''}
+      ${data.figures && activity?.illustrationDataUrl ? `<figure class="generated-figure"><img class="generated-illustration-image" src="${activity.illustrationDataUrl}" alt="Ilustração ${illustrationLabel} sobre ${escapeContent(activity?.illustration || data.topic || data.subject)}"><figcaption>Figura ${illustrationLabel} de apoio para a atividade.</figcaption></figure>` : ''}
       ${data.figures && activity?.illustrationError ? `<p class="generated-image-notice">${escapeContent(activity.illustrationError)}</p>` : ''}
       <ol class="generated-questions">${Array.isArray(activity?.questions) && activity.questions.length ? activity.questions.map(question => `<li><p>${escapeContent(question.prompt || question)}</p><div class="answer-lines"></div></li>`).join('') : buildQuestions(data)}</ol>
       ${data.adapted ? `<section class="generated-adapted"><h3>Versão adaptada para inclusão</h3><p>Comandos curtos, apoio visual, linguagem direta e menor carga por bloco.</p></section>` : ''}
@@ -82,10 +135,14 @@ function renderAiPreview(activity) {
   aiDocument.focus();
 }
 
+function generatedDocumentStyles() {
+  return `@page{size:A4;margin:8mm}body{font-family:Arial,sans-serif;max-width:190mm;margin:0 auto;color:#17251f;font-size:10pt;line-height:1.2}
+    h1,h2,h3{color:#541020}.generated-school-header{border-bottom:1px solid #333;margin-bottom:8px;padding-bottom:6px}.generated-standard-header div{display:flex;justify-content:space-between;font-size:9pt}.generated-material h2{margin:6px 0}.generated-material p{margin:5px 0}.generated-questions{margin:6px 0;padding-left:22px}.generated-questions li{margin:5px 0}.generated-questions p{margin:0}.answer-lines{height:23px;border-bottom:1px solid #bbb}.generated-figure{display:flex;flex-direction:column;align-items:center;justify-content:center;margin:6px 0;text-align:center;overflow:hidden;min-height:90px}.generated-figure img,.generated-figure .generated-illustration-image{display:block;width:auto!important;height:auto!important;max-width:100%!important;max-height:55mm!important;object-fit:contain!important;object-position:center;margin:0 auto}.generated-figure figcaption{font-size:8pt}.generated-bncc{margin:6px 0;padding:6px 8px;border-left:3px solid #541020;background:#faf6f7}.generated-answer-key-page{break-before:page;page-break-before:always;padding-top:12mm}.generated-activity-page{break-after:page;page-break-after:always}`;
+}
+
 function downloadAiContent(extension, mimeType) {
   const cleanDocument = `<!doctype html><html lang="pt-BR"><meta charset="utf-8"><title>Material escolar</title>
-    <style>@page{size:A4;margin:8mm}body{font-family:Arial,sans-serif;max-width:190mm;margin:0 auto;color:#17251f;font-size:10pt;line-height:1.2}
-    h1,h2,h3{color:#541020}.generated-school-header{border-bottom:1px solid #333;margin-bottom:8px;padding-bottom:6px}.generated-standard-header div{display:flex;justify-content:space-between;font-size:9pt}.generated-material h2{margin:6px 0}.generated-material p{margin:5px 0}.generated-questions{margin:6px 0;padding-left:22px}.generated-questions li{margin:5px 0}.generated-questions p{margin:0}.answer-lines{height:23px;border-bottom:1px solid #bbb}.generated-figure{margin:6px 0;text-align:center}.generated-figure img{max-height:55px;max-width:100%}.generated-figure figcaption{font-size:8pt}.generated-answer-key-page{break-before:page;page-break-before:always;padding-top:12mm}.generated-activity-page{break-after:page;page-break-after:always}</style>
+    <style>${generatedDocumentStyles()}</style>
     <body>${aiDocument.innerHTML}</body></html>`;
   const blob = new Blob([cleanDocument], { type: mimeType });
   const link = document.createElement('a');
@@ -116,7 +173,14 @@ aiForm.addEventListener('submit', async event => {
   event.preventDefault();
   aiFormError.hidden = true;
   const formData = Object.fromEntries(new FormData(aiForm));
-  lastAiPayload = { mode: 'text', ...formData, figures: aiForm.elements.figures.checked, answerKey: aiForm.elements.answerKey.checked, adapted: aiForm.elements.adapted.checked };
+  lastAiPayload = {
+    mode: 'text',
+    ...formData,
+    figures: aiForm.elements.figures.checked,
+    answerKey: aiForm.elements.answerKey.checked,
+    adapted: aiForm.elements.adapted.checked,
+    bncc: aiForm.elements.bncc?.checked || false
+  };
   const submit = aiForm.querySelector('[type="submit"]');
   submit.disabled = true;
   submit.textContent = 'Criando com a IA...';
@@ -191,7 +255,7 @@ document.querySelector('#ai-photo-option').addEventListener('click', () => {
 });
 document.querySelector('#ai-download-pdf').addEventListener('click', () => {
   const printWindow = window.open('', '_blank');
-  printWindow.document.write(`<title>Material escolar</title><style>@page{size:A4;margin:8mm}body{font-family:Arial,sans-serif;max-width:190mm;margin:0 auto;color:#17251f;font-size:10pt;line-height:1.2}h1,h2,h3{color:#541020}.generated-school-header{border-bottom:1px solid #333;margin-bottom:8px;padding-bottom:6px}.generated-standard-header div{display:flex;justify-content:space-between;font-size:9pt}.generated-material h2{margin:6px 0}.generated-material p{margin:5px 0}.generated-questions{margin:6px 0;padding-left:22px}.generated-questions li{margin:5px 0}.generated-questions p{margin:0}.answer-lines{height:23px;border-bottom:1px solid #bbb}.generated-figure{margin:6px 0;text-align:center}.generated-figure img{max-height:55px;max-width:100%}.generated-figure figcaption{font-size:8pt}.generated-answer-key-page{break-before:page;page-break-before:always;padding-top:12mm}.generated-activity-page{break-after:page;page-break-after:always}</style>${aiDocument.innerHTML}`);
+  printWindow.document.write(`<title>Material escolar</title><style>${generatedDocumentStyles()}</style>${aiDocument.innerHTML}`);
   printWindow.document.close();
   printWindow.print();
 });
