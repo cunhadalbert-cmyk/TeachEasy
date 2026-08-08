@@ -3,10 +3,10 @@ const REFRESH_COOKIE = 'teacheasy_refresh';
 
 function requireConfig() {
   const url = String(process.env.SUPABASE_URL || '').replace(/\/$/, '');
-  const anonKey = process.env.SUPABASE_ANON_KEY;
-  const serviceKey = process.env.SUPABASE_SERVICE_ROLE_KEY;
-  if (!url || !anonKey) throw new Error('SUPABASE_NOT_CONFIGURED');
-  return { url, anonKey, serviceKey };
+  const publicKey = process.env.SUPABASE_PUBLISHABLE_KEY || process.env.SUPABASE_ANON_KEY;
+  const serverKey = process.env.SUPABASE_SECRET_KEY || process.env.SUPABASE_SERVICE_ROLE_KEY;
+  if (!url || !publicKey) throw new Error('SUPABASE_NOT_CONFIGURED');
+  return { url, publicKey, serverKey };
 }
 
 function parseCookies(request) {
@@ -40,10 +40,10 @@ function clearSessionCookies(response) {
 }
 
 async function authFetch(path, options = {}) {
-  const { url, anonKey } = requireConfig();
+  const { url, publicKey } = requireConfig();
   const response = await fetch(`${url}/auth/v1${path}`, {
     ...options,
-    headers: { apikey: anonKey, 'Content-Type': 'application/json', ...(options.headers || {}) }
+    headers: { apikey: publicKey, 'Content-Type': 'application/json', ...(options.headers || {}) }
   });
   const data = await response.json().catch(() => ({}));
   return { response, data };
@@ -86,13 +86,14 @@ async function getAuthenticatedUser(request, response) {
 }
 
 async function serviceRest(path, options = {}) {
-  const { url, serviceKey } = requireConfig();
-  if (!serviceKey) throw new Error('SUPABASE_SERVICE_NOT_CONFIGURED');
+  const { url, serverKey } = requireConfig();
+  if (!serverKey) throw new Error('SUPABASE_SERVICE_NOT_CONFIGURED');
+  const isNewSecretKey = String(serverKey).startsWith('sb_secret_');
   const response = await fetch(`${url}/rest/v1${path}`, {
     ...options,
     headers: {
-      apikey: serviceKey,
-      Authorization: `Bearer ${serviceKey}`,
+      apikey: serverKey,
+      ...(isNewSecretKey ? {} : { Authorization: `Bearer ${serverKey}` }),
       'Content-Type': 'application/json',
       ...(options.headers || {})
     }
