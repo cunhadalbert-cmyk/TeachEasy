@@ -41,19 +41,6 @@ function buildSchoolHeader() {
   </header>`;
 }
 
-function activityIllustration(activity, data) {
-  const topic = escapeContent(activity?.illustration || data.topic || data.subject || 'Aprender');
-  const subject = String(data.subject || '').toLowerCase();
-  const symbol = subject.includes('matem') ? '＋ − × ÷' : subject.includes('ciên') ? '☀︎  ☁︎  ♧' : subject.includes('portugu') ? 'A  B  C' : '✦  ✦  ✦';
-  const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="620" height="150" viewBox="0 0 620 150" role="img" aria-label="Ilustração pedagógica: ${topic}">
-    <rect width="620" height="150" rx="18" fill="#f5f7f1"/><circle cx="84" cy="75" r="46" fill="#d9eadf"/>
-    <text x="84" y="88" text-anchor="middle" font-family="Arial, sans-serif" font-size="29" font-weight="700" fill="#1b513d">${symbol}</text>
-    <text x="156" y="66" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#173d2e">Observe a ilustração</text>
-    <text x="156" y="98" font-family="Arial, sans-serif" font-size="19" fill="#173d2e">${topic.slice(0, 58)}</text>
-  </svg>`;
-  return `data:image/svg+xml;charset=utf-8,${encodeURIComponent(svg)}`;
-}
-
 function buildQuestions(data) {
   const count = Math.min(Math.max(Number(data.questionCount) || 5, 1), 30);
   return Array.from({ length: count }, (_, index) => {
@@ -83,7 +70,8 @@ function renderAiPreview(activity) {
       <h2>${escapeContent(activity?.title || data.topic)}</h2>
       <p><strong>Disciplina:</strong> ${escapeContent(data.subject || 'A definir')} · <strong>Dificuldade:</strong> ${escapeContent(data.difficulty)}</p>
       ${data.objective ? `<p><strong>Objetivo:</strong> ${escapeContent(data.objective)}</p>` : ''}
-      ${data.figures ? `<figure class="generated-figure"><img src="${activityIllustration(activity, data)}" alt="Ilustração pedagógica sobre ${escapeContent(activity?.illustration || data.topic || data.subject)}"><figcaption>Figura de apoio para a atividade.</figcaption></figure>` : ''}
+      ${data.figures && activity?.illustrationDataUrl ? `<figure class="generated-figure"><img src="${activity.illustrationDataUrl}" alt="Ilustração colorida sobre ${escapeContent(activity?.illustration || data.topic || data.subject)}"><figcaption>Figura colorida de apoio para a atividade.</figcaption></figure>` : ''}
+      ${data.figures && activity?.illustrationError ? `<p class="generated-image-notice">${escapeContent(activity.illustrationError)}</p>` : ''}
       <ol class="generated-questions">${Array.isArray(activity?.questions) && activity.questions.length ? activity.questions.map(question => `<li><p>${escapeContent(question.prompt || question)}</p><div class="answer-lines"></div></li>`).join('') : buildQuestions(data)}</ol>
       ${data.adapted ? `<section class="generated-adapted"><h3>Versão adaptada para inclusão</h3><p>Comandos curtos, apoio visual, linguagem direta e menor carga por bloco.</p></section>` : ''}
     </section></section>
@@ -203,7 +191,7 @@ document.querySelector('#ai-photo-option').addEventListener('click', () => {
 });
 document.querySelector('#ai-download-pdf').addEventListener('click', () => {
   const printWindow = window.open('', '_blank');
-  printWindow.document.write(`<title>Material escolar</title><style>body{font-family:Arial;max-width:800px;margin:40px auto;line-height:1.5}li{margin:16px 0}</style>${aiDocument.innerHTML}`);
+  printWindow.document.write(`<title>Material escolar</title><style>@page{size:A4;margin:8mm}body{font-family:Arial,sans-serif;max-width:190mm;margin:0 auto;color:#17251f;font-size:10pt;line-height:1.2}h1,h2,h3{color:#541020}.generated-school-header{border-bottom:1px solid #333;margin-bottom:8px;padding-bottom:6px}.generated-standard-header div{display:flex;justify-content:space-between;font-size:9pt}.generated-material h2{margin:6px 0}.generated-material p{margin:5px 0}.generated-questions{margin:6px 0;padding-left:22px}.generated-questions li{margin:5px 0}.generated-questions p{margin:0}.answer-lines{height:23px;border-bottom:1px solid #bbb}.generated-figure{margin:6px 0;text-align:center}.generated-figure img{max-height:55px;max-width:100%}.generated-figure figcaption{font-size:8pt}.generated-answer-key-page{break-before:page;page-break-before:always;padding-top:12mm}.generated-activity-page{break-after:page;page-break-after:always}</style>${aiDocument.innerHTML}`);
   printWindow.document.close();
   printWindow.print();
 });
