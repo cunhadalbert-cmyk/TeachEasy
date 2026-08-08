@@ -17,18 +17,22 @@ function responseText(data) {
     .join('\n');
 }
 
-async function generateColoredIllustration(activity, input) {
+async function generateIllustration(activity, input) {
   const firstQuestion = safeText(activity.questions?.[0]?.prompt || activity.illustration || input.topic || input.request, 650);
-  const prompt = `Crie UMA ilustração escolar colorida, clara e infantil para acompanhar uma atividade brasileira. Ela deve representar exatamente este enunciado: "${firstQuestion}". Se houver uma quantidade, grupos ou objetos no enunciado, desenhe a quantidade correta e deixe cada elemento bem visível para a criança contar. Estilo: ilustração educativa simples, cores alegres, fundo branco ou muito claro, composição horizontal. Não coloque letras, palavras, números, respostas, marcas d'água ou logotipos na imagem.`;
+  const blackAndWhite = input.illustrationStyle === 'bw';
+  const visualStyle = blackAndWhite
+    ? 'preto e branco, traço limpo e forte, sem tons de cinza, próprio para imprimir e colorir'
+    : 'colorida, clara e infantil, com cores alegres e fundo branco ou muito claro';
+  const prompt = `Crie UMA ilustração escolar ${visualStyle} para acompanhar uma atividade brasileira. Ela deve representar exatamente este enunciado: "${firstQuestion}". Se houver uma quantidade, grupos ou objetos no enunciado, desenhe a quantidade correta e deixe cada elemento bem visível para a criança contar. Preserve a proporção natural dos objetos e use composição equilibrada, centralizada e com margens. Não coloque letras, palavras, números, respostas, marcas d'água ou logotipos na imagem.`;
   const imageResponse = await fetch('https://api.openai.com/v1/images/generations', {
     method: 'POST',
     headers: { Authorization: `Bearer ${process.env.OPENAI_API_KEY}`, 'Content-Type': 'application/json' },
     body: JSON.stringify({ model: 'gpt-image-2', prompt, size: '1024x1024', quality: 'low', output_format: 'png' })
   });
   const imageData = await imageResponse.json();
-  if (!imageResponse.ok) throw new Error(imageData.error?.message || 'Não foi possível criar a figura colorida.');
+  if (!imageResponse.ok) throw new Error(imageData.error?.message || 'Não foi possível criar a figura.');
   const imageBase64 = imageData.data?.[0]?.b64_json;
-  if (!imageBase64) throw new Error('A IA não retornou a figura colorida.');
+  if (!imageBase64) throw new Error('A IA não retornou a figura.');
   return `data:image/png;base64,${imageBase64}`;
 }
 
@@ -43,10 +47,13 @@ module.exports = async function handler(request, response) {
     if (!isPhoto && input.mode !== 'text') return json(response, 400, { error: 'Tipo de criação inválido.' });
     if (isPhoto && !/^data:image\/(jpeg|png);base64,/i.test(input.imageDataUrl || '')) return json(response, 400, { error: 'Envie uma foto JPG ou PNG válida.' });
     const questions = Math.min(20, Math.max(1, Number(input.questionCount) || 5));
+    const bnccInstruction = input.bncc
+      ? `Alinhe o material à BNCC. ${input.bnccMode === 'skill' ? 'Informe no campo bncc uma habilidade/código apenas quando houver segurança de correspondência; nunca invente código.' : 'Use a BNCC como referência pedagógica e descreva no campo bncc o alinhamento de forma clara, sem inventar códigos.'}`
+      : 'Não inclua referência BNCC.';
     const context = isPhoto
       ? `Analise a imagem enviada e crie uma atividade original para ${safeText(input.grade, 80)} com ${questions} questões. ${input.adapted ? 'Faça comandos curtos e uma versão acessível para inclusão.' : ''}`
       : `Crie um material escolar original. Pedido livre: ${safeText(input.request, 1200) || 'Crie uma atividade escolar adequada para uma turma de ensino básico.'}. Tipo: ${safeText(input.materialType, 80) || 'Atividade'}. Etapa: ${safeText(input.stage, 100) || 'não informada'}. Ano: ${safeText(input.grade, 80) || 'não informado'}. Disciplina: ${safeText(input.subject, 80) || 'não informada'}. Tema: ${safeText(input.topic, 180) || 'livre'}. Objetivo: ${safeText(input.objective, 240) || 'promover aprendizagem ativa'}. Dificuldade: ${safeText(input.difficulty, 50) || 'Intermediário'}. Tipo de questões: ${safeText(input.questionType, 50) || 'Mistas'}. Faça ${questions} questões. ${input.adapted ? 'Inclua linguagem acessível.' : ''}`;
-    const content = [{ type: 'input_text', text: `Você é um especialista em educação brasileira. ${context} Não invente códigos BNCC. Retorne apenas JSON com title, summary, illustration (uma descrição curta para ilustração pedagógica), questions (lista de objetos com prompt) e answerKey. O conteúdo deve ser apropriado e revisável por professor.` }];
+    const content = [{ type: 'input_text', text: `Você é um especialista em educação brasileira. ${context} ${bnccInstruction} Retorne apenas JSON com title, summary, illustration (uma descrição curta para ilustração pedagógica), bncc (texto curto ou string vazia), questions (lista de objetos com prompt) e answerKey. O conteúdo deve ser apropriado e revisável por professor.` }];
     if (isPhoto) content.push({ type: 'input_image', image_url: input.imageDataUrl, detail: 'low' });
     const openAiResponse = await fetch('https://api.openai.com/v1/responses', {
       method: 'POST',
@@ -61,15 +68,16 @@ module.exports = async function handler(request, response) {
       title: safeText(activity.title, 180),
       summary: safeText(activity.summary, 600),
       illustration: safeText(activity.illustration, 100),
+      bncc: input.bncc ? safeText(activity.bncc, 700) : '',
       questions: activity.questions.slice(0, questions).map(question => ({ prompt: safeText(question.prompt || question, 700) })),
       answerKey: safeText(activity.answerKey, 1400)
     };
     if (!isPhoto && input.figures) {
       try {
-        normalizedActivity.illustrationDataUrl = await generateColoredIllustration(normalizedActivity, input);
+        normalizedActivity.illustrationDataUrl = await generateIllustration(normalizedActivity, input);
       } catch (imageError) {
         console.warn('activity-illustration-failed', imageError.message || imageError);
-        normalizedActivity.illustrationError = 'A atividade foi criada, mas a figura colorida não pôde ser gerada agora. Tente gerar novamente.';
+        normalizedActivity.illustrationError = 'A atividade foi criada, mas a figura não pôde ser gerada agora. Tente gerar novamente.';
       }
     }
     return json(response, 200, { activity: normalizedActivity });
@@ -77,4 +85,4 @@ module.exports = async function handler(request, response) {
     console.error('activity-generation-failed', error.message || error);
     return json(response, 502, { error: error.message || 'Erro ao gerar atividade.' });
   }
-}
+};
