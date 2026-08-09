@@ -1,4 +1,4 @@
-const { getAuthenticatedUser, getProfile } = require('../_lib/supabase');
+const { getAuthenticatedUser, getProfile } = require('../_lib/firebase');
 
 function json(response, status, payload) {
   response.status(status).setHeader('Content-Type', 'application/json; charset=utf-8').end(JSON.stringify(payload));
@@ -19,7 +19,7 @@ module.exports = async function handler(request, response) {
       user: {
         id: session.user.id,
         email: session.user.email,
-        displayName: profile.display_name || session.user.user_metadata?.display_name || ''
+        displayName: profile.display_name || session.user.displayName || ''
       },
       subscription: {
         plan: profile.plan,
@@ -36,7 +36,7 @@ module.exports = async function handler(request, response) {
       }
     });
   } catch (error) {
-    if (/SUPABASE_.*NOT_CONFIGURED/.test(error.message || '')) return json(response, 503, { error: 'Cadastro ainda não foi conectado ao banco.' });
+    if (/FIREBASE_.*NOT_CONFIGURED/.test(error.message || '')) return json(response, 503, { error: 'Cadastro ainda não foi conectado ao Firebase.' });
     console.error('account-read-failed', error.message || error);
     return json(response, 500, { error: 'Não foi possível consultar a conta agora.' });
   }
