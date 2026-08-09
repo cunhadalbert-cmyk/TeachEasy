@@ -26,9 +26,17 @@ module.exports = async function handler(request, response) {
     await saveMercadoPagoSubscription(session.user.id, subscription.id, subscription.status || 'pending');
     return json(response, 201, { checkoutUrl: subscription.init_point });
   } catch (error) {
-    if (/MERCADOPAGO_.*NOT_CONFIGURED/.test(error.message || '')) return json(response, 503, { error: 'Pagamento ainda não foi conectado ao Mercado Pago.' });
-    if (/FIREBASE_.*NOT_CONFIGURED/.test(error.message || '')) return json(response, 503, { error: 'Cadastro ainda não foi conectado ao Firebase.' });
-    console.error('subscription-create-failed', error.message || error);
+    const code = String(error?.message || '');
+    if (code === 'MERCADOPAGO_NOT_CONFIGURED') {
+      console.warn('mercadopago-config-missing', { accessToken: false });
+      return json(response, 503, { error: 'O Access Token do Mercado Pago não está disponível neste ambiente.' });
+    }
+    if (code === 'MERCADOPAGO_PLAN_NOT_CONFIGURED') {
+      console.warn('mercadopago-config-missing', { planId: false });
+      return json(response, 503, { error: 'O ID do plano do Mercado Pago não está disponível neste ambiente.' });
+    }
+    if (/FIREBASE_.*NOT_CONFIGURED/.test(code)) return json(response, 503, { error: 'Cadastro ainda não foi conectado ao Firebase.' });
+    console.error('subscription-create-failed', code || error);
     return json(response, 502, { error: 'Não foi possível abrir o pagamento agora.' });
   }
 };
