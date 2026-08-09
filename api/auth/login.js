@@ -1,7 +1,18 @@
-const { getAuthenticatedUser, setSessionCookies, signIn } = require('../_lib/firebase');
+const { setSessionCookies, signIn } = require('../_lib/firebase');
 
 function json(response, status, payload) {
   response.status(status).setHeader('Content-Type', 'application/json; charset=utf-8').end(JSON.stringify(payload));
+}
+
+async function emailIsVerified(idToken) {
+  const apiKey = String(process.env.FIREBASE_API_KEY || '').trim();
+  const authResponse = await fetch(`https://identitytoolkit.googleapis.com/v1/accounts:lookup?key=${encodeURIComponent(apiKey)}`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ idToken })
+  });
+  const data = await authResponse.json().catch(() => ({}));
+  return authResponse.ok && Boolean(data.users?.[0]?.emailVerified);
 }
 
 module.exports = async function handler(request, response) {
@@ -13,13 +24,10 @@ module.exports = async function handler(request, response) {
     if (!email || !password) return json(response, 400, { error: 'Informe e-mail e senha.' });
 
     const { response: authResponse, data } = await signIn(email, password);
-    if (!authResponse.ok || !data?.idToken) {
-      return json(response, 401, { error: 'E-mail ou senha inválidos.' });
-    }
+    if (!authResponse.ok || !data?.idToken) return json(response, 401, { error: 'E-mail ou senha inválidos.' });
+    if (!(await emailIsVerified(data.idToken))) return json(response, 403, { error: 'Confirme seu e-mail antes de entrar.' });
 
     setSessionCookies(response, data);
-    const session = await getAuthenticatedUser(request, response);
-    if (session === null) return json(response, 403, { error: 'Confirme seu e-mail antes de entrar.' });
     return json(response, 200, { ok: true });
   } catch (error) {
     if (error.message === 'FIREBASE_NOT_CONFIGURED') return json(response, 503, { error: 'Login ainda não foi conectado ao Firebase.' });
