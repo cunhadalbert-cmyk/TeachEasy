@@ -1,4 +1,4 @@
-const { getAuthenticatedUser, getProfile, saveMercadoPagoSubscription } = require('../_lib/supabase');
+const { getAuthenticatedUser, getProfile, saveMercadoPagoSubscription } = require('../_lib/firebase');
 const { createSubscription } = require('../_lib/mercadopago');
 
 function json(response, status, payload) {
@@ -27,7 +27,7 @@ module.exports = async function handler(request, response) {
     return json(response, 201, { checkoutUrl: subscription.init_point });
   } catch (error) {
     if (/MERCADOPAGO_.*NOT_CONFIGURED/.test(error.message || '')) return json(response, 503, { error: 'Pagamento ainda não foi conectado ao Mercado Pago.' });
-    if (/SUPABASE_.*NOT_CONFIGURED/.test(error.message || '')) return json(response, 503, { error: 'Cadastro ainda não foi conectado ao banco.' });
+    if (/FIREBASE_.*NOT_CONFIGURED/.test(error.message || '')) return json(response, 503, { error: 'Cadastro ainda não foi conectado ao Firebase.' });
     console.error('subscription-create-failed', error.message || error);
     return json(response, 502, { error: 'Não foi possível abrir o pagamento agora.' });
   }
