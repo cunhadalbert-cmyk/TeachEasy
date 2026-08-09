@@ -1,4 +1,4 @@
-const { setSessionCookies, signIn } = require('../_lib/supabase');
+const { getAuthenticatedUser, setSessionCookies, signIn } = require('../_lib/firebase');
 
 function json(response, status, payload) {
   response.status(status).setHeader('Content-Type', 'application/json; charset=utf-8').end(JSON.stringify(payload));
@@ -13,14 +13,16 @@ module.exports = async function handler(request, response) {
     if (!email || !password) return json(response, 400, { error: 'Informe e-mail e senha.' });
 
     const { response: authResponse, data } = await signIn(email, password);
-    if (!authResponse.ok || !data?.access_token) {
-      return json(response, 401, { error: 'E-mail ou senha inválidos, ou cadastro ainda não confirmado.' });
+    if (!authResponse.ok || !data?.idToken) {
+      return json(response, 401, { error: 'E-mail ou senha inválidos.' });
     }
 
     setSessionCookies(response, data);
+    const session = await getAuthenticatedUser(request, response);
+    if (session === null) return json(response, 403, { error: 'Confirme seu e-mail antes de entrar.' });
     return json(response, 200, { ok: true });
   } catch (error) {
-    if (error.message === 'SUPABASE_NOT_CONFIGURED') return json(response, 503, { error: 'Login ainda não foi conectado ao banco.' });
+    if (error.message === 'FIREBASE_NOT_CONFIGURED') return json(response, 503, { error: 'Login ainda não foi conectado ao Firebase.' });
     console.error('login-failed', error.message || error);
     return json(response, 500, { error: 'Não foi possível entrar agora.' });
   }
