@@ -22,16 +22,48 @@ async function mercadoPagoFetch(path, options = {}) {
   return { response, data };
 }
 
+async function getPlan(planId) {
+  const id = encodeURIComponent(String(planId || ''));
+  if (!id) throw new Error('MERCADOPAGO_PLAN_NOT_CONFIGURED');
+  const { response, data } = await mercadoPagoFetch(`/preapproval_plan/${id}`, { method: 'GET' });
+  if (!response.ok) {
+    const error = new Error(data?.message || data?.error || 'MERCADOPAGO_PLAN_LOOKUP_FAILED');
+    error.details = data;
+    throw error;
+  }
+  return data;
+}
+
 async function createSubscription({ userId, email, backUrl, notificationUrl }) {
   const { planId } = requireMercadoPagoConfig();
   if (!planId) throw new Error('MERCADOPAGO_PLAN_NOT_CONFIGURED');
+
+  const plan = await getPlan(planId);
+  const recurring = plan?.auto_recurring || {};
+  const transactionAmount = Number(recurring.transaction_amount);
+  const frequency = Number(recurring.frequency || 1);
+  const frequencyType = String(recurring.frequency_type || 'months');
+  const currencyId = String(recurring.currency_id || 'BRL');
+
+  if (!Number.isFinite(transactionAmount) || transactionAmount <= 0) {
+    throw new Error('MERCADOPAGO_PLAN_AMOUNT_INVALID');
+  }
+
   const payload = {
-    preapproval_plan_id: planId,
+    reason: String(plan.reason || 'TeachEasy Premium'),
+    external_reference: String(userId),
     payer_email: email,
-    external_reference: userId,
-    back_url: backUrl
+    auto_recurring: {
+      frequency,
+      frequency_type: frequencyType,
+      transaction_amount: transactionAmount,
+      currency_id: currencyId
+    },
+    back_url: backUrl,
+    status: 'pending'
   };
   if (notificationUrl) payload.notification_url = notificationUrl;
+
   const { response, data } = await mercadoPagoFetch('/preapproval', {
     method: 'POST',
     body: JSON.stringify(payload)
