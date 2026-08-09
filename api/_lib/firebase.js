@@ -6,9 +6,22 @@ let cachedAdminToken = null;
 
 function requireConfig() {
   const apiKey = String(process.env.FIREBASE_API_KEY || '').trim();
-  const projectId = String(process.env.FIREBASE_PROJECT_ID || '').trim();
-  const clientEmail = String(process.env.FIREBASE_CLIENT_EMAIL || '').trim();
-  const privateKey = String(process.env.FIREBASE_PRIVATE_KEY || '').replace(/\\n/g, '\n').trim();
+  let projectId = String(process.env.FIREBASE_PROJECT_ID || '').trim();
+  let clientEmail = String(process.env.FIREBASE_CLIENT_EMAIL || '').trim();
+  let privateKey = String(process.env.FIREBASE_PRIVATE_KEY || '').replace(/\\n/g, '\n').trim();
+
+  const serviceAccountJson = String(process.env.FIREBASE_SERVICE_ACCOUNT_JSON || '').trim();
+  if (serviceAccountJson) {
+    try {
+      const credentials = JSON.parse(serviceAccountJson);
+      projectId = projectId || String(credentials.project_id || '').trim();
+      clientEmail = clientEmail || String(credentials.client_email || '').trim();
+      privateKey = privateKey || String(credentials.private_key || '').replace(/\\n/g, '\n').trim();
+    } catch {
+      throw new Error('FIREBASE_SERVICE_ACCOUNT_INVALID');
+    }
+  }
+
   if (!apiKey || !projectId || !clientEmail || !privateKey) throw new Error('FIREBASE_NOT_CONFIGURED');
   return { apiKey, projectId, clientEmail, privateKey };
 }
