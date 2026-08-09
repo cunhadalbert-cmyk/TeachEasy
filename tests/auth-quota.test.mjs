@@ -13,20 +13,21 @@ test('conta TeachEasy apresenta preço de lançamento e franquia de 60 geraçõe
   assert.match(html, /PDF, Word e gabarito não consomem geração/);
 });
 
-test('schema cria perfil aguardando pagamento e limita IA a 60 por padrão', async () => {
-  const sql = await read('supabase/schema.sql');
-  assert.match(sql, /subscription_status text not null default 'pending_payment'/);
-  assert.match(sql, /ai_limit integer not null default 60/);
-  assert.match(sql, /subscription_status <> 'active'/);
-  assert.match(sql, /AI_QUOTA_EXCEEDED/);
-  assert.match(sql, /for update/);
+test('Firebase cria perfil aguardando pagamento e limita IA a 60 por padrão', async () => {
+  const helper = await read('api/_lib/firebase.js');
+  assert.match(helper, /subscriptionStatus: 'pending_payment'/);
+  assert.match(helper, /aiLimit: 60/);
+  assert.match(helper, /values\.subscriptionStatus !== 'active'/);
+  assert.match(helper, /AI_QUOTA_EXCEEDED/);
+  assert.match(helper, /currentDocument: \{ updateTime \}/);
 });
 
-test('funções de quota são exclusivas do service role', async () => {
-  const sql = await read('supabase/schema.sql');
-  assert.match(sql, /revoke all on function public\.consume_ai_generation\(uuid\) from public, anon, authenticated/);
-  assert.match(sql, /grant execute on function public\.consume_ai_generation\(uuid\) to service_role/);
-  assert.match(sql, /grant execute on function public\.refund_ai_generation\(uuid\) to service_role/);
+test('Firebase usa backend com service account e Firestore', async () => {
+  const helper = await read('api/_lib/firebase.js');
+  assert.match(helper, /FIREBASE_CLIENT_EMAIL/);
+  assert.match(helper, /FIREBASE_PRIVATE_KEY/);
+  assert.match(helper, /https:\/\/www\.googleapis\.com\/auth\/datastore/);
+  assert.match(helper, /firestore\.googleapis\.com/);
 });
 
 test('endpoint de IA exige login e assinatura antes da OpenAI', async () => {
@@ -55,9 +56,17 @@ test('falha da geração devolve a unidade reservada', async () => {
   assert.match(api, /quotaReserved = false/);
 });
 
-test('sessão usa cookies HttpOnly e SameSite', async () => {
-  const helper = await read('api/_lib/supabase.js');
+test('sessão Firebase usa cookies HttpOnly e SameSite', async () => {
+  const helper = await read('api/_lib/firebase.js');
   assert.match(helper, /HttpOnly/);
   assert.match(helper, /SameSite=Lax/);
-  assert.match(helper, /SUPABASE_SERVICE_ROLE_KEY/);
+  assert.match(helper, /FIREBASE_PROJECT_ID/);
+});
+
+test('cadastro envia verificação de e-mail pelo Firebase', async () => {
+  const helper = await read('api/_lib/firebase.js');
+  assert.match(helper, /accounts:sendOobCode/);
+  assert.match(helper, /VERIFY_EMAIL/);
+  const login = await read('api/auth/login.js');
+  assert.match(login, /Confirme seu e-mail antes de entrar/);
 });
