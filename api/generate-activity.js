@@ -1,5 +1,5 @@
 const MAX_BODY_BYTES = 6_600_000;
-const { consumeAiGeneration, getAuthenticatedUser, refundAiGeneration } = require('./_lib/supabase');
+const { consumeAiGeneration, getAuthenticatedUser, refundAiGeneration } = require('./_lib/firebase');
 
 function json(response, status, payload) {
   response.status(status).setHeader('Content-Type', 'application/json; charset=utf-8').end(JSON.stringify(payload));
@@ -20,35 +20,22 @@ function responseText(data) {
 
 function pedagogicalContext(input, isPhoto) {
   if (isPhoto) return Boolean(safeText(input.grade, 80));
-  const text = [
-    input.request,
-    input.materialType,
-    input.stage,
-    input.grade,
-    input.subject,
-    input.topic,
-    input.objective
-  ].map(value => safeText(value, 1200)).join(' ').toLowerCase();
+  const text = [input.request,input.materialType,input.stage,input.grade,input.subject,input.topic,input.objective]
+    .map(value => safeText(value, 1200)).join(' ').toLowerCase();
   const educationalTerms = [
-    'atividade', 'avaliação', 'avaliacao', 'prova', 'exercício', 'exercicio', 'aula', 'escolar', 'escola',
-    'professor', 'aluno', 'turma', 'educação', 'educacao', 'infantil', 'fundamental', 'ensino médio', 'ensino medio',
-    'bncc', 'português', 'portugues', 'matemática', 'matematica', 'ciências', 'ciencias', 'história', 'historia',
-    'geografia', 'inglês', 'ingles', 'alfabetização', 'alfabetizacao', 'autismo', 'inclusão', 'inclusao', 'pedagógico', 'pedagogico'
+    'atividade','avaliação','avaliacao','prova','exercício','exercicio','aula','escolar','escola',
+    'professor','aluno','turma','educação','educacao','infantil','fundamental','ensino médio','ensino medio',
+    'bncc','português','portugues','matemática','matematica','ciências','ciencias','história','historia',
+    'geografia','inglês','ingles','alfabetização','alfabetizacao','autismo','inclusão','inclusao','pedagógico','pedagogico'
   ];
   return educationalTerms.some(term => text.includes(term));
 }
 
 function quotaError(error) {
   const message = String(error?.message || '').toUpperCase();
-  if (message.includes('SUBSCRIPTION_INACTIVE')) {
-    return { status: 402, message: 'Sua assinatura ainda não está ativa. Conclua o pagamento para usar a criação com IA.' };
-  }
-  if (message.includes('AI_QUOTA_EXCEEDED')) {
-    return { status: 429, message: 'Você usou as 60 gerações deste período. A franquia será renovada automaticamente no próximo ciclo.' };
-  }
-  if (message.includes('PROFILE_NOT_FOUND')) {
-    return { status: 403, message: 'Sua conta ainda não possui um perfil de assinatura válido.' };
-  }
+  if (message.includes('SUBSCRIPTION_INACTIVE')) return { status: 402, message: 'Sua assinatura ainda não está ativa. Conclua o pagamento para usar a criação com IA.' };
+  if (message.includes('AI_QUOTA_EXCEEDED')) return { status: 429, message: 'Você usou as 60 gerações deste período. A franquia será renovada automaticamente no próximo ciclo.' };
+  if (message.includes('PROFILE_NOT_FOUND')) return { status: 403, message: 'Sua conta ainda não possui um perfil de assinatura válido.' };
   return null;
 }
 
@@ -88,9 +75,7 @@ module.exports = async function handler(request, response) {
     const isPhoto = input.mode === 'photo';
     if (!isPhoto && input.mode !== 'text') return json(response, 400, { error: 'Tipo de criação inválido.' });
     if (isPhoto && !/^data:image\/(jpeg|png);base64,/i.test(input.imageDataUrl || '')) return json(response, 400, { error: 'Envie uma foto JPG ou PNG válida.' });
-    if (!pedagogicalContext(input, isPhoto)) {
-      return json(response, 400, { error: 'A IA do TeachEasy é exclusiva para atividades e conteúdos escolares. Informe uma turma, disciplina, tema ou objetivo pedagógico.' });
-    }
+    if (!pedagogicalContext(input, isPhoto)) return json(response, 400, { error: 'A IA do TeachEasy é exclusiva para atividades e conteúdos escolares. Informe uma turma, disciplina, tema ou objetivo pedagógico.' });
 
     let quota;
     try {
@@ -132,9 +117,8 @@ module.exports = async function handler(request, response) {
     };
 
     if (!isPhoto && input.figures) {
-      try {
-        normalizedActivity.illustrationDataUrl = await generateIllustration(normalizedActivity, input);
-      } catch (imageError) {
+      try { normalizedActivity.illustrationDataUrl = await generateIllustration(normalizedActivity, input); }
+      catch (imageError) {
         console.warn('activity-illustration-failed', imageError.message || imageError);
         normalizedActivity.illustrationError = 'A atividade foi criada, mas a figura não pôde ser gerada agora. Tente gerar novamente.';
       }
@@ -153,13 +137,10 @@ module.exports = async function handler(request, response) {
     });
   } catch (error) {
     if (quotaReserved && authenticatedUserId) {
-      try { await refundAiGeneration(authenticatedUserId); } catch (refundError) {
-        console.error('ai-quota-refund-failed', refundError.message || refundError);
-      }
+      try { await refundAiGeneration(authenticatedUserId); }
+      catch (refundError) { console.error('ai-quota-refund-failed', refundError.message || refundError); }
     }
-    if (/SUPABASE_.*NOT_CONFIGURED/.test(error.message || '')) {
-      return json(response, 503, { error: 'O cadastro do TeachEasy ainda não foi conectado ao banco.' });
-    }
+    if (/FIREBASE_.*NOT_CONFIGURED/.test(error.message || '')) return json(response, 503, { error: 'O cadastro do TeachEasy ainda não foi conectado ao Firebase.' });
     console.error('activity-generation-failed', error.message || error);
     return json(response, 502, { error: error.message || 'Erro ao gerar atividade.' });
   }
