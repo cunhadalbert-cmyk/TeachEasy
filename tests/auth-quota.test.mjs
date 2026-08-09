@@ -24,8 +24,10 @@ test('Firebase cria perfil aguardando pagamento e limita IA a 60 por padrão', a
 
 test('Firebase usa backend com service account e Firestore', async () => {
   const helper = await read('api/_lib/firebase.js');
-  assert.match(helper, /FIREBASE_CLIENT_EMAIL/);
-  assert.match(helper, /FIREBASE_PRIVATE_KEY/);
+  assert.match(helper, /FIREBASE_SERVICE_ACCOUNT_JSON/);
+  assert.match(helper, /credentials\.project_id/);
+  assert.match(helper, /credentials\.client_email/);
+  assert.match(helper, /credentials\.private_key/);
   assert.match(helper, /https:\/\/www\.googleapis\.com\/auth\/datastore/);
   assert.match(helper, /firestore\.googleapis\.com/);
 });
@@ -60,7 +62,7 @@ test('sessão Firebase usa cookies HttpOnly e SameSite', async () => {
   const helper = await read('api/_lib/firebase.js');
   assert.match(helper, /HttpOnly/);
   assert.match(helper, /SameSite=Lax/);
-  assert.match(helper, /FIREBASE_PROJECT_ID/);
+  assert.match(helper, /FIREBASE_API_KEY/);
 });
 
 test('cadastro envia verificação de e-mail pelo Firebase', async () => {
