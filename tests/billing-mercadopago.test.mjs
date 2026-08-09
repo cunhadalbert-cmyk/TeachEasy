@@ -9,8 +9,8 @@ test('checkout usa assinatura recorrente mensal do Mercado Pago', async () => {
   const endpoint = await read('api/billing/create-subscription.js');
   assert.match(helper, /preapproval_plan_id/);
   assert.match(helper, /\/preapproval/);
-  assert.match(endpoint, /external_reference|userId/);
-  assert.match(endpoint, /R\$ 19,90|createSubscription/);
+  assert.match(endpoint, /userId/);
+  assert.match(endpoint, /createSubscription/);
 });
 
 test('webhook valida assinatura e consulta assinatura antes de ativar conta', async () => {
@@ -21,13 +21,14 @@ test('webhook valida assinatura e consulta assinatura antes de ativar conta', as
   assert.match(webhook, /validateWebhookSignature/);
   assert.match(webhook, /getSubscription\(dataId\)/);
   assert.match(webhook, /syncSubscriptionStatus/);
+  assert.match(webhook, /validFirebaseUid/);
 });
 
-test('schema armazena vínculo Mercado Pago e preço de lançamento', async () => {
-  const sql = await read('supabase/schema.sql');
-  assert.match(sql, /subscription_price numeric\(10,2\) not null default 19\.90/);
-  assert.match(sql, /mercadopago_subscription_id text/);
-  assert.match(sql, /mercadopago_status text/);
+test('Firebase armazena vínculo Mercado Pago e preço de lançamento', async () => {
+  const firebase = await read('api/_lib/firebase.js');
+  assert.match(firebase, /subscriptionPrice: 19\.90/);
+  assert.match(firebase, /mercadoPagoSubscriptionId/);
+  assert.match(firebase, /mercadoPagoStatus/);
 });
 
 test('painel abre checkout somente após login', async () => {
