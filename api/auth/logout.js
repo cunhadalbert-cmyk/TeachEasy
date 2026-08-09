@@ -1,4 +1,4 @@
-const { clearSessionCookies } = require('../_lib/supabase');
+const { clearSessionCookies } = require('../_lib/firebase');
 
 module.exports = async function handler(request, response) {
   if (request.method !== 'POST') {
