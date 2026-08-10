@@ -1,26 +1,15 @@
 const crypto = require('crypto');
 
-function isPreviewEnvironment() {
-  return process.env.VERCEL_ENV === 'preview';
-}
-
 function requireMercadoPagoConfig() {
-  const preview = isPreviewEnvironment();
-  const accessToken = preview
-    ? process.env.MERCADOPAGO_TEST_ACCESS_TOKEN
-    : process.env.MERCADOPAGO_ACCESS_TOKEN;
-  const webhookSecret = preview
-    ? process.env.MERCADOPAGO_TEST_WEBHOOK_SECRET
-    : process.env.MERCADOPAGO_WEBHOOK_SECRET;
-  const planId = preview
-    ? process.env.MERCADOPAGO_TEST_PLAN_ID
-    : process.env.MERCADOPAGO_PLAN_ID;
+  // A Vercel já isola os valores por ambiente (Preview e Production).
+  // Portanto, usamos os mesmos nomes de variáveis e deixamos a Vercel
+  // fornecer o valor correspondente ao ambiente do deployment.
+  const accessToken = process.env.MERCADOPAGO_ACCESS_TOKEN;
+  const webhookSecret = process.env.MERCADOPAGO_WEBHOOK_SECRET;
+  const planId = process.env.MERCADOPAGO_PLAN_ID;
 
-  if (!accessToken) {
-    throw new Error(preview ? 'MERCADOPAGO_TEST_NOT_CONFIGURED' : 'MERCADOPAGO_NOT_CONFIGURED');
-  }
-
-  return { accessToken, webhookSecret, planId, preview };
+  if (!accessToken) throw new Error('MERCADOPAGO_NOT_CONFIGURED');
+  return { accessToken, webhookSecret, planId };
 }
 
 async function mercadoPagoFetch(path, options = {}) {
@@ -39,9 +28,7 @@ async function mercadoPagoFetch(path, options = {}) {
 
 async function getPlan(planId) {
   const id = encodeURIComponent(String(planId || ''));
-  if (!id) {
-    throw new Error(isPreviewEnvironment() ? 'MERCADOPAGO_TEST_PLAN_NOT_CONFIGURED' : 'MERCADOPAGO_PLAN_NOT_CONFIGURED');
-  }
+  if (!id) throw new Error('MERCADOPAGO_PLAN_NOT_CONFIGURED');
   const { response, data } = await mercadoPagoFetch(`/preapproval_plan/${id}`, { method: 'GET' });
   if (!response.ok) {
     const error = new Error(data?.message || data?.error || 'MERCADOPAGO_PLAN_LOOKUP_FAILED');
@@ -53,9 +40,7 @@ async function getPlan(planId) {
 
 async function createSubscription({ userId, email, backUrl, notificationUrl }) {
   const { planId } = requireMercadoPagoConfig();
-  if (!planId) {
-    throw new Error(isPreviewEnvironment() ? 'MERCADOPAGO_TEST_PLAN_NOT_CONFIGURED' : 'MERCADOPAGO_PLAN_NOT_CONFIGURED');
-  }
+  if (!planId) throw new Error('MERCADOPAGO_PLAN_NOT_CONFIGURED');
 
   const plan = await getPlan(planId);
   const recurring = plan?.auto_recurring || {};
@@ -105,9 +90,7 @@ async function getSubscription(subscriptionId) {
 
 function validateWebhookSignature({ xSignature, xRequestId, dataId }) {
   const { webhookSecret } = requireMercadoPagoConfig();
-  if (!webhookSecret) {
-    throw new Error(isPreviewEnvironment() ? 'MERCADOPAGO_TEST_WEBHOOK_NOT_CONFIGURED' : 'MERCADOPAGO_WEBHOOK_NOT_CONFIGURED');
-  }
+  if (!webhookSecret) throw new Error('MERCADOPAGO_WEBHOOK_NOT_CONFIGURED');
   const parts = String(xSignature || '').split(',').map(part => part.trim());
   const ts = parts.find(part => part.startsWith('ts='))?.slice(3);
   const received = parts.find(part => part.startsWith('v1='))?.slice(3);
