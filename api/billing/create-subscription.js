@@ -31,7 +31,8 @@ module.exports = async function handler(request, response) {
     const subscription = await createSubscription({
       userId: session.user.id,
       email: session.user.email,
-      // O Mercado Pago precisa de uma URL pública; deployments Preview são protegidos.
+      // O retorno do Preview usa o domínio público porque o Mercado Pago precisa
+      // conseguir redirecionar o comprador para uma URL acessível.
       backUrl: process.env.VERCEL_ENV === 'preview'
         ? 'https://www.teacheasy.com.br/account.html?pagamento=retorno'
         : `${origin}/account.html?pagamento=retorno`,
@@ -43,13 +44,25 @@ module.exports = async function handler(request, response) {
     return json(response, 201, { checkoutUrl: subscription.init_point });
   } catch (error) {
     const code = String(error?.message || '');
+
     if (code === 'MERCADOPAGO_NOT_CONFIGURED') {
       console.warn('mercadopago-config-missing', { accessToken: false });
       return json(response, 503, { error: 'O Access Token do Mercado Pago não está disponível neste ambiente.' });
     }
-    if (code === 'MERCADOPAGO_PLAN_NOT_CONFIGURED') {
-      console.warn('mercadopago-config-missing', { planId: false });
-      return json(response, 503, { error: 'O ID do plano do Mercado Pago não está disponível neste ambiente.' });
+    if (code === 'MERCADOPAGO_PREVIEW_REQUIRES_TEST_CREDENTIALS') {
+      console.warn('mercadopago-preview-credential-mismatch');
+      return json(response, 503, { error: 'O Preview precisa usar o Access Token de teste do Mercado Pago.' });
+    }
+    if (code === 'MERCADOPAGO_PRODUCTION_REQUIRES_PRODUCTION_CREDENTIALS') {
+      console.error('mercadopago-production-credential-mismatch');
+      return json(response, 503, { error: 'O ambiente de produção precisa usar o Access Token de produção do Mercado Pago.' });
+    }
+    if (code === 'MERCADOPAGO_TEST_PAYER_NOT_CONFIGURED') {
+      console.warn('mercadopago-test-payer-missing');
+      return json(response, 503, { error: 'Configure o e-mail da conta compradora de teste do Mercado Pago no Preview.' });
+    }
+    if (code === 'MERCADOPAGO_PAYER_EMAIL_REQUIRED') {
+      return json(response, 400, { error: 'A conta precisa ter um e-mail válido para iniciar o pagamento.' });
     }
     if (/FIREBASE_.*NOT_CONFIGURED/.test(code)) return json(response, 503, { error: 'Cadastro ainda não foi conectado ao Firebase.' });
 
