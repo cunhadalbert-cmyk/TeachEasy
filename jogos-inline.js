@@ -241,10 +241,19 @@
     document.head.appendChild(script);
   }
 
+  function carregarRegraBnccGabarito() {
+    if (document.querySelector('script[data-teacheasy-bncc-answer-key]')) return;
+    const script = document.createElement('script');
+    script.src = 'bncc-answer-key.js?v=20260810-bncc-gabarito';
+    script.dataset.teacheasyBnccAnswerKey = 'true';
+    document.head.appendChild(script);
+  }
+
   document.addEventListener("DOMContentLoaded", () => {
     prepararCards();
     prepararBotaoPagamento();
     carregarExportadorWord();
+    carregarRegraBnccGabarito();
   });
   document.addEventListener("click", () => setTimeout(prepararCards, 80));
 })();
