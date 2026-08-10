@@ -220,6 +220,22 @@
     });
   }
 
-  document.addEventListener("DOMContentLoaded", prepararCards);
+  function prepararBotaoPagamento() {
+    const header = document.querySelector(".site-header .header-inner");
+    if (!header || header.querySelector("[data-payment-cta]")) return;
+
+    const link = document.createElement("a");
+    link.href = "account.html";
+    link.className = "btn btn-primary";
+    link.dataset.paymentCta = "true";
+    link.textContent = "Fazer pagamento";
+    link.setAttribute("aria-label", "Abrir conta para fazer pagamento do TeachEasy");
+    header.appendChild(link);
+  }
+
+  document.addEventListener("DOMContentLoaded", () => {
+    prepararCards();
+    prepararBotaoPagamento();
+  });
   document.addEventListener("click", () => setTimeout(prepararCards, 80));
 })();
