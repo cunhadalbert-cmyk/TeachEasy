@@ -89,7 +89,10 @@ async function createSubscription({ userId, email, backUrl, notificationUrl }) {
     back_url: backUrl,
     status: 'pending'
   };
-  // Preview deployments are protected by Vercel Authentication, so Mercado Pago\n  // cannot reach their webhook URL. The checkout does not require this optional\n  // field; production keeps the real webhook unchanged.\n  if (notificationUrl && !preview) payload.notification_url = notificationUrl;
+  // Preview deployments are protected by Vercel Authentication, so Mercado Pago
+  // cannot reach their webhook URL. The checkout does not require this optional
+  // field; production keeps the real webhook unchanged.
+  if (notificationUrl && !preview) payload.notification_url = notificationUrl;
 
   const { response, data } = await mercadoPagoFetch('/preapproval', {
     method: 'POST',
