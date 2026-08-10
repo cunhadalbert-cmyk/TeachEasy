@@ -31,7 +31,10 @@ module.exports = async function handler(request, response) {
     const subscription = await createSubscription({
       userId: session.user.id,
       email: session.user.email,
-      // O Mercado Pago precisa de uma URL pública; deployments Preview são protegidos.\n      backUrl: process.env.VERCEL_ENV === 'preview'\n        ? 'https://www.teacheasy.com.br/account.html?pagamento=retorno'\n        : `${origin}/account.html?pagamento=retorno`,
+      // O Mercado Pago precisa de uma URL pública; deployments Preview são protegidos.
+      backUrl: process.env.VERCEL_ENV === 'preview'
+        ? 'https://www.teacheasy.com.br/account.html?pagamento=retorno'
+        : `${origin}/account.html?pagamento=retorno`,
       notificationUrl: `${origin}/api/billing/webhook?source_news=webhooks`
     });
 
