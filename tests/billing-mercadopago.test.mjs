@@ -13,13 +13,13 @@ test('checkout usa assinatura recorrente mensal do Mercado Pago', async () => {
   assert.match(endpoint, /createSubscription/);
 });
 
-test('Preview usa exclusivamente credenciais de teste do Mercado Pago', async () => {
+test('Mercado Pago usa variáveis isoladas pelo ambiente da Vercel', async () => {
   const helper = await read('api/_lib/mercadopago.js');
-  assert.match(helper, /VERCEL_ENV === 'preview'/);
-  assert.match(helper, /MERCADOPAGO_TEST_ACCESS_TOKEN/);
-  assert.match(helper, /MERCADOPAGO_TEST_PLAN_ID/);
-  assert.match(helper, /MERCADOPAGO_TEST_WEBHOOK_SECRET/);
-  assert.match(helper, /MERCADOPAGO_TEST_NOT_CONFIGURED/);
+  assert.match(helper, /MERCADOPAGO_ACCESS_TOKEN/);
+  assert.match(helper, /MERCADOPAGO_PLAN_ID/);
+  assert.match(helper, /MERCADOPAGO_WEBHOOK_SECRET/);
+  assert.doesNotMatch(helper, /MERCADOPAGO_TEST_ACCESS_TOKEN/);
+  assert.doesNotMatch(helper, /MERCADOPAGO_TEST_PLAN_ID/);
 });
 
 test('webhook valida assinatura e consulta assinatura antes de ativar conta', async () => {
