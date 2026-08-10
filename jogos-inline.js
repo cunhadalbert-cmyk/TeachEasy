@@ -152,7 +152,7 @@
         primeiraCarta = null;
 
         setTimeout(() => {
-  if (typeof navigator !== "undefined" && navigator.userAgent.includes("jsdom")) return;
+          if (typeof navigator !== "undefined" && navigator.userAgent.includes("jsdom")) return;
           anterior.textContent = "?";
           btn.textContent = "?";
           anterior.classList.remove("aberta");
@@ -233,9 +233,18 @@
     footer.appendChild(link);
   }
 
+  function carregarExportadorWord() {
+    if (document.querySelector('script[data-teacheasy-word-export]')) return;
+    const script = document.createElement('script');
+    script.src = 'word-export.js?v=20260810-docx';
+    script.dataset.teacheasyWordExport = 'true';
+    document.head.appendChild(script);
+  }
+
   document.addEventListener("DOMContentLoaded", () => {
     prepararCards();
     prepararBotaoPagamento();
+    carregarExportadorWord();
   });
   document.addEventListener("click", () => setTimeout(prepararCards, 80));
 })();
