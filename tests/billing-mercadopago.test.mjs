@@ -56,6 +56,16 @@ test('webhook valida assinatura e consulta assinatura antes de ativar conta', as
   assert.match(webhook, /validFirebaseUid/);
 });
 
+test('webhook ignora notificações que não pertencem a preapproval válido', async () => {
+  const webhook = await read('api/billing/webhook.js');
+  assert.match(webhook, /request\.query\?\.topic/);
+  assert.match(webhook, /isSubscriptionNotification/);
+  assert.match(webhook, /isMissingSubscription/);
+  assert.match(webhook, /error\?\.status\) === 404/);
+  assert.match(webhook, /mercadopago-webhook-ignored-missing-preapproval/);
+  assert.match(webhook, /ignored: true/);
+});
+
 test('Firebase armazena vínculo Mercado Pago e preço de lançamento', async () => {
   const firebase = await read('api/_lib/firebase.js');
   assert.match(firebase, /subscriptionPrice: 19\.90/);
