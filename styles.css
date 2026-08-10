@@ -2267,3 +2267,22 @@ body:not(.library-page) .footer span {
   .home-games-copy { gap: 7px; }
   .home-games-copy > span { font-size: 15px; line-height: 1.35; }
 }
+
+/* PADRÃO MESTRE DE ATIVIDADES TEACHEASY */
+.teacheasy-a4-page {
+  border: 3px dashed #4CAF50 !important;
+  border-radius: 20px !important;
+  padding: 12mm 14mm !important;
+  background: #ffffff !important;
+  position: relative !important;
+}
+
+.preview-bncc {
+  margin: 10px 0;
+  padding: 8px 12px;
+  border-radius: 8px;
+  background: #eef4fc;
+  color: #0d47a1;
+  font-weight: 700;
+  font-size: 13px;
+}
