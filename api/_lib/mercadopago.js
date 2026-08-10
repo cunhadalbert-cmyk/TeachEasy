@@ -12,6 +12,12 @@ function requireMercadoPagoConfig() {
   return { accessToken, webhookSecret, planId };
 }
 
+function getPayerEmail(email) {
+  // Nos Previews usamos a conta compradora de teste do Mercado Pago.
+  // Em produção, preservamos o e-mail real do cliente do TeachEasy.
+  return process.env.VERCEL_ENV === 'preview' ? 'test@testuser.com' : email;
+}
+
 async function mercadoPagoFetch(path, options = {}) {
   const { accessToken } = requireMercadoPagoConfig();
   const response = await fetch(`https://api.mercadopago.com${path}`, {
@@ -56,7 +62,7 @@ async function createSubscription({ userId, email, backUrl, notificationUrl }) {
   const payload = {
     reason: String(plan.reason || 'TeachEasy Premium'),
     external_reference: String(userId),
-    payer_email: email,
+    payer_email: getPayerEmail(email),
     auto_recurring: {
       frequency,
       frequency_type: frequencyType,
