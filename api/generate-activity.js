@@ -1,4 +1,5 @@
 const MAX_BODY_BYTES = 6_600_000;
+const { consumeAiGeneration, getAuthenticatedUser, refundAiGeneration } = require('./_lib/firebase');
 
 function json(response, status, payload) {
   response.status(status).setHeader('Content-Type', 'application/json; charset=utf-8').end(JSON.stringify(payload));
@@ -17,13 +18,34 @@ function responseText(data) {
     .join('\n');
 }
 
+function pedagogicalContext(input, isPhoto) {
+  if (isPhoto) return Boolean(safeText(input.grade, 80));
+  const text = [input.request,input.materialType,input.stage,input.grade,input.subject,input.topic,input.objective]
+    .map(value => safeText(value, 1200)).join(' ').toLowerCase();
+  const educationalTerms = [
+    'atividade','avaliação','avaliacao','prova','exercício','exercicio','aula','escolar','escola',
+    'professor','aluno','turma','educação','educacao','infantil','fundamental','ensino médio','ensino medio',
+    'bncc','português','portugues','matemática','matematica','ciências','ciencias','história','historia',
+    'geografia','inglês','ingles','alfabetização','alfabetizacao','autismo','inclusão','inclusao','pedagógico','pedagogico'
+  ];
+  return educationalTerms.some(term => text.includes(term));
+}
+
+function quotaError(error) {
+  const message = String(error?.message || '').toUpperCase();
+  if (message.includes('SUBSCRIPTION_INACTIVE')) return { status: 402, message: 'Sua assinatura ainda não está ativa. Conclua o pagamento para usar a criação com IA.' };
+  if (message.includes('AI_QUOTA_EXCEEDED')) return { status: 429, message: 'Você usou as 60 gerações deste período. A franquia será renovada automaticamente no próximo ciclo.' };
+  if (message.includes('PROFILE_NOT_FOUND')) return { status: 403, message: 'Sua conta ainda não possui um perfil de assinatura válido.' };
+  return null;
+}
+
 async function generateIllustration(activity, input) {
   const firstQuestion = safeText(activity.questions?.[0]?.prompt || activity.illustration || input.topic || input.request, 650);
   const blackAndWhite = input.illustrationStyle === 'bw';
   const visualStyle = blackAndWhite
     ? 'preto e branco, traço limpo e forte, sem tons de cinza, próprio para imprimir e colorir'
     : 'colorida, clara e infantil, com cores alegres e fundo branco ou muito claro';
-  const prompt = `Crie UMA ilustração escolar ${visualStyle} para acompanhar uma atividade brasileira. Ela deve representar exatamente este enunciado: "${firstQuestion}". Se houver uma quantidade, grupos ou objetos no enunciado, desenhe a quantidade correta e deixe cada elemento bem visível para a criança contar. Preserve a proporção natural dos objetos e use composição equilibrada, centralizada e com margens. Não coloque letras, palavras, números, respostas, marcas d'água ou logotipos na imagem.`;
+  const prompt = `Crie UMA ilustração exclusivamente pedagógica ${visualStyle} para acompanhar uma atividade escolar brasileira. Represente somente o que for necessário para resolver ou compreender este enunciado: "${firstQuestion}". Se houver uma quantidade, grupos ou objetos, desenhe a quantidade correta e deixe cada elemento bem visível para a criança contar. Preserve a proporção natural dos objetos e use composição equilibrada, centralizada e com margens. Não crie retrato, publicidade, logotipo, meme, arte promocional ou imagem sem finalidade didática. Não coloque letras, palavras, números, respostas, marcas d'água ou logotipos na imagem.`;
   const imageResponse = await fetch('https://api.openai.com/v1/images/generations', {
     method: 'POST',
     headers: { Authorization: `Bearer ${process.env.OPENAI_API_KEY}`, 'Content-Type': 'application/json' },
@@ -41,20 +63,40 @@ module.exports = async function handler(request, response) {
   if (!process.env.OPENAI_API_KEY) return json(response, 503, { error: 'A criação com IA ainda não foi configurada.' });
   const rawBody = typeof request.body === 'string' ? request.body : JSON.stringify(request.body || {});
   if (Buffer.byteLength(rawBody) > MAX_BODY_BYTES) return json(response, 413, { error: 'A imagem enviada é grande demais.' });
+
+  let quotaReserved = false;
+  let authenticatedUserId = null;
   try {
+    const session = await getAuthenticatedUser(request, response);
+    if (!session?.user?.id) return json(response, 401, { error: 'Entre na sua conta TeachEasy para criar atividades com IA.' });
+    authenticatedUserId = session.user.id;
+
     const input = typeof request.body === 'object' ? request.body : JSON.parse(rawBody);
     const isPhoto = input.mode === 'photo';
     if (!isPhoto && input.mode !== 'text') return json(response, 400, { error: 'Tipo de criação inválido.' });
     if (isPhoto && !/^data:image\/(jpeg|png);base64,/i.test(input.imageDataUrl || '')) return json(response, 400, { error: 'Envie uma foto JPG ou PNG válida.' });
+    if (!pedagogicalContext(input, isPhoto)) return json(response, 400, { error: 'A IA do TeachEasy é exclusiva para atividades e conteúdos escolares. Informe uma turma, disciplina, tema ou objetivo pedagógico.' });
+
+    let quota;
+    try {
+      quota = await consumeAiGeneration(authenticatedUserId);
+      quotaReserved = true;
+    } catch (error) {
+      const mapped = quotaError(error);
+      if (mapped) return json(response, mapped.status, { error: mapped.message });
+      throw error;
+    }
+
     const questions = Math.min(20, Math.max(1, Number(input.questionCount) || 5));
     const bnccInstruction = input.bncc
       ? `Alinhe o material à BNCC. ${input.bnccMode === 'skill' ? 'Informe no campo bncc uma habilidade/código apenas quando houver segurança de correspondência; nunca invente código.' : 'Use a BNCC como referência pedagógica e descreva no campo bncc o alinhamento de forma clara, sem inventar códigos.'}`
       : 'Não inclua referência BNCC.';
     const context = isPhoto
-      ? `Analise a imagem enviada e crie uma atividade original para ${safeText(input.grade, 80)} com ${questions} questões. ${input.adapted ? 'Faça comandos curtos e uma versão acessível para inclusão.' : ''}`
-      : `Crie um material escolar original. Pedido livre: ${safeText(input.request, 1200) || 'Crie uma atividade escolar adequada para uma turma de ensino básico.'}. Tipo: ${safeText(input.materialType, 80) || 'Atividade'}. Etapa: ${safeText(input.stage, 100) || 'não informada'}. Ano: ${safeText(input.grade, 80) || 'não informado'}. Disciplina: ${safeText(input.subject, 80) || 'não informada'}. Tema: ${safeText(input.topic, 180) || 'livre'}. Objetivo: ${safeText(input.objective, 240) || 'promover aprendizagem ativa'}. Dificuldade: ${safeText(input.difficulty, 50) || 'Intermediário'}. Tipo de questões: ${safeText(input.questionType, 50) || 'Mistas'}. Faça ${questions} questões. ${input.adapted ? 'Inclua linguagem acessível.' : ''}`;
-    const content = [{ type: 'input_text', text: `Você é um especialista em educação brasileira. ${context} ${bnccInstruction} Retorne apenas JSON com title, summary, illustration (uma descrição curta para ilustração pedagógica), bncc (texto curto ou string vazia), questions (lista de objetos com prompt) e answerKey. O conteúdo deve ser apropriado e revisável por professor.` }];
+      ? `Analise a imagem enviada somente como referência pedagógica e crie uma atividade escolar original para ${safeText(input.grade, 80)} com ${questions} questões. ${input.adapted ? 'Faça comandos curtos e uma versão acessível para inclusão.' : ''}`
+      : `Crie exclusivamente um material escolar original. Pedido livre: ${safeText(input.request, 1200) || 'Crie uma atividade escolar adequada para uma turma de ensino básico.'}. Tipo: ${safeText(input.materialType, 80) || 'Atividade'}. Etapa: ${safeText(input.stage, 100) || 'não informada'}. Ano: ${safeText(input.grade, 80) || 'não informado'}. Disciplina: ${safeText(input.subject, 80) || 'não informada'}. Tema: ${safeText(input.topic, 180) || 'livre'}. Objetivo: ${safeText(input.objective, 240) || 'promover aprendizagem ativa'}. Dificuldade: ${safeText(input.difficulty, 50) || 'Intermediário'}. Tipo de questões: ${safeText(input.questionType, 50) || 'Mistas'}. Faça ${questions} questões. ${input.adapted ? 'Inclua linguagem acessível.' : ''}`;
+    const content = [{ type: 'input_text', text: `Você é um especialista em educação brasileira e trabalha somente com conteúdo escolar. Não atenda pedidos de conversa geral, publicidade, programação, entretenimento ou geração de imagens avulsas. ${context} ${bnccInstruction} Retorne apenas JSON com title, summary, illustration (uma descrição curta de ilustração pedagógica somente se útil à atividade), bncc (texto curto ou string vazia), questions (lista de objetos com prompt) e answerKey. O conteúdo deve ser apropriado, didático e revisável por professor.` }];
     if (isPhoto) content.push({ type: 'input_image', image_url: input.imageDataUrl, detail: 'low' });
+
     const openAiResponse = await fetch('https://api.openai.com/v1/responses', {
       method: 'POST',
       headers: { Authorization: `Bearer ${process.env.OPENAI_API_KEY}`, 'Content-Type': 'application/json' },
@@ -64,6 +106,7 @@ module.exports = async function handler(request, response) {
     if (!openAiResponse.ok) throw new Error(openAiData.error?.message || 'A IA não respondeu.');
     const activity = JSON.parse(responseText(openAiData) || '{}');
     if (!activity.title || !Array.isArray(activity.questions)) throw new Error('A IA retornou uma resposta incompleta.');
+
     const normalizedActivity = {
       title: safeText(activity.title, 180),
       summary: safeText(activity.summary, 600),
@@ -72,16 +115,32 @@ module.exports = async function handler(request, response) {
       questions: activity.questions.slice(0, questions).map(question => ({ prompt: safeText(question.prompt || question, 700) })),
       answerKey: safeText(activity.answerKey, 1400)
     };
+
     if (!isPhoto && input.figures) {
-      try {
-        normalizedActivity.illustrationDataUrl = await generateIllustration(normalizedActivity, input);
-      } catch (imageError) {
+      try { normalizedActivity.illustrationDataUrl = await generateIllustration(normalizedActivity, input); }
+      catch (imageError) {
         console.warn('activity-illustration-failed', imageError.message || imageError);
         normalizedActivity.illustrationError = 'A atividade foi criada, mas a figura não pôde ser gerada agora. Tente gerar novamente.';
       }
     }
-    return json(response, 200, { activity: normalizedActivity });
+
+    quotaReserved = false;
+    return json(response, 200, {
+      activity: normalizedActivity,
+      usage: {
+        limit: Number(quota?.ai_limit) || 60,
+        used: Number(quota?.ai_used) || 0,
+        remaining: Number(quota?.remaining) || 0,
+        periodStart: quota?.period_start || null,
+        periodEnd: quota?.period_end || null
+      }
+    });
   } catch (error) {
+    if (quotaReserved && authenticatedUserId) {
+      try { await refundAiGeneration(authenticatedUserId); }
+      catch (refundError) { console.error('ai-quota-refund-failed', refundError.message || refundError); }
+    }
+    if (/FIREBASE_.*NOT_CONFIGURED/.test(error.message || '')) return json(response, 503, { error: 'O cadastro do TeachEasy ainda não foi conectado ao Firebase.' });
     console.error('activity-generation-failed', error.message || error);
     return json(response, 502, { error: error.message || 'Erro ao gerar atividade.' });
   }

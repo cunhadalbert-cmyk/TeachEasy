@@ -1,21 +1,21 @@
 {
-    "name": "teacheasy",
-    "version": "0.1.0",
-    "private": true,
-    "description": "Site estático do TeachEasy e protótipo da Biblioteca de Atividades.",
-    "scripts": {
-        "check:js": "node --check script.js && node --check biblioteca.js && node --check biblioteca-fixes.js && node --check photo-activity.js && node --check ai-content.js && node --check autism-activities.js && node --check scripts/check-whitespace.mjs && node --check scripts/audit-figures.mjs && node --check tests/library.test.mjs && node --check tests/ai-improvements.test.mjs && node --check tests/autism-42-bncc.test.mjs",
-        "check:html": "html-validate index.html biblioteca.html",
-        "check:whitespace": "node scripts/check-whitespace.mjs",
-        "check:figures": "node scripts/audit-figures.mjs",
-        "test": "node --test tests/library.test.mjs tests/ai-improvements.test.mjs tests/autism-42-bncc.test.mjs tests/educacao-infantil.test.mjs tests/fundamental-iniciais-bncc.test.mjs tests/fundamental-finais.test.mjs tests/ensino-medio.test.mjs",
-        "validate": "npm run check:js && npm run check:html && npm run check:whitespace && npm run check:figures && npm test"
-    },
-    "engines": {
-        "node": ">=24.8.0"
-    },
-    "devDependencies": {
-        "happy-dom": "20.11.1",
-        "html-validate": "11.5.6"
-    }
+  "name": "teacheasy",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Site estático do TeachEasy e protótipo da Biblioteca de Atividades.",
+  "scripts": {
+    "check:js": "node --check script.js && node --check biblioteca.js && node --check biblioteca-fixes.js && node --check photo-activity.js && node --check ai-content.js && node --check autism-activities.js && node --check account.js && node --check api/_lib/firebase.js && node --check api/_lib/mercadopago.js && node --check api/auth/signup.js && node --check api/auth/login.js && node --check api/auth/logout.js && node --check api/auth/me.js && node --check api/billing/create-subscription.js && node --check api/billing/webhook.js && node --check api/generate-activity.js && node --check scripts/check-whitespace.mjs && node --check scripts/audit-figures.mjs && node --check tests/library.test.mjs && node --check tests/ai-improvements.test.mjs && node --check tests/autism-42-bncc.test.mjs && node --check tests/auth-quota.test.mjs && node --check tests/billing-mercadopago.test.mjs",
+    "check:html": "html-validate index.html biblioteca.html account.html",
+    "check:whitespace": "node scripts/check-whitespace.mjs",
+    "check:figures": "node scripts/audit-figures.mjs",
+    "test": "node --test tests/library.test.mjs tests/ai-improvements.test.mjs tests/autism-42-bncc.test.mjs tests/auth-quota.test.mjs tests/billing-mercadopago.test.mjs tests/educacao-infantil.test.mjs tests/fundamental-iniciais-bncc.test.mjs tests/fundamental-finais.test.mjs tests/ensino-medio.test.mjs",
+    "validate": "npm run check:js && npm run check:html && npm run check:whitespace && npm run check:figures && npm test"
+  },
+  "engines": {
+    "node": ">=24.8.0"
+  },
+  "devDependencies": {
+    "happy-dom": "20.11.1",
+    "html-validate": "11.5.6"
+  }
 }

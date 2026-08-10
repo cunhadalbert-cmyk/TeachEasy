@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Conta TeachEasy — cadastro, acesso e plano Premium.">
+  <title>Minha conta — TeachEasy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Libre+Franklin:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="account.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner account-header">
+      <a class="brand" href="index.html" aria-label="Página inicial TeachEasy"><strong>TeachEasy</strong><span>O caminho mais rápido do professor.</span></a>
+      <a class="btn btn-outline" href="index.html">Voltar ao site</a>
+    </div>
+  </header>
+
+  <main class="account-main">
+    <section class="container account-grid" id="auth-area">
+      <article class="account-intro">
+        <span class="eyebrow">TEACHEASY PREMIUM</span>
+        <h1>Crie sua conta e economize tempo todos os dias.</h1>
+        <p>Atividades com IA focadas em conteúdo escolar, biblioteca pedagógica, BNCC, PDF e Word editável.</p>
+        <div class="plan-card">
+          <span class="plan-badge">OFERTA DE LANÇAMENTO</span>
+          <div class="plan-price"><del>R$ 24,90</del><strong>R$ 19,90</strong><span>/mês</span></div>
+          <ul>
+            <li>60 gerações de atividades com IA por mês</li>
+            <li>Ilustração pedagógica incluída quando necessária</li>
+            <li>Biblioteca pronta não consome geração</li>
+            <li>PDF, Word e gabarito não consomem geração</li>
+            <li>Cancele quando quiser</li>
+          </ul>
+        </div>
+      </article>
+
+      <section class="auth-card" aria-labelledby="auth-title">
+        <div class="auth-tabs" role="tablist" aria-label="Cadastro ou login">
+          <button type="button" class="auth-tab active" data-auth-tab="signup">Criar conta</button>
+          <button type="button" class="auth-tab" data-auth-tab="login">Entrar</button>
+        </div>
+        <form id="signup-form" class="auth-form">
+          <h2 id="auth-title">Criar conta</h2>
+          <label><span>Nome</span><input name="displayName" type="text" autocomplete="name" required minlength="2" maxlength="100"></label>
+          <label><span>E-mail</span><input name="email" type="email" autocomplete="email" required></label>
+          <label><span>Senha</span><input name="password" type="password" autocomplete="new-password" required minlength="8"><small>Mínimo de 8 caracteres.</small></label>
+          <p class="auth-feedback" data-feedback="signup" role="alert" hidden></p>
+          <button class="btn btn-primary btn-large" type="submit">Criar minha conta</button>
+          <small>Ao criar a conta, o plano permanece aguardando pagamento. Nenhuma cobrança é feita nesta etapa.</small>
+        </form>
+        <form id="login-form" class="auth-form" hidden>
+          <h2>Entrar</h2>
+          <label><span>E-mail</span><input name="email" type="email" autocomplete="email" required></label>
+          <label><span>Senha</span><input name="password" type="password" autocomplete="current-password" required></label>
+          <p class="auth-feedback" data-feedback="login" role="alert" hidden></p>
+          <button class="btn btn-primary btn-large" type="submit">Entrar</button>
+        </form>
+      </section>
+    </section>
+
+    <section class="container account-dashboard" id="account-dashboard" hidden>
+      <div class="dashboard-heading">
+        <div><span class="eyebrow">MINHA CONTA</span><h1>Olá, <span id="account-name">professor(a)</span>.</h1><p id="account-email"></p></div>
+        <button class="btn btn-outline" id="logout-button" type="button">Sair</button>
+      </div>
+      <div class="dashboard-cards">
+        <article class="dashboard-card">
+          <span>Plano</span><strong>TeachEasy Premium</strong><p id="subscription-status">Aguardando pagamento</p>
+          <div class="dashboard-price"><del>R$ 24,90</del> <strong>R$ 19,90/mês</strong></div>
+          <button class="btn btn-primary" id="payment-button" type="button">Assinar por R$ 19,90/mês</button>
+        </article>
+        <article class="dashboard-card usage-card">
+          <span>Gerações de IA</span>
+          <strong><span id="ai-remaining">0</span> de <span id="ai-limit">60</span> disponíveis</strong>
+          <div class="usage-track" aria-hidden="true"><span id="usage-bar"></span></div>
+          <p><span id="ai-used">0</span> usadas neste período.</p><small id="renewal-date"></small>
+        </article>
+      </div>
+      <aside class="usage-rules">
+        <h2>O que consome uma geração?</h2>
+        <p>Criar uma nova atividade por texto ou foto consome 1 geração. A ilustração pedagógica necessária faz parte dessa mesma geração. Biblioteca pronta, PDF, Word e gabarito não consomem franquia.</p>
+      </aside>
+    </section>
+  </main>
+  <script src="account.js"></script>
+</body>
+</html>
