@@ -5,6 +5,19 @@ function json(response, status, payload) {
   response.status(status).setHeader('Content-Type', 'application/json; charset=utf-8').end(JSON.stringify(payload));
 }
 
+function safeMercadoPagoError(error) {
+  const details = error?.details && typeof error.details === 'object' ? error.details : {};
+  return {
+    message: String(error?.message || ''),
+    status: Number(error?.status || details?.status || 0) || undefined,
+    error: typeof details?.error === 'string' ? details.error : undefined,
+    cause: Array.isArray(details?.cause)
+      ? details.cause.map(item => ({ code: item?.code, description: item?.description })).filter(item => item.code || item.description)
+      : undefined,
+    messageFromApi: typeof details?.message === 'string' ? details.message : undefined
+  };
+}
+
 module.exports = async function handler(request, response) {
   if (request.method !== 'POST') return json(response, 405, { error: 'Método não permitido.' });
   try {
@@ -36,7 +49,17 @@ module.exports = async function handler(request, response) {
       return json(response, 503, { error: 'O ID do plano do Mercado Pago não está disponível neste ambiente.' });
     }
     if (/FIREBASE_.*NOT_CONFIGURED/.test(code)) return json(response, 503, { error: 'Cadastro ainda não foi conectado ao Firebase.' });
-    console.error('subscription-create-failed', code || error);
+
+    const diagnostic = safeMercadoPagoError(error);
+    console.error('subscription-create-failed', diagnostic);
+
+    if (process.env.VERCEL_ENV === 'preview') {
+      const previewMessage = diagnostic.messageFromApi || diagnostic.cause?.[0]?.description || diagnostic.message;
+      return json(response, 502, {
+        error: previewMessage ? `Mercado Pago recusou a criação da assinatura: ${previewMessage}` : 'Não foi possível abrir o pagamento agora.'
+      });
+    }
+
     return json(response, 502, { error: 'Não foi possível abrir o pagamento agora.' });
   }
 };
