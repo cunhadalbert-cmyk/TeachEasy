@@ -16,6 +16,21 @@ function validFirebaseUid(value) {
   return /^[A-Za-z0-9:_-]{1,128}$/.test(String(value || ''));
 }
 
+function notificationType(request) {
+  const body = typeof request.body === 'object' ? request.body : {};
+  return String(body.type || request.query?.type || request.query?.topic || '').toLowerCase();
+}
+
+function isSubscriptionNotification(type) {
+  if (!type) return true;
+  return type.includes('subscription') || type.includes('preapproval');
+}
+
+function isMissingSubscription(error) {
+  if (Number(error?.status) === 404) return true;
+  return /preapproval.*does not exist|subscription.*not found|not-found/i.test(String(error?.message || ''));
+}
+
 module.exports = async function handler(request, response) {
   if (request.method !== 'POST') return json(response, 405, { error: 'Método não permitido.' });
   try {
@@ -27,12 +42,21 @@ module.exports = async function handler(request, response) {
     });
     if (!valid) return json(response, 401, { error: 'Assinatura do webhook inválida.' });
 
-    const body = typeof request.body === 'object' ? request.body : {};
-    const type = String(body.type || request.query?.type || '').toLowerCase();
+    const type = notificationType(request);
     if (!dataId) return json(response, 200, { ok: true, ignored: true });
-    if (type && !type.includes('subscription') && !type.includes('preapproval')) return json(response, 200, { ok: true, ignored: true });
+    if (!isSubscriptionNotification(type)) return json(response, 200, { ok: true, ignored: true, type });
 
-    const subscription = await getSubscription(dataId);
+    let subscription;
+    try {
+      subscription = await getSubscription(dataId);
+    } catch (error) {
+      if (isMissingSubscription(error)) {
+        console.info('mercadopago-webhook-ignored-missing-preapproval', { dataId, type: type || 'unknown' });
+        return json(response, 200, { ok: true, ignored: true });
+      }
+      throw error;
+    }
+
     const userId = String(subscription.external_reference || '');
     if (!validFirebaseUid(userId)) {
       console.warn('mercadopago-webhook-without-valid-user', dataId);
