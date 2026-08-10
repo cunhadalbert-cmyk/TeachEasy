@@ -1,5 +1,9 @@
 const crypto = require('crypto');
 
+function isPreviewEnvironment() {
+  return process.env.VERCEL_ENV === 'preview';
+}
+
 function requireMercadoPagoConfig() {
   // A Vercel já isola os valores por ambiente (Preview e Production).
   // Portanto, usamos os mesmos nomes de variáveis e deixamos a Vercel
@@ -15,7 +19,7 @@ function requireMercadoPagoConfig() {
 function getPayerEmail(email) {
   // Nos Previews usamos a conta compradora de teste do Mercado Pago.
   // Em produção, preservamos o e-mail real do cliente do TeachEasy.
-  return process.env.VERCEL_ENV === 'preview' ? 'test@testuser.com' : email;
+  return isPreviewEnvironment() ? 'test@testuser.com' : email;
 }
 
 async function mercadoPagoFetch(path, options = {}) {
@@ -45,22 +49,35 @@ async function getPlan(planId) {
 }
 
 async function createSubscription({ userId, email, backUrl, notificationUrl }) {
+  const preview = isPreviewEnvironment();
   const { planId } = requireMercadoPagoConfig();
-  if (!planId) throw new Error('MERCADOPAGO_PLAN_NOT_CONFIGURED');
 
-  const plan = await getPlan(planId);
-  const recurring = plan?.auto_recurring || {};
-  const transactionAmount = Number(recurring.transaction_amount);
-  const frequency = Number(recurring.frequency || 1);
-  const frequencyType = String(recurring.frequency_type || 'months');
-  const currencyId = String(recurring.currency_id || 'BRL');
+  let reason = 'TeachEasy Premium';
+  let transactionAmount = 19.90;
+  let frequency = 1;
+  let frequencyType = 'months';
+  let currencyId = 'BRL';
+
+  // No Preview usamos uma assinatura de teste sem plano associado.
+  // Isso evita misturar o Access Token de teste com o PLAN_ID real.
+  // Em Production continuamos usando exatamente o plano real configurado.
+  if (!preview) {
+    if (!planId) throw new Error('MERCADOPAGO_PLAN_NOT_CONFIGURED');
+    const plan = await getPlan(planId);
+    const recurring = plan?.auto_recurring || {};
+    reason = String(plan.reason || reason);
+    transactionAmount = Number(recurring.transaction_amount);
+    frequency = Number(recurring.frequency || 1);
+    frequencyType = String(recurring.frequency_type || 'months');
+    currencyId = String(recurring.currency_id || 'BRL');
+  }
 
   if (!Number.isFinite(transactionAmount) || transactionAmount <= 0) {
     throw new Error('MERCADOPAGO_PLAN_AMOUNT_INVALID');
   }
 
   const payload = {
-    reason: String(plan.reason || 'TeachEasy Premium'),
+    reason,
     external_reference: String(userId),
     payer_email: getPayerEmail(email),
     auto_recurring: {
