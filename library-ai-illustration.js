@@ -6,10 +6,9 @@
   const clean = (value = '') => String(value).replace(/\s+/g, ' ').trim();
 
   function needsGeneratedIllustration(image) {
-    if (!image) return false;
-    const src = clean(image.getAttribute('src') || image.src || '');
-    if (src.includes('/illustrations/biblioteca/')) return false;
-    return /^data:image\/svg\+xml/i.test(src) && false;
+    // A Biblioteca utiliza PNGs salvos fisicamente sem consumo de IA no cliente.
+    // Desativada a geração para data:image/svg+xml em tempo real.
+    return false;
   }
 
   function activityData(page) {
