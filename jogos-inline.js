@@ -221,8 +221,8 @@
   }
 
   function prepararBotaoPagamento() {
-    const header = document.querySelector(".site-header .header-inner");
-    if (!header || header.querySelector("[data-payment-cta]")) return;
+    const footer = document.querySelector(".footer .container");
+    if (!footer || footer.querySelector("[data-payment-cta]")) return;
 
     const link = document.createElement("a");
     link.href = "account.html";
@@ -230,7 +230,7 @@
     link.dataset.paymentCta = "true";
     link.textContent = "Fazer pagamento";
     link.setAttribute("aria-label", "Abrir conta para fazer pagamento do TeachEasy");
-    header.appendChild(link);
+    footer.appendChild(link);
   }
 
   document.addEventListener("DOMContentLoaded", () => {
