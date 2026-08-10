@@ -126,7 +126,7 @@
     return response;
   };
 
-  document.addEventListener('DOMContentLoaded', () => {
+  function init() {
     addTeacherOptions();
 
     const aiRoot = document.querySelector('#ai-preview-document');
@@ -144,5 +144,8 @@
       normalizeAiPreview();
       normalizePhotoPreview();
     });
-  });
+  }
+
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init, { once: true });
+  else init();
 })();
