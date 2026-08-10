@@ -6,8 +6,10 @@ const html = await readFile(new URL('../biblioteca.html', import.meta.url), 'utf
 const standard = await readFile(new URL('../biblioteca-standard.js', import.meta.url), 'utf8');
 
 test('Biblioteca carrega a versão atual do padrão mestre depois das coleções', () => {
-  assert.match(html, /biblioteca-standard\.js\?v=20260810-padrao-real-v2/);
+  assert.match(html, /biblioteca-standard\.js\?v=20260810-padrao-real-v3/);
+  assert.match(html, /biblioteca-export-hardfix\.js\?v=20260810-sem-exportador-antigo/);
   assert.ok(html.indexOf('biblioteca-standard.js') > html.indexOf('biblioteca-fixes.js'));
+  assert.ok(html.indexOf('biblioteca-export-hardfix.js') > html.indexOf('biblioteca-standard.js'));
 });
 
 test('atividade do aluno recebe o cabeçalho completo do modelo aprovado', () => {
