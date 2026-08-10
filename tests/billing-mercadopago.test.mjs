@@ -7,10 +7,19 @@ const read = path => readFile(new URL(`../${path}`, import.meta.url), 'utf8');
 test('checkout usa assinatura recorrente mensal do Mercado Pago', async () => {
   const helper = await read('api/_lib/mercadopago.js');
   const endpoint = await read('api/billing/create-subscription.js');
-  assert.match(helper, /preapproval_plan_id/);
+  assert.match(helper, /\/preapproval_plan\//);
   assert.match(helper, /\/preapproval/);
   assert.match(endpoint, /userId/);
   assert.match(endpoint, /createSubscription/);
+});
+
+test('Preview usa exclusivamente credenciais de teste do Mercado Pago', async () => {
+  const helper = await read('api/_lib/mercadopago.js');
+  assert.match(helper, /VERCEL_ENV === 'preview'/);
+  assert.match(helper, /MERCADOPAGO_TEST_ACCESS_TOKEN/);
+  assert.match(helper, /MERCADOPAGO_TEST_PLAN_ID/);
+  assert.match(helper, /MERCADOPAGO_TEST_WEBHOOK_SECRET/);
+  assert.match(helper, /MERCADOPAGO_TEST_NOT_CONFIGURED/);
 });
 
 test('webhook valida assinatura e consulta assinatura antes de ativar conta', async () => {
