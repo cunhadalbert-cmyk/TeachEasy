@@ -4,37 +4,45 @@ import { readFile } from 'node:fs/promises';
 
 const read = path => readFile(new URL(`../${path}`, import.meta.url), 'utf8');
 
-test('checkout usa assinatura recorrente mensal do Mercado Pago', async () => {
+test('checkout usa assinatura recorrente pendente sem plano associado', async () => {
   const helper = await read('api/_lib/mercadopago.js');
   const endpoint = await read('api/billing/create-subscription.js');
-  assert.match(helper, /\/preapproval_plan\//);
   assert.match(helper, /\/preapproval/);
+  assert.doesNotMatch(helper, /\/preapproval_plan\//);
+  assert.doesNotMatch(helper, /preapproval_plan_id/);
+  assert.match(helper, /status: 'pending'/);
+  assert.match(helper, /transaction_amount: 19\.90/);
   assert.match(endpoint, /userId/);
   assert.match(endpoint, /createSubscription/);
 });
 
-test('Mercado Pago usa variáveis isoladas pelo ambiente da Vercel', async () => {
+test('Mercado Pago separa credenciais de Preview e Production', async () => {
   const helper = await read('api/_lib/mercadopago.js');
   assert.match(helper, /MERCADOPAGO_ACCESS_TOKEN/);
-  assert.match(helper, /MERCADOPAGO_PLAN_ID/);
   assert.match(helper, /MERCADOPAGO_WEBHOOK_SECRET/);
+  assert.match(helper, /MERCADOPAGO_TEST_PAYER_EMAIL/);
+  assert.match(helper, /MERCADOPAGO_PREVIEW_REQUIRES_TEST_CREDENTIALS/);
+  assert.match(helper, /MERCADOPAGO_PRODUCTION_REQUIRES_PRODUCTION_CREDENTIALS/);
+  assert.doesNotMatch(helper, /MERCADOPAGO_PLAN_ID/);
   assert.doesNotMatch(helper, /MERCADOPAGO_TEST_ACCESS_TOKEN/);
   assert.doesNotMatch(helper, /MERCADOPAGO_TEST_PLAN_ID/);
 });
 
-test('Preview usa e-mail do comprador de teste e produção preserva o e-mail real', async () => {
+test('Preview exige comprador de teste configurado e não usa e-mail genérico', async () => {
   const helper = await read('api/_lib/mercadopago.js');
   assert.match(helper, /VERCEL_ENV === 'preview'/);
-  assert.match(helper, /test@testuser\.com/);
-  assert.match(helper, /payer_email: getPayerEmail\(email\)/);
+  assert.match(helper, /return config\.testPayerEmail/);
+  assert.match(helper, /MERCADOPAGO_TEST_PAYER_NOT_CONFIGURED/);
+  assert.doesNotMatch(helper, /test@testuser\.com/);
+  assert.match(helper, /payer_email: payerEmail/);
 });
 
-test('Preview cria assinatura de teste sem consultar plano real', async () => {
+test('checkout mantém external_reference do Firebase para reconciliar assinatura', async () => {
   const helper = await read('api/_lib/mercadopago.js');
-  assert.match(helper, /if \(!preview\)/);
-  assert.match(helper, /transactionAmount = 19\.90/);
-  assert.match(helper, /status: 'pending'/);
-  assert.match(helper, /No Preview usamos uma assinatura de teste sem plano associado/);
+  assert.match(helper, /external_reference: String\(userId\)/);
+  assert.match(helper, /reason: 'TeachEasy Premium'/);
+  assert.match(helper, /frequency_type: 'months'/);
+  assert.match(helper, /currency_id: 'BRL'/);
 });
 
 test('webhook valida assinatura e consulta assinatura antes de ativar conta', async () => {
