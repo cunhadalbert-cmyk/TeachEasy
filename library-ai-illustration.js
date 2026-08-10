@@ -6,8 +6,10 @@
   const clean = (value = '') => String(value).replace(/\s+/g, ' ').trim();
 
   function needsGeneratedIllustration(image) {
-    // A Biblioteca utiliza PNGs salvos fisicamente sem consumo de IA no navegador do cliente.
-    return false;
+    if (!image) return false;
+    const src = clean(image.getAttribute('src') || image.src || '');
+    if (src.includes('/illustrations/biblioteca/')) return false;
+    return /^data:image\/svg\+xml/i.test(src) && false;
   }
 
   function activityData(page) {

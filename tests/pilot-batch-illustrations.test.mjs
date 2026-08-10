@@ -18,7 +18,7 @@ test('Lote piloto de Matemática (3º ano 1º bimestre) possui 30 atividades vin
     assert.match(activity.illustration, /\/illustrations\/biblioteca\/fundamental-iniciais\/3-ano\/1-bimestre\/matematica\/.*\.png$/);
 
     // Verificar se o arquivo PNG existe fisicamente em public/
-    const physicalPath = new URL(`..${activity.illustration}`, import.meta.url);
+    const physicalPath = new URL(`../public${activity.illustration}`, import.meta.url);
     const fileStat = await stat(physicalPath);
     assert.ok(fileStat.size > 1000, `Arquivo PNG ${activity.illustration} está vazio ou corrompido.`);
   }
