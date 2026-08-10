@@ -3,31 +3,42 @@ import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
 
 const html = await readFile(new URL('../biblioteca.html', import.meta.url), 'utf8');
-const illustration = await readFile(new URL('../illustration-reference-standard.js', import.meta.url), 'utf8');
+const libraryIllustration = await readFile(new URL('../library-ai-illustration.js', import.meta.url), 'utf8');
+const illustrationGuard = await readFile(new URL('../illustration-reference-standard.js', import.meta.url), 'utf8');
+const api = await readFile(new URL('../api/generate-library-illustration.js', import.meta.url), 'utf8');
 const jogos = await readFile(new URL('../jogos-inline.js', import.meta.url), 'utf8');
 
-test('Biblioteca carrega o padrão de ilustração aprovado depois do renderizador final', () => {
-  assert.match(html, /illustration-reference-standard\.js\?v=20260810-referencia-aprovada/);
-  assert.ok(html.indexOf('illustration-reference-standard.js') > html.indexOf('biblioteca-final-standard.js'));
+test('Biblioteca carrega gerador real de ilustração depois do renderizador final', () => {
+  assert.match(html, /library-ai-illustration\.js\?v=20260810-ilustracao-real-v1/);
+  assert.ok(html.indexOf('library-ai-illustration.js') > html.indexOf('biblioteca-final-standard.js'));
+  assert.doesNotMatch(html, /illustration-reference-standard\.js/);
 });
 
-test('fallback deixa de ser ícone abstrato e vira cena pedagógica contextual', () => {
-  assert.match(illustration, /sceneSvg\(subject, topic\)/);
-  assert.match(illustration, /ESCOLA/);
-  assert.match(illustration, /matem\|número/);
-  assert.match(illustration, /generated-illustration-image/);
-  assert.match(illustration, /Ilustração pedagógica colorida/);
+test('fallback vetorial é substituído por PNG gerado pela IA', () => {
+  assert.match(libraryIllustration, /generate-library-illustration/);
+  assert.match(libraryIllustration, /data:image\/svg\+xml/);
+  assert.match(libraryIllustration, /illustrationDataUrl/);
+  assert.match(libraryIllustration, /Gerando ilustração pedagógica/);
+  assert.match(libraryIllustration, /data-te-ai-illustration/);
 });
 
-test('padrão visual aprovado também é carregado na criação por IA e foto', () => {
+test('prompt proíbe clipart e exige ilustração editorial infantil', () => {
+  assert.match(api, /ilustração editorial infantil de alta qualidade/);
+  assert.match(api, /Não faça clipart, pictograma, ícone, infográfico, vetor chapado/);
+  assert.match(api, /3 a 5 crianças diversas/);
+  assert.match(api, /blocos de base dez\/material dourado/);
+  assert.match(api, /quality: 'medium'/);
+});
+
+test('IA e foto não aceitam SVG como resultado final', () => {
   assert.match(jogos, /carregarPadraoIlustracao/);
-  assert.match(jogos, /illustration-reference-standard\.js\?v=20260810-referencia-aprovada/);
-  assert.match(jogos, /carregarExportadorWord/);
-  assert.match(jogos, /carregarRegraBnccGabarito/);
+  assert.match(illustrationGuard, /removeVectorFallbacks/);
+  assert.match(illustrationGuard, /data:image\\\/svg\\\+xml/);
+  assert.match(illustrationGuard, /Ilustração aguardando geração em alta qualidade/);
 });
 
 test('BNCC não permanece na folha do aluno', () => {
-  assert.match(illustration, /moveBnccToAnswerKey/);
-  assert.match(illustration, /studentBncc\.remove\(\)/);
-  assert.match(illustration, /generated-answer-key-page/);
+  assert.match(illustrationGuard, /moveBnccToAnswerKey/);
+  assert.match(illustrationGuard, /studentBncc\.remove\(\)/);
+  assert.match(illustrationGuard, /generated-answer-key-page/);
 });
