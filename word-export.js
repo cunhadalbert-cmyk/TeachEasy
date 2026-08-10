@@ -67,13 +67,14 @@
   }
 
   function titleParagraph(docx, text) {
-    return paragraph(docx, text, { bold: true, size: 28, color: '541020', after: 140 });
+    return paragraph(docx, text, { bold: true, size: 30, color: '1F5A96', after: 120, alignment: docx.AlignmentType.CENTER });
   }
 
   function schoolHeaderParagraphs(docx) {
     return [
-      paragraph(docx, 'ESCOLA: _________________________________________________', { bold: true, size: 20, after: 80 }),
-      paragraph(docx, 'Nome: ____________________________    Turma: __________    Data: ____/____/______', { size: 18, after: 140 })
+      paragraph(docx, 'Escola: ________________________________________________________________', { bold: true, size: 20, after: 70 }),
+      paragraph(docx, 'Nome: __________________________________________________________________', { bold: true, size: 20, after: 70 }),
+      paragraph(docx, 'Turma: ______________    Data: ____/____/______    Prof.: __________________________', { bold: true, size: 18, after: 130 })
     ].filter(Boolean);
   }
 
@@ -81,14 +82,13 @@
     const output = [];
     questions.forEach((question, index) => {
       output.push(new docx.Paragraph({
-        spacing: { before: 80, after: 80, line: 276 },
+        spacing: { before: 60, after: 50, line: 260 },
         children: [
-          new docx.TextRun({ text: `${index + 1}. `, bold: true, size: 20 }),
+          new docx.TextRun({ text: `${index + 1}. `, bold: true, size: 20, color: '158C3B' }),
           new docx.TextRun({ text: cleanText(question), size: 20 })
         ]
       }));
-      output.push(paragraph(docx, '________________________________________________________________________________', { size: 16, color: '888888', after: 40 }));
-      output.push(paragraph(docx, '________________________________________________________________________________', { size: 16, color: '888888', after: 80 }));
+      output.push(paragraph(docx, '________________________________________________________________________________', { size: 16, color: '888888', after: 45 }));
     });
     return output.filter(Boolean);
   }
@@ -101,31 +101,29 @@
     const small = root.querySelector('.generated-material small');
     const title = root.querySelector('.generated-material h2');
     const materialParagraphs = [...root.querySelectorAll('.generated-material > p')];
-    const bncc = root.querySelector('.generated-bncc');
     const figure = root.querySelector('.generated-illustration-image');
     const questions = [...root.querySelectorAll('.generated-questions li p')].map(node => node.textContent);
     const adapted = root.querySelector('.generated-adapted');
     const answerKey = root.querySelector('.generated-answer-key-page');
 
-    if (small) children.push(paragraph(docx, small.textContent, { size: 17, color: '666666', after: 80 }));
+    if (small) children.push(paragraph(docx, small.textContent, { size: 17, color: '666666', after: 70, alignment: docx.AlignmentType.CENTER }));
     if (title) children.push(titleParagraph(docx, title.textContent));
-    materialParagraphs.forEach(node => children.push(paragraph(docx, node.textContent, { after: 100 })));
-    if (bncc) children.push(paragraph(docx, bncc.textContent, { bold: true, color: '541020', after: 120 }));
+    materialParagraphs.forEach(node => children.push(paragraph(docx, node.textContent, { after: 90 })));
 
     const imageRun = await imageRunFromElement(docx, figure, 360, 200);
     if (imageRun) {
-      children.push(new docx.Paragraph({ alignment: docx.AlignmentType.CENTER, spacing: { after: 120 }, children: [imageRun] }));
+      children.push(new docx.Paragraph({ alignment: docx.AlignmentType.CENTER, spacing: { after: 100 }, children: [imageRun] }));
     }
 
     children.push(...questionParagraphs(docx, questions));
 
     if (adapted) {
-      children.push(paragraph(docx, adapted.querySelector('h3')?.textContent || 'Versão adaptada para inclusão', { bold: true, color: '541020', before: 120, after: 80 }));
-      children.push(paragraph(docx, adapted.querySelector('p')?.textContent || '', { after: 120 }));
+      children.push(paragraph(docx, adapted.querySelector('h3')?.textContent || 'Versão adaptada para inclusão', { bold: true, color: '158C3B', before: 100, after: 70 }));
+      children.push(paragraph(docx, adapted.querySelector('p')?.textContent || '', { after: 100 }));
     }
 
     if (answerKey) {
-      children.push(paragraph(docx, 'GABARITO', { bold: true, size: 28, color: '541020', pageBreakBefore: true, after: 140 }));
+      children.push(paragraph(docx, 'GABARITO', { bold: true, size: 30, color: '1F5A96', pageBreakBefore: true, after: 130, alignment: docx.AlignmentType.CENTER }));
       children.push(paragraph(docx, answerKey.querySelector('p')?.textContent || answerKey.textContent, { after: 100 }));
     }
 
@@ -146,24 +144,24 @@
     const answerKey = root.querySelector('.photo-answer-key-page');
     const adapted = root.querySelector('.photo-adapted-note');
 
-    if (grade) children.push(paragraph(docx, grade.textContent, { size: 17, color: '666666', after: 80 }));
+    if (grade) children.push(paragraph(docx, grade.textContent, { size: 17, color: '666666', after: 70, alignment: docx.AlignmentType.CENTER }));
     if (title) children.push(titleParagraph(docx, title.textContent));
-    if (summary) children.push(paragraph(docx, summary.textContent, { after: 120 }));
+    if (summary) children.push(paragraph(docx, summary.textContent, { after: 100 }));
 
     const imageRun = await imageRunFromElement(docx, figure, 360, 210);
     if (imageRun) {
-      children.push(new docx.Paragraph({ alignment: docx.AlignmentType.CENTER, spacing: { after: 120 }, children: [imageRun] }));
+      children.push(new docx.Paragraph({ alignment: docx.AlignmentType.CENTER, spacing: { after: 100 }, children: [imageRun] }));
     }
 
     children.push(...questionParagraphs(docx, questions));
 
     if (adapted) {
-      children.push(paragraph(docx, adapted.querySelector('strong')?.textContent || 'Versão adaptada', { bold: true, color: '541020', before: 120, after: 80 }));
-      children.push(paragraph(docx, adapted.querySelector('span')?.textContent || '', { after: 120 }));
+      children.push(paragraph(docx, adapted.querySelector('strong')?.textContent || 'Versão adaptada', { bold: true, color: '158C3B', before: 100, after: 70 }));
+      children.push(paragraph(docx, adapted.querySelector('span')?.textContent || '', { after: 100 }));
     }
 
     if (answerKey) {
-      children.push(paragraph(docx, 'GABARITO', { bold: true, size: 28, color: '541020', pageBreakBefore: true, after: 140 }));
+      children.push(paragraph(docx, 'GABARITO', { bold: true, size: 30, color: '1F5A96', pageBreakBefore: true, after: 130, alignment: docx.AlignmentType.CENTER }));
       children.push(paragraph(docx, answerKey.querySelector('p')?.textContent || answerKey.textContent, { after: 100 }));
     }
 
@@ -178,8 +176,8 @@
       styles: {
         default: {
           document: {
-            run: { font: 'Arial', size: 20, color: '17251F' },
-            paragraph: { spacing: { line: 276, after: 100 } }
+            run: { font: 'Arial', size: 20, color: '202020' },
+            paragraph: { spacing: { line: 260, after: 90 } }
           }
         }
       },
@@ -187,7 +185,7 @@
         properties: {
           page: {
             size: { width: 11906, height: 16838 },
-            margin: { top: 567, right: 567, bottom: 680, left: 567, header: 280, footer: 280 }
+            margin: { top: 420, right: 420, bottom: 500, left: 420, header: 240, footer: 240 }
           }
         },
         children
