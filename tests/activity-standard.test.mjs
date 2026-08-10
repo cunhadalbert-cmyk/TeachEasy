@@ -29,7 +29,7 @@ test('cabeçalho oficial inclui Prof. no Word e nas prévias', () => {
 });
 
 test('texto introdutório e ilustração são preparados para composição equilibrada', () => {
-  assert.match(bnccUi, /data\.teacheasySummary/);
+  assert.match(bnccUi, /summary\.dataset\.teacheasySummary/);
   assert.match(bnccUi, /figure\.style\.float = 'right'/);
   assert.match(bnccUi, /questions\.style\.clear = 'both'/);
 });
