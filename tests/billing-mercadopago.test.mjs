@@ -22,6 +22,13 @@ test('Mercado Pago usa variáveis isoladas pelo ambiente da Vercel', async () =>
   assert.doesNotMatch(helper, /MERCADOPAGO_TEST_PLAN_ID/);
 });
 
+test('Preview usa e-mail do comprador de teste e produção preserva o e-mail real', async () => {
+  const helper = await read('api/_lib/mercadopago.js');
+  assert.match(helper, /VERCEL_ENV === 'preview'/);
+  assert.match(helper, /test@testuser\.com/);
+  assert.match(helper, /payer_email: getPayerEmail\(email\)/);
+});
+
 test('webhook valida assinatura e consulta assinatura antes de ativar conta', async () => {
   const helper = await read('api/_lib/mercadopago.js');
   const webhook = await read('api/billing/webhook.js');
