@@ -1,5 +1,5 @@
 (() => {
-  const state = { photoBncc: '' };
+  const state = { photoBncc: '', aiSummary: '' };
   const originalFetch = window.fetch.bind(window);
   let normalizing = false;
 
@@ -28,6 +28,78 @@
     paragraph.appendChild(marker);
   }
 
+  function standardizeHeader() {
+    const aiHeader = document.querySelector('#ai-preview-document .generated-standard-header');
+    if (aiHeader) {
+      const strong = aiHeader.querySelector('strong');
+      const row = aiHeader.querySelector('div');
+      if (strong) strong.textContent = 'Escola: ________________________________________________________________';
+      if (row) row.innerHTML = '<span>Nome: __________________________________________</span><span>Turma: __________</span><span>Data: ____/____/______</span><span>Prof.: __________________________</span>';
+      aiHeader.style.border = '1.5px solid #1F5A96';
+      aiHeader.style.padding = '7px 9px';
+      aiHeader.style.marginBottom = '8px';
+    }
+
+    const photoHeader = document.querySelector('#school-header');
+    if (photoHeader) {
+      const strong = photoHeader.querySelector('strong');
+      const row = photoHeader.querySelector('span');
+      if (strong) strong.textContent = 'Escola: ________________________________________________________________';
+      if (row) row.innerHTML = 'Nome: __________________________________ &nbsp; Turma: __________ &nbsp; Data: ____/____/______ &nbsp; Prof.: ____________________';
+      photoHeader.style.border = '1.5px solid #1F5A96';
+      photoHeader.style.padding = '7px 9px';
+      photoHeader.style.marginBottom = '8px';
+    }
+  }
+
+  function applyMasterLayout(root) {
+    if (!root) return;
+    const title = root.querySelector('.generated-material h2, .photo-preview-heading h3');
+    if (title) {
+      title.style.color = '#1F5A96';
+      title.style.textAlign = 'center';
+      title.style.fontWeight = '700';
+      title.style.margin = '6px 0';
+    }
+
+    const figure = root.querySelector('.generated-figure, .photo-generated-figure');
+    if (figure) {
+      figure.style.maxWidth = '49%';
+      figure.style.float = 'right';
+      figure.style.margin = '4px 0 8px 12px';
+      const image = figure.querySelector('img');
+      if (image) {
+        image.style.width = '100%';
+        image.style.height = 'auto';
+        image.style.maxHeight = '58mm';
+        image.style.objectFit = 'contain';
+      }
+    }
+
+    const questions = root.querySelector('.generated-questions, .photo-question-list');
+    if (questions) {
+      questions.style.clear = 'both';
+      questions.style.marginTop = '8px';
+    }
+  }
+
+  function ensureAiSummary(root) {
+    if (!root || !state.aiSummary) return;
+    let summary = root.querySelector('[data-teacheasy-summary]');
+    if (!summary) {
+      summary = document.createElement('p');
+      summary.dataset.teacheasySummary = 'true';
+      const figure = root.querySelector('.generated-figure');
+      const material = root.querySelector('.generated-material');
+      if (figure?.parentNode) figure.parentNode.insertBefore(summary, figure);
+      else material?.appendChild(summary);
+    }
+    summary.textContent = state.aiSummary;
+    summary.style.textAlign = 'justify';
+    summary.style.lineHeight = '1.25';
+    summary.style.margin = '6px 0';
+  }
+
   function normalizeAiPreview() {
     if (normalizing) return;
     normalizing = true;
@@ -40,6 +112,10 @@
         root.dataset.teacheasyBncc = cleanBncc(generatedBncc.textContent);
         generatedBncc.remove();
       }
+
+      ensureAiSummary(root);
+      standardizeHeader();
+      applyMasterLayout(root);
 
       root.querySelectorAll('[data-bncc-answer-key]').forEach(node => node.remove());
       if (teacherWantsBncc('ai')) {
@@ -56,6 +132,8 @@
     try {
       const root = document.querySelector('#photo-preview-content');
       if (!root) return;
+      standardizeHeader();
+      applyMasterLayout(root);
       root.querySelectorAll('[data-bncc-answer-key]').forEach(node => node.remove());
       if (teacherWantsBncc('photo')) {
         appendBnccToAnswerKey(root.querySelector('.photo-answer-key-page'), state.photoBncc);
@@ -114,12 +192,14 @@
 
     const response = await originalFetch(input, requestInit);
 
-    if (generationPayload?.mode === 'photo') {
+    if (generationPayload) {
       try {
         const data = await response.clone().json();
-        state.photoBncc = cleanBncc(data?.activity?.bncc || '');
+        if (generationPayload.mode === 'photo') state.photoBncc = cleanBncc(data?.activity?.bncc || '');
+        if (generationPayload.mode === 'text') state.aiSummary = String(data?.activity?.summary || '').trim();
       } catch {
-        state.photoBncc = '';
+        if (generationPayload.mode === 'photo') state.photoBncc = '';
+        if (generationPayload.mode === 'text') state.aiSummary = '';
       }
     }
 
@@ -128,6 +208,7 @@
 
   function init() {
     addTeacherOptions();
+    standardizeHeader();
 
     const aiRoot = document.querySelector('#ai-preview-document');
     const photoRoot = document.querySelector('#photo-preview-content');

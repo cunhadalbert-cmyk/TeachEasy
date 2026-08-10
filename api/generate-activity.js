@@ -1,5 +1,6 @@
 const MAX_BODY_BYTES = 6_600_000;
 const { consumeAiGeneration, getAuthenticatedUser, refundAiGeneration } = require('./_lib/firebase');
+const { TEACHEASY_ACTIVITY_STANDARD } = require('./_lib/activity-standard');
 
 function json(response, status, payload) {
   response.status(status).setHeader('Content-Type', 'application/json; charset=utf-8').end(JSON.stringify(payload));
@@ -45,7 +46,7 @@ async function generateIllustration(activity, input) {
   const visualStyle = blackAndWhite
     ? 'preto e branco, traço limpo e forte, sem tons de cinza, próprio para imprimir e colorir'
     : 'colorida, clara e infantil, com cores alegres e fundo branco ou muito claro';
-  const prompt = `Crie UMA ilustração exclusivamente pedagógica ${visualStyle} para acompanhar uma atividade escolar brasileira. Represente somente o que for necessário para resolver ou compreender este enunciado: "${firstQuestion}". Se houver uma quantidade, grupos ou objetos, desenhe a quantidade correta e deixe cada elemento bem visível para a criança contar. Preserve a proporção natural dos objetos e use composição equilibrada, centralizada e com margens. Não crie retrato, publicidade, logotipo, meme, arte promocional ou imagem sem finalidade didática. Não coloque letras, palavras, números, respostas, marcas d'água ou logotipos na imagem.`;
+  const prompt = `Crie UMA ilustração exclusivamente pedagógica ${visualStyle} para acompanhar uma atividade escolar brasileira no padrão TeachEasy. Represente somente o que for necessário para compreender ou resolver este enunciado: "${firstQuestion}". Se houver uma quantidade, grupos ou objetos, desenhe a quantidade correta e deixe cada elemento bem visível. Preserve proporções naturais, composição equilibrada e margens adequadas para diagramação A4 ao lado do texto. Não crie retrato, publicidade, logotipo, meme, arte promocional ou imagem sem finalidade didática. Não coloque letras, palavras, números, respostas, marcas d'água ou logotipos na imagem.`;
   const imageResponse = await fetch('https://api.openai.com/v1/images/generations', {
     method: 'POST',
     headers: { Authorization: `Bearer ${process.env.OPENAI_API_KEY}`, 'Content-Type': 'application/json' },
@@ -89,18 +90,18 @@ module.exports = async function handler(request, response) {
 
     const questions = Math.min(20, Math.max(1, Number(input.questionCount) || 5));
     const bnccInstruction = input.bncc
-      ? `Alinhe o material à BNCC. ${input.bnccMode === 'skill' ? 'Informe no campo bncc uma habilidade/código apenas quando houver segurança de correspondência; nunca invente código.' : 'Use a BNCC como referência pedagógica e descreva no campo bncc o alinhamento de forma clara, sem inventar códigos.'}`
-      : 'Não inclua referência BNCC.';
+      ? `Alinhe o material à BNCC. ${input.bnccMode === 'skill' ? 'Informe no campo bncc uma habilidade/código apenas quando houver segurança de correspondência; nunca invente código.' : 'Use a BNCC como referência pedagógica e descreva no campo bncc o alinhamento de forma clara, sem inventar códigos.'} A BNCC não deve ser incorporada ao texto nem aos enunciados da atividade do aluno; ela será tratada separadamente no gabarito.`
+      : 'Considere o alinhamento pedagógico adequado, mas não exiba referência BNCC no material do aluno.';
     const context = isPhoto
-      ? `Analise a imagem enviada somente como referência pedagógica e crie uma atividade escolar original para ${safeText(input.grade, 80)} com ${questions} questões. ${input.adapted ? 'Faça comandos curtos e uma versão acessível para inclusão.' : ''}`
-      : `Crie exclusivamente um material escolar original. Pedido livre: ${safeText(input.request, 1200) || 'Crie uma atividade escolar adequada para uma turma de ensino básico.'}. Tipo: ${safeText(input.materialType, 80) || 'Atividade'}. Etapa: ${safeText(input.stage, 100) || 'não informada'}. Ano: ${safeText(input.grade, 80) || 'não informado'}. Disciplina: ${safeText(input.subject, 80) || 'não informada'}. Tema: ${safeText(input.topic, 180) || 'livre'}. Objetivo: ${safeText(input.objective, 240) || 'promover aprendizagem ativa'}. Dificuldade: ${safeText(input.difficulty, 50) || 'Intermediário'}. Tipo de questões: ${safeText(input.questionType, 50) || 'Mistas'}. Faça ${questions} questões. ${input.adapted ? 'Inclua linguagem acessível.' : ''}`;
-    const content = [{ type: 'input_text', text: `Você é um especialista em educação brasileira e trabalha somente com conteúdo escolar. Não atenda pedidos de conversa geral, publicidade, programação, entretenimento ou geração de imagens avulsas. ${context} ${bnccInstruction} Retorne apenas JSON com title, summary, illustration (uma descrição curta de ilustração pedagógica somente se útil à atividade), bncc (texto curto ou string vazia), questions (lista de objetos com prompt) e answerKey. O conteúdo deve ser apropriado, didático e revisável por professor.` }];
+      ? `Analise a imagem enviada somente como referência pedagógica e crie uma atividade escolar ORIGINAL para ${safeText(input.grade, 80)} com exatamente ${questions} questões. Não copie simplesmente a fotografia. ${input.adapted ? 'Faça comandos curtos e uma versão acessível para inclusão.' : ''}`
+      : `Crie exclusivamente um material escolar original. Pedido livre: ${safeText(input.request, 1200) || 'Crie uma atividade escolar adequada para uma turma de ensino básico.'}. Tipo: ${safeText(input.materialType, 80) || 'Atividade'}. Etapa: ${safeText(input.stage, 100) || 'não informada'}. Ano: ${safeText(input.grade, 80) || 'não informado'}. Disciplina: ${safeText(input.subject, 80) || 'não informada'}. Tema: ${safeText(input.topic, 180) || 'livre'}. Objetivo: ${safeText(input.objective, 240) || 'promover aprendizagem ativa'}. Dificuldade: ${safeText(input.difficulty, 50) || 'Intermediário'}. Tipo de questões: ${safeText(input.questionType, 50) || 'Mistas'}. Faça exatamente ${questions} questões. ${input.adapted ? 'Inclua linguagem acessível.' : ''}`;
+    const content = [{ type: 'input_text', text: `Você é um especialista em educação brasileira e trabalha somente com conteúdo escolar. Não atenda pedidos de conversa geral, publicidade, programação, entretenimento ou geração de imagens avulsas.\n\n${TEACHEASY_ACTIVITY_STANDARD}\n\nSOLICITAÇÃO ATUAL:\n${context}\n${bnccInstruction}\n\nRetorne apenas JSON com title, summary, illustration (descrição curta da ilustração pedagógica somente se útil), bncc (texto curto ou string vazia), questions (lista de objetos com prompt) e answerKey. O conteúdo deve ser apropriado, didático, conciso para diagramação A4 e revisável pelo professor.` }];
     if (isPhoto) content.push({ type: 'input_image', image_url: input.imageDataUrl, detail: 'low' });
 
     const openAiResponse = await fetch('https://api.openai.com/v1/responses', {
       method: 'POST',
       headers: { Authorization: `Bearer ${process.env.OPENAI_API_KEY}`, 'Content-Type': 'application/json' },
-      body: JSON.stringify({ model: 'gpt-4.1-mini', input: [{ role: 'user', content }], text: { format: { type: 'json_object' } }, max_output_tokens: 1800 })
+      body: JSON.stringify({ model: 'gpt-4.1-mini', input: [{ role: 'user', content }], text: { format: { type: 'json_object' } }, max_output_tokens: 2200 })
     });
     const openAiData = await openAiResponse.json();
     if (!openAiResponse.ok) throw new Error(openAiData.error?.message || 'A IA não respondeu.');
@@ -109,11 +110,11 @@ module.exports = async function handler(request, response) {
 
     const normalizedActivity = {
       title: safeText(activity.title, 180),
-      summary: safeText(activity.summary, 600),
-      illustration: safeText(activity.illustration, 100),
+      summary: safeText(activity.summary, 900),
+      illustration: safeText(activity.illustration, 220),
       bncc: input.bncc ? safeText(activity.bncc, 700) : '',
       questions: activity.questions.slice(0, questions).map(question => ({ prompt: safeText(question.prompt || question, 700) })),
-      answerKey: safeText(activity.answerKey, 1400)
+      answerKey: safeText(activity.answerKey, 2200)
     };
 
     if (!isPhoto && input.figures) {
