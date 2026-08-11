@@ -845,15 +845,20 @@ test('Língua Portuguesa possui 30 atividades autorais, 180 questões e figuras 
     assert.equal(figureIds.size, activity.figuras.length);
     for (const figure of activity.figuras) {
       assert.ok(figure.id);
-      assert.match(figure.arquivo, /^assets\/atividades\/lingua-portuguesa\/[^/]+\.svg$/);
+      assert.match(figure.arquivo, /^assets\/atividades\/lingua-portuguesa\/[^/]+\.(svg|png)$/);
       assert.ok(figure.descricao);
       assert.ok(figure.funcaoPedagogica);
       assert.ok(figure.posicaoSugerida);
       assert.ok(figure.textoAlternativo);
       assert.equal(figure.compativelPretoBranco, true);
-      const image = await readFile(new URL(`../${figure.arquivo}`, import.meta.url), 'utf8');
-      assert.match(image, /^<svg[\s>]/);
-      assert.ok(image.length > 500);
+      const image = await readFile(new URL(`../${figure.arquivo}`, import.meta.url));
+      if (figure.arquivo.endsWith('.svg')) {
+        assert.match(image.toString('utf8'), /^<svg[\s>]/);
+        assert.ok(image.length > 500);
+      } else {
+        assert.deepEqual([...image.subarray(0, 8)], [137, 80, 78, 71, 13, 10, 26, 10]);
+        assert.ok(image.length > 100_000);
+      }
     }
 
     for (const question of activity.questoes) {
