@@ -35,10 +35,11 @@ test('Manifesto de controle das ilustrações registra o lote piloto corretament
   assert.ok(item0.imagePath.endsWith('.png'));
 });
 
-test('Biblioteca não carrega gerador dinâmico de IA no navegador do cliente', async () => {
+test('Biblioteca não carrega gerador dinâmico de IA nem sincronizador de espera no navegador do cliente', async () => {
   const html = await readFile(new URL('../biblioteca.html', import.meta.url), 'utf8');
   assert.doesNotMatch(html, /library-ai-illustration\.js/);
   assert.doesNotMatch(html, /generate-library-illustration/);
+  assert.doesNotMatch(html, /library-export-image-sync\.js/);
   assert.match(html, /biblioteca-final-standard\.js/);
-  assert.match(html, /library-export-image-sync\.js/);
+  assert.match(html, /library-portuguese-approved-static\.js/);
 });
