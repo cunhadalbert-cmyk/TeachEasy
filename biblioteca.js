@@ -647,6 +647,19 @@ function toggleSelection(id) {
   renderActivities();
 }
 
+function getRichIllustrationPath(figure, activity) {
+  if (!figure || !figure.arquivo) return 'assets/photo-activity-illustration.png';
+  if (figure.arquivo.endsWith('.webp') || figure.arquivo.endsWith('.png')) return figure.arquivo;
+  const subject = (activity?.subject || activity?.disciplina || '').toLowerCase();
+  if (subject.includes('matemática') || subject.includes('matematica')) {
+    return 'assets/desenhos/matematica/matematica-001.webp';
+  }
+  if (subject.includes('ciência') || subject.includes('geografia') || subject.includes('biologia')) {
+    return 'assets/desenhos/natureza/natureza-001.webp';
+  }
+  return 'assets/photo-activity-illustration.png';
+}
+
 function questionMarkup(activity, questions = activity.questions) {
   if (activity.collectionActivity) {
     return questions.map(question => {
@@ -654,10 +667,11 @@ function questionMarkup(activity, questions = activity.questions) {
       const figure = question.figuraId
         ? activity.figures.find(item => item.id === question.figuraId && item.arquivoValidado)
         : null;
+      const figureSrc = figure ? getRichIllustrationPath(figure, activity) : '';
       return `
         <li>
           <p>${question.enunciado.replace(/\n/g, '<br>')}</p>
-          ${figure ? `<img class="question-figure" src="${figure.arquivo}" alt="${figure.textoAlternativo || ''}">` : ''}
+          ${figure ? `<img class="question-figure" src="${figureSrc}" data-original-src="${figure.arquivo}" alt="${figure.textoAlternativo || 'Ilustração da atividade'}" style="max-height: 180px; object-fit: contain; border-radius: 12px; margin: 8px auto; display: block;">` : ''}
           ${question.alternativas.length ? `<ol class="question-alternatives" type="a">${question.alternativas.map(alternative => `<li>${alternative}</li>`).join('')}</ol>` : ''}
           ${embeddedAnswerSpace ? '' : `<div class="student-answer-space answer-space-${question.espacoResposta}" aria-label="Espaço para resposta"></div>`}
         </li>`;
@@ -741,11 +755,11 @@ function openPreview(activity) {
         </div>
         ${activity.hasFigures ? `<div class="preview-illustration" style="--visual-gradient:${gradient}" role="img" aria-label="Ilustração colorida sobre ${activity.topic}">${activity.symbol}</div>` : ''}
         <ol class="question-list">${questionMarkup(activity)}</ol>
-        <div class="preview-bncc"><strong>BNCC ${activity.bncc}</strong> — habilidade demonstrativa associada ao objeto de conhecimento.</div>
       </section>
 
       <section class="worksheet-page answer-key-page">
         <h3>Gabarito — folha separada</h3>
+        ${activity.bncc ? `<div class="preview-bncc" style="margin-bottom: 12px; font-weight: bold; color: #0d47a1;">Foco BNCC: ${activity.bncc} — habilidade demonstrativa associada ao objeto de conhecimento.</div>` : ''}
         ${activity.hasAnswerKey ? `<ol>${answerMarkup(activity)}</ol>` : '<p>Esta atividade foi cadastrada sem gabarito demonstrativo.</p>'}
       </section>
 
@@ -872,10 +886,11 @@ async function downloadCollectionWord(activity) {
         .collection-answer-key h3 { font: bold 15pt Arial, sans-serif; }
         .collection-answer-key li { margin-bottom: 4mm; page-break-inside: avoid; }
       </style></head><body>${pages}</body></html>`;
-  const blob = new Blob([wordDocument], { type: 'application/msword' });
+  // application/msword fallback reference
+  const blob = new Blob(['\ufeff', wordDocument], { type: 'application/vnd.openxmlformats-officedocument.wordprocessingml.document' });
   const link = document.createElement('a');
   link.href = URL.createObjectURL(blob);
-  link.download = `${activity.id}.doc`;
+  link.download = `${activity.id}_padronizado.docx`;
   link.click();
   URL.revokeObjectURL(link.href);
 }

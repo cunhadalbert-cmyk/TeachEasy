@@ -39,39 +39,88 @@ function renderPhotoPreview(activity) {
   const adapted = data.has('adapted');
   const answerKey = data.has('answerKey');
   photoGeneration += 1;
-  const title = activity?.title || 'Atividade criada a partir da referência visual';
+  const title = activity?.title || 'ATIVIDADE DE LÍNGUA PORTUGUESA';
+  const subtitle = activity?.subtitle || 'Leitura e interpretação';
   const questions = Array.isArray(activity?.questions) && activity.questions.length
     ? activity.questions.map(question => question.prompt || question).filter(Boolean)
     : photoQuestions(count, adapted);
   const answerKeyContent = activity?.answerKey || 'Respostas avaliadas por compreensão, relação com a referência e clareza do registro.';
 
-  photoPreviewContent.innerHTML = `<section class="photo-activity-page">
-    <div class="photo-preview-heading">
-      <span>${grade}</span>
-      <small>Prévia demonstrativa · versão ${photoGeneration}</small>
-      <h3>${escapeHtml(title)}</h3>
-      <p>${escapeHtml(activity?.summary || 'A foto orientou o tema e o contexto. Os enunciados abaixo são novos e não são uma simples cópia do texto da imagem.')}</p>
+  const imageSrc = lastPhotoPayload?.imageDataUrl || 'assets/professora-alunos-uniforme-4k.png';
+  const summaryText = activity?.summary || 'Atividade original gerada da imagem. Na escola de Ana, Pedro e Sofia, a turma participou de uma campanha de coleta seletiva. No pátio, foram colocadas lixeiras coloridas para papel, plástico, metal e vidro. A professora explicou que separar o lixo corretamente ajuda a proteger a natureza e a manter a escola limpa.';
+
+  const formattedSummary = summaryText.split('\n').map(paragraph => `<p>${escapeHtml(paragraph)}</p>`).join('');
+
+  photoPreviewContent.innerHTML = `<section class="photo-activity-page teacheasy-a4-page" style="border: 3px dashed #4CAF50; border-radius: 20px; padding: 12mm 14mm; background: #fff; position: relative;">
+    <!-- CABEÇALHO PADRÃO -->
+    <div style="border: 2px solid #0d47a1; border-radius: 14px; padding: 10px 16px; margin-bottom: 14px; font-size: 14px; font-weight: 700; color: #1a252f; display: flex; flex-direction: column; gap: 8px;">
+      <div style="display: flex; align-items: flex-end; gap: 8px; width: 100%;">
+        <span>Escola:</span>
+        <div style="flex: 1; border-bottom: 1.5px dotted #555; height: 16px;"></div>
+      </div>
+      <div style="display: flex; align-items: flex-end; gap: 8px; width: 100%;">
+        <span>Nome:</span>
+        <div style="flex: 1; border-bottom: 1.5px dotted #555; height: 16px;"></div>
+      </div>
+      <div style="display: grid; grid-template-columns: 1.2fr 1.5fr 2fr; gap: 15px; align-items: flex-end;">
+        <div style="display: flex; align-items: flex-end; gap: 8px;">
+          <span>Turma:</span>
+          <div style="flex: 1; border-bottom: 1.5px dotted #555; height: 16px;"></div>
+        </div>
+        <div>Data: ____/____/______</div>
+        <div style="display: flex; align-items: flex-end; gap: 8px;">
+          <span>Prof.:</span>
+          <div style="flex: 1; border-bottom: 1.5px dotted #555; height: 16px;"></div>
+        </div>
+      </div>
     </div>
-    <figure class="photo-generated-figure">
-      <img src="${lastPhotoPayload?.imageDataUrl || ''}" alt="Imagem de referência usada na atividade">
-      <figcaption>Imagem de referência para as questões.</figcaption>
-    </figure>
-    <ol class="photo-question-list">
-      ${questions.map(question => `<li>${escapeHtml(question)}</li>`).join('')}
+
+    <!-- TÍTULO E SUBTÍTULO -->
+    <h1 style="text-align: center; color: #0f4c81; font-family: sans-serif; font-size: 24px; font-weight: 800; text-transform: uppercase; margin-top: 4px; margin-bottom: 2px;">${escapeHtml(title)}</h1>
+    <div style="text-align: center; color: #2e7d32; font-size: 17px; font-weight: 800; display: flex; align-items: center; justify-content: center; gap: 6px; margin-bottom: 16px;">🍃 ${escapeHtml(subtitle)} 🍃</div>
+
+    <!-- CONTEÚDO 2 COLUNAS -->
+    <div style="display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 16px; margin-bottom: 16px; align-items: stretch;">
+      <div style="border: 2px dashed #81c784; border-radius: 14px; padding: 14px; font-size: 12.5px; line-height: 1.55; color: #2c3e50; text-align: justify; background: #fafafa; display: flex; flex-direction: column; justify-content: center;">
+        ${formattedSummary}
+      </div>
+      <figure class="photo-generated-figure" style="border-radius: 14px; overflow: hidden; display: flex; align-items: center; justify-content: center; border: 1.5px solid #e0e0e0; background: #f9f9f9; max-height: 220px; margin: 0;">
+        <img src="${imageSrc}" alt="Ilustração da atividade" style="width: 100%; height: 100%; object-fit: cover;">
+      </figure>
+    </div>
+
+    <!-- INSTRUÇÃO -->
+    <div style="color: #2e7d32; font-weight: 800; font-size: 15px; margin-bottom: 14px; display: flex; align-items: center; gap: 6px;">
+      <span>★ Responda às questões de acordo com o texto.</span>
+    </div>
+
+    <!-- QUESTÕES -->
+    <ol class="photo-question-list" style="display: flex; flex-direction: column; gap: 11px; list-style: none; padding: 0; margin: 0;">
+      ${questions.map((question, idx) => `
+        <li style="display: flex; flex-direction: column; gap: 4px;">
+          <div style="display: flex; align-items: center; gap: 10px; font-weight: 700; font-size: 14px; color: #2c3e50;">
+            <span style="background: #2e7d32; color: #ffffff; border-radius: 50%; width: 24px; height: 24px; display: inline-flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 800; flex-shrink: 0;">${idx + 1}</span>
+            <span>${escapeHtml(question)}</span>
+          </div>
+          <div style="width: 100%; border-bottom: 1.5px solid #999; height: 20px;"></div>
+        </li>
+      `).join('')}
     </ol>
-    </section>
-    ${answerKey ? `
-      <div class="photo-answer-key photo-answer-key-page">
-        <strong>Gabarito orientativo</strong>
-        <p>${escapeHtml(answerKeyContent)}</p>
-      </div>
-    ` : ''}
-    ${adapted ? `
-      <div class="photo-adapted-note">
-        <strong>Versão adaptada</strong>
-        <span>Comandos curtos, uma etapa por vez e possibilidade de resposta por desenho ou símbolos.</span>
-      </div>
-    ` : ''}
+  </section>
+
+  ${answerKey ? `
+    <div class="photo-answer-key photo-answer-key-page" style="margin-top: 20px; padding: 16px; border-radius: 14px; background: #f4ebe7;">
+      <strong style="color: #2e7d32; font-size: 16px;">GABARITO ORIENTATIVO</strong>
+      <p style="margin-top: 8px;">${escapeHtml(answerKeyContent)}</p>
+    </div>
+  ` : ''}
+
+  ${adapted ? `
+    <div class="photo-adapted-note" style="margin-top: 15px; padding: 12px; border-radius: 10px; background: #e8f5e9; color: #1b5e20;">
+      <strong>Versão adaptada (Inclusão/Autismo):</strong>
+      <span>Comandos curtos, fonte clara e possibilidade de resposta por desenho ou símbolos.</span>
+    </div>
+  ` : ''}
   `;
   photoGeneratedPreview.hidden = false;
 }
@@ -127,11 +176,33 @@ function validatePhotoReference() {
 }
 
 function downloadWordPreview() {
-  const documentHtml = `<!DOCTYPE html><html><head><meta charset="utf-8"><title>Atividade TeachEasy</title><style>@page{size:A4;margin:8mm}body{font-family:Arial,sans-serif;font-size:10pt;line-height:1.2}.school-header{border-bottom:1px solid #333;padding-bottom:6px;margin-bottom:8px}.photo-question-list li{margin:5px 0}.photo-generated-figure img{max-height:55px;max-width:100%}.photo-answer-key-page{page-break-before:always;break-before:page}.photo-activity-page{page-break-after:always;break-after:page}</style></head><body>${schoolHeader.outerHTML}${photoPreviewContent.innerHTML}</body></html>`;
-  const blob = new Blob([documentHtml], { type: 'application/msword' });
+  const documentHtml = `<html xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word" xmlns="http://www.w3.org/TR/REC-html40">
+  <head>
+    <meta charset="utf-8">
+    <title>Atividade TeachEasy Padronizada</title>
+    <!--[if gte mso 9]>
+    <xml>
+      <w:WordDocument>
+        <w:View>Print</w:View>
+        <w:Zoom>100</w:Zoom>
+        <w:DoNotOptimizeForBrowser/>
+      </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+      @page { size: A4; margin: 12mm 14mm; }
+      body { font-family: 'Arial', sans-serif; font-size: 11pt; color: #2c3e50; }
+      p { margin: 4px 0; }
+    </style>
+  </head>
+  <body>
+    ${photoPreviewContent.innerHTML}
+  </body>
+  </html>`;
+  const blob = new Blob(['\ufeff', documentHtml], { type: 'application/vnd.openxmlformats-officedocument.wordprocessingml.document' });
   const link = document.createElement('a');
   link.href = URL.createObjectURL(blob);
-  link.download = 'atividade-teacheasy.doc';
+  link.download = 'atividade_teacheasy_padronizada.docx';
   link.click();
   URL.revokeObjectURL(link.href);
 }
@@ -149,8 +220,11 @@ photoRegenerate.addEventListener('click', () => {
 });
 photoDownloadPdf.addEventListener('click', () => {
   const printWindow = window.open('', '_blank');
-  printWindow.document.write(`<title>Atividade TeachEasy</title><style>@page{size:A4;margin:8mm}body{font-family:Arial,sans-serif;max-width:190mm;margin:0 auto;font-size:10pt;line-height:1.2}.school-header{border-bottom:1px solid #333;padding-bottom:6px;margin-bottom:8px}.photo-question-list li{margin:5px 0}.photo-generated-figure img{max-height:55px;max-width:100%}.photo-answer-key-page{page-break-before:always;break-before:page}.photo-activity-page{page-break-after:always;break-after:page}</style>${schoolHeader.outerHTML}${photoPreviewContent.innerHTML}`);
+  printWindow.document.write(`<!DOCTYPE html><html><head><title>Atividade TeachEasy - PDF</title><style>@page{size:A4;margin:8mm}body{font-family:Arial,sans-serif;margin:0;padding:0;background:#fff;}</style></head><body>${photoPreviewContent.innerHTML}</body></html>`);
   printWindow.document.close();
-  printWindow.print();
+  setTimeout(() => {
+    printWindow.print();
+  }, 300);
 });
 photoDownloadWord.addEventListener('click', downloadWordPreview);
+

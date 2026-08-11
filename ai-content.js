@@ -260,5 +260,5 @@ document.querySelector('#ai-download-pdf').addEventListener('click', () => {
   printWindow.print();
 });
 document.querySelector('#ai-download-word').addEventListener('click', () => {
-  downloadAiContent('doc', 'application/msword');
+  downloadAiContent('docx', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document');
 });

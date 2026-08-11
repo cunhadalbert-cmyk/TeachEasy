@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modelo de Atividade Padronizada — TeachEasy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: #eef2f5;
+      font-family: 'Nunito', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 30px 15px;
+    }
+
+    .toolbar {
+      background: #ffffff;
+      padding: 12px 24px;
+      border-radius: 50px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+      margin-bottom: 25px;
+      display: flex;
+      gap: 15px;
+      align-items: center;
+    }
+
+    .toolbar-title {
+      font-weight: 800;
+      color: #0f4c81;
+      font-size: 15px;
+    }
+
+    .btn-print {
+      background: #2e7d32;
+      color: #fff;
+      border: none;
+      padding: 8px 18px;
+      border-radius: 20px;
+      font-weight: 700;
+      cursor: pointer;
+      font-size: 13px;
+      transition: all 0.2s;
+    }
+
+    .btn-print:hover {
+      background: #1b5e20;
+    }
+
+    /* FOLHA A4 PADRÃO TEACHEASY */
+    .teacheasy-a4-page {
+      width: 210mm;
+      min-height: 297mm;
+      background: #ffffff;
+      padding: 12mm 14mm;
+      border: 3px dashed #4CAF50;
+      border-radius: 20px;
+      box-shadow: 0 12px 40px rgba(0,0,0,0.12);
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* 1. CABEÇALHO */
+    .header-box {
+      border: 2px solid #0d47a1;
+      border-radius: 14px;
+      padding: 10px 16px;
+      margin-bottom: 14px;
+      font-size: 14px;
+      font-weight: 700;
+      color: #1a252f;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .field-row {
+      display: flex;
+      align-items: flex-end;
+      gap: 8px;
+      width: 100%;
+    }
+
+    .field-line {
+      flex: 1;
+      border-bottom: 1.5px dotted #555;
+      height: 16px;
+    }
+
+    .field-group-inline {
+      display: grid;
+      grid-template-columns: 1.2fr 1.5fr 2fr;
+      gap: 15px;
+      align-items: flex-end;
+    }
+
+    /* 2. TÍTULO E SUBTÍTULO */
+    .activity-title {
+      text-align: center;
+      color: #0f4c81;
+      font-family: 'Fredoka', sans-serif;
+      font-size: 26px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-top: 4px;
+      margin-bottom: 2px;
+    }
+
+    .activity-subtitle {
+      text-align: center;
+      color: #2e7d32;
+      font-size: 18px;
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      margin-bottom: 16px;
+    }
+
+    /* 3. CONTEÚDO 2 COLUNAS */
+    .content-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 16px;
+      margin-bottom: 16px;
+      align-items: stretch;
+    }
+
+    .text-box {
+      border: 2px dashed #81c784;
+      border-radius: 14px;
+      padding: 14px;
+      font-size: 12.5px;
+      line-height: 1.55;
+      color: #2c3e50;
+      text-align: justify;
+      background: #fafafa;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .text-box p {
+      margin-bottom: 8px;
+    }
+
+    .text-box p:last-child {
+      margin-bottom: 0;
+    }
+
+    .image-box {
+      border-radius: 14px;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1.5px solid #e0e0e0;
+      background: #f9f9f9;
+      max-height: 220px;
+    }
+
+    .image-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* 4. DIVISOR DE INSTRUÇÃO */
+    .instruction-bar {
+      color: #2e7d32;
+      font-weight: 800;
+      font-size: 15px;
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    /* 5. QUESTÕES E LINHAS */
+    .questions-list {
+      display: flex;
+      flex-direction: column;
+      gap: 11px;
+    }
+
+    .question-item {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .question-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 700;
+      font-size: 14px;
+      color: #2c3e50;
+    }
+
+    .badge-number {
+      background: #2e7d32;
+      color: #ffffff;
+      border-radius: 50%;
+      width: 24px;
+      height: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 13px;
+      font-weight: 800;
+      flex-shrink: 0;
+    }
+
+    .answer-line {
+      width: 100%;
+      border-bottom: 1.5px solid #999;
+      height: 20px;
+    }
+
+    /* DECORAÇÃO INFERIOR DIREITA */
+    .footer-decor {
+      position: absolute;
+      bottom: 12mm;
+      right: 14mm;
+      width: 55px;
+      opacity: 0.9;
+      pointer-events: none;
+    }
+
+    @media print {
+      body {
+        background: none;
+        padding: 0;
+      }
+      .toolbar {
+        display: none;
+      }
+      .teacheasy-a4-page {
+        box-shadow: none;
+        margin: 0;
+        border-radius: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="toolbar">
+    <span class="toolbar-title">✨ Modelo de Atividade Padronizada TeachEasy</span>
+    <button class="btn-print" onclick="window.print()">🖨 Imprimir / Salvar PDF</button>
+  </div>
+
+  <div class="teacheasy-a4-page">
+
+    <!-- CABEÇALHO -->
+    <div class="header-box">
+      <div class="field-row">
+        <span>Escola:</span>
+        <div class="field-line"></div>
+      </div>
+      <div class="field-row">
+        <span>Nome:</span>
+        <div class="field-line"></div>
+      </div>
+      <div class="field-group-inline">
+        <div class="field-row">
+          <span>Turma:</span>
+          <div class="field-line"></div>
+        </div>
+        <div>Data: ____/____/______</div>
+        <div class="field-row">
+          <span>Prof.:</span>
+          <div class="field-line"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TÍTULO -->
+    <h1 class="activity-title">ATIVIDADE DE LÍNGUA PORTUGUESA</h1>
+    <div class="activity-subtitle">🍃 Leitura e interpretação 🍃</div>
+
+    <!-- CONTEÚDO 2 COLUNAS -->
+    <div class="content-grid">
+      <div class="text-box">
+        <p>Na escola de Ana, Pedro e Sofia, a turma participou de uma campanha de coleta seletiva. No pátio, foram colocadas lixeiras coloridas para papel, plástico, metal e vidro. A professora explicou que separar o lixo corretamente ajuda a proteger a natureza e a manter a escola limpa.</p>
+        <p>Durante o recreio, as crianças recolheram alguns materiais que poderiam ser reciclados e colocaram cada item na lixeira certa.</p>
+        <p>No fim da atividade, todos perceberam que pequenas atitudes podem fazer uma grande diferença para o meio ambiente.</p>
+      </div>
+
+      <div class="image-box">
+        <img src="assets/professora-alunos-uniforme-4k.png" alt="Ilustração de alunos e professora na escola">
+      </div>
+    </div>
+
+    <!-- INSTRUÇÃO -->
+    <div class="instruction-bar">
+      <span>★ Responda às questões de acordo com o texto.</span>
+    </div>
+
+    <!-- QUESTÕES DE 1 A 8 -->
+    <div class="questions-list">
+      <div class="question-item">
+        <div class="question-header">
+          <span class="badge-number">1</span>
+          <span>Onde aconteceu a campanha de coleta seletiva?</span>
+        </div>
+        <div class="answer-line"></div>
+      </div>
+
+      <div class="question-item">
+        <div class="question-header">
+          <span class="badge-number">2</span>
+          <span>Quais tipos de materiais aparecem nas lixeiras?</span>
+        </div>
+        <div class="answer-line"></div>
+      </div>
+
+      <div class="question-item">
+        <div class="question-header">
+          <span class="badge-number">3</span>
+          <span>O que a professora explicou para a turma?</span>
+        </div>
+        <div class="answer-line"></div>
+      </div>
+
+      <div class="question-item">
+        <div class="question-header">
+          <span class="badge-number">4</span>
+          <span>O que as crianças fizeram durante o recreio?</span>
+        </div>
+        <div class="answer-line"></div>
+      </div>
+
+      <div class="question-item">
+        <div class="question-header">
+          <span class="badge-number">5</span>
+          <span>Por que separar o lixo corretamente é importante?</span>
+        </div>
+        <div class="answer-line"></div>
+      </div>
+
+      <div class="question-item">
+        <div class="question-header">
+          <span class="badge-number">6</span>
+          <span>O que a turma percebeu no final da atividade?</span>
+        </div>
+        <div class="answer-line"></div>
+      </div>
+
+      <div class="question-item">
+        <div class="question-header">
+          <span class="badge-number">7</span>
+          <span>Escreva o nome de um material que pode ser reciclado.</span>
+        </div>
+        <div class="answer-line"></div>
+      </div>
+
+      <div class="question-item">
+        <div class="question-header">
+          <span class="badge-number">8</span>
+          <span>O que você pode fazer para ajudar o meio ambiente na sua escola?</span>
+        </div>
+        <div class="answer-line"></div>
+        <div class="answer-line"></div>
+      </div>
+    </div>
+
+    <!-- DECORAÇÃO PLANETA TERRA -->
+    <svg class="footer-decor" viewBox="0 0 100 100" fill="none">
+      <circle cx="50" cy="50" r="45" fill="#e8f5e9" stroke="#2e7d32" stroke-width="4"/>
+      <circle cx="50" cy="50" r="35" fill="#81c784"/>
+      <path d="M 30 40 Q 50 30 70 45 Q 60 70 30 40 Z" fill="#4caf50"/>
+      <path d="M 40 65 Q 60 80 75 60" stroke="#1b5e20" stroke-width="3" stroke-linecap="round"/>
+      <circle cx="42" cy="45" r="3" fill="#1b5e20"/>
+      <circle cx="58" cy="45" r="3" fill="#1b5e20"/>
+    </svg>
+
+  </div>
+
+</body>
+</html>

@@ -233,20 +233,24 @@
     footer.appendChild(link);
   }
 
-  function carregarExportadorWord() {
-    if (document.querySelector('script[data-teacheasy-word-export]')) return;
+  function carregarScript(src, marker) {
+    if (document.querySelector(`script[data-${marker}]`)) return;
     const script = document.createElement('script');
-    script.src = 'word-export.js?v=20260810-docx';
-    script.dataset.teacheasyWordExport = 'true';
+    script.src = src;
+    script.dataset[marker.replace(/-([a-z])/g, (_, letter) => letter.toUpperCase())] = 'true';
     document.head.appendChild(script);
   }
 
+  function carregarExportadorWord() {
+    carregarScript('word-export.js?v=20260810-docx', 'teacheasy-word-export');
+  }
+
   function carregarRegraBnccGabarito() {
-    if (document.querySelector('script[data-teacheasy-bncc-answer-key]')) return;
-    const script = document.createElement('script');
-    script.src = 'bncc-answer-key.js?v=20260810-bncc-gabarito';
-    script.dataset.teacheasyBnccAnswerKey = 'true';
-    document.head.appendChild(script);
+    carregarScript('bncc-answer-key.js?v=20260810-bncc-gabarito', 'teacheasy-bncc-answer-key');
+  }
+
+  function carregarPadraoIlustracao() {
+    carregarScript('illustration-reference-standard.js?v=20260810-referencia-aprovada', 'teacheasy-illustration-reference');
   }
 
   document.addEventListener("DOMContentLoaded", () => {
@@ -254,6 +258,7 @@
     prepararBotaoPagamento();
     carregarExportadorWord();
     carregarRegraBnccGabarito();
+    carregarPadraoIlustracao();
   });
   document.addEventListener("click", () => setTimeout(prepararCards, 80));
 })();
