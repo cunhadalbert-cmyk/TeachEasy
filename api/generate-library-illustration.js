@@ -28,7 +28,8 @@ function rateLimited(request) {
 }
 
 function stylePrompt(subject, topic, context) {
-  const base = `Crie UMA ilustração pedagógica infantil colorida para material didático escolar brasileiro. O resultado deve ter acabamento de ilustração editorial infantil de alta qualidade, semelhante a livro didático ilustrado: personagens simpáticos e expressivos, traço digital suave e detalhado, volumes e sombras leves, cores vivas porém equilibradas, cenário completo, composição acolhedora e profissional. Mostre uma cena de aprendizagem real com 3 a 5 crianças diversas em ambiente escolar, interagindo com objetos diretamente relacionados ao conteúdo. Não faça clipart, pictograma, ícone, infográfico, vetor chapado, bonecos geométricos, emoji, desenho esquemático, fotografia nem render 3D. Não crie retrato, publicidade, logotipo, meme, arte promocional ou imagem sem finalidade didática. Não inclua textos, letras, números escritos, respostas, logotipos ou marcas d'água. Fundo de sala de aula claro e organizado. Enquadramento horizontal, composição limpa, própria para ocupar aproximadamente metade de uma folha A4 ao lado de um texto.`;
+  const characters = `Use SEMPRE o mesmo elenco visual oficial do TeachEasy, mantendo identidade e proporções consistentes entre todas as ilustrações: exatamente quatro crianças e um cachorro pequeno. Personagem 1: menina maior, cabelo preto longo, roupa casual colorida e tênis preto. Personagem 2: menina menor, cabelo claro e óculos de grau, roupa casual colorida. Personagem 3: menino moreno, cabelo bem baixinho, sem óculos, roupa casual colorida. Personagem 4: menino de cabelo preto, sem óculos, roupa casual colorida; quando usar blusa verde, o cabelo continua preto. Cachorro: pequeno, simpático, pelagem cinza mesclada com preto, tipo poodle, sem coleira. Não use uniforme escolar. Não mude cor de cabelo, óculos, idade aparente ou características principais entre cenas.`;
+  const base = `Crie UMA ilustração pedagógica infantil colorida para material didático escolar brasileiro. ${characters} O resultado deve ter acabamento de ilustração editorial infantil de alta qualidade, semelhante a livro didático ilustrado: personagens simpáticos e expressivos, traço digital suave e detalhado, volumes e sombras leves, cores vivas porém equilibradas, cenário completo, composição acolhedora e profissional. A cena deve mostrar os personagens realizando uma ação diretamente ligada ao conteúdo da atividade. Não faça clipart, pictograma, ícone, infográfico, vetor chapado, bonecos geométricos, emoji, fotografia nem render 3D. Não crie retrato, publicidade, logotipo, meme, arte promocional ou imagem sem finalidade didática. Não inclua textos, letras, números escritos, respostas, logotipos ou marcas d'água. Fundo claro e organizado. Enquadramento horizontal, composição limpa, própria para ocupar aproximadamente metade de uma folha A4 ao lado de um texto.`;
   const math = /matem|número|adição|subtração|multiplica|divis|fraç|decimal|milhar|centena|dezena|unidade|geometr/i.test(`${subject} ${topic} ${context}`)
     ? ' Para Matemática, use materiais manipuláveis visuais como blocos de base dez/material dourado, cubos, barras, fichas, cartões e agrupamentos sobre a mesa, sem escrever operações ou respostas.'
     : '';
@@ -60,7 +61,7 @@ module.exports = async function handler(request, response) {
         model: 'gpt-image-2',
         prompt,
         size: '1024x1024',
-        quality: 'medium',
+        quality: 'low',
         output_format: 'png'
       })
     });
