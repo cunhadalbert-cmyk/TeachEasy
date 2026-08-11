@@ -27,8 +27,18 @@
         }
       ],
       "quantidadeQuestoes": 6,
-      "possuiFiguras": false,
-      "figuras": [],
+      "possuiFiguras": true,
+      "figuras": [
+        {
+          "id": "lp-fig-noticia-horta-01",
+          "arquivo": "assets/atividades/lingua-portuguesa/fig-noticia-horta-01.png",
+          "descricao": "Estudantes do 4º ano montam um sistema simples de irrigação com garrafas reaproveitadas na horta da escola.",
+          "funcaoPedagogica": "Contextualizar visualmente o fato principal, os participantes e o local apresentados na notícia.",
+          "posicaoSugerida": "antes-das-questoes",
+          "textoAlternativo": "Três estudantes instalam garrafas e mangueiras para irrigar as plantas da horta escolar, acompanhados por um cachorro.",
+          "compativelPretoBranco": true
+        }
+      ],
       "possuiGabarito": true,
       "possuiVersaoAdaptada": false,
       "instrucaoGeral": "Leia a notícia e responda às questões.",
