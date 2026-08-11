@@ -4,14 +4,22 @@ import { readFile } from 'node:fs/promises';
 
 const html = await readFile(new URL('../biblioteca.html', import.meta.url), 'utf8');
 const libraryIllustration = await readFile(new URL('../library-ai-illustration.js', import.meta.url), 'utf8');
+const illustrationAdmin = await readFile(new URL('../library-illustration-admin.js', import.meta.url), 'utf8');
 const illustrationGuard = await readFile(new URL('../illustration-reference-standard.js', import.meta.url), 'utf8');
 const api = await readFile(new URL('../api/generate-library-illustration.js', import.meta.url), 'utf8');
 const jogos = await readFile(new URL('../jogos-inline.js', import.meta.url), 'utf8');
 
-test('Biblioteca utiliza PNGs salvos e não carrega gerador dinâmico de IA no navegador', () => {
+test('Biblioteca normal não carrega gerador dinâmico legado de IA', () => {
   assert.doesNotMatch(html, /library-ai-illustration\.js/);
   assert.doesNotMatch(html, /illustration-reference-standard\.js/);
   assert.doesNotMatch(html, /library-export-image-sync\.js/);
+});
+
+test('modo temporário de ilustração fica protegido por parâmetro explícito', () => {
+  assert.match(html, /library-illustration-admin\.js\?v=20260811-modo-ilustracao-v1/);
+  assert.match(illustrationAdmin, /modoIlustracao/);
+  assert.match(illustrationAdmin, /!== '1'/);
+  assert.match(illustrationAdmin, /generate-library-illustration/);
 });
 
 test('PNG estática aprovada é carregada depois do renderizador final', () => {
@@ -33,12 +41,16 @@ test('Biblioteca pronta não espera geração de imagem no download', () => {
   assert.match(html, /library-portuguese-approved-static\.js/);
 });
 
-test('prompt proíbe clipart e exige ilustração editorial infantil', () => {
+test('prompt exige personagens oficiais e ilustração editorial infantil leve', () => {
   assert.match(api, /ilustração editorial infantil de alta qualidade/);
   assert.match(api, /Não faça clipart, pictograma, ícone, infográfico, vetor chapado/);
-  assert.match(api, /3 a 5 crianças diversas/);
+  assert.match(api, /exatamente quatro crianças e um cachorro pequeno/);
+  assert.match(api, /menina maior, cabelo preto longo/);
+  assert.match(api, /menina menor, cabelo claro e óculos de grau/);
+  assert.match(api, /menino moreno, cabelo bem baixinho, sem óculos/);
+  assert.match(api, /Cachorro: pequeno, simpático, pelagem cinza mesclada com preto/);
   assert.match(api, /blocos de base dez\/material dourado/);
-  assert.match(api, /quality: 'medium'/);
+  assert.match(api, /quality: 'low'/);
 });
 
 test('IA e foto não aceitam SVG como resultado final', () => {
