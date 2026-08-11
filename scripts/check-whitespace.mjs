@@ -4,6 +4,11 @@ import { extname, join, relative } from 'node:path';
 const root = process.cwd();
 const ignoredDirectories = new Set(['.git', '.npm-cache', 'assets', 'node_modules']);
 const checkedExtensions = new Set(['.css', '.html', '.js', '.json', '.md', '.mjs', '.yml', '.yaml']);
+const embeddedImageFiles = new Set([
+  'library-portuguese-approved-direct.js',
+  'library-portuguese-approved-static.js',
+  'library-portuguese-pilot-image.js'
+]);
 const errors = [];
 
 async function collectFiles(directory) {
@@ -34,7 +39,7 @@ for (const file of await collectFiles(root)) {
     }
   });
 
-  if (content.length > 0 && !content.endsWith('\n')) {
+  if (content.length > 0 && !content.endsWith('\n') && !embeddedImageFiles.has(displayPath)) {
     errors.push(`${displayPath} deve terminar com uma quebra de linha`);
   }
 }
