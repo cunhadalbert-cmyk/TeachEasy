@@ -9,9 +9,8 @@ const exportSync = await readFile(new URL('../library-export-image-sync.js', imp
 const api = await readFile(new URL('../api/generate-library-illustration.js', import.meta.url), 'utf8');
 const jogos = await readFile(new URL('../jogos-inline.js', import.meta.url), 'utf8');
 
-test('Biblioteca carrega gerador real de ilustração depois do renderizador final', () => {
-  assert.match(html, /library-ai-illustration\.js\?v=20260810-ilustracao-real-v1/);
-  assert.ok(html.indexOf('library-ai-illustration.js') > html.indexOf('biblioteca-final-standard.js'));
+test('Biblioteca utiliza PNGs salvos e não carrega gerador dinâmico de IA no navegador', () => {
+  assert.doesNotMatch(html, /library-ai-illustration\.js/);
   assert.doesNotMatch(html, /illustration-reference-standard\.js/);
 });
 
