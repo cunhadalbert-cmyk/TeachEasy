@@ -36,6 +36,12 @@
     return { student, topic, context: clean(`${support} ${questions}`).slice(0, 700), image };
   }
 
+  function isFallbackImage(image) {
+    if (!image) return true;
+    const src = image.getAttribute('src') || image.src || '';
+    return !src || src.startsWith('data:image/svg+xml');
+  }
+
   function downloadDataUrl(dataUrl, topic) {
     const anchor = document.createElement('a');
     const slug = clean(topic).toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '').slice(0, 70) || 'ilustracao';
@@ -54,9 +60,9 @@
     panel.className = 'te-illustration-admin';
     panel.innerHTML = `
       <strong>Modo temporário de ilustrações</strong>
-      <button type="button" data-primary="true" class="te-generate-illustration">Gerar com IA</button>
+      <button type="button" data-primary="true" class="te-generate-illustration">Gerar novamente</button>
       <button type="button" class="te-download-illustration" disabled>Baixar PNG</button>
-      <span class="te-illustration-admin-status">A geração aparece somente com ?modoIlustracao=1 e não afeta a biblioteca normal.</span>
+      <span class="te-illustration-admin-status">Verificando se esta atividade precisa de uma nova imagem…</span>
     `;
 
     const tools = previewContent.querySelector('.te-final-tools');
@@ -68,7 +74,7 @@
     const status = panel.querySelector('.te-illustration-admin-status');
     let generatedDataUrl = '';
 
-    generate.addEventListener('click', async () => {
+    async function generateIllustration() {
       const latest = currentData();
       if (!latest?.image) {
         status.textContent = 'Não encontrei o espaço de imagem desta atividade.';
@@ -77,7 +83,7 @@
 
       generate.disabled = true;
       download.disabled = true;
-      status.textContent = 'Gerando ilustração com os personagens padrão do TeachEasy…';
+      status.textContent = 'Gerando automaticamente com os personagens padrão do TeachEasy…';
 
       try {
         const response = await fetch('/api/generate-library-illustration', {
@@ -97,17 +103,26 @@
         latest.image.dataset.teGeneratedIllustration = 'true';
         latest.image.alt = `Ilustração pedagógica gerada para ${latest.topic}`;
         download.disabled = false;
-        status.textContent = 'Ilustração pronta na prévia. Confira antes de salvar como imagem definitiva.';
+        status.textContent = 'Ilustração pronta na prévia. Confira e baixe o PNG aprovado.';
       } catch (error) {
         status.textContent = error.message || 'Não foi possível gerar a ilustração.';
       } finally {
         generate.disabled = false;
       }
-    });
+    }
+
+    generate.addEventListener('click', generateIllustration);
 
     download.addEventListener('click', () => {
       if (generatedDataUrl) downloadDataUrl(generatedDataUrl, data.topic);
     });
+
+    if (isFallbackImage(data.image) && data.image.dataset.teAutoGenerationAttempted !== 'true') {
+      data.image.dataset.teAutoGenerationAttempted = 'true';
+      setTimeout(generateIllustration, 150);
+    } else if (!isFallbackImage(data.image)) {
+      status.textContent = 'Esta atividade já possui uma imagem estática salva. Use “Gerar novamente” apenas se quiser substituí-la.';
+    }
   }
 
   const observer = new MutationObserver(() => {
