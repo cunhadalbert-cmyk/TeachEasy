@@ -3,7 +3,7 @@ const WINDOW_MS = 10 * 60 * 1000;
 const MAX_REQUESTS_PER_WINDOW = 8;
 const requestBuckets = new Map();
 const OFFICIAL_CAST_PATH = '/illustrations/reference/teacheasy-official-cast.jpg';
-const OFFICIAL_CAST_RAW_URL = 'https://raw.githubusercontent.com/cunhadalbert-cmyk/TeachEasy/main/public/illustrations/reference/teacheasy-official-cast.jpg';
+const OFFICIAL_CAST_RAW_URL = 'https://raw.githubusercontent.com/cunhadalbert-cmyk/TeachEasy/fix/referencia-visual-oficial/public/illustrations/reference/teacheasy-official-cast.jpg';
 
 function json(response, status, payload) {
   response.status(status).setHeader('Content-Type', 'application/json; charset=utf-8').end(JSON.stringify(payload));
@@ -51,8 +51,8 @@ async function fetchOfficialCastReference(request) {
       }
       const contentType = result.headers.get('content-type') || 'image/jpeg';
       const bytes = await result.arrayBuffer();
-      if (!bytes.byteLength) {
-        lastError = new Error('Referência visual vazia.');
+      if (bytes.byteLength < 50_000) {
+        lastError = new Error('Referência visual oficial inválida ou incompleta.');
         continue;
       }
       return { bytes, contentType };
@@ -64,30 +64,32 @@ async function fetchOfficialCastReference(request) {
 }
 
 function stylePrompt(subject, topic, context) {
-  const officialCast = `A IMAGEM DE ENTRADA é a REFERÊNCIA VISUAL OFICIAL E OBRIGATÓRIA do TeachEasy. Preserve com ALTA FIDELIDADE a identidade dos mesmos quatro personagens e do mesmo cachorro: rostos, formato dos olhos, tom de pele, cabelo, óculos, idade aparente, proporções corporais, roupas-base, calçados e aparência geral. Não redesenhe o elenco com outra identidade e não transforme os personagens em pessoas diferentes.
+  const officialCast = `A IMAGEM DE ENTRADA é a REFERÊNCIA VISUAL OFICIAL E OBRIGATÓRIA do TeachEasy. Ela define a identidade canônica do elenco. Preserve com PRIORIDADE MÁXIMA e ALTA FIDELIDADE os MESMOS rostos, formato dos olhos, sobrancelhas, nariz, sorriso, tom de pele, cabelo, óculos, idade aparente, proporções corporais, roupas-base, calçados e acabamento visual. NÃO reinterprete, NÃO redesenhe e NÃO crie versões parecidas: devem ser reconhecivelmente os mesmos personagens da imagem de referência.
 
-ELENCO OFICIAL FIXO DA IMAGEM DE REFERÊNCIA:
-1) Menino moreno: pele escura, cabelo preto bem baixinho, óculos pretos, casaco azul sobre camiseta branca, calça escura e tênis azul.
-2) Menina maior: cabelo preto longo, sem óculos, camiseta roxa, jeans azul-claro e tênis preto.
-3) Menina menor: cabelo loiro preso, óculos pretos, camiseta amarela, jardineira azul e tênis rosa.
-4) Menino de verde: cabelo preto, sem óculos, camiseta verde, bermuda escura e tênis preto e branco.
-5) Cachorro: pequeno, tipo poodle, pelagem cinza mesclada com preto, sem coleira.
+ELENCO OFICIAL FIXO, exatamente como aparece na referência:
+1) Menino moreno: pele escura, cabelo preto bem baixinho, óculos pretos de armação arredondada, casaco azul aberto, camiseta branca com desenho de controle de videogame, calça escura e tênis azul.
+2) Menina maior: cabelo preto muito longo, sem óculos, camiseta roxa com flor branca, jeans azul-claro e tênis preto.
+3) Menina menor: cabelo loiro preso em rabo de cavalo, óculos pretos, camiseta amarela, jardineira jeans azul e tênis rosa.
+4) Menino de verde: cabelo preto, sem óculos, camiseta verde com dinossauro, bermuda escura e tênis preto e branco.
+5) Cachorro: pequeno, tipo poodle, pelagem encaracolada cinza mesclada com preto, sem coleira.
 
-A cena nova deve conter EXATAMENTE essas quatro crianças e esse cachorro. Não omita, não acrescente e não substitua personagens. O menino moreno SEMPRE usa óculos. O menino de verde NUNCA usa óculos. O cachorro SEMPRE aparece.`;
+A nova ilustração deve conter EXATAMENTE essas quatro crianças e esse cachorro. Não omita, não acrescente e não substitua personagens. O menino moreno SEMPRE usa óculos. O menino de verde NUNCA usa óculos. O cachorro SEMPRE aparece. NÃO troque roupas entre personagens e NÃO altere as cores-base das roupas.`;
 
-  const style = `Crie UMA NOVA CENA pedagógica infantil para material didático brasileiro usando a imagem de entrada SOMENTE como referência canônica de identidade e estilo dos personagens. ${officialCast}
-Mantenha o mesmo estilo visual da referência: ilustração infantil digital limpa, simpática, leve, clara, com acabamento suave, fundo branco ou muito claro quando possível, sombras delicadas, cores alegres sem excesso de saturação e aparência consistente entre atividades. Não use fotografia, realismo fotográfico, render 3D realista, infográfico, clipart, pictograma, vetor chapado ou acabamento cinematográfico pesado.
-Adapte apenas pose, ação, objetos pedagógicos e cenário ao conteúdo da atividade. Não copie a pose de grupo da referência quando ela não combinar com o tema. Não inclua textos, letras, números escritos, respostas, logotipos ou marcas d'água. Prefira composição horizontal simples e organizada, adequada para ocupar aproximadamente metade de uma folha A4 ao lado do texto.`;
+  const preservation = `REGRA DE PRESERVAÇÃO DE IDENTIDADE: trate cabeça, rosto, cabelo, óculos e roupas-base como elementos protegidos da referência. Mude o mínimo possível nesses elementos. Para adaptar a atividade, prefira alterar objetos pedagógicos, posição das mãos, direção do olhar e cenário. Se uma pose nova exigir mudar demais o rosto ou o corpo, mantenha uma pose mais próxima da referência em vez de redesenhar o personagem. A fidelidade ao elenco é mais importante do que a variedade de pose.`;
+
+  const style = `Crie UMA NOVA CENA pedagógica infantil para material didático brasileiro, usando a imagem de entrada como referência canônica de identidade e estilo. ${officialCast}\n${preservation}
+Mantenha o mesmo acabamento visual da referência: ilustração infantil digital limpa, simpática, suave, clara e consistente, com olhos e expressões no mesmo padrão, fundo branco ou muito claro quando possível, sombras delicadas e cores alegres. Não use fotografia, realismo fotográfico, render 3D realista, infográfico, clipart, pictograma, vetor chapado ou acabamento cinematográfico pesado.
+Adapte somente o necessário ao conteúdo escolar. Não inclua textos, letras, números escritos, respostas, logotipos ou marcas d'água. Use composição HORIZONTAL, com os quatro personagens e o cachorro totalmente visíveis e sem cortes, adequada para ocupar aproximadamente metade de uma folha A4 ao lado do texto.`;
 
   const geography = /geograf|migra|famílias migrantes|campo|cidade|paisagem|território|mapa|trajeto/i.test(`${subject} ${topic} ${context}`)
-    ? ' Para Geografia, represente visualmente o tema estudado com elementos simples e didáticos. Se envolver migração, use mapas, malas, caixas, trajetos, chegada, mudança de moradia ou paisagem, mas mantenha exatamente o elenco oficial da referência visual.'
+    ? ' Para Geografia, acrescente elementos simples e didáticos relacionados ao tema ao redor do elenco. Se envolver migração, use malas, caixas, trajeto, chegada, mudança de moradia ou paisagem. Preserve os personagens antes de qualquer detalhe de cenário.'
     : '';
 
   const math = /matem|número|adição|subtração|multiplica|divis|fraç|decimal|milhar|centena|dezena|unidade|geometr/i.test(`${subject} ${topic} ${context}`)
-    ? ' Para Matemática, use materiais manipuláveis visuais como blocos de base dez/material dourado, cubos, barras, fichas, cartões e agrupamentos, sem escrever operações ou respostas.'
+    ? ' Para Matemática, use materiais manipuláveis visuais como blocos de base dez/material dourado, cubos, barras, fichas, cartões e agrupamentos, sem escrever operações ou respostas. Preserve integralmente o elenco oficial.'
     : '';
 
-  return `${style}${geography}${math} Disciplina: ${subject}. Tema: ${topic}. Contexto pedagógico: ${context || topic}. PRIORIDADE MÁXIMA: preservar a identidade visual exata dos personagens da imagem de referência acima de qualquer variação artística.`;
+  return `${style}${geography}${math} Disciplina: ${subject}. Tema: ${topic}. Contexto pedagógico: ${context || topic}. ORDEM DE PRIORIDADE: 1) identidade visual exata dos 4 personagens e do cachorro; 2) roupas, óculos e cabelo idênticos à referência; 3) ação pedagógica; 4) cenário. Se houver conflito, preserve sempre os itens 1 e 2.`;
 }
 
 module.exports = async function handler(request, response) {
@@ -111,8 +113,8 @@ module.exports = async function handler(request, response) {
     form.append('prompt', prompt);
     form.append('image', new Blob([reference.bytes], { type: reference.contentType }), 'teacheasy-official-cast.jpg');
     form.append('input_fidelity', 'high');
-    form.append('size', '1024x1024');
-    form.append('quality', 'medium');
+    form.append('size', '1536x1024');
+    form.append('quality', 'high');
     form.append('output_format', 'png');
 
     const imageResponse = await fetch('https://api.openai.com/v1/images/edits', {
