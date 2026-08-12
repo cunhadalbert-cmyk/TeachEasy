@@ -16,10 +16,12 @@ test('Biblioteca normal não carrega gerador dinâmico legado de IA', () => {
 });
 
 test('modo temporário de ilustração fica protegido por parâmetro explícito', () => {
-  assert.match(html, /library-illustration-admin\.js\?v=20260811-modo-ilustracao-v1/);
+  assert.match(html, /library-illustration-admin\.js\?v=20260811-auto-ilustracao-v2/);
   assert.match(illustrationAdmin, /modoIlustracao/);
   assert.match(illustrationAdmin, /!== '1'/);
   assert.match(illustrationAdmin, /generate-library-illustration/);
+  assert.match(illustrationAdmin, /setTimeout\(generateIllustration, 150\)/);
+  assert.match(illustrationAdmin, /startsWith\('data:image\/svg\+xml'\)/);
 });
 
 test('PNG estática aprovada é carregada depois do renderizador final', () => {
