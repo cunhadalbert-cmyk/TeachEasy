@@ -1,9 +1,6 @@
 (() => {
   'use strict';
 
-  const params = new URLSearchParams(window.location.search);
-  if (params.get('modoIlustracao') !== '1') return;
-
   const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
   const clean = (value = '') => String(value).replace(/\s+/g, ' ').trim();
   const generationCache = new Map();
