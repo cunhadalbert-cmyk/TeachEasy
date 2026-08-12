@@ -35,14 +35,17 @@ test('Manifesto de controle das ilustrações registra o lote piloto corretament
   assert.ok(item0.imagePath.endsWith('.png'));
 });
 
-test('Biblioteca mantém PNGs estáticas e sincronizador ativo para gerar somente os fallbacks no download', async () => {
+test('Biblioteca mantém PNGs estáticas e sincronizador ativo com persistência dos fallbacks gerados', async () => {
   const html = await readFile(new URL('../biblioteca.html', import.meta.url), 'utf8');
   const sync = await readFile(new URL('../library-export-image-sync.js', import.meta.url), 'utf8');
   assert.doesNotMatch(html, /library-ai-illustration\.js/);
   assert.doesNotMatch(html, /generate-library-illustration/);
-  assert.match(html, /library-export-image-sync\.js\?v=20260812-download-ilustracao-v5/);
+  assert.match(html, /library-export-image-sync\.js\?v=20260812-persistencia-ilustracao-v6/);
   assert.doesNotMatch(sync, /modoIlustracao/);
   assert.match(sync, /validFinalImage/);
+  assert.match(sync, /indexedDB/);
+  assert.match(sync, /restorePersistedImage/);
+  assert.match(sync, /savePersistedImage/);
   assert.ok(sync.includes('data:image\\/svg\\+xml'));
   assert.ok(html.indexOf('library-export-image-sync.js') < html.indexOf('biblioteca-final-standard.js'));
   assert.match(html, /biblioteca-final-standard\.js/);
