@@ -190,6 +190,22 @@
     return image;
   }
 
+  async function ensureImageFixedForExport(shell) {
+    const image = await waitForFinalImage(shell);
+    const src = imageSource(image);
+    if (!src) throw new Error('A ilustração final está vazia.');
+
+    // Imagens geradas pela IA são PNG base64. Antes de exportar, grave novamente
+    // a mesma PNG no exercício e sincronize explicitamente os dados usados pelo Word/PDF.
+    if (/^data:image\/png;base64,/i.test(src)) {
+      const saved = await persistShellImage(shell, src);
+      if (!saved) throw new Error('A imagem foi gerada, mas não pôde ser fixada no exercício antes do download.');
+    }
+
+    if (shell._teFinalData) shell._teFinalData.visual = src;
+    return src;
+  }
+
   async function restoreAll(root = document) {
     const shells = [...(root.querySelectorAll?.('.collection-preview-shell') || [])];
     await Promise.all(shells.map(shell => restoreFinalImage(shell).catch(error => {
@@ -236,7 +252,7 @@
       }
 
       button.textContent = 'Preparando arquivo...';
-      await waitForFinalImage(shell);
+      await ensureImageFixedForExport(shell);
       button.dataset.teExportImageReady = 'true';
       button.disabled = false;
       button.textContent = originalText;

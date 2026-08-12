@@ -54,16 +54,21 @@ test('fallback vetorial possui mecanismo de substituição por PNG gerado pela I
   assert.match(libraryIllustration, /data-te-ai-illustration/);
 });
 
-test('prompt exige personagens oficiais e ilustração editorial infantil leve', () => {
-  assert.match(api, /ilustração editorial infantil de alta qualidade/);
-  assert.match(api, /Não faça clipart, pictograma, ícone, infográfico, vetor chapado/);
-  assert.match(api, /exatamente quatro crianças e um cachorro pequeno/);
-  assert.match(api, /menina maior, cabelo preto longo/);
-  assert.match(api, /menina menor, cabelo claro e óculos de grau/);
-  assert.match(api, /menino moreno, cabelo bem baixinho, sem óculos/);
-  assert.match(api, /Cachorro: pequeno, simpático, pelagem cinza mesclada com preto/);
+test('prompt exige elenco oficial fixo e ilustração leve', () => {
+  assert.match(api, /mesmo elenco visual oficial do TeachEasy/);
+  assert.match(api, /EXATAMENTE quatro crianças e um cachorro pequeno/);
+  assert.match(api, /Menina maior: cabelo preto longo, sem óculos, camiseta roxa/);
+  assert.match(api, /Menina menor: cabelo loiro\/claro preso, óculos de grau pretos/);
+  assert.match(api, /Menino moreno: pele escura, cabelo preto bem baixinho, óculos de grau pretos OBRIGATORIAMENTE/);
+  assert.match(api, /Menino de blusa verde: cabelo preto, SEM óculos OBRIGATORIAMENTE/);
+  assert.match(api, /Cachorro: pequeno, simpático, tipo poodle, pelagem cinza mesclada com preto, sem coleira/);
+  assert.match(api, /o cachorro SEMPRE aparece/);
+  assert.match(api, /estilo deve ser LEVE, LIMPO e SUAVE/);
+  assert.match(api, /sem acabamento cinematográfico/);
+  assert.match(api, /fundo branco ou muito claro/);
+  assert.match(api, /cores alegres porém claras e pouco saturadas/);
   assert.match(api, /blocos de base dez\/material dourado/);
-  assert.match(api, /quality: 'low'/);
+  assert.match(api, /quality: 'medium'/);
 });
 
 test('IA e foto não aceitam SVG como resultado final', () => {
