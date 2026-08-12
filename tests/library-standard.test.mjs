@@ -6,7 +6,7 @@ const html = await readFile(new URL('../biblioteca.html', import.meta.url), 'utf
 const standard = await readFile(new URL('../biblioteca-final-standard.js', import.meta.url), 'utf8');
 
 test('Biblioteca usa somente o padrão final único depois das coleções', () => {
-  assert.match(html, /biblioteca-final-standard\.js\?v=20260811-ilustracao-inteira-v4/);
+  assert.match(html, /biblioteca-final-standard\.js\?v=20260811-figura-geral-v5/);
   assert.doesNotMatch(html, /biblioteca-standard\.js/);
   assert.doesNotMatch(html, /biblioteca-export-hardfix\.js/);
   assert.ok(html.indexOf('biblioteca-final-standard.js') > html.indexOf('biblioteca-fixes.js'));
@@ -63,6 +63,7 @@ test('Word e impressão usam A4 com margens pequenas e borda verde', () => {
 });
 
 test('atividade sempre possui ilustração visual, usando a existente ou fallback pedagógico', () => {
+  assert.match(standard, /img\.activity-figure, \.collection-student-page img\.question-figure/);
   assert.match(standard, /existingImage \|\| svgDataUrl\(fallbackSvg\(subject\)\)/);
   assert.match(standard, /te-final-visual/);
   assert.match(standard, /object-fit:contain/);
