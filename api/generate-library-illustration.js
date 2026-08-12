@@ -2,8 +2,8 @@ const MAX_BODY_BYTES = 8_000;
 const WINDOW_MS = 10 * 60 * 1000;
 const MAX_REQUESTS_PER_WINDOW = 8;
 const requestBuckets = new Map();
-const OFFICIAL_CAST_PATH = '/illustrations/reference/teacheasy-official-cast.jpg';
-const OFFICIAL_CAST_RAW_URL = 'https://raw.githubusercontent.com/cunhadalbert-cmyk/TeachEasy/main/public/illustrations/reference/teacheasy-official-cast.jpg';
+const OFFICIAL_CAST_PATH = '/illustrations/reference/teacheasy-official-cast.png';
+const OFFICIAL_CAST_RAW_URL = 'https://raw.githubusercontent.com/cunhadalbert-cmyk/TeachEasy/main/public/illustrations/reference/teacheasy-official-cast.png';
 
 function json(response, status, payload) {
   response.status(status).setHeader('Content-Type', 'application/json; charset=utf-8').end(JSON.stringify(payload));
@@ -111,7 +111,7 @@ async function generateWithReference(request, prompt) {
   const form = new FormData();
   form.append('model', 'gpt-image-1');
   form.append('prompt', prompt);
-  form.append('image', new Blob([reference.bytes], { type: reference.contentType }), 'teacheasy-official-cast.jpg');
+  form.append('image', new Blob([reference.bytes], { type: reference.contentType }), 'teacheasy-official-cast.png');
   form.append('input_fidelity', 'high');
   form.append('size', '1536x1024');
   form.append('quality', 'high');
