@@ -24,8 +24,8 @@ test('modo temporário de ilustração permanece protegido e salva a imagem vinc
   assert.match(illustrationAdmin, /Ilustração pronta e salva neste exercício/);
 });
 
-test('download Word e PDF gera, persiste e reutiliza a imagem quando ainda há fallback', () => {
-  assert.match(html, /library-export-image-sync\.js\?v=20260812-persistencia-ilustracao-v6/);
+test('download Word e PDF restaura a imagem persistida e não a troca por fallback', () => {
+  assert.match(html, /library-export-image-sync\.js\?v=20260812-persistencia-ilustracao-v7/);
   assert.ok(html.indexOf('library-export-image-sync.js') < html.indexOf('biblioteca-final-standard.js'));
   assert.doesNotMatch(exportImageSync, /modoIlustracao/);
   assert.match(exportImageSync, /\.te-final-word, \.te-final-pdf/);
@@ -34,6 +34,10 @@ test('download Word e PDF gera, persiste e reutiliza a imagem quando ainda há f
   assert.match(exportImageSync, /restoreFinalImage/);
   assert.match(exportImageSync, /savePersistentImage/);
   assert.match(exportImageSync, /readPersistentImage/);
+  assert.match(exportImageSync, /A imagem persistida do próprio exercício sempre tem prioridade/);
+  assert.match(exportImageSync, /dataset\.tePersistentIllustration === 'true'/);
+  assert.match(exportImageSync, /Nunca substitua\/apague a imagem existente quando a geração falhar/);
+  assert.match(exportImageSync, /A geração não retornou uma imagem PNG válida/);
   assert.match(exportImageSync, /Gerando imagem\.\.\./);
   assert.match(exportImageSync, /Preparando arquivo\.\.\./);
   assert.match(exportImageSync, /validFinalImage/);
@@ -54,11 +58,11 @@ test('fallback vetorial possui mecanismo de substituição por PNG gerado pela I
   assert.match(libraryIllustration, /data-te-ai-illustration/);
 });
 
-test('gerador usa a imagem oficial com fidelidade visual reforçada', async () => {
+test('gerador usa referência oficial e possui fallback de geração', async () => {
   const referencePath = new URL('../public/illustrations/reference/teacheasy-official-cast.jpg', import.meta.url);
   const referenceStat = await stat(referencePath);
   assert.ok(referenceStat.size > 10_000, 'A referência visual oficial está ausente ou pequena demais.');
-  assert.match(api, /teacheasy-official-cast\.jpg/);
+  assert.match(api, /TeachEasy\/main\/public\/illustrations\/reference\/teacheasy-official-cast\.jpg/);
   assert.match(api, /REFERÊNCIA VISUAL OFICIAL E OBRIGATÓRIA/);
   assert.match(api, /NÃO reinterprete, NÃO redesenhe/);
   assert.match(api, /REGRA DE PRESERVAÇÃO DE IDENTIDADE/);
@@ -70,6 +74,10 @@ test('gerador usa a imagem oficial com fidelidade visual reforçada', async () =
   assert.match(api, /A fidelidade ao elenco é mais importante do que a variedade de pose/);
   assert.match(api, /ORDEM DE PRIORIDADE/);
   assert.match(api, /v1\/images\/edits/);
+  assert.match(api, /v1\/images\/generations/);
+  assert.match(api, /generateWithReference/);
+  assert.match(api, /generateWithoutReference/);
+  assert.match(api, /library-illustration-reference-mode-failed/);
   assert.match(api, /form\.append\('input_fidelity', 'high'\)/);
   assert.match(api, /form\.append\('model', 'gpt-image-1'\)/);
   assert.match(api, /form\.append\('quality', 'high'\)/);
