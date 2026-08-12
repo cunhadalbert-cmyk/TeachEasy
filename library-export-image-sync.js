@@ -118,21 +118,25 @@
 
   async function restoreFinalImage(shell) {
     if (!shell) return null;
-    const image = currentStudentImage(shell);
-    if (validFinalImage(image) && image?.dataset.teAiIllustration !== 'true') return image;
 
     const data = activityData(shell);
     const key = cacheKey(data);
-    const cached = generationCache.get(key) || await readPersistentImage(key).catch(() => '');
-    if (!cached) return image;
-    generationCache.set(key, cached);
-    return applyImage(shell, cached, 'persistent');
+    const persistent = generationCache.get(key) || await readPersistentImage(key).catch(() => '');
+
+    // A imagem persistida do próprio exercício sempre tem prioridade sobre
+    // qualquer fallback, SVG, imagem estática ou rerenderização posterior.
+    if (persistent && /^data:image\/png;base64,/i.test(persistent)) {
+      generationCache.set(key, persistent);
+      return applyImage(shell, persistent, 'persistent');
+    }
+
+    return currentStudentImage(shell);
   }
 
   async function generateFinalImage(shell) {
     await restoreFinalImage(shell);
     let image = currentStudentImage(shell);
-    if (validFinalImage(image)) return image;
+    if (validFinalImage(image) && image?.dataset.tePersistentIllustration === 'true') return image;
 
     const visual = shell?.querySelector('.te-final-student .te-final-visual');
     if (!visual) throw new Error('Não encontrei o espaço da ilustração.');
@@ -149,9 +153,16 @@
       });
       const payload = await response.json();
       if (!response.ok || !payload.illustrationDataUrl) {
+        // Nunca substitua/apague a imagem existente quando a geração falhar.
+        await restoreFinalImage(shell).catch(() => null);
         throw new Error(payload.error || 'Não foi possível gerar a ilustração.');
       }
       dataUrl = payload.illustrationDataUrl;
+    }
+
+    if (!/^data:image\/png;base64,/i.test(dataUrl)) {
+      await restoreFinalImage(shell).catch(() => null);
+      throw new Error('A geração não retornou uma imagem PNG válida.');
     }
 
     await persistShellImage(shell, dataUrl);
@@ -191,12 +202,11 @@
   }
 
   async function ensureImageFixedForExport(shell) {
+    await restoreFinalImage(shell);
     const image = await waitForFinalImage(shell);
     const src = imageSource(image);
     if (!src) throw new Error('A ilustração final está vazia.');
 
-    // Imagens geradas pela IA são PNG base64. Antes de exportar, grave novamente
-    // a mesma PNG no exercício e sincronize explicitamente os dados usados pelo Word/PDF.
     if (/^data:image\/png;base64,/i.test(src)) {
       const saved = await persistShellImage(shell, src);
       if (!saved) throw new Error('A imagem foi gerada, mas não pôde ser fixada no exercício antes do download.');
@@ -246,7 +256,8 @@
 
     try {
       await restoreFinalImage(shell);
-      if (!validFinalImage(currentStudentImage(shell))) {
+      let current = currentStudentImage(shell);
+      if (!validFinalImage(current) || current?.dataset.tePersistentIllustration !== 'true') {
         button.textContent = 'Gerando imagem...';
         await generateFinalImage(shell);
       }
@@ -259,6 +270,7 @@
       button.click();
     } catch (error) {
       console.error('teacheasy-export-image-sync', error);
+      await restoreFinalImage(shell).catch(() => null);
       button.disabled = false;
       button.textContent = originalText;
       window.alert(error.message || 'Não foi possível preparar a imagem antes do download.');
