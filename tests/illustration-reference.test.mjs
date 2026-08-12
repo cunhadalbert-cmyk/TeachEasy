@@ -24,10 +24,9 @@ test('modo temporário de ilustração fica protegido por parâmetro explícito'
 });
 
 test('download Word e PDF gera a imagem antes quando ainda há fallback', () => {
-  assert.match(html, /library-export-image-sync\.js\?v=20260811-download-ilustracao-v4/);
+  assert.match(html, /library-export-image-sync\.js\?v=20260812-download-ilustracao-v5/);
   assert.ok(html.indexOf('library-export-image-sync.js') < html.indexOf('biblioteca-final-standard.js'));
-  assert.match(exportImageSync, /modoIlustracao/);
-  assert.match(exportImageSync, /!== '1'/);
+  assert.doesNotMatch(exportImageSync, /modoIlustracao/);
   assert.match(exportImageSync, /\.te-final-word, \.te-final-pdf/);
   assert.match(exportImageSync, /generate-library-illustration/);
   assert.match(exportImageSync, /Gerando imagem\.\.\./);
