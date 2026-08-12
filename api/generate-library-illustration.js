@@ -3,7 +3,7 @@ const WINDOW_MS = 10 * 60 * 1000;
 const MAX_REQUESTS_PER_WINDOW = 8;
 const requestBuckets = new Map();
 const OFFICIAL_CAST_PATH = '/illustrations/reference/teacheasy-official-cast.jpg';
-const OFFICIAL_CAST_RAW_URL = 'https://raw.githubusercontent.com/cunhadalbert-cmyk/TeachEasy/fix/referencia-visual-oficial/public/illustrations/reference/teacheasy-official-cast.jpg';
+const OFFICIAL_CAST_RAW_URL = 'https://raw.githubusercontent.com/cunhadalbert-cmyk/TeachEasy/main/public/illustrations/reference/teacheasy-official-cast.jpg';
 
 function json(response, status, payload) {
   response.status(status).setHeader('Content-Type', 'application/json; charset=utf-8').end(JSON.stringify(payload));
@@ -92,6 +92,51 @@ Adapte somente o necessário ao conteúdo escolar. Não inclua textos, letras, n
   return `${style}${geography}${math} Disciplina: ${subject}. Tema: ${topic}. Contexto pedagógico: ${context || topic}. ORDEM DE PRIORIDADE: 1) identidade visual exata dos 4 personagens e do cachorro; 2) roupas, óculos e cabelo idênticos à referência; 3) ação pedagógica; 4) cenário. Se houver conflito, preserve sempre os itens 1 e 2.`;
 }
 
+async function generateWithReference(request, prompt) {
+  const reference = await fetchOfficialCastReference(request);
+  const form = new FormData();
+  form.append('model', 'gpt-image-1');
+  form.append('prompt', prompt);
+  form.append('image', new Blob([reference.bytes], { type: reference.contentType }), 'teacheasy-official-cast.jpg');
+  form.append('input_fidelity', 'high');
+  form.append('size', '1536x1024');
+  form.append('quality', 'high');
+  form.append('output_format', 'png');
+
+  const imageResponse = await fetch('https://api.openai.com/v1/images/edits', {
+    method: 'POST',
+    headers: { Authorization: `Bearer ${process.env.OPENAI_API_KEY}` },
+    body: form
+  });
+  const imageData = await imageResponse.json();
+  if (!imageResponse.ok) throw new Error(imageData.error?.message || 'Falha no modo com referência visual.');
+  const imageBase64 = imageData.data?.[0]?.b64_json;
+  if (!imageBase64) throw new Error('O modo com referência visual não retornou imagem.');
+  return imageBase64;
+}
+
+async function generateWithoutReference(prompt) {
+  const imageResponse = await fetch('https://api.openai.com/v1/images/generations', {
+    method: 'POST',
+    headers: {
+      Authorization: `Bearer ${process.env.OPENAI_API_KEY}`,
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({
+      model: 'gpt-image-1',
+      prompt,
+      size: '1536x1024',
+      quality: 'high',
+      output_format: 'png'
+    })
+  });
+  const imageData = await imageResponse.json();
+  if (!imageResponse.ok) throw new Error(imageData.error?.message || 'Falha no modo alternativo de geração.');
+  const imageBase64 = imageData.data?.[0]?.b64_json;
+  if (!imageBase64) throw new Error('O modo alternativo não retornou imagem.');
+  return imageBase64;
+}
+
 module.exports = async function handler(request, response) {
   if (request.method !== 'POST') return json(response, 405, { error: 'Método não permitido.' });
   if (!process.env.OPENAI_API_KEY) return json(response, 503, { error: 'A geração de ilustração não está configurada.' });
@@ -106,27 +151,14 @@ module.exports = async function handler(request, response) {
     const topic = safeText(input.topic || 'conteúdo escolar', 180);
     const context = safeText(input.context || '', 700);
     const prompt = stylePrompt(subject, topic, context);
-    const reference = await fetchOfficialCastReference(request);
 
-    const form = new FormData();
-    form.append('model', 'gpt-image-1');
-    form.append('prompt', prompt);
-    form.append('image', new Blob([reference.bytes], { type: reference.contentType }), 'teacheasy-official-cast.jpg');
-    form.append('input_fidelity', 'high');
-    form.append('size', '1536x1024');
-    form.append('quality', 'high');
-    form.append('output_format', 'png');
-
-    const imageResponse = await fetch('https://api.openai.com/v1/images/edits', {
-      method: 'POST',
-      headers: { Authorization: `Bearer ${process.env.OPENAI_API_KEY}` },
-      body: form
-    });
-
-    const imageData = await imageResponse.json();
-    if (!imageResponse.ok) throw new Error(imageData.error?.message || 'Não foi possível gerar a ilustração.');
-    const imageBase64 = imageData.data?.[0]?.b64_json;
-    if (!imageBase64) throw new Error('A IA não retornou a ilustração.');
+    let imageBase64 = '';
+    try {
+      imageBase64 = await generateWithReference(request, prompt);
+    } catch (referenceError) {
+      console.warn('library-illustration-reference-mode-failed', referenceError.message || referenceError);
+      imageBase64 = await generateWithoutReference(prompt);
+    }
 
     return json(response, 200, { illustrationDataUrl: `data:image/png;base64,${imageBase64}` });
   } catch (error) {
