@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { readFile } from 'node:fs/promises';
+import { readFile, stat } from 'node:fs/promises';
 
 const html = await readFile(new URL('../biblioteca.html', import.meta.url), 'utf8');
 const libraryIllustration = await readFile(new URL('../library-ai-illustration.js', import.meta.url), 'utf8');
@@ -54,21 +54,23 @@ test('fallback vetorial possui mecanismo de substituição por PNG gerado pela I
   assert.match(libraryIllustration, /data-te-ai-illustration/);
 });
 
-test('prompt exige elenco oficial fixo e ilustração leve', () => {
-  assert.match(api, /mesmo elenco visual oficial do TeachEasy/);
-  assert.match(api, /EXATAMENTE quatro crianças e um cachorro pequeno/);
+test('gerador usa a imagem oficial como referência visual de alta fidelidade', async () => {
+  const referencePath = new URL('../public/illustrations/reference/teacheasy-official-cast.jpg', import.meta.url);
+  const referenceStat = await stat(referencePath);
+  assert.ok(referenceStat.size > 50_000, 'A referência visual oficial está ausente ou pequena demais.');
+  assert.match(api, /teacheasy-official-cast\.jpg/);
+  assert.match(api, /REFERÊNCIA VISUAL OFICIAL E OBRIGATÓRIA/);
+  assert.match(api, /EXATAMENTE essas quatro crianças e esse cachorro/);
+  assert.match(api, /Menino moreno: pele escura, cabelo preto bem baixinho, óculos pretos/);
   assert.match(api, /Menina maior: cabelo preto longo, sem óculos, camiseta roxa/);
-  assert.match(api, /Menina menor: cabelo loiro\/claro preso, óculos de grau pretos/);
-  assert.match(api, /Menino moreno: pele escura, cabelo preto bem baixinho, óculos de grau pretos OBRIGATORIAMENTE/);
-  assert.match(api, /Menino de blusa verde: cabelo preto, SEM óculos OBRIGATORIAMENTE/);
-  assert.match(api, /Cachorro: pequeno, simpático, tipo poodle, pelagem cinza mesclada com preto, sem coleira/);
-  assert.match(api, /o cachorro SEMPRE aparece/);
-  assert.match(api, /estilo deve ser LEVE, LIMPO e SUAVE/);
-  assert.match(api, /sem acabamento cinematográfico/);
-  assert.match(api, /fundo branco ou muito claro/);
-  assert.match(api, /cores alegres porém claras e pouco saturadas/);
+  assert.match(api, /Menina menor: cabelo loiro preso, óculos pretos/);
+  assert.match(api, /Menino de verde: cabelo preto, sem óculos/);
+  assert.match(api, /Cachorro: pequeno, tipo poodle, pelagem cinza mesclada com preto/);
+  assert.match(api, /v1\/images\/edits/);
+  assert.match(api, /form\.append\('input_fidelity', 'high'\)/);
+  assert.match(api, /form\.append\('model', 'gpt-image-1'\)/);
+  assert.match(api, /form\.append\('quality', 'medium'\)/);
   assert.match(api, /blocos de base dez\/material dourado/);
-  assert.match(api, /quality: 'medium'/);
 });
 
 test('IA e foto não aceitam SVG como resultado final', () => {
