@@ -33,7 +33,8 @@
     const support = clean(student.querySelector('.te-final-text')?.textContent || '');
     const questions = [...student.querySelectorAll('.te-final-qhead')].slice(0, 4).map(node => clean(node.textContent)).join(' ');
     const image = student.querySelector('.te-final-visual img');
-    return { student, topic, context: clean(`${support} ${questions}`).slice(0, 700), image };
+    const shell = student.closest('.collection-preview-shell');
+    return { student, topic, context: clean(`${support} ${questions}`).slice(0, 700), image, shell };
   }
 
   function isFallbackImage(image) {
@@ -52,9 +53,13 @@
     anchor.remove();
   }
 
-  function installPanel() {
+  async function installPanel() {
     const data = currentData();
     if (!data || previewContent.querySelector('.te-illustration-admin')) return;
+
+    if (data.shell && typeof window.teRestoreLibraryIllustration === 'function') {
+      await window.teRestoreLibraryIllustration(data.shell).catch(() => null);
+    }
 
     const panel = document.createElement('div');
     panel.className = 'te-illustration-admin';
@@ -74,9 +79,12 @@
     const status = panel.querySelector('.te-illustration-admin-status');
     let generatedDataUrl = '';
 
-    status.textContent = isFallbackImage(data.image)
-      ? 'Ao clicar em Word ou PDF, a imagem será gerada primeiro e o arquivo será baixado depois.'
-      : 'Esta atividade já possui uma imagem estática salva; Word e PDF serão baixados diretamente.';
+    const refreshed = currentData();
+    status.textContent = isFallbackImage(refreshed?.image)
+      ? 'Ao clicar em Word ou PDF, a imagem será gerada, salva neste exercício e usada no arquivo.'
+      : refreshed?.image?.dataset.tePersistentIllustration === 'true'
+        ? 'Esta atividade já possui a ilustração gerada salva e vinculada ao exercício.'
+        : 'Esta atividade já possui uma imagem estática salva; Word e PDF serão baixados diretamente.';
 
     async function generateIllustration() {
       const latest = currentData();
@@ -106,8 +114,14 @@
         latest.image.src = generatedDataUrl;
         latest.image.dataset.teGeneratedIllustration = 'true';
         latest.image.alt = `Ilustração pedagógica gerada para ${latest.topic}`;
+
+        if (latest.shell && typeof window.tePersistLibraryIllustration === 'function') {
+          const saved = await window.tePersistLibraryIllustration(latest.shell, generatedDataUrl);
+          if (!saved) throw new Error('A imagem foi gerada, mas não foi possível fixá-la no exercício neste navegador.');
+        }
+
         download.disabled = false;
-        status.textContent = 'Ilustração pronta na prévia.';
+        status.textContent = 'Ilustração pronta e salva neste exercício. Ao reabrir a atividade, ela será restaurada automaticamente.';
       } catch (error) {
         status.textContent = error.message || 'Não foi possível gerar a ilustração.';
       } finally {
