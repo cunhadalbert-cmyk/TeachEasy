@@ -60,9 +60,9 @@
     panel.className = 'te-illustration-admin';
     panel.innerHTML = `
       <strong>Modo temporário de ilustrações</strong>
-      <button type="button" data-primary="true" class="te-generate-illustration">Gerar novamente</button>
+      <button type="button" data-primary="true" class="te-generate-illustration">Gerar manualmente</button>
       <button type="button" class="te-download-illustration" disabled>Baixar PNG</button>
-      <span class="te-illustration-admin-status">Verificando se esta atividade precisa de uma nova imagem…</span>
+      <span class="te-illustration-admin-status"></span>
     `;
 
     const tools = previewContent.querySelector('.te-final-tools');
@@ -74,6 +74,10 @@
     const status = panel.querySelector('.te-illustration-admin-status');
     let generatedDataUrl = '';
 
+    status.textContent = isFallbackImage(data.image)
+      ? 'Ao clicar em Word ou PDF, a imagem será gerada primeiro e o arquivo será baixado depois.'
+      : 'Esta atividade já possui uma imagem estática salva; Word e PDF serão baixados diretamente.';
+
     async function generateIllustration() {
       const latest = currentData();
       if (!latest?.image) {
@@ -83,7 +87,7 @@
 
       generate.disabled = true;
       download.disabled = true;
-      status.textContent = 'Gerando automaticamente com os personagens padrão do TeachEasy…';
+      status.textContent = 'Gerando com os personagens padrão do TeachEasy…';
 
       try {
         const response = await fetch('/api/generate-library-illustration', {
@@ -103,7 +107,7 @@
         latest.image.dataset.teGeneratedIllustration = 'true';
         latest.image.alt = `Ilustração pedagógica gerada para ${latest.topic}`;
         download.disabled = false;
-        status.textContent = 'Ilustração pronta na prévia. Confira e baixe o PNG aprovado.';
+        status.textContent = 'Ilustração pronta na prévia.';
       } catch (error) {
         status.textContent = error.message || 'Não foi possível gerar a ilustração.';
       } finally {
@@ -112,17 +116,9 @@
     }
 
     generate.addEventListener('click', generateIllustration);
-
     download.addEventListener('click', () => {
       if (generatedDataUrl) downloadDataUrl(generatedDataUrl, data.topic);
     });
-
-    if (isFallbackImage(data.image) && data.image.dataset.teAutoGenerationAttempted !== 'true') {
-      data.image.dataset.teAutoGenerationAttempted = 'true';
-      setTimeout(generateIllustration, 150);
-    } else if (!isFallbackImage(data.image)) {
-      status.textContent = 'Esta atividade já possui uma imagem estática salva. Use “Gerar novamente” apenas se quiser substituí-la.';
-    }
   }
 
   const observer = new MutationObserver(() => {
