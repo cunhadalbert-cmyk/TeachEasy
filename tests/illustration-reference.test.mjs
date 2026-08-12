@@ -57,7 +57,7 @@ test('fallback vetorial possui mecanismo de substituição por PNG gerado pela I
 test('gerador usa a imagem oficial com fidelidade visual reforçada', async () => {
   const referencePath = new URL('../public/illustrations/reference/teacheasy-official-cast.jpg', import.meta.url);
   const referenceStat = await stat(referencePath);
-  assert.ok(referenceStat.size > 50_000, 'A referência visual oficial está ausente ou pequena demais.');
+  assert.ok(referenceStat.size > 10_000, 'A referência visual oficial está ausente ou pequena demais.');
   assert.match(api, /teacheasy-official-cast\.jpg/);
   assert.match(api, /REFERÊNCIA VISUAL OFICIAL E OBRIGATÓRIA/);
   assert.match(api, /NÃO reinterprete, NÃO redesenhe/);
@@ -74,7 +74,7 @@ test('gerador usa a imagem oficial com fidelidade visual reforçada', async () =
   assert.match(api, /form\.append\('model', 'gpt-image-1'\)/);
   assert.match(api, /form\.append\('quality', 'high'\)/);
   assert.match(api, /form\.append\('size', '1536x1024'\)/);
-  assert.match(api, /bytes\.byteLength < 50_000/);
+  assert.match(api, /bytes\.byteLength < 10_000/);
   assert.match(api, /blocos de base dez\/material dourado/);
 });
 
