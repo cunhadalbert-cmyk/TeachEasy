@@ -40,9 +40,10 @@ test('Biblioteca mantém PNGs estáticas e sincronizador protegido para produç�
   const sync = await readFile(new URL('../library-export-image-sync.js', import.meta.url), 'utf8');
   assert.doesNotMatch(html, /library-ai-illustration\.js/);
   assert.doesNotMatch(html, /generate-library-illustration/);
-  assert.match(html, /library-export-image-sync\.js\?v=20260811-download-ilustracao-v3/);
+  assert.match(html, /library-export-image-sync\.js\?v=20260811-download-ilustracao-v4/);
   assert.match(sync, /modoIlustracao/);
   assert.match(sync, /!== '1'/);
+  assert.ok(html.indexOf('library-export-image-sync.js') < html.indexOf('biblioteca-final-standard.js'));
   assert.match(html, /biblioteca-final-standard\.js/);
   assert.match(html, /library-portuguese-approved-static\.js/);
 });
