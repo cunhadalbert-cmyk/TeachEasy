@@ -2,6 +2,8 @@ const MAX_BODY_BYTES = 8_000;
 const WINDOW_MS = 10 * 60 * 1000;
 const MAX_REQUESTS_PER_WINDOW = 8;
 const requestBuckets = new Map();
+const OFFICIAL_CAST_PATH = '/illustrations/reference/teacheasy-official-cast.jpg';
+const OFFICIAL_CAST_RAW_URL = 'https://raw.githubusercontent.com/cunhadalbert-cmyk/TeachEasy/fix/referencia-visual-oficial/public/illustrations/reference/teacheasy-official-cast.jpg';
 
 function json(response, status, payload) {
   response.status(status).setHeader('Content-Type', 'application/json; charset=utf-8').end(JSON.stringify(payload));
@@ -27,31 +29,67 @@ function rateLimited(request) {
   return current.count > MAX_REQUESTS_PER_WINDOW;
 }
 
+function requestOrigin(request) {
+  const proto = safeText(request.headers['x-forwarded-proto'] || 'https', 10) || 'https';
+  const host = safeText(request.headers['x-forwarded-host'] || request.headers.host || '', 220);
+  return host ? `${proto}://${host}` : '';
+}
+
+async function fetchOfficialCastReference(request) {
+  const candidates = [];
+  const origin = requestOrigin(request);
+  if (origin) candidates.push(`${origin}${OFFICIAL_CAST_PATH}`);
+  candidates.push(OFFICIAL_CAST_RAW_URL);
+
+  let lastError = null;
+  for (const url of candidates) {
+    try {
+      const result = await fetch(url, { headers: { Accept: 'image/jpeg,image/png,image/*' } });
+      if (!result.ok) {
+        lastError = new Error(`Referência visual retornou HTTP ${result.status}.`);
+        continue;
+      }
+      const contentType = result.headers.get('content-type') || 'image/jpeg';
+      const bytes = await result.arrayBuffer();
+      if (bytes.byteLength < 10_000) {
+        lastError = new Error('Referência visual oficial inválida ou incompleta.');
+        continue;
+      }
+      return { bytes, contentType };
+    } catch (error) {
+      lastError = error;
+    }
+  }
+  throw lastError || new Error('Não foi possível carregar a referência visual oficial.');
+}
+
 function stylePrompt(subject, topic, context) {
-  const officialCast = `Use SEMPRE e OBRIGATORIAMENTE o mesmo elenco visual oficial do TeachEasy em TODAS as ilustrações. A cena deve conter EXATAMENTE quatro crianças e um cachorro pequeno, sem omitir, substituir ou acrescentar personagens.
+  const officialCast = `A IMAGEM DE ENTRADA é a REFERÊNCIA VISUAL OFICIAL E OBRIGATÓRIA do TeachEasy. Ela define a identidade canônica do elenco. Preserve com PRIORIDADE MÁXIMA e ALTA FIDELIDADE os MESMOS rostos, formato dos olhos, sobrancelhas, nariz, sorriso, tom de pele, cabelo, óculos, idade aparente, proporções corporais, roupas-base, calçados e acabamento visual. NÃO reinterprete, NÃO redesenhe e NÃO crie versões parecidas: devem ser reconhecivelmente os mesmos personagens da imagem de referência.
 
-ELENCO OFICIAL FIXO:
-1) Menina maior: cabelo preto longo, sem óculos, camiseta roxa, calça jeans azul clara, tênis preto; aparência infantil, simpática e delicada.
-2) Menina menor: cabelo loiro/claro preso, óculos de grau pretos, camiseta amarela, jardineira/roupa azul, tênis rosa; aparência infantil, meiga e estudiosa.
-3) Menino moreno: pele escura, cabelo preto bem baixinho, óculos de grau pretos OBRIGATORIAMENTE, roupa casual azul; aparência infantil e alegre.
-4) Menino de blusa verde: cabelo preto, SEM óculos OBRIGATORIAMENTE, camiseta verde, bermuda escura, tênis preto e branco; aparência infantil e alegre.
-5) Cachorro: pequeno, simpático, tipo poodle, pelagem cinza mesclada com preto, sem coleira; deve aparecer SEMPRE junto do grupo.
+ELENCO OFICIAL FIXO, exatamente como aparece na referência:
+1) Menino moreno: pele escura, cabelo preto bem baixinho, óculos pretos de armação arredondada, casaco azul aberto, camiseta branca com desenho de controle de videogame, calça escura e tênis azul.
+2) Menina maior: cabelo preto muito longo, sem óculos, camiseta roxa com flor branca, jeans azul-claro e tênis preto.
+3) Menina menor: cabelo loiro preso em rabo de cavalo, óculos pretos, camiseta amarela, jardineira jeans azul e tênis rosa.
+4) Menino de verde: cabelo preto, sem óculos, camiseta verde com dinossauro, bermuda escura e tênis preto e branco.
+5) Cachorro: pequeno, tipo poodle, pelagem encaracolada cinza mesclada com preto, sem coleira.
 
-REGRAS DE CONSISTÊNCIA: não alterar cor ou comprimento do cabelo; não trocar ou remover óculos; não alterar tom de pele; não alterar formato geral do rosto; não alterar idade aparente; não trocar as roupas-base principais; o menino moreno SEMPRE usa óculos; o menino de blusa verde NUNCA usa óculos; o cachorro SEMPRE aparece.`;
+A nova ilustração deve conter EXATAMENTE essas quatro crianças e esse cachorro. Não omita, não acrescente e não substitua personagens. O menino moreno SEMPRE usa óculos. O menino de verde NUNCA usa óculos. O cachorro SEMPRE aparece. NÃO troque roupas entre personagens e NÃO altere as cores-base das roupas.`;
 
-  const style = `Crie UMA ilustração pedagógica infantil colorida para material didático escolar brasileiro. ${officialCast}
-O estilo deve ser LEVE, LIMPO e SUAVE, semelhante à ilustração aprovada de reciclagem: fundo branco ou muito claro, bastante espaço visual, poucos elementos de cenário, contornos suaves, sombras discretas, cores alegres porém claras e pouco saturadas, sem excesso de textura, sem aparência pesada, sem realismo excessivo e sem acabamento cinematográfico. Os personagens devem ser simpáticos, expressivos e fáceis de reconhecer, mantendo o mesmo rosto e identidade visual em todas as atividades.
-A cena deve mostrar os personagens realizando uma ação diretamente ligada ao conteúdo da atividade. Não faça clipart, pictograma, ícone, infográfico, vetor chapado, bonecos geométricos, emoji, fotografia nem render 3D realista. Não crie retrato, publicidade, logotipo, meme, arte promocional ou imagem sem finalidade didática. Não inclua textos, letras, números escritos, respostas, logotipos ou marcas d'água. Prefira composição horizontal simples e organizada, própria para ocupar aproximadamente metade de uma folha A4 ao lado de um texto.`;
+  const preservation = `REGRA DE PRESERVAÇÃO DE IDENTIDADE: trate cabeça, rosto, cabelo, óculos e roupas-base como elementos protegidos da referência. Mude o mínimo possível nesses elementos. Para adaptar a atividade, prefira alterar objetos pedagógicos, posição das mãos, direção do olhar e cenário. Se uma pose nova exigir mudar demais o rosto ou o corpo, mantenha uma pose mais próxima da referência em vez de redesenhar o personagem. A fidelidade ao elenco é mais importante do que a variedade de pose.`;
+
+  const style = `Crie UMA NOVA CENA pedagógica infantil para material didático brasileiro, usando a imagem de entrada como referência canônica de identidade e estilo. ${officialCast}\n${preservation}
+Mantenha o mesmo acabamento visual da referência: ilustração infantil digital limpa, simpática, suave, clara e consistente, com olhos e expressões no mesmo padrão, fundo branco ou muito claro quando possível, sombras delicadas e cores alegres. Não use fotografia, realismo fotográfico, render 3D realista, infográfico, clipart, pictograma, vetor chapado ou acabamento cinematográfico pesado.
+Adapte somente o necessário ao conteúdo escolar. Não inclua textos, letras, números escritos, respostas, logotipos ou marcas d'água. Use composição HORIZONTAL, com os quatro personagens e o cachorro totalmente visíveis e sem cortes, adequada para ocupar aproximadamente metade de uma folha A4 ao lado do texto.`;
 
   const geography = /geograf|migra|famílias migrantes|campo|cidade|paisagem|território|mapa|trajeto/i.test(`${subject} ${topic} ${context}`)
-    ? ' Para Geografia, represente visualmente o tema estudado com elementos simples e didáticos. Se o tema envolver migração, use mapas, malas, caixas, trajetos, chegada ou mudança de paisagem, mantendo SEMPRE o elenco oficial completo e com as características fixas acima.'
+    ? ' Para Geografia, acrescente elementos simples e didáticos relacionados ao tema ao redor do elenco. Se envolver migração, use malas, caixas, trajeto, chegada, mudança de moradia ou paisagem. Preserve os personagens antes de qualquer detalhe de cenário.'
     : '';
 
   const math = /matem|número|adição|subtração|multiplica|divis|fraç|decimal|milhar|centena|dezena|unidade|geometr/i.test(`${subject} ${topic} ${context}`)
-    ? ' Para Matemática, use materiais manipuláveis visuais como blocos de base dez/material dourado, cubos, barras, fichas, cartões e agrupamentos sobre a mesa, sem escrever operações ou respostas.'
+    ? ' Para Matemática, use materiais manipuláveis visuais como blocos de base dez/material dourado, cubos, barras, fichas, cartões e agrupamentos, sem escrever operações ou respostas. Preserve integralmente o elenco oficial.'
     : '';
 
-  return `${style}${geography}${math} Disciplina: ${subject}. Tema: ${topic}. Contexto pedagógico: ${context || topic}. IMPORTANTE: se qualquer personagem vier diferente do padrão oficial, a ilustração está errada. Se faltar o cachorro, a ilustração está errada. Se o menino moreno vier sem óculos, a ilustração está errada. Se o menino de camiseta verde vier com óculos, a ilustração está errada.`;
+  return `${style}${geography}${math} Disciplina: ${subject}. Tema: ${topic}. Contexto pedagógico: ${context || topic}. ORDEM DE PRIORIDADE: 1) identidade visual exata dos 4 personagens e do cachorro; 2) roupas, óculos e cabelo idênticos à referência; 3) ação pedagógica; 4) cenário. Se houver conflito, preserve sempre os itens 1 e 2.`;
 }
 
 module.exports = async function handler(request, response) {
@@ -68,20 +106,21 @@ module.exports = async function handler(request, response) {
     const topic = safeText(input.topic || 'conteúdo escolar', 180);
     const context = safeText(input.context || '', 700);
     const prompt = stylePrompt(subject, topic, context);
+    const reference = await fetchOfficialCastReference(request);
 
-    const imageResponse = await fetch('https://api.openai.com/v1/images/generations', {
+    const form = new FormData();
+    form.append('model', 'gpt-image-1');
+    form.append('prompt', prompt);
+    form.append('image', new Blob([reference.bytes], { type: reference.contentType }), 'teacheasy-official-cast.jpg');
+    form.append('input_fidelity', 'high');
+    form.append('size', '1536x1024');
+    form.append('quality', 'high');
+    form.append('output_format', 'png');
+
+    const imageResponse = await fetch('https://api.openai.com/v1/images/edits', {
       method: 'POST',
-      headers: {
-        Authorization: `Bearer ${process.env.OPENAI_API_KEY}`,
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({
-        model: 'gpt-image-2',
-        prompt,
-        size: '1024x1024',
-        quality: 'medium',
-        output_format: 'png'
-      })
+      headers: { Authorization: `Bearer ${process.env.OPENAI_API_KEY}` },
+      body: form
     });
 
     const imageData = await imageResponse.json();
