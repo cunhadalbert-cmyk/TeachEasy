@@ -64,7 +64,7 @@ test('gerador usa a imagem oficial com fidelidade visual reforçada', async () =
   assert.match(api, /REGRA DE PRESERVAÇÃO DE IDENTIDADE/);
   assert.match(api, /EXATAMENTE essas quatro crianças e esse cachorro/);
   assert.match(api, /camiseta branca com desenho de controle de videogame/);
-  assert.match(api, /camiseta roxa com flor branca/);
+  assert.match(api, /camiseta roxa com margarida branca/);
   assert.match(api, /jardineira jeans azul/);
   assert.match(api, /camiseta verde com dinossauro/);
   assert.match(api, /A fidelidade ao elenco é mais importante do que a variedade de pose/);
@@ -75,7 +75,7 @@ test('gerador usa a imagem oficial com fidelidade visual reforçada', async () =
   assert.match(api, /form\.append\('quality', 'high'\)/);
   assert.match(api, /form\.append\('size', '1536x1024'\)/);
   assert.match(api, /bytes\.byteLength < 10_000/);
-  assert.match(api, /blocos de base dez\/material dourado/);
+  assert.match(api, /blocos de base dez, material dourado/);
 });
 
 test('IA e foto não aceitam SVG como resultado final', () => {
