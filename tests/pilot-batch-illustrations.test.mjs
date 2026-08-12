@@ -44,8 +44,9 @@ test('Biblioteca mantém PNGs estáticas e sincronizador ativo com persistência
   assert.doesNotMatch(sync, /modoIlustracao/);
   assert.match(sync, /validFinalImage/);
   assert.match(sync, /indexedDB/);
-  assert.match(sync, /restorePersistedImage/);
-  assert.match(sync, /savePersistedImage/);
+  assert.match(sync, /restoreFinalImage/);
+  assert.match(sync, /savePersistentImage/);
+  assert.match(sync, /readPersistentImage/);
   assert.ok(sync.includes('data:image\\/svg\\+xml'));
   assert.ok(html.indexOf('library-export-image-sync.js') < html.indexOf('biblioteca-final-standard.js'));
   assert.match(html, /biblioteca-final-standard\.js/);
