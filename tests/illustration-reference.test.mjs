@@ -31,7 +31,8 @@ test('download Word e PDF gera a imagem antes quando ainda há fallback', () => 
   assert.match(exportImageSync, /generate-library-illustration/);
   assert.match(exportImageSync, /Gerando imagem\.\.\./);
   assert.match(exportImageSync, /Preparando arquivo\.\.\./);
-  assert.match(exportImageSync, /data:image\/svg\+xml/);
+  assert.match(exportImageSync, /validFinalImage/);
+  assert.match(exportImageSync, /svg/);
   assert.match(exportImageSync, /button\.click\(\)/);
 });
 
