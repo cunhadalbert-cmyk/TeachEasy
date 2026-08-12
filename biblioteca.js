@@ -303,7 +303,7 @@ async function validateCollectionAssets(collection) {
   const referencedFigures = collection.atividades.flatMap(activity => {
     const referencedIds = new Set(activity.questoes.map(question => question.figuraId).filter(Boolean));
     return activity.figuras
-      .filter(figure => referencedIds.has(figure.id))
+      .filter(figure => referencedIds.has(figure.id) || figure.posicaoSugerida === 'antes-das-questoes')
       .map(figure => ({ activity, figure }));
   });
 
@@ -660,6 +660,15 @@ function getRichIllustrationPath(figure, activity) {
   return 'assets/photo-activity-illustration.png';
 }
 
+function activityFigureMarkup(activity) {
+  const referencedIds = new Set(activity.questions.map(question => question.figuraId).filter(Boolean));
+  const figure = activity.figures.find(item => item.arquivoValidado && !referencedIds.has(item.id)
+    && item.posicaoSugerida === 'antes-das-questoes');
+  if (!figure) return '';
+  const figureSrc = getRichIllustrationPath(figure, activity);
+  return `<img class="question-figure activity-figure" src="${figureSrc}" data-original-src="${figure.arquivo}" alt="${figure.textoAlternativo || 'Ilustração da atividade'}" style="max-height: 220px; object-fit: contain; border-radius: 12px; margin: 8px auto; display: block;">`;
+}
+
 function questionMarkup(activity, questions = activity.questions) {
   if (activity.collectionActivity) {
     return questions.map(question => {
@@ -815,6 +824,7 @@ function openCollectionPreview(activity) {
             <p>${activity.supportText.conteudo.replace(/\n/g, '<br>')}</p>
           </article>
         ` : ''}
+        ${activityFigureMarkup(activity)}
         <ol class="question-list collection-question-list">${questionMarkup(activity, activity.questions.slice(0, 3))}</ol>
       </section>
 
