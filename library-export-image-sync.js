@@ -4,6 +4,9 @@
   const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
   const clean = (value = '') => String(value).replace(/\s+/g, ' ').trim();
   const generationCache = new Map();
+  const DB_NAME = 'TeachEasyLibrary';
+  const DB_VERSION = 1;
+  const STORE_NAME = 'illustrations';
 
   function currentStudentImage(shell) {
     return shell?.querySelector('.te-final-student .te-final-visual img') || null;
@@ -39,7 +42,95 @@
     return `${data.subject}|${data.topic}|${data.context}`.toLowerCase().slice(0, 900);
   }
 
+  function openDatabase() {
+    if (!('indexedDB' in window)) return Promise.resolve(null);
+    return new Promise((resolve, reject) => {
+      const request = indexedDB.open(DB_NAME, DB_VERSION);
+      request.onupgradeneeded = () => {
+        const db = request.result;
+        if (!db.objectStoreNames.contains(STORE_NAME)) db.createObjectStore(STORE_NAME, { keyPath: 'key' });
+      };
+      request.onsuccess = () => resolve(request.result);
+      request.onerror = () => reject(request.error || new Error('Não foi possível abrir o armazenamento de ilustrações.'));
+    });
+  }
+
+  async function savePersistentImage(key, dataUrl) {
+    if (!key || !/^data:image\/png;base64,/i.test(dataUrl || '')) return false;
+    const db = await openDatabase();
+    if (!db) return false;
+    try {
+      await new Promise((resolve, reject) => {
+        const transaction = db.transaction(STORE_NAME, 'readwrite');
+        transaction.objectStore(STORE_NAME).put({ key, dataUrl, updatedAt: new Date().toISOString() });
+        transaction.oncomplete = resolve;
+        transaction.onerror = () => reject(transaction.error || new Error('Falha ao salvar a ilustração.'));
+        transaction.onabort = () => reject(transaction.error || new Error('Salvamento da ilustração cancelado.'));
+      });
+      return true;
+    } finally {
+      db.close();
+    }
+  }
+
+  async function readPersistentImage(key) {
+    if (!key) return '';
+    const db = await openDatabase();
+    if (!db) return '';
+    try {
+      return await new Promise((resolve, reject) => {
+        const transaction = db.transaction(STORE_NAME, 'readonly');
+        const request = transaction.objectStore(STORE_NAME).get(key);
+        request.onsuccess = () => resolve(request.result?.dataUrl || '');
+        request.onerror = () => reject(request.error || new Error('Falha ao recuperar a ilustração.'));
+      });
+    } finally {
+      db.close();
+    }
+  }
+
+  function applyImage(shell, dataUrl, origin = 'generated') {
+    const visual = shell?.querySelector('.te-final-student .te-final-visual');
+    if (!visual || !dataUrl) return null;
+    let image = currentStudentImage(shell);
+    if (!image) {
+      image = document.createElement('img');
+      visual.appendChild(image);
+    }
+    image.src = dataUrl;
+    image.alt = `Ilustração pedagógica gerada para ${activityData(shell).topic}`;
+    image.dataset.teAiIllustration = 'true';
+    image.dataset.tePersistentIllustration = origin === 'persistent' ? 'true' : 'pending';
+    image.style.display = '';
+    if (shell._teFinalData) shell._teFinalData.visual = dataUrl;
+    return image;
+  }
+
+  async function persistShellImage(shell, dataUrl) {
+    const data = activityData(shell);
+    const key = cacheKey(data);
+    generationCache.set(key, dataUrl);
+    const saved = await savePersistentImage(key, dataUrl);
+    const image = applyImage(shell, dataUrl, saved ? 'persistent' : 'generated');
+    if (image && saved) image.dataset.tePersistentIllustration = 'true';
+    return saved;
+  }
+
+  async function restoreFinalImage(shell) {
+    if (!shell) return null;
+    const image = currentStudentImage(shell);
+    if (validFinalImage(image) && image?.dataset.teAiIllustration !== 'true') return image;
+
+    const data = activityData(shell);
+    const key = cacheKey(data);
+    const cached = generationCache.get(key) || await readPersistentImage(key).catch(() => '');
+    if (!cached) return image;
+    generationCache.set(key, cached);
+    return applyImage(shell, cached, 'persistent');
+  }
+
   async function generateFinalImage(shell) {
+    await restoreFinalImage(shell);
     let image = currentStudentImage(shell);
     if (validFinalImage(image)) return image;
 
@@ -61,20 +152,10 @@
         throw new Error(payload.error || 'Não foi possível gerar a ilustração.');
       }
       dataUrl = payload.illustrationDataUrl;
-      generationCache.set(key, dataUrl);
     }
 
-    if (!image) {
-      image = document.createElement('img');
-      visual.appendChild(image);
-    }
-    image.src = dataUrl;
-    image.alt = `Ilustração pedagógica gerada para ${data.topic}`;
-    image.dataset.teAiIllustration = 'true';
-    image.style.display = '';
-
-    if (shell._teFinalData) shell._teFinalData.visual = dataUrl;
-    return image;
+    await persistShellImage(shell, dataUrl);
+    return currentStudentImage(shell);
   }
 
   async function waitForFinalImage(shell, timeoutMs = 60000) {
@@ -109,6 +190,26 @@
     return image;
   }
 
+  async function restoreAll(root = document) {
+    const shells = [...(root.querySelectorAll?.('.collection-preview-shell') || [])];
+    await Promise.all(shells.map(shell => restoreFinalImage(shell).catch(error => {
+      console.warn('teacheasy-illustration-restore', error);
+      return null;
+    })));
+  }
+
+  window.tePersistLibraryIllustration = async function tePersistLibraryIllustration(shell, dataUrl) {
+    return persistShellImage(shell, dataUrl);
+  };
+  window.teRestoreLibraryIllustration = restoreFinalImage;
+
+  const previewRoot = document.querySelector('#preview-content') || document.body;
+  const observer = new MutationObserver(() => {
+    requestAnimationFrame(() => restoreAll(previewRoot));
+  });
+  observer.observe(previewRoot, { childList: true, subtree: true });
+  restoreAll(previewRoot);
+
   document.addEventListener('click', async event => {
     const button = event.target.closest('.te-final-word, .te-final-pdf');
     if (!button) return;
@@ -128,6 +229,7 @@
     button.disabled = true;
 
     try {
+      await restoreFinalImage(shell);
       if (!validFinalImage(currentStudentImage(shell))) {
         button.textContent = 'Gerando imagem...';
         await generateFinalImage(shell);
