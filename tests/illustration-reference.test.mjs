@@ -54,22 +54,27 @@ test('fallback vetorial possui mecanismo de substituição por PNG gerado pela I
   assert.match(libraryIllustration, /data-te-ai-illustration/);
 });
 
-test('gerador usa a imagem oficial como referência visual de alta fidelidade', async () => {
+test('gerador usa a imagem oficial com fidelidade visual reforçada', async () => {
   const referencePath = new URL('../public/illustrations/reference/teacheasy-official-cast.jpg', import.meta.url);
   const referenceStat = await stat(referencePath);
   assert.ok(referenceStat.size > 50_000, 'A referência visual oficial está ausente ou pequena demais.');
   assert.match(api, /teacheasy-official-cast\.jpg/);
   assert.match(api, /REFERÊNCIA VISUAL OFICIAL E OBRIGATÓRIA/);
+  assert.match(api, /NÃO reinterprete, NÃO redesenhe/);
+  assert.match(api, /REGRA DE PRESERVAÇÃO DE IDENTIDADE/);
   assert.match(api, /EXATAMENTE essas quatro crianças e esse cachorro/);
-  assert.match(api, /Menino moreno: pele escura, cabelo preto bem baixinho, óculos pretos/);
-  assert.match(api, /Menina maior: cabelo preto longo, sem óculos, camiseta roxa/);
-  assert.match(api, /Menina menor: cabelo loiro preso, óculos pretos/);
-  assert.match(api, /Menino de verde: cabelo preto, sem óculos/);
-  assert.match(api, /Cachorro: pequeno, tipo poodle, pelagem cinza mesclada com preto/);
+  assert.match(api, /camiseta branca com desenho de controle de videogame/);
+  assert.match(api, /camiseta roxa com flor branca/);
+  assert.match(api, /jardineira jeans azul/);
+  assert.match(api, /camiseta verde com dinossauro/);
+  assert.match(api, /A fidelidade ao elenco é mais importante do que a variedade de pose/);
+  assert.match(api, /ORDEM DE PRIORIDADE/);
   assert.match(api, /v1\/images\/edits/);
   assert.match(api, /form\.append\('input_fidelity', 'high'\)/);
   assert.match(api, /form\.append\('model', 'gpt-image-1'\)/);
-  assert.match(api, /form\.append\('quality', 'medium'\)/);
+  assert.match(api, /form\.append\('quality', 'high'\)/);
+  assert.match(api, /form\.append\('size', '1536x1024'\)/);
+  assert.match(api, /bytes\.byteLength < 50_000/);
   assert.match(api, /blocos de base dez\/material dourado/);
 });
 
