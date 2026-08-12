@@ -15,20 +15,24 @@ test('Biblioteca normal não carrega gerador dinâmico legado de IA', () => {
   assert.doesNotMatch(html, /illustration-reference-standard\.js/);
 });
 
-test('modo temporário de ilustração fica protegido por parâmetro explícito', () => {
-  assert.match(html, /library-illustration-admin\.js\?v=20260811-download-ilustracao-v3/);
+test('modo temporário de ilustração permanece protegido e salva a imagem vinculada ao exercício', () => {
+  assert.match(html, /library-illustration-admin\.js\?v=20260812-persistencia-ilustracao-v4/);
   assert.match(illustrationAdmin, /modoIlustracao/);
   assert.match(illustrationAdmin, /!== '1'/);
   assert.match(illustrationAdmin, /generate-library-illustration/);
-  assert.match(illustrationAdmin, /Ao clicar em Word ou PDF, a imagem será gerada primeiro/);
+  assert.match(illustrationAdmin, /indexedDB/);
+  assert.match(illustrationAdmin, /Ilustração pronta e vinculada ao exercício/);
 });
 
-test('download Word e PDF gera a imagem antes quando ainda há fallback', () => {
-  assert.match(html, /library-export-image-sync\.js\?v=20260812-download-ilustracao-v5/);
+test('download Word e PDF gera, persiste e reutiliza a imagem quando ainda há fallback', () => {
+  assert.match(html, /library-export-image-sync\.js\?v=20260812-persistencia-ilustracao-v6/);
   assert.ok(html.indexOf('library-export-image-sync.js') < html.indexOf('biblioteca-final-standard.js'));
   assert.doesNotMatch(exportImageSync, /modoIlustracao/);
   assert.match(exportImageSync, /\.te-final-word, \.te-final-pdf/);
   assert.match(exportImageSync, /generate-library-illustration/);
+  assert.match(exportImageSync, /indexedDB/);
+  assert.match(exportImageSync, /restorePersistedImage/);
+  assert.match(exportImageSync, /savePersistedImage/);
   assert.match(exportImageSync, /Gerando imagem\.\.\./);
   assert.match(exportImageSync, /Preparando arquivo\.\.\./);
   assert.match(exportImageSync, /validFinalImage/);
