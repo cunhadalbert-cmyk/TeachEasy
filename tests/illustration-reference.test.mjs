@@ -20,8 +20,8 @@ test('modo temporário de ilustração permanece protegido e salva a imagem vinc
   assert.match(illustrationAdmin, /modoIlustracao/);
   assert.match(illustrationAdmin, /!== '1'/);
   assert.match(illustrationAdmin, /generate-library-illustration/);
-  assert.match(illustrationAdmin, /indexedDB/);
-  assert.match(illustrationAdmin, /Ilustração pronta e vinculada ao exercício/);
+  assert.match(illustrationAdmin, /tePersistLibraryIllustration/);
+  assert.match(illustrationAdmin, /Ilustração pronta e salva neste exercício/);
 });
 
 test('download Word e PDF gera, persiste e reutiliza a imagem quando ainda há fallback', () => {
@@ -31,8 +31,9 @@ test('download Word e PDF gera, persiste e reutiliza a imagem quando ainda há f
   assert.match(exportImageSync, /\.te-final-word, \.te-final-pdf/);
   assert.match(exportImageSync, /generate-library-illustration/);
   assert.match(exportImageSync, /indexedDB/);
-  assert.match(exportImageSync, /restorePersistedImage/);
-  assert.match(exportImageSync, /savePersistedImage/);
+  assert.match(exportImageSync, /restoreFinalImage/);
+  assert.match(exportImageSync, /savePersistentImage/);
+  assert.match(exportImageSync, /readPersistentImage/);
   assert.match(exportImageSync, /Gerando imagem\.\.\./);
   assert.match(exportImageSync, /Preparando arquivo\.\.\./);
   assert.match(exportImageSync, /validFinalImage/);
