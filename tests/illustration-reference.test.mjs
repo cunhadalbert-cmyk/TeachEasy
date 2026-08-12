@@ -55,10 +55,10 @@ test('fallback vetorial possui mecanismo de substituição por PNG gerado pela I
 });
 
 test('gerador usa a imagem oficial com fidelidade visual reforçada', async () => {
-  const referencePath = new URL('../public/illustrations/reference/teacheasy-official-cast.jpg', import.meta.url);
+  const referencePath = new URL('../public/illustrations/reference/teacheasy-official-cast.png', import.meta.url);
   const referenceStat = await stat(referencePath);
   assert.ok(referenceStat.size > 10_000, 'A referência visual oficial está ausente ou pequena demais.');
-  assert.match(api, /teacheasy-official-cast\.jpg/);
+  assert.match(api, /teacheasy-official-cast\.png/);
   assert.match(api, /REFERÊNCIA VISUAL OFICIAL E OBRIGATÓRIA/);
   assert.match(api, /NÃO reinterprete, NÃO redesenhe/);
   assert.match(api, /REGRA DE PRESERVAÇÃO DE IDENTIDADE/);
