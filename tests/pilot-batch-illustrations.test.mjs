@@ -35,11 +35,14 @@ test('Manifesto de controle das ilustrações registra o lote piloto corretament
   assert.ok(item0.imagePath.endsWith('.png'));
 });
 
-test('Biblioteca não carrega gerador dinâmico de IA nem sincronizador de espera no navegador do cliente', async () => {
+test('Biblioteca mantém PNGs estáticas e sincronizador protegido para produção de ilustrações', async () => {
   const html = await readFile(new URL('../biblioteca.html', import.meta.url), 'utf8');
+  const sync = await readFile(new URL('../library-export-image-sync.js', import.meta.url), 'utf8');
   assert.doesNotMatch(html, /library-ai-illustration\.js/);
   assert.doesNotMatch(html, /generate-library-illustration/);
-  assert.doesNotMatch(html, /library-export-image-sync\.js/);
+  assert.match(html, /library-export-image-sync\.js\?v=20260811-download-ilustracao-v3/);
+  assert.match(sync, /modoIlustracao/);
+  assert.match(sync, /!== '1'/);
   assert.match(html, /biblioteca-final-standard\.js/);
   assert.match(html, /library-portuguese-approved-static\.js/);
 });

@@ -5,6 +5,7 @@ import { readFile } from 'node:fs/promises';
 const html = await readFile(new URL('../biblioteca.html', import.meta.url), 'utf8');
 const libraryIllustration = await readFile(new URL('../library-ai-illustration.js', import.meta.url), 'utf8');
 const illustrationAdmin = await readFile(new URL('../library-illustration-admin.js', import.meta.url), 'utf8');
+const exportImageSync = await readFile(new URL('../library-export-image-sync.js', import.meta.url), 'utf8');
 const illustrationGuard = await readFile(new URL('../illustration-reference-standard.js', import.meta.url), 'utf8');
 const api = await readFile(new URL('../api/generate-library-illustration.js', import.meta.url), 'utf8');
 const jogos = await readFile(new URL('../jogos-inline.js', import.meta.url), 'utf8');
@@ -12,16 +13,27 @@ const jogos = await readFile(new URL('../jogos-inline.js', import.meta.url), 'ut
 test('Biblioteca normal não carrega gerador dinâmico legado de IA', () => {
   assert.doesNotMatch(html, /library-ai-illustration\.js/);
   assert.doesNotMatch(html, /illustration-reference-standard\.js/);
-  assert.doesNotMatch(html, /library-export-image-sync\.js/);
 });
 
 test('modo temporário de ilustração fica protegido por parâmetro explícito', () => {
-  assert.match(html, /library-illustration-admin\.js\?v=20260811-auto-ilustracao-v2/);
+  assert.match(html, /library-illustration-admin\.js\?v=20260811-download-ilustracao-v3/);
   assert.match(illustrationAdmin, /modoIlustracao/);
   assert.match(illustrationAdmin, /!== '1'/);
   assert.match(illustrationAdmin, /generate-library-illustration/);
-  assert.match(illustrationAdmin, /setTimeout\(generateIllustration, 150\)/);
-  assert.match(illustrationAdmin, /startsWith\('data:image\/svg\+xml'\)/);
+  assert.match(illustrationAdmin, /Ao clicar em Word ou PDF, a imagem será gerada primeiro/);
+});
+
+test('download Word e PDF gera a imagem antes quando ainda há fallback', () => {
+  assert.match(html, /library-export-image-sync\.js\?v=20260811-download-ilustracao-v3/);
+  assert.match(exportImageSync, /modoIlustracao/);
+  assert.match(exportImageSync, /!== '1'/);
+  assert.match(exportImageSync, /\.te-final-word, \.te-final-pdf/);
+  assert.match(exportImageSync, /generate-library-illustration/);
+  assert.match(exportImageSync, /Gerando imagem\.\.\./);
+  assert.match(exportImageSync, /Preparando arquivo\.\.\./);
+  assert.match(exportImageSync, /validFinalImage/);
+  assert.match(exportImageSync, /svg/);
+  assert.match(exportImageSync, /button\.click\(\)/);
 });
 
 test('PNG estática aprovada é carregada depois do renderizador final', () => {
@@ -29,18 +41,12 @@ test('PNG estática aprovada é carregada depois do renderizador final', () => {
   assert.ok(html.indexOf('biblioteca-final-standard.js') < html.indexOf('library-portuguese-approved-static.js'));
 });
 
-test('fallback vetorial é substituído por PNG gerado pela IA', () => {
+test('fallback vetorial possui mecanismo de substituição por PNG gerado pela IA', () => {
   assert.match(libraryIllustration, /generate-library-illustration/);
   assert.match(libraryIllustration, /data:image\/svg\+xml/);
   assert.match(libraryIllustration, /illustrationDataUrl/);
   assert.match(libraryIllustration, /Gerando ilustração pedagógica/);
   assert.match(libraryIllustration, /data-te-ai-illustration/);
-});
-
-test('Biblioteca pronta não espera geração de imagem no download', () => {
-  assert.doesNotMatch(html, /library-export-image-sync\.js/);
-  assert.match(html, /biblioteca-final-standard\.js/);
-  assert.match(html, /library-portuguese-approved-static\.js/);
 });
 
 test('prompt exige personagens oficiais e ilustração editorial infantil leve', () => {
