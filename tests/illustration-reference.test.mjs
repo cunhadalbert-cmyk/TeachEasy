@@ -55,13 +55,17 @@ test('fallback vetorial possui mecanismo de substituição por PNG gerado pela I
 });
 
 test('prompt exige personagens oficiais e ilustração editorial infantil leve', () => {
-  assert.match(api, /ilustração editorial infantil de alta qualidade/);
+  assert.match(api, /estilo editorial infantil LEVE, LIMPO e SUAVE/);
   assert.match(api, /Não faça clipart, pictograma, ícone, infográfico, vetor chapado/);
   assert.match(api, /exatamente quatro crianças e um cachorro pequeno/);
   assert.match(api, /menina maior, cabelo preto longo/);
-  assert.match(api, /menina menor, cabelo claro e óculos de grau/);
-  assert.match(api, /menino moreno, cabelo bem baixinho, sem óculos/);
+  assert.match(api, /menina menor, cabelo claro preso, óculos de grau/);
+  assert.match(api, /menino moreno de pele escura, cabelo preto bem baixinho, óculos de grau pretos/);
+  assert.match(api, /menino de cabelo preto, sem óculos/);
   assert.match(api, /Cachorro: pequeno, simpático, pelagem cinza mesclada com preto/);
+  assert.match(api, /Não troque os óculos entre personagens/);
+  assert.match(api, /fundo branco ou muito claro/);
+  assert.match(api, /cores alegres porém claras e pouco saturadas/);
   assert.match(api, /blocos de base dez\/material dourado/);
   assert.match(api, /quality: 'low'/);
 });
