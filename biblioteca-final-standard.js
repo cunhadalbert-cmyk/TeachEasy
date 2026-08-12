@@ -103,7 +103,7 @@
     const questions = questionData(shell).slice(0, 8);
     const answers = answerData(shell).slice(0, questions.length);
     const bncc = extractBncc(shell);
-    const existingImage = shell.querySelector('.collection-student-page img.question-figure')?.src || '';
+    const existingImage = shell.querySelector('.collection-student-page img.activity-figure, .collection-student-page img.question-figure')?.src || '';
     const visual = existingImage || svgDataUrl(fallbackSvg(subject));
 
     const tools = document.createElement('div');

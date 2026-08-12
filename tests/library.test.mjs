@@ -544,7 +544,7 @@ test('Página inicial e Biblioteca versionam os arquivos da categoria de autismo
   assert.match(home, /styles\.css\?v=20260808-material-v3/);
   assert.match(library, /styles\.css\?v=20260807-autismo-v3/);
   assert.match(library, /biblioteca\.css\?v=20260807-autismo-v4/);
-  assert.match(library, /biblioteca\.js\?v=20260807-autismo-v4/);
+  assert.match(library, /biblioteca\.js\?v=20260811-figura-geral-v5/);
   assert.match(library, /biblioteca-fixes\.js\?v=20260807-autismo-v3/);
 });
 
@@ -675,6 +675,26 @@ test('Impressão da coleção usa A4 e gabarito separado sem marca promocional',
   assert.match(css, /\.collection-answer-key\s*\{[^}]*break-before:\s*page;[^}]*font-size:\s*11pt/s);
   const script = await readFile(new URL('../biblioteca.js', import.meta.url), 'utf8');
   assert.doesNotMatch(script.match(/function openCollectionPreview[\s\S]*?function resetFilters/)[0], /worksheet-brand|logotipo|marca-d’água|publicidade|rodapé promocional/i);
+});
+
+test('Figura geral de Português aparece antes das questões e substitui o fallback', async () => {
+  const window = await createLibraryPage();
+  openActivities(window, 'Anos Iniciais', '4º ano', '3º bimestre');
+  const subject = window.document.querySelector('#library-filters select[name="subject"]');
+  subject.value = 'Língua Portuguesa';
+  subject.dispatchEvent(new window.Event('input', { bubbles: true }));
+  await new Promise(resolve => setTimeout(resolve, 0));
+
+  const card = [...window.document.querySelectorAll('.activity-library-card')]
+    .find(item => item.textContent.includes('Conhecendo a estrutura da notícia'));
+  assert.ok(card);
+  card.querySelector('.preview-button').click();
+
+  const figure = window.document.querySelector('#activity-preview .activity-figure');
+  assert.ok(figure);
+  assert.equal(figure.getAttribute('src'), 'assets/atividades/lingua-portuguesa/fig-noticia-horta-01.png');
+  assert.ok(window.__assetFetchCalls.includes('assets/atividades/lingua-portuguesa/fig-noticia-horta-01.png'));
+  await window.happyDOM.close();
 });
 
 test('Lote de Matemática e Língua Portuguesa preserva 60 atividades e 360 questões', async () => {
