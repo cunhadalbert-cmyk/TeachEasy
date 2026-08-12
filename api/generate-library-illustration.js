@@ -51,7 +51,7 @@ async function fetchOfficialCastReference(request) {
       }
       const contentType = result.headers.get('content-type') || 'image/jpeg';
       const bytes = await result.arrayBuffer();
-      if (bytes.byteLength < 50_000) {
+      if (bytes.byteLength < 10_000) {
         lastError = new Error('Referência visual oficial inválida ou incompleta.');
         continue;
       }
