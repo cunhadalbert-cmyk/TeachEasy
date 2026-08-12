@@ -78,6 +78,13 @@ test('gerador usa a imagem oficial com fidelidade visual reforçada', async () =
   assert.match(api, /blocos de base dez, material dourado/);
 });
 
+test('gerador não inventa personagens quando a referência oficial falha', () => {
+  assert.doesNotMatch(api, /generateWithoutReference/);
+  assert.doesNotMatch(api, /v1\/images\/generations/);
+  assert.match(api, /await generateWithReference\(request, prompt\)/);
+  assert.match(api, /referência visual oficial/);
+});
+
 test('IA e foto não aceitam SVG como resultado final', () => {
   assert.match(jogos, /carregarPadraoIlustracao/);
   assert.match(illustrationGuard, /removeVectorFallbacks/);

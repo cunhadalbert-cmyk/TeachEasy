@@ -44,12 +44,12 @@ async function fetchOfficialCastReference(request) {
   let lastError = null;
   for (const url of candidates) {
     try {
-      const result = await fetch(url, { headers: { Accept: 'image/jpeg,image/png,image/*' } });
+      const result = await fetch(url, { headers: { Accept: 'image/png,image/*' } });
       if (!result.ok) {
         lastError = new Error(`Referência visual retornou HTTP ${result.status}.`);
         continue;
       }
-      const contentType = result.headers.get('content-type') || 'image/jpeg';
+      const contentType = result.headers.get('content-type') || 'image/png';
       const bytes = await result.arrayBuffer();
       if (bytes.byteLength < 10_000) {
         lastError = new Error('Referência visual oficial inválida ou incompleta.');
@@ -129,28 +129,6 @@ async function generateWithReference(request, prompt) {
   return imageBase64;
 }
 
-async function generateWithoutReference(prompt) {
-  const imageResponse = await fetch('https://api.openai.com/v1/images/generations', {
-    method: 'POST',
-    headers: {
-      Authorization: `Bearer ${process.env.OPENAI_API_KEY}`,
-      'Content-Type': 'application/json'
-    },
-    body: JSON.stringify({
-      model: 'gpt-image-1',
-      prompt,
-      size: '1536x1024',
-      quality: 'high',
-      output_format: 'png'
-    })
-  });
-  const imageData = await imageResponse.json();
-  if (!imageResponse.ok) throw new Error(imageData.error?.message || 'Falha no modo alternativo de geração.');
-  const imageBase64 = imageData.data?.[0]?.b64_json;
-  if (!imageBase64) throw new Error('O modo alternativo não retornou imagem.');
-  return imageBase64;
-}
-
 module.exports = async function handler(request, response) {
   if (request.method !== 'POST') return json(response, 405, { error: 'Método não permitido.' });
   if (!process.env.OPENAI_API_KEY) return json(response, 503, { error: 'A geração de ilustração não está configurada.' });
@@ -165,18 +143,11 @@ module.exports = async function handler(request, response) {
     const topic = safeText(input.topic || 'conteúdo escolar', 180);
     const context = safeText(input.context || '', 700);
     const prompt = stylePrompt(subject, topic, context);
-
-    let imageBase64 = '';
-    try {
-      imageBase64 = await generateWithReference(request, prompt);
-    } catch (referenceError) {
-      console.warn('library-illustration-reference-mode-failed', referenceError.message || referenceError);
-      imageBase64 = await generateWithoutReference(prompt);
-    }
+    const imageBase64 = await generateWithReference(request, prompt);
 
     return json(response, 200, { illustrationDataUrl: `data:image/png;base64,${imageBase64}` });
   } catch (error) {
     console.error('library-illustration-generation-failed', error.message || error);
-    return json(response, 502, { error: 'Não foi possível gerar a ilustração pedagógica agora.' });
+    return json(response, 502, { error: 'Não foi possível gerar a ilustração com a referência visual oficial. Tente novamente em instantes.' });
   }
 };
