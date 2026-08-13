@@ -49,8 +49,15 @@ async function fetchOfficialCastReference(request) {
         lastError = new Error(`Referência visual retornou HTTP ${result.status}.`);
         continue;
       }
-      const contentType = result.headers.get('content-type') || 'image/png';
+      const contentType = (result.headers.get('content-type') || '').toLowerCase();
+
+      if (!/^image\/(png|jpeg|webp)(?:;|$)/i.test(contentType)) {
+        lastError = new Error(`Referência visual retornou tipo inválido: ${contentType || 'desconhecido'}.`);
+        continue;
+      }
+
       const bytes = await result.arrayBuffer();
+
       if (bytes.byteLength < 10_000) {
         lastError = new Error('Referência visual oficial inválida ou incompleta.');
         continue;
