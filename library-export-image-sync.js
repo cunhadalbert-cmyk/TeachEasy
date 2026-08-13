@@ -7,6 +7,7 @@
   const DB_NAME = 'TeachEasyLibrary';
   const DB_VERSION = 1;
   const STORE_NAME = 'illustrations';
+  const ILLUSTRATION_CACHE_VERSION = 'official-cast-v2-20260812';
 
   function currentStudentImage(shell) {
     return shell?.querySelector('.te-final-student .te-final-visual img') || null;
@@ -39,7 +40,7 @@
   }
 
   function cacheKey(data) {
-    return `${data.subject}|${data.topic}|${data.context}`.toLowerCase().slice(0, 900);
+    return `${ILLUSTRATION_CACHE_VERSION}|${data.subject}|${data.topic}|${data.context}`.toLowerCase().slice(0, 940);
   }
 
   function openDatabase() {
@@ -123,8 +124,8 @@
     const key = cacheKey(data);
     const persistent = generationCache.get(key) || await readPersistentImage(key).catch(() => '');
 
-    // A imagem persistida do próprio exercício sempre tem prioridade sobre
-    // qualquer fallback, SVG, imagem estática ou rerenderização posterior.
+    // Somente imagens persistidas com a versão atual do elenco oficial são restauradas.
+    // Chaves antigas continuam no IndexedDB, mas não podem sobrescrever a nova referência visual.
     if (persistent && /^data:image\/png;base64,/i.test(persistent)) {
       generationCache.set(key, persistent);
       return applyImage(shell, persistent, 'persistent');
@@ -153,7 +154,6 @@
       });
       const payload = await response.json();
       if (!response.ok || !payload.illustrationDataUrl) {
-        // Nunca substitua/apague a imagem existente quando a geração falhar.
         await restoreFinalImage(shell).catch(() => null);
         throw new Error(payload.error || 'Não foi possível gerar a ilustração.');
       }
