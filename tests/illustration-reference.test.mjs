@@ -24,13 +24,15 @@ test('modo temporário de ilustração permanece protegido e salva a imagem vinc
   assert.match(illustrationAdmin, /Ilustração pronta e salva neste exercício/);
 });
 
-test('download Word e PDF gera, persiste e reutiliza a imagem quando ainda há fallback', () => {
-  assert.match(html, /library-export-image-sync\.js\?v=20260812-persistencia-ilustracao-v6/);
+test('download Word e PDF usa cache versionado do elenco oficial atual', () => {
+  assert.match(html, /library-export-image-sync\.js\?v=20260812-persistencia-ilustracao-v7-official-cast-v2/);
   assert.ok(html.indexOf('library-export-image-sync.js') < html.indexOf('biblioteca-final-standard.js'));
   assert.doesNotMatch(exportImageSync, /modoIlustracao/);
   assert.match(exportImageSync, /\.te-final-word, \.te-final-pdf/);
   assert.match(exportImageSync, /generate-library-illustration/);
   assert.match(exportImageSync, /indexedDB/);
+  assert.match(exportImageSync, /ILLUSTRATION_CACHE_VERSION = 'official-cast-v2-20260812'/);
+  assert.match(exportImageSync, /\$\{ILLUSTRATION_CACHE_VERSION\}\|\$\{data\.subject\}/);
   assert.match(exportImageSync, /restoreFinalImage/);
   assert.match(exportImageSync, /savePersistentImage/);
   assert.match(exportImageSync, /readPersistentImage/);
