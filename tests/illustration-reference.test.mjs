@@ -8,13 +8,13 @@ const illustrationAdmin = await readFile(new URL('../library-illustration-admin.
 const exportImageSync = await readFile(new URL('../library-export-image-sync.js', import.meta.url), 'utf8');
 const illustrationGuard = await readFile(new URL('../illustration-reference-standard.js', import.meta.url), 'utf8');
 const api = await readFile(new URL('../api/generate-library-illustration.js', import.meta.url), 'utf8');
+const illustrationGeneration = await readFile(new URL('../api/_lib/illustration-generation.js', import.meta.url), 'utf8');
 const jogos = await readFile(new URL('../jogos-inline.js', import.meta.url), 'utf8');
 
 test('Biblioteca normal não carrega gerador dinâmico legado de IA', () => {
   assert.doesNotMatch(html, /library-ai-illustration\.js/);
   assert.doesNotMatch(html, /illustration-reference-standard\.js/);
 });
-
 test('modo temporário de ilustração permanece protegido e salva a imagem vinculada ao exercício', () => {
   assert.match(html, /library-illustration-admin\.js\?v=20260812-persistencia-ilustracao-v4/);
   assert.match(illustrationAdmin, /modoIlustracao/);
