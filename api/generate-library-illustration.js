@@ -2,7 +2,7 @@ const MAX_BODY_BYTES = 8_000;
 const WINDOW_MS = 10 * 60 * 1000;
 const MAX_REQUESTS_PER_WINDOW = 8;
 const requestBuckets = new Map();
-const OFFICIAL_CAST_PATH = '/illustrations/reference/teacheasy-official-cast.png';
+const OFFICIAL_CAST_PATH = '/public/illustrations/reference/teacheasy-official-cast.png';
 const OFFICIAL_CAST_RAW_URL = 'https://raw.githubusercontent.com/cunhadalbert-cmyk/TeachEasy/main/public/illustrations/reference/teacheasy-official-cast.png';
 
 function json(response, status, payload) {
@@ -44,7 +44,7 @@ async function fetchOfficialCastReference(request) {
   let lastError = null;
   for (const url of candidates) {
     try {
-      const result = await fetch(url, { headers: { Accept: 'image/png,image/*' } });
+      const result = await fetch(url, { headers: { Accept: 'image/png,image/*' }, cache: 'no-store' });
       if (!result.ok) {
         lastError = new Error(`Referência visual retornou HTTP ${result.status}.`);
         continue;
