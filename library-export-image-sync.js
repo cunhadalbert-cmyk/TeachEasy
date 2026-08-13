@@ -7,7 +7,7 @@
   const DB_NAME = 'TeachEasyLibrary';
   const DB_VERSION = 1;
   const STORE_NAME = 'illustrations';
-  const ILLUSTRATION_CACHE_VERSION = 'official-cast-v2-20260812';
+  const ILLUSTRATION_CACHE_VERSION = 'official-cast-v3-20260813';
 
   function currentStudentImage(shell) {
     return shell?.querySelector('.te-final-student .te-final-visual img') || null;
