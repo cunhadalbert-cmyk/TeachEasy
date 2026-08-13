@@ -68,7 +68,11 @@ test('gerador usa a imagem oficial com fidelidade visual reforçada', async () =
   assert.match(api, /A cena nova deve parecer uma edição da mesma imagem oficial/);
   assert.match(api, /NÃO reinterprete, NÃO redesenhe/);
   assert.match(api, /REGRA DE PRESERVAÇÃO DE IDENTIDADE/);
-  assert.match(api, /EXATAMENTE essas quatro crianças e esse cachorro/);
+  assert.match(api, /REGRA DE COMPOSIÇÃO DOS PERSONAGENS/);
+  assert.match(api, /use somente o personagem ou os personagens oficiais que correspondam diretamente ao conteúdo/);
+  assert.match(api, /Não inclua personagens adicionais sem necessidade pedagógica/);
+  assert.match(api, /O cachorro oficial só deve aparecer quando fizer sentido/);
+  assert.match(api, /Sempre que possível, mantenha os personagens oficiais em pé/);
   assert.match(api, /camiseta branca com desenho de controle de videogame/);
   assert.match(api, /camiseta roxa com margarida branca/);
   assert.match(api, /jardineira jeans azul/);
