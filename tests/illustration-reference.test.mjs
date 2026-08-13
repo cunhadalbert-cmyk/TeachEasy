@@ -60,6 +60,10 @@ test('gerador usa a imagem oficial com fidelidade visual reforçada', async () =
   assert.ok(referenceStat.size > 10_000, 'A referência visual oficial está ausente ou pequena demais.');
   assert.match(api, /teacheasy-official-cast\.png/);
   assert.match(api, /REFERÊNCIA VISUAL OFICIAL E OBRIGATÓRIA/);
+  assert.match(api, /TRAVA VISUAL ABSOLUTA/);
+  assert.match(api, /ELEMENTOS VISUAIS A SEREM PRESERVADOS/);
+  assert.match(api, /NÃO redesenhe do zero cabeça, rosto, cabelo, óculos, tronco, roupas ou calçados/);
+  assert.match(api, /A cena nova deve parecer uma edição da mesma imagem oficial/);
   assert.match(api, /NÃO reinterprete, NÃO redesenhe/);
   assert.match(api, /REGRA DE PRESERVAÇÃO DE IDENTIDADE/);
   assert.match(api, /EXATAMENTE essas quatro crianças e esse cachorro/);
