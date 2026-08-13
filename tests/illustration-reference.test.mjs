@@ -68,7 +68,11 @@ test('gerador usa a imagem oficial com fidelidade visual reforçada', async () =
   assert.match(api, /A cena nova deve parecer uma edição da mesma imagem oficial/);
   assert.match(api, /NÃO reinterprete, NÃO redesenhe/);
   assert.match(api, /REGRA DE PRESERVAÇÃO DE IDENTIDADE/);
-  assert.match(api, /EXATAMENTE essas quatro crianças e esse cachorro/);
+  assert.match(api, /ELENCO FLEXÍVEL/);
+  assert.match(api, /1, 2, 3 ou 4 crianças/);
+  assert.match(api, /O cachorro é OPCIONAL/);
+  assert.match(api, /NÃO corte cabeça, cabelo, braços, mãos, pernas, pés, cachorro ou objetos pedagógicos importantes/);
+  assert.match(api, /Não crie automaticamente uma paisagem completa/);
   assert.match(api, /camiseta branca com desenho de controle de videogame/);
   assert.match(api, /camiseta roxa com margarida branca/);
   assert.match(api, /jardineira jeans azul/);

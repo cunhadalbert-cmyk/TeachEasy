@@ -92,7 +92,7 @@ pele clara a levemente bronzeada, cabelo preto curto e cheio, sem óculos, sorri
 5) Cachorro oficial:
 cachorro pequeno, simpático, tipo poodle pequeno, pelagem encaracolada cinza mesclada com preto, olhos amigáveis, sem coleira, sem roupa e sem acessórios.
 
-A nova ilustração deve conter EXATAMENTE essas quatro crianças e esse cachorro. Não omita, não acrescente e não substitua personagens. O menino moreno SEMPRE usa óculos. O menino de verde NUNCA usa óculos. A menina menor SEMPRE usa óculos. A menina maior NUNCA usa óculos. O cachorro SEMPRE aparece. NÃO troque roupas entre personagens e NÃO altere as cores-base das roupas.`;
+ELENCO FLEXÍVEL: escolha somente os personagens oficiais necessários para representar bem o conteúdo da atividade. A cena pode mostrar 1, 2, 3 ou 4 crianças. O cachorro é OPCIONAL e deve aparecer somente quando fizer sentido para a cena e houver espaço adequado. Não force a presença de todo o elenco. Nunca crie personagens novos nem substitua um personagem oficial por outro. Entre os personagens escolhidos, preserve rigorosamente a identidade: o menino moreno SEMPRE usa óculos; o menino de verde NUNCA usa óculos; a menina menor SEMPRE usa óculos; a menina maior NUNCA usa óculos. NÃO troque roupas entre personagens e NÃO altere as cores-base das roupas.`;
 
   const preservation = `REGRA DE PRESERVAÇÃO DE IDENTIDADE: cabeça, rosto, cabelo, óculos, roupas-base, cores principais e aparência geral são elementos protegidos da referência e devem permanecer visualmente inalterados. A cena nova deve parecer uma edição da mesma imagem oficial, e não uma nova interpretação dos personagens. Mude o mínimo possível no elenco. Para adaptar cada atividade, prefira alterar cenário, objetos pedagógicos, posição das mãos e pequenos ajustes de pose. Se uma pose nova exigir deformar, redesenhar ou descaracterizar qualquer personagem, NÃO use essa pose: mantenha uma pose mais próxima da referência. A fidelidade ao elenco é mais importante do que a variedade de pose, ação ou cenário.`;
 
@@ -102,17 +102,21 @@ ${preservation}
 
 Mantenha o mesmo acabamento visual da referência: renderização digital 3D infantil de alta qualidade, com volume e profundidade reais — pele com leve brilho e sombreamento volumétrico, cabelo com fios individuais visíveis e reflexos de luz, olhos grandes e brilhantes com reflexo de luz (catchlight), roupas e calçados com textura e material visíveis, iluminação com contraste real de luz e sombra. NÃO é uma ilustração plana/vetorial de contornos simples e cores chapadas: é um render com brilho, volume e detalhe, no mesmo padrão de acabamento 3D da referência. O cenário pode ser novo e mais simples que o fundo da referência, mas os personagens NÃO podem ganhar um novo estilo de desenho nem perder o acabamento 3D com brilho e volume. A cena deve parecer acolhedora, educativa e própria para atividades escolares.
 
-Adapte somente o necessário ao conteúdo escolar. Não inclua textos, letras, números escritos, respostas, logotipos ou marcas d'água. Use composição HORIZONTAL, com os quatro personagens e o cachorro totalmente visíveis e sem cortes, adequada para ocupar aproximadamente metade de uma folha A4 ao lado do texto.`;
+Adapte somente o necessário ao conteúdo escolar. Não inclua textos, letras, números escritos, respostas, logotipos ou marcas d'água.
+
+ENQUADRAMENTO OBRIGATÓRIO: use composição HORIZONTAL e mantenha TODOS os personagens escolhidos totalmente dentro da imagem, com margem de segurança em todos os lados. NÃO corte cabeça, cabelo, braços, mãos, pernas, pés, cachorro ou objetos pedagógicos importantes. Reduza o tamanho dos personagens se necessário para que caibam completamente na área útil.
+
+FUNDO: prefira fundo simples, limpo, discreto e com poucos elementos. NÃO crie paisagem grande ou cenário detalhado quando isso não for necessário para compreender a atividade. O foco principal deve ser os personagens e a ação relacionada ao texto. A ilustração deve funcionar bem ocupando aproximadamente metade de uma folha A4 ao lado do texto.`;
 
   const geography = /geograf|migra|famílias migrantes|campo|cidade|paisagem|território|mapa|trajeto/i.test(`${subject} ${topic} ${context}`)
-    ? ' Para Geografia, acrescente elementos simples, claros e didáticos relacionados ao tema ao redor do elenco. Se envolver migração, use malas, caixas, trajeto, chegada, mudança de moradia, mapa ou mudança de paisagem. Não altere rostos, cabelos, óculos, roupas ou estilo do elenco para representar o tema. Preserve os personagens antes de qualquer detalhe de cenário.'
+    ? ' Para Geografia, use somente os elementos visuais indispensáveis ao tema, como mapa, mala, caixa, trajeto, casa, rua ou outro objeto pedagógico simples. Não crie automaticamente uma paisagem completa. Se o conteúdo puder ser representado pelos personagens e por um ou dois objetos, prefira essa composição mais limpa. Não altere rostos, cabelos, óculos, roupas ou estilo dos personagens escolhidos.'
     : '';
 
   const math = /matem|número|adição|subtração|multiplica|divis|fraç|decimal|milhar|centena|dezena|unidade|geometr/i.test(`${subject} ${topic} ${context}`)
-    ? ' Para Matemática, use materiais manipuláveis visuais como blocos de base dez, material dourado, cubos, barras, fichas, cartões, formas geométricas e agrupamentos, sem escrever operações ou respostas. Preserve integralmente o elenco oficial e mude somente os objetos pedagógicos ao redor dele.'
+    ? ' Para Matemática, use materiais manipuláveis visuais como blocos de base dez, material dourado, cubos, barras, fichas, cartões, formas geométricas e agrupamentos, sem escrever operações ou respostas. Use somente a quantidade de personagens necessária e mantenha o fundo simples.'
     : '';
 
-  return `${style}${geography}${math} Disciplina: ${subject}. Tema: ${topic}. Contexto pedagógico: ${context || topic}. ORDEM DE PRIORIDADE: 1) preservar visualmente os personagens da imagem de entrada sem redesenhá-los; 2) identidade visual exata dos 4 personagens e do cachorro; 3) rosto, cabelo, óculos, roupas-base, proporções, contornos e cores principais idênticos à referência; 4) ação pedagógica; 5) cenário. Se houver conflito, preserve sempre os itens 1, 2 e 3, mesmo que a ação precise ficar mais simples.`;
+  return `${style}${geography}${math} Disciplina: ${subject}. Tema: ${topic}. Contexto pedagógico: ${context || topic}. ORDEM DE PRIORIDADE: 1) preservar visualmente os personagens oficiais escolhidos sem redesenhá-los; 2) manter identidade, rosto, cabelo, óculos, roupas-base, proporções, contornos e cores principais idênticos à referência; 3) garantir enquadramento completo, sem cortes e com margem nas bordas; 4) usar somente a quantidade de personagens necessária; 5) representar claramente a ação pedagógica; 6) manter cenário simples e secundário. Se houver conflito, preserve sempre identidade e enquadramento dos personagens.`;
 }
 
 async function generateWithReference(request, prompt) {
