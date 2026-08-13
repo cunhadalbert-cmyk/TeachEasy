@@ -66,6 +66,8 @@ async function fetchOfficialCastReference(request) {
 function stylePrompt(subject, topic, context) {
   const officialCast = `A IMAGEM DE ENTRADA é a REFERÊNCIA VISUAL OFICIAL E OBRIGATÓRIA do TeachEasy e define a identidade canônica dos personagens. Preserve com PRIORIDADE MÁXIMA e ALTA FIDELIDADE os mesmos rostos, olhos, sobrancelhas, nariz, sorriso, tom de pele, cabelo, óculos, idade aparente, proporções corporais, roupas-base, calçados e acabamento visual. NÃO reinterprete, NÃO redesenhe e NÃO crie personagens apenas parecidos. Devem ser reconhecivelmente os mesmos personagens da referência oficial.
 
+TRAVA VISUAL ABSOLUTA: trate os personagens da imagem de entrada como ELEMENTOS VISUAIS A SEREM PRESERVADOS, e não como inspiração para um novo desenho. NÃO redesenhe do zero cabeça, rosto, cabelo, óculos, tronco, roupas ou calçados. Preserve a geometria facial, formato e distância dos olhos, sobrancelhas, nariz, boca, sorriso, formato da cabeça, linha do maxilar, silhueta do cabelo, volume do cabelo, cor da pele, espessura dos contornos, linguagem de formas, proporções e acabamento da referência. NÃO faça style transfer nos personagens. NÃO mude idade aparente, etnia, peso, altura relativa, formato corporal ou expressão facial característica. Se for necessário adaptar a ação, altere somente braços, mãos, pernas e inclinação do corpo no mínimo necessário, mantendo cabeça, rosto, cabelo e roupas visualmente idênticos à referência. Prefira composição e cenário adaptados ao redor do elenco em vez de redesenhar o elenco.
+
 ELENCO OFICIAL FIXO — exatamente como aparece na referência:
 
 1) Menino moreno:
@@ -85,25 +87,25 @@ cachorro pequeno, simpático, tipo poodle pequeno, pelagem encaracolada cinza me
 
 A nova ilustração deve conter EXATAMENTE essas quatro crianças e esse cachorro. Não omita, não acrescente e não substitua personagens. O menino moreno SEMPRE usa óculos. O menino de verde NUNCA usa óculos. A menina menor SEMPRE usa óculos. A menina maior NUNCA usa óculos. O cachorro SEMPRE aparece. NÃO troque roupas entre personagens e NÃO altere as cores-base das roupas.`;
 
-  const preservation = `REGRA DE PRESERVAÇÃO DE IDENTIDADE: cabeça, rosto, cabelo, óculos, roupas-base, cores principais e aparência geral são elementos protegidos da referência. Mude o mínimo possível nesses elementos. Para adaptar cada atividade, prefira alterar somente pose, posição das mãos, expressão corporal, objetos pedagógicos e cenário. Se uma pose nova exigir deformar ou descaracterizar o personagem, mantenha uma pose mais próxima da referência. A fidelidade ao elenco é mais importante do que a variedade de pose.`;
+  const preservation = `REGRA DE PRESERVAÇÃO DE IDENTIDADE: cabeça, rosto, cabelo, óculos, roupas-base, cores principais e aparência geral são elementos protegidos da referência e devem permanecer visualmente inalterados. A cena nova deve parecer uma edição da mesma imagem oficial, e não uma nova interpretação dos personagens. Mude o mínimo possível no elenco. Para adaptar cada atividade, prefira alterar cenário, objetos pedagógicos, posição das mãos e pequenos ajustes de pose. Se uma pose nova exigir deformar, redesenhar ou descaracterizar qualquer personagem, NÃO use essa pose: mantenha uma pose mais próxima da referência. A fidelidade ao elenco é mais importante do que a variedade de pose, ação ou cenário.`;
 
   const style = `Crie UMA NOVA CENA pedagógica infantil para material didático brasileiro, usando a imagem de entrada como referência canônica de identidade e estilo. ${officialCast}
 
 ${preservation}
 
-Mantenha o mesmo acabamento visual da referência: ilustração infantil digital de alta qualidade, leve, limpa, suave, colorida, simpática e consistente, com aparência moderna de animação infantil, olhos expressivos, contornos limpos, sombras suaves, cores alegres e agradáveis, sem excesso de textura e sem aparência pesada. A cena deve parecer acolhedora, educativa e própria para atividades escolares.
+Mantenha o mesmo acabamento visual da referência: ilustração infantil digital de alta qualidade, leve, limpa, suave, colorida, simpática e consistente, com aparência moderna de animação infantil, olhos expressivos, contornos limpos, sombras suaves, cores alegres e agradáveis, sem excesso de textura e sem aparência pesada. O cenário pode ser novo, mas os personagens NÃO podem ganhar um novo estilo de desenho. A cena deve parecer acolhedora, educativa e própria para atividades escolares.
 
 Adapte somente o necessário ao conteúdo escolar. Não inclua textos, letras, números escritos, respostas, logotipos ou marcas d'água. Use composição HORIZONTAL, com os quatro personagens e o cachorro totalmente visíveis e sem cortes, adequada para ocupar aproximadamente metade de uma folha A4 ao lado do texto.`;
 
   const geography = /geograf|migra|famílias migrantes|campo|cidade|paisagem|território|mapa|trajeto/i.test(`${subject} ${topic} ${context}`)
-    ? ' Para Geografia, acrescente elementos simples, claros e didáticos relacionados ao tema ao redor do elenco. Se envolver migração, use malas, caixas, trajeto, chegada, mudança de moradia, mapa ou mudança de paisagem. Preserve os personagens antes de qualquer detalhe de cenário.'
+    ? ' Para Geografia, acrescente elementos simples, claros e didáticos relacionados ao tema ao redor do elenco. Se envolver migração, use malas, caixas, trajeto, chegada, mudança de moradia, mapa ou mudança de paisagem. Não altere rostos, cabelos, óculos, roupas ou estilo do elenco para representar o tema. Preserve os personagens antes de qualquer detalhe de cenário.'
     : '';
 
   const math = /matem|número|adição|subtração|multiplica|divis|fraç|decimal|milhar|centena|dezena|unidade|geometr/i.test(`${subject} ${topic} ${context}`)
-    ? ' Para Matemática, use materiais manipuláveis visuais como blocos de base dez, material dourado, cubos, barras, fichas, cartões, formas geométricas e agrupamentos, sem escrever operações ou respostas. Preserve integralmente o elenco oficial.'
+    ? ' Para Matemática, use materiais manipuláveis visuais como blocos de base dez, material dourado, cubos, barras, fichas, cartões, formas geométricas e agrupamentos, sem escrever operações ou respostas. Preserve integralmente o elenco oficial e mude somente os objetos pedagógicos ao redor dele.'
     : '';
 
-  return `${style}${geography}${math} Disciplina: ${subject}. Tema: ${topic}. Contexto pedagógico: ${context || topic}. ORDEM DE PRIORIDADE: 1) identidade visual exata dos 4 personagens e do cachorro; 2) rosto, cabelo, óculos, roupas-base e cores principais idênticos à referência; 3) ação pedagógica; 4) cenário. Se houver conflito, preserve sempre os itens 1 e 2.`;
+  return `${style}${geography}${math} Disciplina: ${subject}. Tema: ${topic}. Contexto pedagógico: ${context || topic}. ORDEM DE PRIORIDADE: 1) preservar visualmente os personagens da imagem de entrada sem redesenhá-los; 2) identidade visual exata dos 4 personagens e do cachorro; 3) rosto, cabelo, óculos, roupas-base, proporções, contornos e cores principais idênticos à referência; 4) ação pedagógica; 5) cenário. Se houver conflito, preserve sempre os itens 1, 2 e 3, mesmo que a ação precise ficar mais simples.`;
 }
 
 async function generateWithReference(request, prompt) {
