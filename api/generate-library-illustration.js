@@ -49,8 +49,15 @@ async function fetchOfficialCastReference(request) {
         lastError = new Error(`Referência visual retornou HTTP ${result.status}.`);
         continue;
       }
-      const contentType = result.headers.get('content-type') || 'image/png';
+      const contentType = (result.headers.get('content-type') || '').toLowerCase();
+
+      if (!/^image\/(png|jpeg|webp)(?:;|$)/i.test(contentType)) {
+        lastError = new Error(`Referência visual retornou tipo inválido: ${contentType || 'desconhecido'}.`);
+        continue;
+      }
+
       const bytes = await result.arrayBuffer();
+
       if (bytes.byteLength < 10_000) {
         lastError = new Error('Referência visual oficial inválida ou incompleta.');
         continue;
@@ -93,7 +100,7 @@ A nova ilustração deve conter EXATAMENTE essas quatro crianças e esse cachorr
 
 ${preservation}
 
-Mantenha o mesmo acabamento visual da referência: ilustração infantil digital de alta qualidade, leve, limpa, suave, colorida, simpática e consistente, com aparência moderna de animação infantil, olhos expressivos, contornos limpos, sombras suaves, cores alegres e agradáveis, sem excesso de textura e sem aparência pesada. O cenário pode ser novo, mas os personagens NÃO podem ganhar um novo estilo de desenho. A cena deve parecer acolhedora, educativa e própria para atividades escolares.
+Mantenha o mesmo acabamento visual da referência: renderização digital 3D infantil de alta qualidade, com volume e profundidade reais — pele com leve brilho e sombreamento volumétrico, cabelo com fios individuais visíveis e reflexos de luz, olhos grandes e brilhantes com reflexo de luz (catchlight), roupas e calçados com textura e material visíveis, iluminação com contraste real de luz e sombra. NÃO é uma ilustração plana/vetorial de contornos simples e cores chapadas: é um render com brilho, volume e detalhe, no mesmo padrão de acabamento 3D da referência. O cenário pode ser novo e mais simples que o fundo da referência, mas os personagens NÃO podem ganhar um novo estilo de desenho nem perder o acabamento 3D com brilho e volume. A cena deve parecer acolhedora, educativa e própria para atividades escolares.
 
 Adapte somente o necessário ao conteúdo escolar. Não inclua textos, letras, números escritos, respostas, logotipos ou marcas d'água. Use composição HORIZONTAL, com os quatro personagens e o cachorro totalmente visíveis e sem cortes, adequada para ocupar aproximadamente metade de uma folha A4 ao lado do texto.`;
 
