@@ -4,9 +4,12 @@ import { readFile } from 'node:fs/promises';
 
 const html = await readFile(new URL('../biblioteca.html', import.meta.url), 'utf8');
 const standard = await readFile(new URL('../biblioteca-final-standard.js', import.meta.url), 'utf8');
+const overflowFix = await readFile(new URL('../library-layout-overflow-fix.js', import.meta.url), 'utf8');
 
 test('Biblioteca usa somente o padrão final único depois das coleções', () => {
   assert.match(html, /biblioteca-final-standard\.js\?v=20260813-padrao-oficial-v1/);
+  assert.match(html, /library-layout-overflow-fix\.js\?v=20260813-fit-v1/);
+  assert.ok(html.indexOf('library-layout-overflow-fix.js') > html.indexOf('biblioteca-final-standard.js'));
   assert.doesNotMatch(html, /biblioteca-standard\.js/);
   assert.doesNotMatch(html, /biblioteca-export-hardfix\.js/);
   assert.ok(html.indexOf('biblioteca-final-standard.js') > html.indexOf('biblioteca-fixes.js'));
@@ -55,6 +58,16 @@ test('texto principal reduz de 12 até 8 pt em passos de 0,5 sem cortar conteúd
   assert.match(standard, /bodyMin/);
   assert.match(standard, /bodyStep/);
   assert.doesNotMatch(standard, /\.te-final-text\{[^}]*overflow:hidden/);
+});
+
+test('correção do preview limita a célula de texto e recalcula o encaixe real', () => {
+  assert.match(overflowFix, /\.te-final-text\{min-width:0;min-height:0;max-height:100%/);
+  assert.match(overflowFix, /MAX_FONT_PT = 12/);
+  assert.match(overflowFix, /MIN_FONT_PT = 8/);
+  assert.match(overflowFix, /STEP_PT = 0\.5/);
+  assert.match(overflowFix, /scrollHeight <= textEl\.clientHeight/);
+  assert.match(overflowFix, /ResizeObserver/);
+  assert.match(overflowFix, /requestAnimationFrame\(\(\) => fitText\(shell\)\)/);
 });
 
 test('questões são reconstruídas em uma única folha com até oito itens', () => {
