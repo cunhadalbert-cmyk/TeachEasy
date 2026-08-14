@@ -6,14 +6,30 @@ const html = await readFile(new URL('../biblioteca.html', import.meta.url), 'utf
 const standard = await readFile(new URL('../biblioteca-final-standard.js', import.meta.url), 'utf8');
 
 test('Biblioteca usa somente o padrão final único depois das coleções', () => {
-  assert.match(html, /biblioteca-final-standard\.js\?v=20260811-figura-geral-v5/);
+  assert.match(html, /biblioteca-final-standard\.js\?v=20260813-padrao-oficial-v1/);
   assert.doesNotMatch(html, /biblioteca-standard\.js/);
   assert.doesNotMatch(html, /biblioteca-export-hardfix\.js/);
   assert.ok(html.indexOf('biblioteca-final-standard.js') > html.indexOf('biblioteca-fixes.js'));
 });
 
+test('padrão oficial centraliza medidas, cores e tipografia', () => {
+  assert.match(standard, /const ACTIVITY_LAYOUT/);
+  assert.match(standard, /format: 'A4'/);
+  assert.match(standard, /primary: '#1F497D'/);
+  assert.match(standard, /family: 'Arial'/);
+  assert.match(standard, /title: 13/);
+  assert.match(standard, /subtitle: 13/);
+  assert.match(standard, /bodyDefault: 12/);
+  assert.match(standard, /bodyMin: 8/);
+  assert.match(standard, /bodyStep: 0\.5/);
+  assert.match(standard, /widthCm: 18\.5/);
+  assert.match(standard, /heightCm: 9\.6/);
+  assert.match(standard, /textRatio: 0\.47/);
+  assert.match(standard, /imageRatio: 0\.53/);
+});
+
 test('atividade do aluno recebe o cabeçalho completo do modelo aprovado', () => {
-  assert.match(standard, /Escola:/);
+  assert.match(standard, /ESCOLA:/);
   assert.match(standard, /Nome:/);
   assert.match(standard, /Turma:/);
   assert.match(standard, /Data:/);
@@ -21,14 +37,24 @@ test('atividade do aluno recebe o cabeçalho completo do modelo aprovado', () =>
   assert.match(standard, /te-final-header/);
 });
 
-test('título subtítulo e duas colunas seguem o padrão visual TeachEasy', () => {
+test('título, subtítulo e duas colunas seguem a referência visual', () => {
   assert.match(standard, /ATIVIDADE DE \$\{escapeHtml\(subject\.toUpperCase\(\)\)\}/);
   assert.match(standard, /te-final-title/);
   assert.match(standard, /te-final-subtitle/);
-  assert.match(standard, /te-final-content/);
-  assert.match(standard, /grid-template-columns:1fr 1fr/);
-  assert.match(standard, /#245b9b/i);
-  assert.match(standard, /#2e7d32/i);
+  assert.match(standard, /grid-template-columns:47fr 53fr/);
+  assert.match(standard, /width:18\.5cm/);
+  assert.match(standard, /height:9\.6cm/);
+  assert.match(standard, /#1F497D/i);
+});
+
+test('texto principal reduz de 12 até 8 pt em passos de 0,5 sem cortar conteúdo', () => {
+  assert.match(standard, /function resolveActivityLayout/);
+  assert.match(standard, /contentFits/);
+  assert.match(standard, /scrollHeight <= textEl\.clientHeight/);
+  assert.match(standard, /bodyDefault/);
+  assert.match(standard, /bodyMin/);
+  assert.match(standard, /bodyStep/);
+  assert.doesNotMatch(standard, /\.te-final-text\{[^}]*overflow:hidden/);
 });
 
 test('questões são reconstruídas em uma única folha com até oito itens', () => {
@@ -46,25 +72,28 @@ test('BNCC é removida da atividade e permanece opcional somente no gabarito', (
   assert.match(standard, /teFinalAnswer/);
 });
 
-test('Biblioteca gera Word DOCX real e não usa application msword', () => {
+test('Word DOCX usa o mesmo tamanho resolvido e mantém texto e imagem em tabela', () => {
   assert.match(standard, /Baixar Word editável \(\.docx\)/);
   assert.match(standard, /Packer\.toBlob/);
-  assert.match(standard, /\.docx`/);
+  assert.match(standard, /d\.bodyFontSize\*2/);
+  assert.match(standard, /new docx\.Table/);
+  assert.match(standard, /size:47,type:docx\.WidthType\.PERCENTAGE/);
+  assert.match(standard, /size:53,type:docx\.WidthType\.PERCENTAGE/);
+  assert.match(standard, /new docx\.ImageRun/);
   assert.doesNotMatch(standard, /application\/msword/);
-  assert.doesNotMatch(standard, /\.doc`;/);
 });
 
-test('Word e impressão usam A4 com margens pequenas e borda verde', () => {
+test('Word e impressão usam A4 com margens de 10 mm', () => {
   assert.match(standard, /size:\{width:11906,height:16838\}/);
-  assert.match(standard, /margin:\{top:300,right:420,bottom:420,left:420/);
-  assert.match(standard, /DASHED/);
-  assert.match(standard, /4CAF50/);
-  assert.match(standard, /245B9B/);
+  assert.match(standard, /margin:\{top:567,right:567,bottom:567,left:567/);
+  assert.match(standard, /width:210mm/);
+  assert.match(standard, /min-height:297mm/);
 });
 
-test('atividade sempre possui ilustração visual, usando a existente ou fallback pedagógico', () => {
+test('ilustração existente fica contida na coluna direita sem deformação', () => {
   assert.match(standard, /img\.activity-figure, \.collection-student-page img\.question-figure/);
-  assert.match(standard, /existingImage \|\| svgDataUrl\(fallbackSvg\(subject\)\)/);
   assert.match(standard, /te-final-visual/);
   assert.match(standard, /object-fit:contain/);
+  assert.match(standard, /max-width:100%/);
+  assert.match(standard, /max-height:100%/);
 });
