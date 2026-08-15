@@ -1,0 +1,30 @@
+{
+  "id": "geografia-4ano-3b-atividade-01",
+  "disciplina": "Geografia",
+  "ano": "4º ano",
+  "bimestre": "3º bimestre",
+  "titulo": "Culturas que formam nossa comunidade",
+  "bncc": {"habilidade": "EF04GE01", "verboCentral": "Selecionar"},
+  "textoApoio": {"titulo": "Muitos costumes, uma comunidade", "texto": "No bairro onde Júlia mora, as famílias têm histórias e costumes diferentes. Na feira, uma família vende tapioca preparada com mandioca, alimento de origem indígena. Em uma praça próxima, um grupo pratica capoeira, manifestação afro-brasileira que reúne música, movimento e história. Na escola, algumas famílias mantêm receitas trazidas de outras regiões do Brasil, enquanto outras preservam festas, palavras, músicas e modos de fazer vindos de diferentes partes do mundo. Esses costumes aparecem no cotidiano e ajudam a formar a identidade do lugar. Conhecer cada tradição permite perceber o que é próprio de diferentes culturas e compreender como todas elas contribuem para a cultura da comunidade, da região e do Brasil."},
+  "questoes": [
+    {"numero": 1, "enunciado": "Selecione dois elementos culturais citados no texto e escreva quais são eles.", "tipo": "aberta"},
+    {"numero": 2, "enunciado": "Qual elemento do texto está relacionado a uma contribuição de origem indígena?", "tipo": "multipla-escolha", "alternativas": ["A tapioca preparada com mandioca.", "A quadra de esportes da escola.", "O ponto de ônibus do bairro.", "A faixa de pedestres da praça."], "resposta": 0},
+    {"numero": 3, "enunciado": "Que manifestação afro-brasileira aparece no texto e quais elementos fazem parte dela?", "tipo": "aberta"},
+    {"numero": 4, "enunciado": "Por que as receitas, festas, músicas e palavras de diferentes origens ajudam a formar a identidade da comunidade?", "tipo": "aberta"},
+    {"numero": 5, "enunciado": "Imagine que você vai montar um painel sobre a diversidade cultural do seu lugar de vivência. Cite dois elementos que poderiam ser selecionados e explique de qual família, grupo ou tradição eles fazem parte.", "tipo": "aberta"},
+    {"numero": 6, "enunciado": "Explique por que valorizar diferentes tradições culturais é importante para a comunidade e para a cultura brasileira.", "tipo": "aberta"},
+    {"numero": 7, "enunciado": "Além dos exemplos apresentados no texto, escreva uma tradição cultural presente em sua comunidade e explique como ela é praticada.", "tipo": "aberta"},
+    {"numero": 8, "enunciado": "De que maneira pessoas de diferentes origens podem contribuir juntas para a cultura de uma comunidade?", "tipo": "aberta"}
+  ],
+  "gabarito": {
+    "1": "Duas possibilidades são: a tapioca preparada com mandioca e a capoeira. Também podem ser aceitas receitas, festas, palavras, músicas ou modos de fazer citados no texto.",
+    "2": "Alternativa A: a tapioca preparada com mandioca.",
+    "3": "A capoeira. No texto, ela aparece ligada à música, ao movimento e à história.",
+    "4": "Porque esses costumes são praticados pelas pessoas do lugar e representam contribuições de diferentes grupos, ajudando a construir características próprias da comunidade.",
+    "5": "Resposta pessoal. São válidos elementos culturais reais do lugar de vivência, desde que o estudante identifique o elemento e o relacione a uma família, grupo ou tradição de forma respeitosa e coerente.",
+    "6": "Porque reconhecer e respeitar diferentes tradições ajuda a valorizar os grupos que formam a comunidade e a compreender que a cultura brasileira é resultado de muitas contribuições.",
+    "7": "Resposta pessoal coerente com uma tradição cultural real da comunidade.",
+    "8": "Resposta esperada: compartilhando costumes, conhecimentos, celebrações, alimentos, músicas, histórias e modos de viver, com respeito às diferentes origens."
+  },
+  "layout": {"formato": "A4", "margemCm": 1, "molduraPreta": true, "cabecalhoDentroDaMoldura": true, "questoesNaPrimeiraPagina": 8, "gabaritoEmPaginaSeparada": true}
+}
