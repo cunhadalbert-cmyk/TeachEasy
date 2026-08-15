@@ -54,8 +54,16 @@ try {
     $word.DisplayAlerts = 0
 
     foreach ($term in 1..4) {
-        $jsonPath = Join-Path $dataRoot ($term.ToString() + '-bimestre\geografia.json')
-        if (-not (Test-Path $jsonPath)) { continue }
+        $termFolder = Join-Path $dataRoot ($term.ToString() + '-bimestre')
+        $v2Path = Join-Path $termFolder 'geografia-v2.json'
+        $legacyPath = Join-Path $termFolder 'geografia.json'
+        if (Test-Path $v2Path) {
+            $jsonPath = $v2Path
+        } elseif (Test-Path $legacyPath) {
+            $jsonPath = $legacyPath
+        } else {
+            continue
+        }
 
         $collection = Get-Content $jsonPath -Raw -Encoding UTF8 | ConvertFrom-Json
         $destination = Join-Path $outputRoot ($term.ToString() + '-bimestre')
