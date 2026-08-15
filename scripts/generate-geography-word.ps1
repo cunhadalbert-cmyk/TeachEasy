@@ -111,7 +111,11 @@ try {
                 Set-CellText $content.Cell(1,2) ("ILUSTRAÇÃO`r`n`r`n{0}" -f (Clean-Text $activity.ilustracao.descricao)) 10 $false 1
             }
 
-            Add-Paragraph $doc ($activity.instrucaoGeral ?? 'Responda às questões de acordo com o texto.') 13 $true 1 '1F497D'
+            $instruction = Clean-Text $activity.instrucaoGeral
+            if ([string]::IsNullOrWhiteSpace($instruction)) {
+                $instruction = 'Responda às questões de acordo com o texto.'
+            }
+            Add-Paragraph $doc $instruction 13 $true 1 '1F497D'
 
             foreach ($q in $activity.questoes) {
                 Add-Paragraph $doc ("{0} - {1}" -f $q.numero, (Clean-Text $q.enunciado)) 11 $false 0
