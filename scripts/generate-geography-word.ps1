@@ -57,10 +57,14 @@ $word = $null
 $generated = 0
 $skipped = 0
 
+Write-Host '[1/4] Iniciando Microsoft Word...'
+
 try {
     $word = New-Object -ComObject Word.Application
-    $word.Visible = $false
+    $word.Visible = $true
     $word.DisplayAlerts = 0
+    $word.Options.SaveNormalPrompt = $false
+    Write-Host '[2/4] Word iniciado.'
 
     foreach ($term in 1..4) {
         $termFolder = Join-Path $dataRoot ($term.ToString() + '-bimestre')
@@ -74,6 +78,7 @@ try {
             continue
         }
 
+        Write-Host ('[3/4] Lendo ' + $jsonPath)
         $collection = Get-Content $jsonPath -Raw -Encoding UTF8 | ConvertFrom-Json
         $destination = Join-Path $outputRoot ($term.ToString() + '-bimestre')
         New-Item -ItemType Directory -Force -Path $destination | Out-Null
@@ -88,6 +93,7 @@ try {
                 throw ('Atividade ' + $activity.id + ' deve possuir exatamente 6 questoes e 6 respostas.')
             }
 
+            Write-Host ('[4/4] Gerando: ' + (Clean-Text $activity.titulo))
             $doc = $word.Documents.Add()
             $section = $doc.Sections.Item(1)
             $section.PageSetup.PaperSize = 7
@@ -208,8 +214,9 @@ try {
             $filename = ('{0:D2}-{1}-{2}.docx' -f $order, $code, $safeTitle)
             $target = Join-Path $destination $filename
 
+            Write-Host ('Salvando em: ' + $target)
             $doc.SaveAs2($target, 16)
-            $doc.Close()
+            $doc.Close(0)
             $generated = $generated + 1
             Write-Host ('[OK] ' + [string]$term + ' bimestre -> ' + $filename)
         }
