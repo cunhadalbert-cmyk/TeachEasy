@@ -13,6 +13,15 @@ function Clean-Text([object]$value) {
     return ([string]$value -replace '\s+', ' ').Trim()
 }
 
+function Convert-WordColor([string]$hex) {
+    $value = (Clean-Text $hex).TrimStart('#')
+    if ($value.Length -ne 6) { return 0 }
+    $r = [Convert]::ToInt32($value.Substring(0, 2), 16)
+    $g = [Convert]::ToInt32($value.Substring(2, 2), 16)
+    $b = [Convert]::ToInt32($value.Substring(4, 2), 16)
+    return ($r + ($g * 256) + ($b * 65536))
+}
+
 function Add-Paragraph($doc, [string]$text, [double]$size, [bool]$bold, [int]$align, [string]$color) {
     $range = $doc.Content
     $range.Collapse(0)
@@ -20,7 +29,7 @@ function Add-Paragraph($doc, [string]$text, [double]$size, [bool]$bold, [int]$al
     $range.Font.Name = 'Arial'
     $range.Font.Size = $size
     if ($bold) { $range.Font.Bold = 1 } else { $range.Font.Bold = 0 }
-    $range.Font.Color = [System.Drawing.ColorTranslator]::FromHtml('#' + $color).ToArgb()
+    $range.Font.Color = Convert-WordColor $color
     $range.ParagraphFormat.Alignment = $align
     $range.InsertParagraphAfter()
 }
