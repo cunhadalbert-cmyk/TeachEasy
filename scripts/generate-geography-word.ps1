@@ -89,8 +89,8 @@ try {
                 continue
             }
 
-            if ($activity.questoes.Count -ne 6 -or $activity.gabarito.Count -ne 6) {
-                throw ('Atividade ' + $activity.id + ' deve possuir exatamente 6 questoes e 6 respostas.')
+            if ($activity.questoes.Count -ne 8 -or $activity.gabarito.Count -ne 8) {
+                throw ('Atividade ' + $activity.id + ' deve possuir exatamente 8 questoes e 8 respostas.')
             }
 
             Write-Host ('[4/4] Gerando: ' + (Clean-Text $activity.titulo))
