@@ -56,16 +56,16 @@ export function validatePedagogicalActivityV2(activity, collection = {}) {
     assert(!containsGenericTemplate(skill?.habilidadeOficial), `${prefix} contém descrição genérica`, errors);
   }
 
-  assert(Array.isArray(activity?.questoes) && activity.questoes.length === 6,
-    `${id}: deve possuir exatamente 6 questões`, errors);
+  assert(Array.isArray(activity?.questoes) && activity.questoes.length === 8,
+    `${id}: deve possuir exatamente 8 questões`, errors);
   for (const [index, question] of (activity?.questoes || []).entries()) {
     const prompt = clean(question?.enunciado);
     assert(prompt.length >= 15, `${id}: questão ${index + 1} insuficiente`, errors);
     assert(!containsGenericTemplate(prompt), `${id}: questão ${index + 1} contém template genérico`, errors);
   }
 
-  assert(Array.isArray(activity?.gabarito) && activity.gabarito.length === 6,
-    `${id}: deve possuir exatamente 6 respostas no gabarito`, errors);
+  assert(Array.isArray(activity?.gabarito) && activity.gabarito.length === 8,
+    `${id}: deve possuir exatamente 8 respostas no gabarito`, errors);
   for (const [index, answer] of (activity?.gabarito || []).entries()) {
     const text = clean(answer?.resposta);
     assert(text.length >= 3, `${id}: gabarito ${index + 1} vazio`, errors);
