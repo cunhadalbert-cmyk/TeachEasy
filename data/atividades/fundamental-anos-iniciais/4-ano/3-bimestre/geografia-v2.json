@@ -26,7 +26,7 @@
           "verbo": "Selecionar"
         }
       ],
-      "quantidadeQuestoes": 6,
+      "quantidadeQuestoes": 8,
       "possuiFiguras": true,
       "figuras": [],
       "possuiGabarito": true,
@@ -42,91 +42,24 @@
         "arquivo": ""
       },
       "questoes": [
-        {
-          "numero": 1,
-          "tipo": "compreensao",
-          "enunciado": "Selecione dois elementos culturais citados no texto e escreva quais são eles.",
-          "alternativas": [],
-          "espacoResposta": "medio",
-          "figuraId": null
-        },
-        {
-          "numero": 2,
-          "tipo": "associacao",
-          "enunciado": "Qual elemento do texto está relacionado a uma contribuição de origem indígena?",
-          "alternativas": [
-            "A tapioca preparada com mandioca.",
-            "A quadra de esportes da escola.",
-            "O ponto de ônibus do bairro.",
-            "A faixa de pedestres da praça."
-          ],
-          "espacoResposta": "pequeno",
-          "figuraId": null
-        },
-        {
-          "numero": 3,
-          "tipo": "resposta-curta",
-          "enunciado": "Que manifestação afro-brasileira aparece no texto e quais elementos fazem parte dela?",
-          "alternativas": [],
-          "espacoResposta": "medio",
-          "figuraId": null
-        },
-        {
-          "numero": 4,
-          "tipo": "interpretacao",
-          "enunciado": "Por que as receitas, festas, músicas e palavras de diferentes origens ajudam a formar a identidade da comunidade?",
-          "alternativas": [],
-          "espacoResposta": "grande",
-          "figuraId": null
-        },
-        {
-          "numero": 5,
-          "tipo": "selecao",
-          "enunciado": "Imagine que você vai montar um painel sobre a diversidade cultural do seu lugar de vivência. Cite dois elementos que poderiam ser selecionados e explique de qual família, grupo ou tradição eles fazem parte.",
-          "alternativas": [],
-          "espacoResposta": "grande",
-          "figuraId": null
-        },
-        {
-          "numero": 6,
-          "tipo": "reflexao",
-          "enunciado": "Explique por que valorizar diferentes tradições culturais é importante para a comunidade e para a cultura brasileira.",
-          "alternativas": [],
-          "espacoResposta": "grande",
-          "figuraId": null
-        }
+        {"numero":1,"tipo":"compreensao","enunciado":"Selecione dois elementos culturais citados no texto e escreva quais são eles.","alternativas":[],"espacoResposta":"medio","figuraId":null},
+        {"numero":2,"tipo":"associacao","enunciado":"Qual elemento do texto está relacionado a uma contribuição de origem indígena?","alternativas":["A tapioca preparada com mandioca.","A quadra de esportes da escola.","O ponto de ônibus do bairro.","A faixa de pedestres da praça."],"espacoResposta":"pequeno","figuraId":null},
+        {"numero":3,"tipo":"resposta-curta","enunciado":"Que manifestação afro-brasileira aparece no texto e quais elementos fazem parte dela?","alternativas":[],"espacoResposta":"medio","figuraId":null},
+        {"numero":4,"tipo":"interpretacao","enunciado":"Por que as receitas, festas, músicas e palavras de diferentes origens ajudam a formar a identidade da comunidade?","alternativas":[],"espacoResposta":"grande","figuraId":null},
+        {"numero":5,"tipo":"selecao","enunciado":"Imagine que você vai montar um painel sobre a diversidade cultural do seu lugar de vivência. Cite dois elementos que poderiam ser selecionados e explique de qual família, grupo ou tradição eles fazem parte.","alternativas":[],"espacoResposta":"grande","figuraId":null},
+        {"numero":6,"tipo":"reflexao","enunciado":"Explique por que valorizar diferentes tradições culturais é importante para a comunidade e para a cultura brasileira.","alternativas":[],"espacoResposta":"grande","figuraId":null},
+        {"numero":7,"tipo":"aplicacao","enunciado":"Além dos exemplos apresentados no texto, escreva uma tradição cultural presente em sua comunidade e explique como ela é praticada.","alternativas":[],"espacoResposta":"grande","figuraId":null},
+        {"numero":8,"tipo":"reflexao","enunciado":"De que maneira pessoas de diferentes origens podem contribuir juntas para a cultura de uma comunidade?","alternativas":[],"espacoResposta":"grande","figuraId":null}
       ],
       "gabarito": [
-        {
-          "numero": 1,
-          "resposta": "Duas possibilidades são: a tapioca preparada com mandioca e a capoeira. Também podem ser aceitas receitas, festas, palavras, músicas ou modos de fazer citados no texto.",
-          "justificativa": "A questão exige selecionar elementos culturais efetivamente presentes no texto."
-        },
-        {
-          "numero": 2,
-          "resposta": "Alternativa A: a tapioca preparada com mandioca.",
-          "justificativa": "O texto informa que a mandioca é um alimento de origem indígena."
-        },
-        {
-          "numero": 3,
-          "resposta": "A capoeira. No texto, ela aparece ligada à música, ao movimento e à história.",
-          "justificativa": "A resposta deve identificar a manifestação afro-brasileira e os elementos explicitamente associados a ela."
-        },
-        {
-          "numero": 4,
-          "resposta": "Porque esses costumes são praticados pelas pessoas do lugar e representam contribuições de diferentes grupos, ajudando a construir características próprias da comunidade.",
-          "justificativa": "A resposta deve relacionar diversidade cultural, cotidiano e formação da identidade local."
-        },
-        {
-          "numero": 5,
-          "resposta": "Resposta pessoal. São válidos elementos culturais reais do lugar de vivência, desde que o estudante identifique o elemento e o relacione a uma família, grupo ou tradição de forma respeitosa e coerente.",
-          "justificativa": "A questão mobiliza diretamente o verbo selecionar em uma situação ligada ao lugar de vivência do estudante."
-        },
-        {
-          "numero": 6,
-          "resposta": "Porque reconhecer e respeitar diferentes tradições ajuda a valorizar os grupos que formam a comunidade e a compreender que a cultura brasileira é resultado de muitas contribuições.",
-          "justificativa": "A resposta deve demonstrar valorização da diversidade e compreensão de sua contribuição para a cultura local, regional e brasileira."
-        }
+        {"numero":1,"resposta":"Duas possibilidades são: a tapioca preparada com mandioca e a capoeira. Também podem ser aceitas receitas, festas, palavras, músicas ou modos de fazer citados no texto.","justificativa":"A questão exige selecionar elementos culturais efetivamente presentes no texto."},
+        {"numero":2,"resposta":"Alternativa A: a tapioca preparada com mandioca.","justificativa":"O texto informa que a mandioca é um alimento de origem indígena."},
+        {"numero":3,"resposta":"A capoeira. No texto, ela aparece ligada à música, ao movimento e à história.","justificativa":"A resposta deve identificar a manifestação afro-brasileira e os elementos explicitamente associados a ela."},
+        {"numero":4,"resposta":"Porque esses costumes são praticados pelas pessoas do lugar e representam contribuições de diferentes grupos, ajudando a construir características próprias da comunidade.","justificativa":"A resposta deve relacionar diversidade cultural, cotidiano e formação da identidade local."},
+        {"numero":5,"resposta":"Resposta pessoal. São válidos elementos culturais reais do lugar de vivência, desde que o estudante identifique o elemento e o relacione a uma família, grupo ou tradição de forma respeitosa e coerente.","justificativa":"A questão mobiliza diretamente o verbo selecionar em uma situação ligada ao lugar de vivência do estudante."},
+        {"numero":6,"resposta":"Porque reconhecer e respeitar diferentes tradições ajuda a valorizar os grupos que formam a comunidade e a compreender que a cultura brasileira é resultado de muitas contribuições.","justificativa":"A resposta deve demonstrar valorização da diversidade e compreensão de sua contribuição para a cultura local, regional e brasileira."},
+        {"numero":7,"resposta":"Resposta pessoal coerente com uma tradição cultural real da comunidade.","justificativa":"A questão amplia a observação do estudante para o próprio lugar de vivência."},
+        {"numero":8,"resposta":"Resposta esperada: compartilhando costumes, conhecimentos, celebrações, alimentos, músicas, histórias e modos de viver, com respeito às diferentes origens.","justificativa":"A questão reforça a contribuição conjunta de diferentes grupos para a formação cultural da comunidade."}
       ],
       "revisao": {
         "status": "revisada",
