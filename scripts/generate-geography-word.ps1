@@ -83,7 +83,6 @@ function Set-CellText($cell, [string]$text, [double]$size, [bool]$bold, [int]$al
 }
 
 $word = $null
-$documents = $null
 $generated = 0
 $existing = 0
 $skipped = 0
@@ -94,11 +93,6 @@ Write-Host '[1/4] Iniciando Microsoft Word...'
 try {
     $word = New-Object -ComObject Word.Application
     $word.Visible = $false
-    $word.DisplayAlerts = 0
-    $word.ScreenUpdating = $false
-    $word.Options.SaveNormalPrompt = $false
-    $word.Options.BackgroundSave = $false
-    $documents = $word.Documents
 
     Write-Host '[2/4] Word iniciado em modo silencioso.'
 
@@ -167,16 +161,15 @@ try {
                 $range = $null
                 $header = $null
                 $contentTable = $null
-                $tempFile = Join-Path $destination ('.teacheasy-building-' + [guid]::NewGuid().ToString('N') + '.docx')
 
                 try {
-                    $doc = $documents.Add()
+                    $doc = $word.Documents.Add()
 
-                    # O Word deste ambiente ja salvou com sucesso dentro da pasta do projeto.
-                    # Evita %TEMP%, que bloqueou antes mesmo de o layout ser montado.
-                    Write-Host ('[PRE-SAVE LOCAL] ' + $filename)
-                    $doc.SaveAs2($tempFile, 16)
-                    Write-Host ('[LOCAL SAVE OK] ' + $filename)
+                    # Replica o fluxo simples que foi validado manualmente no Windows:
+                    # Documents.Add() + SaveAs2() direto no caminho final.
+                    Write-Host ('[PRE-SAVE DIRECT] ' + $filename)
+                    $doc.SaveAs2($target, 16)
+                    Write-Host ('[DIRECT SAVE OK] ' + $filename)
 
                     $section = $doc.Sections.Item(1)
                     $setup = $section.PageSetup
@@ -262,11 +255,9 @@ try {
                     Release-Com $doc
                     $doc = $null
 
-                    Move-Item -LiteralPath $tempFile -Destination $target -Force
                     if (-not (Test-Path -LiteralPath $target)) {
-                        throw ('Arquivo final nao encontrado apos mover: ' + $target)
+                        throw ('Arquivo final nao encontrado apos salvar: ' + $target)
                     }
-                    Write-Host ('[MOVIDO] ' + $target)
                     $generated++
                     Write-Host ('[OK] ' + [string]$term + ' bimestre -> ' + $filename)
                 }
@@ -280,9 +271,6 @@ try {
                         try { $doc.Close(0) } catch {}
                         Release-Com $doc
                     }
-                    if (Test-Path -LiteralPath $tempFile) {
-                        Remove-Item -LiteralPath $tempFile -Force -ErrorAction SilentlyContinue
-                    }
                     [GC]::Collect()
                     [GC]::WaitForPendingFinalizers()
                 }
@@ -291,7 +279,6 @@ try {
     }
 }
 finally {
-    Release-Com $documents
     if ($null -ne $word) {
         try { $word.Quit(0) } catch {}
         Release-Com $word
