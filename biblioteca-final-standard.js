@@ -1,10 +1,10 @@
 (() => {
   const DOCX_CDN = 'https://cdn.jsdelivr.net/npm/docx@9.7.1/dist/index.iife.js';
   const ACTIVITY_LAYOUT = Object.freeze({
-    page: { format: 'A4', orientation: 'portrait', widthMm: 210, heightMm: 297, marginMm: 10 },
+    page: { format: 'A4', orientation: 'portrait', widthMm: 210, heightMm: 297, marginMm: 6.9 },
     colors: { primary: '#1F497D', text: '#141414', border: '#000000' },
-    fonts: { family: 'Arial', header: 11, title: 13, subtitle: 13, bodyDefault: 12, bodyMin: 8, bodyStep: 0.5, questionHeading: 11, question: 11 },
-    contentBox: { widthCm: 18.5, heightCm: 9.6, textRatio: 0.47, imageRatio: 0.53 }
+    fonts: { family: 'Arial', header: 11, title: 15, subtitle: 13, bodyDefault: 12, bodyMin: 8, bodyStep: 0.5, questionHeading: 13, question: 11 },
+    contentBox: { widthCm: 18.54, heightCm: 9.63, textRatio: 0.4725, imageRatio: 0.5275 }
   });
   let docxPromise;
 
@@ -59,23 +59,23 @@
     const style = document.createElement('style');
     style.id = 'te-final-standard-style';
     style.textContent = `
-      .te-final-tools{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin:10px 0 14px;padding:10px 12px;border:1px solid #cbd9e8;border-radius:10px;background:#f7fbff}
+      .te-final-tools{display:flex;gap:10px;align-items:center;justify-content:center;flex-wrap:wrap;width:min(210mm,100%);box-sizing:border-box;margin:8px auto 18px;padding:12px;border:1px solid #cbd9e8;border-radius:10px;background:#f7fbff}
       .te-final-tools label{display:flex;gap:6px;align-items:center;font-size:.9rem}
-      .te-final-page{box-sizing:border-box;width:210mm;min-height:297mm;margin:0 auto 18px;padding:10mm;background:#fff;color:#141414;font-family:Arial,sans-serif;page-break-after:always}
-      .te-final-header{border:1px solid #000;padding:3mm 4mm;margin-bottom:3mm;font-size:11pt;font-weight:700}
+      .te-final-page{box-sizing:border-box;width:210mm;min-height:297mm;margin:0 auto 18px;padding:0.6mm 6.9mm 0;background:#fff;color:#141414;font-family:Arial,sans-serif;page-break-after:always;border:1px solid #000}
+      .te-final-header{border:1px solid #000;padding:3mm 4mm;margin:5.5mm 5.5mm 1.5mm;font-size:11pt;font-weight:700}
       .te-final-school{margin-bottom:2mm}.te-final-fields{display:grid;grid-template-columns:1.7fr .75fr 1fr 1fr;gap:3mm}
-      .te-final-title{text-align:center;color:#1F497D;font-size:13pt;line-height:1.1;font-weight:700;margin:0 0 1.5mm;text-transform:uppercase}
+      .te-final-title{text-align:center;color:#1F497D;font-size:15pt;line-height:1.1;font-weight:700;margin:0 0 1mm;text-transform:uppercase}
       .te-final-subtitle{text-align:center;color:#141414;font-size:13pt;line-height:1.1;font-weight:700;margin:0 0 3mm}
-      .te-final-content{box-sizing:border-box;display:grid;grid-template-columns:47fr 53fr;width:18.5cm;height:9.6cm;border:1px solid #000;margin:0 auto 3mm;overflow:visible}
-      .te-final-text{box-sizing:border-box;padding:3mm;font-size:12pt;line-height:1.17;text-align:justify;overflow:visible}
+      .te-final-content{box-sizing:border-box;display:grid;grid-template-columns:47.25fr 52.75fr;width:18.54cm;height:9.63cm;border:1px solid #000;margin:0 auto 3mm;overflow:hidden}
+      .te-final-text{box-sizing:border-box;padding:3mm;font-size:12pt;line-height:1.17;text-align:justify;overflow:hidden}
       .te-final-text h3{font:700 12pt/1.15 Arial,sans-serif;margin:0 0 1.5mm;color:#141414}.te-final-text p{margin:0}
       .te-final-visual{box-sizing:border-box;border-left:1px solid #000;display:flex;align-items:center;justify-content:center;overflow:hidden;background:#fff;padding:2mm}
       .te-final-visual img{max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain;display:block}
-      .te-final-instruction{text-align:left;font-weight:700;font-size:11pt;margin:2mm 0 2.5mm}
-      .te-final-questions{display:flex;flex-direction:column;gap:2mm}.te-final-question{page-break-inside:avoid}.te-final-qhead{font-size:11pt;line-height:1.18}.te-final-qnum{font-weight:700;margin-right:1.5mm}.te-final-alts{margin:1mm 0 0 7mm;font-size:11pt}.te-final-line{height:5mm;border-bottom:1px solid #555;margin-left:7mm}
-      .te-final-answer h2{color:#1F497D;text-align:center;font-size:13pt;margin:0 0 1.5mm}.te-final-answer h3{text-align:center;color:#141414;font-size:13pt;margin:0 0 4mm}.te-final-answer li{margin-bottom:2.5mm;font-size:11pt}.te-final-bncc{margin-top:4mm;padding:3mm;border:1px solid #000;font-size:10pt}
+      .te-final-instruction{text-align:center;color:#1F497D;font-weight:700;font-size:13pt;margin:4mm 0 4mm}
+      .te-final-questions{display:flex;flex-direction:column;gap:2mm;padding:0 1.5mm 5mm}.te-final-question{page-break-inside:avoid}.te-final-qhead{font-size:11pt;line-height:1.18}.te-final-qnum{font-weight:400;margin-right:1.5mm}.te-final-alts{margin:1mm 0 0 7mm;font-size:11pt}.te-final-line{height:5mm;border-bottom:1px solid #555;margin-left:7mm}
+      .te-final-answer h2{color:#1F497D;text-align:center;font-size:15pt;margin:0 0 1.5mm}.te-final-answer h3{text-align:center;color:#141414;font-size:13pt;margin:0 0 4mm}.te-final-answer li{margin-bottom:2.5mm;font-size:11pt}.te-final-bncc{margin-top:4mm;padding:3mm;border:1px solid #000;font-size:10pt}
       .te-final-hidden{display:none!important}
-      @media(max-width:760px){.te-final-page{width:100%;min-height:auto;padding:18px}.te-final-fields{grid-template-columns:1fr 1fr}.te-final-content{width:100%;height:auto;min-height:360px;grid-template-columns:47fr 53fr}}
+      @media(max-width:760px){.te-final-page{width:100%;min-height:auto;padding:8px}.te-final-header{margin:10px}.te-final-fields{grid-template-columns:1fr 1fr}.te-final-content{width:calc(100% - 20px);height:auto;min-height:360px;grid-template-columns:47.25fr 52.75fr}}
       @media print{body *{visibility:hidden!important}.activity-preview,.activity-preview *{visibility:visible!important}.activity-preview{position:absolute!important;inset:0!important;width:100%!important;max-width:none!important;border:0!important;background:#fff!important}.preview-close,.te-final-tools{display:none!important}.te-final-page{margin:0!important;width:210mm!important;min-height:297mm!important;box-shadow:none!important}}
     `;
     document.head.appendChild(style);
@@ -126,7 +126,7 @@
       <h2 class="te-final-subtitle">${escapeHtml(topic)}</h2>
       <div class="te-final-content"><div class="te-final-text"><h3>${escapeHtml(supportTitle)}</h3><p>${escapeHtml(supportBody || `Leia e analise as informações sobre ${topic}.`)}</p></div><div class="te-final-visual">${visual ? `<img src="${visual}" alt="Ilustração pedagógica relacionada a ${escapeHtml(topic)}">` : ''}</div></div>
       <div class="te-final-instruction">${escapeHtml(instruction)}</div>
-      <div class="te-final-questions">${questions.map((q, i) => `<div class="te-final-question"><div class="te-final-qhead"><span class="te-final-qnum">${i + 1}.</span><span>${escapeHtml(q.prompt)}</span></div>${q.alternatives.length ? `<ol class="te-final-alts" type="a">${q.alternatives.map(a => `<li>${escapeHtml(a)}</li>`).join('')}</ol>` : ''}${Array.from({length:q.lines},()=>'<div class="te-final-line"></div>').join('')}</div>`).join('')}</div>`;
+      <div class="te-final-questions">${questions.map((q, i) => `<div class="te-final-question"><div class="te-final-qhead"><span class="te-final-qnum">${i + 1} -</span><span>${escapeHtml(q.prompt)}</span></div>${q.alternatives.length ? `<ol class="te-final-alts" type="a">${q.alternatives.map(a => `<li>${escapeHtml(a)}</li>`).join('')}</ol>` : ''}${Array.from({length:q.lines},()=>'<div class="te-final-line"></div>').join('')}</div>`).join('')}</div>`;
 
     const answer = document.createElement('section');
     answer.className = 'te-final-page te-final-answer';
@@ -134,8 +134,7 @@
 
     shell.querySelectorAll('.te-library-standard-tools,.collection-export-actions').forEach(node => node.remove());
     oldPages.forEach(page => page.classList.add('te-final-hidden'));
-    shell.insertBefore(tools, shell.firstChild);
-    shell.append(student, answer);
+    shell.append(student, tools, answer);
     shell.dataset.teFinalBuilt = 'true';
     shell._teFinalData = { topic, subject, supportTitle, supportBody, instruction, questions, answers, bncc, visual, bodyFontSize: ACTIVITY_LAYOUT.fonts.bodyDefault };
     syncOptions(shell);
@@ -188,12 +187,12 @@
 
     return new docx.Table({
       width:{size:100,type:docx.WidthType.PERCENTAGE},
-      columnWidths:[4300,4850],
+      columnWidths:[4968,5544],
       rows:[new docx.TableRow({
-        height:{value:5440,rule:docx.HeightRule.AT_LEAST},
+        height:{value:5458,rule:docx.HeightRule.EXACT},
         children:[
-          new docx.TableCell({width:{size:47,type:docx.WidthType.PERCENTAGE},verticalAlign:docx.VerticalAlign.CENTER,borders:{top:border,bottom:border,left:border,right:border},margins:{top:110,bottom:110,left:120,right:120},children:textChildren}),
-          new docx.TableCell({width:{size:53,type:docx.WidthType.PERCENTAGE},verticalAlign:docx.VerticalAlign.CENTER,borders:{top:border,bottom:border,left:border,right:border},margins:{top:80,bottom:80,left:80,right:80},children:imageChildren})
+          new docx.TableCell({width:{size:47.25,type:docx.WidthType.PERCENTAGE},verticalAlign:docx.VerticalAlign.CENTER,borders:{top:border,bottom:border,left:border,right:border},margins:{top:110,bottom:110,left:120,right:120},children:textChildren}),
+          new docx.TableCell({width:{size:52.75,type:docx.WidthType.PERCENTAGE},verticalAlign:docx.VerticalAlign.CENTER,borders:{top:border,bottom:border,left:border,right:border},margins:{top:80,bottom:80,left:80,right:80},children:imageChildren})
         ]
       })]
     });
@@ -206,15 +205,15 @@
     const docx = await ensureDocx();
     const children = [
       docHeader(docx),
-      p(docx,`ATIVIDADE DE ${d.subject.toUpperCase()}`,{bold:true,size:26,color:'1F497D',align:docx.AlignmentType.CENTER,after:30}),
+      p(docx,`ATIVIDADE DE ${d.subject.toUpperCase()}`,{bold:true,size:30,color:'1F497D',align:docx.AlignmentType.CENTER,after:30}),
       p(docx,d.topic,{bold:true,size:26,color:'141414',align:docx.AlignmentType.CENTER,after:55}),
       await contentTable(docx,d),
-      p(docx,d.instruction,{bold:true,size:22,after:45,before:45})
+      p(docx,d.instruction,{bold:true,size:26,color:'1F497D',align:docx.AlignmentType.CENTER,after:45,before:45})
     ];
 
     d.questions.forEach((q,i) => {
       children.push(new docx.Paragraph({spacing:{before:20,after:20,line:230},children:[
-        new docx.TextRun({text:`${i+1}. `,bold:true,size:22,font:'Arial'}),
+        new docx.TextRun({text:`${i+1} - `,size:22,font:'Arial'}),
         new docx.TextRun({text:q.prompt,size:22,font:'Arial'})
       ]}));
       q.alternatives.forEach((a,j)=>children.push(p(docx,`${String.fromCharCode(97+j)}) ${a}`,{size:22,after:15})));
@@ -224,14 +223,14 @@
     const showAnswer=shell.querySelector('[name="teFinalAnswer"]')?.checked!==false;
     const showBncc=showAnswer && shell.querySelector('[name="teFinalBncc"]')?.checked!==false;
     if(showAnswer){
-      children.push(p(docx,'GABARITO',{bold:true,size:26,color:'1F497D',align:docx.AlignmentType.CENTER,pageBreakBefore:true,after:35}),p(docx,d.topic,{bold:true,size:26,align:docx.AlignmentType.CENTER,after:55}));
+      children.push(p(docx,'GABARITO',{bold:true,size:30,color:'1F497D',align:docx.AlignmentType.CENTER,pageBreakBefore:true,after:35}),p(docx,d.topic,{bold:true,size:26,align:docx.AlignmentType.CENTER,after:55}));
       d.answers.forEach((a,i)=>children.push(p(docx,`${i+1}. ${a}`,{size:22,after:30})));
       if(showBncc && d.bncc) children.push(p(docx,`BNCC: ${d.bncc}`,{bold:true,size:20,before:50,after:35}));
     }
 
     const file = new docx.Document({
       styles:{default:{document:{run:{font:'Arial',size:22,color:'141414'},paragraph:{spacing:{line:230,after:35}}}}},
-      sections:[{properties:{page:{size:{width:11906,height:16838},margin:{top:567,right:567,bottom:567,left:567,header:180,footer:180}}},children}]
+      sections:[{properties:{page:{size:{width:11909,height:16834},margin:{top:34,right:391,bottom:0,left:391,header:142,footer:142}}},children}]
     });
     const blob = await docx.Packer.toBlob(file);
     const url = URL.createObjectURL(blob);
