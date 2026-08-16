@@ -55,8 +55,8 @@ for (const file of files) {
     if (supportTitle && supportTitle.replace(/\s*[—-]\s*(?:EI|EF|EM)[A-Z0-9]+.*$/i, '').trim().toLowerCase() === text(activity.titulo).toLowerCase()) {
       problems.push('título do texto duplica título da atividade');
     }
-    if ((activity.questoes || []).length !== 6) problems.push('quantidade de questões diferente de 6');
-    if ((activity.gabarito || []).length !== 6) problems.push('quantidade de respostas diferente de 6');
+    if ((activity.questoes || []).length !== 8) problems.push('quantidade de questões diferente de 8');
+    if ((activity.gabarito || []).length !== 8) problems.push('quantidade de respostas diferente de 8');
     if ((activity.questoes || []).some(item => isGeneric(item.enunciado))) problems.push('questão genérica');
     if ((activity.gabarito || []).some(item => isGeneric(item.resposta))) problems.push('gabarito genérico');
     if (!(activity.bncc || []).every(item => text(item.codigo) && text(item.habilidadeOficial))) problems.push('habilidade oficial completa ausente');
