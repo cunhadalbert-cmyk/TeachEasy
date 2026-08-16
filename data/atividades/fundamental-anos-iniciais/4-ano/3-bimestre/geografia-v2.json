@@ -1,0 +1,79 @@
+{
+  "schemaVersion": "2.0",
+  "colecao": "4ano-3bimestre-geografia-v2",
+  "idioma": "pt-BR",
+  "etapa": "Ensino Fundamental — Anos Iniciais",
+  "ano": "4º ano",
+  "bimestre": 3,
+  "disciplina": "Geografia",
+  "statusBimestre": "reconstrucao-em-validacao",
+  "referenciaBncc": "BNCC — Ensino Fundamental — Anos Iniciais — Geografia — MEC",
+  "atividades": [
+    {
+      "id": "efi-4ano-b3-geo-v2-01-culturas-na-comunidade",
+      "padraoPedagogico": "teacheasy-v2",
+      "titulo": "Culturas que formam nossa comunidade",
+      "tema": "Território e diversidade cultural",
+      "sequencia": "Atividade 1",
+      "sequenciaNumero": 1,
+      "tipoSequencia": "Reconstrução pedagógica V2",
+      "dificuldade": "facil",
+      "objetivo": "Selecionar elementos culturais presentes no cotidiano, nas histórias familiares e na comunidade, reconhecendo e valorizando as contribuições de diferentes culturas para a formação cultural local, regional e brasileira.",
+      "bncc": [
+        {
+          "codigo": "EF04GE01",
+          "habilidadeOficial": "Selecionar, em seus lugares de vivência e em suas histórias familiares e/ou da comunidade, elementos de distintas culturas (indígenas, afro-brasileiras, de outras regiões do país, latino-americanas, europeias, asiáticas etc.), valorizando o que é próprio em cada uma delas e sua contribuição para a formação da cultura local, regional e brasileira.",
+          "verbo": "Selecionar"
+        }
+      ],
+      "quantidadeQuestoes": 8,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio, observe a proposta de ilustração e responda às questões com base nas informações apresentadas.",
+      "textoApoio": {
+        "titulo": "Muitos costumes, uma comunidade",
+        "conteudo": "No bairro onde Júlia mora, as famílias têm histórias e costumes diferentes. Na feira, uma família vende tapioca preparada com mandioca, alimento de origem indígena. Em uma praça próxima, um grupo pratica capoeira, manifestação afro-brasileira que reúne música, movimento e história. Na escola, algumas famílias mantêm receitas trazidas de outras regiões do Brasil, enquanto outras preservam festas, palavras, músicas e modos de fazer vindos de diferentes partes do mundo. Esses costumes aparecem no cotidiano e ajudam a formar a identidade do lugar. Conhecer cada tradição permite perceber o que é próprio de diferentes culturas e compreender como todas elas contribuem para a cultura da comunidade, da região e do Brasil."
+      },
+      "ilustracao": {
+        "objetivoPedagogico": "Ajudar o estudante a selecionar visualmente elementos culturais citados no texto e relacioná-los às diferentes contribuições presentes na comunidade.",
+        "descricao": "Cena leve e colorida de uma comunidade brasileira com feira de alimentos, roda de capoeira e famílias participando de atividades culturais distintas, sem caricaturas ou estereótipos, permitindo reconhecer diferentes manifestações culturais.",
+        "arquivo": ""
+      },
+      "questoes": [
+        {"numero":1,"tipo":"compreensao","enunciado":"Selecione dois elementos culturais citados no texto e escreva quais são eles.","alternativas":[],"espacoResposta":"medio","figuraId":null},
+        {"numero":2,"tipo":"associacao","enunciado":"Qual elemento do texto está relacionado a uma contribuição de origem indígena?","alternativas":["A tapioca preparada com mandioca.","A quadra de esportes da escola.","O ponto de ônibus do bairro.","A faixa de pedestres da praça."],"espacoResposta":"pequeno","figuraId":null},
+        {"numero":3,"tipo":"resposta-curta","enunciado":"Que manifestação afro-brasileira aparece no texto e quais elementos fazem parte dela?","alternativas":[],"espacoResposta":"medio","figuraId":null},
+        {"numero":4,"tipo":"interpretacao","enunciado":"Por que as receitas, festas, músicas e palavras de diferentes origens ajudam a formar a identidade da comunidade?","alternativas":[],"espacoResposta":"grande","figuraId":null},
+        {"numero":5,"tipo":"selecao","enunciado":"Imagine que você vai montar um painel sobre a diversidade cultural do seu lugar de vivência. Cite dois elementos que poderiam ser selecionados e explique de qual família, grupo ou tradição eles fazem parte.","alternativas":[],"espacoResposta":"grande","figuraId":null},
+        {"numero":6,"tipo":"reflexao","enunciado":"Explique por que valorizar diferentes tradições culturais é importante para a comunidade e para a cultura brasileira.","alternativas":[],"espacoResposta":"grande","figuraId":null},
+        {"numero":7,"tipo":"aplicacao","enunciado":"Além dos exemplos apresentados no texto, escreva uma tradição cultural presente em sua comunidade e explique como ela é praticada.","alternativas":[],"espacoResposta":"grande","figuraId":null},
+        {"numero":8,"tipo":"reflexao","enunciado":"De que maneira pessoas de diferentes origens podem contribuir juntas para a cultura de uma comunidade?","alternativas":[],"espacoResposta":"grande","figuraId":null}
+      ],
+      "gabarito": [
+        {"numero":1,"resposta":"Duas possibilidades são: a tapioca preparada com mandioca e a capoeira. Também podem ser aceitas receitas, festas, palavras, músicas ou modos de fazer citados no texto.","justificativa":"A questão exige selecionar elementos culturais efetivamente presentes no texto."},
+        {"numero":2,"resposta":"Alternativa A: a tapioca preparada com mandioca.","justificativa":"O texto informa que a mandioca é um alimento de origem indígena."},
+        {"numero":3,"resposta":"A capoeira. No texto, ela aparece ligada à música, ao movimento e à história.","justificativa":"A resposta deve identificar a manifestação afro-brasileira e os elementos explicitamente associados a ela."},
+        {"numero":4,"resposta":"Porque esses costumes são praticados pelas pessoas do lugar e representam contribuições de diferentes grupos, ajudando a construir características próprias da comunidade.","justificativa":"A resposta deve relacionar diversidade cultural, cotidiano e formação da identidade local."},
+        {"numero":5,"resposta":"Resposta pessoal. São válidos elementos culturais reais do lugar de vivência, desde que o estudante identifique o elemento e o relacione a uma família, grupo ou tradição de forma respeitosa e coerente.","justificativa":"A questão mobiliza diretamente o verbo selecionar em uma situação ligada ao lugar de vivência do estudante."},
+        {"numero":6,"resposta":"Porque reconhecer e respeitar diferentes tradições ajuda a valorizar os grupos que formam a comunidade e a compreender que a cultura brasileira é resultado de muitas contribuições.","justificativa":"A resposta deve demonstrar valorização da diversidade e compreensão de sua contribuição para a cultura local, regional e brasileira."},
+        {"numero":7,"resposta":"Resposta pessoal coerente com uma tradição cultural real da comunidade.","justificativa":"A questão amplia a observação do estudante para o próprio lugar de vivência."},
+        {"numero":8,"resposta":"Resposta esperada: compartilhando costumes, conhecimentos, celebrações, alimentos, músicas, histórias e modos de viver, com respeito às diferentes origens.","justificativa":"A questão reforça a contribuição conjunta de diferentes grupos para a formação cultural da comunidade."}
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "conteudoConferido": true,
+        "questoesConferidas": true,
+        "gabaritoConferido": true,
+        "ilustracaoConferida": true,
+        "validacaoAutomatica": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-08-15"
+      }
+    }
+  ]
+}
