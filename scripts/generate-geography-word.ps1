@@ -1,3 +1,8 @@
+param(
+    [int]$OnlyTerm = 0,
+    [int]$OnlyOrder = 0
+)
+
 $ErrorActionPreference = 'Stop'
 
 $root = Split-Path -Parent $PSScriptRoot
@@ -13,55 +18,13 @@ function Clean-Text([object]$value) {
     return ([string]$value -replace '\s+', ' ').Trim()
 }
 
-function Release-ComObject([object]$value) {
+function Release-Com([object]$value) {
     if ($null -eq $value) { return }
     try {
         if ([Runtime.InteropServices.Marshal]::IsComObject($value)) {
             [void][Runtime.InteropServices.Marshal]::FinalReleaseComObject($value)
         }
     } catch {}
-}
-
-function Convert-WordColor([string]$hex) {
-    $value = (Clean-Text $hex).TrimStart('#')
-    if ($value.Length -ne 6) { return 0 }
-    $r = [Convert]::ToInt32($value.Substring(0, 2), 16)
-    $g = [Convert]::ToInt32($value.Substring(2, 2), 16)
-    $b = [Convert]::ToInt32($value.Substring(4, 2), 16)
-    return ($r + ($g * 256) + ($b * 65536))
-}
-
-function Add-Paragraph($doc, [string]$text, [double]$size, [bool]$bold, [int]$align, [string]$color) {
-    $range = $null
-    try {
-        $range = $doc.Content
-        $range.Collapse(0)
-        $range.InsertAfter((Clean-Text $text))
-        $range.Font.Name = 'Arial'
-        $range.Font.Size = $size
-        if ($bold) { $range.Font.Bold = 1 } else { $range.Font.Bold = 0 }
-        $range.Font.Color = Convert-WordColor $color
-        $range.ParagraphFormat.Alignment = $align
-        $range.InsertParagraphAfter()
-    } finally {
-        Release-ComObject $range
-    }
-}
-
-function Set-CellText($cell, [string]$text, [double]$size, [bool]$bold, [int]$align) {
-    $cellRange = $null
-    try {
-        $cellRange = $cell.Range
-        $cellRange.Text = Clean-Text $text
-        $cellRange.Font.Name = 'Arial'
-        $cellRange.Font.Size = $size
-        if ($bold) { $cellRange.Font.Bold = 1 } else { $cellRange.Font.Bold = 0 }
-        $cellRange.ParagraphFormat.Alignment = $align
-        $cell.VerticalAlignment = 1
-    } finally {
-        Release-ComObject $cellRange
-        Release-ComObject $cell
-    }
 }
 
 function Get-Order($activity, [int]$fallback) {
@@ -74,10 +37,56 @@ function Get-Order($activity, [int]$fallback) {
     return $fallback
 }
 
+function Add-Paragraph($doc, [string]$text, [double]$size, [bool]$bold, [int]$align) {
+    $range = $null
+    $font = $null
+    $paragraph = $null
+    try {
+        $range = $doc.Content
+        $range.Collapse(0)
+        $range.InsertAfter((Clean-Text $text))
+        $font = $range.Font
+        $font.Name = 'Arial'
+        $font.Size = $size
+        if ($bold) { $font.Bold = 1 } else { $font.Bold = 0 }
+        $paragraph = $range.ParagraphFormat
+        $paragraph.Alignment = $align
+        $range.InsertParagraphAfter()
+    }
+    finally {
+        Release-Com $paragraph
+        Release-Com $font
+        Release-Com $range
+    }
+}
+
+function Set-CellText($cell, [string]$text, [double]$size, [bool]$bold, [int]$align) {
+    $range = $null
+    $font = $null
+    $paragraph = $null
+    try {
+        $range = $cell.Range
+        $range.Text = Clean-Text $text
+        $font = $range.Font
+        $font.Name = 'Arial'
+        $font.Size = $size
+        if ($bold) { $font.Bold = 1 } else { $font.Bold = 0 }
+        $paragraph = $range.ParagraphFormat
+        $paragraph.Alignment = $align
+        $cell.VerticalAlignment = 1
+    }
+    finally {
+        Release-Com $paragraph
+        Release-Com $font
+        Release-Com $range
+    }
+}
+
 $word = $null
+$documents = $null
 $generated = 0
-$skipped = 0
 $existing = 0
+$skipped = 0
 $seenIds = @{}
 
 Write-Host '[1/4] Iniciando Microsoft Word...'
@@ -89,30 +98,34 @@ try {
     $word.ScreenUpdating = $false
     $word.Options.SaveNormalPrompt = $false
     $word.Options.BackgroundSave = $false
+    $documents = $word.Documents
+
     Write-Host '[2/4] Word iniciado em modo silencioso.'
 
-    foreach ($term in 1..4) {
+    $terms = if ($OnlyTerm -gt 0) { @($OnlyTerm) } else { @(1,2,3,4) }
+
+    foreach ($term in $terms) {
         $termFolder = Join-Path $dataRoot ($term.ToString() + '-bimestre')
-        if (-not (Test-Path $termFolder)) { continue }
+        if (-not (Test-Path -LiteralPath $termFolder)) { continue }
 
         $destination = Join-Path $outputRoot ($term.ToString() + '-bimestre')
         New-Item -ItemType Directory -Force -Path $destination | Out-Null
 
         $jsonPaths = @()
-        $mainV2Path = Join-Path $termFolder 'geografia-v2.json'
-        if (Test-Path $mainV2Path) { $jsonPaths += $mainV2Path }
+        $mainV2 = Join-Path $termFolder 'geografia-v2.json'
+        if (Test-Path -LiteralPath $mainV2) { $jsonPaths += $mainV2 }
 
         $lotFiles = Get-ChildItem -Path $termFolder -File -Filter 'geografia-v2-lote-*.json' -ErrorAction SilentlyContinue | Sort-Object Name
         foreach ($lotFile in $lotFiles) { $jsonPaths += $lotFile.FullName }
 
         if ($jsonPaths.Count -eq 0) {
-            $legacyPath = Join-Path $termFolder 'geografia.json'
-            if (Test-Path $legacyPath) { $jsonPaths += $legacyPath } else { continue }
+            $legacy = Join-Path $termFolder 'geografia.json'
+            if (Test-Path -LiteralPath $legacy) { $jsonPaths += $legacy } else { continue }
         }
 
         foreach ($jsonPath in $jsonPaths) {
             Write-Host ('[3/4] Lendo ' + $jsonPath)
-            $collection = Get-Content $jsonPath -Raw -Encoding UTF8 | ConvertFrom-Json
+            $collection = Get-Content -LiteralPath $jsonPath -Raw -Encoding UTF8 | ConvertFrom-Json
 
             foreach ($activity in $collection.atividades) {
                 if ($activity.padraoPedagogico -ne 'teacheasy-v2') {
@@ -122,19 +135,18 @@ try {
 
                 $activityId = Clean-Text $activity.id
                 if (-not [string]::IsNullOrWhiteSpace($activityId)) {
-                    if ($seenIds.ContainsKey($activityId)) {
-                        Write-Host ('[IGNORADA DUPLICADA] ' + $activityId)
-                        continue
-                    }
+                    if ($seenIds.ContainsKey($activityId)) { continue }
                     $seenIds[$activityId] = $true
                 }
+
+                $order = Get-Order $activity ($generated + $existing + 1)
+                if ($OnlyOrder -gt 0 -and $order -ne $OnlyOrder) { continue }
 
                 if ($activity.questoes.Count -ne 8 -or $activity.gabarito.Count -ne 8) {
                     throw ('Atividade ' + $activity.id + ' deve possuir exatamente 8 questoes e 8 respostas.')
                 }
 
                 $skill = $activity.bncc[0]
-                $order = Get-Order $activity ($generated + $existing + 1)
                 $normalized = (Clean-Text $activity.titulo).Normalize([Text.NormalizationForm]::FormD)
                 $safeTitle = ($normalized -replace '\p{Mn}', '' -replace '[^a-zA-Z0-9]+', '-').Trim('-').ToLower()
                 $code = (Clean-Text $skill.codigo).ToLower()
@@ -151,142 +163,126 @@ try {
 
                 $doc = $null
                 $section = $null
-                $pageRange = $null
+                $setup = $null
+                $range = $null
                 $header = $null
-                $contentRange = $null
-                $content = $null
-                $imageCell = $null
-                $shape = $null
-                $endRange = $null
+                $contentTable = $null
+                $tempFile = Join-Path ([IO.Path]::GetTempPath()) ('teacheasy-geografia-' + [guid]::NewGuid().ToString('N') + '.docx')
 
                 try {
-                    $doc = $word.Documents.Add()
+                    $doc = $documents.Add()
+
+                    # SaveAs2 funciona de forma confiavel no documento vazio.
+                    Write-Host ('[PRE-SAVE EMPTY] ' + $filename)
+                    $doc.SaveAs2($tempFile, 16)
+                    Write-Host ('[EMPTY SAVE OK] ' + $filename)
+
                     $section = $doc.Sections.Item(1)
-                    $section.PageSetup.PaperSize = 7
-                    $section.PageSetup.TopMargin = $word.CentimetersToPoints(0.06)
-                    $section.PageSetup.BottomMargin = 0
-                    $section.PageSetup.LeftMargin = $word.CentimetersToPoints(0.69)
-                    $section.PageSetup.RightMargin = $word.CentimetersToPoints(0.69)
+                    $setup = $section.PageSetup
+                    $setup.PaperSize = 7
+                    $setup.TopMargin = $word.CentimetersToPoints(1)
+                    $setup.BottomMargin = $word.CentimetersToPoints(1)
+                    $setup.LeftMargin = $word.CentimetersToPoints(1)
+                    $setup.RightMargin = $word.CentimetersToPoints(1)
 
-                    $pageRange = $doc.Range(0, 0)
-                    $header = $doc.Tables.Add($pageRange, 3, 3)
+                    $range = $doc.Range(0, 0)
+                    $header = $doc.Tables.Add($range, 3, 3)
                     $header.Borders.Enable = 1
-                    $header.Rows.Item(1).Height = $word.CentimetersToPoints(0.737)
-                    $header.Rows.Item(2).Height = $word.CentimetersToPoints(0.737)
-                    $header.Rows.Item(3).Height = $word.CentimetersToPoints(0.767)
 
-                    $cell11 = $header.Cell(1, 1)
-                    $cell13 = $header.Cell(1, 3)
-                    $cell11.Merge($cell13)
-                    Release-ComObject $cell13
-                    Release-ComObject $cell11
+                    $c11 = $header.Cell(1,1); $c13 = $header.Cell(1,3); $c11.Merge($c13)
+                    Release-Com $c13; Release-Com $c11
+                    $c21 = $header.Cell(2,1); $c23 = $header.Cell(2,3); $c21.Merge($c23)
+                    Release-Com $c23; Release-Com $c21
 
-                    $cell21 = $header.Cell(2, 1)
-                    $cell23 = $header.Cell(2, 3)
-                    $cell21.Merge($cell23)
-                    Release-ComObject $cell23
-                    Release-ComObject $cell21
+                    $cell = $header.Cell(1,1); Set-CellText $cell 'Escola: ____________________________________________________________' 11 $true 0; Release-Com $cell
+                    $cell = $header.Cell(2,1); Set-CellText $cell 'Nome: _____________________________________________________________' 11 $true 0; Release-Com $cell
+                    $cell = $header.Cell(3,1); Set-CellText $cell 'Turma: ______________' 11 $true 0; Release-Com $cell
+                    $cell = $header.Cell(3,2); Set-CellText $cell 'Data: ____/____/______' 11 $true 0; Release-Com $cell
+                    $cell = $header.Cell(3,3); Set-CellText $cell 'Prof.:__________' 11 $true 0; Release-Com $cell
 
-                    Set-CellText ($header.Cell(1, 1)) 'Escola: ____________________________________________________________' 11 $true 0
-                    Set-CellText ($header.Cell(2, 1)) 'Nome: _____________________________________________________________' 11 $true 0
-                    Set-CellText ($header.Cell(3, 1)) 'Turma: ______________' 11 $true 0
-                    Set-CellText ($header.Cell(3, 2)) 'Data: ____/____/______' 11 $true 0
-                    Set-CellText ($header.Cell(3, 3)) 'Prof.:__________' 11 $true 0
+                    Add-Paragraph $doc 'ATIVIDADE DE GEOGRAFIA' 15 $true 1
+                    Add-Paragraph $doc (Clean-Text $activity.titulo) 13 $true 1
 
-                    Add-Paragraph $doc (U 'ATIVIDADE DE GEOGRAFIA') 15 $true 1 '1F497D'
-                    Add-Paragraph $doc (Clean-Text $activity.titulo) 13 $true 1 '141414'
-
-                    $contentRange = $doc.Content
-                    $contentRange.Collapse(0)
-                    $content = $doc.Tables.Add($contentRange, 1, 2)
-                    $content.Borders.Enable = 1
-                    $content.Rows.Item(1).Height = $word.CentimetersToPoints(9.627)
-                    $content.Columns.Item(1).Width = $word.CentimetersToPoints(8.763)
-                    $content.Columns.Item(2).Width = $word.CentimetersToPoints(9.779)
+                    Release-Com $range
+                    $range = $doc.Content
+                    $range.Collapse(0)
+                    $contentTable = $doc.Tables.Add($range, 1, 2)
+                    $contentTable.Borders.Enable = 1
 
                     $supportText = (Clean-Text $activity.textoApoio.titulo) + "`r`n`r`n" + (Clean-Text $activity.textoApoio.conteudo)
-                    Set-CellText ($content.Cell(1, 1)) $supportText 11 $false 0
+                    $cell = $contentTable.Cell(1,1); Set-CellText $cell $supportText 11 $false 0; Release-Com $cell
 
-                    $imageInserted = $false
-                    $imagePath = Clean-Text $activity.ilustracao.arquivo
-                    if (-not [string]::IsNullOrWhiteSpace($imagePath)) {
-                        if ([System.IO.Path]::IsPathRooted($imagePath)) { $resolvedImage = $imagePath } else { $resolvedImage = Join-Path $root $imagePath }
-                        if (Test-Path $resolvedImage) {
-                            $imageCell = $content.Cell(1, 2)
-                            $imageCell.Range.Text = ''
-                            $shape = $imageCell.Range.InlineShapes.AddPicture($resolvedImage, $false, $true)
-                            $shape.LockAspectRatio = -1
-                            if ($shape.Width -gt $word.CentimetersToPoints(8.8)) { $shape.Width = $word.CentimetersToPoints(8.8) }
-                            if ($shape.Height -gt $word.CentimetersToPoints(8.8)) { $shape.Height = $word.CentimetersToPoints(8.8) }
-                            $imageCell.Range.ParagraphFormat.Alignment = 1
-                            $imageInserted = $true
-                        }
-                    }
-
-                    if (-not $imageInserted) {
-                        $illustrationText = (U 'ILUSTRA\u00C7\u00C3O') + "`r`n`r`n" + (Clean-Text $activity.ilustracao.descricao)
-                        Set-CellText ($content.Cell(1, 2)) $illustrationText 10 $false 1
-                    }
+                    $illustrationText = (U 'ILUSTRA\u00C7\u00C3O') + "`r`n`r`n" + (Clean-Text $activity.ilustracao.descricao)
+                    $cell = $contentTable.Cell(1,2); Set-CellText $cell $illustrationText 10 $false 1; Release-Com $cell
 
                     $instruction = Clean-Text $activity.instrucaoGeral
                     if ([string]::IsNullOrWhiteSpace($instruction)) { $instruction = U 'Responda \u00E0s quest\u00F5es de acordo com o texto.' }
-                    Add-Paragraph $doc $instruction 13 $true 1 '1F497D'
+                    Add-Paragraph $doc $instruction 12 $true 1
 
                     foreach ($q in $activity.questoes) {
-                        Add-Paragraph $doc (([string]$q.numero) + ' - ' + (Clean-Text $q.enunciado)) 11 $false 0 '141414'
+                        Add-Paragraph $doc (([string]$q.numero) + ' - ' + (Clean-Text $q.enunciado)) 11 $false 0
                         if ($null -ne $q.alternativas -and $q.alternativas.Count -gt 0) {
                             $letter = 97
                             foreach ($alt in $q.alternativas) {
-                                Add-Paragraph $doc ((([char]$letter).ToString()) + ') ' + (Clean-Text $alt)) 11 $false 0 '141414'
+                                Add-Paragraph $doc ((([char]$letter).ToString()) + ') ' + (Clean-Text $alt)) 11 $false 0
                                 $letter++
                             }
                         } else {
-                            Add-Paragraph $doc '________________________________________________________________________________________' 9 $false 0 '666666'
+                            Add-Paragraph $doc '________________________________________________________________________________________' 9 $false 0
                             if ($q.espacoResposta -eq 'grande') {
-                                Add-Paragraph $doc '________________________________________________________________________________________' 9 $false 0 '666666'
+                                Add-Paragraph $doc '________________________________________________________________________________________' 9 $false 0
                             }
                         }
                     }
 
-                    $endRange = $doc.Content
-                    $endRange.Collapse(0)
-                    $endRange.InsertBreak(7)
-                    Release-ComObject $endRange
-                    $endRange = $null
+                    $breakRange = $doc.Content
+                    $breakRange.Collapse(0)
+                    $breakRange.InsertBreak(7)
+                    Release-Com $breakRange
 
-                    Add-Paragraph $doc 'GABARITO' 15 $true 1 '1F497D'
-                    Add-Paragraph $doc (Clean-Text $activity.titulo) 13 $true 1 '141414'
-                    $reviewText = (U 'Revis\u00E3o') + ' - ' + (Clean-Text $collection.etapa) + ' - ' + (Clean-Text $collection.ano) + ' - ' + ([string]$collection.bimestre) + (U '\u00BA bimestre') + ' - Geografia'
-                    Add-Paragraph $doc $reviewText 9 $false 1 '666666'
-
+                    Add-Paragraph $doc 'GABARITO' 15 $true 1
+                    Add-Paragraph $doc (Clean-Text $activity.titulo) 13 $true 1
                     foreach ($answer in $activity.gabarito) {
-                        Add-Paragraph $doc (([string]$answer.numero) + '. ' + (Clean-Text $answer.resposta)) 11 $false 0 '141414'
+                        Add-Paragraph $doc (([string]$answer.numero) + '. ' + (Clean-Text $answer.resposta)) 11 $false 0
                     }
+                    Add-Paragraph $doc ('BNCC: ' + (Clean-Text $skill.codigo) + ' - ' + (Clean-Text $skill.habilidadeOficial)) 10 $true 0
 
-                    Add-Paragraph $doc ('BNCC: ' + (Clean-Text $skill.codigo) + ' - ' + (Clean-Text $skill.habilidadeOficial)) 10 $true 0 '141414'
-                    Add-Paragraph $doc ('Verbo central: ' + (Clean-Text $skill.verbo)) 10 $false 0 '141414'
+                    # Libera objetos de estrutura antes do Save, mas mantem Document ativo.
+                    Release-Com $contentTable; $contentTable = $null
+                    Release-Com $header; $header = $null
+                    Release-Com $range; $range = $null
+                    Release-Com $setup; $setup = $null
+                    Release-Com $section; $section = $null
 
-                    Write-Host ('Salvando em: ' + $target)
-                    $doc.SaveAs2($target, 16)
-                    $doc.Saved = $true
+                    Write-Host ('[PRE-SAVE] ' + $filename)
+                    $doc.Save()
+                    Write-Host ('[SAVE OK] ' + $filename)
                     $doc.Close(0)
+                    Write-Host ('[FECHADO] ' + $filename)
+                    Release-Com $doc
+                    $doc = $null
+
+                    Move-Item -LiteralPath $tempFile -Destination $target -Force
+                    if (-not (Test-Path -LiteralPath $target)) {
+                        throw ('Arquivo final nao encontrado apos mover: ' + $target)
+                    }
+                    Write-Host ('[MOVIDO] ' + $target)
                     $generated++
                     Write-Host ('[OK] ' + [string]$term + ' bimestre -> ' + $filename)
                 }
                 finally {
-                    Release-ComObject $shape
-                    Release-ComObject $imageCell
-                    Release-ComObject $content
-                    Release-ComObject $contentRange
-                    Release-ComObject $header
-                    Release-ComObject $pageRange
-                    Release-ComObject $section
+                    Release-Com $contentTable
+                    Release-Com $header
+                    Release-Com $range
+                    Release-Com $setup
+                    Release-Com $section
                     if ($null -ne $doc) {
-                        try { if (-not $doc.Saved) { $doc.Close(0) } } catch {}
-                        Release-ComObject $doc
+                        try { $doc.Close(0) } catch {}
+                        Release-Com $doc
                     }
-                    [GC]::Collect()
-                    [GC]::WaitForPendingFinalizers()
+                    if (Test-Path -LiteralPath $tempFile) {
+                        Remove-Item -LiteralPath $tempFile -Force -ErrorAction SilentlyContinue
+                    }
                     [GC]::Collect()
                     [GC]::WaitForPendingFinalizers()
                 }
@@ -295,18 +291,14 @@ try {
     }
 }
 finally {
+    Release-Com $documents
     if ($null -ne $word) {
         try { $word.Quit(0) } catch {}
-        Release-ComObject $word
+        Release-Com $word
     }
-    [GC]::Collect()
-    [GC]::WaitForPendingFinalizers()
     [GC]::Collect()
     [GC]::WaitForPendingFinalizers()
 }
 
 Write-Host ''
-Write-Host ('Geografia Word concluido. Gerados: ' + [string]$generated + '. Ja existentes: ' + [string]$existing + '. Legados ignorados: ' + [string]$skipped + '.')
-if ($generated -eq 0 -and $existing -eq 0) {
-    Write-Host 'Nenhuma atividade V2 foi encontrada ainda. Isso e esperado ate comecarmos a reconstrucao de Geografia.'
-}
+Write-Host ('Geografia Word concluido. Gerados: ' + $generated + '. Ja existentes: ' + $existing + '. Legados ignorados: ' + $skipped + '.')
