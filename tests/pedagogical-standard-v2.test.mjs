@@ -23,7 +23,9 @@ const base = {
     { numero: 3, enunciado: 'Explique por que fotografias antigas ajudam a estudar a história do bairro.' },
     { numero: 4, enunciado: 'Compare uma característica do bairro de antes com uma característica atual.' },
     { numero: 5, enunciado: 'Identifique no texto uma mudança causada pela ação das pessoas.' },
-    { numero: 6, enunciado: 'Escreva uma mudança e uma permanência que você observa no lugar onde vive.' }
+    { numero: 6, enunciado: 'Escreva uma mudança e uma permanência que você observa no lugar onde vive.' },
+    { numero: 7, enunciado: 'Explique como os relatos dos moradores podem ajudar a conhecer mudanças ocorridas no bairro.' },
+    { numero: 8, enunciado: 'Por que é importante preservar registros de diferentes épocas da comunidade?' }
   ],
   gabarito: [
     { numero: 1, resposta: 'Exemplos: ruas pavimentadas, mais casas, crescimento do comércio, transporte e iluminação.' },
@@ -31,7 +33,9 @@ const base = {
     { numero: 3, resposta: 'Porque permitem comparar épocas e observar mudanças e permanências.' },
     { numero: 4, resposta: 'Resposta possível: antes havia ruas de terra; hoje há ruas pavimentadas e mais serviços.' },
     { numero: 5, resposta: 'Exemplo: construção de novas moradias ou ampliação do comércio.' },
-    { numero: 6, resposta: 'Resposta pessoal, desde que apresente uma mudança e uma permanência coerentes.' }
+    { numero: 6, resposta: 'Resposta pessoal, desde que apresente uma mudança e uma permanência coerentes.' },
+    { numero: 7, resposta: 'Porque os relatos registram lembranças e experiências que ajudam a compreender como o lugar se transformou.' },
+    { numero: 8, resposta: 'Porque registros de diferentes épocas ajudam a preservar a memória e a comparar mudanças e permanências da comunidade.' }
   ],
   ilustracao: {
     objetivoPedagogico: 'Apoiar a comparação entre mudanças e permanências observáveis no mesmo lugar em épocas diferentes.',
@@ -48,7 +52,7 @@ const base = {
   }
 };
 
-test('padrão V2 aceita atividade pedagógica completa', () => {
+test('padrão V2 aceita atividade pedagógica completa com 8 questões', () => {
   const result = validatePedagogicalActivityV2(base, { disciplina: 'História' });
   assert.equal(result.valid, true, result.errors.join('\n'));
 });
@@ -67,6 +71,15 @@ test('padrão V2 rejeita pergunta baseada em código BNCC', () => {
   const result = validatePedagogicalActivityV2(activity, { disciplina: 'História' });
   assert.equal(result.valid, false);
   assert.ok(result.errors.some(error => error.includes('questão 5')));
+});
+
+test('padrão V2 rejeita atividade com quantidade diferente de 8 questões', () => {
+  const activity = structuredClone(base);
+  activity.questoes.pop();
+  activity.gabarito.pop();
+  const result = validatePedagogicalActivityV2(activity, { disciplina: 'História' });
+  assert.equal(result.valid, false);
+  assert.ok(result.errors.some(error => error.includes('exatamente 8 questões')));
 });
 
 test('padrão V2 não permite marcar revisada sem todas as conferências', () => {
