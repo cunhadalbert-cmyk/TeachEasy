@@ -77,6 +77,7 @@ function Get-Order($activity, [int]$fallback) {
 $word = $null
 $generated = 0
 $skipped = 0
+$existing = 0
 $seenIds = @{}
 
 Write-Host '[1/4] Iniciando Microsoft Word...'
@@ -130,6 +131,20 @@ try {
 
                 if ($activity.questoes.Count -ne 8 -or $activity.gabarito.Count -ne 8) {
                     throw ('Atividade ' + $activity.id + ' deve possuir exatamente 8 questoes e 8 respostas.')
+                }
+
+                $skill = $activity.bncc[0]
+                $order = Get-Order $activity ($generated + $existing + 1)
+                $normalized = (Clean-Text $activity.titulo).Normalize([Text.NormalizationForm]::FormD)
+                $safeTitle = ($normalized -replace '\p{Mn}', '' -replace '[^a-zA-Z0-9]+', '-').Trim('-').ToLower()
+                $code = (Clean-Text $skill.codigo).ToLower()
+                $filename = ('{0:D2}-{1}-{2}.docx' -f $order, $code, $safeTitle)
+                $target = Join-Path $destination $filename
+
+                if (Test-Path -LiteralPath $target) {
+                    $existing++
+                    Write-Host ('[JA EXISTE] ' + [string]$term + ' bimestre -> ' + $filename)
+                    continue
                 }
 
                 Write-Host ('[4/4] Gerando: ' + (Clean-Text $activity.titulo))
@@ -248,16 +263,8 @@ try {
                         Add-Paragraph $doc (([string]$answer.numero) + '. ' + (Clean-Text $answer.resposta)) 11 $false 0 '141414'
                     }
 
-                    $skill = $activity.bncc[0]
                     Add-Paragraph $doc ('BNCC: ' + (Clean-Text $skill.codigo) + ' - ' + (Clean-Text $skill.habilidadeOficial)) 10 $true 0 '141414'
                     Add-Paragraph $doc ('Verbo central: ' + (Clean-Text $skill.verbo)) 10 $false 0 '141414'
-
-                    $order = Get-Order $activity ($generated + 1)
-                    $normalized = (Clean-Text $activity.titulo).Normalize([Text.NormalizationForm]::FormD)
-                    $safeTitle = ($normalized -replace '\p{Mn}', '' -replace '[^a-zA-Z0-9]+', '-').Trim('-').ToLower()
-                    $code = (Clean-Text $skill.codigo).ToLower()
-                    $filename = ('{0:D2}-{1}-{2}.docx' -f $order, $code, $safeTitle)
-                    $target = Join-Path $destination $filename
 
                     Write-Host ('Salvando em: ' + $target)
                     $doc.SaveAs2($target, 16)
@@ -299,7 +306,7 @@ finally {
 }
 
 Write-Host ''
-Write-Host ('Geografia Word concluido. Gerados: ' + [string]$generated + '. Legados ignorados: ' + [string]$skipped + '.')
-if ($generated -eq 0) {
+Write-Host ('Geografia Word concluido. Gerados: ' + [string]$generated + '. Ja existentes: ' + [string]$existing + '. Legados ignorados: ' + [string]$skipped + '.')
+if ($generated -eq 0 -and $existing -eq 0) {
     Write-Host 'Nenhuma atividade V2 foi encontrada ainda. Isso e esperado ate comecarmos a reconstrucao de Geografia.'
 }
