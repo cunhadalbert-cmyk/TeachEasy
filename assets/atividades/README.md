@@ -27,6 +27,7 @@ assets/atividades/historia/4-ano/1-bimestre/
 ## Regras
 
 - Não armazenar JSON pedagógico nesta pasta.
+- Não duplicar nem manter uma segunda fonte de verdade do conteúdo pedagógico dentro de `assets/atividades/`.
 - Não duplicar a mesma imagem em várias pastas sem necessidade.
 - Usar nomes estáveis e descritivos para novos arquivos.
 - A imagem deve permanecer vinculada à atividade correta por referência no JSON.
