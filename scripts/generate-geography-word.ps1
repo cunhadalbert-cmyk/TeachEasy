@@ -167,15 +167,16 @@ try {
                 $range = $null
                 $header = $null
                 $contentTable = $null
-                $tempFile = Join-Path ([IO.Path]::GetTempPath()) ('teacheasy-geografia-' + [guid]::NewGuid().ToString('N') + '.docx')
+                $tempFile = Join-Path $destination ('.teacheasy-building-' + [guid]::NewGuid().ToString('N') + '.docx')
 
                 try {
                     $doc = $documents.Add()
 
-                    # SaveAs2 funciona de forma confiavel no documento vazio.
-                    Write-Host ('[PRE-SAVE EMPTY] ' + $filename)
+                    # O Word deste ambiente ja salvou com sucesso dentro da pasta do projeto.
+                    # Evita %TEMP%, que bloqueou antes mesmo de o layout ser montado.
+                    Write-Host ('[PRE-SAVE LOCAL] ' + $filename)
                     $doc.SaveAs2($tempFile, 16)
-                    Write-Host ('[EMPTY SAVE OK] ' + $filename)
+                    Write-Host ('[LOCAL SAVE OK] ' + $filename)
 
                     $section = $doc.Sections.Item(1)
                     $setup = $section.PageSetup
@@ -247,7 +248,6 @@ try {
                     }
                     Add-Paragraph $doc ('BNCC: ' + (Clean-Text $skill.codigo) + ' - ' + (Clean-Text $skill.habilidadeOficial)) 10 $true 0
 
-                    # Libera objetos de estrutura antes do Save, mas mantem Document ativo.
                     Release-Com $contentTable; $contentTable = $null
                     Release-Com $header; $header = $null
                     Release-Com $range; $range = $null
