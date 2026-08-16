@@ -7,7 +7,7 @@ const standard = await readFile(new URL('../biblioteca-final-standard.js', impor
 const overflowFix = await readFile(new URL('../library-layout-overflow-fix.js', import.meta.url), 'utf8');
 
 test('Biblioteca usa somente o padrão final único depois das coleções', () => {
-  assert.match(html, /biblioteca-final-standard\.js\?v=20260813-padrao-oficial-v1/);
+  assert.match(html, /biblioteca-final-standard\.js\?v=20260815-layout-mestre-v2/);
   assert.match(html, /library-layout-overflow-fix\.js\?v=20260813-fit-v1/);
   assert.ok(html.indexOf('library-layout-overflow-fix.js') > html.indexOf('biblioteca-final-standard.js'));
   assert.doesNotMatch(html, /biblioteca-standard\.js/);
@@ -18,17 +18,18 @@ test('Biblioteca usa somente o padrão final único depois das coleções', () =
 test('padrão oficial centraliza medidas, cores e tipografia', () => {
   assert.match(standard, /const ACTIVITY_LAYOUT/);
   assert.match(standard, /format: 'A4'/);
+  assert.match(standard, /marginMm: 6\.9/);
   assert.match(standard, /primary: '#1F497D'/);
   assert.match(standard, /family: 'Arial'/);
-  assert.match(standard, /title: 13/);
+  assert.match(standard, /title: 15/);
   assert.match(standard, /subtitle: 13/);
   assert.match(standard, /bodyDefault: 12/);
   assert.match(standard, /bodyMin: 8/);
   assert.match(standard, /bodyStep: 0\.5/);
-  assert.match(standard, /widthCm: 18\.5/);
-  assert.match(standard, /heightCm: 9\.6/);
-  assert.match(standard, /textRatio: 0\.47/);
-  assert.match(standard, /imageRatio: 0\.53/);
+  assert.match(standard, /widthCm: 18\.54/);
+  assert.match(standard, /heightCm: 9\.63/);
+  assert.match(standard, /textRatio: 0\.4725/);
+  assert.match(standard, /imageRatio: 0\.5275/);
 });
 
 test('atividade do aluno recebe o cabeçalho completo do modelo aprovado', () => {
@@ -44,20 +45,21 @@ test('título, subtítulo e duas colunas seguem a referência visual', () => {
   assert.match(standard, /ATIVIDADE DE \$\{escapeHtml\(subject\.toUpperCase\(\)\)\}/);
   assert.match(standard, /te-final-title/);
   assert.match(standard, /te-final-subtitle/);
-  assert.match(standard, /grid-template-columns:47fr 53fr/);
-  assert.match(standard, /width:18\.5cm/);
-  assert.match(standard, /height:9\.6cm/);
+  assert.match(standard, /grid-template-columns:47\.25fr 52\.75fr/);
+  assert.match(standard, /width:18\.54cm/);
+  assert.match(standard, /height:9\.63cm/);
   assert.match(standard, /#1F497D/i);
 });
 
-test('texto principal reduz de 12 até 8 pt em passos de 0,5 sem cortar conteúdo', () => {
+test('texto principal reduz de 12 até 8 pt em passos de 0,5 dentro da célula', () => {
   assert.match(standard, /function resolveActivityLayout/);
   assert.match(standard, /contentFits/);
   assert.match(standard, /scrollHeight <= textEl\.clientHeight/);
   assert.match(standard, /bodyDefault/);
   assert.match(standard, /bodyMin/);
   assert.match(standard, /bodyStep/);
-  assert.doesNotMatch(standard, /\.te-final-text\{[^}]*overflow:hidden/);
+  assert.match(standard, /\.te-final-text\{[^}]*overflow:hidden/);
+  assert.match(overflowFix, /ResizeObserver/);
 });
 
 test('correção do preview limita a célula de texto e recalcula o encaixe real', () => {
@@ -90,17 +92,18 @@ test('Word DOCX usa o mesmo tamanho resolvido e mantém texto e imagem em tabela
   assert.match(standard, /Packer\.toBlob/);
   assert.match(standard, /d\.bodyFontSize\*2/);
   assert.match(standard, /new docx\.Table/);
-  assert.match(standard, /size:47,type:docx\.WidthType\.PERCENTAGE/);
-  assert.match(standard, /size:53,type:docx\.WidthType\.PERCENTAGE/);
+  assert.match(standard, /size:47\.25,type:docx\.WidthType\.PERCENTAGE/);
+  assert.match(standard, /size:52\.75,type:docx\.WidthType\.PERCENTAGE/);
   assert.match(standard, /new docx\.ImageRun/);
   assert.doesNotMatch(standard, /application\/msword/);
 });
 
-test('Word e impressão usam A4 com margens de 10 mm', () => {
-  assert.match(standard, /size:\{width:11906,height:16838\}/);
-  assert.match(standard, /margin:\{top:567,right:567,bottom:567,left:567/);
+test('Word e impressão usam A4 no padrão do layout mestre', () => {
+  assert.match(standard, /size:\{width:11909,height:16834\}/);
+  assert.match(standard, /margin:\{top:34,right:391,bottom:0,left:391,header:142,footer:142\}/);
   assert.match(standard, /width:210mm/);
   assert.match(standard, /min-height:297mm/);
+  assert.match(standard, /6\.9mm/);
 });
 
 test('ilustração existente fica contida na coluna direita sem deformação', () => {
