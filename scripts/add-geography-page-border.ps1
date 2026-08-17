@@ -14,17 +14,29 @@ if (-not (Test-Path -LiteralPath $targetDir)) {
 }
 
 function Set-PageBorderInDocumentXml([string]$xmlText) {
-    $pgBorders = '<w:pgBorders w:offsetFrom="page"><w:top w:val="single" w:sz="8" w:space="14" w:color="000000"/><w:left w:val="single" w:sz="8" w:space="14" w:color="000000"/><w:bottom w:val="single" w:sz="8" w:space="14" w:color="000000"/><w:right w:val="single" w:sz="8" w:space="14" w:color="000000"/></w:pgBorders>'
+    $pgBorders = '<w:pgBorders w:offsetFrom="page" w:display="allPages" w:zOrder="front"><w:top w:val="single" w:sz="8" w:space="14" w:color="000000"/><w:left w:val="single" w:sz="8" w:space="14" w:color="000000"/><w:bottom w:val="single" w:sz="8" w:space="14" w:color="000000"/><w:right w:val="single" w:sz="8" w:space="14" w:color="000000"/></w:pgBorders>'
 
-    # Remove borda existente para evitar duplicacao.
+    # Remove qualquer borda de pagina existente.
     $xmlText = [regex]::Replace($xmlText, '<w:pgBorders\b[^>]*>.*?</w:pgBorders>', '', 'Singleline')
 
-    # Insere a borda dentro de cada w:sectPr, logo apos a abertura.
-    return [regex]::Replace(
+    # No WordprocessingML, pgBorders deve ficar dentro de sectPr em posicao valida.
+    # Inserimos imediatamente antes de pgMar; se pgMar nao existir, antes do fechamento de sectPr.
+    $xmlText = [regex]::Replace(
         $xmlText,
-        '<w:sectPr(\s[^>]*)?>',
-        { param($m) $m.Value + $pgBorders }
+        '(<w:sectPr\b[^>]*>)(.*?)(<w:pgMar\b)',
+        { param($m) $m.Groups[1].Value + $m.Groups[2].Value + $pgBorders + $m.Groups[3].Value },
+        'Singleline'
     )
+
+    # Fallback para secoes sem pgMar e que ainda nao receberam a borda.
+    $xmlText = [regex]::Replace(
+        $xmlText,
+        '(<w:sectPr\b[^>]*>)(?!.*?<w:pgBorders\b)(.*?)(</w:sectPr>)',
+        { param($m) $m.Groups[1].Value + $m.Groups[2].Value + $pgBorders + $m.Groups[3].Value },
+        'Singleline'
+    )
+
+    return $xmlText
 }
 
 $files = Get-ChildItem -LiteralPath $targetDir -File -Filter '*.docx' | Sort-Object Name
@@ -48,6 +60,11 @@ foreach ($file in $files) {
 
         $xml = [IO.File]::ReadAllText($documentXml, [Text.Encoding]::UTF8)
         $xml = Set-PageBorderInDocumentXml $xml
+
+        if ($xml -notmatch '<w:pgBorders\b') {
+            throw ('Nao foi possivel inserir w:pgBorders em ' + $file.Name)
+        }
+
         [IO.File]::WriteAllText($documentXml, $xml, (New-Object Text.UTF8Encoding($false)))
 
         if (Test-Path -LiteralPath $tempZip) { Remove-Item -LiteralPath $tempZip -Force }
