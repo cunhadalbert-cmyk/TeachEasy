@@ -67,7 +67,15 @@ test('gerador usa a imagem oficial com fidelidade visual reforçada', async () =
   assert.match(illustrationGeneration, /jardineira jeans azul/);
   assert.match(illustrationGeneration, /camiseta verde com dinossauro/);
   assert.match(illustrationGeneration, /A fidelidade ao elenco é mais importante do que a variedade de pose/);
+  assert.match(illustrationGeneration, /REGRA OFICIAL DE PARTICIPAÇÃO NA CENA/);
+  assert.match(illustrationGeneration, /PARTICIPANTES ATIVOS/);
+  assert.match(illustrationGeneration, /NÃO coloque os personagens apenas parados, posando/);
+  assert.match(illustrationGeneration, /NUNCA podem substituir, esconder, apagar, reduzir ou descaracterizar/);
+  assert.match(illustrationGeneration, /preserve integralmente o conteúdo pedagógico/);
+  assert.match(illustrationGeneration, /falsificar o período, a cultura ou o acontecimento/i);
   assert.match(illustrationGeneration, /ORDEM DE PRIORIDADE/);
+  assert.match(illustrationGeneration, /preservar integralmente a cena pedagógica e seus elementos essenciais/);
+  assert.match(illustrationGeneration, /integrar os personagens TeachEasy como participantes ativos e naturais da cena/);
   assert.match(illustrationGeneration, /v1\/images\/edits/);
   assert.match(illustrationGeneration, /form\.append\('input_fidelity', 'high'\)/);
   assert.match(illustrationGeneration, /form\.append\('model', 'gpt-image-1'\)/);
