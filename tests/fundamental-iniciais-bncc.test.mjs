@@ -19,10 +19,11 @@ const genericQuestion = /Explique a ideia central|Identifique duas informações
 const genericAnswer = /Resposta esperada coerente|Resposta autoral coerente|considerando o comando da questão/;
 const splitCollections = new Set(['lingua-portuguesa.json', 'matematica.json', 'ciencias.json']);
 
-test('Anos Iniciais possuem 3.000 atividades BNCC conferidas em 100 coleções', () => {
+test('Anos Iniciais mantêm 100 coleções canônicas e aceitam a migração para o padrão V2', () => {
   const ids = new Set();
   let collections = 0;
   let total = 0;
+  let migratedV2 = 0;
 
   for (const grade of grades) for (const term of terms) {
     for (const [filename, subject] of subjects) {
@@ -37,6 +38,7 @@ test('Anos Iniciais possuem 3.000 atividades BNCC conferidas em 100 coleções',
         parts.push(JSON.parse(fs.readFileSync(extraPath, 'utf8')));
       }
 
+      const collectionIsV2 = parts.length === 1 && parts[0].padraoPedagogico === 'teacheasy-v2';
       const activities = parts.flatMap(collection => {
         assert.equal(collection.disciplina, subject);
         assert.equal(collection.bnccConferida, true);
@@ -44,13 +46,17 @@ test('Anos Iniciais possuem 3.000 atividades BNCC conferidas em 100 coleções',
         return collection.atividades;
       });
 
-      assert.equal(activities.length, 30, `${grade}º ano, ${term}º bimestre, ${subject}`);
+      const expectedActivities = collectionIsV2 ? 20 : 30;
+      const expectedQuestions = collectionIsV2 ? 8 : 6;
+      assert.equal(activities.length, expectedActivities, `${grade}º ano, ${term}º bimestre, ${subject}`);
+      if (collectionIsV2) migratedV2 += 1;
+
       for (const activity of activities) {
         assert.equal(ids.has(activity.id), false, `ID duplicado: ${activity.id}`);
         ids.add(activity.id);
         assert.equal(activity.bnccConferida, true);
-        assert.equal(activity.questoes.length, 6);
-        assert.equal(activity.gabarito.length, 6);
+        assert.equal(activity.questoes.length, expectedQuestions);
+        assert.equal(activity.gabarito.length, expectedQuestions);
 
         const skill = activity.bncc[0];
         assert.match(skill.codigo, validCode);
@@ -66,8 +72,8 @@ test('Anos Iniciais possuem 3.000 atividades BNCC conferidas em 100 coleções',
   }
 
   assert.equal(collections, 100);
-  assert.equal(total, 3000);
-  assert.equal(ids.size, 3000);
+  assert.equal(total, ids.size);
+  assert.ok(migratedV2 >= 1, 'Ao menos uma coleção dos Anos Iniciais deve estar migrada para o padrão V2');
 });
 
 test('Anos Iniciais exibem somente as cinco disciplinas principais', () => {
