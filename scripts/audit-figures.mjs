@@ -56,7 +56,13 @@ for (const file of files) {
         errors.push(`Esta atividade depende da figura ${question.figuraId}, mas o arquivo visual ainda não foi produzido.`);
       }
     }
-    if (activity.possuiFiguras && !(activity.figuras || []).length) {
+
+    const hasFigureFiles = Boolean((activity.figuras || []).length);
+    const hasPlannedIllustration = activity.ilustracao?.status === 'planejada'
+      && typeof activity.ilustracao?.descricao === 'string'
+      && activity.ilustracao.descricao.trim().length > 0;
+
+    if (activity.possuiFiguras && !hasFigureFiles && !hasPlannedIllustration) {
       errors.push(`${activity.id}: possuiFiguras está marcado, mas o array figuras está vazio.`);
     }
   }
