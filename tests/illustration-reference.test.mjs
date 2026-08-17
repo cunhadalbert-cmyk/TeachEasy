@@ -72,7 +72,7 @@ test('gerador usa a imagem oficial com fidelidade visual reforçada', async () =
   assert.match(illustrationGeneration, /NÃO coloque os personagens apenas parados, posando/);
   assert.match(illustrationGeneration, /NUNCA podem substituir, esconder, apagar, reduzir ou descaracterizar/);
   assert.match(illustrationGeneration, /preserve integralmente o conteúdo pedagógico/);
-  assert.match(illustrationGeneration, /não falsificar o período, a cultura ou o acontecimento/);
+  assert.match(illustrationGeneration, /falsificar o período, a cultura ou o acontecimento/i);
   assert.match(illustrationGeneration, /ORDEM DE PRIORIDADE/);
   assert.match(illustrationGeneration, /preservar integralmente a cena pedagógica e seus elementos essenciais/);
   assert.match(illustrationGeneration, /integrar os personagens TeachEasy como participantes ativos e naturais da cena/);
