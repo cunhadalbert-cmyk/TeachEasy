@@ -3,6 +3,7 @@ param(
 )
 
 $ErrorActionPreference = 'Stop'
+Add-Type -AssemblyName System.IO.Compression.FileSystem
 
 $root = Split-Path -Parent $PSScriptRoot
 $outputRoot = Join-Path $root 'exports\word\4-ano\geografia'
@@ -12,94 +13,55 @@ if (-not (Test-Path -LiteralPath $targetDir)) {
     throw ('Pasta nao encontrada: ' + $targetDir)
 }
 
-function Release-Com([object]$value) {
-    if ($null -eq $value) { return }
-    try {
-        if ([Runtime.InteropServices.Marshal]::IsComObject($value)) {
-            [void][Runtime.InteropServices.Marshal]::FinalReleaseComObject($value)
-        }
-    } catch {}
+function Set-PageBorderInDocumentXml([string]$xmlText) {
+    $pgBorders = '<w:pgBorders w:offsetFrom="page"><w:top w:val="single" w:sz="8" w:space="14" w:color="000000"/><w:left w:val="single" w:sz="8" w:space="14" w:color="000000"/><w:bottom w:val="single" w:sz="8" w:space="14" w:color="000000"/><w:right w:val="single" w:sz="8" w:space="14" w:color="000000"/></w:pgBorders>'
+
+    # Remove borda existente para evitar duplicacao.
+    $xmlText = [regex]::Replace($xmlText, '<w:pgBorders\b[^>]*>.*?</w:pgBorders>', '', 'Singleline')
+
+    # Insere a borda dentro de cada w:sectPr, logo apos a abertura.
+    return [regex]::Replace(
+        $xmlText,
+        '<w:sectPr(\s[^>]*)?>',
+        { param($m) $m.Value + $pgBorders }
+    )
 }
 
-$word = $null
+$files = Get-ChildItem -LiteralPath $targetDir -File -Filter '*.docx' | Sort-Object Name
+Write-Host ('[1/2] Arquivos encontrados: ' + $files.Count)
+
 $updated = 0
+foreach ($file in $files) {
+    Write-Host ('[PROCESSANDO] ' + $file.Name)
 
-Write-Host '[1/3] Iniciando Microsoft Word...'
+    $tempDir = Join-Path ([IO.Path]::GetTempPath()) ('teacheasy-border-' + [guid]::NewGuid().ToString('N'))
+    $tempZip = Join-Path ([IO.Path]::GetTempPath()) ('teacheasy-border-' + [guid]::NewGuid().ToString('N') + '.zip')
 
-try {
-    $word = New-Object -ComObject Word.Application
-    $word.Visible = $false
-    $word.DisplayAlerts = 0
+    try {
+        New-Item -ItemType Directory -Path $tempDir | Out-Null
+        [IO.Compression.ZipFile]::ExtractToDirectory($file.FullName, $tempDir)
 
-    $files = Get-ChildItem -LiteralPath $targetDir -File -Filter '*.docx' | Sort-Object Name
-    Write-Host ('[2/3] Arquivos encontrados: ' + $files.Count)
-
-    foreach ($file in $files) {
-        $doc = $null
-        try {
-            $doc = $word.Documents.Open($file.FullName, $false, $false)
-
-            for ($s = 1; $s -le $doc.Sections.Count; $s++) {
-                $section = $null
-                $borders = $null
-                try {
-                    $section = $doc.Sections.Item($s)
-                    $borders = $section.Borders
-
-                    # Distancia medida a partir da borda da pagina.
-                    # 14.2 pt = aproximadamente 0,5 cm.
-                    $borders.DistanceFrom = 1
-                    $borders.DistanceFromTop = 14
-                    $borders.DistanceFromBottom = 14
-                    $borders.DistanceFromLeft = 14
-                    $borders.DistanceFromRight = 14
-                    $borders.AlwaysInFront = $true
-
-                    # Quatro lados da moldura: superior, esquerdo, inferior e direito.
-                    foreach ($borderType in @(-1, -2, -3, -4)) {
-                        $border = $null
-                        try {
-                            $border = $borders.Item($borderType)
-                            $border.LineStyle = 1
-                            $border.LineWidth = 8
-                            $border.Color = 0
-                        }
-                        finally {
-                            Release-Com $border
-                        }
-                    }
-                }
-                finally {
-                    Release-Com $borders
-                    Release-Com $section
-                }
-            }
-
-            $doc.Save()
-            $updated++
-            Write-Host ('[OK] ' + $file.Name)
-            $doc.Close(0)
-            Release-Com $doc
-            $doc = $null
+        $documentXml = Join-Path $tempDir 'word\document.xml'
+        if (-not (Test-Path -LiteralPath $documentXml)) {
+            throw ('word/document.xml nao encontrado em ' + $file.Name)
         }
-        finally {
-            if ($null -ne $doc) {
-                try { $doc.Close(0) } catch {}
-                Release-Com $doc
-            }
-            [GC]::Collect()
-            [GC]::WaitForPendingFinalizers()
-        }
+
+        $xml = [IO.File]::ReadAllText($documentXml, [Text.Encoding]::UTF8)
+        $xml = Set-PageBorderInDocumentXml $xml
+        [IO.File]::WriteAllText($documentXml, $xml, (New-Object Text.UTF8Encoding($false)))
+
+        if (Test-Path -LiteralPath $tempZip) { Remove-Item -LiteralPath $tempZip -Force }
+        [IO.Compression.ZipFile]::CreateFromDirectory($tempDir, $tempZip, [IO.Compression.CompressionLevel]::Optimal, $false)
+
+        Copy-Item -LiteralPath $tempZip -Destination $file.FullName -Force
+        $updated++
+        Write-Host ('[OK] ' + $file.Name)
     }
-}
-finally {
-    if ($null -ne $word) {
-        try { $word.Quit(0) } catch {}
-        Release-Com $word
+    finally {
+        if (Test-Path -LiteralPath $tempDir) { Remove-Item -LiteralPath $tempDir -Recurse -Force -ErrorAction SilentlyContinue }
+        if (Test-Path -LiteralPath $tempZip) { Remove-Item -LiteralPath $tempZip -Force -ErrorAction SilentlyContinue }
     }
-    [GC]::Collect()
-    [GC]::WaitForPendingFinalizers()
 }
 
 Write-Host ''
-Write-Host ('[3/3] Moldura preta aplicada em ' + $updated + ' arquivo(s).')
+Write-Host ('[2/2] Moldura preta aplicada em ' + $updated + ' arquivo(s), sem abrir o Word.')
