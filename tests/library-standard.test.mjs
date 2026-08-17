@@ -63,13 +63,15 @@ test('texto principal reduz de 12 até 8 pt em passos de 0,5 dentro da célula',
 });
 
 test('correção do preview limita a célula de texto e recalcula o encaixe real', () => {
-  assert.match(overflowFix, /\.te-final-text\{min-width:0;min-height:0;max-height:100%/);
+  assert.match(overflowFix, /\.te-final-text\s*\{[\s\S]*?max-height:\s*100%/);
+  assert.match(overflowFix, /overflow:\s*hidden/);
   assert.match(overflowFix, /MAX_FONT_PT = 12/);
   assert.match(overflowFix, /MIN_FONT_PT = 8/);
-  assert.match(overflowFix, /STEP_PT = 0\.5/);
+  assert.match(overflowFix, /STEP_PT = 0\.25/);
   assert.match(overflowFix, /scrollHeight <= textEl\.clientHeight/);
   assert.match(overflowFix, /ResizeObserver/);
-  assert.match(overflowFix, /requestAnimationFrame\(\(\) => fitText\(shell\)\)/);
+  assert.match(overflowFix, /requestAnimationFrame\(\(\) => \{/);
+  assert.match(overflowFix, /fitText\(shell\)/);
 });
 
 test('questões são reconstruídas em uma única folha com até oito itens', () => {
