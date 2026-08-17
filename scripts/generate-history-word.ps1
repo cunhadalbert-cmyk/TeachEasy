@@ -21,8 +21,8 @@ $source = $source.Replace("'ATIVIDADE DE GEOGRAFIA'", "'ATIVIDADE DE HISTORIA'")
 $source = $source.Replace("'Geografia Word concluido. Gerados: '", "'Historia Word concluido. Gerados: '")
 
 # Compatibilidade com o formato do builder de Historia.
-$source = $source.Replace("(Clean-Text $activity.ilustracao.descricao)", "(Clean-Text $activity.figuras[0].descricao)")
-$source = $source.Replace("(Clean-Text $skill.habilidadeOficial)", "(Clean-Text $skill.descricaoResumida)")
+$source = $source.Replace('(Clean-Text $activity.ilustracao.descricao)', '(Clean-Text $activity.figuras[0].descricao)')
+$source = $source.Replace('(Clean-Text $skill.habilidadeOficial)', '(Clean-Text $skill.descricaoResumida)')
 
 $temp = Join-Path ([IO.Path]::GetTempPath()) ('teacheasy-history-word-' + [guid]::NewGuid().ToString('N') + '.ps1')
 try {
