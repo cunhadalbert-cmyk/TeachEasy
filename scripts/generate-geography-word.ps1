@@ -93,6 +93,10 @@ Write-Host '[1/4] Iniciando Microsoft Word...'
 try {
     $word = New-Object -ComObject Word.Application
     $word.Visible = $false
+    $word.DisplayAlerts = 0
+    $word.Options.SaveNormalPrompt = $false
+    $word.Options.ConfirmConversions = $false
+    $word.AutomationSecurity = 3
 
     Write-Host '[2/4] Word iniciado em modo silencioso.'
 
@@ -168,7 +172,9 @@ try {
                     # Replica o fluxo simples que foi validado manualmente no Windows:
                     # Documents.Add() + SaveAs2() direto no caminho final.
                     Write-Host ('[PRE-SAVE DIRECT] ' + $filename)
-                    $doc.SaveAs2($target, 16)
+                    $absoluteTarget = [System.IO.Path]::GetFullPath($target)
+                    $fileFormat = 16
+                    $doc.SaveAs2([ref]$absoluteTarget, [ref]$fileFormat)
                     Write-Host ('[DIRECT SAVE OK] ' + $filename)
 
                     $section = $doc.Sections.Item(1)
