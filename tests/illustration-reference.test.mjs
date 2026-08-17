@@ -3,7 +3,6 @@ import assert from 'node:assert/strict';
 import { readFile, stat } from 'node:fs/promises';
 
 const html = await readFile(new URL('../biblioteca.html', import.meta.url), 'utf8');
-const libraryIllustration = await readFile(new URL('../library-ai-illustration.js', import.meta.url), 'utf8');
 const illustrationAdmin = await readFile(new URL('../library-illustration-admin.js', import.meta.url), 'utf8');
 const exportImageSync = await readFile(new URL('../library-export-image-sync.js', import.meta.url), 'utf8');
 const illustrationGuard = await readFile(new URL('../illustration-reference-standard.js', import.meta.url), 'utf8');
@@ -15,6 +14,7 @@ test('Biblioteca normal não carrega gerador dinâmico legado de IA', () => {
   assert.doesNotMatch(html, /library-ai-illustration\.js/);
   assert.doesNotMatch(html, /illustration-reference-standard\.js/);
 });
+
 test('modo temporário de ilustração permanece protegido e salva a imagem vinculada ao exercício', () => {
   assert.match(html, /library-illustration-admin\.js\?v=20260812-persistencia-ilustracao-v4/);
   assert.match(illustrationAdmin, /modoIlustracao/);
@@ -46,14 +46,6 @@ test('download Word e PDF usa cache versionado do elenco oficial atual', () => {
 test('PNG estática aprovada é carregada depois do renderizador final', () => {
   assert.match(html, /library-portuguese-approved-static\.js\?v=20260810-portugues-estatico-v1/);
   assert.ok(html.indexOf('biblioteca-final-standard.js') < html.indexOf('library-portuguese-approved-static.js'));
-});
-
-test('fallback vetorial possui mecanismo de substituição por PNG gerado pela IA', () => {
-  assert.match(libraryIllustration, /generate-library-illustration/);
-  assert.match(libraryIllustration, /data:image\/svg\+xml/);
-  assert.match(libraryIllustration, /illustrationDataUrl/);
-  assert.match(libraryIllustration, /Gerando ilustração pedagógica/);
-  assert.match(libraryIllustration, /data-te-ai-illustration/);
 });
 
 test('gerador usa a imagem oficial com fidelidade visual reforçada', async () => {
