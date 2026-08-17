@@ -7,12 +7,15 @@ $ErrorActionPreference = 'Stop'
 
 # Reaproveita o exportador de Geografia ja validado no Windows,
 # trocando apenas os pontos especificos da disciplina Historia.
+$projectRoot = Split-Path -Parent $PSScriptRoot
 $baseScript = Join-Path $PSScriptRoot 'generate-geography-word.ps1'
 if (-not (Test-Path -LiteralPath $baseScript)) {
     throw ('Gerador base nao encontrado: ' + $baseScript)
 }
 
 $source = [IO.File]::ReadAllText($baseScript, [Text.Encoding]::UTF8)
+$escapedRoot = $projectRoot.Replace("'", "''")
+$source = $source.Replace("`$root = Split-Path -Parent `$PSScriptRoot", "`$root = '$escapedRoot'")
 $source = $source.Replace("exports\word\4-ano\geografia", "exports\word\4-ano\historia")
 $source = $source.Replace("'geografia-v2.json'", "'historia-v2.json'")
 $source = $source.Replace("'geografia-v2-lote-*.json'", "'historia-v2-lote-*.json'")
