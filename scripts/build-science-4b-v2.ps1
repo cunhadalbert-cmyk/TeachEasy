@@ -85,7 +85,7 @@ for ($i=0; $i -lt $items.Count; $i++) {
         tipoSequencia='Coleção principal V2'; padraoPedagogico='teacheasy-v2'; dificuldade='adequada-4-ano'
         objetivo="Desenvolver a habilidade $code por meio de leitura, investigação, comparação e aplicação sobre $($it.T.ToLower())."
         bncc=@(@{codigo=$code;habilidadeOficial=$skills[$code];descricaoResumida=$skills[$code]})
-        quantidadeQuestoes=8; possuiFiguras=$true; figuras=@(); possuiGabarito=$true; possuiVersaoAdaptada=$false
+        quantidadeQuestoes=8; possuiFiguras=$false; figuras=@(); possuiGabarito=$true; possuiVersaoAdaptada=$false
         instrucaoGeral='Leia o texto de apoio, observe a proposta de ilustração e responda às questões com atenção.'
         textoApoio=@{titulo=$it.T;conteudo=$it.X}
         ilustracao=@{descricao=$it.I;status='planejada';estilo='TeachEasy - ilustração pedagógica colorida, clara e adequada ao 4º ano'}
