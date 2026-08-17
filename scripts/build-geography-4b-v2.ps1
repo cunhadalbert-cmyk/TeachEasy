@@ -1,4 +1,4 @@
-$ErrorActionPreference = 'Stop'
+﻿$ErrorActionPreference = 'Stop'
 
 $root = Split-Path -Parent $PSScriptRoot
 $target = Join-Path $root 'data\atividades\fundamental-anos-iniciais\4-ano\4-bimestre\geografia-v2.json'
@@ -71,18 +71,24 @@ function New-Questions([string]$code, [string]$title) {
 
 function New-Answers([string]$code) {
     if ($code -eq 'EF04GE05') {
-        $a=@('Identificar unidades territoriais e compreender sua organização em escalas.','Município.','Município → estado → grande região → Brasil.','Município é uma divisão local que integra um estado; o estado é uma unidade da Federação.','Os limites mostram onde uma unidade territorial termina e outra começa.','Resposta pessoal coerente com o município do estudante.','Título, unidade destacada, significado das cores, limites ou símbolos.','Resposta pessoal relacionando corretamente município, estado, região ou país.')
+        $a=@('Identificar unidades territoriais e compreender sua organização em escalas.','Município.','Município -> estado -> grande região -> Brasil.','Município é uma divisão local que integra um estado; o estado é uma unidade da Federação.','Os limites mostram onde uma unidade territorial termina e outra começa.','Resposta pessoal coerente com o município do estudante.','Título, unidade destacada, significado das cores, limites ou símbolos.','Resposta pessoal relacionando corretamente município, estado, região ou país.')
     } elseif ($code -eq 'EF04GE10') {
         $a=@('Resposta coerente com o tema e a finalidade do mapa.','Legenda.','Porque o título informa o assunto principal da representação.','O político destaca divisões administrativas; o físico ou temático destaca elementos naturais ou um tema específico.','Pode atribuir significados errados às cores e símbolos.','Exemplos: título, legenda, orientação, escala, nomes e símbolos.','Porque cada mapa pode ter uma finalidade e selecionar informações diferentes sobre o mesmo território.','Resposta pessoal com título adequado e legenda coerente.')
     } else {
         $a=@('Resposta baseada no texto, citando dois elementos pertinentes da paisagem.','Proteger vegetação e evitar descarte de lixo.','A conservada mantém melhor seus elementos; a degradada apresenta danos.','Resposta coerente ligando uma ação humana a uma consequência.','Porque esses elementos caracterizam a paisagem e se relacionam entre si e com a ocupação humana.','Resposta pessoal coerente com o contexto local.','Exemplos: proteger rios, ampliar coleta de resíduos, preservar vegetação ou recuperar áreas degradadas.','Resposta relacionando conservação a água, solo, biodiversidade, bem-estar e qualidade de vida.')
     }
-    $out=@(); for($i=0;$i -lt 8;$i++){ $out += @{numero=$i+1;resposta=$a[$i];justificativa="Resposta alinhada à habilidade $code e ao conteúdo da atividade."} }; return $out
+    $out=@()
+    for($i=0;$i -lt 8;$i++){
+        $out += @{numero=$i+1;resposta=$a[$i];justificativa="Resposta alinhada à habilidade $code e ao conteúdo da atividade."}
+    }
+    return $out
 }
 
 $activities=@()
 for($i=0;$i -lt $items.Count;$i++){
-    $it=$items[$i]; $n=$i+1; $code=$it.C
+    $it=$items[$i]
+    $n=$i+1
+    $code=$it.C
     $activities += @{
         id=('efi-4ano-b4-geo-v2-{0:D2}' -f $n)
         padraoPedagogico='teacheasy-v2'
@@ -101,7 +107,7 @@ for($i=0;$i -lt $items.Count;$i++){
         possuiVersaoAdaptada=$false
         instrucaoGeral='Leia o texto de apoio, observe a proposta de ilustração e responda às questões com atenção.'
         textoApoio=@{titulo=$it.T;conteudo=$it.X}
-        ilustracao=@{descricao=$it.I;status='planejada';estilo='TeachEasy — ilustração pedagógica colorida, clara e adequada ao 4º ano'}
+        ilustracao=@{descricao=$it.I;status='planejada';estilo='TeachEasy - ilustração pedagógica colorida, clara e adequada ao 4º ano'}
         questoes=(New-Questions $code $it.T)
         gabarito=(New-Answers $code)
         revisao=@{status='revisado-v2';bnccConferida=$true;gabaritoConferido=$true;ortografiaConferida=$true;conteudoAutoral=$true;revisor='TeachEasy';dataRevisao='2026-08-17'}
@@ -114,7 +120,7 @@ $collection=@{
     padraoPedagogico='teacheasy-v2'
     colecao='4ano-4bimestre-geografia-v2'
     idioma='pt-BR'
-    etapa='Ensino Fundamental — Anos Iniciais'
+    etapa='Ensino Fundamental - Anos Iniciais'
     ano='4º ano'
     bimestre=4
     disciplina='Geografia'
