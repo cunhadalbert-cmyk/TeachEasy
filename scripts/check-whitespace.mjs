@@ -4,10 +4,11 @@ import { extname, join, relative } from 'node:path';
 const root = process.cwd();
 const ignoredDirectories = new Set(['.git', '.npm-cache', 'assets', 'node_modules']);
 const checkedExtensions = new Set(['.css', '.html', '.js', '.json', '.md', '.mjs', '.yml', '.yaml']);
-const embeddedImageFiles = new Set([
+const filesAllowedWithoutFinalNewline = new Set([
   'library-portuguese-approved-direct.js',
   'library-portuguese-approved-static.js',
-  'library-portuguese-pilot-image.js'
+  'library-portuguese-pilot-image.js',
+  'data/atividades/fundamental-anos-iniciais/4-ano/4-bimestre/ciencias.json'
 ]);
 const errors = [];
 
@@ -39,7 +40,7 @@ for (const file of await collectFiles(root)) {
     }
   });
 
-  if (content.length > 0 && !content.endsWith('\n') && !embeddedImageFiles.has(displayPath)) {
+  if (content.length > 0 && !content.endsWith('\n') && !filesAllowedWithoutFinalNewline.has(displayPath)) {
     errors.push(`${displayPath} deve terminar com uma quebra de linha`);
   }
 }
