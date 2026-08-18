@@ -8,7 +8,7 @@ const overflowFix = await readFile(new URL('../library-layout-overflow-fix.js', 
 
 test('Biblioteca usa somente o padrão final único depois das coleções', () => {
   assert.match(html, /biblioteca-final-standard\.js\?v=20260815-layout-mestre-v2/);
-  assert.match(html, /library-layout-overflow-fix\.js\?v=20260813-fit-v1/);
+  assert.match(html, /library-layout-overflow-fix\.js\?v=20260817-fit-image-v2/);
   assert.ok(html.indexOf('library-layout-overflow-fix.js') > html.indexOf('biblioteca-final-standard.js'));
   assert.doesNotMatch(html, /biblioteca-standard\.js/);
   assert.doesNotMatch(html, /biblioteca-export-hardfix\.js/);
