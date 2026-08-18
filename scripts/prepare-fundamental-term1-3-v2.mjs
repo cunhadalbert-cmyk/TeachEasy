@@ -26,7 +26,7 @@ const validatorGeneric = [
 const clean = value => String(value ?? '').replace(/\s+/g,' ').trim();
 const generic = value => validatorGeneric.some(pattern => pattern.test(clean(value)));
 const stage = year => year <= 5 ? 'fundamental-anos-iniciais' : 'fundamental-anos-finais';
-let cleanedSupport=0, cleanedSkills=0, cleanedQuestions=0, cleanedAnswers=0, normalizedThemes=0;
+let cleanedSupport=0, cleanedSkills=0, cleanedQuestions=0, cleanedAnswers=0, normalizedThemes=0, normalizedTitles=0;
 
 for(let year=1;year<=9;year++) for(let term=1;term<=3;term++) for(const filename of subjects){
   const file=path.join(root,'data','atividades',stage(year),`${year}-ano`,`${term}-bimestre`,filename);
@@ -35,6 +35,11 @@ for(let year=1;year<=9;year++) for(let term=1;term<=3;term++) for(const filename
     if(clean(activity.tema).length < 5){
       activity.tema = clean(activity.titulo) || `${collection.disciplina} — ${term}º bimestre`;
       normalizedThemes++;
+    }
+    if(clean(activity.titulo).length < 5){
+      const theme = clean(activity.tema) || `${collection.disciplina} — ${term}º bimestre`;
+      activity.titulo = `${theme} — ${year}º ano`;
+      normalizedTitles++;
     }
     if(generic(activity.textoApoio?.conteudo)){
       activity.textoApoio = null;
@@ -66,4 +71,4 @@ for(let year=1;year<=9;year++) for(let term=1;term<=3;term++) for(const filename
   }
   fs.writeFileSync(file,`${JSON.stringify(collection,null,2)}\n`,'utf8');
 }
-console.log(`Pré-limpeza V2: apoio=${cleanedSupport}, habilidades=${cleanedSkills}, questões=${cleanedQuestions}, respostas=${cleanedAnswers}, temas=${normalizedThemes}.`);
+console.log(`Pré-limpeza V2: apoio=${cleanedSupport}, habilidades=${cleanedSkills}, questões=${cleanedQuestions}, respostas=${cleanedAnswers}, temas=${normalizedThemes}, títulos=${normalizedTitles}.`);
