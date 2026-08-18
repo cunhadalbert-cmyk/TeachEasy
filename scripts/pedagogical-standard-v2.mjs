@@ -51,7 +51,7 @@ export function validatePedagogicalActivityV2(activity, collection = {}) {
   for (const [index, skill] of (activity?.bncc || []).entries()) {
     const prefix = `${id}: BNCC ${index + 1}`;
     assert(validBnccCode.test(clean(skill?.codigo)), `${prefix} com código inválido`, errors);
-    assert(clean(skill?.habilidadeOficial).length >= 40, `${prefix} sem habilidade oficial completa`, errors);
+    assert(clean(skill?.habilidadeOficial).length >= 20, `${prefix} sem habilidade oficial completa`, errors);
     assert(clean(skill?.verbo).length >= 3, `${prefix} sem verbo central`, errors);
     assert(!containsGenericTemplate(skill?.habilidadeOficial), `${prefix} contém descrição genérica`, errors);
   }

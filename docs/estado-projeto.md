@@ -21,11 +21,12 @@ Atualizado em 18 de agosto de 2026.
 
 ## Conteúdo confirmado no repositório
 
-- Anos Iniciais: 3.080 atividades canônicas. Português do 4º bimestre possui 50 atividades V2 em cada ano do 1º ao 5º.
-- Anos Finais: 3.240 atividades canônicas. Português do 4º bimestre possui 50 atividades V2 em cada ano do 6º ao 9º.
+- Anos Iniciais: 3.180 atividades canônicas. Português e Matemática do 4º bimestre possuem 50 atividades V2 em cada ano do 1º ao 5º.
+- Anos Finais: 3.280 atividades canônicas. Português e Matemática do 4º bimestre possuem 50 atividades V2 em cada ano do 6º ao 9º.
 - Geografia do 4º ano/3º bimestre: 20 atividades V2, oito questões e oito respostas por atividade.
 - Ciências do 4º ano/4º bimestre: 20 atividades V2, oito questões e oito respostas por atividade.
 - Língua Portuguesa do 1º ao 9º ano/4º bimestre: 450 atividades V2, 3.600 questões e 3.600 respostas. O conteúdo passou pela validação automática; a revisão pedagógica humana e a produção das imagens definitivas permanecem identificadas nos JSONs.
+- Matemática do 1º ao 9º ano/4º bimestre: 450 atividades V2, 3.600 questões e 3.600 respostas organizadas por domínio matemático. A revisão pedagógica humana e a produção das imagens definitivas permanecem identificadas nos JSONs.
 
 ## Pendente editorial — não confundir com ausência de arquivo
 

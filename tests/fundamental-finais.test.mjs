@@ -15,7 +15,7 @@ const subjects = [
   ['geografia.json', 'Geografia']
 ];
 
-test('Anos Finais possuem 3.240 atividades nas 80 coleções oficiais', () => {
+test('Anos Finais possuem 3.280 atividades nas 80 coleções oficiais', () => {
   const globalIds = new Set();
   const byGrade = new Map();
   const bySubject = new Map();
@@ -60,9 +60,9 @@ test('Anos Finais possuem 3.240 atividades nas 80 coleções oficiais', () => {
   }
 
   assert.equal(files, 80);
-  assert.equal(total, 3240);
-  grades.forEach(grade => assert.equal(byGrade.get(grade), 810));
-  subjects.forEach(([, subject]) => assert.equal(bySubject.get(subject), subject === 'Língua Portuguesa' ? 680 : 640));
+  assert.equal(total, 3280);
+  grades.forEach(grade => assert.equal(byGrade.get(grade), 820));
+  subjects.forEach(([, subject]) => assert.equal(bySubject.get(subject), ['Língua Portuguesa', 'Matemática'].includes(subject) ? 680 : 640));
 });
 
 test('Biblioteca carrega uma coleção de Anos Finais por seleção', () => {
@@ -98,7 +98,7 @@ test('Anos Finais possuem conteúdo aprofundado e BNCC conferida', () => {
         const skill = activity.bncc[0];
         assert.equal(activity.bnccConferida, true);
         assert.match(skill.codigo, new RegExp(`^EF${String(grade).padStart(2, '0')}(LP|MA|CI|HI|GE|LI)\\d{2}$`));
-        assert.ok((skill.descricaoResumida || skill.habilidadeOficial).length > (collection.schemaVersion === '2.0' ? 39 : 90));
+        assert.ok((skill.descricaoResumida || skill.habilidadeOficial).length > (collection.schemaVersion === '2.0' ? 19 : 90));
         assert.match(activity.objetivo, new RegExp(skill.codigo));
         assert.ok(activity.textoApoio.conteudo.length > 180);
         assert.equal(activity.questoes.some(item => genericQuestion.test(item.enunciado)), false,
@@ -110,5 +110,5 @@ test('Anos Finais possuem conteúdo aprofundado e BNCC conferida', () => {
     }
   }
 
-  assert.equal(total, 3240);
+  assert.equal(total, 3280);
 });

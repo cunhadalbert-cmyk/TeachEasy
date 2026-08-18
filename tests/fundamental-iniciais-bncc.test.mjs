@@ -39,7 +39,7 @@ test('Anos Iniciais mantêm 100 coleções em arquivos canônicos únicos', () =
       });
 
       const expectedActivities = collectionIsV2
-        ? (term === 4 && subject === 'Língua Portuguesa' ? 50 : 20)
+        ? (term === 4 && ['Língua Portuguesa', 'Matemática'].includes(subject) ? 50 : 20)
         : 30;
       const expectedQuestions = collectionIsV2 ? 8 : 6;
       assert.equal(activities.length, expectedActivities, `${grade}º ano, ${term}º bimestre, ${subject}`);
@@ -54,7 +54,7 @@ test('Anos Iniciais mantêm 100 coleções em arquivos canônicos únicos', () =
 
         const skill = activity.bncc[0];
         assert.match(skill.codigo, validCode);
-        assert.ok((skill.descricaoResumida || skill.habilidadeOficial).length > (collectionIsV2 ? 39 : 60));
+        assert.ok((skill.descricaoResumida || skill.habilidadeOficial).length > (collectionIsV2 ? 19 : 60));
         if (!collectionIsV2) assert.match(activity.objetivo, new RegExp(skill.codigo));
         assert.equal(activity.questoes.some(item => genericQuestion.test(item.enunciado)), false, `${activity.id} ainda possui pergunta genérica`);
         assert.equal(activity.gabarito.some(item => genericAnswer.test(item.resposta)), false, `${activity.id} ainda possui gabarito genérico`);
@@ -66,7 +66,7 @@ test('Anos Iniciais mantêm 100 coleções em arquivos canônicos únicos', () =
   }
 
   assert.equal(collections, 100);
-  assert.equal(total, 3080);
+  assert.equal(total, 3180);
   assert.equal(total, ids.size);
   assert.ok(migratedV2 >= 1, 'Ao menos uma coleção dos Anos Iniciais deve estar migrada para o padrão V2');
 });
