@@ -79,7 +79,11 @@ function makeActivity({ year, term, subject, short, seq, source, isV2 }) {
   const title = `Aprofundamento ${String(seq).padStart(2, '0')}: ${theme}`;
   const questionCount = isV2 ? 8 : 6;
   const q = questionTexts(year, title, theme, questionCount).map((enunciado, index) => ({ numero: index + 1, tipo: ['observacao','evidencia','relacao','comparacao','explicacao','sintese','ampliacao','conclusao'][index], enunciado, alternativas: [], espacoResposta: index >= questionCount - 1 ? 'grande' : 'medio', figuraId: null }));
-  const g = answerTexts(year, theme, questionCount).map((resposta, index) => ({ numero: index + 1, resposta }));
+  const g = answerTexts(year, theme, questionCount).map((resposta, index) => ({
+    numero: index + 1,
+    resposta,
+    justificativa: `Critério de correção: a resposta deve atender ao comando da questão ${index + 1}, usar informações da atividade e manter coerência com o estudo de ${theme.toLowerCase()}.`
+  }));
   const id = `${year <= 5 ? 'efi' : 'efii'}-${year}ano-b${term}-${short}-50-${String(seq).padStart(2, '0')}-${slug(theme)}`;
   const activity = {
     id,
