@@ -1,3 +1,4 @@
+// Migração auditável dos contratos de teste do schema legado para o V2.
 import fs from 'node:fs';
 import path from 'node:path';
 
