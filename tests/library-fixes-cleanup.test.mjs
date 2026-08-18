@@ -63,7 +63,7 @@ test('biblioteca-fixes gera as 100 combinações sem tabela manual duplicada', (
 test('filtro de disciplina usa seletor CSS válido e HTML carrega a versão enxuta', () => {
   assert.match(source, /querySelector\('option\[value=""\]'\)/);
   assert.doesNotMatch(source, /querySelector\('option\[value="\]'\)/);
-  assert.match(html, /biblioteca-fixes\.js\?v=20260807-autismo-v3&cleanup=20260818-v2/);
+  assert.match(html, /biblioteca-fixes\.js\?v=20260807-autismo-v3&cleanup=20260818-v3/);
 });
 
 test('configuração usa somente o gerador canônico sem exceções redundantes', () => {
