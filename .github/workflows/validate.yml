@@ -13,7 +13,7 @@ on:
       - main
 
 permissions:
-  contents: write
+  contents: read
 
 concurrency:
   group: validate-${{ github.workflow }}-${{ github.ref }}
@@ -23,46 +23,11 @@ jobs:
   validate:
     name: HTML, JavaScript and functional tests
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 10
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-        with:
-          ref: ${{ github.head_ref || github.ref_name }}
-          fetch-depth: 0
-
-      - name: Set up Python for Ensino Médio V2
-        if: github.event_name == 'pull_request' && github.head_ref == 'refactor/ensino-medio-v2'
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.12'
-
-      - name: Upgrade Ensino Médio para V2
-        if: github.event_name == 'pull_request' && github.head_ref == 'refactor/ensino-medio-v2'
-        run: |
-          python -m pip install --disable-pip-version-check pypdf
-          mkdir -p .cache
-          curl -fL --retry 3 -A "Mozilla/5.0" \
-            "https://basenacionalcomum.mec.gov.br/images/BNCC_EI_EF_110518_versaofinal_site.pdf" \
-            -o .cache/bncc.pdf
-          BNCC_PDF=.cache/bncc.pdf python scripts/upgrade-ensino-medio-v2.py
-          python scripts/clean-ensino-medio-v2.py
-          python scripts/refine-ensino-medio-v2.py
-          python scripts/finalize-ensino-medio-v2.py
-          python scripts/audit-ensino-medio-v2.py
-          python scripts/clean-generated-report.py
-
-      - name: Publicar conversão e auditoria geradas
-        if: github.event_name == 'pull_request' && github.head_ref == 'refactor/ensino-medio-v2'
-        run: |
-          if [ -n "$(git status --porcelain data/atividades/ensino-medio docs/auditoria-ensino-medio-v2.md)" ]; then
-            git config user.name "github-actions[bot]"
-            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add data/atividades/ensino-medio docs/auditoria-ensino-medio-v2.md
-            git commit -m "Refina e audita Ensino Medio V2"
-            git push origin HEAD:refactor/ensino-medio-v2
-          fi
 
       - name: Set up Node.js
         uses: actions/setup-node@v4
