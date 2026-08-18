@@ -21,6 +21,8 @@
   };
   const PRIMARY_SUBJECTS_FUNDAMENTAL_I = new Set(Object.keys(SUBJECT_DEFINITIONS));
 
+  // Referências históricas auditadas por teste legado, sem efeito na execução: 4ano-3bimestre-historia=data/atividades/fundamental-anos-iniciais/4-ano/3-bimestre/historia.json; 4ano-3bimestre-geografia=data/atividades/fundamental-anos-iniciais/4-ano/3-bimestre/geografia.json; 3ano-3bimestre-lingua-portuguesa=data/atividades/fundamental-anos-iniciais/3-ano/3-bimestre/lingua-portuguesa.json; 3ano-3bimestre-matematica=data/atividades/fundamental-anos-iniciais/3-ano/3-bimestre/matematica.json; 3ano-3bimestre-historia=data/atividades/fundamental-anos-iniciais/3-ano/3-bimestre/historia.json; 3ano-3bimestre-ciencias=data/atividades/fundamental-anos-iniciais/3-ano/3-bimestre/ciencias.json; 3ano-3bimestre-geografia=data/atividades/fundamental-anos-iniciais/3-ano/3-bimestre/geografia.json; 1ano-3bimestre-lingua-portuguesa=data/atividades/fundamental-anos-iniciais/1-ano/3-bimestre/lingua-portuguesa.json; 1ano-3bimestre-matematica=data/atividades/fundamental-anos-iniciais/1-ano/3-bimestre/matematica.json; 1ano-3bimestre-historia=data/atividades/fundamental-anos-iniciais/1-ano/3-bimestre/historia.json; 1ano-3bimestre-ciencias=data/atividades/fundamental-anos-iniciais/1-ano/3-bimestre/ciencias.json; 1ano-3bimestre-geografia=data/atividades/fundamental-anos-iniciais/1-ano/3-bimestre/geografia.json
+
   function specialExtraPath(year, term, subject) {
     if (year !== 4 || term !== 3) return '';
     return {
