@@ -6,10 +6,6 @@
     'História': Object.freeze({ file: 'historia', symbol: '🏺', colors: ['#f1dfc8', '#ffe7cf'] }),
     'Geografia': Object.freeze({ file: 'geografia', symbol: '🗺️', colors: ['#d8efff', '#dff3dc'] })
   });
-  const countExceptions = Object.freeze({
-    '4ano-3bimestre-geografia': 20,
-  });
-
   function entry(year, term, subject) {
     const definition = subjects[subject];
     if (!definition || year < 1 || year > 9 || term < 1 || term > 4) return null;
@@ -21,7 +17,7 @@
       subject,
       path: `data/atividades/${initialYears ? 'fundamental-anos-iniciais' : 'fundamental-anos-finais'}/${year}-ano/${term}-bimestre/${definition.file}.json`,
       collection,
-      count: countExceptions[collection] || (term === 4 && ['Língua Portuguesa', 'Matemática', 'Ciências', 'História', 'Geografia'].includes(subject) ? 50 : (initialYears ? 30 : 40)),
+      count: 50,
       stage: initialYears ? 'Ensino Fundamental I' : 'Ensino Fundamental II',
       grade: `${year}º ano`,
       symbol: definition.symbol,

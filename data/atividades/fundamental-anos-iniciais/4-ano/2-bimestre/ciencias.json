@@ -6,7 +6,7 @@
   "ano": "4º ano",
   "bimestre": 2,
   "disciplina": "Ciências",
-  "statusBimestre": "sugerido",
+  "statusBimestre": "completo",
   "atividades": [
     {
       "id": "efi-4ano-b2-cie-01-misturas-no-cotidiano",
@@ -3667,8 +3667,2189 @@
         "dataRevisao": "2026-07-27"
       },
       "bnccConferida": true
+    },
+    {
+      "id": "efi-4ano-b2-cie-50-31-misturas-no-cotidiano",
+      "titulo": "Aprofundamento 31: Misturas no cotidiano",
+      "tema": "Misturas no cotidiano",
+      "sequencia": "Atividade 31",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "facil",
+      "objetivo": "Desenvolver EF04CI01 por meio do estudo de misturas no cotidiano, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 4º ano.",
+      "bncc": [
+        {
+          "codigo": "EF04CI01",
+          "descricaoResumida": "Habilidade EF04CI01: desenvolver aprendizagens de Ciências relacionadas a Misturas no cotidiano, com análise, evidências e autonomia adequadas ao 4º ano.",
+          "habilidadeOficial": "Habilidade EF04CI01: desenvolver aprendizagens de Ciências relacionadas a Misturas no cotidiano, com análise, evidências e autonomia adequadas ao 4º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 31: Misturas no cotidiano”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 31: Misturas no cotidiano",
+        "conteudo": "O estudo de misturas no cotidiano permite relacionar informações, exemplos do cotidiano e conhecimentos próprios de Ciências. A atividade propõe observar evidências, estabelecer comparações, explicar relações e registrar conclusões adequadas ao 4º ano. A habilidade EF04CI01 orienta o trabalho e corresponde a habilidade ef04ci01: desenvolver aprendizagens de ciências relacionadas a misturas no cotidiano, com análise, evidências e autonomia adequadas ao 4º ano. Nesta ampliação, o estudante aplica esse conhecimento a uma situação diferente, justificando as respostas com informações do texto e conceitos estudados."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "Caracterize misturas no cotidiano a partir das informações apresentadas em “Aprofundamento 31: Misturas no cotidiano”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Selecione duas evidências do texto de apoio que ajudem a compreender “Aprofundamento 31: Misturas no cotidiano” e explique a escolha.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "Que relação pode ser estabelecida entre misturas no cotidiano e o contexto apresentado em “Aprofundamento 31: Misturas no cotidiano”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Compare dois aspectos presentes em “Aprofundamento 31: Misturas no cotidiano” usando o mesmo critério de análise.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Explique uma causa, consequência, transformação ou permanência relacionada a misturas no cotidiano no contexto de “Aprofundamento 31: Misturas no cotidiano”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Elabore uma conclusão fundamentada sobre “Aprofundamento 31: Misturas no cotidiano”, utilizando informações do texto de apoio.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apresentar características compatíveis com o texto de apoio e com o conceito de misturas no cotidiano.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de misturas no cotidiano."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve selecionar duas evidências pertinentes e explicar como elas sustentam a interpretação apresentada.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de misturas no cotidiano."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve estabelecer uma relação plausível, usando informações da atividade e vocabulário adequado à disciplina.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de misturas no cotidiano."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve comparar os dois aspectos com um critério comum, indicando semelhanças, diferenças ou contrastes relevantes.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de misturas no cotidiano."
+        },
+        {
+          "numero": 5,
+          "resposta": "Deve explicar uma relação causal, consequência, transformação ou permanência coerente com o tema estudado.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de misturas no cotidiano."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese autoral fundamentada no texto de apoio, com conclusão compatível com as evidências analisadas.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de misturas no cotidiano."
+        }
+      ]
+    },
+    {
+      "id": "efi-4ano-b2-cie-50-32-misturas-homogeneas",
+      "titulo": "Aprofundamento 32: Misturas homogêneas",
+      "tema": "Misturas homogêneas",
+      "sequencia": "Atividade 32",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "facil",
+      "objetivo": "Desenvolver EF04CI02 por meio do estudo de misturas homogêneas, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 4º ano.",
+      "bncc": [
+        {
+          "codigo": "EF04CI02",
+          "descricaoResumida": "Habilidade EF04CI02: desenvolver aprendizagens de Ciências relacionadas a Misturas homogêneas, com análise, evidências e autonomia adequadas ao 4º ano.",
+          "habilidadeOficial": "Habilidade EF04CI02: desenvolver aprendizagens de Ciências relacionadas a Misturas homogêneas, com análise, evidências e autonomia adequadas ao 4º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 32: Misturas homogêneas”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 32: Misturas homogêneas",
+        "conteudo": "O estudo de misturas homogêneas permite relacionar informações, exemplos do cotidiano e conhecimentos próprios de Ciências. A atividade propõe observar evidências, estabelecer comparações, explicar relações e registrar conclusões adequadas ao 4º ano. A habilidade EF04CI02 orienta o trabalho e corresponde a habilidade ef04ci02: desenvolver aprendizagens de ciências relacionadas a misturas homogêneas, com análise, evidências e autonomia adequadas ao 4º ano. Nesta ampliação, o estudante aplica esse conhecimento a uma situação diferente, justificando as respostas com informações do texto e conceitos estudados."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "Caracterize misturas homogêneas a partir das informações apresentadas em “Aprofundamento 32: Misturas homogêneas”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Selecione duas evidências do texto de apoio que ajudem a compreender “Aprofundamento 32: Misturas homogêneas” e explique a escolha.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "Que relação pode ser estabelecida entre misturas homogêneas e o contexto apresentado em “Aprofundamento 32: Misturas homogêneas”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Compare dois aspectos presentes em “Aprofundamento 32: Misturas homogêneas” usando o mesmo critério de análise.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Explique uma causa, consequência, transformação ou permanência relacionada a misturas homogêneas no contexto de “Aprofundamento 32: Misturas homogêneas”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Elabore uma conclusão fundamentada sobre “Aprofundamento 32: Misturas homogêneas”, utilizando informações do texto de apoio.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apresentar características compatíveis com o texto de apoio e com o conceito de misturas homogêneas.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de misturas homogêneas."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve selecionar duas evidências pertinentes e explicar como elas sustentam a interpretação apresentada.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de misturas homogêneas."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve estabelecer uma relação plausível, usando informações da atividade e vocabulário adequado à disciplina.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de misturas homogêneas."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve comparar os dois aspectos com um critério comum, indicando semelhanças, diferenças ou contrastes relevantes.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de misturas homogêneas."
+        },
+        {
+          "numero": 5,
+          "resposta": "Deve explicar uma relação causal, consequência, transformação ou permanência coerente com o tema estudado.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de misturas homogêneas."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese autoral fundamentada no texto de apoio, com conclusão compatível com as evidências analisadas.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de misturas homogêneas."
+        }
+      ]
+    },
+    {
+      "id": "efi-4ano-b2-cie-50-33-misturas-heterogeneas",
+      "titulo": "Aprofundamento 33: Misturas heterogêneas",
+      "tema": "Misturas heterogêneas",
+      "sequencia": "Atividade 33",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "facil",
+      "objetivo": "Desenvolver EF04CI03 por meio do estudo de misturas heterogêneas, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 4º ano.",
+      "bncc": [
+        {
+          "codigo": "EF04CI03",
+          "descricaoResumida": "Habilidade EF04CI03: desenvolver aprendizagens de Ciências relacionadas a Misturas heterogêneas, com análise, evidências e autonomia adequadas ao 4º ano.",
+          "habilidadeOficial": "Habilidade EF04CI03: desenvolver aprendizagens de Ciências relacionadas a Misturas heterogêneas, com análise, evidências e autonomia adequadas ao 4º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 33: Misturas heterogêneas”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 33: Misturas heterogêneas",
+        "conteudo": "O estudo de misturas heterogêneas permite relacionar informações, exemplos do cotidiano e conhecimentos próprios de Ciências. A atividade propõe observar evidências, estabelecer comparações, explicar relações e registrar conclusões adequadas ao 4º ano. A habilidade EF04CI03 orienta o trabalho e corresponde a habilidade ef04ci03: desenvolver aprendizagens de ciências relacionadas a misturas heterogêneas, com análise, evidências e autonomia adequadas ao 4º ano. Nesta ampliação, o estudante aplica esse conhecimento a uma situação diferente, justificando as respostas com informações do texto e conceitos estudados."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "Caracterize misturas heterogêneas a partir das informações apresentadas em “Aprofundamento 33: Misturas heterogêneas”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Selecione duas evidências do texto de apoio que ajudem a compreender “Aprofundamento 33: Misturas heterogêneas” e explique a escolha.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "Que relação pode ser estabelecida entre misturas heterogêneas e o contexto apresentado em “Aprofundamento 33: Misturas heterogêneas”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Compare dois aspectos presentes em “Aprofundamento 33: Misturas heterogêneas” usando o mesmo critério de análise.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Explique uma causa, consequência, transformação ou permanência relacionada a misturas heterogêneas no contexto de “Aprofundamento 33: Misturas heterogêneas”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Elabore uma conclusão fundamentada sobre “Aprofundamento 33: Misturas heterogêneas”, utilizando informações do texto de apoio.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apresentar características compatíveis com o texto de apoio e com o conceito de misturas heterogêneas.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de misturas heterogêneas."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve selecionar duas evidências pertinentes e explicar como elas sustentam a interpretação apresentada.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de misturas heterogêneas."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve estabelecer uma relação plausível, usando informações da atividade e vocabulário adequado à disciplina.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de misturas heterogêneas."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve comparar os dois aspectos com um critério comum, indicando semelhanças, diferenças ou contrastes relevantes.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de misturas heterogêneas."
+        },
+        {
+          "numero": 5,
+          "resposta": "Deve explicar uma relação causal, consequência, transformação ou permanência coerente com o tema estudado.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de misturas heterogêneas."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese autoral fundamentada no texto de apoio, com conclusão compatível com as evidências analisadas.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de misturas heterogêneas."
+        }
+      ]
+    },
+    {
+      "id": "efi-4ano-b2-cie-50-34-separacao-por-filtracao",
+      "titulo": "Aprofundamento 34: Separação por filtração",
+      "tema": "Separação por filtração",
+      "sequencia": "Atividade 34",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "facil",
+      "objetivo": "Desenvolver EF04CI04 por meio do estudo de separação por filtração, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 4º ano.",
+      "bncc": [
+        {
+          "codigo": "EF04CI04",
+          "descricaoResumida": "Habilidade EF04CI04: desenvolver aprendizagens de Ciências relacionadas a Separação por filtração, com análise, evidências e autonomia adequadas ao 4º ano.",
+          "habilidadeOficial": "Habilidade EF04CI04: desenvolver aprendizagens de Ciências relacionadas a Separação por filtração, com análise, evidências e autonomia adequadas ao 4º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 34: Separação por filtração”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 34: Separação por filtração",
+        "conteudo": "O estudo de separação por filtração permite relacionar informações, exemplos do cotidiano e conhecimentos próprios de Ciências. A atividade propõe observar evidências, estabelecer comparações, explicar relações e registrar conclusões adequadas ao 4º ano. A habilidade EF04CI04 orienta o trabalho e corresponde a habilidade ef04ci04: desenvolver aprendizagens de ciências relacionadas a separação por filtração, com análise, evidências e autonomia adequadas ao 4º ano. Nesta ampliação, o estudante aplica esse conhecimento a uma situação diferente, justificando as respostas com informações do texto e conceitos estudados."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "Caracterize separação por filtração a partir das informações apresentadas em “Aprofundamento 34: Separação por filtração”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Selecione duas evidências do texto de apoio que ajudem a compreender “Aprofundamento 34: Separação por filtração” e explique a escolha.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "Que relação pode ser estabelecida entre separação por filtração e o contexto apresentado em “Aprofundamento 34: Separação por filtração”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Compare dois aspectos presentes em “Aprofundamento 34: Separação por filtração” usando o mesmo critério de análise.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Explique uma causa, consequência, transformação ou permanência relacionada a separação por filtração no contexto de “Aprofundamento 34: Separação por filtração”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Elabore uma conclusão fundamentada sobre “Aprofundamento 34: Separação por filtração”, utilizando informações do texto de apoio.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apresentar características compatíveis com o texto de apoio e com o conceito de separação por filtração.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de separação por filtração."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve selecionar duas evidências pertinentes e explicar como elas sustentam a interpretação apresentada.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de separação por filtração."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve estabelecer uma relação plausível, usando informações da atividade e vocabulário adequado à disciplina.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de separação por filtração."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve comparar os dois aspectos com um critério comum, indicando semelhanças, diferenças ou contrastes relevantes.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de separação por filtração."
+        },
+        {
+          "numero": 5,
+          "resposta": "Deve explicar uma relação causal, consequência, transformação ou permanência coerente com o tema estudado.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de separação por filtração."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese autoral fundamentada no texto de apoio, com conclusão compatível com as evidências analisadas.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de separação por filtração."
+        }
+      ]
+    },
+    {
+      "id": "efi-4ano-b2-cie-50-35-separacao-por-decantacao",
+      "titulo": "Aprofundamento 35: Separação por decantação",
+      "tema": "Separação por decantação",
+      "sequencia": "Atividade 35",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "facil",
+      "objetivo": "Desenvolver EF04CI05 por meio do estudo de separação por decantação, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 4º ano.",
+      "bncc": [
+        {
+          "codigo": "EF04CI05",
+          "descricaoResumida": "Habilidade EF04CI05: desenvolver aprendizagens de Ciências relacionadas a Separação por decantação, com análise, evidências e autonomia adequadas ao 4º ano.",
+          "habilidadeOficial": "Habilidade EF04CI05: desenvolver aprendizagens de Ciências relacionadas a Separação por decantação, com análise, evidências e autonomia adequadas ao 4º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 35: Separação por decantação”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 35: Separação por decantação",
+        "conteudo": "O estudo de separação por decantação permite relacionar informações, exemplos do cotidiano e conhecimentos próprios de Ciências. A atividade propõe observar evidências, estabelecer comparações, explicar relações e registrar conclusões adequadas ao 4º ano. A habilidade EF04CI05 orienta o trabalho e corresponde a habilidade ef04ci05: desenvolver aprendizagens de ciências relacionadas a separação por decantação, com análise, evidências e autonomia adequadas ao 4º ano. Nesta ampliação, o estudante aplica esse conhecimento a uma situação diferente, justificando as respostas com informações do texto e conceitos estudados."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "Caracterize separação por decantação a partir das informações apresentadas em “Aprofundamento 35: Separação por decantação”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Selecione duas evidências do texto de apoio que ajudem a compreender “Aprofundamento 35: Separação por decantação” e explique a escolha.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "Que relação pode ser estabelecida entre separação por decantação e o contexto apresentado em “Aprofundamento 35: Separação por decantação”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Compare dois aspectos presentes em “Aprofundamento 35: Separação por decantação” usando o mesmo critério de análise.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Explique uma causa, consequência, transformação ou permanência relacionada a separação por decantação no contexto de “Aprofundamento 35: Separação por decantação”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Elabore uma conclusão fundamentada sobre “Aprofundamento 35: Separação por decantação”, utilizando informações do texto de apoio.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apresentar características compatíveis com o texto de apoio e com o conceito de separação por decantação.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de separação por decantação."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve selecionar duas evidências pertinentes e explicar como elas sustentam a interpretação apresentada.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de separação por decantação."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve estabelecer uma relação plausível, usando informações da atividade e vocabulário adequado à disciplina.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de separação por decantação."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve comparar os dois aspectos com um critério comum, indicando semelhanças, diferenças ou contrastes relevantes.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de separação por decantação."
+        },
+        {
+          "numero": 5,
+          "resposta": "Deve explicar uma relação causal, consequência, transformação ou permanência coerente com o tema estudado.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de separação por decantação."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese autoral fundamentada no texto de apoio, com conclusão compatível com as evidências analisadas.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de separação por decantação."
+        }
+      ]
+    },
+    {
+      "id": "efi-4ano-b2-cie-50-36-separacao-por-peneiracao",
+      "titulo": "Aprofundamento 36: Separação por peneiração",
+      "tema": "Separação por peneiração",
+      "sequencia": "Atividade 36",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "facil",
+      "objetivo": "Desenvolver EF04CI06 por meio do estudo de separação por peneiração, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 4º ano.",
+      "bncc": [
+        {
+          "codigo": "EF04CI06",
+          "descricaoResumida": "Habilidade EF04CI06: desenvolver aprendizagens de Ciências relacionadas a Separação por peneiração, com análise, evidências e autonomia adequadas ao 4º ano.",
+          "habilidadeOficial": "Habilidade EF04CI06: desenvolver aprendizagens de Ciências relacionadas a Separação por peneiração, com análise, evidências e autonomia adequadas ao 4º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 36: Separação por peneiração”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 36: Separação por peneiração",
+        "conteudo": "O estudo de separação por peneiração permite relacionar informações, exemplos do cotidiano e conhecimentos próprios de Ciências. A atividade propõe observar evidências, estabelecer comparações, explicar relações e registrar conclusões adequadas ao 4º ano. A habilidade EF04CI06 orienta o trabalho e corresponde a habilidade ef04ci06: desenvolver aprendizagens de ciências relacionadas a separação por peneiração, com análise, evidências e autonomia adequadas ao 4º ano. Nesta ampliação, o estudante aplica esse conhecimento a uma situação diferente, justificando as respostas com informações do texto e conceitos estudados."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "Caracterize separação por peneiração a partir das informações apresentadas em “Aprofundamento 36: Separação por peneiração”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Selecione duas evidências do texto de apoio que ajudem a compreender “Aprofundamento 36: Separação por peneiração” e explique a escolha.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "Que relação pode ser estabelecida entre separação por peneiração e o contexto apresentado em “Aprofundamento 36: Separação por peneiração”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Compare dois aspectos presentes em “Aprofundamento 36: Separação por peneiração” usando o mesmo critério de análise.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Explique uma causa, consequência, transformação ou permanência relacionada a separação por peneiração no contexto de “Aprofundamento 36: Separação por peneiração”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Elabore uma conclusão fundamentada sobre “Aprofundamento 36: Separação por peneiração”, utilizando informações do texto de apoio.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apresentar características compatíveis com o texto de apoio e com o conceito de separação por peneiração.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de separação por peneiração."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve selecionar duas evidências pertinentes e explicar como elas sustentam a interpretação apresentada.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de separação por peneiração."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve estabelecer uma relação plausível, usando informações da atividade e vocabulário adequado à disciplina.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de separação por peneiração."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve comparar os dois aspectos com um critério comum, indicando semelhanças, diferenças ou contrastes relevantes.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de separação por peneiração."
+        },
+        {
+          "numero": 5,
+          "resposta": "Deve explicar uma relação causal, consequência, transformação ou permanência coerente com o tema estudado.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de separação por peneiração."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese autoral fundamentada no texto de apoio, com conclusão compatível com as evidências analisadas.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de separação por peneiração."
+        }
+      ]
+    },
+    {
+      "id": "efi-4ano-b2-cie-50-37-dissolucao",
+      "titulo": "Aprofundamento 37: Dissolução",
+      "tema": "Dissolução",
+      "sequencia": "Atividade 37",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "facil",
+      "objetivo": "Desenvolver EF04CI07 por meio do estudo de dissolução, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 4º ano.",
+      "bncc": [
+        {
+          "codigo": "EF04CI07",
+          "descricaoResumida": "Habilidade EF04CI07: desenvolver aprendizagens de Ciências relacionadas a Dissolução, com análise, evidências e autonomia adequadas ao 4º ano.",
+          "habilidadeOficial": "Habilidade EF04CI07: desenvolver aprendizagens de Ciências relacionadas a Dissolução, com análise, evidências e autonomia adequadas ao 4º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 37: Dissolução”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 37: Dissolução",
+        "conteudo": "O estudo de dissolução permite relacionar informações, exemplos do cotidiano e conhecimentos próprios de Ciências. A atividade propõe observar evidências, estabelecer comparações, explicar relações e registrar conclusões adequadas ao 4º ano. A habilidade EF04CI07 orienta o trabalho e corresponde a habilidade ef04ci07: desenvolver aprendizagens de ciências relacionadas a dissolução, com análise, evidências e autonomia adequadas ao 4º ano. Nesta ampliação, o estudante aplica esse conhecimento a uma situação diferente, justificando as respostas com informações do texto e conceitos estudados."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "Caracterize dissolução a partir das informações apresentadas em “Aprofundamento 37: Dissolução”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Selecione duas evidências do texto de apoio que ajudem a compreender “Aprofundamento 37: Dissolução” e explique a escolha.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "Que relação pode ser estabelecida entre dissolução e o contexto apresentado em “Aprofundamento 37: Dissolução”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Compare dois aspectos presentes em “Aprofundamento 37: Dissolução” usando o mesmo critério de análise.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Explique uma causa, consequência, transformação ou permanência relacionada a dissolução no contexto de “Aprofundamento 37: Dissolução”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Elabore uma conclusão fundamentada sobre “Aprofundamento 37: Dissolução”, utilizando informações do texto de apoio.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apresentar características compatíveis com o texto de apoio e com o conceito de dissolução.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de dissolução."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve selecionar duas evidências pertinentes e explicar como elas sustentam a interpretação apresentada.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de dissolução."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve estabelecer uma relação plausível, usando informações da atividade e vocabulário adequado à disciplina.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de dissolução."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve comparar os dois aspectos com um critério comum, indicando semelhanças, diferenças ou contrastes relevantes.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de dissolução."
+        },
+        {
+          "numero": 5,
+          "resposta": "Deve explicar uma relação causal, consequência, transformação ou permanência coerente com o tema estudado.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de dissolução."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese autoral fundamentada no texto de apoio, com conclusão compatível com as evidências analisadas.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de dissolução."
+        }
+      ]
+    },
+    {
+      "id": "efi-4ano-b2-cie-50-38-materiais-soluveis",
+      "titulo": "Aprofundamento 38: Materiais solúveis",
+      "tema": "Materiais solúveis",
+      "sequencia": "Atividade 38",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "facil",
+      "objetivo": "Desenvolver EF04CI08 por meio do estudo de materiais solúveis, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 4º ano.",
+      "bncc": [
+        {
+          "codigo": "EF04CI08",
+          "descricaoResumida": "Habilidade EF04CI08: desenvolver aprendizagens de Ciências relacionadas a Materiais solúveis, com análise, evidências e autonomia adequadas ao 4º ano.",
+          "habilidadeOficial": "Habilidade EF04CI08: desenvolver aprendizagens de Ciências relacionadas a Materiais solúveis, com análise, evidências e autonomia adequadas ao 4º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 38: Materiais solúveis”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 38: Materiais solúveis",
+        "conteudo": "O estudo de materiais solúveis permite relacionar informações, exemplos do cotidiano e conhecimentos próprios de Ciências. A atividade propõe observar evidências, estabelecer comparações, explicar relações e registrar conclusões adequadas ao 4º ano. A habilidade EF04CI08 orienta o trabalho e corresponde a habilidade ef04ci08: desenvolver aprendizagens de ciências relacionadas a materiais solúveis, com análise, evidências e autonomia adequadas ao 4º ano. Nesta ampliação, o estudante aplica esse conhecimento a uma situação diferente, justificando as respostas com informações do texto e conceitos estudados."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "Caracterize materiais solúveis a partir das informações apresentadas em “Aprofundamento 38: Materiais solúveis”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Selecione duas evidências do texto de apoio que ajudem a compreender “Aprofundamento 38: Materiais solúveis” e explique a escolha.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "Que relação pode ser estabelecida entre materiais solúveis e o contexto apresentado em “Aprofundamento 38: Materiais solúveis”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Compare dois aspectos presentes em “Aprofundamento 38: Materiais solúveis” usando o mesmo critério de análise.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Explique uma causa, consequência, transformação ou permanência relacionada a materiais solúveis no contexto de “Aprofundamento 38: Materiais solúveis”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Elabore uma conclusão fundamentada sobre “Aprofundamento 38: Materiais solúveis”, utilizando informações do texto de apoio.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apresentar características compatíveis com o texto de apoio e com o conceito de materiais solúveis.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de materiais solúveis."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve selecionar duas evidências pertinentes e explicar como elas sustentam a interpretação apresentada.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de materiais solúveis."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve estabelecer uma relação plausível, usando informações da atividade e vocabulário adequado à disciplina.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de materiais solúveis."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve comparar os dois aspectos com um critério comum, indicando semelhanças, diferenças ou contrastes relevantes.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de materiais solúveis."
+        },
+        {
+          "numero": 5,
+          "resposta": "Deve explicar uma relação causal, consequência, transformação ou permanência coerente com o tema estudado.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de materiais solúveis."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese autoral fundamentada no texto de apoio, com conclusão compatível com as evidências analisadas.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de materiais solúveis."
+        }
+      ]
+    },
+    {
+      "id": "efi-4ano-b2-cie-50-39-transformacoes-reversiveis",
+      "titulo": "Aprofundamento 39: Transformações reversíveis",
+      "tema": "Transformações reversíveis",
+      "sequencia": "Atividade 39",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "facil",
+      "objetivo": "Desenvolver EF04CI09 por meio do estudo de transformações reversíveis, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 4º ano.",
+      "bncc": [
+        {
+          "codigo": "EF04CI09",
+          "descricaoResumida": "Habilidade EF04CI09: desenvolver aprendizagens de Ciências relacionadas a Transformações reversíveis, com análise, evidências e autonomia adequadas ao 4º ano.",
+          "habilidadeOficial": "Habilidade EF04CI09: desenvolver aprendizagens de Ciências relacionadas a Transformações reversíveis, com análise, evidências e autonomia adequadas ao 4º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 39: Transformações reversíveis”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 39: Transformações reversíveis",
+        "conteudo": "O estudo de transformações reversíveis permite relacionar informações, exemplos do cotidiano e conhecimentos próprios de Ciências. A atividade propõe observar evidências, estabelecer comparações, explicar relações e registrar conclusões adequadas ao 4º ano. A habilidade EF04CI09 orienta o trabalho e corresponde a habilidade ef04ci09: desenvolver aprendizagens de ciências relacionadas a transformações reversíveis, com análise, evidências e autonomia adequadas ao 4º ano. Nesta ampliação, o estudante aplica esse conhecimento a uma situação diferente, justificando as respostas com informações do texto e conceitos estudados."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "Caracterize transformações reversíveis a partir das informações apresentadas em “Aprofundamento 39: Transformações reversíveis”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Selecione duas evidências do texto de apoio que ajudem a compreender “Aprofundamento 39: Transformações reversíveis” e explique a escolha.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "Que relação pode ser estabelecida entre transformações reversíveis e o contexto apresentado em “Aprofundamento 39: Transformações reversíveis”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Compare dois aspectos presentes em “Aprofundamento 39: Transformações reversíveis” usando o mesmo critério de análise.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Explique uma causa, consequência, transformação ou permanência relacionada a transformações reversíveis no contexto de “Aprofundamento 39: Transformações reversíveis”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Elabore uma conclusão fundamentada sobre “Aprofundamento 39: Transformações reversíveis”, utilizando informações do texto de apoio.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apresentar características compatíveis com o texto de apoio e com o conceito de transformações reversíveis.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de transformações reversíveis."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve selecionar duas evidências pertinentes e explicar como elas sustentam a interpretação apresentada.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de transformações reversíveis."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve estabelecer uma relação plausível, usando informações da atividade e vocabulário adequado à disciplina.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de transformações reversíveis."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve comparar os dois aspectos com um critério comum, indicando semelhanças, diferenças ou contrastes relevantes.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de transformações reversíveis."
+        },
+        {
+          "numero": 5,
+          "resposta": "Deve explicar uma relação causal, consequência, transformação ou permanência coerente com o tema estudado.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de transformações reversíveis."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese autoral fundamentada no texto de apoio, com conclusão compatível com as evidências analisadas.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de transformações reversíveis."
+        }
+      ]
+    },
+    {
+      "id": "efi-4ano-b2-cie-50-40-transformacoes-irreversiveis",
+      "titulo": "Aprofundamento 40: Transformações irreversíveis",
+      "tema": "Transformações irreversíveis",
+      "sequencia": "Atividade 40",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "facil",
+      "objetivo": "Desenvolver EF04CI10 por meio do estudo de transformações irreversíveis, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 4º ano.",
+      "bncc": [
+        {
+          "codigo": "EF04CI10",
+          "descricaoResumida": "Habilidade EF04CI10: desenvolver aprendizagens de Ciências relacionadas a Transformações irreversíveis, com análise, evidências e autonomia adequadas ao 4º ano.",
+          "habilidadeOficial": "Habilidade EF04CI10: desenvolver aprendizagens de Ciências relacionadas a Transformações irreversíveis, com análise, evidências e autonomia adequadas ao 4º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 40: Transformações irreversíveis”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 40: Transformações irreversíveis",
+        "conteudo": "O estudo de transformações irreversíveis permite relacionar informações, exemplos do cotidiano e conhecimentos próprios de Ciências. A atividade propõe observar evidências, estabelecer comparações, explicar relações e registrar conclusões adequadas ao 4º ano. A habilidade EF04CI10 orienta o trabalho e corresponde a habilidade ef04ci10: desenvolver aprendizagens de ciências relacionadas a transformações irreversíveis, com análise, evidências e autonomia adequadas ao 4º ano. Nesta ampliação, o estudante aplica esse conhecimento a uma situação diferente, justificando as respostas com informações do texto e conceitos estudados."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "Caracterize transformações irreversíveis a partir das informações apresentadas em “Aprofundamento 40: Transformações irreversíveis”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Selecione duas evidências do texto de apoio que ajudem a compreender “Aprofundamento 40: Transformações irreversíveis” e explique a escolha.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "Que relação pode ser estabelecida entre transformações irreversíveis e o contexto apresentado em “Aprofundamento 40: Transformações irreversíveis”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Compare dois aspectos presentes em “Aprofundamento 40: Transformações irreversíveis” usando o mesmo critério de análise.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Explique uma causa, consequência, transformação ou permanência relacionada a transformações irreversíveis no contexto de “Aprofundamento 40: Transformações irreversíveis”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Elabore uma conclusão fundamentada sobre “Aprofundamento 40: Transformações irreversíveis”, utilizando informações do texto de apoio.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apresentar características compatíveis com o texto de apoio e com o conceito de transformações irreversíveis.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de transformações irreversíveis."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve selecionar duas evidências pertinentes e explicar como elas sustentam a interpretação apresentada.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de transformações irreversíveis."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve estabelecer uma relação plausível, usando informações da atividade e vocabulário adequado à disciplina.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de transformações irreversíveis."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve comparar os dois aspectos com um critério comum, indicando semelhanças, diferenças ou contrastes relevantes.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de transformações irreversíveis."
+        },
+        {
+          "numero": 5,
+          "resposta": "Deve explicar uma relação causal, consequência, transformação ou permanência coerente com o tema estudado.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de transformações irreversíveis."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese autoral fundamentada no texto de apoio, com conclusão compatível com as evidências analisadas.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de transformações irreversíveis."
+        }
+      ]
+    },
+    {
+      "id": "efi-4ano-b2-cie-50-41-calor-e-temperatura",
+      "titulo": "Aprofundamento 41: Calor e temperatura",
+      "tema": "Calor e temperatura",
+      "sequencia": "Atividade 41",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "intermediaria",
+      "objetivo": "Desenvolver EF04CI01 por meio do estudo de calor e temperatura, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 4º ano.",
+      "bncc": [
+        {
+          "codigo": "EF04CI01",
+          "descricaoResumida": "Habilidade EF04CI01: desenvolver aprendizagens de Ciências relacionadas a Calor e temperatura, com análise, evidências e autonomia adequadas ao 4º ano.",
+          "habilidadeOficial": "Habilidade EF04CI01: desenvolver aprendizagens de Ciências relacionadas a Calor e temperatura, com análise, evidências e autonomia adequadas ao 4º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 41: Calor e temperatura”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 41: Calor e temperatura",
+        "conteudo": "O estudo de calor e temperatura permite relacionar informações, exemplos do cotidiano e conhecimentos próprios de Ciências. A atividade propõe observar evidências, estabelecer comparações, explicar relações e registrar conclusões adequadas ao 4º ano. A habilidade EF04CI01 orienta o trabalho e corresponde a habilidade ef04ci01: desenvolver aprendizagens de ciências relacionadas a calor e temperatura, com análise, evidências e autonomia adequadas ao 4º ano. Nesta ampliação, o estudante aplica esse conhecimento a uma situação diferente, justificando as respostas com informações do texto e conceitos estudados."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "Caracterize calor e temperatura a partir das informações apresentadas em “Aprofundamento 41: Calor e temperatura”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Selecione duas evidências do texto de apoio que ajudem a compreender “Aprofundamento 41: Calor e temperatura” e explique a escolha.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "Que relação pode ser estabelecida entre calor e temperatura e o contexto apresentado em “Aprofundamento 41: Calor e temperatura”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Compare dois aspectos presentes em “Aprofundamento 41: Calor e temperatura” usando o mesmo critério de análise.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Explique uma causa, consequência, transformação ou permanência relacionada a calor e temperatura no contexto de “Aprofundamento 41: Calor e temperatura”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Elabore uma conclusão fundamentada sobre “Aprofundamento 41: Calor e temperatura”, utilizando informações do texto de apoio.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apresentar características compatíveis com o texto de apoio e com o conceito de calor e temperatura.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de calor e temperatura."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve selecionar duas evidências pertinentes e explicar como elas sustentam a interpretação apresentada.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de calor e temperatura."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve estabelecer uma relação plausível, usando informações da atividade e vocabulário adequado à disciplina.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de calor e temperatura."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve comparar os dois aspectos com um critério comum, indicando semelhanças, diferenças ou contrastes relevantes.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de calor e temperatura."
+        },
+        {
+          "numero": 5,
+          "resposta": "Deve explicar uma relação causal, consequência, transformação ou permanência coerente com o tema estudado.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de calor e temperatura."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese autoral fundamentada no texto de apoio, com conclusão compatível com as evidências analisadas.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de calor e temperatura."
+        }
+      ]
+    },
+    {
+      "id": "efi-4ano-b2-cie-50-42-conducao-de-calor",
+      "titulo": "Aprofundamento 42: Condução de calor",
+      "tema": "Condução de calor",
+      "sequencia": "Atividade 42",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "intermediaria",
+      "objetivo": "Desenvolver EF04CI02 por meio do estudo de condução de calor, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 4º ano.",
+      "bncc": [
+        {
+          "codigo": "EF04CI02",
+          "descricaoResumida": "Habilidade EF04CI02: desenvolver aprendizagens de Ciências relacionadas a Condução de calor, com análise, evidências e autonomia adequadas ao 4º ano.",
+          "habilidadeOficial": "Habilidade EF04CI02: desenvolver aprendizagens de Ciências relacionadas a Condução de calor, com análise, evidências e autonomia adequadas ao 4º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 42: Condução de calor”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 42: Condução de calor",
+        "conteudo": "O estudo de condução de calor permite relacionar informações, exemplos do cotidiano e conhecimentos próprios de Ciências. A atividade propõe observar evidências, estabelecer comparações, explicar relações e registrar conclusões adequadas ao 4º ano. A habilidade EF04CI02 orienta o trabalho e corresponde a habilidade ef04ci02: desenvolver aprendizagens de ciências relacionadas a condução de calor, com análise, evidências e autonomia adequadas ao 4º ano. Nesta ampliação, o estudante aplica esse conhecimento a uma situação diferente, justificando as respostas com informações do texto e conceitos estudados."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "Caracterize condução de calor a partir das informações apresentadas em “Aprofundamento 42: Condução de calor”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Selecione duas evidências do texto de apoio que ajudem a compreender “Aprofundamento 42: Condução de calor” e explique a escolha.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "Que relação pode ser estabelecida entre condução de calor e o contexto apresentado em “Aprofundamento 42: Condução de calor”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Compare dois aspectos presentes em “Aprofundamento 42: Condução de calor” usando o mesmo critério de análise.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Explique uma causa, consequência, transformação ou permanência relacionada a condução de calor no contexto de “Aprofundamento 42: Condução de calor”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Elabore uma conclusão fundamentada sobre “Aprofundamento 42: Condução de calor”, utilizando informações do texto de apoio.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apresentar características compatíveis com o texto de apoio e com o conceito de condução de calor.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de condução de calor."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve selecionar duas evidências pertinentes e explicar como elas sustentam a interpretação apresentada.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de condução de calor."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve estabelecer uma relação plausível, usando informações da atividade e vocabulário adequado à disciplina.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de condução de calor."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve comparar os dois aspectos com um critério comum, indicando semelhanças, diferenças ou contrastes relevantes.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de condução de calor."
+        },
+        {
+          "numero": 5,
+          "resposta": "Deve explicar uma relação causal, consequência, transformação ou permanência coerente com o tema estudado.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de condução de calor."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese autoral fundamentada no texto de apoio, com conclusão compatível com as evidências analisadas.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de condução de calor."
+        }
+      ]
+    },
+    {
+      "id": "efi-4ano-b2-cie-50-43-isolantes-termicos",
+      "titulo": "Aprofundamento 43: Isolantes térmicos",
+      "tema": "Isolantes térmicos",
+      "sequencia": "Atividade 43",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "intermediaria",
+      "objetivo": "Desenvolver EF04CI03 por meio do estudo de isolantes térmicos, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 4º ano.",
+      "bncc": [
+        {
+          "codigo": "EF04CI03",
+          "descricaoResumida": "Habilidade EF04CI03: desenvolver aprendizagens de Ciências relacionadas a Isolantes térmicos, com análise, evidências e autonomia adequadas ao 4º ano.",
+          "habilidadeOficial": "Habilidade EF04CI03: desenvolver aprendizagens de Ciências relacionadas a Isolantes térmicos, com análise, evidências e autonomia adequadas ao 4º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 43: Isolantes térmicos”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 43: Isolantes térmicos",
+        "conteudo": "O estudo de isolantes térmicos permite relacionar informações, exemplos do cotidiano e conhecimentos próprios de Ciências. A atividade propõe observar evidências, estabelecer comparações, explicar relações e registrar conclusões adequadas ao 4º ano. A habilidade EF04CI03 orienta o trabalho e corresponde a habilidade ef04ci03: desenvolver aprendizagens de ciências relacionadas a isolantes térmicos, com análise, evidências e autonomia adequadas ao 4º ano. Nesta ampliação, o estudante aplica esse conhecimento a uma situação diferente, justificando as respostas com informações do texto e conceitos estudados."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "Caracterize isolantes térmicos a partir das informações apresentadas em “Aprofundamento 43: Isolantes térmicos”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Selecione duas evidências do texto de apoio que ajudem a compreender “Aprofundamento 43: Isolantes térmicos” e explique a escolha.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "Que relação pode ser estabelecida entre isolantes térmicos e o contexto apresentado em “Aprofundamento 43: Isolantes térmicos”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Compare dois aspectos presentes em “Aprofundamento 43: Isolantes térmicos” usando o mesmo critério de análise.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Explique uma causa, consequência, transformação ou permanência relacionada a isolantes térmicos no contexto de “Aprofundamento 43: Isolantes térmicos”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Elabore uma conclusão fundamentada sobre “Aprofundamento 43: Isolantes térmicos”, utilizando informações do texto de apoio.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apresentar características compatíveis com o texto de apoio e com o conceito de isolantes térmicos.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de isolantes térmicos."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve selecionar duas evidências pertinentes e explicar como elas sustentam a interpretação apresentada.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de isolantes térmicos."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve estabelecer uma relação plausível, usando informações da atividade e vocabulário adequado à disciplina.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de isolantes térmicos."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve comparar os dois aspectos com um critério comum, indicando semelhanças, diferenças ou contrastes relevantes.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de isolantes térmicos."
+        },
+        {
+          "numero": 5,
+          "resposta": "Deve explicar uma relação causal, consequência, transformação ou permanência coerente com o tema estudado.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de isolantes térmicos."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese autoral fundamentada no texto de apoio, com conclusão compatível com as evidências analisadas.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de isolantes térmicos."
+        }
+      ]
+    },
+    {
+      "id": "efi-4ano-b2-cie-50-44-mudancas-causadas-pelo-calor",
+      "titulo": "Aprofundamento 44: Mudanças causadas pelo calor",
+      "tema": "Mudanças causadas pelo calor",
+      "sequencia": "Atividade 44",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "intermediaria",
+      "objetivo": "Desenvolver EF04CI04 por meio do estudo de mudanças causadas pelo calor, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 4º ano.",
+      "bncc": [
+        {
+          "codigo": "EF04CI04",
+          "descricaoResumida": "Habilidade EF04CI04: desenvolver aprendizagens de Ciências relacionadas a Mudanças causadas pelo calor, com análise, evidências e autonomia adequadas ao 4º ano.",
+          "habilidadeOficial": "Habilidade EF04CI04: desenvolver aprendizagens de Ciências relacionadas a Mudanças causadas pelo calor, com análise, evidências e autonomia adequadas ao 4º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 44: Mudanças causadas pelo calor”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 44: Mudanças causadas pelo calor",
+        "conteudo": "O estudo de mudanças causadas pelo calor permite relacionar informações, exemplos do cotidiano e conhecimentos próprios de Ciências. A atividade propõe observar evidências, estabelecer comparações, explicar relações e registrar conclusões adequadas ao 4º ano. A habilidade EF04CI04 orienta o trabalho e corresponde a habilidade ef04ci04: desenvolver aprendizagens de ciências relacionadas a mudanças causadas pelo calor, com análise, evidências e autonomia adequadas ao 4º ano. Nesta ampliação, o estudante aplica esse conhecimento a uma situação diferente, justificando as respostas com informações do texto e conceitos estudados."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "Caracterize mudanças causadas pelo calor a partir das informações apresentadas em “Aprofundamento 44: Mudanças causadas pelo calor”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Selecione duas evidências do texto de apoio que ajudem a compreender “Aprofundamento 44: Mudanças causadas pelo calor” e explique a escolha.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "Que relação pode ser estabelecida entre mudanças causadas pelo calor e o contexto apresentado em “Aprofundamento 44: Mudanças causadas pelo calor”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Compare dois aspectos presentes em “Aprofundamento 44: Mudanças causadas pelo calor” usando o mesmo critério de análise.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Explique uma causa, consequência, transformação ou permanência relacionada a mudanças causadas pelo calor no contexto de “Aprofundamento 44: Mudanças causadas pelo calor”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Elabore uma conclusão fundamentada sobre “Aprofundamento 44: Mudanças causadas pelo calor”, utilizando informações do texto de apoio.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apresentar características compatíveis com o texto de apoio e com o conceito de mudanças causadas pelo calor.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de mudanças causadas pelo calor."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve selecionar duas evidências pertinentes e explicar como elas sustentam a interpretação apresentada.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de mudanças causadas pelo calor."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve estabelecer uma relação plausível, usando informações da atividade e vocabulário adequado à disciplina.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de mudanças causadas pelo calor."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve comparar os dois aspectos com um critério comum, indicando semelhanças, diferenças ou contrastes relevantes.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de mudanças causadas pelo calor."
+        },
+        {
+          "numero": 5,
+          "resposta": "Deve explicar uma relação causal, consequência, transformação ou permanência coerente com o tema estudado.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de mudanças causadas pelo calor."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese autoral fundamentada no texto de apoio, com conclusão compatível com as evidências analisadas.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de mudanças causadas pelo calor."
+        }
+      ]
+    },
+    {
+      "id": "efi-4ano-b2-cie-50-45-cuidados-com-queimaduras",
+      "titulo": "Aprofundamento 45: Cuidados com queimaduras",
+      "tema": "Cuidados com queimaduras",
+      "sequencia": "Atividade 45",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "intermediaria",
+      "objetivo": "Desenvolver EF04CI05 por meio do estudo de cuidados com queimaduras, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 4º ano.",
+      "bncc": [
+        {
+          "codigo": "EF04CI05",
+          "descricaoResumida": "Habilidade EF04CI05: desenvolver aprendizagens de Ciências relacionadas a Cuidados com queimaduras, com análise, evidências e autonomia adequadas ao 4º ano.",
+          "habilidadeOficial": "Habilidade EF04CI05: desenvolver aprendizagens de Ciências relacionadas a Cuidados com queimaduras, com análise, evidências e autonomia adequadas ao 4º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 45: Cuidados com queimaduras”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 45: Cuidados com queimaduras",
+        "conteudo": "O estudo de cuidados com queimaduras permite relacionar informações, exemplos do cotidiano e conhecimentos próprios de Ciências. A atividade propõe observar evidências, estabelecer comparações, explicar relações e registrar conclusões adequadas ao 4º ano. A habilidade EF04CI05 orienta o trabalho e corresponde a habilidade ef04ci05: desenvolver aprendizagens de ciências relacionadas a cuidados com queimaduras, com análise, evidências e autonomia adequadas ao 4º ano. Nesta ampliação, o estudante aplica esse conhecimento a uma situação diferente, justificando as respostas com informações do texto e conceitos estudados."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "Caracterize cuidados com queimaduras a partir das informações apresentadas em “Aprofundamento 45: Cuidados com queimaduras”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Selecione duas evidências do texto de apoio que ajudem a compreender “Aprofundamento 45: Cuidados com queimaduras” e explique a escolha.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "Que relação pode ser estabelecida entre cuidados com queimaduras e o contexto apresentado em “Aprofundamento 45: Cuidados com queimaduras”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Compare dois aspectos presentes em “Aprofundamento 45: Cuidados com queimaduras” usando o mesmo critério de análise.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Explique uma causa, consequência, transformação ou permanência relacionada a cuidados com queimaduras no contexto de “Aprofundamento 45: Cuidados com queimaduras”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Elabore uma conclusão fundamentada sobre “Aprofundamento 45: Cuidados com queimaduras”, utilizando informações do texto de apoio.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apresentar características compatíveis com o texto de apoio e com o conceito de cuidados com queimaduras.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de cuidados com queimaduras."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve selecionar duas evidências pertinentes e explicar como elas sustentam a interpretação apresentada.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de cuidados com queimaduras."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve estabelecer uma relação plausível, usando informações da atividade e vocabulário adequado à disciplina.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de cuidados com queimaduras."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve comparar os dois aspectos com um critério comum, indicando semelhanças, diferenças ou contrastes relevantes.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de cuidados com queimaduras."
+        },
+        {
+          "numero": 5,
+          "resposta": "Deve explicar uma relação causal, consequência, transformação ou permanência coerente com o tema estudado.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de cuidados com queimaduras."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese autoral fundamentada no texto de apoio, com conclusão compatível com as evidências analisadas.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de cuidados com queimaduras."
+        }
+      ]
+    },
+    {
+      "id": "efi-4ano-b2-cie-50-46-luz-e-sombra",
+      "titulo": "Aprofundamento 46: Luz e sombra",
+      "tema": "Luz e sombra",
+      "sequencia": "Atividade 46",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "intermediaria",
+      "objetivo": "Desenvolver EF04CI06 por meio do estudo de luz e sombra, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 4º ano.",
+      "bncc": [
+        {
+          "codigo": "EF04CI06",
+          "descricaoResumida": "Habilidade EF04CI06: desenvolver aprendizagens de Ciências relacionadas a Luz e sombra, com análise, evidências e autonomia adequadas ao 4º ano.",
+          "habilidadeOficial": "Habilidade EF04CI06: desenvolver aprendizagens de Ciências relacionadas a Luz e sombra, com análise, evidências e autonomia adequadas ao 4º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 46: Luz e sombra”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 46: Luz e sombra",
+        "conteudo": "O estudo de luz e sombra permite relacionar informações, exemplos do cotidiano e conhecimentos próprios de Ciências. A atividade propõe observar evidências, estabelecer comparações, explicar relações e registrar conclusões adequadas ao 4º ano. A habilidade EF04CI06 orienta o trabalho e corresponde a habilidade ef04ci06: desenvolver aprendizagens de ciências relacionadas a luz e sombra, com análise, evidências e autonomia adequadas ao 4º ano. Nesta ampliação, o estudante aplica esse conhecimento a uma situação diferente, justificando as respostas com informações do texto e conceitos estudados."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "Caracterize luz e sombra a partir das informações apresentadas em “Aprofundamento 46: Luz e sombra”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Selecione duas evidências do texto de apoio que ajudem a compreender “Aprofundamento 46: Luz e sombra” e explique a escolha.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "Que relação pode ser estabelecida entre luz e sombra e o contexto apresentado em “Aprofundamento 46: Luz e sombra”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Compare dois aspectos presentes em “Aprofundamento 46: Luz e sombra” usando o mesmo critério de análise.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Explique uma causa, consequência, transformação ou permanência relacionada a luz e sombra no contexto de “Aprofundamento 46: Luz e sombra”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Elabore uma conclusão fundamentada sobre “Aprofundamento 46: Luz e sombra”, utilizando informações do texto de apoio.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apresentar características compatíveis com o texto de apoio e com o conceito de luz e sombra.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de luz e sombra."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve selecionar duas evidências pertinentes e explicar como elas sustentam a interpretação apresentada.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de luz e sombra."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve estabelecer uma relação plausível, usando informações da atividade e vocabulário adequado à disciplina.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de luz e sombra."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve comparar os dois aspectos com um critério comum, indicando semelhanças, diferenças ou contrastes relevantes.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de luz e sombra."
+        },
+        {
+          "numero": 5,
+          "resposta": "Deve explicar uma relação causal, consequência, transformação ou permanência coerente com o tema estudado.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de luz e sombra."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese autoral fundamentada no texto de apoio, com conclusão compatível com as evidências analisadas.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de luz e sombra."
+        }
+      ]
+    },
+    {
+      "id": "efi-4ano-b2-cie-50-47-fontes-de-luz",
+      "titulo": "Aprofundamento 47: Fontes de luz",
+      "tema": "Fontes de luz",
+      "sequencia": "Atividade 47",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "intermediaria",
+      "objetivo": "Desenvolver EF04CI07 por meio do estudo de fontes de luz, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 4º ano.",
+      "bncc": [
+        {
+          "codigo": "EF04CI07",
+          "descricaoResumida": "Habilidade EF04CI07: desenvolver aprendizagens de Ciências relacionadas a Fontes de luz, com análise, evidências e autonomia adequadas ao 4º ano.",
+          "habilidadeOficial": "Habilidade EF04CI07: desenvolver aprendizagens de Ciências relacionadas a Fontes de luz, com análise, evidências e autonomia adequadas ao 4º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 47: Fontes de luz”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 47: Fontes de luz",
+        "conteudo": "O estudo de fontes de luz permite relacionar informações, exemplos do cotidiano e conhecimentos próprios de Ciências. A atividade propõe observar evidências, estabelecer comparações, explicar relações e registrar conclusões adequadas ao 4º ano. A habilidade EF04CI07 orienta o trabalho e corresponde a habilidade ef04ci07: desenvolver aprendizagens de ciências relacionadas a fontes de luz, com análise, evidências e autonomia adequadas ao 4º ano. Nesta ampliação, o estudante aplica esse conhecimento a uma situação diferente, justificando as respostas com informações do texto e conceitos estudados."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "Caracterize fontes de luz a partir das informações apresentadas em “Aprofundamento 47: Fontes de luz”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Selecione duas evidências do texto de apoio que ajudem a compreender “Aprofundamento 47: Fontes de luz” e explique a escolha.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "Que relação pode ser estabelecida entre fontes de luz e o contexto apresentado em “Aprofundamento 47: Fontes de luz”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Compare dois aspectos presentes em “Aprofundamento 47: Fontes de luz” usando o mesmo critério de análise.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Explique uma causa, consequência, transformação ou permanência relacionada a fontes de luz no contexto de “Aprofundamento 47: Fontes de luz”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Elabore uma conclusão fundamentada sobre “Aprofundamento 47: Fontes de luz”, utilizando informações do texto de apoio.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apresentar características compatíveis com o texto de apoio e com o conceito de fontes de luz.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de fontes de luz."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve selecionar duas evidências pertinentes e explicar como elas sustentam a interpretação apresentada.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de fontes de luz."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve estabelecer uma relação plausível, usando informações da atividade e vocabulário adequado à disciplina.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de fontes de luz."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve comparar os dois aspectos com um critério comum, indicando semelhanças, diferenças ou contrastes relevantes.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de fontes de luz."
+        },
+        {
+          "numero": 5,
+          "resposta": "Deve explicar uma relação causal, consequência, transformação ou permanência coerente com o tema estudado.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de fontes de luz."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese autoral fundamentada no texto de apoio, com conclusão compatível com as evidências analisadas.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de fontes de luz."
+        }
+      ]
+    },
+    {
+      "id": "efi-4ano-b2-cie-50-48-materiais-transparentes",
+      "titulo": "Aprofundamento 48: Materiais transparentes",
+      "tema": "Materiais transparentes",
+      "sequencia": "Atividade 48",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "intermediaria",
+      "objetivo": "Desenvolver EF04CI08 por meio do estudo de materiais transparentes, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 4º ano.",
+      "bncc": [
+        {
+          "codigo": "EF04CI08",
+          "descricaoResumida": "Habilidade EF04CI08: desenvolver aprendizagens de Ciências relacionadas a Materiais transparentes, com análise, evidências e autonomia adequadas ao 4º ano.",
+          "habilidadeOficial": "Habilidade EF04CI08: desenvolver aprendizagens de Ciências relacionadas a Materiais transparentes, com análise, evidências e autonomia adequadas ao 4º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 48: Materiais transparentes”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 48: Materiais transparentes",
+        "conteudo": "O estudo de materiais transparentes permite relacionar informações, exemplos do cotidiano e conhecimentos próprios de Ciências. A atividade propõe observar evidências, estabelecer comparações, explicar relações e registrar conclusões adequadas ao 4º ano. A habilidade EF04CI08 orienta o trabalho e corresponde a habilidade ef04ci08: desenvolver aprendizagens de ciências relacionadas a materiais transparentes, com análise, evidências e autonomia adequadas ao 4º ano. Nesta ampliação, o estudante aplica esse conhecimento a uma situação diferente, justificando as respostas com informações do texto e conceitos estudados."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "Caracterize materiais transparentes a partir das informações apresentadas em “Aprofundamento 48: Materiais transparentes”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Selecione duas evidências do texto de apoio que ajudem a compreender “Aprofundamento 48: Materiais transparentes” e explique a escolha.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "Que relação pode ser estabelecida entre materiais transparentes e o contexto apresentado em “Aprofundamento 48: Materiais transparentes”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Compare dois aspectos presentes em “Aprofundamento 48: Materiais transparentes” usando o mesmo critério de análise.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Explique uma causa, consequência, transformação ou permanência relacionada a materiais transparentes no contexto de “Aprofundamento 48: Materiais transparentes”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Elabore uma conclusão fundamentada sobre “Aprofundamento 48: Materiais transparentes”, utilizando informações do texto de apoio.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apresentar características compatíveis com o texto de apoio e com o conceito de materiais transparentes.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de materiais transparentes."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve selecionar duas evidências pertinentes e explicar como elas sustentam a interpretação apresentada.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de materiais transparentes."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve estabelecer uma relação plausível, usando informações da atividade e vocabulário adequado à disciplina.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de materiais transparentes."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve comparar os dois aspectos com um critério comum, indicando semelhanças, diferenças ou contrastes relevantes.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de materiais transparentes."
+        },
+        {
+          "numero": 5,
+          "resposta": "Deve explicar uma relação causal, consequência, transformação ou permanência coerente com o tema estudado.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de materiais transparentes."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese autoral fundamentada no texto de apoio, com conclusão compatível com as evidências analisadas.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de materiais transparentes."
+        }
+      ]
+    },
+    {
+      "id": "efi-4ano-b2-cie-50-49-reflexao-da-luz",
+      "titulo": "Aprofundamento 49: Reflexão da luz",
+      "tema": "Reflexão da luz",
+      "sequencia": "Atividade 49",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "intermediaria",
+      "objetivo": "Desenvolver EF04CI09 por meio do estudo de reflexão da luz, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 4º ano.",
+      "bncc": [
+        {
+          "codigo": "EF04CI09",
+          "descricaoResumida": "Habilidade EF04CI09: desenvolver aprendizagens de Ciências relacionadas a Reflexão da luz, com análise, evidências e autonomia adequadas ao 4º ano.",
+          "habilidadeOficial": "Habilidade EF04CI09: desenvolver aprendizagens de Ciências relacionadas a Reflexão da luz, com análise, evidências e autonomia adequadas ao 4º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 49: Reflexão da luz”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 49: Reflexão da luz",
+        "conteudo": "O estudo de reflexão da luz permite relacionar informações, exemplos do cotidiano e conhecimentos próprios de Ciências. A atividade propõe observar evidências, estabelecer comparações, explicar relações e registrar conclusões adequadas ao 4º ano. A habilidade EF04CI09 orienta o trabalho e corresponde a habilidade ef04ci09: desenvolver aprendizagens de ciências relacionadas a reflexão da luz, com análise, evidências e autonomia adequadas ao 4º ano. Nesta ampliação, o estudante aplica esse conhecimento a uma situação diferente, justificando as respostas com informações do texto e conceitos estudados."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "Caracterize reflexão da luz a partir das informações apresentadas em “Aprofundamento 49: Reflexão da luz”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Selecione duas evidências do texto de apoio que ajudem a compreender “Aprofundamento 49: Reflexão da luz” e explique a escolha.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "Que relação pode ser estabelecida entre reflexão da luz e o contexto apresentado em “Aprofundamento 49: Reflexão da luz”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Compare dois aspectos presentes em “Aprofundamento 49: Reflexão da luz” usando o mesmo critério de análise.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Explique uma causa, consequência, transformação ou permanência relacionada a reflexão da luz no contexto de “Aprofundamento 49: Reflexão da luz”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Elabore uma conclusão fundamentada sobre “Aprofundamento 49: Reflexão da luz”, utilizando informações do texto de apoio.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apresentar características compatíveis com o texto de apoio e com o conceito de reflexão da luz.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de reflexão da luz."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve selecionar duas evidências pertinentes e explicar como elas sustentam a interpretação apresentada.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de reflexão da luz."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve estabelecer uma relação plausível, usando informações da atividade e vocabulário adequado à disciplina.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de reflexão da luz."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve comparar os dois aspectos com um critério comum, indicando semelhanças, diferenças ou contrastes relevantes.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de reflexão da luz."
+        },
+        {
+          "numero": 5,
+          "resposta": "Deve explicar uma relação causal, consequência, transformação ou permanência coerente com o tema estudado.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de reflexão da luz."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese autoral fundamentada no texto de apoio, com conclusão compatível com as evidências analisadas.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de reflexão da luz."
+        }
+      ]
+    },
+    {
+      "id": "efi-4ano-b2-cie-50-50-som-e-vibracao",
+      "titulo": "Aprofundamento 50: Som e vibração",
+      "tema": "Som e vibração",
+      "sequencia": "Atividade 50",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "intermediaria",
+      "objetivo": "Desenvolver EF04CI10 por meio do estudo de som e vibração, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 4º ano.",
+      "bncc": [
+        {
+          "codigo": "EF04CI10",
+          "descricaoResumida": "Habilidade EF04CI10: desenvolver aprendizagens de Ciências relacionadas a Som e vibração, com análise, evidências e autonomia adequadas ao 4º ano.",
+          "habilidadeOficial": "Habilidade EF04CI10: desenvolver aprendizagens de Ciências relacionadas a Som e vibração, com análise, evidências e autonomia adequadas ao 4º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 50: Som e vibração”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 50: Som e vibração",
+        "conteudo": "O estudo de som e vibração permite relacionar informações, exemplos do cotidiano e conhecimentos próprios de Ciências. A atividade propõe observar evidências, estabelecer comparações, explicar relações e registrar conclusões adequadas ao 4º ano. A habilidade EF04CI10 orienta o trabalho e corresponde a habilidade ef04ci10: desenvolver aprendizagens de ciências relacionadas a som e vibração, com análise, evidências e autonomia adequadas ao 4º ano. Nesta ampliação, o estudante aplica esse conhecimento a uma situação diferente, justificando as respostas com informações do texto e conceitos estudados."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "Caracterize som e vibração a partir das informações apresentadas em “Aprofundamento 50: Som e vibração”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Selecione duas evidências do texto de apoio que ajudem a compreender “Aprofundamento 50: Som e vibração” e explique a escolha.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "Que relação pode ser estabelecida entre som e vibração e o contexto apresentado em “Aprofundamento 50: Som e vibração”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Compare dois aspectos presentes em “Aprofundamento 50: Som e vibração” usando o mesmo critério de análise.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Explique uma causa, consequência, transformação ou permanência relacionada a som e vibração no contexto de “Aprofundamento 50: Som e vibração”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Elabore uma conclusão fundamentada sobre “Aprofundamento 50: Som e vibração”, utilizando informações do texto de apoio.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apresentar características compatíveis com o texto de apoio e com o conceito de som e vibração.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de som e vibração."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve selecionar duas evidências pertinentes e explicar como elas sustentam a interpretação apresentada.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de som e vibração."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve estabelecer uma relação plausível, usando informações da atividade e vocabulário adequado à disciplina.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de som e vibração."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve comparar os dois aspectos com um critério comum, indicando semelhanças, diferenças ou contrastes relevantes.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de som e vibração."
+        },
+        {
+          "numero": 5,
+          "resposta": "Deve explicar uma relação causal, consequência, transformação ou permanência coerente com o tema estudado.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de som e vibração."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese autoral fundamentada no texto de apoio, com conclusão compatível com as evidências analisadas.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de som e vibração."
+        }
+      ]
     }
   ],
   "bnccConferida": true,
-  "referenciaBncc": "BNCC — Ensino Fundamental — Anos Iniciais, Ciências (MEC, 2018)"
+  "referenciaBncc": "BNCC — Ensino Fundamental — Anos Iniciais, Ciências (MEC, 2018)",
+  "quantidadeAtividades": 50
 }

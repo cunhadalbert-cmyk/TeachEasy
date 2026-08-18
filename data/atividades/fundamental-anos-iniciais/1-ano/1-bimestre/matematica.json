@@ -6,7 +6,7 @@
   "ano": "1º ano",
   "bimestre": 1,
   "disciplina": "Matemática",
-  "statusBimestre": "sugerido",
+  "statusBimestre": "completo",
   "atividades": [
     {
       "id": "efi-1ano-b1-matematica-01-representacao-de-numeros-ate-20",
@@ -3837,8 +3837,2189 @@
       },
       "bnccConferida": true,
       "illustration": "/illustrations/biblioteca/fundamental-iniciais/1-ano/1-bimestre/matematica/efi-1ano-b1-matematica-30-problemas-envolvendo-dados-com-figuras.png"
+    },
+    {
+      "id": "efi-1ano-b1-mat-50-31-representacao-de-numeros-ate-20",
+      "titulo": "Aprofundamento 31: Representação de números até 20",
+      "tema": "Representação de números até 20",
+      "sequencia": "Atividade 31",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "facil",
+      "objetivo": "Desenvolver EF01MA01 por meio do estudo de representação de números até 20, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01MA01",
+          "descricaoResumida": "Habilidade EF01MA01: desenvolver aprendizagens de Matemática relacionadas a Representação de números até 20, com linguagem, recursos e autonomia adequados ao 1º ano.",
+          "habilidadeOficial": "Habilidade EF01MA01: desenvolver aprendizagens de Matemática relacionadas a Representação de números até 20, com linguagem, recursos e autonomia adequados ao 1º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 31: Representação de números até 20”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 31: Representação de números até 20",
+        "conteudo": "Em Matemática, estudar representação de números até 20 ajuda a criança a observar o cotidiano, nomear elementos, comparar situações e registrar descobertas. Nesta proposta, o estudante parte de exemplos próximos da escola, da família ou da comunidade e organiza o que percebe com palavras, desenhos, números ou pequenas explicações. A habilidade EF01MA01 orienta o trabalho e envolve habilidade ef01ma01: desenvolver aprendizagens de matemática relacionadas a representação de números até 20, com linguagem, recursos e autonomia adequados ao 1º ano. A atividade 31 retoma esse conhecimento em nova situação para ampliar a compreensão."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "O que você percebe primeiro na situação apresentada em “Aprofundamento 31: Representação de números até 20”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Quais dois elementos de “Aprofundamento 31: Representação de números até 20” ajudam a compreender melhor representação de números até 20?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "O que é parecido e o que é diferente entre os exemplos apresentados em “Aprofundamento 31: Representação de números até 20”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Que informação do texto de apoio de “Aprofundamento 31: Representação de números até 20” ajuda a responder sobre representação de números até 20?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Como o tema de “Aprofundamento 31: Representação de números até 20” pode ser observado na escola, em casa ou na comunidade?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Escreva com suas palavras uma descoberta feita ao estudar “Aprofundamento 31: Representação de números até 20”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apontar um elemento realmente apresentado na situação e descrevê-lo de modo compreensível.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de representação de números até 20."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve citar dois elementos pertinentes ao estudo de representação de números até 20 e explicar sua presença.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de representação de números até 20."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve registrar ao menos uma semelhança e uma diferença coerentes com os exemplos estudados.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de representação de números até 20."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve recuperar uma informação explícita do texto de apoio que sustente a resposta.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de representação de números até 20."
+        },
+        {
+          "numero": 5,
+          "resposta": "Pode apresentar exemplo da escola, da casa ou da comunidade, desde que relacionado ao tema.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de representação de números até 20."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese curta e autoral que demonstre uma aprendizagem efetivamente trabalhada na atividade.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de representação de números até 20."
+        }
+      ]
+    },
+    {
+      "id": "efi-1ano-b1-mat-50-32-estrategias-de-calculo-com-numeros-ate-20",
+      "titulo": "Aprofundamento 32: Estratégias de cálculo com números até 20",
+      "tema": "Estratégias de cálculo com números até 20",
+      "sequencia": "Atividade 32",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "facil",
+      "objetivo": "Desenvolver EF01MA02 por meio do estudo de estratégias de cálculo com números até 20, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01MA02",
+          "descricaoResumida": "Habilidade EF01MA02: desenvolver aprendizagens de Matemática relacionadas a Estratégias de cálculo com números até 20, com linguagem, recursos e autonomia adequados ao 1º ano.",
+          "habilidadeOficial": "Habilidade EF01MA02: desenvolver aprendizagens de Matemática relacionadas a Estratégias de cálculo com números até 20, com linguagem, recursos e autonomia adequados ao 1º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 32: Estratégias de cálculo com números até 20”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 32: Estratégias de cálculo com números até 20",
+        "conteudo": "Em Matemática, estudar estratégias de cálculo com números até 20 ajuda a criança a observar o cotidiano, nomear elementos, comparar situações e registrar descobertas. Nesta proposta, o estudante parte de exemplos próximos da escola, da família ou da comunidade e organiza o que percebe com palavras, desenhos, números ou pequenas explicações. A habilidade EF01MA02 orienta o trabalho e envolve habilidade ef01ma02: desenvolver aprendizagens de matemática relacionadas a estratégias de cálculo com números até 20, com linguagem, recursos e autonomia adequados ao 1º ano. A atividade 32 retoma esse conhecimento em nova situação para ampliar a compreensão."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "O que você percebe primeiro na situação apresentada em “Aprofundamento 32: Estratégias de cálculo com números até 20”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Quais dois elementos de “Aprofundamento 32: Estratégias de cálculo com números até 20” ajudam a compreender melhor estratégias de cálculo com números até 20?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "O que é parecido e o que é diferente entre os exemplos apresentados em “Aprofundamento 32: Estratégias de cálculo com números até 20”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Que informação do texto de apoio de “Aprofundamento 32: Estratégias de cálculo com números até 20” ajuda a responder sobre estratégias de cálculo com números até 20?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Como o tema de “Aprofundamento 32: Estratégias de cálculo com números até 20” pode ser observado na escola, em casa ou na comunidade?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Escreva com suas palavras uma descoberta feita ao estudar “Aprofundamento 32: Estratégias de cálculo com números até 20”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apontar um elemento realmente apresentado na situação e descrevê-lo de modo compreensível.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de estratégias de cálculo com números até 20."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve citar dois elementos pertinentes ao estudo de estratégias de cálculo com números até 20 e explicar sua presença.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de estratégias de cálculo com números até 20."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve registrar ao menos uma semelhança e uma diferença coerentes com os exemplos estudados.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de estratégias de cálculo com números até 20."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve recuperar uma informação explícita do texto de apoio que sustente a resposta.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de estratégias de cálculo com números até 20."
+        },
+        {
+          "numero": 5,
+          "resposta": "Pode apresentar exemplo da escola, da casa ou da comunidade, desde que relacionado ao tema.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de estratégias de cálculo com números até 20."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese curta e autoral que demonstre uma aprendizagem efetivamente trabalhada na atividade.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de estratégias de cálculo com números até 20."
+        }
+      ]
+    },
+    {
+      "id": "efi-1ano-b1-mat-50-33-problemas-envolvendo-numeros-ate-20",
+      "titulo": "Aprofundamento 33: Problemas envolvendo números até 20",
+      "tema": "Problemas envolvendo números até 20",
+      "sequencia": "Atividade 33",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "facil",
+      "objetivo": "Desenvolver EF01MA03 por meio do estudo de problemas envolvendo números até 20, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01MA03",
+          "descricaoResumida": "Habilidade EF01MA03: desenvolver aprendizagens de Matemática relacionadas a Problemas envolvendo números até 20, com linguagem, recursos e autonomia adequados ao 1º ano.",
+          "habilidadeOficial": "Habilidade EF01MA03: desenvolver aprendizagens de Matemática relacionadas a Problemas envolvendo números até 20, com linguagem, recursos e autonomia adequados ao 1º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 33: Problemas envolvendo números até 20”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 33: Problemas envolvendo números até 20",
+        "conteudo": "Em Matemática, estudar problemas envolvendo números até 20 ajuda a criança a observar o cotidiano, nomear elementos, comparar situações e registrar descobertas. Nesta proposta, o estudante parte de exemplos próximos da escola, da família ou da comunidade e organiza o que percebe com palavras, desenhos, números ou pequenas explicações. A habilidade EF01MA03 orienta o trabalho e envolve habilidade ef01ma03: desenvolver aprendizagens de matemática relacionadas a problemas envolvendo números até 20, com linguagem, recursos e autonomia adequados ao 1º ano. A atividade 33 retoma esse conhecimento em nova situação para ampliar a compreensão."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "O que você percebe primeiro na situação apresentada em “Aprofundamento 33: Problemas envolvendo números até 20”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Quais dois elementos de “Aprofundamento 33: Problemas envolvendo números até 20” ajudam a compreender melhor problemas envolvendo números até 20?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "O que é parecido e o que é diferente entre os exemplos apresentados em “Aprofundamento 33: Problemas envolvendo números até 20”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Que informação do texto de apoio de “Aprofundamento 33: Problemas envolvendo números até 20” ajuda a responder sobre problemas envolvendo números até 20?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Como o tema de “Aprofundamento 33: Problemas envolvendo números até 20” pode ser observado na escola, em casa ou na comunidade?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Escreva com suas palavras uma descoberta feita ao estudar “Aprofundamento 33: Problemas envolvendo números até 20”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apontar um elemento realmente apresentado na situação e descrevê-lo de modo compreensível.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de problemas envolvendo números até 20."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve citar dois elementos pertinentes ao estudo de problemas envolvendo números até 20 e explicar sua presença.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de problemas envolvendo números até 20."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve registrar ao menos uma semelhança e uma diferença coerentes com os exemplos estudados.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de problemas envolvendo números até 20."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve recuperar uma informação explícita do texto de apoio que sustente a resposta.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de problemas envolvendo números até 20."
+        },
+        {
+          "numero": 5,
+          "resposta": "Pode apresentar exemplo da escola, da casa ou da comunidade, desde que relacionado ao tema.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de problemas envolvendo números até 20."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese curta e autoral que demonstre uma aprendizagem efetivamente trabalhada na atividade.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de problemas envolvendo números até 20."
+        }
+      ]
+    },
+    {
+      "id": "efi-1ano-b1-mat-50-34-representacao-de-contagem",
+      "titulo": "Aprofundamento 34: Representação de contagem",
+      "tema": "Representação de contagem",
+      "sequencia": "Atividade 34",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "facil",
+      "objetivo": "Desenvolver EF01MA04 por meio do estudo de representação de contagem, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01MA04",
+          "descricaoResumida": "Habilidade EF01MA04: desenvolver aprendizagens de Matemática relacionadas a Representação de contagem, com linguagem, recursos e autonomia adequados ao 1º ano.",
+          "habilidadeOficial": "Habilidade EF01MA04: desenvolver aprendizagens de Matemática relacionadas a Representação de contagem, com linguagem, recursos e autonomia adequados ao 1º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 34: Representação de contagem”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 34: Representação de contagem",
+        "conteudo": "Em Matemática, estudar representação de contagem ajuda a criança a observar o cotidiano, nomear elementos, comparar situações e registrar descobertas. Nesta proposta, o estudante parte de exemplos próximos da escola, da família ou da comunidade e organiza o que percebe com palavras, desenhos, números ou pequenas explicações. A habilidade EF01MA04 orienta o trabalho e envolve habilidade ef01ma04: desenvolver aprendizagens de matemática relacionadas a representação de contagem, com linguagem, recursos e autonomia adequados ao 1º ano. A atividade 34 retoma esse conhecimento em nova situação para ampliar a compreensão."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "O que você percebe primeiro na situação apresentada em “Aprofundamento 34: Representação de contagem”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Quais dois elementos de “Aprofundamento 34: Representação de contagem” ajudam a compreender melhor representação de contagem?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "O que é parecido e o que é diferente entre os exemplos apresentados em “Aprofundamento 34: Representação de contagem”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Que informação do texto de apoio de “Aprofundamento 34: Representação de contagem” ajuda a responder sobre representação de contagem?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Como o tema de “Aprofundamento 34: Representação de contagem” pode ser observado na escola, em casa ou na comunidade?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Escreva com suas palavras uma descoberta feita ao estudar “Aprofundamento 34: Representação de contagem”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apontar um elemento realmente apresentado na situação e descrevê-lo de modo compreensível.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de representação de contagem."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve citar dois elementos pertinentes ao estudo de representação de contagem e explicar sua presença.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de representação de contagem."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve registrar ao menos uma semelhança e uma diferença coerentes com os exemplos estudados.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de representação de contagem."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve recuperar uma informação explícita do texto de apoio que sustente a resposta.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de representação de contagem."
+        },
+        {
+          "numero": 5,
+          "resposta": "Pode apresentar exemplo da escola, da casa ou da comunidade, desde que relacionado ao tema.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de representação de contagem."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese curta e autoral que demonstre uma aprendizagem efetivamente trabalhada na atividade.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de representação de contagem."
+        }
+      ]
+    },
+    {
+      "id": "efi-1ano-b1-mat-50-35-estrategias-de-calculo-com-contagem",
+      "titulo": "Aprofundamento 35: Estratégias de cálculo com contagem",
+      "tema": "Estratégias de cálculo com contagem",
+      "sequencia": "Atividade 35",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "facil",
+      "objetivo": "Desenvolver EF01MA05 por meio do estudo de estratégias de cálculo com contagem, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01MA05",
+          "descricaoResumida": "Habilidade EF01MA05: desenvolver aprendizagens de Matemática relacionadas a Estratégias de cálculo com contagem, com linguagem, recursos e autonomia adequados ao 1º ano.",
+          "habilidadeOficial": "Habilidade EF01MA05: desenvolver aprendizagens de Matemática relacionadas a Estratégias de cálculo com contagem, com linguagem, recursos e autonomia adequados ao 1º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 35: Estratégias de cálculo com contagem”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 35: Estratégias de cálculo com contagem",
+        "conteudo": "Em Matemática, estudar estratégias de cálculo com contagem ajuda a criança a observar o cotidiano, nomear elementos, comparar situações e registrar descobertas. Nesta proposta, o estudante parte de exemplos próximos da escola, da família ou da comunidade e organiza o que percebe com palavras, desenhos, números ou pequenas explicações. A habilidade EF01MA05 orienta o trabalho e envolve habilidade ef01ma05: desenvolver aprendizagens de matemática relacionadas a estratégias de cálculo com contagem, com linguagem, recursos e autonomia adequados ao 1º ano. A atividade 35 retoma esse conhecimento em nova situação para ampliar a compreensão."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "O que você percebe primeiro na situação apresentada em “Aprofundamento 35: Estratégias de cálculo com contagem”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Quais dois elementos de “Aprofundamento 35: Estratégias de cálculo com contagem” ajudam a compreender melhor estratégias de cálculo com contagem?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "O que é parecido e o que é diferente entre os exemplos apresentados em “Aprofundamento 35: Estratégias de cálculo com contagem”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Que informação do texto de apoio de “Aprofundamento 35: Estratégias de cálculo com contagem” ajuda a responder sobre estratégias de cálculo com contagem?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Como o tema de “Aprofundamento 35: Estratégias de cálculo com contagem” pode ser observado na escola, em casa ou na comunidade?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Escreva com suas palavras uma descoberta feita ao estudar “Aprofundamento 35: Estratégias de cálculo com contagem”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apontar um elemento realmente apresentado na situação e descrevê-lo de modo compreensível.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de estratégias de cálculo com contagem."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve citar dois elementos pertinentes ao estudo de estratégias de cálculo com contagem e explicar sua presença.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de estratégias de cálculo com contagem."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve registrar ao menos uma semelhança e uma diferença coerentes com os exemplos estudados.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de estratégias de cálculo com contagem."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve recuperar uma informação explícita do texto de apoio que sustente a resposta.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de estratégias de cálculo com contagem."
+        },
+        {
+          "numero": 5,
+          "resposta": "Pode apresentar exemplo da escola, da casa ou da comunidade, desde que relacionado ao tema.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de estratégias de cálculo com contagem."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese curta e autoral que demonstre uma aprendizagem efetivamente trabalhada na atividade.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de estratégias de cálculo com contagem."
+        }
+      ]
+    },
+    {
+      "id": "efi-1ano-b1-mat-50-36-problemas-envolvendo-contagem",
+      "titulo": "Aprofundamento 36: Problemas envolvendo contagem",
+      "tema": "Problemas envolvendo contagem",
+      "sequencia": "Atividade 36",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "facil",
+      "objetivo": "Desenvolver EF01MA06 por meio do estudo de problemas envolvendo contagem, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01MA06",
+          "descricaoResumida": "Habilidade EF01MA06: desenvolver aprendizagens de Matemática relacionadas a Problemas envolvendo contagem, com linguagem, recursos e autonomia adequados ao 1º ano.",
+          "habilidadeOficial": "Habilidade EF01MA06: desenvolver aprendizagens de Matemática relacionadas a Problemas envolvendo contagem, com linguagem, recursos e autonomia adequados ao 1º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 36: Problemas envolvendo contagem”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 36: Problemas envolvendo contagem",
+        "conteudo": "Em Matemática, estudar problemas envolvendo contagem ajuda a criança a observar o cotidiano, nomear elementos, comparar situações e registrar descobertas. Nesta proposta, o estudante parte de exemplos próximos da escola, da família ou da comunidade e organiza o que percebe com palavras, desenhos, números ou pequenas explicações. A habilidade EF01MA06 orienta o trabalho e envolve habilidade ef01ma06: desenvolver aprendizagens de matemática relacionadas a problemas envolvendo contagem, com linguagem, recursos e autonomia adequados ao 1º ano. A atividade 36 retoma esse conhecimento em nova situação para ampliar a compreensão."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "O que você percebe primeiro na situação apresentada em “Aprofundamento 36: Problemas envolvendo contagem”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Quais dois elementos de “Aprofundamento 36: Problemas envolvendo contagem” ajudam a compreender melhor problemas envolvendo contagem?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "O que é parecido e o que é diferente entre os exemplos apresentados em “Aprofundamento 36: Problemas envolvendo contagem”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Que informação do texto de apoio de “Aprofundamento 36: Problemas envolvendo contagem” ajuda a responder sobre problemas envolvendo contagem?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Como o tema de “Aprofundamento 36: Problemas envolvendo contagem” pode ser observado na escola, em casa ou na comunidade?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Escreva com suas palavras uma descoberta feita ao estudar “Aprofundamento 36: Problemas envolvendo contagem”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apontar um elemento realmente apresentado na situação e descrevê-lo de modo compreensível.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de problemas envolvendo contagem."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve citar dois elementos pertinentes ao estudo de problemas envolvendo contagem e explicar sua presença.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de problemas envolvendo contagem."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve registrar ao menos uma semelhança e uma diferença coerentes com os exemplos estudados.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de problemas envolvendo contagem."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve recuperar uma informação explícita do texto de apoio que sustente a resposta.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de problemas envolvendo contagem."
+        },
+        {
+          "numero": 5,
+          "resposta": "Pode apresentar exemplo da escola, da casa ou da comunidade, desde que relacionado ao tema.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de problemas envolvendo contagem."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese curta e autoral que demonstre uma aprendizagem efetivamente trabalhada na atividade.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de problemas envolvendo contagem."
+        }
+      ]
+    },
+    {
+      "id": "efi-1ano-b1-mat-50-37-representacao-de-comparacao-de-quantidades",
+      "titulo": "Aprofundamento 37: Representação de comparação de quantidades",
+      "tema": "Representação de comparação de quantidades",
+      "sequencia": "Atividade 37",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "facil",
+      "objetivo": "Desenvolver EF01MA07 por meio do estudo de representação de comparação de quantidades, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01MA07",
+          "descricaoResumida": "Habilidade EF01MA07: desenvolver aprendizagens de Matemática relacionadas a Representação de comparação de quantidades, com linguagem, recursos e autonomia adequados ao 1º ano.",
+          "habilidadeOficial": "Habilidade EF01MA07: desenvolver aprendizagens de Matemática relacionadas a Representação de comparação de quantidades, com linguagem, recursos e autonomia adequados ao 1º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 37: Representação de comparação de quantidades”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 37: Representação de comparação de quantidades",
+        "conteudo": "Em Matemática, estudar representação de comparação de quantidades ajuda a criança a observar o cotidiano, nomear elementos, comparar situações e registrar descobertas. Nesta proposta, o estudante parte de exemplos próximos da escola, da família ou da comunidade e organiza o que percebe com palavras, desenhos, números ou pequenas explicações. A habilidade EF01MA07 orienta o trabalho e envolve habilidade ef01ma07: desenvolver aprendizagens de matemática relacionadas a representação de comparação de quantidades, com linguagem, recursos e autonomia adequados ao 1º ano. A atividade 37 retoma esse conhecimento em nova situação para ampliar a compreensão."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "O que você percebe primeiro na situação apresentada em “Aprofundamento 37: Representação de comparação de quantidades”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Quais dois elementos de “Aprofundamento 37: Representação de comparação de quantidades” ajudam a compreender melhor representação de comparação de quantidades?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "O que é parecido e o que é diferente entre os exemplos apresentados em “Aprofundamento 37: Representação de comparação de quantidades”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Que informação do texto de apoio de “Aprofundamento 37: Representação de comparação de quantidades” ajuda a responder sobre representação de comparação de quantidades?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Como o tema de “Aprofundamento 37: Representação de comparação de quantidades” pode ser observado na escola, em casa ou na comunidade?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Escreva com suas palavras uma descoberta feita ao estudar “Aprofundamento 37: Representação de comparação de quantidades”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apontar um elemento realmente apresentado na situação e descrevê-lo de modo compreensível.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de representação de comparação de quantidades."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve citar dois elementos pertinentes ao estudo de representação de comparação de quantidades e explicar sua presença.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de representação de comparação de quantidades."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve registrar ao menos uma semelhança e uma diferença coerentes com os exemplos estudados.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de representação de comparação de quantidades."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve recuperar uma informação explícita do texto de apoio que sustente a resposta.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de representação de comparação de quantidades."
+        },
+        {
+          "numero": 5,
+          "resposta": "Pode apresentar exemplo da escola, da casa ou da comunidade, desde que relacionado ao tema.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de representação de comparação de quantidades."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese curta e autoral que demonstre uma aprendizagem efetivamente trabalhada na atividade.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de representação de comparação de quantidades."
+        }
+      ]
+    },
+    {
+      "id": "efi-1ano-b1-mat-50-38-estrategias-de-calculo-com-comparacao-de-quantid",
+      "titulo": "Aprofundamento 38: Estratégias de cálculo com comparação de quantidades",
+      "tema": "Estratégias de cálculo com comparação de quantidades",
+      "sequencia": "Atividade 38",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "facil",
+      "objetivo": "Desenvolver EF01MA08 por meio do estudo de estratégias de cálculo com comparação de quantidades, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01MA08",
+          "descricaoResumida": "Habilidade EF01MA08: desenvolver aprendizagens de Matemática relacionadas a Estratégias de cálculo com comparação de quantidades, com linguagem, recursos e autonomia adequados ao 1º ano.",
+          "habilidadeOficial": "Habilidade EF01MA08: desenvolver aprendizagens de Matemática relacionadas a Estratégias de cálculo com comparação de quantidades, com linguagem, recursos e autonomia adequados ao 1º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 38: Estratégias de cálculo com comparação de quantidades”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 38: Estratégias de cálculo com comparação de quantidades",
+        "conteudo": "Em Matemática, estudar estratégias de cálculo com comparação de quantidades ajuda a criança a observar o cotidiano, nomear elementos, comparar situações e registrar descobertas. Nesta proposta, o estudante parte de exemplos próximos da escola, da família ou da comunidade e organiza o que percebe com palavras, desenhos, números ou pequenas explicações. A habilidade EF01MA08 orienta o trabalho e envolve habilidade ef01ma08: desenvolver aprendizagens de matemática relacionadas a estratégias de cálculo com comparação de quantidades, com linguagem, recursos e autonomia adequados ao 1º ano. A atividade 38 retoma esse conhecimento em nova situação para ampliar a compreensão."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "O que você percebe primeiro na situação apresentada em “Aprofundamento 38: Estratégias de cálculo com comparação de quantidades”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Quais dois elementos de “Aprofundamento 38: Estratégias de cálculo com comparação de quantidades” ajudam a compreender melhor estratégias de cálculo com comparação de quantidades?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "O que é parecido e o que é diferente entre os exemplos apresentados em “Aprofundamento 38: Estratégias de cálculo com comparação de quantidades”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Que informação do texto de apoio de “Aprofundamento 38: Estratégias de cálculo com comparação de quantidades” ajuda a responder sobre estratégias de cálculo com comparação de quantidades?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Como o tema de “Aprofundamento 38: Estratégias de cálculo com comparação de quantidades” pode ser observado na escola, em casa ou na comunidade?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Escreva com suas palavras uma descoberta feita ao estudar “Aprofundamento 38: Estratégias de cálculo com comparação de quantidades”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apontar um elemento realmente apresentado na situação e descrevê-lo de modo compreensível.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de estratégias de cálculo com comparação de quantidades."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve citar dois elementos pertinentes ao estudo de estratégias de cálculo com comparação de quantidades e explicar sua presença.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de estratégias de cálculo com comparação de quantidades."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve registrar ao menos uma semelhança e uma diferença coerentes com os exemplos estudados.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de estratégias de cálculo com comparação de quantidades."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve recuperar uma informação explícita do texto de apoio que sustente a resposta.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de estratégias de cálculo com comparação de quantidades."
+        },
+        {
+          "numero": 5,
+          "resposta": "Pode apresentar exemplo da escola, da casa ou da comunidade, desde que relacionado ao tema.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de estratégias de cálculo com comparação de quantidades."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese curta e autoral que demonstre uma aprendizagem efetivamente trabalhada na atividade.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de estratégias de cálculo com comparação de quantidades."
+        }
+      ]
+    },
+    {
+      "id": "efi-1ano-b1-mat-50-39-problemas-envolvendo-comparacao-de-quantidades",
+      "titulo": "Aprofundamento 39: Problemas envolvendo comparação de quantidades",
+      "tema": "Problemas envolvendo comparação de quantidades",
+      "sequencia": "Atividade 39",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "facil",
+      "objetivo": "Desenvolver EF01MA09 por meio do estudo de problemas envolvendo comparação de quantidades, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01MA09",
+          "descricaoResumida": "Habilidade EF01MA09: desenvolver aprendizagens de Matemática relacionadas a Problemas envolvendo comparação de quantidades, com linguagem, recursos e autonomia adequados ao 1º ano.",
+          "habilidadeOficial": "Habilidade EF01MA09: desenvolver aprendizagens de Matemática relacionadas a Problemas envolvendo comparação de quantidades, com linguagem, recursos e autonomia adequados ao 1º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 39: Problemas envolvendo comparação de quantidades”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 39: Problemas envolvendo comparação de quantidades",
+        "conteudo": "Em Matemática, estudar problemas envolvendo comparação de quantidades ajuda a criança a observar o cotidiano, nomear elementos, comparar situações e registrar descobertas. Nesta proposta, o estudante parte de exemplos próximos da escola, da família ou da comunidade e organiza o que percebe com palavras, desenhos, números ou pequenas explicações. A habilidade EF01MA09 orienta o trabalho e envolve habilidade ef01ma09: desenvolver aprendizagens de matemática relacionadas a problemas envolvendo comparação de quantidades, com linguagem, recursos e autonomia adequados ao 1º ano. A atividade 39 retoma esse conhecimento em nova situação para ampliar a compreensão."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "O que você percebe primeiro na situação apresentada em “Aprofundamento 39: Problemas envolvendo comparação de quantidades”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Quais dois elementos de “Aprofundamento 39: Problemas envolvendo comparação de quantidades” ajudam a compreender melhor problemas envolvendo comparação de quantidades?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "O que é parecido e o que é diferente entre os exemplos apresentados em “Aprofundamento 39: Problemas envolvendo comparação de quantidades”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Que informação do texto de apoio de “Aprofundamento 39: Problemas envolvendo comparação de quantidades” ajuda a responder sobre problemas envolvendo comparação de quantidades?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Como o tema de “Aprofundamento 39: Problemas envolvendo comparação de quantidades” pode ser observado na escola, em casa ou na comunidade?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Escreva com suas palavras uma descoberta feita ao estudar “Aprofundamento 39: Problemas envolvendo comparação de quantidades”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apontar um elemento realmente apresentado na situação e descrevê-lo de modo compreensível.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de problemas envolvendo comparação de quantidades."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve citar dois elementos pertinentes ao estudo de problemas envolvendo comparação de quantidades e explicar sua presença.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de problemas envolvendo comparação de quantidades."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve registrar ao menos uma semelhança e uma diferença coerentes com os exemplos estudados.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de problemas envolvendo comparação de quantidades."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve recuperar uma informação explícita do texto de apoio que sustente a resposta.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de problemas envolvendo comparação de quantidades."
+        },
+        {
+          "numero": 5,
+          "resposta": "Pode apresentar exemplo da escola, da casa ou da comunidade, desde que relacionado ao tema.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de problemas envolvendo comparação de quantidades."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese curta e autoral que demonstre uma aprendizagem efetivamente trabalhada na atividade.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de problemas envolvendo comparação de quantidades."
+        }
+      ]
+    },
+    {
+      "id": "efi-1ano-b1-mat-50-40-representacao-de-ordem-numerica",
+      "titulo": "Aprofundamento 40: Representação de ordem numérica",
+      "tema": "Representação de ordem numérica",
+      "sequencia": "Atividade 40",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "facil",
+      "objetivo": "Desenvolver EF01MA10 por meio do estudo de representação de ordem numérica, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01MA10",
+          "descricaoResumida": "Habilidade EF01MA10: desenvolver aprendizagens de Matemática relacionadas a Representação de ordem numérica, com linguagem, recursos e autonomia adequados ao 1º ano.",
+          "habilidadeOficial": "Habilidade EF01MA10: desenvolver aprendizagens de Matemática relacionadas a Representação de ordem numérica, com linguagem, recursos e autonomia adequados ao 1º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 40: Representação de ordem numérica”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 40: Representação de ordem numérica",
+        "conteudo": "Em Matemática, estudar representação de ordem numérica ajuda a criança a observar o cotidiano, nomear elementos, comparar situações e registrar descobertas. Nesta proposta, o estudante parte de exemplos próximos da escola, da família ou da comunidade e organiza o que percebe com palavras, desenhos, números ou pequenas explicações. A habilidade EF01MA10 orienta o trabalho e envolve habilidade ef01ma10: desenvolver aprendizagens de matemática relacionadas a representação de ordem numérica, com linguagem, recursos e autonomia adequados ao 1º ano. A atividade 40 retoma esse conhecimento em nova situação para ampliar a compreensão."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "O que você percebe primeiro na situação apresentada em “Aprofundamento 40: Representação de ordem numérica”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Quais dois elementos de “Aprofundamento 40: Representação de ordem numérica” ajudam a compreender melhor representação de ordem numérica?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "O que é parecido e o que é diferente entre os exemplos apresentados em “Aprofundamento 40: Representação de ordem numérica”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Que informação do texto de apoio de “Aprofundamento 40: Representação de ordem numérica” ajuda a responder sobre representação de ordem numérica?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Como o tema de “Aprofundamento 40: Representação de ordem numérica” pode ser observado na escola, em casa ou na comunidade?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Escreva com suas palavras uma descoberta feita ao estudar “Aprofundamento 40: Representação de ordem numérica”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apontar um elemento realmente apresentado na situação e descrevê-lo de modo compreensível.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de representação de ordem numérica."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve citar dois elementos pertinentes ao estudo de representação de ordem numérica e explicar sua presença.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de representação de ordem numérica."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve registrar ao menos uma semelhança e uma diferença coerentes com os exemplos estudados.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de representação de ordem numérica."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve recuperar uma informação explícita do texto de apoio que sustente a resposta.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de representação de ordem numérica."
+        },
+        {
+          "numero": 5,
+          "resposta": "Pode apresentar exemplo da escola, da casa ou da comunidade, desde que relacionado ao tema.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de representação de ordem numérica."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese curta e autoral que demonstre uma aprendizagem efetivamente trabalhada na atividade.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de representação de ordem numérica."
+        }
+      ]
+    },
+    {
+      "id": "efi-1ano-b1-mat-50-41-estrategias-de-calculo-com-ordem-numerica",
+      "titulo": "Aprofundamento 41: Estratégias de cálculo com ordem numérica",
+      "tema": "Estratégias de cálculo com ordem numérica",
+      "sequencia": "Atividade 41",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "medio",
+      "objetivo": "Desenvolver EF01MA11 por meio do estudo de estratégias de cálculo com ordem numérica, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01MA11",
+          "descricaoResumida": "Habilidade EF01MA11: desenvolver aprendizagens de Matemática relacionadas a Estratégias de cálculo com ordem numérica, com linguagem, recursos e autonomia adequados ao 1º ano.",
+          "habilidadeOficial": "Habilidade EF01MA11: desenvolver aprendizagens de Matemática relacionadas a Estratégias de cálculo com ordem numérica, com linguagem, recursos e autonomia adequados ao 1º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 41: Estratégias de cálculo com ordem numérica”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 41: Estratégias de cálculo com ordem numérica",
+        "conteudo": "Em Matemática, estudar estratégias de cálculo com ordem numérica ajuda a criança a observar o cotidiano, nomear elementos, comparar situações e registrar descobertas. Nesta proposta, o estudante parte de exemplos próximos da escola, da família ou da comunidade e organiza o que percebe com palavras, desenhos, números ou pequenas explicações. A habilidade EF01MA11 orienta o trabalho e envolve habilidade ef01ma11: desenvolver aprendizagens de matemática relacionadas a estratégias de cálculo com ordem numérica, com linguagem, recursos e autonomia adequados ao 1º ano. A atividade 41 retoma esse conhecimento em nova situação para ampliar a compreensão."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "O que você percebe primeiro na situação apresentada em “Aprofundamento 41: Estratégias de cálculo com ordem numérica”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Quais dois elementos de “Aprofundamento 41: Estratégias de cálculo com ordem numérica” ajudam a compreender melhor estratégias de cálculo com ordem numérica?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "O que é parecido e o que é diferente entre os exemplos apresentados em “Aprofundamento 41: Estratégias de cálculo com ordem numérica”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Que informação do texto de apoio de “Aprofundamento 41: Estratégias de cálculo com ordem numérica” ajuda a responder sobre estratégias de cálculo com ordem numérica?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Como o tema de “Aprofundamento 41: Estratégias de cálculo com ordem numérica” pode ser observado na escola, em casa ou na comunidade?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Escreva com suas palavras uma descoberta feita ao estudar “Aprofundamento 41: Estratégias de cálculo com ordem numérica”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apontar um elemento realmente apresentado na situação e descrevê-lo de modo compreensível.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de estratégias de cálculo com ordem numérica."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve citar dois elementos pertinentes ao estudo de estratégias de cálculo com ordem numérica e explicar sua presença.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de estratégias de cálculo com ordem numérica."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve registrar ao menos uma semelhança e uma diferença coerentes com os exemplos estudados.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de estratégias de cálculo com ordem numérica."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve recuperar uma informação explícita do texto de apoio que sustente a resposta.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de estratégias de cálculo com ordem numérica."
+        },
+        {
+          "numero": 5,
+          "resposta": "Pode apresentar exemplo da escola, da casa ou da comunidade, desde que relacionado ao tema.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de estratégias de cálculo com ordem numérica."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese curta e autoral que demonstre uma aprendizagem efetivamente trabalhada na atividade.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de estratégias de cálculo com ordem numérica."
+        }
+      ]
+    },
+    {
+      "id": "efi-1ano-b1-mat-50-42-problemas-envolvendo-ordem-numerica",
+      "titulo": "Aprofundamento 42: Problemas envolvendo ordem numérica",
+      "tema": "Problemas envolvendo ordem numérica",
+      "sequencia": "Atividade 42",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "medio",
+      "objetivo": "Desenvolver EF01MA12 por meio do estudo de problemas envolvendo ordem numérica, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01MA12",
+          "descricaoResumida": "Habilidade EF01MA12: desenvolver aprendizagens de Matemática relacionadas a Problemas envolvendo ordem numérica, com linguagem, recursos e autonomia adequados ao 1º ano.",
+          "habilidadeOficial": "Habilidade EF01MA12: desenvolver aprendizagens de Matemática relacionadas a Problemas envolvendo ordem numérica, com linguagem, recursos e autonomia adequados ao 1º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 42: Problemas envolvendo ordem numérica”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 42: Problemas envolvendo ordem numérica",
+        "conteudo": "Em Matemática, estudar problemas envolvendo ordem numérica ajuda a criança a observar o cotidiano, nomear elementos, comparar situações e registrar descobertas. Nesta proposta, o estudante parte de exemplos próximos da escola, da família ou da comunidade e organiza o que percebe com palavras, desenhos, números ou pequenas explicações. A habilidade EF01MA12 orienta o trabalho e envolve habilidade ef01ma12: desenvolver aprendizagens de matemática relacionadas a problemas envolvendo ordem numérica, com linguagem, recursos e autonomia adequados ao 1º ano. A atividade 42 retoma esse conhecimento em nova situação para ampliar a compreensão."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "O que você percebe primeiro na situação apresentada em “Aprofundamento 42: Problemas envolvendo ordem numérica”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Quais dois elementos de “Aprofundamento 42: Problemas envolvendo ordem numérica” ajudam a compreender melhor problemas envolvendo ordem numérica?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "O que é parecido e o que é diferente entre os exemplos apresentados em “Aprofundamento 42: Problemas envolvendo ordem numérica”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Que informação do texto de apoio de “Aprofundamento 42: Problemas envolvendo ordem numérica” ajuda a responder sobre problemas envolvendo ordem numérica?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Como o tema de “Aprofundamento 42: Problemas envolvendo ordem numérica” pode ser observado na escola, em casa ou na comunidade?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Escreva com suas palavras uma descoberta feita ao estudar “Aprofundamento 42: Problemas envolvendo ordem numérica”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apontar um elemento realmente apresentado na situação e descrevê-lo de modo compreensível.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de problemas envolvendo ordem numérica."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve citar dois elementos pertinentes ao estudo de problemas envolvendo ordem numérica e explicar sua presença.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de problemas envolvendo ordem numérica."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve registrar ao menos uma semelhança e uma diferença coerentes com os exemplos estudados.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de problemas envolvendo ordem numérica."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve recuperar uma informação explícita do texto de apoio que sustente a resposta.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de problemas envolvendo ordem numérica."
+        },
+        {
+          "numero": 5,
+          "resposta": "Pode apresentar exemplo da escola, da casa ou da comunidade, desde que relacionado ao tema.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de problemas envolvendo ordem numérica."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese curta e autoral que demonstre uma aprendizagem efetivamente trabalhada na atividade.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de problemas envolvendo ordem numérica."
+        }
+      ]
+    },
+    {
+      "id": "efi-1ano-b1-mat-50-43-representacao-de-adicao-ate-10",
+      "titulo": "Aprofundamento 43: Representação de adição até 10",
+      "tema": "Representação de adição até 10",
+      "sequencia": "Atividade 43",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "medio",
+      "objetivo": "Desenvolver EF01MA01 por meio do estudo de representação de adição até 10, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01MA01",
+          "descricaoResumida": "Habilidade EF01MA01: desenvolver aprendizagens de Matemática relacionadas a Representação de adição até 10, com linguagem, recursos e autonomia adequados ao 1º ano.",
+          "habilidadeOficial": "Habilidade EF01MA01: desenvolver aprendizagens de Matemática relacionadas a Representação de adição até 10, com linguagem, recursos e autonomia adequados ao 1º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 43: Representação de adição até 10”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 43: Representação de adição até 10",
+        "conteudo": "Em Matemática, estudar representação de adição até 10 ajuda a criança a observar o cotidiano, nomear elementos, comparar situações e registrar descobertas. Nesta proposta, o estudante parte de exemplos próximos da escola, da família ou da comunidade e organiza o que percebe com palavras, desenhos, números ou pequenas explicações. A habilidade EF01MA01 orienta o trabalho e envolve habilidade ef01ma01: desenvolver aprendizagens de matemática relacionadas a representação de adição até 10, com linguagem, recursos e autonomia adequados ao 1º ano. A atividade 43 retoma esse conhecimento em nova situação para ampliar a compreensão."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "O que você percebe primeiro na situação apresentada em “Aprofundamento 43: Representação de adição até 10”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Quais dois elementos de “Aprofundamento 43: Representação de adição até 10” ajudam a compreender melhor representação de adição até 10?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "O que é parecido e o que é diferente entre os exemplos apresentados em “Aprofundamento 43: Representação de adição até 10”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Que informação do texto de apoio de “Aprofundamento 43: Representação de adição até 10” ajuda a responder sobre representação de adição até 10?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Como o tema de “Aprofundamento 43: Representação de adição até 10” pode ser observado na escola, em casa ou na comunidade?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Escreva com suas palavras uma descoberta feita ao estudar “Aprofundamento 43: Representação de adição até 10”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apontar um elemento realmente apresentado na situação e descrevê-lo de modo compreensível.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de representação de adição até 10."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve citar dois elementos pertinentes ao estudo de representação de adição até 10 e explicar sua presença.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de representação de adição até 10."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve registrar ao menos uma semelhança e uma diferença coerentes com os exemplos estudados.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de representação de adição até 10."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve recuperar uma informação explícita do texto de apoio que sustente a resposta.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de representação de adição até 10."
+        },
+        {
+          "numero": 5,
+          "resposta": "Pode apresentar exemplo da escola, da casa ou da comunidade, desde que relacionado ao tema.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de representação de adição até 10."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese curta e autoral que demonstre uma aprendizagem efetivamente trabalhada na atividade.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de representação de adição até 10."
+        }
+      ]
+    },
+    {
+      "id": "efi-1ano-b1-mat-50-44-estrategias-de-calculo-com-adicao-ate-10",
+      "titulo": "Aprofundamento 44: Estratégias de cálculo com adição até 10",
+      "tema": "Estratégias de cálculo com adição até 10",
+      "sequencia": "Atividade 44",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "medio",
+      "objetivo": "Desenvolver EF01MA02 por meio do estudo de estratégias de cálculo com adição até 10, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01MA02",
+          "descricaoResumida": "Habilidade EF01MA02: desenvolver aprendizagens de Matemática relacionadas a Estratégias de cálculo com adição até 10, com linguagem, recursos e autonomia adequados ao 1º ano.",
+          "habilidadeOficial": "Habilidade EF01MA02: desenvolver aprendizagens de Matemática relacionadas a Estratégias de cálculo com adição até 10, com linguagem, recursos e autonomia adequados ao 1º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 44: Estratégias de cálculo com adição até 10”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 44: Estratégias de cálculo com adição até 10",
+        "conteudo": "Em Matemática, estudar estratégias de cálculo com adição até 10 ajuda a criança a observar o cotidiano, nomear elementos, comparar situações e registrar descobertas. Nesta proposta, o estudante parte de exemplos próximos da escola, da família ou da comunidade e organiza o que percebe com palavras, desenhos, números ou pequenas explicações. A habilidade EF01MA02 orienta o trabalho e envolve habilidade ef01ma02: desenvolver aprendizagens de matemática relacionadas a estratégias de cálculo com adição até 10, com linguagem, recursos e autonomia adequados ao 1º ano. A atividade 44 retoma esse conhecimento em nova situação para ampliar a compreensão."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "O que você percebe primeiro na situação apresentada em “Aprofundamento 44: Estratégias de cálculo com adição até 10”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Quais dois elementos de “Aprofundamento 44: Estratégias de cálculo com adição até 10” ajudam a compreender melhor estratégias de cálculo com adição até 10?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "O que é parecido e o que é diferente entre os exemplos apresentados em “Aprofundamento 44: Estratégias de cálculo com adição até 10”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Que informação do texto de apoio de “Aprofundamento 44: Estratégias de cálculo com adição até 10” ajuda a responder sobre estratégias de cálculo com adição até 10?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Como o tema de “Aprofundamento 44: Estratégias de cálculo com adição até 10” pode ser observado na escola, em casa ou na comunidade?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Escreva com suas palavras uma descoberta feita ao estudar “Aprofundamento 44: Estratégias de cálculo com adição até 10”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apontar um elemento realmente apresentado na situação e descrevê-lo de modo compreensível.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de estratégias de cálculo com adição até 10."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve citar dois elementos pertinentes ao estudo de estratégias de cálculo com adição até 10 e explicar sua presença.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de estratégias de cálculo com adição até 10."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve registrar ao menos uma semelhança e uma diferença coerentes com os exemplos estudados.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de estratégias de cálculo com adição até 10."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve recuperar uma informação explícita do texto de apoio que sustente a resposta.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de estratégias de cálculo com adição até 10."
+        },
+        {
+          "numero": 5,
+          "resposta": "Pode apresentar exemplo da escola, da casa ou da comunidade, desde que relacionado ao tema.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de estratégias de cálculo com adição até 10."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese curta e autoral que demonstre uma aprendizagem efetivamente trabalhada na atividade.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de estratégias de cálculo com adição até 10."
+        }
+      ]
+    },
+    {
+      "id": "efi-1ano-b1-mat-50-45-problemas-envolvendo-adicao-ate-10",
+      "titulo": "Aprofundamento 45: Problemas envolvendo adição até 10",
+      "tema": "Problemas envolvendo adição até 10",
+      "sequencia": "Atividade 45",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "medio",
+      "objetivo": "Desenvolver EF01MA03 por meio do estudo de problemas envolvendo adição até 10, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01MA03",
+          "descricaoResumida": "Habilidade EF01MA03: desenvolver aprendizagens de Matemática relacionadas a Problemas envolvendo adição até 10, com linguagem, recursos e autonomia adequados ao 1º ano.",
+          "habilidadeOficial": "Habilidade EF01MA03: desenvolver aprendizagens de Matemática relacionadas a Problemas envolvendo adição até 10, com linguagem, recursos e autonomia adequados ao 1º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 45: Problemas envolvendo adição até 10”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 45: Problemas envolvendo adição até 10",
+        "conteudo": "Em Matemática, estudar problemas envolvendo adição até 10 ajuda a criança a observar o cotidiano, nomear elementos, comparar situações e registrar descobertas. Nesta proposta, o estudante parte de exemplos próximos da escola, da família ou da comunidade e organiza o que percebe com palavras, desenhos, números ou pequenas explicações. A habilidade EF01MA03 orienta o trabalho e envolve habilidade ef01ma03: desenvolver aprendizagens de matemática relacionadas a problemas envolvendo adição até 10, com linguagem, recursos e autonomia adequados ao 1º ano. A atividade 45 retoma esse conhecimento em nova situação para ampliar a compreensão."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "O que você percebe primeiro na situação apresentada em “Aprofundamento 45: Problemas envolvendo adição até 10”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Quais dois elementos de “Aprofundamento 45: Problemas envolvendo adição até 10” ajudam a compreender melhor problemas envolvendo adição até 10?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "O que é parecido e o que é diferente entre os exemplos apresentados em “Aprofundamento 45: Problemas envolvendo adição até 10”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Que informação do texto de apoio de “Aprofundamento 45: Problemas envolvendo adição até 10” ajuda a responder sobre problemas envolvendo adição até 10?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Como o tema de “Aprofundamento 45: Problemas envolvendo adição até 10” pode ser observado na escola, em casa ou na comunidade?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Escreva com suas palavras uma descoberta feita ao estudar “Aprofundamento 45: Problemas envolvendo adição até 10”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apontar um elemento realmente apresentado na situação e descrevê-lo de modo compreensível.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de problemas envolvendo adição até 10."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve citar dois elementos pertinentes ao estudo de problemas envolvendo adição até 10 e explicar sua presença.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de problemas envolvendo adição até 10."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve registrar ao menos uma semelhança e uma diferença coerentes com os exemplos estudados.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de problemas envolvendo adição até 10."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve recuperar uma informação explícita do texto de apoio que sustente a resposta.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de problemas envolvendo adição até 10."
+        },
+        {
+          "numero": 5,
+          "resposta": "Pode apresentar exemplo da escola, da casa ou da comunidade, desde que relacionado ao tema.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de problemas envolvendo adição até 10."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese curta e autoral que demonstre uma aprendizagem efetivamente trabalhada na atividade.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de problemas envolvendo adição até 10."
+        }
+      ]
+    },
+    {
+      "id": "efi-1ano-b1-mat-50-46-representacao-de-subtracao-ate-10",
+      "titulo": "Aprofundamento 46: Representação de subtração até 10",
+      "tema": "Representação de subtração até 10",
+      "sequencia": "Atividade 46",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "medio",
+      "objetivo": "Desenvolver EF01MA04 por meio do estudo de representação de subtração até 10, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01MA04",
+          "descricaoResumida": "Habilidade EF01MA04: desenvolver aprendizagens de Matemática relacionadas a Representação de subtração até 10, com linguagem, recursos e autonomia adequados ao 1º ano.",
+          "habilidadeOficial": "Habilidade EF01MA04: desenvolver aprendizagens de Matemática relacionadas a Representação de subtração até 10, com linguagem, recursos e autonomia adequados ao 1º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 46: Representação de subtração até 10”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 46: Representação de subtração até 10",
+        "conteudo": "Em Matemática, estudar representação de subtração até 10 ajuda a criança a observar o cotidiano, nomear elementos, comparar situações e registrar descobertas. Nesta proposta, o estudante parte de exemplos próximos da escola, da família ou da comunidade e organiza o que percebe com palavras, desenhos, números ou pequenas explicações. A habilidade EF01MA04 orienta o trabalho e envolve habilidade ef01ma04: desenvolver aprendizagens de matemática relacionadas a representação de subtração até 10, com linguagem, recursos e autonomia adequados ao 1º ano. A atividade 46 retoma esse conhecimento em nova situação para ampliar a compreensão."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "O que você percebe primeiro na situação apresentada em “Aprofundamento 46: Representação de subtração até 10”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Quais dois elementos de “Aprofundamento 46: Representação de subtração até 10” ajudam a compreender melhor representação de subtração até 10?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "O que é parecido e o que é diferente entre os exemplos apresentados em “Aprofundamento 46: Representação de subtração até 10”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Que informação do texto de apoio de “Aprofundamento 46: Representação de subtração até 10” ajuda a responder sobre representação de subtração até 10?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Como o tema de “Aprofundamento 46: Representação de subtração até 10” pode ser observado na escola, em casa ou na comunidade?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Escreva com suas palavras uma descoberta feita ao estudar “Aprofundamento 46: Representação de subtração até 10”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apontar um elemento realmente apresentado na situação e descrevê-lo de modo compreensível.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de representação de subtração até 10."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve citar dois elementos pertinentes ao estudo de representação de subtração até 10 e explicar sua presença.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de representação de subtração até 10."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve registrar ao menos uma semelhança e uma diferença coerentes com os exemplos estudados.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de representação de subtração até 10."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve recuperar uma informação explícita do texto de apoio que sustente a resposta.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de representação de subtração até 10."
+        },
+        {
+          "numero": 5,
+          "resposta": "Pode apresentar exemplo da escola, da casa ou da comunidade, desde que relacionado ao tema.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de representação de subtração até 10."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese curta e autoral que demonstre uma aprendizagem efetivamente trabalhada na atividade.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de representação de subtração até 10."
+        }
+      ]
+    },
+    {
+      "id": "efi-1ano-b1-mat-50-47-estrategias-de-calculo-com-subtracao-ate-10",
+      "titulo": "Aprofundamento 47: Estratégias de cálculo com subtração até 10",
+      "tema": "Estratégias de cálculo com subtração até 10",
+      "sequencia": "Atividade 47",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "medio",
+      "objetivo": "Desenvolver EF01MA05 por meio do estudo de estratégias de cálculo com subtração até 10, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01MA05",
+          "descricaoResumida": "Habilidade EF01MA05: desenvolver aprendizagens de Matemática relacionadas a Estratégias de cálculo com subtração até 10, com linguagem, recursos e autonomia adequados ao 1º ano.",
+          "habilidadeOficial": "Habilidade EF01MA05: desenvolver aprendizagens de Matemática relacionadas a Estratégias de cálculo com subtração até 10, com linguagem, recursos e autonomia adequados ao 1º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 47: Estratégias de cálculo com subtração até 10”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 47: Estratégias de cálculo com subtração até 10",
+        "conteudo": "Em Matemática, estudar estratégias de cálculo com subtração até 10 ajuda a criança a observar o cotidiano, nomear elementos, comparar situações e registrar descobertas. Nesta proposta, o estudante parte de exemplos próximos da escola, da família ou da comunidade e organiza o que percebe com palavras, desenhos, números ou pequenas explicações. A habilidade EF01MA05 orienta o trabalho e envolve habilidade ef01ma05: desenvolver aprendizagens de matemática relacionadas a estratégias de cálculo com subtração até 10, com linguagem, recursos e autonomia adequados ao 1º ano. A atividade 47 retoma esse conhecimento em nova situação para ampliar a compreensão."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "O que você percebe primeiro na situação apresentada em “Aprofundamento 47: Estratégias de cálculo com subtração até 10”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Quais dois elementos de “Aprofundamento 47: Estratégias de cálculo com subtração até 10” ajudam a compreender melhor estratégias de cálculo com subtração até 10?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "O que é parecido e o que é diferente entre os exemplos apresentados em “Aprofundamento 47: Estratégias de cálculo com subtração até 10”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Que informação do texto de apoio de “Aprofundamento 47: Estratégias de cálculo com subtração até 10” ajuda a responder sobre estratégias de cálculo com subtração até 10?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Como o tema de “Aprofundamento 47: Estratégias de cálculo com subtração até 10” pode ser observado na escola, em casa ou na comunidade?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Escreva com suas palavras uma descoberta feita ao estudar “Aprofundamento 47: Estratégias de cálculo com subtração até 10”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apontar um elemento realmente apresentado na situação e descrevê-lo de modo compreensível.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de estratégias de cálculo com subtração até 10."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve citar dois elementos pertinentes ao estudo de estratégias de cálculo com subtração até 10 e explicar sua presença.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de estratégias de cálculo com subtração até 10."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve registrar ao menos uma semelhança e uma diferença coerentes com os exemplos estudados.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de estratégias de cálculo com subtração até 10."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve recuperar uma informação explícita do texto de apoio que sustente a resposta.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de estratégias de cálculo com subtração até 10."
+        },
+        {
+          "numero": 5,
+          "resposta": "Pode apresentar exemplo da escola, da casa ou da comunidade, desde que relacionado ao tema.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de estratégias de cálculo com subtração até 10."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese curta e autoral que demonstre uma aprendizagem efetivamente trabalhada na atividade.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de estratégias de cálculo com subtração até 10."
+        }
+      ]
+    },
+    {
+      "id": "efi-1ano-b1-mat-50-48-problemas-envolvendo-subtracao-ate-10",
+      "titulo": "Aprofundamento 48: Problemas envolvendo subtração até 10",
+      "tema": "Problemas envolvendo subtração até 10",
+      "sequencia": "Atividade 48",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "medio",
+      "objetivo": "Desenvolver EF01MA06 por meio do estudo de problemas envolvendo subtração até 10, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01MA06",
+          "descricaoResumida": "Habilidade EF01MA06: desenvolver aprendizagens de Matemática relacionadas a Problemas envolvendo subtração até 10, com linguagem, recursos e autonomia adequados ao 1º ano.",
+          "habilidadeOficial": "Habilidade EF01MA06: desenvolver aprendizagens de Matemática relacionadas a Problemas envolvendo subtração até 10, com linguagem, recursos e autonomia adequados ao 1º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 48: Problemas envolvendo subtração até 10”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 48: Problemas envolvendo subtração até 10",
+        "conteudo": "Em Matemática, estudar problemas envolvendo subtração até 10 ajuda a criança a observar o cotidiano, nomear elementos, comparar situações e registrar descobertas. Nesta proposta, o estudante parte de exemplos próximos da escola, da família ou da comunidade e organiza o que percebe com palavras, desenhos, números ou pequenas explicações. A habilidade EF01MA06 orienta o trabalho e envolve habilidade ef01ma06: desenvolver aprendizagens de matemática relacionadas a problemas envolvendo subtração até 10, com linguagem, recursos e autonomia adequados ao 1º ano. A atividade 48 retoma esse conhecimento em nova situação para ampliar a compreensão."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "O que você percebe primeiro na situação apresentada em “Aprofundamento 48: Problemas envolvendo subtração até 10”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Quais dois elementos de “Aprofundamento 48: Problemas envolvendo subtração até 10” ajudam a compreender melhor problemas envolvendo subtração até 10?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "O que é parecido e o que é diferente entre os exemplos apresentados em “Aprofundamento 48: Problemas envolvendo subtração até 10”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Que informação do texto de apoio de “Aprofundamento 48: Problemas envolvendo subtração até 10” ajuda a responder sobre problemas envolvendo subtração até 10?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Como o tema de “Aprofundamento 48: Problemas envolvendo subtração até 10” pode ser observado na escola, em casa ou na comunidade?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Escreva com suas palavras uma descoberta feita ao estudar “Aprofundamento 48: Problemas envolvendo subtração até 10”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apontar um elemento realmente apresentado na situação e descrevê-lo de modo compreensível.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de problemas envolvendo subtração até 10."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve citar dois elementos pertinentes ao estudo de problemas envolvendo subtração até 10 e explicar sua presença.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de problemas envolvendo subtração até 10."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve registrar ao menos uma semelhança e uma diferença coerentes com os exemplos estudados.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de problemas envolvendo subtração até 10."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve recuperar uma informação explícita do texto de apoio que sustente a resposta.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de problemas envolvendo subtração até 10."
+        },
+        {
+          "numero": 5,
+          "resposta": "Pode apresentar exemplo da escola, da casa ou da comunidade, desde que relacionado ao tema.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de problemas envolvendo subtração até 10."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese curta e autoral que demonstre uma aprendizagem efetivamente trabalhada na atividade.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de problemas envolvendo subtração até 10."
+        }
+      ]
+    },
+    {
+      "id": "efi-1ano-b1-mat-50-49-representacao-de-formas-geometricas",
+      "titulo": "Aprofundamento 49: Representação de formas geométricas",
+      "tema": "Representação de formas geométricas",
+      "sequencia": "Atividade 49",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "medio",
+      "objetivo": "Desenvolver EF01MA07 por meio do estudo de representação de formas geométricas, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01MA07",
+          "descricaoResumida": "Habilidade EF01MA07: desenvolver aprendizagens de Matemática relacionadas a Representação de formas geométricas, com linguagem, recursos e autonomia adequados ao 1º ano.",
+          "habilidadeOficial": "Habilidade EF01MA07: desenvolver aprendizagens de Matemática relacionadas a Representação de formas geométricas, com linguagem, recursos e autonomia adequados ao 1º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 49: Representação de formas geométricas”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 49: Representação de formas geométricas",
+        "conteudo": "Em Matemática, estudar representação de formas geométricas ajuda a criança a observar o cotidiano, nomear elementos, comparar situações e registrar descobertas. Nesta proposta, o estudante parte de exemplos próximos da escola, da família ou da comunidade e organiza o que percebe com palavras, desenhos, números ou pequenas explicações. A habilidade EF01MA07 orienta o trabalho e envolve habilidade ef01ma07: desenvolver aprendizagens de matemática relacionadas a representação de formas geométricas, com linguagem, recursos e autonomia adequados ao 1º ano. A atividade 49 retoma esse conhecimento em nova situação para ampliar a compreensão."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "O que você percebe primeiro na situação apresentada em “Aprofundamento 49: Representação de formas geométricas”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Quais dois elementos de “Aprofundamento 49: Representação de formas geométricas” ajudam a compreender melhor representação de formas geométricas?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "O que é parecido e o que é diferente entre os exemplos apresentados em “Aprofundamento 49: Representação de formas geométricas”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Que informação do texto de apoio de “Aprofundamento 49: Representação de formas geométricas” ajuda a responder sobre representação de formas geométricas?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Como o tema de “Aprofundamento 49: Representação de formas geométricas” pode ser observado na escola, em casa ou na comunidade?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Escreva com suas palavras uma descoberta feita ao estudar “Aprofundamento 49: Representação de formas geométricas”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apontar um elemento realmente apresentado na situação e descrevê-lo de modo compreensível.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de representação de formas geométricas."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve citar dois elementos pertinentes ao estudo de representação de formas geométricas e explicar sua presença.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de representação de formas geométricas."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve registrar ao menos uma semelhança e uma diferença coerentes com os exemplos estudados.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de representação de formas geométricas."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve recuperar uma informação explícita do texto de apoio que sustente a resposta.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de representação de formas geométricas."
+        },
+        {
+          "numero": 5,
+          "resposta": "Pode apresentar exemplo da escola, da casa ou da comunidade, desde que relacionado ao tema.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de representação de formas geométricas."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese curta e autoral que demonstre uma aprendizagem efetivamente trabalhada na atividade.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de representação de formas geométricas."
+        }
+      ]
+    },
+    {
+      "id": "efi-1ano-b1-mat-50-50-estrategias-de-calculo-com-formas-geometricas",
+      "titulo": "Aprofundamento 50: Estratégias de cálculo com formas geométricas",
+      "tema": "Estratégias de cálculo com formas geométricas",
+      "sequencia": "Atividade 50",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "medio",
+      "objetivo": "Desenvolver EF01MA08 por meio do estudo de estratégias de cálculo com formas geométricas, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01MA08",
+          "descricaoResumida": "Habilidade EF01MA08: desenvolver aprendizagens de Matemática relacionadas a Estratégias de cálculo com formas geométricas, com linguagem, recursos e autonomia adequados ao 1º ano.",
+          "habilidadeOficial": "Habilidade EF01MA08: desenvolver aprendizagens de Matemática relacionadas a Estratégias de cálculo com formas geométricas, com linguagem, recursos e autonomia adequados ao 1º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 50: Estratégias de cálculo com formas geométricas”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 50: Estratégias de cálculo com formas geométricas",
+        "conteudo": "Em Matemática, estudar estratégias de cálculo com formas geométricas ajuda a criança a observar o cotidiano, nomear elementos, comparar situações e registrar descobertas. Nesta proposta, o estudante parte de exemplos próximos da escola, da família ou da comunidade e organiza o que percebe com palavras, desenhos, números ou pequenas explicações. A habilidade EF01MA08 orienta o trabalho e envolve habilidade ef01ma08: desenvolver aprendizagens de matemática relacionadas a estratégias de cálculo com formas geométricas, com linguagem, recursos e autonomia adequados ao 1º ano. A atividade 50 retoma esse conhecimento em nova situação para ampliar a compreensão."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "O que você percebe primeiro na situação apresentada em “Aprofundamento 50: Estratégias de cálculo com formas geométricas”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Quais dois elementos de “Aprofundamento 50: Estratégias de cálculo com formas geométricas” ajudam a compreender melhor estratégias de cálculo com formas geométricas?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "O que é parecido e o que é diferente entre os exemplos apresentados em “Aprofundamento 50: Estratégias de cálculo com formas geométricas”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Que informação do texto de apoio de “Aprofundamento 50: Estratégias de cálculo com formas geométricas” ajuda a responder sobre estratégias de cálculo com formas geométricas?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Como o tema de “Aprofundamento 50: Estratégias de cálculo com formas geométricas” pode ser observado na escola, em casa ou na comunidade?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Escreva com suas palavras uma descoberta feita ao estudar “Aprofundamento 50: Estratégias de cálculo com formas geométricas”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apontar um elemento realmente apresentado na situação e descrevê-lo de modo compreensível.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de estratégias de cálculo com formas geométricas."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve citar dois elementos pertinentes ao estudo de estratégias de cálculo com formas geométricas e explicar sua presença.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de estratégias de cálculo com formas geométricas."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve registrar ao menos uma semelhança e uma diferença coerentes com os exemplos estudados.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de estratégias de cálculo com formas geométricas."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve recuperar uma informação explícita do texto de apoio que sustente a resposta.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de estratégias de cálculo com formas geométricas."
+        },
+        {
+          "numero": 5,
+          "resposta": "Pode apresentar exemplo da escola, da casa ou da comunidade, desde que relacionado ao tema.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de estratégias de cálculo com formas geométricas."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese curta e autoral que demonstre uma aprendizagem efetivamente trabalhada na atividade.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de estratégias de cálculo com formas geométricas."
+        }
+      ]
     }
   ],
   "bnccConferida": true,
-  "referenciaBncc": "BNCC — Ensino Fundamental — Anos Iniciais, Matemática (MEC, 2018)"
+  "referenciaBncc": "BNCC — Ensino Fundamental — Anos Iniciais, Matemática (MEC, 2018)",
+  "quantidadeAtividades": 50
 }

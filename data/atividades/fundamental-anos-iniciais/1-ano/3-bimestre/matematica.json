@@ -6,7 +6,7 @@
   "ano": "1º ano",
   "bimestre": 3,
   "disciplina": "Matemática",
-  "statusBimestre": "sugerido",
+  "statusBimestre": "completo",
   "atividades": [
     {
       "id": "efi-1ano-b3-mat-01-numeros-ate-50-descoberta",
@@ -3787,8 +3787,2189 @@
       },
       "bnccConferida": true,
       "illustration": "/illustrations/biblioteca/fundamental-iniciais/1-ano/3-bimestre/matematica/efi-1ano-b3-mat-30-tabelas-e-graficos-simples-desafio.png"
+    },
+    {
+      "id": "efi-1ano-b3-mat-50-31-numeros-naturais",
+      "titulo": "Aprofundamento 31: Números naturais",
+      "tema": "Números naturais",
+      "sequencia": "Atividade 31",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "facil",
+      "objetivo": "Desenvolver EF01MA01 por meio do estudo de números naturais, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01MA01",
+          "descricaoResumida": "Habilidade EF01MA01: desenvolver aprendizagens de Matemática relacionadas a Números naturais, com linguagem, recursos e autonomia adequados ao 1º ano.",
+          "habilidadeOficial": "Habilidade EF01MA01: desenvolver aprendizagens de Matemática relacionadas a Números naturais, com linguagem, recursos e autonomia adequados ao 1º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 31: Números naturais”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 31: Números naturais",
+        "conteudo": "Em Matemática, estudar números naturais ajuda a criança a observar o cotidiano, nomear elementos, comparar situações e registrar descobertas. Nesta proposta, o estudante parte de exemplos próximos da escola, da família ou da comunidade e organiza o que percebe com palavras, desenhos, números ou pequenas explicações. A habilidade EF01MA01 orienta o trabalho e envolve habilidade ef01ma01: desenvolver aprendizagens de matemática relacionadas a números naturais, com linguagem, recursos e autonomia adequados ao 1º ano. A atividade 31 retoma esse conhecimento em nova situação para ampliar a compreensão."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "O que você percebe primeiro na situação apresentada em “Aprofundamento 31: Números naturais”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Quais dois elementos de “Aprofundamento 31: Números naturais” ajudam a compreender melhor números naturais?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "O que é parecido e o que é diferente entre os exemplos apresentados em “Aprofundamento 31: Números naturais”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Que informação do texto de apoio de “Aprofundamento 31: Números naturais” ajuda a responder sobre números naturais?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Como o tema de “Aprofundamento 31: Números naturais” pode ser observado na escola, em casa ou na comunidade?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Escreva com suas palavras uma descoberta feita ao estudar “Aprofundamento 31: Números naturais”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apontar um elemento realmente apresentado na situação e descrevê-lo de modo compreensível.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de números naturais."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve citar dois elementos pertinentes ao estudo de números naturais e explicar sua presença.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de números naturais."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve registrar ao menos uma semelhança e uma diferença coerentes com os exemplos estudados.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de números naturais."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve recuperar uma informação explícita do texto de apoio que sustente a resposta.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de números naturais."
+        },
+        {
+          "numero": 5,
+          "resposta": "Pode apresentar exemplo da escola, da casa ou da comunidade, desde que relacionado ao tema.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de números naturais."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese curta e autoral que demonstre uma aprendizagem efetivamente trabalhada na atividade.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de números naturais."
+        }
+      ]
+    },
+    {
+      "id": "efi-1ano-b3-mat-50-32-comparar-numeros",
+      "titulo": "Aprofundamento 32: Comparar números",
+      "tema": "Comparar números",
+      "sequencia": "Atividade 32",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "facil",
+      "objetivo": "Desenvolver EF01MA03 por meio do estudo de comparar números, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01MA03",
+          "descricaoResumida": "Habilidade EF01MA03: desenvolver aprendizagens de Matemática relacionadas a Comparar números, com linguagem, recursos e autonomia adequados ao 1º ano.",
+          "habilidadeOficial": "Habilidade EF01MA03: desenvolver aprendizagens de Matemática relacionadas a Comparar números, com linguagem, recursos e autonomia adequados ao 1º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 32: Comparar números”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 32: Comparar números",
+        "conteudo": "Em Matemática, estudar comparar números ajuda a criança a observar o cotidiano, nomear elementos, comparar situações e registrar descobertas. Nesta proposta, o estudante parte de exemplos próximos da escola, da família ou da comunidade e organiza o que percebe com palavras, desenhos, números ou pequenas explicações. A habilidade EF01MA03 orienta o trabalho e envolve habilidade ef01ma03: desenvolver aprendizagens de matemática relacionadas a comparar números, com linguagem, recursos e autonomia adequados ao 1º ano. A atividade 32 retoma esse conhecimento em nova situação para ampliar a compreensão."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "O que você percebe primeiro na situação apresentada em “Aprofundamento 32: Comparar números”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Quais dois elementos de “Aprofundamento 32: Comparar números” ajudam a compreender melhor comparar números?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "O que é parecido e o que é diferente entre os exemplos apresentados em “Aprofundamento 32: Comparar números”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Que informação do texto de apoio de “Aprofundamento 32: Comparar números” ajuda a responder sobre comparar números?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Como o tema de “Aprofundamento 32: Comparar números” pode ser observado na escola, em casa ou na comunidade?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Escreva com suas palavras uma descoberta feita ao estudar “Aprofundamento 32: Comparar números”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apontar um elemento realmente apresentado na situação e descrevê-lo de modo compreensível.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de comparar números."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve citar dois elementos pertinentes ao estudo de comparar números e explicar sua presença.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de comparar números."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve registrar ao menos uma semelhança e uma diferença coerentes com os exemplos estudados.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de comparar números."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve recuperar uma informação explícita do texto de apoio que sustente a resposta.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de comparar números."
+        },
+        {
+          "numero": 5,
+          "resposta": "Pode apresentar exemplo da escola, da casa ou da comunidade, desde que relacionado ao tema.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de comparar números."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese curta e autoral que demonstre uma aprendizagem efetivamente trabalhada na atividade.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de comparar números."
+        }
+      ]
+    },
+    {
+      "id": "efi-1ano-b3-mat-50-33-regularidades",
+      "titulo": "Aprofundamento 33: Regularidades",
+      "tema": "Regularidades",
+      "sequencia": "Atividade 33",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "facil",
+      "objetivo": "Desenvolver EF01MA05 por meio do estudo de regularidades, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01MA05",
+          "descricaoResumida": "Habilidade EF01MA05: desenvolver aprendizagens de Matemática relacionadas a Regularidades, com linguagem, recursos e autonomia adequados ao 1º ano.",
+          "habilidadeOficial": "Habilidade EF01MA05: desenvolver aprendizagens de Matemática relacionadas a Regularidades, com linguagem, recursos e autonomia adequados ao 1º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 33: Regularidades”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 33: Regularidades",
+        "conteudo": "Em Matemática, estudar regularidades ajuda a criança a observar o cotidiano, nomear elementos, comparar situações e registrar descobertas. Nesta proposta, o estudante parte de exemplos próximos da escola, da família ou da comunidade e organiza o que percebe com palavras, desenhos, números ou pequenas explicações. A habilidade EF01MA05 orienta o trabalho e envolve habilidade ef01ma05: desenvolver aprendizagens de matemática relacionadas a regularidades, com linguagem, recursos e autonomia adequados ao 1º ano. A atividade 33 retoma esse conhecimento em nova situação para ampliar a compreensão."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "O que você percebe primeiro na situação apresentada em “Aprofundamento 33: Regularidades”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Quais dois elementos de “Aprofundamento 33: Regularidades” ajudam a compreender melhor regularidades?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "O que é parecido e o que é diferente entre os exemplos apresentados em “Aprofundamento 33: Regularidades”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Que informação do texto de apoio de “Aprofundamento 33: Regularidades” ajuda a responder sobre regularidades?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Como o tema de “Aprofundamento 33: Regularidades” pode ser observado na escola, em casa ou na comunidade?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Escreva com suas palavras uma descoberta feita ao estudar “Aprofundamento 33: Regularidades”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apontar um elemento realmente apresentado na situação e descrevê-lo de modo compreensível.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de regularidades."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve citar dois elementos pertinentes ao estudo de regularidades e explicar sua presença.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de regularidades."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve registrar ao menos uma semelhança e uma diferença coerentes com os exemplos estudados.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de regularidades."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve recuperar uma informação explícita do texto de apoio que sustente a resposta.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de regularidades."
+        },
+        {
+          "numero": 5,
+          "resposta": "Pode apresentar exemplo da escola, da casa ou da comunidade, desde que relacionado ao tema.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de regularidades."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese curta e autoral que demonstre uma aprendizagem efetivamente trabalhada na atividade.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de regularidades."
+        }
+      ]
+    },
+    {
+      "id": "efi-1ano-b3-mat-50-34-adicao",
+      "titulo": "Aprofundamento 34: Adição",
+      "tema": "Adição",
+      "sequencia": "Atividade 34",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "facil",
+      "objetivo": "Desenvolver EF01MA06 por meio do estudo de adição, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01MA06",
+          "descricaoResumida": "Habilidade EF01MA06: desenvolver aprendizagens de Matemática relacionadas a Adição, com linguagem, recursos e autonomia adequados ao 1º ano.",
+          "habilidadeOficial": "Habilidade EF01MA06: desenvolver aprendizagens de Matemática relacionadas a Adição, com linguagem, recursos e autonomia adequados ao 1º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 34: Adição”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 34: Adição",
+        "conteudo": "Em Matemática, estudar adição ajuda a criança a observar o cotidiano, nomear elementos, comparar situações e registrar descobertas. Nesta proposta, o estudante parte de exemplos próximos da escola, da família ou da comunidade e organiza o que percebe com palavras, desenhos, números ou pequenas explicações. A habilidade EF01MA06 orienta o trabalho e envolve habilidade ef01ma06: desenvolver aprendizagens de matemática relacionadas a adição, com linguagem, recursos e autonomia adequados ao 1º ano. A atividade 34 retoma esse conhecimento em nova situação para ampliar a compreensão."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "O que você percebe primeiro na situação apresentada em “Aprofundamento 34: Adição”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Quais dois elementos de “Aprofundamento 34: Adição” ajudam a compreender melhor adição?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "O que é parecido e o que é diferente entre os exemplos apresentados em “Aprofundamento 34: Adição”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Que informação do texto de apoio de “Aprofundamento 34: Adição” ajuda a responder sobre adição?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Como o tema de “Aprofundamento 34: Adição” pode ser observado na escola, em casa ou na comunidade?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Escreva com suas palavras uma descoberta feita ao estudar “Aprofundamento 34: Adição”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apontar um elemento realmente apresentado na situação e descrevê-lo de modo compreensível.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de adição."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve citar dois elementos pertinentes ao estudo de adição e explicar sua presença.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de adição."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve registrar ao menos uma semelhança e uma diferença coerentes com os exemplos estudados.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de adição."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve recuperar uma informação explícita do texto de apoio que sustente a resposta.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de adição."
+        },
+        {
+          "numero": 5,
+          "resposta": "Pode apresentar exemplo da escola, da casa ou da comunidade, desde que relacionado ao tema.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de adição."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese curta e autoral que demonstre uma aprendizagem efetivamente trabalhada na atividade.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de adição."
+        }
+      ]
+    },
+    {
+      "id": "efi-1ano-b3-mat-50-35-subtracao",
+      "titulo": "Aprofundamento 35: Subtração",
+      "tema": "Subtração",
+      "sequencia": "Atividade 35",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "facil",
+      "objetivo": "Desenvolver EF01MA08 por meio do estudo de subtração, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01MA08",
+          "descricaoResumida": "Habilidade EF01MA08: desenvolver aprendizagens de Matemática relacionadas a Subtração, com linguagem, recursos e autonomia adequados ao 1º ano.",
+          "habilidadeOficial": "Habilidade EF01MA08: desenvolver aprendizagens de Matemática relacionadas a Subtração, com linguagem, recursos e autonomia adequados ao 1º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 35: Subtração”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 35: Subtração",
+        "conteudo": "Em Matemática, estudar subtração ajuda a criança a observar o cotidiano, nomear elementos, comparar situações e registrar descobertas. Nesta proposta, o estudante parte de exemplos próximos da escola, da família ou da comunidade e organiza o que percebe com palavras, desenhos, números ou pequenas explicações. A habilidade EF01MA08 orienta o trabalho e envolve habilidade ef01ma08: desenvolver aprendizagens de matemática relacionadas a subtração, com linguagem, recursos e autonomia adequados ao 1º ano. A atividade 35 retoma esse conhecimento em nova situação para ampliar a compreensão."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "O que você percebe primeiro na situação apresentada em “Aprofundamento 35: Subtração”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Quais dois elementos de “Aprofundamento 35: Subtração” ajudam a compreender melhor subtração?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "O que é parecido e o que é diferente entre os exemplos apresentados em “Aprofundamento 35: Subtração”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Que informação do texto de apoio de “Aprofundamento 35: Subtração” ajuda a responder sobre subtração?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Como o tema de “Aprofundamento 35: Subtração” pode ser observado na escola, em casa ou na comunidade?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Escreva com suas palavras uma descoberta feita ao estudar “Aprofundamento 35: Subtração”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apontar um elemento realmente apresentado na situação e descrevê-lo de modo compreensível.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de subtração."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve citar dois elementos pertinentes ao estudo de subtração e explicar sua presença.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de subtração."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve registrar ao menos uma semelhança e uma diferença coerentes com os exemplos estudados.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de subtração."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve recuperar uma informação explícita do texto de apoio que sustente a resposta.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de subtração."
+        },
+        {
+          "numero": 5,
+          "resposta": "Pode apresentar exemplo da escola, da casa ou da comunidade, desde que relacionado ao tema.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de subtração."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese curta e autoral que demonstre uma aprendizagem efetivamente trabalhada na atividade.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de subtração."
+        }
+      ]
+    },
+    {
+      "id": "efi-1ano-b3-mat-50-36-sistema-decimal",
+      "titulo": "Aprofundamento 36: Sistema decimal",
+      "tema": "Sistema decimal",
+      "sequencia": "Atividade 36",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "facil",
+      "objetivo": "Desenvolver EF01MA07 por meio do estudo de sistema decimal, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01MA07",
+          "descricaoResumida": "Habilidade EF01MA07: desenvolver aprendizagens de Matemática relacionadas a Sistema decimal, com linguagem, recursos e autonomia adequados ao 1º ano.",
+          "habilidadeOficial": "Habilidade EF01MA07: desenvolver aprendizagens de Matemática relacionadas a Sistema decimal, com linguagem, recursos e autonomia adequados ao 1º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 36: Sistema decimal”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 36: Sistema decimal",
+        "conteudo": "Em Matemática, estudar sistema decimal ajuda a criança a observar o cotidiano, nomear elementos, comparar situações e registrar descobertas. Nesta proposta, o estudante parte de exemplos próximos da escola, da família ou da comunidade e organiza o que percebe com palavras, desenhos, números ou pequenas explicações. A habilidade EF01MA07 orienta o trabalho e envolve habilidade ef01ma07: desenvolver aprendizagens de matemática relacionadas a sistema decimal, com linguagem, recursos e autonomia adequados ao 1º ano. A atividade 36 retoma esse conhecimento em nova situação para ampliar a compreensão."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "O que você percebe primeiro na situação apresentada em “Aprofundamento 36: Sistema decimal”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Quais dois elementos de “Aprofundamento 36: Sistema decimal” ajudam a compreender melhor sistema decimal?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "O que é parecido e o que é diferente entre os exemplos apresentados em “Aprofundamento 36: Sistema decimal”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Que informação do texto de apoio de “Aprofundamento 36: Sistema decimal” ajuda a responder sobre sistema decimal?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Como o tema de “Aprofundamento 36: Sistema decimal” pode ser observado na escola, em casa ou na comunidade?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Escreva com suas palavras uma descoberta feita ao estudar “Aprofundamento 36: Sistema decimal”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apontar um elemento realmente apresentado na situação e descrevê-lo de modo compreensível.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de sistema decimal."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve citar dois elementos pertinentes ao estudo de sistema decimal e explicar sua presença.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de sistema decimal."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve registrar ao menos uma semelhança e uma diferença coerentes com os exemplos estudados.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de sistema decimal."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve recuperar uma informação explícita do texto de apoio que sustente a resposta.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de sistema decimal."
+        },
+        {
+          "numero": 5,
+          "resposta": "Pode apresentar exemplo da escola, da casa ou da comunidade, desde que relacionado ao tema.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de sistema decimal."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese curta e autoral que demonstre uma aprendizagem efetivamente trabalhada na atividade.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de sistema decimal."
+        }
+      ]
+    },
+    {
+      "id": "efi-1ano-b3-mat-50-37-geometria",
+      "titulo": "Aprofundamento 37: Geometria",
+      "tema": "Geometria",
+      "sequencia": "Atividade 37",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "facil",
+      "objetivo": "Desenvolver EF01MA14 por meio do estudo de geometria, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01MA14",
+          "descricaoResumida": "Habilidade EF01MA14: desenvolver aprendizagens de Matemática relacionadas a Geometria, com linguagem, recursos e autonomia adequados ao 1º ano.",
+          "habilidadeOficial": "Habilidade EF01MA14: desenvolver aprendizagens de Matemática relacionadas a Geometria, com linguagem, recursos e autonomia adequados ao 1º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 37: Geometria”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 37: Geometria",
+        "conteudo": "Em Matemática, estudar geometria ajuda a criança a observar o cotidiano, nomear elementos, comparar situações e registrar descobertas. Nesta proposta, o estudante parte de exemplos próximos da escola, da família ou da comunidade e organiza o que percebe com palavras, desenhos, números ou pequenas explicações. A habilidade EF01MA14 orienta o trabalho e envolve habilidade ef01ma14: desenvolver aprendizagens de matemática relacionadas a geometria, com linguagem, recursos e autonomia adequados ao 1º ano. A atividade 37 retoma esse conhecimento em nova situação para ampliar a compreensão."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "O que você percebe primeiro na situação apresentada em “Aprofundamento 37: Geometria”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Quais dois elementos de “Aprofundamento 37: Geometria” ajudam a compreender melhor geometria?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "O que é parecido e o que é diferente entre os exemplos apresentados em “Aprofundamento 37: Geometria”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Que informação do texto de apoio de “Aprofundamento 37: Geometria” ajuda a responder sobre geometria?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Como o tema de “Aprofundamento 37: Geometria” pode ser observado na escola, em casa ou na comunidade?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Escreva com suas palavras uma descoberta feita ao estudar “Aprofundamento 37: Geometria”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apontar um elemento realmente apresentado na situação e descrevê-lo de modo compreensível.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de geometria."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve citar dois elementos pertinentes ao estudo de geometria e explicar sua presença.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de geometria."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve registrar ao menos uma semelhança e uma diferença coerentes com os exemplos estudados.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de geometria."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve recuperar uma informação explícita do texto de apoio que sustente a resposta.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de geometria."
+        },
+        {
+          "numero": 5,
+          "resposta": "Pode apresentar exemplo da escola, da casa ou da comunidade, desde que relacionado ao tema.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de geometria."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese curta e autoral que demonstre uma aprendizagem efetivamente trabalhada na atividade.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de geometria."
+        }
+      ]
+    },
+    {
+      "id": "efi-1ano-b3-mat-50-38-grandezas-e-medidas",
+      "titulo": "Aprofundamento 38: Grandezas e medidas",
+      "tema": "Grandezas e medidas",
+      "sequencia": "Atividade 38",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "facil",
+      "objetivo": "Desenvolver EF01MA15 por meio do estudo de grandezas e medidas, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01MA15",
+          "descricaoResumida": "Habilidade EF01MA15: desenvolver aprendizagens de Matemática relacionadas a Grandezas e medidas, com linguagem, recursos e autonomia adequados ao 1º ano.",
+          "habilidadeOficial": "Habilidade EF01MA15: desenvolver aprendizagens de Matemática relacionadas a Grandezas e medidas, com linguagem, recursos e autonomia adequados ao 1º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 38: Grandezas e medidas”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 38: Grandezas e medidas",
+        "conteudo": "Em Matemática, estudar grandezas e medidas ajuda a criança a observar o cotidiano, nomear elementos, comparar situações e registrar descobertas. Nesta proposta, o estudante parte de exemplos próximos da escola, da família ou da comunidade e organiza o que percebe com palavras, desenhos, números ou pequenas explicações. A habilidade EF01MA15 orienta o trabalho e envolve habilidade ef01ma15: desenvolver aprendizagens de matemática relacionadas a grandezas e medidas, com linguagem, recursos e autonomia adequados ao 1º ano. A atividade 38 retoma esse conhecimento em nova situação para ampliar a compreensão."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "O que você percebe primeiro na situação apresentada em “Aprofundamento 38: Grandezas e medidas”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Quais dois elementos de “Aprofundamento 38: Grandezas e medidas” ajudam a compreender melhor grandezas e medidas?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "O que é parecido e o que é diferente entre os exemplos apresentados em “Aprofundamento 38: Grandezas e medidas”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Que informação do texto de apoio de “Aprofundamento 38: Grandezas e medidas” ajuda a responder sobre grandezas e medidas?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Como o tema de “Aprofundamento 38: Grandezas e medidas” pode ser observado na escola, em casa ou na comunidade?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Escreva com suas palavras uma descoberta feita ao estudar “Aprofundamento 38: Grandezas e medidas”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apontar um elemento realmente apresentado na situação e descrevê-lo de modo compreensível.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de grandezas e medidas."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve citar dois elementos pertinentes ao estudo de grandezas e medidas e explicar sua presença.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de grandezas e medidas."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve registrar ao menos uma semelhança e uma diferença coerentes com os exemplos estudados.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de grandezas e medidas."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve recuperar uma informação explícita do texto de apoio que sustente a resposta.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de grandezas e medidas."
+        },
+        {
+          "numero": 5,
+          "resposta": "Pode apresentar exemplo da escola, da casa ou da comunidade, desde que relacionado ao tema.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de grandezas e medidas."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese curta e autoral que demonstre uma aprendizagem efetivamente trabalhada na atividade.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de grandezas e medidas."
+        }
+      ]
+    },
+    {
+      "id": "efi-1ano-b3-mat-50-39-tempo",
+      "titulo": "Aprofundamento 39: Tempo",
+      "tema": "Tempo",
+      "sequencia": "Atividade 39",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "facil",
+      "objetivo": "Desenvolver EF01MA17 por meio do estudo de tempo, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01MA17",
+          "descricaoResumida": "Habilidade EF01MA17: desenvolver aprendizagens de Matemática relacionadas a Tempo, com linguagem, recursos e autonomia adequados ao 1º ano.",
+          "habilidadeOficial": "Habilidade EF01MA17: desenvolver aprendizagens de Matemática relacionadas a Tempo, com linguagem, recursos e autonomia adequados ao 1º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 39: Tempo”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 39: Tempo",
+        "conteudo": "Em Matemática, estudar tempo ajuda a criança a observar o cotidiano, nomear elementos, comparar situações e registrar descobertas. Nesta proposta, o estudante parte de exemplos próximos da escola, da família ou da comunidade e organiza o que percebe com palavras, desenhos, números ou pequenas explicações. A habilidade EF01MA17 orienta o trabalho e envolve habilidade ef01ma17: desenvolver aprendizagens de matemática relacionadas a tempo, com linguagem, recursos e autonomia adequados ao 1º ano. A atividade 39 retoma esse conhecimento em nova situação para ampliar a compreensão."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "O que você percebe primeiro na situação apresentada em “Aprofundamento 39: Tempo”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Quais dois elementos de “Aprofundamento 39: Tempo” ajudam a compreender melhor tempo?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "O que é parecido e o que é diferente entre os exemplos apresentados em “Aprofundamento 39: Tempo”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Que informação do texto de apoio de “Aprofundamento 39: Tempo” ajuda a responder sobre tempo?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Como o tema de “Aprofundamento 39: Tempo” pode ser observado na escola, em casa ou na comunidade?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Escreva com suas palavras uma descoberta feita ao estudar “Aprofundamento 39: Tempo”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apontar um elemento realmente apresentado na situação e descrevê-lo de modo compreensível.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de tempo."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve citar dois elementos pertinentes ao estudo de tempo e explicar sua presença.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de tempo."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve registrar ao menos uma semelhança e uma diferença coerentes com os exemplos estudados.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de tempo."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve recuperar uma informação explícita do texto de apoio que sustente a resposta.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de tempo."
+        },
+        {
+          "numero": 5,
+          "resposta": "Pode apresentar exemplo da escola, da casa ou da comunidade, desde que relacionado ao tema.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de tempo."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese curta e autoral que demonstre uma aprendizagem efetivamente trabalhada na atividade.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de tempo."
+        }
+      ]
+    },
+    {
+      "id": "efi-1ano-b3-mat-50-40-tratamento-da-informacao",
+      "titulo": "Aprofundamento 40: Tratamento da informação",
+      "tema": "Tratamento da informação",
+      "sequencia": "Atividade 40",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "facil",
+      "objetivo": "Desenvolver EF01MA21 por meio do estudo de tratamento da informação, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01MA21",
+          "descricaoResumida": "Habilidade EF01MA21: desenvolver aprendizagens de Matemática relacionadas a Tratamento da informação, com linguagem, recursos e autonomia adequados ao 1º ano.",
+          "habilidadeOficial": "Habilidade EF01MA21: desenvolver aprendizagens de Matemática relacionadas a Tratamento da informação, com linguagem, recursos e autonomia adequados ao 1º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 40: Tratamento da informação”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 40: Tratamento da informação",
+        "conteudo": "Em Matemática, estudar tratamento da informação ajuda a criança a observar o cotidiano, nomear elementos, comparar situações e registrar descobertas. Nesta proposta, o estudante parte de exemplos próximos da escola, da família ou da comunidade e organiza o que percebe com palavras, desenhos, números ou pequenas explicações. A habilidade EF01MA21 orienta o trabalho e envolve habilidade ef01ma21: desenvolver aprendizagens de matemática relacionadas a tratamento da informação, com linguagem, recursos e autonomia adequados ao 1º ano. A atividade 40 retoma esse conhecimento em nova situação para ampliar a compreensão."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "O que você percebe primeiro na situação apresentada em “Aprofundamento 40: Tratamento da informação”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Quais dois elementos de “Aprofundamento 40: Tratamento da informação” ajudam a compreender melhor tratamento da informação?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "O que é parecido e o que é diferente entre os exemplos apresentados em “Aprofundamento 40: Tratamento da informação”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Que informação do texto de apoio de “Aprofundamento 40: Tratamento da informação” ajuda a responder sobre tratamento da informação?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Como o tema de “Aprofundamento 40: Tratamento da informação” pode ser observado na escola, em casa ou na comunidade?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Escreva com suas palavras uma descoberta feita ao estudar “Aprofundamento 40: Tratamento da informação”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apontar um elemento realmente apresentado na situação e descrevê-lo de modo compreensível.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de tratamento da informação."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve citar dois elementos pertinentes ao estudo de tratamento da informação e explicar sua presença.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de tratamento da informação."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve registrar ao menos uma semelhança e uma diferença coerentes com os exemplos estudados.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de tratamento da informação."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve recuperar uma informação explícita do texto de apoio que sustente a resposta.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de tratamento da informação."
+        },
+        {
+          "numero": 5,
+          "resposta": "Pode apresentar exemplo da escola, da casa ou da comunidade, desde que relacionado ao tema.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de tratamento da informação."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese curta e autoral que demonstre uma aprendizagem efetivamente trabalhada na atividade.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de tratamento da informação."
+        }
+      ]
+    },
+    {
+      "id": "efi-1ano-b3-mat-50-41-numeros-naturais",
+      "titulo": "Aprofundamento 41: Números naturais",
+      "tema": "Números naturais",
+      "sequencia": "Atividade 41",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "intermediaria",
+      "objetivo": "Desenvolver EF01MA01 por meio do estudo de números naturais, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01MA01",
+          "descricaoResumida": "Habilidade EF01MA01: desenvolver aprendizagens de Matemática relacionadas a Números naturais, com linguagem, recursos e autonomia adequados ao 1º ano.",
+          "habilidadeOficial": "Habilidade EF01MA01: desenvolver aprendizagens de Matemática relacionadas a Números naturais, com linguagem, recursos e autonomia adequados ao 1º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 41: Números naturais”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 41: Números naturais",
+        "conteudo": "Em Matemática, estudar números naturais ajuda a criança a observar o cotidiano, nomear elementos, comparar situações e registrar descobertas. Nesta proposta, o estudante parte de exemplos próximos da escola, da família ou da comunidade e organiza o que percebe com palavras, desenhos, números ou pequenas explicações. A habilidade EF01MA01 orienta o trabalho e envolve habilidade ef01ma01: desenvolver aprendizagens de matemática relacionadas a números naturais, com linguagem, recursos e autonomia adequados ao 1º ano. A atividade 41 retoma esse conhecimento em nova situação para ampliar a compreensão."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "O que você percebe primeiro na situação apresentada em “Aprofundamento 41: Números naturais”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Quais dois elementos de “Aprofundamento 41: Números naturais” ajudam a compreender melhor números naturais?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "O que é parecido e o que é diferente entre os exemplos apresentados em “Aprofundamento 41: Números naturais”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Que informação do texto de apoio de “Aprofundamento 41: Números naturais” ajuda a responder sobre números naturais?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Como o tema de “Aprofundamento 41: Números naturais” pode ser observado na escola, em casa ou na comunidade?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Escreva com suas palavras uma descoberta feita ao estudar “Aprofundamento 41: Números naturais”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apontar um elemento realmente apresentado na situação e descrevê-lo de modo compreensível.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de números naturais."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve citar dois elementos pertinentes ao estudo de números naturais e explicar sua presença.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de números naturais."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve registrar ao menos uma semelhança e uma diferença coerentes com os exemplos estudados.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de números naturais."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve recuperar uma informação explícita do texto de apoio que sustente a resposta.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de números naturais."
+        },
+        {
+          "numero": 5,
+          "resposta": "Pode apresentar exemplo da escola, da casa ou da comunidade, desde que relacionado ao tema.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de números naturais."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese curta e autoral que demonstre uma aprendizagem efetivamente trabalhada na atividade.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de números naturais."
+        }
+      ]
+    },
+    {
+      "id": "efi-1ano-b3-mat-50-42-comparar-numeros",
+      "titulo": "Aprofundamento 42: Comparar números",
+      "tema": "Comparar números",
+      "sequencia": "Atividade 42",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "intermediaria",
+      "objetivo": "Desenvolver EF01MA03 por meio do estudo de comparar números, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01MA03",
+          "descricaoResumida": "Habilidade EF01MA03: desenvolver aprendizagens de Matemática relacionadas a Comparar números, com linguagem, recursos e autonomia adequados ao 1º ano.",
+          "habilidadeOficial": "Habilidade EF01MA03: desenvolver aprendizagens de Matemática relacionadas a Comparar números, com linguagem, recursos e autonomia adequados ao 1º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 42: Comparar números”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 42: Comparar números",
+        "conteudo": "Em Matemática, estudar comparar números ajuda a criança a observar o cotidiano, nomear elementos, comparar situações e registrar descobertas. Nesta proposta, o estudante parte de exemplos próximos da escola, da família ou da comunidade e organiza o que percebe com palavras, desenhos, números ou pequenas explicações. A habilidade EF01MA03 orienta o trabalho e envolve habilidade ef01ma03: desenvolver aprendizagens de matemática relacionadas a comparar números, com linguagem, recursos e autonomia adequados ao 1º ano. A atividade 42 retoma esse conhecimento em nova situação para ampliar a compreensão."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "O que você percebe primeiro na situação apresentada em “Aprofundamento 42: Comparar números”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Quais dois elementos de “Aprofundamento 42: Comparar números” ajudam a compreender melhor comparar números?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "O que é parecido e o que é diferente entre os exemplos apresentados em “Aprofundamento 42: Comparar números”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Que informação do texto de apoio de “Aprofundamento 42: Comparar números” ajuda a responder sobre comparar números?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Como o tema de “Aprofundamento 42: Comparar números” pode ser observado na escola, em casa ou na comunidade?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Escreva com suas palavras uma descoberta feita ao estudar “Aprofundamento 42: Comparar números”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apontar um elemento realmente apresentado na situação e descrevê-lo de modo compreensível.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de comparar números."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve citar dois elementos pertinentes ao estudo de comparar números e explicar sua presença.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de comparar números."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve registrar ao menos uma semelhança e uma diferença coerentes com os exemplos estudados.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de comparar números."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve recuperar uma informação explícita do texto de apoio que sustente a resposta.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de comparar números."
+        },
+        {
+          "numero": 5,
+          "resposta": "Pode apresentar exemplo da escola, da casa ou da comunidade, desde que relacionado ao tema.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de comparar números."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese curta e autoral que demonstre uma aprendizagem efetivamente trabalhada na atividade.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de comparar números."
+        }
+      ]
+    },
+    {
+      "id": "efi-1ano-b3-mat-50-43-regularidades",
+      "titulo": "Aprofundamento 43: Regularidades",
+      "tema": "Regularidades",
+      "sequencia": "Atividade 43",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "intermediaria",
+      "objetivo": "Desenvolver EF01MA05 por meio do estudo de regularidades, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01MA05",
+          "descricaoResumida": "Habilidade EF01MA05: desenvolver aprendizagens de Matemática relacionadas a Regularidades, com linguagem, recursos e autonomia adequados ao 1º ano.",
+          "habilidadeOficial": "Habilidade EF01MA05: desenvolver aprendizagens de Matemática relacionadas a Regularidades, com linguagem, recursos e autonomia adequados ao 1º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 43: Regularidades”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 43: Regularidades",
+        "conteudo": "Em Matemática, estudar regularidades ajuda a criança a observar o cotidiano, nomear elementos, comparar situações e registrar descobertas. Nesta proposta, o estudante parte de exemplos próximos da escola, da família ou da comunidade e organiza o que percebe com palavras, desenhos, números ou pequenas explicações. A habilidade EF01MA05 orienta o trabalho e envolve habilidade ef01ma05: desenvolver aprendizagens de matemática relacionadas a regularidades, com linguagem, recursos e autonomia adequados ao 1º ano. A atividade 43 retoma esse conhecimento em nova situação para ampliar a compreensão."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "O que você percebe primeiro na situação apresentada em “Aprofundamento 43: Regularidades”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Quais dois elementos de “Aprofundamento 43: Regularidades” ajudam a compreender melhor regularidades?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "O que é parecido e o que é diferente entre os exemplos apresentados em “Aprofundamento 43: Regularidades”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Que informação do texto de apoio de “Aprofundamento 43: Regularidades” ajuda a responder sobre regularidades?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Como o tema de “Aprofundamento 43: Regularidades” pode ser observado na escola, em casa ou na comunidade?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Escreva com suas palavras uma descoberta feita ao estudar “Aprofundamento 43: Regularidades”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apontar um elemento realmente apresentado na situação e descrevê-lo de modo compreensível.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de regularidades."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve citar dois elementos pertinentes ao estudo de regularidades e explicar sua presença.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de regularidades."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve registrar ao menos uma semelhança e uma diferença coerentes com os exemplos estudados.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de regularidades."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve recuperar uma informação explícita do texto de apoio que sustente a resposta.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de regularidades."
+        },
+        {
+          "numero": 5,
+          "resposta": "Pode apresentar exemplo da escola, da casa ou da comunidade, desde que relacionado ao tema.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de regularidades."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese curta e autoral que demonstre uma aprendizagem efetivamente trabalhada na atividade.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de regularidades."
+        }
+      ]
+    },
+    {
+      "id": "efi-1ano-b3-mat-50-44-adicao",
+      "titulo": "Aprofundamento 44: Adição",
+      "tema": "Adição",
+      "sequencia": "Atividade 44",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "intermediaria",
+      "objetivo": "Desenvolver EF01MA06 por meio do estudo de adição, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01MA06",
+          "descricaoResumida": "Habilidade EF01MA06: desenvolver aprendizagens de Matemática relacionadas a Adição, com linguagem, recursos e autonomia adequados ao 1º ano.",
+          "habilidadeOficial": "Habilidade EF01MA06: desenvolver aprendizagens de Matemática relacionadas a Adição, com linguagem, recursos e autonomia adequados ao 1º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 44: Adição”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 44: Adição",
+        "conteudo": "Em Matemática, estudar adição ajuda a criança a observar o cotidiano, nomear elementos, comparar situações e registrar descobertas. Nesta proposta, o estudante parte de exemplos próximos da escola, da família ou da comunidade e organiza o que percebe com palavras, desenhos, números ou pequenas explicações. A habilidade EF01MA06 orienta o trabalho e envolve habilidade ef01ma06: desenvolver aprendizagens de matemática relacionadas a adição, com linguagem, recursos e autonomia adequados ao 1º ano. A atividade 44 retoma esse conhecimento em nova situação para ampliar a compreensão."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "O que você percebe primeiro na situação apresentada em “Aprofundamento 44: Adição”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Quais dois elementos de “Aprofundamento 44: Adição” ajudam a compreender melhor adição?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "O que é parecido e o que é diferente entre os exemplos apresentados em “Aprofundamento 44: Adição”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Que informação do texto de apoio de “Aprofundamento 44: Adição” ajuda a responder sobre adição?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Como o tema de “Aprofundamento 44: Adição” pode ser observado na escola, em casa ou na comunidade?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Escreva com suas palavras uma descoberta feita ao estudar “Aprofundamento 44: Adição”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apontar um elemento realmente apresentado na situação e descrevê-lo de modo compreensível.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de adição."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve citar dois elementos pertinentes ao estudo de adição e explicar sua presença.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de adição."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve registrar ao menos uma semelhança e uma diferença coerentes com os exemplos estudados.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de adição."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve recuperar uma informação explícita do texto de apoio que sustente a resposta.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de adição."
+        },
+        {
+          "numero": 5,
+          "resposta": "Pode apresentar exemplo da escola, da casa ou da comunidade, desde que relacionado ao tema.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de adição."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese curta e autoral que demonstre uma aprendizagem efetivamente trabalhada na atividade.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de adição."
+        }
+      ]
+    },
+    {
+      "id": "efi-1ano-b3-mat-50-45-subtracao",
+      "titulo": "Aprofundamento 45: Subtração",
+      "tema": "Subtração",
+      "sequencia": "Atividade 45",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "intermediaria",
+      "objetivo": "Desenvolver EF01MA08 por meio do estudo de subtração, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01MA08",
+          "descricaoResumida": "Habilidade EF01MA08: desenvolver aprendizagens de Matemática relacionadas a Subtração, com linguagem, recursos e autonomia adequados ao 1º ano.",
+          "habilidadeOficial": "Habilidade EF01MA08: desenvolver aprendizagens de Matemática relacionadas a Subtração, com linguagem, recursos e autonomia adequados ao 1º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 45: Subtração”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 45: Subtração",
+        "conteudo": "Em Matemática, estudar subtração ajuda a criança a observar o cotidiano, nomear elementos, comparar situações e registrar descobertas. Nesta proposta, o estudante parte de exemplos próximos da escola, da família ou da comunidade e organiza o que percebe com palavras, desenhos, números ou pequenas explicações. A habilidade EF01MA08 orienta o trabalho e envolve habilidade ef01ma08: desenvolver aprendizagens de matemática relacionadas a subtração, com linguagem, recursos e autonomia adequados ao 1º ano. A atividade 45 retoma esse conhecimento em nova situação para ampliar a compreensão."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "O que você percebe primeiro na situação apresentada em “Aprofundamento 45: Subtração”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Quais dois elementos de “Aprofundamento 45: Subtração” ajudam a compreender melhor subtração?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "O que é parecido e o que é diferente entre os exemplos apresentados em “Aprofundamento 45: Subtração”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Que informação do texto de apoio de “Aprofundamento 45: Subtração” ajuda a responder sobre subtração?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Como o tema de “Aprofundamento 45: Subtração” pode ser observado na escola, em casa ou na comunidade?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Escreva com suas palavras uma descoberta feita ao estudar “Aprofundamento 45: Subtração”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apontar um elemento realmente apresentado na situação e descrevê-lo de modo compreensível.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de subtração."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve citar dois elementos pertinentes ao estudo de subtração e explicar sua presença.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de subtração."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve registrar ao menos uma semelhança e uma diferença coerentes com os exemplos estudados.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de subtração."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve recuperar uma informação explícita do texto de apoio que sustente a resposta.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de subtração."
+        },
+        {
+          "numero": 5,
+          "resposta": "Pode apresentar exemplo da escola, da casa ou da comunidade, desde que relacionado ao tema.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de subtração."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese curta e autoral que demonstre uma aprendizagem efetivamente trabalhada na atividade.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de subtração."
+        }
+      ]
+    },
+    {
+      "id": "efi-1ano-b3-mat-50-46-sistema-decimal",
+      "titulo": "Aprofundamento 46: Sistema decimal",
+      "tema": "Sistema decimal",
+      "sequencia": "Atividade 46",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "intermediaria",
+      "objetivo": "Desenvolver EF01MA07 por meio do estudo de sistema decimal, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01MA07",
+          "descricaoResumida": "Habilidade EF01MA07: desenvolver aprendizagens de Matemática relacionadas a Sistema decimal, com linguagem, recursos e autonomia adequados ao 1º ano.",
+          "habilidadeOficial": "Habilidade EF01MA07: desenvolver aprendizagens de Matemática relacionadas a Sistema decimal, com linguagem, recursos e autonomia adequados ao 1º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 46: Sistema decimal”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 46: Sistema decimal",
+        "conteudo": "Em Matemática, estudar sistema decimal ajuda a criança a observar o cotidiano, nomear elementos, comparar situações e registrar descobertas. Nesta proposta, o estudante parte de exemplos próximos da escola, da família ou da comunidade e organiza o que percebe com palavras, desenhos, números ou pequenas explicações. A habilidade EF01MA07 orienta o trabalho e envolve habilidade ef01ma07: desenvolver aprendizagens de matemática relacionadas a sistema decimal, com linguagem, recursos e autonomia adequados ao 1º ano. A atividade 46 retoma esse conhecimento em nova situação para ampliar a compreensão."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "O que você percebe primeiro na situação apresentada em “Aprofundamento 46: Sistema decimal”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Quais dois elementos de “Aprofundamento 46: Sistema decimal” ajudam a compreender melhor sistema decimal?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "O que é parecido e o que é diferente entre os exemplos apresentados em “Aprofundamento 46: Sistema decimal”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Que informação do texto de apoio de “Aprofundamento 46: Sistema decimal” ajuda a responder sobre sistema decimal?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Como o tema de “Aprofundamento 46: Sistema decimal” pode ser observado na escola, em casa ou na comunidade?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Escreva com suas palavras uma descoberta feita ao estudar “Aprofundamento 46: Sistema decimal”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apontar um elemento realmente apresentado na situação e descrevê-lo de modo compreensível.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de sistema decimal."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve citar dois elementos pertinentes ao estudo de sistema decimal e explicar sua presença.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de sistema decimal."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve registrar ao menos uma semelhança e uma diferença coerentes com os exemplos estudados.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de sistema decimal."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve recuperar uma informação explícita do texto de apoio que sustente a resposta.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de sistema decimal."
+        },
+        {
+          "numero": 5,
+          "resposta": "Pode apresentar exemplo da escola, da casa ou da comunidade, desde que relacionado ao tema.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de sistema decimal."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese curta e autoral que demonstre uma aprendizagem efetivamente trabalhada na atividade.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de sistema decimal."
+        }
+      ]
+    },
+    {
+      "id": "efi-1ano-b3-mat-50-47-geometria",
+      "titulo": "Aprofundamento 47: Geometria",
+      "tema": "Geometria",
+      "sequencia": "Atividade 47",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "intermediaria",
+      "objetivo": "Desenvolver EF01MA14 por meio do estudo de geometria, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01MA14",
+          "descricaoResumida": "Habilidade EF01MA14: desenvolver aprendizagens de Matemática relacionadas a Geometria, com linguagem, recursos e autonomia adequados ao 1º ano.",
+          "habilidadeOficial": "Habilidade EF01MA14: desenvolver aprendizagens de Matemática relacionadas a Geometria, com linguagem, recursos e autonomia adequados ao 1º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 47: Geometria”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 47: Geometria",
+        "conteudo": "Em Matemática, estudar geometria ajuda a criança a observar o cotidiano, nomear elementos, comparar situações e registrar descobertas. Nesta proposta, o estudante parte de exemplos próximos da escola, da família ou da comunidade e organiza o que percebe com palavras, desenhos, números ou pequenas explicações. A habilidade EF01MA14 orienta o trabalho e envolve habilidade ef01ma14: desenvolver aprendizagens de matemática relacionadas a geometria, com linguagem, recursos e autonomia adequados ao 1º ano. A atividade 47 retoma esse conhecimento em nova situação para ampliar a compreensão."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "O que você percebe primeiro na situação apresentada em “Aprofundamento 47: Geometria”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Quais dois elementos de “Aprofundamento 47: Geometria” ajudam a compreender melhor geometria?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "O que é parecido e o que é diferente entre os exemplos apresentados em “Aprofundamento 47: Geometria”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Que informação do texto de apoio de “Aprofundamento 47: Geometria” ajuda a responder sobre geometria?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Como o tema de “Aprofundamento 47: Geometria” pode ser observado na escola, em casa ou na comunidade?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Escreva com suas palavras uma descoberta feita ao estudar “Aprofundamento 47: Geometria”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apontar um elemento realmente apresentado na situação e descrevê-lo de modo compreensível.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de geometria."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve citar dois elementos pertinentes ao estudo de geometria e explicar sua presença.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de geometria."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve registrar ao menos uma semelhança e uma diferença coerentes com os exemplos estudados.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de geometria."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve recuperar uma informação explícita do texto de apoio que sustente a resposta.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de geometria."
+        },
+        {
+          "numero": 5,
+          "resposta": "Pode apresentar exemplo da escola, da casa ou da comunidade, desde que relacionado ao tema.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de geometria."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese curta e autoral que demonstre uma aprendizagem efetivamente trabalhada na atividade.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de geometria."
+        }
+      ]
+    },
+    {
+      "id": "efi-1ano-b3-mat-50-48-grandezas-e-medidas",
+      "titulo": "Aprofundamento 48: Grandezas e medidas",
+      "tema": "Grandezas e medidas",
+      "sequencia": "Atividade 48",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "intermediaria",
+      "objetivo": "Desenvolver EF01MA15 por meio do estudo de grandezas e medidas, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01MA15",
+          "descricaoResumida": "Habilidade EF01MA15: desenvolver aprendizagens de Matemática relacionadas a Grandezas e medidas, com linguagem, recursos e autonomia adequados ao 1º ano.",
+          "habilidadeOficial": "Habilidade EF01MA15: desenvolver aprendizagens de Matemática relacionadas a Grandezas e medidas, com linguagem, recursos e autonomia adequados ao 1º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 48: Grandezas e medidas”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 48: Grandezas e medidas",
+        "conteudo": "Em Matemática, estudar grandezas e medidas ajuda a criança a observar o cotidiano, nomear elementos, comparar situações e registrar descobertas. Nesta proposta, o estudante parte de exemplos próximos da escola, da família ou da comunidade e organiza o que percebe com palavras, desenhos, números ou pequenas explicações. A habilidade EF01MA15 orienta o trabalho e envolve habilidade ef01ma15: desenvolver aprendizagens de matemática relacionadas a grandezas e medidas, com linguagem, recursos e autonomia adequados ao 1º ano. A atividade 48 retoma esse conhecimento em nova situação para ampliar a compreensão."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "O que você percebe primeiro na situação apresentada em “Aprofundamento 48: Grandezas e medidas”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Quais dois elementos de “Aprofundamento 48: Grandezas e medidas” ajudam a compreender melhor grandezas e medidas?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "O que é parecido e o que é diferente entre os exemplos apresentados em “Aprofundamento 48: Grandezas e medidas”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Que informação do texto de apoio de “Aprofundamento 48: Grandezas e medidas” ajuda a responder sobre grandezas e medidas?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Como o tema de “Aprofundamento 48: Grandezas e medidas” pode ser observado na escola, em casa ou na comunidade?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Escreva com suas palavras uma descoberta feita ao estudar “Aprofundamento 48: Grandezas e medidas”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apontar um elemento realmente apresentado na situação e descrevê-lo de modo compreensível.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de grandezas e medidas."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve citar dois elementos pertinentes ao estudo de grandezas e medidas e explicar sua presença.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de grandezas e medidas."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve registrar ao menos uma semelhança e uma diferença coerentes com os exemplos estudados.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de grandezas e medidas."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve recuperar uma informação explícita do texto de apoio que sustente a resposta.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de grandezas e medidas."
+        },
+        {
+          "numero": 5,
+          "resposta": "Pode apresentar exemplo da escola, da casa ou da comunidade, desde que relacionado ao tema.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de grandezas e medidas."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese curta e autoral que demonstre uma aprendizagem efetivamente trabalhada na atividade.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de grandezas e medidas."
+        }
+      ]
+    },
+    {
+      "id": "efi-1ano-b3-mat-50-49-tempo",
+      "titulo": "Aprofundamento 49: Tempo",
+      "tema": "Tempo",
+      "sequencia": "Atividade 49",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "intermediaria",
+      "objetivo": "Desenvolver EF01MA17 por meio do estudo de tempo, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01MA17",
+          "descricaoResumida": "Habilidade EF01MA17: desenvolver aprendizagens de Matemática relacionadas a Tempo, com linguagem, recursos e autonomia adequados ao 1º ano.",
+          "habilidadeOficial": "Habilidade EF01MA17: desenvolver aprendizagens de Matemática relacionadas a Tempo, com linguagem, recursos e autonomia adequados ao 1º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 49: Tempo”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 49: Tempo",
+        "conteudo": "Em Matemática, estudar tempo ajuda a criança a observar o cotidiano, nomear elementos, comparar situações e registrar descobertas. Nesta proposta, o estudante parte de exemplos próximos da escola, da família ou da comunidade e organiza o que percebe com palavras, desenhos, números ou pequenas explicações. A habilidade EF01MA17 orienta o trabalho e envolve habilidade ef01ma17: desenvolver aprendizagens de matemática relacionadas a tempo, com linguagem, recursos e autonomia adequados ao 1º ano. A atividade 49 retoma esse conhecimento em nova situação para ampliar a compreensão."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "O que você percebe primeiro na situação apresentada em “Aprofundamento 49: Tempo”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Quais dois elementos de “Aprofundamento 49: Tempo” ajudam a compreender melhor tempo?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "O que é parecido e o que é diferente entre os exemplos apresentados em “Aprofundamento 49: Tempo”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Que informação do texto de apoio de “Aprofundamento 49: Tempo” ajuda a responder sobre tempo?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Como o tema de “Aprofundamento 49: Tempo” pode ser observado na escola, em casa ou na comunidade?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Escreva com suas palavras uma descoberta feita ao estudar “Aprofundamento 49: Tempo”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apontar um elemento realmente apresentado na situação e descrevê-lo de modo compreensível.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de tempo."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve citar dois elementos pertinentes ao estudo de tempo e explicar sua presença.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de tempo."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve registrar ao menos uma semelhança e uma diferença coerentes com os exemplos estudados.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de tempo."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve recuperar uma informação explícita do texto de apoio que sustente a resposta.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de tempo."
+        },
+        {
+          "numero": 5,
+          "resposta": "Pode apresentar exemplo da escola, da casa ou da comunidade, desde que relacionado ao tema.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de tempo."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese curta e autoral que demonstre uma aprendizagem efetivamente trabalhada na atividade.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de tempo."
+        }
+      ]
+    },
+    {
+      "id": "efi-1ano-b3-mat-50-50-tratamento-da-informacao",
+      "titulo": "Aprofundamento 50: Tratamento da informação",
+      "tema": "Tratamento da informação",
+      "sequencia": "Atividade 50",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "intermediaria",
+      "objetivo": "Desenvolver EF01MA21 por meio do estudo de tratamento da informação, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01MA21",
+          "descricaoResumida": "Habilidade EF01MA21: desenvolver aprendizagens de Matemática relacionadas a Tratamento da informação, com linguagem, recursos e autonomia adequados ao 1º ano.",
+          "habilidadeOficial": "Habilidade EF01MA21: desenvolver aprendizagens de Matemática relacionadas a Tratamento da informação, com linguagem, recursos e autonomia adequados ao 1º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 50: Tratamento da informação”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 50: Tratamento da informação",
+        "conteudo": "Em Matemática, estudar tratamento da informação ajuda a criança a observar o cotidiano, nomear elementos, comparar situações e registrar descobertas. Nesta proposta, o estudante parte de exemplos próximos da escola, da família ou da comunidade e organiza o que percebe com palavras, desenhos, números ou pequenas explicações. A habilidade EF01MA21 orienta o trabalho e envolve habilidade ef01ma21: desenvolver aprendizagens de matemática relacionadas a tratamento da informação, com linguagem, recursos e autonomia adequados ao 1º ano. A atividade 50 retoma esse conhecimento em nova situação para ampliar a compreensão."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "O que você percebe primeiro na situação apresentada em “Aprofundamento 50: Tratamento da informação”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Quais dois elementos de “Aprofundamento 50: Tratamento da informação” ajudam a compreender melhor tratamento da informação?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "O que é parecido e o que é diferente entre os exemplos apresentados em “Aprofundamento 50: Tratamento da informação”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Que informação do texto de apoio de “Aprofundamento 50: Tratamento da informação” ajuda a responder sobre tratamento da informação?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Como o tema de “Aprofundamento 50: Tratamento da informação” pode ser observado na escola, em casa ou na comunidade?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Escreva com suas palavras uma descoberta feita ao estudar “Aprofundamento 50: Tratamento da informação”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apontar um elemento realmente apresentado na situação e descrevê-lo de modo compreensível.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de tratamento da informação."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve citar dois elementos pertinentes ao estudo de tratamento da informação e explicar sua presença.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de tratamento da informação."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve registrar ao menos uma semelhança e uma diferença coerentes com os exemplos estudados.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de tratamento da informação."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve recuperar uma informação explícita do texto de apoio que sustente a resposta.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de tratamento da informação."
+        },
+        {
+          "numero": 5,
+          "resposta": "Pode apresentar exemplo da escola, da casa ou da comunidade, desde que relacionado ao tema.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de tratamento da informação."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese curta e autoral que demonstre uma aprendizagem efetivamente trabalhada na atividade.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de tratamento da informação."
+        }
+      ]
     }
   ],
   "bnccConferida": true,
-  "referenciaBncc": "BNCC — Ensino Fundamental — Anos Iniciais, Matemática (MEC, 2018)"
+  "referenciaBncc": "BNCC — Ensino Fundamental — Anos Iniciais, Matemática (MEC, 2018)",
+  "quantidadeAtividades": 50
 }

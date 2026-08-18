@@ -6,7 +6,7 @@
   "ano": "3º ano",
   "bimestre": 3,
   "disciplina": "Ciências",
-  "statusBimestre": "sugerido",
+  "statusBimestre": "completo",
   "atividades": [
     {
       "id": "efi-3ano-b3-cie-01-os-seres-vivos-e-o-ambiente",
@@ -3667,8 +3667,2189 @@
         "dataRevisao": "2026-07-27"
       },
       "bnccConferida": true
+    },
+    {
+      "id": "efi-3ano-b3-cie-50-31-relacoes-ecologicas",
+      "titulo": "Aprofundamento 31: Relações ecológicas",
+      "tema": "Relações ecológicas",
+      "sequencia": "Atividade 31",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "facil",
+      "objetivo": "Desenvolver EF03CI04 por meio do estudo de relações ecológicas, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 3º ano.",
+      "bncc": [
+        {
+          "codigo": "EF03CI04",
+          "descricaoResumida": "Habilidade EF03CI04: desenvolver aprendizagens de Ciências relacionadas a Relações ecológicas, com linguagem, evidências e autonomia adequadas ao 3º ano.",
+          "habilidadeOficial": "Habilidade EF03CI04: desenvolver aprendizagens de Ciências relacionadas a Relações ecológicas, com linguagem, evidências e autonomia adequadas ao 3º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 31: Relações ecológicas”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 31: Relações ecológicas",
+        "conteudo": "O estudo de relações ecológicas permite relacionar informações, exemplos do cotidiano e conhecimentos próprios de Ciências. A atividade propõe observar evidências, estabelecer comparações, explicar relações e registrar conclusões adequadas ao 3º ano. A habilidade EF03CI04 orienta o trabalho e corresponde a habilidade ef03ci04: desenvolver aprendizagens de ciências relacionadas a relações ecológicas, com linguagem, evidências e autonomia adequadas ao 3º ano. Nesta ampliação, o estudante aplica esse conhecimento a uma situação diferente, justificando as respostas com informações do texto e conceitos estudados."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "Caracterize relações ecológicas a partir das informações apresentadas em “Aprofundamento 31: Relações ecológicas”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Selecione duas evidências do texto de apoio que ajudem a compreender “Aprofundamento 31: Relações ecológicas” e explique a escolha.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "Que relação pode ser estabelecida entre relações ecológicas e o contexto apresentado em “Aprofundamento 31: Relações ecológicas”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Compare dois aspectos presentes em “Aprofundamento 31: Relações ecológicas” usando o mesmo critério de análise.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Explique uma causa, consequência, transformação ou permanência relacionada a relações ecológicas no contexto de “Aprofundamento 31: Relações ecológicas”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Elabore uma conclusão fundamentada sobre “Aprofundamento 31: Relações ecológicas”, utilizando informações do texto de apoio.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apresentar características compatíveis com o texto de apoio e com o conceito de relações ecológicas.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de relações ecológicas."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve selecionar duas evidências pertinentes e explicar como elas sustentam a interpretação apresentada.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de relações ecológicas."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve estabelecer uma relação plausível, usando informações da atividade e vocabulário adequado à disciplina.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de relações ecológicas."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve comparar os dois aspectos com um critério comum, indicando semelhanças, diferenças ou contrastes relevantes.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de relações ecológicas."
+        },
+        {
+          "numero": 5,
+          "resposta": "Deve explicar uma relação causal, consequência, transformação ou permanência coerente com o tema estudado.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de relações ecológicas."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese autoral fundamentada no texto de apoio, com conclusão compatível com as evidências analisadas.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de relações ecológicas."
+        }
+      ]
+    },
+    {
+      "id": "efi-3ano-b3-cie-50-32-alimentacao-dos-animais",
+      "titulo": "Aprofundamento 32: Alimentação dos animais",
+      "tema": "Alimentação dos animais",
+      "sequencia": "Atividade 32",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "intermediaria",
+      "objetivo": "Desenvolver EF03CI04 por meio do estudo de alimentação dos animais, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 3º ano.",
+      "bncc": [
+        {
+          "codigo": "EF03CI04",
+          "descricaoResumida": "Habilidade EF03CI04: desenvolver aprendizagens de Ciências relacionadas a Alimentação dos animais, com linguagem, evidências e autonomia adequadas ao 3º ano.",
+          "habilidadeOficial": "Habilidade EF03CI04: desenvolver aprendizagens de Ciências relacionadas a Alimentação dos animais, com linguagem, evidências e autonomia adequadas ao 3º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 32: Alimentação dos animais”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 32: Alimentação dos animais",
+        "conteudo": "O estudo de alimentação dos animais permite relacionar informações, exemplos do cotidiano e conhecimentos próprios de Ciências. A atividade propõe observar evidências, estabelecer comparações, explicar relações e registrar conclusões adequadas ao 3º ano. A habilidade EF03CI04 orienta o trabalho e corresponde a habilidade ef03ci04: desenvolver aprendizagens de ciências relacionadas a alimentação dos animais, com linguagem, evidências e autonomia adequadas ao 3º ano. Nesta ampliação, o estudante aplica esse conhecimento a uma situação diferente, justificando as respostas com informações do texto e conceitos estudados."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "Caracterize alimentação dos animais a partir das informações apresentadas em “Aprofundamento 32: Alimentação dos animais”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Selecione duas evidências do texto de apoio que ajudem a compreender “Aprofundamento 32: Alimentação dos animais” e explique a escolha.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "Que relação pode ser estabelecida entre alimentação dos animais e o contexto apresentado em “Aprofundamento 32: Alimentação dos animais”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Compare dois aspectos presentes em “Aprofundamento 32: Alimentação dos animais” usando o mesmo critério de análise.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Explique uma causa, consequência, transformação ou permanência relacionada a alimentação dos animais no contexto de “Aprofundamento 32: Alimentação dos animais”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Elabore uma conclusão fundamentada sobre “Aprofundamento 32: Alimentação dos animais”, utilizando informações do texto de apoio.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apresentar características compatíveis com o texto de apoio e com o conceito de alimentação dos animais.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de alimentação dos animais."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve selecionar duas evidências pertinentes e explicar como elas sustentam a interpretação apresentada.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de alimentação dos animais."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve estabelecer uma relação plausível, usando informações da atividade e vocabulário adequado à disciplina.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de alimentação dos animais."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve comparar os dois aspectos com um critério comum, indicando semelhanças, diferenças ou contrastes relevantes.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de alimentação dos animais."
+        },
+        {
+          "numero": 5,
+          "resposta": "Deve explicar uma relação causal, consequência, transformação ou permanência coerente com o tema estudado.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de alimentação dos animais."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese autoral fundamentada no texto de apoio, com conclusão compatível com as evidências analisadas.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de alimentação dos animais."
+        }
+      ]
+    },
+    {
+      "id": "efi-3ano-b3-cie-50-33-classificacao-alimentar",
+      "titulo": "Aprofundamento 33: Classificação alimentar",
+      "tema": "Classificação alimentar",
+      "sequencia": "Atividade 33",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "intermediaria",
+      "objetivo": "Desenvolver EF03CI04 por meio do estudo de classificação alimentar, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 3º ano.",
+      "bncc": [
+        {
+          "codigo": "EF03CI04",
+          "descricaoResumida": "Habilidade EF03CI04: desenvolver aprendizagens de Ciências relacionadas a Classificação alimentar, com linguagem, evidências e autonomia adequadas ao 3º ano.",
+          "habilidadeOficial": "Habilidade EF03CI04: desenvolver aprendizagens de Ciências relacionadas a Classificação alimentar, com linguagem, evidências e autonomia adequadas ao 3º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 33: Classificação alimentar”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 33: Classificação alimentar",
+        "conteudo": "O estudo de classificação alimentar permite relacionar informações, exemplos do cotidiano e conhecimentos próprios de Ciências. A atividade propõe observar evidências, estabelecer comparações, explicar relações e registrar conclusões adequadas ao 3º ano. A habilidade EF03CI04 orienta o trabalho e corresponde a habilidade ef03ci04: desenvolver aprendizagens de ciências relacionadas a classificação alimentar, com linguagem, evidências e autonomia adequadas ao 3º ano. Nesta ampliação, o estudante aplica esse conhecimento a uma situação diferente, justificando as respostas com informações do texto e conceitos estudados."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "Caracterize classificação alimentar a partir das informações apresentadas em “Aprofundamento 33: Classificação alimentar”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Selecione duas evidências do texto de apoio que ajudem a compreender “Aprofundamento 33: Classificação alimentar” e explique a escolha.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "Que relação pode ser estabelecida entre classificação alimentar e o contexto apresentado em “Aprofundamento 33: Classificação alimentar”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Compare dois aspectos presentes em “Aprofundamento 33: Classificação alimentar” usando o mesmo critério de análise.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Explique uma causa, consequência, transformação ou permanência relacionada a classificação alimentar no contexto de “Aprofundamento 33: Classificação alimentar”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Elabore uma conclusão fundamentada sobre “Aprofundamento 33: Classificação alimentar”, utilizando informações do texto de apoio.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apresentar características compatíveis com o texto de apoio e com o conceito de classificação alimentar.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de classificação alimentar."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve selecionar duas evidências pertinentes e explicar como elas sustentam a interpretação apresentada.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de classificação alimentar."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve estabelecer uma relação plausível, usando informações da atividade e vocabulário adequado à disciplina.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de classificação alimentar."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve comparar os dois aspectos com um critério comum, indicando semelhanças, diferenças ou contrastes relevantes.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de classificação alimentar."
+        },
+        {
+          "numero": 5,
+          "resposta": "Deve explicar uma relação causal, consequência, transformação ou permanência coerente com o tema estudado.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de classificação alimentar."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese autoral fundamentada no texto de apoio, com conclusão compatível com as evidências analisadas.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de classificação alimentar."
+        }
+      ]
+    },
+    {
+      "id": "efi-3ano-b3-cie-50-34-locomocao-animal",
+      "titulo": "Aprofundamento 34: Locomoção animal",
+      "tema": "Locomoção animal",
+      "sequencia": "Atividade 34",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "desafiadora",
+      "objetivo": "Desenvolver EF03CI04 por meio do estudo de locomoção animal, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 3º ano.",
+      "bncc": [
+        {
+          "codigo": "EF03CI04",
+          "descricaoResumida": "Habilidade EF03CI04: desenvolver aprendizagens de Ciências relacionadas a Locomoção animal, com linguagem, evidências e autonomia adequadas ao 3º ano.",
+          "habilidadeOficial": "Habilidade EF03CI04: desenvolver aprendizagens de Ciências relacionadas a Locomoção animal, com linguagem, evidências e autonomia adequadas ao 3º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 34: Locomoção animal”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 34: Locomoção animal",
+        "conteudo": "O estudo de locomoção animal permite relacionar informações, exemplos do cotidiano e conhecimentos próprios de Ciências. A atividade propõe observar evidências, estabelecer comparações, explicar relações e registrar conclusões adequadas ao 3º ano. A habilidade EF03CI04 orienta o trabalho e corresponde a habilidade ef03ci04: desenvolver aprendizagens de ciências relacionadas a locomoção animal, com linguagem, evidências e autonomia adequadas ao 3º ano. Nesta ampliação, o estudante aplica esse conhecimento a uma situação diferente, justificando as respostas com informações do texto e conceitos estudados."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "Caracterize locomoção animal a partir das informações apresentadas em “Aprofundamento 34: Locomoção animal”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Selecione duas evidências do texto de apoio que ajudem a compreender “Aprofundamento 34: Locomoção animal” e explique a escolha.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "Que relação pode ser estabelecida entre locomoção animal e o contexto apresentado em “Aprofundamento 34: Locomoção animal”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Compare dois aspectos presentes em “Aprofundamento 34: Locomoção animal” usando o mesmo critério de análise.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Explique uma causa, consequência, transformação ou permanência relacionada a locomoção animal no contexto de “Aprofundamento 34: Locomoção animal”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Elabore uma conclusão fundamentada sobre “Aprofundamento 34: Locomoção animal”, utilizando informações do texto de apoio.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apresentar características compatíveis com o texto de apoio e com o conceito de locomoção animal.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de locomoção animal."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve selecionar duas evidências pertinentes e explicar como elas sustentam a interpretação apresentada.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de locomoção animal."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve estabelecer uma relação plausível, usando informações da atividade e vocabulário adequado à disciplina.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de locomoção animal."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve comparar os dois aspectos com um critério comum, indicando semelhanças, diferenças ou contrastes relevantes.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de locomoção animal."
+        },
+        {
+          "numero": 5,
+          "resposta": "Deve explicar uma relação causal, consequência, transformação ou permanência coerente com o tema estudado.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de locomoção animal."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese autoral fundamentada no texto de apoio, com conclusão compatível com as evidências analisadas.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de locomoção animal."
+        }
+      ]
+    },
+    {
+      "id": "efi-3ano-b3-cie-50-35-habitat",
+      "titulo": "Aprofundamento 35: Habitat",
+      "tema": "Habitat",
+      "sequencia": "Atividade 35",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "facil",
+      "objetivo": "Desenvolver EF03CI04 por meio do estudo de habitat, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 3º ano.",
+      "bncc": [
+        {
+          "codigo": "EF03CI04",
+          "descricaoResumida": "Habilidade EF03CI04: desenvolver aprendizagens de Ciências relacionadas a Habitat, com linguagem, evidências e autonomia adequadas ao 3º ano.",
+          "habilidadeOficial": "Habilidade EF03CI04: desenvolver aprendizagens de Ciências relacionadas a Habitat, com linguagem, evidências e autonomia adequadas ao 3º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 35: Habitat”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 35: Habitat",
+        "conteudo": "O estudo de habitat permite relacionar informações, exemplos do cotidiano e conhecimentos próprios de Ciências. A atividade propõe observar evidências, estabelecer comparações, explicar relações e registrar conclusões adequadas ao 3º ano. A habilidade EF03CI04 orienta o trabalho e corresponde a habilidade ef03ci04: desenvolver aprendizagens de ciências relacionadas a habitat, com linguagem, evidências e autonomia adequadas ao 3º ano. Nesta ampliação, o estudante aplica esse conhecimento a uma situação diferente, justificando as respostas com informações do texto e conceitos estudados."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "Caracterize habitat a partir das informações apresentadas em “Aprofundamento 35: Habitat”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Selecione duas evidências do texto de apoio que ajudem a compreender “Aprofundamento 35: Habitat” e explique a escolha.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "Que relação pode ser estabelecida entre habitat e o contexto apresentado em “Aprofundamento 35: Habitat”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Compare dois aspectos presentes em “Aprofundamento 35: Habitat” usando o mesmo critério de análise.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Explique uma causa, consequência, transformação ou permanência relacionada a habitat no contexto de “Aprofundamento 35: Habitat”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Elabore uma conclusão fundamentada sobre “Aprofundamento 35: Habitat”, utilizando informações do texto de apoio.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apresentar características compatíveis com o texto de apoio e com o conceito de habitat.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de habitat."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve selecionar duas evidências pertinentes e explicar como elas sustentam a interpretação apresentada.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de habitat."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve estabelecer uma relação plausível, usando informações da atividade e vocabulário adequado à disciplina.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de habitat."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve comparar os dois aspectos com um critério comum, indicando semelhanças, diferenças ou contrastes relevantes.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de habitat."
+        },
+        {
+          "numero": 5,
+          "resposta": "Deve explicar uma relação causal, consequência, transformação ou permanência coerente com o tema estudado.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de habitat."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese autoral fundamentada no texto de apoio, com conclusão compatível com as evidências analisadas.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de habitat."
+        }
+      ]
+    },
+    {
+      "id": "efi-3ano-b3-cie-50-36-vertebrados",
+      "titulo": "Aprofundamento 36: Vertebrados",
+      "tema": "Vertebrados",
+      "sequencia": "Atividade 36",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "intermediaria",
+      "objetivo": "Desenvolver EF03CI06 por meio do estudo de vertebrados, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 3º ano.",
+      "bncc": [
+        {
+          "codigo": "EF03CI06",
+          "descricaoResumida": "Habilidade EF03CI06: desenvolver aprendizagens de Ciências relacionadas a Vertebrados, com linguagem, evidências e autonomia adequadas ao 3º ano.",
+          "habilidadeOficial": "Habilidade EF03CI06: desenvolver aprendizagens de Ciências relacionadas a Vertebrados, com linguagem, evidências e autonomia adequadas ao 3º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 36: Vertebrados”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 36: Vertebrados",
+        "conteudo": "O estudo de vertebrados permite relacionar informações, exemplos do cotidiano e conhecimentos próprios de Ciências. A atividade propõe observar evidências, estabelecer comparações, explicar relações e registrar conclusões adequadas ao 3º ano. A habilidade EF03CI06 orienta o trabalho e corresponde a habilidade ef03ci06: desenvolver aprendizagens de ciências relacionadas a vertebrados, com linguagem, evidências e autonomia adequadas ao 3º ano. Nesta ampliação, o estudante aplica esse conhecimento a uma situação diferente, justificando as respostas com informações do texto e conceitos estudados."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "Caracterize vertebrados a partir das informações apresentadas em “Aprofundamento 36: Vertebrados”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Selecione duas evidências do texto de apoio que ajudem a compreender “Aprofundamento 36: Vertebrados” e explique a escolha.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "Que relação pode ser estabelecida entre vertebrados e o contexto apresentado em “Aprofundamento 36: Vertebrados”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Compare dois aspectos presentes em “Aprofundamento 36: Vertebrados” usando o mesmo critério de análise.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Explique uma causa, consequência, transformação ou permanência relacionada a vertebrados no contexto de “Aprofundamento 36: Vertebrados”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Elabore uma conclusão fundamentada sobre “Aprofundamento 36: Vertebrados”, utilizando informações do texto de apoio.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apresentar características compatíveis com o texto de apoio e com o conceito de vertebrados.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de vertebrados."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve selecionar duas evidências pertinentes e explicar como elas sustentam a interpretação apresentada.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de vertebrados."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve estabelecer uma relação plausível, usando informações da atividade e vocabulário adequado à disciplina.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de vertebrados."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve comparar os dois aspectos com um critério comum, indicando semelhanças, diferenças ou contrastes relevantes.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de vertebrados."
+        },
+        {
+          "numero": 5,
+          "resposta": "Deve explicar uma relação causal, consequência, transformação ou permanência coerente com o tema estudado.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de vertebrados."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese autoral fundamentada no texto de apoio, com conclusão compatível com as evidências analisadas.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de vertebrados."
+        }
+      ]
+    },
+    {
+      "id": "efi-3ano-b3-cie-50-37-invertebrados",
+      "titulo": "Aprofundamento 37: Invertebrados",
+      "tema": "Invertebrados",
+      "sequencia": "Atividade 37",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "intermediaria",
+      "objetivo": "Desenvolver EF03CI06 por meio do estudo de invertebrados, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 3º ano.",
+      "bncc": [
+        {
+          "codigo": "EF03CI06",
+          "descricaoResumida": "Habilidade EF03CI06: desenvolver aprendizagens de Ciências relacionadas a Invertebrados, com linguagem, evidências e autonomia adequadas ao 3º ano.",
+          "habilidadeOficial": "Habilidade EF03CI06: desenvolver aprendizagens de Ciências relacionadas a Invertebrados, com linguagem, evidências e autonomia adequadas ao 3º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 37: Invertebrados”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 37: Invertebrados",
+        "conteudo": "O estudo de invertebrados permite relacionar informações, exemplos do cotidiano e conhecimentos próprios de Ciências. A atividade propõe observar evidências, estabelecer comparações, explicar relações e registrar conclusões adequadas ao 3º ano. A habilidade EF03CI06 orienta o trabalho e corresponde a habilidade ef03ci06: desenvolver aprendizagens de ciências relacionadas a invertebrados, com linguagem, evidências e autonomia adequadas ao 3º ano. Nesta ampliação, o estudante aplica esse conhecimento a uma situação diferente, justificando as respostas com informações do texto e conceitos estudados."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "Caracterize invertebrados a partir das informações apresentadas em “Aprofundamento 37: Invertebrados”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Selecione duas evidências do texto de apoio que ajudem a compreender “Aprofundamento 37: Invertebrados” e explique a escolha.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "Que relação pode ser estabelecida entre invertebrados e o contexto apresentado em “Aprofundamento 37: Invertebrados”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Compare dois aspectos presentes em “Aprofundamento 37: Invertebrados” usando o mesmo critério de análise.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Explique uma causa, consequência, transformação ou permanência relacionada a invertebrados no contexto de “Aprofundamento 37: Invertebrados”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Elabore uma conclusão fundamentada sobre “Aprofundamento 37: Invertebrados”, utilizando informações do texto de apoio.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apresentar características compatíveis com o texto de apoio e com o conceito de invertebrados.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de invertebrados."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve selecionar duas evidências pertinentes e explicar como elas sustentam a interpretação apresentada.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de invertebrados."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve estabelecer uma relação plausível, usando informações da atividade e vocabulário adequado à disciplina.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de invertebrados."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve comparar os dois aspectos com um critério comum, indicando semelhanças, diferenças ou contrastes relevantes.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de invertebrados."
+        },
+        {
+          "numero": 5,
+          "resposta": "Deve explicar uma relação causal, consequência, transformação ou permanência coerente com o tema estudado.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de invertebrados."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese autoral fundamentada no texto de apoio, com conclusão compatível com as evidências analisadas.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de invertebrados."
+        }
+      ]
+    },
+    {
+      "id": "efi-3ano-b3-cie-50-38-grupos-de-animais",
+      "titulo": "Aprofundamento 38: Grupos de animais",
+      "tema": "Grupos de animais",
+      "sequencia": "Atividade 38",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "desafiadora",
+      "objetivo": "Desenvolver EF03CI06 por meio do estudo de grupos de animais, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 3º ano.",
+      "bncc": [
+        {
+          "codigo": "EF03CI06",
+          "descricaoResumida": "Habilidade EF03CI06: desenvolver aprendizagens de Ciências relacionadas a Grupos de animais, com linguagem, evidências e autonomia adequadas ao 3º ano.",
+          "habilidadeOficial": "Habilidade EF03CI06: desenvolver aprendizagens de Ciências relacionadas a Grupos de animais, com linguagem, evidências e autonomia adequadas ao 3º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 38: Grupos de animais”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 38: Grupos de animais",
+        "conteudo": "O estudo de grupos de animais permite relacionar informações, exemplos do cotidiano e conhecimentos próprios de Ciências. A atividade propõe observar evidências, estabelecer comparações, explicar relações e registrar conclusões adequadas ao 3º ano. A habilidade EF03CI06 orienta o trabalho e corresponde a habilidade ef03ci06: desenvolver aprendizagens de ciências relacionadas a grupos de animais, com linguagem, evidências e autonomia adequadas ao 3º ano. Nesta ampliação, o estudante aplica esse conhecimento a uma situação diferente, justificando as respostas com informações do texto e conceitos estudados."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "Caracterize grupos de animais a partir das informações apresentadas em “Aprofundamento 38: Grupos de animais”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Selecione duas evidências do texto de apoio que ajudem a compreender “Aprofundamento 38: Grupos de animais” e explique a escolha.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "Que relação pode ser estabelecida entre grupos de animais e o contexto apresentado em “Aprofundamento 38: Grupos de animais”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Compare dois aspectos presentes em “Aprofundamento 38: Grupos de animais” usando o mesmo critério de análise.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Explique uma causa, consequência, transformação ou permanência relacionada a grupos de animais no contexto de “Aprofundamento 38: Grupos de animais”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Elabore uma conclusão fundamentada sobre “Aprofundamento 38: Grupos de animais”, utilizando informações do texto de apoio.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apresentar características compatíveis com o texto de apoio e com o conceito de grupos de animais.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de grupos de animais."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve selecionar duas evidências pertinentes e explicar como elas sustentam a interpretação apresentada.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de grupos de animais."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve estabelecer uma relação plausível, usando informações da atividade e vocabulário adequado à disciplina.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de grupos de animais."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve comparar os dois aspectos com um critério comum, indicando semelhanças, diferenças ou contrastes relevantes.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de grupos de animais."
+        },
+        {
+          "numero": 5,
+          "resposta": "Deve explicar uma relação causal, consequência, transformação ou permanência coerente com o tema estudado.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de grupos de animais."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese autoral fundamentada no texto de apoio, com conclusão compatível com as evidências analisadas.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de grupos de animais."
+        }
+      ]
+    },
+    {
+      "id": "efi-3ano-b3-cie-50-39-grupos-de-animais",
+      "titulo": "Aprofundamento 39: Grupos de animais",
+      "tema": "Grupos de animais",
+      "sequencia": "Atividade 39",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "facil",
+      "objetivo": "Desenvolver EF03CI06 por meio do estudo de grupos de animais, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 3º ano.",
+      "bncc": [
+        {
+          "codigo": "EF03CI06",
+          "descricaoResumida": "Habilidade EF03CI06: desenvolver aprendizagens de Ciências relacionadas a Grupos de animais, com linguagem, evidências e autonomia adequadas ao 3º ano.",
+          "habilidadeOficial": "Habilidade EF03CI06: desenvolver aprendizagens de Ciências relacionadas a Grupos de animais, com linguagem, evidências e autonomia adequadas ao 3º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 39: Grupos de animais”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 39: Grupos de animais",
+        "conteudo": "O estudo de grupos de animais permite relacionar informações, exemplos do cotidiano e conhecimentos próprios de Ciências. A atividade propõe observar evidências, estabelecer comparações, explicar relações e registrar conclusões adequadas ao 3º ano. A habilidade EF03CI06 orienta o trabalho e corresponde a habilidade ef03ci06: desenvolver aprendizagens de ciências relacionadas a grupos de animais, com linguagem, evidências e autonomia adequadas ao 3º ano. Nesta ampliação, o estudante aplica esse conhecimento a uma situação diferente, justificando as respostas com informações do texto e conceitos estudados."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "Caracterize grupos de animais a partir das informações apresentadas em “Aprofundamento 39: Grupos de animais”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Selecione duas evidências do texto de apoio que ajudem a compreender “Aprofundamento 39: Grupos de animais” e explique a escolha.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "Que relação pode ser estabelecida entre grupos de animais e o contexto apresentado em “Aprofundamento 39: Grupos de animais”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Compare dois aspectos presentes em “Aprofundamento 39: Grupos de animais” usando o mesmo critério de análise.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Explique uma causa, consequência, transformação ou permanência relacionada a grupos de animais no contexto de “Aprofundamento 39: Grupos de animais”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Elabore uma conclusão fundamentada sobre “Aprofundamento 39: Grupos de animais”, utilizando informações do texto de apoio.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apresentar características compatíveis com o texto de apoio e com o conceito de grupos de animais.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de grupos de animais."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve selecionar duas evidências pertinentes e explicar como elas sustentam a interpretação apresentada.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de grupos de animais."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve estabelecer uma relação plausível, usando informações da atividade e vocabulário adequado à disciplina.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de grupos de animais."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve comparar os dois aspectos com um critério comum, indicando semelhanças, diferenças ou contrastes relevantes.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de grupos de animais."
+        },
+        {
+          "numero": 5,
+          "resposta": "Deve explicar uma relação causal, consequência, transformação ou permanência coerente com o tema estudado.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de grupos de animais."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese autoral fundamentada no texto de apoio, com conclusão compatível com as evidências analisadas.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de grupos de animais."
+        }
+      ]
+    },
+    {
+      "id": "efi-3ano-b3-cie-50-40-grupos-de-animais",
+      "titulo": "Aprofundamento 40: Grupos de animais",
+      "tema": "Grupos de animais",
+      "sequencia": "Atividade 40",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "intermediaria",
+      "objetivo": "Desenvolver EF03CI06 por meio do estudo de grupos de animais, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 3º ano.",
+      "bncc": [
+        {
+          "codigo": "EF03CI06",
+          "descricaoResumida": "Habilidade EF03CI06: desenvolver aprendizagens de Ciências relacionadas a Grupos de animais, com linguagem, evidências e autonomia adequadas ao 3º ano.",
+          "habilidadeOficial": "Habilidade EF03CI06: desenvolver aprendizagens de Ciências relacionadas a Grupos de animais, com linguagem, evidências e autonomia adequadas ao 3º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 40: Grupos de animais”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 40: Grupos de animais",
+        "conteudo": "O estudo de grupos de animais permite relacionar informações, exemplos do cotidiano e conhecimentos próprios de Ciências. A atividade propõe observar evidências, estabelecer comparações, explicar relações e registrar conclusões adequadas ao 3º ano. A habilidade EF03CI06 orienta o trabalho e corresponde a habilidade ef03ci06: desenvolver aprendizagens de ciências relacionadas a grupos de animais, com linguagem, evidências e autonomia adequadas ao 3º ano. Nesta ampliação, o estudante aplica esse conhecimento a uma situação diferente, justificando as respostas com informações do texto e conceitos estudados."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "Caracterize grupos de animais a partir das informações apresentadas em “Aprofundamento 40: Grupos de animais”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Selecione duas evidências do texto de apoio que ajudem a compreender “Aprofundamento 40: Grupos de animais” e explique a escolha.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "Que relação pode ser estabelecida entre grupos de animais e o contexto apresentado em “Aprofundamento 40: Grupos de animais”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Compare dois aspectos presentes em “Aprofundamento 40: Grupos de animais” usando o mesmo critério de análise.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Explique uma causa, consequência, transformação ou permanência relacionada a grupos de animais no contexto de “Aprofundamento 40: Grupos de animais”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Elabore uma conclusão fundamentada sobre “Aprofundamento 40: Grupos de animais”, utilizando informações do texto de apoio.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apresentar características compatíveis com o texto de apoio e com o conceito de grupos de animais.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de grupos de animais."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve selecionar duas evidências pertinentes e explicar como elas sustentam a interpretação apresentada.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de grupos de animais."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve estabelecer uma relação plausível, usando informações da atividade e vocabulário adequado à disciplina.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de grupos de animais."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve comparar os dois aspectos com um critério comum, indicando semelhanças, diferenças ou contrastes relevantes.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de grupos de animais."
+        },
+        {
+          "numero": 5,
+          "resposta": "Deve explicar uma relação causal, consequência, transformação ou permanência coerente com o tema estudado.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de grupos de animais."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese autoral fundamentada no texto de apoio, com conclusão compatível com as evidências analisadas.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de grupos de animais."
+        }
+      ]
+    },
+    {
+      "id": "efi-3ano-b3-cie-50-41-grupos-de-animais",
+      "titulo": "Aprofundamento 41: Grupos de animais",
+      "tema": "Grupos de animais",
+      "sequencia": "Atividade 41",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "intermediaria",
+      "objetivo": "Desenvolver EF03CI06 por meio do estudo de grupos de animais, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 3º ano.",
+      "bncc": [
+        {
+          "codigo": "EF03CI06",
+          "descricaoResumida": "Habilidade EF03CI06: desenvolver aprendizagens de Ciências relacionadas a Grupos de animais, com linguagem, evidências e autonomia adequadas ao 3º ano.",
+          "habilidadeOficial": "Habilidade EF03CI06: desenvolver aprendizagens de Ciências relacionadas a Grupos de animais, com linguagem, evidências e autonomia adequadas ao 3º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 41: Grupos de animais”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 41: Grupos de animais",
+        "conteudo": "O estudo de grupos de animais permite relacionar informações, exemplos do cotidiano e conhecimentos próprios de Ciências. A atividade propõe observar evidências, estabelecer comparações, explicar relações e registrar conclusões adequadas ao 3º ano. A habilidade EF03CI06 orienta o trabalho e corresponde a habilidade ef03ci06: desenvolver aprendizagens de ciências relacionadas a grupos de animais, com linguagem, evidências e autonomia adequadas ao 3º ano. Nesta ampliação, o estudante aplica esse conhecimento a uma situação diferente, justificando as respostas com informações do texto e conceitos estudados."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "Caracterize grupos de animais a partir das informações apresentadas em “Aprofundamento 41: Grupos de animais”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Selecione duas evidências do texto de apoio que ajudem a compreender “Aprofundamento 41: Grupos de animais” e explique a escolha.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "Que relação pode ser estabelecida entre grupos de animais e o contexto apresentado em “Aprofundamento 41: Grupos de animais”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Compare dois aspectos presentes em “Aprofundamento 41: Grupos de animais” usando o mesmo critério de análise.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Explique uma causa, consequência, transformação ou permanência relacionada a grupos de animais no contexto de “Aprofundamento 41: Grupos de animais”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Elabore uma conclusão fundamentada sobre “Aprofundamento 41: Grupos de animais”, utilizando informações do texto de apoio.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apresentar características compatíveis com o texto de apoio e com o conceito de grupos de animais.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de grupos de animais."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve selecionar duas evidências pertinentes e explicar como elas sustentam a interpretação apresentada.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de grupos de animais."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve estabelecer uma relação plausível, usando informações da atividade e vocabulário adequado à disciplina.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de grupos de animais."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve comparar os dois aspectos com um critério comum, indicando semelhanças, diferenças ou contrastes relevantes.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de grupos de animais."
+        },
+        {
+          "numero": 5,
+          "resposta": "Deve explicar uma relação causal, consequência, transformação ou permanência coerente com o tema estudado.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de grupos de animais."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese autoral fundamentada no texto de apoio, com conclusão compatível com as evidências analisadas.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de grupos de animais."
+        }
+      ]
+    },
+    {
+      "id": "efi-3ano-b3-cie-50-42-grupos-de-animais",
+      "titulo": "Aprofundamento 42: Grupos de animais",
+      "tema": "Grupos de animais",
+      "sequencia": "Atividade 42",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "desafiadora",
+      "objetivo": "Desenvolver EF03CI06 por meio do estudo de grupos de animais, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 3º ano.",
+      "bncc": [
+        {
+          "codigo": "EF03CI06",
+          "descricaoResumida": "Habilidade EF03CI06: desenvolver aprendizagens de Ciências relacionadas a Grupos de animais, com linguagem, evidências e autonomia adequadas ao 3º ano.",
+          "habilidadeOficial": "Habilidade EF03CI06: desenvolver aprendizagens de Ciências relacionadas a Grupos de animais, com linguagem, evidências e autonomia adequadas ao 3º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 42: Grupos de animais”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 42: Grupos de animais",
+        "conteudo": "O estudo de grupos de animais permite relacionar informações, exemplos do cotidiano e conhecimentos próprios de Ciências. A atividade propõe observar evidências, estabelecer comparações, explicar relações e registrar conclusões adequadas ao 3º ano. A habilidade EF03CI06 orienta o trabalho e corresponde a habilidade ef03ci06: desenvolver aprendizagens de ciências relacionadas a grupos de animais, com linguagem, evidências e autonomia adequadas ao 3º ano. Nesta ampliação, o estudante aplica esse conhecimento a uma situação diferente, justificando as respostas com informações do texto e conceitos estudados."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "Caracterize grupos de animais a partir das informações apresentadas em “Aprofundamento 42: Grupos de animais”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Selecione duas evidências do texto de apoio que ajudem a compreender “Aprofundamento 42: Grupos de animais” e explique a escolha.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "Que relação pode ser estabelecida entre grupos de animais e o contexto apresentado em “Aprofundamento 42: Grupos de animais”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Compare dois aspectos presentes em “Aprofundamento 42: Grupos de animais” usando o mesmo critério de análise.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Explique uma causa, consequência, transformação ou permanência relacionada a grupos de animais no contexto de “Aprofundamento 42: Grupos de animais”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Elabore uma conclusão fundamentada sobre “Aprofundamento 42: Grupos de animais”, utilizando informações do texto de apoio.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apresentar características compatíveis com o texto de apoio e com o conceito de grupos de animais.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de grupos de animais."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve selecionar duas evidências pertinentes e explicar como elas sustentam a interpretação apresentada.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de grupos de animais."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve estabelecer uma relação plausível, usando informações da atividade e vocabulário adequado à disciplina.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de grupos de animais."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve comparar os dois aspectos com um critério comum, indicando semelhanças, diferenças ou contrastes relevantes.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de grupos de animais."
+        },
+        {
+          "numero": 5,
+          "resposta": "Deve explicar uma relação causal, consequência, transformação ou permanência coerente com o tema estudado.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de grupos de animais."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese autoral fundamentada no texto de apoio, com conclusão compatível com as evidências analisadas.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de grupos de animais."
+        }
+      ]
+    },
+    {
+      "id": "efi-3ano-b3-cie-50-43-ciclo-de-vida",
+      "titulo": "Aprofundamento 43: Ciclo de vida",
+      "tema": "Ciclo de vida",
+      "sequencia": "Atividade 43",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "facil",
+      "objetivo": "Desenvolver EF03CI05 por meio do estudo de ciclo de vida, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 3º ano.",
+      "bncc": [
+        {
+          "codigo": "EF03CI05",
+          "descricaoResumida": "Habilidade EF03CI05: desenvolver aprendizagens de Ciências relacionadas a Ciclo de vida, com linguagem, evidências e autonomia adequadas ao 3º ano.",
+          "habilidadeOficial": "Habilidade EF03CI05: desenvolver aprendizagens de Ciências relacionadas a Ciclo de vida, com linguagem, evidências e autonomia adequadas ao 3º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 43: Ciclo de vida”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 43: Ciclo de vida",
+        "conteudo": "O estudo de ciclo de vida permite relacionar informações, exemplos do cotidiano e conhecimentos próprios de Ciências. A atividade propõe observar evidências, estabelecer comparações, explicar relações e registrar conclusões adequadas ao 3º ano. A habilidade EF03CI05 orienta o trabalho e corresponde a habilidade ef03ci05: desenvolver aprendizagens de ciências relacionadas a ciclo de vida, com linguagem, evidências e autonomia adequadas ao 3º ano. Nesta ampliação, o estudante aplica esse conhecimento a uma situação diferente, justificando as respostas com informações do texto e conceitos estudados."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "Caracterize ciclo de vida a partir das informações apresentadas em “Aprofundamento 43: Ciclo de vida”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Selecione duas evidências do texto de apoio que ajudem a compreender “Aprofundamento 43: Ciclo de vida” e explique a escolha.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "Que relação pode ser estabelecida entre ciclo de vida e o contexto apresentado em “Aprofundamento 43: Ciclo de vida”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Compare dois aspectos presentes em “Aprofundamento 43: Ciclo de vida” usando o mesmo critério de análise.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Explique uma causa, consequência, transformação ou permanência relacionada a ciclo de vida no contexto de “Aprofundamento 43: Ciclo de vida”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Elabore uma conclusão fundamentada sobre “Aprofundamento 43: Ciclo de vida”, utilizando informações do texto de apoio.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apresentar características compatíveis com o texto de apoio e com o conceito de ciclo de vida.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de ciclo de vida."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve selecionar duas evidências pertinentes e explicar como elas sustentam a interpretação apresentada.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de ciclo de vida."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve estabelecer uma relação plausível, usando informações da atividade e vocabulário adequado à disciplina.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de ciclo de vida."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve comparar os dois aspectos com um critério comum, indicando semelhanças, diferenças ou contrastes relevantes.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de ciclo de vida."
+        },
+        {
+          "numero": 5,
+          "resposta": "Deve explicar uma relação causal, consequência, transformação ou permanência coerente com o tema estudado.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de ciclo de vida."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese autoral fundamentada no texto de apoio, com conclusão compatível com as evidências analisadas.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de ciclo de vida."
+        }
+      ]
+    },
+    {
+      "id": "efi-3ano-b3-cie-50-44-metamorfose",
+      "titulo": "Aprofundamento 44: Metamorfose",
+      "tema": "Metamorfose",
+      "sequencia": "Atividade 44",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "intermediaria",
+      "objetivo": "Desenvolver EF03CI05 por meio do estudo de metamorfose, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 3º ano.",
+      "bncc": [
+        {
+          "codigo": "EF03CI05",
+          "descricaoResumida": "Habilidade EF03CI05: desenvolver aprendizagens de Ciências relacionadas a Metamorfose, com linguagem, evidências e autonomia adequadas ao 3º ano.",
+          "habilidadeOficial": "Habilidade EF03CI05: desenvolver aprendizagens de Ciências relacionadas a Metamorfose, com linguagem, evidências e autonomia adequadas ao 3º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 44: Metamorfose”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 44: Metamorfose",
+        "conteudo": "O estudo de metamorfose permite relacionar informações, exemplos do cotidiano e conhecimentos próprios de Ciências. A atividade propõe observar evidências, estabelecer comparações, explicar relações e registrar conclusões adequadas ao 3º ano. A habilidade EF03CI05 orienta o trabalho e corresponde a habilidade ef03ci05: desenvolver aprendizagens de ciências relacionadas a metamorfose, com linguagem, evidências e autonomia adequadas ao 3º ano. Nesta ampliação, o estudante aplica esse conhecimento a uma situação diferente, justificando as respostas com informações do texto e conceitos estudados."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "Caracterize metamorfose a partir das informações apresentadas em “Aprofundamento 44: Metamorfose”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Selecione duas evidências do texto de apoio que ajudem a compreender “Aprofundamento 44: Metamorfose” e explique a escolha.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "Que relação pode ser estabelecida entre metamorfose e o contexto apresentado em “Aprofundamento 44: Metamorfose”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Compare dois aspectos presentes em “Aprofundamento 44: Metamorfose” usando o mesmo critério de análise.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Explique uma causa, consequência, transformação ou permanência relacionada a metamorfose no contexto de “Aprofundamento 44: Metamorfose”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Elabore uma conclusão fundamentada sobre “Aprofundamento 44: Metamorfose”, utilizando informações do texto de apoio.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apresentar características compatíveis com o texto de apoio e com o conceito de metamorfose.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de metamorfose."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve selecionar duas evidências pertinentes e explicar como elas sustentam a interpretação apresentada.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de metamorfose."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve estabelecer uma relação plausível, usando informações da atividade e vocabulário adequado à disciplina.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de metamorfose."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve comparar os dois aspectos com um critério comum, indicando semelhanças, diferenças ou contrastes relevantes.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de metamorfose."
+        },
+        {
+          "numero": 5,
+          "resposta": "Deve explicar uma relação causal, consequência, transformação ou permanência coerente com o tema estudado.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de metamorfose."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese autoral fundamentada no texto de apoio, com conclusão compatível com as evidências analisadas.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de metamorfose."
+        }
+      ]
+    },
+    {
+      "id": "efi-3ano-b3-cie-50-45-metamorfose",
+      "titulo": "Aprofundamento 45: Metamorfose",
+      "tema": "Metamorfose",
+      "sequencia": "Atividade 45",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "intermediaria",
+      "objetivo": "Desenvolver EF03CI05 por meio do estudo de metamorfose, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 3º ano.",
+      "bncc": [
+        {
+          "codigo": "EF03CI05",
+          "descricaoResumida": "Habilidade EF03CI05: desenvolver aprendizagens de Ciências relacionadas a Metamorfose, com linguagem, evidências e autonomia adequadas ao 3º ano.",
+          "habilidadeOficial": "Habilidade EF03CI05: desenvolver aprendizagens de Ciências relacionadas a Metamorfose, com linguagem, evidências e autonomia adequadas ao 3º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 45: Metamorfose”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 45: Metamorfose",
+        "conteudo": "O estudo de metamorfose permite relacionar informações, exemplos do cotidiano e conhecimentos próprios de Ciências. A atividade propõe observar evidências, estabelecer comparações, explicar relações e registrar conclusões adequadas ao 3º ano. A habilidade EF03CI05 orienta o trabalho e corresponde a habilidade ef03ci05: desenvolver aprendizagens de ciências relacionadas a metamorfose, com linguagem, evidências e autonomia adequadas ao 3º ano. Nesta ampliação, o estudante aplica esse conhecimento a uma situação diferente, justificando as respostas com informações do texto e conceitos estudados."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "Caracterize metamorfose a partir das informações apresentadas em “Aprofundamento 45: Metamorfose”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Selecione duas evidências do texto de apoio que ajudem a compreender “Aprofundamento 45: Metamorfose” e explique a escolha.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "Que relação pode ser estabelecida entre metamorfose e o contexto apresentado em “Aprofundamento 45: Metamorfose”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Compare dois aspectos presentes em “Aprofundamento 45: Metamorfose” usando o mesmo critério de análise.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Explique uma causa, consequência, transformação ou permanência relacionada a metamorfose no contexto de “Aprofundamento 45: Metamorfose”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Elabore uma conclusão fundamentada sobre “Aprofundamento 45: Metamorfose”, utilizando informações do texto de apoio.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apresentar características compatíveis com o texto de apoio e com o conceito de metamorfose.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de metamorfose."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve selecionar duas evidências pertinentes e explicar como elas sustentam a interpretação apresentada.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de metamorfose."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve estabelecer uma relação plausível, usando informações da atividade e vocabulário adequado à disciplina.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de metamorfose."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve comparar os dois aspectos com um critério comum, indicando semelhanças, diferenças ou contrastes relevantes.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de metamorfose."
+        },
+        {
+          "numero": 5,
+          "resposta": "Deve explicar uma relação causal, consequência, transformação ou permanência coerente com o tema estudado.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de metamorfose."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese autoral fundamentada no texto de apoio, com conclusão compatível com as evidências analisadas.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de metamorfose."
+        }
+      ]
+    },
+    {
+      "id": "efi-3ano-b3-cie-50-46-corpo-humano",
+      "titulo": "Aprofundamento 46: Corpo humano",
+      "tema": "Corpo humano",
+      "sequencia": "Atividade 46",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "desafiadora",
+      "objetivo": "Desenvolver EF03CI03 por meio do estudo de corpo humano, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 3º ano.",
+      "bncc": [
+        {
+          "codigo": "EF03CI03",
+          "descricaoResumida": "Habilidade EF03CI03: desenvolver aprendizagens de Ciências relacionadas a Corpo humano, com linguagem, evidências e autonomia adequadas ao 3º ano.",
+          "habilidadeOficial": "Habilidade EF03CI03: desenvolver aprendizagens de Ciências relacionadas a Corpo humano, com linguagem, evidências e autonomia adequadas ao 3º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 46: Corpo humano”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 46: Corpo humano",
+        "conteudo": "O estudo de corpo humano permite relacionar informações, exemplos do cotidiano e conhecimentos próprios de Ciências. A atividade propõe observar evidências, estabelecer comparações, explicar relações e registrar conclusões adequadas ao 3º ano. A habilidade EF03CI03 orienta o trabalho e corresponde a habilidade ef03ci03: desenvolver aprendizagens de ciências relacionadas a corpo humano, com linguagem, evidências e autonomia adequadas ao 3º ano. Nesta ampliação, o estudante aplica esse conhecimento a uma situação diferente, justificando as respostas com informações do texto e conceitos estudados."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "Caracterize corpo humano a partir das informações apresentadas em “Aprofundamento 46: Corpo humano”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Selecione duas evidências do texto de apoio que ajudem a compreender “Aprofundamento 46: Corpo humano” e explique a escolha.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "Que relação pode ser estabelecida entre corpo humano e o contexto apresentado em “Aprofundamento 46: Corpo humano”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Compare dois aspectos presentes em “Aprofundamento 46: Corpo humano” usando o mesmo critério de análise.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Explique uma causa, consequência, transformação ou permanência relacionada a corpo humano no contexto de “Aprofundamento 46: Corpo humano”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Elabore uma conclusão fundamentada sobre “Aprofundamento 46: Corpo humano”, utilizando informações do texto de apoio.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apresentar características compatíveis com o texto de apoio e com o conceito de corpo humano.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de corpo humano."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve selecionar duas evidências pertinentes e explicar como elas sustentam a interpretação apresentada.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de corpo humano."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve estabelecer uma relação plausível, usando informações da atividade e vocabulário adequado à disciplina.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de corpo humano."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve comparar os dois aspectos com um critério comum, indicando semelhanças, diferenças ou contrastes relevantes.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de corpo humano."
+        },
+        {
+          "numero": 5,
+          "resposta": "Deve explicar uma relação causal, consequência, transformação ou permanência coerente com o tema estudado.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de corpo humano."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese autoral fundamentada no texto de apoio, com conclusão compatível com as evidências analisadas.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de corpo humano."
+        }
+      ]
+    },
+    {
+      "id": "efi-3ano-b3-cie-50-47-orgaos-dos-sentidos",
+      "titulo": "Aprofundamento 47: Órgãos dos sentidos",
+      "tema": "Órgãos dos sentidos",
+      "sequencia": "Atividade 47",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "facil",
+      "objetivo": "Desenvolver EF03CI03 por meio do estudo de órgãos dos sentidos, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 3º ano.",
+      "bncc": [
+        {
+          "codigo": "EF03CI03",
+          "descricaoResumida": "Habilidade EF03CI03: desenvolver aprendizagens de Ciências relacionadas a Órgãos dos sentidos, com linguagem, evidências e autonomia adequadas ao 3º ano.",
+          "habilidadeOficial": "Habilidade EF03CI03: desenvolver aprendizagens de Ciências relacionadas a Órgãos dos sentidos, com linguagem, evidências e autonomia adequadas ao 3º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 47: Órgãos dos sentidos”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 47: Órgãos dos sentidos",
+        "conteudo": "O estudo de órgãos dos sentidos permite relacionar informações, exemplos do cotidiano e conhecimentos próprios de Ciências. A atividade propõe observar evidências, estabelecer comparações, explicar relações e registrar conclusões adequadas ao 3º ano. A habilidade EF03CI03 orienta o trabalho e corresponde a habilidade ef03ci03: desenvolver aprendizagens de ciências relacionadas a órgãos dos sentidos, com linguagem, evidências e autonomia adequadas ao 3º ano. Nesta ampliação, o estudante aplica esse conhecimento a uma situação diferente, justificando as respostas com informações do texto e conceitos estudados."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "Caracterize órgãos dos sentidos a partir das informações apresentadas em “Aprofundamento 47: Órgãos dos sentidos”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Selecione duas evidências do texto de apoio que ajudem a compreender “Aprofundamento 47: Órgãos dos sentidos” e explique a escolha.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "Que relação pode ser estabelecida entre órgãos dos sentidos e o contexto apresentado em “Aprofundamento 47: Órgãos dos sentidos”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Compare dois aspectos presentes em “Aprofundamento 47: Órgãos dos sentidos” usando o mesmo critério de análise.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Explique uma causa, consequência, transformação ou permanência relacionada a órgãos dos sentidos no contexto de “Aprofundamento 47: Órgãos dos sentidos”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Elabore uma conclusão fundamentada sobre “Aprofundamento 47: Órgãos dos sentidos”, utilizando informações do texto de apoio.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apresentar características compatíveis com o texto de apoio e com o conceito de órgãos dos sentidos.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de órgãos dos sentidos."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve selecionar duas evidências pertinentes e explicar como elas sustentam a interpretação apresentada.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de órgãos dos sentidos."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve estabelecer uma relação plausível, usando informações da atividade e vocabulário adequado à disciplina.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de órgãos dos sentidos."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve comparar os dois aspectos com um critério comum, indicando semelhanças, diferenças ou contrastes relevantes.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de órgãos dos sentidos."
+        },
+        {
+          "numero": 5,
+          "resposta": "Deve explicar uma relação causal, consequência, transformação ou permanência coerente com o tema estudado.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de órgãos dos sentidos."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese autoral fundamentada no texto de apoio, com conclusão compatível com as evidências analisadas.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de órgãos dos sentidos."
+        }
+      ]
+    },
+    {
+      "id": "efi-3ano-b3-cie-50-48-orgaos-dos-sentidos",
+      "titulo": "Aprofundamento 48: Órgãos dos sentidos",
+      "tema": "Órgãos dos sentidos",
+      "sequencia": "Atividade 48",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "intermediaria",
+      "objetivo": "Desenvolver EF03CI03 por meio do estudo de órgãos dos sentidos, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 3º ano.",
+      "bncc": [
+        {
+          "codigo": "EF03CI03",
+          "descricaoResumida": "Habilidade EF03CI03: desenvolver aprendizagens de Ciências relacionadas a Órgãos dos sentidos, com linguagem, evidências e autonomia adequadas ao 3º ano.",
+          "habilidadeOficial": "Habilidade EF03CI03: desenvolver aprendizagens de Ciências relacionadas a Órgãos dos sentidos, com linguagem, evidências e autonomia adequadas ao 3º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 48: Órgãos dos sentidos”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 48: Órgãos dos sentidos",
+        "conteudo": "O estudo de órgãos dos sentidos permite relacionar informações, exemplos do cotidiano e conhecimentos próprios de Ciências. A atividade propõe observar evidências, estabelecer comparações, explicar relações e registrar conclusões adequadas ao 3º ano. A habilidade EF03CI03 orienta o trabalho e corresponde a habilidade ef03ci03: desenvolver aprendizagens de ciências relacionadas a órgãos dos sentidos, com linguagem, evidências e autonomia adequadas ao 3º ano. Nesta ampliação, o estudante aplica esse conhecimento a uma situação diferente, justificando as respostas com informações do texto e conceitos estudados."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "Caracterize órgãos dos sentidos a partir das informações apresentadas em “Aprofundamento 48: Órgãos dos sentidos”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Selecione duas evidências do texto de apoio que ajudem a compreender “Aprofundamento 48: Órgãos dos sentidos” e explique a escolha.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "Que relação pode ser estabelecida entre órgãos dos sentidos e o contexto apresentado em “Aprofundamento 48: Órgãos dos sentidos”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Compare dois aspectos presentes em “Aprofundamento 48: Órgãos dos sentidos” usando o mesmo critério de análise.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Explique uma causa, consequência, transformação ou permanência relacionada a órgãos dos sentidos no contexto de “Aprofundamento 48: Órgãos dos sentidos”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Elabore uma conclusão fundamentada sobre “Aprofundamento 48: Órgãos dos sentidos”, utilizando informações do texto de apoio.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apresentar características compatíveis com o texto de apoio e com o conceito de órgãos dos sentidos.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de órgãos dos sentidos."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve selecionar duas evidências pertinentes e explicar como elas sustentam a interpretação apresentada.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de órgãos dos sentidos."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve estabelecer uma relação plausível, usando informações da atividade e vocabulário adequado à disciplina.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de órgãos dos sentidos."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve comparar os dois aspectos com um critério comum, indicando semelhanças, diferenças ou contrastes relevantes.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de órgãos dos sentidos."
+        },
+        {
+          "numero": 5,
+          "resposta": "Deve explicar uma relação causal, consequência, transformação ou permanência coerente com o tema estudado.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de órgãos dos sentidos."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese autoral fundamentada no texto de apoio, com conclusão compatível com as evidências analisadas.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de órgãos dos sentidos."
+        }
+      ]
+    },
+    {
+      "id": "efi-3ano-b3-cie-50-49-orgaos-dos-sentidos",
+      "titulo": "Aprofundamento 49: Órgãos dos sentidos",
+      "tema": "Órgãos dos sentidos",
+      "sequencia": "Atividade 49",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "intermediaria",
+      "objetivo": "Desenvolver EF03CI03 por meio do estudo de órgãos dos sentidos, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 3º ano.",
+      "bncc": [
+        {
+          "codigo": "EF03CI03",
+          "descricaoResumida": "Habilidade EF03CI03: desenvolver aprendizagens de Ciências relacionadas a Órgãos dos sentidos, com linguagem, evidências e autonomia adequadas ao 3º ano.",
+          "habilidadeOficial": "Habilidade EF03CI03: desenvolver aprendizagens de Ciências relacionadas a Órgãos dos sentidos, com linguagem, evidências e autonomia adequadas ao 3º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 49: Órgãos dos sentidos”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 49: Órgãos dos sentidos",
+        "conteudo": "O estudo de órgãos dos sentidos permite relacionar informações, exemplos do cotidiano e conhecimentos próprios de Ciências. A atividade propõe observar evidências, estabelecer comparações, explicar relações e registrar conclusões adequadas ao 3º ano. A habilidade EF03CI03 orienta o trabalho e corresponde a habilidade ef03ci03: desenvolver aprendizagens de ciências relacionadas a órgãos dos sentidos, com linguagem, evidências e autonomia adequadas ao 3º ano. Nesta ampliação, o estudante aplica esse conhecimento a uma situação diferente, justificando as respostas com informações do texto e conceitos estudados."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "Caracterize órgãos dos sentidos a partir das informações apresentadas em “Aprofundamento 49: Órgãos dos sentidos”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Selecione duas evidências do texto de apoio que ajudem a compreender “Aprofundamento 49: Órgãos dos sentidos” e explique a escolha.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "Que relação pode ser estabelecida entre órgãos dos sentidos e o contexto apresentado em “Aprofundamento 49: Órgãos dos sentidos”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Compare dois aspectos presentes em “Aprofundamento 49: Órgãos dos sentidos” usando o mesmo critério de análise.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Explique uma causa, consequência, transformação ou permanência relacionada a órgãos dos sentidos no contexto de “Aprofundamento 49: Órgãos dos sentidos”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Elabore uma conclusão fundamentada sobre “Aprofundamento 49: Órgãos dos sentidos”, utilizando informações do texto de apoio.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apresentar características compatíveis com o texto de apoio e com o conceito de órgãos dos sentidos.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de órgãos dos sentidos."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve selecionar duas evidências pertinentes e explicar como elas sustentam a interpretação apresentada.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de órgãos dos sentidos."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve estabelecer uma relação plausível, usando informações da atividade e vocabulário adequado à disciplina.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de órgãos dos sentidos."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve comparar os dois aspectos com um critério comum, indicando semelhanças, diferenças ou contrastes relevantes.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de órgãos dos sentidos."
+        },
+        {
+          "numero": 5,
+          "resposta": "Deve explicar uma relação causal, consequência, transformação ou permanência coerente com o tema estudado.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de órgãos dos sentidos."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese autoral fundamentada no texto de apoio, com conclusão compatível com as evidências analisadas.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de órgãos dos sentidos."
+        }
+      ]
+    },
+    {
+      "id": "efi-3ano-b3-cie-50-50-orgaos-dos-sentidos",
+      "titulo": "Aprofundamento 50: Órgãos dos sentidos",
+      "tema": "Órgãos dos sentidos",
+      "sequencia": "Atividade 50",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "desafiadora",
+      "objetivo": "Desenvolver EF03CI03 por meio do estudo de órgãos dos sentidos, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 3º ano.",
+      "bncc": [
+        {
+          "codigo": "EF03CI03",
+          "descricaoResumida": "Habilidade EF03CI03: desenvolver aprendizagens de Ciências relacionadas a Órgãos dos sentidos, com linguagem, evidências e autonomia adequadas ao 3º ano.",
+          "habilidadeOficial": "Habilidade EF03CI03: desenvolver aprendizagens de Ciências relacionadas a Órgãos dos sentidos, com linguagem, evidências e autonomia adequadas ao 3º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 50: Órgãos dos sentidos”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 50: Órgãos dos sentidos",
+        "conteudo": "O estudo de órgãos dos sentidos permite relacionar informações, exemplos do cotidiano e conhecimentos próprios de Ciências. A atividade propõe observar evidências, estabelecer comparações, explicar relações e registrar conclusões adequadas ao 3º ano. A habilidade EF03CI03 orienta o trabalho e corresponde a habilidade ef03ci03: desenvolver aprendizagens de ciências relacionadas a órgãos dos sentidos, com linguagem, evidências e autonomia adequadas ao 3º ano. Nesta ampliação, o estudante aplica esse conhecimento a uma situação diferente, justificando as respostas com informações do texto e conceitos estudados."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "Caracterize órgãos dos sentidos a partir das informações apresentadas em “Aprofundamento 50: Órgãos dos sentidos”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Selecione duas evidências do texto de apoio que ajudem a compreender “Aprofundamento 50: Órgãos dos sentidos” e explique a escolha.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "Que relação pode ser estabelecida entre órgãos dos sentidos e o contexto apresentado em “Aprofundamento 50: Órgãos dos sentidos”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Compare dois aspectos presentes em “Aprofundamento 50: Órgãos dos sentidos” usando o mesmo critério de análise.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Explique uma causa, consequência, transformação ou permanência relacionada a órgãos dos sentidos no contexto de “Aprofundamento 50: Órgãos dos sentidos”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Elabore uma conclusão fundamentada sobre “Aprofundamento 50: Órgãos dos sentidos”, utilizando informações do texto de apoio.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apresentar características compatíveis com o texto de apoio e com o conceito de órgãos dos sentidos.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de órgãos dos sentidos."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve selecionar duas evidências pertinentes e explicar como elas sustentam a interpretação apresentada.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de órgãos dos sentidos."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve estabelecer uma relação plausível, usando informações da atividade e vocabulário adequado à disciplina.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de órgãos dos sentidos."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve comparar os dois aspectos com um critério comum, indicando semelhanças, diferenças ou contrastes relevantes.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de órgãos dos sentidos."
+        },
+        {
+          "numero": 5,
+          "resposta": "Deve explicar uma relação causal, consequência, transformação ou permanência coerente com o tema estudado.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de órgãos dos sentidos."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese autoral fundamentada no texto de apoio, com conclusão compatível com as evidências analisadas.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de órgãos dos sentidos."
+        }
+      ]
     }
   ],
   "bnccConferida": true,
-  "referenciaBncc": "BNCC — Ensino Fundamental — Anos Iniciais, Ciências (MEC, 2018)"
+  "referenciaBncc": "BNCC — Ensino Fundamental — Anos Iniciais, Ciências (MEC, 2018)",
+  "quantidadeAtividades": 50
 }

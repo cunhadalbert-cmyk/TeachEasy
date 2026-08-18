@@ -6,7 +6,7 @@
   "ano": "1º ano",
   "bimestre": 3,
   "disciplina": "História",
-  "statusBimestre": "sugerido",
+  "statusBimestre": "completo",
   "atividades": [
     {
       "id": "efi-1ano-b3-his-01-minha-historia-descoberta",
@@ -3517,8 +3517,2189 @@
         "dataRevisao": "2026-07-27"
       },
       "bnccConferida": true
+    },
+    {
+      "id": "efi-1ano-b3-his-50-31-identidade",
+      "titulo": "Aprofundamento 31: Identidade",
+      "tema": "Identidade",
+      "sequencia": "Atividade 31",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "facil",
+      "objetivo": "Desenvolver EF01HI01 por meio do estudo de identidade, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01HI01",
+          "descricaoResumida": "Habilidade EF01HI01: desenvolver aprendizagens de História relacionadas a Identidade, com linguagem, recursos e autonomia adequados ao 1º ano.",
+          "habilidadeOficial": "Habilidade EF01HI01: desenvolver aprendizagens de História relacionadas a Identidade, com linguagem, recursos e autonomia adequados ao 1º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 31: Identidade”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 31: Identidade",
+        "conteudo": "Em História, estudar identidade ajuda a criança a observar o cotidiano, nomear elementos, comparar situações e registrar descobertas. Nesta proposta, o estudante parte de exemplos próximos da escola, da família ou da comunidade e organiza o que percebe com palavras, desenhos, números ou pequenas explicações. A habilidade EF01HI01 orienta o trabalho e envolve habilidade ef01hi01: desenvolver aprendizagens de história relacionadas a identidade, com linguagem, recursos e autonomia adequados ao 1º ano. A atividade 31 retoma esse conhecimento em nova situação para ampliar a compreensão."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "O que você percebe primeiro na situação apresentada em “Aprofundamento 31: Identidade”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Quais dois elementos de “Aprofundamento 31: Identidade” ajudam a compreender melhor identidade?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "O que é parecido e o que é diferente entre os exemplos apresentados em “Aprofundamento 31: Identidade”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Que informação do texto de apoio de “Aprofundamento 31: Identidade” ajuda a responder sobre identidade?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Como o tema de “Aprofundamento 31: Identidade” pode ser observado na escola, em casa ou na comunidade?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Escreva com suas palavras uma descoberta feita ao estudar “Aprofundamento 31: Identidade”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apontar um elemento realmente apresentado na situação e descrevê-lo de modo compreensível.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de identidade."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve citar dois elementos pertinentes ao estudo de identidade e explicar sua presença.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de identidade."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve registrar ao menos uma semelhança e uma diferença coerentes com os exemplos estudados.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de identidade."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve recuperar uma informação explícita do texto de apoio que sustente a resposta.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de identidade."
+        },
+        {
+          "numero": 5,
+          "resposta": "Pode apresentar exemplo da escola, da casa ou da comunidade, desde que relacionado ao tema.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de identidade."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese curta e autoral que demonstre uma aprendizagem efetivamente trabalhada na atividade.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de identidade."
+        }
+      ]
+    },
+    {
+      "id": "efi-1ano-b3-his-50-32-familia-e-convivencia",
+      "titulo": "Aprofundamento 32: Família e convivência",
+      "tema": "Família e convivência",
+      "sequencia": "Atividade 32",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "facil",
+      "objetivo": "Desenvolver EF01HI02 por meio do estudo de família e convivência, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01HI02",
+          "descricaoResumida": "Habilidade EF01HI02: desenvolver aprendizagens de História relacionadas a Família e convivência, com linguagem, recursos e autonomia adequados ao 1º ano.",
+          "habilidadeOficial": "Habilidade EF01HI02: desenvolver aprendizagens de História relacionadas a Família e convivência, com linguagem, recursos e autonomia adequados ao 1º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 32: Família e convivência”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 32: Família e convivência",
+        "conteudo": "Em História, estudar família e convivência ajuda a criança a observar o cotidiano, nomear elementos, comparar situações e registrar descobertas. Nesta proposta, o estudante parte de exemplos próximos da escola, da família ou da comunidade e organiza o que percebe com palavras, desenhos, números ou pequenas explicações. A habilidade EF01HI02 orienta o trabalho e envolve habilidade ef01hi02: desenvolver aprendizagens de história relacionadas a família e convivência, com linguagem, recursos e autonomia adequados ao 1º ano. A atividade 32 retoma esse conhecimento em nova situação para ampliar a compreensão."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "O que você percebe primeiro na situação apresentada em “Aprofundamento 32: Família e convivência”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Quais dois elementos de “Aprofundamento 32: Família e convivência” ajudam a compreender melhor família e convivência?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "O que é parecido e o que é diferente entre os exemplos apresentados em “Aprofundamento 32: Família e convivência”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Que informação do texto de apoio de “Aprofundamento 32: Família e convivência” ajuda a responder sobre família e convivência?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Como o tema de “Aprofundamento 32: Família e convivência” pode ser observado na escola, em casa ou na comunidade?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Escreva com suas palavras uma descoberta feita ao estudar “Aprofundamento 32: Família e convivência”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apontar um elemento realmente apresentado na situação e descrevê-lo de modo compreensível.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de família e convivência."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve citar dois elementos pertinentes ao estudo de família e convivência e explicar sua presença.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de família e convivência."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve registrar ao menos uma semelhança e uma diferença coerentes com os exemplos estudados.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de família e convivência."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve recuperar uma informação explícita do texto de apoio que sustente a resposta.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de família e convivência."
+        },
+        {
+          "numero": 5,
+          "resposta": "Pode apresentar exemplo da escola, da casa ou da comunidade, desde que relacionado ao tema.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de família e convivência."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese curta e autoral que demonstre uma aprendizagem efetivamente trabalhada na atividade.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de família e convivência."
+        }
+      ]
+    },
+    {
+      "id": "efi-1ano-b3-his-50-33-convivencia",
+      "titulo": "Aprofundamento 33: Convivência",
+      "tema": "Convivência",
+      "sequencia": "Atividade 33",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "facil",
+      "objetivo": "Desenvolver EF01HI04 por meio do estudo de convivência, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01HI04",
+          "descricaoResumida": "Habilidade EF01HI04: desenvolver aprendizagens de História relacionadas a Convivência, com linguagem, recursos e autonomia adequados ao 1º ano.",
+          "habilidadeOficial": "Habilidade EF01HI04: desenvolver aprendizagens de História relacionadas a Convivência, com linguagem, recursos e autonomia adequados ao 1º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 33: Convivência”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 33: Convivência",
+        "conteudo": "Em História, estudar convivência ajuda a criança a observar o cotidiano, nomear elementos, comparar situações e registrar descobertas. Nesta proposta, o estudante parte de exemplos próximos da escola, da família ou da comunidade e organiza o que percebe com palavras, desenhos, números ou pequenas explicações. A habilidade EF01HI04 orienta o trabalho e envolve habilidade ef01hi04: desenvolver aprendizagens de história relacionadas a convivência, com linguagem, recursos e autonomia adequados ao 1º ano. A atividade 33 retoma esse conhecimento em nova situação para ampliar a compreensão."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "O que você percebe primeiro na situação apresentada em “Aprofundamento 33: Convivência”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Quais dois elementos de “Aprofundamento 33: Convivência” ajudam a compreender melhor convivência?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "O que é parecido e o que é diferente entre os exemplos apresentados em “Aprofundamento 33: Convivência”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Que informação do texto de apoio de “Aprofundamento 33: Convivência” ajuda a responder sobre convivência?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Como o tema de “Aprofundamento 33: Convivência” pode ser observado na escola, em casa ou na comunidade?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Escreva com suas palavras uma descoberta feita ao estudar “Aprofundamento 33: Convivência”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apontar um elemento realmente apresentado na situação e descrevê-lo de modo compreensível.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de convivência."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve citar dois elementos pertinentes ao estudo de convivência e explicar sua presença.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de convivência."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve registrar ao menos uma semelhança e uma diferença coerentes com os exemplos estudados.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de convivência."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve recuperar uma informação explícita do texto de apoio que sustente a resposta.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de convivência."
+        },
+        {
+          "numero": 5,
+          "resposta": "Pode apresentar exemplo da escola, da casa ou da comunidade, desde que relacionado ao tema.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de convivência."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese curta e autoral que demonstre uma aprendizagem efetivamente trabalhada na atividade.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de convivência."
+        }
+      ]
+    },
+    {
+      "id": "efi-1ano-b3-his-50-34-mudancas-e-permanencias",
+      "titulo": "Aprofundamento 34: Mudanças e permanências",
+      "tema": "Mudanças e permanências",
+      "sequencia": "Atividade 34",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "facil",
+      "objetivo": "Desenvolver EF01HI05 por meio do estudo de mudanças e permanências, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01HI05",
+          "descricaoResumida": "Habilidade EF01HI05: desenvolver aprendizagens de História relacionadas a Mudanças e permanências, com linguagem, recursos e autonomia adequados ao 1º ano.",
+          "habilidadeOficial": "Habilidade EF01HI05: desenvolver aprendizagens de História relacionadas a Mudanças e permanências, com linguagem, recursos e autonomia adequados ao 1º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 34: Mudanças e permanências”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 34: Mudanças e permanências",
+        "conteudo": "Em História, estudar mudanças e permanências ajuda a criança a observar o cotidiano, nomear elementos, comparar situações e registrar descobertas. Nesta proposta, o estudante parte de exemplos próximos da escola, da família ou da comunidade e organiza o que percebe com palavras, desenhos, números ou pequenas explicações. A habilidade EF01HI05 orienta o trabalho e envolve habilidade ef01hi05: desenvolver aprendizagens de história relacionadas a mudanças e permanências, com linguagem, recursos e autonomia adequados ao 1º ano. A atividade 34 retoma esse conhecimento em nova situação para ampliar a compreensão."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "O que você percebe primeiro na situação apresentada em “Aprofundamento 34: Mudanças e permanências”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Quais dois elementos de “Aprofundamento 34: Mudanças e permanências” ajudam a compreender melhor mudanças e permanências?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "O que é parecido e o que é diferente entre os exemplos apresentados em “Aprofundamento 34: Mudanças e permanências”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Que informação do texto de apoio de “Aprofundamento 34: Mudanças e permanências” ajuda a responder sobre mudanças e permanências?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Como o tema de “Aprofundamento 34: Mudanças e permanências” pode ser observado na escola, em casa ou na comunidade?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Escreva com suas palavras uma descoberta feita ao estudar “Aprofundamento 34: Mudanças e permanências”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apontar um elemento realmente apresentado na situação e descrevê-lo de modo compreensível.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de mudanças e permanências."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve citar dois elementos pertinentes ao estudo de mudanças e permanências e explicar sua presença.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de mudanças e permanências."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve registrar ao menos uma semelhança e uma diferença coerentes com os exemplos estudados.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de mudanças e permanências."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve recuperar uma informação explícita do texto de apoio que sustente a resposta.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de mudanças e permanências."
+        },
+        {
+          "numero": 5,
+          "resposta": "Pode apresentar exemplo da escola, da casa ou da comunidade, desde que relacionado ao tema.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de mudanças e permanências."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese curta e autoral que demonstre uma aprendizagem efetivamente trabalhada na atividade.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de mudanças e permanências."
+        }
+      ]
+    },
+    {
+      "id": "efi-1ano-b3-his-50-35-fontes-historicas",
+      "titulo": "Aprofundamento 35: Fontes históricas",
+      "tema": "Fontes históricas",
+      "sequencia": "Atividade 35",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "facil",
+      "objetivo": "Desenvolver EF01HI02 por meio do estudo de fontes históricas, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01HI02",
+          "descricaoResumida": "Habilidade EF01HI02: desenvolver aprendizagens de História relacionadas a Fontes históricas, com linguagem, recursos e autonomia adequados ao 1º ano.",
+          "habilidadeOficial": "Habilidade EF01HI02: desenvolver aprendizagens de História relacionadas a Fontes históricas, com linguagem, recursos e autonomia adequados ao 1º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 35: Fontes históricas”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 35: Fontes históricas",
+        "conteudo": "Em História, estudar fontes históricas ajuda a criança a observar o cotidiano, nomear elementos, comparar situações e registrar descobertas. Nesta proposta, o estudante parte de exemplos próximos da escola, da família ou da comunidade e organiza o que percebe com palavras, desenhos, números ou pequenas explicações. A habilidade EF01HI02 orienta o trabalho e envolve habilidade ef01hi02: desenvolver aprendizagens de história relacionadas a fontes históricas, com linguagem, recursos e autonomia adequados ao 1º ano. A atividade 35 retoma esse conhecimento em nova situação para ampliar a compreensão."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "O que você percebe primeiro na situação apresentada em “Aprofundamento 35: Fontes históricas”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Quais dois elementos de “Aprofundamento 35: Fontes históricas” ajudam a compreender melhor fontes históricas?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "O que é parecido e o que é diferente entre os exemplos apresentados em “Aprofundamento 35: Fontes históricas”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Que informação do texto de apoio de “Aprofundamento 35: Fontes históricas” ajuda a responder sobre fontes históricas?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Como o tema de “Aprofundamento 35: Fontes históricas” pode ser observado na escola, em casa ou na comunidade?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Escreva com suas palavras uma descoberta feita ao estudar “Aprofundamento 35: Fontes históricas”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apontar um elemento realmente apresentado na situação e descrevê-lo de modo compreensível.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de fontes históricas."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve citar dois elementos pertinentes ao estudo de fontes históricas e explicar sua presença.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de fontes históricas."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve registrar ao menos uma semelhança e uma diferença coerentes com os exemplos estudados.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de fontes históricas."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve recuperar uma informação explícita do texto de apoio que sustente a resposta.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de fontes históricas."
+        },
+        {
+          "numero": 5,
+          "resposta": "Pode apresentar exemplo da escola, da casa ou da comunidade, desde que relacionado ao tema.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de fontes históricas."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese curta e autoral que demonstre uma aprendizagem efetivamente trabalhada na atividade.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de fontes históricas."
+        }
+      ]
+    },
+    {
+      "id": "efi-1ano-b3-his-50-36-historia-da-escola",
+      "titulo": "Aprofundamento 36: História da escola",
+      "tema": "História da escola",
+      "sequencia": "Atividade 36",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "facil",
+      "objetivo": "Desenvolver EF01HI03 por meio do estudo de história da escola, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01HI03",
+          "descricaoResumida": "Habilidade EF01HI03: desenvolver aprendizagens de História relacionadas a História da escola, com linguagem, recursos e autonomia adequados ao 1º ano.",
+          "habilidadeOficial": "Habilidade EF01HI03: desenvolver aprendizagens de História relacionadas a História da escola, com linguagem, recursos e autonomia adequados ao 1º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 36: História da escola”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 36: História da escola",
+        "conteudo": "Em História, estudar história da escola ajuda a criança a observar o cotidiano, nomear elementos, comparar situações e registrar descobertas. Nesta proposta, o estudante parte de exemplos próximos da escola, da família ou da comunidade e organiza o que percebe com palavras, desenhos, números ou pequenas explicações. A habilidade EF01HI03 orienta o trabalho e envolve habilidade ef01hi03: desenvolver aprendizagens de história relacionadas a história da escola, com linguagem, recursos e autonomia adequados ao 1º ano. A atividade 36 retoma esse conhecimento em nova situação para ampliar a compreensão."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "O que você percebe primeiro na situação apresentada em “Aprofundamento 36: História da escola”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Quais dois elementos de “Aprofundamento 36: História da escola” ajudam a compreender melhor história da escola?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "O que é parecido e o que é diferente entre os exemplos apresentados em “Aprofundamento 36: História da escola”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Que informação do texto de apoio de “Aprofundamento 36: História da escola” ajuda a responder sobre história da escola?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Como o tema de “Aprofundamento 36: História da escola” pode ser observado na escola, em casa ou na comunidade?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Escreva com suas palavras uma descoberta feita ao estudar “Aprofundamento 36: História da escola”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apontar um elemento realmente apresentado na situação e descrevê-lo de modo compreensível.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de história da escola."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve citar dois elementos pertinentes ao estudo de história da escola e explicar sua presença.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de história da escola."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve registrar ao menos uma semelhança e uma diferença coerentes com os exemplos estudados.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de história da escola."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve recuperar uma informação explícita do texto de apoio que sustente a resposta.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de história da escola."
+        },
+        {
+          "numero": 5,
+          "resposta": "Pode apresentar exemplo da escola, da casa ou da comunidade, desde que relacionado ao tema.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de história da escola."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese curta e autoral que demonstre uma aprendizagem efetivamente trabalhada na atividade.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de história da escola."
+        }
+      ]
+    },
+    {
+      "id": "efi-1ano-b3-his-50-37-memoria-coletiva",
+      "titulo": "Aprofundamento 37: Memória coletiva",
+      "tema": "Memória coletiva",
+      "sequencia": "Atividade 37",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "facil",
+      "objetivo": "Desenvolver EF01HI08 por meio do estudo de memória coletiva, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01HI08",
+          "descricaoResumida": "Habilidade EF01HI08: desenvolver aprendizagens de História relacionadas a Memória coletiva, com linguagem, recursos e autonomia adequados ao 1º ano.",
+          "habilidadeOficial": "Habilidade EF01HI08: desenvolver aprendizagens de História relacionadas a Memória coletiva, com linguagem, recursos e autonomia adequados ao 1º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 37: Memória coletiva”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 37: Memória coletiva",
+        "conteudo": "Em História, estudar memória coletiva ajuda a criança a observar o cotidiano, nomear elementos, comparar situações e registrar descobertas. Nesta proposta, o estudante parte de exemplos próximos da escola, da família ou da comunidade e organiza o que percebe com palavras, desenhos, números ou pequenas explicações. A habilidade EF01HI08 orienta o trabalho e envolve habilidade ef01hi08: desenvolver aprendizagens de história relacionadas a memória coletiva, com linguagem, recursos e autonomia adequados ao 1º ano. A atividade 37 retoma esse conhecimento em nova situação para ampliar a compreensão."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "O que você percebe primeiro na situação apresentada em “Aprofundamento 37: Memória coletiva”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Quais dois elementos de “Aprofundamento 37: Memória coletiva” ajudam a compreender melhor memória coletiva?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "O que é parecido e o que é diferente entre os exemplos apresentados em “Aprofundamento 37: Memória coletiva”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Que informação do texto de apoio de “Aprofundamento 37: Memória coletiva” ajuda a responder sobre memória coletiva?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Como o tema de “Aprofundamento 37: Memória coletiva” pode ser observado na escola, em casa ou na comunidade?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Escreva com suas palavras uma descoberta feita ao estudar “Aprofundamento 37: Memória coletiva”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apontar um elemento realmente apresentado na situação e descrevê-lo de modo compreensível.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de memória coletiva."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve citar dois elementos pertinentes ao estudo de memória coletiva e explicar sua presença.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de memória coletiva."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve registrar ao menos uma semelhança e uma diferença coerentes com os exemplos estudados.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de memória coletiva."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve recuperar uma informação explícita do texto de apoio que sustente a resposta.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de memória coletiva."
+        },
+        {
+          "numero": 5,
+          "resposta": "Pode apresentar exemplo da escola, da casa ou da comunidade, desde que relacionado ao tema.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de memória coletiva."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese curta e autoral que demonstre uma aprendizagem efetivamente trabalhada na atividade.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de memória coletiva."
+        }
+      ]
+    },
+    {
+      "id": "efi-1ano-b3-his-50-38-vida-em-comunidade",
+      "titulo": "Aprofundamento 38: Vida em comunidade",
+      "tema": "Vida em comunidade",
+      "sequencia": "Atividade 38",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "facil",
+      "objetivo": "Desenvolver EF01HI06 por meio do estudo de vida em comunidade, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01HI06",
+          "descricaoResumida": "Habilidade EF01HI06: desenvolver aprendizagens de História relacionadas a Vida em comunidade, com linguagem, recursos e autonomia adequados ao 1º ano.",
+          "habilidadeOficial": "Habilidade EF01HI06: desenvolver aprendizagens de História relacionadas a Vida em comunidade, com linguagem, recursos e autonomia adequados ao 1º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 38: Vida em comunidade”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 38: Vida em comunidade",
+        "conteudo": "Em História, estudar vida em comunidade ajuda a criança a observar o cotidiano, nomear elementos, comparar situações e registrar descobertas. Nesta proposta, o estudante parte de exemplos próximos da escola, da família ou da comunidade e organiza o que percebe com palavras, desenhos, números ou pequenas explicações. A habilidade EF01HI06 orienta o trabalho e envolve habilidade ef01hi06: desenvolver aprendizagens de história relacionadas a vida em comunidade, com linguagem, recursos e autonomia adequados ao 1º ano. A atividade 38 retoma esse conhecimento em nova situação para ampliar a compreensão."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "O que você percebe primeiro na situação apresentada em “Aprofundamento 38: Vida em comunidade”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Quais dois elementos de “Aprofundamento 38: Vida em comunidade” ajudam a compreender melhor vida em comunidade?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "O que é parecido e o que é diferente entre os exemplos apresentados em “Aprofundamento 38: Vida em comunidade”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Que informação do texto de apoio de “Aprofundamento 38: Vida em comunidade” ajuda a responder sobre vida em comunidade?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Como o tema de “Aprofundamento 38: Vida em comunidade” pode ser observado na escola, em casa ou na comunidade?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Escreva com suas palavras uma descoberta feita ao estudar “Aprofundamento 38: Vida em comunidade”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apontar um elemento realmente apresentado na situação e descrevê-lo de modo compreensível.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de vida em comunidade."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve citar dois elementos pertinentes ao estudo de vida em comunidade e explicar sua presença.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de vida em comunidade."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve registrar ao menos uma semelhança e uma diferença coerentes com os exemplos estudados.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de vida em comunidade."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve recuperar uma informação explícita do texto de apoio que sustente a resposta.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de vida em comunidade."
+        },
+        {
+          "numero": 5,
+          "resposta": "Pode apresentar exemplo da escola, da casa ou da comunidade, desde que relacionado ao tema.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de vida em comunidade."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese curta e autoral que demonstre uma aprendizagem efetivamente trabalhada na atividade.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de vida em comunidade."
+        }
+      ]
+    },
+    {
+      "id": "efi-1ano-b3-his-50-39-espacos-de-convivencia",
+      "titulo": "Aprofundamento 39: Espaços de convivência",
+      "tema": "Espaços de convivência",
+      "sequencia": "Atividade 39",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "facil",
+      "objetivo": "Desenvolver EF01HI04 por meio do estudo de espaços de convivência, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01HI04",
+          "descricaoResumida": "Habilidade EF01HI04: desenvolver aprendizagens de História relacionadas a Espaços de convivência, com linguagem, recursos e autonomia adequados ao 1º ano.",
+          "habilidadeOficial": "Habilidade EF01HI04: desenvolver aprendizagens de História relacionadas a Espaços de convivência, com linguagem, recursos e autonomia adequados ao 1º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 39: Espaços de convivência”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 39: Espaços de convivência",
+        "conteudo": "Em História, estudar espaços de convivência ajuda a criança a observar o cotidiano, nomear elementos, comparar situações e registrar descobertas. Nesta proposta, o estudante parte de exemplos próximos da escola, da família ou da comunidade e organiza o que percebe com palavras, desenhos, números ou pequenas explicações. A habilidade EF01HI04 orienta o trabalho e envolve habilidade ef01hi04: desenvolver aprendizagens de história relacionadas a espaços de convivência, com linguagem, recursos e autonomia adequados ao 1º ano. A atividade 39 retoma esse conhecimento em nova situação para ampliar a compreensão."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "O que você percebe primeiro na situação apresentada em “Aprofundamento 39: Espaços de convivência”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Quais dois elementos de “Aprofundamento 39: Espaços de convivência” ajudam a compreender melhor espaços de convivência?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "O que é parecido e o que é diferente entre os exemplos apresentados em “Aprofundamento 39: Espaços de convivência”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Que informação do texto de apoio de “Aprofundamento 39: Espaços de convivência” ajuda a responder sobre espaços de convivência?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Como o tema de “Aprofundamento 39: Espaços de convivência” pode ser observado na escola, em casa ou na comunidade?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Escreva com suas palavras uma descoberta feita ao estudar “Aprofundamento 39: Espaços de convivência”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apontar um elemento realmente apresentado na situação e descrevê-lo de modo compreensível.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de espaços de convivência."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve citar dois elementos pertinentes ao estudo de espaços de convivência e explicar sua presença.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de espaços de convivência."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve registrar ao menos uma semelhança e uma diferença coerentes com os exemplos estudados.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de espaços de convivência."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve recuperar uma informação explícita do texto de apoio que sustente a resposta.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de espaços de convivência."
+        },
+        {
+          "numero": 5,
+          "resposta": "Pode apresentar exemplo da escola, da casa ou da comunidade, desde que relacionado ao tema.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de espaços de convivência."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese curta e autoral que demonstre uma aprendizagem efetivamente trabalhada na atividade.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de espaços de convivência."
+        }
+      ]
+    },
+    {
+      "id": "efi-1ano-b3-his-50-40-tempo-historico",
+      "titulo": "Aprofundamento 40: Tempo histórico",
+      "tema": "Tempo histórico",
+      "sequencia": "Atividade 40",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "facil",
+      "objetivo": "Desenvolver EF01HI07 por meio do estudo de tempo histórico, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01HI07",
+          "descricaoResumida": "Habilidade EF01HI07: desenvolver aprendizagens de História relacionadas a Tempo histórico, com linguagem, recursos e autonomia adequados ao 1º ano.",
+          "habilidadeOficial": "Habilidade EF01HI07: desenvolver aprendizagens de História relacionadas a Tempo histórico, com linguagem, recursos e autonomia adequados ao 1º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 40: Tempo histórico”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 40: Tempo histórico",
+        "conteudo": "Em História, estudar tempo histórico ajuda a criança a observar o cotidiano, nomear elementos, comparar situações e registrar descobertas. Nesta proposta, o estudante parte de exemplos próximos da escola, da família ou da comunidade e organiza o que percebe com palavras, desenhos, números ou pequenas explicações. A habilidade EF01HI07 orienta o trabalho e envolve habilidade ef01hi07: desenvolver aprendizagens de história relacionadas a tempo histórico, com linguagem, recursos e autonomia adequados ao 1º ano. A atividade 40 retoma esse conhecimento em nova situação para ampliar a compreensão."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "O que você percebe primeiro na situação apresentada em “Aprofundamento 40: Tempo histórico”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Quais dois elementos de “Aprofundamento 40: Tempo histórico” ajudam a compreender melhor tempo histórico?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "O que é parecido e o que é diferente entre os exemplos apresentados em “Aprofundamento 40: Tempo histórico”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Que informação do texto de apoio de “Aprofundamento 40: Tempo histórico” ajuda a responder sobre tempo histórico?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Como o tema de “Aprofundamento 40: Tempo histórico” pode ser observado na escola, em casa ou na comunidade?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Escreva com suas palavras uma descoberta feita ao estudar “Aprofundamento 40: Tempo histórico”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apontar um elemento realmente apresentado na situação e descrevê-lo de modo compreensível.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de tempo histórico."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve citar dois elementos pertinentes ao estudo de tempo histórico e explicar sua presença.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de tempo histórico."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve registrar ao menos uma semelhança e uma diferença coerentes com os exemplos estudados.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de tempo histórico."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve recuperar uma informação explícita do texto de apoio que sustente a resposta.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de tempo histórico."
+        },
+        {
+          "numero": 5,
+          "resposta": "Pode apresentar exemplo da escola, da casa ou da comunidade, desde que relacionado ao tema.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de tempo histórico."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese curta e autoral que demonstre uma aprendizagem efetivamente trabalhada na atividade.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de tempo histórico."
+        }
+      ]
+    },
+    {
+      "id": "efi-1ano-b3-his-50-41-identidade",
+      "titulo": "Aprofundamento 41: Identidade",
+      "tema": "Identidade",
+      "sequencia": "Atividade 41",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "intermediaria",
+      "objetivo": "Desenvolver EF01HI01 por meio do estudo de identidade, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01HI01",
+          "descricaoResumida": "Habilidade EF01HI01: desenvolver aprendizagens de História relacionadas a Identidade, com linguagem, recursos e autonomia adequados ao 1º ano.",
+          "habilidadeOficial": "Habilidade EF01HI01: desenvolver aprendizagens de História relacionadas a Identidade, com linguagem, recursos e autonomia adequados ao 1º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 41: Identidade”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 41: Identidade",
+        "conteudo": "Em História, estudar identidade ajuda a criança a observar o cotidiano, nomear elementos, comparar situações e registrar descobertas. Nesta proposta, o estudante parte de exemplos próximos da escola, da família ou da comunidade e organiza o que percebe com palavras, desenhos, números ou pequenas explicações. A habilidade EF01HI01 orienta o trabalho e envolve habilidade ef01hi01: desenvolver aprendizagens de história relacionadas a identidade, com linguagem, recursos e autonomia adequados ao 1º ano. A atividade 41 retoma esse conhecimento em nova situação para ampliar a compreensão."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "O que você percebe primeiro na situação apresentada em “Aprofundamento 41: Identidade”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Quais dois elementos de “Aprofundamento 41: Identidade” ajudam a compreender melhor identidade?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "O que é parecido e o que é diferente entre os exemplos apresentados em “Aprofundamento 41: Identidade”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Que informação do texto de apoio de “Aprofundamento 41: Identidade” ajuda a responder sobre identidade?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Como o tema de “Aprofundamento 41: Identidade” pode ser observado na escola, em casa ou na comunidade?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Escreva com suas palavras uma descoberta feita ao estudar “Aprofundamento 41: Identidade”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apontar um elemento realmente apresentado na situação e descrevê-lo de modo compreensível.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de identidade."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve citar dois elementos pertinentes ao estudo de identidade e explicar sua presença.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de identidade."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve registrar ao menos uma semelhança e uma diferença coerentes com os exemplos estudados.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de identidade."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve recuperar uma informação explícita do texto de apoio que sustente a resposta.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de identidade."
+        },
+        {
+          "numero": 5,
+          "resposta": "Pode apresentar exemplo da escola, da casa ou da comunidade, desde que relacionado ao tema.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de identidade."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese curta e autoral que demonstre uma aprendizagem efetivamente trabalhada na atividade.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de identidade."
+        }
+      ]
+    },
+    {
+      "id": "efi-1ano-b3-his-50-42-familia-e-convivencia",
+      "titulo": "Aprofundamento 42: Família e convivência",
+      "tema": "Família e convivência",
+      "sequencia": "Atividade 42",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "intermediaria",
+      "objetivo": "Desenvolver EF01HI02 por meio do estudo de família e convivência, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01HI02",
+          "descricaoResumida": "Habilidade EF01HI02: desenvolver aprendizagens de História relacionadas a Família e convivência, com linguagem, recursos e autonomia adequados ao 1º ano.",
+          "habilidadeOficial": "Habilidade EF01HI02: desenvolver aprendizagens de História relacionadas a Família e convivência, com linguagem, recursos e autonomia adequados ao 1º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 42: Família e convivência”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 42: Família e convivência",
+        "conteudo": "Em História, estudar família e convivência ajuda a criança a observar o cotidiano, nomear elementos, comparar situações e registrar descobertas. Nesta proposta, o estudante parte de exemplos próximos da escola, da família ou da comunidade e organiza o que percebe com palavras, desenhos, números ou pequenas explicações. A habilidade EF01HI02 orienta o trabalho e envolve habilidade ef01hi02: desenvolver aprendizagens de história relacionadas a família e convivência, com linguagem, recursos e autonomia adequados ao 1º ano. A atividade 42 retoma esse conhecimento em nova situação para ampliar a compreensão."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "O que você percebe primeiro na situação apresentada em “Aprofundamento 42: Família e convivência”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Quais dois elementos de “Aprofundamento 42: Família e convivência” ajudam a compreender melhor família e convivência?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "O que é parecido e o que é diferente entre os exemplos apresentados em “Aprofundamento 42: Família e convivência”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Que informação do texto de apoio de “Aprofundamento 42: Família e convivência” ajuda a responder sobre família e convivência?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Como o tema de “Aprofundamento 42: Família e convivência” pode ser observado na escola, em casa ou na comunidade?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Escreva com suas palavras uma descoberta feita ao estudar “Aprofundamento 42: Família e convivência”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apontar um elemento realmente apresentado na situação e descrevê-lo de modo compreensível.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de família e convivência."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve citar dois elementos pertinentes ao estudo de família e convivência e explicar sua presença.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de família e convivência."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve registrar ao menos uma semelhança e uma diferença coerentes com os exemplos estudados.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de família e convivência."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve recuperar uma informação explícita do texto de apoio que sustente a resposta.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de família e convivência."
+        },
+        {
+          "numero": 5,
+          "resposta": "Pode apresentar exemplo da escola, da casa ou da comunidade, desde que relacionado ao tema.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de família e convivência."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese curta e autoral que demonstre uma aprendizagem efetivamente trabalhada na atividade.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de família e convivência."
+        }
+      ]
+    },
+    {
+      "id": "efi-1ano-b3-his-50-43-convivencia",
+      "titulo": "Aprofundamento 43: Convivência",
+      "tema": "Convivência",
+      "sequencia": "Atividade 43",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "intermediaria",
+      "objetivo": "Desenvolver EF01HI04 por meio do estudo de convivência, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01HI04",
+          "descricaoResumida": "Habilidade EF01HI04: desenvolver aprendizagens de História relacionadas a Convivência, com linguagem, recursos e autonomia adequados ao 1º ano.",
+          "habilidadeOficial": "Habilidade EF01HI04: desenvolver aprendizagens de História relacionadas a Convivência, com linguagem, recursos e autonomia adequados ao 1º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 43: Convivência”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 43: Convivência",
+        "conteudo": "Em História, estudar convivência ajuda a criança a observar o cotidiano, nomear elementos, comparar situações e registrar descobertas. Nesta proposta, o estudante parte de exemplos próximos da escola, da família ou da comunidade e organiza o que percebe com palavras, desenhos, números ou pequenas explicações. A habilidade EF01HI04 orienta o trabalho e envolve habilidade ef01hi04: desenvolver aprendizagens de história relacionadas a convivência, com linguagem, recursos e autonomia adequados ao 1º ano. A atividade 43 retoma esse conhecimento em nova situação para ampliar a compreensão."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "O que você percebe primeiro na situação apresentada em “Aprofundamento 43: Convivência”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Quais dois elementos de “Aprofundamento 43: Convivência” ajudam a compreender melhor convivência?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "O que é parecido e o que é diferente entre os exemplos apresentados em “Aprofundamento 43: Convivência”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Que informação do texto de apoio de “Aprofundamento 43: Convivência” ajuda a responder sobre convivência?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Como o tema de “Aprofundamento 43: Convivência” pode ser observado na escola, em casa ou na comunidade?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Escreva com suas palavras uma descoberta feita ao estudar “Aprofundamento 43: Convivência”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apontar um elemento realmente apresentado na situação e descrevê-lo de modo compreensível.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de convivência."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve citar dois elementos pertinentes ao estudo de convivência e explicar sua presença.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de convivência."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve registrar ao menos uma semelhança e uma diferença coerentes com os exemplos estudados.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de convivência."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve recuperar uma informação explícita do texto de apoio que sustente a resposta.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de convivência."
+        },
+        {
+          "numero": 5,
+          "resposta": "Pode apresentar exemplo da escola, da casa ou da comunidade, desde que relacionado ao tema.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de convivência."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese curta e autoral que demonstre uma aprendizagem efetivamente trabalhada na atividade.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de convivência."
+        }
+      ]
+    },
+    {
+      "id": "efi-1ano-b3-his-50-44-mudancas-e-permanencias",
+      "titulo": "Aprofundamento 44: Mudanças e permanências",
+      "tema": "Mudanças e permanências",
+      "sequencia": "Atividade 44",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "intermediaria",
+      "objetivo": "Desenvolver EF01HI05 por meio do estudo de mudanças e permanências, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01HI05",
+          "descricaoResumida": "Habilidade EF01HI05: desenvolver aprendizagens de História relacionadas a Mudanças e permanências, com linguagem, recursos e autonomia adequados ao 1º ano.",
+          "habilidadeOficial": "Habilidade EF01HI05: desenvolver aprendizagens de História relacionadas a Mudanças e permanências, com linguagem, recursos e autonomia adequados ao 1º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 44: Mudanças e permanências”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 44: Mudanças e permanências",
+        "conteudo": "Em História, estudar mudanças e permanências ajuda a criança a observar o cotidiano, nomear elementos, comparar situações e registrar descobertas. Nesta proposta, o estudante parte de exemplos próximos da escola, da família ou da comunidade e organiza o que percebe com palavras, desenhos, números ou pequenas explicações. A habilidade EF01HI05 orienta o trabalho e envolve habilidade ef01hi05: desenvolver aprendizagens de história relacionadas a mudanças e permanências, com linguagem, recursos e autonomia adequados ao 1º ano. A atividade 44 retoma esse conhecimento em nova situação para ampliar a compreensão."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "O que você percebe primeiro na situação apresentada em “Aprofundamento 44: Mudanças e permanências”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Quais dois elementos de “Aprofundamento 44: Mudanças e permanências” ajudam a compreender melhor mudanças e permanências?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "O que é parecido e o que é diferente entre os exemplos apresentados em “Aprofundamento 44: Mudanças e permanências”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Que informação do texto de apoio de “Aprofundamento 44: Mudanças e permanências” ajuda a responder sobre mudanças e permanências?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Como o tema de “Aprofundamento 44: Mudanças e permanências” pode ser observado na escola, em casa ou na comunidade?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Escreva com suas palavras uma descoberta feita ao estudar “Aprofundamento 44: Mudanças e permanências”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apontar um elemento realmente apresentado na situação e descrevê-lo de modo compreensível.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de mudanças e permanências."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve citar dois elementos pertinentes ao estudo de mudanças e permanências e explicar sua presença.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de mudanças e permanências."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve registrar ao menos uma semelhança e uma diferença coerentes com os exemplos estudados.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de mudanças e permanências."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve recuperar uma informação explícita do texto de apoio que sustente a resposta.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de mudanças e permanências."
+        },
+        {
+          "numero": 5,
+          "resposta": "Pode apresentar exemplo da escola, da casa ou da comunidade, desde que relacionado ao tema.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de mudanças e permanências."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese curta e autoral que demonstre uma aprendizagem efetivamente trabalhada na atividade.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de mudanças e permanências."
+        }
+      ]
+    },
+    {
+      "id": "efi-1ano-b3-his-50-45-fontes-historicas",
+      "titulo": "Aprofundamento 45: Fontes históricas",
+      "tema": "Fontes históricas",
+      "sequencia": "Atividade 45",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "intermediaria",
+      "objetivo": "Desenvolver EF01HI02 por meio do estudo de fontes históricas, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01HI02",
+          "descricaoResumida": "Habilidade EF01HI02: desenvolver aprendizagens de História relacionadas a Fontes históricas, com linguagem, recursos e autonomia adequados ao 1º ano.",
+          "habilidadeOficial": "Habilidade EF01HI02: desenvolver aprendizagens de História relacionadas a Fontes históricas, com linguagem, recursos e autonomia adequados ao 1º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 45: Fontes históricas”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 45: Fontes históricas",
+        "conteudo": "Em História, estudar fontes históricas ajuda a criança a observar o cotidiano, nomear elementos, comparar situações e registrar descobertas. Nesta proposta, o estudante parte de exemplos próximos da escola, da família ou da comunidade e organiza o que percebe com palavras, desenhos, números ou pequenas explicações. A habilidade EF01HI02 orienta o trabalho e envolve habilidade ef01hi02: desenvolver aprendizagens de história relacionadas a fontes históricas, com linguagem, recursos e autonomia adequados ao 1º ano. A atividade 45 retoma esse conhecimento em nova situação para ampliar a compreensão."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "O que você percebe primeiro na situação apresentada em “Aprofundamento 45: Fontes históricas”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Quais dois elementos de “Aprofundamento 45: Fontes históricas” ajudam a compreender melhor fontes históricas?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "O que é parecido e o que é diferente entre os exemplos apresentados em “Aprofundamento 45: Fontes históricas”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Que informação do texto de apoio de “Aprofundamento 45: Fontes históricas” ajuda a responder sobre fontes históricas?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Como o tema de “Aprofundamento 45: Fontes históricas” pode ser observado na escola, em casa ou na comunidade?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Escreva com suas palavras uma descoberta feita ao estudar “Aprofundamento 45: Fontes históricas”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apontar um elemento realmente apresentado na situação e descrevê-lo de modo compreensível.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de fontes históricas."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve citar dois elementos pertinentes ao estudo de fontes históricas e explicar sua presença.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de fontes históricas."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve registrar ao menos uma semelhança e uma diferença coerentes com os exemplos estudados.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de fontes históricas."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve recuperar uma informação explícita do texto de apoio que sustente a resposta.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de fontes históricas."
+        },
+        {
+          "numero": 5,
+          "resposta": "Pode apresentar exemplo da escola, da casa ou da comunidade, desde que relacionado ao tema.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de fontes históricas."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese curta e autoral que demonstre uma aprendizagem efetivamente trabalhada na atividade.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de fontes históricas."
+        }
+      ]
+    },
+    {
+      "id": "efi-1ano-b3-his-50-46-historia-da-escola",
+      "titulo": "Aprofundamento 46: História da escola",
+      "tema": "História da escola",
+      "sequencia": "Atividade 46",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "intermediaria",
+      "objetivo": "Desenvolver EF01HI03 por meio do estudo de história da escola, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01HI03",
+          "descricaoResumida": "Habilidade EF01HI03: desenvolver aprendizagens de História relacionadas a História da escola, com linguagem, recursos e autonomia adequados ao 1º ano.",
+          "habilidadeOficial": "Habilidade EF01HI03: desenvolver aprendizagens de História relacionadas a História da escola, com linguagem, recursos e autonomia adequados ao 1º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 46: História da escola”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 46: História da escola",
+        "conteudo": "Em História, estudar história da escola ajuda a criança a observar o cotidiano, nomear elementos, comparar situações e registrar descobertas. Nesta proposta, o estudante parte de exemplos próximos da escola, da família ou da comunidade e organiza o que percebe com palavras, desenhos, números ou pequenas explicações. A habilidade EF01HI03 orienta o trabalho e envolve habilidade ef01hi03: desenvolver aprendizagens de história relacionadas a história da escola, com linguagem, recursos e autonomia adequados ao 1º ano. A atividade 46 retoma esse conhecimento em nova situação para ampliar a compreensão."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "O que você percebe primeiro na situação apresentada em “Aprofundamento 46: História da escola”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Quais dois elementos de “Aprofundamento 46: História da escola” ajudam a compreender melhor história da escola?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "O que é parecido e o que é diferente entre os exemplos apresentados em “Aprofundamento 46: História da escola”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Que informação do texto de apoio de “Aprofundamento 46: História da escola” ajuda a responder sobre história da escola?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Como o tema de “Aprofundamento 46: História da escola” pode ser observado na escola, em casa ou na comunidade?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Escreva com suas palavras uma descoberta feita ao estudar “Aprofundamento 46: História da escola”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apontar um elemento realmente apresentado na situação e descrevê-lo de modo compreensível.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de história da escola."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve citar dois elementos pertinentes ao estudo de história da escola e explicar sua presença.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de história da escola."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve registrar ao menos uma semelhança e uma diferença coerentes com os exemplos estudados.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de história da escola."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve recuperar uma informação explícita do texto de apoio que sustente a resposta.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de história da escola."
+        },
+        {
+          "numero": 5,
+          "resposta": "Pode apresentar exemplo da escola, da casa ou da comunidade, desde que relacionado ao tema.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de história da escola."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese curta e autoral que demonstre uma aprendizagem efetivamente trabalhada na atividade.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de história da escola."
+        }
+      ]
+    },
+    {
+      "id": "efi-1ano-b3-his-50-47-memoria-coletiva",
+      "titulo": "Aprofundamento 47: Memória coletiva",
+      "tema": "Memória coletiva",
+      "sequencia": "Atividade 47",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "intermediaria",
+      "objetivo": "Desenvolver EF01HI08 por meio do estudo de memória coletiva, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01HI08",
+          "descricaoResumida": "Habilidade EF01HI08: desenvolver aprendizagens de História relacionadas a Memória coletiva, com linguagem, recursos e autonomia adequados ao 1º ano.",
+          "habilidadeOficial": "Habilidade EF01HI08: desenvolver aprendizagens de História relacionadas a Memória coletiva, com linguagem, recursos e autonomia adequados ao 1º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 47: Memória coletiva”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 47: Memória coletiva",
+        "conteudo": "Em História, estudar memória coletiva ajuda a criança a observar o cotidiano, nomear elementos, comparar situações e registrar descobertas. Nesta proposta, o estudante parte de exemplos próximos da escola, da família ou da comunidade e organiza o que percebe com palavras, desenhos, números ou pequenas explicações. A habilidade EF01HI08 orienta o trabalho e envolve habilidade ef01hi08: desenvolver aprendizagens de história relacionadas a memória coletiva, com linguagem, recursos e autonomia adequados ao 1º ano. A atividade 47 retoma esse conhecimento em nova situação para ampliar a compreensão."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "O que você percebe primeiro na situação apresentada em “Aprofundamento 47: Memória coletiva”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Quais dois elementos de “Aprofundamento 47: Memória coletiva” ajudam a compreender melhor memória coletiva?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "O que é parecido e o que é diferente entre os exemplos apresentados em “Aprofundamento 47: Memória coletiva”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Que informação do texto de apoio de “Aprofundamento 47: Memória coletiva” ajuda a responder sobre memória coletiva?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Como o tema de “Aprofundamento 47: Memória coletiva” pode ser observado na escola, em casa ou na comunidade?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Escreva com suas palavras uma descoberta feita ao estudar “Aprofundamento 47: Memória coletiva”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apontar um elemento realmente apresentado na situação e descrevê-lo de modo compreensível.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de memória coletiva."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve citar dois elementos pertinentes ao estudo de memória coletiva e explicar sua presença.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de memória coletiva."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve registrar ao menos uma semelhança e uma diferença coerentes com os exemplos estudados.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de memória coletiva."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve recuperar uma informação explícita do texto de apoio que sustente a resposta.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de memória coletiva."
+        },
+        {
+          "numero": 5,
+          "resposta": "Pode apresentar exemplo da escola, da casa ou da comunidade, desde que relacionado ao tema.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de memória coletiva."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese curta e autoral que demonstre uma aprendizagem efetivamente trabalhada na atividade.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de memória coletiva."
+        }
+      ]
+    },
+    {
+      "id": "efi-1ano-b3-his-50-48-vida-em-comunidade",
+      "titulo": "Aprofundamento 48: Vida em comunidade",
+      "tema": "Vida em comunidade",
+      "sequencia": "Atividade 48",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "intermediaria",
+      "objetivo": "Desenvolver EF01HI06 por meio do estudo de vida em comunidade, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01HI06",
+          "descricaoResumida": "Habilidade EF01HI06: desenvolver aprendizagens de História relacionadas a Vida em comunidade, com linguagem, recursos e autonomia adequados ao 1º ano.",
+          "habilidadeOficial": "Habilidade EF01HI06: desenvolver aprendizagens de História relacionadas a Vida em comunidade, com linguagem, recursos e autonomia adequados ao 1º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 48: Vida em comunidade”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 48: Vida em comunidade",
+        "conteudo": "Em História, estudar vida em comunidade ajuda a criança a observar o cotidiano, nomear elementos, comparar situações e registrar descobertas. Nesta proposta, o estudante parte de exemplos próximos da escola, da família ou da comunidade e organiza o que percebe com palavras, desenhos, números ou pequenas explicações. A habilidade EF01HI06 orienta o trabalho e envolve habilidade ef01hi06: desenvolver aprendizagens de história relacionadas a vida em comunidade, com linguagem, recursos e autonomia adequados ao 1º ano. A atividade 48 retoma esse conhecimento em nova situação para ampliar a compreensão."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "O que você percebe primeiro na situação apresentada em “Aprofundamento 48: Vida em comunidade”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Quais dois elementos de “Aprofundamento 48: Vida em comunidade” ajudam a compreender melhor vida em comunidade?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "O que é parecido e o que é diferente entre os exemplos apresentados em “Aprofundamento 48: Vida em comunidade”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Que informação do texto de apoio de “Aprofundamento 48: Vida em comunidade” ajuda a responder sobre vida em comunidade?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Como o tema de “Aprofundamento 48: Vida em comunidade” pode ser observado na escola, em casa ou na comunidade?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Escreva com suas palavras uma descoberta feita ao estudar “Aprofundamento 48: Vida em comunidade”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apontar um elemento realmente apresentado na situação e descrevê-lo de modo compreensível.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de vida em comunidade."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve citar dois elementos pertinentes ao estudo de vida em comunidade e explicar sua presença.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de vida em comunidade."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve registrar ao menos uma semelhança e uma diferença coerentes com os exemplos estudados.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de vida em comunidade."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve recuperar uma informação explícita do texto de apoio que sustente a resposta.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de vida em comunidade."
+        },
+        {
+          "numero": 5,
+          "resposta": "Pode apresentar exemplo da escola, da casa ou da comunidade, desde que relacionado ao tema.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de vida em comunidade."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese curta e autoral que demonstre uma aprendizagem efetivamente trabalhada na atividade.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de vida em comunidade."
+        }
+      ]
+    },
+    {
+      "id": "efi-1ano-b3-his-50-49-espacos-de-convivencia",
+      "titulo": "Aprofundamento 49: Espaços de convivência",
+      "tema": "Espaços de convivência",
+      "sequencia": "Atividade 49",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "intermediaria",
+      "objetivo": "Desenvolver EF01HI04 por meio do estudo de espaços de convivência, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01HI04",
+          "descricaoResumida": "Habilidade EF01HI04: desenvolver aprendizagens de História relacionadas a Espaços de convivência, com linguagem, recursos e autonomia adequados ao 1º ano.",
+          "habilidadeOficial": "Habilidade EF01HI04: desenvolver aprendizagens de História relacionadas a Espaços de convivência, com linguagem, recursos e autonomia adequados ao 1º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 49: Espaços de convivência”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 49: Espaços de convivência",
+        "conteudo": "Em História, estudar espaços de convivência ajuda a criança a observar o cotidiano, nomear elementos, comparar situações e registrar descobertas. Nesta proposta, o estudante parte de exemplos próximos da escola, da família ou da comunidade e organiza o que percebe com palavras, desenhos, números ou pequenas explicações. A habilidade EF01HI04 orienta o trabalho e envolve habilidade ef01hi04: desenvolver aprendizagens de história relacionadas a espaços de convivência, com linguagem, recursos e autonomia adequados ao 1º ano. A atividade 49 retoma esse conhecimento em nova situação para ampliar a compreensão."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "O que você percebe primeiro na situação apresentada em “Aprofundamento 49: Espaços de convivência”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Quais dois elementos de “Aprofundamento 49: Espaços de convivência” ajudam a compreender melhor espaços de convivência?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "O que é parecido e o que é diferente entre os exemplos apresentados em “Aprofundamento 49: Espaços de convivência”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Que informação do texto de apoio de “Aprofundamento 49: Espaços de convivência” ajuda a responder sobre espaços de convivência?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Como o tema de “Aprofundamento 49: Espaços de convivência” pode ser observado na escola, em casa ou na comunidade?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Escreva com suas palavras uma descoberta feita ao estudar “Aprofundamento 49: Espaços de convivência”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apontar um elemento realmente apresentado na situação e descrevê-lo de modo compreensível.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de espaços de convivência."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve citar dois elementos pertinentes ao estudo de espaços de convivência e explicar sua presença.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de espaços de convivência."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve registrar ao menos uma semelhança e uma diferença coerentes com os exemplos estudados.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de espaços de convivência."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve recuperar uma informação explícita do texto de apoio que sustente a resposta.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de espaços de convivência."
+        },
+        {
+          "numero": 5,
+          "resposta": "Pode apresentar exemplo da escola, da casa ou da comunidade, desde que relacionado ao tema.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de espaços de convivência."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese curta e autoral que demonstre uma aprendizagem efetivamente trabalhada na atividade.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de espaços de convivência."
+        }
+      ]
+    },
+    {
+      "id": "efi-1ano-b3-his-50-50-tempo-historico",
+      "titulo": "Aprofundamento 50: Tempo histórico",
+      "tema": "Tempo histórico",
+      "sequencia": "Atividade 50",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "intermediaria",
+      "objetivo": "Desenvolver EF01HI07 por meio do estudo de tempo histórico, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01HI07",
+          "descricaoResumida": "Habilidade EF01HI07: desenvolver aprendizagens de História relacionadas a Tempo histórico, com linguagem, recursos e autonomia adequados ao 1º ano.",
+          "habilidadeOficial": "Habilidade EF01HI07: desenvolver aprendizagens de História relacionadas a Tempo histórico, com linguagem, recursos e autonomia adequados ao 1º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 50: Tempo histórico”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 50: Tempo histórico",
+        "conteudo": "Em História, estudar tempo histórico ajuda a criança a observar o cotidiano, nomear elementos, comparar situações e registrar descobertas. Nesta proposta, o estudante parte de exemplos próximos da escola, da família ou da comunidade e organiza o que percebe com palavras, desenhos, números ou pequenas explicações. A habilidade EF01HI07 orienta o trabalho e envolve habilidade ef01hi07: desenvolver aprendizagens de história relacionadas a tempo histórico, com linguagem, recursos e autonomia adequados ao 1º ano. A atividade 50 retoma esse conhecimento em nova situação para ampliar a compreensão."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "O que você percebe primeiro na situação apresentada em “Aprofundamento 50: Tempo histórico”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Quais dois elementos de “Aprofundamento 50: Tempo histórico” ajudam a compreender melhor tempo histórico?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "O que é parecido e o que é diferente entre os exemplos apresentados em “Aprofundamento 50: Tempo histórico”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Que informação do texto de apoio de “Aprofundamento 50: Tempo histórico” ajuda a responder sobre tempo histórico?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Como o tema de “Aprofundamento 50: Tempo histórico” pode ser observado na escola, em casa ou na comunidade?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Escreva com suas palavras uma descoberta feita ao estudar “Aprofundamento 50: Tempo histórico”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apontar um elemento realmente apresentado na situação e descrevê-lo de modo compreensível.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de tempo histórico."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve citar dois elementos pertinentes ao estudo de tempo histórico e explicar sua presença.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de tempo histórico."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve registrar ao menos uma semelhança e uma diferença coerentes com os exemplos estudados.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de tempo histórico."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve recuperar uma informação explícita do texto de apoio que sustente a resposta.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de tempo histórico."
+        },
+        {
+          "numero": 5,
+          "resposta": "Pode apresentar exemplo da escola, da casa ou da comunidade, desde que relacionado ao tema.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de tempo histórico."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese curta e autoral que demonstre uma aprendizagem efetivamente trabalhada na atividade.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de tempo histórico."
+        }
+      ]
     }
   ],
   "bnccConferida": true,
-  "referenciaBncc": "BNCC — Ensino Fundamental — Anos Iniciais, História (MEC, 2018)"
+  "referenciaBncc": "BNCC — Ensino Fundamental — Anos Iniciais, História (MEC, 2018)",
+  "quantidadeAtividades": 50
 }

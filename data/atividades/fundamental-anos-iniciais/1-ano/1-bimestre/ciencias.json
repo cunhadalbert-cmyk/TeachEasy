@@ -6,7 +6,7 @@
   "ano": "1º ano",
   "bimestre": 1,
   "disciplina": "Ciências",
-  "statusBimestre": "sugerido",
+  "statusBimestre": "completo",
   "atividades": [
     {
       "id": "efi-1ano-b1-ciencias-01-observacao-e-hipotese-sobre-corpo-humano",
@@ -3517,8 +3517,2189 @@
         "dataRevisao": "2026-07-27"
       },
       "bnccConferida": true
+    },
+    {
+      "id": "efi-1ano-b1-cie-50-31-observacao-e-hipotese-sobre-corpo-humano",
+      "titulo": "Aprofundamento 31: Observação e hipótese sobre corpo humano",
+      "tema": "Observação e hipótese sobre corpo humano",
+      "sequencia": "Atividade 31",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "facil",
+      "objetivo": "Desenvolver EF01CI01 por meio do estudo de observação e hipótese sobre corpo humano, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01CI01",
+          "descricaoResumida": "Habilidade EF01CI01: desenvolver aprendizagens de Ciências relacionadas a Observação e hipótese sobre corpo humano, com linguagem, recursos e autonomia adequados ao 1º ano.",
+          "habilidadeOficial": "Habilidade EF01CI01: desenvolver aprendizagens de Ciências relacionadas a Observação e hipótese sobre corpo humano, com linguagem, recursos e autonomia adequados ao 1º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 31: Observação e hipótese sobre corpo humano”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 31: Observação e hipótese sobre corpo humano",
+        "conteudo": "Em Ciências, estudar observação e hipótese sobre corpo humano ajuda a criança a observar o cotidiano, nomear elementos, comparar situações e registrar descobertas. Nesta proposta, o estudante parte de exemplos próximos da escola, da família ou da comunidade e organiza o que percebe com palavras, desenhos, números ou pequenas explicações. A habilidade EF01CI01 orienta o trabalho e envolve habilidade ef01ci01: desenvolver aprendizagens de ciências relacionadas a observação e hipótese sobre corpo humano, com linguagem, recursos e autonomia adequados ao 1º ano. A atividade 31 retoma esse conhecimento em nova situação para ampliar a compreensão."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "O que você percebe primeiro na situação apresentada em “Aprofundamento 31: Observação e hipótese sobre corpo humano”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Quais dois elementos de “Aprofundamento 31: Observação e hipótese sobre corpo humano” ajudam a compreender melhor observação e hipótese sobre corpo humano?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "O que é parecido e o que é diferente entre os exemplos apresentados em “Aprofundamento 31: Observação e hipótese sobre corpo humano”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Que informação do texto de apoio de “Aprofundamento 31: Observação e hipótese sobre corpo humano” ajuda a responder sobre observação e hipótese sobre corpo humano?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Como o tema de “Aprofundamento 31: Observação e hipótese sobre corpo humano” pode ser observado na escola, em casa ou na comunidade?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Escreva com suas palavras uma descoberta feita ao estudar “Aprofundamento 31: Observação e hipótese sobre corpo humano”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apontar um elemento realmente apresentado na situação e descrevê-lo de modo compreensível.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de observação e hipótese sobre corpo humano."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve citar dois elementos pertinentes ao estudo de observação e hipótese sobre corpo humano e explicar sua presença.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de observação e hipótese sobre corpo humano."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve registrar ao menos uma semelhança e uma diferença coerentes com os exemplos estudados.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de observação e hipótese sobre corpo humano."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve recuperar uma informação explícita do texto de apoio que sustente a resposta.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de observação e hipótese sobre corpo humano."
+        },
+        {
+          "numero": 5,
+          "resposta": "Pode apresentar exemplo da escola, da casa ou da comunidade, desde que relacionado ao tema.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de observação e hipótese sobre corpo humano."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese curta e autoral que demonstre uma aprendizagem efetivamente trabalhada na atividade.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de observação e hipótese sobre corpo humano."
+        }
+      ]
+    },
+    {
+      "id": "efi-1ano-b1-cie-50-32-investigacao-cientifica-de-corpo-humano",
+      "titulo": "Aprofundamento 32: Investigação científica de corpo humano",
+      "tema": "Investigação científica de corpo humano",
+      "sequencia": "Atividade 32",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "facil",
+      "objetivo": "Desenvolver EF01CI02 por meio do estudo de investigação científica de corpo humano, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01CI02",
+          "descricaoResumida": "Habilidade EF01CI02: desenvolver aprendizagens de Ciências relacionadas a Investigação científica de corpo humano, com linguagem, recursos e autonomia adequados ao 1º ano.",
+          "habilidadeOficial": "Habilidade EF01CI02: desenvolver aprendizagens de Ciências relacionadas a Investigação científica de corpo humano, com linguagem, recursos e autonomia adequados ao 1º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 32: Investigação científica de corpo humano”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 32: Investigação científica de corpo humano",
+        "conteudo": "Em Ciências, estudar investigação científica de corpo humano ajuda a criança a observar o cotidiano, nomear elementos, comparar situações e registrar descobertas. Nesta proposta, o estudante parte de exemplos próximos da escola, da família ou da comunidade e organiza o que percebe com palavras, desenhos, números ou pequenas explicações. A habilidade EF01CI02 orienta o trabalho e envolve habilidade ef01ci02: desenvolver aprendizagens de ciências relacionadas a investigação científica de corpo humano, com linguagem, recursos e autonomia adequados ao 1º ano. A atividade 32 retoma esse conhecimento em nova situação para ampliar a compreensão."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "O que você percebe primeiro na situação apresentada em “Aprofundamento 32: Investigação científica de corpo humano”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Quais dois elementos de “Aprofundamento 32: Investigação científica de corpo humano” ajudam a compreender melhor investigação científica de corpo humano?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "O que é parecido e o que é diferente entre os exemplos apresentados em “Aprofundamento 32: Investigação científica de corpo humano”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Que informação do texto de apoio de “Aprofundamento 32: Investigação científica de corpo humano” ajuda a responder sobre investigação científica de corpo humano?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Como o tema de “Aprofundamento 32: Investigação científica de corpo humano” pode ser observado na escola, em casa ou na comunidade?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Escreva com suas palavras uma descoberta feita ao estudar “Aprofundamento 32: Investigação científica de corpo humano”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apontar um elemento realmente apresentado na situação e descrevê-lo de modo compreensível.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de investigação científica de corpo humano."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve citar dois elementos pertinentes ao estudo de investigação científica de corpo humano e explicar sua presença.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de investigação científica de corpo humano."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve registrar ao menos uma semelhança e uma diferença coerentes com os exemplos estudados.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de investigação científica de corpo humano."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve recuperar uma informação explícita do texto de apoio que sustente a resposta.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de investigação científica de corpo humano."
+        },
+        {
+          "numero": 5,
+          "resposta": "Pode apresentar exemplo da escola, da casa ou da comunidade, desde que relacionado ao tema.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de investigação científica de corpo humano."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese curta e autoral que demonstre uma aprendizagem efetivamente trabalhada na atividade.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de investigação científica de corpo humano."
+        }
+      ]
+    },
+    {
+      "id": "efi-1ano-b1-cie-50-33-aplicacao-de-corpo-humano-no-cotidiano",
+      "titulo": "Aprofundamento 33: Aplicação de corpo humano no cotidiano",
+      "tema": "Aplicação de corpo humano no cotidiano",
+      "sequencia": "Atividade 33",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "facil",
+      "objetivo": "Desenvolver EF01CI03 por meio do estudo de aplicação de corpo humano no cotidiano, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01CI03",
+          "descricaoResumida": "Habilidade EF01CI03: desenvolver aprendizagens de Ciências relacionadas a Aplicação de corpo humano no cotidiano, com linguagem, recursos e autonomia adequados ao 1º ano.",
+          "habilidadeOficial": "Habilidade EF01CI03: desenvolver aprendizagens de Ciências relacionadas a Aplicação de corpo humano no cotidiano, com linguagem, recursos e autonomia adequados ao 1º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 33: Aplicação de corpo humano no cotidiano”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 33: Aplicação de corpo humano no cotidiano",
+        "conteudo": "Em Ciências, estudar aplicação de corpo humano no cotidiano ajuda a criança a observar o cotidiano, nomear elementos, comparar situações e registrar descobertas. Nesta proposta, o estudante parte de exemplos próximos da escola, da família ou da comunidade e organiza o que percebe com palavras, desenhos, números ou pequenas explicações. A habilidade EF01CI03 orienta o trabalho e envolve habilidade ef01ci03: desenvolver aprendizagens de ciências relacionadas a aplicação de corpo humano no cotidiano, com linguagem, recursos e autonomia adequados ao 1º ano. A atividade 33 retoma esse conhecimento em nova situação para ampliar a compreensão."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "O que você percebe primeiro na situação apresentada em “Aprofundamento 33: Aplicação de corpo humano no cotidiano”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Quais dois elementos de “Aprofundamento 33: Aplicação de corpo humano no cotidiano” ajudam a compreender melhor aplicação de corpo humano no cotidiano?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "O que é parecido e o que é diferente entre os exemplos apresentados em “Aprofundamento 33: Aplicação de corpo humano no cotidiano”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Que informação do texto de apoio de “Aprofundamento 33: Aplicação de corpo humano no cotidiano” ajuda a responder sobre aplicação de corpo humano no cotidiano?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Como o tema de “Aprofundamento 33: Aplicação de corpo humano no cotidiano” pode ser observado na escola, em casa ou na comunidade?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Escreva com suas palavras uma descoberta feita ao estudar “Aprofundamento 33: Aplicação de corpo humano no cotidiano”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apontar um elemento realmente apresentado na situação e descrevê-lo de modo compreensível.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de aplicação de corpo humano no cotidiano."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve citar dois elementos pertinentes ao estudo de aplicação de corpo humano no cotidiano e explicar sua presença.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de aplicação de corpo humano no cotidiano."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve registrar ao menos uma semelhança e uma diferença coerentes com os exemplos estudados.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de aplicação de corpo humano no cotidiano."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve recuperar uma informação explícita do texto de apoio que sustente a resposta.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de aplicação de corpo humano no cotidiano."
+        },
+        {
+          "numero": 5,
+          "resposta": "Pode apresentar exemplo da escola, da casa ou da comunidade, desde que relacionado ao tema.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de aplicação de corpo humano no cotidiano."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese curta e autoral que demonstre uma aprendizagem efetivamente trabalhada na atividade.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de aplicação de corpo humano no cotidiano."
+        }
+      ]
+    },
+    {
+      "id": "efi-1ano-b1-cie-50-34-observacao-e-hipotese-sobre-sentidos",
+      "titulo": "Aprofundamento 34: Observação e hipótese sobre sentidos",
+      "tema": "Observação e hipótese sobre sentidos",
+      "sequencia": "Atividade 34",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "facil",
+      "objetivo": "Desenvolver EF01CI04 por meio do estudo de observação e hipótese sobre sentidos, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01CI04",
+          "descricaoResumida": "Habilidade EF01CI04: desenvolver aprendizagens de Ciências relacionadas a Observação e hipótese sobre sentidos, com linguagem, recursos e autonomia adequados ao 1º ano.",
+          "habilidadeOficial": "Habilidade EF01CI04: desenvolver aprendizagens de Ciências relacionadas a Observação e hipótese sobre sentidos, com linguagem, recursos e autonomia adequados ao 1º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 34: Observação e hipótese sobre sentidos”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 34: Observação e hipótese sobre sentidos",
+        "conteudo": "Em Ciências, estudar observação e hipótese sobre sentidos ajuda a criança a observar o cotidiano, nomear elementos, comparar situações e registrar descobertas. Nesta proposta, o estudante parte de exemplos próximos da escola, da família ou da comunidade e organiza o que percebe com palavras, desenhos, números ou pequenas explicações. A habilidade EF01CI04 orienta o trabalho e envolve habilidade ef01ci04: desenvolver aprendizagens de ciências relacionadas a observação e hipótese sobre sentidos, com linguagem, recursos e autonomia adequados ao 1º ano. A atividade 34 retoma esse conhecimento em nova situação para ampliar a compreensão."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "O que você percebe primeiro na situação apresentada em “Aprofundamento 34: Observação e hipótese sobre sentidos”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Quais dois elementos de “Aprofundamento 34: Observação e hipótese sobre sentidos” ajudam a compreender melhor observação e hipótese sobre sentidos?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "O que é parecido e o que é diferente entre os exemplos apresentados em “Aprofundamento 34: Observação e hipótese sobre sentidos”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Que informação do texto de apoio de “Aprofundamento 34: Observação e hipótese sobre sentidos” ajuda a responder sobre observação e hipótese sobre sentidos?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Como o tema de “Aprofundamento 34: Observação e hipótese sobre sentidos” pode ser observado na escola, em casa ou na comunidade?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Escreva com suas palavras uma descoberta feita ao estudar “Aprofundamento 34: Observação e hipótese sobre sentidos”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apontar um elemento realmente apresentado na situação e descrevê-lo de modo compreensível.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de observação e hipótese sobre sentidos."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve citar dois elementos pertinentes ao estudo de observação e hipótese sobre sentidos e explicar sua presença.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de observação e hipótese sobre sentidos."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve registrar ao menos uma semelhança e uma diferença coerentes com os exemplos estudados.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de observação e hipótese sobre sentidos."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve recuperar uma informação explícita do texto de apoio que sustente a resposta.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de observação e hipótese sobre sentidos."
+        },
+        {
+          "numero": 5,
+          "resposta": "Pode apresentar exemplo da escola, da casa ou da comunidade, desde que relacionado ao tema.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de observação e hipótese sobre sentidos."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese curta e autoral que demonstre uma aprendizagem efetivamente trabalhada na atividade.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de observação e hipótese sobre sentidos."
+        }
+      ]
+    },
+    {
+      "id": "efi-1ano-b1-cie-50-35-investigacao-cientifica-de-sentidos",
+      "titulo": "Aprofundamento 35: Investigação científica de sentidos",
+      "tema": "Investigação científica de sentidos",
+      "sequencia": "Atividade 35",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "facil",
+      "objetivo": "Desenvolver EF01CI05 por meio do estudo de investigação científica de sentidos, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01CI05",
+          "descricaoResumida": "Habilidade EF01CI05: desenvolver aprendizagens de Ciências relacionadas a Investigação científica de sentidos, com linguagem, recursos e autonomia adequados ao 1º ano.",
+          "habilidadeOficial": "Habilidade EF01CI05: desenvolver aprendizagens de Ciências relacionadas a Investigação científica de sentidos, com linguagem, recursos e autonomia adequados ao 1º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 35: Investigação científica de sentidos”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 35: Investigação científica de sentidos",
+        "conteudo": "Em Ciências, estudar investigação científica de sentidos ajuda a criança a observar o cotidiano, nomear elementos, comparar situações e registrar descobertas. Nesta proposta, o estudante parte de exemplos próximos da escola, da família ou da comunidade e organiza o que percebe com palavras, desenhos, números ou pequenas explicações. A habilidade EF01CI05 orienta o trabalho e envolve habilidade ef01ci05: desenvolver aprendizagens de ciências relacionadas a investigação científica de sentidos, com linguagem, recursos e autonomia adequados ao 1º ano. A atividade 35 retoma esse conhecimento em nova situação para ampliar a compreensão."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "O que você percebe primeiro na situação apresentada em “Aprofundamento 35: Investigação científica de sentidos”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Quais dois elementos de “Aprofundamento 35: Investigação científica de sentidos” ajudam a compreender melhor investigação científica de sentidos?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "O que é parecido e o que é diferente entre os exemplos apresentados em “Aprofundamento 35: Investigação científica de sentidos”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Que informação do texto de apoio de “Aprofundamento 35: Investigação científica de sentidos” ajuda a responder sobre investigação científica de sentidos?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Como o tema de “Aprofundamento 35: Investigação científica de sentidos” pode ser observado na escola, em casa ou na comunidade?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Escreva com suas palavras uma descoberta feita ao estudar “Aprofundamento 35: Investigação científica de sentidos”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apontar um elemento realmente apresentado na situação e descrevê-lo de modo compreensível.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de investigação científica de sentidos."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve citar dois elementos pertinentes ao estudo de investigação científica de sentidos e explicar sua presença.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de investigação científica de sentidos."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve registrar ao menos uma semelhança e uma diferença coerentes com os exemplos estudados.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de investigação científica de sentidos."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve recuperar uma informação explícita do texto de apoio que sustente a resposta.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de investigação científica de sentidos."
+        },
+        {
+          "numero": 5,
+          "resposta": "Pode apresentar exemplo da escola, da casa ou da comunidade, desde que relacionado ao tema.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de investigação científica de sentidos."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese curta e autoral que demonstre uma aprendizagem efetivamente trabalhada na atividade.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de investigação científica de sentidos."
+        }
+      ]
+    },
+    {
+      "id": "efi-1ano-b1-cie-50-36-aplicacao-de-sentidos-no-cotidiano",
+      "titulo": "Aprofundamento 36: Aplicação de sentidos no cotidiano",
+      "tema": "Aplicação de sentidos no cotidiano",
+      "sequencia": "Atividade 36",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "facil",
+      "objetivo": "Desenvolver EF01CI06 por meio do estudo de aplicação de sentidos no cotidiano, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01CI06",
+          "descricaoResumida": "Habilidade EF01CI06: desenvolver aprendizagens de Ciências relacionadas a Aplicação de sentidos no cotidiano, com linguagem, recursos e autonomia adequados ao 1º ano.",
+          "habilidadeOficial": "Habilidade EF01CI06: desenvolver aprendizagens de Ciências relacionadas a Aplicação de sentidos no cotidiano, com linguagem, recursos e autonomia adequados ao 1º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 36: Aplicação de sentidos no cotidiano”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 36: Aplicação de sentidos no cotidiano",
+        "conteudo": "Em Ciências, estudar aplicação de sentidos no cotidiano ajuda a criança a observar o cotidiano, nomear elementos, comparar situações e registrar descobertas. Nesta proposta, o estudante parte de exemplos próximos da escola, da família ou da comunidade e organiza o que percebe com palavras, desenhos, números ou pequenas explicações. A habilidade EF01CI06 orienta o trabalho e envolve habilidade ef01ci06: desenvolver aprendizagens de ciências relacionadas a aplicação de sentidos no cotidiano, com linguagem, recursos e autonomia adequados ao 1º ano. A atividade 36 retoma esse conhecimento em nova situação para ampliar a compreensão."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "O que você percebe primeiro na situação apresentada em “Aprofundamento 36: Aplicação de sentidos no cotidiano”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Quais dois elementos de “Aprofundamento 36: Aplicação de sentidos no cotidiano” ajudam a compreender melhor aplicação de sentidos no cotidiano?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "O que é parecido e o que é diferente entre os exemplos apresentados em “Aprofundamento 36: Aplicação de sentidos no cotidiano”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Que informação do texto de apoio de “Aprofundamento 36: Aplicação de sentidos no cotidiano” ajuda a responder sobre aplicação de sentidos no cotidiano?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Como o tema de “Aprofundamento 36: Aplicação de sentidos no cotidiano” pode ser observado na escola, em casa ou na comunidade?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Escreva com suas palavras uma descoberta feita ao estudar “Aprofundamento 36: Aplicação de sentidos no cotidiano”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apontar um elemento realmente apresentado na situação e descrevê-lo de modo compreensível.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de aplicação de sentidos no cotidiano."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve citar dois elementos pertinentes ao estudo de aplicação de sentidos no cotidiano e explicar sua presença.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de aplicação de sentidos no cotidiano."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve registrar ao menos uma semelhança e uma diferença coerentes com os exemplos estudados.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de aplicação de sentidos no cotidiano."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve recuperar uma informação explícita do texto de apoio que sustente a resposta.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de aplicação de sentidos no cotidiano."
+        },
+        {
+          "numero": 5,
+          "resposta": "Pode apresentar exemplo da escola, da casa ou da comunidade, desde que relacionado ao tema.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de aplicação de sentidos no cotidiano."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese curta e autoral que demonstre uma aprendizagem efetivamente trabalhada na atividade.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de aplicação de sentidos no cotidiano."
+        }
+      ]
+    },
+    {
+      "id": "efi-1ano-b1-cie-50-37-observacao-e-hipotese-sobre-higiene",
+      "titulo": "Aprofundamento 37: Observação e hipótese sobre higiene",
+      "tema": "Observação e hipótese sobre higiene",
+      "sequencia": "Atividade 37",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "facil",
+      "objetivo": "Desenvolver EF01CI07 por meio do estudo de observação e hipótese sobre higiene, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01CI07",
+          "descricaoResumida": "Habilidade EF01CI07: desenvolver aprendizagens de Ciências relacionadas a Observação e hipótese sobre higiene, com linguagem, recursos e autonomia adequados ao 1º ano.",
+          "habilidadeOficial": "Habilidade EF01CI07: desenvolver aprendizagens de Ciências relacionadas a Observação e hipótese sobre higiene, com linguagem, recursos e autonomia adequados ao 1º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 37: Observação e hipótese sobre higiene”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 37: Observação e hipótese sobre higiene",
+        "conteudo": "Em Ciências, estudar observação e hipótese sobre higiene ajuda a criança a observar o cotidiano, nomear elementos, comparar situações e registrar descobertas. Nesta proposta, o estudante parte de exemplos próximos da escola, da família ou da comunidade e organiza o que percebe com palavras, desenhos, números ou pequenas explicações. A habilidade EF01CI07 orienta o trabalho e envolve habilidade ef01ci07: desenvolver aprendizagens de ciências relacionadas a observação e hipótese sobre higiene, com linguagem, recursos e autonomia adequados ao 1º ano. A atividade 37 retoma esse conhecimento em nova situação para ampliar a compreensão."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "O que você percebe primeiro na situação apresentada em “Aprofundamento 37: Observação e hipótese sobre higiene”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Quais dois elementos de “Aprofundamento 37: Observação e hipótese sobre higiene” ajudam a compreender melhor observação e hipótese sobre higiene?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "O que é parecido e o que é diferente entre os exemplos apresentados em “Aprofundamento 37: Observação e hipótese sobre higiene”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Que informação do texto de apoio de “Aprofundamento 37: Observação e hipótese sobre higiene” ajuda a responder sobre observação e hipótese sobre higiene?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Como o tema de “Aprofundamento 37: Observação e hipótese sobre higiene” pode ser observado na escola, em casa ou na comunidade?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Escreva com suas palavras uma descoberta feita ao estudar “Aprofundamento 37: Observação e hipótese sobre higiene”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apontar um elemento realmente apresentado na situação e descrevê-lo de modo compreensível.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de observação e hipótese sobre higiene."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve citar dois elementos pertinentes ao estudo de observação e hipótese sobre higiene e explicar sua presença.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de observação e hipótese sobre higiene."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve registrar ao menos uma semelhança e uma diferença coerentes com os exemplos estudados.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de observação e hipótese sobre higiene."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve recuperar uma informação explícita do texto de apoio que sustente a resposta.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de observação e hipótese sobre higiene."
+        },
+        {
+          "numero": 5,
+          "resposta": "Pode apresentar exemplo da escola, da casa ou da comunidade, desde que relacionado ao tema.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de observação e hipótese sobre higiene."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese curta e autoral que demonstre uma aprendizagem efetivamente trabalhada na atividade.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de observação e hipótese sobre higiene."
+        }
+      ]
+    },
+    {
+      "id": "efi-1ano-b1-cie-50-38-investigacao-cientifica-de-higiene",
+      "titulo": "Aprofundamento 38: Investigação científica de higiene",
+      "tema": "Investigação científica de higiene",
+      "sequencia": "Atividade 38",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "facil",
+      "objetivo": "Desenvolver EF01CI08 por meio do estudo de investigação científica de higiene, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01CI08",
+          "descricaoResumida": "Habilidade EF01CI08: desenvolver aprendizagens de Ciências relacionadas a Investigação científica de higiene, com linguagem, recursos e autonomia adequados ao 1º ano.",
+          "habilidadeOficial": "Habilidade EF01CI08: desenvolver aprendizagens de Ciências relacionadas a Investigação científica de higiene, com linguagem, recursos e autonomia adequados ao 1º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 38: Investigação científica de higiene”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 38: Investigação científica de higiene",
+        "conteudo": "Em Ciências, estudar investigação científica de higiene ajuda a criança a observar o cotidiano, nomear elementos, comparar situações e registrar descobertas. Nesta proposta, o estudante parte de exemplos próximos da escola, da família ou da comunidade e organiza o que percebe com palavras, desenhos, números ou pequenas explicações. A habilidade EF01CI08 orienta o trabalho e envolve habilidade ef01ci08: desenvolver aprendizagens de ciências relacionadas a investigação científica de higiene, com linguagem, recursos e autonomia adequados ao 1º ano. A atividade 38 retoma esse conhecimento em nova situação para ampliar a compreensão."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "O que você percebe primeiro na situação apresentada em “Aprofundamento 38: Investigação científica de higiene”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Quais dois elementos de “Aprofundamento 38: Investigação científica de higiene” ajudam a compreender melhor investigação científica de higiene?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "O que é parecido e o que é diferente entre os exemplos apresentados em “Aprofundamento 38: Investigação científica de higiene”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Que informação do texto de apoio de “Aprofundamento 38: Investigação científica de higiene” ajuda a responder sobre investigação científica de higiene?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Como o tema de “Aprofundamento 38: Investigação científica de higiene” pode ser observado na escola, em casa ou na comunidade?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Escreva com suas palavras uma descoberta feita ao estudar “Aprofundamento 38: Investigação científica de higiene”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apontar um elemento realmente apresentado na situação e descrevê-lo de modo compreensível.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de investigação científica de higiene."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve citar dois elementos pertinentes ao estudo de investigação científica de higiene e explicar sua presença.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de investigação científica de higiene."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve registrar ao menos uma semelhança e uma diferença coerentes com os exemplos estudados.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de investigação científica de higiene."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve recuperar uma informação explícita do texto de apoio que sustente a resposta.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de investigação científica de higiene."
+        },
+        {
+          "numero": 5,
+          "resposta": "Pode apresentar exemplo da escola, da casa ou da comunidade, desde que relacionado ao tema.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de investigação científica de higiene."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese curta e autoral que demonstre uma aprendizagem efetivamente trabalhada na atividade.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de investigação científica de higiene."
+        }
+      ]
+    },
+    {
+      "id": "efi-1ano-b1-cie-50-39-aplicacao-de-higiene-no-cotidiano",
+      "titulo": "Aprofundamento 39: Aplicação de higiene no cotidiano",
+      "tema": "Aplicação de higiene no cotidiano",
+      "sequencia": "Atividade 39",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "facil",
+      "objetivo": "Desenvolver EF01CI09 por meio do estudo de aplicação de higiene no cotidiano, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01CI09",
+          "descricaoResumida": "Habilidade EF01CI09: desenvolver aprendizagens de Ciências relacionadas a Aplicação de higiene no cotidiano, com linguagem, recursos e autonomia adequados ao 1º ano.",
+          "habilidadeOficial": "Habilidade EF01CI09: desenvolver aprendizagens de Ciências relacionadas a Aplicação de higiene no cotidiano, com linguagem, recursos e autonomia adequados ao 1º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 39: Aplicação de higiene no cotidiano”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 39: Aplicação de higiene no cotidiano",
+        "conteudo": "Em Ciências, estudar aplicação de higiene no cotidiano ajuda a criança a observar o cotidiano, nomear elementos, comparar situações e registrar descobertas. Nesta proposta, o estudante parte de exemplos próximos da escola, da família ou da comunidade e organiza o que percebe com palavras, desenhos, números ou pequenas explicações. A habilidade EF01CI09 orienta o trabalho e envolve habilidade ef01ci09: desenvolver aprendizagens de ciências relacionadas a aplicação de higiene no cotidiano, com linguagem, recursos e autonomia adequados ao 1º ano. A atividade 39 retoma esse conhecimento em nova situação para ampliar a compreensão."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "O que você percebe primeiro na situação apresentada em “Aprofundamento 39: Aplicação de higiene no cotidiano”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Quais dois elementos de “Aprofundamento 39: Aplicação de higiene no cotidiano” ajudam a compreender melhor aplicação de higiene no cotidiano?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "O que é parecido e o que é diferente entre os exemplos apresentados em “Aprofundamento 39: Aplicação de higiene no cotidiano”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Que informação do texto de apoio de “Aprofundamento 39: Aplicação de higiene no cotidiano” ajuda a responder sobre aplicação de higiene no cotidiano?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Como o tema de “Aprofundamento 39: Aplicação de higiene no cotidiano” pode ser observado na escola, em casa ou na comunidade?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Escreva com suas palavras uma descoberta feita ao estudar “Aprofundamento 39: Aplicação de higiene no cotidiano”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apontar um elemento realmente apresentado na situação e descrevê-lo de modo compreensível.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de aplicação de higiene no cotidiano."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve citar dois elementos pertinentes ao estudo de aplicação de higiene no cotidiano e explicar sua presença.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de aplicação de higiene no cotidiano."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve registrar ao menos uma semelhança e uma diferença coerentes com os exemplos estudados.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de aplicação de higiene no cotidiano."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve recuperar uma informação explícita do texto de apoio que sustente a resposta.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de aplicação de higiene no cotidiano."
+        },
+        {
+          "numero": 5,
+          "resposta": "Pode apresentar exemplo da escola, da casa ou da comunidade, desde que relacionado ao tema.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de aplicação de higiene no cotidiano."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese curta e autoral que demonstre uma aprendizagem efetivamente trabalhada na atividade.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de aplicação de higiene no cotidiano."
+        }
+      ]
+    },
+    {
+      "id": "efi-1ano-b1-cie-50-40-observacao-e-hipotese-sobre-alimentacao-saudavel",
+      "titulo": "Aprofundamento 40: Observação e hipótese sobre alimentação saudável",
+      "tema": "Observação e hipótese sobre alimentação saudável",
+      "sequencia": "Atividade 40",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "facil",
+      "objetivo": "Desenvolver EF01CI10 por meio do estudo de observação e hipótese sobre alimentação saudável, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01CI10",
+          "descricaoResumida": "Habilidade EF01CI10: desenvolver aprendizagens de Ciências relacionadas a Observação e hipótese sobre alimentação saudável, com linguagem, recursos e autonomia adequados ao 1º ano.",
+          "habilidadeOficial": "Habilidade EF01CI10: desenvolver aprendizagens de Ciências relacionadas a Observação e hipótese sobre alimentação saudável, com linguagem, recursos e autonomia adequados ao 1º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 40: Observação e hipótese sobre alimentação saudável”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 40: Observação e hipótese sobre alimentação saudável",
+        "conteudo": "Em Ciências, estudar observação e hipótese sobre alimentação saudável ajuda a criança a observar o cotidiano, nomear elementos, comparar situações e registrar descobertas. Nesta proposta, o estudante parte de exemplos próximos da escola, da família ou da comunidade e organiza o que percebe com palavras, desenhos, números ou pequenas explicações. A habilidade EF01CI10 orienta o trabalho e envolve habilidade ef01ci10: desenvolver aprendizagens de ciências relacionadas a observação e hipótese sobre alimentação saudável, com linguagem, recursos e autonomia adequados ao 1º ano. A atividade 40 retoma esse conhecimento em nova situação para ampliar a compreensão."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "O que você percebe primeiro na situação apresentada em “Aprofundamento 40: Observação e hipótese sobre alimentação saudável”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Quais dois elementos de “Aprofundamento 40: Observação e hipótese sobre alimentação saudável” ajudam a compreender melhor observação e hipótese sobre alimentação saudável?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "O que é parecido e o que é diferente entre os exemplos apresentados em “Aprofundamento 40: Observação e hipótese sobre alimentação saudável”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Que informação do texto de apoio de “Aprofundamento 40: Observação e hipótese sobre alimentação saudável” ajuda a responder sobre observação e hipótese sobre alimentação saudável?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Como o tema de “Aprofundamento 40: Observação e hipótese sobre alimentação saudável” pode ser observado na escola, em casa ou na comunidade?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Escreva com suas palavras uma descoberta feita ao estudar “Aprofundamento 40: Observação e hipótese sobre alimentação saudável”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apontar um elemento realmente apresentado na situação e descrevê-lo de modo compreensível.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de observação e hipótese sobre alimentação saudável."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve citar dois elementos pertinentes ao estudo de observação e hipótese sobre alimentação saudável e explicar sua presença.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de observação e hipótese sobre alimentação saudável."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve registrar ao menos uma semelhança e uma diferença coerentes com os exemplos estudados.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de observação e hipótese sobre alimentação saudável."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve recuperar uma informação explícita do texto de apoio que sustente a resposta.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de observação e hipótese sobre alimentação saudável."
+        },
+        {
+          "numero": 5,
+          "resposta": "Pode apresentar exemplo da escola, da casa ou da comunidade, desde que relacionado ao tema.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de observação e hipótese sobre alimentação saudável."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese curta e autoral que demonstre uma aprendizagem efetivamente trabalhada na atividade.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de observação e hipótese sobre alimentação saudável."
+        }
+      ]
+    },
+    {
+      "id": "efi-1ano-b1-cie-50-41-investigacao-cientifica-de-alimentacao-saudavel",
+      "titulo": "Aprofundamento 41: Investigação científica de alimentação saudável",
+      "tema": "Investigação científica de alimentação saudável",
+      "sequencia": "Atividade 41",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "medio",
+      "objetivo": "Desenvolver EF01CI11 por meio do estudo de investigação científica de alimentação saudável, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01CI11",
+          "descricaoResumida": "Habilidade EF01CI11: desenvolver aprendizagens de Ciências relacionadas a Investigação científica de alimentação saudável, com linguagem, recursos e autonomia adequados ao 1º ano.",
+          "habilidadeOficial": "Habilidade EF01CI11: desenvolver aprendizagens de Ciências relacionadas a Investigação científica de alimentação saudável, com linguagem, recursos e autonomia adequados ao 1º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 41: Investigação científica de alimentação saudável”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 41: Investigação científica de alimentação saudável",
+        "conteudo": "Em Ciências, estudar investigação científica de alimentação saudável ajuda a criança a observar o cotidiano, nomear elementos, comparar situações e registrar descobertas. Nesta proposta, o estudante parte de exemplos próximos da escola, da família ou da comunidade e organiza o que percebe com palavras, desenhos, números ou pequenas explicações. A habilidade EF01CI11 orienta o trabalho e envolve habilidade ef01ci11: desenvolver aprendizagens de ciências relacionadas a investigação científica de alimentação saudável, com linguagem, recursos e autonomia adequados ao 1º ano. A atividade 41 retoma esse conhecimento em nova situação para ampliar a compreensão."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "O que você percebe primeiro na situação apresentada em “Aprofundamento 41: Investigação científica de alimentação saudável”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Quais dois elementos de “Aprofundamento 41: Investigação científica de alimentação saudável” ajudam a compreender melhor investigação científica de alimentação saudável?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "O que é parecido e o que é diferente entre os exemplos apresentados em “Aprofundamento 41: Investigação científica de alimentação saudável”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Que informação do texto de apoio de “Aprofundamento 41: Investigação científica de alimentação saudável” ajuda a responder sobre investigação científica de alimentação saudável?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Como o tema de “Aprofundamento 41: Investigação científica de alimentação saudável” pode ser observado na escola, em casa ou na comunidade?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Escreva com suas palavras uma descoberta feita ao estudar “Aprofundamento 41: Investigação científica de alimentação saudável”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apontar um elemento realmente apresentado na situação e descrevê-lo de modo compreensível.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de investigação científica de alimentação saudável."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve citar dois elementos pertinentes ao estudo de investigação científica de alimentação saudável e explicar sua presença.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de investigação científica de alimentação saudável."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve registrar ao menos uma semelhança e uma diferença coerentes com os exemplos estudados.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de investigação científica de alimentação saudável."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve recuperar uma informação explícita do texto de apoio que sustente a resposta.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de investigação científica de alimentação saudável."
+        },
+        {
+          "numero": 5,
+          "resposta": "Pode apresentar exemplo da escola, da casa ou da comunidade, desde que relacionado ao tema.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de investigação científica de alimentação saudável."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese curta e autoral que demonstre uma aprendizagem efetivamente trabalhada na atividade.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de investigação científica de alimentação saudável."
+        }
+      ]
+    },
+    {
+      "id": "efi-1ano-b1-cie-50-42-aplicacao-de-alimentacao-saudavel-no-cotidiano",
+      "titulo": "Aprofundamento 42: Aplicação de alimentação saudável no cotidiano",
+      "tema": "Aplicação de alimentação saudável no cotidiano",
+      "sequencia": "Atividade 42",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "medio",
+      "objetivo": "Desenvolver EF01CI12 por meio do estudo de aplicação de alimentação saudável no cotidiano, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01CI12",
+          "descricaoResumida": "Habilidade EF01CI12: desenvolver aprendizagens de Ciências relacionadas a Aplicação de alimentação saudável no cotidiano, com linguagem, recursos e autonomia adequados ao 1º ano.",
+          "habilidadeOficial": "Habilidade EF01CI12: desenvolver aprendizagens de Ciências relacionadas a Aplicação de alimentação saudável no cotidiano, com linguagem, recursos e autonomia adequados ao 1º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 42: Aplicação de alimentação saudável no cotidiano”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 42: Aplicação de alimentação saudável no cotidiano",
+        "conteudo": "Em Ciências, estudar aplicação de alimentação saudável no cotidiano ajuda a criança a observar o cotidiano, nomear elementos, comparar situações e registrar descobertas. Nesta proposta, o estudante parte de exemplos próximos da escola, da família ou da comunidade e organiza o que percebe com palavras, desenhos, números ou pequenas explicações. A habilidade EF01CI12 orienta o trabalho e envolve habilidade ef01ci12: desenvolver aprendizagens de ciências relacionadas a aplicação de alimentação saudável no cotidiano, com linguagem, recursos e autonomia adequados ao 1º ano. A atividade 42 retoma esse conhecimento em nova situação para ampliar a compreensão."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "O que você percebe primeiro na situação apresentada em “Aprofundamento 42: Aplicação de alimentação saudável no cotidiano”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Quais dois elementos de “Aprofundamento 42: Aplicação de alimentação saudável no cotidiano” ajudam a compreender melhor aplicação de alimentação saudável no cotidiano?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "O que é parecido e o que é diferente entre os exemplos apresentados em “Aprofundamento 42: Aplicação de alimentação saudável no cotidiano”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Que informação do texto de apoio de “Aprofundamento 42: Aplicação de alimentação saudável no cotidiano” ajuda a responder sobre aplicação de alimentação saudável no cotidiano?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Como o tema de “Aprofundamento 42: Aplicação de alimentação saudável no cotidiano” pode ser observado na escola, em casa ou na comunidade?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Escreva com suas palavras uma descoberta feita ao estudar “Aprofundamento 42: Aplicação de alimentação saudável no cotidiano”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apontar um elemento realmente apresentado na situação e descrevê-lo de modo compreensível.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de aplicação de alimentação saudável no cotidiano."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve citar dois elementos pertinentes ao estudo de aplicação de alimentação saudável no cotidiano e explicar sua presença.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de aplicação de alimentação saudável no cotidiano."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve registrar ao menos uma semelhança e uma diferença coerentes com os exemplos estudados.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de aplicação de alimentação saudável no cotidiano."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve recuperar uma informação explícita do texto de apoio que sustente a resposta.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de aplicação de alimentação saudável no cotidiano."
+        },
+        {
+          "numero": 5,
+          "resposta": "Pode apresentar exemplo da escola, da casa ou da comunidade, desde que relacionado ao tema.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de aplicação de alimentação saudável no cotidiano."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese curta e autoral que demonstre uma aprendizagem efetivamente trabalhada na atividade.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de aplicação de alimentação saudável no cotidiano."
+        }
+      ]
+    },
+    {
+      "id": "efi-1ano-b1-cie-50-43-observacao-e-hipotese-sobre-sono",
+      "titulo": "Aprofundamento 43: Observação e hipótese sobre sono",
+      "tema": "Observação e hipótese sobre sono",
+      "sequencia": "Atividade 43",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "medio",
+      "objetivo": "Desenvolver EF01CI01 por meio do estudo de observação e hipótese sobre sono, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01CI01",
+          "descricaoResumida": "Habilidade EF01CI01: desenvolver aprendizagens de Ciências relacionadas a Observação e hipótese sobre sono, com linguagem, recursos e autonomia adequados ao 1º ano.",
+          "habilidadeOficial": "Habilidade EF01CI01: desenvolver aprendizagens de Ciências relacionadas a Observação e hipótese sobre sono, com linguagem, recursos e autonomia adequados ao 1º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 43: Observação e hipótese sobre sono”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 43: Observação e hipótese sobre sono",
+        "conteudo": "Em Ciências, estudar observação e hipótese sobre sono ajuda a criança a observar o cotidiano, nomear elementos, comparar situações e registrar descobertas. Nesta proposta, o estudante parte de exemplos próximos da escola, da família ou da comunidade e organiza o que percebe com palavras, desenhos, números ou pequenas explicações. A habilidade EF01CI01 orienta o trabalho e envolve habilidade ef01ci01: desenvolver aprendizagens de ciências relacionadas a observação e hipótese sobre sono, com linguagem, recursos e autonomia adequados ao 1º ano. A atividade 43 retoma esse conhecimento em nova situação para ampliar a compreensão."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "O que você percebe primeiro na situação apresentada em “Aprofundamento 43: Observação e hipótese sobre sono”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Quais dois elementos de “Aprofundamento 43: Observação e hipótese sobre sono” ajudam a compreender melhor observação e hipótese sobre sono?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "O que é parecido e o que é diferente entre os exemplos apresentados em “Aprofundamento 43: Observação e hipótese sobre sono”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Que informação do texto de apoio de “Aprofundamento 43: Observação e hipótese sobre sono” ajuda a responder sobre observação e hipótese sobre sono?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Como o tema de “Aprofundamento 43: Observação e hipótese sobre sono” pode ser observado na escola, em casa ou na comunidade?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Escreva com suas palavras uma descoberta feita ao estudar “Aprofundamento 43: Observação e hipótese sobre sono”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apontar um elemento realmente apresentado na situação e descrevê-lo de modo compreensível.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de observação e hipótese sobre sono."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve citar dois elementos pertinentes ao estudo de observação e hipótese sobre sono e explicar sua presença.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de observação e hipótese sobre sono."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve registrar ao menos uma semelhança e uma diferença coerentes com os exemplos estudados.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de observação e hipótese sobre sono."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve recuperar uma informação explícita do texto de apoio que sustente a resposta.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de observação e hipótese sobre sono."
+        },
+        {
+          "numero": 5,
+          "resposta": "Pode apresentar exemplo da escola, da casa ou da comunidade, desde que relacionado ao tema.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de observação e hipótese sobre sono."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese curta e autoral que demonstre uma aprendizagem efetivamente trabalhada na atividade.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de observação e hipótese sobre sono."
+        }
+      ]
+    },
+    {
+      "id": "efi-1ano-b1-cie-50-44-investigacao-cientifica-de-sono",
+      "titulo": "Aprofundamento 44: Investigação científica de sono",
+      "tema": "Investigação científica de sono",
+      "sequencia": "Atividade 44",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "medio",
+      "objetivo": "Desenvolver EF01CI02 por meio do estudo de investigação científica de sono, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01CI02",
+          "descricaoResumida": "Habilidade EF01CI02: desenvolver aprendizagens de Ciências relacionadas a Investigação científica de sono, com linguagem, recursos e autonomia adequados ao 1º ano.",
+          "habilidadeOficial": "Habilidade EF01CI02: desenvolver aprendizagens de Ciências relacionadas a Investigação científica de sono, com linguagem, recursos e autonomia adequados ao 1º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 44: Investigação científica de sono”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 44: Investigação científica de sono",
+        "conteudo": "Em Ciências, estudar investigação científica de sono ajuda a criança a observar o cotidiano, nomear elementos, comparar situações e registrar descobertas. Nesta proposta, o estudante parte de exemplos próximos da escola, da família ou da comunidade e organiza o que percebe com palavras, desenhos, números ou pequenas explicações. A habilidade EF01CI02 orienta o trabalho e envolve habilidade ef01ci02: desenvolver aprendizagens de ciências relacionadas a investigação científica de sono, com linguagem, recursos e autonomia adequados ao 1º ano. A atividade 44 retoma esse conhecimento em nova situação para ampliar a compreensão."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "O que você percebe primeiro na situação apresentada em “Aprofundamento 44: Investigação científica de sono”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Quais dois elementos de “Aprofundamento 44: Investigação científica de sono” ajudam a compreender melhor investigação científica de sono?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "O que é parecido e o que é diferente entre os exemplos apresentados em “Aprofundamento 44: Investigação científica de sono”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Que informação do texto de apoio de “Aprofundamento 44: Investigação científica de sono” ajuda a responder sobre investigação científica de sono?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Como o tema de “Aprofundamento 44: Investigação científica de sono” pode ser observado na escola, em casa ou na comunidade?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Escreva com suas palavras uma descoberta feita ao estudar “Aprofundamento 44: Investigação científica de sono”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apontar um elemento realmente apresentado na situação e descrevê-lo de modo compreensível.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de investigação científica de sono."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve citar dois elementos pertinentes ao estudo de investigação científica de sono e explicar sua presença.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de investigação científica de sono."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve registrar ao menos uma semelhança e uma diferença coerentes com os exemplos estudados.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de investigação científica de sono."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve recuperar uma informação explícita do texto de apoio que sustente a resposta.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de investigação científica de sono."
+        },
+        {
+          "numero": 5,
+          "resposta": "Pode apresentar exemplo da escola, da casa ou da comunidade, desde que relacionado ao tema.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de investigação científica de sono."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese curta e autoral que demonstre uma aprendizagem efetivamente trabalhada na atividade.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de investigação científica de sono."
+        }
+      ]
+    },
+    {
+      "id": "efi-1ano-b1-cie-50-45-aplicacao-de-sono-no-cotidiano",
+      "titulo": "Aprofundamento 45: Aplicação de sono no cotidiano",
+      "tema": "Aplicação de sono no cotidiano",
+      "sequencia": "Atividade 45",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "medio",
+      "objetivo": "Desenvolver EF01CI03 por meio do estudo de aplicação de sono no cotidiano, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01CI03",
+          "descricaoResumida": "Habilidade EF01CI03: desenvolver aprendizagens de Ciências relacionadas a Aplicação de sono no cotidiano, com linguagem, recursos e autonomia adequados ao 1º ano.",
+          "habilidadeOficial": "Habilidade EF01CI03: desenvolver aprendizagens de Ciências relacionadas a Aplicação de sono no cotidiano, com linguagem, recursos e autonomia adequados ao 1º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 45: Aplicação de sono no cotidiano”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 45: Aplicação de sono no cotidiano",
+        "conteudo": "Em Ciências, estudar aplicação de sono no cotidiano ajuda a criança a observar o cotidiano, nomear elementos, comparar situações e registrar descobertas. Nesta proposta, o estudante parte de exemplos próximos da escola, da família ou da comunidade e organiza o que percebe com palavras, desenhos, números ou pequenas explicações. A habilidade EF01CI03 orienta o trabalho e envolve habilidade ef01ci03: desenvolver aprendizagens de ciências relacionadas a aplicação de sono no cotidiano, com linguagem, recursos e autonomia adequados ao 1º ano. A atividade 45 retoma esse conhecimento em nova situação para ampliar a compreensão."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "O que você percebe primeiro na situação apresentada em “Aprofundamento 45: Aplicação de sono no cotidiano”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Quais dois elementos de “Aprofundamento 45: Aplicação de sono no cotidiano” ajudam a compreender melhor aplicação de sono no cotidiano?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "O que é parecido e o que é diferente entre os exemplos apresentados em “Aprofundamento 45: Aplicação de sono no cotidiano”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Que informação do texto de apoio de “Aprofundamento 45: Aplicação de sono no cotidiano” ajuda a responder sobre aplicação de sono no cotidiano?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Como o tema de “Aprofundamento 45: Aplicação de sono no cotidiano” pode ser observado na escola, em casa ou na comunidade?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Escreva com suas palavras uma descoberta feita ao estudar “Aprofundamento 45: Aplicação de sono no cotidiano”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apontar um elemento realmente apresentado na situação e descrevê-lo de modo compreensível.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de aplicação de sono no cotidiano."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve citar dois elementos pertinentes ao estudo de aplicação de sono no cotidiano e explicar sua presença.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de aplicação de sono no cotidiano."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve registrar ao menos uma semelhança e uma diferença coerentes com os exemplos estudados.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de aplicação de sono no cotidiano."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve recuperar uma informação explícita do texto de apoio que sustente a resposta.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de aplicação de sono no cotidiano."
+        },
+        {
+          "numero": 5,
+          "resposta": "Pode apresentar exemplo da escola, da casa ou da comunidade, desde que relacionado ao tema.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de aplicação de sono no cotidiano."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese curta e autoral que demonstre uma aprendizagem efetivamente trabalhada na atividade.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de aplicação de sono no cotidiano."
+        }
+      ]
+    },
+    {
+      "id": "efi-1ano-b1-cie-50-46-observacao-e-hipotese-sobre-seres-vivos",
+      "titulo": "Aprofundamento 46: Observação e hipótese sobre seres vivos",
+      "tema": "Observação e hipótese sobre seres vivos",
+      "sequencia": "Atividade 46",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "medio",
+      "objetivo": "Desenvolver EF01CI04 por meio do estudo de observação e hipótese sobre seres vivos, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01CI04",
+          "descricaoResumida": "Habilidade EF01CI04: desenvolver aprendizagens de Ciências relacionadas a Observação e hipótese sobre seres vivos, com linguagem, recursos e autonomia adequados ao 1º ano.",
+          "habilidadeOficial": "Habilidade EF01CI04: desenvolver aprendizagens de Ciências relacionadas a Observação e hipótese sobre seres vivos, com linguagem, recursos e autonomia adequados ao 1º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 46: Observação e hipótese sobre seres vivos”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 46: Observação e hipótese sobre seres vivos",
+        "conteudo": "Em Ciências, estudar observação e hipótese sobre seres vivos ajuda a criança a observar o cotidiano, nomear elementos, comparar situações e registrar descobertas. Nesta proposta, o estudante parte de exemplos próximos da escola, da família ou da comunidade e organiza o que percebe com palavras, desenhos, números ou pequenas explicações. A habilidade EF01CI04 orienta o trabalho e envolve habilidade ef01ci04: desenvolver aprendizagens de ciências relacionadas a observação e hipótese sobre seres vivos, com linguagem, recursos e autonomia adequados ao 1º ano. A atividade 46 retoma esse conhecimento em nova situação para ampliar a compreensão."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "O que você percebe primeiro na situação apresentada em “Aprofundamento 46: Observação e hipótese sobre seres vivos”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Quais dois elementos de “Aprofundamento 46: Observação e hipótese sobre seres vivos” ajudam a compreender melhor observação e hipótese sobre seres vivos?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "O que é parecido e o que é diferente entre os exemplos apresentados em “Aprofundamento 46: Observação e hipótese sobre seres vivos”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Que informação do texto de apoio de “Aprofundamento 46: Observação e hipótese sobre seres vivos” ajuda a responder sobre observação e hipótese sobre seres vivos?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Como o tema de “Aprofundamento 46: Observação e hipótese sobre seres vivos” pode ser observado na escola, em casa ou na comunidade?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Escreva com suas palavras uma descoberta feita ao estudar “Aprofundamento 46: Observação e hipótese sobre seres vivos”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apontar um elemento realmente apresentado na situação e descrevê-lo de modo compreensível.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de observação e hipótese sobre seres vivos."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve citar dois elementos pertinentes ao estudo de observação e hipótese sobre seres vivos e explicar sua presença.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de observação e hipótese sobre seres vivos."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve registrar ao menos uma semelhança e uma diferença coerentes com os exemplos estudados.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de observação e hipótese sobre seres vivos."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve recuperar uma informação explícita do texto de apoio que sustente a resposta.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de observação e hipótese sobre seres vivos."
+        },
+        {
+          "numero": 5,
+          "resposta": "Pode apresentar exemplo da escola, da casa ou da comunidade, desde que relacionado ao tema.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de observação e hipótese sobre seres vivos."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese curta e autoral que demonstre uma aprendizagem efetivamente trabalhada na atividade.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de observação e hipótese sobre seres vivos."
+        }
+      ]
+    },
+    {
+      "id": "efi-1ano-b1-cie-50-47-investigacao-cientifica-de-seres-vivos",
+      "titulo": "Aprofundamento 47: Investigação científica de seres vivos",
+      "tema": "Investigação científica de seres vivos",
+      "sequencia": "Atividade 47",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "medio",
+      "objetivo": "Desenvolver EF01CI05 por meio do estudo de investigação científica de seres vivos, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01CI05",
+          "descricaoResumida": "Habilidade EF01CI05: desenvolver aprendizagens de Ciências relacionadas a Investigação científica de seres vivos, com linguagem, recursos e autonomia adequados ao 1º ano.",
+          "habilidadeOficial": "Habilidade EF01CI05: desenvolver aprendizagens de Ciências relacionadas a Investigação científica de seres vivos, com linguagem, recursos e autonomia adequados ao 1º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 47: Investigação científica de seres vivos”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 47: Investigação científica de seres vivos",
+        "conteudo": "Em Ciências, estudar investigação científica de seres vivos ajuda a criança a observar o cotidiano, nomear elementos, comparar situações e registrar descobertas. Nesta proposta, o estudante parte de exemplos próximos da escola, da família ou da comunidade e organiza o que percebe com palavras, desenhos, números ou pequenas explicações. A habilidade EF01CI05 orienta o trabalho e envolve habilidade ef01ci05: desenvolver aprendizagens de ciências relacionadas a investigação científica de seres vivos, com linguagem, recursos e autonomia adequados ao 1º ano. A atividade 47 retoma esse conhecimento em nova situação para ampliar a compreensão."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "O que você percebe primeiro na situação apresentada em “Aprofundamento 47: Investigação científica de seres vivos”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Quais dois elementos de “Aprofundamento 47: Investigação científica de seres vivos” ajudam a compreender melhor investigação científica de seres vivos?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "O que é parecido e o que é diferente entre os exemplos apresentados em “Aprofundamento 47: Investigação científica de seres vivos”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Que informação do texto de apoio de “Aprofundamento 47: Investigação científica de seres vivos” ajuda a responder sobre investigação científica de seres vivos?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Como o tema de “Aprofundamento 47: Investigação científica de seres vivos” pode ser observado na escola, em casa ou na comunidade?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Escreva com suas palavras uma descoberta feita ao estudar “Aprofundamento 47: Investigação científica de seres vivos”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apontar um elemento realmente apresentado na situação e descrevê-lo de modo compreensível.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de investigação científica de seres vivos."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve citar dois elementos pertinentes ao estudo de investigação científica de seres vivos e explicar sua presença.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de investigação científica de seres vivos."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve registrar ao menos uma semelhança e uma diferença coerentes com os exemplos estudados.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de investigação científica de seres vivos."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve recuperar uma informação explícita do texto de apoio que sustente a resposta.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de investigação científica de seres vivos."
+        },
+        {
+          "numero": 5,
+          "resposta": "Pode apresentar exemplo da escola, da casa ou da comunidade, desde que relacionado ao tema.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de investigação científica de seres vivos."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese curta e autoral que demonstre uma aprendizagem efetivamente trabalhada na atividade.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de investigação científica de seres vivos."
+        }
+      ]
+    },
+    {
+      "id": "efi-1ano-b1-cie-50-48-aplicacao-de-seres-vivos-no-cotidiano",
+      "titulo": "Aprofundamento 48: Aplicação de seres vivos no cotidiano",
+      "tema": "Aplicação de seres vivos no cotidiano",
+      "sequencia": "Atividade 48",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "medio",
+      "objetivo": "Desenvolver EF01CI06 por meio do estudo de aplicação de seres vivos no cotidiano, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01CI06",
+          "descricaoResumida": "Habilidade EF01CI06: desenvolver aprendizagens de Ciências relacionadas a Aplicação de seres vivos no cotidiano, com linguagem, recursos e autonomia adequados ao 1º ano.",
+          "habilidadeOficial": "Habilidade EF01CI06: desenvolver aprendizagens de Ciências relacionadas a Aplicação de seres vivos no cotidiano, com linguagem, recursos e autonomia adequados ao 1º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 48: Aplicação de seres vivos no cotidiano”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 48: Aplicação de seres vivos no cotidiano",
+        "conteudo": "Em Ciências, estudar aplicação de seres vivos no cotidiano ajuda a criança a observar o cotidiano, nomear elementos, comparar situações e registrar descobertas. Nesta proposta, o estudante parte de exemplos próximos da escola, da família ou da comunidade e organiza o que percebe com palavras, desenhos, números ou pequenas explicações. A habilidade EF01CI06 orienta o trabalho e envolve habilidade ef01ci06: desenvolver aprendizagens de ciências relacionadas a aplicação de seres vivos no cotidiano, com linguagem, recursos e autonomia adequados ao 1º ano. A atividade 48 retoma esse conhecimento em nova situação para ampliar a compreensão."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "O que você percebe primeiro na situação apresentada em “Aprofundamento 48: Aplicação de seres vivos no cotidiano”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Quais dois elementos de “Aprofundamento 48: Aplicação de seres vivos no cotidiano” ajudam a compreender melhor aplicação de seres vivos no cotidiano?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "O que é parecido e o que é diferente entre os exemplos apresentados em “Aprofundamento 48: Aplicação de seres vivos no cotidiano”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Que informação do texto de apoio de “Aprofundamento 48: Aplicação de seres vivos no cotidiano” ajuda a responder sobre aplicação de seres vivos no cotidiano?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Como o tema de “Aprofundamento 48: Aplicação de seres vivos no cotidiano” pode ser observado na escola, em casa ou na comunidade?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Escreva com suas palavras uma descoberta feita ao estudar “Aprofundamento 48: Aplicação de seres vivos no cotidiano”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apontar um elemento realmente apresentado na situação e descrevê-lo de modo compreensível.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de aplicação de seres vivos no cotidiano."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve citar dois elementos pertinentes ao estudo de aplicação de seres vivos no cotidiano e explicar sua presença.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de aplicação de seres vivos no cotidiano."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve registrar ao menos uma semelhança e uma diferença coerentes com os exemplos estudados.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de aplicação de seres vivos no cotidiano."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve recuperar uma informação explícita do texto de apoio que sustente a resposta.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de aplicação de seres vivos no cotidiano."
+        },
+        {
+          "numero": 5,
+          "resposta": "Pode apresentar exemplo da escola, da casa ou da comunidade, desde que relacionado ao tema.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de aplicação de seres vivos no cotidiano."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese curta e autoral que demonstre uma aprendizagem efetivamente trabalhada na atividade.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de aplicação de seres vivos no cotidiano."
+        }
+      ]
+    },
+    {
+      "id": "efi-1ano-b1-cie-50-49-observacao-e-hipotese-sobre-animais",
+      "titulo": "Aprofundamento 49: Observação e hipótese sobre animais",
+      "tema": "Observação e hipótese sobre animais",
+      "sequencia": "Atividade 49",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "medio",
+      "objetivo": "Desenvolver EF01CI07 por meio do estudo de observação e hipótese sobre animais, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01CI07",
+          "descricaoResumida": "Habilidade EF01CI07: desenvolver aprendizagens de Ciências relacionadas a Observação e hipótese sobre animais, com linguagem, recursos e autonomia adequados ao 1º ano.",
+          "habilidadeOficial": "Habilidade EF01CI07: desenvolver aprendizagens de Ciências relacionadas a Observação e hipótese sobre animais, com linguagem, recursos e autonomia adequados ao 1º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 49: Observação e hipótese sobre animais”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 49: Observação e hipótese sobre animais",
+        "conteudo": "Em Ciências, estudar observação e hipótese sobre animais ajuda a criança a observar o cotidiano, nomear elementos, comparar situações e registrar descobertas. Nesta proposta, o estudante parte de exemplos próximos da escola, da família ou da comunidade e organiza o que percebe com palavras, desenhos, números ou pequenas explicações. A habilidade EF01CI07 orienta o trabalho e envolve habilidade ef01ci07: desenvolver aprendizagens de ciências relacionadas a observação e hipótese sobre animais, com linguagem, recursos e autonomia adequados ao 1º ano. A atividade 49 retoma esse conhecimento em nova situação para ampliar a compreensão."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "O que você percebe primeiro na situação apresentada em “Aprofundamento 49: Observação e hipótese sobre animais”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Quais dois elementos de “Aprofundamento 49: Observação e hipótese sobre animais” ajudam a compreender melhor observação e hipótese sobre animais?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "O que é parecido e o que é diferente entre os exemplos apresentados em “Aprofundamento 49: Observação e hipótese sobre animais”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Que informação do texto de apoio de “Aprofundamento 49: Observação e hipótese sobre animais” ajuda a responder sobre observação e hipótese sobre animais?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Como o tema de “Aprofundamento 49: Observação e hipótese sobre animais” pode ser observado na escola, em casa ou na comunidade?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Escreva com suas palavras uma descoberta feita ao estudar “Aprofundamento 49: Observação e hipótese sobre animais”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apontar um elemento realmente apresentado na situação e descrevê-lo de modo compreensível.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de observação e hipótese sobre animais."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve citar dois elementos pertinentes ao estudo de observação e hipótese sobre animais e explicar sua presença.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de observação e hipótese sobre animais."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve registrar ao menos uma semelhança e uma diferença coerentes com os exemplos estudados.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de observação e hipótese sobre animais."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve recuperar uma informação explícita do texto de apoio que sustente a resposta.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de observação e hipótese sobre animais."
+        },
+        {
+          "numero": 5,
+          "resposta": "Pode apresentar exemplo da escola, da casa ou da comunidade, desde que relacionado ao tema.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de observação e hipótese sobre animais."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese curta e autoral que demonstre uma aprendizagem efetivamente trabalhada na atividade.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de observação e hipótese sobre animais."
+        }
+      ]
+    },
+    {
+      "id": "efi-1ano-b1-cie-50-50-investigacao-cientifica-de-animais",
+      "titulo": "Aprofundamento 50: Investigação científica de animais",
+      "tema": "Investigação científica de animais",
+      "sequencia": "Atividade 50",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "medio",
+      "objetivo": "Desenvolver EF01CI08 por meio do estudo de investigação científica de animais, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01CI08",
+          "descricaoResumida": "Habilidade EF01CI08: desenvolver aprendizagens de Ciências relacionadas a Investigação científica de animais, com linguagem, recursos e autonomia adequados ao 1º ano.",
+          "habilidadeOficial": "Habilidade EF01CI08: desenvolver aprendizagens de Ciências relacionadas a Investigação científica de animais, com linguagem, recursos e autonomia adequados ao 1º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 50: Investigação científica de animais”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 50: Investigação científica de animais",
+        "conteudo": "Em Ciências, estudar investigação científica de animais ajuda a criança a observar o cotidiano, nomear elementos, comparar situações e registrar descobertas. Nesta proposta, o estudante parte de exemplos próximos da escola, da família ou da comunidade e organiza o que percebe com palavras, desenhos, números ou pequenas explicações. A habilidade EF01CI08 orienta o trabalho e envolve habilidade ef01ci08: desenvolver aprendizagens de ciências relacionadas a investigação científica de animais, com linguagem, recursos e autonomia adequados ao 1º ano. A atividade 50 retoma esse conhecimento em nova situação para ampliar a compreensão."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "O que você percebe primeiro na situação apresentada em “Aprofundamento 50: Investigação científica de animais”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Quais dois elementos de “Aprofundamento 50: Investigação científica de animais” ajudam a compreender melhor investigação científica de animais?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "O que é parecido e o que é diferente entre os exemplos apresentados em “Aprofundamento 50: Investigação científica de animais”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Que informação do texto de apoio de “Aprofundamento 50: Investigação científica de animais” ajuda a responder sobre investigação científica de animais?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Como o tema de “Aprofundamento 50: Investigação científica de animais” pode ser observado na escola, em casa ou na comunidade?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Escreva com suas palavras uma descoberta feita ao estudar “Aprofundamento 50: Investigação científica de animais”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apontar um elemento realmente apresentado na situação e descrevê-lo de modo compreensível.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de investigação científica de animais."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve citar dois elementos pertinentes ao estudo de investigação científica de animais e explicar sua presença.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de investigação científica de animais."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve registrar ao menos uma semelhança e uma diferença coerentes com os exemplos estudados.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de investigação científica de animais."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve recuperar uma informação explícita do texto de apoio que sustente a resposta.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de investigação científica de animais."
+        },
+        {
+          "numero": 5,
+          "resposta": "Pode apresentar exemplo da escola, da casa ou da comunidade, desde que relacionado ao tema.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de investigação científica de animais."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese curta e autoral que demonstre uma aprendizagem efetivamente trabalhada na atividade.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de investigação científica de animais."
+        }
+      ]
     }
   ],
   "bnccConferida": true,
-  "referenciaBncc": "BNCC — Ensino Fundamental — Anos Iniciais, Ciências (MEC, 2018)"
+  "referenciaBncc": "BNCC — Ensino Fundamental — Anos Iniciais, Ciências (MEC, 2018)",
+  "quantidadeAtividades": 50
 }
