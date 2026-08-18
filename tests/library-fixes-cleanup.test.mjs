@@ -38,6 +38,10 @@ test('biblioteca-fixes gera as 100 combinações sem tabela manual duplicada', (
         assert.equal(item.count, 30);
         assert.equal(item.grade, `${year}º ano`);
         assert.equal(item.term, term);
+        assert.equal(
+          item.path,
+          `data/atividades/fundamental-anos-iniciais/${year}-ano/${term}-bimestre/${subject}.json`
+        );
       }
     }
   }
@@ -59,14 +63,16 @@ test('biblioteca-fixes gera as 100 combinações sem tabela manual duplicada', (
 test('filtro de disciplina usa seletor CSS válido e HTML carrega a versão enxuta', () => {
   assert.match(source, /querySelector\('option\[value=""\]'\)/);
   assert.doesNotMatch(source, /querySelector\('option\[value="\]'\)/);
-  assert.match(html, /biblioteca-fixes\.js\?v=20260807-autismo-v3&cleanup=20260818-v2/);
+  assert.match(html, /biblioteca-fixes\.js\?v=20260807-autismo-v3&cleanup=20260818-v3/);
 });
 
-test('configuração usa gerador em vez de cem objetos copiados', () => {
+test('configuração usa somente o gerador canônico sem exceções redundantes', () => {
   assert.match(source, /INITIAL_YEAR_NUMBERS = \[1, 2, 3, 4, 5\]/);
   assert.match(source, /BIMESTERS = \[1, 2, 3, 4\]/);
   assert.match(source, /INITIAL_YEAR_NUMBERS\.flatMap/);
   assert.match(source, /BIMESTERS\.flatMap/);
-  assert.match(source, /TERM3_CANONICAL_PATHS/);
+  assert.match(source, /\[\.\.\.PRIMARY_SUBJECTS_FUNDAMENTAL_I\]\.map/);
+  assert.doesNotMatch(source, /TERM3_CANONICAL_PATHS/);
+  assert.doesNotMatch(source, /subjectsForPeriod/);
   assert.doesNotMatch(source, /const collectionConfigs = \[/);
 });
