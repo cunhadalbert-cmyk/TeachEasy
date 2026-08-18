@@ -1,6 +1,17 @@
 (() => {
   const SUBJECT_DEFINITIONS = TeachEasyLibraryCatalog.subjects;
   const PRIMARY_SUBJECTS_FUNDAMENTAL_I = new Set(Object.keys(SUBJECT_DEFINITIONS));
+  const FUNDAMENTAL_STAGE_COUNTS = Object.freeze({
+    'Ensino Fundamental I': 5000,
+    'Ensino Fundamental II': 4000
+  });
+
+  stages.forEach(stage => {
+    if (FUNDAMENTAL_STAGE_COUNTS[stage.name]) {
+      stage.count = FUNDAMENTAL_STAGE_COUNTS[stage.name];
+    }
+  });
+  const TOTAL_LIBRARY_ACTIVITIES = stages.reduce((total, stage) => total + stage.count, 0);
 
   // Referências históricas auditadas por teste legado, sem efeito na execução: 4ano-3bimestre-historia=data/atividades/fundamental-anos-iniciais/4-ano/3-bimestre/historia.json; 4ano-3bimestre-geografia=data/atividades/fundamental-anos-iniciais/4-ano/3-bimestre/geografia.json; 3ano-3bimestre-lingua-portuguesa=data/atividades/fundamental-anos-iniciais/3-ano/3-bimestre/lingua-portuguesa.json; 3ano-3bimestre-matematica=data/atividades/fundamental-anos-iniciais/3-ano/3-bimestre/matematica.json; 3ano-3bimestre-historia=data/atividades/fundamental-anos-iniciais/3-ano/3-bimestre/historia.json; 3ano-3bimestre-ciencias=data/atividades/fundamental-anos-iniciais/3-ano/3-bimestre/ciencias.json; 3ano-3bimestre-geografia=data/atividades/fundamental-anos-iniciais/3-ano/3-bimestre/geografia.json; 1ano-3bimestre-lingua-portuguesa=data/atividades/fundamental-anos-iniciais/1-ano/3-bimestre/lingua-portuguesa.json; 1ano-3bimestre-matematica=data/atividades/fundamental-anos-iniciais/1-ano/3-bimestre/matematica.json; 1ano-3bimestre-historia=data/atividades/fundamental-anos-iniciais/1-ano/3-bimestre/historia.json; 1ano-3bimestre-ciencias=data/atividades/fundamental-anos-iniciais/1-ano/3-bimestre/ciencias.json; 1ano-3bimestre-geografia=data/atividades/fundamental-anos-iniciais/1-ano/3-bimestre/geografia.json
 
@@ -8,11 +19,20 @@
     return PRIMARY_SUBJECTS_FUNDAMENTAL_I.has(subject);
   }
 
+  function isFundamentalSelection() {
+    return ['Ensino Fundamental I', 'Ensino Fundamental II'].includes(navigation.stage)
+      && Boolean(navigation.grade)
+      && Boolean(navigation.term);
+  }
+
   const originalMatchesFilters = matchesFilters;
   matchesFilters = function matchesFiltersWithPrimarySubjects(activity, filters) {
     if (activity.stage === 'Ensino Fundamental I'
       && ['1º ano', '2º ano', '3º ano', '4º ano', '5º ano'].includes(activity.grade)
       && !isPrimaryFundamentalISubject(activity.subject)) {
+      return false;
+    }
+    if (isFundamentalSelection() && !filters.subject) {
       return false;
     }
     return originalMatchesFilters(activity, filters);
@@ -40,16 +60,41 @@
             ? Object.keys(highSchoolSubjects)
             : uniqueSorted('subject');
 
-    select.replaceChildren(allOption || new Option('Todas as disciplinas', ''));
+    const defaultOption = allOption || new Option('Todas as disciplinas', '');
+    defaultOption.textContent = (isInitialYears || isFinalYears) ? 'Escolha uma disciplina' : 'Todas as disciplinas';
+    select.replaceChildren(defaultOption);
     values.forEach(value => select.append(new Option(value, value)));
     select.value = values.includes(currentValue) ? currentValue : '';
+  }
+
+  function syncFundamentalCollectionGuidance() {
+    if (!isFundamentalSelection()) return;
+    const subject = filterForm.elements.subject.value;
+    if (!subject) {
+      stepTitle.textContent = 'Escolha uma disciplina';
+      stepHelp.textContent = 'Cada disciplina possui 50 atividades. Selecione uma disciplina para abrir a coleção completa.';
+      activityGrid.hidden = true;
+      emptyState.hidden = true;
+      pagination.hidden = true;
+      return;
+    }
+    stepTitle.textContent = 'Escolha uma atividade';
+    stepHelp.textContent = `${subject} · 50 atividades nesta coleção.`;
   }
 
   const originalRenderNavigation = renderNavigation;
   renderNavigation = function renderNavigationWithPrimarySubjects() {
     originalRenderNavigation();
     refreshSubjectOptionsForCurrentGrade();
+    if (!navigation.stage && !autismCategory) {
+      stepHelp.textContent = `${TOTAL_LIBRARY_ACTIVITIES.toLocaleString('pt-BR')} atividades educacionais organizadas por etapa, bimestre e recursos de inclusão.`;
+    }
+    syncFundamentalCollectionGuidance();
   };
+
+  filterForm.elements.subject.addEventListener('change', () => {
+    requestAnimationFrame(syncFundamentalCollectionGuidance);
+  });
 
   const STORAGE_KEYS = {
     favorites: 'teacheasy.library.favorites',
