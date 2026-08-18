@@ -39,7 +39,7 @@ test('Anos Iniciais mantêm 100 coleções em arquivos canônicos únicos', () =
       });
 
       const expectedActivities = collectionIsV2
-        ? (term === 4 && ['Língua Portuguesa', 'Matemática', 'Ciências', 'História'].includes(subject) ? 50 : 20)
+        ? (term === 4 && ['Língua Portuguesa', 'Matemática', 'Ciências', 'História', 'Geografia'].includes(subject) ? 50 : 20)
         : 30;
       const expectedQuestions = collectionIsV2 ? 8 : 6;
       assert.equal(activities.length, expectedActivities, `${grade}º ano, ${term}º bimestre, ${subject}`);
@@ -66,7 +66,7 @@ test('Anos Iniciais mantêm 100 coleções em arquivos canônicos únicos', () =
   }
 
   assert.equal(collections, 100);
-  assert.equal(total, 3390);
+  assert.equal(total, 3490);
   assert.equal(total, ids.size);
   assert.ok(migratedV2 >= 1, 'Ao menos uma coleção dos Anos Iniciais deve estar migrada para o padrão V2');
 });

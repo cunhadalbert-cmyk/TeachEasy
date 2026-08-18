@@ -21,11 +21,12 @@ Atualizado em 18 de agosto de 2026.
 
 ## Conteúdo confirmado no repositório
 
-- Anos Iniciais: 3.390 atividades canônicas. Português, Matemática, Ciências e História do 4º bimestre possuem 50 atividades V2 em cada ano do 1º ao 5º.
-- Anos Finais: 3.360 atividades canônicas. Português, Matemática, Ciências e História do 4º bimestre possuem 50 atividades V2 em cada ano do 6º ao 9º.
+- Anos Iniciais: 3.490 atividades canônicas. Português, Matemática, Ciências, História e Geografia do 4º bimestre possuem 50 atividades V2 em cada ano do 1º ao 5º.
+- Anos Finais: 3.400 atividades canônicas. Português, Matemática, Ciências, História e Geografia do 4º bimestre possuem 50 atividades V2 em cada ano do 6º ao 9º.
 - Geografia do 4º ano/3º bimestre: 20 atividades V2, oito questões e oito respostas por atividade.
 - Ciências do 1º ao 9º ano/4º bimestre: 450 atividades V2, 3.600 questões e 3.600 respostas. Os códigos e o pertencimento ao ano/disciplina foram validados automaticamente contra a BNCC oficial do MEC; a revisão pedagógica humana e a produção das imagens definitivas permanecem pendentes.
 - História do 1º ao 9º ano/4º bimestre: 450 atividades V2, 3.600 questões e 3.600 respostas. Os códigos foram conferidos contra a BNCC oficial do MEC; revisão pedagógica humana e produção visual definitiva permanecem pendentes.
+- Geografia do 1º ao 9º ano/4º bimestre: 450 atividades V2, 3.600 questões e 3.600 respostas. Os códigos foram conferidos contra a BNCC oficial do MEC; revisão pedagógica humana e produção visual definitiva permanecem pendentes.
 - Língua Portuguesa do 1º ao 9º ano/4º bimestre: 450 atividades V2, 3.600 questões e 3.600 respostas. O conteúdo passou pela validação automática; a revisão pedagógica humana e a produção das imagens definitivas permanecem identificadas nos JSONs.
 - Matemática do 1º ao 9º ano/4º bimestre: 450 atividades V2, 3.600 questões e 3.600 respostas organizadas por domínio matemático. A revisão pedagógica humana e a produção das imagens definitivas permanecem identificadas nos JSONs.
 
