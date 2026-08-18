@@ -96,6 +96,11 @@ test('gerador usa a imagem oficial com fidelidade visual reforçada', async () =
   assert.match(illustrationGeneration, /NUNCA podem substituir, esconder, apagar, reduzir ou descaracterizar/);
   assert.match(illustrationGeneration, /preserve integralmente o conteúdo pedagógico/);
   assert.match(illustrationGeneration, /falsificar o período, a cultura ou o acontecimento/i);
+  assert.match(illustrationGeneration, /REGRA ABSOLUTA DE QUANTIDADE DO ELENCO/);
+  assert.match(illustrationGeneration, /cada personagem oficial pode aparecer NO MÁXIMO UMA VEZ/);
+  assert.match(illustrationGeneration, /O único animal permitido é Nino/);
+  assert.match(illustrationGeneration, /Nunca gere segundo cachorro, filhote, outro cão, gato ou qualquer animal adicional/);
+  assert.match(illustrationGeneration, /Nino só pode aparecer uma vez/);
   assert.match(illustrationGeneration, /ORDEM DE PRIORIDADE/);
   assert.match(illustrationGeneration, /preservar integralmente a cena pedagógica e seus elementos essenciais/);
   assert.match(illustrationGeneration, /integrar os personagens TeachEasy como participantes ativos e naturais da cena/);
