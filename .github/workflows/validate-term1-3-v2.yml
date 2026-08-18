@@ -39,6 +39,9 @@ jobs:
       - name: Migrate term1-3 collections to V2
         run: node scripts/migrate-fundamental-term1-3-v2.mjs
 
+      - name: Update V2 test contracts
+        run: node scripts/update-term1-3-v2-test-contracts.mjs
+
       - name: Ensure fourth term content was untouched
         shell: bash
         run: |
@@ -86,6 +89,6 @@ jobs:
           rm -f docs/auditoria-figuras.md
           git config user.name 'TeachEasy Validation'
           git config user.email 'actions@users.noreply.github.com'
-          git add data/atividades docs/estado-projeto.md package.json scripts/migrate-fundamental-term1-3-v2.mjs scripts/prepare-fundamental-term1-3-v2.mjs tests/fundamental-term1-3-v2.test.mjs tests
+          git add data/atividades docs/estado-projeto.md package.json scripts/migrate-fundamental-term1-3-v2.mjs scripts/prepare-fundamental-term1-3-v2.mjs scripts/update-term1-3-v2-test-contracts.mjs tests
           git commit -m 'Staging migração V2 dos três primeiros bimestres validada'
           git push origin HEAD:automation/migrate-term1-3-v2-20260818
