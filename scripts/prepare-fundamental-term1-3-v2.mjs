@@ -1,6 +1,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
+// Pré-limpeza estrita: resíduos genéricos são descartados para que o migrador V2 os reconstrua.
 const root = process.cwd();
 const subjects = ['lingua-portuguesa.json','matematica.json','ciencias.json','historia.json','geografia.json'];
 const validatorGeneric = [
