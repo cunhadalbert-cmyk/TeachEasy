@@ -1,3 +1,4 @@
+// Garante de forma idempotente que os testes históricos acompanhem o contrato V2.
 import fs from 'node:fs';
 import path from 'node:path';
 
