@@ -22,15 +22,15 @@ export function parseArguments(argv) {
       options.force = true;
     } else if (argument === '--input' || argument === '--output') {
       const value = argv[index + 1];
-      if (!value || value.startsWith('--')) throw new Error(`A opÃ§Ã£o ${argument} exige um caminho.`);
+      if (!value || value.startsWith('--')) throw new Error(`A opção ${argument} exige um caminho.`);
       options[argument.slice(2)] = value;
       index += 1;
     } else {
-      throw new Error(`OpÃ§Ã£o desconhecida: ${argument}`);
+      throw new Error(`Opção desconhecida: ${argument}`);
     }
   }
   if (!options.input) throw new Error('Informe o arquivo JSON com --input.');
-  if (!options.output) throw new Error('Informe a pasta de saÃ­da com --output.');
+  if (!options.output) throw new Error('Informe a pasta de saída com --output.');
   return options;
 }
 
@@ -46,30 +46,32 @@ export function sanitizeFileStem(id) {
 
 export function validateItems(value) {
   if (!Array.isArray(value)) throw new Error('O JSON de entrada deve conter uma lista.');
-  if (value.length > MAX_ITEMS) throw new Error(`O lote aceita no mÃ¡ximo ${MAX_ITEMS} itens.`);
+  if (value.length > MAX_ITEMS) throw new Error(`O lote aceita no máximo ${MAX_ITEMS} itens.`);
 
   const ids = new Set();
   const filenames = new Set();
   return value.map((item, index) => {
     const position = index + 1;
-    if (!item || typeof item !== 'object' || Array.isArray(item)) throw new Error(`Item ${position}: formato invÃ¡lido.`);
+    if (!item || typeof item !== 'object' || Array.isArray(item)) throw new Error(`Item ${position}: formato inválido.`);
     const id = typeof item.id === 'string' ? item.id.trim() : '';
     const texto = typeof item.texto === 'string' ? item.texto.trim() : '';
     const titulo = typeof item.titulo === 'string' ? item.titulo.trim() : '';
-    if (!id) throw new Error(`Item ${position}: id Ã© obrigatÃ³rio.`);
+    const disciplina = typeof item.disciplina === 'string' ? item.disciplina.trim() : '';
+    if (!id) throw new Error(`Item ${position}: id é obrigatório.`);
     if (id.length > MAX_ID_LENGTH || !/^[\p{L}\p{N}][\p{L}\p{N}_-]*$/u.test(id)) {
-      throw new Error(`Item ${position}: id invÃ¡lido. Use somente letras, nÃºmeros, hÃ­fen ou sublinhado.`);
+      throw new Error(`Item ${position}: id inválido. Use somente letras, números, hífen ou sublinhado.`);
     }
-    if (!texto) throw new Error(`Item ${position} (${id}): texto Ã© obrigatÃ³rio.`);
+    if (!texto) throw new Error(`Item ${position} (${id}): texto é obrigatório.`);
+    if (!disciplina) throw new Error(`Item ${position} (${id}): disciplina é obrigatória.`);
     const duplicateKey = id.toLocaleLowerCase('pt-BR');
     if (ids.has(duplicateKey)) throw new Error(`ID duplicado: ${id}.`);
     ids.add(duplicateKey);
 
     const fileStem = sanitizeFileStem(id);
     const filenameKey = fileStem.toLowerCase();
-    if (!fileStem || filenames.has(filenameKey)) throw new Error(`O id ${id} gera um nome de arquivo duplicado ou invÃ¡lido.`);
+    if (!fileStem || filenames.has(filenameKey)) throw new Error(`O id ${id} gera um nome de arquivo duplicado ou inválido.`);
     filenames.add(filenameKey);
-    return { id, titulo, texto, filename: `${fileStem}.png` };
+    return { id, titulo, disciplina, texto, filename: `${fileStem}.png` };
   });
 }
 
@@ -78,14 +80,14 @@ export async function loadInput(inputPath) {
   try {
     raw = await readFile(inputPath, 'utf8');
   } catch (error) {
-    if (error.code === 'ENOENT') throw new Error(`Arquivo de entrada nÃ£o encontrado: ${inputPath}`);
-    throw new Error(`NÃ£o foi possÃ­vel ler o arquivo de entrada: ${error.message}`);
+    if (error.code === 'ENOENT') throw new Error(`Arquivo de entrada não encontrado: ${inputPath}`);
+    throw new Error(`Não foi possível ler o arquivo de entrada: ${error.message}`);
   }
   let parsed;
   try {
     parsed = JSON.parse(raw);
   } catch (error) {
-    throw new Error(`JSON invÃ¡lido: ${error.message}`);
+    throw new Error(`JSON inválido: ${error.message}`);
   }
   return validateItems(parsed);
 }
@@ -98,7 +100,7 @@ export async function ensureOutputDirectory(outputDirectory) {
     await writeFile(probe, '', { flag: 'wx' });
     await unlink(probe);
   } catch (error) {
-    throw new Error(`A pasta de saÃ­da nÃ£o pode ser criada ou gravada: ${error.message}`);
+    throw new Error(`A pasta de saída não pode ser criada ou gravada: ${error.message}`);
   }
 }
 
@@ -114,7 +116,7 @@ async function generateWithTimeout(generator, item, timeoutMs) {
   const timeout = setTimeout(() => controller.abort(), timeoutMs);
   try {
     return await generator({
-      subject: 'Atividade Escolar',
+      subject: item.disciplina,
       topic: item.titulo || item.id,
       context: item.texto,
       signal: controller.signal
@@ -164,7 +166,7 @@ export function printSummary(report, logger = console) {
   const failed = report.items.filter(item => item.status === 'erro').length;
   logger.log('');
   logger.log('=============================');
-  logger.log('LOTE DE ILUSTRAÃ‡Ã•ES CONCLUÃDO');
+  logger.log('LOTE DE ILUSTRAÇÕES CONCLUÍDO');
   logger.log('=============================');
   logger.log('');
   logger.log(`Solicitadas: ${report.solicitadas}`);
@@ -204,12 +206,12 @@ export async function runBatch({
     if (!force) {
       try {
         await access(outputPath);
-        logger.log(`[IGNORADA] ${item.id} - ${item.filename} jÃ¡ existe (use --force para substituir).`);
+        logger.log(`[IGNORADA] ${item.id} - ${item.filename} já existe (use --force para substituir).`);
         report.items.push({ id: item.id, arquivo: item.filename, status: 'ignorado', horario: now().toISOString() });
         continue;
       } catch (error) {
         if (error.code !== 'ENOENT') {
-          const message = `NÃ£o foi possÃ­vel verificar o arquivo de saÃ­da: ${error.message}`;
+          const message = `Não foi possível verificar o arquivo de saída: ${error.message}`;
           logger.error(`[ERRO] ${item.id} - ${message}`);
           report.items.push({ id: item.id, arquivo: item.filename, status: 'erro', erro: message, horario: now().toISOString() });
           continue;
@@ -220,7 +222,7 @@ export async function runBatch({
     logger.log(`[GERANDO] ${item.id}...`);
     try {
       const imageBuffer = await generateWithRetry(batchGenerator, item, { ...retryOptions, logger });
-      if (!Buffer.isBuffer(imageBuffer)) throw new Error('O gerador nÃ£o retornou uma imagem em formato binÃ¡rio.');
+      if (!Buffer.isBuffer(imageBuffer)) throw new Error('O gerador não retornou uma imagem em formato binário.');
       await writeFile(outputPath, imageBuffer, { flag: force ? 'w' : 'wx' });
       logger.log(`[OK] ${item.filename}`);
       report.items.push({ id: item.id, arquivo: item.filename, status: 'ok', horario: now().toISOString() });
