@@ -2433,6 +2433,1196 @@
       },
       "bnccConferida": true,
       "illustration": "/illustrations/biblioteca/fundamental-iniciais/4-ano/3-bimestre/matematica/efi-4ano-b3-mat-padroes-sequencias-o.png"
+    },
+    {
+      "id": "efi-4ano-b3-mat-divisao-resto-extra",
+      "titulo": "Divisão com resto no cotidiano",
+      "tema": "Divisão",
+      "sequencia": "Extra 1",
+      "tipoSequencia": "Ampliação",
+      "dificuldade": "intermediaria",
+      "objetivo": "Resolver problemas de divisão exata e não exata, interpretando quociente e resto. Habilidade BNCC: EF04MA07.",
+      "bncc": [
+        {
+          "codigo": "EF04MA07",
+          "descricaoResumida": "Resolver e elaborar problemas de divisão cujo divisor tenha no máximo dois algarismos."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Resolva as situações e explique o significado do resto quando ele aparecer.",
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "problema",
+          "enunciado": "Uma professora tem 47 lápis para repartir igualmente entre 6 grupos. Quantos lápis cada grupo recebe e quantos sobram?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Em 53 ÷ 5, qual é o quociente e qual é o resto?",
+          "alternativas": [
+            "Quociente 10 e resto 3",
+            "Quociente 11 e resto 2",
+            "Quociente 9 e resto 8",
+            "Quociente 5 e resto 3"
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "resposta-curta",
+          "enunciado": "Uma van leva 8 estudantes por viagem. Quantas viagens completas são necessárias para transportar 34 estudantes? Considere que todos precisam viajar.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "analise-erro",
+          "enunciado": "João disse que 29 ÷ 4 = 7 e não há sobra. Verifique e corrija a afirmação.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "completar",
+          "enunciado": "Complete: 65 ÷ 8 = ____ e resto ____.",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "elaboracao",
+          "enunciado": "Crie um problema de divisão cujo resultado seja 9 e resto 2. Depois, resolva-o.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "7 lápis para cada grupo e sobram 5.",
+          "justificativa": "47 = 6 × 7 + 5."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa A.",
+          "justificativa": "53 = 5 × 10 + 3."
+        },
+        {
+          "numero": 3,
+          "resposta": "5 viagens.",
+          "justificativa": "Quatro viagens levam 32 estudantes; é necessária mais uma para os 2 restantes."
+        },
+        {
+          "numero": 4,
+          "resposta": "29 ÷ 4 = 7 e resto 1.",
+          "justificativa": "4 × 7 = 28 e sobra 1."
+        },
+        {
+          "numero": 5,
+          "resposta": "8 e resto 1.",
+          "justificativa": "65 = 8 × 8 + 1."
+        },
+        {
+          "numero": 6,
+          "resposta": "Resposta pessoal.",
+          "justificativa": "Critério de correção: o enunciado deve representar uma divisão coerente com dividendo igual a 9 vezes o divisor mais 2."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      },
+      "bnccConferida": true,
+      "illustration": "/illustrations/biblioteca/fundamental-iniciais/4-ano/3-bimestre/matematica/efi-4ano-b3-mat-divisao-resto-extra.png"
+    },
+    {
+      "id": "efi-4ano-b3-mat-compras-troco-extra",
+      "titulo": "Compras e cálculo de troco",
+      "tema": "Sistema monetário",
+      "sequencia": "Extra 2",
+      "tipoSequencia": "Ampliação",
+      "dificuldade": "intermediaria",
+      "objetivo": "Resolver situações de compra, soma de valores e cálculo de troco com reais e centavos. Habilidade BNCC: EF04MA25.",
+      "bncc": [
+        {
+          "codigo": "EF04MA25",
+          "descricaoResumida": "Resolver problemas envolvendo compra, venda, formas de pagamento e troco."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia os preços e registre os cálculos com reais e centavos.",
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "problema",
+          "enunciado": "Ana comprou um livro por R$ 27,50 e um estojo por R$ 18,90. Quanto ela gastou?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "problema",
+          "enunciado": "Pedro pagou uma mochila de R$ 64,75 com uma nota de R$ 100,00. Qual foi o troco?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual conjunto de cédulas e moedas paga exatamente R$ 32,50?",
+          "alternativas": [
+            "R$ 20,00 + R$ 10,00 + R$ 2,00 + R$ 0,50",
+            "R$ 20,00 + R$ 10,00 + R$ 1,00",
+            "R$ 50,00 − R$ 10,00",
+            "R$ 20,00 + R$ 5,00 + R$ 5,00"
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Uma caixa de lápis custa R$ 14,80 em uma loja e R$ 13,95 em outra. Qual é a diferença de preço?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "problema",
+          "enunciado": "Com R$ 50,00, é possível comprar três cadernos de R$ 16,40 cada? Quanto sobra ou falta?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "elaboracao",
+          "enunciado": "Crie uma compra com dois produtos que totalize entre R$ 40,00 e R$ 50,00 e calcule o troco de R$ 60,00.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "R$ 46,40.",
+          "justificativa": "27,50 + 18,90 = 46,40."
+        },
+        {
+          "numero": 2,
+          "resposta": "R$ 35,25.",
+          "justificativa": "100,00 − 64,75 = 35,25."
+        },
+        {
+          "numero": 3,
+          "resposta": "Alternativa A.",
+          "justificativa": "20 + 10 + 2 + 0,50 = 32,50."
+        },
+        {
+          "numero": 4,
+          "resposta": "R$ 0,85.",
+          "justificativa": "14,80 − 13,95 = 0,85."
+        },
+        {
+          "numero": 5,
+          "resposta": "Sim; sobram R$ 0,80.",
+          "justificativa": "3 × 16,40 = 49,20 e 50,00 − 49,20 = 0,80."
+        },
+        {
+          "numero": 6,
+          "resposta": "Resposta pessoal.",
+          "justificativa": "Critério de correção: os dois preços devem totalizar entre R$ 40,00 e R$ 50,00, e o troco deve ser calculado corretamente a partir de R$ 60,00."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      },
+      "bnccConferida": true,
+      "illustration": "/illustrations/biblioteca/fundamental-iniciais/4-ano/3-bimestre/matematica/efi-4ano-b3-mat-compras-troco-extra.png"
+    },
+    {
+      "id": "efi-4ano-b3-mat-precos-pagamento-extra",
+      "titulo": "Comparando preços e pagamentos",
+      "tema": "Sistema monetário",
+      "sequencia": "Extra 3",
+      "tipoSequencia": "Ampliação",
+      "dificuldade": "desafiadora",
+      "objetivo": "Comparar preços, analisar descontos simples e escolher formas de pagamento vantajosas. Habilidade BNCC: EF04MA25.",
+      "bncc": [
+        {
+          "codigo": "EF04MA25",
+          "descricaoResumida": "Resolver problemas envolvendo compra, venda, formas de pagamento e troco."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Compare as opções e justifique qual escolha é mais vantajosa.",
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "comparacao",
+          "enunciado": "Um jogo custa R$ 72,00 à vista ou 3 parcelas de R$ 25,00. Qual opção custa menos e qual é a diferença?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "problema",
+          "enunciado": "Uma loja oferece R$ 8,00 de desconto em um produto de R$ 49,90. Qual é o preço final?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual compra tem menor valor total?",
+          "alternativas": [
+            "2 itens de R$ 18,50",
+            "3 itens de R$ 12,20",
+            "1 item de R$ 36,80",
+            "4 itens de R$ 9,30"
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "analise",
+          "enunciado": "Uma bicicleta custa R$ 480,00 em 6 parcelas iguais. Qual é o valor de cada parcela?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "problema",
+          "enunciado": "Luiza tem R$ 120,00. Ela quer comprar uma blusa de R$ 58,90 e um tênis de R$ 74,50. Quanto falta?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "discursiva",
+          "enunciado": "Explique por que comparar o valor total das parcelas é importante antes de comprar.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "À vista; a diferença é R$ 3,00.",
+          "justificativa": "3 × 25 = 75; 75 − 72 = 3."
+        },
+        {
+          "numero": 2,
+          "resposta": "R$ 41,90.",
+          "justificativa": "49,90 − 8,00 = 41,90."
+        },
+        {
+          "numero": 3,
+          "resposta": "Alternativa B.",
+          "justificativa": "2×18,50=37,00; 3×12,20=36,60; 36,80; 4×9,30=37,20."
+        },
+        {
+          "numero": 4,
+          "resposta": "R$ 80,00.",
+          "justificativa": "480 ÷ 6 = 80."
+        },
+        {
+          "numero": 5,
+          "resposta": "Faltam R$ 13,40.",
+          "justificativa": "58,90 + 74,50 = 133,40; 133,40 − 120,00 = 13,40."
+        },
+        {
+          "numero": 6,
+          "resposta": "Porque parcelas menores podem resultar em um valor total maior.",
+          "justificativa": "Critério de correção: a resposta deve mencionar a comparação do custo total e evitar analisar apenas o valor de cada parcela."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      },
+      "bnccConferida": true,
+      "illustration": "/illustrations/biblioteca/fundamental-iniciais/4-ano/3-bimestre/matematica/efi-4ano-b3-mat-precos-pagamento-extra.png"
+    },
+    {
+      "id": "efi-4ano-b3-mat-fracoes-quantidades-extra",
+      "titulo": "Frações de quantidades",
+      "tema": "Frações",
+      "sequencia": "Extra 4",
+      "tipoSequencia": "Ampliação",
+      "dificuldade": "intermediaria",
+      "objetivo": "Calcular frações unitárias e não unitárias de quantidades discretas. Habilidade BNCC: EF04MA09.",
+      "bncc": [
+        {
+          "codigo": "EF04MA09",
+          "descricaoResumida": "Reconhecer frações unitárias usuais como unidades de medida menores que uma unidade."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Calcule cada fração e registre como pensou.",
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "resposta-curta",
+          "enunciado": "Qual é a metade de 24 figurinhas?",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "resposta-curta",
+          "enunciado": "Qual é a terça parte de 27 alunos?",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "problema",
+          "enunciado": "Uma caixa tem 32 bombons. Um quarto deles é de morango. Quantos são de morango?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "multipla-escolha",
+          "enunciado": "Quanto é três quartos de 20?",
+          "alternativas": [
+            "5",
+            "10",
+            "15",
+            "18"
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "problema",
+          "enunciado": "Em uma coleção de 36 livros, dois terços são de histórias. Quantos livros de histórias há?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "elaboracao",
+          "enunciado": "Crie uma situação em que seja necessário calcular um quarto de uma quantidade e resolva.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "12 figurinhas.",
+          "justificativa": "24 ÷ 2 = 12."
+        },
+        {
+          "numero": 2,
+          "resposta": "9 alunos.",
+          "justificativa": "27 ÷ 3 = 9."
+        },
+        {
+          "numero": 3,
+          "resposta": "8 bombons.",
+          "justificativa": "32 ÷ 4 = 8."
+        },
+        {
+          "numero": 4,
+          "resposta": "Alternativa C: 15.",
+          "justificativa": "20 ÷ 4 = 5 e 5 × 3 = 15."
+        },
+        {
+          "numero": 5,
+          "resposta": "24 livros.",
+          "justificativa": "36 ÷ 3 = 12 e 12 × 2 = 24."
+        },
+        {
+          "numero": 6,
+          "resposta": "Resposta pessoal.",
+          "justificativa": "Critério de correção: a quantidade escolhida deve ser divisível por 4 e o cálculo deve representar corretamente um quarto."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      },
+      "bnccConferida": true,
+      "illustration": "/illustrations/biblioteca/fundamental-iniciais/4-ano/3-bimestre/matematica/efi-4ano-b3-mat-fracoes-quantidades-extra.png"
+    },
+    {
+      "id": "efi-4ano-b3-mat-fracoes-equivalentes-extra",
+      "titulo": "Frações equivalentes",
+      "tema": "Frações",
+      "sequencia": "Extra 5",
+      "tipoSequencia": "Ampliação",
+      "dificuldade": "desafiadora",
+      "objetivo": "Reconhecer e produzir equivalências simples entre frações usuais. Habilidade BNCC: EF04MA09.",
+      "bncc": [
+        {
+          "codigo": "EF04MA09",
+          "descricaoResumida": "Reconhecer frações unitárias usuais e estabelecer relações simples entre elas."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Compare as frações e explique as equivalências.",
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "completar",
+          "enunciado": "Complete: 1/2 = ____/4.",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual fração é equivalente a 2/3?",
+          "alternativas": [
+            "3/4",
+            "4/6",
+            "2/6",
+            "5/6"
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "comparacao",
+          "enunciado": "Compare 1/2 e 3/6. Elas representam a mesma quantidade? Explique.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "completar",
+          "enunciado": "Complete: 2/4 = ____/8.",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "analise",
+          "enunciado": "Marina afirmou que 3/4 é equivalente a 6/8. Verifique multiplicando numerador e denominador pelo mesmo número.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "elaboracao",
+          "enunciado": "Escreva duas frações equivalentes a 1/3 e explique como as obteve.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "2/4.",
+          "justificativa": "Multiplicando numerador e denominador de 1/2 por 2, obtemos 2/4."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa B: 4/6.",
+          "justificativa": "2/3 × 2/2 = 4/6."
+        },
+        {
+          "numero": 3,
+          "resposta": "Sim.",
+          "justificativa": "3/6 pode ser simplificada para 1/2."
+        },
+        {
+          "numero": 4,
+          "resposta": "4/8.",
+          "justificativa": "2/4 × 2/2 = 4/8."
+        },
+        {
+          "numero": 5,
+          "resposta": "A afirmação está correta.",
+          "justificativa": "3 × 2 = 6 e 4 × 2 = 8."
+        },
+        {
+          "numero": 6,
+          "resposta": "Exemplos: 2/6 e 3/9.",
+          "justificativa": "Critério de correção: numerador e denominador devem ser multiplicados pelo mesmo número."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      },
+      "bnccConferida": true,
+      "illustration": "/illustrations/biblioteca/fundamental-iniciais/4-ano/3-bimestre/matematica/efi-4ano-b3-mat-fracoes-equivalentes-extra.png"
+    },
+    {
+      "id": "efi-4ano-b3-mat-comprimento-extra",
+      "titulo": "Comprimentos e conversões",
+      "tema": "Medidas de comprimento",
+      "sequencia": "Extra 6",
+      "tipoSequencia": "Ampliação",
+      "dificuldade": "intermediaria",
+      "objetivo": "Relacionar milímetro, centímetro, metro e quilômetro em situações práticas. Habilidade BNCC: EF04MA20.",
+      "bncc": [
+        {
+          "codigo": "EF04MA20",
+          "descricaoResumida": "Medir e estimar comprimentos, utilizando unidades padronizadas usuais."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Escolha a unidade adequada e faça as conversões solicitadas.",
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "completar",
+          "enunciado": "Complete: 3 m = ____ cm.",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual unidade é mais adequada para medir a espessura de uma moeda?",
+          "alternativas": [
+            "quilômetro",
+            "metro",
+            "centímetro",
+            "milímetro"
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "problema",
+          "enunciado": "Uma fita tem 250 cm. Quantos metros e centímetros ela mede?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Qual é maior: 1 m e 80 cm ou 175 cm? Qual é a diferença?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "problema",
+          "enunciado": "Uma trilha tem 2 km. Quantos metros ela possui?",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "elaboracao",
+          "enunciado": "Crie um exemplo de objeto que você mediria em milímetros, outro em centímetros e outro em metros.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "300 cm.",
+          "justificativa": "1 m = 100 cm; 3 × 100 = 300."
+        },
+        {
+          "numero": 2,
+          "resposta": "Alternativa D: milímetro.",
+          "justificativa": "A espessura é uma medida muito pequena."
+        },
+        {
+          "numero": 3,
+          "resposta": "2 m e 50 cm.",
+          "justificativa": "200 cm = 2 m e restam 50 cm."
+        },
+        {
+          "numero": 4,
+          "resposta": "1 m e 80 cm é maior por 5 cm.",
+          "justificativa": "1 m e 80 cm = 180 cm; 180 − 175 = 5."
+        },
+        {
+          "numero": 5,
+          "resposta": "2.000 m.",
+          "justificativa": "1 km = 1.000 m."
+        },
+        {
+          "numero": 6,
+          "resposta": "Resposta pessoal.",
+          "justificativa": "Critério de correção: os exemplos devem ser compatíveis com a ordem de grandeza de cada unidade."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      },
+      "bnccConferida": true,
+      "illustration": "/illustrations/biblioteca/fundamental-iniciais/4-ano/3-bimestre/matematica/efi-4ano-b3-mat-comprimento-extra.png"
+    },
+    {
+      "id": "efi-4ano-b3-mat-massa-capacidade-extra",
+      "titulo": "Massa e capacidade no cotidiano",
+      "tema": "Medidas",
+      "sequencia": "Extra 7",
+      "tipoSequencia": "Ampliação",
+      "dificuldade": "intermediaria",
+      "objetivo": "Resolver problemas envolvendo quilograma, grama, litro e mililitro. Habilidade BNCC: EF04MA20.",
+      "bncc": [
+        {
+          "codigo": "EF04MA20",
+          "descricaoResumida": "Medir e estimar massas e capacidades utilizando unidades padronizadas usuais."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Resolva as situações usando a unidade indicada.",
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "completar",
+          "enunciado": "Complete: 2 kg = ____ g.",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "completar",
+          "enunciado": "Complete: 3 L = ____ mL.",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "problema",
+          "enunciado": "Uma receita usa 750 mL de leite. Quantos mililitros faltam para completar 1 L?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "problema",
+          "enunciado": "Um pacote pesa 1 kg e 250 g. Qual é sua massa total em gramas?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual medida é mais adequada para uma garrafa de água?",
+          "alternativas": [
+            "2 kg",
+            "2 L",
+            "2 cm",
+            "2 km"
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "problema",
+          "enunciado": "Quatro garrafas de 500 mL enchem quantos litros?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "2.000 g.",
+          "justificativa": "1 kg = 1.000 g."
+        },
+        {
+          "numero": 2,
+          "resposta": "3.000 mL.",
+          "justificativa": "1 L = 1.000 mL."
+        },
+        {
+          "numero": 3,
+          "resposta": "250 mL.",
+          "justificativa": "1.000 − 750 = 250."
+        },
+        {
+          "numero": 4,
+          "resposta": "1.250 g.",
+          "justificativa": "1.000 g + 250 g = 1.250 g."
+        },
+        {
+          "numero": 5,
+          "resposta": "Alternativa B: 2 L.",
+          "justificativa": "Litro é unidade de capacidade."
+        },
+        {
+          "numero": 6,
+          "resposta": "2 L.",
+          "justificativa": "4 × 500 mL = 2.000 mL = 2 L."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      },
+      "bnccConferida": true,
+      "illustration": "/illustrations/biblioteca/fundamental-iniciais/4-ano/3-bimestre/matematica/efi-4ano-b3-mat-massa-capacidade-extra.png"
+    },
+    {
+      "id": "efi-4ano-b3-mat-perimetro-extra",
+      "titulo": "Perímetro de figuras e terrenos",
+      "tema": "Geometria",
+      "sequencia": "Extra 8",
+      "tipoSequencia": "Ampliação",
+      "dificuldade": "intermediaria",
+      "objetivo": "Calcular perímetros de polígonos a partir das medidas dos lados. Habilidade BNCC: EF04MA20.",
+      "bncc": [
+        {
+          "codigo": "EF04MA20",
+          "descricaoResumida": "Medir e estimar comprimentos e resolver problemas envolvendo medidas."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Some as medidas de todos os lados para encontrar cada perímetro.",
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "problema",
+          "enunciado": "Um terreno retangular mede 18 m de comprimento e 12 m de largura. Qual é o perímetro?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "resposta-curta",
+          "enunciado": "Qual é o perímetro de um quadrado com lado de 9 cm?",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "completar",
+          "enunciado": "Um triângulo tem lados de 7 cm, 8 cm e 9 cm. Seu perímetro é ____ cm.",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "multipla-escolha",
+          "enunciado": "Um pentágono regular tem lados de 6 cm. Qual é seu perímetro?",
+          "alternativas": [
+            "11 cm",
+            "24 cm",
+            "30 cm",
+            "36 cm"
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "problema",
+          "enunciado": "Uma horta retangular tem perímetro de 40 m e largura de 8 m. Qual é o comprimento?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "elaboracao",
+          "enunciado": "Crie uma figura retangular com perímetro de 30 cm e informe suas medidas.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "60 m.",
+          "justificativa": "18 + 12 + 18 + 12 = 60."
+        },
+        {
+          "numero": 2,
+          "resposta": "36 cm.",
+          "justificativa": "4 × 9 = 36."
+        },
+        {
+          "numero": 3,
+          "resposta": "24 cm.",
+          "justificativa": "7 + 8 + 9 = 24."
+        },
+        {
+          "numero": 4,
+          "resposta": "Alternativa C: 30 cm.",
+          "justificativa": "5 × 6 = 30."
+        },
+        {
+          "numero": 5,
+          "resposta": "12 m.",
+          "justificativa": "2 × (comprimento + 8) = 40; comprimento + 8 = 20; comprimento = 12."
+        },
+        {
+          "numero": 6,
+          "resposta": "Exemplo: 10 cm por 5 cm.",
+          "justificativa": "Critério de correção: 2 × (comprimento + largura) deve resultar em 30 cm."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      },
+      "bnccConferida": true,
+      "illustration": "/illustrations/biblioteca/fundamental-iniciais/4-ano/3-bimestre/matematica/efi-4ano-b3-mat-perimetro-extra.png"
+    },
+    {
+      "id": "efi-4ano-b3-mat-tabelas-graficos-extra",
+      "titulo": "Pesquisa escolar em tabelas e gráficos",
+      "tema": "Probabilidade e estatística",
+      "sequencia": "Extra 9",
+      "tipoSequencia": "Ampliação",
+      "dificuldade": "intermediaria",
+      "objetivo": "Interpretar dados organizados em tabela e resolver problemas de comparação e totalização. Habilidade BNCC: EF04MA27.",
+      "bncc": [
+        {
+          "codigo": "EF04MA27",
+          "descricaoResumida": "Analisar dados apresentados em tabelas simples ou de dupla entrada e em gráficos."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Use a tabela descrita em cada questão para responder.",
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "analise-dados",
+          "enunciado": "Em uma pesquisa de frutas preferidas: maçã 12 votos, banana 9, laranja 15 e uva 6. Qual fruta recebeu mais votos?",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "resposta-curta",
+          "enunciado": "Quantos votos foram registrados ao todo na pesquisa?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "comparacao",
+          "enunciado": "Quantos votos a laranja recebeu a mais que a uva?",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual fruta ficou em segundo lugar?",
+          "alternativas": [
+            "maçã",
+            "banana",
+            "laranja",
+            "uva"
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "problema",
+          "enunciado": "Se mais 5 alunos votassem em banana, quantos votos ela teria e qual seria sua posição?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "elaboracao",
+          "enunciado": "Crie uma pergunta que possa ser respondida usando os dados da pesquisa e escreva a resposta.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Laranja.",
+          "justificativa": "Recebeu 15 votos, a maior quantidade."
+        },
+        {
+          "numero": 2,
+          "resposta": "42 votos.",
+          "justificativa": "12 + 9 + 15 + 6 = 42."
+        },
+        {
+          "numero": 3,
+          "resposta": "9 votos.",
+          "justificativa": "15 − 6 = 9."
+        },
+        {
+          "numero": 4,
+          "resposta": "Alternativa A: maçã.",
+          "justificativa": "Maçã recebeu 12 votos."
+        },
+        {
+          "numero": 5,
+          "resposta": "14 votos e ficaria em segundo lugar.",
+          "justificativa": "9 + 5 = 14, valor menor que 15 e maior que 12."
+        },
+        {
+          "numero": 6,
+          "resposta": "Resposta pessoal.",
+          "justificativa": "Critério de correção: a pergunta deve ser respondível pelos dados e a resposta deve estar correta."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      },
+      "bnccConferida": true,
+      "illustration": "/illustrations/biblioteca/fundamental-iniciais/4-ano/3-bimestre/matematica/efi-4ano-b3-mat-tabelas-graficos-extra.png"
+    },
+    {
+      "id": "efi-4ano-b3-mat-sequencias-padroes-extra",
+      "titulo": "Sequências e padrões numéricos",
+      "tema": "Álgebra",
+      "sequencia": "Extra 10",
+      "tipoSequencia": "Ampliação",
+      "dificuldade": "desafiadora",
+      "objetivo": "Identificar regularidades, completar sequências e descrever regras de formação. Habilidade BNCC: EF04MA11.",
+      "bncc": [
+        {
+          "codigo": "EF04MA11",
+          "descricaoResumida": "Identificar regularidades em sequências numéricas e determinar elementos ausentes."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Descubra a regra de cada sequência antes de completar.",
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "completar",
+          "enunciado": "Complete: 12, 17, 22, 27, ____, ____.",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "completar",
+          "enunciado": "Complete: 96, 88, 80, 72, ____, ____.",
+          "alternativas": [],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual é o próximo termo da sequência 3, 6, 12, 24, ...?",
+          "alternativas": [
+            "27",
+            "36",
+            "42",
+            "48"
+          ],
+          "espacoResposta": "pequeno",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "analise",
+          "enunciado": "Explique a regra da sequência 5, 10, 20, 40, 80.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "problema",
+          "enunciado": "Uma sequência começa em 7 e aumenta 9 a cada termo. Qual é o sexto termo?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "elaboracao",
+          "enunciado": "Crie uma sequência com seis termos usando uma regra de duas etapas alternadas e explique a regra.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "32 e 37.",
+          "justificativa": "A sequência aumenta 5 a cada termo."
+        },
+        {
+          "numero": 2,
+          "resposta": "64 e 56.",
+          "justificativa": "A sequência diminui 8 a cada termo."
+        },
+        {
+          "numero": 3,
+          "resposta": "Alternativa D: 48.",
+          "justificativa": "Cada termo é o dobro do anterior."
+        },
+        {
+          "numero": 4,
+          "resposta": "Cada termo é multiplicado por 2.",
+          "justificativa": "5×2=10, 10×2=20 e assim por diante."
+        },
+        {
+          "numero": 5,
+          "resposta": "52.",
+          "justificativa": "7, 16, 25, 34, 43, 52."
+        },
+        {
+          "numero": 6,
+          "resposta": "Resposta pessoal.",
+          "justificativa": "Critério de correção: devem existir seis termos e duas regras alternadas aplicadas de forma consistente."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-27"
+      },
+      "bnccConferida": true,
+      "illustration": "/illustrations/biblioteca/fundamental-iniciais/4-ano/3-bimestre/matematica/efi-4ano-b3-mat-sequencias-padroes-extra.png"
     }
   ],
   "bnccConferida": true,

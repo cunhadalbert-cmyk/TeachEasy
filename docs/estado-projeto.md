@@ -1,0 +1,38 @@
+# Estado do projeto TeachEasy
+
+Atualizado em 18 de agosto de 2026.
+
+## Fonte oficial da Biblioteca
+
+- O catálogo canônico é `library-catalog.js`.
+- Escopo obrigatório: 1º ao 9º ano, quatro bimestres e cinco disciplinas.
+- Disciplinas: Língua Portuguesa, Matemática, Ciências, História e Geografia.
+- Total estrutural: 180 combinações únicas (100 dos Anos Iniciais e 80 dos Anos Finais).
+- Cada combinação aponta para exatamente um JSON canônico.
+- O carregamento das coleções ocorre somente em `biblioteca.js`. `biblioteca-fixes.js` não possui mais um segundo carregador.
+
+## Consolidação concluída
+
+- Os arquivos `*-extra.json` de Ciências, Matemática e Língua Portuguesa do 4º ano/3º bimestre foram incorporados aos respectivos arquivos canônicos.
+- Os três lotes separados de Geografia V2 do 4º ano/3º bimestre foram incorporados a `geografia.json`.
+- Inglês e Arte foram retirados do escopo da Biblioteca do Ensino Fundamental.
+- A validação automatizada impede combinações ausentes, caminhos duplicados, IDs repetidos e coleções sem BNCC ou gabarito.
+- O padrão visual existente preserva folha A4, margens e moldura preta.
+
+## Conteúdo confirmado no repositório
+
+- Anos Iniciais: 2.980 atividades canônicas. A diferença para 3.000 decorre de duas coleções V2 já produzidas com 20 atividades cada: Geografia (4º ano/3º bimestre) e Ciências (4º ano/4º bimestre).
+- Anos Finais: 3.200 atividades canônicas.
+- Geografia do 4º ano/3º bimestre: 20 atividades V2, oito questões e oito respostas por atividade.
+- Ciências do 4º ano/4º bimestre: 20 atividades V2, oito questões e oito respostas por atividade.
+
+## Pendente editorial — não confundir com ausência de arquivo
+
+- Migrar as demais coleções dos Anos Iniciais do schema 1.0 (seis questões) para o V2 (oito questões).
+- Conferir pedagogicamente, uma a uma, as habilidades BNCC; presença de código no JSON não equivale a revisão humana concluída.
+- Produzir e aprovar as imagens relacionadas ao texto onde os metadados ainda não possuem arquivo visual definitivo.
+- Conferir os documentos Word exportados, inclusive História do 4º ano/4º bimestre, porque `exports/` não é a fonte da Biblioteca e não substitui o JSON canônico.
+
+## Regra de manutenção
+
+Nenhuma nova coleção deve ser criada como arquivo `extra`, lote paralelo ou exportação Word isolada. A alteração deve entrar no JSON canônico indicado pelo catálogo e passar pela suíte de testes antes de publicação.

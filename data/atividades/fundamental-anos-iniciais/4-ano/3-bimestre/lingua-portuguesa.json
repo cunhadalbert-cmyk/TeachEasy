@@ -2547,6 +2547,1326 @@
         "conteudo": "Rascunho de Pedro, copiado do caderno exatamente como ele escreveu:\n\na horta da escola fica atrás da quadra nos plantamos alface cebolinha e tomate a turma rega as plantas toda segunda-feira quando chove não precisa regar o professor disse que em outubro vai ter colheita"
       },
       "bnccConferida": true
+    },
+    {
+      "id": "efi-4ano-b3-lp-cartaz-feira-extra",
+      "titulo": "Lendo um cartaz de feira de livros",
+      "tema": "Cartaz",
+      "sequencia": "Extra",
+      "tipoSequencia": "Ampliação",
+      "dificuldade": "facil",
+      "objetivo": "Identificar informações explícitas, finalidade e recursos visuais de um cartaz. Habilidade BNCC: EF15LP04.",
+      "bncc": [
+        {
+          "codigo": "EF15LP04",
+          "descricaoResumida": "Identificar efeitos de sentido produzidos por recursos gráfico-visuais."
+        },
+        {
+          "codigo": "EF04LP10",
+          "descricaoResumida": "Habilidade EF04LP10: desenvolver conhecimentos e práticas relacionados a Cartaz, com adequação ao 4º ano."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": true,
+      "figuras": [
+        {
+          "id": "lp-extra-fig-feira-01",
+          "arquivo": "assets/atividades/lingua-portuguesa/lp-extra-fig-feira-01.png",
+          "descricao": "Cartaz colorido de uma feira de troca de livros com data, horário, local e chamada principal.",
+          "funcaoPedagogica": "Apoiar a leitura, a interpretação e a resolução das questões.",
+          "posicaoSugerida": "antes-das-questoes",
+          "textoAlternativo": "Cartaz colorido de uma feira de troca de livros com data, horário, local e chamada principal.",
+          "compativelPretoBranco": true
+        }
+      ],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Observe o cartaz e responda.",
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "resposta-curta",
+          "enunciado": "Qual é o nome do evento?",
+          "alternativas": [],
+          "figuraId": "lp-extra-fig-feira-01",
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 2,
+          "tipo": "resposta-curta",
+          "enunciado": "Em que dia e horário ele acontecerá?",
+          "alternativas": [],
+          "figuraId": "lp-extra-fig-feira-01",
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 3,
+          "tipo": "multipla-escolha",
+          "enunciado": "Onde será a feira?",
+          "alternativas": [
+            "Na biblioteca",
+            "No pátio coberto",
+            "Na quadra",
+            "Na sala 4"
+          ],
+          "figuraId": "lp-extra-fig-feira-01",
+          "espacoResposta": "pequeno"
+        },
+        {
+          "numero": 4,
+          "tipo": "analise-texto",
+          "enunciado": "Qual é a finalidade do cartaz?",
+          "alternativas": [],
+          "figuraId": "lp-extra-fig-feira-01",
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 5,
+          "tipo": "inferencia",
+          "enunciado": "Por que o desenho de livros ajuda a compreender a mensagem?",
+          "alternativas": [],
+          "figuraId": "lp-extra-fig-feira-01",
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Crie uma frase curta para convidar outra turma para a feira.",
+          "alternativas": [],
+          "figuraId": "lp-extra-fig-feira-01",
+          "espacoResposta": "grande"
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Feira de Troca de Livros.",
+          "justificativa": "É o título principal do cartaz."
+        },
+        {
+          "numero": 2,
+          "resposta": "Dia 22 de agosto, das 9h às 11h.",
+          "justificativa": "Dados explícitos."
+        },
+        {
+          "numero": 3,
+          "resposta": "Alternativa B.",
+          "justificativa": "O cartaz informa pátio coberto."
+        },
+        {
+          "numero": 4,
+          "resposta": "Convidar os alunos para participar da feira de troca de livros.",
+          "justificativa": "Finalidade do gênero."
+        },
+        {
+          "numero": 5,
+          "resposta": "Porque os livros representam o assunto do evento e reforçam visualmente a mensagem.",
+          "justificativa": "Relação entre linguagem verbal e visual."
+        },
+        {
+          "numero": 6,
+          "resposta": "Resposta autoral, curta e convidativa.",
+          "justificativa": "Critério de correção: Avaliar clareza e relação com o evento."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-26"
+      },
+      "bnccConferida": true
+    },
+    {
+      "id": "efi-4ano-b3-lp-receita-extra",
+      "titulo": "Receita em sequência",
+      "tema": "Texto instrucional",
+      "sequencia": "Extra",
+      "tipoSequencia": "Ampliação",
+      "dificuldade": "facil",
+      "objetivo": "Reconhecer ingredientes, ordem de ações e verbos de instrução em uma receita. Habilidade BNCC: EF04LP13.",
+      "bncc": [
+        {
+          "codigo": "EF04LP13",
+          "descricaoResumida": "Identificar a organização e os verbos de textos instrucionais."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": true,
+      "figuras": [
+        {
+          "id": "lp-extra-fig-receita-01",
+          "arquivo": "assets/atividades/lingua-portuguesa/lp-extra-fig-receita-01.png",
+          "descricao": "Sequência ilustrada em quatro quadros: bananas e leite, ingredientes no liquidificador, liquidificador batendo e copo servido.",
+          "funcaoPedagogica": "Apoiar a leitura, a interpretação e a resolução das questões.",
+          "posicaoSugerida": "antes-das-questoes",
+          "textoAlternativo": "Sequência ilustrada em quatro quadros: bananas e leite, ingredientes no liquidificador, liquidificador batendo e copo servido.",
+          "compativelPretoBranco": true
+        }
+      ],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia a receita, observe a sequência e responda.",
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "resposta-curta",
+          "enunciado": "Quais são os três ingredientes?",
+          "alternativas": [],
+          "figuraId": "lp-extra-fig-receita-01",
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 2,
+          "tipo": "ordenacao",
+          "enunciado": "Escreva as quatro ações na ordem correta.",
+          "alternativas": [],
+          "figuraId": "lp-extra-fig-receita-01",
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 3,
+          "tipo": "multipla-escolha",
+          "enunciado": "A palavra 'descasque' indica:",
+          "alternativas": [
+            "uma pergunta",
+            "uma instrução",
+            "uma opinião",
+            "um lugar"
+          ],
+          "figuraId": "lp-extra-fig-receita-01",
+          "espacoResposta": "pequeno"
+        },
+        {
+          "numero": 4,
+          "tipo": "resposta-curta",
+          "enunciado": "Quanto tempo a mistura deve ser batida?",
+          "alternativas": [],
+          "figuraId": "lp-extra-fig-receita-01",
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 5,
+          "tipo": "analise-texto",
+          "enunciado": "Como a figura ajuda quem vai preparar a receita?",
+          "alternativas": [],
+          "figuraId": "lp-extra-fig-receita-01",
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Escreva uma nova instrução para decorar o copo antes de servir.",
+          "alternativas": [],
+          "figuraId": "lp-extra-fig-receita-01",
+          "espacoResposta": "grande"
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Duas bananas, um copo de leite e uma colher de aveia.",
+          "justificativa": "Lista de ingredientes."
+        },
+        {
+          "numero": 2,
+          "resposta": "Descascar, colocar, bater e servir.",
+          "justificativa": "Ordem do modo de preparo."
+        },
+        {
+          "numero": 3,
+          "resposta": "Alternativa B.",
+          "justificativa": "É verbo no imperativo."
+        },
+        {
+          "numero": 4,
+          "resposta": "Por um minuto.",
+          "justificativa": "Informação explícita."
+        },
+        {
+          "numero": 5,
+          "resposta": "Mostra visualmente a ordem das etapas e facilita a compreensão.",
+          "justificativa": "Função da sequência ilustrada."
+        },
+        {
+          "numero": 6,
+          "resposta": "Resposta autoral iniciada por verbo de instrução.",
+          "justificativa": "Critério de correção: Avaliar coerência."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-26"
+      },
+      "textoApoio": {
+        "titulo": "Vitamina de banana",
+        "conteudo": "Vitamina de banana\nIngredientes: 2 bananas, 1 copo de leite e 1 colher de aveia.\nModo de preparo: descasque as bananas, coloque tudo no liquidificador, bata por um minuto e sirva."
+      },
+      "bnccConferida": true
+    },
+    {
+      "id": "efi-4ano-b3-lp-legenda-mapa-extra",
+      "titulo": "Legenda e orientação no mapa",
+      "tema": "Leitura de mapa",
+      "sequencia": "Extra",
+      "tipoSequencia": "Ampliação",
+      "dificuldade": "intermediaria",
+      "objetivo": "Relacionar símbolos, legenda e instruções escritas em um mapa simples. Habilidade BNCC: EF15LP04.",
+      "bncc": [
+        {
+          "codigo": "EF15LP04",
+          "descricaoResumida": "Interpretar recursos gráfico-visuais em textos multissemióticos."
+        },
+        {
+          "codigo": "EF04LP20",
+          "descricaoResumida": "Habilidade EF04LP20: desenvolver conhecimentos e práticas relacionados a Leitura de mapa, com adequação ao 4º ano."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": true,
+      "figuras": [
+        {
+          "id": "lp-extra-fig-mapa-01",
+          "arquivo": "assets/atividades/lingua-portuguesa/lp-extra-fig-mapa-01.png",
+          "descricao": "Mapa simples da escola com biblioteca, pátio, horta e sala, ligados por setas e acompanhados de legenda.",
+          "funcaoPedagogica": "Apoiar a leitura, a interpretação e a resolução das questões.",
+          "posicaoSugerida": "antes-das-questoes",
+          "textoAlternativo": "Mapa simples da escola com biblioteca, pátio, horta e sala, ligados por setas e acompanhados de legenda.",
+          "compativelPretoBranco": true
+        }
+      ],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Observe o mapa e a legenda e responda.",
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "resposta-curta",
+          "enunciado": "Que lugar é representado pelo símbolo do livro?",
+          "alternativas": [],
+          "figuraId": "lp-extra-fig-mapa-01",
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 2,
+          "tipo": "resposta-curta",
+          "enunciado": "Qual lugar fica ao lado da horta?",
+          "alternativas": [],
+          "figuraId": "lp-extra-fig-mapa-01",
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 3,
+          "tipo": "multipla-escolha",
+          "enunciado": "Para ir da sala à biblioteca, a seta indica seguir:",
+          "alternativas": [
+            "para a direita",
+            "para a esquerda",
+            "para baixo",
+            "em círculo"
+          ],
+          "figuraId": "lp-extra-fig-mapa-01",
+          "espacoResposta": "pequeno"
+        },
+        {
+          "numero": 4,
+          "tipo": "analise-texto",
+          "enunciado": "Explique para que serve a legenda.",
+          "alternativas": [],
+          "figuraId": "lp-extra-fig-mapa-01",
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 5,
+          "tipo": "inferencia",
+          "enunciado": "Qual caminho parece mais curto: sala–biblioteca ou sala–horta? Justifique.",
+          "alternativas": [],
+          "figuraId": "lp-extra-fig-mapa-01",
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Escreva duas instruções para alguém ir do pátio até a horta.",
+          "alternativas": [],
+          "figuraId": "lp-extra-fig-mapa-01",
+          "espacoResposta": "grande"
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "A biblioteca.",
+          "justificativa": "O livro é o símbolo indicado na legenda."
+        },
+        {
+          "numero": 2,
+          "resposta": "O pátio.",
+          "justificativa": "Posição mostrada no mapa."
+        },
+        {
+          "numero": 3,
+          "resposta": "Alternativa A.",
+          "justificativa": "A seta segue para a direita."
+        },
+        {
+          "numero": 4,
+          "resposta": "Serve para explicar o significado dos símbolos.",
+          "justificativa": "Função da legenda."
+        },
+        {
+          "numero": 5,
+          "resposta": "Sala–biblioteca, conforme a distância representada.",
+          "justificativa": "Aceitar justificativa baseada no mapa."
+        },
+        {
+          "numero": 6,
+          "resposta": "Resposta autoral com sequência clara e orientação espacial.",
+          "justificativa": "Critério de correção: Avaliar clareza."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-26"
+      },
+      "bnccConferida": true
+    },
+    {
+      "id": "efi-4ano-b3-lp-infografico-reciclagem-extra",
+      "titulo": "Lendo um infográfico sobre reciclagem",
+      "tema": "Infográfico",
+      "sequencia": "Extra",
+      "tipoSequencia": "Ampliação",
+      "dificuldade": "intermediaria",
+      "objetivo": "Integrar títulos, ícones, setas e informações curtas em um infográfico. Habilidade BNCC: EF04LP19.",
+      "bncc": [
+        {
+          "codigo": "EF04LP19",
+          "descricaoResumida": "Ler e compreender textos de divulgação científica para crianças."
+        },
+        {
+          "codigo": "EF15LP04",
+          "descricaoResumida": "Habilidade EF15LP04: desenvolver conhecimentos e práticas relacionados a Infográfico, com adequação ao 4º ano."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": true,
+      "figuras": [
+        {
+          "id": "lp-extra-fig-reciclagem-01",
+          "arquivo": "assets/atividades/lingua-portuguesa/lp-extra-fig-reciclagem-01.png",
+          "descricao": "Infográfico circular com quatro etapas: separar, coletar, transformar e reutilizar materiais.",
+          "funcaoPedagogica": "Apoiar a leitura, a interpretação e a resolução das questões.",
+          "posicaoSugerida": "antes-das-questoes",
+          "textoAlternativo": "Infográfico circular com quatro etapas: separar, coletar, transformar e reutilizar materiais.",
+          "compativelPretoBranco": true
+        }
+      ],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Observe o infográfico e responda.",
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "resposta-curta",
+          "enunciado": "Qual é a primeira etapa do ciclo?",
+          "alternativas": [],
+          "figuraId": "lp-extra-fig-reciclagem-01",
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 2,
+          "tipo": "ordenacao",
+          "enunciado": "Escreva as quatro etapas na ordem indicada pelas setas.",
+          "alternativas": [],
+          "figuraId": "lp-extra-fig-reciclagem-01",
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 3,
+          "tipo": "multipla-escolha",
+          "enunciado": "As setas mostram principalmente:",
+          "alternativas": [
+            "os preços",
+            "a ordem do processo",
+            "o tamanho dos objetos",
+            "a opinião do autor"
+          ],
+          "figuraId": "lp-extra-fig-reciclagem-01",
+          "espacoResposta": "pequeno"
+        },
+        {
+          "numero": 4,
+          "tipo": "analise-texto",
+          "enunciado": "Por que o processo foi desenhado em círculo?",
+          "alternativas": [],
+          "figuraId": "lp-extra-fig-reciclagem-01",
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 5,
+          "tipo": "vocabulario",
+          "enunciado": "O que significa 'reutilizar' nesse contexto?",
+          "alternativas": [],
+          "figuraId": "lp-extra-fig-reciclagem-01",
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Escreva uma frase de campanha incentivando a reciclagem.",
+          "alternativas": [],
+          "figuraId": "lp-extra-fig-reciclagem-01",
+          "espacoResposta": "grande"
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Separar.",
+          "justificativa": "É a etapa inicial."
+        },
+        {
+          "numero": 2,
+          "resposta": "Separar, coletar, transformar e reutilizar.",
+          "justificativa": "Sequência das setas."
+        },
+        {
+          "numero": 3,
+          "resposta": "Alternativa B.",
+          "justificativa": "As setas indicam continuidade e ordem."
+        },
+        {
+          "numero": 4,
+          "resposta": "Porque o material pode voltar ao uso e iniciar um novo ciclo.",
+          "justificativa": "Sentido circular."
+        },
+        {
+          "numero": 5,
+          "resposta": "Usar novamente ou dar novo uso a um material.",
+          "justificativa": "Vocabulário contextual."
+        },
+        {
+          "numero": 6,
+          "resposta": "Resposta autoral relacionada à reciclagem.",
+          "justificativa": "Critério de correção: Avaliar clareza e intenção persuasiva."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-26"
+      },
+      "bnccConferida": true
+    },
+    {
+      "id": "efi-4ano-b3-lp-calendario-aviso-extra",
+      "titulo": "Aviso e calendário da turma",
+      "tema": "Aviso",
+      "sequencia": "Extra",
+      "tipoSequencia": "Ampliação",
+      "dificuldade": "facil",
+      "objetivo": "Localizar data, horário, destinatário e finalidade em um aviso escolar. Habilidade BNCC: EF04LP10.",
+      "bncc": [
+        {
+          "codigo": "EF04LP10",
+          "descricaoResumida": "Habilidade EF04LP10: desenvolver conhecimentos e práticas relacionados a Aviso, com adequação ao 4º ano."
+        },
+        {
+          "codigo": "EF15LP03",
+          "descricaoResumida": "Habilidade EF15LP03: desenvolver conhecimentos e práticas relacionados a Aviso, com adequação ao 4º ano."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": true,
+      "figuras": [
+        {
+          "id": "lp-extra-fig-calendario-01",
+          "arquivo": "assets/atividades/lingua-portuguesa/lp-extra-fig-calendario-01.png",
+          "descricao": "Calendário de setembro com o dia 15 destacado e bilhete sobre reunião da turma às 14 horas.",
+          "funcaoPedagogica": "Apoiar a leitura, a interpretação e a resolução das questões.",
+          "posicaoSugerida": "antes-das-questoes",
+          "textoAlternativo": "Calendário de setembro com o dia 15 destacado e bilhete sobre reunião da turma às 14 horas.",
+          "compativelPretoBranco": true
+        }
+      ],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o aviso e observe o calendário.",
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "resposta-curta",
+          "enunciado": "Qual dia está destacado?",
+          "alternativas": [],
+          "figuraId": "lp-extra-fig-calendario-01",
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 2,
+          "tipo": "resposta-curta",
+          "enunciado": "A que horas será a reunião?",
+          "alternativas": [],
+          "figuraId": "lp-extra-fig-calendario-01",
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 3,
+          "tipo": "multipla-escolha",
+          "enunciado": "O aviso é dirigido principalmente:",
+          "alternativas": [
+            "aos alunos do 4º ano",
+            "aos motoristas",
+            "aos clientes de uma loja",
+            "aos turistas"
+          ],
+          "figuraId": "lp-extra-fig-calendario-01",
+          "espacoResposta": "pequeno"
+        },
+        {
+          "numero": 4,
+          "tipo": "analise-texto",
+          "enunciado": "Qual é a finalidade do aviso?",
+          "alternativas": [],
+          "figuraId": "lp-extra-fig-calendario-01",
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 5,
+          "tipo": "inferencia",
+          "enunciado": "Por que o calendário acompanha o bilhete?",
+          "alternativas": [],
+          "figuraId": "lp-extra-fig-calendario-01",
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Escreva um aviso de duas frases sobre uma apresentação da turma.",
+          "alternativas": [],
+          "figuraId": "lp-extra-fig-calendario-01",
+          "espacoResposta": "grande"
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Dia 15 de setembro.",
+          "justificativa": "Data destacada."
+        },
+        {
+          "numero": 2,
+          "resposta": "Às 14 horas.",
+          "justificativa": "Horário explícito."
+        },
+        {
+          "numero": 3,
+          "resposta": "Alternativa A.",
+          "justificativa": "O texto identifica a turma."
+        },
+        {
+          "numero": 4,
+          "resposta": "Informar e lembrar a data e o horário da reunião.",
+          "justificativa": "Finalidade do aviso."
+        },
+        {
+          "numero": 5,
+          "resposta": "Para facilitar a localização visual da data.",
+          "justificativa": "Integração texto-imagem."
+        },
+        {
+          "numero": 6,
+          "resposta": "Resposta autoral com evento, data ou horário e destinatário.",
+          "justificativa": "Critério de correção: Avaliar elementos do aviso."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-26"
+      },
+      "bnccConferida": true
+    },
+    {
+      "id": "efi-4ano-b3-lp-sequencia-emocoes-extra",
+      "titulo": "Inferindo sentimentos pela imagem",
+      "tema": "Leitura de imagem",
+      "sequencia": "Extra",
+      "tipoSequencia": "Ampliação",
+      "dificuldade": "intermediaria",
+      "objetivo": "Inferir sentimentos e acontecimentos por expressões faciais, gestos e sequência visual. Habilidade BNCC: EF15LP14.",
+      "bncc": [
+        {
+          "codigo": "EF15LP14",
+          "descricaoResumida": "Construir sentido em histórias em quadrinhos relacionando imagens e palavras."
+        },
+        {
+          "codigo": "EF15LP04",
+          "descricaoResumida": "Habilidade EF15LP04: desenvolver conhecimentos e práticas relacionados a Leitura de imagem, com adequação ao 4º ano."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": true,
+      "figuras": [
+        {
+          "id": "lp-extra-fig-emocoes-01",
+          "arquivo": "assets/atividades/lingua-portuguesa/lp-extra-fig-emocoes-01.png",
+          "descricao": "Sequência de três cenas: criança procura um caderno preocupada, encontra-o na mochila e sorri aliviada.",
+          "funcaoPedagogica": "Apoiar a leitura, a interpretação e a resolução das questões.",
+          "posicaoSugerida": "antes-das-questoes",
+          "textoAlternativo": "Sequência de três cenas: criança procura um caderno preocupada, encontra-o na mochila e sorri aliviada.",
+          "compativelPretoBranco": true
+        }
+      ],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Observe atentamente a sequência de imagens.",
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "resposta-curta",
+          "enunciado": "O que a criança procura na primeira cena?",
+          "alternativas": [],
+          "figuraId": "lp-extra-fig-emocoes-01",
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 2,
+          "tipo": "inferencia",
+          "enunciado": "Como ela parece se sentir no início? Que detalhe mostra isso?",
+          "alternativas": [],
+          "figuraId": "lp-extra-fig-emocoes-01",
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 3,
+          "tipo": "multipla-escolha",
+          "enunciado": "Na última cena, a expressão da criança indica:",
+          "alternativas": [
+            "raiva",
+            "alívio",
+            "sono",
+            "medo"
+          ],
+          "figuraId": "lp-extra-fig-emocoes-01",
+          "espacoResposta": "pequeno"
+        },
+        {
+          "numero": 4,
+          "tipo": "ordenacao",
+          "enunciado": "Conte em três frases o que acontece, respeitando a ordem das cenas.",
+          "alternativas": [],
+          "figuraId": "lp-extra-fig-emocoes-01",
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 5,
+          "tipo": "analise-texto",
+          "enunciado": "Por que é possível entender a história mesmo com pouco texto?",
+          "alternativas": [],
+          "figuraId": "lp-extra-fig-emocoes-01",
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Escreva um balão de pensamento para a primeira cena e um de fala para a última.",
+          "alternativas": [],
+          "figuraId": "lp-extra-fig-emocoes-01",
+          "espacoResposta": "grande"
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Um caderno.",
+          "justificativa": "Objeto representado."
+        },
+        {
+          "numero": 2,
+          "resposta": "Preocupada ou ansiosa; a testa e a postura indicam isso.",
+          "justificativa": "Inferência visual."
+        },
+        {
+          "numero": 3,
+          "resposta": "Alternativa B.",
+          "justificativa": "O sorriso aparece após encontrar o caderno."
+        },
+        {
+          "numero": 4,
+          "resposta": "Procura o caderno, olha na mochila e o encontra.",
+          "justificativa": "Sequência correta."
+        },
+        {
+          "numero": 5,
+          "resposta": "Porque expressões, gestos e objetos mostram as ações e sentimentos.",
+          "justificativa": "Leitura multimodal."
+        },
+        {
+          "numero": 6,
+          "resposta": "Produção que mantenha coerência entre a sequência das cenas, as emoções das personagens e os tipos de balão utilizados.",
+          "justificativa": "Critério específico alinhado à EF15LP14: coerência narrativa e uso expressivo dos balões."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-26"
+      },
+      "bnccConferida": true
+    },
+    {
+      "id": "efi-4ano-b3-lp-grafico-leitura-extra",
+      "titulo": "Dados de leitura em gráfico",
+      "tema": "Gráfico e síntese",
+      "sequencia": "Extra",
+      "tipoSequencia": "Ampliação",
+      "dificuldade": "intermediaria",
+      "objetivo": "Interpretar dados de um gráfico e produzir síntese informativa. Habilidade BNCC: EF04LP20.",
+      "bncc": [
+        {
+          "codigo": "EF04LP20",
+          "descricaoResumida": "Reconhecer função de gráficos e tabelas na apresentação de dados."
+        },
+        {
+          "codigo": "EF04LP21",
+          "descricaoResumida": "Habilidade EF04LP21: desenvolver conhecimentos e práticas relacionados a Gráfico e síntese, com adequação ao 4º ano."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": true,
+      "figuras": [
+        {
+          "id": "lp-extra-fig-grafico-01",
+          "arquivo": "assets/atividades/lingua-portuguesa/lp-extra-fig-grafico-01.png",
+          "descricao": "Gráfico de barras com livros lidos por quatro turmas: A 8, B 12, C 10 e D 6.",
+          "funcaoPedagogica": "Apoiar a leitura, a interpretação e a resolução das questões.",
+          "posicaoSugerida": "antes-das-questoes",
+          "textoAlternativo": "Gráfico de barras com livros lidos por quatro turmas: A 8, B 12, C 10 e D 6.",
+          "compativelPretoBranco": true
+        }
+      ],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Observe o gráfico e responda.",
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "resposta-curta",
+          "enunciado": "Qual turma leu mais livros?",
+          "alternativas": [],
+          "figuraId": "lp-extra-fig-grafico-01",
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 2,
+          "tipo": "resposta-curta",
+          "enunciado": "Quantos livros a turma C leu?",
+          "alternativas": [],
+          "figuraId": "lp-extra-fig-grafico-01",
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 3,
+          "tipo": "multipla-escolha",
+          "enunciado": "Qual turma leu menos?",
+          "alternativas": [
+            "Turma A",
+            "Turma B",
+            "Turma C",
+            "Turma D"
+          ],
+          "figuraId": "lp-extra-fig-grafico-01",
+          "espacoResposta": "pequeno"
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Quantos livros a turma B leu a mais que a turma D?",
+          "alternativas": [],
+          "figuraId": "lp-extra-fig-grafico-01",
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 5,
+          "tipo": "analise-texto",
+          "enunciado": "Escreva uma frase que resuma o principal resultado.",
+          "alternativas": [],
+          "figuraId": "lp-extra-fig-grafico-01",
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Escreva uma sugestão para incentivar a turma D a ler mais.",
+          "alternativas": [],
+          "figuraId": "lp-extra-fig-grafico-01",
+          "espacoResposta": "grande"
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Turma B.",
+          "justificativa": "Maior barra, 12."
+        },
+        {
+          "numero": 2,
+          "resposta": "10 livros.",
+          "justificativa": "Valor da barra C."
+        },
+        {
+          "numero": 3,
+          "resposta": "Alternativa D.",
+          "justificativa": "A turma D tem 6."
+        },
+        {
+          "numero": 4,
+          "resposta": "6 livros.",
+          "justificativa": "12 menos 6."
+        },
+        {
+          "numero": 5,
+          "resposta": "Resposta possível: a turma B foi a que mais leu e a D a que menos leu.",
+          "justificativa": "Síntese fiel."
+        },
+        {
+          "numero": 6,
+          "resposta": "Resposta autoral relacionada à leitura.",
+          "justificativa": "Critério de correção: Avaliar pertinência."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-26"
+      },
+      "bnccConferida": true
+    },
+    {
+      "id": "efi-4ano-b3-lp-pontuacao-placas-extra",
+      "titulo": "Pontuação e intenção da frase",
+      "tema": "Pontuação",
+      "sequencia": "Extra",
+      "tipoSequencia": "Ampliação",
+      "dificuldade": "facil",
+      "objetivo": "Relacionar ponto final, interrogação e exclamação às intenções comunicativas. Habilidade BNCC: EF04LP05.",
+      "bncc": [
+        {
+          "codigo": "EF04LP05",
+          "descricaoResumida": "Usar ponto final, de interrogação e de exclamação na escrita."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": true,
+      "figuras": [
+        {
+          "id": "lp-extra-fig-pontuacao-01",
+          "arquivo": "assets/atividades/lingua-portuguesa/lp-extra-fig-pontuacao-01.png",
+          "descricao": "Três placas com frases: A biblioteca abriu. Você trouxe o livro? Que notícia ótima!",
+          "funcaoPedagogica": "Apoiar a leitura, a interpretação e a resolução das questões.",
+          "posicaoSugerida": "antes-das-questoes",
+          "textoAlternativo": "Três placas com frases: A biblioteca abriu. Você trouxe o livro? Que notícia ótima!",
+          "compativelPretoBranco": true
+        }
+      ],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia as frases das placas e observe os sinais.",
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "resposta-curta",
+          "enunciado": "Qual frase termina com ponto final?",
+          "alternativas": [],
+          "figuraId": "lp-extra-fig-pontuacao-01",
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 2,
+          "tipo": "resposta-curta",
+          "enunciado": "Qual frase faz uma pergunta?",
+          "alternativas": [],
+          "figuraId": "lp-extra-fig-pontuacao-01",
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 3,
+          "tipo": "multipla-escolha",
+          "enunciado": "O ponto de exclamação indica principalmente:",
+          "alternativas": [
+            "dúvida",
+            "emoção ou entusiasmo",
+            "fim de lista",
+            "data"
+          ],
+          "figuraId": "lp-extra-fig-pontuacao-01",
+          "espacoResposta": "pequeno"
+        },
+        {
+          "numero": 4,
+          "tipo": "classificacao",
+          "enunciado": "Classifique cada frase: declaração, pergunta ou exclamação.",
+          "alternativas": [],
+          "figuraId": "lp-extra-fig-pontuacao-01",
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 5,
+          "tipo": "revisao",
+          "enunciado": "Reescreva 'que livro interessante' com maiúscula e pontuação adequada.",
+          "alternativas": [],
+          "figuraId": "lp-extra-fig-pontuacao-01",
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Crie três frases sobre a escola, usando um sinal diferente em cada uma.",
+          "alternativas": [],
+          "figuraId": "lp-extra-fig-pontuacao-01",
+          "espacoResposta": "grande"
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "A biblioteca abriu.",
+          "justificativa": "Declaração."
+        },
+        {
+          "numero": 2,
+          "resposta": "Você trouxe o livro?",
+          "justificativa": "Ponto de interrogação."
+        },
+        {
+          "numero": 3,
+          "resposta": "Alternativa B.",
+          "justificativa": "Exclamação expressa emoção."
+        },
+        {
+          "numero": 4,
+          "resposta": "Declaração; pergunta; exclamação.",
+          "justificativa": "Classificação."
+        },
+        {
+          "numero": 5,
+          "resposta": "Que livro interessante!",
+          "justificativa": "Maiúscula e exclamação."
+        },
+        {
+          "numero": 6,
+          "resposta": "Resposta autoral com ponto final, interrogação e exclamação.",
+          "justificativa": "Critério de correção: Avaliar uso correto."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-26"
+      },
+      "bnccConferida": true
+    },
+    {
+      "id": "efi-4ano-b3-lp-foto-legenda-noticia-extra",
+      "titulo": "Foto, legenda e notícia",
+      "tema": "Notícia",
+      "sequencia": "Extra",
+      "tipoSequencia": "Ampliação",
+      "dificuldade": "intermediaria",
+      "objetivo": "Relacionar fotografia, legenda e informações essenciais de uma notícia. Habilidade BNCC: EF04LP14.",
+      "bncc": [
+        {
+          "codigo": "EF04LP14",
+          "descricaoResumida": "Identificar fatos, participantes, local e momento em notícias."
+        },
+        {
+          "codigo": "EF15LP04",
+          "descricaoResumida": "Habilidade EF15LP04: desenvolver conhecimentos e práticas relacionados a Notícia, com adequação ao 4º ano."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": true,
+      "figuras": [
+        {
+          "id": "lp-extra-fig-noticia-01",
+          "arquivo": "assets/atividades/lingua-portuguesa/lp-extra-fig-noticia-01.png",
+          "descricao": "Ilustração jornalística de estudantes plantando uma muda em uma praça, com legenda curta abaixo.",
+          "funcaoPedagogica": "Apoiar a leitura, a interpretação e a resolução das questões.",
+          "posicaoSugerida": "antes-das-questoes",
+          "textoAlternativo": "Ilustração jornalística de estudantes plantando uma muda em uma praça, com legenda curta abaixo.",
+          "compativelPretoBranco": true
+        }
+      ],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia a notícia, observe a imagem e responda.",
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "resposta-curta",
+          "enunciado": "Qual foi o fato principal?",
+          "alternativas": [],
+          "figuraId": "lp-extra-fig-noticia-01",
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 2,
+          "tipo": "resposta-curta",
+          "enunciado": "Quem participou da ação?",
+          "alternativas": [],
+          "figuraId": "lp-extra-fig-noticia-01",
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 3,
+          "tipo": "multipla-escolha",
+          "enunciado": "Onde o fato ocorreu?",
+          "alternativas": [
+            "Na praça do bairro",
+            "Na biblioteca",
+            "Em uma fazenda",
+            "No mercado"
+          ],
+          "figuraId": "lp-extra-fig-noticia-01",
+          "espacoResposta": "pequeno"
+        },
+        {
+          "numero": 4,
+          "tipo": "resposta-curta",
+          "enunciado": "Quantas mudas foram plantadas?",
+          "alternativas": [],
+          "figuraId": "lp-extra-fig-noticia-01",
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 5,
+          "tipo": "analise-texto",
+          "enunciado": "Que informação a fotografia confirma ou reforça?",
+          "alternativas": [],
+          "figuraId": "lp-extra-fig-noticia-01",
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Escreva uma legenda de até dez palavras para a fotografia.",
+          "alternativas": [],
+          "figuraId": "lp-extra-fig-noticia-01",
+          "espacoResposta": "grande"
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "O plantio de vinte mudas na praça.",
+          "justificativa": "Fato central."
+        },
+        {
+          "numero": 2,
+          "resposta": "Estudantes do 4º ano, familiares e moradores.",
+          "justificativa": "Participantes."
+        },
+        {
+          "numero": 3,
+          "resposta": "Alternativa A.",
+          "justificativa": "Local explícito."
+        },
+        {
+          "numero": 4,
+          "resposta": "Vinte mudas.",
+          "justificativa": "Dado explícito."
+        },
+        {
+          "numero": 5,
+          "resposta": "Que estudantes participaram do plantio de árvores em uma praça.",
+          "justificativa": "Relação imagem-texto."
+        },
+        {
+          "numero": 6,
+          "resposta": "Resposta autoral curta e informativa.",
+          "justificativa": "Critério de correção: Avaliar relação com a foto."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-26"
+      },
+      "textoApoio": {
+        "titulo": "Alunos plantam árvores no bairro",
+        "conteudo": "Alunos plantam árvores no bairro\nNa manhã de sábado, estudantes do 4º ano plantaram vinte mudas na praça do bairro, com apoio de familiares e moradores. A ação faz parte do projeto Escola Verde."
+      },
+      "bnccConferida": true
+    },
+    {
+      "id": "efi-4ano-b3-lp-pronomes-sequencia-extra",
+      "titulo": "Pronomes que retomam personagens",
+      "tema": "Coesão textual",
+      "sequencia": "Extra",
+      "tipoSequencia": "Ampliação",
+      "dificuldade": "desafiadora",
+      "objetivo": "Identificar referentes de pronomes e usar substituições para evitar repetições. Habilidade BNCC: EF35LP06.",
+      "bncc": [
+        {
+          "codigo": "EF35LP06",
+          "descricaoResumida": "Identificar substituições lexicais e pronominais que contribuem para a continuidade."
+        },
+        {
+          "codigo": "EF35LP14",
+          "descricaoResumida": "Habilidade EF35LP14: desenvolver conhecimentos e práticas relacionados a Coesão textual, com adequação ao 4º ano."
+        }
+      ],
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": true,
+      "figuras": [
+        {
+          "id": "lp-extra-fig-pronomes-01",
+          "arquivo": "assets/atividades/lingua-portuguesa/lp-extra-fig-pronomes-01.png",
+          "descricao": "Duas crianças, Lia e Caio, organizam livros; setas ligam os pronomes ela, ele e eles às personagens.",
+          "funcaoPedagogica": "Apoiar a leitura, a interpretação e a resolução das questões.",
+          "posicaoSugerida": "antes-das-questoes",
+          "textoAlternativo": "Duas crianças, Lia e Caio, organizam livros; setas ligam os pronomes ela, ele e eles às personagens.",
+          "compativelPretoBranco": true
+        }
+      ],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Observe a figura e responda às questões sobre retomada de palavras.",
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "resposta-curta",
+          "enunciado": "Na figura, a quem o pronome 'ela' se refere?",
+          "alternativas": [],
+          "figuraId": "lp-extra-fig-pronomes-01",
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 2,
+          "tipo": "resposta-curta",
+          "enunciado": "A quem o pronome 'ele' se refere?",
+          "alternativas": [],
+          "figuraId": "lp-extra-fig-pronomes-01",
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 3,
+          "tipo": "multipla-escolha",
+          "enunciado": "O pronome 'eles' retoma:",
+          "alternativas": [
+            "somente Lia",
+            "somente Caio",
+            "Lia e Caio",
+            "os livros"
+          ],
+          "figuraId": "lp-extra-fig-pronomes-01",
+          "espacoResposta": "pequeno"
+        },
+        {
+          "numero": 4,
+          "tipo": "revisao",
+          "enunciado": "Reescreva evitando repetição: 'Lia pegou os livros. Lia colocou os livros na estante.'",
+          "alternativas": [],
+          "figuraId": "lp-extra-fig-pronomes-01",
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 5,
+          "tipo": "analise-texto",
+          "enunciado": "Explique por que os pronomes deixam o texto mais agradável.",
+          "alternativas": [],
+          "figuraId": "lp-extra-fig-pronomes-01",
+          "espacoResposta": "medio"
+        },
+        {
+          "numero": 6,
+          "tipo": "producao",
+          "enunciado": "Escreva três frases sobre Lia e Caio usando ela, ele e eles.",
+          "alternativas": [],
+          "figuraId": "lp-extra-fig-pronomes-01",
+          "espacoResposta": "grande"
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Lia.",
+          "justificativa": "Referente feminino singular."
+        },
+        {
+          "numero": 2,
+          "resposta": "Caio.",
+          "justificativa": "Referente masculino singular."
+        },
+        {
+          "numero": 3,
+          "resposta": "Alternativa C.",
+          "justificativa": "Plural inclui os dois."
+        },
+        {
+          "numero": 4,
+          "resposta": "Lia pegou os livros e os colocou na estante.",
+          "justificativa": "Substituição evita repetição."
+        },
+        {
+          "numero": 5,
+          "resposta": "Porque evitam repetir os mesmos nomes e mantêm a continuidade do sentido.",
+          "justificativa": "Função coesiva."
+        },
+        {
+          "numero": 6,
+          "resposta": "Resposta autoral com referentes claros e uso correto dos três pronomes.",
+          "justificativa": "Critério de correção: Avaliar coesão."
+        }
+      ],
+      "revisao": {
+        "status": "revisada",
+        "bnccConferida": true,
+        "gabaritoConferido": true,
+        "ortografiaConferida": true,
+        "conteudoAutoral": true,
+        "revisor": "revisao-pedagogica-teacheasy",
+        "dataRevisao": "2026-07-26"
+      },
+      "bnccConferida": true
     }
   ],
   "bnccConferida": true,

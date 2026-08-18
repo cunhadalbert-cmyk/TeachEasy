@@ -4,8 +4,9 @@ import test from 'node:test';
 import { Window } from 'happy-dom';
 
 async function createLibraryPage({ missingAsset = '', url = 'https://teacheasy.test/biblioteca.html' } = {}) {
-  const [html, script, scienceCollection, mathCollection, portugueseCollection] = await Promise.all([
+  const [html, catalogScript, script, scienceCollection, mathCollection, portugueseCollection] = await Promise.all([
     readFile(new URL('../biblioteca.html', import.meta.url), 'utf8'),
+    readFile(new URL('../library-catalog.js', import.meta.url), 'utf8'),
     readFile(new URL('../biblioteca.js', import.meta.url), 'utf8'),
     readFile(new URL('../data/atividades/fundamental-anos-iniciais/4-ano/3-bimestre/ciencias.json', import.meta.url), 'utf8'),
     readFile(new URL('../data/atividades/fundamental-anos-iniciais/4-ano/3-bimestre/matematica.json', import.meta.url), 'utf8'),
@@ -45,6 +46,7 @@ async function createLibraryPage({ missingAsset = '', url = 'https://teacheasy.t
     };
   };
 
+  window.eval(catalogScript);
   window.eval(script);
   return window;
 }
@@ -544,7 +546,8 @@ test('Página inicial e Biblioteca versionam os arquivos da categoria de autismo
   assert.match(home, /styles\.css\?v=20260808-material-v3/);
   assert.match(library, /styles\.css\?v=20260807-autismo-v3/);
   assert.match(library, /biblioteca\.css\?v=20260807-autismo-v4/);
-  assert.match(library, /biblioteca\.js\?v=20260811-figura-geral-v5/);
+  assert.match(library, /library-catalog\.js\?v=20260818-catalogo-unico-v1/);
+  assert.match(library, /biblioteca\.js\?v=20260818-catalogo-unico-v1/);
   assert.match(library, /biblioteca-fixes\.js\?v=20260807-autismo-v3/);
 });
 
@@ -590,22 +593,24 @@ test('Autismo e inclusão aparecem em todas as etapas', async () => {
   }
 });
 
-test('Coleção de Ciências possui schema válido, cinco atividades e referências consistentes', async () => {
+test('Coleção canônica de Ciências possui 30 atividades e referências consistentes', async () => {
   const raw = await readFile(new URL('../data/atividades/fundamental-anos-iniciais/4-ano/3-bimestre/ciencias.json', import.meta.url), 'utf8');
   const collection = JSON.parse(raw);
   assert.equal(collection.schemaVersion, '1.0');
   assert.equal(collection.colecao, '4ano-3bimestre-ciencias');
   assert.equal(collection.idioma, 'pt-BR');
-  assert.equal(collection.atividades.length, 5);
-  assert.equal(new Set(collection.atividades.map(activity => activity.id)).size, 5);
+  assert.equal(collection.atividades.length, 30);
+  assert.equal(new Set(collection.atividades.map(activity => activity.id)).size, 30);
 
   collection.atividades.forEach(activity => {
     assert.ok(['facil', 'intermediaria', 'desafiadora'].includes(activity.dificuldade));
     assert.equal(activity.questoes.length, 6);
     assert.equal(activity.gabarito.length, 6);
     assert.ok(activity.instrucaoGeral);
-    assert.ok(activity.textoApoio.titulo);
-    assert.ok(activity.textoApoio.conteudo);
+    if (activity.textoApoio) {
+      assert.ok(activity.textoApoio.titulo);
+      assert.ok(activity.textoApoio.conteudo);
+    }
     const figureIds = new Set(activity.figuras.map(figure => figure.id));
     activity.questoes.forEach(question => {
       if (question.figuraId) assert.ok(figureIds.has(question.figuraId));
@@ -620,18 +625,12 @@ test('Coleção de Ciências possui schema válido, cinco atividades e referênc
   assert.doesNotMatch(answerSix.resposta, /compartilhar copo|compartilhamento de copos/i);
 });
 
-test('Ciências do 4º ano totaliza 30 atividades e 180 questões', async () => {
-  const [baseRaw, extraRaw] = await Promise.all([
-    readFile(new URL('../data/atividades/fundamental-anos-iniciais/4-ano/3-bimestre/ciencias.json', import.meta.url), 'utf8'),
-    readFile(new URL('../data/atividades/fundamental-anos-iniciais/4-ano/3-bimestre/ciencias-extra.json', import.meta.url), 'utf8')
-  ]);
-  const base = JSON.parse(baseRaw);
-  const extra = JSON.parse(extraRaw);
-  const activities = [...base.atividades, ...extra.atividades];
+test('Ciências do 4º ano totaliza 30 atividades e 180 questões em um arquivo', async () => {
+  const raw = await readFile(new URL('../data/atividades/fundamental-anos-iniciais/4-ano/3-bimestre/ciencias.json', import.meta.url), 'utf8');
+  const collection = JSON.parse(raw);
+  const activities = collection.atividades;
   const ids = activities.map(activity => activity.id);
 
-  assert.equal(base.atividades.length, 5);
-  assert.equal(extra.atividades.length, 25);
   assert.equal(activities.length, 30);
   assert.equal(new Set(ids).size, 30);
   assert.equal(activities.reduce((total, activity) => total + activity.questoes.length, 0), 180);
@@ -697,12 +696,10 @@ test('Figura geral de Português aparece antes das questões e substitui o fallb
   await window.happyDOM.close();
 });
 
-test('Lote de Matemática e Língua Portuguesa preserva 60 atividades e 360 questões', async () => {
+test('Arquivos canônicos de Matemática e Língua Portuguesa preservam 60 atividades e 360 questões', async () => {
   const files = [
-    ['matematica.json', '4ano-3bimestre-matematica', 'Matemática', 20, 120],
-    ['matematica-extra.json', '4ano-3bimestre-matematica-extra', 'Matemática', 10, 60],
-    ['lingua-portuguesa.json', '4ano-3bimestre-lingua-portuguesa', 'Língua Portuguesa', 20, 120],
-    ['lingua-portuguesa-extra.json', '4ano-3bimestre-lingua-portuguesa-extra', 'Língua Portuguesa', 10, 60]
+    ['matematica.json', '4ano-3bimestre-matematica', 'Matemática', 30, 180],
+    ['lingua-portuguesa.json', '4ano-3bimestre-lingua-portuguesa', 'Língua Portuguesa', 30, 180]
   ];
   const allIds = [];
   let totalQuestions = 0;
@@ -739,15 +736,10 @@ test('Lote de Matemática e Língua Portuguesa preserva 60 atividades e 360 ques
 });
 
 test('Matemática possui 30 atividades autorais, 180 questões e figuras válidas', async () => {
-  const [raw, extraRaw] = await Promise.all([
-    readFile(new URL('../data/atividades/fundamental-anos-iniciais/4-ano/3-bimestre/matematica.json', import.meta.url), 'utf8'),
-    readFile(new URL('../data/atividades/fundamental-anos-iniciais/4-ano/3-bimestre/matematica-extra.json', import.meta.url), 'utf8')
-  ]);
+  const raw = await readFile(new URL('../data/atividades/fundamental-anos-iniciais/4-ano/3-bimestre/matematica.json', import.meta.url), 'utf8');
   assert.doesNotMatch(raw, /\uFFFD/);
-  assert.doesNotMatch(extraRaw, /\uFFFD/);
   const collection = JSON.parse(raw);
-  const extraCollection = JSON.parse(extraRaw);
-  const activities = [...collection.atividades, ...extraCollection.atividades];
+  const activities = collection.atividades;
   const ids = activities.map(activity => activity.id);
   const titles = activities.map(activity => activity.titulo.trim().toLocaleLowerCase('pt-BR'));
   const normalizedPrompts = activities.flatMap(activity =>
@@ -794,28 +786,18 @@ test('Matemática possui 30 atividades autorais, 180 questões e figuras válida
     }
   }
 
-  const libraryScript = await readFile(new URL('../biblioteca.js', import.meta.url), 'utf8');
-  const fixesScript = await readFile(new URL('../biblioteca-fixes.js', import.meta.url), 'utf8');
-  assert.match(libraryScript, /'Matemática':\s*\{[\s\S]*?count:\s*20,/);
-  assert.match(fixesScript, /EXPECTED_MATH_ACTIVITIES\s*=\s*30/);
-  assert.match(fixesScript, /collectionRegistry\['Matemática'\]\.extraPath\s*=\s*'data\/atividades\/fundamental-anos-iniciais\/4-ano\/3-bimestre\/matematica-extra\.json'/);
+  const catalogScript = await readFile(new URL('../library-catalog.js', import.meta.url), 'utf8');
+  assert.match(catalogScript, /initialYears \? 30 : 40/);
+  assert.doesNotMatch(catalogScript, /extraPath/);
 });
 
 test('Língua Portuguesa possui 30 atividades autorais, 180 questões e figuras válidas', async () => {
-  const [raw, extraRaw] = await Promise.all([
-    readFile(new URL('../data/atividades/fundamental-anos-iniciais/4-ano/3-bimestre/lingua-portuguesa.json', import.meta.url), 'utf8'),
-    readFile(new URL('../data/atividades/fundamental-anos-iniciais/4-ano/3-bimestre/lingua-portuguesa-extra.json', import.meta.url), 'utf8')
-  ]);
+  const raw = await readFile(new URL('../data/atividades/fundamental-anos-iniciais/4-ano/3-bimestre/lingua-portuguesa.json', import.meta.url), 'utf8');
 
   assert.doesNotMatch(raw, /\uFFFD/);
-  assert.doesNotMatch(extraRaw, /\uFFFD/);
 
   const collection = JSON.parse(raw);
-  const extraCollection = JSON.parse(extraRaw);
-  const activities = [
-    ...collection.atividades,
-    ...extraCollection.atividades
-  ];
+  const activities = collection.atividades;
   const normalize = value => value.normalize('NFKC').trim().replace(/\s+/g, ' ').toLocaleLowerCase('pt-BR');
   const ids = activities.map(activity => activity.id);
   const titles = activities.map(activity => normalize(activity.titulo));
@@ -897,11 +879,9 @@ test('Língua Portuguesa possui 30 atividades autorais, 180 questões e figuras 
     }
   }
 
-  const libraryScript = await readFile(new URL('../biblioteca.js', import.meta.url), 'utf8');
-  const fixesScript = await readFile(new URL('../biblioteca-fixes.js', import.meta.url), 'utf8');
-  assert.match(libraryScript, /'Língua Portuguesa':\s*\{[\s\S]*?count:\s*20,/);
-  assert.match(fixesScript, /EXPECTED_PORTUGUESE_ACTIVITIES\s*=\s*30/);
-  assert.match(fixesScript, /EXPECTED_MATH_ACTIVITIES\s*=\s*30/);
+  const catalogScript = await readFile(new URL('../library-catalog.js', import.meta.url), 'utf8');
+  assert.match(catalogScript, /initialYears \? 30 : 40/);
+  assert.doesNotMatch(catalogScript, /extraPath/);
 });
 
 test('Matemática e Língua Portuguesa carregam somente com a disciplina correspondente', async () => {
@@ -964,30 +944,33 @@ test('Coleções integradas do 1º, 3º e 4º ano estão completas', async () =>
     assert.doesNotMatch(raw, /\uFFFD/);
     assert.match(raw, /\n$/);
     const collection = JSON.parse(raw);
-    assert.equal(collection.schemaVersion, '1.0');
-    assert.equal(collection.colecao, collectionId);
+    assert.ok(['1.0', '2.0'].includes(collection.schemaVersion));
+    assert.equal(collection.colecao, collection.schemaVersion === '2.0' ? `${collectionId}-v2` : collectionId);
     assert.equal(collection.ano, grade);
     assert.equal(collection.bimestre, 3);
     assert.equal(collection.disciplina, subject);
-    assert.equal(collection.atividades.length, 30);
-    assert.equal(collection.atividades.reduce((total, activity) => total + activity.questoes.length, 0), 180);
-    assert.equal(collection.atividades.reduce((total, activity) => total + activity.gabarito.length, 0), 180);
+    const isV2 = collection.schemaVersion === '2.0';
+    const expectedCount = isV2 ? 20 : 30;
+    const expectedQuestions = isV2 ? 8 : 6;
+    assert.equal(collection.atividades.length, expectedCount);
+    assert.equal(collection.atividades.reduce((total, activity) => total + activity.questoes.length, 0), expectedCount * expectedQuestions);
+    assert.equal(collection.atividades.reduce((total, activity) => total + activity.gabarito.length, 0), expectedCount * expectedQuestions);
 
     for (const activity of collection.atividades) {
       allIds.push(activity.id);
-      assert.equal(activity.quantidadeQuestoes, 6);
-      assert.equal(activity.questoes.length, 6);
-      assert.equal(activity.gabarito.length, 6);
+      assert.equal(activity.quantidadeQuestoes, expectedQuestions);
+      assert.equal(activity.questoes.length, expectedQuestions);
+      assert.equal(activity.gabarito.length, expectedQuestions);
       assert.ok(activity.objetivo.trim());
       assert.ok(activity.bncc.length > 0);
       assert.equal(activity.possuiGabarito, true);
-      assert.deepEqual(activity.questoes.map(question => question.numero), [1, 2, 3, 4, 5, 6]);
-      assert.deepEqual(activity.gabarito.map(answer => answer.numero), [1, 2, 3, 4, 5, 6]);
+      assert.deepEqual(activity.questoes.map(question => question.numero), Array.from({ length: expectedQuestions }, (_, index) => index + 1));
+      assert.deepEqual(activity.gabarito.map(answer => answer.numero), Array.from({ length: expectedQuestions }, (_, index) => index + 1));
     }
   }
 
-  assert.equal(allIds.length, 360);
-  assert.equal(new Set(allIds).size, 360);
+  assert.equal(allIds.length, 350);
+  assert.equal(new Set(allIds).size, 350);
 
   const fixesScript = await readFile(new URL('../biblioteca-fixes.js', import.meta.url), 'utf8');
   files.forEach(([gradePath, filename, collectionId]) => {
@@ -1060,8 +1043,9 @@ test('Toda figura obrigatória possui arquivo e aparece junto da questão', asyn
     ['efi-4ano-b3-cie-microrganismos-saude-a', [3, 'figura-04']],
     ['efi-4ano-b3-cie-microrganismos-saude-b', [5, 'figura-05']]
   ]);
-  for (const activity of collection.atividades) {
-    const [questionNumber, figureId] = expected.get(activity.id);
+  for (const [activityId, [questionNumber, figureId]] of expected) {
+    const activity = collection.atividades.find(item => item.id === activityId);
+    assert.ok(activity, `atividade ausente: ${activityId}`);
     const question = activity.questoes.find(item => item.numero === questionNumber);
     const figure = activity.figuras.find(item => item.id === figureId);
     assert.equal(question.figuraId, figureId);

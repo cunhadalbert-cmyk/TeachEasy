@@ -12,11 +12,10 @@ const subjects = [
   ['matematica.json', 'Matemática'],
   ['ciencias.json', 'Ciências'],
   ['historia.json', 'História'],
-  ['geografia.json', 'Geografia'],
-  ['ingles.json', 'Inglês']
+  ['geografia.json', 'Geografia']
 ];
 
-test('Anos Finais possuem 3.840 atividades em 96 coleções completas', () => {
+test('Anos Finais possuem 3.200 atividades nas 80 coleções oficiais', () => {
   const globalIds = new Set();
   const byGrade = new Map();
   const bySubject = new Map();
@@ -57,9 +56,9 @@ test('Anos Finais possuem 3.840 atividades em 96 coleções completas', () => {
     }
   }
 
-  assert.equal(files, 96);
-  assert.equal(total, 3840);
-  grades.forEach(grade => assert.equal(byGrade.get(grade), 960));
+  assert.equal(files, 80);
+  assert.equal(total, 3200);
+  grades.forEach(grade => assert.equal(byGrade.get(grade), 800));
   subjects.forEach(([, subject]) => assert.equal(bySubject.get(subject), 640));
 });
 
@@ -68,13 +67,12 @@ test('Biblioteca carrega uma coleção de Anos Finais por seleção', () => {
   const fixes = fs.readFileSync(path.join(root, 'biblioteca-fixes.js'), 'utf8');
   assert.match(source, /finalYearsSubjects/);
   assert.match(source, /navigation\.stage === 'Ensino Fundamental II'/);
-  assert.match(source, /fundamental-anos-finais\/\$\{grade\}-ano/);
+  assert.match(source, /TeachEasyLibraryCatalog\.entry\(grade, term, subject\)/);
   assert.match(source, /function syncSubjectOptions\(\)/);
   assert.match(source, /navigation\.stage === 'Ensino Fundamental II'/);
   assert.match(source, /Object\.keys\(finalYearsSubjects\)/);
   assert.match(source, /select\.replaceChildren\(defaultOption, \.\.\.options\)/);
-  assert.match(source, /count: 40/);
-  assert.match(source, /count: 3840/);
+  assert.match(source, /const finalYearsSubjects = TeachEasyLibraryCatalog\.subjects/);
   assert.match(fixes, /const isFinalYears = navigation\.stage === 'Ensino Fundamental II'/);
   assert.match(fixes, /\['6º ano', '7º ano', '8º ano', '9º ano'\]/);
   assert.match(fixes, /isFinalYears[\s\S]*Object\.keys\(finalYearsSubjects\)/);
@@ -109,5 +107,5 @@ test('Anos Finais possuem conteúdo aprofundado e BNCC conferida', () => {
     }
   }
 
-  assert.equal(total, 3840);
+  assert.equal(total, 3200);
 });
