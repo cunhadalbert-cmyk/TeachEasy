@@ -108,10 +108,12 @@ test('Word e impressão usam A4 no padrão do layout mestre', () => {
   assert.match(standard, /6\.9mm/);
 });
 
-test('ilustração existente fica contida na coluna direita sem deformação', () => {
+test('ilustração existente preenche o quadro proporcionalmente sem deformação', () => {
   assert.match(standard, /img\.activity-figure, \.collection-student-page img\.question-figure/);
   assert.match(standard, /te-final-visual/);
-  assert.match(standard, /object-fit:contain/);
-  assert.match(standard, /max-width:100%/);
-  assert.match(standard, /max-height:100%/);
+  assert.match(overflowFix, /\.te-final-visual img/);
+  assert.match(overflowFix, /width:\s*100%\s*!important/);
+  assert.match(overflowFix, /height:\s*100%\s*!important/);
+  assert.match(overflowFix, /object-fit:\s*cover\s*!important/);
+  assert.match(overflowFix, /object-position:\s*center center\s*!important/);
 });
