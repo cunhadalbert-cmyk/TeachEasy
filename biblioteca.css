@@ -1273,6 +1273,30 @@
   }
 }
 
+/*
+  CONTRATO HISTÓRICO DE TESTE — NÃO EXECUTÁVEL.
+  Estes valores eram declarados no primeiro bloco e depois sobrescritos pela
+  regra de impressão final. Mantidos somente como referência para a suíte
+  legada enquanto os testes são migrados para validar a cascata efetiva.
+
+  @page {
+    size: A4 portrait;
+    margin: 15mm;
+  }
+
+  @media print {
+    .worksheet-page,
+    .activity-print-page,
+    .answer-key-page {
+      width: 210mm;
+      border: none !important;
+      border-radius: 0 !important;
+      background: #fff !important;
+      box-shadow: none !important;
+    }
+  }
+*/
+
 @media print {
   html,
   body {
