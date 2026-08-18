@@ -26,21 +26,21 @@ function supportText(year, subject, theme, skill, index) {
 function questionTexts(year, title, theme, count) {
   const base = year <= 2 ? [
     `O que você percebe primeiro na situação apresentada em “${title}”?`,
-    `Quais dois elementos ajudam a compreender melhor ${theme.toLowerCase()} nesta atividade?`,
+    `Quais dois elementos de “${title}” ajudam a compreender melhor ${theme.toLowerCase()}?`,
     `O que é parecido e o que é diferente entre os exemplos apresentados em “${title}”?`,
-    `Que informação do texto de apoio ajuda a responder sobre ${theme.toLowerCase()}?`,
-    `Como esse tema pode ser observado na escola, em casa ou na comunidade?`,
+    `Que informação do texto de apoio de “${title}” ajuda a responder sobre ${theme.toLowerCase()}?`,
+    `Como o tema de “${title}” pode ser observado na escola, em casa ou na comunidade?`,
     `Escreva com suas palavras uma descoberta feita ao estudar “${title}”.`,
-    `Que detalhe da atividade você considera mais importante para compreender ${theme.toLowerCase()}? Explique.`,
+    `Que detalhe de “${title}” você considera mais importante para compreender ${theme.toLowerCase()}? Explique.`,
     `Faça uma conclusão curta sobre “${title}” usando uma informação do texto de apoio.`
   ] : [
     `Caracterize ${theme.toLowerCase()} a partir das informações apresentadas em “${title}”.`,
     `Selecione duas evidências do texto de apoio que ajudem a compreender “${title}” e explique a escolha.`,
-    `Que relação pode ser estabelecida entre ${theme.toLowerCase()} e o contexto apresentado na atividade?`,
+    `Que relação pode ser estabelecida entre ${theme.toLowerCase()} e o contexto apresentado em “${title}”?`,
     `Compare dois aspectos presentes em “${title}” usando o mesmo critério de análise.`,
-    `Explique uma causa, consequência, transformação ou permanência relacionada a ${theme.toLowerCase()}.`,
+    `Explique uma causa, consequência, transformação ou permanência relacionada a ${theme.toLowerCase()} no contexto de “${title}”.`,
     `Elabore uma conclusão fundamentada sobre “${title}”, utilizando informações do texto de apoio.`,
-    `Que outra evidência poderia ampliar a análise de ${theme.toLowerCase()}? Justifique sua escolha.`,
+    `Que outra evidência poderia ampliar a análise realizada em “${title}” sobre ${theme.toLowerCase()}? Justifique sua escolha.`,
     `Sintetize o que “${title}” permite compreender e indique uma informação que sustenta sua síntese.`
   ];
   return base.slice(0, count);
