@@ -36,6 +36,50 @@ jobs:
       - name: Normalize all canonical collections to 50
         run: node scripts/normalize-fundamental-50.mjs
 
+      - name: Update legacy quantity assertions
+        shell: bash
+        run: |
+          node --input-type=module <<'NODE'
+          import fs from 'node:fs';
+          const file='tests/library.test.mjs';
+          let s=fs.readFileSync(file,'utf8');
+          const replacements=[
+            ["Coleção canônica de Ciências possui 30 atividades e referências consistentes","Coleção canônica de Ciências possui 50 atividades e referências consistentes"],
+            ["assert.equal(collection.atividades.length, 30);","assert.equal(collection.atividades.length, 50);"],
+            ["assert.equal(new Set(collection.atividades.map(activity => activity.id)).size, 30);","assert.equal(new Set(collection.atividades.map(activity => activity.id)).size, 50);"],
+            ["Ciências do 4º ano totaliza 30 atividades e 180 questões em um arquivo","Ciências do 4º ano totaliza 50 atividades e 300 questões em um arquivo"],
+            ["assert.equal(activities.length, 30);","assert.equal(activities.length, 50);"],
+            ["assert.equal(new Set(ids).size, 30);","assert.equal(new Set(ids).size, 50);"],
+            ["assert.equal(activities.reduce((total, activity) => total + activity.questoes.length, 0), 180);","assert.equal(activities.reduce((total, activity) => total + activity.questoes.length, 0), 300);"],
+            ["assert.equal(activities.reduce((total, activity) => total + activity.gabarito.length, 0), 180);","assert.equal(activities.reduce((total, activity) => total + activity.gabarito.length, 0), 300);"],
+            ["Arquivos canônicos de Matemática e Língua Portuguesa preservam 60 atividades e 360 questões","Arquivos canônicos de Matemática e Língua Portuguesa totalizam 100 atividades e 600 questões"],
+            ["['matematica.json', '4ano-3bimestre-matematica', 'Matemática', 30, 180]","['matematica.json', '4ano-3bimestre-matematica', 'Matemática', 50, 300]"],
+            ["['lingua-portuguesa.json', '4ano-3bimestre-lingua-portuguesa', 'Língua Portuguesa', 30, 180]","['lingua-portuguesa.json', '4ano-3bimestre-lingua-portuguesa', 'Língua Portuguesa', 50, 300]"],
+            ["assert.equal(allIds.length, 60);","assert.equal(allIds.length, 100);"],
+            ["assert.equal(new Set(allIds).size, 60);","assert.equal(new Set(allIds).size, 100);"],
+            ["assert.equal(totalQuestions, 360);","assert.equal(totalQuestions, 600);"],
+            ["Matemática possui 30 atividades autorais, 180 questões e figuras válidas","Matemática possui 50 atividades, 300 questões e figuras válidas"],
+            ["Língua Portuguesa possui 30 atividades autorais, 180 questões e figuras válidas","Língua Portuguesa possui 50 atividades, 300 questões e figuras válidas"],
+            ["assert.equal(new Set(titles).size, 30);","assert.equal(new Set(titles).size, 50);"],
+            ["assert.equal(new Set(normalizedPrompts).size, 180);","assert.equal(new Set(normalizedPrompts).size, 300);"],
+            ["assert.equal(new Set(prompts).size, 180);","assert.equal(new Set(prompts).size, 300);"],
+            ["assert.equal(newIds.length, 23);","assert.equal(newIds.length, 43);"],
+            ["assert.match(catalogScript, /initialYears \\? 30 : 40/);","assert.match(catalogScript, /count: 50/);"],
+            ["const expectedCount = isV2 ? 20 : 30;","const expectedCount = 50;"],
+            ["assert.equal(allIds.length, 350);","assert.equal(allIds.length, 600);"],
+            ["assert.equal(new Set(allIds).size, 350);","assert.equal(new Set(allIds).size, 600);"]
+          ];
+          for(const [from,to] of replacements) s=s.replaceAll(from,to);
+          fs.writeFileSync(file,s,'utf8');
+
+          const pilot='tests/pilot-batch-illustrations.test.mjs';
+          let p=fs.readFileSync(pilot,'utf8');
+          p=p.replace("Lote piloto de Matemática (3º ano 1º bimestre) possui 30 atividades vinculadas a PNGs permanentes","Lote piloto de Matemática mantém 30 PNGs permanentes dentro da coleção padronizada com 50 atividades");
+          p=p.replace("assert.equal(collection.atividades.length, 30);","assert.equal(collection.atividades.length, 50);");
+          p=p.replace("for (const activity of collection.atividades) {","for (const activity of collection.atividades.slice(0, 30)) {");
+          fs.writeFileSync(pilot,p,'utf8');
+          NODE
+
       - name: Validate 180 canonical collection counts
         shell: bash
         run: |
@@ -79,6 +123,6 @@ jobs:
           rm -f docs/auditoria-figuras.md
           git config user.name 'TeachEasy Validation'
           git config user.email 'actions@users.noreply.github.com'
-          git add data/atividades library-catalog.js package.json docs/estado-projeto.md scripts/normalize-fundamental-50.mjs tests/fundamental-iniciais-bncc.test.mjs tests/fundamental-finais.test.mjs tests/fundamental-50-normalization.test.mjs
+          git add data/atividades library-catalog.js package.json docs/estado-projeto.md scripts/normalize-fundamental-50.mjs tests/fundamental-iniciais-bncc.test.mjs tests/fundamental-finais.test.mjs tests/fundamental-50-normalization.test.mjs tests/library.test.mjs tests/pilot-batch-illustrations.test.mjs
           git commit -m 'Staging padronização de 50 atividades validada'
           git push origin HEAD:automation/normalize-fundamental-50-20260818
