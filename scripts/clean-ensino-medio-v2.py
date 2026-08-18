@@ -27,20 +27,22 @@ def clean_skill(value):
     value = re.sub(r"\s+\d+\s*[\(\[]\s*$", "", value)
     value = re.sub(r"\s+[\(\[]\s*$", "", value)
     value = re.sub(r"\s+\d+\s*$", "", value)
-    value = clean_space(value).strip(" ;")
-    return value
+    return clean_space(value).strip(" ;")
 
 
 def fix_punctuation(text):
     text = re.sub(r"\.{2,}", ".", text)
     text = text.replace("?.", "?").replace("!.", "!")
     text = text.replace(".”.", ".”").replace("?”.", "?”").replace("!.”", "!”")
+    text = re.sub(r"\s+\(\.$", ".", text)
     text = re.sub(r"\s+([,.;:!?])", r"\1", text)
     return clean_space(text)
 
 
 def replace_text(value, old_theme=None, new_theme=None):
     text = clean_space(value)
+    text = re.sub(r"\ba habilidade\s+a habilidade trabalhada\b", "a habilidade trabalhada", text, flags=re.I)
+    text = re.sub(r"\bà habilidade\s+a habilidade trabalhada\b", "à habilidade trabalhada", text, flags=re.I)
     text = text.replace("à a habilidade trabalhada", "à habilidade trabalhada")
     text = text.replace("à a habilidade", "à habilidade")
     text = text.replace("— a habilidade trabalhada", "")
@@ -71,7 +73,7 @@ def clean_activity(activity):
                 flags=re.I,
             )
             if not CODE_RE.search(objective):
-                objective = f"Desenvolver a habilidade {code} por meio de análise, aplicação e argumentação sobre {new_theme.rstrip('.')} ."
+                objective = f"Desenvolver a habilidade {code} por meio de análise, aplicação e argumentação sobre {new_theme.rstrip('.')}."
             activity["objetivo"] = fix_punctuation(objective)
         first = re.search(r"[A-Za-zÀ-ÖØ-öø-ÿ]+", skill)
         if first:
@@ -80,10 +82,10 @@ def clean_activity(activity):
     apoio = activity.get("textoApoio")
     if isinstance(apoio, dict):
         apoio["titulo"] = replace_text(apoio.get("titulo"), old_theme, new_theme)
-        apoio["conteudo"] = replace_text(apoio.get("conteudo"), old_theme, new_theme)
-        content = apoio["conteudo"]
+        content = replace_text(apoio.get("conteudo"), old_theme, new_theme)
         content = re.sub(r"A habilidade mobilizada orienta o estudante a\s*[\)\(\s]*", "A habilidade mobilizada orienta o estudante a ", content)
         content = re.sub(r"\s+\d+\s*\(\.?$", ".", content)
+        content = re.sub(r"\s+\(\.$", ".", content)
         apoio["conteudo"] = fix_punctuation(content)
 
     for q in activity.get("questoes") or []:
@@ -113,13 +115,24 @@ def validate_activity(activity, path):
         problems.append(f"{path}: {aid}: não tem 8 respostas")
     if SERIE_TERM_RE.search(activity.get("tema") or ""):
         problems.append(f"{path}: {aid}: tema ainda contém série/bimestre artificial")
-    fields = [activity.get("objetivo", ""), (activity.get("textoApoio") or {}).get("conteudo", "")]
+
+    fields = [
+        activity.get("titulo", ""), activity.get("tema", ""), activity.get("objetivo", ""),
+        (activity.get("textoApoio") or {}).get("titulo", ""),
+        (activity.get("textoApoio") or {}).get("conteudo", ""),
+        (activity.get("ilustracao") or {}).get("descricao", ""),
+        (activity.get("ilustracao") or {}).get("objetivoPedagogico", ""),
+    ]
     fields += [q.get("enunciado", "") for q in activity.get("questoes") or []]
     fields += [a.get("resposta", "") for a in activity.get("gabarito") or []]
+    fields += [a.get("justificativa", "") for a in activity.get("gabarito") or []]
+
     if any(".." in str(field) for field in fields):
         problems.append(f"{path}: {aid}: pontuação duplicada")
-    if "a habilidade a habilidade" in activity.get("objetivo", "").lower():
-        problems.append(f"{path}: {aid}: objetivo duplicou expressão de habilidade")
+    if any("habilidade a habilidade" in str(field).lower() for field in fields):
+        problems.append(f"{path}: {aid}: expressão de habilidade duplicada")
+    if any(re.search(r"\(\.$", str(field)) for field in fields):
+        problems.append(f"{path}: {aid}: resíduo '(.' em texto")
     for q in activity.get("questoes") or []:
         if CODE_RE.search(q.get("enunciado") or ""):
             problems.append(f"{path}: {aid}: código BNCC exposto ao aluno")
