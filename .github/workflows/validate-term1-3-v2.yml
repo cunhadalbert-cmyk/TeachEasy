@@ -1,0 +1,88 @@
+name: Validate Fundamental term1-3 V2 migration
+
+on:
+  pull_request:
+    branches:
+      - automation/migrate-term1-3-v2-validation-base-20260818
+    types: [opened, synchronize, reopened]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: validate-fundamental-term1-3-v2
+  cancel-in-progress: true
+
+jobs:
+  migrate-validate-publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Checkout staging head
+        uses: actions/checkout@v4
+        with:
+          ref: automation/migrate-term1-3-v2-20260818
+          fetch-depth: 0
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Migrate term1-3 collections to V2
+        run: node scripts/migrate-fundamental-term1-3-v2.mjs
+
+      - name: Ensure fourth term content was untouched
+        shell: bash
+        run: |
+          if git diff --name-only d5ade4427eea46ca1f52ff26c86922ca38998630 -- 'data/atividades/**/4-bimestre/*.json' | grep .; then
+            echo 'ERRO: o 4º bimestre não deveria ser alterado.'
+            exit 1
+          fi
+
+      - name: Validate migrated collections directly
+        shell: bash
+        run: |
+          node --input-type=module <<'NODE'
+          import fs from 'node:fs';
+          import path from 'node:path';
+          import { validatePedagogicalActivityV2 } from './scripts/pedagogical-standard-v2.mjs';
+          const subjects=['lingua-portuguesa.json','matematica.json','ciencias.json','historia.json','geografia.json'];
+          let collections=0, activities=0, questions=0;
+          const ids=new Set();
+          for(let year=1;year<=9;year++) for(let term=1;term<=3;term++) for(const subject of subjects){
+            const stage=year<=5?'fundamental-anos-iniciais':'fundamental-anos-finais';
+            const file=path.join('data','atividades',stage,`${year}-ano`,`${term}-bimestre`,subject);
+            const c=JSON.parse(fs.readFileSync(file,'utf8'));
+            if(c.schemaVersion!=='2.0'||c.padraoPedagogico!=='teacheasy-v2'||c.atividades.length!==50) throw new Error(`Coleção inválida: ${file}`);
+            for(const a of c.atividades){
+              if(ids.has(a.id)) throw new Error(`ID duplicado: ${a.id}`);
+              ids.add(a.id);
+              const r=validatePedagogicalActivityV2(a,c);
+              if(!r.valid) throw new Error(r.errors.join('\n'));
+              if(a.questoes.some(q=>/\bEF(?:0[1-9]|15|35)[A-Z]{2}\d{2}\b/.test(q.enunciado))) throw new Error(`BNCC exposta ao aluno: ${a.id}`);
+              questions += a.questoes.length;
+            }
+            activities += c.atividades.length;
+            collections++;
+          }
+          if(collections!==135||activities!==6750||questions!==54000||ids.size!==6750) throw new Error(`Totais inválidos ${collections}/${activities}/${questions}/${ids.size}`);
+          console.log(`OK: ${collections} coleções V2, ${activities} atividades, ${questions} questões.`);
+          NODE
+
+      - name: Run complete project validation
+        run: npm run validate
+
+      - name: Publish validated staging result
+        shell: bash
+        run: |
+          rm -f docs/auditoria-figuras.md
+          git config user.name 'TeachEasy Validation'
+          git config user.email 'actions@users.noreply.github.com'
+          git add data/atividades docs/estado-projeto.md package.json scripts/migrate-fundamental-term1-3-v2.mjs tests/fundamental-term1-3-v2.test.mjs tests
+          git commit -m 'Staging migração V2 dos três primeiros bimestres validada'
+          git push origin HEAD:automation/migrate-term1-3-v2-20260818
