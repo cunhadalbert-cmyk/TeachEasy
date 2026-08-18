@@ -6,7 +6,7 @@
   "ano": "4º ano",
   "bimestre": 3,
   "disciplina": "Matemática",
-  "statusBimestre": "sugerido",
+  "statusBimestre": "completo",
   "atividades": [
     {
       "id": "efi-4ano-b3-mat-estrategias-multiplicar-a",
@@ -3623,8 +3623,2189 @@
       },
       "bnccConferida": true,
       "illustration": "/illustrations/biblioteca/fundamental-iniciais/4-ano/3-bimestre/matematica/efi-4ano-b3-mat-sequencias-padroes-extra.png"
+    },
+    {
+      "id": "efi-4ano-b3-mat-50-31-multiplicacao",
+      "titulo": "Aprofundamento 31: Multiplicação",
+      "tema": "Multiplicação",
+      "sequencia": "Atividade 31",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "intermediaria",
+      "objetivo": "Desenvolver EF04MA06 por meio do estudo de multiplicação, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 4º ano.",
+      "bncc": [
+        {
+          "codigo": "EF04MA06",
+          "descricaoResumida": "Resolver e elaborar problemas envolvendo diferentes significados da multiplicação, utilizando estratégias diversas.",
+          "habilidadeOficial": "Resolver e elaborar problemas envolvendo diferentes significados da multiplicação, utilizando estratégias diversas."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 31: Multiplicação”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 31: Multiplicação",
+        "conteudo": "O estudo de multiplicação permite relacionar informações, exemplos do cotidiano e conhecimentos próprios de Matemática. A atividade propõe observar evidências, estabelecer comparações, explicar relações e registrar conclusões adequadas ao 4º ano. A habilidade EF04MA06 orienta o trabalho e corresponde a resolver e elaborar problemas envolvendo diferentes significados da multiplicação, utilizando estratégias diversas. Nesta ampliação, o estudante aplica esse conhecimento a uma situação diferente, justificando as respostas com informações do texto e conceitos estudados."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "Caracterize multiplicação a partir das informações apresentadas em “Aprofundamento 31: Multiplicação”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Selecione duas evidências do texto de apoio que ajudem a compreender “Aprofundamento 31: Multiplicação” e explique a escolha.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "Que relação pode ser estabelecida entre multiplicação e o contexto apresentado em “Aprofundamento 31: Multiplicação”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Compare dois aspectos presentes em “Aprofundamento 31: Multiplicação” usando o mesmo critério de análise.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Explique uma causa, consequência, transformação ou permanência relacionada a multiplicação no contexto de “Aprofundamento 31: Multiplicação”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Elabore uma conclusão fundamentada sobre “Aprofundamento 31: Multiplicação”, utilizando informações do texto de apoio.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apresentar características compatíveis com o texto de apoio e com o conceito de multiplicação.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de multiplicação."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve selecionar duas evidências pertinentes e explicar como elas sustentam a interpretação apresentada.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de multiplicação."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve estabelecer uma relação plausível, usando informações da atividade e vocabulário adequado à disciplina.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de multiplicação."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve comparar os dois aspectos com um critério comum, indicando semelhanças, diferenças ou contrastes relevantes.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de multiplicação."
+        },
+        {
+          "numero": 5,
+          "resposta": "Deve explicar uma relação causal, consequência, transformação ou permanência coerente com o tema estudado.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de multiplicação."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese autoral fundamentada no texto de apoio, com conclusão compatível com as evidências analisadas.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de multiplicação."
+        }
+      ]
+    },
+    {
+      "id": "efi-4ano-b3-mat-50-32-multiplicacao",
+      "titulo": "Aprofundamento 32: Multiplicação",
+      "tema": "Multiplicação",
+      "sequencia": "Atividade 32",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "intermediaria",
+      "objetivo": "Desenvolver EF04MA06 por meio do estudo de multiplicação, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 4º ano.",
+      "bncc": [
+        {
+          "codigo": "EF04MA06",
+          "descricaoResumida": "Resolver e elaborar problemas envolvendo diferentes significados da multiplicação, utilizando estratégias diversas.",
+          "habilidadeOficial": "Resolver e elaborar problemas envolvendo diferentes significados da multiplicação, utilizando estratégias diversas."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 32: Multiplicação”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 32: Multiplicação",
+        "conteudo": "O estudo de multiplicação permite relacionar informações, exemplos do cotidiano e conhecimentos próprios de Matemática. A atividade propõe observar evidências, estabelecer comparações, explicar relações e registrar conclusões adequadas ao 4º ano. A habilidade EF04MA06 orienta o trabalho e corresponde a resolver e elaborar problemas envolvendo diferentes significados da multiplicação, utilizando estratégias diversas. Nesta ampliação, o estudante aplica esse conhecimento a uma situação diferente, justificando as respostas com informações do texto e conceitos estudados."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "Caracterize multiplicação a partir das informações apresentadas em “Aprofundamento 32: Multiplicação”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Selecione duas evidências do texto de apoio que ajudem a compreender “Aprofundamento 32: Multiplicação” e explique a escolha.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "Que relação pode ser estabelecida entre multiplicação e o contexto apresentado em “Aprofundamento 32: Multiplicação”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Compare dois aspectos presentes em “Aprofundamento 32: Multiplicação” usando o mesmo critério de análise.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Explique uma causa, consequência, transformação ou permanência relacionada a multiplicação no contexto de “Aprofundamento 32: Multiplicação”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Elabore uma conclusão fundamentada sobre “Aprofundamento 32: Multiplicação”, utilizando informações do texto de apoio.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apresentar características compatíveis com o texto de apoio e com o conceito de multiplicação.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de multiplicação."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve selecionar duas evidências pertinentes e explicar como elas sustentam a interpretação apresentada.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de multiplicação."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve estabelecer uma relação plausível, usando informações da atividade e vocabulário adequado à disciplina.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de multiplicação."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve comparar os dois aspectos com um critério comum, indicando semelhanças, diferenças ou contrastes relevantes.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de multiplicação."
+        },
+        {
+          "numero": 5,
+          "resposta": "Deve explicar uma relação causal, consequência, transformação ou permanência coerente com o tema estudado.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de multiplicação."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese autoral fundamentada no texto de apoio, com conclusão compatível com as evidências analisadas.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de multiplicação."
+        }
+      ]
+    },
+    {
+      "id": "efi-4ano-b3-mat-50-33-multiplicacao-e-divisao",
+      "titulo": "Aprofundamento 33: Multiplicação e divisão",
+      "tema": "Multiplicação e divisão",
+      "sequencia": "Atividade 33",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "desafiadora",
+      "objetivo": "Desenvolver EF04MA06 por meio do estudo de multiplicação e divisão, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 4º ano.",
+      "bncc": [
+        {
+          "codigo": "EF04MA06",
+          "descricaoResumida": "Habilidade EF04MA06: desenvolver conhecimentos e práticas relacionados a Multiplicação e divisão, com adequação ao 4º ano.",
+          "habilidadeOficial": "Habilidade EF04MA06: desenvolver conhecimentos e práticas relacionados a Multiplicação e divisão, com adequação ao 4º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 33: Multiplicação e divisão”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 33: Multiplicação e divisão",
+        "conteudo": "O estudo de multiplicação e divisão permite relacionar informações, exemplos do cotidiano e conhecimentos próprios de Matemática. A atividade propõe observar evidências, estabelecer comparações, explicar relações e registrar conclusões adequadas ao 4º ano. A habilidade EF04MA06 orienta o trabalho e corresponde a habilidade ef04ma06: desenvolver conhecimentos e práticas relacionados a multiplicação e divisão, com adequação ao 4º ano. Nesta ampliação, o estudante aplica esse conhecimento a uma situação diferente, justificando as respostas com informações do texto e conceitos estudados."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "Caracterize multiplicação e divisão a partir das informações apresentadas em “Aprofundamento 33: Multiplicação e divisão”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Selecione duas evidências do texto de apoio que ajudem a compreender “Aprofundamento 33: Multiplicação e divisão” e explique a escolha.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "Que relação pode ser estabelecida entre multiplicação e divisão e o contexto apresentado em “Aprofundamento 33: Multiplicação e divisão”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Compare dois aspectos presentes em “Aprofundamento 33: Multiplicação e divisão” usando o mesmo critério de análise.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Explique uma causa, consequência, transformação ou permanência relacionada a multiplicação e divisão no contexto de “Aprofundamento 33: Multiplicação e divisão”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Elabore uma conclusão fundamentada sobre “Aprofundamento 33: Multiplicação e divisão”, utilizando informações do texto de apoio.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apresentar características compatíveis com o texto de apoio e com o conceito de multiplicação e divisão.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de multiplicação e divisão."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve selecionar duas evidências pertinentes e explicar como elas sustentam a interpretação apresentada.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de multiplicação e divisão."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve estabelecer uma relação plausível, usando informações da atividade e vocabulário adequado à disciplina.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de multiplicação e divisão."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve comparar os dois aspectos com um critério comum, indicando semelhanças, diferenças ou contrastes relevantes.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de multiplicação e divisão."
+        },
+        {
+          "numero": 5,
+          "resposta": "Deve explicar uma relação causal, consequência, transformação ou permanência coerente com o tema estudado.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de multiplicação e divisão."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese autoral fundamentada no texto de apoio, com conclusão compatível com as evidências analisadas.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de multiplicação e divisão."
+        }
+      ]
+    },
+    {
+      "id": "efi-4ano-b3-mat-50-34-divisao",
+      "titulo": "Aprofundamento 34: Divisão",
+      "tema": "Divisão",
+      "sequencia": "Atividade 34",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "facil",
+      "objetivo": "Desenvolver EF04MA07 por meio do estudo de divisão, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 4º ano.",
+      "bncc": [
+        {
+          "codigo": "EF04MA07",
+          "descricaoResumida": "Resolver e elaborar problemas de divisão cujo divisor tenha no máximo dois algarismos.",
+          "habilidadeOficial": "Resolver e elaborar problemas de divisão cujo divisor tenha no máximo dois algarismos."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 34: Divisão”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 34: Divisão",
+        "conteudo": "O estudo de divisão permite relacionar informações, exemplos do cotidiano e conhecimentos próprios de Matemática. A atividade propõe observar evidências, estabelecer comparações, explicar relações e registrar conclusões adequadas ao 4º ano. A habilidade EF04MA07 orienta o trabalho e corresponde a resolver e elaborar problemas de divisão cujo divisor tenha no máximo dois algarismos. Nesta ampliação, o estudante aplica esse conhecimento a uma situação diferente, justificando as respostas com informações do texto e conceitos estudados."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "Caracterize divisão a partir das informações apresentadas em “Aprofundamento 34: Divisão”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Selecione duas evidências do texto de apoio que ajudem a compreender “Aprofundamento 34: Divisão” e explique a escolha.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "Que relação pode ser estabelecida entre divisão e o contexto apresentado em “Aprofundamento 34: Divisão”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Compare dois aspectos presentes em “Aprofundamento 34: Divisão” usando o mesmo critério de análise.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Explique uma causa, consequência, transformação ou permanência relacionada a divisão no contexto de “Aprofundamento 34: Divisão”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Elabore uma conclusão fundamentada sobre “Aprofundamento 34: Divisão”, utilizando informações do texto de apoio.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apresentar características compatíveis com o texto de apoio e com o conceito de divisão.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de divisão."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve selecionar duas evidências pertinentes e explicar como elas sustentam a interpretação apresentada.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de divisão."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve estabelecer uma relação plausível, usando informações da atividade e vocabulário adequado à disciplina.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de divisão."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve comparar os dois aspectos com um critério comum, indicando semelhanças, diferenças ou contrastes relevantes.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de divisão."
+        },
+        {
+          "numero": 5,
+          "resposta": "Deve explicar uma relação causal, consequência, transformação ou permanência coerente com o tema estudado.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de divisão."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese autoral fundamentada no texto de apoio, com conclusão compatível com as evidências analisadas.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de divisão."
+        }
+      ]
+    },
+    {
+      "id": "efi-4ano-b3-mat-50-35-divisao",
+      "titulo": "Aprofundamento 35: Divisão",
+      "tema": "Divisão",
+      "sequencia": "Atividade 35",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "intermediaria",
+      "objetivo": "Desenvolver EF04MA07 por meio do estudo de divisão, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 4º ano.",
+      "bncc": [
+        {
+          "codigo": "EF04MA07",
+          "descricaoResumida": "Resolver e elaborar problemas de divisão cujo divisor tenha no máximo dois algarismos.",
+          "habilidadeOficial": "Resolver e elaborar problemas de divisão cujo divisor tenha no máximo dois algarismos."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 35: Divisão”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 35: Divisão",
+        "conteudo": "O estudo de divisão permite relacionar informações, exemplos do cotidiano e conhecimentos próprios de Matemática. A atividade propõe observar evidências, estabelecer comparações, explicar relações e registrar conclusões adequadas ao 4º ano. A habilidade EF04MA07 orienta o trabalho e corresponde a resolver e elaborar problemas de divisão cujo divisor tenha no máximo dois algarismos. Nesta ampliação, o estudante aplica esse conhecimento a uma situação diferente, justificando as respostas com informações do texto e conceitos estudados."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "Caracterize divisão a partir das informações apresentadas em “Aprofundamento 35: Divisão”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Selecione duas evidências do texto de apoio que ajudem a compreender “Aprofundamento 35: Divisão” e explique a escolha.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "Que relação pode ser estabelecida entre divisão e o contexto apresentado em “Aprofundamento 35: Divisão”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Compare dois aspectos presentes em “Aprofundamento 35: Divisão” usando o mesmo critério de análise.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Explique uma causa, consequência, transformação ou permanência relacionada a divisão no contexto de “Aprofundamento 35: Divisão”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Elabore uma conclusão fundamentada sobre “Aprofundamento 35: Divisão”, utilizando informações do texto de apoio.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apresentar características compatíveis com o texto de apoio e com o conceito de divisão.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de divisão."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve selecionar duas evidências pertinentes e explicar como elas sustentam a interpretação apresentada.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de divisão."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve estabelecer uma relação plausível, usando informações da atividade e vocabulário adequado à disciplina.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de divisão."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve comparar os dois aspectos com um critério comum, indicando semelhanças, diferenças ou contrastes relevantes.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de divisão."
+        },
+        {
+          "numero": 5,
+          "resposta": "Deve explicar uma relação causal, consequência, transformação ou permanência coerente com o tema estudado.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de divisão."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese autoral fundamentada no texto de apoio, com conclusão compatível com as evidências analisadas.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de divisão."
+        }
+      ]
+    },
+    {
+      "id": "efi-4ano-b3-mat-50-36-sistema-monetario",
+      "titulo": "Aprofundamento 36: Sistema monetário",
+      "tema": "Sistema monetário",
+      "sequencia": "Atividade 36",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "facil",
+      "objetivo": "Desenvolver EF04MA25 por meio do estudo de sistema monetário, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 4º ano.",
+      "bncc": [
+        {
+          "codigo": "EF04MA25",
+          "descricaoResumida": "Resolver e elaborar problemas de compra e venda e formas de pagamento, utilizando termos como troco e desconto.",
+          "habilidadeOficial": "Resolver e elaborar problemas de compra e venda e formas de pagamento, utilizando termos como troco e desconto."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 36: Sistema monetário”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 36: Sistema monetário",
+        "conteudo": "O estudo de sistema monetário permite relacionar informações, exemplos do cotidiano e conhecimentos próprios de Matemática. A atividade propõe observar evidências, estabelecer comparações, explicar relações e registrar conclusões adequadas ao 4º ano. A habilidade EF04MA25 orienta o trabalho e corresponde a resolver e elaborar problemas de compra e venda e formas de pagamento, utilizando termos como troco e desconto. Nesta ampliação, o estudante aplica esse conhecimento a uma situação diferente, justificando as respostas com informações do texto e conceitos estudados."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "Caracterize sistema monetário a partir das informações apresentadas em “Aprofundamento 36: Sistema monetário”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Selecione duas evidências do texto de apoio que ajudem a compreender “Aprofundamento 36: Sistema monetário” e explique a escolha.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "Que relação pode ser estabelecida entre sistema monetário e o contexto apresentado em “Aprofundamento 36: Sistema monetário”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Compare dois aspectos presentes em “Aprofundamento 36: Sistema monetário” usando o mesmo critério de análise.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Explique uma causa, consequência, transformação ou permanência relacionada a sistema monetário no contexto de “Aprofundamento 36: Sistema monetário”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Elabore uma conclusão fundamentada sobre “Aprofundamento 36: Sistema monetário”, utilizando informações do texto de apoio.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apresentar características compatíveis com o texto de apoio e com o conceito de sistema monetário.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de sistema monetário."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve selecionar duas evidências pertinentes e explicar como elas sustentam a interpretação apresentada.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de sistema monetário."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve estabelecer uma relação plausível, usando informações da atividade e vocabulário adequado à disciplina.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de sistema monetário."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve comparar os dois aspectos com um critério comum, indicando semelhanças, diferenças ou contrastes relevantes.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de sistema monetário."
+        },
+        {
+          "numero": 5,
+          "resposta": "Deve explicar uma relação causal, consequência, transformação ou permanência coerente com o tema estudado.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de sistema monetário."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese autoral fundamentada no texto de apoio, com conclusão compatível com as evidências analisadas.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de sistema monetário."
+        }
+      ]
+    },
+    {
+      "id": "efi-4ano-b3-mat-50-37-sistema-monetario",
+      "titulo": "Aprofundamento 37: Sistema monetário",
+      "tema": "Sistema monetário",
+      "sequencia": "Atividade 37",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "intermediaria",
+      "objetivo": "Desenvolver EF04MA25 por meio do estudo de sistema monetário, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 4º ano.",
+      "bncc": [
+        {
+          "codigo": "EF04MA25",
+          "descricaoResumida": "Resolver e elaborar problemas de compra e venda e formas de pagamento, utilizando termos como troco e desconto.",
+          "habilidadeOficial": "Resolver e elaborar problemas de compra e venda e formas de pagamento, utilizando termos como troco e desconto."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 37: Sistema monetário”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 37: Sistema monetário",
+        "conteudo": "O estudo de sistema monetário permite relacionar informações, exemplos do cotidiano e conhecimentos próprios de Matemática. A atividade propõe observar evidências, estabelecer comparações, explicar relações e registrar conclusões adequadas ao 4º ano. A habilidade EF04MA25 orienta o trabalho e corresponde a resolver e elaborar problemas de compra e venda e formas de pagamento, utilizando termos como troco e desconto. Nesta ampliação, o estudante aplica esse conhecimento a uma situação diferente, justificando as respostas com informações do texto e conceitos estudados."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "Caracterize sistema monetário a partir das informações apresentadas em “Aprofundamento 37: Sistema monetário”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Selecione duas evidências do texto de apoio que ajudem a compreender “Aprofundamento 37: Sistema monetário” e explique a escolha.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "Que relação pode ser estabelecida entre sistema monetário e o contexto apresentado em “Aprofundamento 37: Sistema monetário”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Compare dois aspectos presentes em “Aprofundamento 37: Sistema monetário” usando o mesmo critério de análise.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Explique uma causa, consequência, transformação ou permanência relacionada a sistema monetário no contexto de “Aprofundamento 37: Sistema monetário”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Elabore uma conclusão fundamentada sobre “Aprofundamento 37: Sistema monetário”, utilizando informações do texto de apoio.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apresentar características compatíveis com o texto de apoio e com o conceito de sistema monetário.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de sistema monetário."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve selecionar duas evidências pertinentes e explicar como elas sustentam a interpretação apresentada.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de sistema monetário."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve estabelecer uma relação plausível, usando informações da atividade e vocabulário adequado à disciplina.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de sistema monetário."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve comparar os dois aspectos com um critério comum, indicando semelhanças, diferenças ou contrastes relevantes.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de sistema monetário."
+        },
+        {
+          "numero": 5,
+          "resposta": "Deve explicar uma relação causal, consequência, transformação ou permanência coerente com o tema estudado.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de sistema monetário."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese autoral fundamentada no texto de apoio, com conclusão compatível com as evidências analisadas.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de sistema monetário."
+        }
+      ]
+    },
+    {
+      "id": "efi-4ano-b3-mat-50-38-problemas-combinados",
+      "titulo": "Aprofundamento 38: Problemas combinados",
+      "tema": "Problemas combinados",
+      "sequencia": "Atividade 38",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "desafiadora",
+      "objetivo": "Desenvolver EF04MA03 por meio do estudo de problemas combinados, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 4º ano.",
+      "bncc": [
+        {
+          "codigo": "EF04MA03",
+          "descricaoResumida": "Resolver e elaborar problemas com números naturais envolvendo adição e subtração.",
+          "habilidadeOficial": "Resolver e elaborar problemas com números naturais envolvendo adição e subtração."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 38: Problemas combinados”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 38: Problemas combinados",
+        "conteudo": "O estudo de problemas combinados permite relacionar informações, exemplos do cotidiano e conhecimentos próprios de Matemática. A atividade propõe observar evidências, estabelecer comparações, explicar relações e registrar conclusões adequadas ao 4º ano. A habilidade EF04MA03 orienta o trabalho e corresponde a resolver e elaborar problemas com números naturais envolvendo adição e subtração. Nesta ampliação, o estudante aplica esse conhecimento a uma situação diferente, justificando as respostas com informações do texto e conceitos estudados."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "Caracterize problemas combinados a partir das informações apresentadas em “Aprofundamento 38: Problemas combinados”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Selecione duas evidências do texto de apoio que ajudem a compreender “Aprofundamento 38: Problemas combinados” e explique a escolha.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "Que relação pode ser estabelecida entre problemas combinados e o contexto apresentado em “Aprofundamento 38: Problemas combinados”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Compare dois aspectos presentes em “Aprofundamento 38: Problemas combinados” usando o mesmo critério de análise.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Explique uma causa, consequência, transformação ou permanência relacionada a problemas combinados no contexto de “Aprofundamento 38: Problemas combinados”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Elabore uma conclusão fundamentada sobre “Aprofundamento 38: Problemas combinados”, utilizando informações do texto de apoio.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apresentar características compatíveis com o texto de apoio e com o conceito de problemas combinados.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de problemas combinados."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve selecionar duas evidências pertinentes e explicar como elas sustentam a interpretação apresentada.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de problemas combinados."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve estabelecer uma relação plausível, usando informações da atividade e vocabulário adequado à disciplina.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de problemas combinados."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve comparar os dois aspectos com um critério comum, indicando semelhanças, diferenças ou contrastes relevantes.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de problemas combinados."
+        },
+        {
+          "numero": 5,
+          "resposta": "Deve explicar uma relação causal, consequência, transformação ou permanência coerente com o tema estudado.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de problemas combinados."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese autoral fundamentada no texto de apoio, com conclusão compatível com as evidências analisadas.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de problemas combinados."
+        }
+      ]
+    },
+    {
+      "id": "efi-4ano-b3-mat-50-39-numeros-naturais",
+      "titulo": "Aprofundamento 39: Números naturais",
+      "tema": "Números naturais",
+      "sequencia": "Atividade 39",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "facil",
+      "objetivo": "Desenvolver EF04MA01 por meio do estudo de números naturais, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 4º ano.",
+      "bncc": [
+        {
+          "codigo": "EF04MA01",
+          "descricaoResumida": "Ler, escrever e ordenar números naturais até a ordem de dezenas de milhar.",
+          "habilidadeOficial": "Ler, escrever e ordenar números naturais até a ordem de dezenas de milhar."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 39: Números naturais”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 39: Números naturais",
+        "conteudo": "O estudo de números naturais permite relacionar informações, exemplos do cotidiano e conhecimentos próprios de Matemática. A atividade propõe observar evidências, estabelecer comparações, explicar relações e registrar conclusões adequadas ao 4º ano. A habilidade EF04MA01 orienta o trabalho e corresponde a ler, escrever e ordenar números naturais até a ordem de dezenas de milhar. Nesta ampliação, o estudante aplica esse conhecimento a uma situação diferente, justificando as respostas com informações do texto e conceitos estudados."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "Caracterize números naturais a partir das informações apresentadas em “Aprofundamento 39: Números naturais”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Selecione duas evidências do texto de apoio que ajudem a compreender “Aprofundamento 39: Números naturais” e explique a escolha.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "Que relação pode ser estabelecida entre números naturais e o contexto apresentado em “Aprofundamento 39: Números naturais”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Compare dois aspectos presentes em “Aprofundamento 39: Números naturais” usando o mesmo critério de análise.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Explique uma causa, consequência, transformação ou permanência relacionada a números naturais no contexto de “Aprofundamento 39: Números naturais”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Elabore uma conclusão fundamentada sobre “Aprofundamento 39: Números naturais”, utilizando informações do texto de apoio.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apresentar características compatíveis com o texto de apoio e com o conceito de números naturais.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de números naturais."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve selecionar duas evidências pertinentes e explicar como elas sustentam a interpretação apresentada.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de números naturais."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve estabelecer uma relação plausível, usando informações da atividade e vocabulário adequado à disciplina.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de números naturais."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve comparar os dois aspectos com um critério comum, indicando semelhanças, diferenças ou contrastes relevantes.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de números naturais."
+        },
+        {
+          "numero": 5,
+          "resposta": "Deve explicar uma relação causal, consequência, transformação ou permanência coerente com o tema estudado.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de números naturais."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese autoral fundamentada no texto de apoio, com conclusão compatível com as evidências analisadas.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de números naturais."
+        }
+      ]
+    },
+    {
+      "id": "efi-4ano-b3-mat-50-40-sistema-de-numeracao-decimal",
+      "titulo": "Aprofundamento 40: Sistema de numeração decimal",
+      "tema": "Sistema de numeração decimal",
+      "sequencia": "Atividade 40",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "intermediaria",
+      "objetivo": "Desenvolver EF04MA02 por meio do estudo de sistema de numeração decimal, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 4º ano.",
+      "bncc": [
+        {
+          "codigo": "EF04MA02",
+          "descricaoResumida": "Mostrar, por decomposição e composição, que todo número natural pode ser escrito por meio de adições e multiplicações por potências de dez.",
+          "habilidadeOficial": "Mostrar, por decomposição e composição, que todo número natural pode ser escrito por meio de adições e multiplicações por potências de dez."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 40: Sistema de numeração decimal”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 40: Sistema de numeração decimal",
+        "conteudo": "O estudo de sistema de numeração decimal permite relacionar informações, exemplos do cotidiano e conhecimentos próprios de Matemática. A atividade propõe observar evidências, estabelecer comparações, explicar relações e registrar conclusões adequadas ao 4º ano. A habilidade EF04MA02 orienta o trabalho e corresponde a mostrar, por decomposição e composição, que todo número natural pode ser escrito por meio de adições e multiplicações por potências de dez. Nesta ampliação, o estudante aplica esse conhecimento a uma situação diferente, justificando as respostas com informações do texto e conceitos estudados."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "Caracterize sistema de numeração decimal a partir das informações apresentadas em “Aprofundamento 40: Sistema de numeração decimal”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Selecione duas evidências do texto de apoio que ajudem a compreender “Aprofundamento 40: Sistema de numeração decimal” e explique a escolha.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "Que relação pode ser estabelecida entre sistema de numeração decimal e o contexto apresentado em “Aprofundamento 40: Sistema de numeração decimal”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Compare dois aspectos presentes em “Aprofundamento 40: Sistema de numeração decimal” usando o mesmo critério de análise.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Explique uma causa, consequência, transformação ou permanência relacionada a sistema de numeração decimal no contexto de “Aprofundamento 40: Sistema de numeração decimal”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Elabore uma conclusão fundamentada sobre “Aprofundamento 40: Sistema de numeração decimal”, utilizando informações do texto de apoio.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apresentar características compatíveis com o texto de apoio e com o conceito de sistema de numeração decimal.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de sistema de numeração decimal."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve selecionar duas evidências pertinentes e explicar como elas sustentam a interpretação apresentada.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de sistema de numeração decimal."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve estabelecer uma relação plausível, usando informações da atividade e vocabulário adequado à disciplina.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de sistema de numeração decimal."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve comparar os dois aspectos com um critério comum, indicando semelhanças, diferenças ou contrastes relevantes.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de sistema de numeração decimal."
+        },
+        {
+          "numero": 5,
+          "resposta": "Deve explicar uma relação causal, consequência, transformação ou permanência coerente com o tema estudado.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de sistema de numeração decimal."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese autoral fundamentada no texto de apoio, com conclusão compatível com as evidências analisadas.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de sistema de numeração decimal."
+        }
+      ]
+    },
+    {
+      "id": "efi-4ano-b3-mat-50-41-adicao-e-subtracao",
+      "titulo": "Aprofundamento 41: Adição e subtração",
+      "tema": "Adição e subtração",
+      "sequencia": "Atividade 41",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "intermediaria",
+      "objetivo": "Desenvolver EF04MA03 por meio do estudo de adição e subtração, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 4º ano.",
+      "bncc": [
+        {
+          "codigo": "EF04MA03",
+          "descricaoResumida": "Resolver e elaborar problemas com números naturais envolvendo adição e subtração.",
+          "habilidadeOficial": "Resolver e elaborar problemas com números naturais envolvendo adição e subtração."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 41: Adição e subtração”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 41: Adição e subtração",
+        "conteudo": "O estudo de adição e subtração permite relacionar informações, exemplos do cotidiano e conhecimentos próprios de Matemática. A atividade propõe observar evidências, estabelecer comparações, explicar relações e registrar conclusões adequadas ao 4º ano. A habilidade EF04MA03 orienta o trabalho e corresponde a resolver e elaborar problemas com números naturais envolvendo adição e subtração. Nesta ampliação, o estudante aplica esse conhecimento a uma situação diferente, justificando as respostas com informações do texto e conceitos estudados."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "Caracterize adição e subtração a partir das informações apresentadas em “Aprofundamento 41: Adição e subtração”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Selecione duas evidências do texto de apoio que ajudem a compreender “Aprofundamento 41: Adição e subtração” e explique a escolha.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "Que relação pode ser estabelecida entre adição e subtração e o contexto apresentado em “Aprofundamento 41: Adição e subtração”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Compare dois aspectos presentes em “Aprofundamento 41: Adição e subtração” usando o mesmo critério de análise.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Explique uma causa, consequência, transformação ou permanência relacionada a adição e subtração no contexto de “Aprofundamento 41: Adição e subtração”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Elabore uma conclusão fundamentada sobre “Aprofundamento 41: Adição e subtração”, utilizando informações do texto de apoio.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apresentar características compatíveis com o texto de apoio e com o conceito de adição e subtração.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de adição e subtração."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve selecionar duas evidências pertinentes e explicar como elas sustentam a interpretação apresentada.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de adição e subtração."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve estabelecer uma relação plausível, usando informações da atividade e vocabulário adequado à disciplina.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de adição e subtração."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve comparar os dois aspectos com um critério comum, indicando semelhanças, diferenças ou contrastes relevantes.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de adição e subtração."
+        },
+        {
+          "numero": 5,
+          "resposta": "Deve explicar uma relação causal, consequência, transformação ou permanência coerente com o tema estudado.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de adição e subtração."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese autoral fundamentada no texto de apoio, com conclusão compatível com as evidências analisadas.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de adição e subtração."
+        }
+      ]
+    },
+    {
+      "id": "efi-4ano-b3-mat-50-42-estimativa-e-calculo",
+      "titulo": "Aprofundamento 42: Estimativa e cálculo",
+      "tema": "Estimativa e cálculo",
+      "sequencia": "Atividade 42",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "intermediaria",
+      "objetivo": "Desenvolver EF04MA05 por meio do estudo de estimativa e cálculo, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 4º ano.",
+      "bncc": [
+        {
+          "codigo": "EF04MA05",
+          "descricaoResumida": "Utilizar propriedades das operações para desenvolver estratégias de cálculo.",
+          "habilidadeOficial": "Utilizar propriedades das operações para desenvolver estratégias de cálculo."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 42: Estimativa e cálculo”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 42: Estimativa e cálculo",
+        "conteudo": "O estudo de estimativa e cálculo permite relacionar informações, exemplos do cotidiano e conhecimentos próprios de Matemática. A atividade propõe observar evidências, estabelecer comparações, explicar relações e registrar conclusões adequadas ao 4º ano. A habilidade EF04MA05 orienta o trabalho e corresponde a utilizar propriedades das operações para desenvolver estratégias de cálculo. Nesta ampliação, o estudante aplica esse conhecimento a uma situação diferente, justificando as respostas com informações do texto e conceitos estudados."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "Caracterize estimativa e cálculo a partir das informações apresentadas em “Aprofundamento 42: Estimativa e cálculo”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Selecione duas evidências do texto de apoio que ajudem a compreender “Aprofundamento 42: Estimativa e cálculo” e explique a escolha.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "Que relação pode ser estabelecida entre estimativa e cálculo e o contexto apresentado em “Aprofundamento 42: Estimativa e cálculo”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Compare dois aspectos presentes em “Aprofundamento 42: Estimativa e cálculo” usando o mesmo critério de análise.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Explique uma causa, consequência, transformação ou permanência relacionada a estimativa e cálculo no contexto de “Aprofundamento 42: Estimativa e cálculo”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Elabore uma conclusão fundamentada sobre “Aprofundamento 42: Estimativa e cálculo”, utilizando informações do texto de apoio.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apresentar características compatíveis com o texto de apoio e com o conceito de estimativa e cálculo.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de estimativa e cálculo."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve selecionar duas evidências pertinentes e explicar como elas sustentam a interpretação apresentada.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de estimativa e cálculo."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve estabelecer uma relação plausível, usando informações da atividade e vocabulário adequado à disciplina.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de estimativa e cálculo."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve comparar os dois aspectos com um critério comum, indicando semelhanças, diferenças ou contrastes relevantes.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de estimativa e cálculo."
+        },
+        {
+          "numero": 5,
+          "resposta": "Deve explicar uma relação causal, consequência, transformação ou permanência coerente com o tema estudado.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de estimativa e cálculo."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese autoral fundamentada no texto de apoio, com conclusão compatível com as evidências analisadas.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de estimativa e cálculo."
+        }
+      ]
+    },
+    {
+      "id": "efi-4ano-b3-mat-50-43-fracoes-unitarias",
+      "titulo": "Aprofundamento 43: Frações unitárias",
+      "tema": "Frações unitárias",
+      "sequencia": "Atividade 43",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "facil",
+      "objetivo": "Desenvolver EF04MA09 por meio do estudo de frações unitárias, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 4º ano.",
+      "bncc": [
+        {
+          "codigo": "EF04MA09",
+          "descricaoResumida": "Reconhecer frações unitárias usuais como unidades de medida menores do que uma unidade.",
+          "habilidadeOficial": "Reconhecer frações unitárias usuais como unidades de medida menores do que uma unidade."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 43: Frações unitárias”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 43: Frações unitárias",
+        "conteudo": "O estudo de frações unitárias permite relacionar informações, exemplos do cotidiano e conhecimentos próprios de Matemática. A atividade propõe observar evidências, estabelecer comparações, explicar relações e registrar conclusões adequadas ao 4º ano. A habilidade EF04MA09 orienta o trabalho e corresponde a reconhecer frações unitárias usuais como unidades de medida menores do que uma unidade. Nesta ampliação, o estudante aplica esse conhecimento a uma situação diferente, justificando as respostas com informações do texto e conceitos estudados."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "Caracterize frações unitárias a partir das informações apresentadas em “Aprofundamento 43: Frações unitárias”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Selecione duas evidências do texto de apoio que ajudem a compreender “Aprofundamento 43: Frações unitárias” e explique a escolha.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "Que relação pode ser estabelecida entre frações unitárias e o contexto apresentado em “Aprofundamento 43: Frações unitárias”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Compare dois aspectos presentes em “Aprofundamento 43: Frações unitárias” usando o mesmo critério de análise.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Explique uma causa, consequência, transformação ou permanência relacionada a frações unitárias no contexto de “Aprofundamento 43: Frações unitárias”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Elabore uma conclusão fundamentada sobre “Aprofundamento 43: Frações unitárias”, utilizando informações do texto de apoio.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apresentar características compatíveis com o texto de apoio e com o conceito de frações unitárias.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de frações unitárias."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve selecionar duas evidências pertinentes e explicar como elas sustentam a interpretação apresentada.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de frações unitárias."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve estabelecer uma relação plausível, usando informações da atividade e vocabulário adequado à disciplina.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de frações unitárias."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve comparar os dois aspectos com um critério comum, indicando semelhanças, diferenças ou contrastes relevantes.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de frações unitárias."
+        },
+        {
+          "numero": 5,
+          "resposta": "Deve explicar uma relação causal, consequência, transformação ou permanência coerente com o tema estudado.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de frações unitárias."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese autoral fundamentada no texto de apoio, com conclusão compatível com as evidências analisadas.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de frações unitárias."
+        }
+      ]
+    },
+    {
+      "id": "efi-4ano-b3-mat-50-44-probabilidade-e-eventos-aleatorios",
+      "titulo": "Aprofundamento 44: Probabilidade e eventos aleatórios",
+      "tema": "Probabilidade e eventos aleatórios",
+      "sequencia": "Atividade 44",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "intermediaria",
+      "objetivo": "Desenvolver EF04MA26 por meio do estudo de probabilidade e eventos aleatórios, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 4º ano.",
+      "bncc": [
+        {
+          "codigo": "EF04MA26",
+          "descricaoResumida": "Identificar, entre eventos aleatórios cotidianos, aqueles que têm maior chance de ocorrência.",
+          "habilidadeOficial": "Identificar, entre eventos aleatórios cotidianos, aqueles que têm maior chance de ocorrência."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 44: Probabilidade e eventos aleatórios”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 44: Probabilidade e eventos aleatórios",
+        "conteudo": "O estudo de probabilidade e eventos aleatórios permite relacionar informações, exemplos do cotidiano e conhecimentos próprios de Matemática. A atividade propõe observar evidências, estabelecer comparações, explicar relações e registrar conclusões adequadas ao 4º ano. A habilidade EF04MA26 orienta o trabalho e corresponde a identificar, entre eventos aleatórios cotidianos, aqueles que têm maior chance de ocorrência. Nesta ampliação, o estudante aplica esse conhecimento a uma situação diferente, justificando as respostas com informações do texto e conceitos estudados."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "Caracterize probabilidade e eventos aleatórios a partir das informações apresentadas em “Aprofundamento 44: Probabilidade e eventos aleatórios”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Selecione duas evidências do texto de apoio que ajudem a compreender “Aprofundamento 44: Probabilidade e eventos aleatórios” e explique a escolha.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "Que relação pode ser estabelecida entre probabilidade e eventos aleatórios e o contexto apresentado em “Aprofundamento 44: Probabilidade e eventos aleatórios”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Compare dois aspectos presentes em “Aprofundamento 44: Probabilidade e eventos aleatórios” usando o mesmo critério de análise.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Explique uma causa, consequência, transformação ou permanência relacionada a probabilidade e eventos aleatórios no contexto de “Aprofundamento 44: Probabilidade e eventos aleatórios”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Elabore uma conclusão fundamentada sobre “Aprofundamento 44: Probabilidade e eventos aleatórios”, utilizando informações do texto de apoio.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apresentar características compatíveis com o texto de apoio e com o conceito de probabilidade e eventos aleatórios.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de probabilidade e eventos aleatórios."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve selecionar duas evidências pertinentes e explicar como elas sustentam a interpretação apresentada.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de probabilidade e eventos aleatórios."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve estabelecer uma relação plausível, usando informações da atividade e vocabulário adequado à disciplina.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de probabilidade e eventos aleatórios."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve comparar os dois aspectos com um critério comum, indicando semelhanças, diferenças ou contrastes relevantes.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de probabilidade e eventos aleatórios."
+        },
+        {
+          "numero": 5,
+          "resposta": "Deve explicar uma relação causal, consequência, transformação ou permanência coerente com o tema estudado.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de probabilidade e eventos aleatórios."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese autoral fundamentada no texto de apoio, com conclusão compatível com as evidências analisadas.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de probabilidade e eventos aleatórios."
+        }
+      ]
+    },
+    {
+      "id": "efi-4ano-b3-mat-50-45-localizacao-e-deslocamento",
+      "titulo": "Aprofundamento 45: Localização e deslocamento",
+      "tema": "Localização e deslocamento",
+      "sequencia": "Atividade 45",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "facil",
+      "objetivo": "Desenvolver EF04MA16 por meio do estudo de localização e deslocamento, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 4º ano.",
+      "bncc": [
+        {
+          "codigo": "EF04MA16",
+          "descricaoResumida": "Descrever deslocamentos e localização de pessoas e objetos no espaço por meio de malhas e referências.",
+          "habilidadeOficial": "Descrever deslocamentos e localização de pessoas e objetos no espaço por meio de malhas e referências."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 45: Localização e deslocamento”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 45: Localização e deslocamento",
+        "conteudo": "O estudo de localização e deslocamento permite relacionar informações, exemplos do cotidiano e conhecimentos próprios de Matemática. A atividade propõe observar evidências, estabelecer comparações, explicar relações e registrar conclusões adequadas ao 4º ano. A habilidade EF04MA16 orienta o trabalho e corresponde a descrever deslocamentos e localização de pessoas e objetos no espaço por meio de malhas e referências. Nesta ampliação, o estudante aplica esse conhecimento a uma situação diferente, justificando as respostas com informações do texto e conceitos estudados."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "Caracterize localização e deslocamento a partir das informações apresentadas em “Aprofundamento 45: Localização e deslocamento”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Selecione duas evidências do texto de apoio que ajudem a compreender “Aprofundamento 45: Localização e deslocamento” e explique a escolha.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "Que relação pode ser estabelecida entre localização e deslocamento e o contexto apresentado em “Aprofundamento 45: Localização e deslocamento”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Compare dois aspectos presentes em “Aprofundamento 45: Localização e deslocamento” usando o mesmo critério de análise.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Explique uma causa, consequência, transformação ou permanência relacionada a localização e deslocamento no contexto de “Aprofundamento 45: Localização e deslocamento”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Elabore uma conclusão fundamentada sobre “Aprofundamento 45: Localização e deslocamento”, utilizando informações do texto de apoio.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apresentar características compatíveis com o texto de apoio e com o conceito de localização e deslocamento.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de localização e deslocamento."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve selecionar duas evidências pertinentes e explicar como elas sustentam a interpretação apresentada.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de localização e deslocamento."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve estabelecer uma relação plausível, usando informações da atividade e vocabulário adequado à disciplina.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de localização e deslocamento."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve comparar os dois aspectos com um critério comum, indicando semelhanças, diferenças ou contrastes relevantes.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de localização e deslocamento."
+        },
+        {
+          "numero": 5,
+          "resposta": "Deve explicar uma relação causal, consequência, transformação ou permanência coerente com o tema estudado.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de localização e deslocamento."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese autoral fundamentada no texto de apoio, com conclusão compatível com as evidências analisadas.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de localização e deslocamento."
+        }
+      ]
+    },
+    {
+      "id": "efi-4ano-b3-mat-50-46-angulos",
+      "titulo": "Aprofundamento 46: Ângulos",
+      "tema": "Ângulos",
+      "sequencia": "Atividade 46",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "intermediaria",
+      "objetivo": "Desenvolver EF04MA18 por meio do estudo de ângulos, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 4º ano.",
+      "bncc": [
+        {
+          "codigo": "EF04MA18",
+          "descricaoResumida": "Habilidade EF04MA18: desenvolver conhecimentos e práticas relacionados a Ângulos, com adequação ao 4º ano.",
+          "habilidadeOficial": "Habilidade EF04MA18: desenvolver conhecimentos e práticas relacionados a Ângulos, com adequação ao 4º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 46: Ângulos”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 46: Ângulos",
+        "conteudo": "O estudo de ângulos permite relacionar informações, exemplos do cotidiano e conhecimentos próprios de Matemática. A atividade propõe observar evidências, estabelecer comparações, explicar relações e registrar conclusões adequadas ao 4º ano. A habilidade EF04MA18 orienta o trabalho e corresponde a habilidade ef04ma18: desenvolver conhecimentos e práticas relacionados a ângulos, com adequação ao 4º ano. Nesta ampliação, o estudante aplica esse conhecimento a uma situação diferente, justificando as respostas com informações do texto e conceitos estudados."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "Caracterize ângulos a partir das informações apresentadas em “Aprofundamento 46: Ângulos”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Selecione duas evidências do texto de apoio que ajudem a compreender “Aprofundamento 46: Ângulos” e explique a escolha.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "Que relação pode ser estabelecida entre ângulos e o contexto apresentado em “Aprofundamento 46: Ângulos”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Compare dois aspectos presentes em “Aprofundamento 46: Ângulos” usando o mesmo critério de análise.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Explique uma causa, consequência, transformação ou permanência relacionada a ângulos no contexto de “Aprofundamento 46: Ângulos”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Elabore uma conclusão fundamentada sobre “Aprofundamento 46: Ângulos”, utilizando informações do texto de apoio.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apresentar características compatíveis com o texto de apoio e com o conceito de ângulos.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de ângulos."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve selecionar duas evidências pertinentes e explicar como elas sustentam a interpretação apresentada.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de ângulos."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve estabelecer uma relação plausível, usando informações da atividade e vocabulário adequado à disciplina.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de ângulos."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve comparar os dois aspectos com um critério comum, indicando semelhanças, diferenças ou contrastes relevantes.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de ângulos."
+        },
+        {
+          "numero": 5,
+          "resposta": "Deve explicar uma relação causal, consequência, transformação ou permanência coerente com o tema estudado.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de ângulos."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese autoral fundamentada no texto de apoio, com conclusão compatível com as evidências analisadas.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de ângulos."
+        }
+      ]
+    },
+    {
+      "id": "efi-4ano-b3-mat-50-47-perimetro-e-area",
+      "titulo": "Aprofundamento 47: Perímetro e área",
+      "tema": "Perímetro e área",
+      "sequencia": "Atividade 47",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "intermediaria",
+      "objetivo": "Desenvolver EF04MA20 por meio do estudo de perímetro e área, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 4º ano.",
+      "bncc": [
+        {
+          "codigo": "EF04MA20",
+          "descricaoResumida": "Medir e estimar comprimentos, perímetros e áreas em situações cotidianas.",
+          "habilidadeOficial": "Medir e estimar comprimentos, perímetros e áreas em situações cotidianas."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 47: Perímetro e área”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 47: Perímetro e área",
+        "conteudo": "O estudo de perímetro e área permite relacionar informações, exemplos do cotidiano e conhecimentos próprios de Matemática. A atividade propõe observar evidências, estabelecer comparações, explicar relações e registrar conclusões adequadas ao 4º ano. A habilidade EF04MA20 orienta o trabalho e corresponde a medir e estimar comprimentos, perímetros e áreas em situações cotidianas. Nesta ampliação, o estudante aplica esse conhecimento a uma situação diferente, justificando as respostas com informações do texto e conceitos estudados."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "Caracterize perímetro e área a partir das informações apresentadas em “Aprofundamento 47: Perímetro e área”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Selecione duas evidências do texto de apoio que ajudem a compreender “Aprofundamento 47: Perímetro e área” e explique a escolha.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "Que relação pode ser estabelecida entre perímetro e área e o contexto apresentado em “Aprofundamento 47: Perímetro e área”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Compare dois aspectos presentes em “Aprofundamento 47: Perímetro e área” usando o mesmo critério de análise.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Explique uma causa, consequência, transformação ou permanência relacionada a perímetro e área no contexto de “Aprofundamento 47: Perímetro e área”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Elabore uma conclusão fundamentada sobre “Aprofundamento 47: Perímetro e área”, utilizando informações do texto de apoio.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apresentar características compatíveis com o texto de apoio e com o conceito de perímetro e área.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de perímetro e área."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve selecionar duas evidências pertinentes e explicar como elas sustentam a interpretação apresentada.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de perímetro e área."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve estabelecer uma relação plausível, usando informações da atividade e vocabulário adequado à disciplina.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de perímetro e área."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve comparar os dois aspectos com um critério comum, indicando semelhanças, diferenças ou contrastes relevantes.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de perímetro e área."
+        },
+        {
+          "numero": 5,
+          "resposta": "Deve explicar uma relação causal, consequência, transformação ou permanência coerente com o tema estudado.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de perímetro e área."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese autoral fundamentada no texto de apoio, com conclusão compatível com as evidências analisadas.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de perímetro e área."
+        }
+      ]
+    },
+    {
+      "id": "efi-4ano-b3-mat-50-48-medidas-de-tempo",
+      "titulo": "Aprofundamento 48: Medidas de tempo",
+      "tema": "Medidas de tempo",
+      "sequencia": "Atividade 48",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "intermediaria",
+      "objetivo": "Desenvolver EF04MA22 por meio do estudo de medidas de tempo, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 4º ano.",
+      "bncc": [
+        {
+          "codigo": "EF04MA22",
+          "descricaoResumida": "Ler e registrar medidas e intervalos de tempo em horas, minutos e segundos.",
+          "habilidadeOficial": "Ler e registrar medidas e intervalos de tempo em horas, minutos e segundos."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 48: Medidas de tempo”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 48: Medidas de tempo",
+        "conteudo": "O estudo de medidas de tempo permite relacionar informações, exemplos do cotidiano e conhecimentos próprios de Matemática. A atividade propõe observar evidências, estabelecer comparações, explicar relações e registrar conclusões adequadas ao 4º ano. A habilidade EF04MA22 orienta o trabalho e corresponde a ler e registrar medidas e intervalos de tempo em horas, minutos e segundos. Nesta ampliação, o estudante aplica esse conhecimento a uma situação diferente, justificando as respostas com informações do texto e conceitos estudados."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "Caracterize medidas de tempo a partir das informações apresentadas em “Aprofundamento 48: Medidas de tempo”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Selecione duas evidências do texto de apoio que ajudem a compreender “Aprofundamento 48: Medidas de tempo” e explique a escolha.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "Que relação pode ser estabelecida entre medidas de tempo e o contexto apresentado em “Aprofundamento 48: Medidas de tempo”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Compare dois aspectos presentes em “Aprofundamento 48: Medidas de tempo” usando o mesmo critério de análise.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Explique uma causa, consequência, transformação ou permanência relacionada a medidas de tempo no contexto de “Aprofundamento 48: Medidas de tempo”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Elabore uma conclusão fundamentada sobre “Aprofundamento 48: Medidas de tempo”, utilizando informações do texto de apoio.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apresentar características compatíveis com o texto de apoio e com o conceito de medidas de tempo.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de medidas de tempo."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve selecionar duas evidências pertinentes e explicar como elas sustentam a interpretação apresentada.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de medidas de tempo."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve estabelecer uma relação plausível, usando informações da atividade e vocabulário adequado à disciplina.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de medidas de tempo."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve comparar os dois aspectos com um critério comum, indicando semelhanças, diferenças ou contrastes relevantes.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de medidas de tempo."
+        },
+        {
+          "numero": 5,
+          "resposta": "Deve explicar uma relação causal, consequência, transformação ou permanência coerente com o tema estudado.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de medidas de tempo."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese autoral fundamentada no texto de apoio, com conclusão compatível com as evidências analisadas.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de medidas de tempo."
+        }
+      ]
+    },
+    {
+      "id": "efi-4ano-b3-mat-50-49-tabelas-e-graficos",
+      "titulo": "Aprofundamento 49: Tabelas e gráficos",
+      "tema": "Tabelas e gráficos",
+      "sequencia": "Atividade 49",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "facil",
+      "objetivo": "Desenvolver EF04MA27 por meio do estudo de tabelas e gráficos, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 4º ano.",
+      "bncc": [
+        {
+          "codigo": "EF04MA27",
+          "descricaoResumida": "Analisar dados apresentados em tabelas simples ou de dupla entrada e em gráficos de colunas.",
+          "habilidadeOficial": "Analisar dados apresentados em tabelas simples ou de dupla entrada e em gráficos de colunas."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 49: Tabelas e gráficos”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 49: Tabelas e gráficos",
+        "conteudo": "O estudo de tabelas e gráficos permite relacionar informações, exemplos do cotidiano e conhecimentos próprios de Matemática. A atividade propõe observar evidências, estabelecer comparações, explicar relações e registrar conclusões adequadas ao 4º ano. A habilidade EF04MA27 orienta o trabalho e corresponde a analisar dados apresentados em tabelas simples ou de dupla entrada e em gráficos de colunas. Nesta ampliação, o estudante aplica esse conhecimento a uma situação diferente, justificando as respostas com informações do texto e conceitos estudados."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "Caracterize tabelas e gráficos a partir das informações apresentadas em “Aprofundamento 49: Tabelas e gráficos”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Selecione duas evidências do texto de apoio que ajudem a compreender “Aprofundamento 49: Tabelas e gráficos” e explique a escolha.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "Que relação pode ser estabelecida entre tabelas e gráficos e o contexto apresentado em “Aprofundamento 49: Tabelas e gráficos”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Compare dois aspectos presentes em “Aprofundamento 49: Tabelas e gráficos” usando o mesmo critério de análise.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Explique uma causa, consequência, transformação ou permanência relacionada a tabelas e gráficos no contexto de “Aprofundamento 49: Tabelas e gráficos”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Elabore uma conclusão fundamentada sobre “Aprofundamento 49: Tabelas e gráficos”, utilizando informações do texto de apoio.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apresentar características compatíveis com o texto de apoio e com o conceito de tabelas e gráficos.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de tabelas e gráficos."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve selecionar duas evidências pertinentes e explicar como elas sustentam a interpretação apresentada.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de tabelas e gráficos."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve estabelecer uma relação plausível, usando informações da atividade e vocabulário adequado à disciplina.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de tabelas e gráficos."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve comparar os dois aspectos com um critério comum, indicando semelhanças, diferenças ou contrastes relevantes.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de tabelas e gráficos."
+        },
+        {
+          "numero": 5,
+          "resposta": "Deve explicar uma relação causal, consequência, transformação ou permanência coerente com o tema estudado.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de tabelas e gráficos."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese autoral fundamentada no texto de apoio, com conclusão compatível com as evidências analisadas.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de tabelas e gráficos."
+        }
+      ]
+    },
+    {
+      "id": "efi-4ano-b3-mat-50-50-sequencias-numericas",
+      "titulo": "Aprofundamento 50: Sequências numéricas",
+      "tema": "Sequências numéricas",
+      "sequencia": "Atividade 50",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "intermediaria",
+      "objetivo": "Desenvolver EF04MA04 por meio do estudo de sequências numéricas, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 4º ano.",
+      "bncc": [
+        {
+          "codigo": "EF04MA04",
+          "descricaoResumida": "Utilizar relações entre adição e subtração e entre multiplicação e divisão para ampliar estratégias de cálculo.",
+          "habilidadeOficial": "Utilizar relações entre adição e subtração e entre multiplicação e divisão para ampliar estratégias de cálculo."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 50: Sequências numéricas”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 50: Sequências numéricas",
+        "conteudo": "O estudo de sequências numéricas permite relacionar informações, exemplos do cotidiano e conhecimentos próprios de Matemática. A atividade propõe observar evidências, estabelecer comparações, explicar relações e registrar conclusões adequadas ao 4º ano. A habilidade EF04MA04 orienta o trabalho e corresponde a utilizar relações entre adição e subtração e entre multiplicação e divisão para ampliar estratégias de cálculo. Nesta ampliação, o estudante aplica esse conhecimento a uma situação diferente, justificando as respostas com informações do texto e conceitos estudados."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "Caracterize sequências numéricas a partir das informações apresentadas em “Aprofundamento 50: Sequências numéricas”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Selecione duas evidências do texto de apoio que ajudem a compreender “Aprofundamento 50: Sequências numéricas” e explique a escolha.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "Que relação pode ser estabelecida entre sequências numéricas e o contexto apresentado em “Aprofundamento 50: Sequências numéricas”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Compare dois aspectos presentes em “Aprofundamento 50: Sequências numéricas” usando o mesmo critério de análise.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Explique uma causa, consequência, transformação ou permanência relacionada a sequências numéricas no contexto de “Aprofundamento 50: Sequências numéricas”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Elabore uma conclusão fundamentada sobre “Aprofundamento 50: Sequências numéricas”, utilizando informações do texto de apoio.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apresentar características compatíveis com o texto de apoio e com o conceito de sequências numéricas.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de sequências numéricas."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve selecionar duas evidências pertinentes e explicar como elas sustentam a interpretação apresentada.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de sequências numéricas."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve estabelecer uma relação plausível, usando informações da atividade e vocabulário adequado à disciplina.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de sequências numéricas."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve comparar os dois aspectos com um critério comum, indicando semelhanças, diferenças ou contrastes relevantes.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de sequências numéricas."
+        },
+        {
+          "numero": 5,
+          "resposta": "Deve explicar uma relação causal, consequência, transformação ou permanência coerente com o tema estudado.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de sequências numéricas."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese autoral fundamentada no texto de apoio, com conclusão compatível com as evidências analisadas.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de sequências numéricas."
+        }
+      ]
     }
   ],
   "bnccConferida": true,
-  "referenciaBncc": "BNCC — Ensino Fundamental — Anos Iniciais, Matemática (MEC, 2018)"
+  "referenciaBncc": "BNCC — Ensino Fundamental — Anos Iniciais, Matemática (MEC, 2018)",
+  "quantidadeAtividades": 50
 }

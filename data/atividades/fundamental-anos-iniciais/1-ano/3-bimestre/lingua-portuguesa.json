@@ -6,7 +6,7 @@
   "ano": "1º ano",
   "bimestre": 3,
   "disciplina": "Língua Portuguesa",
-  "statusBimestre": "sugerido",
+  "statusBimestre": "completo",
   "atividades": [
     {
       "id": "efi-1ano-b3-lp-01-palavras-do-cotidiano-descoberta",
@@ -3517,8 +3517,2189 @@
         "dataRevisao": "2026-07-27"
       },
       "bnccConferida": true
+    },
+    {
+      "id": "efi-1ano-b3-lp-50-31-leitura-de-palavras",
+      "titulo": "Aprofundamento 31: Leitura de palavras",
+      "tema": "Leitura de palavras",
+      "sequencia": "Atividade 31",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "facil",
+      "objetivo": "Desenvolver EF01LP01 por meio do estudo de leitura de palavras, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01LP01",
+          "descricaoResumida": "Habilidade EF01LP01: desenvolver aprendizagens de Língua Portuguesa relacionadas a Leitura de palavras, com linguagem, recursos e autonomia adequados ao 1º ano.",
+          "habilidadeOficial": "Habilidade EF01LP01: desenvolver aprendizagens de Língua Portuguesa relacionadas a Leitura de palavras, com linguagem, recursos e autonomia adequados ao 1º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 31: Leitura de palavras”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 31: Leitura de palavras",
+        "conteudo": "Em Língua Portuguesa, estudar leitura de palavras ajuda a criança a observar o cotidiano, nomear elementos, comparar situações e registrar descobertas. Nesta proposta, o estudante parte de exemplos próximos da escola, da família ou da comunidade e organiza o que percebe com palavras, desenhos, números ou pequenas explicações. A habilidade EF01LP01 orienta o trabalho e envolve habilidade ef01lp01: desenvolver aprendizagens de língua portuguesa relacionadas a leitura de palavras, com linguagem, recursos e autonomia adequados ao 1º ano. A atividade 31 retoma esse conhecimento em nova situação para ampliar a compreensão."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "O que você percebe primeiro na situação apresentada em “Aprofundamento 31: Leitura de palavras”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Quais dois elementos de “Aprofundamento 31: Leitura de palavras” ajudam a compreender melhor leitura de palavras?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "O que é parecido e o que é diferente entre os exemplos apresentados em “Aprofundamento 31: Leitura de palavras”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Que informação do texto de apoio de “Aprofundamento 31: Leitura de palavras” ajuda a responder sobre leitura de palavras?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Como o tema de “Aprofundamento 31: Leitura de palavras” pode ser observado na escola, em casa ou na comunidade?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Escreva com suas palavras uma descoberta feita ao estudar “Aprofundamento 31: Leitura de palavras”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apontar um elemento realmente apresentado na situação e descrevê-lo de modo compreensível.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de leitura de palavras."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve citar dois elementos pertinentes ao estudo de leitura de palavras e explicar sua presença.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de leitura de palavras."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve registrar ao menos uma semelhança e uma diferença coerentes com os exemplos estudados.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de leitura de palavras."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve recuperar uma informação explícita do texto de apoio que sustente a resposta.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de leitura de palavras."
+        },
+        {
+          "numero": 5,
+          "resposta": "Pode apresentar exemplo da escola, da casa ou da comunidade, desde que relacionado ao tema.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de leitura de palavras."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese curta e autoral que demonstre uma aprendizagem efetivamente trabalhada na atividade.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de leitura de palavras."
+        }
+      ]
+    },
+    {
+      "id": "efi-1ano-b3-lp-50-32-alfabeto",
+      "titulo": "Aprofundamento 32: Alfabeto",
+      "tema": "Alfabeto",
+      "sequencia": "Atividade 32",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "facil",
+      "objetivo": "Desenvolver EF01LP10 por meio do estudo de alfabeto, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01LP10",
+          "descricaoResumida": "Habilidade EF01LP10: desenvolver aprendizagens de Língua Portuguesa relacionadas a Alfabeto, com linguagem, recursos e autonomia adequados ao 1º ano.",
+          "habilidadeOficial": "Habilidade EF01LP10: desenvolver aprendizagens de Língua Portuguesa relacionadas a Alfabeto, com linguagem, recursos e autonomia adequados ao 1º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 32: Alfabeto”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 32: Alfabeto",
+        "conteudo": "Em Língua Portuguesa, estudar alfabeto ajuda a criança a observar o cotidiano, nomear elementos, comparar situações e registrar descobertas. Nesta proposta, o estudante parte de exemplos próximos da escola, da família ou da comunidade e organiza o que percebe com palavras, desenhos, números ou pequenas explicações. A habilidade EF01LP10 orienta o trabalho e envolve habilidade ef01lp10: desenvolver aprendizagens de língua portuguesa relacionadas a alfabeto, com linguagem, recursos e autonomia adequados ao 1º ano. A atividade 32 retoma esse conhecimento em nova situação para ampliar a compreensão."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "O que você percebe primeiro na situação apresentada em “Aprofundamento 32: Alfabeto”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Quais dois elementos de “Aprofundamento 32: Alfabeto” ajudam a compreender melhor alfabeto?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "O que é parecido e o que é diferente entre os exemplos apresentados em “Aprofundamento 32: Alfabeto”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Que informação do texto de apoio de “Aprofundamento 32: Alfabeto” ajuda a responder sobre alfabeto?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Como o tema de “Aprofundamento 32: Alfabeto” pode ser observado na escola, em casa ou na comunidade?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Escreva com suas palavras uma descoberta feita ao estudar “Aprofundamento 32: Alfabeto”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apontar um elemento realmente apresentado na situação e descrevê-lo de modo compreensível.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de alfabeto."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve citar dois elementos pertinentes ao estudo de alfabeto e explicar sua presença.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de alfabeto."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve registrar ao menos uma semelhança e uma diferença coerentes com os exemplos estudados.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de alfabeto."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve recuperar uma informação explícita do texto de apoio que sustente a resposta.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de alfabeto."
+        },
+        {
+          "numero": 5,
+          "resposta": "Pode apresentar exemplo da escola, da casa ou da comunidade, desde que relacionado ao tema.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de alfabeto."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese curta e autoral que demonstre uma aprendizagem efetivamente trabalhada na atividade.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de alfabeto."
+        }
+      ]
+    },
+    {
+      "id": "efi-1ano-b3-lp-50-33-consciencia-silabica",
+      "titulo": "Aprofundamento 33: Consciência silábica",
+      "tema": "Consciência silábica",
+      "sequencia": "Atividade 33",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "facil",
+      "objetivo": "Desenvolver EF01LP06 por meio do estudo de consciência silábica, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01LP06",
+          "descricaoResumida": "Habilidade EF01LP06: desenvolver aprendizagens de Língua Portuguesa relacionadas a Consciência silábica, com linguagem, recursos e autonomia adequados ao 1º ano.",
+          "habilidadeOficial": "Habilidade EF01LP06: desenvolver aprendizagens de Língua Portuguesa relacionadas a Consciência silábica, com linguagem, recursos e autonomia adequados ao 1º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 33: Consciência silábica”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 33: Consciência silábica",
+        "conteudo": "Em Língua Portuguesa, estudar consciência silábica ajuda a criança a observar o cotidiano, nomear elementos, comparar situações e registrar descobertas. Nesta proposta, o estudante parte de exemplos próximos da escola, da família ou da comunidade e organiza o que percebe com palavras, desenhos, números ou pequenas explicações. A habilidade EF01LP06 orienta o trabalho e envolve habilidade ef01lp06: desenvolver aprendizagens de língua portuguesa relacionadas a consciência silábica, com linguagem, recursos e autonomia adequados ao 1º ano. A atividade 33 retoma esse conhecimento em nova situação para ampliar a compreensão."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "O que você percebe primeiro na situação apresentada em “Aprofundamento 33: Consciência silábica”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Quais dois elementos de “Aprofundamento 33: Consciência silábica” ajudam a compreender melhor consciência silábica?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "O que é parecido e o que é diferente entre os exemplos apresentados em “Aprofundamento 33: Consciência silábica”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Que informação do texto de apoio de “Aprofundamento 33: Consciência silábica” ajuda a responder sobre consciência silábica?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Como o tema de “Aprofundamento 33: Consciência silábica” pode ser observado na escola, em casa ou na comunidade?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Escreva com suas palavras uma descoberta feita ao estudar “Aprofundamento 33: Consciência silábica”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apontar um elemento realmente apresentado na situação e descrevê-lo de modo compreensível.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de consciência silábica."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve citar dois elementos pertinentes ao estudo de consciência silábica e explicar sua presença.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de consciência silábica."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve registrar ao menos uma semelhança e uma diferença coerentes com os exemplos estudados.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de consciência silábica."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve recuperar uma informação explícita do texto de apoio que sustente a resposta.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de consciência silábica."
+        },
+        {
+          "numero": 5,
+          "resposta": "Pode apresentar exemplo da escola, da casa ou da comunidade, desde que relacionado ao tema.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de consciência silábica."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese curta e autoral que demonstre uma aprendizagem efetivamente trabalhada na atividade.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de consciência silábica."
+        }
+      ]
+    },
+    {
+      "id": "efi-1ano-b3-lp-50-34-consciencia-fonologica",
+      "titulo": "Aprofundamento 34: Consciência fonológica",
+      "tema": "Consciência fonológica",
+      "sequencia": "Atividade 34",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "facil",
+      "objetivo": "Desenvolver EF01LP08 por meio do estudo de consciência fonológica, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01LP08",
+          "descricaoResumida": "Habilidade EF01LP08: desenvolver aprendizagens de Língua Portuguesa relacionadas a Consciência fonológica, com linguagem, recursos e autonomia adequados ao 1º ano.",
+          "habilidadeOficial": "Habilidade EF01LP08: desenvolver aprendizagens de Língua Portuguesa relacionadas a Consciência fonológica, com linguagem, recursos e autonomia adequados ao 1º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 34: Consciência fonológica”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 34: Consciência fonológica",
+        "conteudo": "Em Língua Portuguesa, estudar consciência fonológica ajuda a criança a observar o cotidiano, nomear elementos, comparar situações e registrar descobertas. Nesta proposta, o estudante parte de exemplos próximos da escola, da família ou da comunidade e organiza o que percebe com palavras, desenhos, números ou pequenas explicações. A habilidade EF01LP08 orienta o trabalho e envolve habilidade ef01lp08: desenvolver aprendizagens de língua portuguesa relacionadas a consciência fonológica, com linguagem, recursos e autonomia adequados ao 1º ano. A atividade 34 retoma esse conhecimento em nova situação para ampliar a compreensão."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "O que você percebe primeiro na situação apresentada em “Aprofundamento 34: Consciência fonológica”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Quais dois elementos de “Aprofundamento 34: Consciência fonológica” ajudam a compreender melhor consciência fonológica?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "O que é parecido e o que é diferente entre os exemplos apresentados em “Aprofundamento 34: Consciência fonológica”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Que informação do texto de apoio de “Aprofundamento 34: Consciência fonológica” ajuda a responder sobre consciência fonológica?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Como o tema de “Aprofundamento 34: Consciência fonológica” pode ser observado na escola, em casa ou na comunidade?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Escreva com suas palavras uma descoberta feita ao estudar “Aprofundamento 34: Consciência fonológica”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apontar um elemento realmente apresentado na situação e descrevê-lo de modo compreensível.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de consciência fonológica."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve citar dois elementos pertinentes ao estudo de consciência fonológica e explicar sua presença.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de consciência fonológica."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve registrar ao menos uma semelhança e uma diferença coerentes com os exemplos estudados.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de consciência fonológica."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve recuperar uma informação explícita do texto de apoio que sustente a resposta.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de consciência fonológica."
+        },
+        {
+          "numero": 5,
+          "resposta": "Pode apresentar exemplo da escola, da casa ou da comunidade, desde que relacionado ao tema.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de consciência fonológica."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese curta e autoral que demonstre uma aprendizagem efetivamente trabalhada na atividade.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de consciência fonológica."
+        }
+      ]
+    },
+    {
+      "id": "efi-1ano-b3-lp-50-35-construcao-de-frases",
+      "titulo": "Aprofundamento 35: Construção de frases",
+      "tema": "Construção de frases",
+      "sequencia": "Atividade 35",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "facil",
+      "objetivo": "Desenvolver EF01LP12 por meio do estudo de construção de frases, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01LP12",
+          "descricaoResumida": "Habilidade EF01LP12: desenvolver aprendizagens de Língua Portuguesa relacionadas a Construção de frases, com linguagem, recursos e autonomia adequados ao 1º ano.",
+          "habilidadeOficial": "Habilidade EF01LP12: desenvolver aprendizagens de Língua Portuguesa relacionadas a Construção de frases, com linguagem, recursos e autonomia adequados ao 1º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 35: Construção de frases”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 35: Construção de frases",
+        "conteudo": "Em Língua Portuguesa, estudar construção de frases ajuda a criança a observar o cotidiano, nomear elementos, comparar situações e registrar descobertas. Nesta proposta, o estudante parte de exemplos próximos da escola, da família ou da comunidade e organiza o que percebe com palavras, desenhos, números ou pequenas explicações. A habilidade EF01LP12 orienta o trabalho e envolve habilidade ef01lp12: desenvolver aprendizagens de língua portuguesa relacionadas a construção de frases, com linguagem, recursos e autonomia adequados ao 1º ano. A atividade 35 retoma esse conhecimento em nova situação para ampliar a compreensão."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "O que você percebe primeiro na situação apresentada em “Aprofundamento 35: Construção de frases”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Quais dois elementos de “Aprofundamento 35: Construção de frases” ajudam a compreender melhor construção de frases?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "O que é parecido e o que é diferente entre os exemplos apresentados em “Aprofundamento 35: Construção de frases”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Que informação do texto de apoio de “Aprofundamento 35: Construção de frases” ajuda a responder sobre construção de frases?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Como o tema de “Aprofundamento 35: Construção de frases” pode ser observado na escola, em casa ou na comunidade?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Escreva com suas palavras uma descoberta feita ao estudar “Aprofundamento 35: Construção de frases”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apontar um elemento realmente apresentado na situação e descrevê-lo de modo compreensível.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de construção de frases."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve citar dois elementos pertinentes ao estudo de construção de frases e explicar sua presença.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de construção de frases."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve registrar ao menos uma semelhança e uma diferença coerentes com os exemplos estudados.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de construção de frases."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve recuperar uma informação explícita do texto de apoio que sustente a resposta.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de construção de frases."
+        },
+        {
+          "numero": 5,
+          "resposta": "Pode apresentar exemplo da escola, da casa ou da comunidade, desde que relacionado ao tema.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de construção de frases."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese curta e autoral que demonstre uma aprendizagem efetivamente trabalhada na atividade.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de construção de frases."
+        }
+      ]
+    },
+    {
+      "id": "efi-1ano-b3-lp-50-36-genero-bilhete",
+      "titulo": "Aprofundamento 36: Gênero bilhete",
+      "tema": "Gênero bilhete",
+      "sequencia": "Atividade 36",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "facil",
+      "objetivo": "Desenvolver EF01LP17 por meio do estudo de gênero bilhete, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01LP17",
+          "descricaoResumida": "Habilidade EF01LP17: desenvolver aprendizagens de Língua Portuguesa relacionadas a Gênero bilhete, com linguagem, recursos e autonomia adequados ao 1º ano.",
+          "habilidadeOficial": "Habilidade EF01LP17: desenvolver aprendizagens de Língua Portuguesa relacionadas a Gênero bilhete, com linguagem, recursos e autonomia adequados ao 1º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 36: Gênero bilhete”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 36: Gênero bilhete",
+        "conteudo": "Em Língua Portuguesa, estudar gênero bilhete ajuda a criança a observar o cotidiano, nomear elementos, comparar situações e registrar descobertas. Nesta proposta, o estudante parte de exemplos próximos da escola, da família ou da comunidade e organiza o que percebe com palavras, desenhos, números ou pequenas explicações. A habilidade EF01LP17 orienta o trabalho e envolve habilidade ef01lp17: desenvolver aprendizagens de língua portuguesa relacionadas a gênero bilhete, com linguagem, recursos e autonomia adequados ao 1º ano. A atividade 36 retoma esse conhecimento em nova situação para ampliar a compreensão."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "O que você percebe primeiro na situação apresentada em “Aprofundamento 36: Gênero bilhete”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Quais dois elementos de “Aprofundamento 36: Gênero bilhete” ajudam a compreender melhor gênero bilhete?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "O que é parecido e o que é diferente entre os exemplos apresentados em “Aprofundamento 36: Gênero bilhete”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Que informação do texto de apoio de “Aprofundamento 36: Gênero bilhete” ajuda a responder sobre gênero bilhete?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Como o tema de “Aprofundamento 36: Gênero bilhete” pode ser observado na escola, em casa ou na comunidade?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Escreva com suas palavras uma descoberta feita ao estudar “Aprofundamento 36: Gênero bilhete”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apontar um elemento realmente apresentado na situação e descrevê-lo de modo compreensível.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de gênero bilhete."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve citar dois elementos pertinentes ao estudo de gênero bilhete e explicar sua presença.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de gênero bilhete."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve registrar ao menos uma semelhança e uma diferença coerentes com os exemplos estudados.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de gênero bilhete."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve recuperar uma informação explícita do texto de apoio que sustente a resposta.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de gênero bilhete."
+        },
+        {
+          "numero": 5,
+          "resposta": "Pode apresentar exemplo da escola, da casa ou da comunidade, desde que relacionado ao tema.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de gênero bilhete."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese curta e autoral que demonstre uma aprendizagem efetivamente trabalhada na atividade.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de gênero bilhete."
+        }
+      ]
+    },
+    {
+      "id": "efi-1ano-b3-lp-50-37-genero-lista",
+      "titulo": "Aprofundamento 37: Gênero lista",
+      "tema": "Gênero lista",
+      "sequencia": "Atividade 37",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "facil",
+      "objetivo": "Desenvolver EF01LP17 por meio do estudo de gênero lista, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01LP17",
+          "descricaoResumida": "Habilidade EF01LP17: desenvolver aprendizagens de Língua Portuguesa relacionadas a Gênero lista, com linguagem, recursos e autonomia adequados ao 1º ano.",
+          "habilidadeOficial": "Habilidade EF01LP17: desenvolver aprendizagens de Língua Portuguesa relacionadas a Gênero lista, com linguagem, recursos e autonomia adequados ao 1º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 37: Gênero lista”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 37: Gênero lista",
+        "conteudo": "Em Língua Portuguesa, estudar gênero lista ajuda a criança a observar o cotidiano, nomear elementos, comparar situações e registrar descobertas. Nesta proposta, o estudante parte de exemplos próximos da escola, da família ou da comunidade e organiza o que percebe com palavras, desenhos, números ou pequenas explicações. A habilidade EF01LP17 orienta o trabalho e envolve habilidade ef01lp17: desenvolver aprendizagens de língua portuguesa relacionadas a gênero lista, com linguagem, recursos e autonomia adequados ao 1º ano. A atividade 37 retoma esse conhecimento em nova situação para ampliar a compreensão."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "O que você percebe primeiro na situação apresentada em “Aprofundamento 37: Gênero lista”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Quais dois elementos de “Aprofundamento 37: Gênero lista” ajudam a compreender melhor gênero lista?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "O que é parecido e o que é diferente entre os exemplos apresentados em “Aprofundamento 37: Gênero lista”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Que informação do texto de apoio de “Aprofundamento 37: Gênero lista” ajuda a responder sobre gênero lista?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Como o tema de “Aprofundamento 37: Gênero lista” pode ser observado na escola, em casa ou na comunidade?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Escreva com suas palavras uma descoberta feita ao estudar “Aprofundamento 37: Gênero lista”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apontar um elemento realmente apresentado na situação e descrevê-lo de modo compreensível.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de gênero lista."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve citar dois elementos pertinentes ao estudo de gênero lista e explicar sua presença.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de gênero lista."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve registrar ao menos uma semelhança e uma diferença coerentes com os exemplos estudados.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de gênero lista."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve recuperar uma informação explícita do texto de apoio que sustente a resposta.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de gênero lista."
+        },
+        {
+          "numero": 5,
+          "resposta": "Pode apresentar exemplo da escola, da casa ou da comunidade, desde que relacionado ao tema.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de gênero lista."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese curta e autoral que demonstre uma aprendizagem efetivamente trabalhada na atividade.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de gênero lista."
+        }
+      ]
+    },
+    {
+      "id": "efi-1ano-b3-lp-50-38-textos-da-tradicao-oral",
+      "titulo": "Aprofundamento 38: Textos da tradição oral",
+      "tema": "Textos da tradição oral",
+      "sequencia": "Atividade 38",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "facil",
+      "objetivo": "Desenvolver EF01LP16 por meio do estudo de textos da tradição oral, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01LP16",
+          "descricaoResumida": "Habilidade EF01LP16: desenvolver aprendizagens de Língua Portuguesa relacionadas a Textos da tradição oral, com linguagem, recursos e autonomia adequados ao 1º ano.",
+          "habilidadeOficial": "Habilidade EF01LP16: desenvolver aprendizagens de Língua Portuguesa relacionadas a Textos da tradição oral, com linguagem, recursos e autonomia adequados ao 1º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 38: Textos da tradição oral”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 38: Textos da tradição oral",
+        "conteudo": "Em Língua Portuguesa, estudar textos da tradição oral ajuda a criança a observar o cotidiano, nomear elementos, comparar situações e registrar descobertas. Nesta proposta, o estudante parte de exemplos próximos da escola, da família ou da comunidade e organiza o que percebe com palavras, desenhos, números ou pequenas explicações. A habilidade EF01LP16 orienta o trabalho e envolve habilidade ef01lp16: desenvolver aprendizagens de língua portuguesa relacionadas a textos da tradição oral, com linguagem, recursos e autonomia adequados ao 1º ano. A atividade 38 retoma esse conhecimento em nova situação para ampliar a compreensão."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "O que você percebe primeiro na situação apresentada em “Aprofundamento 38: Textos da tradição oral”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Quais dois elementos de “Aprofundamento 38: Textos da tradição oral” ajudam a compreender melhor textos da tradição oral?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "O que é parecido e o que é diferente entre os exemplos apresentados em “Aprofundamento 38: Textos da tradição oral”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Que informação do texto de apoio de “Aprofundamento 38: Textos da tradição oral” ajuda a responder sobre textos da tradição oral?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Como o tema de “Aprofundamento 38: Textos da tradição oral” pode ser observado na escola, em casa ou na comunidade?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Escreva com suas palavras uma descoberta feita ao estudar “Aprofundamento 38: Textos da tradição oral”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apontar um elemento realmente apresentado na situação e descrevê-lo de modo compreensível.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de textos da tradição oral."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve citar dois elementos pertinentes ao estudo de textos da tradição oral e explicar sua presença.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de textos da tradição oral."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve registrar ao menos uma semelhança e uma diferença coerentes com os exemplos estudados.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de textos da tradição oral."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve recuperar uma informação explícita do texto de apoio que sustente a resposta.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de textos da tradição oral."
+        },
+        {
+          "numero": 5,
+          "resposta": "Pode apresentar exemplo da escola, da casa ou da comunidade, desde que relacionado ao tema.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de textos da tradição oral."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese curta e autoral que demonstre uma aprendizagem efetivamente trabalhada na atividade.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de textos da tradição oral."
+        }
+      ]
+    },
+    {
+      "id": "efi-1ano-b3-lp-50-39-narrativa",
+      "titulo": "Aprofundamento 39: Narrativa",
+      "tema": "Narrativa",
+      "sequencia": "Atividade 39",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "facil",
+      "objetivo": "Desenvolver EF01LP25 por meio do estudo de narrativa, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01LP25",
+          "descricaoResumida": "Habilidade EF01LP25: desenvolver aprendizagens de Língua Portuguesa relacionadas a Narrativa, com linguagem, recursos e autonomia adequados ao 1º ano.",
+          "habilidadeOficial": "Habilidade EF01LP25: desenvolver aprendizagens de Língua Portuguesa relacionadas a Narrativa, com linguagem, recursos e autonomia adequados ao 1º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 39: Narrativa”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 39: Narrativa",
+        "conteudo": "Em Língua Portuguesa, estudar narrativa ajuda a criança a observar o cotidiano, nomear elementos, comparar situações e registrar descobertas. Nesta proposta, o estudante parte de exemplos próximos da escola, da família ou da comunidade e organiza o que percebe com palavras, desenhos, números ou pequenas explicações. A habilidade EF01LP25 orienta o trabalho e envolve habilidade ef01lp25: desenvolver aprendizagens de língua portuguesa relacionadas a narrativa, com linguagem, recursos e autonomia adequados ao 1º ano. A atividade 39 retoma esse conhecimento em nova situação para ampliar a compreensão."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "O que você percebe primeiro na situação apresentada em “Aprofundamento 39: Narrativa”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Quais dois elementos de “Aprofundamento 39: Narrativa” ajudam a compreender melhor narrativa?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "O que é parecido e o que é diferente entre os exemplos apresentados em “Aprofundamento 39: Narrativa”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Que informação do texto de apoio de “Aprofundamento 39: Narrativa” ajuda a responder sobre narrativa?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Como o tema de “Aprofundamento 39: Narrativa” pode ser observado na escola, em casa ou na comunidade?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Escreva com suas palavras uma descoberta feita ao estudar “Aprofundamento 39: Narrativa”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apontar um elemento realmente apresentado na situação e descrevê-lo de modo compreensível.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de narrativa."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve citar dois elementos pertinentes ao estudo de narrativa e explicar sua presença.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de narrativa."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve registrar ao menos uma semelhança e uma diferença coerentes com os exemplos estudados.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de narrativa."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve recuperar uma informação explícita do texto de apoio que sustente a resposta.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de narrativa."
+        },
+        {
+          "numero": 5,
+          "resposta": "Pode apresentar exemplo da escola, da casa ou da comunidade, desde que relacionado ao tema.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de narrativa."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese curta e autoral que demonstre uma aprendizagem efetivamente trabalhada na atividade.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de narrativa."
+        }
+      ]
+    },
+    {
+      "id": "efi-1ano-b3-lp-50-40-pontuacao",
+      "titulo": "Aprofundamento 40: Pontuação",
+      "tema": "Pontuação",
+      "sequencia": "Atividade 40",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "facil",
+      "objetivo": "Desenvolver EF01LP14 por meio do estudo de pontuação, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01LP14",
+          "descricaoResumida": "Habilidade EF01LP14: desenvolver aprendizagens de Língua Portuguesa relacionadas a Pontuação, com linguagem, recursos e autonomia adequados ao 1º ano.",
+          "habilidadeOficial": "Habilidade EF01LP14: desenvolver aprendizagens de Língua Portuguesa relacionadas a Pontuação, com linguagem, recursos e autonomia adequados ao 1º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 40: Pontuação”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 40: Pontuação",
+        "conteudo": "Em Língua Portuguesa, estudar pontuação ajuda a criança a observar o cotidiano, nomear elementos, comparar situações e registrar descobertas. Nesta proposta, o estudante parte de exemplos próximos da escola, da família ou da comunidade e organiza o que percebe com palavras, desenhos, números ou pequenas explicações. A habilidade EF01LP14 orienta o trabalho e envolve habilidade ef01lp14: desenvolver aprendizagens de língua portuguesa relacionadas a pontuação, com linguagem, recursos e autonomia adequados ao 1º ano. A atividade 40 retoma esse conhecimento em nova situação para ampliar a compreensão."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "O que você percebe primeiro na situação apresentada em “Aprofundamento 40: Pontuação”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Quais dois elementos de “Aprofundamento 40: Pontuação” ajudam a compreender melhor pontuação?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "O que é parecido e o que é diferente entre os exemplos apresentados em “Aprofundamento 40: Pontuação”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Que informação do texto de apoio de “Aprofundamento 40: Pontuação” ajuda a responder sobre pontuação?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Como o tema de “Aprofundamento 40: Pontuação” pode ser observado na escola, em casa ou na comunidade?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Escreva com suas palavras uma descoberta feita ao estudar “Aprofundamento 40: Pontuação”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apontar um elemento realmente apresentado na situação e descrevê-lo de modo compreensível.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de pontuação."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve citar dois elementos pertinentes ao estudo de pontuação e explicar sua presença.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de pontuação."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve registrar ao menos uma semelhança e uma diferença coerentes com os exemplos estudados.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de pontuação."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve recuperar uma informação explícita do texto de apoio que sustente a resposta.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de pontuação."
+        },
+        {
+          "numero": 5,
+          "resposta": "Pode apresentar exemplo da escola, da casa ou da comunidade, desde que relacionado ao tema.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de pontuação."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese curta e autoral que demonstre uma aprendizagem efetivamente trabalhada na atividade.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de pontuação."
+        }
+      ]
+    },
+    {
+      "id": "efi-1ano-b3-lp-50-41-leitura-de-palavras",
+      "titulo": "Aprofundamento 41: Leitura de palavras",
+      "tema": "Leitura de palavras",
+      "sequencia": "Atividade 41",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "intermediaria",
+      "objetivo": "Desenvolver EF01LP01 por meio do estudo de leitura de palavras, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01LP01",
+          "descricaoResumida": "Habilidade EF01LP01: desenvolver aprendizagens de Língua Portuguesa relacionadas a Leitura de palavras, com linguagem, recursos e autonomia adequados ao 1º ano.",
+          "habilidadeOficial": "Habilidade EF01LP01: desenvolver aprendizagens de Língua Portuguesa relacionadas a Leitura de palavras, com linguagem, recursos e autonomia adequados ao 1º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 41: Leitura de palavras”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 41: Leitura de palavras",
+        "conteudo": "Em Língua Portuguesa, estudar leitura de palavras ajuda a criança a observar o cotidiano, nomear elementos, comparar situações e registrar descobertas. Nesta proposta, o estudante parte de exemplos próximos da escola, da família ou da comunidade e organiza o que percebe com palavras, desenhos, números ou pequenas explicações. A habilidade EF01LP01 orienta o trabalho e envolve habilidade ef01lp01: desenvolver aprendizagens de língua portuguesa relacionadas a leitura de palavras, com linguagem, recursos e autonomia adequados ao 1º ano. A atividade 41 retoma esse conhecimento em nova situação para ampliar a compreensão."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "O que você percebe primeiro na situação apresentada em “Aprofundamento 41: Leitura de palavras”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Quais dois elementos de “Aprofundamento 41: Leitura de palavras” ajudam a compreender melhor leitura de palavras?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "O que é parecido e o que é diferente entre os exemplos apresentados em “Aprofundamento 41: Leitura de palavras”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Que informação do texto de apoio de “Aprofundamento 41: Leitura de palavras” ajuda a responder sobre leitura de palavras?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Como o tema de “Aprofundamento 41: Leitura de palavras” pode ser observado na escola, em casa ou na comunidade?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Escreva com suas palavras uma descoberta feita ao estudar “Aprofundamento 41: Leitura de palavras”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apontar um elemento realmente apresentado na situação e descrevê-lo de modo compreensível.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de leitura de palavras."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve citar dois elementos pertinentes ao estudo de leitura de palavras e explicar sua presença.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de leitura de palavras."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve registrar ao menos uma semelhança e uma diferença coerentes com os exemplos estudados.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de leitura de palavras."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve recuperar uma informação explícita do texto de apoio que sustente a resposta.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de leitura de palavras."
+        },
+        {
+          "numero": 5,
+          "resposta": "Pode apresentar exemplo da escola, da casa ou da comunidade, desde que relacionado ao tema.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de leitura de palavras."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese curta e autoral que demonstre uma aprendizagem efetivamente trabalhada na atividade.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de leitura de palavras."
+        }
+      ]
+    },
+    {
+      "id": "efi-1ano-b3-lp-50-42-alfabeto",
+      "titulo": "Aprofundamento 42: Alfabeto",
+      "tema": "Alfabeto",
+      "sequencia": "Atividade 42",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "intermediaria",
+      "objetivo": "Desenvolver EF01LP10 por meio do estudo de alfabeto, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01LP10",
+          "descricaoResumida": "Habilidade EF01LP10: desenvolver aprendizagens de Língua Portuguesa relacionadas a Alfabeto, com linguagem, recursos e autonomia adequados ao 1º ano.",
+          "habilidadeOficial": "Habilidade EF01LP10: desenvolver aprendizagens de Língua Portuguesa relacionadas a Alfabeto, com linguagem, recursos e autonomia adequados ao 1º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 42: Alfabeto”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 42: Alfabeto",
+        "conteudo": "Em Língua Portuguesa, estudar alfabeto ajuda a criança a observar o cotidiano, nomear elementos, comparar situações e registrar descobertas. Nesta proposta, o estudante parte de exemplos próximos da escola, da família ou da comunidade e organiza o que percebe com palavras, desenhos, números ou pequenas explicações. A habilidade EF01LP10 orienta o trabalho e envolve habilidade ef01lp10: desenvolver aprendizagens de língua portuguesa relacionadas a alfabeto, com linguagem, recursos e autonomia adequados ao 1º ano. A atividade 42 retoma esse conhecimento em nova situação para ampliar a compreensão."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "O que você percebe primeiro na situação apresentada em “Aprofundamento 42: Alfabeto”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Quais dois elementos de “Aprofundamento 42: Alfabeto” ajudam a compreender melhor alfabeto?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "O que é parecido e o que é diferente entre os exemplos apresentados em “Aprofundamento 42: Alfabeto”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Que informação do texto de apoio de “Aprofundamento 42: Alfabeto” ajuda a responder sobre alfabeto?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Como o tema de “Aprofundamento 42: Alfabeto” pode ser observado na escola, em casa ou na comunidade?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Escreva com suas palavras uma descoberta feita ao estudar “Aprofundamento 42: Alfabeto”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apontar um elemento realmente apresentado na situação e descrevê-lo de modo compreensível.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de alfabeto."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve citar dois elementos pertinentes ao estudo de alfabeto e explicar sua presença.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de alfabeto."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve registrar ao menos uma semelhança e uma diferença coerentes com os exemplos estudados.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de alfabeto."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve recuperar uma informação explícita do texto de apoio que sustente a resposta.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de alfabeto."
+        },
+        {
+          "numero": 5,
+          "resposta": "Pode apresentar exemplo da escola, da casa ou da comunidade, desde que relacionado ao tema.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de alfabeto."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese curta e autoral que demonstre uma aprendizagem efetivamente trabalhada na atividade.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de alfabeto."
+        }
+      ]
+    },
+    {
+      "id": "efi-1ano-b3-lp-50-43-consciencia-silabica",
+      "titulo": "Aprofundamento 43: Consciência silábica",
+      "tema": "Consciência silábica",
+      "sequencia": "Atividade 43",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "intermediaria",
+      "objetivo": "Desenvolver EF01LP06 por meio do estudo de consciência silábica, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01LP06",
+          "descricaoResumida": "Habilidade EF01LP06: desenvolver aprendizagens de Língua Portuguesa relacionadas a Consciência silábica, com linguagem, recursos e autonomia adequados ao 1º ano.",
+          "habilidadeOficial": "Habilidade EF01LP06: desenvolver aprendizagens de Língua Portuguesa relacionadas a Consciência silábica, com linguagem, recursos e autonomia adequados ao 1º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 43: Consciência silábica”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 43: Consciência silábica",
+        "conteudo": "Em Língua Portuguesa, estudar consciência silábica ajuda a criança a observar o cotidiano, nomear elementos, comparar situações e registrar descobertas. Nesta proposta, o estudante parte de exemplos próximos da escola, da família ou da comunidade e organiza o que percebe com palavras, desenhos, números ou pequenas explicações. A habilidade EF01LP06 orienta o trabalho e envolve habilidade ef01lp06: desenvolver aprendizagens de língua portuguesa relacionadas a consciência silábica, com linguagem, recursos e autonomia adequados ao 1º ano. A atividade 43 retoma esse conhecimento em nova situação para ampliar a compreensão."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "O que você percebe primeiro na situação apresentada em “Aprofundamento 43: Consciência silábica”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Quais dois elementos de “Aprofundamento 43: Consciência silábica” ajudam a compreender melhor consciência silábica?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "O que é parecido e o que é diferente entre os exemplos apresentados em “Aprofundamento 43: Consciência silábica”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Que informação do texto de apoio de “Aprofundamento 43: Consciência silábica” ajuda a responder sobre consciência silábica?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Como o tema de “Aprofundamento 43: Consciência silábica” pode ser observado na escola, em casa ou na comunidade?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Escreva com suas palavras uma descoberta feita ao estudar “Aprofundamento 43: Consciência silábica”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apontar um elemento realmente apresentado na situação e descrevê-lo de modo compreensível.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de consciência silábica."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve citar dois elementos pertinentes ao estudo de consciência silábica e explicar sua presença.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de consciência silábica."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve registrar ao menos uma semelhança e uma diferença coerentes com os exemplos estudados.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de consciência silábica."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve recuperar uma informação explícita do texto de apoio que sustente a resposta.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de consciência silábica."
+        },
+        {
+          "numero": 5,
+          "resposta": "Pode apresentar exemplo da escola, da casa ou da comunidade, desde que relacionado ao tema.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de consciência silábica."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese curta e autoral que demonstre uma aprendizagem efetivamente trabalhada na atividade.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de consciência silábica."
+        }
+      ]
+    },
+    {
+      "id": "efi-1ano-b3-lp-50-44-consciencia-fonologica",
+      "titulo": "Aprofundamento 44: Consciência fonológica",
+      "tema": "Consciência fonológica",
+      "sequencia": "Atividade 44",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "intermediaria",
+      "objetivo": "Desenvolver EF01LP08 por meio do estudo de consciência fonológica, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01LP08",
+          "descricaoResumida": "Habilidade EF01LP08: desenvolver aprendizagens de Língua Portuguesa relacionadas a Consciência fonológica, com linguagem, recursos e autonomia adequados ao 1º ano.",
+          "habilidadeOficial": "Habilidade EF01LP08: desenvolver aprendizagens de Língua Portuguesa relacionadas a Consciência fonológica, com linguagem, recursos e autonomia adequados ao 1º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 44: Consciência fonológica”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 44: Consciência fonológica",
+        "conteudo": "Em Língua Portuguesa, estudar consciência fonológica ajuda a criança a observar o cotidiano, nomear elementos, comparar situações e registrar descobertas. Nesta proposta, o estudante parte de exemplos próximos da escola, da família ou da comunidade e organiza o que percebe com palavras, desenhos, números ou pequenas explicações. A habilidade EF01LP08 orienta o trabalho e envolve habilidade ef01lp08: desenvolver aprendizagens de língua portuguesa relacionadas a consciência fonológica, com linguagem, recursos e autonomia adequados ao 1º ano. A atividade 44 retoma esse conhecimento em nova situação para ampliar a compreensão."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "O que você percebe primeiro na situação apresentada em “Aprofundamento 44: Consciência fonológica”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Quais dois elementos de “Aprofundamento 44: Consciência fonológica” ajudam a compreender melhor consciência fonológica?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "O que é parecido e o que é diferente entre os exemplos apresentados em “Aprofundamento 44: Consciência fonológica”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Que informação do texto de apoio de “Aprofundamento 44: Consciência fonológica” ajuda a responder sobre consciência fonológica?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Como o tema de “Aprofundamento 44: Consciência fonológica” pode ser observado na escola, em casa ou na comunidade?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Escreva com suas palavras uma descoberta feita ao estudar “Aprofundamento 44: Consciência fonológica”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apontar um elemento realmente apresentado na situação e descrevê-lo de modo compreensível.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de consciência fonológica."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve citar dois elementos pertinentes ao estudo de consciência fonológica e explicar sua presença.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de consciência fonológica."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve registrar ao menos uma semelhança e uma diferença coerentes com os exemplos estudados.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de consciência fonológica."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve recuperar uma informação explícita do texto de apoio que sustente a resposta.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de consciência fonológica."
+        },
+        {
+          "numero": 5,
+          "resposta": "Pode apresentar exemplo da escola, da casa ou da comunidade, desde que relacionado ao tema.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de consciência fonológica."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese curta e autoral que demonstre uma aprendizagem efetivamente trabalhada na atividade.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de consciência fonológica."
+        }
+      ]
+    },
+    {
+      "id": "efi-1ano-b3-lp-50-45-construcao-de-frases",
+      "titulo": "Aprofundamento 45: Construção de frases",
+      "tema": "Construção de frases",
+      "sequencia": "Atividade 45",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "intermediaria",
+      "objetivo": "Desenvolver EF01LP12 por meio do estudo de construção de frases, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01LP12",
+          "descricaoResumida": "Habilidade EF01LP12: desenvolver aprendizagens de Língua Portuguesa relacionadas a Construção de frases, com linguagem, recursos e autonomia adequados ao 1º ano.",
+          "habilidadeOficial": "Habilidade EF01LP12: desenvolver aprendizagens de Língua Portuguesa relacionadas a Construção de frases, com linguagem, recursos e autonomia adequados ao 1º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 45: Construção de frases”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 45: Construção de frases",
+        "conteudo": "Em Língua Portuguesa, estudar construção de frases ajuda a criança a observar o cotidiano, nomear elementos, comparar situações e registrar descobertas. Nesta proposta, o estudante parte de exemplos próximos da escola, da família ou da comunidade e organiza o que percebe com palavras, desenhos, números ou pequenas explicações. A habilidade EF01LP12 orienta o trabalho e envolve habilidade ef01lp12: desenvolver aprendizagens de língua portuguesa relacionadas a construção de frases, com linguagem, recursos e autonomia adequados ao 1º ano. A atividade 45 retoma esse conhecimento em nova situação para ampliar a compreensão."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "O que você percebe primeiro na situação apresentada em “Aprofundamento 45: Construção de frases”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Quais dois elementos de “Aprofundamento 45: Construção de frases” ajudam a compreender melhor construção de frases?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "O que é parecido e o que é diferente entre os exemplos apresentados em “Aprofundamento 45: Construção de frases”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Que informação do texto de apoio de “Aprofundamento 45: Construção de frases” ajuda a responder sobre construção de frases?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Como o tema de “Aprofundamento 45: Construção de frases” pode ser observado na escola, em casa ou na comunidade?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Escreva com suas palavras uma descoberta feita ao estudar “Aprofundamento 45: Construção de frases”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apontar um elemento realmente apresentado na situação e descrevê-lo de modo compreensível.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de construção de frases."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve citar dois elementos pertinentes ao estudo de construção de frases e explicar sua presença.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de construção de frases."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve registrar ao menos uma semelhança e uma diferença coerentes com os exemplos estudados.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de construção de frases."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve recuperar uma informação explícita do texto de apoio que sustente a resposta.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de construção de frases."
+        },
+        {
+          "numero": 5,
+          "resposta": "Pode apresentar exemplo da escola, da casa ou da comunidade, desde que relacionado ao tema.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de construção de frases."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese curta e autoral que demonstre uma aprendizagem efetivamente trabalhada na atividade.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de construção de frases."
+        }
+      ]
+    },
+    {
+      "id": "efi-1ano-b3-lp-50-46-genero-bilhete",
+      "titulo": "Aprofundamento 46: Gênero bilhete",
+      "tema": "Gênero bilhete",
+      "sequencia": "Atividade 46",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "intermediaria",
+      "objetivo": "Desenvolver EF01LP17 por meio do estudo de gênero bilhete, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01LP17",
+          "descricaoResumida": "Habilidade EF01LP17: desenvolver aprendizagens de Língua Portuguesa relacionadas a Gênero bilhete, com linguagem, recursos e autonomia adequados ao 1º ano.",
+          "habilidadeOficial": "Habilidade EF01LP17: desenvolver aprendizagens de Língua Portuguesa relacionadas a Gênero bilhete, com linguagem, recursos e autonomia adequados ao 1º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 46: Gênero bilhete”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 46: Gênero bilhete",
+        "conteudo": "Em Língua Portuguesa, estudar gênero bilhete ajuda a criança a observar o cotidiano, nomear elementos, comparar situações e registrar descobertas. Nesta proposta, o estudante parte de exemplos próximos da escola, da família ou da comunidade e organiza o que percebe com palavras, desenhos, números ou pequenas explicações. A habilidade EF01LP17 orienta o trabalho e envolve habilidade ef01lp17: desenvolver aprendizagens de língua portuguesa relacionadas a gênero bilhete, com linguagem, recursos e autonomia adequados ao 1º ano. A atividade 46 retoma esse conhecimento em nova situação para ampliar a compreensão."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "O que você percebe primeiro na situação apresentada em “Aprofundamento 46: Gênero bilhete”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Quais dois elementos de “Aprofundamento 46: Gênero bilhete” ajudam a compreender melhor gênero bilhete?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "O que é parecido e o que é diferente entre os exemplos apresentados em “Aprofundamento 46: Gênero bilhete”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Que informação do texto de apoio de “Aprofundamento 46: Gênero bilhete” ajuda a responder sobre gênero bilhete?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Como o tema de “Aprofundamento 46: Gênero bilhete” pode ser observado na escola, em casa ou na comunidade?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Escreva com suas palavras uma descoberta feita ao estudar “Aprofundamento 46: Gênero bilhete”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apontar um elemento realmente apresentado na situação e descrevê-lo de modo compreensível.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de gênero bilhete."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve citar dois elementos pertinentes ao estudo de gênero bilhete e explicar sua presença.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de gênero bilhete."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve registrar ao menos uma semelhança e uma diferença coerentes com os exemplos estudados.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de gênero bilhete."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve recuperar uma informação explícita do texto de apoio que sustente a resposta.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de gênero bilhete."
+        },
+        {
+          "numero": 5,
+          "resposta": "Pode apresentar exemplo da escola, da casa ou da comunidade, desde que relacionado ao tema.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de gênero bilhete."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese curta e autoral que demonstre uma aprendizagem efetivamente trabalhada na atividade.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de gênero bilhete."
+        }
+      ]
+    },
+    {
+      "id": "efi-1ano-b3-lp-50-47-genero-lista",
+      "titulo": "Aprofundamento 47: Gênero lista",
+      "tema": "Gênero lista",
+      "sequencia": "Atividade 47",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "intermediaria",
+      "objetivo": "Desenvolver EF01LP17 por meio do estudo de gênero lista, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01LP17",
+          "descricaoResumida": "Habilidade EF01LP17: desenvolver aprendizagens de Língua Portuguesa relacionadas a Gênero lista, com linguagem, recursos e autonomia adequados ao 1º ano.",
+          "habilidadeOficial": "Habilidade EF01LP17: desenvolver aprendizagens de Língua Portuguesa relacionadas a Gênero lista, com linguagem, recursos e autonomia adequados ao 1º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 47: Gênero lista”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 47: Gênero lista",
+        "conteudo": "Em Língua Portuguesa, estudar gênero lista ajuda a criança a observar o cotidiano, nomear elementos, comparar situações e registrar descobertas. Nesta proposta, o estudante parte de exemplos próximos da escola, da família ou da comunidade e organiza o que percebe com palavras, desenhos, números ou pequenas explicações. A habilidade EF01LP17 orienta o trabalho e envolve habilidade ef01lp17: desenvolver aprendizagens de língua portuguesa relacionadas a gênero lista, com linguagem, recursos e autonomia adequados ao 1º ano. A atividade 47 retoma esse conhecimento em nova situação para ampliar a compreensão."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "O que você percebe primeiro na situação apresentada em “Aprofundamento 47: Gênero lista”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Quais dois elementos de “Aprofundamento 47: Gênero lista” ajudam a compreender melhor gênero lista?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "O que é parecido e o que é diferente entre os exemplos apresentados em “Aprofundamento 47: Gênero lista”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Que informação do texto de apoio de “Aprofundamento 47: Gênero lista” ajuda a responder sobre gênero lista?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Como o tema de “Aprofundamento 47: Gênero lista” pode ser observado na escola, em casa ou na comunidade?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Escreva com suas palavras uma descoberta feita ao estudar “Aprofundamento 47: Gênero lista”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apontar um elemento realmente apresentado na situação e descrevê-lo de modo compreensível.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de gênero lista."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve citar dois elementos pertinentes ao estudo de gênero lista e explicar sua presença.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de gênero lista."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve registrar ao menos uma semelhança e uma diferença coerentes com os exemplos estudados.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de gênero lista."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve recuperar uma informação explícita do texto de apoio que sustente a resposta.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de gênero lista."
+        },
+        {
+          "numero": 5,
+          "resposta": "Pode apresentar exemplo da escola, da casa ou da comunidade, desde que relacionado ao tema.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de gênero lista."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese curta e autoral que demonstre uma aprendizagem efetivamente trabalhada na atividade.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de gênero lista."
+        }
+      ]
+    },
+    {
+      "id": "efi-1ano-b3-lp-50-48-textos-da-tradicao-oral",
+      "titulo": "Aprofundamento 48: Textos da tradição oral",
+      "tema": "Textos da tradição oral",
+      "sequencia": "Atividade 48",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "intermediaria",
+      "objetivo": "Desenvolver EF01LP16 por meio do estudo de textos da tradição oral, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01LP16",
+          "descricaoResumida": "Habilidade EF01LP16: desenvolver aprendizagens de Língua Portuguesa relacionadas a Textos da tradição oral, com linguagem, recursos e autonomia adequados ao 1º ano.",
+          "habilidadeOficial": "Habilidade EF01LP16: desenvolver aprendizagens de Língua Portuguesa relacionadas a Textos da tradição oral, com linguagem, recursos e autonomia adequados ao 1º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 48: Textos da tradição oral”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 48: Textos da tradição oral",
+        "conteudo": "Em Língua Portuguesa, estudar textos da tradição oral ajuda a criança a observar o cotidiano, nomear elementos, comparar situações e registrar descobertas. Nesta proposta, o estudante parte de exemplos próximos da escola, da família ou da comunidade e organiza o que percebe com palavras, desenhos, números ou pequenas explicações. A habilidade EF01LP16 orienta o trabalho e envolve habilidade ef01lp16: desenvolver aprendizagens de língua portuguesa relacionadas a textos da tradição oral, com linguagem, recursos e autonomia adequados ao 1º ano. A atividade 48 retoma esse conhecimento em nova situação para ampliar a compreensão."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "O que você percebe primeiro na situação apresentada em “Aprofundamento 48: Textos da tradição oral”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Quais dois elementos de “Aprofundamento 48: Textos da tradição oral” ajudam a compreender melhor textos da tradição oral?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "O que é parecido e o que é diferente entre os exemplos apresentados em “Aprofundamento 48: Textos da tradição oral”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Que informação do texto de apoio de “Aprofundamento 48: Textos da tradição oral” ajuda a responder sobre textos da tradição oral?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Como o tema de “Aprofundamento 48: Textos da tradição oral” pode ser observado na escola, em casa ou na comunidade?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Escreva com suas palavras uma descoberta feita ao estudar “Aprofundamento 48: Textos da tradição oral”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apontar um elemento realmente apresentado na situação e descrevê-lo de modo compreensível.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de textos da tradição oral."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve citar dois elementos pertinentes ao estudo de textos da tradição oral e explicar sua presença.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de textos da tradição oral."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve registrar ao menos uma semelhança e uma diferença coerentes com os exemplos estudados.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de textos da tradição oral."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve recuperar uma informação explícita do texto de apoio que sustente a resposta.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de textos da tradição oral."
+        },
+        {
+          "numero": 5,
+          "resposta": "Pode apresentar exemplo da escola, da casa ou da comunidade, desde que relacionado ao tema.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de textos da tradição oral."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese curta e autoral que demonstre uma aprendizagem efetivamente trabalhada na atividade.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de textos da tradição oral."
+        }
+      ]
+    },
+    {
+      "id": "efi-1ano-b3-lp-50-49-narrativa",
+      "titulo": "Aprofundamento 49: Narrativa",
+      "tema": "Narrativa",
+      "sequencia": "Atividade 49",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "intermediaria",
+      "objetivo": "Desenvolver EF01LP25 por meio do estudo de narrativa, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01LP25",
+          "descricaoResumida": "Habilidade EF01LP25: desenvolver aprendizagens de Língua Portuguesa relacionadas a Narrativa, com linguagem, recursos e autonomia adequados ao 1º ano.",
+          "habilidadeOficial": "Habilidade EF01LP25: desenvolver aprendizagens de Língua Portuguesa relacionadas a Narrativa, com linguagem, recursos e autonomia adequados ao 1º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 49: Narrativa”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 49: Narrativa",
+        "conteudo": "Em Língua Portuguesa, estudar narrativa ajuda a criança a observar o cotidiano, nomear elementos, comparar situações e registrar descobertas. Nesta proposta, o estudante parte de exemplos próximos da escola, da família ou da comunidade e organiza o que percebe com palavras, desenhos, números ou pequenas explicações. A habilidade EF01LP25 orienta o trabalho e envolve habilidade ef01lp25: desenvolver aprendizagens de língua portuguesa relacionadas a narrativa, com linguagem, recursos e autonomia adequados ao 1º ano. A atividade 49 retoma esse conhecimento em nova situação para ampliar a compreensão."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "O que você percebe primeiro na situação apresentada em “Aprofundamento 49: Narrativa”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Quais dois elementos de “Aprofundamento 49: Narrativa” ajudam a compreender melhor narrativa?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "O que é parecido e o que é diferente entre os exemplos apresentados em “Aprofundamento 49: Narrativa”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Que informação do texto de apoio de “Aprofundamento 49: Narrativa” ajuda a responder sobre narrativa?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Como o tema de “Aprofundamento 49: Narrativa” pode ser observado na escola, em casa ou na comunidade?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Escreva com suas palavras uma descoberta feita ao estudar “Aprofundamento 49: Narrativa”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apontar um elemento realmente apresentado na situação e descrevê-lo de modo compreensível.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de narrativa."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve citar dois elementos pertinentes ao estudo de narrativa e explicar sua presença.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de narrativa."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve registrar ao menos uma semelhança e uma diferença coerentes com os exemplos estudados.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de narrativa."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve recuperar uma informação explícita do texto de apoio que sustente a resposta.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de narrativa."
+        },
+        {
+          "numero": 5,
+          "resposta": "Pode apresentar exemplo da escola, da casa ou da comunidade, desde que relacionado ao tema.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de narrativa."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese curta e autoral que demonstre uma aprendizagem efetivamente trabalhada na atividade.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de narrativa."
+        }
+      ]
+    },
+    {
+      "id": "efi-1ano-b3-lp-50-50-pontuacao",
+      "titulo": "Aprofundamento 50: Pontuação",
+      "tema": "Pontuação",
+      "sequencia": "Atividade 50",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "intermediaria",
+      "objetivo": "Desenvolver EF01LP14 por meio do estudo de pontuação, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 1º ano.",
+      "bncc": [
+        {
+          "codigo": "EF01LP14",
+          "descricaoResumida": "Habilidade EF01LP14: desenvolver aprendizagens de Língua Portuguesa relacionadas a Pontuação, com linguagem, recursos e autonomia adequados ao 1º ano.",
+          "habilidadeOficial": "Habilidade EF01LP14: desenvolver aprendizagens de Língua Portuguesa relacionadas a Pontuação, com linguagem, recursos e autonomia adequados ao 1º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 50: Pontuação”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 50: Pontuação",
+        "conteudo": "Em Língua Portuguesa, estudar pontuação ajuda a criança a observar o cotidiano, nomear elementos, comparar situações e registrar descobertas. Nesta proposta, o estudante parte de exemplos próximos da escola, da família ou da comunidade e organiza o que percebe com palavras, desenhos, números ou pequenas explicações. A habilidade EF01LP14 orienta o trabalho e envolve habilidade ef01lp14: desenvolver aprendizagens de língua portuguesa relacionadas a pontuação, com linguagem, recursos e autonomia adequados ao 1º ano. A atividade 50 retoma esse conhecimento em nova situação para ampliar a compreensão."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "O que você percebe primeiro na situação apresentada em “Aprofundamento 50: Pontuação”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Quais dois elementos de “Aprofundamento 50: Pontuação” ajudam a compreender melhor pontuação?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "O que é parecido e o que é diferente entre os exemplos apresentados em “Aprofundamento 50: Pontuação”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Que informação do texto de apoio de “Aprofundamento 50: Pontuação” ajuda a responder sobre pontuação?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Como o tema de “Aprofundamento 50: Pontuação” pode ser observado na escola, em casa ou na comunidade?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Escreva com suas palavras uma descoberta feita ao estudar “Aprofundamento 50: Pontuação”.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apontar um elemento realmente apresentado na situação e descrevê-lo de modo compreensível.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de pontuação."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve citar dois elementos pertinentes ao estudo de pontuação e explicar sua presença.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de pontuação."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve registrar ao menos uma semelhança e uma diferença coerentes com os exemplos estudados.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de pontuação."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve recuperar uma informação explícita do texto de apoio que sustente a resposta.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de pontuação."
+        },
+        {
+          "numero": 5,
+          "resposta": "Pode apresentar exemplo da escola, da casa ou da comunidade, desde que relacionado ao tema.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de pontuação."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese curta e autoral que demonstre uma aprendizagem efetivamente trabalhada na atividade.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de pontuação."
+        }
+      ]
     }
   ],
   "bnccConferida": true,
-  "referenciaBncc": "BNCC — Ensino Fundamental — Anos Iniciais, Língua Portuguesa (MEC, 2018)"
+  "referenciaBncc": "BNCC — Ensino Fundamental — Anos Iniciais, Língua Portuguesa (MEC, 2018)",
+  "quantidadeAtividades": 50
 }

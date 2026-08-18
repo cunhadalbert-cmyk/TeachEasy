@@ -6,7 +6,7 @@
   "ano": "4º ano",
   "bimestre": 2,
   "disciplina": "História",
-  "statusBimestre": "sugerido",
+  "statusBimestre": "completo",
   "atividades": [
     {
       "id": "efi-4ano-b2-his-01-formacao-das-cidades",
@@ -3667,8 +3667,2189 @@
         "dataRevisao": "2026-07-27"
       },
       "bnccConferida": true
+    },
+    {
+      "id": "efi-4ano-b2-his-50-31-formacao-das-cidades",
+      "titulo": "Aprofundamento 31: Formação das cidades",
+      "tema": "Formação das cidades",
+      "sequencia": "Atividade 31",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "facil",
+      "objetivo": "Desenvolver EF04HI01 por meio do estudo de formação das cidades, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 4º ano.",
+      "bncc": [
+        {
+          "codigo": "EF04HI01",
+          "descricaoResumida": "Habilidade EF04HI01: desenvolver aprendizagens de História relacionadas a Formação das cidades, com análise, evidências e autonomia adequadas ao 4º ano.",
+          "habilidadeOficial": "Habilidade EF04HI01: desenvolver aprendizagens de História relacionadas a Formação das cidades, com análise, evidências e autonomia adequadas ao 4º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 31: Formação das cidades”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 31: Formação das cidades",
+        "conteudo": "O estudo de formação das cidades permite relacionar informações, exemplos do cotidiano e conhecimentos próprios de História. A atividade propõe observar evidências, estabelecer comparações, explicar relações e registrar conclusões adequadas ao 4º ano. A habilidade EF04HI01 orienta o trabalho e corresponde a habilidade ef04hi01: desenvolver aprendizagens de história relacionadas a formação das cidades, com análise, evidências e autonomia adequadas ao 4º ano. Nesta ampliação, o estudante aplica esse conhecimento a uma situação diferente, justificando as respostas com informações do texto e conceitos estudados."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "Caracterize formação das cidades a partir das informações apresentadas em “Aprofundamento 31: Formação das cidades”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Selecione duas evidências do texto de apoio que ajudem a compreender “Aprofundamento 31: Formação das cidades” e explique a escolha.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "Que relação pode ser estabelecida entre formação das cidades e o contexto apresentado em “Aprofundamento 31: Formação das cidades”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Compare dois aspectos presentes em “Aprofundamento 31: Formação das cidades” usando o mesmo critério de análise.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Explique uma causa, consequência, transformação ou permanência relacionada a formação das cidades no contexto de “Aprofundamento 31: Formação das cidades”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Elabore uma conclusão fundamentada sobre “Aprofundamento 31: Formação das cidades”, utilizando informações do texto de apoio.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apresentar características compatíveis com o texto de apoio e com o conceito de formação das cidades.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de formação das cidades."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve selecionar duas evidências pertinentes e explicar como elas sustentam a interpretação apresentada.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de formação das cidades."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve estabelecer uma relação plausível, usando informações da atividade e vocabulário adequado à disciplina.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de formação das cidades."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve comparar os dois aspectos com um critério comum, indicando semelhanças, diferenças ou contrastes relevantes.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de formação das cidades."
+        },
+        {
+          "numero": 5,
+          "resposta": "Deve explicar uma relação causal, consequência, transformação ou permanência coerente com o tema estudado.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de formação das cidades."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese autoral fundamentada no texto de apoio, com conclusão compatível com as evidências analisadas.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de formação das cidades."
+        }
+      ]
+    },
+    {
+      "id": "efi-4ano-b2-his-50-32-crescimento-urbano",
+      "titulo": "Aprofundamento 32: Crescimento urbano",
+      "tema": "Crescimento urbano",
+      "sequencia": "Atividade 32",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "facil",
+      "objetivo": "Desenvolver EF04HI02 por meio do estudo de crescimento urbano, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 4º ano.",
+      "bncc": [
+        {
+          "codigo": "EF04HI02",
+          "descricaoResumida": "Habilidade EF04HI02: desenvolver aprendizagens de História relacionadas a Crescimento urbano, com análise, evidências e autonomia adequadas ao 4º ano.",
+          "habilidadeOficial": "Habilidade EF04HI02: desenvolver aprendizagens de História relacionadas a Crescimento urbano, com análise, evidências e autonomia adequadas ao 4º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 32: Crescimento urbano”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 32: Crescimento urbano",
+        "conteudo": "O estudo de crescimento urbano permite relacionar informações, exemplos do cotidiano e conhecimentos próprios de História. A atividade propõe observar evidências, estabelecer comparações, explicar relações e registrar conclusões adequadas ao 4º ano. A habilidade EF04HI02 orienta o trabalho e corresponde a habilidade ef04hi02: desenvolver aprendizagens de história relacionadas a crescimento urbano, com análise, evidências e autonomia adequadas ao 4º ano. Nesta ampliação, o estudante aplica esse conhecimento a uma situação diferente, justificando as respostas com informações do texto e conceitos estudados."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "Caracterize crescimento urbano a partir das informações apresentadas em “Aprofundamento 32: Crescimento urbano”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Selecione duas evidências do texto de apoio que ajudem a compreender “Aprofundamento 32: Crescimento urbano” e explique a escolha.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "Que relação pode ser estabelecida entre crescimento urbano e o contexto apresentado em “Aprofundamento 32: Crescimento urbano”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Compare dois aspectos presentes em “Aprofundamento 32: Crescimento urbano” usando o mesmo critério de análise.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Explique uma causa, consequência, transformação ou permanência relacionada a crescimento urbano no contexto de “Aprofundamento 32: Crescimento urbano”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Elabore uma conclusão fundamentada sobre “Aprofundamento 32: Crescimento urbano”, utilizando informações do texto de apoio.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apresentar características compatíveis com o texto de apoio e com o conceito de crescimento urbano.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de crescimento urbano."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve selecionar duas evidências pertinentes e explicar como elas sustentam a interpretação apresentada.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de crescimento urbano."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve estabelecer uma relação plausível, usando informações da atividade e vocabulário adequado à disciplina.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de crescimento urbano."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve comparar os dois aspectos com um critério comum, indicando semelhanças, diferenças ou contrastes relevantes.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de crescimento urbano."
+        },
+        {
+          "numero": 5,
+          "resposta": "Deve explicar uma relação causal, consequência, transformação ou permanência coerente com o tema estudado.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de crescimento urbano."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese autoral fundamentada no texto de apoio, com conclusão compatível com as evidências analisadas.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de crescimento urbano."
+        }
+      ]
+    },
+    {
+      "id": "efi-4ano-b2-his-50-33-trabalho-e-comercio",
+      "titulo": "Aprofundamento 33: Trabalho e comércio",
+      "tema": "Trabalho e comércio",
+      "sequencia": "Atividade 33",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "facil",
+      "objetivo": "Desenvolver EF04HI03 por meio do estudo de trabalho e comércio, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 4º ano.",
+      "bncc": [
+        {
+          "codigo": "EF04HI03",
+          "descricaoResumida": "Habilidade EF04HI03: desenvolver aprendizagens de História relacionadas a Trabalho e comércio, com análise, evidências e autonomia adequadas ao 4º ano.",
+          "habilidadeOficial": "Habilidade EF04HI03: desenvolver aprendizagens de História relacionadas a Trabalho e comércio, com análise, evidências e autonomia adequadas ao 4º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 33: Trabalho e comércio”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 33: Trabalho e comércio",
+        "conteudo": "O estudo de trabalho e comércio permite relacionar informações, exemplos do cotidiano e conhecimentos próprios de História. A atividade propõe observar evidências, estabelecer comparações, explicar relações e registrar conclusões adequadas ao 4º ano. A habilidade EF04HI03 orienta o trabalho e corresponde a habilidade ef04hi03: desenvolver aprendizagens de história relacionadas a trabalho e comércio, com análise, evidências e autonomia adequadas ao 4º ano. Nesta ampliação, o estudante aplica esse conhecimento a uma situação diferente, justificando as respostas com informações do texto e conceitos estudados."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "Caracterize trabalho e comércio a partir das informações apresentadas em “Aprofundamento 33: Trabalho e comércio”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Selecione duas evidências do texto de apoio que ajudem a compreender “Aprofundamento 33: Trabalho e comércio” e explique a escolha.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "Que relação pode ser estabelecida entre trabalho e comércio e o contexto apresentado em “Aprofundamento 33: Trabalho e comércio”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Compare dois aspectos presentes em “Aprofundamento 33: Trabalho e comércio” usando o mesmo critério de análise.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Explique uma causa, consequência, transformação ou permanência relacionada a trabalho e comércio no contexto de “Aprofundamento 33: Trabalho e comércio”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Elabore uma conclusão fundamentada sobre “Aprofundamento 33: Trabalho e comércio”, utilizando informações do texto de apoio.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apresentar características compatíveis com o texto de apoio e com o conceito de trabalho e comércio.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de trabalho e comércio."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve selecionar duas evidências pertinentes e explicar como elas sustentam a interpretação apresentada.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de trabalho e comércio."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve estabelecer uma relação plausível, usando informações da atividade e vocabulário adequado à disciplina.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de trabalho e comércio."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve comparar os dois aspectos com um critério comum, indicando semelhanças, diferenças ou contrastes relevantes.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de trabalho e comércio."
+        },
+        {
+          "numero": 5,
+          "resposta": "Deve explicar uma relação causal, consequência, transformação ou permanência coerente com o tema estudado.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de trabalho e comércio."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese autoral fundamentada no texto de apoio, com conclusão compatível com as evidências analisadas.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de trabalho e comércio."
+        }
+      ]
+    },
+    {
+      "id": "efi-4ano-b2-his-50-34-feiras-e-mercados",
+      "titulo": "Aprofundamento 34: Feiras e mercados",
+      "tema": "Feiras e mercados",
+      "sequencia": "Atividade 34",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "facil",
+      "objetivo": "Desenvolver EF04HI04 por meio do estudo de feiras e mercados, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 4º ano.",
+      "bncc": [
+        {
+          "codigo": "EF04HI04",
+          "descricaoResumida": "Habilidade EF04HI04: desenvolver aprendizagens de História relacionadas a Feiras e mercados, com análise, evidências e autonomia adequadas ao 4º ano.",
+          "habilidadeOficial": "Habilidade EF04HI04: desenvolver aprendizagens de História relacionadas a Feiras e mercados, com análise, evidências e autonomia adequadas ao 4º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 34: Feiras e mercados”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 34: Feiras e mercados",
+        "conteudo": "O estudo de feiras e mercados permite relacionar informações, exemplos do cotidiano e conhecimentos próprios de História. A atividade propõe observar evidências, estabelecer comparações, explicar relações e registrar conclusões adequadas ao 4º ano. A habilidade EF04HI04 orienta o trabalho e corresponde a habilidade ef04hi04: desenvolver aprendizagens de história relacionadas a feiras e mercados, com análise, evidências e autonomia adequadas ao 4º ano. Nesta ampliação, o estudante aplica esse conhecimento a uma situação diferente, justificando as respostas com informações do texto e conceitos estudados."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "Caracterize feiras e mercados a partir das informações apresentadas em “Aprofundamento 34: Feiras e mercados”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Selecione duas evidências do texto de apoio que ajudem a compreender “Aprofundamento 34: Feiras e mercados” e explique a escolha.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "Que relação pode ser estabelecida entre feiras e mercados e o contexto apresentado em “Aprofundamento 34: Feiras e mercados”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Compare dois aspectos presentes em “Aprofundamento 34: Feiras e mercados” usando o mesmo critério de análise.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Explique uma causa, consequência, transformação ou permanência relacionada a feiras e mercados no contexto de “Aprofundamento 34: Feiras e mercados”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Elabore uma conclusão fundamentada sobre “Aprofundamento 34: Feiras e mercados”, utilizando informações do texto de apoio.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apresentar características compatíveis com o texto de apoio e com o conceito de feiras e mercados.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de feiras e mercados."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve selecionar duas evidências pertinentes e explicar como elas sustentam a interpretação apresentada.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de feiras e mercados."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve estabelecer uma relação plausível, usando informações da atividade e vocabulário adequado à disciplina.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de feiras e mercados."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve comparar os dois aspectos com um critério comum, indicando semelhanças, diferenças ou contrastes relevantes.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de feiras e mercados."
+        },
+        {
+          "numero": 5,
+          "resposta": "Deve explicar uma relação causal, consequência, transformação ou permanência coerente com o tema estudado.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de feiras e mercados."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese autoral fundamentada no texto de apoio, com conclusão compatível com as evidências analisadas.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de feiras e mercados."
+        }
+      ]
+    },
+    {
+      "id": "efi-4ano-b2-his-50-35-oficios-antigos",
+      "titulo": "Aprofundamento 35: Ofícios antigos",
+      "tema": "Ofícios antigos",
+      "sequencia": "Atividade 35",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "facil",
+      "objetivo": "Desenvolver EF04HI05 por meio do estudo de ofícios antigos, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 4º ano.",
+      "bncc": [
+        {
+          "codigo": "EF04HI05",
+          "descricaoResumida": "Habilidade EF04HI05: desenvolver aprendizagens de História relacionadas a Ofícios antigos, com análise, evidências e autonomia adequadas ao 4º ano.",
+          "habilidadeOficial": "Habilidade EF04HI05: desenvolver aprendizagens de História relacionadas a Ofícios antigos, com análise, evidências e autonomia adequadas ao 4º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 35: Ofícios antigos”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 35: Ofícios antigos",
+        "conteudo": "O estudo de ofícios antigos permite relacionar informações, exemplos do cotidiano e conhecimentos próprios de História. A atividade propõe observar evidências, estabelecer comparações, explicar relações e registrar conclusões adequadas ao 4º ano. A habilidade EF04HI05 orienta o trabalho e corresponde a habilidade ef04hi05: desenvolver aprendizagens de história relacionadas a ofícios antigos, com análise, evidências e autonomia adequadas ao 4º ano. Nesta ampliação, o estudante aplica esse conhecimento a uma situação diferente, justificando as respostas com informações do texto e conceitos estudados."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "Caracterize ofícios antigos a partir das informações apresentadas em “Aprofundamento 35: Ofícios antigos”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Selecione duas evidências do texto de apoio que ajudem a compreender “Aprofundamento 35: Ofícios antigos” e explique a escolha.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "Que relação pode ser estabelecida entre ofícios antigos e o contexto apresentado em “Aprofundamento 35: Ofícios antigos”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Compare dois aspectos presentes em “Aprofundamento 35: Ofícios antigos” usando o mesmo critério de análise.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Explique uma causa, consequência, transformação ou permanência relacionada a ofícios antigos no contexto de “Aprofundamento 35: Ofícios antigos”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Elabore uma conclusão fundamentada sobre “Aprofundamento 35: Ofícios antigos”, utilizando informações do texto de apoio.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apresentar características compatíveis com o texto de apoio e com o conceito de ofícios antigos.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de ofícios antigos."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve selecionar duas evidências pertinentes e explicar como elas sustentam a interpretação apresentada.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de ofícios antigos."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve estabelecer uma relação plausível, usando informações da atividade e vocabulário adequado à disciplina.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de ofícios antigos."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve comparar os dois aspectos com um critério comum, indicando semelhanças, diferenças ou contrastes relevantes.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de ofícios antigos."
+        },
+        {
+          "numero": 5,
+          "resposta": "Deve explicar uma relação causal, consequência, transformação ou permanência coerente com o tema estudado.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de ofícios antigos."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese autoral fundamentada no texto de apoio, com conclusão compatível com as evidências analisadas.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de ofícios antigos."
+        }
+      ]
+    },
+    {
+      "id": "efi-4ano-b2-his-50-36-rotas-de-circulacao",
+      "titulo": "Aprofundamento 36: Rotas de circulação",
+      "tema": "Rotas de circulação",
+      "sequencia": "Atividade 36",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "facil",
+      "objetivo": "Desenvolver EF04HI06 por meio do estudo de rotas de circulação, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 4º ano.",
+      "bncc": [
+        {
+          "codigo": "EF04HI06",
+          "descricaoResumida": "Habilidade EF04HI06: desenvolver aprendizagens de História relacionadas a Rotas de circulação, com análise, evidências e autonomia adequadas ao 4º ano.",
+          "habilidadeOficial": "Habilidade EF04HI06: desenvolver aprendizagens de História relacionadas a Rotas de circulação, com análise, evidências e autonomia adequadas ao 4º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 36: Rotas de circulação”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 36: Rotas de circulação",
+        "conteudo": "O estudo de rotas de circulação permite relacionar informações, exemplos do cotidiano e conhecimentos próprios de História. A atividade propõe observar evidências, estabelecer comparações, explicar relações e registrar conclusões adequadas ao 4º ano. A habilidade EF04HI06 orienta o trabalho e corresponde a habilidade ef04hi06: desenvolver aprendizagens de história relacionadas a rotas de circulação, com análise, evidências e autonomia adequadas ao 4º ano. Nesta ampliação, o estudante aplica esse conhecimento a uma situação diferente, justificando as respostas com informações do texto e conceitos estudados."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "Caracterize rotas de circulação a partir das informações apresentadas em “Aprofundamento 36: Rotas de circulação”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Selecione duas evidências do texto de apoio que ajudem a compreender “Aprofundamento 36: Rotas de circulação” e explique a escolha.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "Que relação pode ser estabelecida entre rotas de circulação e o contexto apresentado em “Aprofundamento 36: Rotas de circulação”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Compare dois aspectos presentes em “Aprofundamento 36: Rotas de circulação” usando o mesmo critério de análise.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Explique uma causa, consequência, transformação ou permanência relacionada a rotas de circulação no contexto de “Aprofundamento 36: Rotas de circulação”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Elabore uma conclusão fundamentada sobre “Aprofundamento 36: Rotas de circulação”, utilizando informações do texto de apoio.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apresentar características compatíveis com o texto de apoio e com o conceito de rotas de circulação.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de rotas de circulação."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve selecionar duas evidências pertinentes e explicar como elas sustentam a interpretação apresentada.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de rotas de circulação."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve estabelecer uma relação plausível, usando informações da atividade e vocabulário adequado à disciplina.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de rotas de circulação."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve comparar os dois aspectos com um critério comum, indicando semelhanças, diferenças ou contrastes relevantes.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de rotas de circulação."
+        },
+        {
+          "numero": 5,
+          "resposta": "Deve explicar uma relação causal, consequência, transformação ou permanência coerente com o tema estudado.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de rotas de circulação."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese autoral fundamentada no texto de apoio, com conclusão compatível com as evidências analisadas.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de rotas de circulação."
+        }
+      ]
+    },
+    {
+      "id": "efi-4ano-b2-his-50-37-caminhos-e-estradas",
+      "titulo": "Aprofundamento 37: Caminhos e estradas",
+      "tema": "Caminhos e estradas",
+      "sequencia": "Atividade 37",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "facil",
+      "objetivo": "Desenvolver EF04HI07 por meio do estudo de caminhos e estradas, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 4º ano.",
+      "bncc": [
+        {
+          "codigo": "EF04HI07",
+          "descricaoResumida": "Habilidade EF04HI07: desenvolver aprendizagens de História relacionadas a Caminhos e estradas, com análise, evidências e autonomia adequadas ao 4º ano.",
+          "habilidadeOficial": "Habilidade EF04HI07: desenvolver aprendizagens de História relacionadas a Caminhos e estradas, com análise, evidências e autonomia adequadas ao 4º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 37: Caminhos e estradas”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 37: Caminhos e estradas",
+        "conteudo": "O estudo de caminhos e estradas permite relacionar informações, exemplos do cotidiano e conhecimentos próprios de História. A atividade propõe observar evidências, estabelecer comparações, explicar relações e registrar conclusões adequadas ao 4º ano. A habilidade EF04HI07 orienta o trabalho e corresponde a habilidade ef04hi07: desenvolver aprendizagens de história relacionadas a caminhos e estradas, com análise, evidências e autonomia adequadas ao 4º ano. Nesta ampliação, o estudante aplica esse conhecimento a uma situação diferente, justificando as respostas com informações do texto e conceitos estudados."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "Caracterize caminhos e estradas a partir das informações apresentadas em “Aprofundamento 37: Caminhos e estradas”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Selecione duas evidências do texto de apoio que ajudem a compreender “Aprofundamento 37: Caminhos e estradas” e explique a escolha.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "Que relação pode ser estabelecida entre caminhos e estradas e o contexto apresentado em “Aprofundamento 37: Caminhos e estradas”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Compare dois aspectos presentes em “Aprofundamento 37: Caminhos e estradas” usando o mesmo critério de análise.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Explique uma causa, consequência, transformação ou permanência relacionada a caminhos e estradas no contexto de “Aprofundamento 37: Caminhos e estradas”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Elabore uma conclusão fundamentada sobre “Aprofundamento 37: Caminhos e estradas”, utilizando informações do texto de apoio.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apresentar características compatíveis com o texto de apoio e com o conceito de caminhos e estradas.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de caminhos e estradas."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve selecionar duas evidências pertinentes e explicar como elas sustentam a interpretação apresentada.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de caminhos e estradas."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve estabelecer uma relação plausível, usando informações da atividade e vocabulário adequado à disciplina.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de caminhos e estradas."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve comparar os dois aspectos com um critério comum, indicando semelhanças, diferenças ou contrastes relevantes.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de caminhos e estradas."
+        },
+        {
+          "numero": 5,
+          "resposta": "Deve explicar uma relação causal, consequência, transformação ou permanência coerente com o tema estudado.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de caminhos e estradas."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese autoral fundamentada no texto de apoio, com conclusão compatível com as evidências analisadas.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de caminhos e estradas."
+        }
+      ]
+    },
+    {
+      "id": "efi-4ano-b2-his-50-38-viagens-no-passado",
+      "titulo": "Aprofundamento 38: Viagens no passado",
+      "tema": "Viagens no passado",
+      "sequencia": "Atividade 38",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "facil",
+      "objetivo": "Desenvolver EF04HI08 por meio do estudo de viagens no passado, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 4º ano.",
+      "bncc": [
+        {
+          "codigo": "EF04HI08",
+          "descricaoResumida": "Habilidade EF04HI08: desenvolver aprendizagens de História relacionadas a Viagens no passado, com análise, evidências e autonomia adequadas ao 4º ano.",
+          "habilidadeOficial": "Habilidade EF04HI08: desenvolver aprendizagens de História relacionadas a Viagens no passado, com análise, evidências e autonomia adequadas ao 4º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 38: Viagens no passado”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 38: Viagens no passado",
+        "conteudo": "O estudo de viagens no passado permite relacionar informações, exemplos do cotidiano e conhecimentos próprios de História. A atividade propõe observar evidências, estabelecer comparações, explicar relações e registrar conclusões adequadas ao 4º ano. A habilidade EF04HI08 orienta o trabalho e corresponde a habilidade ef04hi08: desenvolver aprendizagens de história relacionadas a viagens no passado, com análise, evidências e autonomia adequadas ao 4º ano. Nesta ampliação, o estudante aplica esse conhecimento a uma situação diferente, justificando as respostas com informações do texto e conceitos estudados."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "Caracterize viagens no passado a partir das informações apresentadas em “Aprofundamento 38: Viagens no passado”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Selecione duas evidências do texto de apoio que ajudem a compreender “Aprofundamento 38: Viagens no passado” e explique a escolha.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "Que relação pode ser estabelecida entre viagens no passado e o contexto apresentado em “Aprofundamento 38: Viagens no passado”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Compare dois aspectos presentes em “Aprofundamento 38: Viagens no passado” usando o mesmo critério de análise.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Explique uma causa, consequência, transformação ou permanência relacionada a viagens no passado no contexto de “Aprofundamento 38: Viagens no passado”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Elabore uma conclusão fundamentada sobre “Aprofundamento 38: Viagens no passado”, utilizando informações do texto de apoio.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apresentar características compatíveis com o texto de apoio e com o conceito de viagens no passado.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de viagens no passado."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve selecionar duas evidências pertinentes e explicar como elas sustentam a interpretação apresentada.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de viagens no passado."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve estabelecer uma relação plausível, usando informações da atividade e vocabulário adequado à disciplina.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de viagens no passado."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve comparar os dois aspectos com um critério comum, indicando semelhanças, diferenças ou contrastes relevantes.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de viagens no passado."
+        },
+        {
+          "numero": 5,
+          "resposta": "Deve explicar uma relação causal, consequência, transformação ou permanência coerente com o tema estudado.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de viagens no passado."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese autoral fundamentada no texto de apoio, com conclusão compatível com as evidências analisadas.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de viagens no passado."
+        }
+      ]
+    },
+    {
+      "id": "efi-4ano-b2-his-50-39-comunicacao-ao-longo-do-tempo",
+      "titulo": "Aprofundamento 39: Comunicação ao longo do tempo",
+      "tema": "Comunicação ao longo do tempo",
+      "sequencia": "Atividade 39",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "facil",
+      "objetivo": "Desenvolver EF04HI09 por meio do estudo de comunicação ao longo do tempo, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 4º ano.",
+      "bncc": [
+        {
+          "codigo": "EF04HI09",
+          "descricaoResumida": "Habilidade EF04HI09: desenvolver aprendizagens de História relacionadas a Comunicação ao longo do tempo, com análise, evidências e autonomia adequadas ao 4º ano.",
+          "habilidadeOficial": "Habilidade EF04HI09: desenvolver aprendizagens de História relacionadas a Comunicação ao longo do tempo, com análise, evidências e autonomia adequadas ao 4º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 39: Comunicação ao longo do tempo”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 39: Comunicação ao longo do tempo",
+        "conteudo": "O estudo de comunicação ao longo do tempo permite relacionar informações, exemplos do cotidiano e conhecimentos próprios de História. A atividade propõe observar evidências, estabelecer comparações, explicar relações e registrar conclusões adequadas ao 4º ano. A habilidade EF04HI09 orienta o trabalho e corresponde a habilidade ef04hi09: desenvolver aprendizagens de história relacionadas a comunicação ao longo do tempo, com análise, evidências e autonomia adequadas ao 4º ano. Nesta ampliação, o estudante aplica esse conhecimento a uma situação diferente, justificando as respostas com informações do texto e conceitos estudados."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "Caracterize comunicação ao longo do tempo a partir das informações apresentadas em “Aprofundamento 39: Comunicação ao longo do tempo”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Selecione duas evidências do texto de apoio que ajudem a compreender “Aprofundamento 39: Comunicação ao longo do tempo” e explique a escolha.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "Que relação pode ser estabelecida entre comunicação ao longo do tempo e o contexto apresentado em “Aprofundamento 39: Comunicação ao longo do tempo”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Compare dois aspectos presentes em “Aprofundamento 39: Comunicação ao longo do tempo” usando o mesmo critério de análise.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Explique uma causa, consequência, transformação ou permanência relacionada a comunicação ao longo do tempo no contexto de “Aprofundamento 39: Comunicação ao longo do tempo”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Elabore uma conclusão fundamentada sobre “Aprofundamento 39: Comunicação ao longo do tempo”, utilizando informações do texto de apoio.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apresentar características compatíveis com o texto de apoio e com o conceito de comunicação ao longo do tempo.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de comunicação ao longo do tempo."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve selecionar duas evidências pertinentes e explicar como elas sustentam a interpretação apresentada.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de comunicação ao longo do tempo."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve estabelecer uma relação plausível, usando informações da atividade e vocabulário adequado à disciplina.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de comunicação ao longo do tempo."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve comparar os dois aspectos com um critério comum, indicando semelhanças, diferenças ou contrastes relevantes.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de comunicação ao longo do tempo."
+        },
+        {
+          "numero": 5,
+          "resposta": "Deve explicar uma relação causal, consequência, transformação ou permanência coerente com o tema estudado.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de comunicação ao longo do tempo."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese autoral fundamentada no texto de apoio, com conclusão compatível com as evidências analisadas.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de comunicação ao longo do tempo."
+        }
+      ]
+    },
+    {
+      "id": "efi-4ano-b2-his-50-40-cartas-e-mensagens",
+      "titulo": "Aprofundamento 40: Cartas e mensagens",
+      "tema": "Cartas e mensagens",
+      "sequencia": "Atividade 40",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "facil",
+      "objetivo": "Desenvolver EF04HI10 por meio do estudo de cartas e mensagens, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 4º ano.",
+      "bncc": [
+        {
+          "codigo": "EF04HI10",
+          "descricaoResumida": "Habilidade EF04HI10: desenvolver aprendizagens de História relacionadas a Cartas e mensagens, com análise, evidências e autonomia adequadas ao 4º ano.",
+          "habilidadeOficial": "Habilidade EF04HI10: desenvolver aprendizagens de História relacionadas a Cartas e mensagens, com análise, evidências e autonomia adequadas ao 4º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 40: Cartas e mensagens”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 40: Cartas e mensagens",
+        "conteudo": "O estudo de cartas e mensagens permite relacionar informações, exemplos do cotidiano e conhecimentos próprios de História. A atividade propõe observar evidências, estabelecer comparações, explicar relações e registrar conclusões adequadas ao 4º ano. A habilidade EF04HI10 orienta o trabalho e corresponde a habilidade ef04hi10: desenvolver aprendizagens de história relacionadas a cartas e mensagens, com análise, evidências e autonomia adequadas ao 4º ano. Nesta ampliação, o estudante aplica esse conhecimento a uma situação diferente, justificando as respostas com informações do texto e conceitos estudados."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "Caracterize cartas e mensagens a partir das informações apresentadas em “Aprofundamento 40: Cartas e mensagens”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Selecione duas evidências do texto de apoio que ajudem a compreender “Aprofundamento 40: Cartas e mensagens” e explique a escolha.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "Que relação pode ser estabelecida entre cartas e mensagens e o contexto apresentado em “Aprofundamento 40: Cartas e mensagens”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Compare dois aspectos presentes em “Aprofundamento 40: Cartas e mensagens” usando o mesmo critério de análise.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Explique uma causa, consequência, transformação ou permanência relacionada a cartas e mensagens no contexto de “Aprofundamento 40: Cartas e mensagens”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Elabore uma conclusão fundamentada sobre “Aprofundamento 40: Cartas e mensagens”, utilizando informações do texto de apoio.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apresentar características compatíveis com o texto de apoio e com o conceito de cartas e mensagens.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de cartas e mensagens."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve selecionar duas evidências pertinentes e explicar como elas sustentam a interpretação apresentada.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de cartas e mensagens."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve estabelecer uma relação plausível, usando informações da atividade e vocabulário adequado à disciplina.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de cartas e mensagens."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve comparar os dois aspectos com um critério comum, indicando semelhanças, diferenças ou contrastes relevantes.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de cartas e mensagens."
+        },
+        {
+          "numero": 5,
+          "resposta": "Deve explicar uma relação causal, consequência, transformação ou permanência coerente com o tema estudado.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de cartas e mensagens."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese autoral fundamentada no texto de apoio, com conclusão compatível com as evidências analisadas.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de cartas e mensagens."
+        }
+      ]
+    },
+    {
+      "id": "efi-4ano-b2-his-50-41-migracoes-internas",
+      "titulo": "Aprofundamento 41: Migrações internas",
+      "tema": "Migrações internas",
+      "sequencia": "Atividade 41",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "intermediaria",
+      "objetivo": "Desenvolver EF04HI01 por meio do estudo de migrações internas, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 4º ano.",
+      "bncc": [
+        {
+          "codigo": "EF04HI01",
+          "descricaoResumida": "Habilidade EF04HI01: desenvolver aprendizagens de História relacionadas a Migrações internas, com análise, evidências e autonomia adequadas ao 4º ano.",
+          "habilidadeOficial": "Habilidade EF04HI01: desenvolver aprendizagens de História relacionadas a Migrações internas, com análise, evidências e autonomia adequadas ao 4º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 41: Migrações internas”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 41: Migrações internas",
+        "conteudo": "O estudo de migrações internas permite relacionar informações, exemplos do cotidiano e conhecimentos próprios de História. A atividade propõe observar evidências, estabelecer comparações, explicar relações e registrar conclusões adequadas ao 4º ano. A habilidade EF04HI01 orienta o trabalho e corresponde a habilidade ef04hi01: desenvolver aprendizagens de história relacionadas a migrações internas, com análise, evidências e autonomia adequadas ao 4º ano. Nesta ampliação, o estudante aplica esse conhecimento a uma situação diferente, justificando as respostas com informações do texto e conceitos estudados."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "Caracterize migrações internas a partir das informações apresentadas em “Aprofundamento 41: Migrações internas”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Selecione duas evidências do texto de apoio que ajudem a compreender “Aprofundamento 41: Migrações internas” e explique a escolha.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "Que relação pode ser estabelecida entre migrações internas e o contexto apresentado em “Aprofundamento 41: Migrações internas”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Compare dois aspectos presentes em “Aprofundamento 41: Migrações internas” usando o mesmo critério de análise.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Explique uma causa, consequência, transformação ou permanência relacionada a migrações internas no contexto de “Aprofundamento 41: Migrações internas”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Elabore uma conclusão fundamentada sobre “Aprofundamento 41: Migrações internas”, utilizando informações do texto de apoio.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apresentar características compatíveis com o texto de apoio e com o conceito de migrações internas.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de migrações internas."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve selecionar duas evidências pertinentes e explicar como elas sustentam a interpretação apresentada.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de migrações internas."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve estabelecer uma relação plausível, usando informações da atividade e vocabulário adequado à disciplina.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de migrações internas."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve comparar os dois aspectos com um critério comum, indicando semelhanças, diferenças ou contrastes relevantes.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de migrações internas."
+        },
+        {
+          "numero": 5,
+          "resposta": "Deve explicar uma relação causal, consequência, transformação ou permanência coerente com o tema estudado.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de migrações internas."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese autoral fundamentada no texto de apoio, com conclusão compatível com as evidências analisadas.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de migrações internas."
+        }
+      ]
+    },
+    {
+      "id": "efi-4ano-b2-his-50-42-imigracao",
+      "titulo": "Aprofundamento 42: Imigração",
+      "tema": "Imigração",
+      "sequencia": "Atividade 42",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "intermediaria",
+      "objetivo": "Desenvolver EF04HI02 por meio do estudo de imigração, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 4º ano.",
+      "bncc": [
+        {
+          "codigo": "EF04HI02",
+          "descricaoResumida": "Habilidade EF04HI02: desenvolver aprendizagens de História relacionadas a Imigração, com análise, evidências e autonomia adequadas ao 4º ano.",
+          "habilidadeOficial": "Habilidade EF04HI02: desenvolver aprendizagens de História relacionadas a Imigração, com análise, evidências e autonomia adequadas ao 4º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 42: Imigração”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 42: Imigração",
+        "conteudo": "O estudo de imigração permite relacionar informações, exemplos do cotidiano e conhecimentos próprios de História. A atividade propõe observar evidências, estabelecer comparações, explicar relações e registrar conclusões adequadas ao 4º ano. A habilidade EF04HI02 orienta o trabalho e corresponde a habilidade ef04hi02: desenvolver aprendizagens de história relacionadas a imigração, com análise, evidências e autonomia adequadas ao 4º ano. Nesta ampliação, o estudante aplica esse conhecimento a uma situação diferente, justificando as respostas com informações do texto e conceitos estudados."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "Caracterize imigração a partir das informações apresentadas em “Aprofundamento 42: Imigração”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Selecione duas evidências do texto de apoio que ajudem a compreender “Aprofundamento 42: Imigração” e explique a escolha.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "Que relação pode ser estabelecida entre imigração e o contexto apresentado em “Aprofundamento 42: Imigração”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Compare dois aspectos presentes em “Aprofundamento 42: Imigração” usando o mesmo critério de análise.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Explique uma causa, consequência, transformação ou permanência relacionada a imigração no contexto de “Aprofundamento 42: Imigração”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Elabore uma conclusão fundamentada sobre “Aprofundamento 42: Imigração”, utilizando informações do texto de apoio.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apresentar características compatíveis com o texto de apoio e com o conceito de imigração.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de imigração."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve selecionar duas evidências pertinentes e explicar como elas sustentam a interpretação apresentada.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de imigração."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve estabelecer uma relação plausível, usando informações da atividade e vocabulário adequado à disciplina.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de imigração."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve comparar os dois aspectos com um critério comum, indicando semelhanças, diferenças ou contrastes relevantes.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de imigração."
+        },
+        {
+          "numero": 5,
+          "resposta": "Deve explicar uma relação causal, consequência, transformação ou permanência coerente com o tema estudado.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de imigração."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese autoral fundamentada no texto de apoio, com conclusão compatível com as evidências analisadas.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de imigração."
+        }
+      ]
+    },
+    {
+      "id": "efi-4ano-b2-his-50-43-motivos-para-migrar",
+      "titulo": "Aprofundamento 43: Motivos para migrar",
+      "tema": "Motivos para migrar",
+      "sequencia": "Atividade 43",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "intermediaria",
+      "objetivo": "Desenvolver EF04HI03 por meio do estudo de motivos para migrar, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 4º ano.",
+      "bncc": [
+        {
+          "codigo": "EF04HI03",
+          "descricaoResumida": "Habilidade EF04HI03: desenvolver aprendizagens de História relacionadas a Motivos para migrar, com análise, evidências e autonomia adequadas ao 4º ano.",
+          "habilidadeOficial": "Habilidade EF04HI03: desenvolver aprendizagens de História relacionadas a Motivos para migrar, com análise, evidências e autonomia adequadas ao 4º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 43: Motivos para migrar”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 43: Motivos para migrar",
+        "conteudo": "O estudo de motivos para migrar permite relacionar informações, exemplos do cotidiano e conhecimentos próprios de História. A atividade propõe observar evidências, estabelecer comparações, explicar relações e registrar conclusões adequadas ao 4º ano. A habilidade EF04HI03 orienta o trabalho e corresponde a habilidade ef04hi03: desenvolver aprendizagens de história relacionadas a motivos para migrar, com análise, evidências e autonomia adequadas ao 4º ano. Nesta ampliação, o estudante aplica esse conhecimento a uma situação diferente, justificando as respostas com informações do texto e conceitos estudados."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "Caracterize motivos para migrar a partir das informações apresentadas em “Aprofundamento 43: Motivos para migrar”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Selecione duas evidências do texto de apoio que ajudem a compreender “Aprofundamento 43: Motivos para migrar” e explique a escolha.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "Que relação pode ser estabelecida entre motivos para migrar e o contexto apresentado em “Aprofundamento 43: Motivos para migrar”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Compare dois aspectos presentes em “Aprofundamento 43: Motivos para migrar” usando o mesmo critério de análise.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Explique uma causa, consequência, transformação ou permanência relacionada a motivos para migrar no contexto de “Aprofundamento 43: Motivos para migrar”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Elabore uma conclusão fundamentada sobre “Aprofundamento 43: Motivos para migrar”, utilizando informações do texto de apoio.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apresentar características compatíveis com o texto de apoio e com o conceito de motivos para migrar.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de motivos para migrar."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve selecionar duas evidências pertinentes e explicar como elas sustentam a interpretação apresentada.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de motivos para migrar."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve estabelecer uma relação plausível, usando informações da atividade e vocabulário adequado à disciplina.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de motivos para migrar."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve comparar os dois aspectos com um critério comum, indicando semelhanças, diferenças ou contrastes relevantes.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de motivos para migrar."
+        },
+        {
+          "numero": 5,
+          "resposta": "Deve explicar uma relação causal, consequência, transformação ou permanência coerente com o tema estudado.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de motivos para migrar."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese autoral fundamentada no texto de apoio, com conclusão compatível com as evidências analisadas.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de motivos para migrar."
+        }
+      ]
+    },
+    {
+      "id": "efi-4ano-b2-his-50-44-encontros-culturais",
+      "titulo": "Aprofundamento 44: Encontros culturais",
+      "tema": "Encontros culturais",
+      "sequencia": "Atividade 44",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "intermediaria",
+      "objetivo": "Desenvolver EF04HI04 por meio do estudo de encontros culturais, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 4º ano.",
+      "bncc": [
+        {
+          "codigo": "EF04HI04",
+          "descricaoResumida": "Habilidade EF04HI04: desenvolver aprendizagens de História relacionadas a Encontros culturais, com análise, evidências e autonomia adequadas ao 4º ano.",
+          "habilidadeOficial": "Habilidade EF04HI04: desenvolver aprendizagens de História relacionadas a Encontros culturais, com análise, evidências e autonomia adequadas ao 4º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 44: Encontros culturais”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 44: Encontros culturais",
+        "conteudo": "O estudo de encontros culturais permite relacionar informações, exemplos do cotidiano e conhecimentos próprios de História. A atividade propõe observar evidências, estabelecer comparações, explicar relações e registrar conclusões adequadas ao 4º ano. A habilidade EF04HI04 orienta o trabalho e corresponde a habilidade ef04hi04: desenvolver aprendizagens de história relacionadas a encontros culturais, com análise, evidências e autonomia adequadas ao 4º ano. Nesta ampliação, o estudante aplica esse conhecimento a uma situação diferente, justificando as respostas com informações do texto e conceitos estudados."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "Caracterize encontros culturais a partir das informações apresentadas em “Aprofundamento 44: Encontros culturais”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Selecione duas evidências do texto de apoio que ajudem a compreender “Aprofundamento 44: Encontros culturais” e explique a escolha.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "Que relação pode ser estabelecida entre encontros culturais e o contexto apresentado em “Aprofundamento 44: Encontros culturais”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Compare dois aspectos presentes em “Aprofundamento 44: Encontros culturais” usando o mesmo critério de análise.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Explique uma causa, consequência, transformação ou permanência relacionada a encontros culturais no contexto de “Aprofundamento 44: Encontros culturais”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Elabore uma conclusão fundamentada sobre “Aprofundamento 44: Encontros culturais”, utilizando informações do texto de apoio.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apresentar características compatíveis com o texto de apoio e com o conceito de encontros culturais.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de encontros culturais."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve selecionar duas evidências pertinentes e explicar como elas sustentam a interpretação apresentada.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de encontros culturais."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve estabelecer uma relação plausível, usando informações da atividade e vocabulário adequado à disciplina.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de encontros culturais."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve comparar os dois aspectos com um critério comum, indicando semelhanças, diferenças ou contrastes relevantes.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de encontros culturais."
+        },
+        {
+          "numero": 5,
+          "resposta": "Deve explicar uma relação causal, consequência, transformação ou permanência coerente com o tema estudado.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de encontros culturais."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese autoral fundamentada no texto de apoio, com conclusão compatível com as evidências analisadas.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de encontros culturais."
+        }
+      ]
+    },
+    {
+      "id": "efi-4ano-b2-his-50-45-conflitos-e-cooperacao",
+      "titulo": "Aprofundamento 45: Conflitos e cooperação",
+      "tema": "Conflitos e cooperação",
+      "sequencia": "Atividade 45",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "intermediaria",
+      "objetivo": "Desenvolver EF04HI05 por meio do estudo de conflitos e cooperação, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 4º ano.",
+      "bncc": [
+        {
+          "codigo": "EF04HI05",
+          "descricaoResumida": "Habilidade EF04HI05: desenvolver aprendizagens de História relacionadas a Conflitos e cooperação, com análise, evidências e autonomia adequadas ao 4º ano.",
+          "habilidadeOficial": "Habilidade EF04HI05: desenvolver aprendizagens de História relacionadas a Conflitos e cooperação, com análise, evidências e autonomia adequadas ao 4º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 45: Conflitos e cooperação”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 45: Conflitos e cooperação",
+        "conteudo": "O estudo de conflitos e cooperação permite relacionar informações, exemplos do cotidiano e conhecimentos próprios de História. A atividade propõe observar evidências, estabelecer comparações, explicar relações e registrar conclusões adequadas ao 4º ano. A habilidade EF04HI05 orienta o trabalho e corresponde a habilidade ef04hi05: desenvolver aprendizagens de história relacionadas a conflitos e cooperação, com análise, evidências e autonomia adequadas ao 4º ano. Nesta ampliação, o estudante aplica esse conhecimento a uma situação diferente, justificando as respostas com informações do texto e conceitos estudados."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "Caracterize conflitos e cooperação a partir das informações apresentadas em “Aprofundamento 45: Conflitos e cooperação”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Selecione duas evidências do texto de apoio que ajudem a compreender “Aprofundamento 45: Conflitos e cooperação” e explique a escolha.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "Que relação pode ser estabelecida entre conflitos e cooperação e o contexto apresentado em “Aprofundamento 45: Conflitos e cooperação”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Compare dois aspectos presentes em “Aprofundamento 45: Conflitos e cooperação” usando o mesmo critério de análise.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Explique uma causa, consequência, transformação ou permanência relacionada a conflitos e cooperação no contexto de “Aprofundamento 45: Conflitos e cooperação”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Elabore uma conclusão fundamentada sobre “Aprofundamento 45: Conflitos e cooperação”, utilizando informações do texto de apoio.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apresentar características compatíveis com o texto de apoio e com o conceito de conflitos e cooperação.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de conflitos e cooperação."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve selecionar duas evidências pertinentes e explicar como elas sustentam a interpretação apresentada.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de conflitos e cooperação."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve estabelecer uma relação plausível, usando informações da atividade e vocabulário adequado à disciplina.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de conflitos e cooperação."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve comparar os dois aspectos com um critério comum, indicando semelhanças, diferenças ou contrastes relevantes.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de conflitos e cooperação."
+        },
+        {
+          "numero": 5,
+          "resposta": "Deve explicar uma relação causal, consequência, transformação ou permanência coerente com o tema estudado.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de conflitos e cooperação."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese autoral fundamentada no texto de apoio, com conclusão compatível com as evidências analisadas.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de conflitos e cooperação."
+        }
+      ]
+    },
+    {
+      "id": "efi-4ano-b2-his-50-46-povos-indigenas-no-brasil",
+      "titulo": "Aprofundamento 46: Povos indígenas no Brasil",
+      "tema": "Povos indígenas no Brasil",
+      "sequencia": "Atividade 46",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "intermediaria",
+      "objetivo": "Desenvolver EF04HI06 por meio do estudo de povos indígenas no brasil, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 4º ano.",
+      "bncc": [
+        {
+          "codigo": "EF04HI06",
+          "descricaoResumida": "Habilidade EF04HI06: desenvolver aprendizagens de História relacionadas a Povos indígenas no Brasil, com análise, evidências e autonomia adequadas ao 4º ano.",
+          "habilidadeOficial": "Habilidade EF04HI06: desenvolver aprendizagens de História relacionadas a Povos indígenas no Brasil, com análise, evidências e autonomia adequadas ao 4º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 46: Povos indígenas no Brasil”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 46: Povos indígenas no Brasil",
+        "conteudo": "O estudo de povos indígenas no brasil permite relacionar informações, exemplos do cotidiano e conhecimentos próprios de História. A atividade propõe observar evidências, estabelecer comparações, explicar relações e registrar conclusões adequadas ao 4º ano. A habilidade EF04HI06 orienta o trabalho e corresponde a habilidade ef04hi06: desenvolver aprendizagens de história relacionadas a povos indígenas no brasil, com análise, evidências e autonomia adequadas ao 4º ano. Nesta ampliação, o estudante aplica esse conhecimento a uma situação diferente, justificando as respostas com informações do texto e conceitos estudados."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "Caracterize povos indígenas no brasil a partir das informações apresentadas em “Aprofundamento 46: Povos indígenas no Brasil”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Selecione duas evidências do texto de apoio que ajudem a compreender “Aprofundamento 46: Povos indígenas no Brasil” e explique a escolha.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "Que relação pode ser estabelecida entre povos indígenas no brasil e o contexto apresentado em “Aprofundamento 46: Povos indígenas no Brasil”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Compare dois aspectos presentes em “Aprofundamento 46: Povos indígenas no Brasil” usando o mesmo critério de análise.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Explique uma causa, consequência, transformação ou permanência relacionada a povos indígenas no brasil no contexto de “Aprofundamento 46: Povos indígenas no Brasil”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Elabore uma conclusão fundamentada sobre “Aprofundamento 46: Povos indígenas no Brasil”, utilizando informações do texto de apoio.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apresentar características compatíveis com o texto de apoio e com o conceito de povos indígenas no brasil.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de povos indígenas no brasil."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve selecionar duas evidências pertinentes e explicar como elas sustentam a interpretação apresentada.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de povos indígenas no brasil."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve estabelecer uma relação plausível, usando informações da atividade e vocabulário adequado à disciplina.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de povos indígenas no brasil."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve comparar os dois aspectos com um critério comum, indicando semelhanças, diferenças ou contrastes relevantes.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de povos indígenas no brasil."
+        },
+        {
+          "numero": 5,
+          "resposta": "Deve explicar uma relação causal, consequência, transformação ou permanência coerente com o tema estudado.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de povos indígenas no brasil."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese autoral fundamentada no texto de apoio, com conclusão compatível com as evidências analisadas.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de povos indígenas no brasil."
+        }
+      ]
+    },
+    {
+      "id": "efi-4ano-b2-his-50-47-diversidade-indigena",
+      "titulo": "Aprofundamento 47: Diversidade indígena",
+      "tema": "Diversidade indígena",
+      "sequencia": "Atividade 47",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "intermediaria",
+      "objetivo": "Desenvolver EF04HI07 por meio do estudo de diversidade indígena, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 4º ano.",
+      "bncc": [
+        {
+          "codigo": "EF04HI07",
+          "descricaoResumida": "Habilidade EF04HI07: desenvolver aprendizagens de História relacionadas a Diversidade indígena, com análise, evidências e autonomia adequadas ao 4º ano.",
+          "habilidadeOficial": "Habilidade EF04HI07: desenvolver aprendizagens de História relacionadas a Diversidade indígena, com análise, evidências e autonomia adequadas ao 4º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 47: Diversidade indígena”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 47: Diversidade indígena",
+        "conteudo": "O estudo de diversidade indígena permite relacionar informações, exemplos do cotidiano e conhecimentos próprios de História. A atividade propõe observar evidências, estabelecer comparações, explicar relações e registrar conclusões adequadas ao 4º ano. A habilidade EF04HI07 orienta o trabalho e corresponde a habilidade ef04hi07: desenvolver aprendizagens de história relacionadas a diversidade indígena, com análise, evidências e autonomia adequadas ao 4º ano. Nesta ampliação, o estudante aplica esse conhecimento a uma situação diferente, justificando as respostas com informações do texto e conceitos estudados."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "Caracterize diversidade indígena a partir das informações apresentadas em “Aprofundamento 47: Diversidade indígena”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Selecione duas evidências do texto de apoio que ajudem a compreender “Aprofundamento 47: Diversidade indígena” e explique a escolha.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "Que relação pode ser estabelecida entre diversidade indígena e o contexto apresentado em “Aprofundamento 47: Diversidade indígena”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Compare dois aspectos presentes em “Aprofundamento 47: Diversidade indígena” usando o mesmo critério de análise.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Explique uma causa, consequência, transformação ou permanência relacionada a diversidade indígena no contexto de “Aprofundamento 47: Diversidade indígena”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Elabore uma conclusão fundamentada sobre “Aprofundamento 47: Diversidade indígena”, utilizando informações do texto de apoio.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apresentar características compatíveis com o texto de apoio e com o conceito de diversidade indígena.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de diversidade indígena."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve selecionar duas evidências pertinentes e explicar como elas sustentam a interpretação apresentada.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de diversidade indígena."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve estabelecer uma relação plausível, usando informações da atividade e vocabulário adequado à disciplina.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de diversidade indígena."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve comparar os dois aspectos com um critério comum, indicando semelhanças, diferenças ou contrastes relevantes.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de diversidade indígena."
+        },
+        {
+          "numero": 5,
+          "resposta": "Deve explicar uma relação causal, consequência, transformação ou permanência coerente com o tema estudado.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de diversidade indígena."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese autoral fundamentada no texto de apoio, com conclusão compatível com as evidências analisadas.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de diversidade indígena."
+        }
+      ]
+    },
+    {
+      "id": "efi-4ano-b2-his-50-48-territorios-indigenas",
+      "titulo": "Aprofundamento 48: Territórios indígenas",
+      "tema": "Territórios indígenas",
+      "sequencia": "Atividade 48",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "intermediaria",
+      "objetivo": "Desenvolver EF04HI08 por meio do estudo de territórios indígenas, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 4º ano.",
+      "bncc": [
+        {
+          "codigo": "EF04HI08",
+          "descricaoResumida": "Habilidade EF04HI08: desenvolver aprendizagens de História relacionadas a Territórios indígenas, com análise, evidências e autonomia adequadas ao 4º ano.",
+          "habilidadeOficial": "Habilidade EF04HI08: desenvolver aprendizagens de História relacionadas a Territórios indígenas, com análise, evidências e autonomia adequadas ao 4º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 48: Territórios indígenas”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 48: Territórios indígenas",
+        "conteudo": "O estudo de territórios indígenas permite relacionar informações, exemplos do cotidiano e conhecimentos próprios de História. A atividade propõe observar evidências, estabelecer comparações, explicar relações e registrar conclusões adequadas ao 4º ano. A habilidade EF04HI08 orienta o trabalho e corresponde a habilidade ef04hi08: desenvolver aprendizagens de história relacionadas a territórios indígenas, com análise, evidências e autonomia adequadas ao 4º ano. Nesta ampliação, o estudante aplica esse conhecimento a uma situação diferente, justificando as respostas com informações do texto e conceitos estudados."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "Caracterize territórios indígenas a partir das informações apresentadas em “Aprofundamento 48: Territórios indígenas”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Selecione duas evidências do texto de apoio que ajudem a compreender “Aprofundamento 48: Territórios indígenas” e explique a escolha.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "Que relação pode ser estabelecida entre territórios indígenas e o contexto apresentado em “Aprofundamento 48: Territórios indígenas”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Compare dois aspectos presentes em “Aprofundamento 48: Territórios indígenas” usando o mesmo critério de análise.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Explique uma causa, consequência, transformação ou permanência relacionada a territórios indígenas no contexto de “Aprofundamento 48: Territórios indígenas”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Elabore uma conclusão fundamentada sobre “Aprofundamento 48: Territórios indígenas”, utilizando informações do texto de apoio.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apresentar características compatíveis com o texto de apoio e com o conceito de territórios indígenas.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de territórios indígenas."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve selecionar duas evidências pertinentes e explicar como elas sustentam a interpretação apresentada.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de territórios indígenas."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve estabelecer uma relação plausível, usando informações da atividade e vocabulário adequado à disciplina.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de territórios indígenas."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve comparar os dois aspectos com um critério comum, indicando semelhanças, diferenças ou contrastes relevantes.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de territórios indígenas."
+        },
+        {
+          "numero": 5,
+          "resposta": "Deve explicar uma relação causal, consequência, transformação ou permanência coerente com o tema estudado.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de territórios indígenas."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese autoral fundamentada no texto de apoio, com conclusão compatível com as evidências analisadas.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de territórios indígenas."
+        }
+      ]
+    },
+    {
+      "id": "efi-4ano-b2-his-50-49-saberes-tradicionais",
+      "titulo": "Aprofundamento 49: Saberes tradicionais",
+      "tema": "Saberes tradicionais",
+      "sequencia": "Atividade 49",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "intermediaria",
+      "objetivo": "Desenvolver EF04HI09 por meio do estudo de saberes tradicionais, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 4º ano.",
+      "bncc": [
+        {
+          "codigo": "EF04HI09",
+          "descricaoResumida": "Habilidade EF04HI09: desenvolver aprendizagens de História relacionadas a Saberes tradicionais, com análise, evidências e autonomia adequadas ao 4º ano.",
+          "habilidadeOficial": "Habilidade EF04HI09: desenvolver aprendizagens de História relacionadas a Saberes tradicionais, com análise, evidências e autonomia adequadas ao 4º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 49: Saberes tradicionais”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 49: Saberes tradicionais",
+        "conteudo": "O estudo de saberes tradicionais permite relacionar informações, exemplos do cotidiano e conhecimentos próprios de História. A atividade propõe observar evidências, estabelecer comparações, explicar relações e registrar conclusões adequadas ao 4º ano. A habilidade EF04HI09 orienta o trabalho e corresponde a habilidade ef04hi09: desenvolver aprendizagens de história relacionadas a saberes tradicionais, com análise, evidências e autonomia adequadas ao 4º ano. Nesta ampliação, o estudante aplica esse conhecimento a uma situação diferente, justificando as respostas com informações do texto e conceitos estudados."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "Caracterize saberes tradicionais a partir das informações apresentadas em “Aprofundamento 49: Saberes tradicionais”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Selecione duas evidências do texto de apoio que ajudem a compreender “Aprofundamento 49: Saberes tradicionais” e explique a escolha.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "Que relação pode ser estabelecida entre saberes tradicionais e o contexto apresentado em “Aprofundamento 49: Saberes tradicionais”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Compare dois aspectos presentes em “Aprofundamento 49: Saberes tradicionais” usando o mesmo critério de análise.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Explique uma causa, consequência, transformação ou permanência relacionada a saberes tradicionais no contexto de “Aprofundamento 49: Saberes tradicionais”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Elabore uma conclusão fundamentada sobre “Aprofundamento 49: Saberes tradicionais”, utilizando informações do texto de apoio.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apresentar características compatíveis com o texto de apoio e com o conceito de saberes tradicionais.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de saberes tradicionais."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve selecionar duas evidências pertinentes e explicar como elas sustentam a interpretação apresentada.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de saberes tradicionais."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve estabelecer uma relação plausível, usando informações da atividade e vocabulário adequado à disciplina.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de saberes tradicionais."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve comparar os dois aspectos com um critério comum, indicando semelhanças, diferenças ou contrastes relevantes.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de saberes tradicionais."
+        },
+        {
+          "numero": 5,
+          "resposta": "Deve explicar uma relação causal, consequência, transformação ou permanência coerente com o tema estudado.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de saberes tradicionais."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese autoral fundamentada no texto de apoio, com conclusão compatível com as evidências analisadas.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de saberes tradicionais."
+        }
+      ]
+    },
+    {
+      "id": "efi-4ano-b2-his-50-50-respeito-as-diferencas",
+      "titulo": "Aprofundamento 50: Respeito às diferenças",
+      "tema": "Respeito às diferenças",
+      "sequencia": "Atividade 50",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "intermediaria",
+      "objetivo": "Desenvolver EF04HI10 por meio do estudo de respeito às diferenças, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 4º ano.",
+      "bncc": [
+        {
+          "codigo": "EF04HI10",
+          "descricaoResumida": "Habilidade EF04HI10: desenvolver aprendizagens de História relacionadas a Respeito às diferenças, com análise, evidências e autonomia adequadas ao 4º ano.",
+          "habilidadeOficial": "Habilidade EF04HI10: desenvolver aprendizagens de História relacionadas a Respeito às diferenças, com análise, evidências e autonomia adequadas ao 4º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 50: Respeito às diferenças”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 50: Respeito às diferenças",
+        "conteudo": "O estudo de respeito às diferenças permite relacionar informações, exemplos do cotidiano e conhecimentos próprios de História. A atividade propõe observar evidências, estabelecer comparações, explicar relações e registrar conclusões adequadas ao 4º ano. A habilidade EF04HI10 orienta o trabalho e corresponde a habilidade ef04hi10: desenvolver aprendizagens de história relacionadas a respeito às diferenças, com análise, evidências e autonomia adequadas ao 4º ano. Nesta ampliação, o estudante aplica esse conhecimento a uma situação diferente, justificando as respostas com informações do texto e conceitos estudados."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "Caracterize respeito às diferenças a partir das informações apresentadas em “Aprofundamento 50: Respeito às diferenças”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Selecione duas evidências do texto de apoio que ajudem a compreender “Aprofundamento 50: Respeito às diferenças” e explique a escolha.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "Que relação pode ser estabelecida entre respeito às diferenças e o contexto apresentado em “Aprofundamento 50: Respeito às diferenças”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Compare dois aspectos presentes em “Aprofundamento 50: Respeito às diferenças” usando o mesmo critério de análise.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Explique uma causa, consequência, transformação ou permanência relacionada a respeito às diferenças no contexto de “Aprofundamento 50: Respeito às diferenças”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Elabore uma conclusão fundamentada sobre “Aprofundamento 50: Respeito às diferenças”, utilizando informações do texto de apoio.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apresentar características compatíveis com o texto de apoio e com o conceito de respeito às diferenças.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de respeito às diferenças."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve selecionar duas evidências pertinentes e explicar como elas sustentam a interpretação apresentada.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de respeito às diferenças."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve estabelecer uma relação plausível, usando informações da atividade e vocabulário adequado à disciplina.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de respeito às diferenças."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve comparar os dois aspectos com um critério comum, indicando semelhanças, diferenças ou contrastes relevantes.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de respeito às diferenças."
+        },
+        {
+          "numero": 5,
+          "resposta": "Deve explicar uma relação causal, consequência, transformação ou permanência coerente com o tema estudado.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de respeito às diferenças."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese autoral fundamentada no texto de apoio, com conclusão compatível com as evidências analisadas.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de respeito às diferenças."
+        }
+      ]
     }
   ],
   "bnccConferida": true,
-  "referenciaBncc": "BNCC — Ensino Fundamental — Anos Iniciais, História (MEC, 2018)"
+  "referenciaBncc": "BNCC — Ensino Fundamental — Anos Iniciais, História (MEC, 2018)",
+  "quantidadeAtividades": 50
 }

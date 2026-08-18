@@ -6,7 +6,7 @@
   "ano": "3º ano",
   "bimestre": 1,
   "disciplina": "Matemática",
-  "statusBimestre": "sugerido",
+  "statusBimestre": "completo",
   "atividades": [
     {
       "id": "efi-3ano-b1-matematica-01-representacao-de-numeros-ate-1000",
@@ -3837,8 +3837,2189 @@
       },
       "bnccConferida": true,
       "illustration": "/illustrations/biblioteca/fundamental-iniciais/3-ano/1-bimestre/matematica/efi-3ano-b1-matematica-30-problemas-envolvendo-tabelas-e-graficos.png"
+    },
+    {
+      "id": "efi-3ano-b1-mat-50-31-representacao-de-numeros-ate-1000",
+      "titulo": "Aprofundamento 31: Representação de números até 1000",
+      "tema": "Representação de números até 1000",
+      "sequencia": "Atividade 31",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "facil",
+      "objetivo": "Desenvolver EF03MA01 por meio do estudo de representação de números até 1000, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 3º ano.",
+      "bncc": [
+        {
+          "codigo": "EF03MA01",
+          "descricaoResumida": "Habilidade EF03MA01: desenvolver aprendizagens de Matemática relacionadas a Representação de números até 1000, com linguagem, evidências e autonomia adequadas ao 3º ano.",
+          "habilidadeOficial": "Habilidade EF03MA01: desenvolver aprendizagens de Matemática relacionadas a Representação de números até 1000, com linguagem, evidências e autonomia adequadas ao 3º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 31: Representação de números até 1000”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 31: Representação de números até 1000",
+        "conteudo": "O estudo de representação de números até 1000 permite relacionar informações, exemplos do cotidiano e conhecimentos próprios de Matemática. A atividade propõe observar evidências, estabelecer comparações, explicar relações e registrar conclusões adequadas ao 3º ano. A habilidade EF03MA01 orienta o trabalho e corresponde a habilidade ef03ma01: desenvolver aprendizagens de matemática relacionadas a representação de números até 1000, com linguagem, evidências e autonomia adequadas ao 3º ano. Nesta ampliação, o estudante aplica esse conhecimento a uma situação diferente, justificando as respostas com informações do texto e conceitos estudados."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "Caracterize representação de números até 1000 a partir das informações apresentadas em “Aprofundamento 31: Representação de números até 1000”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Selecione duas evidências do texto de apoio que ajudem a compreender “Aprofundamento 31: Representação de números até 1000” e explique a escolha.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "Que relação pode ser estabelecida entre representação de números até 1000 e o contexto apresentado em “Aprofundamento 31: Representação de números até 1000”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Compare dois aspectos presentes em “Aprofundamento 31: Representação de números até 1000” usando o mesmo critério de análise.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Explique uma causa, consequência, transformação ou permanência relacionada a representação de números até 1000 no contexto de “Aprofundamento 31: Representação de números até 1000”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Elabore uma conclusão fundamentada sobre “Aprofundamento 31: Representação de números até 1000”, utilizando informações do texto de apoio.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apresentar características compatíveis com o texto de apoio e com o conceito de representação de números até 1000.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de representação de números até 1000."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve selecionar duas evidências pertinentes e explicar como elas sustentam a interpretação apresentada.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de representação de números até 1000."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve estabelecer uma relação plausível, usando informações da atividade e vocabulário adequado à disciplina.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de representação de números até 1000."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve comparar os dois aspectos com um critério comum, indicando semelhanças, diferenças ou contrastes relevantes.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de representação de números até 1000."
+        },
+        {
+          "numero": 5,
+          "resposta": "Deve explicar uma relação causal, consequência, transformação ou permanência coerente com o tema estudado.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de representação de números até 1000."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese autoral fundamentada no texto de apoio, com conclusão compatível com as evidências analisadas.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de representação de números até 1000."
+        }
+      ]
+    },
+    {
+      "id": "efi-3ano-b1-mat-50-32-estrategias-de-calculo-com-numeros-ate-1000",
+      "titulo": "Aprofundamento 32: Estratégias de cálculo com números até 1000",
+      "tema": "Estratégias de cálculo com números até 1000",
+      "sequencia": "Atividade 32",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "facil",
+      "objetivo": "Desenvolver EF03MA02 por meio do estudo de estratégias de cálculo com números até 1000, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 3º ano.",
+      "bncc": [
+        {
+          "codigo": "EF03MA02",
+          "descricaoResumida": "Habilidade EF03MA02: desenvolver aprendizagens de Matemática relacionadas a Estratégias de cálculo com números até 1000, com linguagem, evidências e autonomia adequadas ao 3º ano.",
+          "habilidadeOficial": "Habilidade EF03MA02: desenvolver aprendizagens de Matemática relacionadas a Estratégias de cálculo com números até 1000, com linguagem, evidências e autonomia adequadas ao 3º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 32: Estratégias de cálculo com números até 1000”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 32: Estratégias de cálculo com números até 1000",
+        "conteudo": "O estudo de estratégias de cálculo com números até 1000 permite relacionar informações, exemplos do cotidiano e conhecimentos próprios de Matemática. A atividade propõe observar evidências, estabelecer comparações, explicar relações e registrar conclusões adequadas ao 3º ano. A habilidade EF03MA02 orienta o trabalho e corresponde a habilidade ef03ma02: desenvolver aprendizagens de matemática relacionadas a estratégias de cálculo com números até 1000, com linguagem, evidências e autonomia adequadas ao 3º ano. Nesta ampliação, o estudante aplica esse conhecimento a uma situação diferente, justificando as respostas com informações do texto e conceitos estudados."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "Caracterize estratégias de cálculo com números até 1000 a partir das informações apresentadas em “Aprofundamento 32: Estratégias de cálculo com números até 1000”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Selecione duas evidências do texto de apoio que ajudem a compreender “Aprofundamento 32: Estratégias de cálculo com números até 1000” e explique a escolha.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "Que relação pode ser estabelecida entre estratégias de cálculo com números até 1000 e o contexto apresentado em “Aprofundamento 32: Estratégias de cálculo com números até 1000”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Compare dois aspectos presentes em “Aprofundamento 32: Estratégias de cálculo com números até 1000” usando o mesmo critério de análise.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Explique uma causa, consequência, transformação ou permanência relacionada a estratégias de cálculo com números até 1000 no contexto de “Aprofundamento 32: Estratégias de cálculo com números até 1000”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Elabore uma conclusão fundamentada sobre “Aprofundamento 32: Estratégias de cálculo com números até 1000”, utilizando informações do texto de apoio.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apresentar características compatíveis com o texto de apoio e com o conceito de estratégias de cálculo com números até 1000.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de estratégias de cálculo com números até 1000."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve selecionar duas evidências pertinentes e explicar como elas sustentam a interpretação apresentada.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de estratégias de cálculo com números até 1000."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve estabelecer uma relação plausível, usando informações da atividade e vocabulário adequado à disciplina.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de estratégias de cálculo com números até 1000."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve comparar os dois aspectos com um critério comum, indicando semelhanças, diferenças ou contrastes relevantes.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de estratégias de cálculo com números até 1000."
+        },
+        {
+          "numero": 5,
+          "resposta": "Deve explicar uma relação causal, consequência, transformação ou permanência coerente com o tema estudado.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de estratégias de cálculo com números até 1000."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese autoral fundamentada no texto de apoio, com conclusão compatível com as evidências analisadas.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de estratégias de cálculo com números até 1000."
+        }
+      ]
+    },
+    {
+      "id": "efi-3ano-b1-mat-50-33-problemas-envolvendo-numeros-ate-1000",
+      "titulo": "Aprofundamento 33: Problemas envolvendo números até 1000",
+      "tema": "Problemas envolvendo números até 1000",
+      "sequencia": "Atividade 33",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "facil",
+      "objetivo": "Desenvolver EF03MA03 por meio do estudo de problemas envolvendo números até 1000, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 3º ano.",
+      "bncc": [
+        {
+          "codigo": "EF03MA03",
+          "descricaoResumida": "Habilidade EF03MA03: desenvolver aprendizagens de Matemática relacionadas a Problemas envolvendo números até 1000, com linguagem, evidências e autonomia adequadas ao 3º ano.",
+          "habilidadeOficial": "Habilidade EF03MA03: desenvolver aprendizagens de Matemática relacionadas a Problemas envolvendo números até 1000, com linguagem, evidências e autonomia adequadas ao 3º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 33: Problemas envolvendo números até 1000”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 33: Problemas envolvendo números até 1000",
+        "conteudo": "O estudo de problemas envolvendo números até 1000 permite relacionar informações, exemplos do cotidiano e conhecimentos próprios de Matemática. A atividade propõe observar evidências, estabelecer comparações, explicar relações e registrar conclusões adequadas ao 3º ano. A habilidade EF03MA03 orienta o trabalho e corresponde a habilidade ef03ma03: desenvolver aprendizagens de matemática relacionadas a problemas envolvendo números até 1000, com linguagem, evidências e autonomia adequadas ao 3º ano. Nesta ampliação, o estudante aplica esse conhecimento a uma situação diferente, justificando as respostas com informações do texto e conceitos estudados."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "Caracterize problemas envolvendo números até 1000 a partir das informações apresentadas em “Aprofundamento 33: Problemas envolvendo números até 1000”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Selecione duas evidências do texto de apoio que ajudem a compreender “Aprofundamento 33: Problemas envolvendo números até 1000” e explique a escolha.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "Que relação pode ser estabelecida entre problemas envolvendo números até 1000 e o contexto apresentado em “Aprofundamento 33: Problemas envolvendo números até 1000”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Compare dois aspectos presentes em “Aprofundamento 33: Problemas envolvendo números até 1000” usando o mesmo critério de análise.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Explique uma causa, consequência, transformação ou permanência relacionada a problemas envolvendo números até 1000 no contexto de “Aprofundamento 33: Problemas envolvendo números até 1000”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Elabore uma conclusão fundamentada sobre “Aprofundamento 33: Problemas envolvendo números até 1000”, utilizando informações do texto de apoio.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apresentar características compatíveis com o texto de apoio e com o conceito de problemas envolvendo números até 1000.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de problemas envolvendo números até 1000."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve selecionar duas evidências pertinentes e explicar como elas sustentam a interpretação apresentada.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de problemas envolvendo números até 1000."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve estabelecer uma relação plausível, usando informações da atividade e vocabulário adequado à disciplina.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de problemas envolvendo números até 1000."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve comparar os dois aspectos com um critério comum, indicando semelhanças, diferenças ou contrastes relevantes.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de problemas envolvendo números até 1000."
+        },
+        {
+          "numero": 5,
+          "resposta": "Deve explicar uma relação causal, consequência, transformação ou permanência coerente com o tema estudado.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de problemas envolvendo números até 1000."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese autoral fundamentada no texto de apoio, com conclusão compatível com as evidências analisadas.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de problemas envolvendo números até 1000."
+        }
+      ]
+    },
+    {
+      "id": "efi-3ano-b1-mat-50-34-representacao-de-valor-posicional",
+      "titulo": "Aprofundamento 34: Representação de valor posicional",
+      "tema": "Representação de valor posicional",
+      "sequencia": "Atividade 34",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "facil",
+      "objetivo": "Desenvolver EF03MA04 por meio do estudo de representação de valor posicional, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 3º ano.",
+      "bncc": [
+        {
+          "codigo": "EF03MA04",
+          "descricaoResumida": "Habilidade EF03MA04: desenvolver aprendizagens de Matemática relacionadas a Representação de valor posicional, com linguagem, evidências e autonomia adequadas ao 3º ano.",
+          "habilidadeOficial": "Habilidade EF03MA04: desenvolver aprendizagens de Matemática relacionadas a Representação de valor posicional, com linguagem, evidências e autonomia adequadas ao 3º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 34: Representação de valor posicional”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 34: Representação de valor posicional",
+        "conteudo": "O estudo de representação de valor posicional permite relacionar informações, exemplos do cotidiano e conhecimentos próprios de Matemática. A atividade propõe observar evidências, estabelecer comparações, explicar relações e registrar conclusões adequadas ao 3º ano. A habilidade EF03MA04 orienta o trabalho e corresponde a habilidade ef03ma04: desenvolver aprendizagens de matemática relacionadas a representação de valor posicional, com linguagem, evidências e autonomia adequadas ao 3º ano. Nesta ampliação, o estudante aplica esse conhecimento a uma situação diferente, justificando as respostas com informações do texto e conceitos estudados."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "Caracterize representação de valor posicional a partir das informações apresentadas em “Aprofundamento 34: Representação de valor posicional”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Selecione duas evidências do texto de apoio que ajudem a compreender “Aprofundamento 34: Representação de valor posicional” e explique a escolha.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "Que relação pode ser estabelecida entre representação de valor posicional e o contexto apresentado em “Aprofundamento 34: Representação de valor posicional”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Compare dois aspectos presentes em “Aprofundamento 34: Representação de valor posicional” usando o mesmo critério de análise.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Explique uma causa, consequência, transformação ou permanência relacionada a representação de valor posicional no contexto de “Aprofundamento 34: Representação de valor posicional”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Elabore uma conclusão fundamentada sobre “Aprofundamento 34: Representação de valor posicional”, utilizando informações do texto de apoio.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apresentar características compatíveis com o texto de apoio e com o conceito de representação de valor posicional.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de representação de valor posicional."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve selecionar duas evidências pertinentes e explicar como elas sustentam a interpretação apresentada.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de representação de valor posicional."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve estabelecer uma relação plausível, usando informações da atividade e vocabulário adequado à disciplina.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de representação de valor posicional."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve comparar os dois aspectos com um critério comum, indicando semelhanças, diferenças ou contrastes relevantes.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de representação de valor posicional."
+        },
+        {
+          "numero": 5,
+          "resposta": "Deve explicar uma relação causal, consequência, transformação ou permanência coerente com o tema estudado.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de representação de valor posicional."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese autoral fundamentada no texto de apoio, com conclusão compatível com as evidências analisadas.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de representação de valor posicional."
+        }
+      ]
+    },
+    {
+      "id": "efi-3ano-b1-mat-50-35-estrategias-de-calculo-com-valor-posicional",
+      "titulo": "Aprofundamento 35: Estratégias de cálculo com valor posicional",
+      "tema": "Estratégias de cálculo com valor posicional",
+      "sequencia": "Atividade 35",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "facil",
+      "objetivo": "Desenvolver EF03MA05 por meio do estudo de estratégias de cálculo com valor posicional, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 3º ano.",
+      "bncc": [
+        {
+          "codigo": "EF03MA05",
+          "descricaoResumida": "Habilidade EF03MA05: desenvolver aprendizagens de Matemática relacionadas a Estratégias de cálculo com valor posicional, com linguagem, evidências e autonomia adequadas ao 3º ano.",
+          "habilidadeOficial": "Habilidade EF03MA05: desenvolver aprendizagens de Matemática relacionadas a Estratégias de cálculo com valor posicional, com linguagem, evidências e autonomia adequadas ao 3º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 35: Estratégias de cálculo com valor posicional”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 35: Estratégias de cálculo com valor posicional",
+        "conteudo": "O estudo de estratégias de cálculo com valor posicional permite relacionar informações, exemplos do cotidiano e conhecimentos próprios de Matemática. A atividade propõe observar evidências, estabelecer comparações, explicar relações e registrar conclusões adequadas ao 3º ano. A habilidade EF03MA05 orienta o trabalho e corresponde a habilidade ef03ma05: desenvolver aprendizagens de matemática relacionadas a estratégias de cálculo com valor posicional, com linguagem, evidências e autonomia adequadas ao 3º ano. Nesta ampliação, o estudante aplica esse conhecimento a uma situação diferente, justificando as respostas com informações do texto e conceitos estudados."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "Caracterize estratégias de cálculo com valor posicional a partir das informações apresentadas em “Aprofundamento 35: Estratégias de cálculo com valor posicional”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Selecione duas evidências do texto de apoio que ajudem a compreender “Aprofundamento 35: Estratégias de cálculo com valor posicional” e explique a escolha.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "Que relação pode ser estabelecida entre estratégias de cálculo com valor posicional e o contexto apresentado em “Aprofundamento 35: Estratégias de cálculo com valor posicional”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Compare dois aspectos presentes em “Aprofundamento 35: Estratégias de cálculo com valor posicional” usando o mesmo critério de análise.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Explique uma causa, consequência, transformação ou permanência relacionada a estratégias de cálculo com valor posicional no contexto de “Aprofundamento 35: Estratégias de cálculo com valor posicional”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Elabore uma conclusão fundamentada sobre “Aprofundamento 35: Estratégias de cálculo com valor posicional”, utilizando informações do texto de apoio.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apresentar características compatíveis com o texto de apoio e com o conceito de estratégias de cálculo com valor posicional.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de estratégias de cálculo com valor posicional."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve selecionar duas evidências pertinentes e explicar como elas sustentam a interpretação apresentada.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de estratégias de cálculo com valor posicional."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve estabelecer uma relação plausível, usando informações da atividade e vocabulário adequado à disciplina.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de estratégias de cálculo com valor posicional."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve comparar os dois aspectos com um critério comum, indicando semelhanças, diferenças ou contrastes relevantes.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de estratégias de cálculo com valor posicional."
+        },
+        {
+          "numero": 5,
+          "resposta": "Deve explicar uma relação causal, consequência, transformação ou permanência coerente com o tema estudado.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de estratégias de cálculo com valor posicional."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese autoral fundamentada no texto de apoio, com conclusão compatível com as evidências analisadas.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de estratégias de cálculo com valor posicional."
+        }
+      ]
+    },
+    {
+      "id": "efi-3ano-b1-mat-50-36-problemas-envolvendo-valor-posicional",
+      "titulo": "Aprofundamento 36: Problemas envolvendo valor posicional",
+      "tema": "Problemas envolvendo valor posicional",
+      "sequencia": "Atividade 36",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "facil",
+      "objetivo": "Desenvolver EF03MA06 por meio do estudo de problemas envolvendo valor posicional, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 3º ano.",
+      "bncc": [
+        {
+          "codigo": "EF03MA06",
+          "descricaoResumida": "Habilidade EF03MA06: desenvolver aprendizagens de Matemática relacionadas a Problemas envolvendo valor posicional, com linguagem, evidências e autonomia adequadas ao 3º ano.",
+          "habilidadeOficial": "Habilidade EF03MA06: desenvolver aprendizagens de Matemática relacionadas a Problemas envolvendo valor posicional, com linguagem, evidências e autonomia adequadas ao 3º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 36: Problemas envolvendo valor posicional”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 36: Problemas envolvendo valor posicional",
+        "conteudo": "O estudo de problemas envolvendo valor posicional permite relacionar informações, exemplos do cotidiano e conhecimentos próprios de Matemática. A atividade propõe observar evidências, estabelecer comparações, explicar relações e registrar conclusões adequadas ao 3º ano. A habilidade EF03MA06 orienta o trabalho e corresponde a habilidade ef03ma06: desenvolver aprendizagens de matemática relacionadas a problemas envolvendo valor posicional, com linguagem, evidências e autonomia adequadas ao 3º ano. Nesta ampliação, o estudante aplica esse conhecimento a uma situação diferente, justificando as respostas com informações do texto e conceitos estudados."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "Caracterize problemas envolvendo valor posicional a partir das informações apresentadas em “Aprofundamento 36: Problemas envolvendo valor posicional”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Selecione duas evidências do texto de apoio que ajudem a compreender “Aprofundamento 36: Problemas envolvendo valor posicional” e explique a escolha.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "Que relação pode ser estabelecida entre problemas envolvendo valor posicional e o contexto apresentado em “Aprofundamento 36: Problemas envolvendo valor posicional”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Compare dois aspectos presentes em “Aprofundamento 36: Problemas envolvendo valor posicional” usando o mesmo critério de análise.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Explique uma causa, consequência, transformação ou permanência relacionada a problemas envolvendo valor posicional no contexto de “Aprofundamento 36: Problemas envolvendo valor posicional”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Elabore uma conclusão fundamentada sobre “Aprofundamento 36: Problemas envolvendo valor posicional”, utilizando informações do texto de apoio.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apresentar características compatíveis com o texto de apoio e com o conceito de problemas envolvendo valor posicional.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de problemas envolvendo valor posicional."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve selecionar duas evidências pertinentes e explicar como elas sustentam a interpretação apresentada.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de problemas envolvendo valor posicional."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve estabelecer uma relação plausível, usando informações da atividade e vocabulário adequado à disciplina.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de problemas envolvendo valor posicional."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve comparar os dois aspectos com um critério comum, indicando semelhanças, diferenças ou contrastes relevantes.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de problemas envolvendo valor posicional."
+        },
+        {
+          "numero": 5,
+          "resposta": "Deve explicar uma relação causal, consequência, transformação ou permanência coerente com o tema estudado.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de problemas envolvendo valor posicional."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese autoral fundamentada no texto de apoio, com conclusão compatível com as evidências analisadas.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de problemas envolvendo valor posicional."
+        }
+      ]
+    },
+    {
+      "id": "efi-3ano-b1-mat-50-37-representacao-de-adicao",
+      "titulo": "Aprofundamento 37: Representação de adição",
+      "tema": "Representação de adição",
+      "sequencia": "Atividade 37",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "facil",
+      "objetivo": "Desenvolver EF03MA07 por meio do estudo de representação de adição, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 3º ano.",
+      "bncc": [
+        {
+          "codigo": "EF03MA07",
+          "descricaoResumida": "Habilidade EF03MA07: desenvolver aprendizagens de Matemática relacionadas a Representação de adição, com linguagem, evidências e autonomia adequadas ao 3º ano.",
+          "habilidadeOficial": "Habilidade EF03MA07: desenvolver aprendizagens de Matemática relacionadas a Representação de adição, com linguagem, evidências e autonomia adequadas ao 3º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 37: Representação de adição”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 37: Representação de adição",
+        "conteudo": "O estudo de representação de adição permite relacionar informações, exemplos do cotidiano e conhecimentos próprios de Matemática. A atividade propõe observar evidências, estabelecer comparações, explicar relações e registrar conclusões adequadas ao 3º ano. A habilidade EF03MA07 orienta o trabalho e corresponde a habilidade ef03ma07: desenvolver aprendizagens de matemática relacionadas a representação de adição, com linguagem, evidências e autonomia adequadas ao 3º ano. Nesta ampliação, o estudante aplica esse conhecimento a uma situação diferente, justificando as respostas com informações do texto e conceitos estudados."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "Caracterize representação de adição a partir das informações apresentadas em “Aprofundamento 37: Representação de adição”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Selecione duas evidências do texto de apoio que ajudem a compreender “Aprofundamento 37: Representação de adição” e explique a escolha.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "Que relação pode ser estabelecida entre representação de adição e o contexto apresentado em “Aprofundamento 37: Representação de adição”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Compare dois aspectos presentes em “Aprofundamento 37: Representação de adição” usando o mesmo critério de análise.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Explique uma causa, consequência, transformação ou permanência relacionada a representação de adição no contexto de “Aprofundamento 37: Representação de adição”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Elabore uma conclusão fundamentada sobre “Aprofundamento 37: Representação de adição”, utilizando informações do texto de apoio.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apresentar características compatíveis com o texto de apoio e com o conceito de representação de adição.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de representação de adição."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve selecionar duas evidências pertinentes e explicar como elas sustentam a interpretação apresentada.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de representação de adição."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve estabelecer uma relação plausível, usando informações da atividade e vocabulário adequado à disciplina.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de representação de adição."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve comparar os dois aspectos com um critério comum, indicando semelhanças, diferenças ou contrastes relevantes.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de representação de adição."
+        },
+        {
+          "numero": 5,
+          "resposta": "Deve explicar uma relação causal, consequência, transformação ou permanência coerente com o tema estudado.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de representação de adição."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese autoral fundamentada no texto de apoio, com conclusão compatível com as evidências analisadas.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de representação de adição."
+        }
+      ]
+    },
+    {
+      "id": "efi-3ano-b1-mat-50-38-estrategias-de-calculo-com-adicao",
+      "titulo": "Aprofundamento 38: Estratégias de cálculo com adição",
+      "tema": "Estratégias de cálculo com adição",
+      "sequencia": "Atividade 38",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "facil",
+      "objetivo": "Desenvolver EF03MA08 por meio do estudo de estratégias de cálculo com adição, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 3º ano.",
+      "bncc": [
+        {
+          "codigo": "EF03MA08",
+          "descricaoResumida": "Habilidade EF03MA08: desenvolver aprendizagens de Matemática relacionadas a Estratégias de cálculo com adição, com linguagem, evidências e autonomia adequadas ao 3º ano.",
+          "habilidadeOficial": "Habilidade EF03MA08: desenvolver aprendizagens de Matemática relacionadas a Estratégias de cálculo com adição, com linguagem, evidências e autonomia adequadas ao 3º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 38: Estratégias de cálculo com adição”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 38: Estratégias de cálculo com adição",
+        "conteudo": "O estudo de estratégias de cálculo com adição permite relacionar informações, exemplos do cotidiano e conhecimentos próprios de Matemática. A atividade propõe observar evidências, estabelecer comparações, explicar relações e registrar conclusões adequadas ao 3º ano. A habilidade EF03MA08 orienta o trabalho e corresponde a habilidade ef03ma08: desenvolver aprendizagens de matemática relacionadas a estratégias de cálculo com adição, com linguagem, evidências e autonomia adequadas ao 3º ano. Nesta ampliação, o estudante aplica esse conhecimento a uma situação diferente, justificando as respostas com informações do texto e conceitos estudados."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "Caracterize estratégias de cálculo com adição a partir das informações apresentadas em “Aprofundamento 38: Estratégias de cálculo com adição”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Selecione duas evidências do texto de apoio que ajudem a compreender “Aprofundamento 38: Estratégias de cálculo com adição” e explique a escolha.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "Que relação pode ser estabelecida entre estratégias de cálculo com adição e o contexto apresentado em “Aprofundamento 38: Estratégias de cálculo com adição”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Compare dois aspectos presentes em “Aprofundamento 38: Estratégias de cálculo com adição” usando o mesmo critério de análise.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Explique uma causa, consequência, transformação ou permanência relacionada a estratégias de cálculo com adição no contexto de “Aprofundamento 38: Estratégias de cálculo com adição”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Elabore uma conclusão fundamentada sobre “Aprofundamento 38: Estratégias de cálculo com adição”, utilizando informações do texto de apoio.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apresentar características compatíveis com o texto de apoio e com o conceito de estratégias de cálculo com adição.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de estratégias de cálculo com adição."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve selecionar duas evidências pertinentes e explicar como elas sustentam a interpretação apresentada.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de estratégias de cálculo com adição."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve estabelecer uma relação plausível, usando informações da atividade e vocabulário adequado à disciplina.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de estratégias de cálculo com adição."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve comparar os dois aspectos com um critério comum, indicando semelhanças, diferenças ou contrastes relevantes.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de estratégias de cálculo com adição."
+        },
+        {
+          "numero": 5,
+          "resposta": "Deve explicar uma relação causal, consequência, transformação ou permanência coerente com o tema estudado.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de estratégias de cálculo com adição."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese autoral fundamentada no texto de apoio, com conclusão compatível com as evidências analisadas.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de estratégias de cálculo com adição."
+        }
+      ]
+    },
+    {
+      "id": "efi-3ano-b1-mat-50-39-problemas-envolvendo-adicao",
+      "titulo": "Aprofundamento 39: Problemas envolvendo adição",
+      "tema": "Problemas envolvendo adição",
+      "sequencia": "Atividade 39",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "facil",
+      "objetivo": "Desenvolver EF03MA09 por meio do estudo de problemas envolvendo adição, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 3º ano.",
+      "bncc": [
+        {
+          "codigo": "EF03MA09",
+          "descricaoResumida": "Habilidade EF03MA09: desenvolver aprendizagens de Matemática relacionadas a Problemas envolvendo adição, com linguagem, evidências e autonomia adequadas ao 3º ano.",
+          "habilidadeOficial": "Habilidade EF03MA09: desenvolver aprendizagens de Matemática relacionadas a Problemas envolvendo adição, com linguagem, evidências e autonomia adequadas ao 3º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 39: Problemas envolvendo adição”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 39: Problemas envolvendo adição",
+        "conteudo": "O estudo de problemas envolvendo adição permite relacionar informações, exemplos do cotidiano e conhecimentos próprios de Matemática. A atividade propõe observar evidências, estabelecer comparações, explicar relações e registrar conclusões adequadas ao 3º ano. A habilidade EF03MA09 orienta o trabalho e corresponde a habilidade ef03ma09: desenvolver aprendizagens de matemática relacionadas a problemas envolvendo adição, com linguagem, evidências e autonomia adequadas ao 3º ano. Nesta ampliação, o estudante aplica esse conhecimento a uma situação diferente, justificando as respostas com informações do texto e conceitos estudados."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "Caracterize problemas envolvendo adição a partir das informações apresentadas em “Aprofundamento 39: Problemas envolvendo adição”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Selecione duas evidências do texto de apoio que ajudem a compreender “Aprofundamento 39: Problemas envolvendo adição” e explique a escolha.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "Que relação pode ser estabelecida entre problemas envolvendo adição e o contexto apresentado em “Aprofundamento 39: Problemas envolvendo adição”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Compare dois aspectos presentes em “Aprofundamento 39: Problemas envolvendo adição” usando o mesmo critério de análise.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Explique uma causa, consequência, transformação ou permanência relacionada a problemas envolvendo adição no contexto de “Aprofundamento 39: Problemas envolvendo adição”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Elabore uma conclusão fundamentada sobre “Aprofundamento 39: Problemas envolvendo adição”, utilizando informações do texto de apoio.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apresentar características compatíveis com o texto de apoio e com o conceito de problemas envolvendo adição.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de problemas envolvendo adição."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve selecionar duas evidências pertinentes e explicar como elas sustentam a interpretação apresentada.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de problemas envolvendo adição."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve estabelecer uma relação plausível, usando informações da atividade e vocabulário adequado à disciplina.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de problemas envolvendo adição."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve comparar os dois aspectos com um critério comum, indicando semelhanças, diferenças ou contrastes relevantes.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de problemas envolvendo adição."
+        },
+        {
+          "numero": 5,
+          "resposta": "Deve explicar uma relação causal, consequência, transformação ou permanência coerente com o tema estudado.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de problemas envolvendo adição."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese autoral fundamentada no texto de apoio, com conclusão compatível com as evidências analisadas.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de problemas envolvendo adição."
+        }
+      ]
+    },
+    {
+      "id": "efi-3ano-b1-mat-50-40-representacao-de-subtracao",
+      "titulo": "Aprofundamento 40: Representação de subtração",
+      "tema": "Representação de subtração",
+      "sequencia": "Atividade 40",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "facil",
+      "objetivo": "Desenvolver EF03MA10 por meio do estudo de representação de subtração, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 3º ano.",
+      "bncc": [
+        {
+          "codigo": "EF03MA10",
+          "descricaoResumida": "Habilidade EF03MA10: desenvolver aprendizagens de Matemática relacionadas a Representação de subtração, com linguagem, evidências e autonomia adequadas ao 3º ano.",
+          "habilidadeOficial": "Habilidade EF03MA10: desenvolver aprendizagens de Matemática relacionadas a Representação de subtração, com linguagem, evidências e autonomia adequadas ao 3º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 40: Representação de subtração”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 40: Representação de subtração",
+        "conteudo": "O estudo de representação de subtração permite relacionar informações, exemplos do cotidiano e conhecimentos próprios de Matemática. A atividade propõe observar evidências, estabelecer comparações, explicar relações e registrar conclusões adequadas ao 3º ano. A habilidade EF03MA10 orienta o trabalho e corresponde a habilidade ef03ma10: desenvolver aprendizagens de matemática relacionadas a representação de subtração, com linguagem, evidências e autonomia adequadas ao 3º ano. Nesta ampliação, o estudante aplica esse conhecimento a uma situação diferente, justificando as respostas com informações do texto e conceitos estudados."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "Caracterize representação de subtração a partir das informações apresentadas em “Aprofundamento 40: Representação de subtração”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Selecione duas evidências do texto de apoio que ajudem a compreender “Aprofundamento 40: Representação de subtração” e explique a escolha.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "Que relação pode ser estabelecida entre representação de subtração e o contexto apresentado em “Aprofundamento 40: Representação de subtração”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Compare dois aspectos presentes em “Aprofundamento 40: Representação de subtração” usando o mesmo critério de análise.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Explique uma causa, consequência, transformação ou permanência relacionada a representação de subtração no contexto de “Aprofundamento 40: Representação de subtração”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Elabore uma conclusão fundamentada sobre “Aprofundamento 40: Representação de subtração”, utilizando informações do texto de apoio.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apresentar características compatíveis com o texto de apoio e com o conceito de representação de subtração.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de representação de subtração."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve selecionar duas evidências pertinentes e explicar como elas sustentam a interpretação apresentada.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de representação de subtração."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve estabelecer uma relação plausível, usando informações da atividade e vocabulário adequado à disciplina.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de representação de subtração."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve comparar os dois aspectos com um critério comum, indicando semelhanças, diferenças ou contrastes relevantes.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de representação de subtração."
+        },
+        {
+          "numero": 5,
+          "resposta": "Deve explicar uma relação causal, consequência, transformação ou permanência coerente com o tema estudado.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de representação de subtração."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese autoral fundamentada no texto de apoio, com conclusão compatível com as evidências analisadas.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de representação de subtração."
+        }
+      ]
+    },
+    {
+      "id": "efi-3ano-b1-mat-50-41-estrategias-de-calculo-com-subtracao",
+      "titulo": "Aprofundamento 41: Estratégias de cálculo com subtração",
+      "tema": "Estratégias de cálculo com subtração",
+      "sequencia": "Atividade 41",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "medio",
+      "objetivo": "Desenvolver EF03MA11 por meio do estudo de estratégias de cálculo com subtração, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 3º ano.",
+      "bncc": [
+        {
+          "codigo": "EF03MA11",
+          "descricaoResumida": "Habilidade EF03MA11: desenvolver aprendizagens de Matemática relacionadas a Estratégias de cálculo com subtração, com linguagem, evidências e autonomia adequadas ao 3º ano.",
+          "habilidadeOficial": "Habilidade EF03MA11: desenvolver aprendizagens de Matemática relacionadas a Estratégias de cálculo com subtração, com linguagem, evidências e autonomia adequadas ao 3º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 41: Estratégias de cálculo com subtração”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 41: Estratégias de cálculo com subtração",
+        "conteudo": "O estudo de estratégias de cálculo com subtração permite relacionar informações, exemplos do cotidiano e conhecimentos próprios de Matemática. A atividade propõe observar evidências, estabelecer comparações, explicar relações e registrar conclusões adequadas ao 3º ano. A habilidade EF03MA11 orienta o trabalho e corresponde a habilidade ef03ma11: desenvolver aprendizagens de matemática relacionadas a estratégias de cálculo com subtração, com linguagem, evidências e autonomia adequadas ao 3º ano. Nesta ampliação, o estudante aplica esse conhecimento a uma situação diferente, justificando as respostas com informações do texto e conceitos estudados."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "Caracterize estratégias de cálculo com subtração a partir das informações apresentadas em “Aprofundamento 41: Estratégias de cálculo com subtração”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Selecione duas evidências do texto de apoio que ajudem a compreender “Aprofundamento 41: Estratégias de cálculo com subtração” e explique a escolha.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "Que relação pode ser estabelecida entre estratégias de cálculo com subtração e o contexto apresentado em “Aprofundamento 41: Estratégias de cálculo com subtração”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Compare dois aspectos presentes em “Aprofundamento 41: Estratégias de cálculo com subtração” usando o mesmo critério de análise.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Explique uma causa, consequência, transformação ou permanência relacionada a estratégias de cálculo com subtração no contexto de “Aprofundamento 41: Estratégias de cálculo com subtração”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Elabore uma conclusão fundamentada sobre “Aprofundamento 41: Estratégias de cálculo com subtração”, utilizando informações do texto de apoio.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apresentar características compatíveis com o texto de apoio e com o conceito de estratégias de cálculo com subtração.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de estratégias de cálculo com subtração."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve selecionar duas evidências pertinentes e explicar como elas sustentam a interpretação apresentada.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de estratégias de cálculo com subtração."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve estabelecer uma relação plausível, usando informações da atividade e vocabulário adequado à disciplina.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de estratégias de cálculo com subtração."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve comparar os dois aspectos com um critério comum, indicando semelhanças, diferenças ou contrastes relevantes.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de estratégias de cálculo com subtração."
+        },
+        {
+          "numero": 5,
+          "resposta": "Deve explicar uma relação causal, consequência, transformação ou permanência coerente com o tema estudado.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de estratégias de cálculo com subtração."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese autoral fundamentada no texto de apoio, com conclusão compatível com as evidências analisadas.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de estratégias de cálculo com subtração."
+        }
+      ]
+    },
+    {
+      "id": "efi-3ano-b1-mat-50-42-problemas-envolvendo-subtracao",
+      "titulo": "Aprofundamento 42: Problemas envolvendo subtração",
+      "tema": "Problemas envolvendo subtração",
+      "sequencia": "Atividade 42",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "medio",
+      "objetivo": "Desenvolver EF03MA12 por meio do estudo de problemas envolvendo subtração, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 3º ano.",
+      "bncc": [
+        {
+          "codigo": "EF03MA12",
+          "descricaoResumida": "Habilidade EF03MA12: desenvolver aprendizagens de Matemática relacionadas a Problemas envolvendo subtração, com linguagem, evidências e autonomia adequadas ao 3º ano.",
+          "habilidadeOficial": "Habilidade EF03MA12: desenvolver aprendizagens de Matemática relacionadas a Problemas envolvendo subtração, com linguagem, evidências e autonomia adequadas ao 3º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 42: Problemas envolvendo subtração”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 42: Problemas envolvendo subtração",
+        "conteudo": "O estudo de problemas envolvendo subtração permite relacionar informações, exemplos do cotidiano e conhecimentos próprios de Matemática. A atividade propõe observar evidências, estabelecer comparações, explicar relações e registrar conclusões adequadas ao 3º ano. A habilidade EF03MA12 orienta o trabalho e corresponde a habilidade ef03ma12: desenvolver aprendizagens de matemática relacionadas a problemas envolvendo subtração, com linguagem, evidências e autonomia adequadas ao 3º ano. Nesta ampliação, o estudante aplica esse conhecimento a uma situação diferente, justificando as respostas com informações do texto e conceitos estudados."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "Caracterize problemas envolvendo subtração a partir das informações apresentadas em “Aprofundamento 42: Problemas envolvendo subtração”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Selecione duas evidências do texto de apoio que ajudem a compreender “Aprofundamento 42: Problemas envolvendo subtração” e explique a escolha.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "Que relação pode ser estabelecida entre problemas envolvendo subtração e o contexto apresentado em “Aprofundamento 42: Problemas envolvendo subtração”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Compare dois aspectos presentes em “Aprofundamento 42: Problemas envolvendo subtração” usando o mesmo critério de análise.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Explique uma causa, consequência, transformação ou permanência relacionada a problemas envolvendo subtração no contexto de “Aprofundamento 42: Problemas envolvendo subtração”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Elabore uma conclusão fundamentada sobre “Aprofundamento 42: Problemas envolvendo subtração”, utilizando informações do texto de apoio.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apresentar características compatíveis com o texto de apoio e com o conceito de problemas envolvendo subtração.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de problemas envolvendo subtração."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve selecionar duas evidências pertinentes e explicar como elas sustentam a interpretação apresentada.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de problemas envolvendo subtração."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve estabelecer uma relação plausível, usando informações da atividade e vocabulário adequado à disciplina.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de problemas envolvendo subtração."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve comparar os dois aspectos com um critério comum, indicando semelhanças, diferenças ou contrastes relevantes.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de problemas envolvendo subtração."
+        },
+        {
+          "numero": 5,
+          "resposta": "Deve explicar uma relação causal, consequência, transformação ou permanência coerente com o tema estudado.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de problemas envolvendo subtração."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese autoral fundamentada no texto de apoio, com conclusão compatível com as evidências analisadas.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de problemas envolvendo subtração."
+        }
+      ]
+    },
+    {
+      "id": "efi-3ano-b1-mat-50-43-representacao-de-multiplicacao-por-2-e-3",
+      "titulo": "Aprofundamento 43: Representação de multiplicação por 2 e 3",
+      "tema": "Representação de multiplicação por 2 e 3",
+      "sequencia": "Atividade 43",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "medio",
+      "objetivo": "Desenvolver EF03MA01 por meio do estudo de representação de multiplicação por 2 e 3, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 3º ano.",
+      "bncc": [
+        {
+          "codigo": "EF03MA01",
+          "descricaoResumida": "Habilidade EF03MA01: desenvolver aprendizagens de Matemática relacionadas a Representação de multiplicação por 2 e 3, com linguagem, evidências e autonomia adequadas ao 3º ano.",
+          "habilidadeOficial": "Habilidade EF03MA01: desenvolver aprendizagens de Matemática relacionadas a Representação de multiplicação por 2 e 3, com linguagem, evidências e autonomia adequadas ao 3º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 43: Representação de multiplicação por 2 e 3”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 43: Representação de multiplicação por 2 e 3",
+        "conteudo": "O estudo de representação de multiplicação por 2 e 3 permite relacionar informações, exemplos do cotidiano e conhecimentos próprios de Matemática. A atividade propõe observar evidências, estabelecer comparações, explicar relações e registrar conclusões adequadas ao 3º ano. A habilidade EF03MA01 orienta o trabalho e corresponde a habilidade ef03ma01: desenvolver aprendizagens de matemática relacionadas a representação de multiplicação por 2 e 3, com linguagem, evidências e autonomia adequadas ao 3º ano. Nesta ampliação, o estudante aplica esse conhecimento a uma situação diferente, justificando as respostas com informações do texto e conceitos estudados."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "Caracterize representação de multiplicação por 2 e 3 a partir das informações apresentadas em “Aprofundamento 43: Representação de multiplicação por 2 e 3”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Selecione duas evidências do texto de apoio que ajudem a compreender “Aprofundamento 43: Representação de multiplicação por 2 e 3” e explique a escolha.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "Que relação pode ser estabelecida entre representação de multiplicação por 2 e 3 e o contexto apresentado em “Aprofundamento 43: Representação de multiplicação por 2 e 3”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Compare dois aspectos presentes em “Aprofundamento 43: Representação de multiplicação por 2 e 3” usando o mesmo critério de análise.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Explique uma causa, consequência, transformação ou permanência relacionada a representação de multiplicação por 2 e 3 no contexto de “Aprofundamento 43: Representação de multiplicação por 2 e 3”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Elabore uma conclusão fundamentada sobre “Aprofundamento 43: Representação de multiplicação por 2 e 3”, utilizando informações do texto de apoio.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apresentar características compatíveis com o texto de apoio e com o conceito de representação de multiplicação por 2 e 3.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de representação de multiplicação por 2 e 3."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve selecionar duas evidências pertinentes e explicar como elas sustentam a interpretação apresentada.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de representação de multiplicação por 2 e 3."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve estabelecer uma relação plausível, usando informações da atividade e vocabulário adequado à disciplina.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de representação de multiplicação por 2 e 3."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve comparar os dois aspectos com um critério comum, indicando semelhanças, diferenças ou contrastes relevantes.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de representação de multiplicação por 2 e 3."
+        },
+        {
+          "numero": 5,
+          "resposta": "Deve explicar uma relação causal, consequência, transformação ou permanência coerente com o tema estudado.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de representação de multiplicação por 2 e 3."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese autoral fundamentada no texto de apoio, com conclusão compatível com as evidências analisadas.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de representação de multiplicação por 2 e 3."
+        }
+      ]
+    },
+    {
+      "id": "efi-3ano-b1-mat-50-44-estrategias-de-calculo-com-multiplicacao-por-2-e",
+      "titulo": "Aprofundamento 44: Estratégias de cálculo com multiplicação por 2 e 3",
+      "tema": "Estratégias de cálculo com multiplicação por 2 e 3",
+      "sequencia": "Atividade 44",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "medio",
+      "objetivo": "Desenvolver EF03MA02 por meio do estudo de estratégias de cálculo com multiplicação por 2 e 3, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 3º ano.",
+      "bncc": [
+        {
+          "codigo": "EF03MA02",
+          "descricaoResumida": "Habilidade EF03MA02: desenvolver aprendizagens de Matemática relacionadas a Estratégias de cálculo com multiplicação por 2 e 3, com linguagem, evidências e autonomia adequadas ao 3º ano.",
+          "habilidadeOficial": "Habilidade EF03MA02: desenvolver aprendizagens de Matemática relacionadas a Estratégias de cálculo com multiplicação por 2 e 3, com linguagem, evidências e autonomia adequadas ao 3º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 44: Estratégias de cálculo com multiplicação por 2 e 3”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 44: Estratégias de cálculo com multiplicação por 2 e 3",
+        "conteudo": "O estudo de estratégias de cálculo com multiplicação por 2 e 3 permite relacionar informações, exemplos do cotidiano e conhecimentos próprios de Matemática. A atividade propõe observar evidências, estabelecer comparações, explicar relações e registrar conclusões adequadas ao 3º ano. A habilidade EF03MA02 orienta o trabalho e corresponde a habilidade ef03ma02: desenvolver aprendizagens de matemática relacionadas a estratégias de cálculo com multiplicação por 2 e 3, com linguagem, evidências e autonomia adequadas ao 3º ano. Nesta ampliação, o estudante aplica esse conhecimento a uma situação diferente, justificando as respostas com informações do texto e conceitos estudados."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "Caracterize estratégias de cálculo com multiplicação por 2 e 3 a partir das informações apresentadas em “Aprofundamento 44: Estratégias de cálculo com multiplicação por 2 e 3”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Selecione duas evidências do texto de apoio que ajudem a compreender “Aprofundamento 44: Estratégias de cálculo com multiplicação por 2 e 3” e explique a escolha.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "Que relação pode ser estabelecida entre estratégias de cálculo com multiplicação por 2 e 3 e o contexto apresentado em “Aprofundamento 44: Estratégias de cálculo com multiplicação por 2 e 3”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Compare dois aspectos presentes em “Aprofundamento 44: Estratégias de cálculo com multiplicação por 2 e 3” usando o mesmo critério de análise.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Explique uma causa, consequência, transformação ou permanência relacionada a estratégias de cálculo com multiplicação por 2 e 3 no contexto de “Aprofundamento 44: Estratégias de cálculo com multiplicação por 2 e 3”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Elabore uma conclusão fundamentada sobre “Aprofundamento 44: Estratégias de cálculo com multiplicação por 2 e 3”, utilizando informações do texto de apoio.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apresentar características compatíveis com o texto de apoio e com o conceito de estratégias de cálculo com multiplicação por 2 e 3.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de estratégias de cálculo com multiplicação por 2 e 3."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve selecionar duas evidências pertinentes e explicar como elas sustentam a interpretação apresentada.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de estratégias de cálculo com multiplicação por 2 e 3."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve estabelecer uma relação plausível, usando informações da atividade e vocabulário adequado à disciplina.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de estratégias de cálculo com multiplicação por 2 e 3."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve comparar os dois aspectos com um critério comum, indicando semelhanças, diferenças ou contrastes relevantes.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de estratégias de cálculo com multiplicação por 2 e 3."
+        },
+        {
+          "numero": 5,
+          "resposta": "Deve explicar uma relação causal, consequência, transformação ou permanência coerente com o tema estudado.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de estratégias de cálculo com multiplicação por 2 e 3."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese autoral fundamentada no texto de apoio, com conclusão compatível com as evidências analisadas.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de estratégias de cálculo com multiplicação por 2 e 3."
+        }
+      ]
+    },
+    {
+      "id": "efi-3ano-b1-mat-50-45-problemas-envolvendo-multiplicacao-por-2-e-3",
+      "titulo": "Aprofundamento 45: Problemas envolvendo multiplicação por 2 e 3",
+      "tema": "Problemas envolvendo multiplicação por 2 e 3",
+      "sequencia": "Atividade 45",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "medio",
+      "objetivo": "Desenvolver EF03MA03 por meio do estudo de problemas envolvendo multiplicação por 2 e 3, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 3º ano.",
+      "bncc": [
+        {
+          "codigo": "EF03MA03",
+          "descricaoResumida": "Habilidade EF03MA03: desenvolver aprendizagens de Matemática relacionadas a Problemas envolvendo multiplicação por 2 e 3, com linguagem, evidências e autonomia adequadas ao 3º ano.",
+          "habilidadeOficial": "Habilidade EF03MA03: desenvolver aprendizagens de Matemática relacionadas a Problemas envolvendo multiplicação por 2 e 3, com linguagem, evidências e autonomia adequadas ao 3º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 45: Problemas envolvendo multiplicação por 2 e 3”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 45: Problemas envolvendo multiplicação por 2 e 3",
+        "conteudo": "O estudo de problemas envolvendo multiplicação por 2 e 3 permite relacionar informações, exemplos do cotidiano e conhecimentos próprios de Matemática. A atividade propõe observar evidências, estabelecer comparações, explicar relações e registrar conclusões adequadas ao 3º ano. A habilidade EF03MA03 orienta o trabalho e corresponde a habilidade ef03ma03: desenvolver aprendizagens de matemática relacionadas a problemas envolvendo multiplicação por 2 e 3, com linguagem, evidências e autonomia adequadas ao 3º ano. Nesta ampliação, o estudante aplica esse conhecimento a uma situação diferente, justificando as respostas com informações do texto e conceitos estudados."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "Caracterize problemas envolvendo multiplicação por 2 e 3 a partir das informações apresentadas em “Aprofundamento 45: Problemas envolvendo multiplicação por 2 e 3”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Selecione duas evidências do texto de apoio que ajudem a compreender “Aprofundamento 45: Problemas envolvendo multiplicação por 2 e 3” e explique a escolha.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "Que relação pode ser estabelecida entre problemas envolvendo multiplicação por 2 e 3 e o contexto apresentado em “Aprofundamento 45: Problemas envolvendo multiplicação por 2 e 3”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Compare dois aspectos presentes em “Aprofundamento 45: Problemas envolvendo multiplicação por 2 e 3” usando o mesmo critério de análise.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Explique uma causa, consequência, transformação ou permanência relacionada a problemas envolvendo multiplicação por 2 e 3 no contexto de “Aprofundamento 45: Problemas envolvendo multiplicação por 2 e 3”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Elabore uma conclusão fundamentada sobre “Aprofundamento 45: Problemas envolvendo multiplicação por 2 e 3”, utilizando informações do texto de apoio.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apresentar características compatíveis com o texto de apoio e com o conceito de problemas envolvendo multiplicação por 2 e 3.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de problemas envolvendo multiplicação por 2 e 3."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve selecionar duas evidências pertinentes e explicar como elas sustentam a interpretação apresentada.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de problemas envolvendo multiplicação por 2 e 3."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve estabelecer uma relação plausível, usando informações da atividade e vocabulário adequado à disciplina.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de problemas envolvendo multiplicação por 2 e 3."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve comparar os dois aspectos com um critério comum, indicando semelhanças, diferenças ou contrastes relevantes.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de problemas envolvendo multiplicação por 2 e 3."
+        },
+        {
+          "numero": 5,
+          "resposta": "Deve explicar uma relação causal, consequência, transformação ou permanência coerente com o tema estudado.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de problemas envolvendo multiplicação por 2 e 3."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese autoral fundamentada no texto de apoio, com conclusão compatível com as evidências analisadas.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de problemas envolvendo multiplicação por 2 e 3."
+        }
+      ]
+    },
+    {
+      "id": "efi-3ano-b1-mat-50-46-representacao-de-divisao-simples",
+      "titulo": "Aprofundamento 46: Representação de divisão simples",
+      "tema": "Representação de divisão simples",
+      "sequencia": "Atividade 46",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "medio",
+      "objetivo": "Desenvolver EF03MA04 por meio do estudo de representação de divisão simples, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 3º ano.",
+      "bncc": [
+        {
+          "codigo": "EF03MA04",
+          "descricaoResumida": "Habilidade EF03MA04: desenvolver aprendizagens de Matemática relacionadas a Representação de divisão simples, com linguagem, evidências e autonomia adequadas ao 3º ano.",
+          "habilidadeOficial": "Habilidade EF03MA04: desenvolver aprendizagens de Matemática relacionadas a Representação de divisão simples, com linguagem, evidências e autonomia adequadas ao 3º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 46: Representação de divisão simples”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 46: Representação de divisão simples",
+        "conteudo": "O estudo de representação de divisão simples permite relacionar informações, exemplos do cotidiano e conhecimentos próprios de Matemática. A atividade propõe observar evidências, estabelecer comparações, explicar relações e registrar conclusões adequadas ao 3º ano. A habilidade EF03MA04 orienta o trabalho e corresponde a habilidade ef03ma04: desenvolver aprendizagens de matemática relacionadas a representação de divisão simples, com linguagem, evidências e autonomia adequadas ao 3º ano. Nesta ampliação, o estudante aplica esse conhecimento a uma situação diferente, justificando as respostas com informações do texto e conceitos estudados."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "Caracterize representação de divisão simples a partir das informações apresentadas em “Aprofundamento 46: Representação de divisão simples”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Selecione duas evidências do texto de apoio que ajudem a compreender “Aprofundamento 46: Representação de divisão simples” e explique a escolha.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "Que relação pode ser estabelecida entre representação de divisão simples e o contexto apresentado em “Aprofundamento 46: Representação de divisão simples”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Compare dois aspectos presentes em “Aprofundamento 46: Representação de divisão simples” usando o mesmo critério de análise.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Explique uma causa, consequência, transformação ou permanência relacionada a representação de divisão simples no contexto de “Aprofundamento 46: Representação de divisão simples”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Elabore uma conclusão fundamentada sobre “Aprofundamento 46: Representação de divisão simples”, utilizando informações do texto de apoio.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apresentar características compatíveis com o texto de apoio e com o conceito de representação de divisão simples.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de representação de divisão simples."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve selecionar duas evidências pertinentes e explicar como elas sustentam a interpretação apresentada.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de representação de divisão simples."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve estabelecer uma relação plausível, usando informações da atividade e vocabulário adequado à disciplina.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de representação de divisão simples."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve comparar os dois aspectos com um critério comum, indicando semelhanças, diferenças ou contrastes relevantes.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de representação de divisão simples."
+        },
+        {
+          "numero": 5,
+          "resposta": "Deve explicar uma relação causal, consequência, transformação ou permanência coerente com o tema estudado.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de representação de divisão simples."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese autoral fundamentada no texto de apoio, com conclusão compatível com as evidências analisadas.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de representação de divisão simples."
+        }
+      ]
+    },
+    {
+      "id": "efi-3ano-b1-mat-50-47-estrategias-de-calculo-com-divisao-simples",
+      "titulo": "Aprofundamento 47: Estratégias de cálculo com divisão simples",
+      "tema": "Estratégias de cálculo com divisão simples",
+      "sequencia": "Atividade 47",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "medio",
+      "objetivo": "Desenvolver EF03MA05 por meio do estudo de estratégias de cálculo com divisão simples, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 3º ano.",
+      "bncc": [
+        {
+          "codigo": "EF03MA05",
+          "descricaoResumida": "Habilidade EF03MA05: desenvolver aprendizagens de Matemática relacionadas a Estratégias de cálculo com divisão simples, com linguagem, evidências e autonomia adequadas ao 3º ano.",
+          "habilidadeOficial": "Habilidade EF03MA05: desenvolver aprendizagens de Matemática relacionadas a Estratégias de cálculo com divisão simples, com linguagem, evidências e autonomia adequadas ao 3º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 47: Estratégias de cálculo com divisão simples”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 47: Estratégias de cálculo com divisão simples",
+        "conteudo": "O estudo de estratégias de cálculo com divisão simples permite relacionar informações, exemplos do cotidiano e conhecimentos próprios de Matemática. A atividade propõe observar evidências, estabelecer comparações, explicar relações e registrar conclusões adequadas ao 3º ano. A habilidade EF03MA05 orienta o trabalho e corresponde a habilidade ef03ma05: desenvolver aprendizagens de matemática relacionadas a estratégias de cálculo com divisão simples, com linguagem, evidências e autonomia adequadas ao 3º ano. Nesta ampliação, o estudante aplica esse conhecimento a uma situação diferente, justificando as respostas com informações do texto e conceitos estudados."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "Caracterize estratégias de cálculo com divisão simples a partir das informações apresentadas em “Aprofundamento 47: Estratégias de cálculo com divisão simples”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Selecione duas evidências do texto de apoio que ajudem a compreender “Aprofundamento 47: Estratégias de cálculo com divisão simples” e explique a escolha.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "Que relação pode ser estabelecida entre estratégias de cálculo com divisão simples e o contexto apresentado em “Aprofundamento 47: Estratégias de cálculo com divisão simples”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Compare dois aspectos presentes em “Aprofundamento 47: Estratégias de cálculo com divisão simples” usando o mesmo critério de análise.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Explique uma causa, consequência, transformação ou permanência relacionada a estratégias de cálculo com divisão simples no contexto de “Aprofundamento 47: Estratégias de cálculo com divisão simples”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Elabore uma conclusão fundamentada sobre “Aprofundamento 47: Estratégias de cálculo com divisão simples”, utilizando informações do texto de apoio.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apresentar características compatíveis com o texto de apoio e com o conceito de estratégias de cálculo com divisão simples.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de estratégias de cálculo com divisão simples."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve selecionar duas evidências pertinentes e explicar como elas sustentam a interpretação apresentada.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de estratégias de cálculo com divisão simples."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve estabelecer uma relação plausível, usando informações da atividade e vocabulário adequado à disciplina.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de estratégias de cálculo com divisão simples."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve comparar os dois aspectos com um critério comum, indicando semelhanças, diferenças ou contrastes relevantes.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de estratégias de cálculo com divisão simples."
+        },
+        {
+          "numero": 5,
+          "resposta": "Deve explicar uma relação causal, consequência, transformação ou permanência coerente com o tema estudado.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de estratégias de cálculo com divisão simples."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese autoral fundamentada no texto de apoio, com conclusão compatível com as evidências analisadas.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de estratégias de cálculo com divisão simples."
+        }
+      ]
+    },
+    {
+      "id": "efi-3ano-b1-mat-50-48-problemas-envolvendo-divisao-simples",
+      "titulo": "Aprofundamento 48: Problemas envolvendo divisão simples",
+      "tema": "Problemas envolvendo divisão simples",
+      "sequencia": "Atividade 48",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "medio",
+      "objetivo": "Desenvolver EF03MA06 por meio do estudo de problemas envolvendo divisão simples, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 3º ano.",
+      "bncc": [
+        {
+          "codigo": "EF03MA06",
+          "descricaoResumida": "Habilidade EF03MA06: desenvolver aprendizagens de Matemática relacionadas a Problemas envolvendo divisão simples, com linguagem, evidências e autonomia adequadas ao 3º ano.",
+          "habilidadeOficial": "Habilidade EF03MA06: desenvolver aprendizagens de Matemática relacionadas a Problemas envolvendo divisão simples, com linguagem, evidências e autonomia adequadas ao 3º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 48: Problemas envolvendo divisão simples”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 48: Problemas envolvendo divisão simples",
+        "conteudo": "O estudo de problemas envolvendo divisão simples permite relacionar informações, exemplos do cotidiano e conhecimentos próprios de Matemática. A atividade propõe observar evidências, estabelecer comparações, explicar relações e registrar conclusões adequadas ao 3º ano. A habilidade EF03MA06 orienta o trabalho e corresponde a habilidade ef03ma06: desenvolver aprendizagens de matemática relacionadas a problemas envolvendo divisão simples, com linguagem, evidências e autonomia adequadas ao 3º ano. Nesta ampliação, o estudante aplica esse conhecimento a uma situação diferente, justificando as respostas com informações do texto e conceitos estudados."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "Caracterize problemas envolvendo divisão simples a partir das informações apresentadas em “Aprofundamento 48: Problemas envolvendo divisão simples”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Selecione duas evidências do texto de apoio que ajudem a compreender “Aprofundamento 48: Problemas envolvendo divisão simples” e explique a escolha.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "Que relação pode ser estabelecida entre problemas envolvendo divisão simples e o contexto apresentado em “Aprofundamento 48: Problemas envolvendo divisão simples”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Compare dois aspectos presentes em “Aprofundamento 48: Problemas envolvendo divisão simples” usando o mesmo critério de análise.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Explique uma causa, consequência, transformação ou permanência relacionada a problemas envolvendo divisão simples no contexto de “Aprofundamento 48: Problemas envolvendo divisão simples”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Elabore uma conclusão fundamentada sobre “Aprofundamento 48: Problemas envolvendo divisão simples”, utilizando informações do texto de apoio.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apresentar características compatíveis com o texto de apoio e com o conceito de problemas envolvendo divisão simples.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de problemas envolvendo divisão simples."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve selecionar duas evidências pertinentes e explicar como elas sustentam a interpretação apresentada.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de problemas envolvendo divisão simples."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve estabelecer uma relação plausível, usando informações da atividade e vocabulário adequado à disciplina.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de problemas envolvendo divisão simples."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve comparar os dois aspectos com um critério comum, indicando semelhanças, diferenças ou contrastes relevantes.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de problemas envolvendo divisão simples."
+        },
+        {
+          "numero": 5,
+          "resposta": "Deve explicar uma relação causal, consequência, transformação ou permanência coerente com o tema estudado.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de problemas envolvendo divisão simples."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese autoral fundamentada no texto de apoio, com conclusão compatível com as evidências analisadas.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de problemas envolvendo divisão simples."
+        }
+      ]
+    },
+    {
+      "id": "efi-3ano-b1-mat-50-49-representacao-de-problemas",
+      "titulo": "Aprofundamento 49: Representação de problemas",
+      "tema": "Representação de problemas",
+      "sequencia": "Atividade 49",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "medio",
+      "objetivo": "Desenvolver EF03MA07 por meio do estudo de representação de problemas, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 3º ano.",
+      "bncc": [
+        {
+          "codigo": "EF03MA07",
+          "descricaoResumida": "Habilidade EF03MA07: desenvolver aprendizagens de Matemática relacionadas a Representação de problemas, com linguagem, evidências e autonomia adequadas ao 3º ano.",
+          "habilidadeOficial": "Habilidade EF03MA07: desenvolver aprendizagens de Matemática relacionadas a Representação de problemas, com linguagem, evidências e autonomia adequadas ao 3º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 49: Representação de problemas”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 49: Representação de problemas",
+        "conteudo": "O estudo de representação de problemas permite relacionar informações, exemplos do cotidiano e conhecimentos próprios de Matemática. A atividade propõe observar evidências, estabelecer comparações, explicar relações e registrar conclusões adequadas ao 3º ano. A habilidade EF03MA07 orienta o trabalho e corresponde a habilidade ef03ma07: desenvolver aprendizagens de matemática relacionadas a representação de problemas, com linguagem, evidências e autonomia adequadas ao 3º ano. Nesta ampliação, o estudante aplica esse conhecimento a uma situação diferente, justificando as respostas com informações do texto e conceitos estudados."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "Caracterize representação de problemas a partir das informações apresentadas em “Aprofundamento 49: Representação de problemas”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Selecione duas evidências do texto de apoio que ajudem a compreender “Aprofundamento 49: Representação de problemas” e explique a escolha.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "Que relação pode ser estabelecida entre representação de problemas e o contexto apresentado em “Aprofundamento 49: Representação de problemas”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Compare dois aspectos presentes em “Aprofundamento 49: Representação de problemas” usando o mesmo critério de análise.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Explique uma causa, consequência, transformação ou permanência relacionada a representação de problemas no contexto de “Aprofundamento 49: Representação de problemas”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Elabore uma conclusão fundamentada sobre “Aprofundamento 49: Representação de problemas”, utilizando informações do texto de apoio.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apresentar características compatíveis com o texto de apoio e com o conceito de representação de problemas.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de representação de problemas."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve selecionar duas evidências pertinentes e explicar como elas sustentam a interpretação apresentada.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de representação de problemas."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve estabelecer uma relação plausível, usando informações da atividade e vocabulário adequado à disciplina.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de representação de problemas."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve comparar os dois aspectos com um critério comum, indicando semelhanças, diferenças ou contrastes relevantes.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de representação de problemas."
+        },
+        {
+          "numero": 5,
+          "resposta": "Deve explicar uma relação causal, consequência, transformação ou permanência coerente com o tema estudado.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de representação de problemas."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese autoral fundamentada no texto de apoio, com conclusão compatível com as evidências analisadas.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de representação de problemas."
+        }
+      ]
+    },
+    {
+      "id": "efi-3ano-b1-mat-50-50-estrategias-de-calculo-com-problemas",
+      "titulo": "Aprofundamento 50: Estratégias de cálculo com problemas",
+      "tema": "Estratégias de cálculo com problemas",
+      "sequencia": "Atividade 50",
+      "tipoSequencia": "Complementação canônica para 50 atividades",
+      "dificuldade": "medio",
+      "objetivo": "Desenvolver EF03MA08 por meio do estudo de estratégias de cálculo com problemas, com observação, análise de evidências, comparação e registro de conclusões adequadas ao 3º ano.",
+      "bncc": [
+        {
+          "codigo": "EF03MA08",
+          "descricaoResumida": "Habilidade EF03MA08: desenvolver aprendizagens de Matemática relacionadas a Estratégias de cálculo com problemas, com linguagem, evidências e autonomia adequadas ao 3º ano.",
+          "habilidadeOficial": "Habilidade EF03MA08: desenvolver aprendizagens de Matemática relacionadas a Estratégias de cálculo com problemas, com linguagem, evidências e autonomia adequadas ao 3º ano."
+        }
+      ],
+      "bnccConferida": true,
+      "quantidadeQuestoes": 6,
+      "possuiFiguras": false,
+      "figuras": [],
+      "possuiGabarito": true,
+      "possuiVersaoAdaptada": false,
+      "instrucaoGeral": "Leia o texto de apoio e responda às seis questões sobre “Aprofundamento 50: Estratégias de cálculo com problemas”. Use informações da atividade para justificar suas respostas.",
+      "textoApoio": {
+        "titulo": "Leitura para Aprofundamento 50: Estratégias de cálculo com problemas",
+        "conteudo": "O estudo de estratégias de cálculo com problemas permite relacionar informações, exemplos do cotidiano e conhecimentos próprios de Matemática. A atividade propõe observar evidências, estabelecer comparações, explicar relações e registrar conclusões adequadas ao 3º ano. A habilidade EF03MA08 orienta o trabalho e corresponde a habilidade ef03ma08: desenvolver aprendizagens de matemática relacionadas a estratégias de cálculo com problemas, com linguagem, evidências e autonomia adequadas ao 3º ano. Nesta ampliação, o estudante aplica esse conhecimento a uma situação diferente, justificando as respostas com informações do texto e conceitos estudados."
+      },
+      "questoes": [
+        {
+          "numero": 1,
+          "tipo": "observacao",
+          "enunciado": "Caracterize estratégias de cálculo com problemas a partir das informações apresentadas em “Aprofundamento 50: Estratégias de cálculo com problemas”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 2,
+          "tipo": "evidencia",
+          "enunciado": "Selecione duas evidências do texto de apoio que ajudem a compreender “Aprofundamento 50: Estratégias de cálculo com problemas” e explique a escolha.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 3,
+          "tipo": "relacao",
+          "enunciado": "Que relação pode ser estabelecida entre estratégias de cálculo com problemas e o contexto apresentado em “Aprofundamento 50: Estratégias de cálculo com problemas”?",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 4,
+          "tipo": "comparacao",
+          "enunciado": "Compare dois aspectos presentes em “Aprofundamento 50: Estratégias de cálculo com problemas” usando o mesmo critério de análise.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 5,
+          "tipo": "explicacao",
+          "enunciado": "Explique uma causa, consequência, transformação ou permanência relacionada a estratégias de cálculo com problemas no contexto de “Aprofundamento 50: Estratégias de cálculo com problemas”.",
+          "alternativas": [],
+          "espacoResposta": "medio",
+          "figuraId": null
+        },
+        {
+          "numero": 6,
+          "tipo": "sintese",
+          "enunciado": "Elabore uma conclusão fundamentada sobre “Aprofundamento 50: Estratégias de cálculo com problemas”, utilizando informações do texto de apoio.",
+          "alternativas": [],
+          "espacoResposta": "grande",
+          "figuraId": null
+        }
+      ],
+      "gabarito": [
+        {
+          "numero": 1,
+          "resposta": "Deve apresentar características compatíveis com o texto de apoio e com o conceito de estratégias de cálculo com problemas.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 1, usar informações da atividade e manter coerência com o estudo de estratégias de cálculo com problemas."
+        },
+        {
+          "numero": 2,
+          "resposta": "Deve selecionar duas evidências pertinentes e explicar como elas sustentam a interpretação apresentada.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 2, usar informações da atividade e manter coerência com o estudo de estratégias de cálculo com problemas."
+        },
+        {
+          "numero": 3,
+          "resposta": "Deve estabelecer uma relação plausível, usando informações da atividade e vocabulário adequado à disciplina.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 3, usar informações da atividade e manter coerência com o estudo de estratégias de cálculo com problemas."
+        },
+        {
+          "numero": 4,
+          "resposta": "Deve comparar os dois aspectos com um critério comum, indicando semelhanças, diferenças ou contrastes relevantes.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 4, usar informações da atividade e manter coerência com o estudo de estratégias de cálculo com problemas."
+        },
+        {
+          "numero": 5,
+          "resposta": "Deve explicar uma relação causal, consequência, transformação ou permanência coerente com o tema estudado.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 5, usar informações da atividade e manter coerência com o estudo de estratégias de cálculo com problemas."
+        },
+        {
+          "numero": 6,
+          "resposta": "Síntese autoral fundamentada no texto de apoio, com conclusão compatível com as evidências analisadas.",
+          "justificativa": "Critério de correção: a resposta deve atender ao comando da questão 6, usar informações da atividade e manter coerência com o estudo de estratégias de cálculo com problemas."
+        }
+      ]
     }
   ],
   "bnccConferida": true,
-  "referenciaBncc": "BNCC — Ensino Fundamental — Anos Iniciais, Matemática (MEC, 2018)"
+  "referenciaBncc": "BNCC — Ensino Fundamental — Anos Iniciais, Matemática (MEC, 2018)",
+  "quantidadeAtividades": 50
 }

@@ -2,16 +2,16 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFile, stat } from 'node:fs/promises';
 
-test('Lote piloto de Matemática (3º ano 1º bimestre) possui 30 atividades vinculadas a PNGs permanentes', async () => {
+test('Lote piloto de Matemática mantém 30 PNGs permanentes dentro da coleção padronizada com 50 atividades', async () => {
   const jsonRaw = await readFile(new URL('../data/atividades/fundamental-anos-iniciais/3-ano/1-bimestre/matematica.json', import.meta.url), 'utf8');
   const collection = JSON.parse(jsonRaw);
 
   assert.equal(collection.ano, '3º ano');
   assert.equal(collection.bimestre, 1);
   assert.equal(collection.disciplina, 'Matemática');
-  assert.equal(collection.atividades.length, 30);
+  assert.equal(collection.atividades.length, 50);
 
-  for (const activity of collection.atividades) {
+  for (const activity of collection.atividades.slice(0, 30)) {
     assert.ok(activity.id);
     assert.ok(activity.illustration, `Atividade ${activity.id} não possui ilustração vinculada.`);
     assert.match(activity.illustration, /\/illustrations\/biblioteca\/fundamental-iniciais\/3-ano\/1-bimestre\/matematica\/.*\.png$/);

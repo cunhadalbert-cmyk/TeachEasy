@@ -15,7 +15,7 @@ const subjects = [
   ['geografia.json', 'Geografia']
 ];
 
-test('Anos Finais possuem 3.400 atividades nas 80 coleções oficiais', () => {
+test('Anos Finais possuem 4.000 atividades nas 80 coleções oficiais', () => {
   const globalIds = new Set();
   const byGrade = new Map();
   const bySubject = new Map();
@@ -35,7 +35,7 @@ test('Anos Finais possuem 3.400 atividades nas 80 coleções oficiais', () => {
         assert.equal(collection.ano, `${grade}º ano`);
         assert.equal(collection.bimestre, term);
         assert.equal(collection.disciplina, subject);
-        const expectedActivities = isV2 ? 50 : 40;
+        const expectedActivities = 50;
         const expectedQuestions = isV2 ? 8 : 6;
         assert.equal(collection.quantidadeAtividades, expectedActivities);
         assert.equal(collection.atividades.length, expectedActivities);
@@ -61,9 +61,9 @@ test('Anos Finais possuem 3.400 atividades nas 80 coleções oficiais', () => {
   }
 
   assert.equal(files, 80);
-  assert.equal(total, 3400);
-  grades.forEach(grade => assert.equal(byGrade.get(grade), 850));
-  subjects.forEach(([, subject]) => assert.equal(bySubject.get(subject), ['Língua Portuguesa', 'Matemática', 'Ciências', 'História', 'Geografia'].includes(subject) ? 680 : 640));
+  assert.equal(total, 4000);
+  grades.forEach(grade => assert.equal(byGrade.get(grade), 1000));
+  subjects.forEach(([, subject]) => assert.equal(bySubject.get(subject), 800));
 });
 
 test('Biblioteca carrega uma coleção de Anos Finais por seleção', () => {
@@ -112,5 +112,5 @@ test('Anos Finais possuem conteúdo aprofundado e BNCC conferida', () => {
     }
   }
 
-  assert.equal(total, 3400);
+  assert.equal(total, 4000);
 });
