@@ -9,9 +9,13 @@
     "check:whitespace": "node scripts/check-whitespace.mjs",
     "check:figures": "node scripts/audit-figures.mjs",
     "audit:pedagogical": "node scripts/audit-pedagogical-legacy.mjs",
+    "audit:fundamental-editorial": "node scripts/audit-fundamental-editorial.mjs",
+    "audit:word-readiness": "node scripts/audit-word-readiness.mjs",
+    "prepare:fundamental-illustrations": "node scripts/prepare-fundamental-illustration-batch.mjs",
+    "generate:fundamental-word": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/generate-fundamental-word.ps1",
     "generate:geografia-word": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/generate-geography-word.ps1",
-    "test": "node --test tests/library.test.mjs tests/library-standard.test.mjs tests/library-fixes-cleanup.test.mjs tests/library-v2-collection.test.mjs tests/library-catalog.test.mjs tests/illustration-reference.test.mjs tests/geography-reading.test.mjs tests/ai-improvements.test.mjs tests/bncc-gabarito.test.mjs tests/activity-standard.test.mjs tests/autism-42-bncc.test.mjs tests/auth-quota.test.mjs tests/billing-mercadopago.test.mjs tests/educacao-infantil.test.mjs tests/fundamental-iniciais-bncc.test.mjs tests/fundamental-finais.test.mjs tests/ensino-medio.test.mjs tests/pedagogical-standard-v2.test.mjs tests/pilot-batch-illustrations.test.mjs tests/batch-generate-illustrations.test.mjs tests/portuguese-fourth-term-v2.test.mjs tests/math-fourth-term-v2.test.mjs tests/science-fourth-term-v2.test.mjs tests/history-fourth-term-v2.test.mjs tests/geography-fourth-term-v2.test.mjs tests/fundamental-50-normalization.test.mjs tests/fundamental-term1-3-v2.test.mjs",
-    "validate": "npm run check:js && npm run check:html && npm run check:whitespace && npm run check:figures && npm test",
+    "test": "node --test tests/library.test.mjs tests/library-standard.test.mjs tests/library-fixes-cleanup.test.mjs tests/library-v2-collection.test.mjs tests/library-catalog.test.mjs tests/illustration-reference.test.mjs tests/geography-reading.test.mjs tests/ai-improvements.test.mjs tests/bncc-gabarito.test.mjs tests/activity-standard.test.mjs tests/autism-42-bncc.test.mjs tests/auth-quota.test.mjs tests/billing-mercadopago.test.mjs tests/educacao-infantil.test.mjs tests/fundamental-iniciais-bncc.test.mjs tests/fundamental-finais.test.mjs tests/ensino-medio.test.mjs tests/pedagogical-standard-v2.test.mjs tests/pilot-batch-illustrations.test.mjs tests/batch-generate-illustrations.test.mjs tests/portuguese-fourth-term-v2.test.mjs tests/math-fourth-term-v2.test.mjs tests/science-fourth-term-v2.test.mjs tests/history-fourth-term-v2.test.mjs tests/geography-fourth-term-v2.test.mjs tests/fundamental-50-normalization.test.mjs tests/fundamental-term1-3-v2.test.mjs tests/editorial-production-readiness.test.mjs",
+    "validate": "npm run check:js && npm run check:html && npm run check:whitespace && npm run check:figures && npm run audit:fundamental-editorial && npm run audit:word-readiness && npm test",
     "generate:batch-illustrations": "node scripts/batch-generate-illustrations.mjs"
   },
   "engines": {
