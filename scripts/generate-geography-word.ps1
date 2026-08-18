@@ -18,6 +18,15 @@ function Clean-Text([object]$value) {
     return ([string]$value -replace '\s+', ' ').Trim()
 }
 
+function Get-IllustrationText($activity) {
+    $scene = (Clean-Text $activity.ilustracao.descricao)
+    if ([string]::IsNullOrWhiteSpace($scene)) { return '' }
+
+    $rule = 'REGRA OFICIAL TEACHEASY: preserve integralmente a cena pedagogica descrita acima e todos os seus elementos essenciais. Inclua apenas os personagens oficiais TeachEasy necessarios como PARTICIPANTES ATIVOS da cena, interagindo naturalmente com o ambiente, os objetos e a situacao pedagogica. Eles devem realizar acoes coerentes com o conteudo, como observar, apontar, comparar, investigar, registrar, construir, organizar, ler, escrever, demonstrar, experimentar ou conversar. NAO coloque os personagens apenas parados, posando, olhando para a camera ou visualmente colados sobre o cenario. Os personagens TeachEasy NUNCA podem substituir, esconder, apagar, reduzir ou descaracterizar elementos essenciais da cena. Em cenas historicas ou culturais, preserve povos, personagens, objetos e acontecimentos proprios do contexto e nao transforme o elenco TeachEasy em integrantes desses povos ou personagens historicos.'
+
+    return $scene + "`r`n`r`n" + $rule
+}
+
 function Release-Com([object]$value) {
     if ($null -eq $value) { return }
     try {
@@ -212,7 +221,7 @@ try {
                     $supportText = (Clean-Text $activity.textoApoio.titulo) + "`r`n`r`n" + (Clean-Text $activity.textoApoio.conteudo)
                     $cell = $contentTable.Cell(1,1); Set-CellText $cell $supportText 11 $false 0; Release-Com $cell
 
-                    $illustrationText = (U 'ILUSTRA\u00C7\u00C3O') + "`r`n`r`n" + (Clean-Text $activity.ilustracao.descricao)
+                    $illustrationText = (U 'ILUSTRA\u00C7\u00C3O') + "`r`n`r`n" + (Get-IllustrationText $activity)
                     $cell = $contentTable.Cell(1,2); Set-CellText $cell $illustrationText 10 $false 1; Release-Com $cell
 
                     $instruction = Clean-Text $activity.instrucaoGeral
