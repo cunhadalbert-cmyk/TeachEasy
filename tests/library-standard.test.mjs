@@ -8,7 +8,7 @@ const overflowFix = await readFile(new URL('../library-layout-overflow-fix.js', 
 
 test('Biblioteca usa somente o padrão final único depois das coleções', () => {
   assert.match(html, /biblioteca-final-standard\.js\?v=20260815-layout-mestre-v2/);
-  assert.match(html, /library-layout-overflow-fix\.js\?v=20260813-fit-v1/);
+  assert.match(html, /library-layout-overflow-fix\.js\?v=20260817-fit-image-v2/);
   assert.ok(html.indexOf('library-layout-overflow-fix.js') > html.indexOf('biblioteca-final-standard.js'));
   assert.doesNotMatch(html, /biblioteca-standard\.js/);
   assert.doesNotMatch(html, /biblioteca-export-hardfix\.js/);
@@ -108,10 +108,12 @@ test('Word e impressão usam A4 no padrão do layout mestre', () => {
   assert.match(standard, /6\.9mm/);
 });
 
-test('ilustração existente fica contida na coluna direita sem deformação', () => {
+test('ilustração existente preenche o quadro proporcionalmente sem deformação', () => {
   assert.match(standard, /img\.activity-figure, \.collection-student-page img\.question-figure/);
   assert.match(standard, /te-final-visual/);
-  assert.match(standard, /object-fit:contain/);
-  assert.match(standard, /max-width:100%/);
-  assert.match(standard, /max-height:100%/);
+  assert.match(overflowFix, /\.te-final-visual img/);
+  assert.match(overflowFix, /width:\s*100%\s*!important/);
+  assert.match(overflowFix, /height:\s*100%\s*!important/);
+  assert.match(overflowFix, /object-fit:\s*cover\s*!important/);
+  assert.match(overflowFix, /object-position:\s*center center\s*!important/);
 });

@@ -48,13 +48,13 @@ test('modo temporário de ilustração permanece protegido e salva a imagem vinc
 });
 
 test('download Word e PDF usa cache versionado do elenco oficial atual', () => {
-  assert.match(html, /library-export-image-sync\.js\?v=20260813-persistencia-ilustracao-v8-official-cast-v3/);
+  assert.match(html, /library-export-image-sync\.js\?v=20260817-persistencia-ilustracao-v9-official-cast-v4/);
   assert.ok(html.indexOf('library-export-image-sync.js') < html.indexOf('biblioteca-final-standard.js'));
   assert.doesNotMatch(exportImageSync, /modoIlustracao/);
   assert.match(exportImageSync, /\.te-final-word, \.te-final-pdf/);
   assert.match(exportImageSync, /generate-library-illustration/);
   assert.match(exportImageSync, /indexedDB/);
-  assert.match(exportImageSync, /ILLUSTRATION_CACHE_VERSION = 'official-cast-v3-20260813'/);
+  assert.match(exportImageSync, /ILLUSTRATION_CACHE_VERSION = 'official-cast-v4-20260817-no-duplicates'/);
   assert.match(exportImageSync, /\$\{ILLUSTRATION_CACHE_VERSION\}\|\$\{data\.subject\}/);
   assert.match(exportImageSync, /restoreFinalImage/);
   assert.match(exportImageSync, /savePersistentImage/);
@@ -96,6 +96,11 @@ test('gerador usa a imagem oficial com fidelidade visual reforçada', async () =
   assert.match(illustrationGeneration, /NUNCA podem substituir, esconder, apagar, reduzir ou descaracterizar/);
   assert.match(illustrationGeneration, /preserve integralmente o conteúdo pedagógico/);
   assert.match(illustrationGeneration, /falsificar o período, a cultura ou o acontecimento/i);
+  assert.match(illustrationGeneration, /REGRA ABSOLUTA DE QUANTIDADE DO ELENCO/);
+  assert.match(illustrationGeneration, /cada personagem oficial pode aparecer NO MÁXIMO UMA VEZ/);
+  assert.match(illustrationGeneration, /O único animal permitido é Nino/);
+  assert.match(illustrationGeneration, /Nunca gere segundo cachorro, filhote, outro cão, gato ou qualquer animal adicional/);
+  assert.match(illustrationGeneration, /Nino só pode aparecer uma vez/);
   assert.match(illustrationGeneration, /ORDEM DE PRIORIDADE/);
   assert.match(illustrationGeneration, /preservar integralmente a cena pedagógica e seus elementos essenciais/);
   assert.match(illustrationGeneration, /integrar os personagens TeachEasy como participantes ativos e naturais da cena/);

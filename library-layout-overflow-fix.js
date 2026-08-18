@@ -86,6 +86,28 @@
         overflow-wrap: break-word;
       }
 
+      .te-final-visual {
+        min-width: 0 !important;
+        min-height: 0 !important;
+        width: 100%;
+        height: 100%;
+        padding: 0 !important;
+        overflow: hidden !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .te-final-visual img {
+        width: 100% !important;
+        height: 100% !important;
+        max-width: none !important;
+        max-height: none !important;
+        object-fit: cover !important;
+        object-position: center center !important;
+        display: block;
+      }
+
       .te-final-instruction {
         position: relative !important;
         display: block;
@@ -121,6 +143,10 @@
           height: auto;
           max-height: none !important;
         }
+
+        .te-final-visual {
+          min-height: 9.6cm !important;
+        }
       }
 
       @media print {
@@ -137,6 +163,13 @@
 
         .te-final-instruction {
           margin-top: 2mm !important;
+        }
+
+        .te-final-visual img {
+          width: 100% !important;
+          height: 100% !important;
+          object-fit: cover !important;
+          object-position: center center !important;
         }
       }
     `;

@@ -40,9 +40,9 @@ test('Biblioteca mantém PNGs estáticas e sincronizador ativo com persistência
   const sync = await readFile(new URL('../library-export-image-sync.js', import.meta.url), 'utf8');
   assert.doesNotMatch(html, /library-ai-illustration\.js/);
   assert.doesNotMatch(html, /generate-library-illustration/);
-  assert.match(html, /library-export-image-sync\.js\?v=20260813-persistencia-ilustracao-v8-official-cast-v3/);
+  assert.match(html, /library-export-image-sync\.js\?v=20260817-persistencia-ilustracao-v9-official-cast-v4/);
   assert.doesNotMatch(sync, /modoIlustracao/);
-  assert.match(sync, /ILLUSTRATION_CACHE_VERSION = 'official-cast-v3-20260813'/);
+  assert.match(sync, /ILLUSTRATION_CACHE_VERSION = 'official-cast-v4-20260817-no-duplicates'/);
   assert.match(sync, /validFinalImage/);
   assert.match(sync, /indexedDB/);
   assert.match(sync, /restoreFinalImage/);
