@@ -140,10 +140,8 @@ def main():
                         if CODE_RE.search(qtext):
                             add_issue(blockers, path.relative_to(ROOT), aid, f'questao.{i}', 'código BNCC exposto na pergunta do aluno', qtext)
                         q_words = words(qtext)
-                        # Questões 1-6 devem manter alguma conexão lexical com o tema/texto; 7-8 podem ser produção/revisão mais abertas.
                         if i <= 6 and len(q_words) >= 4 and context_words and len(q_words & context_words) == 0:
                             add_issue(warnings, path.relative_to(ROOT), aid, f'questao.{i}', 'pergunta sem conexão lexical evidente com título/tema/texto de apoio', qtext)
-                        # Resposta deve compartilhar ao menos um termo relevante com a pergunta ou contexto, salvo comandos de produção aberta.
                         a_words = words(atext)
                         if i <= 6 and len(a_words) >= 4 and not ((a_words & q_words) or (a_words & context_words)):
                             add_issue(warnings, path.relative_to(ROOT), aid, f'gabarito.{i}', 'resposta sem conexão lexical evidente com pergunta/contexto', atext)
@@ -161,9 +159,18 @@ def main():
     stats['repeated_question_patterns'] = len(repeated_questions)
     stats['repeated_answer_patterns'] = len(repeated_answers)
 
+    blocker_types = Counter(item[3] for item in blockers)
+    warning_types = Counter(item[3] for item in warnings)
+
     lines = ['# Auditoria do Ensino Médio V2', '', '## Resumo', '']
     for key in ['collections','activities','questions','answers','bncc_codes_distinct','blockers','warnings','repeated_question_patterns','repeated_answer_patterns']:
         lines.append(f'- **{key}:** {stats[key]}')
+    lines += ['', '## Tipos de bloqueadores', '']
+    for message, count in blocker_types.most_common():
+        lines.append(f'- **{count}** — {message}')
+    lines += ['', '## Tipos de alertas', '']
+    for message, count in warning_types.most_common():
+        lines.append(f'- **{count}** — {message}')
     lines += ['', '## Uso de habilidades BNCC', '']
     for code, count in sorted(code_usage.items()):
         lines.append(f'- `{code}`: {count} atividades')
@@ -194,6 +201,15 @@ def main():
     REPORT.write_text('\n'.join(lines) + '\n', encoding='utf-8')
 
     print(json.dumps(stats, ensure_ascii=False, indent=2))
+    print('TIPOS DE BLOQUEADORES:')
+    for message, count in blocker_types.most_common():
+        print(f'  {count}: {message}')
+    print('TIPOS DE ALERTAS:')
+    for message, count in warning_types.most_common():
+        print(f'  {count}: {message}')
+    print('PRIMEIROS BLOQUEADORES:')
+    for path, aid, field, message, excerpt in blockers[:80]:
+        print(f'  {path} | {aid} | {field} | {message} | {excerpt}')
     print(f'Relatório: {REPORT.relative_to(ROOT)}')
     if blockers:
         raise SystemExit(1)
