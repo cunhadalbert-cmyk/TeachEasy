@@ -1,6 +1,17 @@
 (() => {
   const SUBJECT_DEFINITIONS = TeachEasyLibraryCatalog.subjects;
   const PRIMARY_SUBJECTS_FUNDAMENTAL_I = new Set(Object.keys(SUBJECT_DEFINITIONS));
+  const FUNDAMENTAL_STAGE_COUNTS = Object.freeze({
+    'Ensino Fundamental I': 5000,
+    'Ensino Fundamental II': 4000
+  });
+
+  stages.forEach(stage => {
+    if (FUNDAMENTAL_STAGE_COUNTS[stage.name]) {
+      stage.count = FUNDAMENTAL_STAGE_COUNTS[stage.name];
+    }
+  });
+  const TOTAL_LIBRARY_ACTIVITIES = stages.reduce((total, stage) => total + stage.count, 0);
 
   // Referências históricas auditadas por teste legado, sem efeito na execução: 4ano-3bimestre-historia=data/atividades/fundamental-anos-iniciais/4-ano/3-bimestre/historia.json; 4ano-3bimestre-geografia=data/atividades/fundamental-anos-iniciais/4-ano/3-bimestre/geografia.json; 3ano-3bimestre-lingua-portuguesa=data/atividades/fundamental-anos-iniciais/3-ano/3-bimestre/lingua-portuguesa.json; 3ano-3bimestre-matematica=data/atividades/fundamental-anos-iniciais/3-ano/3-bimestre/matematica.json; 3ano-3bimestre-historia=data/atividades/fundamental-anos-iniciais/3-ano/3-bimestre/historia.json; 3ano-3bimestre-ciencias=data/atividades/fundamental-anos-iniciais/3-ano/3-bimestre/ciencias.json; 3ano-3bimestre-geografia=data/atividades/fundamental-anos-iniciais/3-ano/3-bimestre/geografia.json; 1ano-3bimestre-lingua-portuguesa=data/atividades/fundamental-anos-iniciais/1-ano/3-bimestre/lingua-portuguesa.json; 1ano-3bimestre-matematica=data/atividades/fundamental-anos-iniciais/1-ano/3-bimestre/matematica.json; 1ano-3bimestre-historia=data/atividades/fundamental-anos-iniciais/1-ano/3-bimestre/historia.json; 1ano-3bimestre-ciencias=data/atividades/fundamental-anos-iniciais/1-ano/3-bimestre/ciencias.json; 1ano-3bimestre-geografia=data/atividades/fundamental-anos-iniciais/1-ano/3-bimestre/geografia.json
 
@@ -45,10 +56,38 @@
     select.value = values.includes(currentValue) ? currentValue : '';
   }
 
+  const originalEnsureSelectedCollection = ensureSelectedCollection;
+  ensureSelectedCollection = async function ensureSelectedCollectionWithAllFundamentalSubjects() {
+    const isFundamental = ['Ensino Fundamental I', 'Ensino Fundamental II'].includes(navigation.stage);
+    const select = filterForm.elements.subject;
+    if (!isFundamental || !navigation.grade || !navigation.term || select.value) {
+      return originalEnsureSelectedCollection();
+    }
+
+    const previousValue = select.value;
+    const failures = [];
+    for (const subject of Object.keys(SUBJECT_DEFINITIONS)) {
+      select.value = subject;
+      try {
+        await originalEnsureSelectedCollection();
+      } catch (error) {
+        failures.push(error);
+      }
+    }
+    select.value = previousValue;
+
+    if (failures.length) {
+      throw failures[0];
+    }
+  };
+
   const originalRenderNavigation = renderNavigation;
   renderNavigation = function renderNavigationWithPrimarySubjects() {
     originalRenderNavigation();
     refreshSubjectOptionsForCurrentGrade();
+    if (!navigation.stage && !autismCategory) {
+      stepHelp.textContent = `${TOTAL_LIBRARY_ACTIVITIES.toLocaleString('pt-BR')} atividades educacionais organizadas por etapa, bimestre e recursos de inclusão.`;
+    }
   };
 
   const STORAGE_KEYS = {
