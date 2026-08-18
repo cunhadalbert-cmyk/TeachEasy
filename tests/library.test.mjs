@@ -593,19 +593,19 @@ test('Autismo e inclusão aparecem em todas as etapas', async () => {
   }
 });
 
-test('Coleção canônica de Ciências possui 50 atividades e referências consistentes', async () => {
+test('Coleção canônica de Ciências V2 possui 50 atividades e referências consistentes', async () => {
   const raw = await readFile(new URL('../data/atividades/fundamental-anos-iniciais/4-ano/3-bimestre/ciencias.json', import.meta.url), 'utf8');
   const collection = JSON.parse(raw);
-  assert.equal(collection.schemaVersion, '1.0');
-  assert.equal(collection.colecao, '4ano-3bimestre-ciencias');
+  assert.equal(collection.schemaVersion, '2.0');
+  assert.equal(collection.colecao, '4ano-3bimestre-ciencias-v2');
   assert.equal(collection.idioma, 'pt-BR');
   assert.equal(collection.atividades.length, 50);
   assert.equal(new Set(collection.atividades.map(activity => activity.id)).size, 50);
 
   collection.atividades.forEach(activity => {
     assert.ok(['facil', 'intermediaria', 'desafiadora'].includes(activity.dificuldade));
-    assert.equal(activity.questoes.length, 6);
-    assert.equal(activity.gabarito.length, 6);
+    assert.equal(activity.questoes.length, 8);
+    assert.equal(activity.gabarito.length, 8);
     assert.ok(activity.instrucaoGeral);
     if (activity.textoApoio) {
       assert.ok(activity.textoApoio.titulo);
@@ -625,7 +625,7 @@ test('Coleção canônica de Ciências possui 50 atividades e referências consi
   assert.doesNotMatch(answerSix.resposta, /compartilhar copo|compartilhamento de copos/i);
 });
 
-test('Ciências do 4º ano totaliza 50 atividades e 300 questões em um arquivo', async () => {
+test('Ciências do 4º ano totaliza 50 atividades e 400 questões em um arquivo V2', async () => {
   const raw = await readFile(new URL('../data/atividades/fundamental-anos-iniciais/4-ano/3-bimestre/ciencias.json', import.meta.url), 'utf8');
   const collection = JSON.parse(raw);
   const activities = collection.atividades;
@@ -633,8 +633,8 @@ test('Ciências do 4º ano totaliza 50 atividades e 300 questões em um arquivo'
 
   assert.equal(activities.length, 50);
   assert.equal(new Set(ids).size, 50);
-  assert.equal(activities.reduce((total, activity) => total + activity.questoes.length, 0), 300);
-  assert.equal(activities.reduce((total, activity) => total + activity.gabarito.length, 0), 300);
+  assert.equal(activities.reduce((total, activity) => total + activity.questoes.length, 0), 400);
+  assert.equal(activities.reduce((total, activity) => total + activity.gabarito.length, 0), 400);
 });
 
 test('Ciências é carregada somente após etapa, ano, bimestre e disciplina', async () => {
@@ -696,10 +696,10 @@ test('Figura geral de Português aparece antes das questões e substitui o fallb
   await window.happyDOM.close();
 });
 
-test('Arquivos canônicos de Matemática e Língua Portuguesa totalizam 100 atividades e 600 questões', async () => {
+test('Arquivos canônicos de Matemática e Língua Portuguesa V2 totalizam 100 atividades e 800 questões', async () => {
   const files = [
-    ['matematica.json', '4ano-3bimestre-matematica', 'Matemática', 50, 300],
-    ['lingua-portuguesa.json', '4ano-3bimestre-lingua-portuguesa', 'Língua Portuguesa', 50, 300]
+    ['matematica.json', '4ano-3bimestre-matematica-v2', 'Matemática', 50, 400],
+    ['lingua-portuguesa.json', '4ano-3bimestre-lingua-portuguesa-v2', 'Língua Portuguesa', 50, 400]
   ];
   const allIds = [];
   let totalQuestions = 0;
@@ -708,7 +708,7 @@ test('Arquivos canônicos de Matemática e Língua Portuguesa totalizam 100 ativ
     const raw = await readFile(new URL(`../data/atividades/fundamental-anos-iniciais/4-ano/3-bimestre/${filename}`, import.meta.url), 'utf8');
     assert.doesNotMatch(raw, /\uFFFD/);
     const collection = JSON.parse(raw);
-    assert.equal(collection.schemaVersion, '1.0');
+    assert.equal(collection.schemaVersion, '2.0');
     assert.equal(collection.colecao, collectionId);
     assert.equal(collection.idioma, 'pt-BR');
     assert.equal(collection.disciplina, subject);
@@ -718,11 +718,11 @@ test('Arquivos canônicos de Matemática e Língua Portuguesa totalizam 100 ativ
     collection.atividades.forEach(activity => {
       allIds.push(activity.id);
       totalQuestions += activity.questoes.length;
-      assert.equal(activity.quantidadeQuestoes, 6);
-      assert.equal(activity.questoes.length, 6);
-      assert.equal(activity.gabarito.length, 6);
-      assert.deepEqual(activity.questoes.map(question => question.numero), [1, 2, 3, 4, 5, 6]);
-      assert.deepEqual(activity.gabarito.map(answer => answer.numero), [1, 2, 3, 4, 5, 6]);
+      assert.equal(activity.quantidadeQuestoes, 8);
+      assert.equal(activity.questoes.length, 8);
+      assert.equal(activity.gabarito.length, 8);
+      assert.deepEqual(activity.questoes.map(question => question.numero), [1, 2, 3, 4, 5, 6, 7, 8]);
+      assert.deepEqual(activity.gabarito.map(answer => answer.numero), [1, 2, 3, 4, 5, 6, 7, 8]);
       const figureIds = new Set(activity.figuras.map(figure => figure.id));
       activity.questoes.forEach(question => {
         if (question.figuraId) assert.ok(figureIds.has(question.figuraId));
@@ -732,10 +732,10 @@ test('Arquivos canônicos de Matemática e Língua Portuguesa totalizam 100 ativ
 
   assert.equal(allIds.length, 100);
   assert.equal(new Set(allIds).size, 100);
-  assert.equal(totalQuestions, 600);
+  assert.equal(totalQuestions, 800);
 });
 
-test('Matemática possui 50 atividades, 300 questões e figuras válidas', async () => {
+test('Matemática possui 50 atividades V2, 400 questões e figuras válidas', async () => {
   const raw = await readFile(new URL('../data/atividades/fundamental-anos-iniciais/4-ano/3-bimestre/matematica.json', import.meta.url), 'utf8');
   assert.doesNotMatch(raw, /\uFFFD/);
   const collection = JSON.parse(raw);
@@ -749,21 +749,21 @@ test('Matemática possui 50 atividades, 300 questões e figuras válidas', async
   );
 
   assert.equal(activities.length, 50);
-  assert.equal(activities.reduce((total, activity) => total + activity.questoes.length, 0), 300);
+  assert.equal(activities.reduce((total, activity) => total + activity.questoes.length, 0), 400);
   assert.equal(new Set(ids).size, 50);
   assert.equal(new Set(titles).size, 50);
-  assert.equal(new Set(normalizedPrompts).size, 300);
+  assert.equal(new Set(normalizedPrompts).size, 400);
 
   for (const activity of activities) {
-    assert.equal(activity.quantidadeQuestoes, 6);
-    assert.equal(activity.questoes.length, 6);
-    assert.equal(activity.gabarito.length, 6);
+    assert.equal(activity.quantidadeQuestoes, 8);
+    assert.equal(activity.questoes.length, 8);
+    assert.equal(activity.gabarito.length, 8);
     assert.ok(activity.objetivo.trim());
     assert.ok(activity.instrucaoGeral.trim());
     assert.ok(['facil', 'intermediaria', 'desafiadora'].includes(activity.dificuldade));
     assert.ok(activity.bncc.length > 0);
-    assert.deepEqual(activity.questoes.map(question => question.numero), [1, 2, 3, 4, 5, 6]);
-    assert.deepEqual(activity.gabarito.map(answer => answer.numero), [1, 2, 3, 4, 5, 6]);
+    assert.deepEqual(activity.questoes.map(question => question.numero), [1, 2, 3, 4, 5, 6, 7, 8]);
+    assert.deepEqual(activity.gabarito.map(answer => answer.numero), [1, 2, 3, 4, 5, 6, 7, 8]);
 
     const figureIds = new Set(activity.figuras.map(figure => figure.id));
     assert.equal(figureIds.size, activity.figuras.length);
@@ -791,7 +791,7 @@ test('Matemática possui 50 atividades, 300 questões e figuras válidas', async
   assert.doesNotMatch(catalogScript, /extraPath/);
 });
 
-test('Língua Portuguesa possui 50 atividades, 300 questões e figuras válidas', async () => {
+test('Língua Portuguesa possui 50 atividades V2, 400 questões e figuras válidas', async () => {
   const raw = await readFile(new URL('../data/atividades/fundamental-anos-iniciais/4-ano/3-bimestre/lingua-portuguesa.json', import.meta.url), 'utf8');
 
   assert.doesNotMatch(raw, /\uFFFD/);
@@ -807,11 +807,11 @@ test('Língua Portuguesa possui 50 atividades, 300 questões e figuras válidas'
     .map(activity => normalize(activity.textoApoio.conteudo));
 
   assert.equal(activities.length, 50);
-  assert.equal(activities.reduce((total, activity) => total + activity.questoes.length, 0), 300);
-  assert.equal(activities.reduce((total, activity) => total + activity.gabarito.length, 0), 300);
+  assert.equal(activities.reduce((total, activity) => total + activity.questoes.length, 0), 400);
+  assert.equal(activities.reduce((total, activity) => total + activity.gabarito.length, 0), 400);
   assert.equal(new Set(ids).size, 50);
   assert.equal(new Set(titles).size, 50);
-  assert.equal(new Set(prompts).size, 300);
+  assert.equal(new Set(prompts).size, 400);
   assert.equal(new Set(supportTexts).size, supportTexts.length);
 
   const preservedIds = [
@@ -828,9 +828,9 @@ test('Língua Portuguesa possui 50 atividades, 300 questões e figuras válidas'
   assert.equal(newIds.length, 43);
 
   for (const activity of activities) {
-    assert.equal(activity.quantidadeQuestoes, 6);
-    assert.equal(activity.questoes.length, 6);
-    assert.equal(activity.gabarito.length, 6);
+    assert.equal(activity.quantidadeQuestoes, 8);
+    assert.equal(activity.questoes.length, 8);
+    assert.equal(activity.gabarito.length, 8);
     assert.ok(activity.objetivo.trim());
     assert.ok(activity.instrucaoGeral.trim());
     assert.ok(['facil', 'intermediaria', 'desafiadora'].includes(activity.dificuldade));
@@ -839,8 +839,8 @@ test('Língua Portuguesa possui 50 atividades, 300 questões e figuras válidas'
       assert.match(skill.codigo, /^EF(04|15|35)LP\d{2}$/);
       assert.ok(skill.descricaoResumida.trim());
     });
-    assert.deepEqual(activity.questoes.map(question => question.numero), [1, 2, 3, 4, 5, 6]);
-    assert.deepEqual(activity.gabarito.map(answer => answer.numero), [1, 2, 3, 4, 5, 6]);
+    assert.deepEqual(activity.questoes.map(question => question.numero), [1, 2, 3, 4, 5, 6, 7, 8]);
+    assert.deepEqual(activity.gabarito.map(answer => answer.numero), [1, 2, 3, 4, 5, 6, 7, 8]);
     assert.equal(activity.possuiFiguras, activity.figuras.length > 0);
 
     const figureIds = new Set(activity.figuras.map(figure => figure.id));

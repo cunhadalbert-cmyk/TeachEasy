@@ -32,6 +32,9 @@ Atualizado em 18 de agosto de 2026.
 
 - Ensino Fundamental totaliza 9.000 atividades canônicas nas 180 combinações oficiais do catálogo.
 
+- 1º, 2º e 3º bimestres também migrados integralmente para V2: 135 coleções, 6.750 atividades, 54.000 questões e 54.000 respostas.
+- Todas as 180 coleções do Ensino Fundamental permanecem com 50 atividades; revisão pedagógica humana e produção visual seguem pendentes onde indicado.
+
 ## Pendente editorial — não confundir com ausência de arquivo
 
 - Migrar as demais coleções dos Anos Iniciais do schema 1.0 (seis questões) para o V2 (oito questões).
