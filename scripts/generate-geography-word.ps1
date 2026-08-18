@@ -22,7 +22,7 @@ function Get-IllustrationText($activity) {
     $scene = (Clean-Text $activity.ilustracao.descricao)
     if ([string]::IsNullOrWhiteSpace($scene)) { return '' }
 
-    $rule = 'REGRA OFICIAL TEACHEASY: preserve integralmente a cena pedagogica descrita acima e todos os seus elementos essenciais. Inclua apenas os personagens oficiais TeachEasy necessarios como PARTICIPANTES ATIVOS da cena, interagindo naturalmente com o ambiente, os objetos e a situacao pedagogica. Eles devem realizar acoes coerentes com o conteudo, como observar, apontar, comparar, investigar, registrar, construir, organizar, ler, escrever, demonstrar, experimentar ou conversar. NAO coloque os personagens apenas parados, posando, olhando para a camera ou visualmente colados sobre o cenario. Os personagens TeachEasy NUNCA podem substituir, esconder, apagar, reduzir ou descaracterizar elementos essenciais da cena. Em cenas historicas ou culturais, preserve povos, personagens, objetos e acontecimentos proprios do contexto e nao transforme o elenco TeachEasy em integrantes desses povos ou personagens historicos.'
+    $rule = 'REGRA TEACHEASY: preserve integralmente a cena e seus elementos essenciais. Inclua os personagens oficiais TeachEasy necessarios como PARTICIPANTES ATIVOS, interagindo de forma natural e realizando acoes coerentes com o conteudo. Nao os deixe apenas posados ou colados no cenario e nunca substitua, esconda ou descaracterize elementos essenciais. Em cenas historicas ou culturais, preserve os povos, objetos e acontecimentos proprios do contexto; o elenco TeachEasy nao deve representar esses povos ou personagens historicos.'
 
     return $scene + "`r`n`r`n" + $rule
 }
