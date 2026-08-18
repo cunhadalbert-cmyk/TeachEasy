@@ -48,6 +48,7 @@ jobs:
             -o .cache/bncc.pdf
           BNCC_PDF=.cache/bncc.pdf python scripts/upgrade-ensino-medio-v2.py
           python scripts/clean-ensino-medio-v2.py
+          python scripts/refine-ensino-medio-v2.py
           python scripts/audit-ensino-medio-v2.py
 
       - name: Publicar conversão e auditoria geradas
@@ -57,7 +58,7 @@ jobs:
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
             git add data/atividades/ensino-medio docs/auditoria-ensino-medio-v2.md
-            git commit -m "Audita Ensino Medio V2 integralmente"
+            git commit -m "Refina e audita Ensino Medio V2"
             git push origin HEAD:refactor/ensino-medio-v2
           fi
 
