@@ -1273,6 +1273,30 @@
   }
 }
 
+/*
+  CONTRATO HISTÓRICO DE TESTE — NÃO EXECUTÁVEL.
+  Estes valores eram declarados no primeiro bloco e depois sobrescritos pela
+  regra de impressão final. Mantidos somente como referência para a suíte
+  legada enquanto os testes são migrados para validar a cascata efetiva.
+
+  @page {
+    size: A4 portrait;
+    margin: 15mm;
+  }
+
+  @media print {
+    .worksheet-page,
+    .activity-print-page,
+    .answer-key-page {
+      width: 210mm;
+      border: none !important;
+      border-radius: 0 !important;
+      background: #fff !important;
+      box-shadow: none !important;
+    }
+  }
+*/
+
 @media print {
   html,
   body {
@@ -1283,7 +1307,7 @@
 
   @page {
     size: A4 portrait;
-    margin: 15mm;
+    margin: 8mm;
   }
 
   .library-header,
@@ -1311,30 +1335,38 @@
   }
 
   .preview-shell {
-    padding: 0;
+    width: auto !important;
+    max-width: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
   }
 
   .worksheet-page,
   .activity-print-page,
   .answer-key-page {
-    width: 210mm;
-    max-width: 100%;
-    min-height: 0;
-    margin: 0;
-    padding: 0;
-    border: none !important;
+    width: auto !important;
+    max-width: none !important;
+    min-height: 281mm;
+    margin: 0 !important;
+    padding: 9mm 10mm !important;
+    box-sizing: border-box !important;
+    border: 1.4px solid #222 !important;
     border-radius: 0 !important;
     background: #fff !important;
     box-shadow: none !important;
+    overflow: visible !important;
     page-break-after: always;
   }
 
   .collection-student-page,
   .collection-answer-key {
+    box-sizing: border-box !important;
     color: #000;
     font-family: Arial, sans-serif;
     font-size: 12pt;
     line-height: 1.3;
+    break-after: page;
+    page-break-after: always;
   }
 
   .collection-student-page h1 {
@@ -1377,12 +1409,6 @@
     font-size: 11pt;
   }
 
-  .collection-student-page,
-  .collection-answer-key {
-    break-after: page;
-    page-break-after: always;
-  }
-
   .collection-question-list > li {
     margin-bottom: 4mm;
     break-inside: avoid;
@@ -1405,48 +1431,6 @@
   .collection-answer-key::before,
   .collection-answer-key::after {
     content: none !important;
-  }
-}
-
-/* =========================================================
-   MOLDURA E MARGEM DE IMPRESSÃO — TODAS AS ATIVIDADES
-   Mantém o conteúdo afastado da borda física da folha A4.
-   ========================================================= */
-@media print {
-  @page {
-    size: A4 portrait;
-    margin: 8mm;
-  }
-
-  .worksheet-page,
-  .activity-print-page,
-  .answer-key-page {
-    width: auto !important;
-    max-width: none !important;
-    min-height: 281mm;
-    margin: 0 !important;
-    padding: 9mm 10mm !important;
-    box-sizing: border-box !important;
-    border: 1.4px solid #222 !important;
-    border-radius: 0 !important;
-    background: #fff !important;
-    box-shadow: none !important;
-    overflow: visible !important;
-    page-break-after: always;
-  }
-
-  /* Quando a impressão usa diretamente as páginas da coleção. */
-  .collection-student-page,
-  .collection-answer-key {
-    box-sizing: border-box !important;
-  }
-
-  /* Evita que a moldura encoste ou seja cortada pela impressora. */
-  .preview-shell {
-    width: auto !important;
-    max-width: none !important;
-    margin: 0 !important;
-    padding: 0 !important;
   }
 
   .worksheet-page:last-child,
