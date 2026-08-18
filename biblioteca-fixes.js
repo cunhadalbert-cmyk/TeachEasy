@@ -21,21 +21,6 @@
   };
   const PRIMARY_SUBJECTS_FUNDAMENTAL_I = new Set(Object.keys(SUBJECT_DEFINITIONS));
 
-  const TERM3_CANONICAL_PATHS = {
-    '4ano-3bimestre-historia': 'data/atividades/fundamental-anos-iniciais/4-ano/3-bimestre/historia.json',
-    '4ano-3bimestre-geografia': 'data/atividades/fundamental-anos-iniciais/4-ano/3-bimestre/geografia.json',
-    '3ano-3bimestre-lingua-portuguesa': 'data/atividades/fundamental-anos-iniciais/3-ano/3-bimestre/lingua-portuguesa.json',
-    '3ano-3bimestre-matematica': 'data/atividades/fundamental-anos-iniciais/3-ano/3-bimestre/matematica.json',
-    '3ano-3bimestre-historia': 'data/atividades/fundamental-anos-iniciais/3-ano/3-bimestre/historia.json',
-    '3ano-3bimestre-ciencias': 'data/atividades/fundamental-anos-iniciais/3-ano/3-bimestre/ciencias.json',
-    '3ano-3bimestre-geografia': 'data/atividades/fundamental-anos-iniciais/3-ano/3-bimestre/geografia.json',
-    '1ano-3bimestre-lingua-portuguesa': 'data/atividades/fundamental-anos-iniciais/1-ano/3-bimestre/lingua-portuguesa.json',
-    '1ano-3bimestre-matematica': 'data/atividades/fundamental-anos-iniciais/1-ano/3-bimestre/matematica.json',
-    '1ano-3bimestre-historia': 'data/atividades/fundamental-anos-iniciais/1-ano/3-bimestre/historia.json',
-    '1ano-3bimestre-ciencias': 'data/atividades/fundamental-anos-iniciais/1-ano/3-bimestre/ciencias.json',
-    '1ano-3bimestre-geografia': 'data/atividades/fundamental-anos-iniciais/1-ano/3-bimestre/geografia.json'
-  };
-
   function specialExtraPath(year, term, subject) {
     if (year !== 4 || term !== 3) return '';
     return {
@@ -45,22 +30,14 @@
     }[subject] || '';
   }
 
-  function subjectsForPeriod(year, term) {
-    if (year === 4 && term === 3) {
-      return ['Ciências', 'Matemática', 'Língua Portuguesa', 'História', 'Geografia'];
-    }
-    return [...PRIMARY_SUBJECTS_FUNDAMENTAL_I];
-  }
-
   const collectionConfigs = INITIAL_YEAR_NUMBERS.flatMap(year =>
     BIMESTERS.flatMap(term =>
-      subjectsForPeriod(year, term).map(subject => {
+      [...PRIMARY_SUBJECTS_FUNDAMENTAL_I].map(subject => {
         const definition = SUBJECT_DEFINITIONS[subject];
         const collection = `${year}ano-${term}bimestre-${definition.file}`;
         const basePath = `data/atividades/fundamental-anos-iniciais/${year}-ano/${term}-bimestre`;
-        const generatedPath = `${basePath}/${definition.file}.json`;
         const config = {
-          path: TERM3_CANONICAL_PATHS[collection] || generatedPath,
+          path: `${basePath}/${definition.file}.json`,
           collection,
           count: 30,
           grade: `${year}º ano`,
