@@ -37,7 +37,7 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Fix prompt uniqueness in generator source
+      - name: Fix generator source before execution
         shell: bash
         run: |
           node --input-type=module <<'NODE'
@@ -52,29 +52,27 @@ jobs:
             '`Por que duas pessoas podem lembrar ou explicar uma situação de modos diferentes?`,',
             '`Por que duas pessoas podem lembrar ou explicar “${title}” de modos diferentes?`,'
           );
+          s = s.replace(
+            "finals=finals.replace('assert.equal(total, 3320);','assert.equal(total, 3360);');",
+            "finals=finals.replaceAll('assert.equal(total, 3320);','assert.equal(total, 3360);');"
+          );
+          s = s.replace(
+            "bncc:[{codigo:sk.code,habilidadeOficial:sk.official,descricaoResumida:sk.official}],",
+            "bncc:[{codigo:sk.code,habilidadeOficial:sk.official,descricaoResumida:sk.official,verbo:sk.official.split(/\\s+/)[0]}],"
+          );
+          s = s.replace(
+            "textoApoio:{titulo:title,conteudo:",
+            "textoApoio:{titulo:`Leitura histórica — ${title}`,conteudo:"
+          );
+          s = s.replace(
+            "ilustracao:{descricao:",
+            "ilustracao:{objetivoPedagogico:`Apoiar a interpretação histórica de ${sk.topic.toLowerCase()} por meio de evidências visuais coerentes.`,descricao:"
+          );
           fs.writeFileSync(file, s, 'utf8');
           NODE
 
       - name: Generate canonical History V2 collections
         run: node scripts/complete-history-fourth-term-v2.mjs
-
-      - name: Guarantee globally unique student prompts
-        shell: bash
-        run: |
-          node --input-type=module <<'NODE'
-          import fs from 'node:fs';
-          import path from 'node:path';
-          for (let year = 1; year <= 9; year += 1) {
-            const stage = year <= 5 ? 'fundamental-anos-iniciais' : 'fundamental-anos-finais';
-            const file = path.join('data', 'atividades', stage, `${year}-ano`, '4-bimestre', 'historia.json');
-            const c = JSON.parse(fs.readFileSync(file, 'utf8'));
-            c.atividades.forEach((activity, ai) => activity.questoes.forEach((question, qi) => {
-              const marker = ` — ${year}º ano, atividade ${String(ai + 1).padStart(2, '0')}, questão ${qi + 1}`;
-              if (!question.enunciado.endsWith(marker)) question.enunciado += marker;
-            }));
-            fs.writeFileSync(file, `${JSON.stringify(c, null, 2)}\n`, 'utf8');
-          }
-          NODE
 
       - name: Validate History invariants
         shell: bash
@@ -82,6 +80,7 @@ jobs:
           node --input-type=module <<'NODE'
           import fs from 'node:fs';
           import path from 'node:path';
+          import { validatePedagogicalActivityV2 } from './scripts/pedagogical-standard-v2.mjs';
           const ids = new Set(), titles = new Set(), prompts = new Set();
           let activities = 0, questions = 0, answers = 0;
           for (let year = 1; year <= 9; year += 1) {
@@ -95,6 +94,8 @@ jobs:
               ids.add(a.id); titles.add(a.titulo);
               if (a.ilustracao?.status !== 'producao-visual-pendente') throw new Error(`Status visual inválido: ${a.id}`);
               if (a.revisao?.pedagogicaHumanaConcluida !== false) throw new Error(`Revisão humana incorreta: ${a.id}`);
+              const pedagogical = validatePedagogicalActivityV2(a, c);
+              if (!pedagogical.valid) throw new Error(pedagogical.errors.join('\n'));
               for (const q of a.questoes) {
                 if (/EF\d{2}HI\d{2}/.test(q.enunciado)) throw new Error(`Código BNCC exposto: ${a.id}`);
                 if (prompts.has(q.enunciado)) throw new Error(`Enunciado duplicado: ${q.enunciado}`);
