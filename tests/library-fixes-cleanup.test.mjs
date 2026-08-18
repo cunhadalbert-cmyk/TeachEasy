@@ -24,7 +24,7 @@ test('biblioteca-fixes gera as 100 combinações sem tabela manual duplicada', (
   };
   vm.runInNewContext(prefix, context);
 
-  const configs = context.__collectionConfigs;
+  const configs = Array.from(context.__collectionConfigs);
   assert.equal(configs.length, 100);
   assert.equal(new Set(configs.map(item => item.collection)).size, 100);
 
@@ -42,9 +42,12 @@ test('biblioteca-fixes gera as 100 combinações sem tabela manual duplicada', (
     }
   }
 
-  const withExtras = configs.filter(item => item.extraPath);
+  const extraCollections = Array.from(
+    configs.filter(item => item.extraPath),
+    item => String(item.collection)
+  ).sort();
   assert.deepEqual(
-    withExtras.map(item => item.collection).sort(),
+    extraCollections,
     [
       '4ano-3bimestre-ciencias',
       '4ano-3bimestre-lingua-portuguesa',
