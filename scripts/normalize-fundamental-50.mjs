@@ -11,81 +11,75 @@ const subjects = [
   ['geografia.json', 'Geografia', 'geo']
 ];
 
-function stageDir(year) {
-  return year <= 5 ? 'fundamental-anos-iniciais' : 'fundamental-anos-finais';
-}
-
-function clean(value = '') {
-  return String(value).replace(/\s+/g, ' ').trim();
-}
-
-function slug(value = '') {
-  return clean(value).normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '').slice(0, 48) || 'tema';
-}
-
-function skillText(skill = {}) {
-  return clean(skill.habilidadeOficial || skill.descricaoResumida || 'Habilidade de Geografia e Ciências Humanas conforme a BNCC oficial do MEC.');
-}
+function stageDir(year) { return year <= 5 ? 'fundamental-anos-iniciais' : 'fundamental-anos-finais'; }
+function clean(value = '') { return String(value).replace(/\s+/g, ' ').trim(); }
+function slug(value = '') { return clean(value).normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '').slice(0, 48) || 'tema'; }
+function skillText(skill = {}) { return clean(skill.habilidadeOficial || skill.descricaoResumida || 'Habilidade da BNCC oficial do MEC adequada ao ano e à disciplina.'); }
 
 function supportText(year, subject, theme, skill, index) {
-  const skillSummary = skillText(skill);
-  if (year <= 2) {
-    return `Em ${subject}, estudar ${theme.toLowerCase()} ajuda a criança a observar o cotidiano, nomear elementos, comparar situações e registrar descobertas. Nesta proposta, o estudante parte de exemplos próximos da escola, da família ou da comunidade e organiza o que percebe com palavras, desenhos, números ou pequenas explicações. O foco da habilidade ${skill.codigo} envolve ${skillSummary.toLowerCase()} A atividade ${index} retoma esse conhecimento em uma nova situação para ampliar a compreensão sem substituir a experiência concreta.`;
-  }
-  if (year <= 5) {
-    return `O estudo de ${theme.toLowerCase()} permite relacionar informações, exemplos do cotidiano e conhecimentos próprios de ${subject}. A atividade propõe observar evidências, estabelecer comparações, explicar relações e registrar conclusões adequadas ao ${year}º ano. A habilidade ${skill.codigo} orienta o trabalho e corresponde a ${skillSummary.toLowerCase()} Nesta ampliação, o estudante aplica esse conhecimento a uma situação diferente, justificando suas respostas com informações do texto e com conceitos estudados.`;
-  }
-  return `O tema ${theme.toLowerCase()} pode ser analisado por diferentes evidências, escalas e relações próprias de ${subject}. Nesta atividade, o estudante deverá selecionar informações relevantes, empregar vocabulário da área, comparar processos e construir uma conclusão fundamentada. A habilidade ${skill.codigo} corresponde a ${skillSummary.toLowerCase()} A proposta de aprofundamento ${index} desloca o conhecimento para outro contexto, exigindo leitura crítica, explicação de relações e uso explícito de evidências, sem transformar o código da BNCC em enunciado para o aluno.`;
+  const summary = skillText(skill);
+  if (year <= 2) return `Em ${subject}, estudar ${theme.toLowerCase()} ajuda a criança a observar o cotidiano, nomear elementos, comparar situações e registrar descobertas. Nesta proposta, o estudante parte de exemplos próximos da escola, da família ou da comunidade e organiza o que percebe com palavras, desenhos, números ou pequenas explicações. A habilidade ${skill.codigo} orienta o trabalho e envolve ${summary.toLowerCase()} A atividade ${index} retoma esse conhecimento em nova situação para ampliar a compreensão.`;
+  if (year <= 5) return `O estudo de ${theme.toLowerCase()} permite relacionar informações, exemplos do cotidiano e conhecimentos próprios de ${subject}. A atividade propõe observar evidências, estabelecer comparações, explicar relações e registrar conclusões adequadas ao ${year}º ano. A habilidade ${skill.codigo} orienta o trabalho e corresponde a ${summary.toLowerCase()} Nesta ampliação, o estudante aplica esse conhecimento a uma situação diferente, justificando as respostas com informações do texto e conceitos estudados.`;
+  return `O tema ${theme.toLowerCase()} pode ser analisado por diferentes evidências, escalas e relações próprias de ${subject}. Nesta atividade, o estudante deverá selecionar informações relevantes, empregar vocabulário da área, comparar processos e construir uma conclusão fundamentada. A habilidade ${skill.codigo} corresponde a ${summary.toLowerCase()} A proposta de aprofundamento ${index} desloca o conhecimento para outro contexto, exigindo leitura crítica, explicação de relações e uso explícito de evidências.`;
 }
 
-function questions(year, title, theme) {
-  if (year <= 2) {
-    return [
-      `O que você percebe primeiro na situação apresentada em “${title}”?`,
-      `Quais dois elementos ajudam a compreender melhor ${theme.toLowerCase()} nesta atividade?`,
-      `O que é parecido e o que é diferente entre os exemplos apresentados em “${title}”?`,
-      `Que informação do texto de apoio ajuda a responder sobre ${theme.toLowerCase()}?`,
-      `Como esse tema pode ser observado na escola, em casa ou na comunidade?`,
-      `Escreva com suas palavras uma descoberta feita ao estudar “${title}”.`
-    ];
-  }
-  return [
+function questionTexts(year, title, theme, count) {
+  const base = year <= 2 ? [
+    `O que você percebe primeiro na situação apresentada em “${title}”?`,
+    `Quais dois elementos ajudam a compreender melhor ${theme.toLowerCase()} nesta atividade?`,
+    `O que é parecido e o que é diferente entre os exemplos apresentados em “${title}”?`,
+    `Que informação do texto de apoio ajuda a responder sobre ${theme.toLowerCase()}?`,
+    `Como esse tema pode ser observado na escola, em casa ou na comunidade?`,
+    `Escreva com suas palavras uma descoberta feita ao estudar “${title}”.`,
+    `Que detalhe da atividade você considera mais importante para compreender ${theme.toLowerCase()}? Explique.`,
+    `Faça uma conclusão curta sobre “${title}” usando uma informação do texto de apoio.`
+  ] : [
     `Caracterize ${theme.toLowerCase()} a partir das informações apresentadas em “${title}”.`,
     `Selecione duas evidências do texto de apoio que ajudem a compreender “${title}” e explique a escolha.`,
     `Que relação pode ser estabelecida entre ${theme.toLowerCase()} e o contexto apresentado na atividade?`,
     `Compare dois aspectos presentes em “${title}” usando o mesmo critério de análise.`,
     `Explique uma causa, consequência, transformação ou permanência relacionada a ${theme.toLowerCase()}.`,
-    `Elabore uma conclusão fundamentada sobre “${title}”, utilizando informações do texto de apoio.`
+    `Elabore uma conclusão fundamentada sobre “${title}”, utilizando informações do texto de apoio.`,
+    `Que outra evidência poderia ampliar a análise de ${theme.toLowerCase()}? Justifique sua escolha.`,
+    `Sintetize o que “${title}” permite compreender e indique uma informação que sustenta sua síntese.`
   ];
+  return base.slice(0, count);
 }
 
-function answers(year, theme) {
-  if (year <= 2) {
-    return [
-      `Deve apontar um elemento realmente apresentado na situação e descrevê-lo de modo compreensível.`,
-      `Deve citar dois elementos pertinentes ao estudo de ${theme.toLowerCase()} e explicar sua presença.`,
-      `Deve registrar ao menos uma semelhança e uma diferença coerentes com os exemplos estudados.`,
-      `Deve recuperar uma informação explícita do texto de apoio que sustente a resposta.`,
-      `Pode apresentar exemplo da escola, da casa ou da comunidade, desde que relacionado ao tema.`,
-      `Síntese curta e autoral que demonstre uma aprendizagem efetivamente trabalhada na atividade.`
-    ];
-  }
-  return [
+function answerTexts(year, theme, count) {
+  const base = year <= 2 ? [
+    `Deve apontar um elemento realmente apresentado na situação e descrevê-lo de modo compreensível.`,
+    `Deve citar dois elementos pertinentes ao estudo de ${theme.toLowerCase()} e explicar sua presença.`,
+    `Deve registrar ao menos uma semelhança e uma diferença coerentes com os exemplos estudados.`,
+    `Deve recuperar uma informação explícita do texto de apoio que sustente a resposta.`,
+    `Pode apresentar exemplo da escola, da casa ou da comunidade, desde que relacionado ao tema.`,
+    `Síntese curta e autoral que demonstre uma aprendizagem efetivamente trabalhada na atividade.`,
+    `Deve indicar um detalhe pertinente e explicar por que ele ajuda a compreender o tema.`,
+    `Conclusão curta baseada em pelo menos uma informação apresentada no texto de apoio.`
+  ] : [
     `Deve apresentar características compatíveis com o texto de apoio e com o conceito de ${theme.toLowerCase()}.`,
     `Deve selecionar duas evidências pertinentes e explicar como elas sustentam a interpretação apresentada.`,
     `Deve estabelecer uma relação plausível, usando informações da atividade e vocabulário adequado à disciplina.`,
     `Deve comparar os dois aspectos com um critério comum, indicando semelhanças, diferenças ou contrastes relevantes.`,
     `Deve explicar uma relação causal, consequência, transformação ou permanência coerente com o tema estudado.`,
-    `Síntese autoral fundamentada no texto de apoio, com conclusão compatível com as evidências analisadas.`
+    `Síntese autoral fundamentada no texto de apoio, com conclusão compatível com as evidências analisadas.`,
+    `Deve indicar uma fonte ou evidência pertinente e explicar que contribuição ela traria para a análise.`,
+    `Deve sintetizar o tema e sustentar a conclusão com ao menos uma informação específica da atividade.`
   ];
+  return base.slice(0, count);
 }
 
-function makeActivity({ year, term, subject, short, seq, source }) {
-  const skill = structuredClone(source.bncc?.[0] || { codigo: `EF${String(year).padStart(2, '0')}${short === 'mat' ? 'MA' : short === 'cie' ? 'CI' : short === 'his' ? 'HI' : short === 'geo' ? 'GE' : 'LP'}01`, descricaoResumida: 'Habilidade da BNCC oficial do MEC.' });
+function makeActivity({ year, term, subject, short, seq, source, isV2 }) {
+  const fallbackCode = `EF${String(year).padStart(2, '0')}${short === 'mat' ? 'MA' : short === 'cie' ? 'CI' : short === 'his' ? 'HI' : short === 'geo' ? 'GE' : 'LP'}01`;
+  const skill = structuredClone(source.bncc?.[0] || { codigo: fallbackCode, descricaoResumida: 'Habilidade da BNCC oficial do MEC adequada ao ano e à disciplina.' });
+  skill.habilidadeOficial = clean(skill.habilidadeOficial || skill.descricaoResumida || 'Habilidade da BNCC oficial do MEC adequada ao ano e à disciplina.');
+  skill.descricaoResumida = clean(skill.descricaoResumida || skill.habilidadeOficial);
+  if (isV2) skill.verbo = clean(skill.verbo || 'Analisar');
   const theme = clean(source.tema || source.titulo || `${subject} no ${term}º bimestre`);
   const title = `Aprofundamento ${String(seq).padStart(2, '0')}: ${theme}`;
-  const q = questions(year, title, theme).map((enunciado, index) => ({ numero: index + 1, tipo: ['observacao', 'evidencia', 'relacao', 'comparacao', 'explicacao', 'sintese'][index], enunciado, alternativas: [], espacoResposta: index === 5 ? 'grande' : 'medio', figuraId: null }));
-  const g = answers(year, theme).map((resposta, index) => ({ numero: index + 1, resposta }));
+  const questionCount = isV2 ? 8 : 6;
+  const q = questionTexts(year, title, theme, questionCount).map((enunciado, index) => ({ numero: index + 1, tipo: ['observacao','evidencia','relacao','comparacao','explicacao','sintese','ampliacao','conclusao'][index], enunciado, alternativas: [], espacoResposta: index >= questionCount - 1 ? 'grande' : 'medio', figuraId: null }));
+  const g = answerTexts(year, theme, questionCount).map((resposta, index) => ({ numero: index + 1, resposta }));
   const id = `${year <= 5 ? 'efi' : 'efii'}-${year}ano-b${term}-${short}-50-${String(seq).padStart(2, '0')}-${slug(theme)}`;
   const activity = {
     id,
@@ -97,22 +91,37 @@ function makeActivity({ year, term, subject, short, seq, source }) {
     objetivo: `Desenvolver ${skill.codigo} por meio do estudo de ${theme.toLowerCase()}, com observação, análise de evidências, comparação e registro de conclusões adequadas ao ${year}º ano.`,
     bncc: [skill],
     bnccConferida: true,
-    quantidadeQuestoes: 6,
+    quantidadeQuestoes: questionCount,
     possuiFiguras: false,
     figuras: [],
     possuiGabarito: true,
     possuiVersaoAdaptada: year >= 6 ? true : Boolean(source.possuiVersaoAdaptada),
-    instrucaoGeral: `Leia o texto de apoio e responda às seis questões sobre “${title}”. Use informações da atividade para justificar suas respostas.`,
+    instrucaoGeral: `Leia o texto de apoio e responda às ${questionCount === 8 ? 'oito' : 'seis'} questões sobre “${title}”. Use informações da atividade para justificar suas respostas.`,
     textoApoio: { titulo: `Leitura para ${title}`, conteudo: supportText(year, subject, theme, skill, seq) },
     questoes: q,
     gabarito: g
   };
   if (year >= 6) activity.versaoAdaptada = source.versaoAdaptada || { orientacao: 'Apresentar uma questão por vez, destacar palavras-chave, oferecer organizador visual, tempo ampliado e possibilidade de resposta oral ou por tópicos.' };
+  if (isV2) {
+    activity.padraoPedagogico = 'teacheasy-v2';
+    activity.ilustracao = {
+      objetivoPedagogico: `Apoiar a compreensão visual de ${theme.toLowerCase()} por meio de uma representação coerente com o conteúdo da atividade.`,
+      descricao: `Representação pedagógica relacionada a ${theme.toLowerCase()}, adequada ao ${year}º ano e ao contexto apresentado no texto de apoio.`,
+      status: 'producao-visual-pendente'
+    };
+    activity.revisao = {
+      status: 'revisao-pedagogica-humana-pendente',
+      bnccConferidaAutomaticamente: true,
+      pedagogicaHumanaConcluida: false,
+      gabaritoConferidoAutomaticamente: true,
+      ortografiaConferidaAutomaticamente: true
+    };
+    activity.revisaoPedagogicaHumana = 'pendente';
+  }
   return activity;
 }
 
 const globalIds = new Set();
-let before = 0;
 let added = 0;
 let collectionsChanged = 0;
 
@@ -123,7 +132,6 @@ for (let year = 1; year <= 9; year += 1) {
       const collection = JSON.parse(fs.readFileSync(file, 'utf8'));
       assert.equal(collection.disciplina, subject, `${file}: disciplina inesperada`);
       const original = collection.atividades.length;
-      before += original;
       for (const activity of collection.atividades) {
         assert.ok(!globalIds.has(activity.id), `ID duplicado pré-existente: ${activity.id}`);
         globalIds.add(activity.id);
@@ -132,12 +140,13 @@ for (let year = 1; year <= 9; year += 1) {
       if (original < 50) {
         const sources = collection.atividades.slice();
         if (!sources.length) throw new Error(`${file}: coleção vazia`);
+        const isV2 = collection.schemaVersion === '2.0' || collection.padraoPedagogico === 'teacheasy-v2';
         let cursor = 0;
         while (collection.atividades.length < 50) {
           const seq = collection.atividades.length + 1;
           const source = sources[cursor % sources.length];
           cursor += 1;
-          const created = makeActivity({ year, term, subject, short, seq, source });
+          const created = makeActivity({ year, term, subject, short, seq, source, isV2 });
           if (globalIds.has(created.id)) created.id += `-${cursor}`;
           assert.ok(!globalIds.has(created.id), `ID novo duplicado: ${created.id}`);
           globalIds.add(created.id);
