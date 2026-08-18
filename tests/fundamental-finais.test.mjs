@@ -15,7 +15,7 @@ const subjects = [
   ['geografia.json', 'Geografia']
 ];
 
-test('Anos Finais possuem 3.320 atividades nas 80 coleções oficiais', () => {
+test('Anos Finais possuem 3.360 atividades nas 80 coleções oficiais', () => {
   const globalIds = new Set();
   const byGrade = new Map();
   const bySubject = new Map();
@@ -61,9 +61,9 @@ test('Anos Finais possuem 3.320 atividades nas 80 coleções oficiais', () => {
   }
 
   assert.equal(files, 80);
-  assert.equal(total, 3320);
-  grades.forEach(grade => assert.equal(byGrade.get(grade), 830));
-  subjects.forEach(([, subject]) => assert.equal(bySubject.get(subject), ['Língua Portuguesa', 'Matemática', 'Ciências'].includes(subject) ? 680 : 640));
+  assert.equal(total, 3360);
+  grades.forEach(grade => assert.equal(byGrade.get(grade), 840));
+  subjects.forEach(([, subject]) => assert.equal(bySubject.get(subject), ['Língua Portuguesa', 'Matemática', 'Ciências', 'História'].includes(subject) ? 680 : 640));
 });
 
 test('Biblioteca carrega uma coleção de Anos Finais por seleção', () => {
@@ -112,5 +112,5 @@ test('Anos Finais possuem conteúdo aprofundado e BNCC conferida', () => {
     }
   }
 
-  assert.equal(total, 3320);
+  assert.equal(total, 3360);
 });

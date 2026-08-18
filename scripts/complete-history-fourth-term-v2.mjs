@@ -108,8 +108,8 @@ function qset(year,title,sk){
     `O que mudou ou permaneceu na situação apresentada em “${title}”?`,
     `Que fonte — fotografia, relato, objeto ou documento — ajudaria a conhecer melhor “${title}”?`,
     `Conte com suas palavras o que aconteceu ou como a situação se organiza em “${title}”.`,
-    `Que relação essa história tem com a família, a escola ou a comunidade?`,
-    `Por que duas pessoas podem lembrar ou explicar uma situação de modos diferentes?`,
+    `Que relação “${title}” tem com a família, a escola ou a comunidade?`,
+    `Por que duas pessoas podem lembrar ou explicar “${title}” de modos diferentes?`,
     `Escreva uma conclusão curta sobre o que você aprendeu em “${title}”.`
   ] : [
     `Contextualize historicamente o tema apresentado em “${title}” com base no texto de apoio.`,
@@ -141,10 +141,10 @@ function activity(year,seq,sk,ctx){
     id:`${year<=5?'efi':'efii'}-${year}ano-b4-his-v2-${String(seq).padStart(2,'0')}-${slug(sk.topic)}-${slug(ctx[0])}`,
     titulo:title,tema:sk.topic,sequencia:`Atividade ${seq}`,sequenciaNumero:seq,tipoSequencia:'Coleção principal V2',padraoPedagogico:'teacheasy-v2',dificuldade:`adequada-${year}-ano`,
     objetivo:`Analisar ${sk.topic.toLowerCase()} por meio de contextualização, leitura de fontes, comparação e construção de explicações históricas adequadas ao ${year}º ano.`,
-    bncc:[{codigo:sk.code,habilidadeOficial:sk.official,descricaoResumida:sk.official}],bnccConferida:true,quantidadeQuestoes:8,possuiFiguras:false,figuras:[],possuiGabarito:true,possuiVersaoAdaptada:false,
+    bncc:[{codigo:sk.code,habilidadeOficial:sk.official,descricaoResumida:sk.official,verbo:sk.official.split(/\s+/)[0]}],bnccConferida:true,quantidadeQuestoes:8,possuiFiguras:false,figuras:[],possuiGabarito:true,possuiVersaoAdaptada:false,
     instrucaoGeral:'Leia o texto de apoio, observe as evidências apresentadas e responda às oito questões. O gabarito está registrado separadamente.',
-    textoApoio:{titulo:title,conteudo:`${sk.core} ${ctx[1]} Nesta atividade, o objetivo é interpretar o tema historicamente, distinguindo evidências, contextos e pontos de vista.`},
-    ilustracao:{descricao:`Cena pedagógica sobre ${sk.topic.toLowerCase()}, relacionada a ${ctx[0]}, com fontes ou elementos históricos coerentes e sem anacronismos.`,status:'producao-visual-pendente',estilo:`TeachEasy — ilustração histórica pedagógica adequada ao ${year}º ano`},
+    textoApoio:{titulo:`Leitura histórica — ${title}`,conteudo:`${sk.core} ${ctx[1]} Nesta atividade, o objetivo é interpretar o tema historicamente, distinguindo evidências, contextos e pontos de vista.`},
+    ilustracao:{objetivoPedagogico:`Apoiar a interpretação histórica de ${sk.topic.toLowerCase()} por meio de evidências visuais coerentes.`,descricao:`Cena pedagógica sobre ${sk.topic.toLowerCase()}, relacionada a ${ctx[0]}, com fontes ou elementos históricos coerentes e sem anacronismos.`,status:'producao-visual-pendente',estilo:`TeachEasy — ilustração histórica pedagógica adequada ao ${year}º ano`},
     questoes:qset(year,title,sk),gabarito:aset(year,title,sk),
     revisao:{status:'revisao-pedagogica-humana-pendente',bnccConferidaAutomaticamente:true,pedagogicaHumanaConcluida:false,gabaritoConferidoAutomaticamente:true,ortografiaConferidaAutomaticamente:true,conteudoAutoral:true,revisor:'validacao-automatica-teacheasy',dataValidacao:'2026-08-18'},
     revisaoPedagogicaHumana:'pendente'
@@ -192,7 +192,7 @@ fs.writeFileSync(path.join(root,'tests','fundamental-iniciais-bncc.test.mjs'),in
 
 let finals=fs.readFileSync(path.join(root,'tests','fundamental-finais.test.mjs'),'utf8');
 finals=finals.replace('3.320 atividades','3.360 atividades');
-finals=finals.replace('assert.equal(total, 3320);','assert.equal(total, 3360);');
+finals=finals.replaceAll('assert.equal(total, 3320);','assert.equal(total, 3360);');
 finals=finals.replace('grades.forEach(grade => assert.equal(byGrade.get(grade), 830));','grades.forEach(grade => assert.equal(byGrade.get(grade), 840));');
 finals=finals.replace("['Língua Portuguesa', 'Matemática', 'Ciências'].includes(subject) ? 680 : 640","['Língua Portuguesa', 'Matemática', 'Ciências', 'História'].includes(subject) ? 680 : 640");
 fs.writeFileSync(path.join(root,'tests','fundamental-finais.test.mjs'),finals,'utf8');

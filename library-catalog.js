@@ -21,7 +21,7 @@
       subject,
       path: `data/atividades/${initialYears ? 'fundamental-anos-iniciais' : 'fundamental-anos-finais'}/${year}-ano/${term}-bimestre/${definition.file}.json`,
       collection,
-      count: countExceptions[collection] || (term === 4 && ['Língua Portuguesa', 'Matemática', 'Ciências'].includes(subject) ? 50 : (initialYears ? 30 : 40)),
+      count: countExceptions[collection] || (term === 4 && ['Língua Portuguesa', 'Matemática', 'Ciências', 'História'].includes(subject) ? 50 : (initialYears ? 30 : 40)),
       stage: initialYears ? 'Ensino Fundamental I' : 'Ensino Fundamental II',
       grade: `${year}º ano`,
       symbol: definition.symbol,
