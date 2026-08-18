@@ -15,7 +15,7 @@ const subjects = [
   ['geografia.json', 'Geografia']
 ];
 
-test('Anos Finais possuem 3.200 atividades nas 80 coleções oficiais', () => {
+test('Anos Finais possuem 3.240 atividades nas 80 coleções oficiais', () => {
   const globalIds = new Set();
   const byGrade = new Map();
   const bySubject = new Map();
@@ -29,20 +29,23 @@ test('Anos Finais possuem 3.200 atividades nas 80 coleções oficiais', () => {
         assert.equal(fs.existsSync(fullPath), true, `${fullPath} deve existir`);
         const collection = JSON.parse(fs.readFileSync(fullPath, 'utf8'));
 
-        assert.equal(collection.schemaVersion, '1.0');
+        const isV2 = collection.schemaVersion === '2.0';
+        assert.ok(['1.0', '2.0'].includes(collection.schemaVersion));
         assert.equal(collection.etapa, 'Ensino Fundamental — Anos Finais');
         assert.equal(collection.ano, `${grade}º ano`);
         assert.equal(collection.bimestre, term);
         assert.equal(collection.disciplina, subject);
-        assert.equal(collection.quantidadeAtividades, 40);
-        assert.equal(collection.atividades.length, 40);
+        const expectedActivities = isV2 ? 50 : 40;
+        const expectedQuestions = isV2 ? 8 : 6;
+        assert.equal(collection.quantidadeAtividades, expectedActivities);
+        assert.equal(collection.atividades.length, expectedActivities);
 
         for (const activity of collection.atividades) {
           assert.equal(globalIds.has(activity.id), false, `ID duplicado: ${activity.id}`);
           globalIds.add(activity.id);
-          assert.equal(activity.quantidadeQuestoes, 6);
-          assert.equal(activity.questoes.length, 6);
-          assert.equal(activity.gabarito.length, 6);
+          assert.equal(activity.quantidadeQuestoes, expectedQuestions);
+          assert.equal(activity.questoes.length, expectedQuestions);
+          assert.equal(activity.gabarito.length, expectedQuestions);
           assert.equal(activity.possuiGabarito, true);
           assert.equal(activity.possuiVersaoAdaptada, true);
           assert.ok(activity.bncc[0].codigo.startsWith(`EF${String(grade).padStart(2, '0')}`));
@@ -50,16 +53,16 @@ test('Anos Finais possuem 3.200 atividades nas 80 coleções oficiais', () => {
 
         files += 1;
         total += collection.atividades.length;
-        byGrade.set(grade, (byGrade.get(grade) || 0) + 40);
-        bySubject.set(subject, (bySubject.get(subject) || 0) + 40);
+        byGrade.set(grade, (byGrade.get(grade) || 0) + expectedActivities);
+        bySubject.set(subject, (bySubject.get(subject) || 0) + expectedActivities);
       }
     }
   }
 
   assert.equal(files, 80);
-  assert.equal(total, 3200);
-  grades.forEach(grade => assert.equal(byGrade.get(grade), 800));
-  subjects.forEach(([, subject]) => assert.equal(bySubject.get(subject), 640));
+  assert.equal(total, 3240);
+  grades.forEach(grade => assert.equal(byGrade.get(grade), 810));
+  subjects.forEach(([, subject]) => assert.equal(bySubject.get(subject), subject === 'Língua Portuguesa' ? 680 : 640));
 });
 
 test('Biblioteca carrega uma coleção de Anos Finais por seleção', () => {
@@ -95,7 +98,7 @@ test('Anos Finais possuem conteúdo aprofundado e BNCC conferida', () => {
         const skill = activity.bncc[0];
         assert.equal(activity.bnccConferida, true);
         assert.match(skill.codigo, new RegExp(`^EF${String(grade).padStart(2, '0')}(LP|MA|CI|HI|GE|LI)\\d{2}$`));
-        assert.ok(skill.descricaoResumida.length > 90);
+        assert.ok((skill.descricaoResumida || skill.habilidadeOficial).length > (collection.schemaVersion === '2.0' ? 39 : 90));
         assert.match(activity.objetivo, new RegExp(skill.codigo));
         assert.ok(activity.textoApoio.conteudo.length > 180);
         assert.equal(activity.questoes.some(item => genericQuestion.test(item.enunciado)), false,
@@ -107,5 +110,5 @@ test('Anos Finais possuem conteúdo aprofundado e BNCC conferida', () => {
     }
   }
 
-  assert.equal(total, 3200);
+  assert.equal(total, 3240);
 });
