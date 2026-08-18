@@ -1,0 +1,92 @@
+name: Validate staged Geography V2
+
+on:
+  pull_request:
+    branches:
+      - automation/geography-validation-base-20260818
+    types:
+      - opened
+      - synchronize
+      - reopened
+
+permissions:
+  contents: write
+
+concurrency:
+  group: validate-staged-geography-v2
+  cancel-in-progress: true
+
+jobs:
+  build-validate-publish-staging:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout staging head
+        uses: actions/checkout@v4
+        with:
+          ref: automation/geography-4b-20260818
+          fetch-depth: 0
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - name: Install dependencies
+        run: npm ci
+      - name: Generate canonical Geography V2 collections
+        run: node scripts/complete-geography-fourth-term-v2.mjs
+      - name: Validate Geography invariants
+        shell: bash
+        run: |
+          node --input-type=module <<'NODE'
+          import fs from 'node:fs'; import path from 'node:path';
+          const ids=new Set(),titles=new Set(),prompts=new Set(); let a=0,q=0,g=0;
+          for(let y=1;y<=9;y++){
+            const s=y<=5?'fundamental-anos-iniciais':'fundamental-anos-finais';
+            const c=JSON.parse(fs.readFileSync(path.join('data','atividades',s,`${y}-ano`,'4-bimestre','geografia.json'),'utf8'));
+            if(c.schemaVersion!=='2.0'||c.padraoPedagogico!=='teacheasy-v2'||c.atividades.length!==50) throw new Error(`Coleção inválida ${y}`);
+            for(const x of c.atividades){
+              if(x.questoes.length!==8||x.gabarito.length!==8) throw new Error(`8/8 inválido ${x.id}`);
+              if(ids.has(x.id)||titles.has(x.titulo)) throw new Error(`ID/título duplicado ${x.id}`);
+              ids.add(x.id);titles.add(x.titulo);
+              if(x.ilustracao?.status!=='producao-visual-pendente') throw new Error(`visual ${x.id}`);
+              if(x.revisao?.pedagogicaHumanaConcluida!==false) throw new Error(`revisão ${x.id}`);
+              for(const z of x.questoes){if(/EF\d{2}GE\d{2}/.test(z.enunciado)) throw new Error(`BNCC exposta ${x.id}`);if(prompts.has(z.enunciado)) throw new Error(`prompt duplicado ${z.enunciado}`);prompts.add(z.enunciado);}
+              a++;q+=8;g+=8;
+            }
+          }
+          if(a!==450||q!==3600||g!==3600||prompts.size!==3600) throw new Error(`Totais ${a}/${q}/${g}/${prompts.size}`);
+          console.log(`Geografia OK: ${a} atividades; ${q} questões; ${g} respostas; ${prompts.size} enunciados únicos.`);
+          NODE
+      - name: Run complete project suite
+        run: npm run validate
+      - name: Guard other fourth-term subjects
+        shell: bash
+        run: |
+          if git diff --name-only 97a60aa7e448dc642d1bdc85807e370d80da951e -- 'data/atividades/**/4-bimestre/*.json' | grep -E '/(lingua-portuguesa|matematica|ciencias|historia)\.json$'; then
+            echo 'ERRO: outra disciplina do 4º bimestre foi alterada.'
+            exit 1
+          fi
+      - name: Publish only validated staging result
+        shell: bash
+        run: |
+          rm -f docs/auditoria-figuras.md
+          git config user.name 'TeachEasy Validation'
+          git config user.email 'actions@users.noreply.github.com'
+          git add \
+            library-catalog.js package.json docs/estado-projeto.md \
+            scripts/complete-geography-fourth-term-v2.mjs \
+            tests/fundamental-iniciais-bncc.test.mjs \
+            tests/fundamental-finais.test.mjs \
+            tests/geography-fourth-term-v2.test.mjs \
+            data/atividades/fundamental-anos-iniciais/1-ano/4-bimestre/geografia.json \
+            data/atividades/fundamental-anos-iniciais/2-ano/4-bimestre/geografia.json \
+            data/atividades/fundamental-anos-iniciais/3-ano/4-bimestre/geografia.json \
+            data/atividades/fundamental-anos-iniciais/4-ano/4-bimestre/geografia.json \
+            data/atividades/fundamental-anos-iniciais/5-ano/4-bimestre/geografia.json \
+            data/atividades/fundamental-anos-finais/6-ano/4-bimestre/geografia.json \
+            data/atividades/fundamental-anos-finais/7-ano/4-bimestre/geografia.json \
+            data/atividades/fundamental-anos-finais/8-ano/4-bimestre/geografia.json \
+            data/atividades/fundamental-anos-finais/9-ano/4-bimestre/geografia.json
+          git commit -m 'Staging Geografia V2 validada'
+          git push origin HEAD:automation/geography-4b-20260818
