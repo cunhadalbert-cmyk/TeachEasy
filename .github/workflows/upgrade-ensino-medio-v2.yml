@@ -46,3 +46,5 @@ jobs:
           git add data/atividades/ensino-medio
           git commit -m "Converte Ensino Medio para 3.000 atividades V2"
           git push origin HEAD:refactor/ensino-medio-v2
+
+# Alteração intencional para disparar o primeiro processamento completo após o workflow já existir na branch.
