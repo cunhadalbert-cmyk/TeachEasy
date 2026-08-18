@@ -13,7 +13,7 @@ on:
       - main
 
 permissions:
-  contents: read
+  contents: write
 
 concurrency:
   group: validate-${{ github.workflow }}-${{ github.ref }}
@@ -23,11 +23,37 @@ jobs:
   validate:
     name: HTML, JavaScript and functional tests
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 20
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          ref: ${{ github.head_ref || github.ref_name }}
+          fetch-depth: 0
+
+      - name: Set up Python for Ensino Médio V2
+        if: github.event_name == 'pull_request' && github.head_ref == 'refactor/ensino-medio-v2'
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Upgrade Ensino Médio para V2
+        if: github.event_name == 'pull_request' && github.head_ref == 'refactor/ensino-medio-v2'
+        run: |
+          python -m pip install --disable-pip-version-check pypdf
+          python scripts/upgrade-ensino-medio-v2.py
+
+      - name: Publicar conversão gerada
+        if: github.event_name == 'pull_request' && github.head_ref == 'refactor/ensino-medio-v2'
+        run: |
+          if [ -n "$(git status --porcelain data/atividades/ensino-medio)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add data/atividades/ensino-medio
+            git commit -m "Converte Ensino Medio para 3.000 atividades V2"
+            git push origin HEAD:refactor/ensino-medio-v2
+          fi
 
       - name: Set up Node.js
         uses: actions/setup-node@v4
