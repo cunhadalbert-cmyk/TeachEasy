@@ -21,8 +21,10 @@ pele clara, cabelo loiro dourado preso em rabo de cavalo alto, óculos de grau p
 4) Menino de verde:
 pele clara a levemente bronzeada, cabelo preto curto e cheio, sem óculos, sorriso amplo, camiseta verde com dinossauro divertido, bermuda escura e tênis preto e branco.
 
-5) Cachorro oficial:
+5) Cachorro oficial Nino:
 cachorro pequeno, simpático, tipo poodle pequeno, pelagem encaracolada cinza mesclada com preto, olhos amigáveis, sem coleira, sem roupa e sem acessórios.
+
+REGRA ABSOLUTA DE QUANTIDADE DO ELENCO: cada personagem oficial pode aparecer NO MÁXIMO UMA VEZ na imagem. NÃO duplique nenhum personagem. NÃO crie irmãos, versões menores, filhotes, clones, variações, personagens adicionais ou pessoas extras que pareçam pertencer ao elenco TeachEasy. O único animal permitido é Nino. Se Nino for usado, ele deve aparecer EXATAMENTE UMA VEZ. Nunca gere segundo cachorro, filhote, outro cão, gato ou qualquer animal adicional. Se o tema não exigir Nino, prefira não usá-lo.
 
 Escolha somente os personagens necessários para comunicar a cena com clareza; um ou dois personagens costumam ser suficientes e use mais apenas quando o conteúdo realmente exigir. O cachorro aparece somente quando fizer sentido na cena. Não acrescente personagens fora do elenco oficial. Sempre que um personagem for usado, preserve integralmente sua identidade: o menino moreno SEMPRE usa óculos; o menino de verde NUNCA usa óculos; a menina menor SEMPRE usa óculos; a menina maior NUNCA usa óculos. NÃO troque roupas entre personagens. As roupas podem ter variações coloridas e coerentes, preservando os elementos, cores-base e características que identificam cada personagem.`;
 
@@ -41,14 +43,14 @@ Mantenha o mesmo acabamento visual da referência: renderização digital 3D inf
 Adapte somente o necessário ao conteúdo escolar. Não inclua textos, letras, números escritos, respostas, logotipos ou marcas d'água. Use composição HORIZONTAL, com somente os personagens necessários totalmente visíveis e sem cortes de rostos, cabeças, braços ou pés, adequada para ocupar aproximadamente metade de uma folha A4 ao lado do texto.`;
 
   const geography = /geograf|migra|famílias migrantes|campo|cidade|paisagem|território|mapa|trajeto/i.test(`${subject} ${topic} ${context}`)
-    ? ' Para Geografia, acrescente elementos simples, claros e didáticos relacionados ao tema ao redor do elenco. Se envolver migração, use malas, caixas, trajeto, chegada, mudança de moradia, mapa ou mudança de paisagem. Não altere rostos, cabelos, óculos, roupas ou estilo do elenco para representar o tema. Preserve os personagens antes de qualquer detalhe de cenário.'
+    ? ' Para Geografia, acrescente elementos simples, claros e didáticos relacionados ao tema ao redor do elenco. Se envolver migração, use malas, caixas, trajeto, chegada, mudança de moradia, mapa ou mudança de paisagem. Não altere rostos, cabelos, óculos, roupas ou estilo do elenco para representar o tema. Preserve os personagens antes de qualquer detalhe de cenário. Não adicione animais para preencher a composição; Nino só pode aparecer uma vez e apenas se for pedagogicamente necessário.'
     : '';
 
   const math = /matem|número|adição|subtração|multiplica|divis|fraç|decimal|milhar|centena|dezena|unidade|geometr/i.test(`${subject} ${topic} ${context}`)
     ? ' Para Matemática, use materiais manipuláveis visuais como blocos de base dez, material dourado, cubos, barras, fichas, cartões, formas geométricas e agrupamentos, sem escrever operações ou respostas. Preserve integralmente o elenco oficial e mude somente os objetos pedagógicos ao redor dele.'
     : '';
 
-  return `${style}${geography}${math} Disciplina: ${subject}. Tema: ${topic}. Contexto pedagógico: ${context || topic}. ORDEM DE PRIORIDADE: 1) preservar integralmente a cena pedagógica e seus elementos essenciais; 2) integrar os personagens TeachEasy como participantes ativos e naturais da cena; 3) preservar visualmente os personagens da imagem de entrada sem redesenhá-los; 4) identidade visual exata dos personagens selecionados; 5) rosto, cabelo, óculos, roupas-base, proporções, contornos e cores principais idênticos à referência; 6) ação pedagógica; 7) cenário complementar. Se houver conflito, nunca elimine conteúdo essencial da cena e nunca descaracterize o elenco oficial; simplifique apenas elementos secundários.`;
+  return `${style}${geography}${math} Disciplina: ${subject}. Tema: ${topic}. Contexto pedagógico: ${context || topic}. ORDEM DE PRIORIDADE: 1) preservar integralmente a cena pedagógica e seus elementos essenciais; 2) integrar os personagens TeachEasy como participantes ativos e naturais da cena; 3) respeitar rigorosamente a quantidade do elenco, sem duplicações e sem animais extras; 4) preservar visualmente os personagens da imagem de entrada sem redesenhá-los; 5) identidade visual exata dos personagens selecionados; 6) rosto, cabelo, óculos, roupas-base, proporções, contornos e cores principais idênticos à referência; 7) ação pedagógica; 8) cenário complementar. Se houver conflito, nunca elimine conteúdo essencial da cena, nunca duplique o elenco e nunca descaracterize os personagens oficiais; simplifique apenas elementos secundários.`;
 }
 
 function apiError(message, status) {
