@@ -19,11 +19,20 @@
     return PRIMARY_SUBJECTS_FUNDAMENTAL_I.has(subject);
   }
 
+  function isFundamentalSelection() {
+    return ['Ensino Fundamental I', 'Ensino Fundamental II'].includes(navigation.stage)
+      && Boolean(navigation.grade)
+      && Boolean(navigation.term);
+  }
+
   const originalMatchesFilters = matchesFilters;
   matchesFilters = function matchesFiltersWithPrimarySubjects(activity, filters) {
     if (activity.stage === 'Ensino Fundamental I'
       && ['1º ano', '2º ano', '3º ano', '4º ano', '5º ano'].includes(activity.grade)
       && !isPrimaryFundamentalISubject(activity.subject)) {
+      return false;
+    }
+    if (isFundamentalSelection() && !filters.subject) {
       return false;
     }
     return originalMatchesFilters(activity, filters);
@@ -51,35 +60,27 @@
             ? Object.keys(highSchoolSubjects)
             : uniqueSorted('subject');
 
-    select.replaceChildren(allOption || new Option('Todas as disciplinas', ''));
+    const defaultOption = allOption || new Option('Todas as disciplinas', '');
+    defaultOption.textContent = (isInitialYears || isFinalYears) ? 'Escolha uma disciplina' : 'Todas as disciplinas';
+    select.replaceChildren(defaultOption);
     values.forEach(value => select.append(new Option(value, value)));
     select.value = values.includes(currentValue) ? currentValue : '';
   }
 
-  const originalEnsureSelectedCollection = ensureSelectedCollection;
-  ensureSelectedCollection = async function ensureSelectedCollectionWithAllFundamentalSubjects() {
-    const isFundamental = ['Ensino Fundamental I', 'Ensino Fundamental II'].includes(navigation.stage);
-    const select = filterForm.elements.subject;
-    if (!isFundamental || !navigation.grade || !navigation.term || select.value) {
-      return originalEnsureSelectedCollection();
+  function syncFundamentalCollectionGuidance() {
+    if (!isFundamentalSelection()) return;
+    const subject = filterForm.elements.subject.value;
+    if (!subject) {
+      stepTitle.textContent = 'Escolha uma disciplina';
+      stepHelp.textContent = 'Cada disciplina possui 50 atividades. Selecione uma disciplina para abrir a coleção completa.';
+      activityGrid.hidden = true;
+      emptyState.hidden = true;
+      pagination.hidden = true;
+      return;
     }
-
-    const previousValue = select.value;
-    const failures = [];
-    for (const subject of Object.keys(SUBJECT_DEFINITIONS)) {
-      select.value = subject;
-      try {
-        await originalEnsureSelectedCollection();
-      } catch (error) {
-        failures.push(error);
-      }
-    }
-    select.value = previousValue;
-
-    if (failures.length) {
-      throw failures[0];
-    }
-  };
+    stepTitle.textContent = 'Escolha uma atividade';
+    stepHelp.textContent = `${subject} · 50 atividades nesta coleção.`;
+  }
 
   const originalRenderNavigation = renderNavigation;
   renderNavigation = function renderNavigationWithPrimarySubjects() {
@@ -88,7 +89,12 @@
     if (!navigation.stage && !autismCategory) {
       stepHelp.textContent = `${TOTAL_LIBRARY_ACTIVITIES.toLocaleString('pt-BR')} atividades educacionais organizadas por etapa, bimestre e recursos de inclusão.`;
     }
+    syncFundamentalCollectionGuidance();
   };
+
+  filterForm.elements.subject.addEventListener('change', () => {
+    requestAnimationFrame(syncFundamentalCollectionGuidance);
+  });
 
   const STORAGE_KEYS = {
     favorites: 'teacheasy.library.favorites',
