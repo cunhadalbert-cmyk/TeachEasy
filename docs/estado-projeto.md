@@ -28,6 +28,9 @@ Atualizado em 18 de agosto de 2026.
 - Os códigos BNCC já associados às coleções foram preservados; esta migração automática não equivale a uma nova revisão humana individual de cada habilidade.
 - O 4º bimestre não foi alterado por esta migração.
 
+- 1º, 2º e 3º bimestres também migrados integralmente para V2: 135 coleções, 6.750 atividades, 54.000 questões e 54.000 respostas.
+- Todas as 180 coleções do Ensino Fundamental permanecem com 50 atividades; revisão pedagógica humana e produção visual seguem pendentes onde indicado.
+
 ## Pendente editorial — não confundir com ausência de arquivo
 
 - Conferir pedagogicamente, uma a uma, as habilidades BNCC; presença de código no JSON e validação automática não equivalem a revisão humana concluída.
