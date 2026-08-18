@@ -49,7 +49,9 @@ jobs:
           BNCC_PDF=.cache/bncc.pdf python scripts/upgrade-ensino-medio-v2.py
           python scripts/clean-ensino-medio-v2.py
           python scripts/refine-ensino-medio-v2.py
+          python scripts/finalize-ensino-medio-v2.py
           python scripts/audit-ensino-medio-v2.py
+          python scripts/clean-generated-report.py
 
       - name: Publicar conversão e auditoria geradas
         if: github.event_name == 'pull_request' && github.head_ref == 'refactor/ensino-medio-v2'
