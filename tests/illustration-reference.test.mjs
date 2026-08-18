@@ -48,13 +48,13 @@ test('modo temporário de ilustração permanece protegido e salva a imagem vinc
 });
 
 test('download Word e PDF usa cache versionado do elenco oficial atual', () => {
-  assert.match(html, /library-export-image-sync\.js\?v=20260813-persistencia-ilustracao-v8-official-cast-v3/);
+  assert.match(html, /library-export-image-sync\.js\?v=20260817-persistencia-ilustracao-v9-official-cast-v4/);
   assert.ok(html.indexOf('library-export-image-sync.js') < html.indexOf('biblioteca-final-standard.js'));
   assert.doesNotMatch(exportImageSync, /modoIlustracao/);
   assert.match(exportImageSync, /\.te-final-word, \.te-final-pdf/);
   assert.match(exportImageSync, /generate-library-illustration/);
   assert.match(exportImageSync, /indexedDB/);
-  assert.match(exportImageSync, /ILLUSTRATION_CACHE_VERSION = 'official-cast-v3-20260813'/);
+  assert.match(exportImageSync, /ILLUSTRATION_CACHE_VERSION = 'official-cast-v4-20260817-no-duplicates'/);
   assert.match(exportImageSync, /\$\{ILLUSTRATION_CACHE_VERSION\}\|\$\{data\.subject\}/);
   assert.match(exportImageSync, /restoreFinalImage/);
   assert.match(exportImageSync, /savePersistentImage/);
