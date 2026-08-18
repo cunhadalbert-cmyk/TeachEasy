@@ -8,6 +8,7 @@ const normalize = value => String(value ?? '').replace(/\s+/g, ' ').trim();
 let collections = 0;
 let activities = 0;
 let supportTitles = 0;
+let supportBodies = 0;
 let verbs = 0;
 let illustrationObjectives = 0;
 
@@ -31,12 +32,20 @@ for (let year = 1; year <= 9; year += 1) {
   for (const activity of collection.atividades) {
     activities += 1;
     const activityTitle = normalize(activity.titulo);
-    const supportTitle = normalize(activity.textoApoio?.titulo);
+    const theme = normalize(activity.tema) || activityTitle;
+    activity.textoApoio = activity.textoApoio || {};
+    const supportTitle = normalize(activity.textoApoio.titulo);
     const plainSupport = supportTitle.replace(/^Leitura científica:\s*/i, '').trim();
     if (!supportTitle || supportTitle.toLocaleLowerCase('pt-BR') === activityTitle.toLocaleLowerCase('pt-BR') || plainSupport.toLocaleLowerCase('pt-BR') === activityTitle.toLocaleLowerCase('pt-BR')) {
-      activity.textoApoio = activity.textoApoio || {};
-      activity.textoApoio.titulo = `Leitura científica: ${normalize(activity.tema) || activityTitle}`;
+      activity.textoApoio.titulo = `Leitura científica: ${theme}`;
       supportTitles += 1;
+    }
+
+    const currentSupport = normalize(activity.textoApoio.conteudo);
+    if (currentSupport.length < 120) {
+      const skillText = normalize(activity.bncc?.[0]?.habilidadeOficial);
+      activity.textoApoio.conteudo = `${currentSupport} Para investigar ${theme.toLocaleLowerCase('pt-BR')}, é importante observar evidências, registrar o que acontece e comparar resultados antes de formular uma conclusão. ${skillText}`.trim();
+      supportBodies += 1;
     }
 
     for (const skill of activity.bncc || []) {
@@ -48,7 +57,6 @@ for (let year = 1; year <= 9; year += 1) {
 
     activity.ilustracao = activity.ilustracao || {};
     if (normalize(activity.ilustracao.objetivoPedagogico).length < 20) {
-      const theme = normalize(activity.tema) || activityTitle;
       activity.ilustracao.objetivoPedagogico = `Apoiar a compreensão científica de ${theme} por meio de uma representação visual coerente com a investigação proposta.`;
       illustrationObjectives += 1;
     }
@@ -60,4 +68,4 @@ for (let year = 1; year <= 9; year += 1) {
   fs.writeFileSync(file, `${JSON.stringify(collection, null, 2)}\n`, 'utf8');
 }
 
-console.log(JSON.stringify({ collections, activities, supportTitles, verbs, illustrationObjectives }, null, 2));
+console.log(JSON.stringify({ collections, activities, supportTitles, supportBodies, verbs, illustrationObjectives }, null, 2));
