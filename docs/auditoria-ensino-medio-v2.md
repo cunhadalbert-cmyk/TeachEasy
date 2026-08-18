@@ -1,0 +1,397 @@
+# Auditoria do Ensino Médio V2
+
+## Resumo
+
+- **collections:** 60
+- **activities:** 3000
+- **questions:** 24000
+- **answers:** 24000
+- **bncc_codes_distinct:** 60
+- **blockers:** 0
+- **warnings:** 0
+- **repeated_question_patterns:** 0
+- **repeated_answer_patterns:** 1260
+
+## Tipos de bloqueadores
+
+
+## Tipos de alertas
+
+
+## Uso de habilidades BNCC
+
+- `EM13CHS101`: 120 atividades
+- `EM13CHS102`: 60 atividades
+- `EM13CHS103`: 60 atividades
+- `EM13CHS105`: 60 atividades
+- `EM13CHS106`: 120 atividades
+- `EM13CHS201`: 120 atividades
+- `EM13CHS202`: 120 atividades
+- `EM13CHS203`: 120 atividades
+- `EM13CHS204`: 120 atividades
+- `EM13CHS205`: 60 atividades
+- `EM13CHS206`: 60 atividades
+- `EM13CHS301`: 60 atividades
+- `EM13CHS306`: 60 atividades
+- `EM13CHS603`: 60 atividades
+- `EM13CNT101`: 19 atividades
+- `EM13CNT102`: 17 atividades
+- `EM13CNT103`: 27 atividades
+- `EM13CNT104`: 14 atividades
+- `EM13CNT105`: 17 atividades
+- `EM13CNT106`: 28 atividades
+- `EM13CNT107`: 29 atividades
+- `EM13CNT201`: 53 atividades
+- `EM13CNT202`: 19 atividades
+- `EM13CNT203`: 18 atividades
+- `EM13CNT204`: 33 atividades
+- `EM13CNT205`: 27 atividades
+- `EM13CNT206`: 19 atividades
+- `EM13CNT207`: 22 atividades
+- `EM13CNT208`: 22 atividades
+- `EM13CNT209`: 27 atividades
+- `EM13CNT301`: 20 atividades
+- `EM13CNT302`: 30 atividades
+- `EM13CNT303`: 30 atividades
+- `EM13CNT304`: 31 atividades
+- `EM13CNT305`: 22 atividades
+- `EM13CNT306`: 34 atividades
+- `EM13CNT307`: 8 atividades
+- `EM13CNT308`: 12 atividades
+- `EM13CNT309`: 11 atividades
+- `EM13CNT310`: 11 atividades
+- `EM13LP01`: 60 atividades
+- `EM13LP02`: 60 atividades
+- `EM13LP03`: 60 atividades
+- `EM13LP04`: 60 atividades
+- `EM13LP05`: 60 atividades
+- `EM13LP06`: 60 atividades
+- `EM13LP07`: 60 atividades
+- `EM13LP08`: 60 atividades
+- `EM13LP12`: 60 atividades
+- `EM13LP15`: 60 atividades
+- `EM13MAT101`: 60 atividades
+- `EM13MAT102`: 60 atividades
+- `EM13MAT103`: 60 atividades
+- `EM13MAT104`: 60 atividades
+- `EM13MAT105`: 60 atividades
+- `EM13MAT201`: 60 atividades
+- `EM13MAT202`: 60 atividades
+- `EM13MAT203`: 60 atividades
+- `EM13MAT301`: 60 atividades
+- `EM13MAT302`: 60 atividades
+
+## Bloqueadores
+
+- Nenhum bloqueador detectado.
+
+## Alertas de coerência/gabarito
+
+- Nenhum alerta detectado.
+
+## Perguntas repetidas dentro da mesma coleção (5+ ocorrências)
+
+- Nenhuma repetição relevante detectada.
+
+## Respostas repetidas dentro da mesma coleção (5+ ocorrências)
+
+- `data/atividades/ensino-medio/1-serie/1-bimestre/ciencias.json` — 10x — o estudante deve indicar dados pertinentes a fundamentos e linguagem matéria e energia como medidas frequências comparações ou registros e explicar uma forma válida de organizá los
+- `data/atividades/ensino-medio/1-serie/1-bimestre/ciencias.json` — 10x — a investigação deve conter hipótese verificável procedimento viável evidência observável e critério de conclusão diretamente ligados a fundamentos e linguagem matéria e energia
+- `data/atividades/ensino-medio/1-serie/1-bimestre/ciencias.json` — 10x — a avaliação deve indicar evidências adequadas para sustentar a conclusão sobre fundamentos e linguagem matéria e energia e reconhecer uma limitação de dados método escala ou interp
+- `data/atividades/ensino-medio/1-serie/1-bimestre/ciencias.json` — 10x — o estudante deve indicar dados pertinentes a fundamentos e linguagem vida e evolução como medidas frequências comparações ou registros e explicar uma forma válida de organizá los
+- `data/atividades/ensino-medio/1-serie/1-bimestre/ciencias.json` — 10x — a investigação deve conter hipótese verificável procedimento viável evidência observável e critério de conclusão diretamente ligados a fundamentos e linguagem vida e evolução
+- `data/atividades/ensino-medio/1-serie/1-bimestre/ciencias.json` — 10x — a avaliação deve indicar evidências adequadas para sustentar a conclusão sobre fundamentos e linguagem vida e evolução e reconhecer uma limitação de dados método escala ou interpre
+- `data/atividades/ensino-medio/1-serie/1-bimestre/ciencias.json` — 10x — o estudante deve indicar dados pertinentes a fundamentos e linguagem terra e universo como medidas frequências comparações ou registros e explicar uma forma válida de organizá los
+- `data/atividades/ensino-medio/1-serie/1-bimestre/ciencias.json` — 10x — a investigação deve conter hipótese verificável procedimento viável evidência observável e critério de conclusão diretamente ligados a fundamentos e linguagem terra e universo
+- `data/atividades/ensino-medio/1-serie/1-bimestre/ciencias.json` — 10x — a avaliação deve indicar evidências adequadas para sustentar a conclusão sobre fundamentos e linguagem terra e universo e reconhecer uma limitação de dados método escala ou interpr
+- `data/atividades/ensino-medio/1-serie/1-bimestre/ciencias.json` — 10x — o estudante deve indicar dados pertinentes a fundamentos e linguagem tecnologia como medidas frequências comparações ou registros e explicar uma forma válida de organizá los
+- `data/atividades/ensino-medio/1-serie/1-bimestre/ciencias.json` — 10x — a investigação deve conter hipótese verificável procedimento viável evidência observável e critério de conclusão diretamente ligados a fundamentos e linguagem tecnologia
+- `data/atividades/ensino-medio/1-serie/1-bimestre/ciencias.json` — 10x — a avaliação deve indicar evidências adequadas para sustentar a conclusão sobre fundamentos e linguagem tecnologia e reconhecer uma limitação de dados método escala ou interpretação
+- `data/atividades/ensino-medio/1-serie/1-bimestre/ciencias.json` — 10x — o estudante deve indicar dados pertinentes a fundamentos e linguagem investigação científica como medidas frequências comparações ou registros e explicar uma forma válida de organi
+- `data/atividades/ensino-medio/1-serie/1-bimestre/ciencias.json` — 10x — a investigação deve conter hipótese verificável procedimento viável evidência observável e critério de conclusão diretamente ligados a fundamentos e linguagem investigação científi
+- `data/atividades/ensino-medio/1-serie/1-bimestre/ciencias.json` — 10x — a avaliação deve indicar evidências adequadas para sustentar a conclusão sobre fundamentos e linguagem investigação científica e reconhecer uma limitação de dados método escala ou 
+- `data/atividades/ensino-medio/1-serie/2-bimestre/ciencias.json` — 10x — o estudante deve indicar dados pertinentes a relações e aplicações matéria e energia como medidas frequências comparações ou registros e explicar uma forma válida de organizá los
+- `data/atividades/ensino-medio/1-serie/2-bimestre/ciencias.json` — 10x — a investigação deve conter hipótese verificável procedimento viável evidência observável e critério de conclusão diretamente ligados a relações e aplicações matéria e energia
+- `data/atividades/ensino-medio/1-serie/2-bimestre/ciencias.json` — 10x — a avaliação deve indicar evidências adequadas para sustentar a conclusão sobre relações e aplicações matéria e energia e reconhecer uma limitação de dados método escala ou interpre
+- `data/atividades/ensino-medio/1-serie/2-bimestre/ciencias.json` — 10x — o estudante deve indicar dados pertinentes a relações e aplicações vida e evolução como medidas frequências comparações ou registros e explicar uma forma válida de organizá los
+- `data/atividades/ensino-medio/1-serie/2-bimestre/ciencias.json` — 10x — a investigação deve conter hipótese verificável procedimento viável evidência observável e critério de conclusão diretamente ligados a relações e aplicações vida e evolução
+- `data/atividades/ensino-medio/1-serie/2-bimestre/ciencias.json` — 10x — a avaliação deve indicar evidências adequadas para sustentar a conclusão sobre relações e aplicações vida e evolução e reconhecer uma limitação de dados método escala ou interpreta
+- `data/atividades/ensino-medio/1-serie/2-bimestre/ciencias.json` — 10x — o estudante deve indicar dados pertinentes a relações e aplicações terra e universo como medidas frequências comparações ou registros e explicar uma forma válida de organizá los
+- `data/atividades/ensino-medio/1-serie/2-bimestre/ciencias.json` — 10x — a investigação deve conter hipótese verificável procedimento viável evidência observável e critério de conclusão diretamente ligados a relações e aplicações terra e universo
+- `data/atividades/ensino-medio/1-serie/2-bimestre/ciencias.json` — 10x — a avaliação deve indicar evidências adequadas para sustentar a conclusão sobre relações e aplicações terra e universo e reconhecer uma limitação de dados método escala ou interpret
+- `data/atividades/ensino-medio/1-serie/2-bimestre/ciencias.json` — 10x — o estudante deve indicar dados pertinentes a relações e aplicações tecnologia como medidas frequências comparações ou registros e explicar uma forma válida de organizá los
+- `data/atividades/ensino-medio/1-serie/2-bimestre/ciencias.json` — 10x — a investigação deve conter hipótese verificável procedimento viável evidência observável e critério de conclusão diretamente ligados a relações e aplicações tecnologia
+- `data/atividades/ensino-medio/1-serie/2-bimestre/ciencias.json` — 10x — a avaliação deve indicar evidências adequadas para sustentar a conclusão sobre relações e aplicações tecnologia e reconhecer uma limitação de dados método escala ou interpretação
+- `data/atividades/ensino-medio/1-serie/2-bimestre/ciencias.json` — 10x — o estudante deve indicar dados pertinentes a relações e aplicações investigação científica como medidas frequências comparações ou registros e explicar uma forma válida de organizá
+- `data/atividades/ensino-medio/1-serie/2-bimestre/ciencias.json` — 10x — a investigação deve conter hipótese verificável procedimento viável evidência observável e critério de conclusão diretamente ligados a relações e aplicações investigação científica
+- `data/atividades/ensino-medio/1-serie/2-bimestre/ciencias.json` — 10x — a avaliação deve indicar evidências adequadas para sustentar a conclusão sobre relações e aplicações investigação científica e reconhecer uma limitação de dados método escala ou in
+- `data/atividades/ensino-medio/1-serie/3-bimestre/ciencias.json` — 10x — o estudante deve indicar dados pertinentes a análise de evidências matéria e energia como medidas frequências comparações ou registros e explicar uma forma válida de organizá los
+- `data/atividades/ensino-medio/1-serie/3-bimestre/ciencias.json` — 10x — a investigação deve conter hipótese verificável procedimento viável evidência observável e critério de conclusão diretamente ligados a análise de evidências matéria e energia
+- `data/atividades/ensino-medio/1-serie/3-bimestre/ciencias.json` — 10x — a avaliação deve indicar evidências adequadas para sustentar a conclusão sobre análise de evidências matéria e energia e reconhecer uma limitação de dados método escala ou interpre
+- `data/atividades/ensino-medio/1-serie/3-bimestre/ciencias.json` — 10x — o estudante deve indicar dados pertinentes a análise de evidências vida e evolução como medidas frequências comparações ou registros e explicar uma forma válida de organizá los
+- `data/atividades/ensino-medio/1-serie/3-bimestre/ciencias.json` — 10x — a investigação deve conter hipótese verificável procedimento viável evidência observável e critério de conclusão diretamente ligados a análise de evidências vida e evolução
+- `data/atividades/ensino-medio/1-serie/3-bimestre/ciencias.json` — 10x — a avaliação deve indicar evidências adequadas para sustentar a conclusão sobre análise de evidências vida e evolução e reconhecer uma limitação de dados método escala ou interpreta
+- `data/atividades/ensino-medio/1-serie/3-bimestre/ciencias.json` — 10x — o estudante deve indicar dados pertinentes a análise de evidências terra e universo como medidas frequências comparações ou registros e explicar uma forma válida de organizá los
+- `data/atividades/ensino-medio/1-serie/3-bimestre/ciencias.json` — 10x — a investigação deve conter hipótese verificável procedimento viável evidência observável e critério de conclusão diretamente ligados a análise de evidências terra e universo
+- `data/atividades/ensino-medio/1-serie/3-bimestre/ciencias.json` — 10x — a avaliação deve indicar evidências adequadas para sustentar a conclusão sobre análise de evidências terra e universo e reconhecer uma limitação de dados método escala ou interpret
+- `data/atividades/ensino-medio/1-serie/3-bimestre/ciencias.json` — 10x — o estudante deve indicar dados pertinentes a análise de evidências tecnologia como medidas frequências comparações ou registros e explicar uma forma válida de organizá los
+- `data/atividades/ensino-medio/1-serie/3-bimestre/ciencias.json` — 10x — a investigação deve conter hipótese verificável procedimento viável evidência observável e critério de conclusão diretamente ligados a análise de evidências tecnologia
+- `data/atividades/ensino-medio/1-serie/3-bimestre/ciencias.json` — 10x — a avaliação deve indicar evidências adequadas para sustentar a conclusão sobre análise de evidências tecnologia e reconhecer uma limitação de dados método escala ou interpretação
+- `data/atividades/ensino-medio/1-serie/3-bimestre/ciencias.json` — 10x — o estudante deve indicar dados pertinentes a análise de evidências investigação científica como medidas frequências comparações ou registros e explicar uma forma válida de organizá
+- `data/atividades/ensino-medio/1-serie/3-bimestre/ciencias.json` — 10x — a investigação deve conter hipótese verificável procedimento viável evidência observável e critério de conclusão diretamente ligados a análise de evidências investigação científica
+- `data/atividades/ensino-medio/1-serie/3-bimestre/ciencias.json` — 10x — a avaliação deve indicar evidências adequadas para sustentar a conclusão sobre análise de evidências investigação científica e reconhecer uma limitação de dados método escala ou in
+- `data/atividades/ensino-medio/1-serie/4-bimestre/ciencias.json` — 10x — o estudante deve indicar dados pertinentes a problemas contemporâneos matéria e energia como medidas frequências comparações ou registros e explicar uma forma válida de organizá lo
+- `data/atividades/ensino-medio/1-serie/4-bimestre/ciencias.json` — 10x — a investigação deve conter hipótese verificável procedimento viável evidência observável e critério de conclusão diretamente ligados a problemas contemporâneos matéria e energia
+- `data/atividades/ensino-medio/1-serie/4-bimestre/ciencias.json` — 10x — a avaliação deve indicar evidências adequadas para sustentar a conclusão sobre problemas contemporâneos matéria e energia e reconhecer uma limitação de dados método escala ou inter
+- `data/atividades/ensino-medio/1-serie/4-bimestre/ciencias.json` — 10x — o estudante deve indicar dados pertinentes a problemas contemporâneos vida e evolução como medidas frequências comparações ou registros e explicar uma forma válida de organizá los
+- `data/atividades/ensino-medio/1-serie/4-bimestre/ciencias.json` — 10x — a investigação deve conter hipótese verificável procedimento viável evidência observável e critério de conclusão diretamente ligados a problemas contemporâneos vida e evolução
+- `data/atividades/ensino-medio/1-serie/4-bimestre/ciencias.json` — 10x — a avaliação deve indicar evidências adequadas para sustentar a conclusão sobre problemas contemporâneos vida e evolução e reconhecer uma limitação de dados método escala ou interpr
+- `data/atividades/ensino-medio/1-serie/4-bimestre/ciencias.json` — 10x — o estudante deve indicar dados pertinentes a problemas contemporâneos terra e universo como medidas frequências comparações ou registros e explicar uma forma válida de organizá los
+- `data/atividades/ensino-medio/1-serie/4-bimestre/ciencias.json` — 10x — a investigação deve conter hipótese verificável procedimento viável evidência observável e critério de conclusão diretamente ligados a problemas contemporâneos terra e universo
+- `data/atividades/ensino-medio/1-serie/4-bimestre/ciencias.json` — 10x — a avaliação deve indicar evidências adequadas para sustentar a conclusão sobre problemas contemporâneos terra e universo e reconhecer uma limitação de dados método escala ou interp
+- `data/atividades/ensino-medio/1-serie/4-bimestre/ciencias.json` — 10x — o estudante deve indicar dados pertinentes a problemas contemporâneos tecnologia como medidas frequências comparações ou registros e explicar uma forma válida de organizá los
+- `data/atividades/ensino-medio/1-serie/4-bimestre/ciencias.json` — 10x — a investigação deve conter hipótese verificável procedimento viável evidência observável e critério de conclusão diretamente ligados a problemas contemporâneos tecnologia
+- `data/atividades/ensino-medio/1-serie/4-bimestre/ciencias.json` — 10x — a avaliação deve indicar evidências adequadas para sustentar a conclusão sobre problemas contemporâneos tecnologia e reconhecer uma limitação de dados método escala ou interpretaçã
+- `data/atividades/ensino-medio/1-serie/4-bimestre/ciencias.json` — 10x — o estudante deve indicar dados pertinentes a problemas contemporâneos investigação científica como medidas frequências comparações ou registros e explicar uma forma válida de organ
+- `data/atividades/ensino-medio/1-serie/4-bimestre/ciencias.json` — 10x — a investigação deve conter hipótese verificável procedimento viável evidência observável e critério de conclusão diretamente ligados a problemas contemporâneos investigação científ
+- `data/atividades/ensino-medio/1-serie/4-bimestre/ciencias.json` — 10x — a avaliação deve indicar evidências adequadas para sustentar a conclusão sobre problemas contemporâneos investigação científica e reconhecer uma limitação de dados método escala ou
+- `data/atividades/ensino-medio/2-serie/1-bimestre/ciencias.json` — 10x — o estudante deve indicar dados pertinentes a fundamentos e linguagem matéria e energia como medidas frequências comparações ou registros e explicar uma forma válida de organizá los
+- `data/atividades/ensino-medio/2-serie/1-bimestre/ciencias.json` — 10x — a investigação deve conter hipótese verificável procedimento viável evidência observável e critério de conclusão diretamente ligados a fundamentos e linguagem matéria e energia
+- `data/atividades/ensino-medio/2-serie/1-bimestre/ciencias.json` — 10x — a avaliação deve indicar evidências adequadas para sustentar a conclusão sobre fundamentos e linguagem matéria e energia e reconhecer uma limitação de dados método escala ou interp
+- `data/atividades/ensino-medio/2-serie/1-bimestre/ciencias.json` — 10x — o estudante deve indicar dados pertinentes a fundamentos e linguagem vida e evolução como medidas frequências comparações ou registros e explicar uma forma válida de organizá los
+- `data/atividades/ensino-medio/2-serie/1-bimestre/ciencias.json` — 10x — a investigação deve conter hipótese verificável procedimento viável evidência observável e critério de conclusão diretamente ligados a fundamentos e linguagem vida e evolução
+- `data/atividades/ensino-medio/2-serie/1-bimestre/ciencias.json` — 10x — a avaliação deve indicar evidências adequadas para sustentar a conclusão sobre fundamentos e linguagem vida e evolução e reconhecer uma limitação de dados método escala ou interpre
+- `data/atividades/ensino-medio/2-serie/1-bimestre/ciencias.json` — 10x — o estudante deve indicar dados pertinentes a fundamentos e linguagem terra e universo como medidas frequências comparações ou registros e explicar uma forma válida de organizá los
+- `data/atividades/ensino-medio/2-serie/1-bimestre/ciencias.json` — 10x — a investigação deve conter hipótese verificável procedimento viável evidência observável e critério de conclusão diretamente ligados a fundamentos e linguagem terra e universo
+- `data/atividades/ensino-medio/2-serie/1-bimestre/ciencias.json` — 10x — a avaliação deve indicar evidências adequadas para sustentar a conclusão sobre fundamentos e linguagem terra e universo e reconhecer uma limitação de dados método escala ou interpr
+- `data/atividades/ensino-medio/2-serie/1-bimestre/ciencias.json` — 10x — o estudante deve indicar dados pertinentes a fundamentos e linguagem tecnologia como medidas frequências comparações ou registros e explicar uma forma válida de organizá los
+- `data/atividades/ensino-medio/2-serie/1-bimestre/ciencias.json` — 10x — a investigação deve conter hipótese verificável procedimento viável evidência observável e critério de conclusão diretamente ligados a fundamentos e linguagem tecnologia
+- `data/atividades/ensino-medio/2-serie/1-bimestre/ciencias.json` — 10x — a avaliação deve indicar evidências adequadas para sustentar a conclusão sobre fundamentos e linguagem tecnologia e reconhecer uma limitação de dados método escala ou interpretação
+- `data/atividades/ensino-medio/2-serie/1-bimestre/ciencias.json` — 10x — o estudante deve indicar dados pertinentes a fundamentos e linguagem investigação científica como medidas frequências comparações ou registros e explicar uma forma válida de organi
+- `data/atividades/ensino-medio/2-serie/1-bimestre/ciencias.json` — 10x — a investigação deve conter hipótese verificável procedimento viável evidência observável e critério de conclusão diretamente ligados a fundamentos e linguagem investigação científi
+- `data/atividades/ensino-medio/2-serie/1-bimestre/ciencias.json` — 10x — a avaliação deve indicar evidências adequadas para sustentar a conclusão sobre fundamentos e linguagem investigação científica e reconhecer uma limitação de dados método escala ou 
+- `data/atividades/ensino-medio/2-serie/2-bimestre/ciencias.json` — 10x — o estudante deve indicar dados pertinentes a relações e aplicações matéria e energia como medidas frequências comparações ou registros e explicar uma forma válida de organizá los
+- `data/atividades/ensino-medio/2-serie/2-bimestre/ciencias.json` — 10x — a investigação deve conter hipótese verificável procedimento viável evidência observável e critério de conclusão diretamente ligados a relações e aplicações matéria e energia
+- `data/atividades/ensino-medio/2-serie/2-bimestre/ciencias.json` — 10x — a avaliação deve indicar evidências adequadas para sustentar a conclusão sobre relações e aplicações matéria e energia e reconhecer uma limitação de dados método escala ou interpre
+- `data/atividades/ensino-medio/2-serie/2-bimestre/ciencias.json` — 10x — o estudante deve indicar dados pertinentes a relações e aplicações vida e evolução como medidas frequências comparações ou registros e explicar uma forma válida de organizá los
+- `data/atividades/ensino-medio/2-serie/2-bimestre/ciencias.json` — 10x — a investigação deve conter hipótese verificável procedimento viável evidência observável e critério de conclusão diretamente ligados a relações e aplicações vida e evolução
+- `data/atividades/ensino-medio/2-serie/2-bimestre/ciencias.json` — 10x — a avaliação deve indicar evidências adequadas para sustentar a conclusão sobre relações e aplicações vida e evolução e reconhecer uma limitação de dados método escala ou interpreta
+- `data/atividades/ensino-medio/2-serie/2-bimestre/ciencias.json` — 10x — o estudante deve indicar dados pertinentes a relações e aplicações terra e universo como medidas frequências comparações ou registros e explicar uma forma válida de organizá los
+- `data/atividades/ensino-medio/2-serie/2-bimestre/ciencias.json` — 10x — a investigação deve conter hipótese verificável procedimento viável evidência observável e critério de conclusão diretamente ligados a relações e aplicações terra e universo
+- `data/atividades/ensino-medio/2-serie/2-bimestre/ciencias.json` — 10x — a avaliação deve indicar evidências adequadas para sustentar a conclusão sobre relações e aplicações terra e universo e reconhecer uma limitação de dados método escala ou interpret
+- `data/atividades/ensino-medio/2-serie/2-bimestre/ciencias.json` — 10x — o estudante deve indicar dados pertinentes a relações e aplicações tecnologia como medidas frequências comparações ou registros e explicar uma forma válida de organizá los
+- `data/atividades/ensino-medio/2-serie/2-bimestre/ciencias.json` — 10x — a investigação deve conter hipótese verificável procedimento viável evidência observável e critério de conclusão diretamente ligados a relações e aplicações tecnologia
+- `data/atividades/ensino-medio/2-serie/2-bimestre/ciencias.json` — 10x — a avaliação deve indicar evidências adequadas para sustentar a conclusão sobre relações e aplicações tecnologia e reconhecer uma limitação de dados método escala ou interpretação
+- `data/atividades/ensino-medio/2-serie/2-bimestre/ciencias.json` — 10x — o estudante deve indicar dados pertinentes a relações e aplicações investigação científica como medidas frequências comparações ou registros e explicar uma forma válida de organizá
+- `data/atividades/ensino-medio/2-serie/2-bimestre/ciencias.json` — 10x — a investigação deve conter hipótese verificável procedimento viável evidência observável e critério de conclusão diretamente ligados a relações e aplicações investigação científica
+- `data/atividades/ensino-medio/2-serie/2-bimestre/ciencias.json` — 10x — a avaliação deve indicar evidências adequadas para sustentar a conclusão sobre relações e aplicações investigação científica e reconhecer uma limitação de dados método escala ou in
+- `data/atividades/ensino-medio/2-serie/3-bimestre/ciencias.json` — 10x — o estudante deve indicar dados pertinentes a análise de evidências matéria e energia como medidas frequências comparações ou registros e explicar uma forma válida de organizá los
+- `data/atividades/ensino-medio/2-serie/3-bimestre/ciencias.json` — 10x — a investigação deve conter hipótese verificável procedimento viável evidência observável e critério de conclusão diretamente ligados a análise de evidências matéria e energia
+- `data/atividades/ensino-medio/2-serie/3-bimestre/ciencias.json` — 10x — a avaliação deve indicar evidências adequadas para sustentar a conclusão sobre análise de evidências matéria e energia e reconhecer uma limitação de dados método escala ou interpre
+- `data/atividades/ensino-medio/2-serie/3-bimestre/ciencias.json` — 10x — o estudante deve indicar dados pertinentes a análise de evidências vida e evolução como medidas frequências comparações ou registros e explicar uma forma válida de organizá los
+- `data/atividades/ensino-medio/2-serie/3-bimestre/ciencias.json` — 10x — a investigação deve conter hipótese verificável procedimento viável evidência observável e critério de conclusão diretamente ligados a análise de evidências vida e evolução
+- `data/atividades/ensino-medio/2-serie/3-bimestre/ciencias.json` — 10x — a avaliação deve indicar evidências adequadas para sustentar a conclusão sobre análise de evidências vida e evolução e reconhecer uma limitação de dados método escala ou interpreta
+- `data/atividades/ensino-medio/2-serie/3-bimestre/ciencias.json` — 10x — o estudante deve indicar dados pertinentes a análise de evidências terra e universo como medidas frequências comparações ou registros e explicar uma forma válida de organizá los
+- `data/atividades/ensino-medio/2-serie/3-bimestre/ciencias.json` — 10x — a investigação deve conter hipótese verificável procedimento viável evidência observável e critério de conclusão diretamente ligados a análise de evidências terra e universo
+- `data/atividades/ensino-medio/2-serie/3-bimestre/ciencias.json` — 10x — a avaliação deve indicar evidências adequadas para sustentar a conclusão sobre análise de evidências terra e universo e reconhecer uma limitação de dados método escala ou interpret
+- `data/atividades/ensino-medio/2-serie/3-bimestre/ciencias.json` — 10x — o estudante deve indicar dados pertinentes a análise de evidências tecnologia como medidas frequências comparações ou registros e explicar uma forma válida de organizá los
+- `data/atividades/ensino-medio/2-serie/3-bimestre/ciencias.json` — 10x — a investigação deve conter hipótese verificável procedimento viável evidência observável e critério de conclusão diretamente ligados a análise de evidências tecnologia
+- `data/atividades/ensino-medio/2-serie/3-bimestre/ciencias.json` — 10x — a avaliação deve indicar evidências adequadas para sustentar a conclusão sobre análise de evidências tecnologia e reconhecer uma limitação de dados método escala ou interpretação
+- `data/atividades/ensino-medio/2-serie/3-bimestre/ciencias.json` — 10x — o estudante deve indicar dados pertinentes a análise de evidências investigação científica como medidas frequências comparações ou registros e explicar uma forma válida de organizá
+- `data/atividades/ensino-medio/2-serie/3-bimestre/ciencias.json` — 10x — a investigação deve conter hipótese verificável procedimento viável evidência observável e critério de conclusão diretamente ligados a análise de evidências investigação científica
+- `data/atividades/ensino-medio/2-serie/3-bimestre/ciencias.json` — 10x — a avaliação deve indicar evidências adequadas para sustentar a conclusão sobre análise de evidências investigação científica e reconhecer uma limitação de dados método escala ou in
+- `data/atividades/ensino-medio/2-serie/4-bimestre/ciencias.json` — 10x — o estudante deve indicar dados pertinentes a problemas contemporâneos matéria e energia como medidas frequências comparações ou registros e explicar uma forma válida de organizá lo
+- `data/atividades/ensino-medio/2-serie/4-bimestre/ciencias.json` — 10x — a investigação deve conter hipótese verificável procedimento viável evidência observável e critério de conclusão diretamente ligados a problemas contemporâneos matéria e energia
+- `data/atividades/ensino-medio/2-serie/4-bimestre/ciencias.json` — 10x — a avaliação deve indicar evidências adequadas para sustentar a conclusão sobre problemas contemporâneos matéria e energia e reconhecer uma limitação de dados método escala ou inter
+- `data/atividades/ensino-medio/2-serie/4-bimestre/ciencias.json` — 10x — o estudante deve indicar dados pertinentes a problemas contemporâneos vida e evolução como medidas frequências comparações ou registros e explicar uma forma válida de organizá los
+- `data/atividades/ensino-medio/2-serie/4-bimestre/ciencias.json` — 10x — a investigação deve conter hipótese verificável procedimento viável evidência observável e critério de conclusão diretamente ligados a problemas contemporâneos vida e evolução
+- `data/atividades/ensino-medio/2-serie/4-bimestre/ciencias.json` — 10x — a avaliação deve indicar evidências adequadas para sustentar a conclusão sobre problemas contemporâneos vida e evolução e reconhecer uma limitação de dados método escala ou interpr
+- `data/atividades/ensino-medio/2-serie/4-bimestre/ciencias.json` — 10x — o estudante deve indicar dados pertinentes a problemas contemporâneos terra e universo como medidas frequências comparações ou registros e explicar uma forma válida de organizá los
+- `data/atividades/ensino-medio/2-serie/4-bimestre/ciencias.json` — 10x — a investigação deve conter hipótese verificável procedimento viável evidência observável e critério de conclusão diretamente ligados a problemas contemporâneos terra e universo
+- `data/atividades/ensino-medio/2-serie/4-bimestre/ciencias.json` — 10x — a avaliação deve indicar evidências adequadas para sustentar a conclusão sobre problemas contemporâneos terra e universo e reconhecer uma limitação de dados método escala ou interp
+- `data/atividades/ensino-medio/2-serie/4-bimestre/ciencias.json` — 10x — o estudante deve indicar dados pertinentes a problemas contemporâneos tecnologia como medidas frequências comparações ou registros e explicar uma forma válida de organizá los
+- `data/atividades/ensino-medio/2-serie/4-bimestre/ciencias.json` — 10x — a investigação deve conter hipótese verificável procedimento viável evidência observável e critério de conclusão diretamente ligados a problemas contemporâneos tecnologia
+- `data/atividades/ensino-medio/2-serie/4-bimestre/ciencias.json` — 10x — a avaliação deve indicar evidências adequadas para sustentar a conclusão sobre problemas contemporâneos tecnologia e reconhecer uma limitação de dados método escala ou interpretaçã
+- `data/atividades/ensino-medio/2-serie/4-bimestre/ciencias.json` — 10x — o estudante deve indicar dados pertinentes a problemas contemporâneos investigação científica como medidas frequências comparações ou registros e explicar uma forma válida de organ
+- `data/atividades/ensino-medio/2-serie/4-bimestre/ciencias.json` — 10x — a investigação deve conter hipótese verificável procedimento viável evidência observável e critério de conclusão diretamente ligados a problemas contemporâneos investigação científ
+- `data/atividades/ensino-medio/2-serie/4-bimestre/ciencias.json` — 10x — a avaliação deve indicar evidências adequadas para sustentar a conclusão sobre problemas contemporâneos investigação científica e reconhecer uma limitação de dados método escala ou
+- `data/atividades/ensino-medio/3-serie/1-bimestre/ciencias.json` — 10x — o estudante deve indicar dados pertinentes a fundamentos e linguagem matéria e energia como medidas frequências comparações ou registros e explicar uma forma válida de organizá los
+- `data/atividades/ensino-medio/3-serie/1-bimestre/ciencias.json` — 10x — a investigação deve conter hipótese verificável procedimento viável evidência observável e critério de conclusão diretamente ligados a fundamentos e linguagem matéria e energia
+- `data/atividades/ensino-medio/3-serie/1-bimestre/ciencias.json` — 10x — a avaliação deve indicar evidências adequadas para sustentar a conclusão sobre fundamentos e linguagem matéria e energia e reconhecer uma limitação de dados método escala ou interp
+- `data/atividades/ensino-medio/3-serie/1-bimestre/ciencias.json` — 10x — o estudante deve indicar dados pertinentes a fundamentos e linguagem vida e evolução como medidas frequências comparações ou registros e explicar uma forma válida de organizá los
+- `data/atividades/ensino-medio/3-serie/1-bimestre/ciencias.json` — 10x — a investigação deve conter hipótese verificável procedimento viável evidência observável e critério de conclusão diretamente ligados a fundamentos e linguagem vida e evolução
+- `data/atividades/ensino-medio/3-serie/1-bimestre/ciencias.json` — 10x — a avaliação deve indicar evidências adequadas para sustentar a conclusão sobre fundamentos e linguagem vida e evolução e reconhecer uma limitação de dados método escala ou interpre
+- `data/atividades/ensino-medio/3-serie/1-bimestre/ciencias.json` — 10x — o estudante deve indicar dados pertinentes a fundamentos e linguagem terra e universo como medidas frequências comparações ou registros e explicar uma forma válida de organizá los
+- `data/atividades/ensino-medio/3-serie/1-bimestre/ciencias.json` — 10x — a investigação deve conter hipótese verificável procedimento viável evidência observável e critério de conclusão diretamente ligados a fundamentos e linguagem terra e universo
+- `data/atividades/ensino-medio/3-serie/1-bimestre/ciencias.json` — 10x — a avaliação deve indicar evidências adequadas para sustentar a conclusão sobre fundamentos e linguagem terra e universo e reconhecer uma limitação de dados método escala ou interpr
+- `data/atividades/ensino-medio/3-serie/1-bimestre/ciencias.json` — 10x — o estudante deve indicar dados pertinentes a fundamentos e linguagem tecnologia como medidas frequências comparações ou registros e explicar uma forma válida de organizá los
+- `data/atividades/ensino-medio/3-serie/1-bimestre/ciencias.json` — 10x — a investigação deve conter hipótese verificável procedimento viável evidência observável e critério de conclusão diretamente ligados a fundamentos e linguagem tecnologia
+- `data/atividades/ensino-medio/3-serie/1-bimestre/ciencias.json` — 10x — a avaliação deve indicar evidências adequadas para sustentar a conclusão sobre fundamentos e linguagem tecnologia e reconhecer uma limitação de dados método escala ou interpretação
+- `data/atividades/ensino-medio/3-serie/1-bimestre/ciencias.json` — 10x — o estudante deve indicar dados pertinentes a fundamentos e linguagem investigação científica como medidas frequências comparações ou registros e explicar uma forma válida de organi
+- `data/atividades/ensino-medio/3-serie/1-bimestre/ciencias.json` — 10x — a investigação deve conter hipótese verificável procedimento viável evidência observável e critério de conclusão diretamente ligados a fundamentos e linguagem investigação científi
+- `data/atividades/ensino-medio/3-serie/1-bimestre/ciencias.json` — 10x — a avaliação deve indicar evidências adequadas para sustentar a conclusão sobre fundamentos e linguagem investigação científica e reconhecer uma limitação de dados método escala ou 
+- `data/atividades/ensino-medio/3-serie/2-bimestre/ciencias.json` — 10x — o estudante deve indicar dados pertinentes a relações e aplicações matéria e energia como medidas frequências comparações ou registros e explicar uma forma válida de organizá los
+- `data/atividades/ensino-medio/3-serie/2-bimestre/ciencias.json` — 10x — a investigação deve conter hipótese verificável procedimento viável evidência observável e critério de conclusão diretamente ligados a relações e aplicações matéria e energia
+- `data/atividades/ensino-medio/3-serie/2-bimestre/ciencias.json` — 10x — a avaliação deve indicar evidências adequadas para sustentar a conclusão sobre relações e aplicações matéria e energia e reconhecer uma limitação de dados método escala ou interpre
+- `data/atividades/ensino-medio/3-serie/2-bimestre/ciencias.json` — 10x — o estudante deve indicar dados pertinentes a relações e aplicações vida e evolução como medidas frequências comparações ou registros e explicar uma forma válida de organizá los
+- `data/atividades/ensino-medio/3-serie/2-bimestre/ciencias.json` — 10x — a investigação deve conter hipótese verificável procedimento viável evidência observável e critério de conclusão diretamente ligados a relações e aplicações vida e evolução
+- `data/atividades/ensino-medio/3-serie/2-bimestre/ciencias.json` — 10x — a avaliação deve indicar evidências adequadas para sustentar a conclusão sobre relações e aplicações vida e evolução e reconhecer uma limitação de dados método escala ou interpreta
+- `data/atividades/ensino-medio/3-serie/2-bimestre/ciencias.json` — 10x — o estudante deve indicar dados pertinentes a relações e aplicações terra e universo como medidas frequências comparações ou registros e explicar uma forma válida de organizá los
+- `data/atividades/ensino-medio/3-serie/2-bimestre/ciencias.json` — 10x — a investigação deve conter hipótese verificável procedimento viável evidência observável e critério de conclusão diretamente ligados a relações e aplicações terra e universo
+- `data/atividades/ensino-medio/3-serie/2-bimestre/ciencias.json` — 10x — a avaliação deve indicar evidências adequadas para sustentar a conclusão sobre relações e aplicações terra e universo e reconhecer uma limitação de dados método escala ou interpret
+- `data/atividades/ensino-medio/3-serie/2-bimestre/ciencias.json` — 10x — o estudante deve indicar dados pertinentes a relações e aplicações tecnologia como medidas frequências comparações ou registros e explicar uma forma válida de organizá los
+- `data/atividades/ensino-medio/3-serie/2-bimestre/ciencias.json` — 10x — a investigação deve conter hipótese verificável procedimento viável evidência observável e critério de conclusão diretamente ligados a relações e aplicações tecnologia
+- `data/atividades/ensino-medio/3-serie/2-bimestre/ciencias.json` — 10x — a avaliação deve indicar evidências adequadas para sustentar a conclusão sobre relações e aplicações tecnologia e reconhecer uma limitação de dados método escala ou interpretação
+- `data/atividades/ensino-medio/3-serie/2-bimestre/ciencias.json` — 10x — o estudante deve indicar dados pertinentes a relações e aplicações investigação científica como medidas frequências comparações ou registros e explicar uma forma válida de organizá
+- `data/atividades/ensino-medio/3-serie/2-bimestre/ciencias.json` — 10x — a investigação deve conter hipótese verificável procedimento viável evidência observável e critério de conclusão diretamente ligados a relações e aplicações investigação científica
+- `data/atividades/ensino-medio/3-serie/2-bimestre/ciencias.json` — 10x — a avaliação deve indicar evidências adequadas para sustentar a conclusão sobre relações e aplicações investigação científica e reconhecer uma limitação de dados método escala ou in
+- `data/atividades/ensino-medio/3-serie/3-bimestre/ciencias.json` — 10x — o estudante deve indicar dados pertinentes a análise de evidências matéria e energia como medidas frequências comparações ou registros e explicar uma forma válida de organizá los
+- `data/atividades/ensino-medio/3-serie/3-bimestre/ciencias.json` — 10x — a investigação deve conter hipótese verificável procedimento viável evidência observável e critério de conclusão diretamente ligados a análise de evidências matéria e energia
+- `data/atividades/ensino-medio/3-serie/3-bimestre/ciencias.json` — 10x — a avaliação deve indicar evidências adequadas para sustentar a conclusão sobre análise de evidências matéria e energia e reconhecer uma limitação de dados método escala ou interpre
+- `data/atividades/ensino-medio/3-serie/3-bimestre/ciencias.json` — 10x — o estudante deve indicar dados pertinentes a análise de evidências vida e evolução como medidas frequências comparações ou registros e explicar uma forma válida de organizá los
+- `data/atividades/ensino-medio/3-serie/3-bimestre/ciencias.json` — 10x — a investigação deve conter hipótese verificável procedimento viável evidência observável e critério de conclusão diretamente ligados a análise de evidências vida e evolução
+- `data/atividades/ensino-medio/3-serie/3-bimestre/ciencias.json` — 10x — a avaliação deve indicar evidências adequadas para sustentar a conclusão sobre análise de evidências vida e evolução e reconhecer uma limitação de dados método escala ou interpreta
+- `data/atividades/ensino-medio/3-serie/3-bimestre/ciencias.json` — 10x — o estudante deve indicar dados pertinentes a análise de evidências terra e universo como medidas frequências comparações ou registros e explicar uma forma válida de organizá los
+- `data/atividades/ensino-medio/3-serie/3-bimestre/ciencias.json` — 10x — a investigação deve conter hipótese verificável procedimento viável evidência observável e critério de conclusão diretamente ligados a análise de evidências terra e universo
+- `data/atividades/ensino-medio/3-serie/3-bimestre/ciencias.json` — 10x — a avaliação deve indicar evidências adequadas para sustentar a conclusão sobre análise de evidências terra e universo e reconhecer uma limitação de dados método escala ou interpret
+- `data/atividades/ensino-medio/3-serie/3-bimestre/ciencias.json` — 10x — o estudante deve indicar dados pertinentes a análise de evidências tecnologia como medidas frequências comparações ou registros e explicar uma forma válida de organizá los
+- `data/atividades/ensino-medio/3-serie/3-bimestre/ciencias.json` — 10x — a investigação deve conter hipótese verificável procedimento viável evidência observável e critério de conclusão diretamente ligados a análise de evidências tecnologia
+- `data/atividades/ensino-medio/3-serie/3-bimestre/ciencias.json` — 10x — a avaliação deve indicar evidências adequadas para sustentar a conclusão sobre análise de evidências tecnologia e reconhecer uma limitação de dados método escala ou interpretação
+- `data/atividades/ensino-medio/3-serie/3-bimestre/ciencias.json` — 10x — o estudante deve indicar dados pertinentes a análise de evidências investigação científica como medidas frequências comparações ou registros e explicar uma forma válida de organizá
+- `data/atividades/ensino-medio/3-serie/3-bimestre/ciencias.json` — 10x — a investigação deve conter hipótese verificável procedimento viável evidência observável e critério de conclusão diretamente ligados a análise de evidências investigação científica
+- `data/atividades/ensino-medio/3-serie/3-bimestre/ciencias.json` — 10x — a avaliação deve indicar evidências adequadas para sustentar a conclusão sobre análise de evidências investigação científica e reconhecer uma limitação de dados método escala ou in
+- `data/atividades/ensino-medio/3-serie/4-bimestre/ciencias.json` — 10x — o estudante deve indicar dados pertinentes a problemas contemporâneos matéria e energia como medidas frequências comparações ou registros e explicar uma forma válida de organizá lo
+- `data/atividades/ensino-medio/3-serie/4-bimestre/ciencias.json` — 10x — a investigação deve conter hipótese verificável procedimento viável evidência observável e critério de conclusão diretamente ligados a problemas contemporâneos matéria e energia
+- `data/atividades/ensino-medio/3-serie/4-bimestre/ciencias.json` — 10x — a avaliação deve indicar evidências adequadas para sustentar a conclusão sobre problemas contemporâneos matéria e energia e reconhecer uma limitação de dados método escala ou inter
+- `data/atividades/ensino-medio/3-serie/4-bimestre/ciencias.json` — 10x — o estudante deve indicar dados pertinentes a problemas contemporâneos vida e evolução como medidas frequências comparações ou registros e explicar uma forma válida de organizá los
+- `data/atividades/ensino-medio/3-serie/4-bimestre/ciencias.json` — 10x — a investigação deve conter hipótese verificável procedimento viável evidência observável e critério de conclusão diretamente ligados a problemas contemporâneos vida e evolução
+- `data/atividades/ensino-medio/3-serie/4-bimestre/ciencias.json` — 10x — a avaliação deve indicar evidências adequadas para sustentar a conclusão sobre problemas contemporâneos vida e evolução e reconhecer uma limitação de dados método escala ou interpr
+- `data/atividades/ensino-medio/3-serie/4-bimestre/ciencias.json` — 10x — o estudante deve indicar dados pertinentes a problemas contemporâneos terra e universo como medidas frequências comparações ou registros e explicar uma forma válida de organizá los
+- `data/atividades/ensino-medio/3-serie/4-bimestre/ciencias.json` — 10x — a investigação deve conter hipótese verificável procedimento viável evidência observável e critério de conclusão diretamente ligados a problemas contemporâneos terra e universo
+- `data/atividades/ensino-medio/3-serie/4-bimestre/ciencias.json` — 10x — a avaliação deve indicar evidências adequadas para sustentar a conclusão sobre problemas contemporâneos terra e universo e reconhecer uma limitação de dados método escala ou interp
+- `data/atividades/ensino-medio/3-serie/4-bimestre/ciencias.json` — 10x — o estudante deve indicar dados pertinentes a problemas contemporâneos tecnologia como medidas frequências comparações ou registros e explicar uma forma válida de organizá los
+- `data/atividades/ensino-medio/3-serie/4-bimestre/ciencias.json` — 10x — a investigação deve conter hipótese verificável procedimento viável evidência observável e critério de conclusão diretamente ligados a problemas contemporâneos tecnologia
+- `data/atividades/ensino-medio/3-serie/4-bimestre/ciencias.json` — 10x — a avaliação deve indicar evidências adequadas para sustentar a conclusão sobre problemas contemporâneos tecnologia e reconhecer uma limitação de dados método escala ou interpretaçã
+- `data/atividades/ensino-medio/3-serie/4-bimestre/ciencias.json` — 10x — o estudante deve indicar dados pertinentes a problemas contemporâneos investigação científica como medidas frequências comparações ou registros e explicar uma forma válida de organ
+- `data/atividades/ensino-medio/3-serie/4-bimestre/ciencias.json` — 10x — a investigação deve conter hipótese verificável procedimento viável evidência observável e critério de conclusão diretamente ligados a problemas contemporâneos investigação científ
+- `data/atividades/ensino-medio/3-serie/4-bimestre/ciencias.json` — 10x — a avaliação deve indicar evidências adequadas para sustentar a conclusão sobre problemas contemporâneos investigação científica e reconhecer uma limitação de dados método escala ou
+- `data/atividades/ensino-medio/1-serie/1-bimestre/geografia.json` — 5x — a representação proposta deve ser adequada a identificar analisar e comparar fontes e narrativas para compreender processos geográficos ambientais políticos e econômicos e indicar 
+- `data/atividades/ensino-medio/1-serie/1-bimestre/geografia.json` — 5x — a comparação deve usar duas escalas adequadas e mostrar diferenças de intensidade agentes distribuição causas ou consequências de identificar analisar e comparar fontes e narrativa
+- `data/atividades/ensino-medio/1-serie/1-bimestre/geografia.json` — 5x — a representação proposta deve ser adequada a utilizar linguagens cartográfica gráfica iconográfica e digital de maneira crítica reflexiva e ética e indicar informações espaciais re
+- `data/atividades/ensino-medio/1-serie/1-bimestre/geografia.json` — 5x — a comparação deve usar duas escalas adequadas e mostrar diferenças de intensidade agentes distribuição causas ou consequências de utilizar linguagens cartográfica gráfica iconográf
+- `data/atividades/ensino-medio/1-serie/1-bimestre/geografia.json` — 5x — a representação proposta deve ser adequada a analisar dinâmicas das populações mercadorias e capital nos continentes e seus fluxos e fixações e indicar informações espaciais releva
+- `data/atividades/ensino-medio/1-serie/1-bimestre/geografia.json` — 5x — a comparação deve usar duas escalas adequadas e mostrar diferenças de intensidade agentes distribuição causas ou consequências de analisar dinâmicas das populações mercadorias e ca
+- `data/atividades/ensino-medio/1-serie/1-bimestre/geografia.json` — 5x — a representação proposta deve ser adequada a analisar impactos das tecnologias na estruturação territorial e nas dinâmicas das sociedades contemporâneas e indicar informações espac
+- `data/atividades/ensino-medio/1-serie/1-bimestre/geografia.json` — 5x — a comparação deve usar duas escalas adequadas e mostrar diferenças de intensidade agentes distribuição causas ou consequências de analisar impactos das tecnologias na estruturação 
+- `data/atividades/ensino-medio/1-serie/1-bimestre/geografia.json` — 5x — a representação proposta deve ser adequada a comparar significados de território fronteira e vazio em diferentes sociedades relativizando visões dualistas e indicar informações esp
+- `data/atividades/ensino-medio/1-serie/1-bimestre/geografia.json` — 5x — a comparação deve usar duas escalas adequadas e mostrar diferenças de intensidade agentes distribuição causas ou consequências de comparar significados de território fronteira e va
+- `data/atividades/ensino-medio/1-serie/1-bimestre/geografia.json` — 5x — a representação proposta deve ser adequada a comparar processos de ocupação territorialidades e fronteiras considerando agentes e conflitos populacionais e indicar informações espa
+- `data/atividades/ensino-medio/1-serie/1-bimestre/geografia.json` — 5x — a comparação deve usar duas escalas adequadas e mostrar diferenças de intensidade agentes distribuição causas ou consequências de comparar processos de ocupação territorialidades e
+- `data/atividades/ensino-medio/1-serie/1-bimestre/geografia.json` — 5x — a representação proposta deve ser adequada a analisar territorialidades em suas dimensões culturais econômicas ambientais políticas e sociais e indicar informações espaciais releva
+- `data/atividades/ensino-medio/1-serie/1-bimestre/geografia.json` — 5x — a comparação deve usar duas escalas adequadas e mostrar diferenças de intensidade agentes distribuição causas ou consequências de analisar territorialidades em suas dimensões cultu
+- `data/atividades/ensino-medio/1-serie/1-bimestre/geografia.json` — 5x — a representação proposta deve ser adequada a analisar ocupação humana e produção do espaço aplicando princípios do raciocínio geográfico e indicar informações espaciais relevantes 
+- `data/atividades/ensino-medio/1-serie/1-bimestre/geografia.json` — 5x — a comparação deve usar duas escalas adequadas e mostrar diferenças de intensidade agentes distribuição causas ou consequências de analisar ocupação humana e produção do espaço apli
+- `data/atividades/ensino-medio/1-serie/1-bimestre/geografia.json` — 5x — a representação proposta deve ser adequada a problematizar produção reaproveitamento e descarte de resíduos e propor ações de sustentabilidade e indicar informações espaciais relev
+- `data/atividades/ensino-medio/1-serie/1-bimestre/geografia.json` — 5x — a comparação deve usar duas escalas adequadas e mostrar diferenças de intensidade agentes distribuição causas ou consequências de problematizar produção reaproveitamento e descarte
+- `data/atividades/ensino-medio/1-serie/1-bimestre/geografia.json` — 5x — a representação proposta deve ser adequada a comparar impactos de modelos socioeconômicos no uso de recursos naturais e na sustentabilidade e indicar informações espaciais relevant
+- `data/atividades/ensino-medio/1-serie/1-bimestre/geografia.json` — 5x — a comparação deve usar duas escalas adequadas e mostrar diferenças de intensidade agentes distribuição causas ou consequências de comparar impactos de modelos socioeconômicos no us
+- `data/atividades/ensino-medio/1-serie/1-bimestre/historia.json` — 5x — a resposta deve apresentar causas e consequências de identificar analisar e comparar fontes e narrativas para compreender processos históricos políticos econômicos sociais e cultur
+- `data/atividades/ensino-medio/1-serie/1-bimestre/historia.json` — 5x — a comparação deve reconhecer duas perspectivas sobre identificar analisar e comparar fontes e narrativas para compreender processos históricos políticos econômicos sociais e cultur
+- `data/atividades/ensino-medio/1-serie/1-bimestre/historia.json` — 5x — a explicação deve articular identificar analisar e comparar fontes e narrativas para compreender processos históricos políticos econômicos sociais e culturais contexto agentes soci
+- `data/atividades/ensino-medio/1-serie/1-bimestre/historia.json` — 5x — a avaliação deve apontar o que a fonte escolhida revela sobre identificar analisar e comparar fontes e narrativas para compreender processos históricos políticos econômicos sociais
+- `data/atividades/ensino-medio/1-serie/1-bimestre/historia.json` — 5x — a resposta deve apresentar causas e consequências de analisar circunstâncias históricas e sociais de matrizes conceituais comparando criticamente diferentes agentes e discursos dis
+- `data/atividades/ensino-medio/1-serie/1-bimestre/historia.json` — 5x — a comparação deve reconhecer duas perspectivas sobre analisar circunstâncias históricas e sociais de matrizes conceituais comparando criticamente diferentes agentes e discursos e e
+- `data/atividades/ensino-medio/1-serie/1-bimestre/historia.json` — 5x — a explicação deve articular analisar circunstâncias históricas e sociais de matrizes conceituais comparando criticamente diferentes agentes e discursos contexto agentes sociais rel
+- `data/atividades/ensino-medio/1-serie/1-bimestre/historia.json` — 5x — a avaliação deve apontar o que a fonte escolhida revela sobre analisar circunstâncias históricas e sociais de matrizes conceituais comparando criticamente diferentes agentes e disc
+- `data/atividades/ensino-medio/1-serie/1-bimestre/historia.json` — 5x — a resposta deve apresentar causas e consequências de elaborar hipóteses selecionar evidências e construir argumentos com dados documentos e narrativas de diferentes naturezas disti
+- `data/atividades/ensino-medio/1-serie/1-bimestre/historia.json` — 5x — a comparação deve reconhecer duas perspectivas sobre elaborar hipóteses selecionar evidências e construir argumentos com dados documentos e narrativas de diferentes naturezas e exp
+- `data/atividades/ensino-medio/1-serie/1-bimestre/historia.json` — 5x — a explicação deve articular elaborar hipóteses selecionar evidências e construir argumentos com dados documentos e narrativas de diferentes naturezas contexto agentes sociais relaç
+- `data/atividades/ensino-medio/1-serie/1-bimestre/historia.json` — 5x — a avaliação deve apontar o que a fonte escolhida revela sobre elaborar hipóteses selecionar evidências e construir argumentos com dados documentos e narrativas de diferentes nature
+- `data/atividades/ensino-medio/1-serie/1-bimestre/historia.json` — 5x — a resposta deve apresentar causas e consequências de contextualizar e criticar tipologias evolutivas e oposições dicotômicas explicitando suas ambiguidades históricas distinguindo 
+- `data/atividades/ensino-medio/1-serie/1-bimestre/historia.json` — 5x — a comparação deve reconhecer duas perspectivas sobre contextualizar e criticar tipologias evolutivas e oposições dicotômicas explicitando suas ambiguidades históricas e explicar co
+- `data/atividades/ensino-medio/1-serie/1-bimestre/historia.json` — 5x — a explicação deve articular contextualizar e criticar tipologias evolutivas e oposições dicotômicas explicitando suas ambiguidades históricas contexto agentes sociais relações de p
+- `data/atividades/ensino-medio/1-serie/1-bimestre/historia.json` — 5x — a avaliação deve apontar o que a fonte escolhida revela sobre contextualizar e criticar tipologias evolutivas e oposições dicotômicas explicitando suas ambiguidades históricas e ta
+- `data/atividades/ensino-medio/1-serie/1-bimestre/historia.json` — 5x — a resposta deve apresentar causas e consequências de utilizar linguagens cartográfica gráfica iconográfica e digital de maneira crítica reflexiva e ética distinguindo eventos imedi
+- `data/atividades/ensino-medio/1-serie/1-bimestre/historia.json` — 5x — a comparação deve reconhecer duas perspectivas sobre utilizar linguagens cartográfica gráfica iconográfica e digital de maneira crítica reflexiva e ética e explicar como contexto p
+- `data/atividades/ensino-medio/1-serie/1-bimestre/historia.json` — 5x — a explicação deve articular utilizar linguagens cartográfica gráfica iconográfica e digital de maneira crítica reflexiva e ética contexto agentes sociais relações de poder e duas e
+- `data/atividades/ensino-medio/1-serie/1-bimestre/historia.json` — 5x — a avaliação deve apontar o que a fonte escolhida revela sobre utilizar linguagens cartográfica gráfica iconográfica e digital de maneira crítica reflexiva e ética e também seus lim
+- `data/atividades/ensino-medio/1-serie/1-bimestre/historia.json` — 5x — a resposta deve apresentar causas e consequências de analisar dinâmicas das populações mercadorias e capital e suas relações com eventos históricos e sociais distinguindo eventos i
+- `data/atividades/ensino-medio/1-serie/1-bimestre/historia.json` — 5x — a comparação deve reconhecer duas perspectivas sobre analisar dinâmicas das populações mercadorias e capital e suas relações com eventos históricos e sociais e explicar como contex
+- `data/atividades/ensino-medio/1-serie/1-bimestre/historia.json` — 5x — a explicação deve articular analisar dinâmicas das populações mercadorias e capital e suas relações com eventos históricos e sociais contexto agentes sociais relações de poder e du
+- `data/atividades/ensino-medio/1-serie/1-bimestre/historia.json` — 5x — a avaliação deve apontar o que a fonte escolhida revela sobre analisar dinâmicas das populações mercadorias e capital e suas relações com eventos históricos e sociais e também seus
+- `data/atividades/ensino-medio/1-serie/1-bimestre/historia.json` — 5x — a resposta deve apresentar causas e consequências de analisar impactos das tecnologias nas sociedades e suas interferências nas decisões políticas econômicas e culturais distinguin
+- `data/atividades/ensino-medio/1-serie/1-bimestre/historia.json` — 5x — a comparação deve reconhecer duas perspectivas sobre analisar impactos das tecnologias nas sociedades e suas interferências nas decisões políticas econômicas e culturais e explicar
+- `data/atividades/ensino-medio/1-serie/1-bimestre/historia.json` — 5x — a explicação deve articular analisar impactos das tecnologias nas sociedades e suas interferências nas decisões políticas econômicas e culturais contexto agentes sociais relações d
+- `data/atividades/ensino-medio/1-serie/1-bimestre/historia.json` — 5x — a avaliação deve apontar o que a fonte escolhida revela sobre analisar impactos das tecnologias nas sociedades e suas interferências nas decisões políticas econômicas e culturais e
+- `data/atividades/ensino-medio/1-serie/1-bimestre/historia.json` — 5x — a resposta deve apresentar causas e consequências de comparar significados de território fronteira e vazio em diferentes sociedades e tempos históricos distinguindo eventos imediat
+- `data/atividades/ensino-medio/1-serie/1-bimestre/historia.json` — 5x — a comparação deve reconhecer duas perspectivas sobre comparar significados de território fronteira e vazio em diferentes sociedades e tempos históricos e explicar como contexto pos
+- `data/atividades/ensino-medio/1-serie/1-bimestre/historia.json` — 5x — a explicação deve articular comparar significados de território fronteira e vazio em diferentes sociedades e tempos históricos contexto agentes sociais relações de poder e duas evi
+- `data/atividades/ensino-medio/1-serie/1-bimestre/historia.json` — 5x — a avaliação deve apontar o que a fonte escolhida revela sobre comparar significados de território fronteira e vazio em diferentes sociedades e tempos históricos e também seus limit
+- `data/atividades/ensino-medio/1-serie/1-bimestre/historia.json` — 5x — a resposta deve apresentar causas e consequências de comparar processos de ocupação e formação de territórios considerando agentes conflitos e diversidade cultural distinguindo eve
+- `data/atividades/ensino-medio/1-serie/1-bimestre/historia.json` — 5x — a comparação deve reconhecer duas perspectivas sobre comparar processos de ocupação e formação de territórios considerando agentes conflitos e diversidade cultural e explicar como 
+- `data/atividades/ensino-medio/1-serie/1-bimestre/historia.json` — 5x — a explicação deve articular comparar processos de ocupação e formação de territórios considerando agentes conflitos e diversidade cultural contexto agentes sociais relações de pode
+- `data/atividades/ensino-medio/1-serie/1-bimestre/historia.json` — 5x — a avaliação deve apontar o que a fonte escolhida revela sobre comparar processos de ocupação e formação de territórios considerando agentes conflitos e diversidade cultural e també
+- `data/atividades/ensino-medio/1-serie/1-bimestre/historia.json` — 5x — a resposta deve apresentar causas e consequências de analisar a formação de países povos e nações e suas experiências políticas e de exercício da cidadania distinguindo eventos ime
+- `data/atividades/ensino-medio/1-serie/1-bimestre/historia.json` — 5x — a comparação deve reconhecer duas perspectivas sobre analisar a formação de países povos e nações e suas experiências políticas e de exercício da cidadania e explicar como contexto
+- `data/atividades/ensino-medio/1-serie/1-bimestre/historia.json` — 5x — a explicação deve articular analisar a formação de países povos e nações e suas experiências políticas e de exercício da cidadania contexto agentes sociais relações de poder e duas
+- `data/atividades/ensino-medio/1-serie/1-bimestre/historia.json` — 5x — a avaliação deve apontar o que a fonte escolhida revela sobre analisar a formação de países povos e nações e suas experiências políticas e de exercício da cidadania e também seus l
+- `data/atividades/ensino-medio/1-serie/1-bimestre/lingua-portuguesa.json` — 5x — espera se comparação objetiva entre dois pontos de vista ou formas de expressão ligados a relacionar textos às condições de produção circulação e ao contexto histórico e social com
+- `data/atividades/ensino-medio/1-serie/1-bimestre/lingua-portuguesa.json` — 5x — a reescrita deve conservar a ideia central de relacionar textos às condições de produção circulação e ao contexto histórico e social e apresentar duas adaptações coerentes com o no
+- `data/atividades/ensino-medio/1-serie/1-bimestre/lingua-portuguesa.json` — 5x — a resposta deve registrar duas revisões concretas na produção sobre relacionar textos às condições de produção circulação e ao contexto histórico e social e explicar como melhoram 
+- `data/atividades/ensino-medio/1-serie/1-bimestre/lingua-portuguesa.json` — 5x — espera se comparação objetiva entre dois pontos de vista ou formas de expressão ligados a estabelecer relações entre as partes do texto para reconhecer sua construção e coesão com 
+- `data/atividades/ensino-medio/1-serie/1-bimestre/lingua-portuguesa.json` — 5x — a reescrita deve conservar a ideia central de estabelecer relações entre as partes do texto para reconhecer sua construção e coesão e apresentar duas adaptações coerentes com o nov
+- `data/atividades/ensino-medio/1-serie/1-bimestre/lingua-portuguesa.json` — 5x — a resposta deve registrar duas revisões concretas na produção sobre estabelecer relações entre as partes do texto para reconhecer sua construção e coesão e explicar como melhoram c
+- `data/atividades/ensino-medio/1-serie/1-bimestre/lingua-portuguesa.json` — 5x — espera se comparação objetiva entre dois pontos de vista ou formas de expressão ligados a analisar relações de intertextualidade e interdiscursividade entre textos com uma diferenç
+- `data/atividades/ensino-medio/1-serie/1-bimestre/lingua-portuguesa.json` — 5x — a reescrita deve conservar a ideia central de analisar relações de intertextualidade e interdiscursividade entre textos e apresentar duas adaptações coerentes com o novo público ou
+- `data/atividades/ensino-medio/1-serie/1-bimestre/lingua-portuguesa.json` — 5x — a resposta deve registrar duas revisões concretas na produção sobre analisar relações de intertextualidade e interdiscursividade entre textos e explicar como melhoram clareza coesã
+- `data/atividades/ensino-medio/1-serie/1-bimestre/lingua-portuguesa.json` — 5x — espera se comparação objetiva entre dois pontos de vista ou formas de expressão ligados a reconhecer informações explícitas implícitas e efeitos produzidos pelas escolhas textuais 
+- `data/atividades/ensino-medio/1-serie/1-bimestre/lingua-portuguesa.json` — 5x — a reescrita deve conservar a ideia central de reconhecer informações explícitas implícitas e efeitos produzidos pelas escolhas textuais e apresentar duas adaptações coerentes com o
+- `data/atividades/ensino-medio/1-serie/1-bimestre/lingua-portuguesa.json` — 5x — a resposta deve registrar duas revisões concretas na produção sobre reconhecer informações explícitas implícitas e efeitos produzidos pelas escolhas textuais e explicar como melhor
+- `data/atividades/ensino-medio/1-serie/1-bimestre/lingua-portuguesa.json` — 5x — espera se comparação objetiva entre dois pontos de vista ou formas de expressão ligados a analisar posições argumentos e estratégias argumentativas em diferentes discursos com uma 
+- `data/atividades/ensino-medio/1-serie/1-bimestre/lingua-portuguesa.json` — 5x — a reescrita deve conservar a ideia central de analisar posições argumentos e estratégias argumentativas em diferentes discursos e apresentar duas adaptações coerentes com o novo pú
+- `data/atividades/ensino-medio/1-serie/1-bimestre/lingua-portuguesa.json` — 5x — a resposta deve registrar duas revisões concretas na produção sobre analisar posições argumentos e estratégias argumentativas em diferentes discursos e explicar como melhoram clare
+- `data/atividades/ensino-medio/1-serie/1-bimestre/lingua-portuguesa.json` — 5x — espera se comparação objetiva entre dois pontos de vista ou formas de expressão ligados a analisar efeitos de sentido decorrentes de usos expressivos da linguagem com uma diferença
+- `data/atividades/ensino-medio/1-serie/1-bimestre/lingua-portuguesa.json` — 5x — a reescrita deve conservar a ideia central de analisar efeitos de sentido decorrentes de usos expressivos da linguagem e apresentar duas adaptações coerentes com o novo público ou 
+- `data/atividades/ensino-medio/1-serie/1-bimestre/lingua-portuguesa.json` — 5x — a resposta deve registrar duas revisões concretas na produção sobre analisar efeitos de sentido decorrentes de usos expressivos da linguagem e explicar como melhoram clareza coesão
+- `data/atividades/ensino-medio/1-serie/1-bimestre/lingua-portuguesa.json` — 5x — espera se comparação objetiva entre dois pontos de vista ou formas de expressão ligados a analisar recursos linguísticos e semióticos empregados na produção de sentidos com uma dif
+- `data/atividades/ensino-medio/1-serie/1-bimestre/lingua-portuguesa.json` — 5x — a reescrita deve conservar a ideia central de analisar recursos linguísticos e semióticos empregados na produção de sentidos e apresentar duas adaptações coerentes com o novo públi
+- `data/atividades/ensino-medio/1-serie/1-bimestre/lingua-portuguesa.json` — 5x — a resposta deve registrar duas revisões concretas na produção sobre analisar recursos linguísticos e semióticos empregados na produção de sentidos e explicar como melhoram clareza 
+- `data/atividades/ensino-medio/1-serie/1-bimestre/lingua-portuguesa.json` — 5x — espera se comparação objetiva entre dois pontos de vista ou formas de expressão ligados a analisar elementos e construções sintáticas em práticas de leitura e produção com uma dife
+- `data/atividades/ensino-medio/1-serie/1-bimestre/lingua-portuguesa.json` — 5x — a reescrita deve conservar a ideia central de analisar elementos e construções sintáticas em práticas de leitura e produção e apresentar duas adaptações coerentes com o novo públic
+- `data/atividades/ensino-medio/1-serie/1-bimestre/lingua-portuguesa.json` — 5x — a resposta deve registrar duas revisões concretas na produção sobre analisar elementos e construções sintáticas em práticas de leitura e produção e explicar como melhoram clareza c
+- `data/atividades/ensino-medio/1-serie/1-bimestre/lingua-portuguesa.json` — 5x — espera se comparação objetiva entre dois pontos de vista ou formas de expressão ligados a selecionar informações e dados de fontes confiáveis para fundamentar produções com uma dif
+- `data/atividades/ensino-medio/1-serie/1-bimestre/lingua-portuguesa.json` — 5x — a reescrita deve conservar a ideia central de selecionar informações e dados de fontes confiáveis para fundamentar produções e apresentar duas adaptações coerentes com o novo públi
+- `data/atividades/ensino-medio/1-serie/1-bimestre/lingua-portuguesa.json` — 5x — a resposta deve registrar duas revisões concretas na produção sobre selecionar informações e dados de fontes confiáveis para fundamentar produções e explicar como melhoram clareza 
+- `data/atividades/ensino-medio/1-serie/1-bimestre/lingua-portuguesa.json` — 5x — espera se comparação objetiva entre dois pontos de vista ou formas de expressão ligados a planejar produzir revisar e editar textos adequados ao contexto de circulação com uma dife
+- `data/atividades/ensino-medio/1-serie/1-bimestre/lingua-portuguesa.json` — 5x — a reescrita deve conservar a ideia central de planejar produzir revisar e editar textos adequados ao contexto de circulação e apresentar duas adaptações coerentes com o novo públic
+- `data/atividades/ensino-medio/1-serie/1-bimestre/lingua-portuguesa.json` — 5x — a resposta deve registrar duas revisões concretas na produção sobre planejar produzir revisar e editar textos adequados ao contexto de circulação e explicar como melhoram clareza c
+- `data/atividades/ensino-medio/1-serie/2-bimestre/geografia.json` — 5x — a representação proposta deve ser adequada a identificar analisar e comparar fontes e narrativas para compreender processos geográficos ambientais políticos e econômicos e indicar 
+- `data/atividades/ensino-medio/1-serie/2-bimestre/geografia.json` — 5x — a comparação deve usar duas escalas adequadas e mostrar diferenças de intensidade agentes distribuição causas ou consequências de identificar analisar e comparar fontes e narrativa
+- `data/atividades/ensino-medio/1-serie/2-bimestre/geografia.json` — 5x — a representação proposta deve ser adequada a utilizar linguagens cartográfica gráfica iconográfica e digital de maneira crítica reflexiva e ética e indicar informações espaciais re
+- `data/atividades/ensino-medio/1-serie/2-bimestre/geografia.json` — 5x — a comparação deve usar duas escalas adequadas e mostrar diferenças de intensidade agentes distribuição causas ou consequências de utilizar linguagens cartográfica gráfica iconográf
+- `data/atividades/ensino-medio/1-serie/2-bimestre/geografia.json` — 5x — a representação proposta deve ser adequada a analisar dinâmicas das populações mercadorias e capital nos continentes e seus fluxos e fixações e indicar informações espaciais releva
+- `data/atividades/ensino-medio/1-serie/2-bimestre/geografia.json` — 5x — a comparação deve usar duas escalas adequadas e mostrar diferenças de intensidade agentes distribuição causas ou consequências de analisar dinâmicas das populações mercadorias e ca
+- `data/atividades/ensino-medio/1-serie/2-bimestre/geografia.json` — 5x — a representação proposta deve ser adequada a analisar impactos das tecnologias na estruturação territorial e nas dinâmicas das sociedades contemporâneas e indicar informações espac
+- `data/atividades/ensino-medio/1-serie/2-bimestre/geografia.json` — 5x — a comparação deve usar duas escalas adequadas e mostrar diferenças de intensidade agentes distribuição causas ou consequências de analisar impactos das tecnologias na estruturação 
+- `data/atividades/ensino-medio/1-serie/2-bimestre/geografia.json` — 5x — a representação proposta deve ser adequada a comparar significados de território fronteira e vazio em diferentes sociedades relativizando visões dualistas e indicar informações esp
+- `data/atividades/ensino-medio/1-serie/2-bimestre/geografia.json` — 5x — a comparação deve usar duas escalas adequadas e mostrar diferenças de intensidade agentes distribuição causas ou consequências de comparar significados de território fronteira e va
+- `data/atividades/ensino-medio/1-serie/2-bimestre/geografia.json` — 5x — a representação proposta deve ser adequada a comparar processos de ocupação territorialidades e fronteiras considerando agentes e conflitos populacionais e indicar informações espa
+- `data/atividades/ensino-medio/1-serie/2-bimestre/geografia.json` — 5x — a comparação deve usar duas escalas adequadas e mostrar diferenças de intensidade agentes distribuição causas ou consequências de comparar processos de ocupação territorialidades e
+- `data/atividades/ensino-medio/1-serie/2-bimestre/geografia.json` — 5x — a representação proposta deve ser adequada a analisar territorialidades em suas dimensões culturais econômicas ambientais políticas e sociais e indicar informações espaciais releva
+- `data/atividades/ensino-medio/1-serie/2-bimestre/geografia.json` — 5x — a comparação deve usar duas escalas adequadas e mostrar diferenças de intensidade agentes distribuição causas ou consequências de analisar territorialidades em suas dimensões cultu
+- `data/atividades/ensino-medio/1-serie/2-bimestre/geografia.json` — 5x — a representação proposta deve ser adequada a analisar ocupação humana e produção do espaço aplicando princípios do raciocínio geográfico e indicar informações espaciais relevantes 
+- `data/atividades/ensino-medio/1-serie/2-bimestre/geografia.json` — 5x — a comparação deve usar duas escalas adequadas e mostrar diferenças de intensidade agentes distribuição causas ou consequências de analisar ocupação humana e produção do espaço apli
+- `data/atividades/ensino-medio/1-serie/2-bimestre/geografia.json` — 5x — a representação proposta deve ser adequada a problematizar produção reaproveitamento e descarte de resíduos e propor ações de sustentabilidade e indicar informações espaciais relev
+- `data/atividades/ensino-medio/1-serie/2-bimestre/geografia.json` — 5x — a comparação deve usar duas escalas adequadas e mostrar diferenças de intensidade agentes distribuição causas ou consequências de problematizar produção reaproveitamento e descarte
+- `data/atividades/ensino-medio/1-serie/2-bimestre/geografia.json` — 5x — a representação proposta deve ser adequada a comparar impactos de modelos socioeconômicos no uso de recursos naturais e na sustentabilidade e indicar informações espaciais relevant
+- `data/atividades/ensino-medio/1-serie/2-bimestre/geografia.json` — 5x — a comparação deve usar duas escalas adequadas e mostrar diferenças de intensidade agentes distribuição causas ou consequências de comparar impactos de modelos socioeconômicos no us
+- `data/atividades/ensino-medio/1-serie/2-bimestre/historia.json` — 5x — a resposta deve apresentar causas e consequências de identificar analisar e comparar fontes e narrativas para compreender processos históricos políticos econômicos sociais e cultur
+- `data/atividades/ensino-medio/1-serie/2-bimestre/historia.json` — 5x — a comparação deve reconhecer duas perspectivas sobre identificar analisar e comparar fontes e narrativas para compreender processos históricos políticos econômicos sociais e cultur
+- `data/atividades/ensino-medio/1-serie/2-bimestre/historia.json` — 5x — a explicação deve articular identificar analisar e comparar fontes e narrativas para compreender processos históricos políticos econômicos sociais e culturais contexto agentes soci
+- `data/atividades/ensino-medio/1-serie/2-bimestre/historia.json` — 5x — a avaliação deve apontar o que a fonte escolhida revela sobre identificar analisar e comparar fontes e narrativas para compreender processos históricos políticos econômicos sociais
+- `data/atividades/ensino-medio/1-serie/2-bimestre/historia.json` — 5x — a resposta deve apresentar causas e consequências de analisar circunstâncias históricas e sociais de matrizes conceituais comparando criticamente diferentes agentes e discursos dis
+- `data/atividades/ensino-medio/1-serie/2-bimestre/historia.json` — 5x — a comparação deve reconhecer duas perspectivas sobre analisar circunstâncias históricas e sociais de matrizes conceituais comparando criticamente diferentes agentes e discursos e e
+- `data/atividades/ensino-medio/1-serie/2-bimestre/historia.json` — 5x — a explicação deve articular analisar circunstâncias históricas e sociais de matrizes conceituais comparando criticamente diferentes agentes e discursos contexto agentes sociais rel
+- `data/atividades/ensino-medio/1-serie/2-bimestre/historia.json` — 5x — a avaliação deve apontar o que a fonte escolhida revela sobre analisar circunstâncias históricas e sociais de matrizes conceituais comparando criticamente diferentes agentes e disc
+- `data/atividades/ensino-medio/1-serie/2-bimestre/historia.json` — 5x — a resposta deve apresentar causas e consequências de elaborar hipóteses selecionar evidências e construir argumentos com dados documentos e narrativas de diferentes naturezas disti
+- `data/atividades/ensino-medio/1-serie/2-bimestre/historia.json` — 5x — a comparação deve reconhecer duas perspectivas sobre elaborar hipóteses selecionar evidências e construir argumentos com dados documentos e narrativas de diferentes naturezas e exp
