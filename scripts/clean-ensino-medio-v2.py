@@ -62,7 +62,17 @@ def clean_activity(activity):
         bncc[0]["habilidadeOficial"] = skill
         code = bncc[0].get("codigo")
         if code:
-            activity["objetivo"] = activity["objetivo"].replace("Desenvolver a habilidade trabalhada", f"Desenvolver a habilidade {code}", 1)
+            objective = activity["objetivo"]
+            objective = re.sub(
+                r"^Desenvolver\s+(?:a habilidade\s+)+(?:trabalhada\s+)?",
+                f"Desenvolver a habilidade {code} ",
+                objective,
+                count=1,
+                flags=re.I,
+            )
+            if not CODE_RE.search(objective):
+                objective = f"Desenvolver a habilidade {code} por meio de análise, aplicação e argumentação sobre {new_theme.rstrip('.')} ."
+            activity["objetivo"] = fix_punctuation(objective)
         first = re.search(r"[A-Za-zÀ-ÖØ-öø-ÿ]+", skill)
         if first:
             bncc[0]["verbo"] = first.group(0)
@@ -108,6 +118,8 @@ def validate_activity(activity, path):
     fields += [a.get("resposta", "") for a in activity.get("gabarito") or []]
     if any(".." in str(field) for field in fields):
         problems.append(f"{path}: {aid}: pontuação duplicada")
+    if "a habilidade a habilidade" in activity.get("objetivo", "").lower():
+        problems.append(f"{path}: {aid}: objetivo duplicou expressão de habilidade")
     for q in activity.get("questoes") or []:
         if CODE_RE.search(q.get("enunciado") or ""):
             problems.append(f"{path}: {aid}: código BNCC exposto ao aluno")
