@@ -1592,8 +1592,8 @@
     {
       "id": "efi-4ano-b3-geo-v2-11-materia-prima-ao-produto",
       "padraoPedagogico": "teacheasy-v2",
-      "titulo": "Da matéria-prima ao produto",
-      "tema": "Transformação de matérias-primas",
+      "titulo": "Do algodão à camiseta",
+      "tema": "Transformação, circulação e consumo do algodão",
       "sequencia": "Atividade 11",
       "sequenciaNumero": 11,
       "tipoSequencia": "Reconstrução pedagógica V2",
@@ -1612,14 +1612,14 @@
       "figuras": [],
       "possuiGabarito": true,
       "possuiVersaoAdaptada": false,
-      "instrucaoGeral": "Leia o texto de apoio e responda às oito questões sobre “Da matéria-prima ao produto”. Use informações da atividade para justificar suas respostas.",
+      "instrucaoGeral": "Leia o texto de apoio e responda às oito questões sobre o percurso do algodão até a camiseta. Use informações do texto para justificar suas respostas.",
       "textoApoio": {
-        "titulo": "Geografia: leitura e investigação de Transformação de matérias-primas",
-        "conteudo": "O algodão é cultivado no campo e, depois da colheita, segue para unidades onde suas fibras são limpas e preparadas. Em seguida, as fibras podem ser transformadas em fios, os fios em tecidos e os tecidos em peças de roupa. Depois de prontas, as camisetas são transportadas para lojas ou centros de distribuição e chegam aos consumidores. Nesse percurso trabalham agricultores, motoristas, operários, comerciantes e muitos outros profissionais. O processo mostra que um produto usado no cotidiano pode passar por várias etapas e lugares antes de chegar às mãos de quem o compra. No 4º ano, o estudante deve selecionar informações, estabelecer relações e explicar seu raciocínio com vocabulário adequado à disciplina. No 3º bimestre, a proposta retoma conhecimentos já construídos e os aplica a uma situação nova, favorecendo comparação, justificativa e síntese. Em “Da matéria-prima ao produto”, as questões retomam esse contexto e pedem que o estudante use informações do texto para sustentar suas respostas. No 4º ano, o estudante deve selecionar informações, estabelecer relações e explicar seu raciocínio com vocabulário adequado à disciplina. No 3º bimestre, a proposta retoma conhecimentos já construídos e os aplica a uma situação nova, favorecendo comparação, justificativa e síntese. Em “Da matéria-prima ao produto”, as questões retomam esse contexto e pedem que o estudante use informações do texto para sustentar suas respostas."
+        "titulo": "Da plantação de algodão à camiseta",
+        "conteudo": "O algodão é cultivado no campo e, depois da colheita, segue para unidades onde suas fibras são limpas e preparadas. Em seguida, as fibras são transformadas em fios, os fios em tecidos e os tecidos podem virar camisetas. As peças prontas são transportadas para centros de distribuição e lojas, até chegar aos consumidores. Nesse percurso participam agricultores, motoristas, trabalhadores da indústria, comerciantes e outros profissionais. O exemplo mostra que matéria-prima, transformação, transporte, venda e consumo acontecem em etapas conectadas e podem envolver lugares diferentes."
       },
       "ilustracao": {
-        "objetivoPedagogico": "Apoiar a compreensão de transformação de matérias-primas com elementos visuais coerentes com o objetivo da atividade.",
-        "descricao": "Cena ou representação pedagógica relacionada a transformação de matérias-primas, adequada ao 4º ano, sem texto embutido desnecessário e com função didática clara.",
+        "objetivoPedagogico": "Representar visualmente as etapas de transformação e circulação do algodão até a camiseta, favorecendo a leitura da cadeia produtiva.",
+        "descricao": "Sequência visual mostrando plantação de algodão, fibras, fios, tecido, confecção de camiseta, transporte e chegada ao comércio, com os personagens TeachEasy observando e registrando as etapas sem substituir os trabalhadores representados.",
         "status": "producao-visual-pendente",
         "estilo": "TeachEasy — ilustração pedagógica de Geografia adequada ao 4º ano"
       },
@@ -1627,7 +1627,7 @@
         {
           "numero": 1,
           "tipo": "compreensao",
-          "enunciado": "Qual é a matéria-prima citada no texto para a produção da camiseta? Considere o contexto de “Da matéria-prima ao produto”.",
+          "enunciado": "Qual é a matéria-prima usada para iniciar a produção da camiseta apresentada no texto?",
           "alternativas": [],
           "espacoResposta": "medio",
           "figuraId": null
@@ -1635,12 +1635,12 @@
         {
           "numero": 2,
           "tipo": "sequencia",
-          "enunciado": "Qual etapa ocorre depois que as fibras são preparadas? Considere o contexto de “Da matéria-prima ao produto”.",
+          "enunciado": "Qual etapa ocorre depois que as fibras de algodão são limpas e preparadas?",
           "alternativas": [
             "As fibras são transformadas em fios.",
             "A camiseta volta para a plantação.",
-            "O produto é descartado.",
-            "A loja planta o algodão."
+            "O algodão é vendido sem passar por transformação.",
+            "A loja planta o algodão que vende."
           ],
           "espacoResposta": "pequeno",
           "figuraId": null
@@ -1648,7 +1648,7 @@
         {
           "numero": 3,
           "tipo": "compreensao",
-          "enunciado": "Cite duas etapas de transformação apresentadas no texto. Considere o contexto de “Da matéria-prima ao produto”.",
+          "enunciado": "Cite duas transformações pelas quais o algodão passa antes de se tornar uma camiseta.",
           "alternativas": [],
           "espacoResposta": "medio",
           "figuraId": null
@@ -1656,7 +1656,7 @@
         {
           "numero": 4,
           "tipo": "interpretacao",
-          "enunciado": "Por que a camiseta passa por diferentes lugares antes de chegar ao consumidor? Considere o contexto de “Da matéria-prima ao produto”.",
+          "enunciado": "Por que a camiseta pode passar por diferentes lugares antes de chegar ao consumidor?",
           "alternativas": [],
           "espacoResposta": "grande",
           "figuraId": null
@@ -1664,7 +1664,7 @@
         {
           "numero": 5,
           "tipo": "compreensao",
-          "enunciado": "Que profissionais participam desse processo, segundo o texto? Considere o contexto de “Da matéria-prima ao produto”.",
+          "enunciado": "Quais profissionais citados no texto participam desse percurso produtivo?",
           "alternativas": [],
           "espacoResposta": "medio",
           "figuraId": null
@@ -1672,23 +1672,23 @@
         {
           "numero": 6,
           "tipo": "interpretacao",
-          "enunciado": "Explique a diferença entre matéria-prima e produto final usando o exemplo do texto. Considere o contexto de “Da matéria-prima ao produto”.",
+          "enunciado": "Explique a diferença entre matéria-prima e produto final usando o algodão e a camiseta como exemplo.",
           "alternativas": [],
           "espacoResposta": "grande",
           "figuraId": null
         },
         {
           "numero": 7,
-          "tipo": "aplicacao",
-          "enunciado": "Avalie um limite, risco ou cuidado necessário ao interpretar dados ou representações de “Da matéria-prima ao produto”.",
+          "tipo": "analise",
+          "enunciado": "Por que é incorreto afirmar que a camiseta é produzida em um único lugar? Use duas etapas do texto para justificar.",
           "alternativas": [],
           "espacoResposta": "medio",
           "figuraId": null
         },
         {
           "numero": 8,
-          "tipo": "reflexao",
-          "enunciado": "Elabore uma síntese geográfica de “Da matéria-prima ao produto” relacionando localização, evidência, conexão e conclusão.",
+          "tipo": "sintese",
+          "enunciado": "Explique como produção, circulação e consumo aparecem no percurso do algodão até a camiseta.",
           "alternativas": [],
           "espacoResposta": "grande",
           "figuraId": null
@@ -1698,42 +1698,42 @@
         {
           "numero": 1,
           "resposta": "O algodão.",
-          "justificativa": "Ele é a matéria-prima que inicia o processo descrito."
+          "justificativa": "O texto apresenta o algodão como matéria-prima que inicia o processo."
         },
         {
           "numero": 2,
           "resposta": "Alternativa A: as fibras são transformadas em fios.",
-          "justificativa": "Essa é a etapa seguinte apresentada no texto."
+          "justificativa": "O texto indica essa etapa após a limpeza e preparação das fibras."
         },
         {
           "numero": 3,
           "resposta": "Exemplos: fibras em fios, fios em tecidos e tecidos em camisetas.",
-          "justificativa": "A resposta deve mencionar duas transformações do processo."
+          "justificativa": "A resposta deve registrar duas transformações descritas."
         },
         {
           "numero": 4,
-          "resposta": "Porque cada etapa pode ser realizada em locais diferentes, desde o cultivo até a fabricação, distribuição e venda.",
-          "justificativa": "A questão relaciona produção e circulação."
+          "resposta": "Porque cultivo, transformação, confecção, distribuição e venda podem ocorrer em lugares diferentes, ligados pelo transporte.",
+          "justificativa": "A resposta relaciona etapas produtivas e circulação espacial."
         },
         {
           "numero": 5,
-          "resposta": "Agricultores, motoristas, operários e comerciantes, entre outros.",
-          "justificativa": "São profissionais citados no texto."
+          "resposta": "Agricultores, motoristas, trabalhadores da indústria e comerciantes, entre outros.",
+          "justificativa": "São profissionais mencionados no percurso apresentado."
         },
         {
           "numero": 6,
-          "resposta": "Matéria-prima é o material usado para produzir algo, como o algodão; produto final é o resultado pronto para uso, como a camiseta.",
-          "justificativa": "A resposta distingue os conceitos com o exemplo trabalhado."
+          "resposta": "Matéria-prima é o material usado na fabricação, como o algodão; produto final é o item pronto para uso e consumo, como a camiseta.",
+          "justificativa": "A resposta diferencia os conceitos usando o exemplo do texto."
         },
         {
           "numero": 7,
-          "resposta": "Deve reconhecer um limite, cuidado, erro possível ou ponto de vista e justificar a avaliação apresentada.",
-          "justificativa": "Critério de correção alinhado à habilidade EF04GE08 já associada à coleção e à aprendizagem desenvolvida nesta atividade."
+          "resposta": "Porque o algodão é cultivado no campo, transformado em fios e tecidos em unidades produtivas, confeccionado e depois transportado para distribuição e venda.",
+          "justificativa": "A justificativa deve usar ao menos duas etapas e reconhecer que elas podem ocorrer em lugares distintos."
         },
         {
           "numero": 8,
-          "resposta": "Deve produzir uma síntese autoral coerente com transformação de matérias-primas, articulando evidências e conclusão.",
-          "justificativa": "Critério de correção alinhado à habilidade EF04GE08 já associada à coleção e à aprendizagem desenvolvida nesta atividade."
+          "resposta": "A produção começa com o cultivo e a transformação do algodão; a circulação envolve transporte e distribuição; o consumo ocorre quando a camiseta chega ao comprador.",
+          "justificativa": "A síntese deve articular as três partes do percurso descrito no texto."
         }
       ],
       "revisao": {
