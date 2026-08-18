@@ -18,6 +18,15 @@ function Clean-Text([object]$value) {
     return ([string]$value -replace '\s+', ' ').Trim()
 }
 
+function Get-IllustrationText($activity) {
+    $scene = (Clean-Text $activity.ilustracao.descricao)
+    if ([string]::IsNullOrWhiteSpace($scene)) { return '' }
+
+    $rule = 'REGRA TEACHEASY: preserve integralmente a cena e seus elementos essenciais. Inclua os personagens oficiais TeachEasy necessarios como PARTICIPANTES ATIVOS, interagindo de forma natural e realizando acoes coerentes com o conteudo. Nao os deixe apenas posados ou colados no cenario e nunca substitua, esconda ou descaracterize elementos essenciais. Em cenas historicas ou culturais, preserve os povos, objetos e acontecimentos proprios do contexto; o elenco TeachEasy nao deve representar esses povos ou personagens historicos.'
+
+    return $scene + "`r`n`r`n" + $rule
+}
+
 function Release-Com([object]$value) {
     if ($null -eq $value) { return }
     try {
@@ -212,7 +221,7 @@ try {
                     $supportText = (Clean-Text $activity.textoApoio.titulo) + "`r`n`r`n" + (Clean-Text $activity.textoApoio.conteudo)
                     $cell = $contentTable.Cell(1,1); Set-CellText $cell $supportText 11 $false 0; Release-Com $cell
 
-                    $illustrationText = (U 'ILUSTRA\u00C7\u00C3O') + "`r`n`r`n" + (Clean-Text $activity.ilustracao.descricao)
+                    $illustrationText = (U 'ILUSTRA\u00C7\u00C3O') + "`r`n`r`n" + (Get-IllustrationText $activity)
                     $cell = $contentTable.Cell(1,2); Set-CellText $cell $illustrationText 10 $false 1; Release-Com $cell
 
                     $instruction = Clean-Text $activity.instrucaoGeral
