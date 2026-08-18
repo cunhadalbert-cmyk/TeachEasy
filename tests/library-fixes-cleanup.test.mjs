@@ -56,7 +56,7 @@ test('biblioteca-fixes gera as 100 combinações sem tabela manual duplicada', (
 test('filtro de disciplina usa seletor CSS válido e HTML carrega a versão enxuta', () => {
   assert.match(source, /querySelector\('option\[value=""\]'\)/);
   assert.doesNotMatch(source, /querySelector\('option\[value="\]'\)/);
-  assert.match(html, /biblioteca-fixes\.js\?v=20260817-cleanup-v1/);
+  assert.match(html, /biblioteca-fixes\.js\?v=20260807-autismo-v3&cleanup=20260817-v1/);
 });
 
 test('configuração usa gerador em vez de cem objetos copiados', () => {
@@ -64,5 +64,6 @@ test('configuração usa gerador em vez de cem objetos copiados', () => {
   assert.match(source, /BIMESTERS = \[1, 2, 3, 4\]/);
   assert.match(source, /INITIAL_YEAR_NUMBERS\.flatMap/);
   assert.match(source, /BIMESTERS\.flatMap/);
+  assert.match(source, /TERM3_CANONICAL_PATHS/);
   assert.doesNotMatch(source, /const collectionConfigs = \[/);
 });
