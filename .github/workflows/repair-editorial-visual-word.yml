@@ -40,6 +40,9 @@ jobs:
       - name: Repair Geography 4th-year third-term duplicate activity
         run: node scripts/repair-geography-4ano-term3-activity11.mjs
 
+      - name: Repair Word layout metadata
+        run: node scripts/repair-word-layout-metadata.mjs
+
       - name: Run complete validation
         run: npm run validate
 
@@ -49,9 +52,7 @@ jobs:
           rm -f docs/auditoria-figuras.md
           git config user.name 'TeachEasy Validation'
           git config user.email 'actions@users.noreply.github.com'
-          git add data/atividades/fundamental-anos-iniciais/*-ano/4-bimestre/ciencias.json
-          git add data/atividades/fundamental-anos-finais/*-ano/4-bimestre/ciencias.json
-          git add data/atividades/fundamental-anos-iniciais/4-ano/3-bimestre/geografia.json
+          git add data/atividades
           git diff --cached --quiet && exit 0
-          git commit -m 'Staging corrige bloqueios encontrados na auditoria editorial'
+          git commit -m 'Staging corrige bloqueios editoriais e de layout Word'
           git push origin HEAD:automation/editorial-visual-word-audit-20260818
