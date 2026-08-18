@@ -23,7 +23,8 @@
 
   function contextFromActivity(activity, collection) {
     const explicit = activity?.ilustracao || {};
-    const description = clean(explicit.descricao || existingFigureDescription(activity) || fallbackDescription(activity, collection));
+    const explicitDescription = activity?.ilustracao ? clean(activity.ilustracao.descricao || '') : '';
+    const description = clean(explicitDescription || existingFigureDescription(activity) || fallbackDescription(activity, collection));
     if (!description) return null;
     return {
       objetivoPedagogico: clean(explicit.objetivoPedagogico || activity?.objetivo || ''),
