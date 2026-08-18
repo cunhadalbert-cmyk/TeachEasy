@@ -1,0 +1,7 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import path from 'node:path';
+import { validatePedagogicalActivityV2 } from '../scripts/pedagogical-standard-v2.mjs';
+const subjects=['lingua-portuguesa.json','matematica.json','ciencias.json','historia.json','geografia.json'];
+test('1º ao 3º bimestres do Fundamental estão integralmente em V2',()=>{let collections=0,activities=0,questions=0;const ids=new Set();for(let year=1;year<=9;year++)for(let term=1;term<=3;term++)for(const filename of subjects){const stage=year<=5?'fundamental-anos-iniciais':'fundamental-anos-finais';const file=path.join('data','atividades',stage,`${year}-ano`,`${term}-bimestre`,filename);const c=JSON.parse(fs.readFileSync(file,'utf8'));assert.equal(c.schemaVersion,'2.0');assert.equal(c.padraoPedagogico,'teacheasy-v2');assert.equal(c.atividades.length,50);for(const a of c.atividades){assert.equal(a.questoes.length,8);assert.equal(a.gabarito.length,8);assert.equal(ids.has(a.id),false,`ID duplicado: ${a.id}`);ids.add(a.id);const r=validatePedagogicalActivityV2(a,c);assert.equal(r.valid,true,r.errors.join('\n'));assert.equal(a.questoes.some(q=>/\bEF(?:0[1-9]|15|35)[A-Z]{2}\d{2}\b/.test(q.enunciado)),false,`BNCC exposta ao aluno: ${a.id}`);questions+=8;}activities+=50;collections++;}assert.equal(collections,135);assert.equal(activities,6750);assert.equal(questions,54000);assert.equal(ids.size,6750);});

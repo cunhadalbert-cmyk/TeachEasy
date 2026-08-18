@@ -24,40 +24,56 @@ async function inputFile(directory, value, filename = 'input.json') {
   return file;
 }
 
-function item(id = 'atividade-01', texto = 'Texto pedagÃ³gico da atividade.') {
-  return { id, titulo: `TÃ­tulo ${id}`, texto };
+function item(id = 'atividade-01', texto = 'Texto pedagógico da atividade.', disciplina = 'Ciências') {
+  return { id, titulo: `Título ${id}`, disciplina, texto };
 }
 
-test('rejeita JSON invÃ¡lido antes de gerar imagens', async t => {
+test('rejeita JSON inválido antes de gerar imagens', async t => {
   const directory = await sandbox(t);
-  const input = await inputFile(directory, '{ invÃ¡lido');
-  await assert.rejects(loadInput(input), /JSON invÃ¡lido/);
+  const input = await inputFile(directory, '{ inválido');
+  await assert.rejects(loadInput(input), /JSON inválido/);
 });
 
 test('rejeita lotes com mais de 10 itens', async t => {
   const directory = await sandbox(t);
   const input = await inputFile(directory, Array.from({ length: 11 }, (_, index) => item(`atividade-${index + 1}`)));
-  await assert.rejects(loadInput(input), /no mÃ¡ximo 10 itens/);
+  await assert.rejects(loadInput(input), /no máximo 10 itens/);
 });
 
 test('rejeita item sem texto', async t => {
   const directory = await sandbox(t);
   const input = await inputFile(directory, [item('atividade-01', '')]);
-  await assert.rejects(loadInput(input), /texto Ã© obrigatÃ³rio/);
+  await assert.rejects(loadInput(input), /texto é obrigatório/);
 });
 
-test('rejeita IDs duplicados sem diferenciar maiÃºsculas', async t => {
+test('rejeita item sem disciplina', async t => {
+  const directory = await sandbox(t);
+  const input = await inputFile(directory, [item('atividade-01', 'Texto pedagógico.', '')]);
+  await assert.rejects(loadInput(input), /disciplina é obrigatória/);
+});
+
+test('rejeita IDs duplicados sem diferenciar maiúsculas', async t => {
   const directory = await sandbox(t);
   const input = await inputFile(directory, [item('atividade-01'), item('ATIVIDADE-01')]);
   await assert.rejects(loadInput(input), /ID duplicado/);
 });
 
-test('cria a pasta de saÃ­da e salva a imagem', async t => {
+test('cria a pasta de saída e salva a imagem usando a disciplina real', async t => {
   const directory = await sandbox(t);
   const input = await inputFile(directory, [item()]);
   const output = path.join(directory, 'nova', 'pasta');
-  const report = await runBatch({ input, output, generator: async () => mockImage, logger: silentLogger });
+  const subjects = [];
+  const report = await runBatch({
+    input,
+    output,
+    generator: async ({ subject }) => {
+      subjects.push(subject);
+      return mockImage;
+    },
+    logger: silentLogger
+  });
   assert.equal(report.geradas, 1);
+  assert.deepEqual(subjects, ['Ciências']);
   assert.deepEqual(await readFile(path.join(output, 'atividade-01.png')), mockImage);
 });
 
@@ -97,7 +113,7 @@ test('continua o lote depois da falha independente de um item', async t => {
   assert.deepEqual(await readFile(path.join(output, 'atividade-03.png')), mockImage);
 });
 
-test('cria relatÃ³rio final JSON e mostra o resumo completo', async t => {
+test('cria relatório final JSON e mostra o resumo completo', async t => {
   const directory = await sandbox(t);
   const input = await inputFile(directory, [item()]);
   const output = path.join(directory, 'saida');
@@ -115,7 +131,7 @@ test('cria relatÃ³rio final JSON e mostra o resumo completo', async t => {
     status: 'ok',
     horario: '2026-08-13T12:00:00.000Z'
   });
-  assert.match(lines.join('\n'), /LOTE DE ILUSTRAÃ‡Ã•ES CONCLUÃDO[\s\S]*Solicitadas: 1[\s\S]*OK   atividade-01\.png/);
+  assert.match(lines.join('\n'), /LOTE DE ILUSTRAÇÕES CONCLUÍDO[\s\S]*Solicitadas: 1[\s\S]*OK   atividade-01\.png/);
 });
 
 test('modo --force substitui explicitamente a imagem existente', async t => {
@@ -129,7 +145,7 @@ test('modo --force substitui explicitamente a imagem existente', async t => {
   assert.deepEqual(await readFile(path.join(output, 'atividade-01.png')), mockImage);
 });
 
-test('retry Ã© limitado e usado somente para erro temporÃ¡rio', async () => {
+test('retry é limitado e usado somente para erro temporário', async () => {
   let attempts = 0;
   const generator = async () => {
     attempts += 1;
@@ -154,4 +170,3 @@ test('retry Ã© limitado e usado somente para erro temporÃ¡rio', async () => 
   }, item(), { wait: async () => {}, logger: silentLogger }), /erro permanente/);
   assert.equal(attempts, 1);
 });
-

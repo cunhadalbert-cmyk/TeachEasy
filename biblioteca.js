@@ -14,14 +14,12 @@ const activitySeeds = [
   ['EFI09', 'Ensino Fundamental I', '5º ano', 1, 'Matemática', 'Frações no cotidiano', 'Média', 'EF05MA03', '🍕', ['#ffd8d3', '#fff0b7']],
   ['EFI10', 'Ensino Fundamental I', '5º ano', 1, 'Língua Portuguesa', 'Interpretação de crônica', 'Média', 'EF05LP10', '📰', ['#dbe9ff', '#f5def2']],
   ['EFI11', 'Ensino Fundamental I', '5º ano', 2, 'Geografia', 'Regiões brasileiras', 'Média', 'EF05GE02', '🗺️', ['#d8efff', '#dff3dc']],
-  ['EFI12', 'Ensino Fundamental I', '5º ano', 4, 'Arte', 'Cores quentes e frias', 'Fácil', 'EF15AR02', '🖌️', ['#ffd5c9', '#d8e9ff']],
   ['EFII01', 'Ensino Fundamental II', '6º ano', 1, 'Matemática', 'Números inteiros', 'Média', 'EF06MA03', '📈', ['#dbe9ff', '#dff3dc']],
   ['EFII02', 'Ensino Fundamental II', '6º ano', 2, 'Ciências', 'Misturas e separação', 'Média', 'EF06CI01', '🧪', ['#d9f2ef', '#eee0ff']],
   ['EFII03', 'Ensino Fundamental II', '7º ano', 2, 'História', 'Renascimento cultural', 'Média', 'EF07HI04', '🎭', ['#f4dfc7', '#f2ddec']],
   ['EFII04', 'Ensino Fundamental II', '7º ano', 3, 'Língua Portuguesa', 'Notícia e opinião', 'Desafiadora', 'EF07LP01', '🎙️', ['#dbe9ff', '#ffe2d8']],
   ['EFII05', 'Ensino Fundamental II', '8º ano', 1, 'Geografia', 'População e migrações', 'Desafiadora', 'EF08GE01', '🌎', ['#d7efff', '#dff3dc']],
   ['EFII06', 'Ensino Fundamental II', '9º ano', 3, 'Matemática', 'Funções e gráficos', 'Desafiadora', 'EF09MA06', '📊', ['#dbe9ff', '#eadfff']],
-  ['EFII07', 'Ensino Fundamental II', '6º ano', 1, 'Inglês', 'Identity and everyday language', 'Média', 'EF06LI01', '💬', ['#dbe9ff', '#ffe2d8']],
   ['EM01', 'Ensino Médio', '1ª série', 1, 'Biologia', 'Ecologia e relações ecológicas', 'Desafiadora', 'EM13CNT202', '🌿', ['#dff3dc', '#fff0b7']],
   ['EM02', 'Ensino Médio', '2ª série', 2, 'Física', 'Movimento e velocidade', 'Desafiadora', 'EM13CNT204', '🚀', ['#dbe9ff', '#e7dfff']],
   ['EM03', 'Ensino Médio', '3ª série', 3, 'Química', 'Funções orgânicas', 'Desafiadora', 'EM13CNT104', '⚗️', ['#d9f2ef', '#f5def2']],
@@ -112,14 +110,7 @@ const collectionRegistry = {
   }
 };
 
-const finalYearsSubjects = {
-  'Língua Portuguesa': { file: 'lingua-portuguesa', symbol: '📚', colors: ['#ffe2e8', '#eee3ff'] },
-  'Matemática': { file: 'matematica', symbol: '📐', colors: ['#e1ebff', '#fff1bd'] },
-  'Ciências': { file: 'ciencias', symbol: '🔬', colors: ['#d9f1e1', '#e8f0ff'] },
-  'História': { file: 'historia', symbol: '🏺', colors: ['#f4dfc7', '#f2ddec'] },
-  'Geografia': { file: 'geografia', symbol: '🌎', colors: ['#d7efff', '#dff3dc'] },
-  'Inglês': { file: 'ingles', symbol: '💬', colors: ['#dbe9ff', '#ffe2d8'] }
-};
+const finalYearsSubjects = TeachEasyLibraryCatalog.subjects;
 const highSchoolSubjects = {
   'Língua Portuguesa': { file: 'lingua-portuguesa', symbol: '📚', colors: ['#ffe2e8', '#eee3ff'] },
   'Matemática': { file: 'matematica', symbol: '📐', colors: ['#e1ebff', '#fff1bd'] },
@@ -277,9 +268,7 @@ function difficultyLabel(value) {
   }[value] || value;
 }
 
-const V2_COLLECTION_COUNTS = {
-  '4ano-4bimestre-ciencias': 20
-};
+const V2_COLLECTION_COUNTS = {};
 
 function validateCollection(collection, config) {
   const schemaVersion = String(collection?.schemaVersion || '');
@@ -375,6 +364,13 @@ function normalizeCollectionActivity(activity, collection, config) {
 
 function selectedCollectionConfig() {
   const subject = filterForm.elements.subject.value;
+  if (['Ensino Fundamental I', 'Ensino Fundamental II'].includes(navigation.stage)
+    && navigation.grade
+    && navigation.term) {
+    const grade = Number.parseInt(navigation.grade, 10);
+    const term = Number(navigation.term);
+    return TeachEasyLibraryCatalog.entry(grade, term, subject);
+  }
   if (navigation.stage === 'Ensino Médio'
     && navigation.grade
     && navigation.term
@@ -393,28 +389,7 @@ function selectedCollectionConfig() {
       term
     };
   }
-  if (navigation.stage === 'Ensino Fundamental II'
-    && navigation.grade
-    && navigation.term
-    && finalYearsSubjects[subject]) {
-    const grade = Number.parseInt(navigation.grade, 10);
-    const term = Number(navigation.term);
-    const selected = finalYearsSubjects[subject];
-    return {
-      path: `data/atividades/fundamental-anos-finais/${grade}-ano/${term}-bimestre/${selected.file}.json`,
-      collection: `${grade}ano-${term}bimestre-${selected.file}`,
-      count: 40,
-      symbol: selected.symbol,
-      colors: selected.colors,
-      stage: 'Ensino Fundamental II',
-      grade: navigation.grade,
-      term
-    };
-  }
-  if (navigation.stage !== 'Ensino Fundamental I'
-    || navigation.grade !== '4º ano'
-    || navigation.term !== '3') return null;
-  return collectionRegistry[subject] || null;
+  return null;
 }
 
 async function ensureSelectedCollection() {
