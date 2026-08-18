@@ -47,6 +47,7 @@ jobs:
             "https://basenacionalcomum.mec.gov.br/images/BNCC_EI_EF_110518_versaofinal_site.pdf" \
             -o .cache/bncc.pdf
           BNCC_PDF=.cache/bncc.pdf python scripts/upgrade-ensino-medio-v2.py
+          python scripts/clean-ensino-medio-v2.py
 
       - name: Publicar conversão gerada
         if: github.event_name == 'pull_request' && github.head_ref == 'refactor/ensino-medio-v2'
