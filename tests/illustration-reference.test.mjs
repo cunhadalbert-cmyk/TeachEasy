@@ -4,6 +4,7 @@ import { readFile, stat } from 'node:fs/promises';
 
 const html = await readFile(new URL('../biblioteca.html', import.meta.url), 'utf8');
 const illustrationAdmin = await readFile(new URL('../library-illustration-admin.js', import.meta.url), 'utf8');
+const illustrationContext = await readFile(new URL('../library-illustration-context.js', import.meta.url), 'utf8');
 const exportImageSync = await readFile(new URL('../library-export-image-sync.js', import.meta.url), 'utf8');
 const illustrationGuard = await readFile(new URL('../illustration-reference-standard.js', import.meta.url), 'utf8');
 const api = await readFile(new URL('../api/generate-library-illustration.js', import.meta.url), 'utf8');
@@ -13,6 +14,18 @@ const jogos = await readFile(new URL('../jogos-inline.js', import.meta.url), 'ut
 test('Biblioteca normal não carrega gerador dinâmico legado de IA', () => {
   assert.doesNotMatch(html, /library-ai-illustration\.js/);
   assert.doesNotMatch(html, /illustration-reference-standard\.js/);
+});
+
+test('contexto V2 da ilustração preserva a cena original e invalida imagens antigas', () => {
+  assert.match(html, /library-illustration-context\.js\?v=20260817-participantes-ativos-v1/);
+  assert.ok(html.indexOf('library-geography-reading.js') < html.indexOf('library-illustration-context.js'));
+  assert.ok(html.indexOf('library-illustration-context.js') < html.indexOf('library-export-image-sync.js'));
+  assert.match(illustrationContext, /activity\.ilustracao\.descricao/);
+  assert.match(illustrationContext, /Cena original da atividade/);
+  assert.match(illustrationContext, /generate-library-illustration/);
+  assert.match(illustrationContext, /payload\.context/);
+  assert.match(illustrationContext, /indexedDB\.deleteDatabase\(DB_NAME\)/);
+  assert.match(illustrationContext, /teacheasy-illustrations-active-participants-v1/);
 });
 
 test('modo temporário de ilustração permanece protegido e salva a imagem vinculada ao exercício', () => {
