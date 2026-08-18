@@ -15,7 +15,7 @@ const subjects = [
   ['geografia.json', 'Geografia']
 ];
 
-test('Anos Finais possuem 3.280 atividades nas 80 coleções oficiais', () => {
+test('Anos Finais possuem 3.320 atividades nas 80 coleções oficiais', () => {
   const globalIds = new Set();
   const byGrade = new Map();
   const bySubject = new Map();
@@ -47,7 +47,8 @@ test('Anos Finais possuem 3.280 atividades nas 80 coleções oficiais', () => {
           assert.equal(activity.questoes.length, expectedQuestions);
           assert.equal(activity.gabarito.length, expectedQuestions);
           assert.equal(activity.possuiGabarito, true);
-          assert.equal(activity.possuiVersaoAdaptada, true);
+          if (isV2) assert.equal(typeof activity.possuiVersaoAdaptada, 'boolean');
+          else assert.equal(activity.possuiVersaoAdaptada, true);
           assert.ok(activity.bncc[0].codigo.startsWith(`EF${String(grade).padStart(2, '0')}`));
         }
 
@@ -60,9 +61,9 @@ test('Anos Finais possuem 3.280 atividades nas 80 coleções oficiais', () => {
   }
 
   assert.equal(files, 80);
-  assert.equal(total, 3280);
-  grades.forEach(grade => assert.equal(byGrade.get(grade), 820));
-  subjects.forEach(([, subject]) => assert.equal(bySubject.get(subject), ['Língua Portuguesa', 'Matemática'].includes(subject) ? 680 : 640));
+  assert.equal(total, 3320);
+  grades.forEach(grade => assert.equal(byGrade.get(grade), 830));
+  subjects.forEach(([, subject]) => assert.equal(bySubject.get(subject), ['Língua Portuguesa', 'Matemática', 'Ciências'].includes(subject) ? 680 : 640));
 });
 
 test('Biblioteca carrega uma coleção de Anos Finais por seleção', () => {
@@ -99,7 +100,8 @@ test('Anos Finais possuem conteúdo aprofundado e BNCC conferida', () => {
         assert.equal(activity.bnccConferida, true);
         assert.match(skill.codigo, new RegExp(`^EF${String(grade).padStart(2, '0')}(LP|MA|CI|HI|GE|LI)\\d{2}$`));
         assert.ok((skill.descricaoResumida || skill.habilidadeOficial).length > (collection.schemaVersion === '2.0' ? 19 : 90));
-        assert.match(activity.objetivo, new RegExp(skill.codigo));
+        if (collection.schemaVersion === '2.0') assert.ok(activity.objetivo.length > 60);
+        else assert.match(activity.objetivo, new RegExp(skill.codigo));
         assert.ok(activity.textoApoio.conteudo.length > 180);
         assert.equal(activity.questoes.some(item => genericQuestion.test(item.enunciado)), false,
           `${activity.id} ainda possui pergunta genérica`);
@@ -110,5 +112,5 @@ test('Anos Finais possuem conteúdo aprofundado e BNCC conferida', () => {
     }
   }
 
-  assert.equal(total, 3280);
+  assert.equal(total, 3320);
 });

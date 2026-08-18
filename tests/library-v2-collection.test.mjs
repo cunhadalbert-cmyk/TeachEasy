@@ -21,16 +21,16 @@ function loadValidator() {
 
 const scienceConfig = {
   collection: '4ano-4bimestre-ciencias',
-  count: 30,
+  count: 50,
   grade: '4º ano',
   term: 4
 };
 
-test('Ciências 4º ano 4º bimestre V2 é aceita com 20 atividades e 8 questões', () => {
+test('Ciências 4º ano 4º bimestre V2 é aceita com 50 atividades e 8 questões', () => {
   const validateCollection = loadValidator();
   assert.equal(science.schemaVersion, '2.0');
   assert.equal(science.colecao, '4ano-4bimestre-ciencias-v2');
-  assert.equal(science.atividades.length, 20);
+  assert.equal(science.atividades.length, 50);
   assert.ok(science.atividades.every(activity => activity.questoes.length === 8));
   assert.ok(science.atividades.every(activity => activity.gabarito.length === 8));
   assert.doesNotThrow(() => validateCollection(science, scienceConfig));
@@ -40,7 +40,7 @@ test('validação V2 continua estrita para contagem, padrão e quantidade de que
   const validateCollection = loadValidator();
 
   const wrongCount = structuredClone(science);
-  wrongCount.atividades = wrongCount.atividades.slice(0, 19);
+  wrongCount.atividades = wrongCount.atividades.slice(0, 49);
   assert.throws(() => validateCollection(wrongCount, scienceConfig), /Estrutura da coleção/);
 
   const wrongQuestions = structuredClone(science);

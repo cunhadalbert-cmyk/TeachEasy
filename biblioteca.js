@@ -268,9 +268,7 @@ function difficultyLabel(value) {
   }[value] || value;
 }
 
-const V2_COLLECTION_COUNTS = {
-  '4ano-4bimestre-ciencias': 20
-};
+const V2_COLLECTION_COUNTS = {};
 
 function validateCollection(collection, config) {
   const schemaVersion = String(collection?.schemaVersion || '');
