@@ -28,6 +28,16 @@ test('contexto V2 da ilustração preserva a cena original e invalida imagens an
   assert.match(illustrationContext, /teacheasy-illustrations-active-participants-v1/);
 });
 
+test('caixa sem imagem mostra solicitação de ilustração e personagens ativos', () => {
+  assert.match(illustrationContext, /fallbackDescription/);
+  assert.match(illustrationContext, /subject === 'Geografia'/);
+  assert.match(illustrationContext, /te-illustration-request-placeholder/);
+  assert.match(illustrationContext, /ILUSTRAÇÃO:/);
+  assert.match(illustrationContext, /PARTICIPANTES ATIVOS/);
+  assert.match(illustrationContext, /interagindo de forma natural/);
+  assert.match(illustrationContext, /visual\.querySelector\('img'\)/);
+});
+
 test('modo temporário de ilustração permanece protegido e salva a imagem vinculada ao exercício', () => {
   assert.match(html, /library-illustration-admin\.js\?v=20260812-persistencia-ilustracao-v4/);
   assert.match(illustrationAdmin, /modoIlustracao/);
