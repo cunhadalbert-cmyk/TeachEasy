@@ -1,0 +1,84 @@
+name: Validate Fundamental 50 normalization
+
+on:
+  pull_request:
+    branches:
+      - automation/normalize-50-validation-base-20260818
+    types: [opened, synchronize, reopened]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: validate-fundamental-50-normalization
+  cancel-in-progress: true
+
+jobs:
+  normalize-validate-publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout staging head
+        uses: actions/checkout@v4
+        with:
+          ref: automation/normalize-fundamental-50-20260818
+          fetch-depth: 0
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Normalize all canonical collections to 50
+        run: node scripts/normalize-fundamental-50.mjs
+
+      - name: Validate 180 canonical collection counts
+        shell: bash
+        run: |
+          node --input-type=module <<'NODE'
+          import fs from 'node:fs';
+          import path from 'node:path';
+          const subjects=['lingua-portuguesa.json','matematica.json','ciencias.json','historia.json','geografia.json'];
+          const ids=new Set();
+          let total=0, collections=0;
+          for(let year=1;year<=9;year++) for(let term=1;term<=4;term++) for(const subject of subjects){
+            const stage=year<=5?'fundamental-anos-iniciais':'fundamental-anos-finais';
+            const file=path.join('data','atividades',stage,`${year}-ano`,`${term}-bimestre`,subject);
+            const c=JSON.parse(fs.readFileSync(file,'utf8'));
+            if(c.atividades.length!==50) throw new Error(`${file}: ${c.atividades.length} atividades`);
+            for(const a of c.atividades){
+              if(ids.has(a.id)) throw new Error(`ID duplicado: ${a.id}`);
+              ids.add(a.id);
+              const expectedQuestions=c.schemaVersion==='2.0'?8:6;
+              if(a.questoes.length!==expectedQuestions||a.gabarito.length!==expectedQuestions) throw new Error(`Questões/gabarito inválidos: ${a.id}`);
+            }
+            total+=50; collections++;
+          }
+          if(collections!==180||total!==9000||ids.size!==9000) throw new Error(`Totais inválidos: ${collections}/${total}/${ids.size}`);
+          console.log(`OK: ${collections} coleções, ${total} atividades, ${ids.size} IDs únicos.`);
+          NODE
+
+      - name: Ensure fourth term content was untouched
+        shell: bash
+        run: |
+          if git diff --name-only eece1929442168d9f66a1168283908af825a5aff -- 'data/atividades/**/4-bimestre/*.json' | grep .; then
+            echo 'ERRO: o 4º bimestre não deveria ser alterado.'
+            exit 1
+          fi
+
+      - name: Run complete project validation
+        run: npm run validate
+
+      - name: Publish validated staging result
+        shell: bash
+        run: |
+          rm -f docs/auditoria-figuras.md
+          git config user.name 'TeachEasy Validation'
+          git config user.email 'actions@users.noreply.github.com'
+          git add data/atividades library-catalog.js package.json docs/estado-projeto.md scripts/normalize-fundamental-50.mjs tests/fundamental-iniciais-bncc.test.mjs tests/fundamental-finais.test.mjs tests/fundamental-50-normalization.test.mjs
+          git commit -m 'Staging padronização de 50 atividades validada'
+          git push origin HEAD:automation/normalize-fundamental-50-20260818
