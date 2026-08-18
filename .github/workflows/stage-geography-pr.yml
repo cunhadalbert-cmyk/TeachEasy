@@ -33,6 +33,19 @@ jobs:
           cache: npm
       - name: Install dependencies
         run: npm ci
+      - name: Fix generator documentation update
+        shell: bash
+        run: |
+          node --input-type=module <<'NODE'
+          import fs from 'node:fs';
+          const file = 'scripts/complete-geography-fourth-term-v2.mjs';
+          let s = fs.readFileSync(file, 'utf8');
+          const old = "if(!docs.includes('Geografia do 1º ao 9º ano/4º bimestre: 450 atividades V2')) docs=docs.replace('- História do 1º ao 9º ano/4º bimestre: 450 atividades V2, 3.600 questões e 3.600 respostas.','- História do 1º ao 9º ano/4º bimestre: 450 atividades V2, 3.600 questões e 3.600 respostas.\\n- Geografia do 1º ao 9º ano/4º bimestre: 450 atividades V2, 3.600 questões e 3.600 respostas. Os códigos foram conferidos contra a BNCC oficial do MEC; revisão pedagógica humana e produção visual definitiva permanecem pendentes.');";
+          const replacement = `const historyLine='- História do 1º ao 9º ano/4º bimestre: 450 atividades V2, 3.600 questões e 3.600 respostas. Os códigos foram conferidos contra a BNCC oficial do MEC; revisão pedagógica humana e produção visual definitiva permanecem pendentes.';\nconst geographyLine='- Geografia do 1º ao 9º ano/4º bimestre: 450 atividades V2, 3.600 questões e 3.600 respostas. Os códigos foram conferidos contra a BNCC oficial do MEC; revisão pedagógica humana e produção visual definitiva permanecem pendentes.';\ndocs=docs.replace(/- História do 1º ao 9º ano\\/4º bimestre:[^\\n]*/,historyLine);\nif(/- Geografia do 1º ao 9º ano\\/4º bimestre:/.test(docs)) docs=docs.replace(/- Geografia do 1º ao 9º ano\\/4º bimestre:[^\\n]*/,geographyLine); else docs=docs.replace(historyLine,historyLine+'\\n'+geographyLine);`;
+          if (!s.includes(old)) throw new Error('Trecho antigo de documentação não encontrado no gerador');
+          s = s.replace(old, replacement);
+          fs.writeFileSync(file, s, 'utf8');
+          NODE
       - name: Generate canonical Geography V2 collections
         run: node scripts/complete-geography-fourth-term-v2.mjs
       - name: Validate Geography invariants
@@ -67,10 +80,16 @@ jobs:
             echo 'ERRO: outra disciplina do 4º bimestre foi alterada.'
             exit 1
           fi
+      - name: Validate project documentation
+        shell: bash
+        run: |
+          grep -Fq -- '- História do 1º ao 9º ano/4º bimestre: 450 atividades V2, 3.600 questões e 3.600 respostas. Os códigos foram conferidos contra a BNCC oficial do MEC; revisão pedagógica humana e produção visual definitiva permanecem pendentes.' docs/estado-projeto.md
+          grep -Fq -- '- Geografia do 1º ao 9º ano/4º bimestre: 450 atividades V2, 3.600 questões e 3.600 respostas. Os códigos foram conferidos contra a BNCC oficial do MEC; revisão pedagógica humana e produção visual definitiva permanecem pendentes.' docs/estado-projeto.md
+          test "$(grep -c 'Geografia do 1º ao 9º ano/4º bimestre:' docs/estado-projeto.md)" -eq 1
       - name: Publish only validated staging result
         shell: bash
         run: |
-          rm -f docs/auditoria-figuras.md
+          rm -f docs/auditoria-figuras.md docs/.geography-stage-trigger
           git config user.name 'TeachEasy Validation'
           git config user.email 'actions@users.noreply.github.com'
           git add \
@@ -88,5 +107,6 @@ jobs:
             data/atividades/fundamental-anos-finais/7-ano/4-bimestre/geografia.json \
             data/atividades/fundamental-anos-finais/8-ano/4-bimestre/geografia.json \
             data/atividades/fundamental-anos-finais/9-ano/4-bimestre/geografia.json
+          git add -u docs/.geography-stage-trigger 2>/dev/null || true
           git commit -m 'Staging Geografia V2 validada'
           git push origin HEAD:automation/geography-4b-20260818
