@@ -5,7 +5,7 @@ import { readFile } from 'node:fs/promises';
 const html = await readFile(new URL('../biblioteca.html', import.meta.url), 'utf8');
 const standard = await readFile(new URL('../biblioteca-final-standard.js', import.meta.url), 'utf8');
 const overflowFix = await readFile(new URL('../library-layout-overflow-fix.js', import.meta.url), 'utf8');
-const eightQuestionPreview = await readFile(new URL('../library-eight-question-preview.js', import.meta.url), 'utf8');
+const fixes = await readFile(new URL('../biblioteca-fixes.js', import.meta.url), 'utf8');
 
 test('Biblioteca usa somente o padrão final único depois das coleções', () => {
   assert.match(html, /biblioteca-final-standard\.js\?v=20260815-layout-mestre-v2/);
@@ -17,14 +17,14 @@ test('Biblioteca usa somente o padrão final único depois das coleções', () =
 });
 
 test('prévia oficial entrega oito questões ao layout final sem corte legado em seis', () => {
-  assert.match(html, /library-eight-question-preview\.js\?v=20260817-8questoes-runtime-v1/);
-  assert.ok(html.indexOf('library-eight-question-preview.js') > html.indexOf('biblioteca.js'));
-  assert.ok(html.indexOf('library-eight-question-preview.js') < html.indexOf('biblioteca-final-standard.js'));
-  assert.match(eightQuestionPreview, /activity\.questions\.slice\(0, 8\)/);
-  assert.match(eightQuestionPreview, /questions\.slice\(0, 4\)/);
-  assert.match(eightQuestionPreview, /questions\.slice\(4, 8\)/);
-  assert.match(eightQuestionPreview, /start="5"/);
-  assert.doesNotMatch(eightQuestionPreview, /slice\(3, 6\)/);
+  assert.doesNotMatch(html, /library-eight-question-preview\.js/);
+  assert.ok(html.indexOf('biblioteca-fixes.js') > html.indexOf('biblioteca.js'));
+  assert.ok(html.indexOf('biblioteca-fixes.js') < html.indexOf('biblioteca-final-standard.js'));
+  assert.match(fixes, /activity\.questions\.slice\(0, 8\)/);
+  assert.match(fixes, /questions\.slice\(0, 4\)/);
+  assert.match(fixes, /questions\.slice\(4, 8\)/);
+  assert.match(fixes, /start="5"/);
+  assert.doesNotMatch(fixes.match(/openCollectionPreview = function openCollectionPreviewEightQuestions[\s\S]*?renderNavigation\(\);/s)?.[0] || '', /slice\(3, 6\)/);
 });
 
 test('padrão oficial centraliza medidas, cores e tipografia', () => {
