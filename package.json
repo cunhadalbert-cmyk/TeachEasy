@@ -20,9 +20,13 @@
     "generate:batch-illustrations": "node scripts/batch-generate-illustrations.mjs",
     "illustrations:manifest": "node scripts/illustration-production-pipeline.mjs manifest",
     "illustrations:prompt": "node scripts/illustration-production-pipeline.mjs prompt",
+    "illustrations:prepare": "node scripts/illustration-production-pipeline.mjs prepare",
+    "illustrations:ingest": "node scripts/illustration-production-pipeline.mjs ingest",
     "illustrations:generate": "node scripts/illustration-production-pipeline.mjs generate",
     "illustrations:status": "node scripts/illustration-production-pipeline.mjs status",
     "illustrations:batch1:manifest": "node scripts/illustration-production-pipeline.mjs manifest --stage \"Ensino Médio\" --grade \"1ª série\" --term 1 --subject \"Ciências\" --limit 50",
+    "illustrations:batch1:prepare": "node scripts/illustration-production-pipeline.mjs prepare --limit 10",
+    "illustrations:batch1:ingest": "node scripts/illustration-production-pipeline.mjs ingest --limit 10",
     "illustrations:batch1:generate": "node scripts/illustration-production-pipeline.mjs generate --limit 50",
     "illustrations:batch1:status": "node scripts/illustration-production-pipeline.mjs status",
     "illustrations:batch1:word": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/generate-ensino-medio-word.ps1 -Serie 1 -Term 1 -Subject ciencias"
