@@ -1,6 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { buildIllustrationPrompt, classifyIllustration } from '../scripts/illustration-prompt-policy.mjs';
+import { DEFAULT_PLACEMENT } from '../scripts/illustration-production-pipeline.mjs';
 
 const collection = {
   etapa: 'Ensino Fundamental I',
@@ -77,4 +78,13 @@ test('prompt fixa interação, identidade e restrições pedagógicas', () => {
   assert.match(prompt, /não revelar respostas/i);
   assert.match(prompt, /contexto histórico ou cultural/i);
   assert.match(prompt, /1536x1024/i);
+});
+
+test('imagem deve preencher o quadro sem distorção', () => {
+  assert.equal(DEFAULT_PLACEMENT.fit, 'cover');
+  assert.equal(DEFAULT_PLACEMENT.preserveAspectRatio, true);
+  assert.equal(DEFAULT_PLACEMENT.allowCrop, true);
+  assert.equal(DEFAULT_PLACEMENT.cropAnchor, 'center');
+  assert.equal(DEFAULT_PLACEMENT.overflow, 'hidden');
+  assert.equal(DEFAULT_PLACEMENT.distortion, false);
 });
