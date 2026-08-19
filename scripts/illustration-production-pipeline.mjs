@@ -12,6 +12,14 @@ const OFFICIAL_CAST_FILE = path.join(ROOT, 'public', 'illustrations', 'reference
 const GENERATIONS_ENDPOINT = 'https://api.openai.com/v1/images/generations';
 const EDITS_ENDPOINT = 'https://api.openai.com/v1/images/edits';
 const MODEL = 'gpt-image-2-2026-04-21';
+const DEFAULT_PLACEMENT = Object.freeze({
+  fit: 'cover',
+  preserveAspectRatio: true,
+  allowCrop: true,
+  cropAnchor: 'center',
+  overflow: 'hidden',
+  distortion: false
+});
 
 function parseArgs(argv) {
   const [command = 'help', ...rest] = argv;
@@ -113,6 +121,7 @@ async function buildManifest(options) {
         characters: profile.characters.map(item => item.key),
         useNino: profile.useNino,
         needsOfficialCastReference: profile.needsOfficialCastReference,
+        placement: { ...DEFAULT_PLACEMENT },
         prompt,
         status: prior?.status || 'pendente',
         attempts: Number(prior?.attempts || 0),
@@ -261,6 +270,7 @@ async function showPrompt(options) {
   console.log(`Tipo: ${item.illustrationKind}`);
   console.log(`Personagens: ${item.characters.length ? item.characters.join(', ') : 'nenhum'}`);
   console.log(`Nino: ${item.useNino ? 'sim' : 'não'}`);
+  console.log(`Encaixe: ${item.placement?.fit || 'cover'} / corte ${item.placement?.cropAnchor || 'center'}`);
   console.log('');
   console.log(item.prompt);
 }
@@ -296,4 +306,4 @@ if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.me
   });
 }
 
-export { buildManifest, generate, imageGeneration, matchesFilters, parseArgs };
+export { DEFAULT_PLACEMENT, buildManifest, generate, imageGeneration, matchesFilters, parseArgs };
