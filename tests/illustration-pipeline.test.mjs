@@ -1,5 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
+import { readFile } from 'node:fs/promises';
 import { buildIllustrationPrompt, classifyIllustration } from '../scripts/illustration-prompt-policy.mjs';
 import { DEFAULT_PLACEMENT } from '../scripts/illustration-production-pipeline.mjs';
 
@@ -87,4 +88,22 @@ test('imagem deve preencher o quadro sem distorção', () => {
   assert.equal(DEFAULT_PLACEMENT.cropAnchor, 'center');
   assert.equal(DEFAULT_PLACEMENT.overflow, 'hidden');
   assert.equal(DEFAULT_PLACEMENT.distortion, false);
+});
+
+test('exportadores Word consomem o manifesto e aplicam encaixe cover', async () => {
+  const fitModule = await readFile(new URL('../scripts/word-illustration-fit.ps1', import.meta.url), 'utf8');
+  const geography = await readFile(new URL('../scripts/generate-geography-word.ps1', import.meta.url), 'utf8');
+  const fundamental = await readFile(new URL('../scripts/generate-fundamental-word.ps1', import.meta.url), 'utf8');
+
+  assert.match(fitModule, /Get-TeachEasyIllustrationFromManifest/);
+  assert.match(fitModule, /New-TeachEasyCoverImage/);
+  assert.match(fitModule, /Add-TeachEasyIllustrationToCell/);
+  assert.match(fitModule, /HighQualityBicubic/);
+
+  for (const source of [geography, fundamental]) {
+    assert.match(source, /word-illustration-fit\.ps1/);
+    assert.match(source, /Get-TeachEasyIllustrationFromManifest/);
+    assert.match(source, /Add-TeachEasyIllustrationToCell/);
+    assert.match(source, /WidthCm 8\.6 -HeightCm 5\.2/);
+  }
 });
