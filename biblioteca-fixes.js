@@ -5,10 +5,17 @@
     'Ensino Fundamental I': 5000,
     'Ensino Fundamental II': 4000
   });
+  const HIGH_SCHOOL_STAGE_COUNT = 3000;
+
+  // O Ensino Médio publicado possui cinco disciplinas, com 50 atividades por série/bimestre.
+  delete highSchoolSubjects['Inglês'];
 
   stages.forEach(stage => {
     if (FUNDAMENTAL_STAGE_COUNTS[stage.name]) {
       stage.count = FUNDAMENTAL_STAGE_COUNTS[stage.name];
+    }
+    if (stage.name === 'Ensino Médio') {
+      stage.count = HIGH_SCHOOL_STAGE_COUNT;
     }
   });
   const TOTAL_LIBRARY_ACTIVITIES = stages.reduce((total, stage) => total + stage.count, 0);
@@ -61,7 +68,7 @@
             : uniqueSorted('subject');
 
     const defaultOption = allOption || new Option('Todas as disciplinas', '');
-    defaultOption.textContent = (isInitialYears || isFinalYears) ? 'Escolha uma disciplina' : 'Todas as disciplinas';
+    defaultOption.textContent = (isInitialYears || isFinalYears || isHighSchool) ? 'Escolha uma disciplina' : 'Todas as disciplinas';
     select.replaceChildren(defaultOption);
     values.forEach(value => select.append(new Option(value, value)));
     select.value = values.includes(currentValue) ? currentValue : '';
