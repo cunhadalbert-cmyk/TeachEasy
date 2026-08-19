@@ -8,6 +8,11 @@ $ErrorActionPreference = 'Stop'
 $root = Split-Path -Parent $PSScriptRoot
 $dataRoot = Join-Path $root 'data\atividades\fundamental-anos-iniciais\4-ano'
 $outputRoot = Join-Path $root 'exports\word\4-ano\geografia'
+$illustrationFitModule = Join-Path $PSScriptRoot 'word-illustration-fit.ps1'
+if (-not (Test-Path -LiteralPath $illustrationFitModule)) {
+    throw ('Modulo de encaixe de ilustracao nao encontrado: ' + $illustrationFitModule)
+}
+. $illustrationFitModule
 
 function U([string]$text) {
     return [System.Text.RegularExpressions.Regex]::Unescape($text)
@@ -178,8 +183,6 @@ try {
                 try {
                     $doc = $word.Documents.Add()
 
-                    # Replica o fluxo simples que foi validado manualmente no Windows:
-                    # Documents.Add() + SaveAs2() direto no caminho final.
                     Write-Host ('[PRE-SAVE DIRECT] ' + $filename)
                     $absoluteTarget = [System.IO.Path]::GetFullPath($target)
                     $fileFormat = 16
@@ -221,8 +224,17 @@ try {
                     $supportText = (Clean-Text $activity.textoApoio.titulo) + "`r`n`r`n" + (Clean-Text $activity.textoApoio.conteudo)
                     $cell = $contentTable.Cell(1,1); Set-CellText $cell $supportText 11 $false 0; Release-Com $cell
 
-                    $illustrationText = (U 'ILUSTRA\u00C7\u00C3O') + "`r`n`r`n" + (Get-IllustrationText $activity)
-                    $cell = $contentTable.Cell(1,2); Set-CellText $cell $illustrationText 10 $false 1; Release-Com $cell
+                    $cell = $contentTable.Cell(1,2)
+                    $illustrationPath = Get-TeachEasyIllustrationFromManifest -Root $root -ActivityId $activityId
+                    $imageInserted = $false
+                    if (-not [string]::IsNullOrWhiteSpace([string]$illustrationPath)) {
+                        $imageInserted = Add-TeachEasyIllustrationToCell -Word $word -Cell $cell -SourcePath $illustrationPath -WidthCm 8.6 -HeightCm 5.2
+                    }
+                    if (-not $imageInserted) {
+                        $illustrationText = (U 'ILUSTRA\u00C7\u00C3O') + "`r`n`r`n" + (Get-IllustrationText $activity)
+                        Set-CellText $cell $illustrationText 10 $false 1
+                    }
+                    Release-Com $cell
 
                     $instruction = Clean-Text $activity.instrucaoGeral
                     if ([string]::IsNullOrWhiteSpace($instruction)) { $instruction = U 'Responda \u00E0s quest\u00F5es de acordo com o texto.' }
