@@ -39,6 +39,20 @@ test('usa somente a quantidade de personagens necessária', () => {
   assert.equal(profile.needsOfficialCastReference, true);
 });
 
+test('plural sem quantidade explícita usa dois personagens', () => {
+  const activity = {
+    id: 'geo-feira-02',
+    titulo: 'Leitura do território',
+    tema: 'Fluxos e circulação',
+    objetivo: 'Interpretar representações espaciais.',
+    textoApoio: { conteudo: 'Estudantes analisam um mapa, comparam rotas e registram observações sobre fluxos no território.' },
+    questoes: []
+  };
+  const profile = classifyIllustration(activity, collection);
+  assert.equal(profile.characterCount, 2);
+  assert.equal(profile.characters.length, 2);
+});
+
 test('Nino só entra quando o conteúdo pede cachorro ou pet', () => {
   const withoutDog = classifyIllustration({ id: 'a', titulo: 'Paisagem urbana', questoes: [] }, collection);
   const withDog = classifyIllustration({ id: 'b', titulo: 'Cuidados com o cachorro de estimação', questoes: [] }, collection);
