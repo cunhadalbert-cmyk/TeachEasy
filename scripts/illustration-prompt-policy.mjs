@@ -8,7 +8,8 @@ const CAST = Object.freeze([
 ]);
 
 const DIAGRAM_TERMS = /\b(mapa conceitual|mapa do brasil|mapa-múndi|gráfico|grafico|tabela|linha do tempo|diagrama|esquema|fluxograma|infográfico|infografico|ciclo da água|ciclo da agua|sistema solar|rosa dos ventos|planta baixa)\b/i;
-const EXPLICIT_PEOPLE = /\b(criança|crianças|estudante|estudantes|aluno|alunos|professor|professora|pessoa|pessoas|dupla|grupo|equipe|turma)\b/i;
+const EXPLICIT_SINGULAR_PEOPLE = /\b(criança|estudante|aluno|professor|professora|pessoa)\b/i;
+const EXPLICIT_PLURAL_PEOPLE = /\b(crianças|estudantes|alunos|professores|professoras|pessoas)\b/i;
 const ACTIVE_SCENE = /\b(observa|observam|mede|medem|registra|registram|investiga|investigam|compara|comparam|constrói|constroi|constroem|organiza|organizam|lê|leem|escreve|escrevem|aponta|apontam|manipula|manipulam|experimenta|experimentam|conversa|conversam|visita|visitam|participa|participam)\b/i;
 const CULTURAL_OR_HISTORICAL = /\b(história|historia|histórico|historico|cultura|cultural|indígena|indigena|african|quilomb|colonial|império|imperio|república|republica|capoeira|patrimônio|patrimonio|povos|comunidade tradicional)\b/i;
 const NINO_TERMS = /\b(cachorro|cão|cao|animal de estimação|animal de estimacao|pet|nino)\b/i;
@@ -30,7 +31,8 @@ function inferCharacterCount(text) {
   if (/\b(três|tres|3)\s+(crianças|estudantes|alunos|personagens)\b/.test(source)) return 3;
   if (/\b(duas|dois|2)\s+(crianças|estudantes|alunos|personagens)\b|\bem dupla\b/.test(source)) return 2;
   if (/\b(grupo|equipe|turma)\b/.test(source)) return 3;
-  if (EXPLICIT_PEOPLE.test(source)) return 1;
+  if (EXPLICIT_PLURAL_PEOPLE.test(source)) return 2;
+  if (EXPLICIT_SINGULAR_PEOPLE.test(source)) return 1;
   if (ACTIVE_SCENE.test(source) && /\b(escola|pátio|patio|sala|laboratório|laboratorio|feira|bairro|comunidade)\b/i.test(source)) return 1;
   return 0;
 }
