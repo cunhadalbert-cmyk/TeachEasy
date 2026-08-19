@@ -22,6 +22,23 @@ A referência visual oficial continua sendo `public/illustrations/reference/teac
 - Não alterar rosto, cabelo, óculos, roupas-base ou identidade dos personagens oficiais.
 - Não acrescentar objetos, animais ou pessoas apenas para preencher a imagem.
 
+## Encaixe no quadro de ilustração
+
+Toda imagem aprovada deve entrar no quadro reservado da atividade com o modo `cover`: preencher todo o espaço disponível mantendo a proporção original. Quando a proporção da imagem não for idêntica à do quadro, o sistema pode cortar somente as bordas excedentes.
+
+Regras fixas:
+
+- nunca esticar ou achatar a imagem;
+- manter a proporção original;
+- preencher todo o quadro, sem faixas brancas laterais ou superiores;
+- usar corte proporcional quando necessário;
+- corte central como padrão;
+- não cortar rosto, cabeça, mãos ou o elemento pedagógico principal;
+- nada pode ultrapassar a borda do quadro;
+- o quadro continua respeitando a moldura e as margens da folha A4.
+
+O manifesto registra essa decisão em `placement` com `fit: cover`, `preserveAspectRatio: true`, `allowCrop: true`, `cropAnchor: center`, `overflow: hidden` e `distortion: false`. Essa informação deve ser respeitada pelo exportador Word/PDF quando a imagem aprovada for inserida na atividade.
+
 ## Modelo
 
 O pipeline usa `gpt-image-2-2026-04-21`, via API de imagens. Quando a cena precisa do elenco, usa edição com fidelidade alta e a referência oficial. Quando não precisa, usa geração de imagem sem referência do elenco.
