@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-import { access, mkdir, readFile, readdir, writeFile } from 'node:fs/promises';
+import { access, copyFile, mkdir, readFile, readdir, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { buildIllustrationPrompt, classifyIllustration } from './illustration-prompt-policy.mjs';
@@ -189,6 +189,115 @@ async function saveManifest(file, manifest) {
   await writeFile(file, `${JSON.stringify(manifest, null, 2)}\n`, 'utf8');
 }
 
+function subjectDirectory(item) {
+  return safeStem(`${item.etapa}-${item.ano}-${item.bimestre}-${item.disciplina}`);
+}
+
+function outputRelativePath(item) {
+  return path.join('var', 'illustration-production', 'images', subjectDirectory(item), `${safeStem(item.id)}.png`).replaceAll('\\', '/');
+}
+
+async function prepareChatGptBatch(options) {
+  const workRoot = path.resolve(options.work || DEFAULT_WORK_ROOT);
+  const manifestFile = path.join(workRoot, 'manifest.json');
+  const manifest = await readJson(manifestFile);
+  const batchFile = path.join(workRoot, 'chatgpt-batch.json');
+  const inboxDir = path.join(workRoot, 'inbox');
+  await mkdir(inboxDir, { recursive: true });
+
+  const candidates = manifest.items
+    .filter(item => options.force || ['pendente', 'erro', 'revisar'].includes(item.status))
+    .filter(item => !options.status || item.status === options.status)
+    .slice(0, options.limit);
+
+  if (!candidates.length) throw new Error('Nenhuma atividade disponível para preparar no ChatGPT.');
+
+  const preparedAt = new Date().toISOString();
+  const batch = {
+    schemaVersion: 1,
+    mode: 'chatgpt-manual',
+    preparedAt,
+    total: candidates.length,
+    inbox: path.relative(ROOT, inboxDir).replaceAll('\\', '/'),
+    items: candidates.map(item => ({
+      id: item.id,
+      titulo: item.titulo,
+      tema: item.tema,
+      etapa: item.etapa,
+      ano: item.ano,
+      bimestre: item.bimestre,
+      disciplina: item.disciplina,
+      characters: item.characters,
+      useNino: item.useNino,
+      needsOfficialCastReference: item.needsOfficialCastReference,
+      prompt: item.prompt,
+      expectedFileName: `${safeStem(item.id)}.png`,
+      expectedInboxFile: path.join(path.relative(ROOT, inboxDir), `${safeStem(item.id)}.png`).replaceAll('\\', '/'),
+      outputFile: outputRelativePath(item)
+    }))
+  };
+
+  for (const item of candidates) {
+    item.status = 'aguardando-chatgpt';
+    item.error = '';
+    item.updatedAt = preparedAt;
+  }
+
+  await writeFile(batchFile, `${JSON.stringify(batch, null, 2)}\n`, 'utf8');
+  await saveManifest(manifestFile, manifest);
+
+  console.log(`Lote ChatGPT: ${batchFile}`);
+  console.log(`Atividades preparadas: ${batch.total}`);
+  console.log(`Pasta de entrada: ${inboxDir}`);
+  for (const item of batch.items) console.log(`[CHATGPT] ${item.id} -> ${item.expectedFileName}`);
+  return batch;
+}
+
+async function ingestChatGptImages(options) {
+  const workRoot = path.resolve(options.work || DEFAULT_WORK_ROOT);
+  const manifestFile = path.join(workRoot, 'manifest.json');
+  const manifest = await readJson(manifestFile);
+  const inboxDir = path.join(workRoot, 'inbox');
+  const outputRoot = path.join(workRoot, 'images');
+  await mkdir(inboxDir, { recursive: true });
+  await mkdir(outputRoot, { recursive: true });
+
+  const candidates = manifest.items
+    .filter(item => item.status === 'aguardando-chatgpt')
+    .filter(item => !options.id || normalize(item.id) === normalize(options.id))
+    .slice(0, options.limit);
+
+  let imported = 0;
+  let missing = 0;
+  for (const item of candidates) {
+    const fileName = `${safeStem(item.id)}.png`;
+    const sourceFile = path.join(inboxDir, fileName);
+    try {
+      await access(sourceFile);
+    } catch {
+      missing += 1;
+      console.log(`[FALTA] ${fileName}`);
+      continue;
+    }
+
+    const targetDir = path.join(outputRoot, subjectDirectory(item));
+    await mkdir(targetDir, { recursive: true });
+    const targetFile = path.join(targetDir, fileName);
+    await copyFile(sourceFile, targetFile);
+    item.status = 'gerada';
+    item.outputFile = path.relative(ROOT, targetFile).replaceAll('\\', '/');
+    item.error = '';
+    item.updatedAt = new Date().toISOString();
+    imported += 1;
+    console.log(`[IMPORTADA] ${item.id} -> ${item.outputFile}`);
+  }
+
+  await saveManifest(manifestFile, manifest);
+  console.log(`Importadas: ${imported}`);
+  console.log(`Ainda ausentes: ${missing}`);
+  return { imported, missing };
+}
+
 async function generate(options) {
   const workRoot = path.resolve(options.work || DEFAULT_WORK_ROOT);
   const manifestFile = path.join(workRoot, 'manifest.json');
@@ -211,8 +320,7 @@ async function generate(options) {
       await saveManifest(manifestFile, manifest);
       continue;
     }
-    const subjectDir = safeStem(`${item.etapa}-${item.ano}-${item.bimestre}-${item.disciplina}`);
-    const targetDir = path.join(outputRoot, subjectDir);
+    const targetDir = path.join(outputRoot, subjectDirectory(item));
     await mkdir(targetDir, { recursive: true });
     const outputFile = path.join(targetDir, `${safeStem(item.id)}.png`);
     if (!options.force) {
@@ -281,10 +389,12 @@ function help() {
   console.log('Comandos:');
   console.log('  manifest  Cria/atualiza a fila a partir dos JSONs V2.');
   console.log('  prompt    Mostra o prompt da primeira atividade ou de --id.');
-  console.log('  generate  Gera somente itens pendentes/erro, com retomada.');
+  console.log('  prepare   Separa um lote para geração manual pelo ChatGPT, sem API key.');
+  console.log('  ingest    Importa imagens colocadas em var/illustration-production/inbox.');
+  console.log('  generate  Gera via API somente itens pendentes/erro, com retomada.');
   console.log('  status    Mostra o andamento da produção.');
   console.log('');
-  console.log('Filtros: --stage --grade --term --subject --id --limit --work --root --force');
+  console.log('Filtros: --stage --grade --term --subject --id --status --limit --work --root --force');
 }
 
 async function main() {
@@ -293,7 +403,9 @@ async function main() {
     const { manifest, manifestFile } = await buildManifest(options);
     console.log(`Manifesto: ${manifestFile}`);
     console.log(`Atividades na fila: ${manifest.total}`);
-  } else if (options.command === 'generate') await generate(options);
+  } else if (options.command === 'prepare') await prepareChatGptBatch(options);
+  else if (options.command === 'ingest') await ingestChatGptImages(options);
+  else if (options.command === 'generate') await generate(options);
   else if (options.command === 'status') await showStatus(options);
   else if (options.command === 'prompt') await showPrompt(options);
   else help();
@@ -306,4 +418,13 @@ if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.me
   });
 }
 
-export { DEFAULT_PLACEMENT, buildManifest, generate, imageGeneration, matchesFilters, parseArgs };
+export {
+  DEFAULT_PLACEMENT,
+  buildManifest,
+  generate,
+  imageGeneration,
+  ingestChatGptImages,
+  matchesFilters,
+  parseArgs,
+  prepareChatGptBatch
+};
