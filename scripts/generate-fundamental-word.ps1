@@ -9,6 +9,11 @@ param(
 
 $ErrorActionPreference = 'Stop'
 $root = Split-Path -Parent $PSScriptRoot
+$illustrationFitModule = Join-Path $PSScriptRoot 'word-illustration-fit.ps1'
+if (-not (Test-Path -LiteralPath $illustrationFitModule)) {
+    throw ('Modulo de encaixe de ilustracao nao encontrado: ' + $illustrationFitModule)
+}
+. $illustrationFitModule
 
 $subjects = @{
     'lingua-portuguesa' = @{ File = 'lingua-portuguesa.json'; Label = 'LÍNGUA PORTUGUESA' }
@@ -118,7 +123,7 @@ function Add-Header($doc) {
     }
 }
 
-function Add-SupportAndIllustration($doc, $activity) {
+function Add-SupportAndIllustration($word, $doc, $activity) {
     $range = $null; $table = $null
     try {
         $range = $doc.Content
@@ -127,8 +132,19 @@ function Add-SupportAndIllustration($doc, $activity) {
         $table.Borders.Enable = 1
         $support = (Clean-Text $activity.textoApoio.titulo) + "`r`n`r`n" + (Clean-Text $activity.textoApoio.conteudo)
         $cell = $table.Cell(1,1); Set-CellText $cell $support 9 $false 0; Release-Com $cell
-        $illustration = 'ILUSTRAÇÃO' + "`r`n`r`n" + (Clean-Text $activity.ilustracao.descricao)
-        $cell = $table.Cell(1,2); Set-CellText $cell $illustration 9 $false 1; Release-Com $cell
+
+        $cell = $table.Cell(1,2)
+        $activityId = Clean-Text $activity.id
+        $illustrationPath = Get-TeachEasyIllustrationFromManifest -Root $root -ActivityId $activityId
+        $imageInserted = $false
+        if (-not [string]::IsNullOrWhiteSpace([string]$illustrationPath)) {
+            $imageInserted = Add-TeachEasyIllustrationToCell -Word $word -Cell $cell -SourcePath $illustrationPath -WidthCm 8.6 -HeightCm 5.2
+        }
+        if (-not $imageInserted) {
+            $illustration = 'ILUSTRAÇÃO' + "`r`n`r`n" + (Clean-Text $activity.ilustracao.descricao)
+            Set-CellText $cell $illustration 9 $false 1
+        }
+        Release-Com $cell
     } finally {
         Release-Com $table; Release-Com $range
     }
@@ -142,7 +158,7 @@ function New-ActivityDocument($word, $collection, $activity, [string]$label, [st
         Add-Header $doc
         Add-Paragraph $doc ('ATIVIDADE DE ' + $label) 14 $true 1 2
         Add-Paragraph $doc (Clean-Text $activity.titulo) 12 $true 1 4
-        Add-SupportAndIllustration $doc $activity
+        Add-SupportAndIllustration $word $doc $activity
         Add-Paragraph $doc (Clean-Text $activity.instrucaoGeral) 10 $true 0 3
 
         foreach ($q in $activity.questoes) {
