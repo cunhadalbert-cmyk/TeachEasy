@@ -1,5 +1,5 @@
 param(
-    [int]$Year = 0,
+    [int]$Serie = 0,
     [int]$Term = 0,
     [ValidateSet('', 'lingua-portuguesa', 'matematica', 'ciencias', 'historia', 'geografia')]
     [string]$Subject = '',
@@ -9,11 +9,9 @@ param(
 
 $ErrorActionPreference = 'Stop'
 $root = Split-Path -Parent $PSScriptRoot
-$illustrationFitModule = Join-Path $PSScriptRoot 'word-illustration-fit.ps1'
-if (-not (Test-Path -LiteralPath $illustrationFitModule)) {
-    throw ('Modulo de encaixe de ilustracao nao encontrado: ' + $illustrationFitModule)
-}
-. $illustrationFitModule
+$fitScript = Join-Path $PSScriptRoot 'word-illustration-fit.ps1'
+if (-not (Test-Path -LiteralPath $fitScript)) { throw ('Modulo de encaixe de imagem ausente: ' + $fitScript) }
+. $fitScript
 
 $subjects = @{
     'lingua-portuguesa' = @{ File = 'lingua-portuguesa.json'; Label = 'LÍNGUA PORTUGUESA' }
@@ -40,10 +38,11 @@ function Release-Com([object]$value) {
 function Get-Order($activity, [int]$fallback) {
     if ($null -ne $activity.sequenciaNumero -and [string]$activity.sequenciaNumero -ne '') { return [int]$activity.sequenciaNumero }
     if ($null -ne $activity.numero -and [string]$activity.numero -ne '') { return [int]$activity.numero }
+    if ($null -ne $activity.sequencia -and ([string]$activity.sequencia -match '(\d+)$')) { return [int]$Matches[1] }
     return $fallback
 }
 
-function Add-Paragraph($doc, [string]$text, [double]$size, [bool]$bold, [int]$align, [double]$after = 3) {
+function Add-Paragraph($doc, [string]$text, [double]$size, [bool]$bold, [int]$align, [double]$after = 2) {
     $range = $null; $font = $null; $paragraph = $null
     try {
         $range = $doc.Content
@@ -98,7 +97,7 @@ function Configure-Page($word, $doc) {
             $borders.DistanceFromLeft = 10
             $borders.DistanceFromRight = 10
         } catch {
-            Write-Warning 'Não foi possível configurar a moldura de página via COM; confira visualmente o documento.'
+            Write-Warning 'Nao foi possivel configurar a moldura da pagina automaticamente.'
         }
     } finally {
         Release-Com $borders; Release-Com $setup; Release-Com $section
@@ -124,29 +123,26 @@ function Add-Header($doc) {
 }
 
 function Add-SupportAndIllustration($word, $doc, $activity) {
-    $range = $null; $table = $null
+    $range = $null; $table = $null; $cell = $null
     try {
         $range = $doc.Content
         $range.Collapse(0)
         $table = $doc.Tables.Add($range, 1, 2)
         $table.Borders.Enable = 1
+        $table.AllowAutoFit = $false
         $support = (Clean-Text $activity.textoApoio.titulo) + "`r`n`r`n" + (Clean-Text $activity.textoApoio.conteudo)
-        $cell = $table.Cell(1,1); Set-CellText $cell $support 9 $false 0; Release-Com $cell
+        $cell = $table.Cell(1,1); Set-CellText $cell $support 9 $false 0; Release-Com $cell; $cell = $null
 
         $cell = $table.Cell(1,2)
-        $activityId = Clean-Text $activity.id
-        $illustrationPath = Get-TeachEasyIllustrationFromManifest -Root $root -ActivityId $activityId
-        $imageInserted = $false
-        if (-not [string]::IsNullOrWhiteSpace([string]$illustrationPath)) {
-            $imageInserted = Add-TeachEasyIllustrationToCell -Word $word -Cell $cell -SourcePath $illustrationPath -WidthCm 8.6 -HeightCm 5.2
+        $imagePath = Get-TeachEasyIllustrationFromManifest -Root $root -ActivityId (Clean-Text $activity.id)
+        if ($null -ne $imagePath) {
+            $inserted = Add-TeachEasyIllustrationToCell -Word $word -Cell $cell -SourcePath $imagePath -WidthCm 8.6 -HeightCm 5.2
+            if (-not $inserted) { Set-CellText $cell ('ILUSTRAÇÃO' + "`r`n`r`n" + (Clean-Text $activity.ilustracao.descricao)) 9 $false 1 }
+        } else {
+            Set-CellText $cell ('ILUSTRAÇÃO' + "`r`n`r`n" + (Clean-Text $activity.ilustracao.descricao)) 9 $false 1
         }
-        if (-not $imageInserted) {
-            $illustration = 'ILUSTRAÇÃO' + "`r`n`r`n" + (Clean-Text $activity.ilustracao.descricao)
-            Set-CellText $cell $illustration 9 $false 1
-        }
-        Release-Com $cell
     } finally {
-        Release-Com $table; Release-Com $range
+        Release-Com $cell; Release-Com $table; Release-Com $range
     }
 }
 
@@ -157,9 +153,9 @@ function New-ActivityDocument($word, $collection, $activity, [string]$label, [st
         Configure-Page $word $doc
         Add-Header $doc
         Add-Paragraph $doc ('ATIVIDADE DE ' + $label) 14 $true 1 2
-        Add-Paragraph $doc (Clean-Text $activity.titulo) 12 $true 1 4
+        Add-Paragraph $doc (Clean-Text $activity.titulo) 12 $true 1 3
         Add-SupportAndIllustration $word $doc $activity
-        Add-Paragraph $doc (Clean-Text $activity.instrucaoGeral) 10 $true 0 3
+        Add-Paragraph $doc (Clean-Text $activity.instrucaoGeral) 10 $true 0 2
 
         foreach ($q in $activity.questoes) {
             Add-Paragraph $doc (([string]$q.numero) + ' - ' + (Clean-Text $q.enunciado)) 9 $false 0 1
@@ -181,7 +177,7 @@ function New-ActivityDocument($word, $collection, $activity, [string]$label, [st
         Release-Com $breakRange
 
         Add-Paragraph $doc 'GABARITO' 14 $true 1 2
-        Add-Paragraph $doc (Clean-Text $activity.titulo) 12 $true 1 4
+        Add-Paragraph $doc (Clean-Text $activity.titulo) 12 $true 1 3
         foreach ($answer in $activity.gabarito) {
             Add-Paragraph $doc (([string]$answer.numero) + '. ' + (Clean-Text $answer.resposta)) 9 $false 0 1
         }
@@ -196,17 +192,14 @@ function New-ActivityDocument($word, $collection, $activity, [string]$label, [st
         $doc.Close(0)
         Release-Com $doc; $doc = $null
     } finally {
-        if ($null -ne $doc) {
-            try { $doc.Close(0) } catch {}
-            Release-Com $doc
-        }
+        if ($null -ne $doc) { try { $doc.Close(0) } catch {}; Release-Com $doc }
         [GC]::Collect(); [GC]::WaitForPendingFinalizers()
     }
 }
 
-$years = if ($Year -gt 0) { @($Year) } else { 1..9 }
-$terms = if ($Term -gt 0) { @($Term) } else { 1..4 }
-$subjectKeys = if ([string]::IsNullOrWhiteSpace($Subject)) { @($subjects.Keys | Sort-Object) } else { @($Subject) }
+$series = if ($Serie -gt 0) { @($Serie) } else { @(1,2,3) }
+$terms = if ($Term -gt 0) { @($Term) } else { @(1,2,3,4) }
+$subjectKeys = if ([string]::IsNullOrWhiteSpace($Subject)) { @('lingua-portuguesa','matematica','ciencias','historia','geografia') } else { @($Subject) }
 $word = $null
 $generated = 0; $existing = 0
 
@@ -220,25 +213,26 @@ try {
     $word.AutomationSecurity = 3
     Write-Host '[2/4] Word iniciado em modo silencioso.'
 
-    foreach ($year in $years) {
-        $stage = if ($year -le 5) { 'fundamental-anos-iniciais' } else { 'fundamental-anos-finais' }
+    foreach ($serie in $series) {
+        if ($serie -lt 1 -or $serie -gt 3) { throw 'Serie deve ser 1, 2 ou 3.' }
         foreach ($term in $terms) {
             foreach ($subjectKey in $subjectKeys) {
                 $config = $subjects[$subjectKey]
-                $json = Join-Path $root ('data\atividades\' + $stage + '\' + $year + '-ano\' + $term + '-bimestre\' + $config.File)
-                if (-not (Test-Path -LiteralPath $json)) { throw ('Arquivo canônico ausente: ' + $json) }
+                $json = Join-Path $root ('data\atividades\ensino-medio\' + $serie + '-serie\' + $term + '-bimestre\' + $config.File)
+                if (-not (Test-Path -LiteralPath $json)) { throw ('Arquivo canonico ausente: ' + $json) }
                 Write-Host ('[3/4] Lendo ' + $json)
                 $collection = Get-Content -LiteralPath $json -Raw -Encoding UTF8 | ConvertFrom-Json
-                if ($collection.schemaVersion -ne '2.0' -or $collection.padraoPedagogico -ne 'teacheasy-v2') { throw ('Coleção fora do V2: ' + $json) }
-                if ($collection.atividades.Count -ne 50) { throw ('Coleção deve conter 50 atividades: ' + $json) }
-                $destination = Join-Path $root ('exports\word\' + $year + '-ano\' + $subjectKey + '\' + $term + '-bimestre')
+                if ($collection.schemaVersion -ne '2.0') { throw ('Colecao fora do V2: ' + $json) }
+                if ($collection.atividades.Count -ne 50) { throw ('Colecao deve conter 50 atividades: ' + $json) }
+                $destination = Join-Path $root ('exports\word\ensino-medio\' + $serie + '-serie\' + $subjectKey + '\' + $term + '-bimestre')
                 New-Item -ItemType Directory -Force -Path $destination | Out-Null
+
                 $fallback = 0
                 foreach ($activity in $collection.atividades) {
                     $fallback++
                     $activityOrder = Get-Order $activity $fallback
                     if ($Order -gt 0 -and $activityOrder -ne $Order) { continue }
-                    if ($activity.questoes.Count -ne 8 -or $activity.gabarito.Count -ne 8) { throw ('Atividade inválida: ' + $activity.id) }
+                    if ($activity.questoes.Count -ne 8 -or $activity.gabarito.Count -ne 8) { throw ('Atividade invalida: ' + $activity.id) }
                     $normalized = (Clean-Text $activity.titulo).Normalize([Text.NormalizationForm]::FormD)
                     $safeTitle = ($normalized -replace '\p{Mn}', '' -replace '[^a-zA-Z0-9]+', '-').Trim('-').ToLower()
                     $code = if ($activity.bncc.Count -gt 0) { (Clean-Text $activity.bncc[0].codigo).ToLower() } else { 'sem-bncc' }
@@ -246,9 +240,9 @@ try {
                     $target = Join-Path $destination $filename
                     if ((Test-Path -LiteralPath $target) -and -not $Force) { $existing++; Write-Host ('[JA EXISTE] ' + $target); continue }
                     if ((Test-Path -LiteralPath $target) -and $Force) { Remove-Item -LiteralPath $target -Force }
-                    Write-Host ('[4/4] Gerando ' + $year + 'º ano / ' + $term + 'º bimestre / ' + $config.Label + ' / ' + $activityOrder)
+                    Write-Host ('[4/4] Gerando ' + $serie + 'a serie / ' + $term + 'o bimestre / ' + $config.Label + ' / ' + $activityOrder)
                     New-ActivityDocument $word $collection $activity $config.Label $target
-                    if (-not (Test-Path -LiteralPath $target)) { throw ('Arquivo Word não encontrado após salvar: ' + $target) }
+                    if (-not (Test-Path -LiteralPath $target)) { throw ('Arquivo Word nao encontrado apos salvar: ' + $target) }
                     $generated++
                 }
             }
@@ -260,4 +254,4 @@ try {
 }
 
 Write-Host ''
-Write-Host ('Exportação Word concluída. Gerados: ' + $generated + '. Já existentes: ' + $existing + '.')
+Write-Host ('Ensino Medio Word concluido. Gerados: ' + $generated + '. Ja existentes: ' + $existing + '.')

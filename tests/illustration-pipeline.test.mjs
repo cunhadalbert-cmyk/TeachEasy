@@ -1,0 +1,109 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import { readFile } from 'node:fs/promises';
+import { buildIllustrationPrompt, classifyIllustration } from '../scripts/illustration-prompt-policy.mjs';
+import { DEFAULT_PLACEMENT } from '../scripts/illustration-production-pipeline.mjs';
+
+const collection = {
+  etapa: 'Ensino Fundamental I',
+  ano: '4º ano',
+  bimestre: 3,
+  disciplina: 'Geografia'
+};
+
+test('não força personagens em representação pedagógica', () => {
+  const activity = {
+    id: 'geo-mapa-01',
+    titulo: 'Mapa do Brasil: regiões',
+    tema: 'Regiões brasileiras',
+    objetivo: 'Identificar as regiões brasileiras.',
+    questoes: []
+  };
+  const profile = classifyIllustration(activity, collection);
+  assert.equal(profile.kind, 'representacao-pedagogica');
+  assert.equal(profile.characterCount, 0);
+  assert.deepEqual(profile.characters, []);
+  assert.equal(profile.needsOfficialCastReference, false);
+});
+
+test('usa somente a quantidade de personagens necessária', () => {
+  const activity = {
+    id: 'geo-sombra-01',
+    titulo: 'Orientação pelo Sol',
+    tema: 'Pontos cardeais',
+    objetivo: 'Investigar orientação espacial.',
+    textoApoio: { conteudo: 'Duas crianças observam a sombra de uma vara no pátio da escola e registram as mudanças.' },
+    questoes: []
+  };
+  const profile = classifyIllustration(activity, collection);
+  assert.equal(profile.characterCount, 2);
+  assert.equal(profile.characters.length, 2);
+  assert.equal(profile.needsOfficialCastReference, true);
+});
+
+test('plural sem quantidade explícita usa dois personagens', () => {
+  const activity = {
+    id: 'geo-feira-02',
+    titulo: 'Leitura do território',
+    tema: 'Fluxos e circulação',
+    objetivo: 'Interpretar representações espaciais.',
+    textoApoio: { conteudo: 'Estudantes analisam um mapa, comparam rotas e registram observações sobre fluxos no território.' },
+    questoes: []
+  };
+  const profile = classifyIllustration(activity, collection);
+  assert.equal(profile.characterCount, 2);
+  assert.equal(profile.characters.length, 2);
+});
+
+test('Nino só entra quando o conteúdo pede cachorro ou pet', () => {
+  const withoutDog = classifyIllustration({ id: 'a', titulo: 'Paisagem urbana', questoes: [] }, collection);
+  const withDog = classifyIllustration({ id: 'b', titulo: 'Cuidados com o cachorro de estimação', questoes: [] }, collection);
+  assert.equal(withoutDog.useNino, false);
+  assert.equal(withDog.useNino, true);
+});
+
+test('prompt fixa interação, identidade e restrições pedagógicas', () => {
+  const activity = {
+    id: 'geo-feira-01',
+    titulo: 'Culturas que formam nossa comunidade',
+    tema: 'Diversidade cultural',
+    objetivo: 'Reconhecer manifestações culturais da comunidade.',
+    textoApoio: { conteudo: 'Estudantes visitam uma feira cultural com artesanato, alimentos e música.' },
+    bncc: [{ codigo: 'EF04GE01' }],
+    questoes: []
+  };
+  const profile = classifyIllustration(activity, collection);
+  const prompt = buildIllustrationPrompt(activity, collection, profile);
+  assert.match(prompt, /participar|integrados|ação/i);
+  assert.match(prompt, /não duplicar personagens/i);
+  assert.match(prompt, /não revelar respostas/i);
+  assert.match(prompt, /contexto histórico ou cultural/i);
+  assert.match(prompt, /1536x1024/i);
+});
+
+test('imagem deve preencher o quadro sem distorção', () => {
+  assert.equal(DEFAULT_PLACEMENT.fit, 'cover');
+  assert.equal(DEFAULT_PLACEMENT.preserveAspectRatio, true);
+  assert.equal(DEFAULT_PLACEMENT.allowCrop, true);
+  assert.equal(DEFAULT_PLACEMENT.cropAnchor, 'center');
+  assert.equal(DEFAULT_PLACEMENT.overflow, 'hidden');
+  assert.equal(DEFAULT_PLACEMENT.distortion, false);
+});
+
+test('exportadores Word consomem o manifesto e aplicam encaixe cover', async () => {
+  const fitModule = await readFile(new URL('../scripts/word-illustration-fit.ps1', import.meta.url), 'utf8');
+  const geography = await readFile(new URL('../scripts/generate-geography-word.ps1', import.meta.url), 'utf8');
+  const fundamental = await readFile(new URL('../scripts/generate-fundamental-word.ps1', import.meta.url), 'utf8');
+
+  assert.match(fitModule, /Get-TeachEasyIllustrationFromManifest/);
+  assert.match(fitModule, /New-TeachEasyCoverImage/);
+  assert.match(fitModule, /Add-TeachEasyIllustrationToCell/);
+  assert.match(fitModule, /HighQualityBicubic/);
+
+  for (const source of [geography, fundamental]) {
+    assert.match(source, /word-illustration-fit\.ps1/);
+    assert.match(source, /Get-TeachEasyIllustrationFromManifest/);
+    assert.match(source, /Add-TeachEasyIllustrationToCell/);
+    assert.match(source, /WidthCm 8\.6 -HeightCm 5\.2/);
+  }
+});
