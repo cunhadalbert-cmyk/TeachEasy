@@ -7,7 +7,7 @@
   const DB_NAME = 'TeachEasyLibrary';
   const DB_VERSION = 1;
   const STORE_NAME = 'illustrations';
-  const ILLUSTRATION_CACHE_VERSION = 'official-cast-v4-20260817-no-duplicates';
+  const ILLUSTRATION_CACHE_VERSION = 'activity-context-1x1-v1-20260824';
 
   function currentStudentImage(shell) {
     return shell?.querySelector('.te-final-student .te-final-visual img') || null;
@@ -29,18 +29,18 @@
     const topic = clean(student?.querySelector('.te-final-subtitle')?.textContent || 'conteúdo escolar');
     const support = clean(student?.querySelector('.te-final-text')?.textContent || '');
     const questions = [...(student?.querySelectorAll('.te-final-qhead') || [])]
-      .slice(0, 4)
+      .slice(0, 8)
       .map(node => clean(node.textContent))
       .join(' ');
     return {
       subject,
       topic,
-      context: clean(`${support} ${questions}`).slice(0, 700)
+      context: clean(`${support} ${questions}`).slice(0, 1400)
     };
   }
 
   function cacheKey(data) {
-    return `${ILLUSTRATION_CACHE_VERSION}|${data.subject}|${data.topic}|${data.context}`.toLowerCase().slice(0, 940);
+    return `${ILLUSTRATION_CACHE_VERSION}|${data.subject}|${data.topic}|${data.context}`.toLowerCase().slice(0, 1680);
   }
 
   function openDatabase() {
@@ -119,16 +119,13 @@
 
   async function restoreFinalImage(shell) {
     if (!shell) return null;
-
     const data = activityData(shell);
     const key = cacheKey(data);
     const persistent = generationCache.get(key) || await readPersistentImage(key).catch(() => '');
-
     if (persistent && /^data:image\/png;base64,/i.test(persistent)) {
       generationCache.set(key, persistent);
       return applyImage(shell, persistent, 'persistent');
     }
-
     return currentStudentImage(shell);
   }
 
@@ -170,15 +167,11 @@
   async function waitForFinalImage(shell, timeoutMs = 60000) {
     const started = Date.now();
     let image = currentStudentImage(shell);
-
     while (!validFinalImage(image)) {
-      if (Date.now() - started >= timeoutMs) {
-        throw new Error('A ilustração ainda não terminou de ser gerada.');
-      }
+      if (Date.now() - started >= timeoutMs) throw new Error('A ilustração ainda não terminou de ser gerada.');
       await sleep(180);
       image = currentStudentImage(shell);
     }
-
     if (!image.complete) {
       await Promise.race([
         new Promise((resolve, reject) => {
@@ -188,11 +181,9 @@
         sleep(15000).then(() => { throw new Error('Tempo excedido ao carregar a ilustração.'); })
       ]);
     }
-
     if (typeof image.decode === 'function') {
       try { await image.decode(); } catch { }
     }
-
     const src = imageSource(image);
     if (!src) throw new Error('A ilustração final está vazia.');
     if (shell._teFinalData) shell._teFinalData.visual = src;
@@ -204,12 +195,10 @@
     const image = await waitForFinalImage(shell);
     const src = imageSource(image);
     if (!src) throw new Error('A ilustração final está vazia.');
-
     if (/^data:image\/png;base64,/i.test(src)) {
       const saved = await persistShellImage(shell, src);
       if (!saved) throw new Error('A imagem foi gerada, mas não pôde ser fixada no exercício antes do download.');
     }
-
     if (shell._teFinalData) shell._teFinalData.visual = src;
     return src;
   }
@@ -237,7 +226,6 @@
   document.addEventListener('click', async event => {
     const button = event.target.closest('.te-final-word, .te-final-pdf');
     if (!button) return;
-
     if (button.dataset.teExportImageReady === 'true') {
       delete button.dataset.teExportImageReady;
       return;
@@ -245,7 +233,6 @@
 
     const shell = button.closest('.collection-preview-shell');
     if (!shell) return;
-
     event.preventDefault();
     event.stopImmediatePropagation();
 
@@ -259,7 +246,6 @@
         button.textContent = 'Gerando imagem...';
         await generateFinalImage(shell);
       }
-
       button.textContent = 'Preparando arquivo...';
       await ensureImageFixedForExport(shell);
       button.dataset.teExportImageReady = 'true';
