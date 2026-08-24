@@ -7,7 +7,7 @@
   const DB_NAME = 'TeachEasyLibrary';
   const DB_VERSION = 1;
   const STORE_NAME = 'illustrations';
-  const ILLUSTRATION_CACHE_VERSION = 'activity-context-1x1-v1-20260824';
+  const ILLUSTRATION_CACHE_VERSION = 'manual-chatgpt-1x1-v1-20260824';
 
   function currentStudentImage(shell) {
     return shell?.querySelector('.te-final-student .te-final-visual img') || null;
@@ -39,8 +39,31 @@
     };
   }
 
+  function activityId(shell) {
+    return clean(
+      shell?._teFinalData?.id
+      || shell?.dataset?.activityId
+      || shell?.querySelector?.('[data-activity-id]')?.dataset?.activityId
+      || ''
+    );
+  }
+
   function cacheKey(data) {
     return `${ILLUSTRATION_CACHE_VERSION}|${data.subject}|${data.topic}|${data.context}`.toLowerCase().slice(0, 1680);
+  }
+
+  function buildManualIllustrationPrompt(data) {
+    return [
+      'Gerar uma única ilustração pedagógica quadrada 1:1 para atividade escolar brasileira.',
+      'Seguir fielmente o conteúdo da atividade e representar visualmente a situação central, os objetos, o ambiente e as ações importantes.',
+      'Não contradizer o texto, o objetivo nem as questões.',
+      'Não inventar fatos que alterem o sentido da atividade.',
+      'Sem títulos, letras, palavras legíveis, números, respostas, logotipos ou marcas d’água dentro da imagem.',
+      'A cena deve ser simples, clara e adequada para encaixe direto no quadro de ilustração.',
+      `Disciplina: ${data.subject}.`,
+      `Título/Tema da atividade: ${data.topic}.`,
+      `Contexto pedagógico: ${data.context || data.topic}.`
+    ].join(' ');
   }
 
   function openDatabase() {
@@ -57,7 +80,7 @@
   }
 
   async function savePersistentImage(key, dataUrl) {
-    if (!key || !/^data:image\/png;base64,/i.test(dataUrl || '')) return false;
+    if (!key || !/^data:image\/(png|jpeg|jpg|webp);base64,/i.test(dataUrl || '')) return false;
     const db = await openDatabase();
     if (!db) return false;
     try {
@@ -99,10 +122,13 @@
       visual.appendChild(image);
     }
     image.src = dataUrl;
-    image.alt = `Ilustração pedagógica gerada para ${activityData(shell).topic}`;
+    image.alt = `Ilustração pedagógica para ${activityData(shell).topic}`;
     image.dataset.teAiIllustration = 'true';
     image.dataset.tePersistentIllustration = origin === 'persistent' ? 'true' : 'pending';
     image.style.display = '';
+    image.style.width = '100%';
+    image.style.height = '100%';
+    image.style.objectFit = 'cover';
     if (shell._teFinalData) shell._teFinalData.visual = dataUrl;
     return image;
   }
@@ -122,45 +148,10 @@
     const data = activityData(shell);
     const key = cacheKey(data);
     const persistent = generationCache.get(key) || await readPersistentImage(key).catch(() => '');
-    if (persistent && /^data:image\/png;base64,/i.test(persistent)) {
+    if (persistent && /^data:image\/(png|jpeg|jpg|webp);base64,/i.test(persistent)) {
       generationCache.set(key, persistent);
       return applyImage(shell, persistent, 'persistent');
     }
-    return currentStudentImage(shell);
-  }
-
-  async function generateFinalImage(shell) {
-    await restoreFinalImage(shell);
-    let image = currentStudentImage(shell);
-    if (validFinalImage(image) && image?.dataset.tePersistentIllustration === 'true') return image;
-
-    const visual = shell?.querySelector('.te-final-student .te-final-visual');
-    if (!visual) throw new Error('Não encontrei o espaço da ilustração.');
-
-    const data = activityData(shell);
-    const key = cacheKey(data);
-    let dataUrl = generationCache.get(key) || '';
-
-    if (!dataUrl) {
-      const response = await fetch('/api/generate-library-illustration', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(data)
-      });
-      const payload = await response.json();
-      if (!response.ok || !payload.illustrationDataUrl) {
-        await restoreFinalImage(shell).catch(() => null);
-        throw new Error(payload.error || 'Não foi possível gerar a ilustração.');
-      }
-      dataUrl = payload.illustrationDataUrl;
-    }
-
-    if (!/^data:image\/png;base64,/i.test(dataUrl)) {
-      await restoreFinalImage(shell).catch(() => null);
-      throw new Error('A geração não retornou uma imagem PNG válida.');
-    }
-
-    await persistShellImage(shell, dataUrl);
     return currentStudentImage(shell);
   }
 
@@ -168,7 +159,7 @@
     const started = Date.now();
     let image = currentStudentImage(shell);
     while (!validFinalImage(image)) {
-      if (Date.now() - started >= timeoutMs) throw new Error('A ilustração ainda não terminou de ser gerada.');
+      if (Date.now() - started >= timeoutMs) throw new Error('A ilustração ainda não foi aplicada à atividade.');
       await sleep(180);
       image = currentStudentImage(shell);
     }
@@ -195,12 +186,33 @@
     const image = await waitForFinalImage(shell);
     const src = imageSource(image);
     if (!src) throw new Error('A ilustração final está vazia.');
-    if (/^data:image\/png;base64,/i.test(src)) {
+    if (/^data:image\/(png|jpeg|jpg|webp);base64,/i.test(src)) {
       const saved = await persistShellImage(shell, src);
-      if (!saved) throw new Error('A imagem foi gerada, mas não pôde ser fixada no exercício antes do download.');
+      if (!saved) throw new Error('A imagem foi aplicada, mas não pôde ser fixada no exercício antes do download.');
     }
     if (shell._teFinalData) shell._teFinalData.visual = src;
     return src;
+  }
+
+  async function prepareManualIllustrationRequest(shell) {
+    const data = activityData(shell);
+    const request = {
+      mode: 'manual-chatgpt-illustration',
+      activityId: activityId(shell),
+      subject: data.subject,
+      topic: data.topic,
+      context: data.context,
+      aspectRatio: '1:1',
+      prompt: buildManualIllustrationPrompt(data),
+      createdAt: new Date().toISOString()
+    };
+
+    window.tePendingManualIllustration = request;
+    localStorage.setItem('te-pending-manual-illustration', JSON.stringify(request));
+    try {
+      await navigator.clipboard.writeText(JSON.stringify(request, null, 2));
+    } catch { }
+    return request;
   }
 
   async function restoreAll(root = document) {
@@ -214,7 +226,53 @@
   window.tePersistLibraryIllustration = async function tePersistLibraryIllustration(shell, dataUrl) {
     return persistShellImage(shell, dataUrl);
   };
+
   window.teRestoreLibraryIllustration = restoreFinalImage;
+
+  window.teGetPendingManualIllustration = function teGetPendingManualIllustration() {
+    try {
+      return window.tePendingManualIllustration || JSON.parse(localStorage.getItem('te-pending-manual-illustration') || 'null');
+    } catch {
+      return window.tePendingManualIllustration || null;
+    }
+  };
+
+  window.teApplyManualIllustrationToShell = async function teApplyManualIllustrationToShell(shell, dataUrl) {
+    if (!shell) throw new Error('Atividade não encontrada.');
+    if (!/^data:image\/(png|jpeg|jpg|webp);base64,/i.test(dataUrl || '')) throw new Error('Imagem inválida.');
+    const saved = await persistShellImage(shell, dataUrl);
+    if (!saved) throw new Error('A imagem foi carregada, mas não pôde ser salva localmente.');
+    return true;
+  };
+
+  window.teApplyManualIllustrationByActivityId = async function teApplyManualIllustrationByActivityId(id, dataUrl) {
+    const shells = [...document.querySelectorAll('.collection-preview-shell')];
+    const shell = shells.find(item => activityId(item) === id);
+    if (!shell) throw new Error('Atividade não encontrada.');
+    return window.teApplyManualIllustrationToShell(shell, dataUrl);
+  };
+
+  window.teOpenManualIllustrationPicker = function teOpenManualIllustrationPicker(shell) {
+    if (!shell) throw new Error('Atividade não encontrada.');
+    const input = document.createElement('input');
+    input.type = 'file';
+    input.accept = 'image/png,image/jpeg,image/webp';
+    input.addEventListener('change', () => {
+      const file = input.files?.[0];
+      if (!file) return;
+      const reader = new FileReader();
+      reader.onload = async () => {
+        try {
+          await window.teApplyManualIllustrationToShell(shell, String(reader.result || ''));
+          window.alert('Imagem aplicada com sucesso. Agora clique novamente em Word ou PDF.');
+        } catch (error) {
+          window.alert(error.message || 'Não foi possível aplicar a imagem.');
+        }
+      };
+      reader.readAsDataURL(file);
+    });
+    input.click();
+  };
 
   const previewRoot = document.querySelector('#preview-content') || document.body;
   const observer = new MutationObserver(() => {
@@ -226,6 +284,7 @@
   document.addEventListener('click', async event => {
     const button = event.target.closest('.te-final-word, .te-final-pdf');
     if (!button) return;
+
     if (button.dataset.teExportImageReady === 'true') {
       delete button.dataset.teExportImageReady;
       return;
@@ -233,6 +292,7 @@
 
     const shell = button.closest('.collection-preview-shell');
     if (!shell) return;
+
     event.preventDefault();
     event.stopImmediatePropagation();
 
@@ -241,11 +301,27 @@
 
     try {
       await restoreFinalImage(shell);
-      let current = currentStudentImage(shell);
+      const current = currentStudentImage(shell);
+
       if (!validFinalImage(current) || current?.dataset.tePersistentIllustration !== 'true') {
-        button.textContent = 'Gerando imagem...';
-        await generateFinalImage(shell);
+        button.textContent = 'Preparando pedido da imagem...';
+        const request = await prepareManualIllustrationRequest(shell);
+        button.disabled = false;
+        button.textContent = originalText;
+
+        const label = request.activityId || request.topic || 'atividade';
+        const usePicker = window.confirm(
+          `Esta atividade ainda não tem uma imagem fixada.\n\n` +
+          `O pedido da ilustração foi preparado e copiado para a área de transferência.\n\n` +
+          `Atividade: ${label}\n\n` +
+          `Depois que a imagem for gerada no ChatGPT e salva no computador, clique em OK para escolhê-la agora.\n` +
+          `Clique em Cancelar se ainda vai gerar a imagem.`
+        );
+
+        if (usePicker) window.teOpenManualIllustrationPicker(shell);
+        return;
       }
+
       button.textContent = 'Preparando arquivo...';
       await ensureImageFixedForExport(shell);
       button.dataset.teExportImageReady = 'true';
