@@ -7,7 +7,8 @@
   const DB_NAME = 'TeachEasyLibrary';
   const DB_VERSION = 1;
   const STORE_NAME = 'illustrations';
-  const ILLUSTRATION_CACHE_VERSION = 'manual-chatgpt-1x1-v1-20260824';
+  const ILLUSTRATION_CACHE_VERSION = 'manual-chatgpt-1x1-v2-20260824';
+  const BATCH_MAX = 10;
 
   function currentStudentImage(shell) {
     return shell?.querySelector('.te-final-student .te-final-visual img') || null;
@@ -32,11 +33,7 @@
       .slice(0, 8)
       .map(node => clean(node.textContent))
       .join(' ');
-    return {
-      subject,
-      topic,
-      context: clean(`${support} ${questions}`).slice(0, 1400)
-    };
+    return { subject, topic, context: clean(`${support} ${questions}`).slice(0, 1400) };
   }
 
   function activityId(shell) {
@@ -46,6 +43,13 @@
       || shell?.querySelector?.('[data-activity-id]')?.dataset?.activityId
       || ''
     );
+  }
+
+  function activityGroupKey(shell) {
+    const data = activityData(shell);
+    const student = shell?.querySelector('.te-final-student');
+    const meta = clean(student?.querySelector('.te-final-meta')?.textContent || '');
+    return `${data.subject}|${meta}`.toLowerCase();
   }
 
   function cacheKey(data) {
@@ -140,6 +144,7 @@
     const saved = await savePersistentImage(key, dataUrl);
     const image = applyImage(shell, dataUrl, saved ? 'persistent' : 'generated');
     if (image && saved) image.dataset.tePersistentIllustration = 'true';
+    shell.dataset.teImagePickerStage = '';
     return saved;
   }
 
@@ -206,17 +211,126 @@
       prompt: buildManualIllustrationPrompt(data),
       createdAt: new Date().toISOString()
     };
-
     window.tePendingManualIllustration = request;
     localStorage.setItem('te-pending-manual-illustration', JSON.stringify(request));
-    try {
-      await navigator.clipboard.writeText(JSON.stringify(request, null, 2));
-    } catch { }
+    try { await navigator.clipboard.writeText(JSON.stringify(request, null, 2)); } catch { }
     return request;
+  }
+
+  function selectedBatchShells() {
+    return [...document.querySelectorAll('.collection-preview-shell[data-te-batch-selected="true"]')];
+  }
+
+  function updateBatchToolbar() {
+    const toolbar = document.querySelector('#te-illustration-batch-toolbar');
+    if (!toolbar) return;
+    const selected = selectedBatchShells();
+    const count = toolbar.querySelector('[data-te-batch-count]');
+    const button = toolbar.querySelector('[data-te-batch-prepare]');
+    count.textContent = `${selected.length}/${BATCH_MAX} selecionadas`;
+    button.disabled = selected.length === 0;
+  }
+
+  function toggleBatchSelection(shell, checkbox) {
+    const selected = selectedBatchShells();
+    if (checkbox.checked) {
+      if (selected.length >= BATCH_MAX) {
+        checkbox.checked = false;
+        window.alert('O lote pode ter no máximo 10 atividades.');
+        return;
+      }
+      if (selected.length && activityGroupKey(selected[0]) !== activityGroupKey(shell)) {
+        checkbox.checked = false;
+        window.alert('Escolha atividades da mesma disciplina, ano e bimestre para este lote.');
+        return;
+      }
+      shell.dataset.teBatchSelected = 'true';
+      shell.style.outline = '3px solid #1F497D';
+    } else {
+      delete shell.dataset.teBatchSelected;
+      shell.style.outline = '';
+    }
+    updateBatchToolbar();
+  }
+
+  function ensureBatchCheckbox(shell) {
+    if (!shell || shell.querySelector('.te-batch-selector')) return;
+    const host = shell.querySelector('.te-final-student') || shell;
+    const wrap = document.createElement('label');
+    wrap.className = 'te-batch-selector';
+    wrap.style.cssText = 'display:flex;align-items:center;gap:7px;margin:8px 0;padding:8px 10px;border:1px solid #ccd4df;border-radius:7px;background:#f7f9fc;font:600 14px Arial;color:#1F497D;cursor:pointer;';
+    const checkbox = document.createElement('input');
+    checkbox.type = 'checkbox';
+    checkbox.style.transform = 'scale(1.25)';
+    const text = document.createElement('span');
+    text.textContent = 'Selecionar para lote de imagens';
+    wrap.append(checkbox, text);
+    checkbox.addEventListener('change', () => toggleBatchSelection(shell, checkbox));
+    host.insertBefore(wrap, host.firstChild);
+  }
+
+  async function prepareBatch() {
+    const shells = selectedBatchShells();
+    if (!shells.length) return;
+    if (shells.length > BATCH_MAX) {
+      window.alert('Selecione no máximo 10 atividades.');
+      return;
+    }
+    const group = activityGroupKey(shells[0]);
+    if (shells.some(shell => activityGroupKey(shell) !== group)) {
+      window.alert('Todas as atividades do lote precisam ser da mesma disciplina, ano e bimestre.');
+      return;
+    }
+    const activities = shells.map((shell, index) => {
+      const data = activityData(shell);
+      return {
+        order: index + 1,
+        activityId: activityId(shell),
+        subject: data.subject,
+        topic: data.topic,
+        context: data.context,
+        aspectRatio: '1:1',
+        prompt: buildManualIllustrationPrompt(data)
+      };
+    });
+    const request = {
+      mode: 'manual-chatgpt-illustration-batch',
+      quantity: activities.length,
+      rule: 'Uma imagem separada para cada atividade. Nunca criar colagem.',
+      activities,
+      createdAt: new Date().toISOString()
+    };
+    window.tePendingManualIllustrationBatch = request;
+    localStorage.setItem('te-pending-manual-illustration-batch', JSON.stringify(request));
+    try { await navigator.clipboard.writeText(JSON.stringify(request, null, 2)); } catch { }
+    window.alert(`Lote com ${activities.length} atividade(s) preparado e copiado. Cole o pedido no ChatGPT para gerar as imagens.`);
+  }
+
+  function ensureBatchToolbar() {
+    const root = document.querySelector('#preview-content') || document.body;
+    if (document.querySelector('#te-illustration-batch-toolbar')) return;
+    const toolbar = document.createElement('div');
+    toolbar.id = 'te-illustration-batch-toolbar';
+    toolbar.style.cssText = 'position:sticky;top:0;z-index:9999;display:flex;gap:12px;align-items:center;justify-content:center;padding:10px 12px;background:#fff;border:2px solid #1F497D;box-shadow:0 2px 8px rgba(0,0,0,.12);font-family:Arial;margin-bottom:12px;';
+    toolbar.innerHTML = '<strong data-te-batch-count>0/10 selecionadas</strong><button type="button" data-te-batch-prepare disabled style="background:#1F497D;color:#fff;border:0;border-radius:6px;padding:9px 14px;font-weight:700;cursor:pointer;">Preparar lote de imagens</button><button type="button" data-te-batch-clear style="background:#eee;border:1px solid #bbb;border-radius:6px;padding:9px 12px;cursor:pointer;">Limpar seleção</button>';
+    toolbar.querySelector('[data-te-batch-prepare]').addEventListener('click', prepareBatch);
+    toolbar.querySelector('[data-te-batch-clear]').addEventListener('click', () => {
+      selectedBatchShells().forEach(shell => {
+        delete shell.dataset.teBatchSelected;
+        shell.style.outline = '';
+        const checkbox = shell.querySelector('.te-batch-selector input');
+        if (checkbox) checkbox.checked = false;
+      });
+      updateBatchToolbar();
+    });
+    root.prepend(toolbar);
   }
 
   async function restoreAll(root = document) {
     const shells = [...(root.querySelectorAll?.('.collection-preview-shell') || [])];
+    shells.forEach(ensureBatchCheckbox);
+    ensureBatchToolbar();
+    updateBatchToolbar();
     await Promise.all(shells.map(shell => restoreFinalImage(shell).catch(error => {
       console.warn('teacheasy-illustration-restore', error);
       return null;
@@ -226,17 +340,15 @@
   window.tePersistLibraryIllustration = async function tePersistLibraryIllustration(shell, dataUrl) {
     return persistShellImage(shell, dataUrl);
   };
-
   window.teRestoreLibraryIllustration = restoreFinalImage;
-
   window.teGetPendingManualIllustration = function teGetPendingManualIllustration() {
-    try {
-      return window.tePendingManualIllustration || JSON.parse(localStorage.getItem('te-pending-manual-illustration') || 'null');
-    } catch {
-      return window.tePendingManualIllustration || null;
-    }
+    try { return window.tePendingManualIllustration || JSON.parse(localStorage.getItem('te-pending-manual-illustration') || 'null'); }
+    catch { return window.tePendingManualIllustration || null; }
   };
-
+  window.teGetPendingManualIllustrationBatch = function teGetPendingManualIllustrationBatch() {
+    try { return window.tePendingManualIllustrationBatch || JSON.parse(localStorage.getItem('te-pending-manual-illustration-batch') || 'null'); }
+    catch { return window.tePendingManualIllustrationBatch || null; }
+  };
   window.teApplyManualIllustrationToShell = async function teApplyManualIllustrationToShell(shell, dataUrl) {
     if (!shell) throw new Error('Atividade não encontrada.');
     if (!/^data:image\/(png|jpeg|jpg|webp);base64,/i.test(dataUrl || '')) throw new Error('Imagem inválida.');
@@ -244,14 +356,6 @@
     if (!saved) throw new Error('A imagem foi carregada, mas não pôde ser salva localmente.');
     return true;
   };
-
-  window.teApplyManualIllustrationByActivityId = async function teApplyManualIllustrationByActivityId(id, dataUrl) {
-    const shells = [...document.querySelectorAll('.collection-preview-shell')];
-    const shell = shells.find(item => activityId(item) === id);
-    if (!shell) throw new Error('Atividade não encontrada.');
-    return window.teApplyManualIllustrationToShell(shell, dataUrl);
-  };
-
   window.teOpenManualIllustrationPicker = function teOpenManualIllustrationPicker(shell) {
     if (!shell) throw new Error('Atividade não encontrada.');
     const input = document.createElement('input');
@@ -264,7 +368,7 @@
       reader.onload = async () => {
         try {
           await window.teApplyManualIllustrationToShell(shell, String(reader.result || ''));
-          window.alert('Imagem aplicada com sucesso. Agora clique novamente em Word ou PDF.');
+          window.alert('Imagem aplicada com sucesso. Clique novamente em Word ou PDF para baixar.');
         } catch (error) {
           window.alert(error.message || 'Não foi possível aplicar a imagem.');
         }
@@ -275,27 +379,21 @@
   };
 
   const previewRoot = document.querySelector('#preview-content') || document.body;
-  const observer = new MutationObserver(() => {
-    requestAnimationFrame(() => restoreAll(previewRoot));
-  });
+  const observer = new MutationObserver(() => requestAnimationFrame(() => restoreAll(previewRoot)));
   observer.observe(previewRoot, { childList: true, subtree: true });
   restoreAll(previewRoot);
 
   document.addEventListener('click', async event => {
     const button = event.target.closest('.te-final-word, .te-final-pdf');
     if (!button) return;
-
     if (button.dataset.teExportImageReady === 'true') {
       delete button.dataset.teExportImageReady;
       return;
     }
-
     const shell = button.closest('.collection-preview-shell');
     if (!shell) return;
-
     event.preventDefault();
     event.stopImmediatePropagation();
-
     const originalText = button.textContent;
     button.disabled = true;
 
@@ -304,21 +402,18 @@
       const current = currentStudentImage(shell);
 
       if (!validFinalImage(current) || current?.dataset.tePersistentIllustration !== 'true') {
+        if (shell.dataset.teImagePickerStage === 'ready-to-pick') {
+          button.disabled = false;
+          button.textContent = originalText;
+          window.teOpenManualIllustrationPicker(shell);
+          return;
+        }
         button.textContent = 'Preparando pedido da imagem...';
         const request = await prepareManualIllustrationRequest(shell);
+        shell.dataset.teImagePickerStage = 'ready-to-pick';
         button.disabled = false;
         button.textContent = originalText;
-
-        const label = request.activityId || request.topic || 'atividade';
-        const usePicker = window.confirm(
-          `Esta atividade ainda não tem uma imagem fixada.\n\n` +
-          `O pedido da ilustração foi preparado e copiado para a área de transferência.\n\n` +
-          `Atividade: ${label}\n\n` +
-          `Depois que a imagem for gerada no ChatGPT e salva no computador, clique em OK para escolhê-la agora.\n` +
-          `Clique em Cancelar se ainda vai gerar a imagem.`
-        );
-
-        if (usePicker) window.teOpenManualIllustrationPicker(shell);
+        window.alert(`Pedido da imagem preparado para: ${request.activityId || request.topic}. Cole o pedido no ChatGPT. Depois que a imagem estiver pronta e salva no computador, clique novamente em Word ou PDF para escolhê-la.`);
         return;
       }
 
