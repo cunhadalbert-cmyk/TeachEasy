@@ -79,10 +79,10 @@
     return true;
   }
 
-  if (!install()) {
-    const observer = new MutationObserver(() => {
-      if (install()) observer.disconnect();
-    });
-    observer.observe(document.documentElement, { childList: true, subtree: true });
-  }
+  install();
+
+  const observer = new MutationObserver(() => {
+    install();
+  });
+  observer.observe(document.documentElement, { childList: true, subtree: true });
 })();
