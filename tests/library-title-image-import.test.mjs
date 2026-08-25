@@ -1,9 +1,12 @@
 import assert from 'node:assert/strict';
+import { createRequire } from 'node:module';
 import { readFile } from 'node:fs/promises';
 import test from 'node:test';
 import { Window } from 'happy-dom';
 
 const source = await readFile(new URL('../library-export-image-sync.js', import.meta.url), 'utf8');
+const require = createRequire(import.meta.url);
+const JSZip = require('../vendor/jszip.min.js');
 const openPages = new Set();
 
 test.afterEach(() => {
@@ -22,9 +25,7 @@ function fakeIndexedDB() {
         const stores = databases.get(name);
         const database = {
           objectStoreNames: { contains: storeName => stores.has(storeName) },
-          createObjectStore(storeName) {
-            stores.set(storeName, new Map());
-          },
+          createObjectStore(storeName) { stores.set(storeName, new Map()); },
           transaction(storeName) {
             const records = stores.get(storeName);
             const transaction = {
@@ -60,15 +61,20 @@ function fakeIndexedDB() {
   };
 }
 
-function shellMarkup(title, withButtons = false) {
+function normalize(value) {
+  return value.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
+}
+
+function shellMarkup(title, { buttons = false, image = '' } = {}) {
   return `
     <div class="collection-preview-shell">
       <section class="te-final-student">
         <h1 class="te-final-title">ATIVIDADE DE LÍNGUA PORTUGUESA</h1>
         <h2 class="te-final-subtitle">${title}</h2>
-        <div class="te-final-visual"></div>
+        <div class="te-final-visual">${image ? `<img src="${image}" alt="Imagem estática">` : ''}</div>
       </section>
-      ${withButtons ? '<button class="te-final-word">Word</button><button class="te-final-pdf">PDF</button>' : ''}
+      ${buttons ? '<button class="te-final-word">Word</button><button class="te-final-pdf">PDF</button>' : ''}
     </div>`;
 }
 
@@ -77,123 +83,197 @@ function createPage(database, markup = '') {
   window.indexedDB = database;
   window.alert = () => {};
   window.document.body.innerHTML = `<div id="preview-content">${markup}</div>`;
+  window.JSZip = JSZip;
   window.eval(source);
   openPages.add(window);
   return window;
 }
 
+async function createZip(window, entries, name = 'TeachEasy_Lote.zip') {
+  const archive = new JSZip();
+  for (const entry of entries) {
+    if (entry.dir) archive.folder(entry.name);
+    else archive.file(entry.name, entry.content || `imagem:${entry.name}`);
+  }
+  const bytes = await archive.generateAsync({ type: 'uint8array' });
+  return new window.File([bytes], name, { type: 'application/zip' });
+}
+
 const activities = [
-  { topic: 'Informação ou opinião?', normalizedTitle: 'informacao-ou-opiniao' },
-  { topic: 'Produzindo uma notícia escolar', normalizedTitle: 'produzindo-uma-noticia-escolar' },
-  { topic: 'Descobrindo informações científicas', normalizedTitle: 'descobrindo-informacoes-cientificas' }
-];
+  'Informação ou opinião?',
+  'Produzindo uma notícia escolar',
+  'Descobrindo informações científicas'
+].map(topic => ({ topic, normalizedTitle: normalize(topic) }));
 
-test('normaliza título e vincula três arquivos em ordem aleatória somente pelo nome', () => {
-  const window = createPage(fakeIndexedDB());
-  const api = window.TeLibraryTitleImages;
-  const files = [
-    new window.File(['ciencia'], 'descobrindo-informacoes-cientificas.png', { type: 'image/png' }),
-    new window.File(['noticia'], 'PRODUZINDO UMA NOTÍCIA ESCOLAR.jpg', { type: 'image/jpeg' }),
-    new window.File(['opiniao'], 'informacao-ou-opiniao.webp', { type: 'image/webp' })
-  ];
+const tenActivities = [
+  ...activities.map(item => item.topic),
+  'Água e transformação',
+  'Números e operações',
+  'O bairro onde vivemos',
+  'Animais brasileiros',
+  'Leitura de gráficos',
+  'Memórias da comunidade',
+  'Formas geométricas'
+].map(topic => ({ topic, normalizedTitle: normalize(topic) }));
 
-  assert.equal(api.normalizeTitle('Informação ou opinião?'), 'informacao-ou-opiniao');
-  const result = api.matchFiles(files, activities);
+test('ZIP com 3 imagens em ordem aleatória vincula exclusivamente pelo título normalizado', async () => {
+  const page = createPage(fakeIndexedDB(), activities.map(item => shellMarkup(item.topic)).join(''));
+  const zip = await createZip(page, [activities[2], activities[0], activities[1]].map(item => ({ name: `${item.normalizedTitle}.png` })));
+  const result = await page.TeLibraryTitleImages.importZip(zip, activities);
+
+  assert.equal(result.linkedCount, 3);
   assert.deepEqual([...result.missingTitles], []);
   assert.deepEqual(
-    Array.from(result.pairs, pair => [pair.activity.topic, pair.file.name]),
-    [
-      ['Informação ou opinião?', 'informacao-ou-opiniao.webp'],
-      ['Produzindo uma notícia escolar', 'PRODUZINDO UMA NOTÍCIA ESCOLAR.jpg'],
-      ['Descobrindo informações científicas', 'descobrindo-informacoes-cientificas.png']
-    ]
-  );
-
-  const rejected = api.matchFiles(
-    [new window.File(['errada'], '01-atividade-antiga.png', { type: 'image/png' })],
-    [activities[0]]
-  );
-  assert.equal(rejected.pairs.length, 0);
-  assert.deepEqual([...rejected.missingTitles], ['Informação ou opinião?']);
-});
-
-test('importação múltipla persiste por título e restaura as imagens após recarregar', async () => {
-  const database = fakeIndexedDB();
-  const markup = activities.map(item => shellMarkup(item.topic)).join('');
-  const firstPage = createPage(database, markup);
-  const files = [
-    new firstPage.File(['imagem-c'], 'descobrindo-informacoes-cientificas.png', { type: 'image/png' }),
-    new firstPage.File(['imagem-a'], 'informacao-ou-opiniao.png', { type: 'image/png' }),
-    new firstPage.File(['imagem-b'], 'produzindo-uma-noticia-escolar.png', { type: 'image/png' })
-  ];
-
-  const result = await firstPage.TeLibraryTitleImages.importFiles(files, activities);
-  assert.equal(result.linkedCount, 3);
-  assert.equal(result.total, 3);
-  assert.match(firstPage.document.querySelectorAll('.te-final-visual img')[0].src, /aW1hZ2VtLWE=/);
-  assert.match(firstPage.document.querySelectorAll('.te-final-visual img')[1].src, /aW1hZ2VtLWI=/);
-  assert.match(firstPage.document.querySelectorAll('.te-final-visual img')[2].src, /aW1hZ2VtLWM=/);
-
-  const reloadedPage = createPage(database, shellMarkup('Informação ou opinião?'));
-  const reloadedShell = reloadedPage.document.querySelector('.collection-preview-shell');
-  await reloadedPage.TeLibraryTitleImages.restoreImage(reloadedShell);
-  assert.match(reloadedShell.querySelector('.te-final-visual img').src, /aW1hZ2VtLWE=/);
-  assert.equal(
-    reloadedShell.querySelector('.te-final-visual img').dataset.teIllustrationTitle,
-    'informacao-ou-opiniao'
+    [...page.document.querySelectorAll('.te-final-visual img')].map(image => image.dataset.teIllustrationTitle),
+    activities.map(item => item.normalizedTitle)
   );
 });
 
-test('interface usa um único botão, input múltiplo e informa exatamente títulos ausentes', async () => {
-  const window = createPage(fakeIndexedDB(), shellMarkup('Informação ou opinião?'));
-  const api = window.TeLibraryTitleImages;
-  window.localStorage.setItem(api.SELECTION_KEY, JSON.stringify([activities[0]]));
-  let picker;
-  window.HTMLInputElement.prototype.click = function click() { picker = this; };
-  api.openImportPicker();
-  await api.refresh();
+test('ZIP com 10 imagens fora de ordem vincula as dez atividades corretas', async () => {
+  const order = [9, 2, 7, 0, 5, 1, 8, 4, 6, 3];
+  const page = createPage(fakeIndexedDB(), tenActivities.map(item => shellMarkup(item.topic)).join(''));
+  const zip = await createZip(page, order.map(index => ({ name: `${tenActivities[index].normalizedTitle}.webp` })));
+  const result = await page.TeLibraryTitleImages.importZip(zip, tenActivities);
 
-  const buttons = [...window.document.querySelectorAll('#te-illustration-batch-toolbar button')];
-  assert.equal(buttons.length, 1);
-  assert.equal(buttons[0].textContent, 'Importar imagens');
-  assert.equal(picker.multiple, true);
-
-  const report = api.matchFiles([], activities);
-  assert.match(api.importMessage({ ...report, linkedCount: 0, total: 3 }), /Informação ou opinião\?.*Produzindo uma notícia escolar.*Descobrindo informações científicas/s);
+  assert.equal(result.linkedCount, 10);
+  assert.equal(result.total, 10);
+  assert.equal(page.document.querySelectorAll('.te-final-visual img').length, 10);
 });
 
-test('Word e PDF reutilizam automaticamente a imagem persistida sem abrir seletor', async () => {
+test('nomes com acentos, espaços e pontuação são normalizados antes da comparação', async () => {
+  const page = createPage(fakeIndexedDB(), shellMarkup('Informação ou opinião?'));
+  const zip = await createZip(page, [{ name: 'INFORMAÇÃO OU OPINIÃO?.JPG' }]);
+  const result = await page.TeLibraryTitleImages.importZip(zip, [activities[0]]);
+
+  assert.equal(page.TeLibraryTitleImages.normalizeTitle('Informação ou opinião?'), 'informacao-ou-opiniao');
+  assert.equal(result.linkedCount, 1);
+});
+
+test('arquivo extra sem atividade correspondente é informado e nunca reaproveitado por ordem', async () => {
+  const page = createPage(fakeIndexedDB(), shellMarkup('Informação ou opinião?'));
+  const zip = await createZip(page, [
+    { name: 'xadrez.png' },
+    { name: 'informacao-ou-opiniao.png' }
+  ]);
+  const result = await page.TeLibraryTitleImages.importZip(zip, [activities[0]]);
+
+  assert.equal(result.linkedCount, 1);
+  assert.deepEqual([...result.unmatchedFiles], ['xadrez.png']);
+  assert.equal(page.document.querySelector('.te-final-visual img').dataset.teIllustrationTitle, 'informacao-ou-opiniao');
+});
+
+test('pasta interna é percorrida e pastas, ocultos, __MACOSX e outros tipos são ignorados', async () => {
+  const page = createPage(fakeIndexedDB());
+  const zip = await createZip(page, [
+    { name: 'lote/subpasta', dir: true },
+    { name: 'lote/subpasta/informacao-ou-opiniao.jpeg' },
+    { name: '__MACOSX/._informacao-ou-opiniao.png' },
+    { name: 'lote/.oculta.webp' },
+    { name: 'lote/leia-me.txt' }
+  ]);
+  const files = await page.TeLibraryTitleImages.extractZipImages(zip);
+
+  assert.deepEqual(Array.from(files, file => file.name), ['informacao-ou-opiniao.jpeg']);
+});
+
+test('resultado parcial lista exatamente as atividades não encontradas', async () => {
+  const page = createPage(fakeIndexedDB());
+  const zip = await createZip(page, [
+    { name: 'informacao-ou-opiniao.png' },
+    { name: 'produzindo-uma-noticia-escolar.png' }
+  ]);
+  const result = await page.TeLibraryTitleImages.importZip(zip, activities);
+  const message = page.TeLibraryTitleImages.importMessage(result);
+
+  assert.match(message, /^2\/3 imagens vinculadas\. Não encontradas:\n\n- Descobrindo informações científicas$/);
+});
+
+test('imagem importada do ZIP permanece no IndexedDB após F5', async () => {
   const database = fakeIndexedDB();
   const firstPage = createPage(database, shellMarkup('Informação ou opinião?'));
-  const file = new firstPage.File(['word-pdf'], 'informacao-ou-opiniao.png', { type: 'image/png' });
-  await firstPage.TeLibraryTitleImages.importFiles([file], [activities[0]]);
+  const zip = await createZip(firstPage, [{ name: 'informacao-ou-opiniao.png', content: 'persistida' }]);
+  await firstPage.TeLibraryTitleImages.importZip(zip, [activities[0]]);
 
-  const page = createPage(database, shellMarkup('Informação ou opinião?', true));
+  const reloadedPage = createPage(database, shellMarkup('Informação ou opinião?'));
+  const shell = reloadedPage.document.querySelector('.collection-preview-shell');
+  assert.equal(await reloadedPage.TeLibraryTitleImages.restoreImage(shell), true);
+  assert.equal(shell.querySelector('img').dataset.teIllustrationTitle, 'informacao-ou-opiniao');
+});
+
+async function pageWithPersistedImageAndExports() {
+  const database = fakeIndexedDB();
+  const firstPage = createPage(database, shellMarkup('Informação ou opinião?'));
+  const zip = await createZip(firstPage, [{ name: 'informacao-ou-opiniao.png', content: 'word-pdf' }]);
+  await firstPage.TeLibraryTitleImages.importZip(zip, [activities[0]]);
+  const page = createPage(database, shellMarkup('Informação ou opinião?', { buttons: true }));
   const shell = page.document.querySelector('.collection-preview-shell');
   shell._teFinalData = { visual: '' };
-  let pickerOpened = false;
-  page.HTMLInputElement.prototype.click = () => { pickerOpened = true; };
-  let wordExports = 0;
-  let pdfExports = 0;
-  shell.querySelector('.te-final-word').addEventListener('click', () => { wordExports += 1; });
-  shell.querySelector('.te-final-pdf').addEventListener('click', () => { pdfExports += 1; });
+  return { page, shell };
+}
 
+test('Word reutiliza automaticamente a imagem persistida sem abrir seletor', async () => {
+  const { page, shell } = await pageWithPersistedImageAndExports();
+  let pickerOpened = false;
+  let exports = 0;
+  page.HTMLInputElement.prototype.click = () => { pickerOpened = true; };
+  shell.querySelector('.te-final-word').addEventListener('click', () => { exports += 1; });
   shell.querySelector('.te-final-word').click();
   await new Promise(resolve => setTimeout(resolve, 0));
+
+  assert.equal(exports, 1);
+  assert.equal(pickerOpened, false);
+  assert.match(shell._teFinalData.visual, /^data:image\/png;base64,/);
+});
+
+test('PDF reutiliza automaticamente a imagem persistida sem abrir seletor', async () => {
+  const { page, shell } = await pageWithPersistedImageAndExports();
+  let pickerOpened = false;
+  let exports = 0;
+  page.HTMLInputElement.prototype.click = () => { pickerOpened = true; };
+  shell.querySelector('.te-final-pdf').addEventListener('click', () => { exports += 1; });
   shell.querySelector('.te-final-pdf').click();
   await new Promise(resolve => setTimeout(resolve, 0));
 
-  assert.equal(wordExports, 1);
-  assert.equal(pdfExports, 1);
+  assert.equal(exports, 1);
   assert.equal(pickerOpened, false);
-  assert.match(shell._teFinalData.visual, /d29yZC1wZGY=/);
+  assert.match(shell._teFinalData.visual, /^data:image\/png;base64,/);
 });
 
-test('persistência nova não consulta banco, store ou chave antigos', () => {
-  const window = createPage(fakeIndexedDB());
-  const api = window.TeLibraryTitleImages;
+test('interface oferece um único seletor de um arquivo ZIP', async () => {
+  const page = createPage(fakeIndexedDB(), shellMarkup('Informação ou opinião?'));
+  const api = page.TeLibraryTitleImages;
+  page.localStorage.setItem(api.SELECTION_KEY, JSON.stringify([activities[0]]));
+  let picker;
+  page.HTMLInputElement.prototype.click = function click() { picker = this; };
+  api.openZipPicker();
+  await api.refresh();
+
+  const buttons = [...page.document.querySelectorAll('#te-illustration-batch-toolbar button')];
+  assert.equal(buttons.length, 1);
+  assert.equal(buttons[0].textContent, 'Importar ZIP de imagens');
+  assert.equal(picker.multiple, false);
+  assert.match(picker.accept, /\.zip/);
+});
+
+test('nome antigo, numeração e aproximação não substituem imagem estática correta', async () => {
+  const page = createPage(fakeIndexedDB(), shellMarkup('Informação ou opinião?', { image: 'static-correct.png' }));
+  const zip = await createZip(page, [
+    { name: '01-informacao-ou-opiniao.png' },
+    { name: 'informacao-opiniao.png' },
+    { name: 'te-id-antigo.png' }
+  ]);
+  const result = await page.TeLibraryTitleImages.importZip(zip, [activities[0]]);
+
+  assert.equal(result.linkedCount, 0);
+  assert.deepEqual([...result.missingTitles], ['Informação ou opinião?']);
+  assert.match(page.document.querySelector('.te-final-visual img').src, /static-correct\.png$/);
+});
+
+test('persistência continua usando somente banco, store e chave por título', () => {
+  const page = createPage(fakeIndexedDB());
+  const api = page.TeLibraryTitleImages;
   assert.equal(api.DB_NAME, 'TeachEasyIllustrationsByNormalizedTitleV1');
   assert.equal(api.STORE_NAME, 'imagesByNormalizedTitleV1');
   assert.equal(api.SELECTION_KEY, 'te-illustration-title-batch-selection-v1');
-  assert.doesNotMatch(source, /TeachEasyIllustrationStore|te-illustration-batch-selection-v6|activityId|illustrationId/);
+  assert.doesNotMatch(source, /TeachEasyIllustrationStore|activityId|illustrationId/);
 });

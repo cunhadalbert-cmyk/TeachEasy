@@ -40,7 +40,8 @@ test('Biblioteca mantém PNGs estáticas e sincronizador ativo com persistência
   const sync = await readFile(new URL('../library-export-image-sync.js', import.meta.url), 'utf8');
   assert.doesNotMatch(html, /library-ai-illustration\.js/);
   assert.doesNotMatch(html, /generate-library-illustration/);
-  assert.match(html, /library-export-image-sync\.js\?v=20260824-title-store-v1/);
+  assert.match(html, /vendor\/jszip\.min\.js\?v=3\.10\.1/);
+  assert.match(html, /library-export-image-sync\.js\?v=20260824-zip-title-store-v1/);
   assert.doesNotMatch(sync, /modoIlustracao/);
   assert.match(sync, /TeachEasyIllustrationsByNormalizedTitleV1/);
   assert.match(sync, /function normalizeTitle/);

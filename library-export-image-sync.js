@@ -6,6 +6,8 @@
   const DB_NAME = 'TeachEasyIllustrationsByNormalizedTitleV1';
   const DB_VERSION = 1;
   const STORE_NAME = 'imagesByNormalizedTitleV1';
+  const MAX_ZIP_IMAGES = 100;
+  const IMAGE_EXTENSIONS = new Set(['png', 'jpg', 'jpeg', 'webp']);
 
   const clean = value => String(value || '').replace(/\s+/g, ' ').trim();
 
@@ -157,8 +159,8 @@
       element = document.createElement('div');
       element.id = 'te-illustration-batch-toolbar';
       element.style.cssText = 'position:sticky;top:0;z-index:9999;display:flex;gap:10px;align-items:center;justify-content:center;flex-wrap:wrap;padding:10px;background:#fff;border:2px solid #1F497D;margin-bottom:12px;font-family:Arial';
-      element.innerHTML = '<strong data-count>0/10 selecionadas</strong><button type="button" data-import>Importar imagens</button><span data-status style="font-weight:700;color:#1F497D"></span>';
-      element.querySelector('[data-import]').addEventListener('click', openImportPicker);
+      element.innerHTML = '<strong data-count>0/10 selecionadas</strong><button type="button" data-import>Importar ZIP de imagens</button><span data-status style="font-weight:700;color:#1F497D"></span>';
+      element.querySelector('[data-import]').addEventListener('click', openZipPicker);
       root.prepend(element);
     }
     return element;
@@ -278,10 +280,9 @@
   }
 
   function importMessage(result) {
-    const lines = [`${result.linkedCount}/${result.total} imagens vinculadas corretamente`];
-    if (result.missingTitles.length) {
-      lines.push(`Títulos sem arquivo correspondente: ${result.missingTitles.join(', ')}.`);
-    }
+    const lines = result.missingTitles.length
+      ? [`${result.linkedCount}/${result.total} imagens vinculadas. Não encontradas:`, '', ...result.missingTitles.map(title => `- ${title}`)]
+      : [`${result.linkedCount}/${result.total} imagens vinculadas corretamente.`];
     if (result.duplicateFileTitles.length) {
       lines.push(`Arquivos duplicados para: ${result.duplicateFileTitles.join(', ')}. Nenhum deles foi usado.`);
     }
@@ -291,20 +292,63 @@
     return lines.join('\n');
   }
 
-  function openImportPicker() {
+  function isSupportedZipImage(path) {
+    const parts = String(path || '').replace(/\\/g, '/').split('/').filter(Boolean);
+    if (!parts.length) return false;
+    if (parts.some(part => part.startsWith('.') || part.toUpperCase() === '__MACOSX')) return false;
+    const extension = parts.at(-1).split('.').pop()?.toLowerCase() || '';
+    return IMAGE_EXTENSIONS.has(extension);
+  }
+
+  function zipBaseName(path) {
+    return String(path || '').replace(/\\/g, '/').split('/').filter(Boolean).at(-1) || '';
+  }
+
+  function imageMimeType(fileName) {
+    const extension = fileName.split('.').pop()?.toLowerCase();
+    if (extension === 'jpg' || extension === 'jpeg') return 'image/jpeg';
+    return `image/${extension}`;
+  }
+
+  async function extractZipImages(zipFile) {
+    if (!zipFile || !/\.zip$/i.test(zipFile.name || '')) {
+      throw new Error('Selecione um arquivo ZIP válido.');
+    }
+    if (!window.JSZip) throw new Error('O leitor de ZIP não foi carregado. Recarregue a página e tente novamente.');
+    const archive = await window.JSZip.loadAsync(await zipFile.arrayBuffer());
+    const entries = Object.values(archive.files)
+      .filter(entry => !entry.dir && isSupportedZipImage(entry.name));
+    if (entries.length > MAX_ZIP_IMAGES) {
+      throw new Error(`O ZIP possui mais de ${MAX_ZIP_IMAGES} imagens. Divida-o em lotes menores.`);
+    }
+    return Promise.all(entries.map(async entry => {
+      const name = zipBaseName(entry.name);
+      const bytes = await entry.async('uint8array');
+      return new File([bytes], name, { type: imageMimeType(name) });
+    }));
+  }
+
+  async function importZip(zipFile, activities = readSelection()) {
+    const files = await extractZipImages(zipFile);
+    return importFiles(files, activities);
+  }
+
+  function openZipPicker() {
     const activities = readSelection();
     if (!activities.length) return;
     const input = document.createElement('input');
     input.type = 'file';
-    input.multiple = true;
-    input.accept = 'image/png,image/jpeg,image/webp';
+    input.multiple = false;
+    input.accept = '.zip,application/zip,application/x-zip-compressed';
     input.addEventListener('change', async () => {
-      const files = [...(input.files || [])];
-      if (!files.length) return;
-      setStatus('Importando...');
+      const zipFile = input.files?.[0];
+      if (!zipFile) return;
+      setStatus('Abrindo ZIP e importando imagens...');
       try {
-        const result = await importFiles(files, activities);
-        setStatus(`${result.linkedCount}/${result.total} imagens vinculadas corretamente`);
+        const result = await importZip(zipFile, activities);
+        setStatus(result.missingTitles.length
+          ? `${result.linkedCount}/${result.total} imagens vinculadas.`
+          : `${result.linkedCount}/${result.total} imagens vinculadas corretamente.`);
         alert(importMessage(result));
       } catch (error) {
         console.error(error);
@@ -375,8 +419,11 @@
     normalizedFileName,
     matchFiles,
     importFiles,
+    extractZipImages,
+    importZip,
     importMessage,
-    openImportPicker,
+    openZipPicker,
+    openImportPicker: openZipPicker,
     restoreImage,
     refresh
   };
