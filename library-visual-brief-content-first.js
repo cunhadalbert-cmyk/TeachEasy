@@ -78,6 +78,40 @@
     const excerpt = concreteExcerpt(item);
     const source = `${topic} ${excerpt}`.toLowerCase();
 
+    if (item.normalizedTitle === 'aprofundamento-31-noticia') {
+      return {
+        family: 'noticia-elementos-essenciais',
+        action: 'Um estudante analisando uma notícia impressa e identificando visualmente o que aconteceu, quem participou, onde ocorreu e quando aconteceu por meio de quatro marcações coloridas sem palavras',
+        objects: ['notícia impressa sem texto legível', 'quatro marcadores coloridos distintos', 'caderno de análise', 'lápis'],
+        preferredCategory: 'vista superior parcial',
+        characterPlan: 'um estudante, com mãos e materiais vistos em semi-top view',
+        objectLayout: 'notícia central e quatro marcações distribuídas ao redor das informações analisadas',
+        visualFocus: 'a notícia impressa e as quatro categorias de identificação'
+      };
+    }
+    if (item.normalizedTitle === 'aprofundamento-32-noticia') {
+      return {
+        family: 'noticia-estrutura-cartoes',
+        action: 'Uma dupla organizando as partes de uma notícia em cartões visuais separados, discutindo a ordem e a estrutura das informações',
+        objects: ['cartões visuais sem texto legível', 'notícia impressa ao lado', 'fotografia do acontecimento', 'marcadores'],
+        preferredCategory: 'vista frontal',
+        characterPlan: 'dois estudantes lado a lado diante dos cartões',
+        objectLayout: 'cartões separados em blocos frontais e notícia posicionada na lateral',
+        visualFocus: 'a organização estrutural dos cartões'
+      };
+    }
+    if (item.normalizedTitle === 'aprofundamento-33-noticia') {
+      return {
+        family: 'noticia-planejamento-grupo',
+        action: 'Um pequeno grupo planejando uma notícia escolar a partir de um acontecimento, discutindo e selecionando quais informações devem entrar na produção',
+        objects: ['fotografia do acontecimento escolar', 'fichas de planejamento sem texto legível', 'caderno', 'lápis e marcadores'],
+        preferredCategory: 'composição em grupo',
+        characterPlan: 'três estudantes em posições diferentes, interagindo em roda parcial',
+        objectLayout: 'materiais compartilhados no centro e fichas selecionadas em dois grupos',
+        visualFocus: 'a discussão do grupo e a seleção das informações'
+      };
+    }
+
     if (/apresenta[cç][aã]o de dan[cç]a|despertador|parada no port[aã]o/.test(source)) {
       return {
         action: 'Uma estudante chegando atrasada ao portão da escola enquanto sua turma participa de uma apresentação de dança ao fundo; ela demonstra preocupação e depois esperança',
@@ -104,14 +138,24 @@
     }
     if (/cachorro apareceu na pra[cç]a|casinha para o cachorro|evitam repeti[cç][aã]o/.test(source)) {
       return {
-        action: 'Um estudante revisando um texto sobre um cachorro da praça, usando referências visuais diferentes para o mesmo animal e evitando repetição',
-        objects: ['cachorro', 'casinha do cachorro', 'caderno em revisão', 'cartões visuais com o mesmo cachorro representado de formas diferentes']
+        family: 'coesao-cachorro-substituicoes',
+        action: 'Crianças revisando um texto sobre o cachorro da praça e relacionando diferentes substituições visuais ao mesmo animal',
+        objects: ['cachorro em primeiro plano', 'crianças', 'casinha do cachorro', 'caderno em revisão', 'cartões visuais de substituição sem palavras'],
+        preferredCategory: 'composição central com objeto focal',
+        characterPlan: 'duas crianças em segundo plano apontando para as substituições',
+        objectLayout: 'cachorro no centro, casinha ao fundo e cartões distribuídos ao redor do animal',
+        visualFocus: 'o cachorro e as diferentes referências visuais que o substituem'
       };
     }
     if (/horta da escola|alface|cebolinha|tomate|revisar um par[aá]grafo/.test(source)) {
       return {
-        action: 'Um estudante revisando cuidadosamente um parágrafo sobre a horta da escola, com a horta como referência visual concreta',
-        objects: ['caderno com linhas sem texto legível', 'lápis de revisão', 'alface', 'cebolinha', 'tomate', 'canteiro escolar simplificado']
+        family: 'revisao-paragrafo-horta',
+        action: 'Um estudante revisando cuidadosamente no caderno um parágrafo sobre a horta da escola',
+        objects: ['caderno com linhas sem texto legível', 'lápis de revisão', 'alface', 'cebolinha', 'tomate', 'canteiro escolar simplificado'],
+        preferredCategory: 'close pedagógico',
+        characterPlan: 'um estudante sentado, visto de perto enquanto revisa',
+        objectLayout: 'caderno e lápis em primeiro plano; horta pequena como referência secundária ao fundo',
+        visualFocus: 'o caderno e a ação de revisar o parágrafo'
       };
     }
     if (/divulga[cç][aã]o cient[ií]fica/.test(source)) {
@@ -121,18 +165,17 @@
       };
     }
     if (/not[ií]cia/.test(source)) {
-      const variant = hashText(item.normalizedTitle) % 3;
-      if (variant === 0) return {
-        action: 'Estudantes analisando uma notícia escolar para identificar fato, participantes, local e momento do acontecimento',
-        objects: ['folha de notícia sem texto legível', 'fotografia ilustrativa', 'marcadores visuais', 'caderno']
-      };
-      if (variant === 1) return {
-        action: 'Estudantes organizando visualmente as informações principais de uma notícia em grupos distintos',
-        objects: ['notícia impressa sem texto legível', 'cartões visuais', 'imagem do acontecimento', 'caderno']
-      };
       return {
-        action: 'Estudantes comparando elementos de uma notícia e justificando quais informações são essenciais para compreender o acontecimento',
-        objects: ['duas áreas visuais de notícia sem texto legível', 'imagem do acontecimento', 'marcadores', 'caderno']
+        family: 'noticia-generica',
+        variants: [
+          { action: 'Um estudante destacando evidências em uma notícia impressa', objects: ['notícia sem texto legível', 'marcadores coloridos', 'caderno'], preferredCategory: 'vista superior parcial', characterPlan: 'um estudante, mãos visíveis', objectLayout: 'folha central com marcadores nas bordas', visualFocus: 'as evidências destacadas' },
+          { action: 'Uma dupla comparando duas fontes visuais sobre o mesmo acontecimento', objects: ['duas notícias sem texto legível', 'duas fotografias', 'fichas de comparação'], preferredCategory: 'vista frontal', characterPlan: 'dois estudantes em lados opostos', objectLayout: 'duas fontes paralelas separadas por fichas', visualFocus: 'a comparação entre as fontes' },
+          { action: 'Três estudantes selecionando informações para um mural de notícia escolar', objects: ['fotografia do acontecimento', 'cartões visuais', 'painel vazio'], preferredCategory: 'composição em grupo', characterPlan: 'três estudantes ao redor do material', objectLayout: 'cartões no centro e painel ao fundo', visualFocus: 'a seleção coletiva das informações' },
+          { action: 'Um estudante ordenando visualmente começo, desenvolvimento e fechamento de uma notícia', objects: ['três cartões sem texto legível', 'notícia impressa', 'setas visuais'], preferredCategory: 'sequência visual curta', characterPlan: 'um estudante posicionado na lateral', objectLayout: 'três cartões em sequência horizontal', visualFocus: 'a ordem das partes da notícia' },
+          { action: 'Uma repórter mirim entrevistando uma testemunha de um acontecimento escolar', objects: ['microfone', 'caderno', 'fotografia do acontecimento'], preferredCategory: 'ângulo lateral', characterPlan: 'duas personagens de perfil em diálogo', objectLayout: 'personagens nas laterais e acontecimento sugerido ao fundo', visualFocus: 'a coleta oral de informações' },
+          { action: 'Um estudante escolhendo a fotografia mais adequada para acompanhar uma notícia', objects: ['três fotografias diferentes', 'folha de notícia sem texto', 'marcador'], preferredCategory: 'composição central com objeto focal', characterPlan: 'um estudante atrás da mesa', objectLayout: 'fotografia escolhida no centro e alternativas afastadas', visualFocus: 'a fotografia selecionada' },
+          { action: 'Uma dupla revisando se uma notícia apresenta informação suficiente e clara', objects: ['notícia impressa sem texto', 'lupa simbólica', 'fichas de verificação'], preferredCategory: 'close pedagógico', characterPlan: 'dois estudantes próximos ao material', objectLayout: 'notícia em primeiro plano e fichas agrupadas à direita', visualFocus: 'a revisão da clareza informativa' }
+        ]
       };
     }
 
@@ -142,48 +185,127 @@
     };
   }
 
-  function compositionOptions() {
-    return [
-      'composição central, fundo claro, foco na ação principal',
-      'vista frontal, fundo claro, personagens e objetos principais bem separados',
-      'ângulo lateral, fundo claro, foco na interação entre personagens',
-      'close pedagógico, fundo branco, apenas os elementos indispensáveis',
-      'composição em sequência curta, fundo claro, ação organizada da esquerda para a direita'
-    ];
+  const COMPOSITION_CATEGORIES = [
+    'close pedagógico',
+    'vista frontal',
+    'ângulo lateral',
+    'vista superior parcial',
+    'composição em grupo',
+    'composição central com objeto focal',
+    'sequência visual curta'
+  ];
+
+  const COMPOSITION_DETAILS = {
+    'close pedagógico': 'enquadramento próximo das mãos, do material e da ação central',
+    'vista frontal': 'personagens e objetos vistos de frente em planos bem separados',
+    'ângulo lateral': 'ação observada de lado, com profundidade curta e interação visível',
+    'vista superior parcial': 'mesa em semi-top view, mãos e materiais organizados claramente',
+    'composição em grupo': 'enquadramento mais aberto, permitindo ver a interação entre participantes',
+    'composição central com objeto focal': 'objeto pedagógico principal no centro e personagens subordinados a ele',
+    'sequência visual curta': 'dois ou três momentos visuais organizados sem formato de quadrinhos'
+  };
+
+  function tokenSet(value) {
+    return new Set(normalizeTitle(value).split('-').filter(token => token.length > 3));
   }
 
-  function buildRecord(item, index, usedCompositions) {
-    const scene = sceneFor(item);
-    const options = compositionOptions();
-    let composition = options[(hashText(item.normalizedTitle) + index) % options.length];
-    for (const candidate of options) {
-      if (!usedCompositions.has(candidate)) {
-        composition = candidate;
-        break;
-      }
+  function similarityScore(left, right) {
+    const a = tokenSet(left);
+    const b = tokenSet(right);
+    if (!a.size || !b.size) return 0;
+    const intersection = [...a].filter(token => b.has(token)).length;
+    return intersection / Math.min(a.size, b.size);
+  }
+
+  function chooseCompositionCategory(scene, item, index, attempt, state) {
+    if (attempt === 0 && scene.preferredCategory
+      && (state.categoryCounts.get(scene.preferredCategory) || 0) < 2) {
+      return scene.preferredCategory;
     }
-    usedCompositions.add(composition);
+    const start = (hashText(`${item.normalizedTitle}|${index}`) + attempt) % COMPOSITION_CATEGORIES.length;
+    for (let offset = 0; offset < COMPOSITION_CATEGORIES.length; offset += 1) {
+      const category = COMPOSITION_CATEGORIES[(start + offset) % COMPOSITION_CATEGORIES.length];
+      if ((state.categoryCounts.get(category) || 0) < 2) return category;
+    }
+    return COMPOSITION_CATEGORIES[start];
+  }
+
+  function sceneForBatch(item, state) {
+    const original = sceneFor(item);
+    if (!Array.isArray(original.variants)) return original;
+    const familyIndex = state.familyCounts.get(original.family) || 0;
+    state.familyCounts.set(original.family, familyIndex + 1);
+    const variant = original.variants[familyIndex % original.variants.length];
+    return { ...original, ...variant, variants: undefined };
+  }
+
+  function rewrittenScene(scene, item, attempt) {
+    if (!attempt) return scene;
+    const characterPlans = [
+      'um estudante isolado no lado esquerdo do quadro',
+      'uma dupla em posições opostas, sem repetir gestos',
+      'três estudantes distribuídos em triângulo ao redor do material',
+      'somente mãos e objetos, sem rostos em destaque'
+    ];
+    const layouts = [
+      'objetos organizados em diagonal com um único ponto focal',
+      'objetos divididos em dois grupos assimétricos',
+      'material principal no primeiro plano e referências secundárias afastadas',
+      'objetos dispostos em arco ao redor do foco pedagógico'
+    ];
+    return {
+      ...scene,
+      action: `${scene.action}; mostrar esta ação com solução visual exclusiva para ${item.topic}`,
+      characterPlan: characterPlans[(hashText(item.normalizedTitle) + attempt) % characterPlans.length],
+      objectLayout: layouts[(hashText(`${item.normalizedTitle}|layout`) + attempt) % layouts.length],
+      visualFocus: `${scene.visualFocus || item.topic}, sem compartilhar o mesmo foco de outra atividade do lote`
+    };
+  }
+
+  function buildRecord(item, index, state) {
+    const baseScene = sceneForBatch(item, state);
+    let selected;
+    for (let attempt = 0; attempt < COMPOSITION_CATEGORIES.length; attempt += 1) {
+      const scene = rewrittenScene(baseScene, item, attempt);
+      const category = chooseCompositionCategory(scene, item, index, attempt, state);
+      const characterPlan = scene.characterPlan || 'personagens apenas quando necessários, em posição diferente das demais atividades';
+      const objectLayout = scene.objectLayout || 'objetos essenciais organizados ao redor de um único foco';
+      const visualFocus = scene.visualFocus || `a ação concreta relacionada a ${item.topic}`;
+      const composition = `${category} — ${COMPOSITION_DETAILS[category]}; personagens: ${characterPlan}; organização dos objetos: ${objectLayout}; foco principal: ${visualFocus}`;
+      const fingerprint = `${scene.action}|${scene.objects.join('|')}|${category}|${characterPlan}|${objectLayout}|${visualFocus}`;
+      const tooSimilar = state.records.some(record => similarityScore(fingerprint, record.fingerprint) >= 0.62);
+      selected = { scene, category, composition, fingerprint };
+      if (!tooSimilar) break;
+    }
+    state.categoryCounts.set(selected.category, (state.categoryCounts.get(selected.category) || 0) + 1);
     const excerpt = concreteExcerpt(item);
     const restrictions = 'ilustração educativa infantil limpa; fundo claro ou branco; sem paisagem desnecessária; sem texto legível; sem logotipos; sem respostas; não inventar personagens, objetos ou fatos que contradigam o texto; não repetir a composição ou a cena de outra atividade do lote';
-    const visualBrief = `Cena concreta prioritária: ${scene.action}. Trecho-base da atividade: ${excerpt}. Objetos obrigatórios: ${scene.objects.join(', ')}. Conceito pedagógico: ${item.topic}. Composição: ${composition}. Restrições: ${restrictions}.`;
-    return {
+    const visualBrief = `Cena concreta prioritária: ${selected.scene.action}. Trecho-base da atividade: ${excerpt}. Objetos obrigatórios: ${selected.scene.objects.join(', ')}. Conceito pedagógico: ${item.topic}. Composição: ${selected.composition}. Restrições: ${restrictions}.`;
+    const record = {
       version: VERSION,
       collectionKey: collectionKey(item),
       normalizedTitle: item.normalizedTitle,
       sourceHash: hashText(`${item.topic}|${item.supportText}|${item.statement}|${item.questions.join('|')}`),
-      action: scene.action,
-      objects: scene.objects,
-      composition,
-      signature: normalizeTitle(`${item.topic}|${scene.action}|${scene.objects.join('|')}|${composition}`),
+      action: selected.scene.action,
+      objects: selected.scene.objects,
+      compositionCategory: selected.category,
+      composition: selected.composition,
+      characterPlan: selected.scene.characterPlan,
+      objectLayout: selected.scene.objectLayout,
+      visualFocus: selected.scene.visualFocus,
+      signature: normalizeTitle(`${item.topic}|${selected.fingerprint}`),
       visualBrief
     };
+    state.records.push({ fingerprint: selected.fingerprint, visualBrief });
+    return record;
   }
 
   function preparedActivities(items) {
     const signatures = readJson(VISUAL_SIGNATURES_KEY, {});
-    const usedCompositions = new Set();
+    items.forEach(item => delete signatures[`${collectionKey(item)}::${item.normalizedTitle}`]);
+    const state = { categoryCounts: new Map(), familyCounts: new Map(), records: [] };
     const activities = items.map((item, index) => {
-      const record = buildRecord(item, index, usedCompositions);
+      const record = buildRecord(item, index, state);
       signatures[`${collectionKey(item)}::${item.normalizedTitle}`] = record;
       return {
         order: index + 1,
