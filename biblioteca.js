@@ -742,6 +742,31 @@ function openPreview(activity) {
     return;
   }
   if (activity.collectionActivity) {
+    const validFigureIds = new Set((activity.questions || []).map(question => question.figuraId).filter(Boolean));
+    const batchActivity = item => ({
+      stage: item.stage,
+      grade: item.grade,
+      term: item.term,
+      subject: item.subject,
+      topic: item.topic,
+      hasStaticImage: (item.figures || []).some(figure => figure.arquivoValidado
+        && (validFigureIds.has(figure.id) || figure.posicaoSugerida === 'antes-das-questoes'))
+    });
+    window.TeLibraryIllustrationBatchContext = {
+      start: batchActivity(activity),
+      activities: activities.filter(item => item.collectionActivity).map(item => {
+        const referencedFigureIds = new Set((item.questions || []).map(question => question.figuraId).filter(Boolean));
+        return {
+          stage: item.stage,
+          grade: item.grade,
+          term: item.term,
+          subject: item.subject,
+          topic: item.topic,
+          hasStaticImage: (item.figures || []).some(figure => figure.arquivoValidado
+            && (referencedFigureIds.has(figure.id) || figure.posicaoSugerida === 'antes-das-questoes'))
+        };
+      })
+    };
     openCollectionPreview(activity);
     return;
   }

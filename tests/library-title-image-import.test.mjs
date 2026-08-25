@@ -116,6 +116,77 @@ const tenActivities = [
   'Formas geométricas'
 ].map(topic => ({ topic, normalizedTitle: normalize(topic) }));
 
+function batchCandidate(topic, overrides = {}) {
+  return {
+    stage: 'Ensino Fundamental I',
+    grade: '4º ano',
+    term: 3,
+    subject: 'Língua Portuguesa',
+    topic,
+    hasStaticImage: false,
+    ...overrides
+  };
+}
+
+test('um clique na primeira atividade monta automaticamente um lote de até 10', async () => {
+  const page = createPage(fakeIndexedDB(), shellMarkup('Atividade 1'));
+  const candidates = Array.from({ length: 12 }, (_, index) => batchCandidate(`Atividade ${index + 1}`));
+  page.TeLibraryIllustrationBatchContext = { start: candidates[0], activities: candidates };
+  await page.TeLibraryTitleImages.refresh();
+
+  const checkbox = page.document.querySelector('.te-batch-selector input');
+  checkbox.checked = true;
+  checkbox.dispatchEvent(new page.Event('change'));
+  await new Promise(resolve => setTimeout(resolve, 0));
+
+  const selected = page.teGetIllustrationBatchSelection();
+  assert.equal(selected.length, 10);
+  assert.deepEqual(Array.from(selected, item => item.topic), candidates.slice(0, 10).map(item => item.topic));
+  assert.equal(page.document.querySelector('#te-illustration-batch-toolbar [data-count]').textContent, '10/10 selecionadas');
+});
+
+test('lote automático pula atividades com imagem estática ou já persistida', async () => {
+  const page = createPage(fakeIndexedDB());
+  const candidates = Array.from({ length: 12 }, (_, index) => batchCandidate(`Atividade ${index + 1}`));
+  candidates[2].hasStaticImage = true;
+  const batch = await page.TeLibraryTitleImages.buildAutomaticBatch(
+    candidates[0],
+    candidates,
+    async normalizedTitle => normalizedTitle === 'atividade-5'
+  );
+
+  assert.equal(batch.length, 10);
+  assert.doesNotMatch(batch.map(item => item.topic).join('|'), /Atividade 3|Atividade 5/);
+  assert.equal(batch.at(-1).topic, 'Atividade 12');
+});
+
+test('lote automático não ultrapassa ano, disciplina ou bimestre da coleção inicial', async () => {
+  const page = createPage(fakeIndexedDB());
+  for (const boundary of [
+    { grade: '5º ano' },
+    { subject: 'Matemática' },
+    { term: 4 }
+  ]) {
+    const candidates = [
+      batchCandidate('Atividade 1'),
+      batchCandidate('Atividade 2'),
+      batchCandidate('Outra coleção', boundary),
+      batchCandidate('Retorno indevido')
+    ];
+    const batch = await page.TeLibraryTitleImages.buildAutomaticBatch(candidates[0], candidates, async () => '');
+    assert.deepEqual(Array.from(batch, item => item.topic), ['Atividade 1', 'Atividade 2']);
+  }
+});
+
+test('lote automático seleciona somente as atividades disponíveis quando restam menos de 10', async () => {
+  const page = createPage(fakeIndexedDB());
+  const candidates = Array.from({ length: 7 }, (_, index) => batchCandidate(`Atividade ${index + 1}`));
+  candidates[4].hasStaticImage = true;
+  const batch = await page.TeLibraryTitleImages.buildAutomaticBatch(candidates[3], candidates, async () => '');
+
+  assert.deepEqual(Array.from(batch, item => item.topic), ['Atividade 4', 'Atividade 6', 'Atividade 7']);
+});
+
 test('ZIP com 3 imagens em ordem aleatória vincula exclusivamente pelo título normalizado', async () => {
   const page = createPage(fakeIndexedDB(), activities.map(item => shellMarkup(item.topic)).join(''));
   const zip = await createZip(page, [activities[2], activities[0], activities[1]].map(item => ({ name: `${item.normalizedTitle}.png` })));

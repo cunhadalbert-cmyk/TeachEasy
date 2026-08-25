@@ -188,24 +188,67 @@
     if (checkbox) checkbox.checked = selected;
   }
 
-  function toggleSelection(shell, checkbox) {
-    const next = selectionItem(shell);
-    const items = readSelection();
-    const existingIndex = items.findIndex(item => item.normalizedTitle === next.normalizedTitle);
-    if (checkbox.checked) {
-      if (existingIndex < 0 && items.length >= MAX_SELECTION) {
-        checkbox.checked = false;
-        alert('O lote pode ter no máximo 10 atividades.');
-        return;
-      }
-      if (existingIndex < 0) items.push(next);
-    } else if (existingIndex >= 0) {
-      items.splice(existingIndex, 1);
+  function sameCollection(left, right) {
+    return ['stage', 'grade', 'term', 'subject']
+      .every(field => clean(left?.[field]) === clean(right?.[field]));
+  }
+
+  function automaticBatchItem(item) {
+    return {
+      normalizedTitle: normalizeTitle(item?.normalizedTitle || item?.topic),
+      topic: clean(item?.topic),
+      subject: clean(item?.subject)
+    };
+  }
+
+  async function buildAutomaticBatch(start, candidates, hasStoredImage = loadImage) {
+    const startKey = normalizeTitle(start?.normalizedTitle || start?.topic);
+    const ordered = Array.isArray(candidates) ? candidates : [];
+    const startIndex = ordered.findIndex(item => sameCollection(item, start)
+      && normalizeTitle(item?.normalizedTitle || item?.topic) === startKey);
+    if (startIndex < 0) return [];
+
+    const batch = [];
+    for (let index = startIndex; index < ordered.length && batch.length < MAX_SELECTION; index += 1) {
+      const candidate = ordered[index];
+      if (!sameCollection(candidate, start)) break;
+      const item = automaticBatchItem(candidate);
+      if (!item.normalizedTitle || !item.topic || candidate.hasStaticImage) continue;
+      if (await hasStoredImage(item.normalizedTitle)) continue;
+      batch.push(item);
     }
-    writeSelection(items);
-    syncSelection(shell);
+    return batch;
+  }
+
+  async function selectBatchFromShell(shell, checkbox) {
+    if (!checkbox.checked) {
+      writeSelection([]);
+      document.querySelectorAll('.collection-preview-shell').forEach(syncSelection);
+      updateToolbar();
+      await updateLinkedStatus();
+      return [];
+    }
+
+    const context = window.TeLibraryIllustrationBatchContext;
+    const fallback = selectionItem(shell);
+    const start = context?.start || fallback;
+    const candidates = context?.activities || [fallback];
+    checkbox.disabled = true;
+    try {
+      const batch = await buildAutomaticBatch(start, candidates);
+      writeSelection(batch);
+      document.querySelectorAll('.collection-preview-shell').forEach(syncSelection);
+      updateToolbar();
+      setStatus(`Lote com ${batch.length} atividade${batch.length === 1 ? '' : 's'} sem imagem.`);
+      return batch;
+    } finally {
+      checkbox.disabled = false;
+    }
+  }
+
+  async function toggleSelection(shell, checkbox) {
+    await selectBatchFromShell(shell, checkbox);
     updateToolbar();
-    updateLinkedStatus();
   }
 
   function addSelector(shell) {
@@ -218,8 +261,14 @@
       selector = document.createElement('label');
       selector.className = 'te-batch-selector';
       selector.style.cssText = 'display:flex;gap:7px;align-items:center;margin:8px 0;padding:8px 10px;border:1px solid #ccd4df;border-radius:7px;background:#f7f9fc;font:600 14px Arial;color:#1F497D';
-      selector.innerHTML = '<input type="checkbox"> <span>Selecionar para importar imagem</span>';
-      selector.querySelector('input').addEventListener('change', event => toggleSelection(shell, event.target));
+      selector.innerHTML = '<input type="checkbox"> <span>Selecionar lote a partir desta atividade</span>';
+      selector.querySelector('input').addEventListener('change', event => {
+        toggleSelection(shell, event.target).catch(error => {
+          console.error(error);
+          event.target.checked = false;
+          alert('Não foi possível montar o lote de atividades.');
+        });
+      });
       host.insertBefore(selector, host.firstChild);
     }
     syncSelection(shell);
@@ -422,6 +471,8 @@
     extractZipImages,
     importZip,
     importMessage,
+    buildAutomaticBatch,
+    selectBatchFromShell,
     openZipPicker,
     openImportPicker: openZipPicker,
     restoreImage,
