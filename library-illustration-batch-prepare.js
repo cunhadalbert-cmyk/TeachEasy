@@ -65,24 +65,33 @@
   function install() {
     const toolbar = document.querySelector('#te-illustration-batch-toolbar');
     if (!toolbar) return false;
-    if (toolbar.querySelector('[data-prepare-batch]')) return true;
-
-    const button = document.createElement('button');
-    button.type = 'button';
-    button.dataset.prepareBatch = 'true';
-    button.textContent = 'Preparar lote de 10';
-    button.addEventListener('click', prepareBatch);
-
-    const importButton = toolbar.querySelector('[data-import]');
-    if (importButton) toolbar.insertBefore(button, importButton);
-    else toolbar.appendChild(button);
+    if (!toolbar.querySelector('[data-prepare-batch]')) {
+      const button = document.createElement('button');
+      button.type = 'button';
+      button.dataset.prepareBatch = 'true';
+      button.textContent = 'Preparar lote de 10';
+      button.addEventListener('click', prepareBatch);
+      const importButton = toolbar.querySelector('[data-import]');
+      if (importButton) toolbar.insertBefore(button, importButton);
+      else toolbar.appendChild(button);
+    }
     return true;
   }
 
+  function loadZipFix() {
+    if (window.TeLibraryZipImportFix || document.querySelector('script[data-te-zip-fix]')) return;
+    const script = document.createElement('script');
+    script.src = 'library-illustration-zip-import-fix.js?v=20260824-zip-fix-v1';
+    script.dataset.teZipFix = 'true';
+    document.head.appendChild(script);
+  }
+
   install();
+  loadZipFix();
 
   const observer = new MutationObserver(() => {
     install();
+    loadZipFix();
   });
   observer.observe(document.documentElement, { childList: true, subtree: true });
 })();
