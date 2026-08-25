@@ -736,36 +736,31 @@ function openEarlyChildhoodPreview(activity) {
   preview.showModal();
 }
 
+function illustrationBatchActivity(activity) {
+  const referencedFigureIds = new Set((activity.questions || []).map(question => question.figuraId).filter(Boolean));
+  return {
+    stage: activity.stage,
+    grade: activity.grade,
+    term: activity.term,
+    subject: activity.subject,
+    topic: activity.topic,
+    supportText: activity.supportText?.conteudo || activity.description || '',
+    statement: activity.instruction || '',
+    questions: (activity.questions || []).map(question => question.enunciado || question.prompt || String(question)),
+    hasStaticImage: (activity.figures || []).some(figure => figure.arquivoValidado
+      && (referencedFigureIds.has(figure.id) || figure.posicaoSugerida === 'antes-das-questoes'))
+  };
+}
+
 function openPreview(activity) {
   if (activity.earlyChildhoodActivity) {
     openEarlyChildhoodPreview(activity);
     return;
   }
   if (activity.collectionActivity) {
-    const validFigureIds = new Set((activity.questions || []).map(question => question.figuraId).filter(Boolean));
-    const batchActivity = item => ({
-      stage: item.stage,
-      grade: item.grade,
-      term: item.term,
-      subject: item.subject,
-      topic: item.topic,
-      hasStaticImage: (item.figures || []).some(figure => figure.arquivoValidado
-        && (validFigureIds.has(figure.id) || figure.posicaoSugerida === 'antes-das-questoes'))
-    });
     window.TeLibraryIllustrationBatchContext = {
-      start: batchActivity(activity),
-      activities: activities.filter(item => item.collectionActivity).map(item => {
-        const referencedFigureIds = new Set((item.questions || []).map(question => question.figuraId).filter(Boolean));
-        return {
-          stage: item.stage,
-          grade: item.grade,
-          term: item.term,
-          subject: item.subject,
-          topic: item.topic,
-          hasStaticImage: (item.figures || []).some(figure => figure.arquivoValidado
-            && (referencedFigureIds.has(figure.id) || figure.posicaoSugerida === 'antes-das-questoes'))
-        };
-      })
+      start: illustrationBatchActivity(activity),
+      activities: activities.filter(item => item.collectionActivity).map(illustrationBatchActivity)
     };
     openCollectionPreview(activity);
     return;

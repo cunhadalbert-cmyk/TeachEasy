@@ -41,7 +41,7 @@ test('Biblioteca mantém PNGs estáticas e sincronizador ativo com persistência
   assert.doesNotMatch(html, /library-ai-illustration\.js/);
   assert.doesNotMatch(html, /generate-library-illustration/);
   assert.match(html, /vendor\/jszip\.min\.js\?v=3\.10\.1/);
-  assert.match(html, /library-export-image-sync\.js\?v=20260824-lote-automatico-v1/);
+  assert.match(html, /library-export-image-sync\.js\?v=20260825-lote-visual-v1/);
   assert.doesNotMatch(sync, /modoIlustracao/);
   assert.match(sync, /TeachEasyIllustrationsByNormalizedTitleV1/);
   assert.match(sync, /function normalizeTitle/);

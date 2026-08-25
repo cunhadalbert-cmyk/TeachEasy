@@ -49,7 +49,7 @@ test('modo temporário de ilustração permanece protegido e salva a imagem vinc
 
 test('download Word e PDF usa persistência nova baseada no título normalizado', () => {
   assert.match(html, /vendor\/jszip\.min\.js\?v=3\.10\.1/);
-  assert.match(html, /library-export-image-sync\.js\?v=20260824-lote-automatico-v1/);
+  assert.match(html, /library-export-image-sync\.js\?v=20260825-lote-visual-v1/);
   assert.ok(html.indexOf('library-export-image-sync.js') < html.indexOf('biblioteca-final-standard.js'));
   assert.doesNotMatch(exportImageSync, /modoIlustracao/);
   assert.match(exportImageSync, /\.te-final-word,\s*\.te-final-pdf/);

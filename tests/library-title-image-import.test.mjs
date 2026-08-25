@@ -78,12 +78,13 @@ function shellMarkup(title, { buttons = false, image = '' } = {}) {
     </div>`;
 }
 
-function createPage(database, markup = '') {
+function createPage(database, markup = '', storage = {}) {
   const window = new Window({ url: 'https://teacheasy.test/biblioteca.html' });
   window.indexedDB = database;
   window.alert = () => {};
   window.document.body.innerHTML = `<div id="preview-content">${markup}</div>`;
   window.JSZip = JSZip;
+  Object.entries(storage).forEach(([key, value]) => window.localStorage.setItem(key, value));
   window.eval(source);
   openPages.add(window);
   return window;
@@ -123,6 +124,9 @@ function batchCandidate(topic, overrides = {}) {
     term: 3,
     subject: 'Língua Portuguesa',
     topic,
+    supportText: `Texto de apoio completo sobre ${topic}, com informações e evidências para análise.`,
+    statement: `Leia o texto e responda às questões sobre ${topic}.`,
+    questions: [`Compare as informações de ${topic}.`, `Explique o conceito central de ${topic}.`],
     hasStaticImage: false,
     ...overrides
   };
@@ -185,6 +189,86 @@ test('lote automático seleciona somente as atividades disponíveis quando resta
   const batch = await page.TeLibraryTitleImages.buildAutomaticBatch(candidates[3], candidates, async () => '');
 
   assert.deepEqual(Array.from(batch, item => item.topic), ['Atividade 4', 'Atividade 6', 'Atividade 7']);
+});
+
+async function prepareCandidates(page, candidates) {
+  const selected = await page.TeLibraryTitleImages.buildAutomaticBatch(candidates[0], candidates, async () => '');
+  page.localStorage.setItem(page.TeLibraryTitleImages.SELECTION_KEY, JSON.stringify(selected));
+  return page.TeLibraryTitleImages.prepareBatch({ download: false });
+}
+
+test('visualBrief é criado a partir do texto e das questões da atividade', async () => {
+  const page = createPage(fakeIndexedDB());
+  const candidates = [batchCandidate('Informação ou opinião?', {
+    supportText: 'Uma notícia apresenta fatos verificáveis e opiniões pessoais que precisam ser comparados.',
+    statement: 'Analise a notícia e diferencie fato de opinião.',
+    questions: ['Qual frase apresenta um fato?', 'Qual trecho expressa uma opinião?']
+  })];
+  const prepared = await prepareCandidates(page, candidates);
+  const [activity] = prepared.activities;
+
+  assert.match(activity.visualBrief, /comparando evidências|distinguindo informações/i);
+  assert.match(activity.visualBrief, /notícia impressa/i);
+  assert.match(activity.visualBrief, /Informação ou opinião\?/);
+  assert.match(activity.visualBrief, /fundo claro ou branco/);
+  assert.match(activity.visualBrief, /sem texto legível/);
+  assert.deepEqual(Array.from(activity.questions), candidates[0].questions);
+});
+
+test('atividades diferentes recebem visualBriefs, composições e assinaturas diferentes', async () => {
+  const page = createPage(fakeIndexedDB());
+  const candidates = [
+    batchCandidate('Informação ou opinião?'),
+    batchCandidate('Produzindo uma notícia escolar'),
+    batchCandidate('Descobrindo informações científicas')
+  ];
+  const prepared = await prepareCandidates(page, candidates);
+  const briefs = prepared.activities.map(item => item.visualBrief);
+  const signatures = prepared.activities.map(item => item.visualSignature);
+  const compositions = briefs.map(brief => brief.match(/Composição: ([^.]+(?:\.[^.]+)?)/)?.[1]);
+
+  assert.equal(new Set(briefs).size, 3);
+  assert.equal(new Set(signatures).size, 3);
+  assert.equal(new Set(compositions).size, 3);
+});
+
+test('lote preparado, progresso, seleção e visualBriefs persistem após reload', async () => {
+  const database = fakeIndexedDB();
+  const candidates = [batchCandidate('Informação ou opinião?'), batchCandidate('Produzindo uma notícia escolar')];
+  const firstPage = createPage(database, shellMarkup(candidates[0].topic));
+  const prepared = await prepareCandidates(firstPage, candidates);
+  const api = firstPage.TeLibraryTitleImages;
+  const storage = Object.fromEntries([
+    api.SELECTION_KEY,
+    api.PREPARED_BATCH_KEY,
+    api.VISUAL_SIGNATURES_KEY
+  ].map(key => [key, firstPage.localStorage.getItem(key)]));
+
+  const reloadedPage = createPage(database, shellMarkup(candidates[0].topic), storage);
+  await reloadedPage.TeLibraryTitleImages.refresh();
+  const restored = reloadedPage.TeLibraryTitleImages.readPreparedBatch();
+
+  assert.deepEqual(JSON.parse(JSON.stringify(restored.activities)), JSON.parse(JSON.stringify(prepared.activities)));
+  assert.deepEqual(JSON.parse(JSON.stringify(restored.progress)), { total: 2, prepared: 2, linked: 0 });
+  assert.equal(reloadedPage.teGetIllustrationBatchSelection().length, 2);
+  assert.match(reloadedPage.document.querySelector('[data-status]').textContent, /Lote preparado: 2\/2/);
+});
+
+test('JSON preparado preserva a sequência real e todos os campos obrigatórios', async () => {
+  const page = createPage(fakeIndexedDB());
+  const candidates = Array.from({ length: 5 }, (_, index) => batchCandidate(`Atividade ${index + 1}`));
+  candidates[1].hasStaticImage = true;
+  const prepared = await prepareCandidates(page, candidates);
+
+  assert.deepEqual(Array.from(prepared.activities, item => item.topic), ['Atividade 1', 'Atividade 3', 'Atividade 4', 'Atividade 5']);
+  assert.deepEqual(Array.from(prepared.activities, item => item.order), [1, 2, 3, 4]);
+  for (const item of prepared.activities) {
+    assert.deepEqual(Array.from(Object.keys(item)), [
+      'order', 'subject', 'topic', 'normalizedTitle', 'fileName', 'stage', 'grade', 'term',
+      'supportText', 'statement', 'questions', 'visualBrief', 'visualSignature'
+    ]);
+    assert.equal(item.fileName, `${item.normalizedTitle}.png`);
+  }
 });
 
 test('ZIP com 3 imagens em ordem aleatória vincula exclusivamente pelo título normalizado', async () => {
@@ -310,7 +394,7 @@ test('PDF reutiliza automaticamente a imagem persistida sem abrir seletor', asyn
   assert.match(shell._teFinalData.visual, /^data:image\/png;base64,/);
 });
 
-test('interface oferece um único seletor de um arquivo ZIP', async () => {
+test('interface oferece preparação do lote e um único seletor de um arquivo ZIP', async () => {
   const page = createPage(fakeIndexedDB(), shellMarkup('Informação ou opinião?'));
   const api = page.TeLibraryTitleImages;
   page.localStorage.setItem(api.SELECTION_KEY, JSON.stringify([activities[0]]));
@@ -320,8 +404,9 @@ test('interface oferece um único seletor de um arquivo ZIP', async () => {
   await api.refresh();
 
   const buttons = [...page.document.querySelectorAll('#te-illustration-batch-toolbar button')];
-  assert.equal(buttons.length, 1);
-  assert.equal(buttons[0].textContent, 'Importar ZIP de imagens');
+  assert.equal(buttons.length, 2);
+  assert.equal(buttons[0].textContent, 'Preparar lote de 10');
+  assert.equal(buttons[1].textContent, 'Importar ZIP de imagens');
   assert.equal(picker.multiple, false);
   assert.match(picker.accept, /\.zip/);
 });

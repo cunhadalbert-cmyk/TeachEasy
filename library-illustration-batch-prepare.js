@@ -65,7 +65,7 @@
   function install() {
     const toolbar = document.querySelector('#te-illustration-batch-toolbar');
     if (!toolbar) return false;
-    if (!toolbar.querySelector('[data-prepare-batch]')) {
+    if (!toolbar.querySelector('[data-prepare],[data-prepare-batch]')) {
       const button = document.createElement('button');
       button.type = 'button';
       button.dataset.prepareBatch = 'true';

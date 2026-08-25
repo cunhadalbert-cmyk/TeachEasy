@@ -8,6 +8,9 @@
   const STORE_NAME = 'imagesByNormalizedTitleV1';
   const MAX_ZIP_IMAGES = 100;
   const IMAGE_EXTENSIONS = new Set(['png', 'jpg', 'jpeg', 'webp']);
+  const PREPARED_BATCH_KEY = 'te-illustration-prepared-batch-v1';
+  const VISUAL_SIGNATURES_KEY = 'te-illustration-visual-signatures-v1';
+  const VISUAL_BRIEF_VERSION = 1;
 
   const clean = value => String(value || '').replace(/\s+/g, ' ').trim();
 
@@ -37,6 +40,34 @@
 
   function writeSelection(items) {
     localStorage.setItem(SELECTION_KEY, JSON.stringify(items.slice(0, MAX_SELECTION)));
+  }
+
+  function readJsonStorage(key, fallback) {
+    try {
+      const value = JSON.parse(localStorage.getItem(key) || 'null');
+      return value ?? fallback;
+    } catch {
+      return fallback;
+    }
+  }
+
+  function readPreparedBatch() {
+    const value = readJsonStorage(PREPARED_BATCH_KEY, null);
+    return value?.version === VISUAL_BRIEF_VERSION && Array.isArray(value.activities) ? value : null;
+  }
+
+  function writePreparedBatch(value) {
+    if (value) localStorage.setItem(PREPARED_BATCH_KEY, JSON.stringify(value));
+    else localStorage.removeItem(PREPARED_BATCH_KEY);
+  }
+
+  function readVisualSignatures() {
+    const value = readJsonStorage(VISUAL_SIGNATURES_KEY, {});
+    return value && typeof value === 'object' && !Array.isArray(value) ? value : {};
+  }
+
+  function writeVisualSignatures(value) {
+    localStorage.setItem(VISUAL_SIGNATURES_KEY, JSON.stringify(value));
   }
 
   function activityData(shell) {
@@ -159,7 +190,13 @@
       element = document.createElement('div');
       element.id = 'te-illustration-batch-toolbar';
       element.style.cssText = 'position:sticky;top:0;z-index:9999;display:flex;gap:10px;align-items:center;justify-content:center;flex-wrap:wrap;padding:10px;background:#fff;border:2px solid #1F497D;margin-bottom:12px;font-family:Arial';
-      element.innerHTML = '<strong data-count>0/10 selecionadas</strong><button type="button" data-import>Importar ZIP de imagens</button><span data-status style="font-weight:700;color:#1F497D"></span>';
+      element.innerHTML = '<strong data-count>0/10 selecionadas</strong><button type="button" data-prepare>Preparar lote de 10</button><button type="button" data-import>Importar ZIP de imagens</button><span data-status style="font-weight:700;color:#1F497D"></span>';
+      element.querySelector('[data-prepare]').addEventListener('click', () => {
+        prepareBatch().catch(error => {
+          console.error(error);
+          alert(`Não foi possível preparar o lote: ${error?.message || error}`);
+        });
+      });
       element.querySelector('[data-import]').addEventListener('click', openZipPicker);
       root.prepend(element);
     }
@@ -177,6 +214,7 @@
     const count = element.querySelector('[data-count]');
     const countText = `${items.length}/${MAX_SELECTION} selecionadas`;
     if (count.textContent !== countText) count.textContent = countText;
+    element.querySelector('[data-prepare]').disabled = items.length === 0;
     element.querySelector('[data-import]').disabled = items.length === 0;
   }
 
@@ -197,8 +235,169 @@
     return {
       normalizedTitle: normalizeTitle(item?.normalizedTitle || item?.topic),
       topic: clean(item?.topic),
-      subject: clean(item?.subject)
+      subject: clean(item?.subject),
+      stage: clean(item?.stage),
+      grade: clean(item?.grade),
+      term: Number(item?.term) || clean(item?.term),
+      supportText: clean(item?.supportText || item?.content),
+      statement: clean(item?.statement || item?.instruction),
+      questions: Array.isArray(item?.questions)
+        ? item.questions.map(question => clean(question?.enunciado || question?.prompt || question)).filter(Boolean)
+        : []
     };
+  }
+
+  function hashText(value) {
+    let hash = 2166136261;
+    for (const character of String(value || '')) {
+      hash ^= character.codePointAt(0);
+      hash = Math.imul(hash, 16777619);
+    }
+    return hash >>> 0;
+  }
+
+  function collectionKey(item) {
+    return [item.stage, item.grade, item.term, item.subject].map(normalizeTitle).join('|');
+  }
+
+  function visualSource(item) {
+    return clean([item.topic, item.supportText, item.statement, ...(item.questions || [])].join(' '));
+  }
+
+  function visualAction(item) {
+    const source = visualSource(item).toLowerCase();
+    if (/fato|opini[aã]o|compar/.test(source)) return 'Estudantes comparando evidências e distinguindo informações';
+    if (/produz|escrev|redig|criando/.test(source)) return 'Estudantes produzindo e organizando o conteúdo da atividade';
+    if (/classific|agrup|separ/.test(source)) return 'Estudantes classificando os elementos principais';
+    if (/observ|identific|reconhe/.test(source)) return 'Estudantes observando e identificando os elementos centrais';
+    if (/experiment|investig|pesquis|cient[ií]fic/.test(source)) return 'Estudantes investigando dados e registrando descobertas';
+    if (/calcul|n[uú]mero|fra[cç]|medid|geometr/.test(source)) return 'Estudantes manipulando objetos para representar o conceito matemático';
+    if (/mapa|territ[oó]rio|paisagem|trajeto/.test(source)) return 'Estudantes analisando uma representação espacial simplificada';
+    return `Estudantes analisando ${item.topic.toLowerCase()} com materiais escolares`;
+  }
+
+  function visualObjects(item) {
+    const source = visualSource(item).toLowerCase();
+    if (/not[ií]cia|fato|opini[aã]o|jornal/.test(source)) return ['notícia impressa sem texto legível', 'caderno', 'marcadores visuais'];
+    if (/pesquis|cient[ií]fic|experimento/.test(source)) return ['fichas de pesquisa sem texto legível', 'lupa', 'caderno de registro'];
+    if (/mapa|territ[oó]rio|trajeto|geograf/.test(source)) return ['mapa esquemático sem rótulos', 'marcadores coloridos', 'setas visuais'];
+    if (/fra[cç]|geometr|medid/.test(source)) return ['formas geométricas', 'peças manipuláveis', 'régua sem números legíveis'];
+    if (/n[uú]mero|calcul|adi[cç]|subtra|multiplica|divis/.test(source)) return ['peças de contagem', 'grupos de objetos', 'cartões sem respostas'];
+    if (/planta|animal|ambiente|[aá]gua|corpo/.test(source)) return ['modelos científicos simples', 'objetos de observação', 'caderno'];
+    return ['caderno', 'cartões visuais', 'objetos diretamente ligados ao tema'];
+  }
+
+  function compositionOptions() {
+    const views = ['vista superior', 'vista frontal', 'ângulo lateral', 'close pedagógico', 'composição central'];
+    const anchors = ['foco à esquerda', 'foco à direita', 'foco central', 'foco na parte superior', 'foco na parte inferior'];
+    const arrangements = ['em sequência', 'em comparação lado a lado', 'em grupos bem separados', 'em fluxo diagonal'];
+    return views.flatMap(view => anchors.flatMap(anchor => arrangements.map(arrangement => `${view}, ${anchor}, elementos ${arrangement}`)));
+  }
+
+  function visualSignatureRecord(item, usedCompositions) {
+    const action = visualAction(item);
+    const objects = visualObjects(item);
+    const options = compositionOptions();
+    const initial = hashText(`${collectionKey(item)}|${item.normalizedTitle}`) % options.length;
+    let composition = options[initial];
+    for (let offset = 0; offset < options.length; offset += 1) {
+      const candidate = options[(initial + offset) % options.length];
+      if (!usedCompositions.has(candidate)) {
+        composition = candidate;
+        break;
+      }
+    }
+    usedCompositions.add(composition);
+    const restrictions = 'fundo claro ou branco, ilustração educativa limpa, sem paisagem desnecessária, sem texto legível, sem logotipos e sem revelar respostas';
+    const visualBrief = `${action}. Objetos obrigatórios: ${objects.join(', ')}. Conceito central: ${item.topic}. Elementos indispensáveis: ação e objetos centrais bem visíveis. Composição: ${composition}. Restrições: ${restrictions}.`;
+    return {
+      version: VISUAL_BRIEF_VERSION,
+      collectionKey: collectionKey(item),
+      normalizedTitle: item.normalizedTitle,
+      sourceHash: hashText(visualSource(item)),
+      action,
+      objects,
+      composition,
+      signature: normalizeTitle(`${item.topic}|${action}|${objects.join('|')}|${composition}`),
+      visualBrief
+    };
+  }
+
+  function preparedActivities(items) {
+    const records = readVisualSignatures();
+    const currentCollection = collectionKey(items[0] || {});
+    const selectedKeys = new Set(items.map(item => item.normalizedTitle));
+    const usedCompositions = new Set(Object.values(records)
+      .filter(record => record?.collectionKey === currentCollection && !selectedKeys.has(record.normalizedTitle))
+      .map(record => record.composition)
+      .filter(Boolean));
+
+    const prepared = items.map((item, index) => {
+      const key = `${collectionKey(item)}::${item.normalizedTitle}`;
+      const existing = records[key];
+      const sourceHash = hashText(visualSource(item));
+      const record = existing?.sourceHash === sourceHash
+        ? existing
+        : visualSignatureRecord(item, usedCompositions);
+      usedCompositions.add(record.composition);
+      records[key] = record;
+      return {
+        order: index + 1,
+        subject: item.subject,
+        topic: item.topic,
+        normalizedTitle: item.normalizedTitle,
+        fileName: `${item.normalizedTitle}.png`,
+        stage: item.stage,
+        grade: item.grade,
+        term: item.term,
+        supportText: item.supportText,
+        statement: item.statement,
+        questions: [...item.questions],
+        visualBrief: record.visualBrief,
+        visualSignature: record.signature
+      };
+    });
+    writeVisualSignatures(records);
+    return prepared;
+  }
+
+  function downloadPreparedJson(activities) {
+    const blob = new Blob([`${JSON.stringify(activities, null, 2)}\n`], { type: 'application/json;charset=utf-8' });
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement('a');
+    const first = activities[0] || {};
+    link.href = url;
+    link.download = `teacheasy-lote-${normalizeTitle(`${first.grade}-${first.term}-bimestre-${first.subject}`) || 'ilustracoes'}.json`;
+    document.body.appendChild(link);
+    link.click();
+    link.remove();
+    setTimeout(() => URL.revokeObjectURL(url), 1000);
+  }
+
+  async function prepareBatch({ download = true } = {}) {
+    const currentSelection = readSelection();
+    const contextItems = window.TeLibraryIllustrationBatchContext?.activities || [];
+    const contextByTitle = new Map(contextItems.map(item => [normalizeTitle(item.topic), item]));
+    const items = currentSelection.map(item => automaticBatchItem(contextByTitle.get(item.normalizedTitle) || item));
+    if (!items.length) throw new Error('Selecione uma atividade para montar o lote.');
+    writeSelection(items);
+    const activities = preparedActivities(items);
+    const linkedValues = await Promise.all(items.map(item => loadImage(item.normalizedTitle).catch(() => '')));
+    const prepared = {
+      version: VISUAL_BRIEF_VERSION,
+      preparedAt: new Date().toISOString(),
+      collectionKey: collectionKey(items[0]),
+      progress: {
+        total: activities.length,
+        prepared: activities.length,
+        linked: linkedValues.filter(Boolean).length
+      },
+      activities
+    };
+    writePreparedBatch(prepared);
+    setStatus(`Lote preparado: ${activities.length}/${activities.length}. ${prepared.progress.linked}/${activities.length} imagens vinculadas.`);
+    if (download) downloadPreparedJson(activities);
+    return prepared;
   }
 
   async function buildAutomaticBatch(start, candidates, hasStoredImage = loadImage) {
@@ -223,6 +422,7 @@
   async function selectBatchFromShell(shell, checkbox) {
     if (!checkbox.checked) {
       writeSelection([]);
+      writePreparedBatch(null);
       document.querySelectorAll('.collection-preview-shell').forEach(syncSelection);
       updateToolbar();
       await updateLinkedStatus();
@@ -237,6 +437,7 @@
     try {
       const batch = await buildAutomaticBatch(start, candidates);
       writeSelection(batch);
+      writePreparedBatch(null);
       document.querySelectorAll('.collection-preview-shell').forEach(syncSelection);
       updateToolbar();
       setStatus(`Lote com ${batch.length} atividade${batch.length === 1 ? '' : 's'} sem imagem.`);
@@ -325,6 +526,7 @@
       linkedCount += 1;
       setStatus(`${linkedCount}/${activities.length} imagens vinculadas`);
     }
+    await updatePreparedProgress(activities);
     return { ...result, linkedCount, total: activities.length };
   }
 
@@ -408,6 +610,24 @@
     input.click();
   }
 
+  function preparedMatchesSelection(prepared, activities) {
+    if (!prepared || prepared.activities.length !== activities.length) return false;
+    return prepared.activities.every((item, index) => item.normalizedTitle === activities[index]?.normalizedTitle);
+  }
+
+  async function updatePreparedProgress(activities = readSelection()) {
+    const prepared = readPreparedBatch();
+    if (!preparedMatchesSelection(prepared, activities)) return null;
+    const values = await Promise.all(activities.map(item => loadImage(item.normalizedTitle).catch(() => '')));
+    prepared.progress = {
+      total: activities.length,
+      prepared: prepared.activities.length,
+      linked: values.filter(Boolean).length
+    };
+    writePreparedBatch(prepared);
+    return prepared;
+  }
+
   async function updateLinkedStatus() {
     const activities = readSelection();
     if (!activities.length) {
@@ -416,6 +636,13 @@
     }
     const values = await Promise.all(activities.map(item => loadImage(item.normalizedTitle).catch(() => '')));
     const linkedCount = values.filter(Boolean).length;
+    const prepared = readPreparedBatch();
+    if (preparedMatchesSelection(prepared, activities)) {
+      prepared.progress = { total: activities.length, prepared: prepared.activities.length, linked: linkedCount };
+      writePreparedBatch(prepared);
+      setStatus(`Lote preparado: ${prepared.activities.length}/${activities.length}. ${linkedCount}/${activities.length} imagens vinculadas.`);
+      return;
+    }
     setStatus(`${linkedCount}/${activities.length} imagens vinculadas corretamente`);
   }
 
@@ -464,6 +691,8 @@
     DB_VERSION,
     STORE_NAME,
     SELECTION_KEY,
+    PREPARED_BATCH_KEY,
+    VISUAL_SIGNATURES_KEY,
     normalizeTitle,
     normalizedFileName,
     matchFiles,
@@ -473,6 +702,9 @@
     importMessage,
     buildAutomaticBatch,
     selectBatchFromShell,
+    prepareBatch,
+    readPreparedBatch,
+    preparedActivities,
     openZipPicker,
     openImportPicker: openZipPicker,
     restoreImage,
@@ -481,6 +713,7 @@
   window.teGetIllustrationBatchSelection = readSelection;
   window.teClearIllustrationBatchSelection = () => {
     writeSelection([]);
+    writePreparedBatch(null);
     refresh();
   };
   window.teIllustrationTitleForShell = shell => activityData(shell).normalizedTitle;
