@@ -1,53 +1,398 @@
 (() => {
-'use strict';
-const clean=v=>String(v||'').replace(/\s+/g,' ').trim();
-const MAX=10,SEL='te-illustration-batch-selection-v6';
-const DB='TeachEasyIllustrationStore',STORE='images';
-const read=(k,d)=>{try{return JSON.parse(localStorage.getItem(k)||JSON.stringify(d));}catch{return d;}};
-const write=(k,v)=>localStorage.setItem(k,JSON.stringify(v));
-const slug=s=>clean(s).normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'').slice(0,48);
-function hash(s){let h=0x811c9dc5;for(const ch of String(s)){h^=ch.charCodeAt(0);h=Math.imul(h,0x01000193)>>>0;}return h.toString(16).padStart(8,'0');}
-function data(shell){const s=shell?.querySelector('.te-final-student');const title=clean(s?.querySelector('.te-final-title')?.textContent||'ATIVIDADE ESCOLAR');const subject=title.replace(/^ATIVIDADE DE\s+/i,'')||'Atividade Escolar';const topic=clean(s?.querySelector('.te-final-subtitle')?.textContent||'conteúdo escolar');const support=clean(s?.querySelector('.te-final-text')?.textContent||'');const qs=[...(s?.querySelectorAll('.te-final-qhead')||[])].slice(0,8).map(n=>clean(n.textContent)).join(' ');return{subject,topic,context:clean(`${support} ${qs}`).slice(0,1400)};}
-function rawId(shell){return clean(shell?._teFinalData?.id||shell?.dataset?.activityId||shell?.querySelector?.('[data-activity-id]')?.dataset?.activityId||'');}
-function stableKey(shell){const d=data(shell);return `${d.subject}|${d.topic}|${d.context.slice(0,220)}`.toLowerCase();}
-function iid(shell){const d=data(shell);return `te-${slug(d.topic)}-${hash(stableKey(shell))}`;}
-function group(shell){const d=data(shell),s=shell?.querySelector('.te-final-student');return `${d.subject}|${clean(s?.querySelector('.te-final-meta')?.textContent||'')}`.toLowerCase();}
-function prompt(d){return `Gerar uma única ilustração pedagógica quadrada 1:1 para atividade escolar brasileira. Seguir fielmente o conteúdo da atividade. Representar a situação central, objetos, ambiente e ações importantes. Não contradizer o texto, objetivo ou questões. Não inventar fatos. Sem títulos, letras, palavras legíveis, números, respostas, logotipos ou marcas d’água. Uma única cena, nunca colagem. Disciplina: ${d.subject}. Título/Tema: ${d.topic}. Contexto: ${d.context||d.topic}.`;}
-function selection(){const a=read(SEL,[]);return Array.isArray(a)?a.slice(0,MAX):[];}
-function saveSelection(a){write(SEL,a.slice(0,MAX));}
-function item(shell){const d=data(shell),id=iid(shell);return{illustrationId:id,groupKey:group(shell),activityId:rawId(shell)||id,subject:d.subject,topic:d.topic,context:d.context,aspectRatio:'1:1',prompt:prompt(d)};}
-function chosen(shell){const id=iid(shell);return selection().some(x=>x.illustrationId===id);}
-function openDB(){return new Promise((resolve,reject)=>{const r=indexedDB.open(DB,1);r.onupgradeneeded=()=>{const db=r.result;if(!db.objectStoreNames.contains(STORE))db.createObjectStore(STORE,{keyPath:'id'});};r.onsuccess=()=>resolve(r.result);r.onerror=()=>reject(r.error);});}
-async function saveImage(id,url){const db=await openDB();try{await new Promise((resolve,reject)=>{const tx=db.transaction(STORE,'readwrite');tx.objectStore(STORE).put({id,url,updatedAt:Date.now()});tx.oncomplete=resolve;tx.onerror=()=>reject(tx.error);tx.onabort=()=>reject(tx.error);});}finally{db.close();}}
-async function loadImage(id){const db=await openDB();try{return await new Promise((resolve,reject)=>{const tx=db.transaction(STORE,'readonly');const r=tx.objectStore(STORE).get(id);r.onsuccess=()=>resolve(r.result?.url||'');r.onerror=()=>reject(r.error);});}finally{db.close();}}
-function image(shell){return shell?.querySelector('.te-final-student .te-final-visual img')||null;}
-function src(im){return String(im?.currentSrc||im?.src||im?.getAttribute?.('src')||'').trim();}
-function valid(im){const s=src(im);return !!s&&!/^data:image\/svg\+xml/i.test(s);}
-function apply(shell,url){const v=shell?.querySelector('.te-final-student .te-final-visual');if(!v||!url)return false;let im=image(shell);if(!im){im=document.createElement('img');v.innerHTML='';v.appendChild(im);}im.src=url;im.dataset.tePersistentIllustration='true';im.dataset.teIllustrationId=iid(shell);im.style.cssText='display:block;width:100%;height:100%;object-fit:cover';if(shell._teFinalData)shell._teFinalData.visual=url;return true;}
-async function restore(shell){const url=await loadImage(iid(shell)).catch(()=> '');if(url)apply(shell,url);return !!url;}
-function shellForId(id){return [...document.querySelectorAll('.collection-preview-shell')].find(s=>iid(s)===id)||null;}
-async function saveById(id,url){const shell=shellForId(id);if(shell)apply(shell,url);await saveImage(id,url);}
-function sync(shell){const yes=chosen(shell);shell.dataset.teBatchSelected=yes?'true':'false';shell.style.outline=yes?'3px solid #1F497D':'';const cb=shell.querySelector('.te-batch-selector input');if(cb)cb.checked=yes;}
-function toolbar(){let t=document.querySelector('#te-illustration-batch-toolbar');const root=document.querySelector('#preview-content')||document.body;if(!t){t=document.createElement('div');t.id='te-illustration-batch-toolbar';t.style.cssText='position:sticky;top:0;z-index:9999;display:flex;gap:10px;align-items:center;justify-content:center;flex-wrap:wrap;padding:10px;background:#fff;border:2px solid #1F497D;margin-bottom:12px;font-family:Arial';t.innerHTML='<strong data-count>0/10 selecionadas</strong><button type="button" data-prepare>Preparar lote</button><button type="button" data-import>Importar imagens do lote</button><button type="button" data-clear>Limpar seleção</button><span data-status style="font-weight:700;color:#1F497D"></span>';t.querySelector('[data-prepare]').onclick=prepareBatch;t.querySelector('[data-import]').onclick=importBatch;t.querySelector('[data-clear]').onclick=()=>{saveSelection([]);setStatus('');document.querySelectorAll('.collection-preview-shell').forEach(sync);update();};root.prepend(t);}return t;}
-function setStatus(v){const s=toolbar().querySelector('[data-status]');if(s)s.textContent=v||'';}
-async function updateLinkedStatus(){const a=selection();if(!a.length){setStatus('');return;}let n=0;for(const it of a)if(await loadImage(it.illustrationId).catch(()=>''))n++;setStatus(`${n}/${a.length} vinculadas`);}
-function update(){const t=toolbar(),a=selection();t.querySelector('[data-count]').textContent=`${a.length}/${MAX} selecionadas`;t.querySelector('[data-prepare]').disabled=!a.length;t.querySelector('[data-import]').disabled=!a.length;}
-function toggle(shell,cb){const it=item(shell),a=selection(),i=a.findIndex(x=>x.illustrationId===it.illustrationId);if(cb.checked){if(i>=0)return update();if(a.length>=MAX){cb.checked=false;return alert('O lote pode ter no máximo 10 atividades.');}if(a.length&&a[0].groupKey!==it.groupKey){cb.checked=false;return alert('Escolha atividades da mesma disciplina, ano e bimestre.');}a.push(it);}else if(i>=0)a.splice(i,1);saveSelection(a);sync(shell);update();updateLinkedStatus();}
-function addCheckbox(shell){if(!shell)return;let w=shell.querySelector('.te-batch-selector');if(!w){const host=shell.querySelector('.te-final-student')||shell;w=document.createElement('label');w.className='te-batch-selector';w.style.cssText='display:flex;gap:7px;align-items:center;margin:8px 0;padding:8px 10px;border:1px solid #ccd4df;border-radius:7px;background:#f7f9fc;font:600 14px Arial;color:#1F497D';w.innerHTML='<input type="checkbox"> <span>Selecionar para lote de imagens</span>';w.querySelector('input').onchange=e=>toggle(shell,e.target);host.insertBefore(w,host.firstChild);}sync(shell);}
-function batchFileName(it,index){return `${String(index+1).padStart(2,'0')}-${it.illustrationId}.png`;}
-async function prepareBatch(){const a=selection();if(!a.length)return;const req={mode:'manual-chatgpt-illustration-batch',quantity:a.length,rule:'Uma imagem separada para cada atividade. Nunca criar colagem. Devolver cada arquivo exatamente com o fileName indicado. O prefixo numérico 01, 02, 03... identifica de forma obrigatória a atividade do lote.',activities:a.map((x,i)=>({order:i+1,illustrationId:x.illustrationId,fileName:batchFileName(x,i),activityId:x.activityId,subject:x.subject,topic:x.topic,context:x.context,aspectRatio:'1:1',prompt:x.prompt})),createdAt:new Date().toISOString()};write('te-pending-manual-illustration-batch',req);try{await navigator.clipboard.writeText(JSON.stringify(req,null,2));}catch{}alert(`Lote com ${a.length} atividade(s) preparado. As imagens devem manter os nomes 01-, 02-, 03-... indicados no pedido.`);}
-function fileToDataUrl(file){return new Promise((resolve,reject)=>{const r=new FileReader();r.onload=()=>resolve(String(r.result||''));r.onerror=()=>reject(r.error);r.readAsDataURL(file);});}
-function normalizedBase(name){return String(name||'').replace(/\.[^.]+$/,'').replace(/\s*\(\d+\)$/,'').trim();}
-function matchesFile(file,it,index){const base=normalizedBase(file.name);const numbered=`${String(index+1).padStart(2,'0')}-${it.illustrationId}`;return base===numbered||base===it.illustrationId;}
-async function importBatch(){const a=selection();if(!a.length)return;const input=document.createElement('input');input.type='file';input.multiple=a.length>1;input.accept='image/png,image/jpeg,image/webp';input.onchange=async()=>{const files=[...(input.files||[])];if(!files.length)return;setStatus('Importando...');try{
-if(a.length===1){const it=a[0],f=files[0],url=await fileToDataUrl(f);const shell=shellForId(it.illustrationId);if(shell)apply(shell,url);await saveImage(it.illustrationId,url);setStatus('1/1 vinculadas');alert('1 imagem vinculada. Ela deve aparecer agora nesta atividade.');return;}
-let ok=0;const missing=[];const used=new Set();for(let i=0;i<a.length;i++){const it=a[i];const idx=files.findIndex((x,j)=>!used.has(j)&&matchesFile(x,it,i));if(idx<0){missing.push(`${String(i+1).padStart(2,'0')} - ${it.topic}`);continue;}used.add(idx);const url=await fileToDataUrl(files[idx]);await saveById(it.illustrationId,url);ok++;setStatus(`${ok}/${a.length} vinculadas`);}await refresh();if(missing.length)alert(`${ok} imagem(ns) vinculada(s). Não apliquei nenhuma imagem por adivinhação. Faltaram: ${missing.join(', ')}.`);else alert(`${ok} imagens vinculadas corretamente pelo número do lote.`);
-}catch(err){console.error(err);alert(`Falha ao importar: ${err?.message||err}`);await updateLinkedStatus();}};input.click();}
-async function picker(shell){const input=document.createElement('input');input.type='file';input.accept='image/png,image/jpeg,image/webp';input.onchange=async()=>{const f=input.files?.[0];if(!f)return;const url=await fileToDataUrl(f);apply(shell,url);await saveImage(iid(shell),url);shell.dataset.teImagePickerStage='';alert('Imagem vinculada. Clique novamente em Word ou PDF.');};input.click();}
-async function individual(shell){const d=data(shell),id=iid(shell),req={mode:'manual-chatgpt-illustration',illustrationId:id,fileName:`${id}.png`,activityId:rawId(shell)||id,subject:d.subject,topic:d.topic,context:d.context,aspectRatio:'1:1',prompt:prompt(d),createdAt:new Date().toISOString()};write('te-pending-manual-illustration',req);try{await navigator.clipboard.writeText(JSON.stringify(req,null,2));}catch{}return req;}
-async function refresh(){const shells=[...document.querySelectorAll('.collection-preview-shell')];shells.forEach(addCheckbox);update();await Promise.all(shells.map(restore));await updateLinkedStatus();}
-let queued=false;function schedule(){if(queued)return;queued=true;requestAnimationFrame(async()=>{queued=false;await refresh();});}
-const root=document.querySelector('#preview-content')||document.body;new MutationObserver(schedule).observe(root,{childList:true,subtree:true});refresh();
-window.teGetIllustrationBatchSelection=()=>selection();window.teClearIllustrationBatchSelection=()=>{saveSelection([]);refresh();};window.teGetPendingManualIllustrationBatch=()=>read('te-pending-manual-illustration-batch',null);window.teIllustrationIdForShell=iid;
-document.addEventListener('click',async e=>{const b=e.target.closest('.te-final-word,.te-final-pdf');if(!b)return;if(b.dataset.teExportImageReady==='true'){delete b.dataset.teExportImageReady;return;}const shell=b.closest('.collection-preview-shell');if(!shell)return;e.preventDefault();e.stopImmediatePropagation();await restore(shell);const im=image(shell);if(!valid(im)){if(shell.dataset.teImagePickerStage==='ready'){await picker(shell);return;}const req=await individual(shell);shell.dataset.teImagePickerStage='ready';alert(`Imagem ainda não vinculada para ${req.topic}. Use "Importar imagens do lote" ou clique novamente para selecionar uma imagem.`);return;}if(shell._teFinalData)shell._teFinalData.visual=src(im);b.dataset.teExportImageReady='true';b.click();},true);
+  'use strict';
+
+  const MAX_SELECTION = 10;
+  const SELECTION_KEY = 'te-illustration-title-batch-selection-v1';
+  const DB_NAME = 'TeachEasyIllustrationsByNormalizedTitleV1';
+  const DB_VERSION = 1;
+  const STORE_NAME = 'imagesByNormalizedTitleV1';
+
+  const clean = value => String(value || '').replace(/\s+/g, ' ').trim();
+
+  function normalizeTitle(value = '') {
+    return clean(value)
+      .normalize('NFD')
+      .replace(/[\u0300-\u036f]/g, '')
+      .toLowerCase()
+      .replace(/[^a-z0-9]+/g, '-')
+      .replace(/^-+|-+$/g, '');
+  }
+
+  function normalizedFileName(fileName = '') {
+    return normalizeTitle(String(fileName).replace(/\.[^.]+$/, ''));
+  }
+
+  function readSelection() {
+    try {
+      const value = JSON.parse(localStorage.getItem(SELECTION_KEY) || '[]');
+      return Array.isArray(value)
+        ? value.filter(item => item?.normalizedTitle && item?.topic).slice(0, MAX_SELECTION)
+        : [];
+    } catch {
+      return [];
+    }
+  }
+
+  function writeSelection(items) {
+    localStorage.setItem(SELECTION_KEY, JSON.stringify(items.slice(0, MAX_SELECTION)));
+  }
+
+  function activityData(shell) {
+    const student = shell?.querySelector('.te-final-student');
+    const heading = clean(student?.querySelector('.te-final-title')?.textContent || 'ATIVIDADE ESCOLAR');
+    const subject = heading.replace(/^ATIVIDADE DE\s+/i, '') || 'Atividade Escolar';
+    const topic = clean(student?.querySelector('.te-final-subtitle')?.textContent || '');
+    return { subject, topic, normalizedTitle: normalizeTitle(topic) };
+  }
+
+  function selectionItem(shell) {
+    const data = activityData(shell);
+    return {
+      normalizedTitle: data.normalizedTitle,
+      topic: data.topic,
+      subject: data.subject
+    };
+  }
+
+  function isSelected(shell) {
+    const key = activityData(shell).normalizedTitle;
+    return readSelection().some(item => item.normalizedTitle === key);
+  }
+
+  function openDatabase() {
+    return new Promise((resolve, reject) => {
+      const request = indexedDB.open(DB_NAME, DB_VERSION);
+      request.onupgradeneeded = () => {
+        const database = request.result;
+        if (!database.objectStoreNames.contains(STORE_NAME)) {
+          database.createObjectStore(STORE_NAME, { keyPath: 'normalizedTitle' });
+        }
+      };
+      request.onsuccess = () => resolve(request.result);
+      request.onerror = () => reject(request.error);
+    });
+  }
+
+  async function saveImage(normalizedTitle, topic, url) {
+    if (!normalizedTitle || !url) return false;
+    const database = await openDatabase();
+    try {
+      await new Promise((resolve, reject) => {
+        const transaction = database.transaction(STORE_NAME, 'readwrite');
+        transaction.objectStore(STORE_NAME).put({
+          normalizedTitle,
+          topic,
+          url,
+          updatedAt: Date.now()
+        });
+        transaction.oncomplete = () => resolve();
+        transaction.onerror = () => reject(transaction.error);
+        transaction.onabort = () => reject(transaction.error);
+      });
+      return true;
+    } finally {
+      database.close();
+    }
+  }
+
+  async function loadImage(normalizedTitle) {
+    if (!normalizedTitle) return '';
+    const database = await openDatabase();
+    try {
+      return await new Promise((resolve, reject) => {
+        const transaction = database.transaction(STORE_NAME, 'readonly');
+        const request = transaction.objectStore(STORE_NAME).get(normalizedTitle);
+        request.onsuccess = () => resolve(request.result?.url || '');
+        request.onerror = () => reject(request.error);
+      });
+    } finally {
+      database.close();
+    }
+  }
+
+  function illustrationImage(shell) {
+    return shell?.querySelector('.te-final-student .te-final-visual img') || null;
+  }
+
+  function imageSource(image) {
+    return String(image?.currentSrc || image?.src || image?.getAttribute?.('src') || '').trim();
+  }
+
+  function hasUsableImage(shell) {
+    const source = imageSource(illustrationImage(shell));
+    return Boolean(source) && !/^data:image\/svg\+xml/i.test(source);
+  }
+
+  function applyImage(shell, url, normalizedTitle = activityData(shell).normalizedTitle) {
+    const visual = shell?.querySelector('.te-final-student .te-final-visual');
+    if (!visual || !url || !normalizedTitle) return false;
+    let image = illustrationImage(shell);
+    if (!image) {
+      image = document.createElement('img');
+      visual.replaceChildren(image);
+    }
+    image.src = url;
+    image.dataset.tePersistentIllustration = 'true';
+    image.dataset.teIllustrationTitle = normalizedTitle;
+    image.alt = `Ilustração pedagógica de ${activityData(shell).topic}`;
+    if (shell._teFinalData) shell._teFinalData.visual = url;
+    return true;
+  }
+
+  async function restoreImage(shell) {
+    const { normalizedTitle } = activityData(shell);
+    const url = await loadImage(normalizedTitle).catch(() => '');
+    return url ? applyImage(shell, url, normalizedTitle) : false;
+  }
+
+  function shellsForTitle(normalizedTitle) {
+    return [...document.querySelectorAll('.collection-preview-shell')]
+      .filter(shell => activityData(shell).normalizedTitle === normalizedTitle);
+  }
+
+  function toolbar() {
+    let element = document.querySelector('#te-illustration-batch-toolbar');
+    const root = document.querySelector('#preview-content') || document.body;
+    if (!element) {
+      element = document.createElement('div');
+      element.id = 'te-illustration-batch-toolbar';
+      element.style.cssText = 'position:sticky;top:0;z-index:9999;display:flex;gap:10px;align-items:center;justify-content:center;flex-wrap:wrap;padding:10px;background:#fff;border:2px solid #1F497D;margin-bottom:12px;font-family:Arial';
+      element.innerHTML = '<strong data-count>0/10 selecionadas</strong><button type="button" data-import>Importar imagens</button><span data-status style="font-weight:700;color:#1F497D"></span>';
+      element.querySelector('[data-import]').addEventListener('click', openImportPicker);
+      root.prepend(element);
+    }
+    return element;
+  }
+
+  function setStatus(message = '') {
+    const status = toolbar().querySelector('[data-status]');
+    if (status && status.textContent !== message) status.textContent = message;
+  }
+
+  function updateToolbar() {
+    const items = readSelection();
+    const element = toolbar();
+    const count = element.querySelector('[data-count]');
+    const countText = `${items.length}/${MAX_SELECTION} selecionadas`;
+    if (count.textContent !== countText) count.textContent = countText;
+    element.querySelector('[data-import]').disabled = items.length === 0;
+  }
+
+  function syncSelection(shell) {
+    const selected = isSelected(shell);
+    shell.dataset.teBatchSelected = selected ? 'true' : 'false';
+    shell.style.outline = selected ? '3px solid #1F497D' : '';
+    const checkbox = shell.querySelector('.te-batch-selector input');
+    if (checkbox) checkbox.checked = selected;
+  }
+
+  function toggleSelection(shell, checkbox) {
+    const next = selectionItem(shell);
+    const items = readSelection();
+    const existingIndex = items.findIndex(item => item.normalizedTitle === next.normalizedTitle);
+    if (checkbox.checked) {
+      if (existingIndex < 0 && items.length >= MAX_SELECTION) {
+        checkbox.checked = false;
+        alert('O lote pode ter no máximo 10 atividades.');
+        return;
+      }
+      if (existingIndex < 0) items.push(next);
+    } else if (existingIndex >= 0) {
+      items.splice(existingIndex, 1);
+    }
+    writeSelection(items);
+    syncSelection(shell);
+    updateToolbar();
+    updateLinkedStatus();
+  }
+
+  function addSelector(shell) {
+    const data = activityData(shell);
+    if (!data.normalizedTitle) return;
+    if (hasUsableImage(shell) && !isSelected(shell)) return;
+    let selector = shell.querySelector('.te-batch-selector');
+    if (!selector) {
+      const host = shell.querySelector('.te-final-student') || shell;
+      selector = document.createElement('label');
+      selector.className = 'te-batch-selector';
+      selector.style.cssText = 'display:flex;gap:7px;align-items:center;margin:8px 0;padding:8px 10px;border:1px solid #ccd4df;border-radius:7px;background:#f7f9fc;font:600 14px Arial;color:#1F497D';
+      selector.innerHTML = '<input type="checkbox"> <span>Selecionar para importar imagem</span>';
+      selector.querySelector('input').addEventListener('change', event => toggleSelection(shell, event.target));
+      host.insertBefore(selector, host.firstChild);
+    }
+    syncSelection(shell);
+  }
+
+  function matchFiles(files, activities) {
+    const byTitle = new Map();
+    for (const file of files) {
+      const key = normalizedFileName(file.name);
+      if (!byTitle.has(key)) byTitle.set(key, []);
+      byTitle.get(key).push(file);
+    }
+
+    const activityKeys = new Set(activities.map(item => item.normalizedTitle));
+    const pairs = [];
+    const missingTitles = [];
+    const duplicateFileTitles = [];
+    const usedFiles = new Set();
+
+    for (const activity of activities) {
+      const candidates = byTitle.get(activity.normalizedTitle) || [];
+      if (candidates.length !== 1) {
+        missingTitles.push(activity.topic);
+        if (candidates.length > 1) duplicateFileTitles.push(activity.topic);
+        continue;
+      }
+      pairs.push({ activity, file: candidates[0] });
+      usedFiles.add(candidates[0]);
+    }
+
+    const unmatchedFiles = files
+      .filter(file => !usedFiles.has(file) && !activityKeys.has(normalizedFileName(file.name)))
+      .map(file => file.name);
+
+    return { pairs, missingTitles, duplicateFileTitles, unmatchedFiles };
+  }
+
+  function fileToDataUrl(file) {
+    return new Promise((resolve, reject) => {
+      const reader = new FileReader();
+      reader.onload = () => resolve(String(reader.result || ''));
+      reader.onerror = () => reject(reader.error);
+      reader.readAsDataURL(file);
+    });
+  }
+
+  async function importFiles(files, activities = readSelection()) {
+    const result = matchFiles(files, activities);
+    let linkedCount = 0;
+    for (const { activity, file } of result.pairs) {
+      const url = await fileToDataUrl(file);
+      await saveImage(activity.normalizedTitle, activity.topic, url);
+      shellsForTitle(activity.normalizedTitle).forEach(shell => applyImage(shell, url, activity.normalizedTitle));
+      linkedCount += 1;
+      setStatus(`${linkedCount}/${activities.length} imagens vinculadas`);
+    }
+    return { ...result, linkedCount, total: activities.length };
+  }
+
+  function importMessage(result) {
+    const lines = [`${result.linkedCount}/${result.total} imagens vinculadas corretamente`];
+    if (result.missingTitles.length) {
+      lines.push(`Títulos sem arquivo correspondente: ${result.missingTitles.join(', ')}.`);
+    }
+    if (result.duplicateFileTitles.length) {
+      lines.push(`Arquivos duplicados para: ${result.duplicateFileTitles.join(', ')}. Nenhum deles foi usado.`);
+    }
+    if (result.unmatchedFiles.length) {
+      lines.push(`Arquivos sem atividade correspondente: ${result.unmatchedFiles.join(', ')}. Eles foram ignorados.`);
+    }
+    return lines.join('\n');
+  }
+
+  function openImportPicker() {
+    const activities = readSelection();
+    if (!activities.length) return;
+    const input = document.createElement('input');
+    input.type = 'file';
+    input.multiple = true;
+    input.accept = 'image/png,image/jpeg,image/webp';
+    input.addEventListener('change', async () => {
+      const files = [...(input.files || [])];
+      if (!files.length) return;
+      setStatus('Importando...');
+      try {
+        const result = await importFiles(files, activities);
+        setStatus(`${result.linkedCount}/${result.total} imagens vinculadas corretamente`);
+        alert(importMessage(result));
+      } catch (error) {
+        console.error(error);
+        alert(`Falha ao importar imagens: ${error?.message || error}`);
+        await updateLinkedStatus();
+      }
+    });
+    input.click();
+  }
+
+  async function updateLinkedStatus() {
+    const activities = readSelection();
+    if (!activities.length) {
+      setStatus('');
+      return;
+    }
+    const values = await Promise.all(activities.map(item => loadImage(item.normalizedTitle).catch(() => '')));
+    const linkedCount = values.filter(Boolean).length;
+    setStatus(`${linkedCount}/${activities.length} imagens vinculadas corretamente`);
+  }
+
+  async function refresh() {
+    const shells = [...document.querySelectorAll('.collection-preview-shell')];
+    await Promise.all(shells.map(restoreImage));
+    shells.forEach(addSelector);
+    updateToolbar();
+    await updateLinkedStatus();
+  }
+
+  let refreshQueued = false;
+  function scheduleRefresh() {
+    if (refreshQueued) return;
+    refreshQueued = true;
+    requestAnimationFrame(async () => {
+      refreshQueued = false;
+      await refresh();
+    });
+  }
+
+  const root = document.querySelector('#preview-content') || document.body;
+  new MutationObserver(scheduleRefresh).observe(root, { childList: true, subtree: true });
+
+  document.addEventListener('click', async event => {
+    const button = event.target.closest('.te-final-word,.te-final-pdf');
+    if (!button) return;
+    if (button.dataset.teExportImageReady === 'true') {
+      delete button.dataset.teExportImageReady;
+      return;
+    }
+    const shell = button.closest('.collection-preview-shell');
+    if (!shell) return;
+    event.preventDefault();
+    event.stopImmediatePropagation();
+    await restoreImage(shell);
+    if (shell._teFinalData && hasUsableImage(shell)) {
+      shell._teFinalData.visual = imageSource(illustrationImage(shell));
+    }
+    button.dataset.teExportImageReady = 'true';
+    button.click();
+  }, true);
+
+  window.TeLibraryTitleImages = {
+    DB_NAME,
+    DB_VERSION,
+    STORE_NAME,
+    SELECTION_KEY,
+    normalizeTitle,
+    normalizedFileName,
+    matchFiles,
+    importFiles,
+    importMessage,
+    openImportPicker,
+    restoreImage,
+    refresh
+  };
+  window.teGetIllustrationBatchSelection = readSelection;
+  window.teClearIllustrationBatchSelection = () => {
+    writeSelection([]);
+    refresh();
+  };
+  window.teIllustrationTitleForShell = shell => activityData(shell).normalizedTitle;
+  window.tePersistLibraryIllustration = async (shell, url) => {
+    const data = activityData(shell);
+    const saved = await saveImage(data.normalizedTitle, data.topic, url);
+    if (saved) applyImage(shell, url, data.normalizedTitle);
+    return saved;
+  };
+  window.teRestoreLibraryIllustration = restoreImage;
+
+  refresh();
 })();

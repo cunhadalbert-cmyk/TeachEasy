@@ -47,21 +47,19 @@ test('modo temporário de ilustração permanece protegido e salva a imagem vinc
   assert.match(illustrationAdmin, /Ilustração pronta e salva neste exercício/);
 });
 
-test('download Word e PDF usa cache versionado do elenco oficial atual', () => {
-  assert.match(html, /library-export-image-sync\.js\?v=20260817-persistencia-ilustracao-v9-official-cast-v4/);
+test('download Word e PDF usa persistência nova baseada no título normalizado', () => {
+  assert.match(html, /library-export-image-sync\.js\?v=20260824-title-store-v1/);
   assert.ok(html.indexOf('library-export-image-sync.js') < html.indexOf('biblioteca-final-standard.js'));
   assert.doesNotMatch(exportImageSync, /modoIlustracao/);
-  assert.match(exportImageSync, /\.te-final-word, \.te-final-pdf/);
-  assert.match(exportImageSync, /generate-library-illustration/);
+  assert.match(exportImageSync, /\.te-final-word,\s*\.te-final-pdf/);
   assert.match(exportImageSync, /indexedDB/);
-  assert.match(exportImageSync, /ILLUSTRATION_CACHE_VERSION = 'official-cast-v4-20260817-no-duplicates'/);
-  assert.match(exportImageSync, /\$\{ILLUSTRATION_CACHE_VERSION\}\|\$\{data\.subject\}/);
-  assert.match(exportImageSync, /restoreFinalImage/);
-  assert.match(exportImageSync, /savePersistentImage/);
-  assert.match(exportImageSync, /readPersistentImage/);
-  assert.match(exportImageSync, /Gerando imagem\.\.\./);
-  assert.match(exportImageSync, /Preparando arquivo\.\.\./);
-  assert.match(exportImageSync, /validFinalImage/);
+  assert.match(exportImageSync, /TeachEasyIllustrationsByNormalizedTitleV1/);
+  assert.match(exportImageSync, /imagesByNormalizedTitleV1/);
+  assert.match(exportImageSync, /te-illustration-title-batch-selection-v1/);
+  assert.match(exportImageSync, /function normalizeTitle/);
+  assert.match(exportImageSync, /input\.multiple = true/);
+  assert.match(exportImageSync, /Importar imagens/);
+  assert.doesNotMatch(exportImageSync, /activityId|illustrationId|TeachEasyIllustrationStore/);
   assert.match(exportImageSync, /svg/);
   assert.match(exportImageSync, /button\.click\(\)/);
 });
