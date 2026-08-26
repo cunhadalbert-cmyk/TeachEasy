@@ -736,12 +736,32 @@ function openEarlyChildhoodPreview(activity) {
   preview.showModal();
 }
 
+function illustrationBatchActivity(activity) {
+  const referencedFigureIds = new Set((activity.questions || []).map(question => question.figuraId).filter(Boolean));
+  return {
+    stage: activity.stage,
+    grade: activity.grade,
+    term: activity.term,
+    subject: activity.subject,
+    topic: activity.topic,
+    supportText: activity.supportText?.conteudo || activity.description || '',
+    statement: activity.instruction || '',
+    questions: (activity.questions || []).map(question => question.enunciado || question.prompt || String(question)),
+    hasStaticImage: (activity.figures || []).some(figure => figure.arquivoValidado
+      && (referencedFigureIds.has(figure.id) || figure.posicaoSugerida === 'antes-das-questoes'))
+  };
+}
+
 function openPreview(activity) {
   if (activity.earlyChildhoodActivity) {
     openEarlyChildhoodPreview(activity);
     return;
   }
   if (activity.collectionActivity) {
+    window.TeLibraryIllustrationBatchContext = {
+      start: illustrationBatchActivity(activity),
+      activities: activities.filter(item => item.collectionActivity).map(illustrationBatchActivity)
+    };
     openCollectionPreview(activity);
     return;
   }
