@@ -78,5 +78,5 @@ test('Biblioteca não depende mais de override separado para validar V2', () => 
   assert.doesNotMatch(bibliotecaSource, /activity\.questoes\.length !== 6 \|\| activity\.gabarito\.length !== 6/);
   assert.doesNotMatch(html, /library-collection-validation\.js/);
   assert.match(html, /library-catalog\.js\?v=20260818-catalogo-unico-v1/);
-  assert.match(html, /biblioteca\.js\?v=20260818-catalogo-unico-v1/);
+  assert.match(html, /biblioteca\.js\?v=20260825-lote-visual-v1/);
 });
