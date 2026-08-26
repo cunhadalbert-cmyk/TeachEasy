@@ -5,7 +5,7 @@
   "description": "Site estático do TeachEasy e protótipo da Biblioteca de Atividades.",
   "scripts": {
     "check:js": "node scripts/check-js-syntax.mjs",
-    "check:html": "html-validate index.html biblioteca.html account.html",
+    "check:html": "html-validate index.html biblioteca.html account.html exemplo_padrao_teacheasy.html public/jogos-pedagogicos/jogos.html",
     "check:whitespace": "node scripts/check-whitespace.mjs",
     "check:figures": "node scripts/audit-figures.mjs",
     "audit:pedagogical": "node scripts/audit-pedagogical-legacy.mjs",
@@ -19,7 +19,7 @@
     "generate:batch-illustrations": "node scripts/batch-generate-illustrations.mjs"
   },
   "engines": {
-    "node": ">=24.8.0"
+    "node": ">=22.0.0"
   },
   "devDependencies": {
     "happy-dom": "20.11.1",
