@@ -664,7 +664,7 @@ function getRichIllustrationPath(figure, activity) {
 
 function activityFigureMarkup(activity) {
   const referencedIds = new Set(activity.questions.map(question => question.figuraId).filter(Boolean));
-  const figure = activity.figures.find(item => item.arquivoValidado && !referencedIds.has(item.id)
+  const figure = activity.figures.find(item => item.arquivo && !referencedIds.has(item.id)
     && item.posicaoSugerida === 'antes-das-questoes');
   if (!figure) return '';
   const figureSrc = getRichIllustrationPath(figure, activity);
@@ -676,7 +676,7 @@ function questionMarkup(activity, questions = activity.questions) {
     return questions.map(question => {
       const embeddedAnswerSpace = ['multipla-escolha', 'completar', 'associacao'].includes(question.tipo);
       const figure = question.figuraId
-        ? activity.figures.find(item => item.id === question.figuraId && item.arquivoValidado)
+        ? activity.figures.find(item => item.id === question.figuraId && item.arquivo)
         : null;
       const figureSrc = figure ? getRichIllustrationPath(figure, activity) : '';
       return `
@@ -747,7 +747,7 @@ function illustrationBatchActivity(activity) {
     supportText: activity.supportText?.conteudo || activity.description || '',
     statement: activity.instruction || '',
     questions: (activity.questions || []).map(question => question.enunciado || question.prompt || String(question)),
-    hasStaticImage: (activity.figures || []).some(figure => figure.arquivoValidado
+    hasStaticImage: (activity.figures || []).some(figure => figure.arquivo
       && (referencedFigureIds.has(figure.id) || figure.posicaoSugerida === 'antes-das-questoes'))
   };
 }
