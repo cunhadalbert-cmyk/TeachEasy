@@ -5,8 +5,49 @@
     return String(value).replace(/\s+/g, ' ').trim();
   }
 
+  function findActivityForShell(shell) {
+    if (typeof activities === 'undefined' || !Array.isArray(activities)) return null;
+    const topic = normalize(
+      shell.querySelector('.te-final-subtitle')?.textContent
+      || shell.querySelector('.collection-student-page h1')?.textContent
+      || document.querySelector('#preview-title')?.textContent
+    );
+    if (!topic) return null;
+    return activities.find(activity => activity?.collectionActivity && normalize(activity.topic) === topic) || null;
+  }
+
+  function syncFinalVisual(shell) {
+    const target = shell.querySelector('.te-final-visual');
+    if (!target || target.querySelector('img')) return;
+
+    const original = shell.querySelector('.collection-student-page img.activity-figure, .collection-student-page img.question-figure');
+    let src = original?.getAttribute('data-original-src') || original?.getAttribute('src') || '';
+    let alt = original?.getAttribute('alt') || '';
+
+    if (!src) {
+      const activity = findActivityForShell(shell);
+      const referencedIds = new Set((activity?.questions || []).map(question => question.figuraId).filter(Boolean));
+      const figure = (activity?.figures || []).find(item => item?.arquivo
+        && (item.posicaoSugerida === 'antes-das-questoes' || referencedIds.has(item.id)));
+      src = figure?.arquivo || '';
+      alt = figure?.textoAlternativo || alt;
+    }
+
+    if (!src) return;
+
+    const img = document.createElement('img');
+    img.src = src;
+    img.alt = alt || 'Ilustração pedagógica da atividade';
+    img.decoding = 'async';
+    target.replaceChildren(img);
+
+    if (shell._teFinalData) shell._teFinalData.visual = img.src;
+  }
+
   function processShell(shell) {
     if (!shell) return;
+
+    syncFinalVisual(shell);
 
     let metaText = shell.dataset.teReviewMeta || '';
 
