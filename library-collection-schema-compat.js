@@ -66,12 +66,25 @@
       console.warn('TeachEasy: conteúdo carregado; uma ou mais figuras precisam de revisão.', error);
     }
 
+    const normalizedActivities = collection.atividades.map(activity => {
+      const normalized = normalizeCollectionActivity(activity, collection, config);
+      normalized.bnccDetails = Array.isArray(activity.bncc)
+        ? activity.bncc.map(item => ({
+            codigo: item.codigo || '',
+            habilidadeOficial: item.habilidadeOficial || '',
+            fonte: item.fonte || ''
+          }))
+        : [];
+      normalized.gabaritoCabecalho = activity.gabaritoCabecalho || null;
+      return normalized;
+    });
+
     activities = activities
       .filter(activity => !(activity.stage === config.stage
         && activity.grade === config.grade
         && activity.term === config.term
         && activity.subject === collection.disciplina))
-      .concat(collection.atividades.map(activity => normalizeCollectionActivity(activity, collection, config)));
+      .concat(normalizedActivities);
 
     loadedCollections.add(config.collection);
     collectionPromises.delete(config.collection);
