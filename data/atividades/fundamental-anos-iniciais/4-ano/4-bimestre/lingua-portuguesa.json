@@ -1,4 +1,4 @@
-{
+﻿{
     "schemaVersion":  "2.0",
     "colecao":  "4ano-4bimestre-lingua-portuguesa-v2",
     "idioma":  "pt-BR",
@@ -15,13 +15,19 @@
                            "sequencia":  "Atividade 1",
                            "tipoSequencia":  "Leitura orientada",
                            "dificuldade":  "adequada-anos-iniciais",
-                           "objetivo":  "Desenvolver a habilidade EF04LP01 por meio de leitura, análise e produção de uma notícia escolar vinculada à feira de ciências, com finalidade comunicativa definida.",
+                           "objetivo":  "Ler e compreender uma lenda brasileira, identificando o personagem, suas características, o lugar onde a história acontece e a mensagem principal do texto.",
                            "bncc":  [
                                         {
-                                            "codigo":  "EF04LP01",
-                                            "habilidadeOficial":  "Grafar palavras utilizando regras de correspondência fonema- -grafema regulares diretas e contextuais.",
-                                            "verbo":  "Grafar",
-                                            "fonte":  "https://cdn.mec.gov.br/basenacionalcomum.mec.gov.br/images/BNCC_EI_EF_110518_versaofinal_site.pdf"
+                                            "codigo":  "EF35LP21",
+                                            "habilidadeOficial":  "Ler e compreender, de forma autônoma, textos literários de diferentes gêneros e extensões, inclusive aqueles sem ilustrações, estabelecendo preferências por gêneros, temas, autores.",
+                                            "verbo":  "Ler e compreender",
+                                            "fonte":  "https://basenacionalcomum.mec.gov.br/images/BNCC_EI_EF_110518_versaofinal_site.pdf"
+                                        },
+                                        {
+                                            "codigo":  "EF35LP26",
+                                            "habilidadeOficial":  "Ler e compreender, com certa autonomia, narrativas ficcionais que apresentem cenários e personagens, observando os elementos da estrutura narrativa: enredo, tempo, espaço, personagens, narrador e a construção do discurso indireto e discurso direto.",
+                                            "verbo":  "Ler e compreender",
+                                            "fonte":  "https://basenacionalcomum.mec.gov.br/images/BNCC_EI_EF_110518_versaofinal_site.pdf"
                                         }
                                     ],
                            "quantidadeQuestoes":  8,
@@ -30,25 +36,25 @@
                                            {
                                                "id":  "lp-4ano-b4-01",
                                                "arquivo":  "assets/atividades/lingua-portuguesa/4ano-4b/4ano-4b-lp-01-lendas-brasileiras.png",
-                                               "descricao":  "Cena pedagógica de estudantes trabalhando com uma notícia escolar durante a feira de ciências, com materiais de leitura e escrita visíveis e sem texto ilegível na imagem.",
-                                               "funcaoPedagogica":  "Apoiar visualmente a compreensao da atividade.",
+                                               "descricao":  "Cena pedagógica de Ana, uma menina do 4º ano, lendo um livro sobre o Curupira. No livro aparece o Curupira em uma floresta, com cabelos vermelhos e pés virados para trás.",
+                                               "funcaoPedagogica":  "Apoiar a compreensão do personagem, do ambiente e do tema da lenda.",
                                                "posicaoSugerida":  "antes-das-questoes",
-                                               "textoAlternativo":  "Ilustracao pedagogica da atividade 1 - Lendas brasileiras.",
+                                               "textoAlternativo":  "Ana lendo uma lenda sobre o Curupira em um livro ilustrado.",
                                                "compativelPretoBranco":  true
                                            }
                                        ],
                            "possuiGabarito":  true,
                            "possuiVersaoAdaptada":  true,
-                           "instrucaoGeral":  "Leia o texto de apoio, responda às oito questões e revise a produção considerando gênero, público e finalidade.",
+                           "instrucaoGeral":  "Leia o texto com atenção e responda às oito questões.",
                            "textoApoio":  {
-                                              "titulo":  "Leitura orientada na feira de ciências",
-                                              "conteudo":  "Ana participou da feira de ciências e ajudou a turma a preparar uma notícia escolar destinada à comunidade escolar. Antes de escrever, o grupo escolheu as informações principais, organizou a sequência das ideias e releu cada frase para verificar se o leitor compreenderia a mensagem. O trabalho teve como foco “Lendas brasileiras”. A proposta se relaciona à habilidade EF04LP01: Grafar palavras utilizando regras de correspondência fonema- -grafema regulares diretas e contextuais."
+                                              "titulo":  "O Curupira",
+                                              "conteudo":  "Ana leu uma lenda brasileira com sua turma. A história era sobre o Curupira, um personagem do folclore brasileiro que protege as florestas e os animais.\n\nDizem que o Curupira tem cabelos vermelhos e os pés virados para trás. Ele usa sons da mata e pegadas diferentes para confundir caçadores e pessoas que entram na floresta para fazer mal à natureza.\n\nDepois da leitura, Ana conversou com a turma sobre o personagem, o lugar onde a história acontece e a mensagem da lenda. A turma percebeu que a história também ensina a importância de cuidar da natureza."
                                           },
                            "questoes":  [
                                             {
                                                 "numero":  1,
                                                 "tipo":  "compreensao",
-                                                "enunciado":  "Em “Lendas brasileiras”, qual foi a situação comunicativa apresentada e quem participava dela?",
+                                                "enunciado":  "Quem leu a lenda com a turma?",
                                                 "alternativas":  [
 
                                                                  ],
@@ -57,8 +63,8 @@
                                             },
                                             {
                                                 "numero":  2,
-                                                "tipo":  "localizacao",
-                                                "enunciado":  "No texto de “Lendas brasileiras”, localize duas decisões tomadas pelo grupo antes ou durante a escrita.",
+                                                "tipo":  "personagem",
+                                                "enunciado":  "Qual é o personagem principal da lenda?",
                                                 "alternativas":  [
 
                                                                  ],
@@ -67,8 +73,8 @@
                                             },
                                             {
                                                 "numero":  3,
-                                                "tipo":  "finalidade",
-                                                "enunciado":  "Considerando “Lendas brasileiras”, explique por que conhecer o público ajuda a cumprir a finalidade de informar com clareza.",
+                                                "tipo":  "compreensao",
+                                                "enunciado":  "O que o Curupira protege?",
                                                 "alternativas":  [
 
                                                                  ],
@@ -77,8 +83,8 @@
                                             },
                                             {
                                                 "numero":  4,
-                                                "tipo":  "genero",
-                                                "enunciado":  "Para desenvolver “Lendas brasileiras”, indique duas características que uma notícia escolar precisa apresentar.",
+                                                "tipo":  "caracteristicas",
+                                                "enunciado":  "Quais são duas características do Curupira apresentadas no texto?",
                                                 "alternativas":  [
 
                                                                  ],
@@ -87,8 +93,8 @@
                                             },
                                             {
                                                 "numero":  5,
-                                                "tipo":  "linguagem",
-                                                "enunciado":  "Em “Lendas brasileiras”, escolha uma palavra importante e explique o que ela ajuda a compreender.",
+                                                "tipo":  "localizacao",
+                                                "enunciado":  "Onde essa história acontece?",
                                                 "alternativas":  [
 
                                                                  ],
@@ -97,8 +103,8 @@
                                             },
                                             {
                                                 "numero":  6,
-                                                "tipo":  "revisao",
-                                                "enunciado":  "Reescreva uma informação de “Lendas brasileiras” com mais clareza, sem alterar seu sentido principal.",
+                                                "tipo":  "compreensao",
+                                                "enunciado":  "Por que o Curupira confunde os caçadores?",
                                                 "alternativas":  [
 
                                                                  ],
@@ -107,8 +113,8 @@
                                             },
                                             {
                                                 "numero":  7,
-                                                "tipo":  "producao",
-                                                "enunciado":  "A partir de “Lendas brasileiras”, produza um trecho de notícia escolar adequado à feira de ciências e à finalidade de informar com clareza.",
+                                                "tipo":  "interpretacao",
+                                                "enunciado":  "O que essa lenda ensina sobre a natureza?",
                                                 "alternativas":  [
 
                                                                  ],
@@ -117,8 +123,8 @@
                                             },
                                             {
                                                 "numero":  8,
-                                                "tipo":  "avaliacao",
-                                                "enunciado":  "Revise a produção feita em “Lendas brasileiras” e registre duas mudanças que melhoraram o resultado final.",
+                                                "tipo":  "producao",
+                                                "enunciado":  "Escreva duas ou três frases contando o que você aprendeu sobre o Curupira.",
                                                 "alternativas":  [
 
                                                                  ],
@@ -129,51 +135,51 @@
                            "gabarito":  [
                                             {
                                                 "numero":  1,
-                                                "resposta":  "A situação ocorre na feira de ciências, com participação de estudantes na preparação de um texto para a comunidade escolar.",
-                                                "justificativa":  "Critério de correção vinculado à habilidade oficial EF04LP01 e ao comando da questão 1."
+                                                "resposta":  "Ana.",
+                                                "justificativa":  "A informação aparece diretamente no início do texto."
                                             },
                                             {
                                                 "numero":  2,
-                                                "resposta":  "O grupo selecionou informações e organizou as ideias; também releu ou revisou o texto antes de concluí-lo.",
-                                                "justificativa":  "Critério de correção vinculado à habilidade oficial EF04LP01 e ao comando da questão 2."
+                                                "resposta":  "O Curupira.",
+                                                "justificativa":  "O Curupira é apresentado como personagem principal da lenda."
                                             },
                                             {
                                                 "numero":  3,
-                                                "resposta":  "Conhecer o público orienta a linguagem, a quantidade de explicações e a seleção das informações necessárias para informar com clareza.",
-                                                "justificativa":  "Critério de correção vinculado à habilidade oficial EF04LP01 e ao comando da questão 3."
+                                                "resposta":  "As florestas e os animais.",
+                                                "justificativa":  "O texto informa que o Curupira protege a floresta e os animais."
                                             },
                                             {
                                                 "numero":  4,
-                                                "resposta":  "A resposta deve citar características compatíveis com o gênero, como organização reconhecível, informações pertinentes e linguagem adequada ao leitor.",
-                                                "justificativa":  "Critério de correção vinculado à habilidade oficial EF04LP01 e ao comando da questão 4."
+                                                "resposta":  "Ele tem cabelos vermelhos e pés virados para trás.",
+                                                "justificativa":  "As duas características são apresentadas claramente no texto."
                                             },
                                             {
                                                 "numero":  5,
-                                                "resposta":  "A palavra escolhida deve ser explicada de acordo com o sentido que assume no texto.",
-                                                "justificativa":  "Critério de correção vinculado à habilidade oficial EF04LP01 e ao comando da questão 5."
+                                                "resposta":  "Na floresta ou na mata.",
+                                                "justificativa":  "A história acontece no ambiente da floresta."
                                             },
                                             {
                                                 "numero":  6,
-                                                "resposta":  "A reescrita deve preservar a informação original e melhorar clareza, ordem ou escolha de palavras.",
-                                                "justificativa":  "Critério de correção vinculado à habilidade oficial EF04LP01 e ao comando da questão 6."
+                                                "resposta":  "Para afastar ou enganar pessoas que querem fazer mal à natureza.",
+                                                "justificativa":  "O texto explica que ele confunde caçadores para proteger a floresta."
                                             },
                                             {
                                                 "numero":  7,
-                                                "resposta":  "O trecho deve respeitar o gênero, o contexto, a finalidade e apresentar informação compreensível ao público.",
-                                                "justificativa":  "Critério de correção vinculado à habilidade oficial EF04LP01 e ao comando da questão 7."
+                                                "resposta":  "Que devemos cuidar da natureza, das florestas e dos animais.",
+                                                "justificativa":  "Essa é a mensagem principal apresentada ao final do texto."
                                             },
                                             {
                                                 "numero":  8,
-                                                "resposta":  "O estudante deve indicar duas alterações efetivas, como correção, substituição de palavra, reorganização ou inclusão de informação necessária.",
-                                                "justificativa":  "Critério de correção vinculado à habilidade oficial EF04LP01 e ao comando da questão 8."
+                                                "resposta":  "Resposta pessoal coerente com o texto, mencionando características ou a função do Curupira.",
+                                                "justificativa":  "A produção deve mostrar que o estudante compreendeu as informações principais da lenda."
                                             }
                                         ],
                            "revisao":  {
                                            "status":  "revisao-pedagogica-humana-pendente",
                                            "bnccConferida":  true,
-                                           "conteudoConferido":  false,
-                                           "questoesConferidas":  false,
-                                           "gabaritoConferido":  false,
+                                           "conteudoConferido":  true,
+                                           "questoesConferidas":  true,
+                                           "gabaritoConferido":  true,
                                            "ilustracaoConferida":  true,
                                            "validacaoAutomatica":  true,
                                            "fonteBncc":  {
@@ -3747,16 +3753,16 @@
                            "quantidadeQuestoes":  8,
                            "possuiFiguras":  true,
                            "figuras":  [
-    {
-        "id":  "lp-4ano-b4-21",
-        "arquivo":  "assets/atividades/lingua-portuguesa/4ano-4b/4ano-4b-lp-21-ortografia-com-cedilha.png",
-        "arquivoValidado":  true,
-        "funcaoPedagogica":  "Apoiar visualmente a compreensão da atividade.",
-        "posicaoSugerida":  "antes-das-questoes",
-        "textoAlternativo":  "Ilustração pedagógica da atividade 21.",
-        "compativelPretoBranco":  true
-    }
-],
+                                           {
+                                               "id":  "lp-4ano-b4-21",
+                                               "arquivo":  "assets/atividades/lingua-portuguesa/4ano-4b/4ano-4b-lp-21-ortografia-com-cedilha.png",
+                                               "arquivoValidado":  true,
+                                               "funcaoPedagogica":  "Apoiar visualmente a compreensão da atividade.",
+                                               "posicaoSugerida":  "antes-das-questoes",
+                                               "textoAlternativo":  "Ilustração pedagógica da atividade 21.",
+                                               "compativelPretoBranco":  true
+                                           }
+                                       ],
                            "possuiGabarito":  true,
                            "possuiVersaoAdaptada":  true,
                            "instrucaoGeral":  "Leia o texto de apoio, responda às oito questões e revise a produção considerando gênero, público e finalidade.",
@@ -3933,16 +3939,16 @@
                            "quantidadeQuestoes":  8,
                            "possuiFiguras":  true,
                            "figuras":  [
-    {
-        "id":  "lp-4ano-b4-22",
-        "arquivo":  "assets/atividades/lingua-portuguesa/4ano-4b/4ano-4b-lp-22-ortografia-com-sc-e-sc-cedilha.png",
-        "arquivoValidado":  true,
-        "funcaoPedagogica":  "Apoiar visualmente a compreensão da atividade.",
-        "posicaoSugerida":  "antes-das-questoes",
-        "textoAlternativo":  "Ilustração pedagógica da atividade 22.",
-        "compativelPretoBranco":  true
-    }
-],
+                                           {
+                                               "id":  "lp-4ano-b4-22",
+                                               "arquivo":  "assets/atividades/lingua-portuguesa/4ano-4b/4ano-4b-lp-22-ortografia-com-sc-e-sc-cedilha.png",
+                                               "arquivoValidado":  true,
+                                               "funcaoPedagogica":  "Apoiar visualmente a compreensão da atividade.",
+                                               "posicaoSugerida":  "antes-das-questoes",
+                                               "textoAlternativo":  "Ilustração pedagógica da atividade 22.",
+                                               "compativelPretoBranco":  true
+                                           }
+                                       ],
                            "possuiGabarito":  true,
                            "possuiVersaoAdaptada":  true,
                            "instrucaoGeral":  "Leia o texto de apoio, responda às oito questões e revise a produção considerando gênero, público e finalidade.",
@@ -4119,16 +4125,16 @@
                            "quantidadeQuestoes":  8,
                            "possuiFiguras":  true,
                            "figuras":  [
-    {
-        "id":  "lp-4ano-b4-23",
-        "arquivo":  "assets/atividades/lingua-portuguesa/4ano-4b/4ano-4b-lp-23-palavras-terminadas-em-cao.png",
-        "arquivoValidado":  true,
-        "funcaoPedagogica":  "Apoiar visualmente a compreensão da atividade.",
-        "posicaoSugerida":  "antes-das-questoes",
-        "textoAlternativo":  "Ilustração pedagógica da atividade 23.",
-        "compativelPretoBranco":  true
-    }
-],
+                                           {
+                                               "id":  "lp-4ano-b4-23",
+                                               "arquivo":  "assets/atividades/lingua-portuguesa/4ano-4b/4ano-4b-lp-23-palavras-terminadas-em-cao.png",
+                                               "arquivoValidado":  true,
+                                               "funcaoPedagogica":  "Apoiar visualmente a compreensão da atividade.",
+                                               "posicaoSugerida":  "antes-das-questoes",
+                                               "textoAlternativo":  "Ilustração pedagógica da atividade 23.",
+                                               "compativelPretoBranco":  true
+                                           }
+                                       ],
                            "possuiGabarito":  true,
                            "possuiVersaoAdaptada":  true,
                            "instrucaoGeral":  "Leia o texto de apoio, responda às oito questões e revise a produção considerando gênero, público e finalidade.",
@@ -4305,16 +4311,16 @@
                            "quantidadeQuestoes":  8,
                            "possuiFiguras":  true,
                            "figuras":  [
-    {
-        "id":  "lp-4ano-b4-24",
-        "arquivo":  "assets/atividades/lingua-portuguesa/4ano-4b/4ano-4b-lp-24-producao-de-noticia.png",
-        "arquivoValidado":  true,
-        "funcaoPedagogica":  "Apoiar visualmente a compreensão da atividade.",
-        "posicaoSugerida":  "antes-das-questoes",
-        "textoAlternativo":  "Ilustração pedagógica da atividade 24.",
-        "compativelPretoBranco":  true
-    }
-],
+                                           {
+                                               "id":  "lp-4ano-b4-24",
+                                               "arquivo":  "assets/atividades/lingua-portuguesa/4ano-4b/4ano-4b-lp-24-producao-de-noticia.png",
+                                               "arquivoValidado":  true,
+                                               "funcaoPedagogica":  "Apoiar visualmente a compreensão da atividade.",
+                                               "posicaoSugerida":  "antes-das-questoes",
+                                               "textoAlternativo":  "Ilustração pedagógica da atividade 24.",
+                                               "compativelPretoBranco":  true
+                                           }
+                                       ],
                            "possuiGabarito":  true,
                            "possuiVersaoAdaptada":  true,
                            "instrucaoGeral":  "Leia o texto de apoio, responda às oito questões e revise a produção considerando gênero, público e finalidade.",
@@ -6332,16 +6338,16 @@
                            "quantidadeQuestoes":  8,
                            "possuiFiguras":  true,
                            "figuras":  [
-    {
-        "id":  "lp-4ano-b4-35",
-        "arquivo":  "assets/atividades/lingua-portuguesa/4ano-4b/4ano-4b-lp-35-comparacao-de-textos-carta-do-leitor.png",
-        "arquivoValidado":  true,
-        "funcaoPedagogica":  "Apoiar visualmente a compreensão da atividade.",
-        "posicaoSugerida":  "antes-das-questoes",
-        "textoAlternativo":  "Ilustração pedagógica da atividade 35.",
-        "compativelPretoBranco":  true
-    }
-],
+                                           {
+                                               "id":  "lp-4ano-b4-35",
+                                               "arquivo":  "assets/atividades/lingua-portuguesa/4ano-4b/4ano-4b-lp-35-comparacao-de-textos-carta-do-leitor.png",
+                                               "arquivoValidado":  true,
+                                               "funcaoPedagogica":  "Apoiar visualmente a compreensão da atividade.",
+                                               "posicaoSugerida":  "antes-das-questoes",
+                                               "textoAlternativo":  "Ilustração pedagógica da atividade 35.",
+                                               "compativelPretoBranco":  true
+                                           }
+                                       ],
                            "possuiGabarito":  true,
                            "possuiVersaoAdaptada":  true,
                            "versaoAdaptada":  {
@@ -6518,16 +6524,16 @@
                            "quantidadeQuestoes":  8,
                            "possuiFiguras":  true,
                            "figuras":  [
-    {
-        "id":  "lp-4ano-b4-36",
-        "arquivo":  "assets/atividades/lingua-portuguesa/4ano-4b/4ano-4b-lp-36-leitura-investigativa-campanha-educativa.png",
-        "arquivoValidado":  true,
-        "funcaoPedagogica":  "Apoiar visualmente a compreensão da atividade.",
-        "posicaoSugerida":  "antes-das-questoes",
-        "textoAlternativo":  "Ilustração pedagógica da atividade 36.",
-        "compativelPretoBranco":  true
-    }
-],
+                                           {
+                                               "id":  "lp-4ano-b4-36",
+                                               "arquivo":  "assets/atividades/lingua-portuguesa/4ano-4b/4ano-4b-lp-36-leitura-investigativa-campanha-educativa.png",
+                                               "arquivoValidado":  true,
+                                               "funcaoPedagogica":  "Apoiar visualmente a compreensão da atividade.",
+                                               "posicaoSugerida":  "antes-das-questoes",
+                                               "textoAlternativo":  "Ilustração pedagógica da atividade 36.",
+                                               "compativelPretoBranco":  true
+                                           }
+                                       ],
                            "possuiGabarito":  true,
                            "possuiVersaoAdaptada":  true,
                            "versaoAdaptada":  {
@@ -6704,16 +6710,16 @@
                            "quantidadeQuestoes":  8,
                            "possuiFiguras":  true,
                            "figuras":  [
-    {
-        "id":  "lp-4ano-b4-37",
-        "arquivo":  "assets/atividades/lingua-portuguesa/4ano-4b/4ano-4b-lp-37-leitura-investigativa-entrevista.png",
-        "arquivoValidado":  true,
-        "funcaoPedagogica":  "Apoiar visualmente a compreensão da atividade.",
-        "posicaoSugerida":  "antes-das-questoes",
-        "textoAlternativo":  "Ilustração pedagógica da atividade 37.",
-        "compativelPretoBranco":  true
-    }
-],
+                                           {
+                                               "id":  "lp-4ano-b4-37",
+                                               "arquivo":  "assets/atividades/lingua-portuguesa/4ano-4b/4ano-4b-lp-37-leitura-investigativa-entrevista.png",
+                                               "arquivoValidado":  true,
+                                               "funcaoPedagogica":  "Apoiar visualmente a compreensão da atividade.",
+                                               "posicaoSugerida":  "antes-das-questoes",
+                                               "textoAlternativo":  "Ilustração pedagógica da atividade 37.",
+                                               "compativelPretoBranco":  true
+                                           }
+                                       ],
                            "possuiGabarito":  true,
                            "possuiVersaoAdaptada":  true,
                            "versaoAdaptada":  {
