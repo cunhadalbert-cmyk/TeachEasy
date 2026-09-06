@@ -14,12 +14,17 @@ function collect(directory) {
 }
 collect(dataRoot);
 
+function parseJsonFile(file) {
+  const text = readFileSync(file, 'utf8').replace(/^\uFEFF/, '');
+  return JSON.parse(text);
+}
+
 const visualCommand = /(observe\s+(?:a\s+figura|a\s+imagem|o\s+desenho|o\s+esquema|o\s+gr[aá]fico|a\s+tabela|o\s+mapa|a\s+sequ[eê]ncia)|analise\s+(?:a\s+figura|a\s+imagem|o\s+desenho|o\s+esquema|o\s+gr[aá]fico|a\s+tabela|o\s+mapa)|veja\s+(?:a\s+figura|a\s+imagem|o\s+desenho|o\s+esquema|o\s+gr[aá]fico|a\s+tabela|o\s+mapa))/i;
 const rows = [];
 const errors = [];
 
 for (const file of files) {
-  const collection = JSON.parse(readFileSync(file, 'utf8'));
+  const collection = parseJsonFile(file);
   for (const activity of collection.atividades) {
     const figures = new Map((activity.figuras || []).map(figure => [figure.id, figure]));
     for (const question of activity.questoes) {
@@ -69,7 +74,7 @@ for (const file of files) {
 }
 
 const subjects = ['Matemática', 'Língua Portuguesa', 'Ciências', 'História', 'Geografia'];
-const present = new Set(files.map(file => JSON.parse(readFileSync(file, 'utf8')).disciplina));
+const present = new Set(files.map(file => parseJsonFile(file).disciplina));
 const report = [
   '# Auditoria de figuras das atividades',
   '',
