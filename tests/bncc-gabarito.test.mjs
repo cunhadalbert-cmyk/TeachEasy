@@ -38,7 +38,15 @@ test('prévia da Biblioteca escolhe a atividade canônica e exibe BNCC no gabari
   assert.match(libraryPreviewMeta, /const candidates = activities\.filter/);
   assert.match(libraryPreviewMeta, /Array\.isArray\(activity\?\.bnccDetails\)/);
   assert.match(libraryPreviewMeta, /activity\.bnccDetails\.some/);
-  assert.match(libraryPreviewMeta, /Boolean\(fallbackCodes\)/);
   assert.match(libraryPreviewMeta, /te-final-bncc-meta/);
   assert.match(libraryPreviewMeta, /habilidadeOficial/);
+});
+
+test('gabarito do 4º ano 4º bimestre usa fallback direto no JSON canônico da BNCC', () => {
+  assert.match(libraryPreviewMeta, /PORTUGUESE_4B_CANONICAL/);
+  assert.match(libraryPreviewMeta, /lingua-portuguesa\.json\?v=20260907-bncc-gabarito/);
+  assert.match(libraryPreviewMeta, /fetch\(PORTUGUESE_4B_CANONICAL, \{ cache: 'no-store' \}\)/);
+  assert.match(libraryPreviewMeta, /normalize\(activity\?\.titulo\) === topic/);
+  assert.match(libraryPreviewMeta, /normalize\(activity\?\.tema\) === topic/);
+  assert.match(libraryPreviewMeta, /renderBnccBox\(answer, details, fallbackCodes\)/);
 });
