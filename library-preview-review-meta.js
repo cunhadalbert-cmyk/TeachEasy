@@ -1,6 +1,6 @@
 (() => {
   const META_RE = /^Revisão\s*·\s*/i;
-  const PORTUGUESE_4B_CANONICAL = 'data/atividades/fundamental-anos-iniciais/4-ano/4-bimestre/lingua-portuguesa.json?v=20260907-bncc-gabarito';
+  const PORTUGUESE_4B_CANONICAL = 'data/atividades/fundamental-anos-iniciais/4-ano/4-bimestre/lingua-portuguesa.json?v=20260907-bncc-gabarito-v2';
 
   function normalize(value = '') {
     return String(value).replace(/\s+/g, ' ').trim();
@@ -24,20 +24,10 @@
     );
     if (!candidates.length) return null;
 
-    const navStage = typeof navigation !== 'undefined' ? normalize(navigation.stage) : '';
-    const navGrade = typeof navigation !== 'undefined' ? normalize(navigation.grade) : '';
-    const navTerm = typeof navigation !== 'undefined' ? normalize(navigation.term) : '';
-    const scopedCandidates = candidates.filter(activity =>
-      (!navStage || normalize(activity.stage) === navStage)
-      && (!navGrade || normalize(activity.grade) === navGrade)
-      && (!navTerm || normalize(activity.term) === navTerm)
-    );
-    const pool = scopedCandidates.length ? scopedCandidates : candidates;
-
-    return pool.find(activity =>
+    return candidates.find(activity =>
       Array.isArray(activity?.bnccDetails)
       && activity.bnccDetails.some(item => normalize(item?.codigo))
-    ) || pool.find(activity => activity?.gabaritoCabecalho?.exibirBncc === true) || pool[0];
+    ) || candidates.find(activity => activity?.gabaritoCabecalho?.exibirBncc === true) || candidates[0];
   }
 
   function syncFinalVisual(shell) {
@@ -126,11 +116,6 @@
     const answer = shell.querySelector('.te-final-answer');
     if (!answer || answer.querySelector('.te-final-bncc-meta')) return;
     if (shell.dataset.teBnccCanonicalLoading === '1') return;
-
-    const navStage = typeof navigation !== 'undefined' ? normalize(navigation.stage) : '';
-    const navGrade = typeof navigation !== 'undefined' ? normalize(navigation.grade) : '';
-    const navTerm = typeof navigation !== 'undefined' ? normalize(navigation.term) : '';
-    if (navStage !== 'Ensino Fundamental I' || navGrade !== '4º ano' || navTerm !== '4') return;
 
     const topic = shellTopic(shell);
     if (!topic) return;
