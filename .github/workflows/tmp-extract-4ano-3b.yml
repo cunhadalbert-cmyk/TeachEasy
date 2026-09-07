@@ -1,0 +1,31 @@
+name: Temp extract 4ano 3b
+
+on:
+  push:
+    branches:
+      - revisao/4ano-3b-portugues-completa-v3
+    paths:
+      - scripts/tmp-extract-4ano-3b.mjs
+      - .github/workflows/tmp-extract-4ano-3b.yml
+
+permissions:
+  contents: write
+
+jobs:
+  extract:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Gerar resumo
+        run: node scripts/tmp-extract-4ano-3b.mjs
+      - name: Commitar resumo temporário
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add var/4ano-3b-portugues-resumo.json
+          git diff --cached --quiet && exit 0
+          git commit -m "Gera resumo temporário do 3º bimestre"
+          git push
