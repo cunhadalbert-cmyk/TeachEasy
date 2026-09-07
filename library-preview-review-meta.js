@@ -13,7 +13,26 @@
       || document.querySelector('#preview-title')?.textContent
     );
     if (!topic) return null;
-    return activities.find(activity => activity?.collectionActivity && normalize(activity.topic) === topic) || null;
+
+    const candidates = activities.filter(activity =>
+      activity?.collectionActivity && normalize(activity.topic) === topic
+    );
+    if (!candidates.length) return null;
+
+    const navStage = typeof navigation !== 'undefined' ? normalize(navigation.stage) : '';
+    const navGrade = typeof navigation !== 'undefined' ? normalize(navigation.grade) : '';
+    const navTerm = typeof navigation !== 'undefined' ? normalize(navigation.term) : '';
+    const scopedCandidates = candidates.filter(activity =>
+      (!navStage || normalize(activity.stage) === navStage)
+      && (!navGrade || normalize(activity.grade) === navGrade)
+      && (!navTerm || normalize(activity.term) === navTerm)
+    );
+    const pool = scopedCandidates.length ? scopedCandidates : candidates;
+
+    return pool.find(activity =>
+      Array.isArray(activity?.bnccDetails)
+      && activity.bnccDetails.some(item => normalize(item?.codigo))
+    ) || pool.find(activity => activity?.gabaritoCabecalho?.exibirBncc === true) || pool[0];
   }
 
   function syncFinalVisual(shell) {
@@ -52,7 +71,7 @@
       ? activity.bnccDetails.filter(item => normalize(item?.codigo))
       : [];
     const fallbackCodes = normalize(activity?.bncc || '');
-    const shouldShow = activity?.gabaritoCabecalho?.exibirBncc === true || details.length > 0;
+    const shouldShow = activity?.gabaritoCabecalho?.exibirBncc === true || details.length > 0 || Boolean(fallbackCodes);
     if (!shouldShow || (!details.length && !fallbackCodes)) return;
 
     const box = document.createElement('div');
