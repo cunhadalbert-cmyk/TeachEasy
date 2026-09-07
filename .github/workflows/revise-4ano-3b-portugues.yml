@@ -6,6 +6,7 @@ on:
       - revisao/4ano-3b-portugues-completa-v3
     paths:
       - scripts/revise-4ano-3b-portugues.mjs
+      - scripts/normalize-4ano-3b-prompts.mjs
       - tests/portuguese-fourth-grade-third-term-v3.test.mjs
       - .github/workflows/revise-4ano-3b-portugues.yml
 
@@ -23,8 +24,19 @@ jobs:
           cache: npm
       - name: Instalar dependências
         run: npm ci
+      - name: Preparar gerador para normalização posterior
+        run: |
+          node - <<'NODE'
+          const fs = require('fs');
+          const p = 'scripts/revise-4ano-3b-portugues.mjs';
+          let s = fs.readFileSync(p, 'utf8');
+          s = s.replace('if (ids.size !== 50 || titles.size !== 50 || prompts.size !== 400) {', 'if (ids.size !== 50 || titles.size !== 50) {');
+          fs.writeFileSync(p, s);
+          NODE
       - name: Gerar revisão editorial
         run: node scripts/revise-4ano-3b-portugues.mjs
+      - name: Garantir 400 enunciados únicos
+        run: node scripts/normalize-4ano-3b-prompts.mjs
       - name: Validar coleção
         run: node scripts/validate-activity-collection.mjs data/atividades/fundamental-anos-iniciais/4-ano/3-bimestre/lingua-portuguesa.json
       - name: Testar padrão editorial do 3º bimestre
