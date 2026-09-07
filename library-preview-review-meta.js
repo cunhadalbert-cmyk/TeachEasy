@@ -1,6 +1,15 @@
 (() => {
   const META_RE = /^Revisão\s*·\s*/i;
-  const PORTUGUESE_4B_CANONICAL = 'data/atividades/fundamental-anos-iniciais/4-ano/4-bimestre/lingua-portuguesa.json?v=20260907-bncc-gabarito-v2';
+  const PORTUGUESE_CANONICAL = Object.freeze([
+    {
+      term: '3',
+      path: 'data/atividades/fundamental-anos-iniciais/4-ano/3-bimestre/lingua-portuguesa.json?v=20260907-bncc-gabarito-3b-v1'
+    },
+    {
+      term: '4',
+      path: 'data/atividades/fundamental-anos-iniciais/4-ano/4-bimestre/lingua-portuguesa.json?v=20260907-bncc-gabarito-v2'
+    }
+  ]);
 
   function normalize(value = '') {
     return String(value).replace(/\s+/g, ' ').trim();
@@ -24,10 +33,16 @@
     );
     if (!candidates.length) return null;
 
-    return candidates.find(activity =>
+    const navTerm = typeof navigation !== 'undefined' ? normalize(navigation.term) : '';
+    const termCandidates = navTerm
+      ? candidates.filter(activity => normalize(activity.term) === navTerm)
+      : [];
+    const pool = termCandidates.length ? termCandidates : candidates;
+
+    return pool.find(activity =>
       Array.isArray(activity?.bnccDetails)
       && activity.bnccDetails.some(item => normalize(item?.codigo))
-    ) || candidates.find(activity => activity?.gabaritoCabecalho?.exibirBncc === true) || candidates[0];
+    ) || pool.find(activity => activity?.gabaritoCabecalho?.exibirBncc === true) || pool[0];
   }
 
   function syncFinalVisual(shell) {
@@ -112,6 +127,25 @@
     renderBnccBox(answer, details, fallbackCodes);
   }
 
+  function canonicalSourcesForCurrentView() {
+    const navTerm = typeof navigation !== 'undefined' ? normalize(navigation.term) : '';
+    if (!navTerm) return [...PORTUGUESE_CANONICAL];
+    return [...PORTUGUESE_CANONICAL].sort((a, b) => {
+      if (a.term === navTerm) return -1;
+      if (b.term === navTerm) return 1;
+      return 0;
+    });
+  }
+
+  function findCanonicalActivity(collection, topic) {
+    const canonicalActivities = Array.isArray(collection?.atividades) ? collection.atividades : [];
+    const exactTitle = canonicalActivities.find(activity => normalize(activity?.titulo) === topic);
+    if (exactTitle) return exactTitle;
+
+    const themeMatches = canonicalActivities.filter(activity => normalize(activity?.tema) === topic);
+    return themeMatches.length === 1 ? themeMatches[0] : null;
+  }
+
   async function ensureCanonicalAnswerBncc(shell) {
     const answer = shell.querySelector('.te-final-answer');
     if (!answer || answer.querySelector('.te-final-bncc-meta')) return;
@@ -122,22 +156,23 @@
 
     shell.dataset.teBnccCanonicalLoading = '1';
     try {
-      const response = await fetch(PORTUGUESE_4B_CANONICAL, { cache: 'no-store' });
-      if (!response.ok) return;
-      const collection = await response.json();
-      const canonical = (collection?.atividades || []).find(activity =>
-        normalize(activity?.titulo) === topic || normalize(activity?.tema) === topic
-      );
-      if (!canonical) return;
+      for (const source of canonicalSourcesForCurrentView()) {
+        const response = await fetch(source.path, { cache: 'no-store' });
+        if (!response.ok) continue;
 
-      const details = Array.isArray(canonical.bncc)
-        ? canonical.bncc.map(item => ({
-            codigo: item?.codigo || '',
-            habilidadeOficial: item?.habilidadeOficial || ''
-          }))
-        : [];
-      const fallbackCodes = details.map(item => normalize(item.codigo)).filter(Boolean).join(', ');
-      renderBnccBox(answer, details, fallbackCodes);
+        const collection = await response.json();
+        const canonical = findCanonicalActivity(collection, topic);
+        if (!canonical) continue;
+
+        const details = Array.isArray(canonical.bncc)
+          ? canonical.bncc.map(item => ({
+              codigo: item?.codigo || '',
+              habilidadeOficial: item?.habilidadeOficial || ''
+            }))
+          : [];
+        const fallbackCodes = details.map(item => normalize(item.codigo)).filter(Boolean).join(', ');
+        if (renderBnccBox(answer, details, fallbackCodes)) return;
+      }
     } catch (error) {
       console.warn('TeachEasy: não foi possível carregar a BNCC canônica do gabarito.', error);
     } finally {
