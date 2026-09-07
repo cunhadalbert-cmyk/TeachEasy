@@ -44,10 +44,56 @@
     if (shell._teFinalData) shell._teFinalData.visual = img.src;
   }
 
+  function ensureAnswerBncc(shell, activity) {
+    const answer = shell.querySelector('.te-final-answer');
+    if (!answer || answer.querySelector('.te-final-bncc-meta')) return;
+
+    const details = Array.isArray(activity?.bnccDetails)
+      ? activity.bnccDetails.filter(item => normalize(item?.codigo))
+      : [];
+    const fallbackCodes = normalize(activity?.bncc || '');
+    const shouldShow = activity?.gabaritoCabecalho?.exibirBncc === true || details.length > 0;
+    if (!shouldShow || (!details.length && !fallbackCodes)) return;
+
+    const box = document.createElement('div');
+    box.className = 'te-final-bncc-meta';
+
+    const title = document.createElement('strong');
+    title.className = 'te-final-bncc-title';
+    title.textContent = 'BNCC';
+    box.appendChild(title);
+
+    if (details.length) {
+      details.forEach(item => {
+        const line = document.createElement('div');
+        line.className = 'te-final-bncc-line';
+
+        const code = document.createElement('strong');
+        code.textContent = normalize(item.codigo);
+        line.appendChild(code);
+
+        const skill = normalize(item.habilidadeOficial || '');
+        if (skill) line.appendChild(document.createTextNode(` — ${skill}`));
+        box.appendChild(line);
+      });
+    } else {
+      const line = document.createElement('div');
+      line.className = 'te-final-bncc-line';
+      line.textContent = fallbackCodes;
+      box.appendChild(line);
+    }
+
+    const subtitle = answer.querySelector('h3');
+    if (subtitle) subtitle.insertAdjacentElement('afterend', box);
+    else answer.prepend(box);
+  }
+
   function processShell(shell) {
     if (!shell) return;
 
     syncFinalVisual(shell);
+    const activity = findActivityForShell(shell);
+    if (activity?.collectionActivity) ensureAnswerBncc(shell, activity);
 
     let metaText = shell.dataset.teReviewMeta || '';
 
@@ -83,8 +129,10 @@
     const meta = document.createElement('div');
     meta.className = 'te-final-review-meta';
     meta.textContent = metaText;
+    const bncc = answer.querySelector('.te-final-bncc-meta');
     const subtitle = answer.querySelector('h3');
-    if (subtitle) subtitle.insertAdjacentElement('afterend', meta);
+    if (bncc) bncc.insertAdjacentElement('afterend', meta);
+    else if (subtitle) subtitle.insertAdjacentElement('afterend', meta);
     else answer.prepend(meta);
   }
 
@@ -94,16 +142,30 @@
 
   const style = document.createElement('style');
   style.textContent = `
+    .te-final-bncc-meta,
     .te-final-review-meta{
       margin:0 0 5mm;
       padding:2.5mm 3mm;
       border:1px solid #000;
-      font:700 10pt/1.25 Arial,sans-serif;
-      text-align:center;
+      font:10pt/1.3 Arial,sans-serif;
       color:#141414;
       background:#fff;
     }
-    @media print{.te-final-review-meta{display:block!important}}
+    .te-final-bncc-title{
+      display:block;
+      margin-bottom:1.5mm;
+      font-weight:700;
+      text-align:center;
+    }
+    .te-final-bncc-line + .te-final-bncc-line{margin-top:1.5mm}
+    .te-final-review-meta{
+      font-weight:700;
+      text-align:center;
+    }
+    @media print{
+      .te-final-bncc-meta,
+      .te-final-review-meta{display:block!important}
+    }
   `;
   document.head.appendChild(style);
 
