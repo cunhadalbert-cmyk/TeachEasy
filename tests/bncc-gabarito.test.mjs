@@ -6,6 +6,7 @@ const rule = await readFile(new URL('../bncc-answer-key.js', import.meta.url), '
 const loader = await readFile(new URL('../jogos-inline.js', import.meta.url), 'utf8');
 const aiContent = await readFile(new URL('../ai-content.js', import.meta.url), 'utf8');
 const api = await readFile(new URL('../api/generate-activity.js', import.meta.url), 'utf8');
+const libraryPreviewMeta = await readFile(new URL('../library-preview-review-meta.js', import.meta.url), 'utf8');
 
 test('BNCC continua sendo solicitada internamente em toda geração', () => {
   assert.match(rule, /generationPayload\.bncc = true/);
@@ -31,4 +32,13 @@ test('BNCC não permanece no corpo da atividade do aluno', () => {
 test('regra é carregada junto do exportador Word', () => {
   assert.match(loader, /bncc-answer-key\.js\?v=20260810-bncc-gabarito/);
   assert.match(loader, /carregarRegraBnccGabarito/);
+});
+
+test('prévia da Biblioteca escolhe a atividade canônica e exibe BNCC no gabarito', () => {
+  assert.match(libraryPreviewMeta, /const candidates = activities\.filter/);
+  assert.match(libraryPreviewMeta, /Array\.isArray\(activity\?\.bnccDetails\)/);
+  assert.match(libraryPreviewMeta, /activity\.bnccDetails\.some/);
+  assert.match(libraryPreviewMeta, /Boolean\(fallbackCodes\)/);
+  assert.match(libraryPreviewMeta, /te-final-bncc-meta/);
+  assert.match(libraryPreviewMeta, /habilidadeOficial/);
 });
