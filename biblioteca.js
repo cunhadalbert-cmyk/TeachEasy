@@ -847,11 +847,11 @@ function openCollectionPreview(activity) {
           </article>
         ` : ''}
         ${activityFigureMarkup(activity)}
-        <ol class="question-list collection-question-list">${questionMarkup(activity, activity.questions.slice(0, 3))}</ol>
+        <ol class="question-list collection-question-list">${questionMarkup(activity, activity.questions.slice(0, activity.questions.length > 6 ? 4 : 3))}</ol>
       </section>
 
       <section class="worksheet-page collection-student-page collection-student-page-two">
-        <ol class="question-list collection-question-list" start="4">${questionMarkup(activity, activity.questions.slice(3, 6))}</ol>
+        <ol class="question-list collection-question-list" start="${activity.questions.length > 6 ? 5 : 4}">${questionMarkup(activity, activity.questions.slice(activity.questions.length > 6 ? 4 : 3, activity.questions.length > 6 ? 8 : 6))}</ol>
       </section>
 
       <section class="worksheet-page answer-key-page collection-answer-key">

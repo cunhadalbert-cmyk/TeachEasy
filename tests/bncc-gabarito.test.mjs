@@ -42,11 +42,19 @@ test('prévia da Biblioteca escolhe a atividade canônica e exibe BNCC no gabari
   assert.match(libraryPreviewMeta, /habilidadeOficial/);
 });
 
-test('gabarito do 4º ano 4º bimestre usa fallback direto no JSON canônico da BNCC', () => {
-  assert.match(libraryPreviewMeta, /PORTUGUESE_4B_CANONICAL/);
-  assert.match(libraryPreviewMeta, /lingua-portuguesa\.json\?v=20260907-bncc-gabarito/);
-  assert.match(libraryPreviewMeta, /fetch\(PORTUGUESE_4B_CANONICAL, \{ cache: 'no-store' \}\)/);
+test('gabaritos do 4º ano usam fallback canônico nos 3º e 4º bimestres', () => {
+  assert.match(libraryPreviewMeta, /PORTUGUESE_CANONICAL/);
+  assert.match(libraryPreviewMeta, /3-bimestre\/lingua-portuguesa\.json\?v=20260907-bncc-gabarito-3b-v1/);
+  assert.match(libraryPreviewMeta, /4-bimestre\/lingua-portuguesa\.json\?v=20260907-bncc-gabarito-v2/);
+  assert.match(libraryPreviewMeta, /fetch\(source\.path, \{ cache: 'no-store' \}\)/);
   assert.match(libraryPreviewMeta, /normalize\(activity\?\.titulo\) === topic/);
-  assert.match(libraryPreviewMeta, /normalize\(activity\?\.tema\) === topic/);
+  assert.match(libraryPreviewMeta, /themeMatches\.length === 1/);
   assert.match(libraryPreviewMeta, /renderBnccBox\(answer, details, fallbackCodes\)/);
+});
+
+test('fallback BNCC prioriza o bimestre atual sem depender dele para funcionar', () => {
+  assert.match(libraryPreviewMeta, /canonicalSourcesForCurrentView/);
+  assert.match(libraryPreviewMeta, /if \(!navTerm\) return \[\.\.\.PORTUGUESE_CANONICAL\]/);
+  assert.match(libraryPreviewMeta, /if \(a\.term === navTerm\) return -1/);
+  assert.match(libraryPreviewMeta, /for \(const source of canonicalSourcesForCurrentView\(\)\)/);
 });

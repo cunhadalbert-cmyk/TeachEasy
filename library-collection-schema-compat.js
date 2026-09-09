@@ -1,6 +1,8 @@
 (() => {
-  const TARGET_COLLECTION = '4ano-4bimestre-lingua-portuguesa';
-  const FRESH_VERSION = '20260906-editorial-v3';
+  const FRESH_COLLECTIONS = Object.freeze({
+    '4ano-3bimestre-lingua-portuguesa': '20260907-editorial-v3',
+    '4ano-4bimestre-lingua-portuguesa': '20260906-editorial-v3'
+  });
   const originalValidateCollection = validateCollection;
   const originalEnsureSelectedCollection = ensureSelectedCollection;
 
@@ -46,12 +48,13 @@
 
   ensureSelectedCollection = async function ensureSelectedCollectionWithFreshEditorialData() {
     const config = selectedCollectionConfig();
-    if (!config || config.collection !== TARGET_COLLECTION) {
+    const freshVersion = config ? FRESH_COLLECTIONS[config.collection] : '';
+    if (!config || !freshVersion) {
       return originalEnsureSelectedCollection();
     }
 
     const separator = config.path.includes('?') ? '&' : '?';
-    const response = await fetch(`${config.path}${separator}v=${FRESH_VERSION}`, { cache: 'no-store' });
+    const response = await fetch(`${config.path}${separator}v=${freshVersion}`, { cache: 'no-store' });
     if (!response.ok) {
       throw new Error('Não foi possível carregar a coleção revisada de Língua Portuguesa.');
     }
@@ -59,7 +62,6 @@
     const collection = await response.json();
     validateCollection(collection, config);
 
-    // A ausência isolada de uma figura não pode impedir o carregamento do conteúdo canônico.
     try {
       await validateCollectionAssets(collection);
     } catch (error) {
