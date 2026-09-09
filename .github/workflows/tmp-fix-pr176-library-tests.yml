@@ -20,7 +20,7 @@ jobs:
           node-version: 24
           cache: npm
       - run: npm ci
-      - name: Aplicar correção final do padrão V3
+      - name: Aplicar correção final 8 questões em duas folhas
         run: |
           node - <<'NODE'
           const fs = require('fs');
@@ -57,6 +57,22 @@ jobs:
             "assert.equal(window.document.querySelectorAll('.collection-question-list > li').length, 8);"
           );
           s = s.replace(
+            "assert.equal(preview.querySelectorAll('.collection-question-list > li').length, 6);",
+            "assert.equal(preview.querySelectorAll('.collection-question-list > li').length, 8);"
+          );
+          s = s.replace(
+            "test('Atividade de seis questões ocupa duas folhas e mantém gabarito separado'",
+            "test('Atividade de oito questões ocupa duas folhas e mantém gabarito separado'"
+          );
+          s = s.replace(
+            "  assert.equal(studentPages[0].querySelectorAll('.collection-question-list > li').length, 3);\n  assert.equal(studentPages[1].querySelectorAll('.collection-question-list > li').length, 3);",
+            "  assert.equal(studentPages[0].querySelectorAll('.collection-question-list > li').length, 4);\n  assert.equal(studentPages[1].querySelectorAll('.collection-question-list > li').length, 4);"
+          );
+          s = s.replace(
+            "assert.equal(studentPages[1].querySelector('.collection-question-list').getAttribute('start'), '4');",
+            "assert.equal(studentPages[1].querySelector('.collection-question-list').getAttribute('start'), '5');"
+          );
+          s = s.replace(
             "  subject.value = 'Língua Portuguesa';\n  subject.dispatchEvent(new window.Event('input', { bubbles: true }));\n  await new Promise(resolve => setTimeout(resolve, 0));\n  assert.deepEqual(window.__fetchCalls, [",
             "  subject.value = 'Língua Portuguesa';\n  subject.dispatchEvent(new window.Event('input', { bubbles: true }));\n  for (let attempt = 0; attempt < 40 && window.document.querySelectorAll('.activity-library-card').length !== 5; attempt += 1) {\n    await new Promise(resolve => setTimeout(resolve, 5));\n  }\n  assert.deepEqual(window.__fetchCalls, ["
           );
@@ -64,12 +80,14 @@ jobs:
 
           const libPath = 'biblioteca.js';
           let lib = fs.readFileSync(libPath, 'utf8');
-          const answerPageMarker = '      <section class="worksheet-page answer-key-page collection-answer-key">';
-          const thirdPage = '      ${activity.questions.length > 6 ? `\n      <section class="worksheet-page collection-student-page collection-student-page-three">\n        <ol class="question-list collection-question-list" start="7">${questionMarkup(activity, activity.questions.slice(6, 8))}</ol>\n      </section>\n      ` : \'\'}\n\n      <section class="worksheet-page answer-key-page collection-answer-key">';
-          if (!lib.includes('collection-student-page-three')) {
-            if (!lib.includes(answerPageMarker)) throw new Error('Ponto de inserção das questões 7 e 8 não encontrado.');
-            lib = lib.replace(answerPageMarker, thirdPage);
-          }
+          lib = lib.replace(
+            'activity.questions.slice(0, 3)',
+            'activity.questions.slice(0, activity.questions.length > 6 ? 4 : 3)'
+          );
+          lib = lib.replace(
+            'start="4">${questionMarkup(activity, activity.questions.slice(3, 6))}',
+            'start="${activity.questions.length > 6 ? 5 : 4}">${questionMarkup(activity, activity.questions.slice(activity.questions.length > 6 ? 4 : 3, activity.questions.length > 6 ? 8 : 6))}'
+          );
           fs.writeFileSync(libPath, lib, 'utf8');
 
           const jsonPath = 'data/atividades/fundamental-anos-iniciais/4-ano/3-bimestre/lingua-portuguesa.json';
@@ -98,5 +116,5 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add biblioteca.js tests/library.test.mjs data/atividades/fundamental-anos-iniciais/4-ano/3-bimestre/lingua-portuguesa.json .github/workflows/tmp-fix-pr176-library-tests.yml
-          git commit -m "Exibe as 8 questões e atualiza testes do Português 4º ano 3º bimestre"
+          git commit -m "Exibe 8 questões em duas folhas e atualiza testes do 3º bimestre"
           git push
