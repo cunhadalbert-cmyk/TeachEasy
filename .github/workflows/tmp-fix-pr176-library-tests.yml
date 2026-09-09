@@ -20,13 +20,13 @@ jobs:
           node-version: 24
           cache: npm
       - run: npm ci
-      - name: Atualizar testes legados e critérios de correção para V3
+      - name: Aplicar correção final do padrão V3
         run: |
           node - <<'NODE'
           const fs = require('fs');
+
           const testPath = 'tests/library.test.mjs';
           let s = fs.readFileSync(testPath, 'utf8');
-
           s = s.replace(
             "const [html, catalogScript, script, scienceCollection, mathCollection, portugueseCollection] = await Promise.all([",
             "const [html, catalogScript, script, compatibilityScript, scienceCollection, mathCollection, portugueseCollection] = await Promise.all(["
@@ -51,10 +51,7 @@ jobs:
             "['lingua-portuguesa.json', '4ano-3bimestre-lingua-portuguesa-v2', 'Língua Portuguesa', 50, 400]",
             "['lingua-portuguesa.json', '4ano-3bimestre-lingua-portuguesa-v3-revisao-editorial', 'Língua Portuguesa', 50, 400]"
           );
-          s = s.replace(
-            "assert.ok(skill.descricaoResumida.trim());",
-            "assert.ok(skill.habilidadeOficial.trim());"
-          );
+          s = s.replace("assert.ok(skill.descricaoResumida.trim());", "assert.ok(skill.habilidadeOficial.trim());");
           s = s.replace(
             "assert.equal(window.document.querySelectorAll('.collection-question-list > li').length, 6);",
             "assert.equal(window.document.querySelectorAll('.collection-question-list > li').length, 8);"
@@ -64,6 +61,16 @@ jobs:
             "  subject.value = 'Língua Portuguesa';\n  subject.dispatchEvent(new window.Event('input', { bubbles: true }));\n  for (let attempt = 0; attempt < 40 && window.document.querySelectorAll('.activity-library-card').length !== 5; attempt += 1) {\n    await new Promise(resolve => setTimeout(resolve, 5));\n  }\n  assert.deepEqual(window.__fetchCalls, ["
           );
           fs.writeFileSync(testPath, s, 'utf8');
+
+          const libPath = 'biblioteca.js';
+          let lib = fs.readFileSync(libPath, 'utf8');
+          const answerPageMarker = '      <section class="worksheet-page answer-key-page collection-answer-key">';
+          const thirdPage = '      ${activity.questions.length > 6 ? `\n      <section class="worksheet-page collection-student-page collection-student-page-three">\n        <ol class="question-list collection-question-list" start="7">${questionMarkup(activity, activity.questions.slice(6, 8))}</ol>\n      </section>\n      ` : \'\'}\n\n      <section class="worksheet-page answer-key-page collection-answer-key">';
+          if (!lib.includes('collection-student-page-three')) {
+            if (!lib.includes(answerPageMarker)) throw new Error('Ponto de inserção das questões 7 e 8 não encontrado.');
+            lib = lib.replace(answerPageMarker, thirdPage);
+          }
+          fs.writeFileSync(libPath, lib, 'utf8');
 
           const jsonPath = 'data/atividades/fundamental-anos-iniciais/4-ano/3-bimestre/lingua-portuguesa.json';
           const collection = JSON.parse(fs.readFileSync(jsonPath, 'utf8'));
@@ -83,13 +90,13 @@ jobs:
           NODE
       - name: Validar coleção
         run: node scripts/validate-activity-collection.mjs data/atividades/fundamental-anos-iniciais/4-ano/3-bimestre/lingua-portuguesa.json
-      - name: Testar Biblioteca
+      - name: Testar Biblioteca e BNCC
         run: node --test --test-reporter=spec tests/library.test.mjs tests/bncc-gabarito.test.mjs tests/portuguese-fourth-grade-third-term-v3.test.mjs
       - name: Commitar correção e remover workflow temporário
         run: |
           rm .github/workflows/tmp-fix-pr176-library-tests.yml
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add tests/library.test.mjs data/atividades/fundamental-anos-iniciais/4-ano/3-bimestre/lingua-portuguesa.json .github/workflows/tmp-fix-pr176-library-tests.yml
-          git commit -m "Atualiza testes e critérios do Português 4º ano 3º bimestre V3"
+          git add biblioteca.js tests/library.test.mjs data/atividades/fundamental-anos-iniciais/4-ano/3-bimestre/lingua-portuguesa.json .github/workflows/tmp-fix-pr176-library-tests.yml
+          git commit -m "Exibe as 8 questões e atualiza testes do Português 4º ano 3º bimestre"
           git push
