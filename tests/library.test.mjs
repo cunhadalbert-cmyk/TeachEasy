@@ -4,10 +4,11 @@ import test from 'node:test';
 import { Window } from 'happy-dom';
 
 async function createLibraryPage({ missingAsset = '', url = 'https://teacheasy.test/biblioteca.html' } = {}) {
-  const [html, catalogScript, script, scienceCollection, mathCollection, portugueseCollection] = await Promise.all([
+  const [html, catalogScript, script, compatibilityScript, scienceCollection, mathCollection, portugueseCollection] = await Promise.all([
     readFile(new URL('../biblioteca.html', import.meta.url), 'utf8'),
     readFile(new URL('../library-catalog.js', import.meta.url), 'utf8'),
     readFile(new URL('../biblioteca.js', import.meta.url), 'utf8'),
+    readFile(new URL('../library-collection-schema-compat.js', import.meta.url), 'utf8'),
     readFile(new URL('../data/atividades/fundamental-anos-iniciais/4-ano/3-bimestre/ciencias.json', import.meta.url), 'utf8'),
     readFile(new URL('../data/atividades/fundamental-anos-iniciais/4-ano/3-bimestre/matematica.json', import.meta.url), 'utf8'),
     readFile(new URL('../data/atividades/fundamental-anos-iniciais/4-ano/3-bimestre/lingua-portuguesa.json', import.meta.url), 'utf8')
@@ -32,22 +33,24 @@ async function createLibraryPage({ missingAsset = '', url = 'https://teacheasy.t
   window.URL.revokeObjectURL = () => {};
   window.HTMLAnchorElement.prototype.click = function click() {};
   window.fetch = async path => {
+    const cleanPath = String(path).split('?')[0];
     const collections = {
       'data/atividades/fundamental-anos-iniciais/4-ano/3-bimestre/ciencias.json': scienceCollection,
       'data/atividades/fundamental-anos-iniciais/4-ano/3-bimestre/matematica.json': mathCollection,
       'data/atividades/fundamental-anos-iniciais/4-ano/3-bimestre/lingua-portuguesa.json': portugueseCollection
     };
-    if (collections[path]) window.__fetchCalls.push(path);
+    if (collections[cleanPath]) window.__fetchCalls.push(cleanPath);
     else window.__assetFetchCalls.push(path);
     return {
-      ok: Boolean(collections[path]) || (path.startsWith('assets/atividades/') && path !== missingAsset),
-      json: async () => JSON.parse(collections[path]),
+      ok: Boolean(collections[cleanPath]) || (cleanPath.startsWith('assets/atividades/') && cleanPath !== missingAsset),
+      json: async () => JSON.parse(collections[cleanPath]),
       blob: async () => new window.Blob(['imagem'], { type: 'image/png' })
     };
   };
 
   window.eval(catalogScript);
   window.eval(script);
+  window.eval(compatibilityScript);
   return window;
 }
 
@@ -654,7 +657,7 @@ test('Ciências é carregada somente após etapa, ano, bimestre e disciplina', a
 
   cards[0].querySelector('.preview-button').click();
   const preview = window.document.querySelector('#activity-preview');
-  assert.equal(preview.querySelectorAll('.collection-question-list > li').length, 6);
+  assert.equal(preview.querySelectorAll('.collection-question-list > li').length, 8);
   assert.ok(preview.querySelector('.support-text h2').textContent);
   assert.equal(preview.querySelector('.figure-production-review'), null);
   const figure = preview.querySelector('.question-figure');
@@ -699,7 +702,7 @@ test('Figura geral de Português aparece antes das questões e substitui o fallb
 test('Arquivos canônicos de Matemática e Língua Portuguesa V2 totalizam 100 atividades e 800 questões', async () => {
   const files = [
     ['matematica.json', '4ano-3bimestre-matematica-v2', 'Matemática', 50, 400],
-    ['lingua-portuguesa.json', '4ano-3bimestre-lingua-portuguesa-v2', 'Língua Portuguesa', 50, 400]
+    ['lingua-portuguesa.json', '4ano-3bimestre-lingua-portuguesa-v3-revisao-editorial', 'Língua Portuguesa', 50, 400]
   ];
   const allIds = [];
   let totalQuestions = 0;
@@ -837,7 +840,7 @@ test('Língua Portuguesa possui 50 atividades V2, 400 questões e figuras válid
     assert.ok(activity.bncc.length > 0);
     activity.bncc.forEach(skill => {
       assert.match(skill.codigo, /^EF(04|15|35)LP\d{2}$/);
-      assert.ok(skill.descricaoResumida.trim());
+      assert.ok(skill.habilidadeOficial.trim());
     });
     assert.deepEqual(activity.questoes.map(question => question.numero), [1, 2, 3, 4, 5, 6, 7, 8]);
     assert.deepEqual(activity.gabarito.map(answer => answer.numero), [1, 2, 3, 4, 5, 6, 7, 8]);
@@ -906,7 +909,9 @@ test('Matemática e Língua Portuguesa carregam somente com a disciplina corresp
 
   subject.value = 'Língua Portuguesa';
   subject.dispatchEvent(new window.Event('input', { bubbles: true }));
-  await new Promise(resolve => setTimeout(resolve, 0));
+  for (let attempt = 0; attempt < 40 && window.document.querySelectorAll('.activity-library-card').length !== 5; attempt += 1) {
+    await new Promise(resolve => setTimeout(resolve, 5));
+  }
   assert.deepEqual(window.__fetchCalls, [
     'data/atividades/fundamental-anos-iniciais/4-ano/3-bimestre/matematica.json',
     'data/atividades/fundamental-anos-iniciais/4-ano/3-bimestre/lingua-portuguesa.json'
@@ -914,7 +919,7 @@ test('Matemática e Língua Portuguesa carregam somente com a disciplina corresp
   assert.equal(window.document.querySelectorAll('.activity-library-card').length, 5);
   window.document.querySelector('.activity-library-card .preview-button').click();
   assert.ok(window.document.querySelector('.collection-student-page .support-text'));
-  assert.equal(window.document.querySelectorAll('.collection-question-list > li').length, 6);
+  assert.equal(window.document.querySelectorAll('.collection-question-list > li').length, 8);
   assert.ok(window.document.querySelector('.collection-answer-key'));
   await window.happyDOM.close();
 });
@@ -997,7 +1002,7 @@ test('Prévia e impressão usam folhas brancas sem efeito de cartão', async () 
   assert.match(css, /@media print\s*\{[\s\S]*\.worksheet-page,\s*\.activity-print-page,\s*\.answer-key-page\s*\{[^}]*width:\s*210mm;[^}]*border:\s*none !important;[^}]*border-radius:\s*0 !important;[^}]*background:\s*#fff !important;[^}]*box-shadow:\s*none !important;/s);
 });
 
-test('Atividade de seis questões ocupa duas folhas e mantém gabarito separado', async () => {
+test('Atividade de oito questões ocupa duas folhas e mantém gabarito separado', async () => {
   const window = await createLibraryPage();
   openActivities(window, 'Anos Iniciais', '4º ano', '3º bimestre');
   const subject = window.document.querySelector('#library-filters select[name="subject"]');
@@ -1009,8 +1014,8 @@ test('Atividade de seis questões ocupa duas folhas e mantém gabarito separado'
   const preview = window.document.querySelector('#activity-preview');
   const studentPages = [...preview.querySelectorAll('.collection-student-page')];
   assert.equal(studentPages.length, 2);
-  assert.equal(studentPages[0].querySelectorAll('.collection-question-list > li').length, 3);
-  assert.equal(studentPages[1].querySelectorAll('.collection-question-list > li').length, 3);
+  assert.equal(studentPages[0].querySelectorAll('.collection-question-list > li').length, 4);
+  assert.equal(studentPages[1].querySelectorAll('.collection-question-list > li').length, 4);
   assert.ok(studentPages[0].querySelector('.support-text'));
   assert.equal(studentPages[1].querySelector('.support-text'), null);
   assert.equal(studentPages[0].querySelectorAll('.student-fields').length, 1);
@@ -1018,7 +1023,7 @@ test('Atividade de seis questões ocupa duas folhas e mantém gabarito separado'
   assert.equal(studentPages[1].querySelector('.student-fields'), null);
   assert.equal(studentPages[1].querySelector('h1, h2, h3'), null);
   assert.doesNotMatch(studentPages[1].textContent, /continuação/i);
-  assert.equal(studentPages[1].querySelector('.collection-question-list').getAttribute('start'), '4');
+  assert.equal(studentPages[1].querySelector('.collection-question-list').getAttribute('start'), '5');
   assert.ok(preview.querySelector('.collection-answer-key'));
   assert.match(preview.querySelector('.collection-export-actions').textContent, /Baixar PDF.*Baixar Word/s);
 
