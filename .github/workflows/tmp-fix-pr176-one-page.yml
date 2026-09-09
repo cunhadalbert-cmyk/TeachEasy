@@ -1,0 +1,67 @@
+name: Temp fix PR176 one-page activity
+
+on:
+  push:
+    branches:
+      - revisao/4ano-3b-portugues-completa-v3
+    paths:
+      - .github/workflows/tmp-fix-pr176-one-page.yml
+
+permissions:
+  contents: write
+
+jobs:
+  patch-and-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - name: Restaurar padrão de uma folha para atividades com 8 questões
+        run: |
+          node - <<'NODE'
+          const fs = require('fs');
+
+          const libPath = 'biblioteca.js';
+          let lib = fs.readFileSync(libPath, 'utf8');
+          const oldBlock = `        <ol class="question-list collection-question-list">\${questionMarkup(activity, activity.questions.slice(0, activity.questions.length > 6 ? 4 : 3))}</ol>
+      </section>
+
+      <section class="worksheet-page collection-student-page collection-student-page-two">
+        <ol class="question-list collection-question-list" start="\${activity.questions.length > 6 ? 5 : 4}">\${questionMarkup(activity, activity.questions.slice(activity.questions.length > 6 ? 4 : 3, activity.questions.length > 6 ? 8 : 6))}</ol>
+      </section>`;
+          const newBlock = `        <ol class="question-list collection-question-list">\${questionMarkup(activity, activity.questions.slice(0, activity.questions.length > 6 ? 8 : 3))}</ol>
+      </section>
+
+      \${activity.questions.length > 6 ? '' : \`
+      <section class="worksheet-page collection-student-page collection-student-page-two">
+        <ol class="question-list collection-question-list" start="4">\${questionMarkup(activity, activity.questions.slice(3, 6))}</ol>
+      </section>
+      \`}`;
+          if (!lib.includes(oldBlock)) throw new Error('Bloco 4+4 não encontrado em biblioteca.js.');
+          lib = lib.replace(oldBlock, newBlock);
+          fs.writeFileSync(libPath, lib, 'utf8');
+
+          const testPath = 'tests/library.test.mjs';
+          let tests = fs.readFileSync(testPath, 'utf8');
+          const marker = "  assert.ok(window.document.querySelector('.collection-student-page .support-text'));\n  assert.equal(window.document.querySelectorAll('.collection-question-list > li').length, 8);";
+          const replacement = "  assert.ok(window.document.querySelector('.collection-student-page .support-text'));\n  assert.equal(window.document.querySelectorAll('.collection-student-page').length, 1);\n  assert.equal(window.document.querySelectorAll('.collection-question-list > li').length, 8);";
+          if (!tests.includes(marker)) throw new Error('Ponto do teste de Português não encontrado.');
+          tests = tests.replace(marker, replacement);
+          fs.writeFileSync(testPath, tests, 'utf8');
+          NODE
+      - name: Validar coleção
+        run: node scripts/validate-activity-collection.mjs data/atividades/fundamental-anos-iniciais/4-ano/3-bimestre/lingua-portuguesa.json
+      - name: Testar Biblioteca, BNCC e padrão V3
+        run: node --test --test-reporter=spec tests/library.test.mjs tests/bncc-gabarito.test.mjs tests/portuguese-fourth-grade-third-term-v3.test.mjs
+      - name: Commitar correção e remover workflow temporário
+        run: |
+          rm .github/workflows/tmp-fix-pr176-one-page.yml
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add biblioteca.js tests/library.test.mjs .github/workflows/tmp-fix-pr176-one-page.yml
+          git commit -m "Restaura atividade de 8 questões em uma única folha"
+          git push
