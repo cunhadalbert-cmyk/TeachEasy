@@ -1,0 +1,74 @@
+name: Temp fix PR176 library tests
+
+on:
+  push:
+    branches:
+      - revisao/4ano-3b-portugues-completa-v3
+    paths:
+      - .github/workflows/tmp-fix-pr176-library-tests.yml
+
+permissions:
+  contents: write
+
+jobs:
+  patch-and-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - name: Atualizar testes legados para o padrão editorial V3
+        run: |
+          node - <<'NODE'
+          const fs = require('fs');
+          const p = 'tests/library.test.mjs';
+          let s = fs.readFileSync(p, 'utf8');
+
+          s = s.replace(
+            "const [html, catalogScript, script, scienceCollection, mathCollection, portugueseCollection] = await Promise.all([",
+            "const [html, catalogScript, script, compatibilityScript, scienceCollection, mathCollection, portugueseCollection] = await Promise.all(["
+          );
+          s = s.replace(
+            "    readFile(new URL('../biblioteca.js', import.meta.url), 'utf8'),\n    readFile(new URL('../data/atividades/fundamental-anos-iniciais/4-ano/3-bimestre/ciencias.json', import.meta.url), 'utf8'),",
+            "    readFile(new URL('../biblioteca.js', import.meta.url), 'utf8'),\n    readFile(new URL('../library-collection-schema-compat.js', import.meta.url), 'utf8'),\n    readFile(new URL('../data/atividades/fundamental-anos-iniciais/4-ano/3-bimestre/ciencias.json', import.meta.url), 'utf8'),"
+          );
+          s = s.replace(
+            "  window.fetch = async path => {\n    const collections = {",
+            "  window.fetch = async path => {\n    const cleanPath = String(path).split('?')[0];\n    const collections = {"
+          );
+          s = s.replace(
+            "    if (collections[path]) window.__fetchCalls.push(path);\n    else window.__assetFetchCalls.push(path);\n    return {\n      ok: Boolean(collections[path]) || (path.startsWith('assets/atividades/') && path !== missingAsset),\n      json: async () => JSON.parse(collections[path]),",
+            "    if (collections[cleanPath]) window.__fetchCalls.push(cleanPath);\n    else window.__assetFetchCalls.push(path);\n    return {\n      ok: Boolean(collections[cleanPath]) || (cleanPath.startsWith('assets/atividades/') && cleanPath !== missingAsset),\n      json: async () => JSON.parse(collections[cleanPath]),"
+          );
+          s = s.replace(
+            "  window.eval(catalogScript);\n  window.eval(script);\n  return window;",
+            "  window.eval(catalogScript);\n  window.eval(script);\n  window.eval(compatibilityScript);\n  return window;"
+          );
+          s = s.replace(
+            "['lingua-portuguesa.json', '4ano-3bimestre-lingua-portuguesa-v2', 'Língua Portuguesa', 50, 400]",
+            "['lingua-portuguesa.json', '4ano-3bimestre-lingua-portuguesa-v3-revisao-editorial', 'Língua Portuguesa', 50, 400]"
+          );
+          s = s.replace(
+            "assert.ok(skill.descricaoResumida.trim());",
+            "assert.ok(skill.habilidadeOficial.trim());"
+          );
+          s = s.replace(
+            "assert.equal(window.document.querySelectorAll('.collection-question-list > li').length, 6);",
+            "assert.equal(window.document.querySelectorAll('.collection-question-list > li').length, 8);"
+          );
+
+          fs.writeFileSync(p, s, 'utf8');
+          NODE
+      - name: Testar Biblioteca
+        run: node --test --test-reporter=spec tests/library.test.mjs tests/bncc-gabarito.test.mjs tests/portuguese-fourth-grade-third-term-v3.test.mjs
+      - name: Commitar correção e remover workflow temporário
+        run: |
+          rm .github/workflows/tmp-fix-pr176-library-tests.yml
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add tests/library.test.mjs .github/workflows/tmp-fix-pr176-library-tests.yml
+          git commit -m "Atualiza testes da Biblioteca para Português 4º ano 3º bimestre V3"
+          git push
