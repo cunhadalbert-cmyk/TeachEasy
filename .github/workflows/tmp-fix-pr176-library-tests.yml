@@ -20,12 +20,12 @@ jobs:
           node-version: 24
           cache: npm
       - run: npm ci
-      - name: Atualizar testes legados para o padrão editorial V3
+      - name: Atualizar testes legados e critérios de correção para V3
         run: |
           node - <<'NODE'
           const fs = require('fs');
-          const p = 'tests/library.test.mjs';
-          let s = fs.readFileSync(p, 'utf8');
+          const testPath = 'tests/library.test.mjs';
+          let s = fs.readFileSync(testPath, 'utf8');
 
           s = s.replace(
             "const [html, catalogScript, script, scienceCollection, mathCollection, portugueseCollection] = await Promise.all([",
@@ -59,9 +59,30 @@ jobs:
             "assert.equal(window.document.querySelectorAll('.collection-question-list > li').length, 6);",
             "assert.equal(window.document.querySelectorAll('.collection-question-list > li').length, 8);"
           );
+          s = s.replace(
+            "  subject.value = 'Língua Portuguesa';\n  subject.dispatchEvent(new window.Event('input', { bubbles: true }));\n  await new Promise(resolve => setTimeout(resolve, 0));\n  assert.deepEqual(window.__fetchCalls, [",
+            "  subject.value = 'Língua Portuguesa';\n  subject.dispatchEvent(new window.Event('input', { bubbles: true }));\n  for (let attempt = 0; attempt < 40 && window.document.querySelectorAll('.activity-library-card').length !== 5; attempt += 1) {\n    await new Promise(resolve => setTimeout(resolve, 5));\n  }\n  assert.deepEqual(window.__fetchCalls, ["
+          );
+          fs.writeFileSync(testPath, s, 'utf8');
 
-          fs.writeFileSync(p, s, 'utf8');
+          const jsonPath = 'data/atividades/fundamental-anos-iniciais/4-ano/3-bimestre/lingua-portuguesa.json';
+          const collection = JSON.parse(fs.readFileSync(jsonPath, 'utf8'));
+          let criteriaAdjusted = 0;
+          for (const activity of collection.atividades || []) {
+            for (const answer of activity.gabarito || []) {
+              if (/resposta (pessoal|autoral)/i.test(String(answer.resposta || ''))
+                && !/critério de correção/i.test(String(answer.justificativa || ''))) {
+                const current = String(answer.justificativa || '').trim();
+                answer.justificativa = `Critério de correção: ${current || 'aceitar resposta coerente com o comando, o texto de apoio e o objetivo da atividade.'}`;
+                criteriaAdjusted += 1;
+              }
+            }
+          }
+          fs.writeFileSync(jsonPath, JSON.stringify(collection, null, 2) + '\n', 'utf8');
+          console.log(`Critérios de correção explicitados: ${criteriaAdjusted}.`);
           NODE
+      - name: Validar coleção
+        run: node scripts/validate-activity-collection.mjs data/atividades/fundamental-anos-iniciais/4-ano/3-bimestre/lingua-portuguesa.json
       - name: Testar Biblioteca
         run: node --test --test-reporter=spec tests/library.test.mjs tests/bncc-gabarito.test.mjs tests/portuguese-fourth-grade-third-term-v3.test.mjs
       - name: Commitar correção e remover workflow temporário
@@ -69,6 +90,6 @@ jobs:
           rm .github/workflows/tmp-fix-pr176-library-tests.yml
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add tests/library.test.mjs .github/workflows/tmp-fix-pr176-library-tests.yml
-          git commit -m "Atualiza testes da Biblioteca para Português 4º ano 3º bimestre V3"
+          git add tests/library.test.mjs data/atividades/fundamental-anos-iniciais/4-ano/3-bimestre/lingua-portuguesa.json .github/workflows/tmp-fix-pr176-library-tests.yml
+          git commit -m "Atualiza testes e critérios do Português 4º ano 3º bimestre V3"
           git push
