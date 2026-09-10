@@ -1,0 +1,145 @@
+name: Corrigir descricoes visuais 4ano 3b LP
+
+on:
+  push:
+    branches:
+      - fix/4ano-3b-lp-ilustracoes-especificas
+
+permissions:
+  contents: write
+
+jobs:
+  corrigir:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Corrigir somente metadados visuais
+        shell: bash
+        run: |
+          node <<'NODE'
+          const fs = require('fs');
+          const path = 'data/atividades/fundamental-anos-iniciais/4-ano/3-bimestre/lingua-portuguesa.json';
+          const raw = fs.readFileSync(path, 'utf8');
+          const data = JSON.parse(raw);
+          const before = JSON.parse(JSON.stringify(data));
+
+          const isGeneric = (s) => typeof s === 'string' && s.startsWith('Ilustração relacionada a ') && s.includes('usada como apoio visual ao conteúdo da atividade');
+          const norm = (s) => String(s || '').replace(/\s+/g, ' ').trim();
+          const firstSentence = (s) => {
+            const t = norm(s);
+            const m = t.match(/^(.{1,260}?[.!?])(?:\s|$)/);
+            return m ? m[1] : t.slice(0, 260);
+          };
+
+          function visualType(activity) {
+            const c = norm(activity.textoApoio?.conteudo);
+            if (/tirinha tem três quadros|três quadros/i.test(c)) return 'quadrinhos';
+            if (/gráfico de barras|gráfico de colunas/i.test(c)) return 'grafico';
+            if (/infográfico/i.test(c)) return 'infografico';
+            if (/mapa simplificado|legenda:/i.test(c)) return 'mapa';
+            if (/campanha|cartaz:/i.test(c)) return 'cartaz';
+            if (/entrevistador:/i.test(c)) return 'entrevista';
+            if (/materiais:|como fazer:/i.test(c)) return 'instrucao';
+            if (/\n—|— /.test(activity.textoApoio?.conteudo || '')) return 'dialogo';
+            return 'cena';
+          }
+
+          function makeDescription(activity) {
+            const t = norm(activity.textoApoio?.titulo || activity.titulo);
+            const c = norm(activity.textoApoio?.conteudo);
+            if (!c) throw new Error(`Atividade sem texto de apoio: ${activity.id}`);
+            const kind = visualType(activity);
+            const prefix = {
+              quadrinhos: `Sequência visual em quadrinhos fiel ao texto “${t}”.`,
+              grafico: `Representação pedagógica fiel ao gráfico descrito no texto “${t}”.`,
+              infografico: `Infográfico pedagógico fiel aos dados do texto “${t}”.`,
+              mapa: `Mapa pedagógico fiel às posições e à legenda descritas no texto “${t}”.`,
+              cartaz: `Cartaz/cena de campanha escolar fiel ao texto “${t}”.`,
+              entrevista: `Cena de entrevista escolar fiel ao texto “${t}”.`,
+              instrucao: `Sequência visual do procedimento descrito no texto “${t}”.`,
+              dialogo: `Cena de diálogo fiel ao texto “${t}”.`,
+              cena: `Cena pedagógica específica e fiel ao texto “${t}”.`
+            }[kind];
+            return `${prefix} Representar concretamente esta situação: ${c} Manter os personagens, objetos, ambiente, ações e dados citados no texto; não acrescentar elementos que contradigam a narrativa ou a informação original.`;
+          }
+
+          function makeAlt(activity) {
+            const t = norm(activity.textoApoio?.titulo || activity.titulo);
+            const c = firstSentence(activity.textoApoio?.conteudo);
+            return `Cena baseada em “${t}”: ${c}`;
+          }
+
+          const genericActivities = data.atividades.filter(a =>
+            (a.figuras || []).some(f => isGeneric(f.descricao)) || isGeneric(a.ilustracao?.descricao)
+          );
+
+          if (genericActivities.length !== 36) {
+            throw new Error(`Esperadas 36 atividades com placeholder; encontradas ${genericActivities.length}.`);
+          }
+
+          for (const a of genericActivities) {
+            const desc = makeDescription(a);
+            const alt = makeAlt(a);
+            for (const f of (a.figuras || [])) {
+              if (isGeneric(f.descricao)) f.descricao = desc;
+              if (typeof f.textoAlternativo === 'string' && f.textoAlternativo.startsWith('Ilustração pedagógica relacionada à atividade')) {
+                f.textoAlternativo = alt;
+              }
+            }
+            if (isGeneric(a.ilustracao?.descricao)) a.ilustracao.descricao = desc;
+          }
+
+          const incoerente = data.atividades.find(a => a.titulo === 'Inferindo sentimentos pela imagem');
+          if (!incoerente) throw new Error('Atividade “Inferindo sentimentos pela imagem” não encontrada.');
+          const descEmocoes = 'Sequência de três quadrinhos: no primeiro, Nina segura uma folha e sorri ao mostrar seu desenho a um colega; no segundo, uma rajada de vento leva a folha para longe, aparece “FUUSH!” e Nina arregala os olhos; no terceiro, junto ao portão, o colega alcança a folha e a devolve, e Nina demonstra alívio dizendo “Ainda bem!”.';
+          const altEmocoes = 'Três quadrinhos mostram Nina exibindo seu desenho, a folha sendo levada pelo vento e o colega recuperando-a junto ao portão, enquanto Nina passa de surpresa a alívio.';
+          for (const f of (incoerente.figuras || [])) {
+            f.descricao = descEmocoes;
+            f.textoAlternativo = altEmocoes;
+          }
+          if (incoerente.ilustracao) incoerente.ilustracao.descricao = descEmocoes;
+
+          function stripVisualDescriptions(obj) {
+            const x = JSON.parse(JSON.stringify(obj));
+            for (const a of x.atividades || []) {
+              for (const f of (a.figuras || [])) {
+                delete f.descricao;
+                delete f.textoAlternativo;
+              }
+              if (a.ilustracao) delete a.ilustracao.descricao;
+            }
+            return x;
+          }
+
+          if (JSON.stringify(stripVisualDescriptions(before)) !== JSON.stringify(stripVisualDescriptions(data))) {
+            throw new Error('Validação falhou: houve alteração fora dos metadados visuais permitidos.');
+          }
+
+          const remaining = data.atividades.filter(a =>
+            (a.figuras || []).some(f => isGeneric(f.descricao)) || isGeneric(a.ilustracao?.descricao)
+          );
+          if (remaining.length !== 0) throw new Error(`Ainda restam ${remaining.length} atividades com placeholder.`);
+
+          if (/caderno|mochila/i.test(incoerente.ilustracao?.descricao || '')) {
+            throw new Error('A descrição incoerente de Inferindo sentimentos ainda contém caderno/mochila.');
+          }
+
+          fs.writeFileSync(path, JSON.stringify(data, null, 2) + '\n', 'utf8');
+          console.log(`OK: 36 placeholders corrigidos + 1 incoerência corrigida.`);
+          console.log(`Atividades: ${data.atividades.length}`);
+          console.log('Alterações restritas a descricao/textoAlternativo de figura e descricao de ilustracao.');
+          NODE
+
+      - name: Remover workflow temporario e publicar a correcao na branch
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git rm .github/workflows/tmp-fix-4ano-3b-lp-visual.yml
+          git add data/atividades/fundamental-anos-iniciais/4-ano/3-bimestre/lingua-portuguesa.json
+          git commit -m "Corrige 37 descrições visuais do Português 4º ano 3º bimestre"
+          git push origin HEAD:fix/4ano-3b-lp-ilustracoes-especificas
