@@ -1,0 +1,126 @@
+name: Temp corrige figuras LP 4ano 3b v2
+
+on:
+  push:
+    branches:
+      - fix/lp-4ano-3b-figuras-especificas
+    paths:
+      - .github/workflows/tmp-corrige-figuras-lp-4ano-3b-v2.yml
+
+permissions:
+  contents: write
+
+jobs:
+  corrigir-e-validar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - name: Corrigir descrições visuais
+        run: |
+          node - <<'NODE'
+          const fs = require('fs');
+          const path = 'data/atividades/fundamental-anos-iniciais/4-ano/3-bimestre/lingua-portuguesa.json';
+          const data = JSON.parse(fs.readFileSync(path, 'utf8'));
+          const descricoes = {
+            "Informação ou opinião?": "Um estudante analisa, na biblioteca escolar, uma notícia impressa sobre a chegada de livros novos, destacando informações verificáveis com marcadores enquanto pilhas de livros catalogados aparecem ao lado.",
+            "Produzindo uma notícia escolar": "Dois estudantes observam uma feira de ciências no pátio da escola, com filtro de água, horta em garrafa e maquete de energia solar, enquanto anotam as informações principais para produzir uma notícia.",
+            "Descobrindo informações científicas": "Uma abelha pousa em flores e transporta pólen entre elas; ao fundo aparecem plantas com frutos e sementes, mostrando visualmente a relação entre polinização e formação de alimentos.",
+            "Organizando informações de uma pesquisa": "Estudantes na biblioteca organizam os resultados de uma pesquisa sobre preferências de leitura em uma tabela e um gráfico visual, com livros de aventura, quadrinhos, contos e poesia ao redor.",
+            "Personagens, acontecimentos e sentidos": "Clara encontra uma pequena chave enferrujada perto do canteiro; o avô aponta para um baú antigo no depósito, onde aparecem cartas e fotografias da família.",
+            "Escrevendo uma narrativa curta": "Um estudante planeja uma narrativa curta usando três cartões ilustrados que representam início, problema e desfecho, enquanto escreve e revisa o texto no caderno.",
+            "Acento, sílaba forte e busca no dicionário": "Na sala de aula, um estudante marca a sílaba forte de palavras em cartões enquanto outro consulta um dicionário aberto; caderno e lápis ficam sobre a mesa.",
+            "Quem escreve, para quem e por quê": "Uma estudante escreve uma carta para uma tia, com envelope ao lado e elementos de uma apresentação teatral escolar ao fundo, deixando clara a situação de quem escreve, para quem e com qual finalidade.",
+            "Como se organiza um verbete": "Um estudante consulta uma enciclopédia infantil aberta em uma página ilustrada sobre o boto-cor-de-rosa e observa blocos visuais de título, definição e curiosidades sem texto legível.",
+            "Versos, estrofes e o som das palavras": "Uma criança observa a chuva batendo no telhado e molhando uma goiabeira, enquanto um tênis pendurado e pequenos filetes de água na calçada reproduzem a cena descrita no poema.",
+            "Meu ponto de vista, na ordem certa": "Uma estudante chega preocupada ao portão da escola enquanto a turma participa de uma apresentação de dança ao fundo; a cena destaca a sequência dos acontecimentos e a mudança de expectativa da personagem.",
+            "Conflito e desfecho no conto popular": "Vovó Chica serve café usando uma cuia especial enquanto um vizinho observa a cena; os gestos dos personagens sugerem o conflito e a atitude generosa que conduz ao desfecho do conto.",
+            "Perguntar para descobrir": "Uma criança repórter entrevista Seu Raimundo, um carteiro experiente, segurando um bloco de perguntas enquanto ele responde ao lado de sua bolsa de correspondências.",
+            "Travessão, dois-pontos e a fala das personagens": "Marina e Téo conversam no corredor da escola; Marina faz um gesto de pergunta e Téo responde segurando um livro, destacando visualmente a alternância das falas sem texto escrito.",
+            "Palavras que evitam repetição": "Duas crianças revisam um texto sobre um cachorro da praça; cartões visuais com o mesmo animal e setas ajudam a representar diferentes formas de retomá-lo no texto sem repetição excessiva.",
+            "Escrever e revisar um parágrafo claro": "Um estudante revisa cuidadosamente um parágrafo sobre a horta escolar, reorganizando frases no caderno e comparando o texto com uma pequena imagem da horta.",
+            "Manchete, lide e corpo da notícia": "Um estudante analisa uma notícia impressa e usa quatro marcações visuais para identificar manchete, lide, imagem e corpo da notícia, sem qualquer resposta escrita na ilustração.",
+            "Fato, opinião e fonte da informação": "Dois estudantes comparam uma notícia escolar e fichas de fontes, separando visualmente fatos verificáveis de opiniões atribuídas a pessoas entrevistadas.",
+            "Revisando uma notícia escolar": "Um pequeno grupo revisa uma notícia escolar sobre um acontecimento, conferindo fotografia, anotações e a ordem das informações antes da versão final.",
+            "Ciência no cotidiano: como o texto explica": "Estudantes exploram um material de divulgação científica infantil com imagens de um fenômeno cotidiano, observando evidências e registrando uma explicação no caderno.",
+            "Lendo dados de uma pesquisa escolar": "Um estudante compara uma tabela, um gráfico de barras e um diagrama simples com os mesmos dados de uma pesquisa da turma, registrando conclusões no caderno.",
+            "Narrador, cenário e sequência de acontecimentos": "Uma estudante lê uma narrativa e organiza cartões ilustrados de narrador, cenário e acontecimentos em ordem, relacionando-os ao texto lido.",
+            "Planejando começo, conflito e desfecho": "Um estudante planeja uma narrativa ficcional com três cartões ilustrados para começo, conflito e desfecho, enquanto inicia a escrita no caderno.",
+            "Acentuação em palavras do cotidiano": "Um estudante separa cartões de palavras conforme a sílaba tônica e confere acentos gráficos em um dicionário aberto, com lápis e caderno de revisão ao lado.",
+            "Carta pessoal: saudação, mensagem e despedida": "Uma criança escreve uma carta pessoal em uma folha, com envelope ao lado, revisando visualmente a saudação, a mensagem e a despedida antes de fechar a correspondência.",
+            "Verbete: definição, detalhes e curiosidades": "Dois estudantes montam a estrutura de um verbete de enciclopédia infantil com uma imagem central e blocos visuais para definição, detalhes e curiosidades, sem texto legível.",
+            "Rimas e imagens poéticas": "Uma estudante lê um poema ilustrado e associa pares de rimas a imagens poéticas usando tiras coloridas, observando também a divisão entre versos e estrofes.",
+            "Balões, expressões e onomatopeias": "Dois estudantes analisam uma história em quadrinhos de três quadros com personagens em ação, balões, expressões faciais e sinais de onomatopeia sem texto legível.",
+            "Instruções claras e ordem das ações": "Um estudante segue cartões ilustrados em sequência para montar um brinquedo simples de papel, com materiais organizados sobre a mesa e cada etapa claramente representada.",
+            "Relato em primeira pessoa": "Uma estudante organiza fotografias de uma experiência escolar em ordem cronológica e registra no caderno um relato a partir de sua própria perspectiva.",
+            "Personagem, conflito e solução": "Crianças leem um conto popular brasileiro e organizam cartões ilustrados para personagem principal, conflito e solução, acompanhando a sequência narrativa.",
+            "Entrevista: roteiro e respostas": "Um estudante entrevista um funcionário da escola usando um roteiro de perguntas e um gravador simples, enquanto um colega registra as respostas no caderno.",
+            "Campanha: informação, opinião e chamada à ação": "Estudantes analisam um cartaz de campanha educativa escolar e fichas com afirmações, distinguindo visualmente informação, opinião e chamada à ação sem mostrar respostas prontas.",
+            "Pontuação que organiza o diálogo": "Marina e Téo conversam no corredor da escola; Marina faz um gesto de pergunta e Téo responde com um livro nas mãos, destacando turnos de fala e diferentes entonações sem texto legível.",
+            "Pronomes e palavras que retomam ideias": "Um estudante revisa um parágrafo e usa setas e cartões visuais para ligar pronomes e outras palavras ao mesmo personagem, mostrando como as retomadas mantêm a continuidade do texto.",
+            "Revisando a organização dos parágrafos": "Um estudante revisa um texto em tiras de frases, reorganizando ideias, marcando o início de parágrafos e passando a versão final para o caderno de forma clara e ordenada."
+          };
+          if (!Array.isArray(data.atividades) || data.atividades.length !== 50) throw new Error(`Esperadas 50 atividades; encontrado ${data.atividades?.length}.`);
+          const genericas = data.atividades.filter(a => (a.figuras || []).some(f => /Ilustração relacionada a/i.test(f.descricao || '')) || /Ilustração relacionada a/i.test(a.ilustracao?.descricao || ''));
+          if (genericas.length !== 36) throw new Error(`Esperadas 36 atividades com placeholder; encontrado ${genericas.length}.`);
+          const faltantes = genericas.filter(a => !descricoes[a.titulo]).map(a => a.titulo);
+          if (faltantes.length) throw new Error(`Sem descrição específica para: ${faltantes.join(' | ')}`);
+          const alteradas = new Set();
+          for (const atividade of genericas) {
+            const descricao = descricoes[atividade.titulo];
+            for (const figura of atividade.figuras || []) {
+              if (/Ilustração relacionada a/i.test(figura.descricao || '')) {
+                figura.descricao = descricao;
+                figura.textoAlternativo = descricao;
+              }
+            }
+            if (/Ilustração relacionada a/i.test(atividade.ilustracao?.descricao || '')) atividade.ilustracao.descricao = descricao;
+            alteradas.add(atividade.titulo);
+          }
+          const sentimentos = data.atividades.find(a => a.titulo === 'Inferindo sentimentos pela imagem');
+          if (!sentimentos) throw new Error('Atividade “Inferindo sentimentos pela imagem” não encontrada.');
+          const descricaoSentimentos = 'Sequência de três cenas: Nina mostra seu desenho sorrindo a um colega; uma rajada de vento leva a folha e Nina se assusta; o colega alcança a folha junto ao portão e a devolve, deixando Nina aliviada.';
+          for (const figura of sentimentos.figuras || []) {
+            figura.descricao = descricaoSentimentos;
+            figura.textoAlternativo = descricaoSentimentos;
+          }
+          if (sentimentos.ilustracao) sentimentos.ilustracao.descricao = descricaoSentimentos;
+          alteradas.add(sentimentos.titulo);
+          const placeholders = [];
+          for (const atividade of data.atividades) {
+            for (const figura of atividade.figuras || []) if (/Ilustração relacionada a/i.test(figura.descricao || '')) placeholders.push(`${atividade.titulo}/figuras`);
+            if (/Ilustração relacionada a/i.test(atividade.ilustracao?.descricao || '')) placeholders.push(`${atividade.titulo}/ilustracao`);
+            if (atividade.quantidadeQuestoes !== 8 || atividade.questoes?.length !== 8 || atividade.gabarito?.length !== 8) throw new Error(`Estrutura de 8 questões/gabarito alterada em: ${atividade.titulo}`);
+          }
+          if (placeholders.length) throw new Error(`Placeholders restantes: ${placeholders.join(' | ')}`);
+          if (alteradas.size !== 37) throw new Error(`Esperadas 37 atividades corrigidas; encontrado ${alteradas.size}.`);
+          fs.writeFileSync(path, JSON.stringify(data, null, 2) + '\n', 'utf8');
+          console.log(`OK: ${alteradas.size} atividades visuais corrigidas; 0 placeholders restantes.`);
+          NODE
+      - name: Validar coleção
+        run: npm run validate:portugues-4ano-3b
+      - name: Confirmar ausência de placeholders
+        run: |
+          node - <<'NODE'
+          const fs = require('fs');
+          const p = 'data/atividades/fundamental-anos-iniciais/4-ano/3-bimestre/lingua-portuguesa.json';
+          const raw = fs.readFileSync(p, 'utf8');
+          if (/Ilustração relacionada a/i.test(raw)) throw new Error('Ainda existe placeholder visual no JSON.');
+          if (!raw.includes('uma rajada de vento leva a folha')) throw new Error('Correção de “Inferindo sentimentos” não encontrada.');
+          console.log('Validação visual textual: OK');
+          NODE
+      - name: Commitar correção e remover workflows temporários
+        run: |
+          rm -f .github/workflows/tmp-corrige-figuras-lp-4ano-3b.yml
+          rm -f .github/workflows/tmp-corrige-figuras-lp-4ano-3b-v2.yml
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/atividades/fundamental-anos-iniciais/4-ano/3-bimestre/lingua-portuguesa.json .github/workflows/tmp-corrige-figuras-lp-4ano-3b.yml .github/workflows/tmp-corrige-figuras-lp-4ano-3b-v2.yml
+          git commit -m "Corrige descrições visuais do Português 4º ano 3º bimestre"
+          git push
