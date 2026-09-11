@@ -99,11 +99,11 @@
       }
 
       .te-final-visual img {
-        width: 100% !important;
-        height: 100% !important;
-        max-width: none !important;
-        max-height: none !important;
-        object-fit: cover !important;
+        width: auto !important;
+        height: auto !important;
+        max-width: 86% !important;
+        max-height: 86% !important;
+        object-fit: contain !important;
         object-position: center center !important;
         display: block;
       }
@@ -166,9 +166,11 @@
         }
 
         .te-final-visual img {
-          width: 100% !important;
-          height: 100% !important;
-          object-fit: cover !important;
+          width: auto !important;
+          height: auto !important;
+          max-width: 86% !important;
+          max-height: 86% !important;
+          object-fit: contain !important;
           object-position: center center !important;
         }
       }
