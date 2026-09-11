@@ -91,7 +91,7 @@
         min-height: 0 !important;
         width: 100%;
         height: 100%;
-        padding: 0 !important;
+        padding: 2mm !important;
         overflow: hidden !important;
         display: flex;
         align-items: center;
@@ -101,8 +101,8 @@
       .te-final-visual img {
         width: auto !important;
         height: auto !important;
-        max-width: 86% !important;
-        max-height: 86% !important;
+        max-width: 100% !important;
+        max-height: 100% !important;
         object-fit: contain !important;
         object-position: center center !important;
         display: block;
@@ -165,11 +165,15 @@
           margin-top: 2mm !important;
         }
 
+        .te-final-visual {
+          padding: 2mm !important;
+        }
+
         .te-final-visual img {
           width: auto !important;
           height: auto !important;
-          max-width: 86% !important;
-          max-height: 86% !important;
+          max-width: 100% !important;
+          max-height: 100% !important;
           object-fit: contain !important;
           object-position: center center !important;
         }
