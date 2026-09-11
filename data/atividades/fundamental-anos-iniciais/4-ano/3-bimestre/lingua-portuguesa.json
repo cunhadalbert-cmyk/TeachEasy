@@ -572,8 +572,8 @@
           "arquivo": "assets/atividades/lingua-portuguesa/descobrindo-informacoes-cientificas.png",
           "arquivoValidado": true,
           "posicaoSugerida": "antes-das-questoes",
-          "textoAlternativo": "Uma abelha pousa em flores e transporta pólen entre elas; ao fundo aparecem plantas com frutos e sementes, mostrando visualmente a relação entre polinização e formação de alimentos.",
-          "descricao": "Uma abelha pousa em flores e transporta pólen entre elas; ao fundo aparecem plantas com frutos e sementes, mostrando visualmente a relação entre polinização e formação de alimentos.",
+          "textoAlternativo": "Uma estudante observa uma folha com uma lupa enquanto um esquema visual destaca a clorofila, a luz e a água, relacionando esses elementos à produção de alimento pelas plantas e à explicação sobre a mudança de cor das folhas.",
+          "descricao": "Uma estudante observa uma folha com uma lupa enquanto um esquema visual destaca a clorofila, a luz e a água, relacionando esses elementos à produção de alimento pelas plantas e à explicação sobre a mudança de cor das folhas.",
           "funcaoPedagogica": "Apoiar visualmente a compreensão do conteúdo trabalhado em “Descobrindo informações científicas”.",
           "compativelPretoBranco": true
         }
@@ -585,7 +585,7 @@
         {
           "numero": 1,
           "tipo": "resposta-curta",
-          "enunciado": "Qual é o assunto científico principal do texto “Descobrindo informações científicas”?",
+          "enunciado": "Qual é o assunto científico principal apresentado no texto sobre a mudança de cor das folhas?",
           "alternativas": [],
           "espacoResposta": "medio",
           "figuraId": null
@@ -660,7 +660,7 @@
         },
         {
           "numero": 3,
-          "resposta": "Com menos luz, algumas plantas reduzem a clorofila e outros pigmentos tornam-se mais visíveis.",
+          "resposta": "Com menos luz, a produção de clorofila diminui e a clorofila presente nas folhas começa a se decompor, fazendo com que outros pigmentos fiquem mais visíveis.",
           "justificativa": "A resposta deve recuperar a sequência explicativa apresentada."
         },
         {
@@ -704,13 +704,13 @@
       },
       "textoApoio": {
         "titulo": "Por que as folhas mudam de cor?",
-        "conteudo": "As folhas das plantas produzem alimento usando luz, água e gás carbônico. A clorofila é o pigmento verde que participa desse processo. Quando há menos luz em determinadas épocas do ano, algumas plantas reduzem a produção de clorofila e outros pigmentos ficam mais visíveis. Por isso, certas folhas passam do verde para tons amarelados ou avermelhados antes de cair. Nem todas as árvores perdem as folhas ao mesmo tempo, porque as espécies respondem de modos diferentes ao ambiente."
+        "conteudo": "As folhas das plantas produzem alimento usando luz, água e gás carbônico. A clorofila é o pigmento verde que participa desse processo. Quando os dias ficam mais curtos e há menos luz, em algumas plantas a produção de clorofila diminui e a clorofila presente nas folhas começa a se decompor. Assim, outros pigmentos ficam mais visíveis. Por isso, certas folhas passam do verde para tons amarelados ou avermelhados antes de cair. Nem todas as árvores perdem as folhas ao mesmo tempo, porque as espécies respondem de modos diferentes ao ambiente."
       },
       "bnccConferida": true,
       "padraoPedagogico": "teacheasy-v2",
       "ilustracao": {
         "objetivoPedagogico": "Apoiar a compreensão de “Descobrindo informações científicas” com uma representação visual coerente com o texto e o objetivo da atividade.",
-        "descricao": "Uma abelha pousa em flores e transporta pólen entre elas; ao fundo aparecem plantas com frutos e sementes, mostrando visualmente a relação entre polinização e formação de alimentos.",
+        "descricao": "Uma estudante observa uma folha com uma lupa enquanto um esquema visual destaca a clorofila, a luz e a água, relacionando esses elementos à produção de alimento pelas plantas e à explicação sobre a mudança de cor das folhas.",
         "status": "produzida-pendente-conferencia-visual",
         "estilo": "TeachEasy — ilustração pedagógica de Língua Portuguesa adequada ao 4º ano",
         "arquivo": "assets/atividades/lingua-portuguesa/descobrindo-informacoes-cientificas.png"
