@@ -43,17 +43,16 @@
     return document.querySelector(selector)?.value?.trim() || '';
   }
 
-  function lineValue(value, fallback) {
-    return cleanText(value) || fallback;
-  }
-
   function textRun(docx, text, options = {}) {
     return new docx.TextRun({
       text,
       bold: Boolean(options.bold),
       size: options.size || 19,
       color: options.color || '202020',
-      font: 'Arial'
+      font: 'Arial',
+      underline: options.underline
+        ? { type: docx.UnderlineType.SINGLE, color: options.underlineColor || '555555' }
+        : undefined
     });
   }
 
@@ -79,29 +78,47 @@
     return { top: none, bottom: none, left: none, right: none, insideHorizontal: none, insideVertical: none };
   }
 
-  function thinBorders(docx) {
-    const line = { style: docx.BorderStyle.SINGLE, size: 4, color: '777777' };
-    return { top: line, bottom: line, left: line, right: line, insideHorizontal: line, insideVertical: line };
+  function headerOuterBorders(docx) {
+    const black = { style: docx.BorderStyle.SINGLE, size: 8, color: '000000' };
+    const none = { style: docx.BorderStyle.NONE, size: 0, color: 'FFFFFF' };
+    return {
+      top: black,
+      bottom: black,
+      left: black,
+      right: black,
+      insideHorizontal: none,
+      insideVertical: none
+    };
   }
 
-  function headerCell(docx, label, value, width) {
-    const shown = lineValue(value, '____________________');
+  function fieldLineText(value, slots) {
+    const shown = cleanText(value);
+    const missing = Math.max(3, slots - shown.length);
+    return `${shown}${'\u00A0'.repeat(missing)}`;
+  }
+
+  function headerCell(docx, label, value, width, slots) {
     return new docx.TableCell({
       width: { size: width, type: docx.WidthType.DXA },
+      borders: noBorders(docx),
       verticalAlign: docx.VerticalAlign.CENTER,
-      margins: { top: 55, bottom: 55, left: 80, right: 80 },
+      margins: { top: 85, bottom: 85, left: 110, right: 110 },
       children: [new docx.Paragraph({
         spacing: { before: 0, after: 0, line: 210 },
         children: [
-          textRun(docx, `${label} `, { bold: true, size: 18 }),
-          textRun(docx, shown, { size: 18 })
+          textRun(docx, `${label} `, { bold: true, size: 18, color: '111111' }),
+          textRun(docx, fieldLineText(value, slots), {
+            size: 18,
+            color: '222222',
+            underline: true,
+            underlineColor: '555555'
+          })
         ]
       })]
     });
   }
 
   function compactHeader(docx) {
-    const name = '________________________________';
     const className = inputValue('#header-class');
     const date = inputValue('#header-date');
     const school = inputValue('#header-school');
@@ -109,19 +126,22 @@
 
     return new docx.Table({
       width: { size: 10772, type: docx.WidthType.DXA },
-      borders: thinBorders(docx),
+      layout: docx.TableLayoutType.FIXED,
+      borders: headerOuterBorders(docx),
       rows: [
         new docx.TableRow({
+          cantSplit: true,
           children: [
-            headerCell(docx, 'Nome:', name, 5925),
-            headerCell(docx, 'Turma:', className, 1850),
-            headerCell(docx, 'Data:', date, 2997)
+            headerCell(docx, 'Nome:', '', 5925, 30),
+            headerCell(docx, 'Turma:', className, 1850, 7),
+            headerCell(docx, 'Data:', date, 2997, 13)
           ]
         }),
         new docx.TableRow({
+          cantSplit: true,
           children: [
-            headerCell(docx, 'Escola:', school, 6250),
-            headerCell(docx, 'Prof.:', teacher, 4522)
+            headerCell(docx, 'Escola:', school, 6250, 31),
+            headerCell(docx, 'Prof.:', teacher, 4522, 23)
           ]
         })
       ]
