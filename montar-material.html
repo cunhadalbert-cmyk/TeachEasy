@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Monte atividades usando somente questões já existentes e revisadas na Biblioteca TeachEasy.">
+  <title>Montar Meu Material — TeachEasy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Libre+Franklin:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="montar-material.css?v=20260914-v1">
+</head>
+<body>
+  <a class="skip-link" href="#montador">Pular para o montador</a>
+
+  <header class="builder-header">
+    <a class="brand" href="index.html" aria-label="Página inicial TeachEasy">
+      <strong>TeachEasy</strong>
+      <span>Montar Meu Material</span>
+    </a>
+    <nav class="header-actions" aria-label="Ações principais">
+      <a class="btn btn-outline" href="biblioteca.html">← Biblioteca</a>
+      <button class="btn btn-outline" id="clear-material" type="button">Limpar montagem</button>
+    </nav>
+  </header>
+
+  <main id="montador" class="builder-main">
+    <section class="builder-intro">
+      <div>
+        <span class="eyebrow">SEM GERAÇÃO POR IA</span>
+        <h1>Escolha questões da Biblioteca e monte seu material.</h1>
+        <p>O TeachEasy não altera o conteúdo pedagógico. Texto, imagem, questão, resposta e BNCC vêm da atividade original.</p>
+      </div>
+      <div class="coherence-note">
+        <strong>Coerência preservada</strong>
+        <span>Quando uma questão pertence a uma atividade com texto ou figura, o contexto original acompanha aquele bloco no material final.</span>
+      </div>
+    </section>
+
+    <section class="source-filters" aria-labelledby="source-filter-title">
+      <div>
+        <h2 id="source-filter-title">1. Encontre uma atividade</h2>
+        <p>Nesta primeira versão, o montador usa as coleções com questões do Ensino Fundamental.</p>
+      </div>
+      <form id="source-form">
+        <label>
+          <span>Ano</span>
+          <select name="year" required>
+            <option value="">Escolha</option>
+            <option value="1">1º ano</option>
+            <option value="2">2º ano</option>
+            <option value="3">3º ano</option>
+            <option value="4">4º ano</option>
+            <option value="5">5º ano</option>
+            <option value="6">6º ano</option>
+            <option value="7">7º ano</option>
+            <option value="8">8º ano</option>
+            <option value="9">9º ano</option>
+          </select>
+        </label>
+        <label>
+          <span>Bimestre</span>
+          <select name="term" required>
+            <option value="">Escolha</option>
+            <option value="1">1º bimestre</option>
+            <option value="2">2º bimestre</option>
+            <option value="3">3º bimestre</option>
+            <option value="4">4º bimestre</option>
+          </select>
+        </label>
+        <label>
+          <span>Disciplina</span>
+          <select name="subject" required>
+            <option value="">Escolha</option>
+          </select>
+        </label>
+        <button class="btn btn-primary" type="submit">Carregar atividades</button>
+      </form>
+      <p class="form-status" id="source-status" role="status" aria-live="polite"></p>
+    </section>
+
+    <section class="builder-grid">
+      <aside class="panel library-panel" aria-labelledby="activity-list-title">
+        <div class="panel-heading">
+          <span>ETAPA 1</span>
+          <h2 id="activity-list-title">Atividades</h2>
+        </div>
+        <label class="search-field">
+          <span class="sr-only">Buscar atividade</span>
+          <input id="activity-search" type="search" placeholder="Buscar pelo título..." disabled>
+        </label>
+        <div class="activity-list" id="activity-list">
+          <div class="empty-panel">Escolha ano, bimestre e disciplina para carregar a Biblioteca.</div>
+        </div>
+      </aside>
+
+      <section class="panel activity-panel" aria-labelledby="opened-activity-title">
+        <div class="panel-heading">
+          <span>ETAPA 2</span>
+          <h2 id="opened-activity-title">Abra uma atividade</h2>
+        </div>
+        <div id="opened-activity" class="opened-activity">
+          <div class="empty-panel">A atividade completa aparecerá aqui. Depois, marque somente as questões que deseja usar.</div>
+        </div>
+      </section>
+
+      <aside class="panel material-panel" aria-labelledby="material-title">
+        <div class="panel-heading material-heading">
+          <div>
+            <span>ETAPA 3</span>
+            <h2 id="material-title">Meu Material</h2>
+          </div>
+          <strong id="material-count">0 questões</strong>
+        </div>
+        <div id="material-summary" class="material-summary">
+          <div class="empty-panel">As questões escolhidas aparecerão aqui, agrupadas pela atividade de origem.</div>
+        </div>
+        <button class="btn btn-primary btn-full" id="open-preview" type="button" disabled>Visualizar material</button>
+      </aside>
+    </section>
+  </main>
+
+  <dialog class="preview-dialog" id="preview-dialog" aria-labelledby="preview-dialog-title">
+    <button class="dialog-close" id="preview-close" type="button" aria-label="Fechar prévia">×</button>
+    <div class="preview-toolbar">
+      <div>
+        <span class="eyebrow">PRÉVIA A4</span>
+        <h2 id="preview-dialog-title">Material do professor</h2>
+      </div>
+      <div class="preview-actions">
+        <button class="btn btn-outline" id="print-material" type="button">Imprimir / PDF</button>
+        <button class="btn btn-primary" id="download-word" type="button">Baixar Word (.doc)</button>
+      </div>
+    </div>
+
+    <section class="header-editor" aria-labelledby="header-editor-title">
+      <div>
+        <h3 id="header-editor-title">Cabeçalho</h3>
+        <p>Preencha somente o que quiser mostrar na folha.</p>
+      </div>
+      <div class="header-editor-grid">
+        <label><span>Escola</span><input id="header-school" type="text" autocomplete="organization"></label>
+        <label><span>Professor(a)</span><input id="header-teacher" type="text"></label>
+        <label><span>Turma</span><input id="header-class" type="text"></label>
+        <label><span>Data</span><input id="header-date" type="text" placeholder="____/____/______"></label>
+        <label class="title-field"><span>Título do material</span><input id="material-custom-title" type="text"></label>
+      </div>
+    </section>
+
+    <div id="print-area" class="print-area"></div>
+  </dialog>
+
+  <div class="toast" id="builder-toast" role="status" aria-live="polite"></div>
+
+  <script src="library-catalog.js?v=20260818-catalogo-unico-v1"></script>
+  <script src="montar-material.js?v=20260914-v1"></script>
+</body>
+</html>
