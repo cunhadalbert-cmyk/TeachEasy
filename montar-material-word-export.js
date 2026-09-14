@@ -310,7 +310,7 @@
 
     for (let i = 0; i < answerLineCount; i += 1) {
       output.push(new docx.Paragraph({
-        spacing: { before: i === 0 ? 100 : 0, after: 28, line: 190 },
+        spacing: { before: i === 0 ? 240 : 0, after: 28, line: 190 },
         children: [textRun(docx, '________________________________________________________________________________', { size: 13, color: '8A8A8A' })]
       }));
     }
