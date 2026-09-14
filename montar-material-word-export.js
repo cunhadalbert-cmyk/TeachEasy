@@ -78,8 +78,21 @@
     return { top: none, bottom: none, left: none, right: none, insideHorizontal: none, insideVertical: none };
   }
 
+  function edgeBorders(docx, edges = {}) {
+    const black = { style: docx.BorderStyle.SINGLE, size: 10, color: '000000' };
+    const none = { style: docx.BorderStyle.NONE, size: 0, color: 'FFFFFF' };
+    return {
+      top: edges.top ? black : none,
+      bottom: edges.bottom ? black : none,
+      left: edges.left ? black : none,
+      right: edges.right ? black : none,
+      insideHorizontal: none,
+      insideVertical: none
+    };
+  }
+
   function headerOuterBorders(docx) {
-    const black = { style: docx.BorderStyle.SINGLE, size: 8, color: '000000' };
+    const black = { style: docx.BorderStyle.SINGLE, size: 10, color: '000000' };
     const none = { style: docx.BorderStyle.NONE, size: 0, color: 'FFFFFF' };
     return {
       top: black,
@@ -91,28 +104,45 @@
     };
   }
 
+  function pageBorderOptions(docx) {
+    const border = {
+      style: docx.BorderStyle.SINGLE,
+      size: 10,
+      color: '000000',
+      space: 18
+    };
+
+    return {
+      pageBorderTop: { ...border },
+      pageBorderRight: { ...border },
+      pageBorderBottom: { ...border },
+      pageBorderLeft: { ...border },
+      pageBorders: {
+        display: docx.PageBorderDisplay.ALL_PAGES,
+        offsetFrom: docx.PageBorderOffsetFrom.PAGE,
+        zOrder: docx.PageBorderZOrder.FRONT
+      }
+    };
+  }
+
   function fieldLineText(value, slots) {
     const shown = cleanText(value);
     const missing = Math.max(3, slots - shown.length);
-    return `${shown}${'\u00A0'.repeat(missing)}`;
+    const line = '_'.repeat(missing);
+    return shown ? `${shown} ${line}` : '_'.repeat(slots);
   }
 
-  function headerCell(docx, label, value, width, slots) {
+  function headerCell(docx, label, value, width, slots, edges = {}) {
     return new docx.TableCell({
       width: { size: width, type: docx.WidthType.DXA },
-      borders: noBorders(docx),
+      borders: edgeBorders(docx, edges),
       verticalAlign: docx.VerticalAlign.CENTER,
       margins: { top: 85, bottom: 85, left: 110, right: 110 },
       children: [new docx.Paragraph({
         spacing: { before: 0, after: 0, line: 210 },
         children: [
           textRun(docx, `${label} `, { bold: true, size: 18, color: '111111' }),
-          textRun(docx, fieldLineText(value, slots), {
-            size: 18,
-            color: '222222',
-            underline: true,
-            underlineColor: '555555'
-          })
+          textRun(docx, fieldLineText(value, slots), { size: 18, color: '333333' })
         ]
       })]
     });
@@ -132,16 +162,16 @@
         new docx.TableRow({
           cantSplit: true,
           children: [
-            headerCell(docx, 'Nome:', '', 5925, 30),
-            headerCell(docx, 'Turma:', className, 1850, 7),
-            headerCell(docx, 'Data:', date, 2997, 13)
+            headerCell(docx, 'Nome:', '', 5925, 30, { top: true, left: true }),
+            headerCell(docx, 'Turma:', className, 1850, 7, { top: true }),
+            headerCell(docx, 'Data:', date, 2997, 13, { top: true, right: true })
           ]
         }),
         new docx.TableRow({
           cantSplit: true,
           children: [
-            headerCell(docx, 'Escola:', school, 6250, 31),
-            headerCell(docx, 'Prof.:', teacher, 4522, 23)
+            headerCell(docx, 'Escola:', school, 6250, 31, { bottom: true, left: true }),
+            headerCell(docx, 'Prof.:', teacher, 4522, 23, { bottom: true, right: true })
           ]
         })
       ]
@@ -403,7 +433,8 @@
         properties: {
           page: {
             size: { width: 11906, height: 16838 },
-            margin: { top: 567, right: 567, bottom: 567, left: 567, header: 260, footer: 260 }
+            margin: { top: 567, right: 567, bottom: 567, left: 567, header: 260, footer: 260 },
+            borders: pageBorderOptions(docx)
           }
         },
         children
