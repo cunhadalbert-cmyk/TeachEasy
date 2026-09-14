@@ -72,3 +72,17 @@ test('Word usa DOCX real, layout compacto e imagens padronizadas sem repetição
   assert.match(wordExportJs, /pageBreakBefore: true/);
   assert.doesNotMatch(wordExportJs, /application\/msword|\.doc';/);
 });
+
+test('Word reproduz cabeçalho visual com moldura preta e linhas dos campos', () => {
+  assert.match(wordExportJs, /headerOuterBorders\(docx\)/);
+  assert.match(wordExportJs, /color: '000000'/);
+  assert.match(wordExportJs, /insideHorizontal: none/);
+  assert.match(wordExportJs, /insideVertical: none/);
+  assert.match(wordExportJs, /UnderlineType\.SINGLE/);
+  assert.match(wordExportJs, /fieldLineText\(value, slots\)/);
+  assert.match(wordExportJs, /headerCell\(docx, 'Nome:'/);
+  assert.match(wordExportJs, /headerCell\(docx, 'Turma:'/);
+  assert.match(wordExportJs, /headerCell\(docx, 'Data:'/);
+  assert.match(wordExportJs, /headerCell\(docx, 'Escola:'/);
+  assert.match(wordExportJs, /headerCell\(docx, 'Prof\.:'/);
+});
