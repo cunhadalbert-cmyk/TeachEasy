@@ -1,0 +1,365 @@
+/* Camada visual do Montar Meu Material.
+   Mantém a experiência profissional, mas diferencia cada etapa por cor. */
+
+:root {
+  --builder-blue: #1976d2;
+  --builder-blue-soft: #eef7ff;
+  --builder-blue-line: #b9dcfb;
+  --builder-violet: #7047eb;
+  --builder-violet-soft: #f6f1ff;
+  --builder-violet-line: #d8c8ff;
+  --builder-green: #159766;
+  --builder-green-soft: #effbf5;
+  --builder-green-line: #bee9d5;
+  --builder-gold: #bd7b13;
+  --builder-gold-soft: #fff9ed;
+  --builder-gold-line: #f1ddb2;
+}
+
+body {
+  background:
+    radial-gradient(circle at 8% 4%, rgba(25, 118, 210, .08), transparent 24rem),
+    radial-gradient(circle at 92% 10%, rgba(112, 71, 235, .07), transparent 27rem),
+    #f5f8fc;
+}
+
+.builder-header {
+  box-shadow: 0 8px 28px rgba(34, 58, 92, .07);
+}
+
+.builder-intro {
+  position: relative;
+  padding: 18px 20px;
+  border: 1px solid #e1eaf4;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, .82);
+  box-shadow: 0 12px 34px rgba(35, 61, 94, .06);
+  overflow: hidden;
+}
+
+.builder-intro::after {
+  content: "";
+  position: absolute;
+  width: 220px;
+  height: 220px;
+  right: -85px;
+  top: -105px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, rgba(25, 118, 210, .09), rgba(112, 71, 235, .08));
+  pointer-events: none;
+}
+
+.coherence-note {
+  position: relative;
+  z-index: 1;
+  box-shadow: inset 4px 0 0 #41a778;
+}
+
+.source-filters {
+  border-color: var(--builder-gold-line);
+  background: linear-gradient(135deg, #fff 0%, var(--builder-gold-soft) 100%);
+  box-shadow: 0 12px 30px rgba(125, 89, 25, .07);
+}
+
+.source-filters h2 {
+  color: #795313;
+}
+
+.source-filters .btn-primary {
+  background: #96600e;
+}
+
+.source-filters .btn-primary:hover:not(:disabled) {
+  background: #754905;
+  transform: translateY(-1px);
+}
+
+.builder-grid {
+  gap: 18px;
+}
+
+.panel {
+  position: relative;
+  border-width: 1px;
+  transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+}
+
+.panel:hover {
+  transform: translateY(-2px);
+}
+
+.library-panel {
+  border-color: var(--builder-blue-line);
+  background: linear-gradient(180deg, var(--builder-blue-soft) 0, #fff 150px);
+  box-shadow: 0 14px 36px rgba(25, 118, 210, .09);
+}
+
+.activity-panel {
+  border-color: var(--builder-violet-line);
+  background: linear-gradient(180deg, var(--builder-violet-soft) 0, #fff 150px);
+  box-shadow: 0 14px 36px rgba(112, 71, 235, .09);
+}
+
+.material-panel {
+  border-color: var(--builder-green-line);
+  background: linear-gradient(180deg, var(--builder-green-soft) 0, #fff 150px);
+  box-shadow: 0 14px 36px rgba(21, 151, 102, .09);
+}
+
+.panel-heading {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 82px;
+  padding-left: 64px;
+  background: rgba(255, 255, 255, .72);
+  backdrop-filter: blur(6px);
+}
+
+.panel-heading::before {
+  position: absolute;
+  left: 18px;
+  top: 50%;
+  width: 34px;
+  height: 34px;
+  margin-top: -17px;
+  display: grid;
+  place-items: center;
+  border-radius: 11px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 800;
+  box-shadow: 0 7px 18px rgba(31, 53, 84, .14);
+}
+
+.library-panel .panel-heading::before {
+  content: "1";
+  background: linear-gradient(135deg, #42a5f5, var(--builder-blue));
+}
+
+.activity-panel .panel-heading::before {
+  content: "2";
+  background: linear-gradient(135deg, #9a78ff, var(--builder-violet));
+}
+
+.material-panel .panel-heading::before {
+  content: "3";
+  background: linear-gradient(135deg, #45c78f, var(--builder-green));
+}
+
+.library-panel .panel-heading > span,
+.library-panel .panel-heading h2 {
+  color: #155b9b;
+}
+
+.activity-panel .panel-heading > span,
+.activity-panel .panel-heading h2 {
+  color: #5632bf;
+}
+
+.material-panel .panel-heading > span,
+.material-panel .panel-heading h2 {
+  color: #10744f;
+}
+
+.material-heading {
+  flex-direction: row;
+  padding-left: 64px;
+}
+
+.material-heading > div {
+  display: grid;
+}
+
+.material-heading > strong {
+  border: 1px solid #b9e6d0;
+  background: #e8f9f0;
+  color: #0f7650;
+  box-shadow: 0 4px 12px rgba(21, 151, 102, .08);
+}
+
+.search-field input {
+  border-color: #bed9f2;
+  background: rgba(255, 255, 255, .92);
+}
+
+.activity-list-item {
+  border-color: rgba(25, 118, 210, .08);
+  box-shadow: 0 4px 12px rgba(27, 71, 116, .035);
+  transition: transform .16s ease, box-shadow .16s ease, background .16s ease, border-color .16s ease;
+}
+
+.activity-list-item::after {
+  content: "›";
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #7baada;
+  font-size: 24px;
+  line-height: 1;
+  opacity: .68;
+}
+
+.activity-list-item {
+  position: relative;
+  padding-right: 34px;
+}
+
+.activity-list-item:hover {
+  transform: translateX(3px);
+  background: #f4f9ff;
+  border-color: #a7d2f7;
+  box-shadow: 0 8px 18px rgba(25, 118, 210, .09);
+}
+
+.activity-list-item.active {
+  background: linear-gradient(135deg, #e8f4ff, #f7fbff);
+  border-color: #4a9ee8;
+  box-shadow: inset 4px 0 0 var(--builder-blue), 0 8px 20px rgba(25, 118, 210, .1);
+}
+
+.context-card {
+  border-color: #ded3fb;
+  background: linear-gradient(135deg, #fff 0%, #faf7ff 100%);
+  box-shadow: inset 4px 0 0 rgba(112, 71, 235, .46);
+}
+
+.context-rule {
+  border-color: #dfcffd;
+  background: #f8f4ff;
+  color: #5f48a1;
+}
+
+.question-option {
+  background: rgba(255, 255, 255, .92);
+  transition: transform .15s ease, box-shadow .15s ease, border-color .15s ease, background .15s ease;
+}
+
+.question-option:hover {
+  transform: translateY(-1px);
+  border-color: #c7b5f5;
+  box-shadow: 0 7px 16px rgba(112, 71, 235, .075);
+}
+
+.question-option:has(input:checked) {
+  border-color: #9e7bea;
+  background: linear-gradient(135deg, #f3edff, #fbf9ff);
+  box-shadow: inset 4px 0 0 var(--builder-violet), 0 8px 20px rgba(112, 71, 235, .09);
+}
+
+.question-option input[type="checkbox"] {
+  accent-color: var(--builder-violet);
+}
+
+.live-preview-heading {
+  border-bottom-color: #cde9dc;
+  background: linear-gradient(135deg, #f7fffb, #eefbf5);
+}
+
+.live-badge {
+  animation: builderPulse 2.3s ease-in-out infinite;
+}
+
+.live-preview {
+  background:
+    linear-gradient(rgba(21, 151, 102, .035), rgba(21, 151, 102, .035)),
+    #edf3f7;
+  border-color: #cbe8da;
+}
+
+.material-selection-details {
+  border: 1px solid #d7ebdf;
+  border-radius: 12px;
+  margin: 10px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, .88);
+}
+
+.material-selection-details summary {
+  padding: 10px 12px;
+  cursor: pointer;
+  color: #176b4d;
+  font-weight: 700;
+  transition: background .15s ease;
+}
+
+.material-selection-details summary:hover {
+  background: #f0faf5;
+}
+
+.material-source-group {
+  border-color: #cfe7dc;
+  box-shadow: 0 5px 14px rgba(21, 151, 102, .045);
+}
+
+.material-source-group header {
+  background: #f1faf6;
+}
+
+.selected-question {
+  transition: background .15s ease;
+}
+
+.selected-question:hover {
+  background: #f6fcf9;
+}
+
+.remove-question {
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
+  transition: background .15s ease, transform .15s ease;
+}
+
+.remove-question:hover {
+  background: #fff0f0;
+  transform: scale(1.08);
+}
+
+.material-panel .btn-primary {
+  background: linear-gradient(135deg, #18a66f, #118259);
+  box-shadow: 0 9px 20px rgba(21, 151, 102, .18);
+}
+
+.material-panel .btn-primary:hover:not(:disabled) {
+  background: linear-gradient(135deg, #159665, #0e704d);
+  transform: translateY(-1px);
+  box-shadow: 0 12px 24px rgba(21, 151, 102, .23);
+}
+
+.btn {
+  transition: transform .15s ease, box-shadow .15s ease, background .15s ease, border-color .15s ease;
+}
+
+.btn:active:not(:disabled) {
+  transform: translateY(1px);
+}
+
+.preview-dialog {
+  border: 1px solid #d8e4f0;
+}
+
+.header-editor {
+  background: linear-gradient(135deg, #f9fbff, #f5f1ff);
+  border-color: #dcd9f1;
+}
+
+@keyframes builderPulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(21, 151, 102, 0); }
+  45% { box-shadow: 0 0 0 6px rgba(21, 151, 102, .10); }
+}
+
+@media (max-width: 1180px) {
+  .panel:hover { transform: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    scroll-behavior: auto !important;
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .01ms !important;
+  }
+}
