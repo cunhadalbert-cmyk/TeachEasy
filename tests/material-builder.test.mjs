@@ -73,9 +73,11 @@ test('Word usa DOCX real, layout compacto e imagens padronizadas sem repetição
   assert.doesNotMatch(wordExportJs, /application\/msword|\.doc';/);
 });
 
-test('Word reproduz cabeçalho visual com moldura preta e linhas dos campos', () => {
-  assert.match(wordExportJs, /headerOuterBorders\(docx\)/);
-  assert.match(wordExportJs, /edgeBorders\(docx/);
+test('Word reproduz cabeçalho visual com moldura preta completa e linhas dos campos', () => {
+  assert.match(wordExportJs, /const innerHeader = new docx\.Table/);
+  assert.match(wordExportJs, /borders: headerOuterBorders\(docx\)/);
+  assert.match(wordExportJs, /margins: \{ top: 0, bottom: 0, left: 0, right: 0 \}/);
+  assert.match(wordExportJs, /alignment: docx\.AlignmentType\.CENTER/);
   assert.match(wordExportJs, /color: '000000'/);
   assert.match(wordExportJs, /insideHorizontal: none/);
   assert.match(wordExportJs, /insideVertical: none/);
@@ -88,6 +90,11 @@ test('Word reproduz cabeçalho visual com moldura preta e linhas dos campos', ()
   assert.match(wordExportJs, /headerCell\(docx, 'Prof\.:'/);
 });
 
+test('Word dá respiro entre a pergunta e a primeira linha de resposta', () => {
+  assert.match(wordExportJs, /before: i === 0 \? 100 : 0/);
+  assert.match(wordExportJs, /after: 28/);
+});
+
 test('Word desenha borda preta real ao redor da página A4', () => {
   assert.match(wordExportJs, /function pageBorderOptions\(docx\)/);
   assert.match(wordExportJs, /pageBorderTop/);
@@ -98,5 +105,5 @@ test('Word desenha borda preta real ao redor da página A4', () => {
   assert.match(wordExportJs, /PageBorderOffsetFrom\.PAGE/);
   assert.match(wordExportJs, /PageBorderZOrder\.FRONT/);
   assert.match(wordExportJs, /borders: pageBorderOptions\(docx\)/);
-  assert.match(html, /montar-material-word-export\.js\?v=20260914-v2/);
+  assert.match(html, /montar-material-word-export\.js\?v=20260914-v3/);
 });
