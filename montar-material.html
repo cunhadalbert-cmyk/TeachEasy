@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Libre+Franklin:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="montar-material.css?v=20260914-v1">
+  <link rel="stylesheet" href="montar-material-live-preview.css?v=20260914-v2">
 </head>
 <body>
   <a class="skip-link" href="#montador">Pular para o montador</a>
@@ -112,10 +113,29 @@
           </div>
           <strong id="material-count">0 questões</strong>
         </div>
-        <div id="material-summary" class="material-summary">
-          <div class="empty-panel">As questões escolhidas aparecerão aqui, agrupadas pela atividade de origem.</div>
+
+        <div class="live-preview-heading">
+          <div>
+            <strong>Prévia ao vivo</strong>
+            <span>Atualiza automaticamente enquanto você escolhe as questões.</span>
+          </div>
+          <span class="live-badge">AO VIVO</span>
         </div>
-        <button class="btn btn-primary btn-full" id="open-preview" type="button" disabled>Visualizar material</button>
+        <div id="live-preview" class="live-preview" aria-live="polite">
+          <div class="live-preview-empty">
+            <strong>Sua folha aparecerá aqui.</strong>
+            <span>Marque uma questão para começar a montar.</span>
+          </div>
+        </div>
+
+        <details class="material-selection-details">
+          <summary>Ver questões selecionadas</summary>
+          <div id="material-summary" class="material-summary">
+            <div class="empty-panel">As questões escolhidas aparecerão aqui, agrupadas pela atividade de origem.</div>
+          </div>
+        </details>
+
+        <button class="btn btn-primary btn-full" id="open-preview" type="button" disabled>Abrir em tamanho real / exportar</button>
       </aside>
     </section>
   </main>
@@ -154,5 +174,6 @@
 
   <script src="library-catalog.js?v=20260818-catalogo-unico-v1"></script>
   <script src="montar-material.js?v=20260914-v1"></script>
+  <script src="montar-material-live-preview.js?v=20260914-v2"></script>
 </body>
 </html>
