@@ -78,19 +78,6 @@
     return { top: none, bottom: none, left: none, right: none, insideHorizontal: none, insideVertical: none };
   }
 
-  function edgeBorders(docx, edges = {}) {
-    const black = { style: docx.BorderStyle.SINGLE, size: 10, color: '000000' };
-    const none = { style: docx.BorderStyle.NONE, size: 0, color: 'FFFFFF' };
-    return {
-      top: edges.top ? black : none,
-      bottom: edges.bottom ? black : none,
-      left: edges.left ? black : none,
-      right: edges.right ? black : none,
-      insideHorizontal: none,
-      insideVertical: none
-    };
-  }
-
   function headerOuterBorders(docx) {
     const black = { style: docx.BorderStyle.SINGLE, size: 10, color: '000000' };
     const none = { style: docx.BorderStyle.NONE, size: 0, color: 'FFFFFF' };
@@ -132,10 +119,10 @@
     return shown ? `${shown} ${line}` : '_'.repeat(slots);
   }
 
-  function headerCell(docx, label, value, width, slots, edges = {}) {
+  function headerCell(docx, label, value, width, slots) {
     return new docx.TableCell({
       width: { size: width, type: docx.WidthType.DXA },
-      borders: edgeBorders(docx, edges),
+      borders: noBorders(docx),
       verticalAlign: docx.VerticalAlign.CENTER,
       margins: { top: 85, bottom: 85, left: 110, right: 110 },
       children: [new docx.Paragraph({
@@ -154,27 +141,43 @@
     const school = inputValue('#header-school');
     const teacher = inputValue('#header-teacher');
 
-    return new docx.Table({
-      width: { size: 10772, type: docx.WidthType.DXA },
+    const innerHeader = new docx.Table({
+      width: { size: 10540, type: docx.WidthType.DXA },
       layout: docx.TableLayoutType.FIXED,
-      borders: headerOuterBorders(docx),
+      borders: noBorders(docx),
       rows: [
         new docx.TableRow({
           cantSplit: true,
           children: [
-            headerCell(docx, 'Nome:', '', 5925, 30, { top: true, left: true }),
-            headerCell(docx, 'Turma:', className, 1850, 7, { top: true }),
-            headerCell(docx, 'Data:', date, 2997, 13, { top: true, right: true })
+            headerCell(docx, 'Nome:', '', 5797, 30),
+            headerCell(docx, 'Turma:', className, 1810, 7),
+            headerCell(docx, 'Data:', date, 2933, 13)
           ]
         }),
         new docx.TableRow({
           cantSplit: true,
           children: [
-            headerCell(docx, 'Escola:', school, 6250, 31, { bottom: true, left: true }),
-            headerCell(docx, 'Prof.:', teacher, 4522, 23, { bottom: true, right: true })
+            headerCell(docx, 'Escola:', school, 6115, 31),
+            headerCell(docx, 'Prof.:', teacher, 4425, 23)
           ]
         })
       ]
+    });
+
+    return new docx.Table({
+      width: { size: 10540, type: docx.WidthType.DXA },
+      alignment: docx.AlignmentType.CENTER,
+      layout: docx.TableLayoutType.FIXED,
+      borders: noBorders(docx),
+      rows: [new docx.TableRow({
+        cantSplit: true,
+        children: [new docx.TableCell({
+          width: { size: 10540, type: docx.WidthType.DXA },
+          borders: headerOuterBorders(docx),
+          margins: { top: 0, bottom: 0, left: 0, right: 0 },
+          children: [innerHeader]
+        })]
+      })]
     });
   }
 
@@ -307,7 +310,7 @@
 
     for (let i = 0; i < answerLineCount; i += 1) {
       output.push(new docx.Paragraph({
-        spacing: { before: 0, after: 22, line: 190 },
+        spacing: { before: i === 0 ? 100 : 0, after: 28, line: 190 },
         children: [textRun(docx, '________________________________________________________________________________', { size: 13, color: '8A8A8A' })]
       }));
     }
