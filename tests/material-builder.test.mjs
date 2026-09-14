@@ -46,3 +46,14 @@ test('montador mostra prévia ao vivo ao lado enquanto o professor seleciona que
   assert.match(livePreviewJs, /cloneNode\(true\)/);
   assert.doesNotMatch(livePreviewJs, /openai|anthropic|gemini|\/api\/generate|\/api\/ai/i);
 });
+
+test('cabeçalho final usa duas linhas compactas: Nome Turma Data e Escola Prof', () => {
+  assert.match(livePreviewJs, /headerFieldMarkup\('Nome:'/);
+  assert.match(livePreviewJs, /headerFieldMarkup\('Turma:'/);
+  assert.match(livePreviewJs, /headerFieldMarkup\('Data:'/);
+  assert.match(livePreviewJs, /headerFieldMarkup\('Escola:'/);
+  assert.match(livePreviewJs, /headerFieldMarkup\('Prof\.:'/);
+  assert.match(livePreviewJs, /Cabeçalho da atividade em duas linhas/);
+  assert.match(livePreviewJs, /printArea\.cloneNode/);
+  assert.match(livePreviewJs, /window\.print/);
+});
