@@ -5,6 +5,7 @@ import { readFile } from 'node:fs/promises';
 const html = await readFile(new URL('../montar-material.html', import.meta.url), 'utf8');
 const js = await readFile(new URL('../montar-material.js', import.meta.url), 'utf8');
 const livePreviewJs = await readFile(new URL('../montar-material-live-preview.js', import.meta.url), 'utf8');
+const wordExportJs = await readFile(new URL('../montar-material-word-export.js', import.meta.url), 'utf8');
 
 test('montador usa conteúdo existente da Biblioteca sem serviço de IA', () => {
   assert.match(html, /SEM GERAÇÃO POR IA/);
@@ -56,4 +57,18 @@ test('cabeçalho final usa duas linhas compactas: Nome Turma Data e Escola Prof'
   assert.match(livePreviewJs, /Cabeçalho da atividade em duas linhas/);
   assert.match(livePreviewJs, /printArea\.cloneNode/);
   assert.match(livePreviewJs, /window\.print/);
+});
+
+test('Word usa DOCX real, layout compacto e imagens padronizadas sem repetição', () => {
+  assert.match(html, /montar-material-word-export\.js/);
+  assert.match(html, /Baixar Word \(\.docx\)/);
+  assert.match(wordExportJs, /docx@9\.7\.1/);
+  assert.match(wordExportJs, /teacheasy-material\.docx/);
+  assert.match(wordExportJs, /compactHeader\(docx\)/);
+  assert.match(wordExportJs, /maxWidth/);
+  assert.match(wordExportJs, /maxHeight/);
+  assert.match(wordExportJs, /seenImages = new Set/);
+  assert.match(wordExportJs, /!seenImages\.has\(imageKey\)/);
+  assert.match(wordExportJs, /pageBreakBefore: true/);
+  assert.doesNotMatch(wordExportJs, /application\/msword|\.doc';/);
 });
