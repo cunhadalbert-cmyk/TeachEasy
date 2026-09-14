@@ -4,6 +4,7 @@ import { readFile } from 'node:fs/promises';
 
 const html = await readFile(new URL('../montar-material.html', import.meta.url), 'utf8');
 const js = await readFile(new URL('../montar-material.js', import.meta.url), 'utf8');
+const livePreviewJs = await readFile(new URL('../montar-material-live-preview.js', import.meta.url), 'utf8');
 
 test('montador usa conteúdo existente da Biblioteca sem serviço de IA', () => {
   assert.match(html, /SEM GERAÇÃO POR IA/);
@@ -34,4 +35,14 @@ test('gabarito acompanha apenas as questões escolhidas e mantém a numeração 
   assert.match(js, /group\.selected\.keys\(\)/);
   assert.match(js, /answerForQuestion\(group\.activity, question, index\)/);
   assert.match(js, /finalNumber \+= 1/);
+});
+
+test('montador mostra prévia ao vivo ao lado enquanto o professor seleciona questões', () => {
+  assert.match(html, /id="live-preview"/);
+  assert.match(html, /Prévia ao vivo/);
+  assert.match(html, /Atualiza automaticamente enquanto você escolhe as questões/);
+  assert.match(livePreviewJs, /MutationObserver/);
+  assert.match(livePreviewJs, /querySelector\('\.student-page'\)/);
+  assert.match(livePreviewJs, /cloneNode\(true\)/);
+  assert.doesNotMatch(livePreviewJs, /openai|anthropic|gemini|\/api\/generate|\/api\/ai/i);
 });
