@@ -1,0 +1,37 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import { readFile } from 'node:fs/promises';
+
+const html = await readFile(new URL('../montar-material.html', import.meta.url), 'utf8');
+const js = await readFile(new URL('../montar-material.js', import.meta.url), 'utf8');
+
+test('montador usa conteúdo existente da Biblioteca sem serviço de IA', () => {
+  assert.match(html, /SEM GERAÇÃO POR IA/);
+  assert.match(js, /fetch\(config\.path/);
+  assert.match(js, /question\.enunciado/);
+  assert.match(js, /answer\?\.resposta/);
+  assert.doesNotMatch(js, /openai|anthropic|gemini|\/api\/generate|\/api\/ai/i);
+});
+
+test('montador preserva contexto de texto e imagem da atividade de origem', () => {
+  assert.match(js, /activity\.textoApoio\?\.conteudo/);
+  assert.match(js, /posicaoSugerida === 'antes-das-questoes'/);
+  assert.match(html, /contexto original acompanha aquele bloco/);
+});
+
+test('BNCC é renderizada somente no gabarito', () => {
+  assert.match(js, /function answerKeyMarkup\(\)/);
+  assert.match(js, /class="bncc-box"/);
+
+  const previewStart = js.indexOf('function renderPreview()');
+  const answerKeyCall = js.indexOf('${answerKeyMarkup()}', previewStart);
+  assert.ok(previewStart >= 0 && answerKeyCall > previewStart);
+  const studentTemplate = js.slice(previewStart, answerKeyCall);
+  assert.doesNotMatch(studentTemplate, /BNCC|bncc-box|habilidadeOficial/);
+});
+
+test('gabarito acompanha apenas as questões escolhidas e mantém a numeração final', () => {
+  assert.match(js, /group\.selected\.keys\(\)/);
+  assert.match(js, /answerForQuestion\(group\.activity, question, index\)/);
+  assert.match(js, /finalNumber \+= 1/);
+});
