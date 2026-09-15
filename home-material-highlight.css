@@ -30,21 +30,9 @@
   line-height: 1.45;
 }
 
+/* O acesso principal ao montador já está destacado acima da Biblioteca. */
 .hero-actions .hero-material-button {
-  min-width: min(100%, 300px);
-  justify-content: center;
-  background: linear-gradient(90deg, #ffe07a 0%, #ffd166 55%, #ffc43d 100%);
-  border-color: #e1a900;
-  color: #3a1a00;
-  box-shadow: 0 12px 28px rgba(194, 139, 0, .24);
-  font-weight: 900;
-}
-
-.hero-actions .hero-material-button:hover {
-  background: linear-gradient(90deg, #ffd45a 0%, #ffc94d 55%, #f4b824 100%);
-  border-color: #c99500;
-  color: #2d1600;
-  transform: translateY(-1px);
+  display: none !important;
 }
 
 .hero-actions .hero-library-button {
@@ -85,7 +73,6 @@
     padding: 14px 15px;
   }
 
-  .hero-actions .hero-material-button,
   .hero-actions .hero-library-button {
     width: 100%;
   }
