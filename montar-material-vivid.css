@@ -1,0 +1,167 @@
+/* Ajuste visual aprovado para o Montar Meu Material:
+   cards com cor viva, textos neutros e topo roxo TeachEasy. */
+
+:root {
+  --teacheasy-purple: #7047eb;
+  --card-blue-vivid: #45aef5;
+  --card-blue-soft: #edf8ff;
+  --card-red-vivid: #ff6868;
+  --card-red-soft: #fff1f1;
+  --card-yellow-vivid: #ffd84f;
+  --card-yellow-soft: #fff9df;
+  --card-text: #17233d;
+  --card-muted: #53627c;
+}
+
+/* Parte superior na identidade roxa do site. */
+.builder-header {
+  background: linear-gradient(135deg, #7047eb 0%, #5c35cf 100%) !important;
+  border-bottom-color: rgba(255, 255, 255, .18) !important;
+  box-shadow: 0 10px 28px rgba(77, 46, 168, .22) !important;
+}
+
+.builder-header .brand strong,
+.builder-header .brand span {
+  color: #fff !important;
+}
+
+.builder-header .brand span {
+  opacity: .86;
+}
+
+.builder-header .btn-outline {
+  background: #fff !important;
+  color: #3b266f !important;
+  border-color: rgba(255, 255, 255, .78) !important;
+}
+
+.builder-header .btn-outline:hover:not(:disabled) {
+  background: #f6f1ff !important;
+  border-color: #fff !important;
+}
+
+/* Os três cards recebem a cor; a tipografia continua neutra. */
+.library-panel,
+.activity-panel,
+.material-panel {
+  border-width: 2px !important;
+  background: #fff !important;
+}
+
+.library-panel {
+  border-color: var(--card-blue-vivid) !important;
+  box-shadow: 0 16px 38px rgba(34, 139, 214, .18) !important;
+}
+
+.activity-panel {
+  border-color: var(--card-red-vivid) !important;
+  box-shadow: 0 16px 38px rgba(224, 70, 70, .16) !important;
+}
+
+.material-panel {
+  border-color: #e2b91f !important;
+  box-shadow: 0 16px 38px rgba(214, 168, 20, .16) !important;
+}
+
+.library-panel .panel-heading {
+  background: linear-gradient(135deg, var(--card-blue-vivid), #79c7fb) !important;
+  border-bottom-color: #2495df !important;
+}
+
+.activity-panel .panel-heading {
+  background: linear-gradient(135deg, var(--card-red-vivid), #ff8a8a) !important;
+  border-bottom-color: #e64c4c !important;
+}
+
+.material-panel .panel-heading {
+  background: linear-gradient(135deg, var(--card-yellow-vivid), #ffe681) !important;
+  border-bottom-color: #e7bd21 !important;
+}
+
+/* Não usar azul/vermelho/amarelo nas letras dos cards. */
+.library-panel .panel-heading > span,
+.library-panel .panel-heading h2,
+.activity-panel .panel-heading > span,
+.activity-panel .panel-heading h2,
+.material-panel .panel-heading > span,
+.material-panel .panel-heading h2 {
+  color: var(--card-text) !important;
+}
+
+.library-panel .panel-heading::before,
+.activity-panel .panel-heading::before,
+.material-panel .panel-heading::before {
+  background: rgba(255, 255, 255, .92) !important;
+  color: var(--card-text) !important;
+  box-shadow: 0 6px 16px rgba(33, 43, 68, .16) !important;
+}
+
+.library-panel .search-field,
+.library-panel .activity-list {
+  background: var(--card-blue-soft);
+}
+
+.activity-panel .opened-activity {
+  background: var(--card-red-soft);
+}
+
+.material-panel .live-preview-heading,
+.material-panel .material-selection-details {
+  background: var(--card-yellow-soft) !important;
+}
+
+.material-heading > strong {
+  background: rgba(255, 255, 255, .88) !important;
+  color: var(--card-text) !important;
+  border-color: rgba(93, 76, 16, .22) !important;
+}
+
+/* Mantém conteúdo interno legível e profissional. */
+.activity-list-item strong,
+.activity-list-item span,
+.context-card,
+.context-card h3,
+.context-card h4,
+.context-card p,
+.question-option,
+.question-option strong,
+.question-option span,
+.material-source-group,
+.material-source-group header,
+.selected-question,
+.material-selection-details summary {
+  color: var(--card-text) !important;
+}
+
+.activity-list-item span,
+.context-card p,
+.question-option span {
+  color: var(--card-muted) !important;
+}
+
+/* Seleção continua clara sem transformar o texto em cor de destaque. */
+.activity-list-item.active {
+  background: #dff2ff !important;
+  border-color: #319fe7 !important;
+  box-shadow: inset 5px 0 0 #138bd8, 0 8px 20px rgba(25, 118, 210, .12) !important;
+}
+
+.question-option:has(input:checked) {
+  background: #ffe6e6 !important;
+  border-color: #f06666 !important;
+  box-shadow: inset 5px 0 0 #e84d4d, 0 8px 20px rgba(217, 67, 67, .11) !important;
+}
+
+.question-option input[type="checkbox"] {
+  accent-color: #d84848 !important;
+}
+
+.material-panel .btn-primary {
+  background: #7047eb !important;
+  color: #fff !important;
+  box-shadow: 0 9px 22px rgba(112, 71, 235, .22) !important;
+}
+
+.material-panel .btn-primary:hover:not(:disabled) {
+  background: #5c35cf !important;
+}
