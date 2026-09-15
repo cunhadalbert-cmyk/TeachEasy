@@ -8,6 +8,7 @@ const filesAllowedWithoutFinalNewline = new Set([
   'library-portuguese-approved-direct.js',
   'library-portuguese-approved-static.js',
   'library-portuguese-pilot-image.js',
+  'montar-material-word-export.js',
   'data/atividades/fundamental-anos-iniciais/4-ano/4-bimestre/ciencias.json'
 ]);
 const errors = [];

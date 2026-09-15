@@ -1,0 +1,124 @@
+/* Camada de segurança do PDF: preserva o layout e impede imagens sobrepostas. */
+
+body.pdf-printing #print-area .source-support {
+  display: flex !important;
+  align-items: flex-start !important;
+  gap: 4mm !important;
+  clear: both !important;
+  overflow: visible !important;
+}
+
+body.pdf-printing #print-area .source-support.no-image {
+  display: block !important;
+}
+
+body.pdf-printing #print-area .source-support-text {
+  flex: 1 1 auto !important;
+  min-width: 0 !important;
+}
+
+body.pdf-printing #print-area .source-support img,
+body.pdf-printing #print-area .question-image {
+  position: static !important;
+  float: none !important;
+  transform: none !important;
+  flex: 0 0 auto !important;
+  height: auto !important;
+  clear: both !important;
+}
+
+body.pdf-printing #print-area .final-questions,
+body.pdf-printing #print-area .final-questions > li,
+body.pdf-printing #print-area .answer-lines,
+body.pdf-printing #print-area .source-block + .source-block {
+  clear: both !important;
+}
+
+/* Se a verificação automática detectar qualquer colisão, empilha somente o bloco de apoio. */
+body.pdf-printing.pdf-stack-images #print-area .source-support {
+  display: block !important;
+}
+
+body.pdf-printing.pdf-stack-images #print-area .source-support img {
+  display: block !important;
+  max-width: 44mm !important;
+  max-height: 30mm !important;
+  margin: 6pt auto 8pt !important;
+}
+
+@media print {
+  #print-area .source-support {
+    display: flex !important;
+    align-items: flex-start !important;
+    gap: 4mm !important;
+    clear: both !important;
+    overflow: visible !important;
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+  }
+
+  #print-area .source-support.no-image {
+    display: block !important;
+  }
+
+  #print-area .source-support-text {
+    flex: 1 1 auto !important;
+    min-width: 0 !important;
+  }
+
+  #print-area .source-support img {
+    position: static !important;
+    float: none !important;
+    transform: none !important;
+    flex: 0 0 auto !important;
+    display: block !important;
+    width: auto !important;
+    max-width: 48mm !important;
+    max-height: 32mm !important;
+    height: auto !important;
+    object-fit: contain !important;
+    margin: 0 auto !important;
+    clear: both !important;
+  }
+
+  #print-area .final-questions {
+    clear: both !important;
+  }
+
+  #print-area .final-questions > li {
+    position: relative !important;
+    display: block !important;
+    clear: both !important;
+    overflow: visible !important;
+  }
+
+  #print-area .question-image {
+    position: static !important;
+    float: none !important;
+    transform: none !important;
+    display: block !important;
+    width: auto !important;
+    max-width: 38mm !important;
+    max-height: 26mm !important;
+    height: auto !important;
+    object-fit: contain !important;
+    margin: 5pt auto 7pt !important;
+    clear: both !important;
+  }
+
+  #print-area .answer-lines,
+  #print-area .source-block + .source-block {
+    clear: both !important;
+  }
+
+  body.pdf-stack-images #print-area .source-support {
+    display: block !important;
+  }
+
+  body.pdf-stack-images #print-area .source-support img {
+    display: block !important;
+    max-width: 44mm !important;
+    max-height: 30mm !important;
+    margin: 6pt auto 8pt !important;
+  }
+}

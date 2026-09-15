@@ -1,0 +1,14 @@
+/* Espaçamento explícito da numeração no PDF capturado. */
+.pdf-capture-page .final-questions > li,
+.pdf-capture-page .answer-key-list > li {
+  padding-left: 34px !important;
+}
+
+.pdf-capture-page .pdf-explicit-question-number,
+.pdf-capture-page .pdf-explicit-answer-number {
+  left: 0 !important;
+  width: 24px !important;
+  padding-right: 6px !important;
+  text-align: right !important;
+  box-sizing: content-box !important;
+}

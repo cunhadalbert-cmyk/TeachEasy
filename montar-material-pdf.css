@@ -1,0 +1,256 @@
+.pdf-capture-stage {
+  position: fixed;
+  left: -10000px;
+  top: 0;
+  width: 190mm;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.pdf-capture-stage .pdf-capture-page {
+  box-sizing: border-box !important;
+  width: 190mm !important;
+  min-height: 277mm !important;
+  height: auto !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: visible !important;
+  box-shadow: none !important;
+  background: #fff !important;
+  color: #111 !important;
+  font-family: Arial, sans-serif !important;
+  font-size: 9.5pt !important;
+  line-height: 1 !important;
+}
+
+.pdf-capture-stage .worksheet-school-header {
+  display: block !important;
+  width: 100% !important;
+  border: 1px solid #000 !important;
+  padding: 3mm 4mm !important;
+  margin: 0 0 3mm !important;
+  font-size: 9pt !important;
+  line-height: 1 !important;
+}
+
+.pdf-capture-stage .worksheet-school-header table {
+  width: 100% !important;
+  border-collapse: collapse !important;
+}
+
+.pdf-capture-stage .worksheet-title {
+  margin: 0 0 2pt !important;
+  text-align: center !important;
+  font-size: 13pt !important;
+  line-height: 1 !important;
+  color: #1e4e81 !important;
+}
+
+.pdf-capture-stage .worksheet-subtitle {
+  margin: 0 0 8pt !important;
+  text-align: center !important;
+  font-size: 10pt !important;
+  line-height: 1 !important;
+  font-weight: 700 !important;
+}
+
+.pdf-capture-stage .source-block {
+  border: 0 !important;
+  padding: 0 !important;
+  margin: 0 0 10pt !important;
+  overflow: visible !important;
+}
+
+.pdf-capture-stage .source-block h3 {
+  margin: 0 0 5pt !important;
+  text-align: center !important;
+  font-size: 10.5pt !important;
+  line-height: 1 !important;
+}
+
+.pdf-capture-stage .source-support {
+  display: flex !important;
+  align-items: flex-start !important;
+  gap: 4mm !important;
+  margin: 0 0 7pt !important;
+  overflow: visible !important;
+  clear: both !important;
+}
+
+.pdf-capture-stage .source-support.no-image {
+  display: block !important;
+}
+
+.pdf-capture-stage .source-support-text {
+  flex: 1 1 auto !important;
+  min-width: 0 !important;
+}
+
+.pdf-capture-stage .source-support-text h4 {
+  margin: 0 0 3pt !important;
+  font-size: 10pt !important;
+  line-height: 1 !important;
+}
+
+.pdf-capture-stage .source-support-text p {
+  margin: 0 !important;
+  white-space: pre-line !important;
+  font-size: 9.5pt !important;
+  line-height: 1 !important;
+}
+
+.pdf-capture-stage .source-support img {
+  position: static !important;
+  float: none !important;
+  transform: none !important;
+  flex: 0 0 auto !important;
+  display: block !important;
+  width: auto !important;
+  max-width: 48mm !important;
+  max-height: 32mm !important;
+  height: auto !important;
+  object-fit: contain !important;
+  margin: 0 auto !important;
+  clear: both !important;
+}
+
+.pdf-capture-stage .final-questions {
+  margin: 0 !important;
+  padding-left: 6mm !important;
+  clear: both !important;
+}
+
+.pdf-capture-stage .final-questions > li {
+  position: relative !important;
+  display: block !important;
+  clear: both !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  font-size: 9.5pt !important;
+  line-height: 1 !important;
+  overflow: visible !important;
+}
+
+.pdf-capture-stage .final-questions > li > p {
+  margin: 0 !important;
+  padding: 0 !important;
+  font-size: 9.5pt !important;
+  line-height: 1 !important;
+}
+
+.pdf-capture-stage .final-alternatives {
+  margin: 3pt 0 8pt !important;
+  padding-left: 6mm !important;
+  line-height: 1 !important;
+}
+
+.pdf-capture-stage .final-alternatives > li {
+  margin: 0 0 3pt !important;
+  line-height: 1 !important;
+}
+
+.pdf-capture-stage .answer-lines {
+  display: grid !important;
+  gap: 3pt !important;
+  margin: 6pt 0 8pt !important;
+  clear: both !important;
+}
+
+.pdf-capture-stage .answer-lines span {
+  display: block !important;
+  height: 12pt !important;
+  min-height: 12pt !important;
+  border-bottom: 1px solid #777 !important;
+}
+
+.pdf-capture-stage .question-image {
+  position: static !important;
+  float: none !important;
+  transform: none !important;
+  display: block !important;
+  width: auto !important;
+  max-width: 38mm !important;
+  max-height: 26mm !important;
+  height: auto !important;
+  object-fit: contain !important;
+  margin: 5pt auto 7pt !important;
+  clear: both !important;
+}
+
+.pdf-capture-stage .pdf-duplicate-image {
+  display: none !important;
+}
+
+.pdf-capture-stage .answer-key-page h2 {
+  margin: 0 0 10pt !important;
+  text-align: center !important;
+  font-size: 13pt !important;
+  line-height: 1 !important;
+}
+
+.pdf-capture-stage .answer-key-group {
+  margin: 0 0 10pt !important;
+}
+
+.pdf-capture-stage .answer-key-group h3 {
+  margin: 0 0 5pt !important;
+  font-size: 10.5pt !important;
+  line-height: 1 !important;
+}
+
+.pdf-capture-stage .answer-key-list {
+  margin-top: 0 !important;
+  padding-left: 6mm !important;
+}
+
+.pdf-capture-stage .answer-key-list > li {
+  margin: 0 0 5pt !important;
+  line-height: 1 !important;
+}
+
+.pdf-capture-stage .answer-key-list > li > div {
+  margin-top: 2pt !important;
+  line-height: 1 !important;
+}
+
+.pdf-capture-stage .bncc-box {
+  margin-top: 10pt !important;
+  padding-top: 7pt !important;
+  border-top: 1px solid #999 !important;
+}
+
+.pdf-capture-stage .bncc-box h3 {
+  margin: 0 0 5pt !important;
+  font-size: 10.5pt !important;
+}
+
+.pdf-capture-stage .bncc-box p {
+  margin: 0 0 5pt !important;
+  font-size: 9pt !important;
+  line-height: 1 !important;
+}
+
+@media print {
+  @page { size: A4 portrait; margin: 10mm; }
+
+  body * { visibility: hidden !important; }
+  #print-area,
+  #print-area * { visibility: visible !important; }
+  #print-area {
+    position: absolute !important;
+    inset: 0 !important;
+    padding: 0 !important;
+    background: #fff !important;
+  }
+  .a4-page {
+    box-shadow: none !important;
+    margin: 0 !important;
+  }
+  .student-page {
+    page-break-after: always !important;
+    break-after: page !important;
+  }
+}
