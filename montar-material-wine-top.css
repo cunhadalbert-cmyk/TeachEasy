@@ -1,8 +1,10 @@
-/* Ajuste do topo para usar o vermelho vinho oficial do TeachEasy. */
+/* Topo do Montar Meu Material com o mesmo vermelho vinho usado no site TeachEasy. */
 .builder-header {
-  background: linear-gradient(135deg, #7a2e3a 0%, #662530 100%) !important;
+  background: linear-gradient(90deg, #4a0715 0%, #7a1730 48%, #a34058 100%) !important;
   border-bottom-color: rgba(255, 255, 255, .18) !important;
-  box-shadow: 0 10px 28px rgba(122, 46, 58, .24) !important;
+  box-shadow:
+    0 14px 30px rgba(68, 6, 24, .28),
+    0 4px 12px rgba(48, 5, 18, .18) !important;
 }
 
 .builder-header .brand strong,
@@ -11,16 +13,17 @@
 }
 
 .builder-header .brand span {
-  opacity: .88;
+  opacity: .9;
 }
 
 .builder-header .btn-outline {
-  background: #fff !important;
-  color: #662530 !important;
+  background: rgba(255, 255, 255, .96) !important;
+  color: #4a0715 !important;
   border-color: rgba(255, 255, 255, .78) !important;
 }
 
 .builder-header .btn-outline:hover:not(:disabled) {
-  background: #f5e9ec !important;
+  background: #f8ecef !important;
+  color: #7a1730 !important;
   border-color: #fff !important;
 }
