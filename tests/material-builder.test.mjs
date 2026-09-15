@@ -118,7 +118,7 @@ test('Word desenha borda preta real ao redor da página A4', () => {
 
 test('PDF é gerado diretamente em duas páginas A4: atividade e gabarito', () => {
   assert.match(html, /montar-material-pdf\.css\?v=20260915-v2/);
-  assert.match(html, /montar-material-pdf\.js\?v=20260915-v3/);
+  assert.match(html, /montar-material-pdf\.js\?v=20260915-v4/);
   assert.match(html, />Baixar PDF</);
   assert.match(pdfJs, /html2canvas@1\.4\.1/);
   assert.match(pdfJs, /jspdf@2\.5\.2/);
