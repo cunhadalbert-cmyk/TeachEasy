@@ -1,5 +1,106 @@
 (() => {
   if (typeof navigator !== "undefined" && navigator.userAgent.includes("jsdom")) return;
+
+  function destacarMontadorNaHome() {
+    const container = document.querySelector('#solucoes .container');
+    const biblioteca = container?.querySelector('.home-library-highlight');
+    if (!container || !biblioteca || container.querySelector('.home-material-primary-highlight')) return;
+
+    if (!document.querySelector('style[data-home-material-primary]')) {
+      const style = document.createElement('style');
+      style.dataset.homeMaterialPrimary = 'true';
+      style.textContent = `
+        .home-material-primary-highlight {
+          display: grid;
+          grid-template-columns: minmax(0, 1fr) auto;
+          align-items: center;
+          gap: 24px;
+          width: 100%;
+          margin: 0 0 28px;
+          padding: 30px 34px;
+          border: 3px solid #f04454;
+          border-radius: 24px;
+          background: linear-gradient(90deg, #5b0719 0%, #8b1732 48%, #c82c46 100%);
+          box-shadow: 0 18px 42px rgba(74, 7, 21, .24);
+          color: #fff;
+          text-decoration: none;
+          box-sizing: border-box;
+          transition: transform .18s ease, box-shadow .18s ease;
+        }
+        .home-material-primary-highlight:hover {
+          transform: translateY(-2px);
+          box-shadow: 0 22px 48px rgba(74, 7, 21, .30);
+        }
+        .home-material-primary-copy {
+          display: grid;
+          gap: 7px;
+        }
+        .home-material-primary-badge {
+          width: fit-content;
+          padding: 7px 12px;
+          border-radius: 999px;
+          background: #ffd166;
+          color: #3a1a00;
+          font-size: 12px;
+          font-weight: 900;
+          letter-spacing: .09em;
+          text-transform: uppercase;
+        }
+        .home-material-primary-copy strong {
+          color: #fff;
+          font-family: "Libre Franklin", sans-serif;
+          font-size: clamp(30px, 4vw, 52px);
+          line-height: 1.04;
+        }
+        .home-material-primary-copy span:last-child {
+          color: rgba(255,255,255,.94);
+          font-size: clamp(17px, 2vw, 23px);
+          line-height: 1.4;
+        }
+        .home-material-primary-action {
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          min-width: 230px;
+          min-height: 58px;
+          padding: 14px 22px;
+          border-radius: 16px;
+          background: #fff;
+          color: #7a1730;
+          font-size: 18px;
+          font-weight: 900;
+          white-space: nowrap;
+          box-shadow: 0 8px 18px rgba(0,0,0,.14);
+        }
+        @media (max-width: 760px) {
+          .home-material-primary-highlight {
+            grid-template-columns: 1fr;
+            padding: 24px 22px;
+          }
+          .home-material-primary-action {
+            width: 100%;
+            min-width: 0;
+          }
+        }
+      `;
+      document.head.appendChild(style);
+    }
+
+    const destaque = document.createElement('a');
+    destaque.className = 'home-material-primary-highlight';
+    destaque.href = 'montar-material.html';
+    destaque.setAttribute('aria-label', 'Abrir Montar meu material');
+    destaque.innerHTML = `
+      <span class="home-material-primary-copy">
+        <span class="home-material-primary-badge">DIFERENCIAL TEACHEASY</span>
+        <strong>Montar meu material</strong>
+        <span>Escolha questões da Biblioteca, organize do seu jeito e baixe em PDF ou Word.</span>
+      </span>
+      <span class="home-material-primary-action">Começar a montar →</span>
+    `;
+    biblioteca.insertAdjacentElement('beforebegin', destaque);
+  }
+
   const jogos = {
     caca: {
       titulo: "CaÃ§a-palavras",
@@ -253,7 +354,10 @@
     carregarScript('illustration-reference-standard.js?v=20260810-referencia-aprovada', 'teacheasy-illustration-reference');
   }
 
+  destacarMontadorNaHome();
+
   document.addEventListener("DOMContentLoaded", () => {
+    destacarMontadorNaHome();
     prepararCards();
     prepararBotaoPagamento();
     carregarExportadorWord();
