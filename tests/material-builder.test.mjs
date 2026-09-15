@@ -90,11 +90,12 @@ test('Word reproduz cabeçalho visual com moldura preta completa e linhas dos ca
   assert.match(wordExportJs, /headerCell\(docx, 'Prof\.:'/);
 });
 
-test('Word usa espaçamento 1,15 antes da primeira linha e depois da última resposta', () => {
-  assert.match(wordExportJs, /const WORD_RESPONSE_SPACING_115 = 276/);
-  assert.match(wordExportJs, /after: answerLineCount > 0 \? 0 : 35/);
-  assert.match(wordExportJs, /before: isFirstAnswerLine \? WORD_RESPONSE_SPACING_115 : 0/);
-  assert.match(wordExportJs, /after: isLastAnswerLine \? WORD_RESPONSE_SPACING_115 : 28/);
+test('Word usa espaçamento 1,0 nas respostas e entre as linhas', () => {
+  assert.match(wordExportJs, /const WORD_RESPONSE_SPACING_100 = 240/);
+  assert.match(wordExportJs, /before: isFirstAnswerLine \? WORD_RESPONSE_SPACING_100 : 0/);
+  assert.match(wordExportJs, /after: isLastAnswerLine \? WORD_RESPONSE_SPACING_100 : 0/);
+  assert.match(wordExportJs, /line: WORD_RESPONSE_SPACING_100/);
+  assert.match(wordExportJs, /paragraph: \{ spacing: \{ line: 240, after: 45 \} \}/);
 });
 
 test('Word desenha borda preta real ao redor da página A4', () => {
@@ -107,5 +108,5 @@ test('Word desenha borda preta real ao redor da página A4', () => {
   assert.match(wordExportJs, /PageBorderOffsetFrom\.PAGE/);
   assert.match(wordExportJs, /PageBorderZOrder\.FRONT/);
   assert.match(wordExportJs, /borders: pageBorderOptions\(docx\)/);
-  assert.match(html, /montar-material-word-export\.js\?v=20260914-v5/);
+  assert.match(html, /montar-material-word-export\.js\?v=20260914-v6/);
 });
