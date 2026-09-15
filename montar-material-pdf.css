@@ -1,0 +1,294 @@
+@media print {
+  @page {
+    size: A4 portrait;
+    margin: 12mm;
+  }
+
+  html,
+  body {
+    margin: 0 !important;
+    padding: 0 !important;
+    background: #fff !important;
+  }
+
+  body {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .preview-dialog {
+    width: auto !important;
+    max-width: none !important;
+    max-height: none !important;
+    height: auto !important;
+    overflow: visible !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+  }
+
+  #print-area {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    bottom: auto !important;
+    width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    overflow: visible !important;
+    background: #fff !important;
+  }
+
+  /* Moldura fixa para acompanhar todas as páginas físicas do PDF. */
+  #print-area::before {
+    content: "";
+    position: fixed;
+    top: -5mm;
+    right: -5mm;
+    bottom: -5mm;
+    left: -5mm;
+    border: 1px solid #000;
+    pointer-events: none;
+    z-index: 9999;
+  }
+
+  .a4-page {
+    width: auto !important;
+    min-height: 0 !important;
+    height: auto !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+    background: #fff !important;
+    color: #111 !important;
+    font-family: Arial, sans-serif !important;
+    font-size: 9.5pt !important;
+    line-height: 1 !important;
+    page-break-after: auto !important;
+    break-after: auto !important;
+  }
+
+  .student-page {
+    page-break-after: always !important;
+    break-after: page !important;
+  }
+
+  .answer-key-page {
+    page-break-after: auto !important;
+    break-after: auto !important;
+  }
+
+  .worksheet-school-header {
+    display: block !important;
+    width: 100% !important;
+    border: 1px solid #000 !important;
+    padding: 3mm 4mm !important;
+    margin: 0 0 3mm !important;
+    font-size: 9pt !important;
+    line-height: 1 !important;
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+  }
+
+  .worksheet-school-header table {
+    width: 100% !important;
+    border-collapse: collapse !important;
+  }
+
+  .worksheet-title {
+    margin: 0 0 2pt !important;
+    text-align: center !important;
+    font-size: 13pt !important;
+    line-height: 1 !important;
+    color: #1e4e81 !important;
+    page-break-after: avoid !important;
+    break-after: avoid !important;
+  }
+
+  .worksheet-subtitle {
+    margin: 0 0 8pt !important;
+    text-align: center !important;
+    font-size: 10pt !important;
+    line-height: 1 !important;
+    font-weight: 700 !important;
+    page-break-after: avoid !important;
+    break-after: avoid !important;
+  }
+
+  /* O bloco pode atravessar páginas; o texto/imagem e cada questão ficam íntegros. */
+  .source-block {
+    border: 0 !important;
+    padding: 0 !important;
+    margin: 0 0 10pt !important;
+    page-break-inside: auto !important;
+    break-inside: auto !important;
+  }
+
+  .source-block h3 {
+    margin: 0 0 5pt !important;
+    text-align: center !important;
+    font-size: 10.5pt !important;
+    line-height: 1 !important;
+    page-break-after: avoid !important;
+    break-after: avoid !important;
+  }
+
+  .source-support {
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) 48mm !important;
+    gap: 4mm !important;
+    align-items: start !important;
+    margin: 0 0 7pt !important;
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+  }
+
+  .source-support.no-image {
+    grid-template-columns: 1fr !important;
+  }
+
+  .source-support-text h4 {
+    margin: 0 0 3pt !important;
+    font-size: 10pt !important;
+    line-height: 1 !important;
+  }
+
+  .source-support-text p {
+    margin: 0 !important;
+    white-space: pre-line !important;
+    font-size: 9.5pt !important;
+    line-height: 1 !important;
+  }
+
+  .source-support img {
+    display: block !important;
+    width: auto !important;
+    max-width: 48mm !important;
+    max-height: 32mm !important;
+    object-fit: contain !important;
+    justify-self: center !important;
+    margin: 0 auto !important;
+  }
+
+  .final-questions {
+    margin: 0 !important;
+    padding-left: 6mm !important;
+  }
+
+  .final-questions > li {
+    margin: 0 !important;
+    padding: 0 !important;
+    font-size: 9.5pt !important;
+    line-height: 1 !important;
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+    orphans: 2;
+    widows: 2;
+  }
+
+  .final-questions > li > p {
+    margin: 0 !important;
+    padding: 0 !important;
+    font-size: 9.5pt !important;
+    line-height: 1 !important;
+  }
+
+  .final-alternatives {
+    margin: 3pt 0 8pt !important;
+    padding-left: 6mm !important;
+    line-height: 1 !important;
+  }
+
+  .final-alternatives > li {
+    margin: 0 0 3pt !important;
+    line-height: 1 !important;
+  }
+
+  .answer-lines {
+    display: grid !important;
+    gap: 3pt !important;
+    margin: 6pt 0 8pt !important;
+  }
+
+  .answer-lines span {
+    display: block !important;
+    height: 12pt !important;
+    min-height: 12pt !important;
+    border-bottom: 1px solid #777 !important;
+  }
+
+  .question-image {
+    display: block !important;
+    width: auto !important;
+    max-width: 38mm !important;
+    max-height: 26mm !important;
+    object-fit: contain !important;
+    margin: 5pt auto 6pt !important;
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+  }
+
+  .pdf-duplicate-image {
+    display: none !important;
+  }
+
+  .answer-key-page h2 {
+    margin: 0 0 10pt !important;
+    text-align: center !important;
+    font-size: 13pt !important;
+    line-height: 1 !important;
+  }
+
+  .answer-key-group {
+    margin: 0 0 10pt !important;
+    page-break-inside: auto !important;
+    break-inside: auto !important;
+  }
+
+  .answer-key-group h3 {
+    margin: 0 0 5pt !important;
+    font-size: 10.5pt !important;
+    line-height: 1 !important;
+    page-break-after: avoid !important;
+    break-after: avoid !important;
+  }
+
+  .answer-key-list {
+    margin-top: 0 !important;
+    padding-left: 6mm !important;
+  }
+
+  .answer-key-list > li {
+    margin: 0 0 5pt !important;
+    line-height: 1 !important;
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+  }
+
+  .answer-key-list > li > div {
+    margin-top: 2pt !important;
+    line-height: 1 !important;
+  }
+
+  .bncc-box {
+    margin-top: 10pt !important;
+    padding-top: 7pt !important;
+    border-top: 1px solid #999 !important;
+    page-break-inside: auto !important;
+    break-inside: auto !important;
+  }
+
+  .bncc-box h3 {
+    margin: 0 0 5pt !important;
+    font-size: 10.5pt !important;
+  }
+
+  .bncc-box p {
+    margin: 0 0 5pt !important;
+    font-size: 9pt !important;
+    line-height: 1 !important;
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+  }
+}
