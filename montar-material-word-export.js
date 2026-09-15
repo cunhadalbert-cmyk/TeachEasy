@@ -1,6 +1,10 @@
 (() => {
   const DOCX_CDN = 'https://cdn.jsdelivr.net/npm/docx@9.7.1/dist/index.iife.js';
-  const WORD_RESPONSE_SPACING_100 = 240;
+  const WORD_LINE_SPACING_SINGLE = 240;
+  const WORD_ANSWER_BEFORE = 120; // 6 pt entre pergunta e primeira linha
+  const WORD_ANSWER_BETWEEN = 60; // 3 pt entre linhas de resposta
+  const WORD_ANSWER_AFTER = 160; // 8 pt após a última linha
+  const WORD_ALTERNATIVE_AFTER = 60; // 3 pt entre alternativas
   const printArea = document.querySelector('#print-area');
   const button = document.querySelector('#download-word');
   if (!printArea || !button) return;
@@ -67,7 +71,7 @@
       spacing: {
         before: options.before || 0,
         after: options.after ?? 55,
-        line: options.line || 240
+        line: options.line || WORD_LINE_SPACING_SINGLE
       },
       indent: options.indent,
       children: [textRun(docx, cleanText(text), options)]
@@ -234,7 +238,7 @@
       textChildren.push(paragraph(docx, supportTitle, { bold: true, size: 20, after: 45 }));
     }
     if (supportText) {
-      textChildren.push(paragraph(docx, supportText, { size: 18, line: 240, after: 35 }));
+      textChildren.push(paragraph(docx, supportText, { size: 18, line: WORD_LINE_SPACING_SINGLE, after: 35 }));
     }
 
     if (!imageContent) return textChildren.filter(Boolean);
@@ -280,7 +284,11 @@
     output.push(new docx.Paragraph({
       keepNext: alternatives.length > 0 || answerLineCount > 0,
       keepLines: true,
-      spacing: { before: 45, after: answerLineCount > 0 ? 0 : 35, line: 240 },
+      spacing: {
+        before: 0,
+        after: alternatives.length > 0 || answerLineCount > 0 ? 0 : WORD_ANSWER_AFTER,
+        line: WORD_LINE_SPACING_SINGLE
+      },
       children: [
         textRun(docx, `${finalNumber}. `, { bold: true, size: 19, color: '1F5A96' }),
         textRun(docx, questionText, { size: 19 })
@@ -288,8 +296,15 @@
     }));
 
     alternatives.forEach((alternative, index) => {
+      const isLastAlternative = index === alternatives.length - 1;
       output.push(new docx.Paragraph({
-        spacing: { before: 0, after: 24, line: 240 },
+        spacing: {
+          before: 0,
+          after: isLastAlternative
+            ? (answerLineCount > 0 ? 0 : WORD_ANSWER_AFTER)
+            : WORD_ALTERNATIVE_AFTER,
+          line: WORD_LINE_SPACING_SINGLE
+        },
         indent: { left: 360 },
         children: [textRun(docx, `${String.fromCharCode(97 + index)}) ${alternative}`, { size: 18 })]
       }));
@@ -303,7 +318,7 @@
       if (run) {
         output.push(new docx.Paragraph({
           alignment: docx.AlignmentType.CENTER,
-          spacing: { before: 15, after: 35 },
+          spacing: { before: 15, after: answerLineCount > 0 ? 0 : WORD_ANSWER_AFTER },
           children: [run]
         }));
       }
@@ -314,9 +329,9 @@
       const isLastAnswerLine = i === answerLineCount - 1;
       output.push(new docx.Paragraph({
         spacing: {
-          before: isFirstAnswerLine ? WORD_RESPONSE_SPACING_100 : 0,
-          after: isLastAnswerLine ? WORD_RESPONSE_SPACING_100 : 0,
-          line: WORD_RESPONSE_SPACING_100
+          before: isFirstAnswerLine ? WORD_ANSWER_BEFORE : 0,
+          after: isLastAnswerLine ? WORD_ANSWER_AFTER : WORD_ANSWER_BETWEEN,
+          line: WORD_LINE_SPACING_SINGLE
         },
         children: [textRun(docx, '________________________________________________________________________________', { size: 13, color: '8A8A8A' })]
       }));
@@ -398,14 +413,20 @@
         const answer = cleanText(item.querySelector('strong')?.textContent || '');
         const justification = cleanText(item.querySelector('div')?.textContent || '');
         children.push(new docx.Paragraph({
-          spacing: { before: 25, after: 30, line: 240 },
+          spacing: { before: 25, after: 30, line: WORD_LINE_SPACING_SINGLE },
           children: [
             textRun(docx, `${finalNumber}. `, { bold: true, size: 18, color: '1F5A96' }),
             textRun(docx, answer, { bold: true, size: 18 })
           ]
         }));
         if (justification) {
-          children.push(paragraph(docx, justification, { size: 16, color: '555555', line: 240, after: 35, indent: { left: 260 } }));
+          children.push(paragraph(docx, justification, {
+            size: 16,
+            color: '555555',
+            line: WORD_LINE_SPACING_SINGLE,
+            after: 35,
+            indent: { left: 260 }
+          }));
         }
       });
     });
@@ -414,7 +435,11 @@
     if (bnccBox) {
       children.push(paragraph(docx, 'BNCC', { bold: true, size: 20, before: 90, after: 45 }));
       [...bnccBox.querySelectorAll('p')].forEach(item => {
-        children.push(paragraph(docx, item.textContent, { size: 16, line: 240, after: 30 }));
+        children.push(paragraph(docx, item.textContent, {
+          size: 16,
+          line: WORD_LINE_SPACING_SINGLE,
+          after: 30
+        }));
       });
     }
 
@@ -435,7 +460,7 @@
         default: {
           document: {
             run: { font: 'Arial', size: 19, color: '202020' },
-            paragraph: { spacing: { line: 240, after: 45 } }
+            paragraph: { spacing: { line: WORD_LINE_SPACING_SINGLE, after: 45 } }
           }
         }
       },
