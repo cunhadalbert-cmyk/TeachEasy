@@ -1,5 +1,6 @@
 (() => {
   const DOCX_CDN = 'https://cdn.jsdelivr.net/npm/docx@9.7.1/dist/index.iife.js';
+  const WORD_RESPONSE_SPACING_115 = 276;
   const printArea = document.querySelector('#print-area');
   const button = document.querySelector('#download-word');
   if (!printArea || !button) return;
@@ -279,7 +280,7 @@
     output.push(new docx.Paragraph({
       keepNext: alternatives.length > 0 || answerLineCount > 0,
       keepLines: true,
-      spacing: { before: 45, after: 35, line: 220 },
+      spacing: { before: 45, after: answerLineCount > 0 ? 0 : 35, line: 220 },
       children: [
         textRun(docx, `${finalNumber}. `, { bold: true, size: 19, color: '1F5A96' }),
         textRun(docx, questionText, { size: 19 })
@@ -309,8 +310,14 @@
     }
 
     for (let i = 0; i < answerLineCount; i += 1) {
+      const isFirstAnswerLine = i === 0;
+      const isLastAnswerLine = i === answerLineCount - 1;
       output.push(new docx.Paragraph({
-        spacing: { before: i === 0 ? 240 : 0, after: 28, line: 190 },
+        spacing: {
+          before: isFirstAnswerLine ? WORD_RESPONSE_SPACING_115 : 0,
+          after: isLastAnswerLine ? WORD_RESPONSE_SPACING_115 : 28,
+          line: 190
+        },
         children: [textRun(docx, '________________________________________________________________________________', { size: 13, color: '8A8A8A' })]
       }));
     }
