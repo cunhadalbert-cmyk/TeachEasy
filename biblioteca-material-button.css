@@ -1,0 +1,13 @@
+.library-header .btn-primary[href="montar-material.html"] {
+  border-color: #d62828;
+  background: #d62828;
+  color: #fff;
+  box-shadow: 0 10px 24px rgba(214, 40, 40, .24);
+}
+
+.library-header .btn-primary[href="montar-material.html"]:hover,
+.library-header .btn-primary[href="montar-material.html"]:focus-visible {
+  border-color: #b91c1c;
+  background: #b91c1c;
+  color: #fff;
+}
