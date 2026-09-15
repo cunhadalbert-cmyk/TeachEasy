@@ -116,21 +116,20 @@ test('Word desenha borda preta real ao redor da página A4', () => {
   assert.match(html, /montar-material-word-export\.js\?v=20260914-v7/);
 });
 
-test('PDF usa paginação A4 limpa, espaçamento pedagógico e imagens sem repetição', () => {
-  assert.match(html, /montar-material-pdf\.css\?v=20260914-v1/);
-  assert.match(html, /montar-material-pdf\.js\?v=20260914-v1/);
-  assert.match(pdfCss, /@page[\s\S]*size: A4 portrait/);
-  assert.match(pdfCss, /margin: 12mm/);
-  assert.match(pdfCss, /\.source-block[\s\S]*break-inside: auto/);
-  assert.match(pdfCss, /\.source-support[\s\S]*break-inside: avoid/);
-  assert.match(pdfCss, /\.final-questions > li[\s\S]*break-inside: avoid/);
-  assert.match(pdfCss, /\.answer-lines[\s\S]*gap: 3pt/);
-  assert.match(pdfCss, /margin: 6pt 0 8pt/);
-  assert.match(pdfCss, /\.student-page[\s\S]*break-after: page/);
-  assert.match(pdfCss, /#print-area::before[\s\S]*border: 1px solid #000/);
+test('PDF é gerado diretamente em duas páginas A4: atividade e gabarito', () => {
+  assert.match(html, /montar-material-pdf\.css\?v=20260915-v2/);
+  assert.match(html, /montar-material-pdf\.js\?v=20260915-v3/);
+  assert.match(html, />Baixar PDF</);
+  assert.match(pdfJs, /html2canvas@1\.4\.1/);
+  assert.match(pdfJs, /jspdf@2\.5\.2/);
+  assert.match(pdfJs, /const pages = \[studentPage, answerPage\]/);
+  assert.match(pdfJs, /canvases\.length !== 2/);
+  assert.match(pdfJs, /pdf\.getNumberOfPages\(\) !== 2/);
+  assert.match(pdfJs, /pdf\.save\('teacheasy-material\.pdf'\)/);
   assert.match(pdfJs, /markDuplicateImages\(\)/);
-  assert.match(pdfJs, /pdf-duplicate-image/);
-  assert.match(pdfJs, /document\.fonts\?\.ready/);
-  assert.match(pdfJs, /await Promise\.all\(images\.map\(waitForImage\)\)/);
-  assert.match(pdfJs, /clicked\.textContent = 'Preparando PDF\.\.\.'/);
+  assert.match(pdfCss, /\.pdf-capture-stage/);
+  assert.match(pdfCss, /width: 190mm/);
+  assert.match(pdfCss, /min-height: 277mm/);
+  assert.match(pdfCss, /\.source-support[\s\S]*display: flex/);
+  assert.match(pdfCss, /\.pdf-duplicate-image[\s\S]*display: none/);
 });
