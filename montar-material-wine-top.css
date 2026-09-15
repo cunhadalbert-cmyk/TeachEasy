@@ -1,0 +1,26 @@
+/* Ajuste do topo para usar o vermelho vinho oficial do TeachEasy. */
+.builder-header {
+  background: linear-gradient(135deg, #7a2e3a 0%, #662530 100%) !important;
+  border-bottom-color: rgba(255, 255, 255, .18) !important;
+  box-shadow: 0 10px 28px rgba(122, 46, 58, .24) !important;
+}
+
+.builder-header .brand strong,
+.builder-header .brand span {
+  color: #fff !important;
+}
+
+.builder-header .brand span {
+  opacity: .88;
+}
+
+.builder-header .btn-outline {
+  background: #fff !important;
+  color: #662530 !important;
+  border-color: rgba(255, 255, 255, .78) !important;
+}
+
+.builder-header .btn-outline:hover:not(:disabled) {
+  background: #f5e9ec !important;
+  border-color: #fff !important;
+}
