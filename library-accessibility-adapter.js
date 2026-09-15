@@ -239,6 +239,29 @@
     return article;
   }
 
+  function applyColorAndShapeModel(activity) {
+    if (!activity) return;
+    activity.symbol = '🔴  🔵  🟨  🔺';
+    activity.hasFigures = true;
+    activity.description = 'Exploração de cores e formas com apoio visual, elementos grandes e comandos objetivos.';
+    activity.questions = [
+      'Aponte o círculo vermelho.',
+      'Aponte o círculo azul.',
+      'Mostre o quadrado amarelo.',
+      'Mostre o triângulo vermelho.'
+    ];
+    activity.answers = [
+      'Círculo vermelho.',
+      'Círculo azul.',
+      'Quadrado amarelo.',
+      'Triângulo vermelho.'
+    ];
+  }
+
+  // Corrige os modelos antigos que apareciam como “cores e formas” sem qualquer forma visual.
+  applyColorAndShapeModel(activities.find(activity => activity.id === 'EI01'));
+  applyColorAndShapeModel(activities.find(activity => activity.id === 'AUT001'));
+
   if (typeof featureLabels === 'function') {
     const originalFeatureLabels = featureLabels;
     featureLabels = function accessibilityFeatureLabels(activity) {
@@ -296,5 +319,9 @@
   const categoryCopy = categoryTitle?.nextElementSibling;
   if (categoryCopy) {
     categoryCopy.textContent = 'O conteúdo curricular permanece o mesmo. O professor escolhe apoios de apresentação, organização e resposta conforme a necessidade do estudante.';
+  }
+
+  if (typeof renderAutismFeaturedActivities === 'function' && autismCategory) {
+    renderAutismFeaturedActivities();
   }
 })();
