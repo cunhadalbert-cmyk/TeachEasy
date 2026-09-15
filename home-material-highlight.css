@@ -1,0 +1,64 @@
+/* Destaque principal do Montar meu material na página inicial. */
+.hero-material-feature {
+  display: grid;
+  gap: 5px;
+  margin: 22px 0 14px;
+  padding: 16px 18px;
+  border: 1px solid rgba(122, 23, 48, .16);
+  border-radius: 18px;
+  background: linear-gradient(135deg, rgba(255, 248, 250, .98), rgba(255, 240, 244, .96));
+  box-shadow: 0 12px 28px rgba(74, 7, 21, .09);
+}
+
+.hero-material-feature > span {
+  color: #7a1730;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: .1em;
+}
+
+.hero-material-feature > strong {
+  color: #34151f;
+  font-family: "Libre Franklin", sans-serif;
+  font-size: clamp(20px, 2.2vw, 27px);
+  line-height: 1.15;
+}
+
+.hero-material-feature > small {
+  color: #66545a;
+  font-size: 14px;
+  line-height: 1.45;
+}
+
+.hero-actions .hero-material-button {
+  min-width: min(100%, 300px);
+  justify-content: center;
+  background: linear-gradient(90deg, #b71835 0%, #e32636 55%, #f04454 100%);
+  border-color: #c51d32;
+  color: #fff;
+  box-shadow: 0 12px 28px rgba(179, 24, 53, .28);
+  font-weight: 800;
+}
+
+.hero-actions .hero-material-button:hover {
+  background: linear-gradient(90deg, #97152c 0%, #c91f2f 55%, #df3345 100%);
+  border-color: #a4162a;
+  color: #fff;
+  transform: translateY(-1px);
+}
+
+.hero-actions .hero-library-button {
+  justify-content: center;
+}
+
+@media (max-width: 720px) {
+  .hero-material-feature {
+    margin-top: 18px;
+    padding: 14px 15px;
+  }
+
+  .hero-actions .hero-material-button,
+  .hero-actions .hero-library-button {
+    width: 100%;
+  }
+}
