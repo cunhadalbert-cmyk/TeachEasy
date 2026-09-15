@@ -6,6 +6,8 @@ const html = await readFile(new URL('../montar-material.html', import.meta.url),
 const js = await readFile(new URL('../montar-material.js', import.meta.url), 'utf8');
 const livePreviewJs = await readFile(new URL('../montar-material-live-preview.js', import.meta.url), 'utf8');
 const wordExportJs = await readFile(new URL('../montar-material-word-export.js', import.meta.url), 'utf8');
+const pdfCss = await readFile(new URL('../montar-material-pdf.css', import.meta.url), 'utf8');
+const pdfJs = await readFile(new URL('../montar-material-pdf.js', import.meta.url), 'utf8');
 
 test('montador usa conteúdo existente da Biblioteca sem serviço de IA', () => {
   assert.match(html, /SEM GERAÇÃO POR IA/);
@@ -112,4 +114,23 @@ test('Word desenha borda preta real ao redor da página A4', () => {
   assert.match(wordExportJs, /PageBorderZOrder\.FRONT/);
   assert.match(wordExportJs, /borders: pageBorderOptions\(docx\)/);
   assert.match(html, /montar-material-word-export\.js\?v=20260914-v7/);
+});
+
+test('PDF usa paginação A4 limpa, espaçamento pedagógico e imagens sem repetição', () => {
+  assert.match(html, /montar-material-pdf\.css\?v=20260914-v1/);
+  assert.match(html, /montar-material-pdf\.js\?v=20260914-v1/);
+  assert.match(pdfCss, /@page[\s\S]*size: A4 portrait/);
+  assert.match(pdfCss, /margin: 12mm/);
+  assert.match(pdfCss, /\.source-block[\s\S]*break-inside: auto/);
+  assert.match(pdfCss, /\.source-support[\s\S]*break-inside: avoid/);
+  assert.match(pdfCss, /\.final-questions > li[\s\S]*break-inside: avoid/);
+  assert.match(pdfCss, /\.answer-lines[\s\S]*gap: 3pt/);
+  assert.match(pdfCss, /margin: 6pt 0 8pt/);
+  assert.match(pdfCss, /\.student-page[\s\S]*break-after: page/);
+  assert.match(pdfCss, /#print-area::before[\s\S]*border: 1px solid #000/);
+  assert.match(pdfJs, /markDuplicateImages\(\)/);
+  assert.match(pdfJs, /pdf-duplicate-image/);
+  assert.match(pdfJs, /document\.fonts\?\.ready/);
+  assert.match(pdfJs, /await Promise\.all\(images\.map\(waitForImage\)\)/);
+  assert.match(pdfJs, /clicked\.textContent = 'Preparando PDF\.\.\.'/);
 });
