@@ -94,7 +94,9 @@
     originalRenderNavigation();
     refreshSubjectOptionsForCurrentGrade();
     if (!navigation.stage && !autismCategory) {
-      stepHelp.textContent = `${TOTAL_LIBRARY_ACTIVITIES.toLocaleString('pt-BR')} atividades educacionais organizadas por etapa, bimestre e recursos de inclusão.`;
+      choiceGrid.querySelector('.library-choice-card[data-theme="autismo"]')?.remove();
+      stepTitle.textContent = 'Escolha uma etapa';
+      stepHelp.textContent = `${TOTAL_LIBRARY_ACTIVITIES.toLocaleString('pt-BR')} atividades educacionais organizadas por etapa e bimestre.`;
     }
     syncFundamentalCollectionGuidance();
   };
