@@ -67,6 +67,42 @@
     });
   }
 
+  function addExplicitListNumbers(root) {
+    const lists = [
+      ['.final-questions > li', 'pdf-explicit-question-number'],
+      ['.answer-key-list > li', 'pdf-explicit-answer-number']
+    ];
+
+    lists.forEach(([selector, className]) => {
+      [...root.querySelectorAll(selector)].forEach((item, index) => {
+        const explicitValue = Number(item.getAttribute('value'));
+        const numberValue = Number.isFinite(explicitValue) && explicitValue > 0
+          ? explicitValue
+          : index + 1;
+
+        item.style.listStyle = 'none';
+        item.style.position = 'relative';
+        item.style.paddingLeft = '22px';
+
+        const number = document.createElement('span');
+        number.className = className;
+        number.textContent = `${numberValue}.`;
+        number.setAttribute('aria-hidden', 'true');
+        Object.assign(number.style, {
+          position: 'absolute',
+          left: '0',
+          top: '0',
+          fontFamily: 'Arial, sans-serif',
+          fontSize: 'inherit',
+          fontWeight: '700',
+          lineHeight: 'inherit',
+          color: '#111'
+        });
+        item.prepend(number);
+      });
+    });
+  }
+
   async function waitForImage(image) {
     if (image.complete && image.naturalWidth > 0) {
       try {
@@ -106,6 +142,7 @@
     const clone = page.cloneNode(true);
     clone.classList.add('pdf-capture-page');
     clone.querySelectorAll('.pdf-duplicate-image').forEach(image => image.remove());
+    addExplicitListNumbers(clone);
 
     stage.appendChild(clone);
     document.body.appendChild(stage);
