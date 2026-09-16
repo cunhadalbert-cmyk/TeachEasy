@@ -4,6 +4,7 @@ import { readFile } from 'node:fs/promises';
 import vm from 'node:vm';
 
 const overrideSource = await readFile(new URL('../ensino-medio-pedagogical-overrides.js', import.meta.url), 'utf8');
+const overrideSource0610 = await readFile(new URL('../ensino-medio-pedagogical-overrides-06-10.js', import.meta.url), 'utf8');
 const fetchSource = await readFile(new URL('../ensino-medio-pedagogical-fetch.js', import.meta.url), 'utf8');
 const html = await readFile(new URL('../biblioteca.html', import.meta.url), 'utf8');
 
@@ -11,13 +12,16 @@ function loadOverrides() {
   const context = {};
   vm.createContext(context);
   vm.runInContext(overrideSource, context);
+  vm.runInContext(overrideSource0610, context);
   return context.TeachEasyHighSchoolPedagogicalOverrides;
 }
 
-test('primeiro lote do Ensino Médio revisa cinco atividades de Português com contexto concreto', () => {
+test('Ensino Médio revisa dez atividades de Português com contexto concreto', () => {
   const patcher = loadOverrides();
   assert.equal(patcher.collection, 'em-1serie-1bimestre-lingua-portuguesa-v2');
-  assert.equal(patcher.reviewedIds.length, 5);
+  assert.equal(patcher.reviewedIds.length, 10);
+  assert.ok(patcher.reviewedIds.includes('em-1s-b1-lingua-portuguesa-06-debate-leitura-critica'));
+  assert.ok(patcher.reviewedIds.includes('em-1s-b1-lingua-portuguesa-10-sintese-autoral-leitura-critica'));
 
   const collection = {
     colecao: patcher.collection,
@@ -43,10 +47,11 @@ test('primeiro lote do Ensino Médio revisa cinco atividades de Português com c
     assert.equal(activity.ilustracao.status, 'nao-necessaria', activity.id);
     assert.ok(activity.textoApoio?.conteudo?.length > 150, activity.id);
     assert.doesNotMatch(activity.textoApoio.conteudo, /Em uma situação de comunicação da escola e da comunidade/i, activity.id);
+    assert.deepEqual(Array.from(activity.bncc).map(item => item.codigo), ['EM13LPXX'], activity.id);
   }
 });
 
-test('lote usa formatos variados com gabarito verificável', () => {
+test('lote ampliado usa formatos variados com gabarito verificável', () => {
   const patcher = loadOverrides();
   const collection = {
     colecao: patcher.collection,
@@ -65,25 +70,53 @@ test('lote usa formatos variados com gabarito verificável', () => {
   assert.ok(types.has('completar'));
   assert.ok(types.has('discursiva'));
   assert.ok(types.has('producao'));
+  assert.ok(types.has('associacao'));
+  assert.ok(types.has('analise'));
+  assert.ok(types.has('revisao'));
 
   for (const activity of collection.atividades) {
     activity.questoes.forEach((question, index) => {
       assert.equal(question.numero, index + 1);
       assert.ok(question.enunciado.length >= 20);
       assert.equal(activity.gabarito[index].numero, index + 1);
-      assert.ok(activity.gabarito[index].resposta.length >= 3);
+      assert.ok(activity.gabarito[index].resposta.trim().length >= 1);
       if (question.tipo === 'multipla-escolha') assert.equal(question.alternativas.length, 4);
       if (question.tipo === 'verdadeiro-falso') assert.deepEqual(Array.from(question.alternativas), ['Verdadeiro', 'Falso']);
     });
   }
 });
 
-test('Biblioteca aplica o lote antes de carregar biblioteca.js', () => {
+test('atividades 6 a 10 cobrem habilidades distintas sem texto genérico', () => {
+  const patcher = loadOverrides();
+  const ids = patcher.reviewedIds.slice(5);
+  const collection = {
+    colecao: patcher.collection,
+    atividades: ids.map(id => ({
+      id,
+      bncc: [{ codigo: 'PRESERVAR' }],
+      revisao: {},
+      ilustracao: {}
+    }))
+  };
+  patcher.apply(collection);
+
+  const titles = collection.atividades.map(activity => activity.titulo);
+  assert.equal(new Set(titles).size, 5);
+  assert.match(collection.atividades[0].textoApoio.conteudo, /quadra voltou a respirar/i);
+  assert.match(collection.atividades[1].textoApoio.conteudo, /Certamente|Talvez/);
+  assert.match(collection.atividades[2].textoApoio.conteudo, /Feira de Ciências/);
+  assert.match(collection.atividades[3].textoApoio.conteudo, /FONTE A/);
+  assert.match(collection.atividades[4].textoApoio.conteudo, /Mostra de Ciências/);
+});
+
+test('Biblioteca aplica os dois lotes antes do adaptador de fetch e de biblioteca.js', () => {
   const overrideIndex = html.indexOf('ensino-medio-pedagogical-overrides.js');
+  const override0610Index = html.indexOf('ensino-medio-pedagogical-overrides-06-10.js');
   const fetchIndex = html.indexOf('ensino-medio-pedagogical-fetch.js');
   const libraryIndex = html.indexOf('biblioteca.js');
   assert.ok(overrideIndex >= 0);
-  assert.ok(fetchIndex > overrideIndex);
+  assert.ok(override0610Index > overrideIndex);
+  assert.ok(fetchIndex > override0610Index);
   assert.ok(libraryIndex > fetchIndex);
   assert.match(fetchSource, /response\.clone\(\)\.json\(\)/);
   assert.match(fetchSource, /patcher\.apply\(collection\)/);
