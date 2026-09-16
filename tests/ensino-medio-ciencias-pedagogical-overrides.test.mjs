@@ -10,6 +10,8 @@ const sources = await Promise.all([
   'ensino-medio-ciencias-pedagogical-builders-02.js',
   'ensino-medio-ciencias-pedagogical-builders-03.js',
   'ensino-medio-ciencias-pedagogical-builders-04.js',
+  'ensino-medio-ciencias-pedagogical-builders-05.js',
+  'ensino-medio-ciencias-pedagogical-builders-06.js',
   'ensino-medio-ciencias-pedagogical-01.js',
   'ensino-medio-ciencias-pedagogical-02.js',
   'ensino-medio-ciencias-pedagogical-03.js',
@@ -82,17 +84,26 @@ test('as 50 atividades de Ciências têm contexto concreto, oito questões, gaba
   });
 });
 
-test('ciclo BNCC de Ciências permanece idêntico ao JSON canônico nos cinco blocos', () => {
-  const expectedCycle = ['EM13CNT103','EM13CNT104','EM13CNT105','EM13CNT106','EM13CNT107','EM13CNT101','EM13CNT102','EM13CNT103','EM13CNT104','EM13CNT105'];
-  const canonicalCycle = canonical.atividades.slice(0, 10).map(activity => activity.bncc[0].codigo);
-  assert.deepEqual(canonicalCycle, expectedCycle);
+test('mapa BNCC real de Ciências permanece idêntico ao JSON canônico em todos os cinco blocos', () => {
+  const expectedCycles = [
+    ['EM13CNT103','EM13CNT104','EM13CNT105','EM13CNT106','EM13CNT107','EM13CNT101','EM13CNT102','EM13CNT103','EM13CNT104','EM13CNT105'],
+    ['EM13CNT201','EM13CNT202','EM13CNT203','EM13CNT206','EM13CNT207','EM13CNT208','EM13CNT201','EM13CNT202','EM13CNT203','EM13CNT206'],
+    ['EM13CNT205','EM13CNT209','EM13CNT201','EM13CNT204','EM13CNT205','EM13CNT209','EM13CNT201','EM13CNT204','EM13CNT205','EM13CNT209'],
+    ['EM13CNT310','EM13CNT103','EM13CNT106','EM13CNT107','EM13CNT302','EM13CNT303','EM13CNT304','EM13CNT306','EM13CNT307','EM13CNT308'],
+    ['EM13CNT301','EM13CNT302','EM13CNT303','EM13CNT304','EM13CNT305','EM13CNT306','EM13CNT301','EM13CNT302','EM13CNT303','EM13CNT304']
+  ];
+  expectedCycles.forEach((expected, block) => {
+    const canonicalCodes = canonical.atividades.slice(block * 10, block * 10 + 10).map(activity => activity.bncc[0].codigo);
+    assert.deepEqual(canonicalCodes, expected, `mapa canônico do bloco ${block + 1}`);
+  });
 
   const patcher = loadPatcher();
   const collection = structuredClone(canonical);
   patcher.apply(collection);
   for (let block = 0; block < 5; block += 1) {
-    const codes = collection.atividades.slice(block * 10, block * 10 + 10).map(activity => activity.bncc[0].codigo);
-    assert.deepEqual(codes, expectedCycle, `bloco científico ${block + 1}`);
+    const canonicalCodes = canonical.atividades.slice(block * 10, block * 10 + 10).map(activity => activity.bncc[0].codigo);
+    const patchedCodes = collection.atividades.slice(block * 10, block * 10 + 10).map(activity => activity.bncc[0].codigo);
+    assert.deepEqual(patchedCodes, canonicalCodes, `bloco científico ${block + 1}`);
   }
 });
 
@@ -112,8 +123,31 @@ test('Ciências usa formatos variados e resultados quantitativos verificáveis',
   assert.match(collection.atividades[4].gabarito[0].resposta, /63,5 W/);
   assert.match(collection.atividades[5].gabarito[2].resposta, /75%/);
   assert.match(collection.atividades[6].gabarito[2].resposta, /0,4 °C\/min/);
-  assert.match(collection.atividades[49].gabarito[1].resposta, /7 unidades por período/);
-  assert.match(collection.atividades[49].gabarito[5].resposta, /3 unidades por período/);
+  assert.match(collection.atividades[11].gabarito[0].resposta, /56 unidades/);
+  assert.match(collection.atividades[13].gabarito[0].resposta, /24 espécies/);
+  assert.match(collection.atividades[23].gabarito[0].resposta, /4,9 m/);
+  assert.match(collection.atividades[32].gabarito[1].resposta, /1056 kWh\/dia/);
+  assert.match(collection.atividades[33].gabarito[0].resposta, /576 W/);
+  assert.match(collection.atividades[40].gabarito[0].resposta, /81,5 unidades do sensor/);
+  assert.match(collection.atividades[46].gabarito[2].resposta, /8 °C ao final de 20 min/);
+});
+
+test('conteúdo dos blocos 11 a 50 acompanha as famílias de habilidades canônicas', () => {
+  const patcher = loadPatcher();
+  const collection = structuredClone(canonical);
+  patcher.apply(collection);
+
+  assert.match(collection.atividades[10].textoApoio.conteudo, /biogênese|geração espontânea/i);
+  assert.match(collection.atividades[15].textoApoio.conteudo, /ancestralidade comum|evolução humana/i);
+  assert.match(collection.atividades[21].textoApoio.conteudo, /evolução estelar|massas solares/i);
+  assert.match(collection.atividades[23].textoApoio.conteudo, /gravidade|g = 9,8/i);
+  assert.match(collection.atividades[30].textoApoio.conteudo, /telecomunicações|internet/i);
+  assert.match(collection.atividades[34].textoApoio.conteudo, /comunicar|público|amostra/i);
+  assert.match(collection.atividades[36].textoApoio.conteudo, /ético|legal|biossegurança/i);
+  assert.match(collection.atividades[39].textoApoio.conteudo, /sensor|atuador|automação/i);
+  assert.match(collection.atividades[40].textoApoio.conteudo, /Hipótese proposta|repetições/i);
+  assert.match(collection.atividades[44].textoApoio.conteudo, /eugenia|hierarquizar|discrimina/i);
+  assert.match(collection.atividades[49].textoApoio.conteudo, /carne cultivada|ética|regulatória/i);
 });
 
 test('adaptador do Ensino Médio carrega Ciências sob demanda sem retirar Português e Matemática', () => {
@@ -122,6 +156,7 @@ test('adaptador do Ensino Médio carrega Ciências sob demanda sem retirar Portu
   assert.match(fetchSource, /TeachEasyHighSchoolSciencePedagogicalOverrides/);
   assert.match(fetchSource, /ensureSciencePatcher/);
   assert.match(fetchSource, /1-serie\/1-bimestre\/ciencias\.json/);
-  assert.match(fetchSource, /ensino-medio-ciencias-pedagogical-core-base\.js/);
+  assert.match(fetchSource, /ensino-medio-ciencias-pedagogical-builders-05\.js/);
+  assert.match(fetchSource, /ensino-medio-ciencias-pedagogical-builders-06\.js/);
   assert.match(fetchSource, /ensino-medio-ciencias-pedagogical-05\.js/);
 });
