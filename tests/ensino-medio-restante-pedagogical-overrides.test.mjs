@@ -4,13 +4,16 @@ import { readFile } from 'node:fs/promises';
 import vm from 'node:vm';
 
 const root = new URL('../', import.meta.url);
-const source = await readFile(new URL('ensino-medio-restante-pedagogical-overrides.js', root), 'utf8');
+const sources = await Promise.all([
+  'ensino-medio-restante-pedagogical-overrides.js',
+  'ensino-medio-restante-pedagogical-wording.js'
+].map(file => readFile(new URL(file, root), 'utf8')));
 const fetchSource = await readFile(new URL('ensino-medio-pedagogical-fetch.js', root), 'utf8');
 
 function loadPatcher() {
   const context = {};
   vm.createContext(context);
-  vm.runInContext(source, context);
+  for (const source of sources) vm.runInContext(source, context);
   return context.TeachEasyHighSchoolRemainingPedagogicalOverrides;
 }
 
@@ -147,5 +150,6 @@ test('adaptador carrega a revisão restante sob demanda sem retirar os patchers 
   assert.match(fetchSource, /TeachEasyHighSchoolGeographyPedagogicalOverrides/);
   assert.match(fetchSource, /TeachEasyHighSchoolRemainingPedagogicalOverrides/);
   assert.match(fetchSource, /ensino-medio-restante-pedagogical-overrides\.js/);
+  assert.match(fetchSource, /ensino-medio-restante-pedagogical-wording\.js/);
   assert.match(fetchSource, /ensureRemainingPatcher/);
 });
