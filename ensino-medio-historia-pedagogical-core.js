@@ -32,7 +32,7 @@
       'A existência de perspectivas diferentes impede qualquer interpretação histórica fundamentada.'
     ];
     const questions = [
-      { numero: 1, tipo: 'multipla-escolha', enunciado: q1, alternativas, espacoResposta: 'pequeno', figuraId: null },
+      { numero: 1, tipo: 'multipla-escolha', enunciado: q1, alternativas: alternatives, espacoResposta: 'pequeno', figuraId: null },
       { numero: 2, tipo: 'verdadeiro-falso', enunciado: `${meta.statement} Julgue a afirmação com base no material de apoio.`, alternativas: ['Verdadeiro','Falso'], espacoResposta: 'pequeno', figuraId: null },
       { numero: 3, tipo: 'completar', enunciado: `Complete com o conceito histórico que melhor organiza a análise deste caso: “${meta.blank} ______.”`, alternativas: [], espacoResposta: 'pequeno', figuraId: null },
       { numero: 4, tipo: 'associacao', enunciado: `Associe cada fonte ao papel que ela cumpre na investigação: Fonte A e Fonte B. Explique em uma frase por que elas não devem ser tratadas como evidências idênticas.`, alternativas: [], espacoResposta: 'medio', figuraId: null },
