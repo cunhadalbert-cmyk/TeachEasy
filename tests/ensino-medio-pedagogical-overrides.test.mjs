@@ -5,6 +5,7 @@ import vm from 'node:vm';
 
 const overrideSource = await readFile(new URL('../ensino-medio-pedagogical-overrides.js', import.meta.url), 'utf8');
 const overrideSource0610 = await readFile(new URL('../ensino-medio-pedagogical-overrides-06-10.js', import.meta.url), 'utf8');
+const overrideSource1115 = await readFile(new URL('../ensino-medio-pedagogical-overrides-11-15.js', import.meta.url), 'utf8');
 const fetchSource = await readFile(new URL('../ensino-medio-pedagogical-fetch.js', import.meta.url), 'utf8');
 const html = await readFile(new URL('../biblioteca.html', import.meta.url), 'utf8');
 
@@ -13,15 +14,18 @@ function loadOverrides() {
   vm.createContext(context);
   vm.runInContext(overrideSource, context);
   vm.runInContext(overrideSource0610, context);
+  vm.runInContext(overrideSource1115, context);
   return context.TeachEasyHighSchoolPedagogicalOverrides;
 }
 
-test('Ensino Médio revisa dez atividades de Português com contexto concreto', () => {
+test('Ensino Médio revisa quinze atividades de Português com contexto concreto', () => {
   const patcher = loadOverrides();
   assert.equal(patcher.collection, 'em-1serie-1bimestre-lingua-portuguesa-v2');
-  assert.equal(patcher.reviewedIds.length, 10);
+  assert.equal(patcher.reviewedIds.length, 15);
   assert.ok(patcher.reviewedIds.includes('em-1s-b1-lingua-portuguesa-06-debate-leitura-critica'));
   assert.ok(patcher.reviewedIds.includes('em-1s-b1-lingua-portuguesa-10-sintese-autoral-leitura-critica'));
+  assert.ok(patcher.reviewedIds.includes('em-1s-b1-lingua-portuguesa-11-mapa-conceitual-literatura'));
+  assert.ok(patcher.reviewedIds.includes('em-1s-b1-lingua-portuguesa-15-leitura-critica-literatura'));
 
   const collection = {
     colecao: patcher.collection,
@@ -88,7 +92,7 @@ test('lote ampliado usa formatos variados com gabarito verificável', () => {
 
 test('atividades 6 a 10 cobrem habilidades distintas sem texto genérico', () => {
   const patcher = loadOverrides();
-  const ids = patcher.reviewedIds.slice(5);
+  const ids = patcher.reviewedIds.slice(5, 10);
   const collection = {
     colecao: patcher.collection,
     atividades: ids.map(id => ({
@@ -109,14 +113,40 @@ test('atividades 6 a 10 cobrem habilidades distintas sem texto genérico', () =>
   assert.match(collection.atividades[4].textoApoio.conteudo, /Mostra de Ciências/);
 });
 
-test('Biblioteca aplica os dois lotes antes do adaptador de fetch e de biblioteca.js', () => {
+test('atividades 11 a 15 trabalham literatura com habilidades EM13LP01 a EM13LP05', () => {
+  const patcher = loadOverrides();
+  const ids = patcher.reviewedIds.slice(10, 15);
+  const expectedCodes = ['EM13LP01', 'EM13LP02', 'EM13LP03', 'EM13LP04', 'EM13LP05'];
+  const collection = {
+    colecao: patcher.collection,
+    atividades: ids.map((id, index) => ({
+      id,
+      bncc: [{ codigo: expectedCodes[index] }],
+      revisao: {},
+      ilustracao: {}
+    }))
+  };
+  patcher.apply(collection);
+
+  assert.equal(new Set(collection.atividades.map(activity => activity.titulo)).size, 5);
+  assert.match(collection.atividades[0].textoApoio.conteudo, /MICROCONTO|O BANCO/);
+  assert.match(collection.atividades[1].textoApoio.conteudo, /antiga sala 7/i);
+  assert.match(collection.atividades[2].textoApoio.conteudo, /RELATÓRIO DO LOBO/);
+  assert.match(collection.atividades[3].textoApoio.conteudo, /JANELA ACESA/);
+  assert.match(collection.atividades[4].textoApoio.conteudo, /clássicos|contemporâneas/i);
+  assert.deepEqual(Array.from(collection.atividades, activity => activity.bncc[0].codigo), expectedCodes);
+});
+
+test('Biblioteca aplica os três lotes antes do adaptador de fetch e de biblioteca.js', () => {
   const overrideIndex = html.indexOf('ensino-medio-pedagogical-overrides.js');
   const override0610Index = html.indexOf('ensino-medio-pedagogical-overrides-06-10.js');
+  const override1115Index = html.indexOf('ensino-medio-pedagogical-overrides-11-15.js');
   const fetchIndex = html.indexOf('ensino-medio-pedagogical-fetch.js');
   const libraryIndex = html.indexOf('biblioteca.js');
   assert.ok(overrideIndex >= 0);
   assert.ok(override0610Index > overrideIndex);
-  assert.ok(fetchIndex > override0610Index);
+  assert.ok(override1115Index > override0610Index);
+  assert.ok(fetchIndex > override1115Index);
   assert.ok(libraryIndex > fetchIndex);
   assert.match(fetchSource, /response\.clone\(\)\.json\(\)/);
   assert.match(fetchSource, /patcher\.apply\(collection\)/);
