@@ -5,6 +5,7 @@
   let scienceLoadPromise = null;
   let historyLoadPromise = null;
   let geographyLoadPromise = null;
+  let remainingLoadPromise = null;
 
   async function ensureMathPatcher(url) {
     if (!url.includes('/1-serie/1-bimestre/matematica.json')) return;
@@ -69,6 +70,15 @@
     await geographyLoadPromise;
   }
 
+  async function ensureRemainingPatcher(url) {
+    if (!/\/ensino-medio\/(?:1|2|3)-serie\/(?:1|2|3|4)-bimestre\/(?:lingua-portuguesa|matematica|ciencias|historia|geografia)\.json(?:\?|$)/.test(url)) return;
+    if (/\/1-serie\/1-bimestre\/(?:lingua-portuguesa|matematica|ciencias|historia|geografia)\.json(?:\?|$)/.test(url)) return;
+    if (globalThis.TeachEasyHighSchoolRemainingPedagogicalOverrides?.apply) return;
+
+    remainingLoadPromise ||= import('./ensino-medio-restante-pedagogical-overrides.js?v=20260916-em-restante-2750-v1');
+    await remainingLoadPromise;
+  }
+
   globalThis.fetch = async (...args) => {
     const response = await nativeFetch(...args);
     const request = args[0];
@@ -83,8 +93,10 @@
       await ensureSciencePatcher(url);
       await ensureHistoryPatcher(url);
       await ensureGeographyPatcher(url);
+      await ensureRemainingPatcher(url);
 
-      const patchers = [
+      const collection = await response.clone().json();
+      const fixedPatchers = [
         globalThis.TeachEasyHighSchoolPedagogicalOverrides,
         globalThis.TeachEasyHighSchoolMathPedagogicalOverrides,
         globalThis.TeachEasyHighSchoolSciencePedagogicalOverrides,
@@ -92,10 +104,9 @@
         globalThis.TeachEasyHighSchoolGeographyPedagogicalOverrides
       ].filter(item => item?.apply && item?.collection);
 
-      if (patchers.length === 0) return response;
-
-      const collection = await response.clone().json();
-      const patcher = patchers.find(item => item.collection === collection?.colecao);
+      const fixedPatcher = fixedPatchers.find(item => item.collection === collection?.colecao);
+      const remainingPatcher = globalThis.TeachEasyHighSchoolRemainingPedagogicalOverrides;
+      const patcher = fixedPatcher || (remainingPatcher?.apply && remainingPatcher?.matches?.(collection) ? remainingPatcher : null);
       if (!patcher) return response;
 
       const patched = patcher.apply(collection);
