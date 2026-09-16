@@ -2,6 +2,7 @@
   const nativeFetch = globalThis.fetch.bind(globalThis);
   let mathLoadPromise = null;
   let mathWordingLoadPromise = null;
+  let scienceLoadPromise = null;
 
   async function ensureMathPatcher(url) {
     if (!url.includes('/1-serie/1-bimestre/matematica.json')) return;
@@ -15,6 +16,27 @@
     await mathWordingLoadPromise;
   }
 
+  async function ensureSciencePatcher(url) {
+    if (!url.includes('/1-serie/1-bimestre/ciencias.json')) return;
+    if (globalThis.TeachEasyHighSchoolSciencePedagogicalOverrides?.reviewedIds?.length === 50) return;
+
+    scienceLoadPromise ||= (async () => {
+      await import('./ensino-medio-ciencias-pedagogical-core-base.js?v=20260916-1s1b-ciencias-v2');
+      await import('./ensino-medio-ciencias-pedagogical-builders-01.js?v=20260916-1s1b-ciencias-v2');
+      await import('./ensino-medio-ciencias-pedagogical-builders-02.js?v=20260916-1s1b-ciencias-v2');
+      await import('./ensino-medio-ciencias-pedagogical-builders-03.js?v=20260916-1s1b-ciencias-v2');
+      await import('./ensino-medio-ciencias-pedagogical-builders-04.js?v=20260916-1s1b-ciencias-v2');
+      await import('./ensino-medio-ciencias-pedagogical-builders-05.js?v=20260916-1s1b-ciencias-v2');
+      await import('./ensino-medio-ciencias-pedagogical-builders-06.js?v=20260916-1s1b-ciencias-v2');
+      await import('./ensino-medio-ciencias-pedagogical-01.js?v=20260916-1s1b-ciencias-v2');
+      await import('./ensino-medio-ciencias-pedagogical-02.js?v=20260916-1s1b-ciencias-v2');
+      await import('./ensino-medio-ciencias-pedagogical-03.js?v=20260916-1s1b-ciencias-v2');
+      await import('./ensino-medio-ciencias-pedagogical-04.js?v=20260916-1s1b-ciencias-v2');
+      await import('./ensino-medio-ciencias-pedagogical-05.js?v=20260916-1s1b-ciencias-v2');
+    })();
+    await scienceLoadPromise;
+  }
+
   globalThis.fetch = async (...args) => {
     const response = await nativeFetch(...args);
     const request = args[0];
@@ -26,10 +48,12 @@
 
     try {
       await ensureMathPatcher(url);
+      await ensureSciencePatcher(url);
 
       const patchers = [
         globalThis.TeachEasyHighSchoolPedagogicalOverrides,
-        globalThis.TeachEasyHighSchoolMathPedagogicalOverrides
+        globalThis.TeachEasyHighSchoolMathPedagogicalOverrides,
+        globalThis.TeachEasyHighSchoolSciencePedagogicalOverrides
       ].filter(item => item?.apply && item?.collection);
 
       if (patchers.length === 0) return response;
