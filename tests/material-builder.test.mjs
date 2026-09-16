@@ -8,6 +8,7 @@ const livePreviewJs = await readFile(new URL('../montar-material-live-preview.js
 const wordExportJs = await readFile(new URL('../montar-material-word-export.js', import.meta.url), 'utf8');
 const layoutsJs = await readFile(new URL('../montar-material-layouts.js', import.meta.url), 'utf8');
 const layoutsCss = await readFile(new URL('../montar-material-layouts.css', import.meta.url), 'utf8');
+const interactiveQuestionsJs = await readFile(new URL('../montar-material-interactive-questions.js', import.meta.url), 'utf8');
 const pdfCss = await readFile(new URL('../montar-material-pdf.css', import.meta.url), 'utf8');
 const pdfJs = await readFile(new URL('../montar-material-pdf.js', import.meta.url), 'utf8');
 
@@ -52,16 +53,30 @@ test('montador mostra prévia ao vivo ao lado enquanto o professor seleciona que
   assert.doesNotMatch(livePreviewJs, /openai|anthropic|gemini|\/api\/generate|\/api\/ai/i);
 });
 
-test('montador oferece layouts Clássico, Interativo e Visual sem mudar o conteúdo', () => {
+test('montador oferece layouts Clássico, Interativo e Visual preservando a base da Biblioteca', () => {
   assert.match(html, /Escolha o layout/);
   assert.match(html, /value="classic"/);
   assert.match(html, /value="interactive"/);
   assert.match(html, /value="visual"/);
-  assert.match(html, /O conteúdo pedagógico não muda/);
+  assert.match(html, /O conteúdo-base vem da Biblioteca/);
   assert.match(layoutsJs, /teacheasy\.materialBuilder\.layout/);
   assert.match(layoutsJs, /page\.dataset\.layout = current/);
   assert.match(layoutsCss, /a4-page\[data-layout="interactive"\]/);
   assert.match(layoutsCss, /a4-page\[data-layout="visual"\]/);
+});
+
+test('Interativo de Português usa formatos variados derivados do texto e do gabarito', () => {
+  assert.match(html, /montar-material-interactive-questions\.js\?v=20260915-v1/);
+  assert.match(html, /múltipla escolha, verdadeiro ou falso, lacunas, questões abertas e cruzadinha/);
+  assert.match(interactiveQuestionsJs, /function isPortuguese\(subject\)/);
+  assert.match(interactiveQuestionsJs, /MÚLTIPLA ESCOLHA/);
+  assert.match(interactiveQuestionsJs, /VERDADEIRO OU FALSO/);
+  assert.match(interactiveQuestionsJs, /COMPLETE A LACUNA/);
+  assert.match(interactiveQuestionsJs, /CRUZADINHA/);
+  assert.match(interactiveQuestionsJs, /originalAnswerHtml/);
+  assert.match(interactiveQuestionsJs, /sourceSentences\(block\)/);
+  assert.match(interactiveQuestionsJs, /crosswordImage\(puzzle\)/);
+  assert.doesNotMatch(interactiveQuestionsJs, /openai|anthropic|gemini|\/api\/generate|\/api\/ai/i);
 });
 
 test('cabeçalho final usa duas linhas compactas: Nome Turma Data e Escola Prof', () => {
