@@ -3,190 +3,173 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Modelo visual TeachEasy para atividades com diferentes tipos de questões.">
-  <title>Modelo de Tipos de Questões — TeachEasy</title>
+  <meta name="description" content="Protótipo TeachEasy dos novos tipos de questões no layout A4 já usado nas atividades.">
+  <title>Modelo A4 de questões — TeachEasy</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Libre+Franklin:wght@600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="modelo-tipos-questoes.css?v=20260915-v1">
+  <link rel="stylesheet" href="modelo-tipos-questoes.css?v=20260915-v2">
 </head>
 <body>
-  <header class="model-header">
-    <a class="brand" href="index.html" aria-label="Página inicial TeachEasy">
+  <header class="preview-toolbar">
+    <div>
       <strong>TeachEasy</strong>
-      <span>Modelo de atividade</span>
-    </a>
-    <nav class="header-actions" aria-label="Ações">
-      <a class="btn btn-outline" href="biblioteca.html">← Biblioteca</a>
-      <a class="btn btn-primary" href="montar-material.html">Montar meu material</a>
+      <span>Prévia do novo padrão de questões</span>
+    </div>
+    <nav aria-label="Ações">
+      <a href="biblioteca.html">← Biblioteca</a>
+      <a href="montar-material.html">Montar meu material</a>
     </nav>
   </header>
 
-  <main class="model-main">
-    <section class="model-intro">
-      <div>
-        <span class="eyebrow">MODELO VISUAL · NÃO PUBLICADO</span>
-        <h1>Como ficará uma atividade com vários tipos de questões.</h1>
-        <p>Este modelo serve para Ensino Fundamental I, Ensino Fundamental II e Ensino Médio. O conteúdo muda conforme série, disciplina e BNCC; o padrão visual permanece consistente.</p>
-      </div>
-      <div class="type-legend" aria-label="Tipos previstos">
-        <span>Discursiva</span>
-        <span>Múltipla escolha</span>
-        <span>Verdadeiro ou falso</span>
-        <span>Associação</span>
-        <span>Lacunas</span>
-        <span>Imagem / gráfico</span>
-        <span>Cruzadinha</span>
-      </div>
+  <main class="preview-main">
+    <section class="preview-note">
+      <strong>Protótipo — sem alterar as atividades publicadas</strong>
+      <p>A folha continua com o mesmo formato escolar. A novidade fica somente dentro das questões: aberta, múltipla escolha, verdadeiro/falso, associação, lacunas, interpretação visual e cruzadinha.</p>
     </section>
 
-    <section class="page-stage" aria-label="Prévia da atividade">
+    <section class="page-stack" aria-label="Prévia A4">
       <article class="sheet student-sheet">
-        <div class="sheet-ribbon">FOLHA DO ALUNO</div>
-
         <header class="worksheet-header">
-          <div class="field-line"><span>Nome:</span><i></i><span>Turma:</span><i class="short"></i><span>Data:</span><i class="short"></i></div>
-          <div class="field-line"><span>Escola:</span><i></i><span>Prof.:</span><i></i></div>
-          <h2>Ecossistemas e relações ecológicas</h2>
-          <p>Leia o texto de apoio e responda às questões. Observe os elementos visuais quando a questão solicitar.</p>
+          <div class="student-fields">
+            <p><b>Nome:</b> <span class="line grow"></span> <b>Turma:</b> <span class="line short"></span> <b>Data:</b> <span class="line date"></span></p>
+            <p><b>Escola:</b> <span class="line grow"></span> <b>Prof.:</b> <span class="line teacher"></span></p>
+          </div>
+          <h1>Ecossistemas e relações ecológicas</h1>
+          <p class="subtitle">Leia o texto e responda às 8 questões.</p>
         </header>
 
-        <section class="support-box">
-          <strong>Texto de apoio</strong>
-          <p>Em um ecossistema, os seres vivos se relacionam entre si e com fatores não vivos, como água, luz e temperatura. Essas relações podem envolver alimentação, competição, abrigo e reprodução. Alterações em um componente podem provocar efeitos em outros elementos do ambiente.</p>
+        <section class="support-text">
+          <h2>Texto de apoio</h2>
+          <p>Em um ecossistema, os seres vivos se relacionam entre si e com fatores não vivos, como água, luz, solo e temperatura. Essas relações envolvem alimentação, competição, abrigo e reprodução. Quando um recurso diminui ou uma condição ambiental muda, diferentes populações podem ser afetadas.</p>
         </section>
 
-        <ol class="questions">
-          <li class="question-block">
-            <span class="type-tag">Discursiva</span>
-            <p>Explique com suas palavras por que uma alteração em um componente do ecossistema pode afetar outros seres vivos.</p>
-            <div class="answer-lines"><i></i><i></i><i></i></div>
-          </li>
+        <section class="question q-open">
+          <div class="q-number">1.</div>
+          <div class="q-content">
+            <p>Explique por que uma alteração em um componente do ecossistema pode afetar outros seres vivos.</p>
+            <div class="write-lines"><span></span><span></span></div>
+          </div>
+        </section>
 
-          <li class="question-block">
-            <span class="type-tag">Múltipla escolha</span>
-            <p>Qual alternativa apresenta apenas fatores não vivos do ambiente?</p>
-            <div class="alternatives">
-              <label><b>A)</b> Água, luz e temperatura</label>
-              <label><b>B)</b> Plantas, água e fungos</label>
-              <label><b>C)</b> Animais, solo e bactérias</label>
-              <label><b>D)</b> Fungos, plantas e animais</label>
+        <section class="question">
+          <div class="q-number">2.</div>
+          <div class="q-content">
+            <p><b>Marque a alternativa correta.</b> Qual opção apresenta apenas fatores não vivos?</p>
+            <div class="choices two-columns">
+              <span>( &nbsp; ) A) Água, luz e temperatura.</span>
+              <span>( &nbsp; ) B) Plantas, água e fungos.</span>
+              <span>( &nbsp; ) C) Animais, solo e bactérias.</span>
+              <span>( &nbsp; ) D) Fungos, plantas e animais.</span>
             </div>
-          </li>
+          </div>
+        </section>
 
-          <li class="question-block">
-            <span class="type-tag">Múltipla escolha</span>
-            <p>Se diminuir muito a quantidade de alimento disponível, qual situação é mais provável?</p>
-            <div class="alternatives">
-              <label><b>A)</b> Não haverá qualquer mudança.</label>
-              <label><b>B)</b> A competição entre organismos pode aumentar.</label>
-              <label><b>C)</b> A temperatura do ambiente sempre cairá.</label>
-              <label><b>D)</b> Todos os organismos produzirão seu próprio alimento.</label>
+        <section class="question">
+          <div class="q-number">3.</div>
+          <div class="q-content">
+            <p><b>Marque a alternativa correta.</b> Se a quantidade de alimento diminuir muito, o que pode acontecer?</p>
+            <div class="choices two-columns">
+              <span>( &nbsp; ) A) Nada muda no ambiente.</span>
+              <span>( &nbsp; ) B) A competição pode aumentar.</span>
+              <span>( &nbsp; ) C) Todos passam a produzir alimento.</span>
+              <span>( &nbsp; ) D) A temperatura sempre diminui.</span>
             </div>
-          </li>
+          </div>
+        </section>
 
-          <li class="question-block vf-block">
-            <span class="type-tag">Verdadeiro ou falso</span>
-            <p>Marque V para verdadeiro e F para falso.</p>
-            <div class="vf-list">
-              <label><span>( &nbsp; )</span> A luz pode influenciar um ecossistema.</label>
-              <label><span>( &nbsp; )</span> Os seres vivos não dependem de fatores ambientais.</label>
-              <label><span>( &nbsp; )</span> A competição pode ocorrer quando recursos são limitados.</label>
+        <section class="question">
+          <div class="q-number">4.</div>
+          <div class="q-content">
+            <p><b>Verdadeiro ou falso.</b> Escreva V ou F nos parênteses.</p>
+            <div class="vf-grid">
+              <span>( &nbsp; ) A luz influencia o ecossistema.</span>
+              <span>( &nbsp; ) Seres vivos não dependem do ambiente.</span>
+              <span>( &nbsp; ) Recursos limitados podem aumentar a competição.</span>
             </div>
-          </li>
+          </div>
+        </section>
 
-          <li class="question-block association-block">
-            <span class="type-tag">Associação</span>
-            <p>Relacione cada elemento à descrição correspondente.</p>
-            <div class="association-grid">
-              <div><b>1.</b> Água</div><div><b>A.</b> Ser vivo que produz seu próprio alimento.</div>
-              <div><b>2.</b> Planta</div><div><b>B.</b> Fator não vivo essencial ao ambiente.</div>
-              <div><b>3.</b> Predação</div><div><b>C.</b> Relação em que um organismo se alimenta de outro.</div>
+        <section class="question">
+          <div class="q-number">5.</div>
+          <div class="q-content">
+            <p><b>Associe as colunas.</b></p>
+            <div class="association">
+              <div><span>1. Água</span><span>2. Planta</span><span>3. Predação</span></div>
+              <div><span>( &nbsp; ) Ser vivo produtor.</span><span>( &nbsp; ) Fator não vivo.</span><span>( &nbsp; ) Um organismo se alimenta de outro.</span></div>
             </div>
-            <div class="short-answer">Resposta: 1-____ &nbsp;&nbsp; 2-____ &nbsp;&nbsp; 3-____</div>
-          </li>
+          </div>
+        </section>
 
-          <li class="question-block">
-            <span class="type-tag">Complete as lacunas</span>
-            <p>Complete: Os seres vivos e os fatores <span class="blank"></span> formam, em conjunto, um <span class="blank"></span>.</p>
-          </li>
+        <section class="question">
+          <div class="q-number">6.</div>
+          <div class="q-content">
+            <p><b>Complete as lacunas.</b> Os seres vivos e os fatores <span class="inline-blank"></span> formam um <span class="inline-blank long"></span>.</p>
+          </div>
+        </section>
 
-          <li class="question-block visual-block">
-            <span class="type-tag">Interpretação visual</span>
-            <p>Observe o gráfico e indique em qual período ocorreu a maior quantidade de indivíduos observados.</p>
-            <div class="mini-chart" role="img" aria-label="Gráfico de barras com quatro períodos: manhã 6, meio-dia 11, tarde 8 e noite 4">
-              <div><span style="--h:42%"></span><b>Manhã</b></div>
-              <div><span style="--h:82%"></span><b>Meio-dia</b></div>
-              <div><span style="--h:60%"></span><b>Tarde</b></div>
-              <div><span style="--h:30%"></span><b>Noite</b></div>
+        <section class="question visual-question">
+          <div class="q-number">7.</div>
+          <div class="q-content visual-content">
+            <div>
+              <p><b>Observe o gráfico.</b> Em qual período foi observada a maior quantidade de indivíduos?</p>
+              <p class="answer-space">Resposta: <span class="line answer"></span></p>
             </div>
-            <div class="answer-lines compact"><i></i></div>
-          </li>
+            <div class="mini-chart" role="img" aria-label="Quantidade de indivíduos observados: manhã 6, meio-dia 11, tarde 8, noite 4.">
+              <div><i style="--bar:44%"></i><small>Manhã</small></div>
+              <div><i style="--bar:82%"></i><small>Meio-dia</small></div>
+              <div><i style="--bar:60%"></i><small>Tarde</small></div>
+              <div><i style="--bar:30%"></i><small>Noite</small></div>
+            </div>
+          </div>
+        </section>
 
-          <li class="question-block crossword-block">
-            <span class="type-tag">Cruzadinha pedagógica</span>
-            <p>Complete a cruzadinha usando as pistas.</p>
-            <div class="crossword-wrap">
-              <div class="crossword" aria-label="Modelo de grade de cruzadinha">
-                <span class="off"></span><span class="cell"><sup>1</sup></span><span class="cell"></span><span class="cell"></span><span class="off"></span><span class="off"></span>
-                <span class="off"></span><span class="cell"></span><span class="off"></span><span class="cell"><sup>2</sup></span><span class="cell"></span><span class="cell"></span>
-                <span class="cell"><sup>3</sup></span><span class="cell"></span><span class="cell"></span><span class="cell"></span><span class="off"></span><span class="off"></span>
-                <span class="off"></span><span class="cell"></span><span class="off"></span><span class="cell"></span><span class="off"></span><span class="off"></span>
-                <span class="off"></span><span class="cell"></span><span class="cell"></span><span class="cell"></span><span class="cell"></span><span class="off"></span>
+        <section class="question crossword-question">
+          <div class="q-number">8.</div>
+          <div class="q-content">
+            <p><b>Cruzadinha.</b> Complete a grade usando as pistas.</p>
+            <div class="crossword-layout">
+              <div class="crossword" aria-label="Grade da cruzadinha">
+                <span class="block"></span><span class="cell"><sup>1</sup></span><span class="cell"></span><span class="cell"></span><span class="cell"></span><span class="cell"></span><span class="cell"></span><span class="cell"></span><span class="cell"></span>
+                <span class="block"></span><span class="cell"></span><span class="block"></span><span class="block"></span><span class="block"></span><span class="block"></span><span class="block"></span><span class="block"></span><span class="block"></span>
+                <span class="cell"><sup>2</sup></span><span class="cell"></span><span class="cell"></span><span class="cell"></span><span class="block"></span><span class="cell"><sup>3</sup></span><span class="cell"></span><span class="cell"></span><span class="cell"></span>
+                <span class="block"></span><span class="cell"></span><span class="block"></span><span class="block"></span><span class="block"></span><span class="cell"></span><span class="block"></span><span class="block"></span><span class="block"></span>
+                <span class="block"></span><span class="cell"></span><span class="block"></span><span class="block"></span><span class="block"></span><span class="cell"></span><span class="block"></span><span class="block"></span><span class="block"></span>
+                <span class="block"></span><span class="cell"></span><span class="block"></span><span class="block"></span><span class="block"></span><span class="cell"></span><span class="block"></span><span class="block"></span><span class="block"></span>
+                <span class="block"></span><span class="cell"></span><span class="block"></span><span class="block"></span><span class="block"></span><span class="cell"></span><span class="block"></span><span class="block"></span><span class="block"></span>
+                <span class="block"></span><span class="cell"></span><span class="block"></span><span class="block"></span><span class="block"></span><span class="cell"></span><span class="block"></span><span class="block"></span><span class="block"></span>
+                <span class="block"></span><span class="cell"></span><span class="block"></span><span class="block"></span><span class="block"></span><span class="cell"></span><span class="block"></span><span class="block"></span><span class="block"></span>
               </div>
               <div class="clues">
-                <p><b>1.</b> Conjunto formado pelos seres vivos e fatores do ambiente.</p>
-                <p><b>2.</b> Recurso essencial para a vida.</p>
-                <p><b>3.</b> Relação em que organismos disputam um recurso.</p>
+                <p><b>1.</b> Conjunto dos seres vivos e dos fatores não vivos de um ambiente.</p>
+                <p><b>2.</b> Recurso indispensável à vida.</p>
+                <p><b>3.</b> Disputa entre organismos por um recurso limitado.</p>
               </div>
             </div>
-          </li>
-        </ol>
+          </div>
+        </section>
       </article>
 
       <article class="sheet answer-sheet">
-        <div class="sheet-ribbon answer-ribbon">GABARITO</div>
-        <header class="worksheet-header answer-header">
-          <span class="eyebrow">TEACHEASY · MATERIAL DO PROFESSOR</span>
-          <h2>Ecossistemas e relações ecológicas</h2>
-          <p>As respostas objetivas ficam diretas; as abertas recebem critérios claros de correção.</p>
+        <header class="answer-header">
+          <span>GABARITO — MATERIAL DO PROFESSOR</span>
+          <h1>Ecossistemas e relações ecológicas</h1>
         </header>
 
-        <ol class="answer-key-list">
-          <li><strong>Discursiva:</strong> espera-se que o estudante explique que os componentes do ecossistema são interdependentes e que alterações em recursos, alimento, abrigo ou condições ambientais podem afetar populações e relações ecológicas.</li>
-          <li><strong>Múltipla escolha:</strong> A.</li>
-          <li><strong>Múltipla escolha:</strong> B.</li>
-          <li><strong>V/F:</strong> V – F – V.</li>
-          <li><strong>Associação:</strong> 1-B; 2-A; 3-C.</li>
-          <li><strong>Lacunas:</strong> não vivos; ecossistema.</li>
-          <li><strong>Interpretação visual:</strong> meio-dia.</li>
-          <li class="crossword-answer">
-            <strong>Cruzadinha:</strong> o gabarito mostra as palavras da grade e também lista as respostas das pistas.
-            <div class="solution-grid">
-              <span>—</span><span>E</span><span>C</span><span>O</span><span>—</span><span>—</span>
-              <span>—</span><span>C</span><span>—</span><span>A</span><span>G</span><span>U</span>
-              <span>C</span><span>O</span><span>M</span><span>P</span><span>—</span><span>—</span>
-              <span>—</span><span>S</span><span>—</span><span>A</span><span>—</span><span>—</span>
-              <span>—</span><span>S</span><span>I</span><span>S</span><span>T</span><span>—</span>
-            </div>
-          </li>
+        <ol class="answers">
+          <li>Os componentes do ecossistema são interdependentes; mudanças em recursos e condições ambientais podem alterar alimentação, abrigo, reprodução e tamanho das populações.</li>
+          <li><b>A)</b> Água, luz e temperatura.</li>
+          <li><b>B)</b> A competição pode aumentar.</li>
+          <li><b>V – F – V.</b></li>
+          <li><b>2 – 1 – 3.</b></li>
+          <li><b>não vivos; ecossistema.</b></li>
+          <li><b>Meio-dia.</b></li>
+          <li><b>Cruzadinha:</b> 1. ECOSSISTEMA; 2. ÁGUA; 3. COMPETIÇÃO.</li>
         </ol>
 
         <section class="bncc-box">
-          <strong>BNCC</strong>
-          <p>No material real, este bloco exibirá somente as habilidades efetivamente trabalhadas na atividade e conferidas durante a revisão pedagógica.</p>
-        </section>
-
-        <section class="approval-box">
-          <strong>Checklist antes de publicar</strong>
-          <div class="approval-grid">
-            <span>□ Texto suficiente</span>
-            <span>□ Imagem/gráfico coerente</span>
-            <span>□ Questões respondíveis</span>
-            <span>□ Gabarito verificável</span>
-            <span>□ BNCC correspondente</span>
-            <span>□ Revisão humana concluída</span>
-          </div>
+          <h2>BNCC</h2>
+          <p><b>No material final:</b> aparecerá aqui somente o código e a descrição da habilidade realmente trabalhada e conferida para a série, disciplina e bimestre da atividade.</p>
         </section>
       </article>
     </section>
