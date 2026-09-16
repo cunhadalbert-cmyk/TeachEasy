@@ -128,7 +128,9 @@
   observer.observe(printArea, {
     childList: true,
     subtree: true,
-    characterData: true
+    characterData: true,
+    attributes: true,
+    attributeFilter: ['data-layout']
   });
 
   const nativePrint = window.print.bind(window);
