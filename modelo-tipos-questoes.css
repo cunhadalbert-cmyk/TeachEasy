@@ -1,0 +1,359 @@
+:root {
+  --wine:#6f1630;
+  --wine-dark:#4a0715;
+  --yellow:#ffd166;
+  --ink:#1f1f1f;
+  --muted:#666;
+  --line:#cfcfcf;
+  --paper:#fff;
+  --page-bg:#eceff2;
+}
+
+*{box-sizing:border-box}
+
+body{
+  margin:0;
+  background:var(--page-bg);
+  color:var(--ink);
+  font-family:"DM Sans",Arial,sans-serif;
+}
+
+a{color:inherit}
+
+.preview-toolbar{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:18px;
+  padding:10px 18px;
+  background:linear-gradient(90deg,var(--wine-dark),var(--wine));
+  color:#fff;
+}
+
+.preview-toolbar>div{
+  display:flex;
+  align-items:baseline;
+  gap:10px;
+}
+
+.preview-toolbar strong{
+  font:700 18px "Libre Franklin",Arial,sans-serif;
+}
+
+.preview-toolbar span{font-size:12px;opacity:.85}
+.preview-toolbar nav{display:flex;gap:8px;flex-wrap:wrap}
+
+.preview-toolbar a{
+  display:inline-flex;
+  min-height:34px;
+  align-items:center;
+  padding:0 11px;
+  border:1px solid rgba(255,255,255,.35);
+  border-radius:8px;
+  text-decoration:none;
+  font-size:12px;
+  font-weight:700;
+}
+
+.preview-toolbar a:last-child{
+  border-color:var(--yellow);
+  background:var(--yellow);
+  color:#3b2100;
+}
+
+.preview-main{
+  width:min(920px,100%);
+  margin:0 auto;
+  padding:18px 12px 48px;
+}
+
+.preview-note{
+  width:min(210mm,100%);
+  margin:0 auto 14px;
+  padding:11px 14px;
+  border-radius:9px;
+  background:#fff8de;
+  border:1px solid #ead178;
+}
+
+.preview-note strong{font-size:13px;color:var(--wine)}
+.preview-note p{margin:4px 0 0;font-size:12px;line-height:1.45;color:#4e4e4e}
+
+.page-stack{
+  display:grid;
+  gap:24px;
+  justify-items:center;
+}
+
+.sheet{
+  width:min(210mm,100%);
+  min-height:297mm;
+  padding:10mm;
+  background:var(--paper);
+  box-shadow:0 14px 35px rgba(30,40,50,.14);
+}
+
+.worksheet-header{
+  padding-bottom:7mm;
+  border-bottom:1.5px solid #222;
+}
+
+.student-fields p{
+  display:flex;
+  align-items:flex-end;
+  gap:6px;
+  margin:0 0 7px;
+  font-size:10.5px;
+  line-height:1;
+  white-space:nowrap;
+}
+
+.line{
+  display:inline-block;
+  height:13px;
+  border-bottom:1px solid #555;
+}
+
+.line.grow{flex:1;min-width:80px}
+.line.short{width:52px}
+.line.date{width:75px}
+.line.teacher{width:130px}
+.line.answer{width:160px}
+
+.worksheet-header h1,
+.answer-header h1{
+  margin:8mm 0 2mm;
+  text-align:center;
+  font:700 18px/1.2 "Libre Franklin",Arial,sans-serif;
+}
+
+.subtitle{
+  margin:0;
+  text-align:center;
+  font-size:10.5px;
+}
+
+.support-text{
+  margin:5mm 0 4mm;
+  padding:3.5mm 4mm;
+  border:1px solid #cfcfcf;
+  border-left:3px solid var(--wine);
+  background:#fafafa;
+}
+
+.support-text h2{
+  margin:0 0 1.5mm;
+  color:var(--wine);
+  font-size:11px;
+}
+
+.support-text p{
+  margin:0;
+  font-size:10.2px;
+  line-height:1.42;
+}
+
+.question{
+  display:grid;
+  grid-template-columns:22px 1fr;
+  gap:4px;
+  margin:0 0 3.1mm;
+  break-inside:avoid;
+}
+
+.q-number{
+  color:var(--wine);
+  font-weight:800;
+  font-size:11px;
+  padding-top:1px;
+}
+
+.q-content p{
+  margin:0 0 1.7mm;
+  font-size:10.2px;
+  line-height:1.36;
+}
+
+.write-lines{
+  display:grid;
+  gap:3.2mm;
+  padding-right:3mm;
+}
+
+.write-lines span{border-bottom:1px solid #aaa}
+
+.choices,
+.vf-grid{
+  display:grid;
+  gap:1.3mm 5mm;
+  font-size:9.6px;
+  line-height:1.32;
+}
+
+.two-columns{grid-template-columns:1fr 1fr}
+
+.association{
+  display:grid;
+  grid-template-columns:.7fr 1.5fr;
+  gap:5mm;
+  font-size:9.7px;
+}
+
+.association>div{display:grid;gap:1.1mm}
+
+.inline-blank{
+  display:inline-block;
+  width:68px;
+  height:12px;
+  border-bottom:1px solid #333;
+  vertical-align:bottom;
+}
+
+.inline-blank.long{width:95px}
+
+.visual-content{
+  display:grid;
+  grid-template-columns:1fr 170px;
+  gap:6mm;
+  align-items:center;
+}
+
+.answer-space{margin-top:5mm!important}
+
+.mini-chart{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  align-items:end;
+  gap:5px;
+  height:64px;
+  padding:5px 4px 0;
+  border-left:1px solid #666;
+  border-bottom:1px solid #666;
+}
+
+.mini-chart div{
+  height:100%;
+  display:grid;
+  grid-template-rows:1fr auto;
+  align-items:end;
+  justify-items:center;
+}
+
+.mini-chart i{
+  width:65%;
+  height:var(--bar);
+  border:1px solid var(--wine);
+  background:#a34058;
+}
+
+.mini-chart small{
+  margin-top:2px;
+  font-size:6.8px;
+  white-space:nowrap;
+}
+
+.crossword-layout{
+  display:grid;
+  grid-template-columns:150px 1fr;
+  gap:6mm;
+  align-items:start;
+}
+
+.crossword{
+  display:grid;
+  grid-template-columns:repeat(9,15px);
+  grid-auto-rows:15px;
+  gap:1px;
+}
+
+.crossword span{position:relative}
+.crossword .block{background:#222}
+.crossword .cell{border:1px solid #555;background:#fff}
+.crossword sup{position:absolute;top:0;left:1px;font-size:5px;line-height:1}
+
+.clues p{
+  margin:0 0 1.6mm;
+  font-size:8.5px;
+  line-height:1.25;
+}
+
+.answer-sheet{padding-top:13mm}
+
+.answer-header{
+  padding-bottom:6mm;
+  border-bottom:1.5px solid var(--wine);
+}
+
+.answer-header>span{
+  display:block;
+  color:var(--wine);
+  font-size:9px;
+  font-weight:800;
+  letter-spacing:.08em;
+}
+
+.answer-header h1{margin-top:4mm}
+
+.answers{
+  margin:7mm 0 0;
+  padding-left:7mm;
+}
+
+.answers li{
+  margin-bottom:4.5mm;
+  padding-left:2mm;
+  font-size:10.5px;
+  line-height:1.45;
+}
+
+.answers li::marker{color:var(--wine);font-weight:800}
+
+.bncc-box{
+  margin-top:8mm;
+  padding:4mm;
+  border:1px solid #dfc056;
+  background:#fff8df;
+}
+
+.bncc-box h2{
+  margin:0 0 2mm;
+  color:var(--wine);
+  font-size:13px;
+}
+
+.bncc-box p{
+  margin:0;
+  font-size:10.5px;
+  line-height:1.45;
+}
+
+@media(max-width:700px){
+  .preview-toolbar{align-items:flex-start;flex-direction:column}
+  .preview-toolbar>div{align-items:flex-start;flex-direction:column;gap:2px}
+  .preview-toolbar nav{width:100%}
+  .preview-toolbar a{flex:1;justify-content:center}
+  .sheet{min-height:0;padding:18px 14px}
+  .student-fields p{flex-wrap:wrap;white-space:normal}
+  .line.grow{min-width:120px}
+  .visual-content{grid-template-columns:1fr}
+  .mini-chart{max-width:220px}
+  .crossword-layout{grid-template-columns:1fr}
+  .two-columns{grid-template-columns:1fr}
+  .association{grid-template-columns:1fr}
+}
+
+@media print{
+  body{background:#fff}
+  .preview-toolbar,.preview-note{display:none!important}
+  .preview-main{width:100%;padding:0}
+  .page-stack{display:block}
+  .sheet{
+    width:210mm;
+    min-height:297mm;
+    margin:0;
+    padding:10mm;
+    box-shadow:none;
+    page-break-after:always;
+  }
+  .answer-sheet{page-break-after:auto}
+}

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Protótipo TeachEasy dos novos tipos de questões no layout A4 já usado nas atividades.">
+  <title>Modelo A4 de questões — TeachEasy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Libre+Franklin:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="modelo-tipos-questoes.css?v=20260915-v2">
+</head>
+<body>
+  <header class="preview-toolbar">
+    <div>
+      <strong>TeachEasy</strong>
+      <span>Prévia do novo padrão de questões</span>
+    </div>
+    <nav aria-label="Ações">
+      <a href="biblioteca.html">← Biblioteca</a>
+      <a href="montar-material.html">Montar meu material</a>
+    </nav>
+  </header>
+
+  <main class="preview-main">
+    <section class="preview-note">
+      <strong>Protótipo — sem alterar as atividades publicadas</strong>
+      <p>A folha continua com o mesmo formato escolar. A novidade fica somente dentro das questões: aberta, múltipla escolha, verdadeiro/falso, associação, lacunas, interpretação visual e cruzadinha.</p>
+    </section>
+
+    <section class="page-stack" aria-label="Prévia A4">
+      <article class="sheet student-sheet">
+        <header class="worksheet-header">
+          <div class="student-fields">
+            <p><b>Nome:</b> <span class="line grow"></span> <b>Turma:</b> <span class="line short"></span> <b>Data:</b> <span class="line date"></span></p>
+            <p><b>Escola:</b> <span class="line grow"></span> <b>Prof.:</b> <span class="line teacher"></span></p>
+          </div>
+          <h1>Ecossistemas e relações ecológicas</h1>
+          <p class="subtitle">Leia o texto e responda às 8 questões.</p>
+        </header>
+
+        <section class="support-text">
+          <h2>Texto de apoio</h2>
+          <p>Em um ecossistema, os seres vivos se relacionam entre si e com fatores não vivos, como água, luz, solo e temperatura. Essas relações envolvem alimentação, competição, abrigo e reprodução. Quando um recurso diminui ou uma condição ambiental muda, diferentes populações podem ser afetadas.</p>
+        </section>
+
+        <section class="question q-open">
+          <div class="q-number">1.</div>
+          <div class="q-content">
+            <p>Explique por que uma alteração em um componente do ecossistema pode afetar outros seres vivos.</p>
+            <div class="write-lines"><span></span><span></span></div>
+          </div>
+        </section>
+
+        <section class="question">
+          <div class="q-number">2.</div>
+          <div class="q-content">
+            <p><b>Marque a alternativa correta.</b> Qual opção apresenta apenas fatores não vivos?</p>
+            <div class="choices two-columns">
+              <span>( &nbsp; ) A) Água, luz e temperatura.</span>
+              <span>( &nbsp; ) B) Plantas, água e fungos.</span>
+              <span>( &nbsp; ) C) Animais, solo e bactérias.</span>
+              <span>( &nbsp; ) D) Fungos, plantas e animais.</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="question">
+          <div class="q-number">3.</div>
+          <div class="q-content">
+            <p><b>Marque a alternativa correta.</b> Se a quantidade de alimento diminuir muito, o que pode acontecer?</p>
+            <div class="choices two-columns">
+              <span>( &nbsp; ) A) Nada muda no ambiente.</span>
+              <span>( &nbsp; ) B) A competição pode aumentar.</span>
+              <span>( &nbsp; ) C) Todos passam a produzir alimento.</span>
+              <span>( &nbsp; ) D) A temperatura sempre diminui.</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="question">
+          <div class="q-number">4.</div>
+          <div class="q-content">
+            <p><b>Verdadeiro ou falso.</b> Escreva V ou F nos parênteses.</p>
+            <div class="vf-grid">
+              <span>( &nbsp; ) A luz influencia o ecossistema.</span>
+              <span>( &nbsp; ) Seres vivos não dependem do ambiente.</span>
+              <span>( &nbsp; ) Recursos limitados podem aumentar a competição.</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="question">
+          <div class="q-number">5.</div>
+          <div class="q-content">
+            <p><b>Associe as colunas.</b></p>
+            <div class="association">
+              <div><span>1. Água</span><span>2. Planta</span><span>3. Predação</span></div>
+              <div><span>( &nbsp; ) Ser vivo produtor.</span><span>( &nbsp; ) Fator não vivo.</span><span>( &nbsp; ) Um organismo se alimenta de outro.</span></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="question">
+          <div class="q-number">6.</div>
+          <div class="q-content">
+            <p><b>Complete as lacunas.</b> Os seres vivos e os fatores <span class="inline-blank"></span> formam um <span class="inline-blank long"></span>.</p>
+          </div>
+        </section>
+
+        <section class="question visual-question">
+          <div class="q-number">7.</div>
+          <div class="q-content visual-content">
+            <div>
+              <p><b>Observe o gráfico.</b> Em qual período foi observada a maior quantidade de indivíduos?</p>
+              <p class="answer-space">Resposta: <span class="line answer"></span></p>
+            </div>
+            <div class="mini-chart" role="img" aria-label="Quantidade de indivíduos observados: manhã 6, meio-dia 11, tarde 8, noite 4.">
+              <div><i style="--bar:44%"></i><small>Manhã</small></div>
+              <div><i style="--bar:82%"></i><small>Meio-dia</small></div>
+              <div><i style="--bar:60%"></i><small>Tarde</small></div>
+              <div><i style="--bar:30%"></i><small>Noite</small></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="question crossword-question">
+          <div class="q-number">8.</div>
+          <div class="q-content">
+            <p><b>Cruzadinha.</b> Complete a grade usando as pistas.</p>
+            <div class="crossword-layout">
+              <div class="crossword" aria-label="Grade da cruzadinha">
+                <span class="block"></span><span class="cell"><sup>1</sup></span><span class="cell"></span><span class="cell"></span><span class="cell"></span><span class="cell"></span><span class="cell"></span><span class="cell"></span><span class="cell"></span>
+                <span class="block"></span><span class="cell"></span><span class="block"></span><span class="block"></span><span class="block"></span><span class="block"></span><span class="block"></span><span class="block"></span><span class="block"></span>
+                <span class="cell"><sup>2</sup></span><span class="cell"></span><span class="cell"></span><span class="cell"></span><span class="block"></span><span class="cell"><sup>3</sup></span><span class="cell"></span><span class="cell"></span><span class="cell"></span>
+                <span class="block"></span><span class="cell"></span><span class="block"></span><span class="block"></span><span class="block"></span><span class="cell"></span><span class="block"></span><span class="block"></span><span class="block"></span>
+                <span class="block"></span><span class="cell"></span><span class="block"></span><span class="block"></span><span class="block"></span><span class="cell"></span><span class="block"></span><span class="block"></span><span class="block"></span>
+                <span class="block"></span><span class="cell"></span><span class="block"></span><span class="block"></span><span class="block"></span><span class="cell"></span><span class="block"></span><span class="block"></span><span class="block"></span>
+                <span class="block"></span><span class="cell"></span><span class="block"></span><span class="block"></span><span class="block"></span><span class="cell"></span><span class="block"></span><span class="block"></span><span class="block"></span>
+                <span class="block"></span><span class="cell"></span><span class="block"></span><span class="block"></span><span class="block"></span><span class="cell"></span><span class="block"></span><span class="block"></span><span class="block"></span>
+                <span class="block"></span><span class="cell"></span><span class="block"></span><span class="block"></span><span class="block"></span><span class="cell"></span><span class="block"></span><span class="block"></span><span class="block"></span>
+              </div>
+              <div class="clues">
+                <p><b>1.</b> Conjunto dos seres vivos e dos fatores não vivos de um ambiente.</p>
+                <p><b>2.</b> Recurso indispensável à vida.</p>
+                <p><b>3.</b> Disputa entre organismos por um recurso limitado.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </article>
+
+      <article class="sheet answer-sheet">
+        <header class="answer-header">
+          <span>GABARITO — MATERIAL DO PROFESSOR</span>
+          <h1>Ecossistemas e relações ecológicas</h1>
+        </header>
+
+        <ol class="answers">
+          <li>Os componentes do ecossistema são interdependentes; mudanças em recursos e condições ambientais podem alterar alimentação, abrigo, reprodução e tamanho das populações.</li>
+          <li><b>A)</b> Água, luz e temperatura.</li>
+          <li><b>B)</b> A competição pode aumentar.</li>
+          <li><b>V – F – V.</b></li>
+          <li><b>2 – 1 – 3.</b></li>
+          <li><b>não vivos; ecossistema.</b></li>
+          <li><b>Meio-dia.</b></li>
+          <li><b>Cruzadinha:</b> 1. ECOSSISTEMA; 2. ÁGUA; 3. COMPETIÇÃO.</li>
+        </ol>
+
+        <section class="bncc-box">
+          <h2>BNCC</h2>
+          <p><b>No material final:</b> aparecerá aqui somente o código e a descrição da habilidade realmente trabalhada e conferida para a série, disciplina e bimestre da atividade.</p>
+        </section>
+      </article>
+    </section>
+  </main>
+</body>
+</html>

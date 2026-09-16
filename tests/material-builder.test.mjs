@@ -6,6 +6,8 @@ const html = await readFile(new URL('../montar-material.html', import.meta.url),
 const js = await readFile(new URL('../montar-material.js', import.meta.url), 'utf8');
 const livePreviewJs = await readFile(new URL('../montar-material-live-preview.js', import.meta.url), 'utf8');
 const wordExportJs = await readFile(new URL('../montar-material-word-export.js', import.meta.url), 'utf8');
+const layoutsJs = await readFile(new URL('../montar-material-layouts.js', import.meta.url), 'utf8');
+const layoutsCss = await readFile(new URL('../montar-material-layouts.css', import.meta.url), 'utf8');
 const pdfCss = await readFile(new URL('../montar-material-pdf.css', import.meta.url), 'utf8');
 const pdfJs = await readFile(new URL('../montar-material-pdf.js', import.meta.url), 'utf8');
 
@@ -48,6 +50,18 @@ test('montador mostra prévia ao vivo ao lado enquanto o professor seleciona que
   assert.match(livePreviewJs, /querySelector\('\.student-page'\)/);
   assert.match(livePreviewJs, /cloneNode\(true\)/);
   assert.doesNotMatch(livePreviewJs, /openai|anthropic|gemini|\/api\/generate|\/api\/ai/i);
+});
+
+test('montador oferece layouts Clássico, Interativo e Visual sem mudar o conteúdo', () => {
+  assert.match(html, /Escolha o layout/);
+  assert.match(html, /value="classic"/);
+  assert.match(html, /value="interactive"/);
+  assert.match(html, /value="visual"/);
+  assert.match(html, /O conteúdo pedagógico não muda/);
+  assert.match(layoutsJs, /teacheasy\.materialBuilder\.layout/);
+  assert.match(layoutsJs, /page\.dataset\.layout = current/);
+  assert.match(layoutsCss, /a4-page\[data-layout="interactive"\]/);
+  assert.match(layoutsCss, /a4-page\[data-layout="visual"\]/);
 });
 
 test('cabeçalho final usa duas linhas compactas: Nome Turma Data e Escola Prof', () => {
@@ -113,7 +127,15 @@ test('Word desenha borda preta real ao redor da página A4', () => {
   assert.match(wordExportJs, /PageBorderOffsetFrom\.PAGE/);
   assert.match(wordExportJs, /PageBorderZOrder\.FRONT/);
   assert.match(wordExportJs, /borders: pageBorderOptions\(docx\)/);
-  assert.match(html, /montar-material-word-export\.js\?v=20260914-v7/);
+  assert.match(html, /montar-material-word-export\.js\?v=20260915-v8/);
+});
+
+test('Word acompanha a opção de layout sem alterar o Clássico aprovado', () => {
+  assert.match(wordExportJs, /function currentLayout\(\)/);
+  assert.match(wordExportJs, /function layoutTheme\(\)/);
+  assert.match(wordExportJs, /layout === 'interactive'/);
+  assert.match(wordExportJs, /layout === 'visual'/);
+  assert.match(wordExportJs, /titleColor: '1F5A96'/);
 });
 
 test('PDF é gerado diretamente em duas páginas A4: atividade e gabarito', () => {

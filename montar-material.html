@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="montar-material-wine-top.css?v=20260915-v2">
   <link rel="stylesheet" href="montar-material-pdf.css?v=20260915-v2">
   <link rel="stylesheet" href="montar-material-pdf-numbering.css?v=20260915-v1">
+  <link rel="stylesheet" href="montar-material-layouts.css?v=20260915-v1">
 </head>
 <body>
   <a class="skip-link" href="#montador">Pular para o montador</a>
@@ -158,6 +159,42 @@
       </div>
     </div>
 
+    <section class="layout-selector" aria-labelledby="layout-selector-title">
+      <div class="layout-selector-header">
+        <div>
+          <h3 id="layout-selector-title">Escolha o layout</h3>
+          <p>O conteúdo pedagógico não muda. Apenas a apresentação da folha.</p>
+        </div>
+        <span class="layout-current-note" id="layout-current-note">Selecionado: Clássico</span>
+      </div>
+      <div class="layout-options">
+        <label class="layout-option" data-layout-option="classic">
+          <input type="radio" name="material-layout" value="classic" checked>
+          <span class="layout-card">
+            <span class="layout-mini" aria-hidden="true"></span>
+            <strong>Clássico</strong>
+            <small>Formato tradicional e compacto. Mantém o visual atual aprovado.</small>
+          </span>
+        </label>
+        <label class="layout-option" data-layout-option="interactive">
+          <input type="radio" name="material-layout" value="interactive">
+          <span class="layout-card">
+            <span class="layout-mini" aria-hidden="true"></span>
+            <strong>Interativo</strong>
+            <small>O modelo que você aprovou, com organização visual para diferentes tipos de questão.</small>
+          </span>
+        </label>
+        <label class="layout-option" data-layout-option="visual">
+          <input type="radio" name="material-layout" value="visual">
+          <span class="layout-card">
+            <span class="layout-mini" aria-hidden="true"></span>
+            <strong>Visual</strong>
+            <small>Mais apoio gráfico, respiro e destaque para imagens e atividades dos anos iniciais.</small>
+          </span>
+        </label>
+      </div>
+    </section>
+
     <section class="header-editor" aria-labelledby="header-editor-title">
       <div>
         <h3 id="header-editor-title">Cabeçalho</h3>
@@ -179,8 +216,9 @@
 
   <script src="library-catalog.js?v=20260818-catalogo-unico-v1"></script>
   <script src="montar-material.js?v=20260914-v1"></script>
-  <script src="montar-material-live-preview.js?v=20260914-v2"></script>
-  <script src="montar-material-word-export.js?v=20260914-v7"></script>
+  <script src="montar-material-layouts.js?v=20260915-v1"></script>
+  <script src="montar-material-live-preview.js?v=20260915-v3"></script>
+  <script src="montar-material-word-export.js?v=20260915-v8"></script>
   <script src="montar-material-pdf.js?v=20260915-v4"></script>
 </body>
 </html>

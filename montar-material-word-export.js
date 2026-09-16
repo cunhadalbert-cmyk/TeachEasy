@@ -33,6 +33,48 @@
     return String(value).replace(/\s+/g, ' ').trim();
   }
 
+  function currentLayout() {
+    const value = printArea.querySelector('.student-page')?.dataset?.layout
+      || globalThis.TeachEasyMaterialLayout?.current?.()
+      || 'classic';
+    return ['classic', 'interactive', 'visual'].includes(value) ? value : 'classic';
+  }
+
+  function layoutTheme() {
+    const layout = currentLayout();
+    if (layout === 'interactive') {
+      return {
+        titleColor: '761630',
+        headingColor: '561123',
+        questionNumberColor: '761630',
+        answerNumberColor: '761630',
+        sourceTitleSize: 21,
+        sourceBefore: 45,
+        sourceAfter: 45
+      };
+    }
+    if (layout === 'visual') {
+      return {
+        titleColor: '174F78',
+        headingColor: '174F78',
+        questionNumberColor: '174F78',
+        answerNumberColor: '174F78',
+        sourceTitleSize: 22,
+        sourceBefore: 55,
+        sourceAfter: 55
+      };
+    }
+    return {
+      titleColor: '1F5A96',
+      headingColor: '202020',
+      questionNumberColor: '1F5A96',
+      answerNumberColor: '1F5A96',
+      sourceTitleSize: 21,
+      sourceBefore: 35,
+      sourceAfter: 45
+    };
+  }
+
   function downloadBlob(blob, filename) {
     const url = URL.createObjectURL(blob);
     const link = document.createElement('a');
@@ -231,7 +273,8 @@
     const supportTitle = cleanText(textContainer?.querySelector('h4')?.textContent || '');
     const supportText = cleanText(textContainer?.querySelector('p')?.textContent || '');
     const image = support.querySelector('img');
-    const imageContent = await imageRun(docx, image, 175, 115);
+    const layout = currentLayout();
+    const imageContent = await imageRun(docx, image, layout === 'visual' ? 195 : 175, layout === 'visual' ? 130 : 115);
 
     const textChildren = [];
     if (supportTitle) {
@@ -275,6 +318,7 @@
 
   async function questionContent(docx, questionNode, finalNumber, seenImages) {
     const output = [];
+    const theme = layoutTheme();
     const questionText = cleanText(questionNode.querySelector(':scope > p')?.textContent || '');
     const alternatives = [...questionNode.querySelectorAll(':scope > .final-alternatives > li')]
       .map(node => cleanText(node.textContent))
@@ -290,7 +334,7 @@
         line: WORD_LINE_SPACING_SINGLE
       },
       children: [
-        textRun(docx, `${finalNumber}. `, { bold: true, size: 19, color: '1F5A96' }),
+        textRun(docx, `${finalNumber}. `, { bold: true, size: 19, color: theme.questionNumberColor }),
         textRun(docx, questionText, { size: 19 })
       ]
     }));
@@ -314,7 +358,8 @@
     const imageKey = questionImage?.src || '';
     if (questionImage && imageKey && !seenImages.has(imageKey)) {
       seenImages.add(imageKey);
-      const run = await imageRun(docx, questionImage, 135, 90);
+      const layout = currentLayout();
+      const run = await imageRun(docx, questionImage, layout === 'visual' ? 150 : 135, layout === 'visual' ? 100 : 90);
       if (run) {
         output.push(new docx.Paragraph({
           alignment: docx.AlignmentType.CENTER,
@@ -341,14 +386,15 @@
   }
 
   async function studentDocumentContent(docx, studentPage) {
+    const theme = layoutTheme();
     const children = [compactHeader(docx)];
     children.push(new docx.Paragraph({ spacing: { after: 65 }, children: [] }));
 
     const title = cleanText(studentPage.querySelector('.worksheet-title')?.textContent || 'ATIVIDADE');
     children.push(paragraph(docx, title, {
       bold: true,
-      size: 26,
-      color: '1F5A96',
+      size: currentLayout() === 'visual' ? 28 : 26,
+      color: theme.titleColor,
       alignment: docx.AlignmentType.CENTER,
       after: 45
     }));
@@ -369,10 +415,11 @@
       if (blockTitle) {
         children.push(paragraph(docx, blockTitle, {
           bold: true,
-          size: 21,
+          size: theme.sourceTitleSize,
+          color: theme.headingColor,
           alignment: docx.AlignmentType.CENTER,
-          before: 35,
-          after: 45,
+          before: theme.sourceBefore,
+          after: theme.sourceAfter,
           keepNext: true
         }));
       }
@@ -391,11 +438,12 @@
   }
 
   function answerKeyContent(docx, answerPage) {
+    const theme = layoutTheme();
     const children = [];
     children.push(paragraph(docx, 'GABARITO', {
       bold: true,
-      size: 26,
-      color: '1F5A96',
+      size: currentLayout() === 'visual' ? 28 : 26,
+      color: theme.titleColor,
       alignment: docx.AlignmentType.CENTER,
       pageBreakBefore: true,
       after: 90
@@ -405,7 +453,7 @@
     answerPage.querySelectorAll('.answer-key-group').forEach(group => {
       const heading = cleanText(group.querySelector('h3')?.textContent || '');
       if (heading) {
-        children.push(paragraph(docx, heading, { bold: true, size: 20, before: 45, after: 35, keepNext: true }));
+        children.push(paragraph(docx, heading, { bold: true, size: 20, color: theme.headingColor, before: 45, after: 35, keepNext: true }));
       }
 
       group.querySelectorAll('.answer-key-list > li').forEach(item => {
@@ -415,7 +463,7 @@
         children.push(new docx.Paragraph({
           spacing: { before: 25, after: 30, line: WORD_LINE_SPACING_SINGLE },
           children: [
-            textRun(docx, `${finalNumber}. `, { bold: true, size: 18, color: '1F5A96' }),
+            textRun(docx, `${finalNumber}. `, { bold: true, size: 18, color: theme.answerNumberColor }),
             textRun(docx, answer, { bold: true, size: 18 })
           ]
         }));
@@ -433,7 +481,7 @@
 
     const bnccBox = answerPage.querySelector('.bncc-box');
     if (bnccBox) {
-      children.push(paragraph(docx, 'BNCC', { bold: true, size: 20, before: 90, after: 45 }));
+      children.push(paragraph(docx, 'BNCC', { bold: true, size: 20, color: theme.headingColor, before: 90, after: 45 }));
       [...bnccBox.querySelectorAll('p')].forEach(item => {
         children.push(paragraph(docx, item.textContent, {
           size: 16,
