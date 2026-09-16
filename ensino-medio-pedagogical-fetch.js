@@ -73,9 +73,12 @@
   async function ensureRemainingPatcher(url) {
     if (!/\/ensino-medio\/(?:1|2|3)-serie\/(?:1|2|3|4)-bimestre\/(?:lingua-portuguesa|matematica|ciencias|historia|geografia)\.json(?:\?|$)/.test(url)) return;
     if (/\/1-serie\/1-bimestre\/(?:lingua-portuguesa|matematica|ciencias|historia|geografia)\.json(?:\?|$)/.test(url)) return;
-    if (globalThis.TeachEasyHighSchoolRemainingPedagogicalOverrides?.apply) return;
+    if (globalThis.TeachEasyHighSchoolRemainingPedagogicalOverrides?.apply && globalThis.TeachEasyHighSchoolRemainingPedagogicalOverrides?.__wordingExpanded) return;
 
-    remainingLoadPromise ||= import('./ensino-medio-restante-pedagogical-overrides.js?v=20260916-em-restante-2750-v1');
+    remainingLoadPromise ||= (async () => {
+      await import('./ensino-medio-restante-pedagogical-overrides.js?v=20260916-em-restante-2750-v2');
+      await import('./ensino-medio-restante-pedagogical-wording.js?v=20260916-em-restante-2750-v2');
+    })();
     await remainingLoadPromise;
   }
 
