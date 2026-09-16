@@ -8,6 +8,7 @@ const overrideSource0610 = await readFile(new URL('../ensino-medio-pedagogical-o
 const overrideSource1115 = await readFile(new URL('../ensino-medio-pedagogical-overrides-11-15.js', import.meta.url), 'utf8');
 const overrideSource1620 = await readFile(new URL('../ensino-medio-pedagogical-overrides-16-20.js', import.meta.url), 'utf8');
 const overrideSource2125 = await readFile(new URL('../ensino-medio-pedagogical-overrides-21-25.js', import.meta.url), 'utf8');
+const overrideSource2630 = await readFile(new URL('../ensino-medio-pedagogical-overrides-26-30.js', import.meta.url), 'utf8');
 const fetchSource = await readFile(new URL('../ensino-medio-pedagogical-fetch.js', import.meta.url), 'utf8');
 const html = await readFile(new URL('../biblioteca.html', import.meta.url), 'utf8');
 
@@ -19,13 +20,14 @@ function loadOverrides() {
   vm.runInContext(overrideSource1115, context);
   vm.runInContext(overrideSource1620, context);
   vm.runInContext(overrideSource2125, context);
+  vm.runInContext(overrideSource2630, context);
   return context.TeachEasyHighSchoolPedagogicalOverrides;
 }
 
-test('Ensino Médio revisa vinte e cinco atividades de Português com contexto concreto', () => {
+test('Ensino Médio revisa trinta atividades de Português com contexto concreto', () => {
   const patcher = loadOverrides();
   assert.equal(patcher.collection, 'em-1serie-1bimestre-lingua-portuguesa-v2');
-  assert.equal(patcher.reviewedIds.length, 25);
+  assert.equal(patcher.reviewedIds.length, 30);
   assert.ok(patcher.reviewedIds.includes('em-1s-b1-lingua-portuguesa-06-debate-leitura-critica'));
   assert.ok(patcher.reviewedIds.includes('em-1s-b1-lingua-portuguesa-10-sintese-autoral-leitura-critica'));
   assert.ok(patcher.reviewedIds.includes('em-1s-b1-lingua-portuguesa-11-mapa-conceitual-literatura'));
@@ -34,6 +36,8 @@ test('Ensino Médio revisa vinte e cinco atividades de Português com contexto c
   assert.ok(patcher.reviewedIds.includes('em-1s-b1-lingua-portuguesa-20-sintese-autoral-literatura'));
   assert.ok(patcher.reviewedIds.includes('em-1s-b1-lingua-portuguesa-21-mapa-conceitual-producao-textual'));
   assert.ok(patcher.reviewedIds.includes('em-1s-b1-lingua-portuguesa-25-leitura-critica-producao-textual'));
+  assert.ok(patcher.reviewedIds.includes('em-1s-b1-lingua-portuguesa-26-debate-producao-textual'));
+  assert.ok(patcher.reviewedIds.includes('em-1s-b1-lingua-portuguesa-30-sintese-autoral-producao-textual'));
 
   const collection = {
     colecao: patcher.collection,
@@ -84,7 +88,7 @@ test('lote ampliado usa formatos variados com gabarito verificável', () => {
   for (const activity of collection.atividades) {
     activity.questoes.forEach((question, index) => {
       assert.equal(question.numero, index + 1);
-      assert.ok(question.enunciado.length >= 20);
+      assert.ok(question.enunciado.length >= 20, `${activity.id} questão ${question.numero}`);
       assert.equal(activity.gabarito[index].numero, index + 1);
       assert.ok(activity.gabarito[index].resposta.trim().length >= 1);
       if (question.tipo === 'multipla-escolha') assert.equal(question.alternativas.length, 4);
@@ -156,12 +160,29 @@ test('atividades 21 a 25 transformam produção textual em situações reais de 
   assert.deepEqual(Array.from(collection.atividades, activity => activity.bncc[0].codigo), expectedCodes);
 });
 
-test('Biblioteca aplica os cinco lotes antes do adaptador de fetch e de biblioteca.js', () => {
+test('atividades 26 a 30 aprofundam produção textual com linguagem, fontes e revisão', () => {
+  const patcher = loadOverrides();
+  const ids = Array.from(patcher.reviewedIds).slice(25, 30);
+  const expectedCodes = ['EM13LP06', 'EM13LP07', 'EM13LP08', 'EM13LP12', 'EM13LP15'];
+  const collection = { colecao: patcher.collection, atividades: ids.map((id, index) => ({ id, bncc: [{ codigo: expectedCodes[index] }], revisao: {}, ilustracao: {} })) };
+  patcher.apply(collection);
+
+  assert.equal(new Set(Array.from(collection.atividades, activity => activity.titulo)).size, 5);
+  assert.match(collection.atividades[0].textoApoio.conteudo, /Separe hoje|coleta seletiva/i);
+  assert.match(collection.atividades[1].textoApoio.conteudo, /provavelmente|talvez/i);
+  assert.match(collection.atividades[2].textoApoio.conteudo, /RASCUNHO|VERSÃO REVISADA/);
+  assert.match(collection.atividades[3].textoApoio.conteudo, /FONTE A|FONTE B|FONTE C/);
+  assert.match(collection.atividades[4].textoApoio.conteudo, /PLANO|LISTA DE REVISÃO/);
+  assert.deepEqual(Array.from(collection.atividades, activity => activity.bncc[0].codigo), expectedCodes);
+});
+
+test('Biblioteca aplica os seis lotes antes do adaptador de fetch e de biblioteca.js', () => {
   const overrideIndex = html.indexOf('ensino-medio-pedagogical-overrides.js');
   const override0610Index = html.indexOf('ensino-medio-pedagogical-overrides-06-10.js');
   const override1115Index = html.indexOf('ensino-medio-pedagogical-overrides-11-15.js');
   const override1620Index = html.indexOf('ensino-medio-pedagogical-overrides-16-20.js');
   const override2125Index = html.indexOf('ensino-medio-pedagogical-overrides-21-25.js');
+  const override2630Index = html.indexOf('ensino-medio-pedagogical-overrides-26-30.js');
   const fetchIndex = html.indexOf('ensino-medio-pedagogical-fetch.js');
   const libraryIndex = html.indexOf('biblioteca.js');
   assert.ok(overrideIndex >= 0);
@@ -169,7 +190,8 @@ test('Biblioteca aplica os cinco lotes antes do adaptador de fetch e de bibliote
   assert.ok(override1115Index > override0610Index);
   assert.ok(override1620Index > override1115Index);
   assert.ok(override2125Index > override1620Index);
-  assert.ok(fetchIndex > override2125Index);
+  assert.ok(override2630Index > override2125Index);
+  assert.ok(fetchIndex > override2630Index);
   assert.ok(libraryIndex > fetchIndex);
   assert.match(fetchSource, /response\.clone\(\)\.json\(\)/);
   assert.match(fetchSource, /patcher\.apply\(collection\)/);
