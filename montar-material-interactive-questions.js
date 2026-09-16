@@ -26,7 +26,7 @@
     return String(value ?? '')
       .normalize('NFD')
       .replace(/[\u0300-\u036f]/g, '')
-      .replace(/[^A-Za-zÀ-ÿ]/g, '')
+      .replace(/[^A-Za-z]/g, '')
       .toUpperCase();
   }
 
@@ -35,8 +35,15 @@
     return !text || text.startsWith('resposta pessoal') || text.includes('aceitar respostas') || text.length > 125;
   }
 
+  function htmlStrongText(html) {
+    const holder = document.createElement('div');
+    holder.innerHTML = html || '';
+    return cleanText(holder.querySelector('strong')?.textContent || '');
+  }
+
   function answerCore(answerNode) {
-    return cleanText(answerNode?.querySelector('strong')?.textContent || '');
+    if (!answerNode) return '';
+    return htmlStrongText(originalAnswerHtml.get(answerNode) || answerNode.innerHTML);
   }
 
   function sourceSentences(block) {
@@ -168,7 +175,7 @@
     setAnswer(
       answerNode,
       makeFalse ? 'Falso' : 'Verdadeiro',
-      'A afirmação foi construída somente a partir do texto de apoio; quando negada, a alternativa correta é Falso.'
+      'A afirmação usa apenas informação do texto de apoio; quando aparece negada, a alternativa correta é Falso.'
     );
     return true;
   }
@@ -200,7 +207,7 @@
     if (!word) return false;
 
     const escapedWord = word.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-    const blank = sentence.replace(new RegExp(`\\b${escapedWord}\\b`, 'i'), '________________');
+    const blank = sentence.replace(new RegExp(escapedWord, 'i'), '________________');
     if (blank === sentence) return false;
 
     setQuestion(
@@ -250,6 +257,7 @@
   }
 
   function buildCrossword(entries) {
+    if (!entries.length) return null;
     const size = 23;
     const grid = Array.from({ length: size }, () => Array(size).fill(''));
     const placed = [];
@@ -315,6 +323,7 @@
     canvas.width = cols * cell;
     canvas.height = rows * cell;
     const ctx = canvas.getContext('2d');
+    if (!ctx) return '';
     ctx.fillStyle = '#111';
     ctx.fillRect(0, 0, canvas.width, canvas.height);
 
@@ -371,9 +380,11 @@
       null
     );
 
+    const source = crosswordImage(puzzle);
+    if (!source) return false;
     const image = document.createElement('img');
     image.className = 'question-image interactive-crossword-image';
-    image.src = crosswordImage(puzzle);
+    image.src = source;
     image.alt = 'Grade de cruzadinha com casas numeradas e vazias.';
     questionNode.append(image);
 
@@ -409,12 +420,14 @@
       const slot = index % 8;
       if (slot === 0 || slot === 4) {
         if (applyMultipleChoice(questionNode, answerNode, answerNodes, index)) return;
-        applyTrueFalse(questionNode, answerNode, sentences, index);
+        if (applyTrueFalse(questionNode, answerNode, sentences, index)) return;
+        applyOpen(questionNode, answerNode);
         return;
       }
       if (slot === 1 || slot === 5) {
         if (applyTrueFalse(questionNode, answerNode, sentences, index)) return;
-        applyFillBlank(questionNode, answerNode, sentences, index);
+        if (applyFillBlank(questionNode, answerNode, sentences, index)) return;
+        applyOpen(questionNode, answerNode);
         return;
       }
       if (slot === 2) {
@@ -472,11 +485,6 @@
   document.querySelectorAll('input[name="material-layout"]').forEach(radio => {
     radio.addEventListener('change', scheduleApply);
   });
-
-  const interactiveDescription = document.querySelector('[data-layout-option="interactive"] small');
-  if (interactiveDescription) {
-    interactiveDescription.textContent = 'Varia a apresentação com múltipla escolha, verdadeiro ou falso, lacunas, questões abertas e cruzadinha quando o conteúdo permite.';
-  }
 
   const style = document.createElement('style');
   style.textContent = `
