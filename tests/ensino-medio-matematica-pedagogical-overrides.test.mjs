@@ -4,6 +4,7 @@ import { readFile } from 'node:fs/promises';
 import vm from 'node:vm';
 
 const moduleSource = await readFile(new URL('../ensino-medio-matematica-pedagogical-overrides.js', import.meta.url), 'utf8');
+const wordingSource = await readFile(new URL('../ensino-medio-matematica-pedagogical-wording.js', import.meta.url), 'utf8');
 const fetchSource = await readFile(new URL('../ensino-medio-pedagogical-fetch.js', import.meta.url), 'utf8');
 const canonical = JSON.parse(await readFile(new URL('../data/atividades/ensino-medio/1-serie/1-bimestre/matematica.json', import.meta.url), 'utf8'));
 
@@ -11,6 +12,7 @@ function loadPatcher() {
   const context = {};
   vm.createContext(context);
   vm.runInContext(moduleSource, context);
+  vm.runInContext(wordingSource, context);
   return context.TeachEasyHighSchoolMathPedagogicalOverrides;
 }
 
@@ -113,6 +115,7 @@ test('adaptador do Ensino Médio mantém Português e carrega Matemática sob de
   assert.match(fetchSource, /TeachEasyHighSchoolPedagogicalOverrides/);
   assert.match(fetchSource, /TeachEasyHighSchoolMathPedagogicalOverrides/);
   assert.match(fetchSource, /ensino-medio-matematica-pedagogical-overrides\.js/);
+  assert.match(fetchSource, /ensino-medio-matematica-pedagogical-wording\.js/);
   assert.match(fetchSource, /await ensureMathPatcher\(url\)/);
   assert.match(fetchSource, /patcher\.apply\(collection\)/);
 });
