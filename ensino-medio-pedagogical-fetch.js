@@ -3,6 +3,7 @@
   let mathLoadPromise = null;
   let mathWordingLoadPromise = null;
   let scienceLoadPromise = null;
+  let historyLoadPromise = null;
 
   async function ensureMathPatcher(url) {
     if (!url.includes('/1-serie/1-bimestre/matematica.json')) return;
@@ -37,6 +38,21 @@
     await scienceLoadPromise;
   }
 
+  async function ensureHistoryPatcher(url) {
+    if (!url.includes('/1-serie/1-bimestre/historia.json')) return;
+    if (globalThis.TeachEasyHighSchoolHistoryPedagogicalOverrides?.reviewedIds?.length === 50) return;
+
+    historyLoadPromise ||= (async () => {
+      await import('./ensino-medio-historia-pedagogical-core.js?v=20260916-1s1b-historia-v1');
+      await import('./ensino-medio-historia-pedagogical-01.js?v=20260916-1s1b-historia-v1');
+      await import('./ensino-medio-historia-pedagogical-02.js?v=20260916-1s1b-historia-v1');
+      await import('./ensino-medio-historia-pedagogical-03.js?v=20260916-1s1b-historia-v1');
+      await import('./ensino-medio-historia-pedagogical-04.js?v=20260916-1s1b-historia-v1');
+      await import('./ensino-medio-historia-pedagogical-05.js?v=20260916-1s1b-historia-v1');
+    })();
+    await historyLoadPromise;
+  }
+
   globalThis.fetch = async (...args) => {
     const response = await nativeFetch(...args);
     const request = args[0];
@@ -49,11 +65,13 @@
     try {
       await ensureMathPatcher(url);
       await ensureSciencePatcher(url);
+      await ensureHistoryPatcher(url);
 
       const patchers = [
         globalThis.TeachEasyHighSchoolPedagogicalOverrides,
         globalThis.TeachEasyHighSchoolMathPedagogicalOverrides,
-        globalThis.TeachEasyHighSchoolSciencePedagogicalOverrides
+        globalThis.TeachEasyHighSchoolSciencePedagogicalOverrides,
+        globalThis.TeachEasyHighSchoolHistoryPedagogicalOverrides
       ].filter(item => item?.apply && item?.collection);
 
       if (patchers.length === 0) return response;
