@@ -134,7 +134,7 @@ test('atividades 11 a 15 trabalham literatura com habilidades EM13LP01 a EM13LP0
   assert.match(collection.atividades[2].textoApoio.conteudo, /RELATÓRIO DO LOBO/);
   assert.match(collection.atividades[3].textoApoio.conteudo, /JANELA ACESA/);
   assert.match(collection.atividades[4].textoApoio.conteudo, /clássicos|contemporâneas/i);
-  assert.deepEqual(collection.atividades.map(activity => activity.bncc[0].codigo), expectedCodes);
+  assert.deepEqual(Array.from(collection.atividades, activity => activity.bncc[0].codigo), expectedCodes);
 });
 
 test('Biblioteca aplica os três lotes antes do adaptador de fetch e de biblioteca.js', () => {
