@@ -1,15 +1,18 @@
 (() => {
   const nativeFetch = globalThis.fetch.bind(globalThis);
   let mathLoadPromise = null;
+  let mathWordingLoadPromise = null;
 
   async function ensureMathPatcher(url) {
-    if (!url.includes('/1-serie/1-bimestre/matematica.json')
-      || globalThis.TeachEasyHighSchoolMathPedagogicalOverrides?.apply) {
-      return;
+    if (!url.includes('/1-serie/1-bimestre/matematica.json')) return;
+
+    if (!globalThis.TeachEasyHighSchoolMathPedagogicalOverrides?.apply) {
+      mathLoadPromise ||= import('./ensino-medio-matematica-pedagogical-overrides.js?v=20260916-1s1b-mat-01-50-v1');
+      await mathLoadPromise;
     }
 
-    mathLoadPromise ||= import('./ensino-medio-matematica-pedagogical-overrides.js?v=20260916-1s1b-mat-01-50-v1');
-    await mathLoadPromise;
+    mathWordingLoadPromise ||= import('./ensino-medio-matematica-pedagogical-wording.js?v=20260916-1s1b-mat-wording-v1');
+    await mathWordingLoadPromise;
   }
 
   globalThis.fetch = async (...args) => {
