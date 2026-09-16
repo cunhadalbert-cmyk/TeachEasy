@@ -4,6 +4,7 @@
   let mathWordingLoadPromise = null;
   let scienceLoadPromise = null;
   let historyLoadPromise = null;
+  let geographyLoadPromise = null;
 
   async function ensureMathPatcher(url) {
     if (!url.includes('/1-serie/1-bimestre/matematica.json')) return;
@@ -53,6 +54,21 @@
     await historyLoadPromise;
   }
 
+  async function ensureGeographyPatcher(url) {
+    if (!url.includes('/1-serie/1-bimestre/geografia.json')) return;
+    if (globalThis.TeachEasyHighSchoolGeographyPedagogicalOverrides?.reviewedIds?.length === 50) return;
+
+    geographyLoadPromise ||= (async () => {
+      await import('./ensino-medio-geografia-pedagogical-core.js?v=20260916-1s1b-geografia-v1');
+      await import('./ensino-medio-geografia-pedagogical-01.js?v=20260916-1s1b-geografia-v1');
+      await import('./ensino-medio-geografia-pedagogical-02.js?v=20260916-1s1b-geografia-v1');
+      await import('./ensino-medio-geografia-pedagogical-03.js?v=20260916-1s1b-geografia-v1');
+      await import('./ensino-medio-geografia-pedagogical-04.js?v=20260916-1s1b-geografia-v1');
+      await import('./ensino-medio-geografia-pedagogical-05.js?v=20260916-1s1b-geografia-v1');
+    })();
+    await geographyLoadPromise;
+  }
+
   globalThis.fetch = async (...args) => {
     const response = await nativeFetch(...args);
     const request = args[0];
@@ -66,12 +82,14 @@
       await ensureMathPatcher(url);
       await ensureSciencePatcher(url);
       await ensureHistoryPatcher(url);
+      await ensureGeographyPatcher(url);
 
       const patchers = [
         globalThis.TeachEasyHighSchoolPedagogicalOverrides,
         globalThis.TeachEasyHighSchoolMathPedagogicalOverrides,
         globalThis.TeachEasyHighSchoolSciencePedagogicalOverrides,
-        globalThis.TeachEasyHighSchoolHistoryPedagogicalOverrides
+        globalThis.TeachEasyHighSchoolHistoryPedagogicalOverrides,
+        globalThis.TeachEasyHighSchoolGeographyPedagogicalOverrides
       ].filter(item => item?.apply && item?.collection);
 
       if (patchers.length === 0) return response;
