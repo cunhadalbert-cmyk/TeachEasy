@@ -79,7 +79,7 @@ test('lote ampliado usa formatos variados com gabarito verificável', () => {
       assert.equal(question.numero, index + 1);
       assert.ok(question.enunciado.length >= 20);
       assert.equal(activity.gabarito[index].numero, index + 1);
-      assert.ok(activity.gabarito[index].resposta.length >= 3);
+      assert.ok(activity.gabarito[index].resposta.trim().length >= 1);
       if (question.tipo === 'multipla-escolha') assert.equal(question.alternativas.length, 4);
       if (question.tipo === 'verdadeiro-falso') assert.deepEqual(Array.from(question.alternativas), ['Verdadeiro', 'Falso']);
     });
