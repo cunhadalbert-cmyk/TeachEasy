@@ -126,7 +126,7 @@
         conteudo: 'FONTE SIMULADA — RELATÓRIO DA BIBLIOTECA\n“O empréstimo de livros cresceu depois que o horário da biblioteca passou a incluir o intervalo do almoço.” O relatório informa que a mudança de horário ocorreu em março e compara os registros de fevereiro e abril.\n\nUSO A\nSegundo o Relatório da Biblioteca, “o empréstimo de livros cresceu” após a ampliação do horário de atendimento.\n\nUSO B\nDe acordo com o relatório, a biblioteca registrou mais empréstimos depois de passar a atender também no intervalo do almoço.\n\nUSO C\nO empréstimo de livros cresceu depois que o horário da biblioteca passou a incluir o intervalo do almoço. Isso aconteceu porque eu descobri sozinho.'
       },
       questoes: [
-        q(1, 'multipla-escolha', 'O Uso A apresenta:', ['citação direta marcada por aspas e referência à fonte.', 'opinião sem relação com a fonte.', 'paráfrase sem indicação de origem.', 'dado numérico inexistente.'], 'pequeno'),
+        q(1, 'multipla-escolha', 'No material apresentado, o Uso A apresenta qual recurso?', ['citação direta marcada por aspas e referência à fonte.', 'opinião sem relação com a fonte.', 'paráfrase sem indicação de origem.', 'dado numérico inexistente.'], 'pequeno'),
         q(2, 'verdadeiro-falso', 'Marque Verdadeiro ou Falso: o Uso B é uma paráfrase porque reformula a informação e identifica sua origem.', ['Verdadeiro', 'Falso'], 'pequeno'),
         q(3, 'discursiva', 'Explique qual é o principal problema do Uso C.', [], 'medio'),
         q(4, 'multipla-escolha', 'Qual expressão do Uso B deixa explícita a origem da informação?', ['“De acordo com o relatório”.', '“mais empréstimos”.', '“intervalo do almoço”.', '“passar a atender”.'], 'pequeno'),
