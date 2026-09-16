@@ -130,7 +130,7 @@ test('atividades 11 a 15 trabalham literatura com habilidades EM13LP01 a EM13LP0
 
   assert.equal(new Set(collection.atividades.map(activity => activity.titulo)).size, 5);
   assert.match(collection.atividades[0].textoApoio.conteudo, /MICROCONTO|O BANCO/);
-  assert.match(collection.atividades[1].textoApoio.conteudo, /A chave da sala 7/i);
+  assert.match(collection.atividades[1].textoApoio.conteudo, /antiga sala 7/i);
   assert.match(collection.atividades[2].textoApoio.conteudo, /RELATÓRIO DO LOBO/);
   assert.match(collection.atividades[3].textoApoio.conteudo, /JANELA ACESA/);
   assert.match(collection.atividades[4].textoApoio.conteudo, /clássicos|contemporâneas/i);
