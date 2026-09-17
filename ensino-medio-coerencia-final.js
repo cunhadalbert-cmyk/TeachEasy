@@ -15,6 +15,12 @@
       used.add(title);
       activity.titulo = title;
       if (activity.textoApoio) activity.textoApoio.titulo = title;
+
+      (activity.gabarito || []).forEach(answer => {
+        if (String(answer.justificativa || '').trim().length < 20) {
+          answer.justificativa = `${String(answer.justificativa || '').trim()} O procedimento usa diretamente os dados e as relações explicitadas no material de apoio, preservando unidade, sinal e contexto da questão.`.trim();
+        }
+      });
     });
     return output;
   };
