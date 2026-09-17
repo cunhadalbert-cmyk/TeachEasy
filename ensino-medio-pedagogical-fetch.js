@@ -73,11 +73,12 @@
   async function ensureRemainingPatcher(url) {
     if (!/\/ensino-medio\/(?:1|2|3)-serie\/(?:1|2|3|4)-bimestre\/(?:lingua-portuguesa|matematica|ciencias|historia|geografia)\.json(?:\?|$)/.test(url)) return;
     if (/\/1-serie\/1-bimestre\/(?:lingua-portuguesa|matematica|ciencias|historia|geografia)\.json(?:\?|$)/.test(url)) return;
-    if (globalThis.TeachEasyHighSchoolRemainingPedagogicalOverrides?.apply && globalThis.TeachEasyHighSchoolRemainingPedagogicalOverrides?.__wordingExpanded) return;
+    if (globalThis.TeachEasyHighSchoolRemainingPedagogicalOverrides?.apply && globalThis.TeachEasyHighSchoolRemainingPedagogicalOverrides?.__wordingExpanded && globalThis.TeachEasyHighSchoolSemanticCoherence?.apply) return;
 
     remainingLoadPromise ||= (async () => {
-      await import('./ensino-medio-restante-pedagogical-overrides.js?v=20260916-em-restante-2750-v2');
-      await import('./ensino-medio-restante-pedagogical-wording.js?v=20260916-em-restante-2750-v2');
+      await import('./ensino-medio-restante-pedagogical-overrides.js?v=20260916-em-restante-2750-v3');
+      await import('./ensino-medio-restante-pedagogical-wording.js?v=20260916-em-restante-2750-v3');
+      await import('./ensino-medio-semantic-coherence.js?v=20260916-em-coerencia-2750-v1');
     })();
     await remainingLoadPromise;
   }
@@ -112,7 +113,10 @@
       const patcher = fixedPatcher || (remainingPatcher?.apply && remainingPatcher?.matches?.(collection) ? remainingPatcher : null);
       if (!patcher) return response;
 
-      const patched = patcher.apply(collection);
+      let patched = patcher.apply(collection);
+      const semantic = globalThis.TeachEasyHighSchoolSemanticCoherence;
+      if (!fixedPatcher && semantic?.matches?.(patched)) patched = semantic.apply(patched);
+
       const headers = new Headers(response.headers);
       headers.set('content-type', 'application/json; charset=utf-8');
       return new Response(JSON.stringify(patched), {
