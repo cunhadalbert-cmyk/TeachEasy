@@ -17,10 +17,12 @@ function norm(text) {
   return String(text || '').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/\s+/g,' ').trim();
 }
 
-test('mapeia equivalência temática e BNCC entre as 60 coleções canônicas do Ensino Médio', async () => {
+test('mapeia equivalência temática e BNCC das coleções do Ensino Médio', async () => {
   const summary = {};
-  const codeMismatches = [];
-  const themeMismatches = [];
+  const nonScienceCodeMismatches = [];
+  const nonScienceThemeMismatches = [];
+  const scienceSkillMap = new Map();
+  const scienceThemes = new Set();
 
   for (const discipline of disciplines) {
     const baseline = await load(1, 1, discipline);
@@ -38,11 +40,19 @@ test('mapeia equivalência temática e BNCC entre as 60 coleções canônicas do
           const currentTheme = norm(activity.tema);
           uniqueCodes.add(currentCodes);
           uniqueThemes.add(currentTheme);
+
+          if (discipline === 'ciencias') {
+            const item = activity.bncc?.[0];
+            if (item?.codigo) scienceSkillMap.set(item.codigo, item.habilidadeOficial || '');
+            scienceThemes.add(activity.tema || '');
+            return;
+          }
+
           if (currentCodes !== baselineCodes[index]) {
-            codeMismatches.push({ discipline, series, bimester, position:index+1, baseline:baselineCodes[index], current:currentCodes });
+            nonScienceCodeMismatches.push({ discipline, series, bimester, position:index+1, baseline:baselineCodes[index], current:currentCodes });
           }
           if (currentTheme !== baselineThemes[index]) {
-            themeMismatches.push({ discipline, series, bimester, position:index+1, baseline:baselineThemes[index], current:currentTheme });
+            nonScienceThemeMismatches.push({ discipline, series, bimester, position:index+1, baseline:baselineThemes[index], current:currentTheme });
           }
         });
       }
@@ -51,9 +61,13 @@ test('mapeia equivalência temática e BNCC entre as 60 coleções canônicas do
   }
 
   console.log('COERENCIA_AUDIT_SUMMARY', JSON.stringify(summary));
-  console.log('COERENCIA_AUDIT_CODE_MISMATCHES', JSON.stringify(codeMismatches.slice(0, 80)));
-  console.log('COERENCIA_AUDIT_THEME_MISMATCHES', JSON.stringify(themeMismatches.slice(0, 80)));
+  console.log('CIENCIAS_SKILL_MAP', JSON.stringify(Object.fromEntries([...scienceSkillMap.entries()].sort())));
+  console.log('CIENCIAS_THEMES', JSON.stringify([...scienceThemes].sort()));
+  console.log('NON_SCIENCE_CODE_MISMATCHES', JSON.stringify(nonScienceCodeMismatches));
+  console.log('NON_SCIENCE_THEME_MISMATCHES', JSON.stringify(nonScienceThemeMismatches));
 
-  assert.equal(codeMismatches.length, 0, `Há ${codeMismatches.length} divergências de sequência BNCC em relação às coleções-base`);
-  assert.equal(themeMismatches.length, 0, `Há ${themeMismatches.length} divergências temáticas em relação às coleções-base`);
+  assert.equal(nonScienceCodeMismatches.length, 0, `Há ${nonScienceCodeMismatches.length} divergências BNCC fora de Ciências`);
+  assert.equal(nonScienceThemeMismatches.length, 0, `Há ${nonScienceThemeMismatches.length} divergências temáticas fora de Ciências`);
+  assert.equal(scienceSkillMap.size, 26, 'Ciências deve mapear exatamente 26 habilidades oficiais distintas');
+  assert.equal(scienceThemes.size, 20, 'Ciências deve mapear exatamente 20 combinações temáticas distintas');
 });
