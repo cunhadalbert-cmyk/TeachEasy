@@ -195,7 +195,6 @@ test('Atalhos da página inicial abrem as experiências aprovadas', async () => 
   assert.equal(window.document.querySelectorAll('.service-number').length, 0);
   assert.match(coloringButton.textContent, /Desenhos para colorir/);
 
-  // Biblioteca, Jogos Pedagógicos e criação com IA usam acessos próprios.
   assert.equal(window.document.querySelectorAll('.home-library-highlight').length, 1);
   const gamesLink = window.document.querySelector('.home-games-highlight');
   assert.ok(gamesLink);
@@ -423,7 +422,7 @@ test('Hero usa destaques inline e não exibe chips em bloco separado', async () 
   assert.match(description.textContent, /atividade ideal com/);
   assert.equal(description.querySelectorAll('.library-hero-highlights > span').length, 4);
   assert.equal(window.document.querySelector('.library-hero-tags'), null);
-  assert.match(description.textContent, /BNCC\s*\|\s*Gabaritos\s*\|\s*Figuras\s*\|\s*Inclusão/);
+  assert.match(description.textContent, /BNCC\s*\|\s*Gabaritos\s*\|\s*Figuras\s*\|\s*Acessibilidade/);
   await window.happyDOM.close();
 });
 
@@ -498,7 +497,7 @@ test('Navegação progressiva abre ano, bimestre e só então os filtros', async
 test('Categoria de autismo abre somente as atividades adaptadas dentro do card', async () => {
   const window = await createLibraryPage({ url: 'https://teacheasy.test/biblioteca.html?categoria=autismo' });
   assert.equal(window.document.querySelector('#autism-category-banner').hidden, false);
-  assert.match(window.document.querySelector('#autism-category-title').textContent, /Atividades adaptadas para autismo/);
+  assert.match(window.document.querySelector('#autism-category-title').textContent, /Atividades adaptadas e recursos de acessibilidade/);
   assert.match(window.document.querySelector('#library-breadcrumb').textContent, /Autismo e inclusão/);
   assert.equal(window.document.querySelectorAll('.library-choice-card').length, 0);
   assert.equal(window.document.querySelector('.library-choice-grid').hidden, true);
@@ -874,8 +873,6 @@ test('Língua Portuguesa possui 50 atividades V2, 400 questões e figuras válid
     for (const answer of activity.gabarito) {
       assert.ok(answer.resposta.trim());
       assert.ok(answer.justificativa.trim());
-      // Nas atividades acrescentadas neste lote, toda resposta aberta precisa
-      // trazer critério de correção explícito, e não apenas "resposta pessoal".
       if (newIds.includes(activity.id) && /resposta (pessoal|autoral)/i.test(answer.resposta)) {
         assert.match(answer.justificativa, /Critério de correção/i);
       }
