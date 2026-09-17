@@ -3,13 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Biblioteca demonstrativa de atividades pedagógicas do TeachEasy.">
+  <meta name="description" content="Biblioteca de atividades pedagógicas do TeachEasy com recursos de acessibilidade e adaptação.">
   <title>Biblioteca de Atividades — TeachEasy</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Libre+Franklin:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css?v=20260807-autismo-v3">
   <link rel="stylesheet" href="biblioteca.css?v=20260807-autismo-v4">
+  <link rel="stylesheet" href="library-accessibility-adapter.css?v=20260916-main-v1">
 </head>
 <body class="library-page">
   <a class="skip-link" href="#biblioteca">Pular para a biblioteca</a>
@@ -34,11 +35,11 @@
           <h1>Encontre a atividade certa para sua turma.</h1>
           <p class="library-hero-description">
             Escolha a etapa, o ano e o bimestre. Depois, encontre a atividade ideal com
-            <span class="library-hero-highlights" role="group" aria-label="BNCC, Gabaritos, Figuras e Inclusão">
+            <span class="library-hero-highlights" role="group" aria-label="BNCC, Gabaritos, Figuras e Acessibilidade">
               <span>BNCC</span><i aria-hidden="true">|</i>
               <span>Gabaritos</span><i aria-hidden="true">|</i>
               <span>Figuras</span><i aria-hidden="true">|</i>
-              <span>Inclusão</span>
+              <span>Acessibilidade</span>
             </span>.
           </p>
         </div>
@@ -50,15 +51,15 @@
         <section class="autism-category-banner" id="autism-category-banner" aria-labelledby="autism-category-title" hidden>
           <span class="autism-category-symbol" aria-hidden="true">∞</span>
           <div class="autism-category-copy">
-            <span class="autism-category-eyebrow">CATEGORIA INCLUSIVA</span>
-            <h2 id="autism-category-title">Atividades adaptadas para autismo</h2>
-            <p>Apoio visual, comandos curtos, organização por etapas e tempo flexível para favorecer a participação de cada estudante.</p>
+            <span class="autism-category-eyebrow">ACESSIBILIDADE E INCLUSÃO</span>
+            <h2 id="autism-category-title">Atividades adaptadas e recursos de acessibilidade</h2>
+            <p>O conteúdo curricular permanece o mesmo. O professor escolhe apoios de apresentação, organização e resposta conforme a necessidade do estudante.</p>
           </div>
           <section class="autism-featured-section" id="autism-featured-section" aria-labelledby="autism-featured-title" hidden>
             <div class="autism-featured-header">
-              <span class="library-eyebrow">ATIVIDADES DISPONÍVEIS</span>
-              <h2 id="autism-featured-title">Atividades adaptadas prontas para usar</h2>
-              <p>Escolha uma atividade para visualizar a versão com apoio visual, comandos curtos, uma etapa por vez e tempo flexível.</p>
+              <span class="library-eyebrow">MODELOS DE REFERÊNCIA</span>
+              <h2 id="autism-featured-title">Modelos adaptados prontos para usar</h2>
+              <p>Use estes modelos ou escolha qualquer atividade curricular da Biblioteca e clique em “Adaptar atividade” para selecionar os recursos de acessibilidade necessários.</p>
             </div>
             <div class="activity-grid autism-featured-grid" id="autism-featured-grid"></div>
           </section>
@@ -82,7 +83,7 @@
         <form class="library-filters" id="library-filters" hidden>
           <label><span>Disciplina</span><select name="subject"><option value="">Todas as disciplinas</option></select></label>
           <label class="filter-search"><span>Tema ou conteúdo</span><input name="query" type="search" placeholder="Ex.: frações, leitura, ecossistemas"></label>
-          <fieldset class="filter-toggles"><legend>Recursos</legend><label><input type="checkbox" name="answerKey"> Gabarito</label><label><input type="checkbox" name="figures"> Figuras</label><label><input type="checkbox" name="adapted"> Autismo e inclusão</label></fieldset>
+          <fieldset class="filter-toggles"><legend>Recursos</legend><label><input type="checkbox" name="answerKey"> Gabarito</label><label><input type="checkbox" name="figures"> Figuras</label><label><input type="checkbox" name="adapted"> Acessibilidade e adaptação</label></fieldset>
           <div class="filter-actions"><button class="btn btn-primary" type="submit">Aplicar filtros</button><button class="btn btn-outline filter-reset" type="reset">Limpar filtros</button></div>
         </form>
 
@@ -97,7 +98,7 @@
   <dialog class="activity-preview" id="activity-preview" aria-labelledby="preview-title"><button class="preview-close" type="button" aria-label="Fechar visualização">×</button><div id="preview-content"></div></dialog>
   <div class="library-toast" id="library-toast" role="status" aria-live="polite"></div>
 
-  <footer class="footer library-footer"><div class="container"><strong>TeachEasy</strong><span>Biblioteca demonstrativa — conteúdo para professores.</span></div></footer>
+  <footer class="footer library-footer"><div class="container"><strong>TeachEasy</strong><span>Biblioteca pedagógica — conteúdo para professores.</span></div></footer>
 
   <script src="library-catalog.js?v=20260818-catalogo-unico-v1"></script>
   <script src="ensino-medio-pedagogical-overrides.js?v=20260916-piloto-1s1b-lp-v1"></script>
@@ -125,5 +126,6 @@
   <script src="library-portuguese-approved-static.js?v=20260810-portugues-estatico-v1"></script>
   <script src="library-illustration-admin.js?v=20260812-persistencia-ilustracao-v4"></script>
   <script src="library-preview-review-meta.js?v=20260907-bncc-gabarito-3b-v1"></script>
+  <script src="library-accessibility-adapter.js?v=20260916-main-v1"></script>
 </body>
 </html>
