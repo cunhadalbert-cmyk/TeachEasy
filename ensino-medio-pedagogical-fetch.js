@@ -117,7 +117,10 @@
   async function ensureCoherentLayer(url) {
     const hit = url.match(REMAINING_RE);
     if (!hit || COMPLETED_RE.test(url)) return null;
-    coherentLoadPromise ||= import('./ensino-medio-coerencia-total.js?v=20260917-em-coerencia-total-v1');
+    coherentLoadPromise ||= (async () => {
+      await import('./ensino-medio-coerencia-total.js?v=20260917-em-coerencia-total-v1');
+      await import('./ensino-medio-coerencia-final.js?v=20260917-em-coerencia-titulos-v1');
+    })();
     await coherentLoadPromise;
     const discipline = hit[1];
     if (discipline !== 'ciencias') await ensureApprovedPatcher(discipline);
