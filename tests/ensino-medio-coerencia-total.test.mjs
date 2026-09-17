@@ -25,7 +25,7 @@ async function json(path) { return JSON.parse(await source(path)); }
 async function buildContext() {
   const context = { console };
   vm.createContext(context);
-  for (const path of [...branchFiles.portuguese, ...branchFiles.math, ...branchFiles.history, ...branchFiles.geography, 'ensino-medio-coerencia-total.js']) {
+  for (const path of [...branchFiles.portuguese, ...branchFiles.math, ...branchFiles.history, ...branchFiles.geography, 'ensino-medio-coerencia-total.js', 'ensino-medio-coerencia-final.js']) {
     vm.runInContext(await source(path), context, { filename:path });
   }
   return context;
@@ -152,7 +152,7 @@ test('Ciências cobre as 26 habilidades canônicas com texto, questões e gabari
   }
 
   assert.equal(checked,550);
-  assert.deepEqual([...seenCodes].sort(),plain(coherent.scienceProfileCodes), 'perfil de Ciências não cobre exatamente os códigos usados nas 11 coleções restantes');
+  assert.deepEqual([...seenCodes].sort(),plain(coherent.scienceProfileCodes),'perfil de Ciências não cobre exatamente os códigos usados nas 11 coleções restantes');
   assert.equal(seenCodes.size,26);
 });
 
@@ -174,6 +174,7 @@ test('a revisão total cobre exatamente as 55 coleções e 2750 atividades resta
 test('o carregador usa somente a nova camada coerente para as coleções restantes', async () => {
   const fetchSource = await source('ensino-medio-pedagogical-fetch.js');
   assert.match(fetchSource,/ensino-medio-coerencia-total\.js/);
+  assert.match(fetchSource,/ensino-medio-coerencia-final\.js/);
   assert.match(fetchSource,/TeachEasyHighSchoolCoherentRemaining/);
   assert.match(fetchSource,/approvedBaseline/);
   assert.doesNotMatch(fetchSource,/ensino-medio-restante-pedagogical-overrides\.js/);
