@@ -1,0 +1,302 @@
+.accessibility-adapt-button {
+  border-color: #7a1730 !important;
+  color: #7a1730 !important;
+  background: #fff !important;
+}
+
+.accessibility-adapt-button:hover,
+.accessibility-adapt-button:focus-visible {
+  background: #fff3f6 !important;
+  border-color: #4a0715 !important;
+  color: #4a0715 !important;
+}
+
+.accessibility-adapter-dialog {
+  width: min(720px, calc(100vw - 28px));
+  max-height: min(860px, calc(100vh - 28px));
+  padding: 0;
+  border: 0;
+  border-radius: 22px;
+  box-shadow: 0 24px 70px rgba(36, 12, 19, .28);
+  color: #25222a;
+}
+
+.accessibility-adapter-dialog::backdrop {
+  background: rgba(24, 15, 20, .62);
+  backdrop-filter: blur(2px);
+}
+
+.accessibility-adapter-form {
+  position: relative;
+  padding: 28px;
+  background: #fff;
+}
+
+.accessibility-adapter-close {
+  position: absolute;
+  top: 14px;
+  right: 16px;
+  width: 38px;
+  height: 38px;
+  border: 0;
+  border-radius: 50%;
+  background: #f4eef0;
+  color: #4a0715;
+  font-size: 25px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.accessibility-adapter-eyebrow {
+  display: inline-block;
+  margin-bottom: 7px;
+  color: #7a1730;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: .08em;
+}
+
+.accessibility-adapter-form h2 {
+  margin: 0 44px 8px 0;
+  color: #2c1a21;
+  font-size: clamp(24px, 4vw, 34px);
+}
+
+.accessibility-adapter-intro {
+  margin: 0 0 20px;
+  line-height: 1.55;
+  color: #5f5660;
+}
+
+.accessibility-adapter-form fieldset {
+  display: grid;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.accessibility-adapter-form legend {
+  margin-bottom: 10px;
+  font-weight: 800;
+  color: #39272e;
+}
+
+.accessibility-adapter-form fieldset > label {
+  display: grid;
+  grid-template-columns: 22px 1fr;
+  gap: 11px;
+  align-items: start;
+  padding: 12px 14px;
+  border: 1px solid #eadde1;
+  border-radius: 14px;
+  background: #fffafb;
+  cursor: pointer;
+}
+
+.accessibility-adapter-form fieldset > label:has(input:checked) {
+  border-color: #c66c82;
+  background: #fff4f7;
+}
+
+.accessibility-adapter-form input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  margin-top: 2px;
+  accent-color: #7a1730;
+}
+
+.accessibility-adapter-form label span {
+  display: grid;
+  gap: 3px;
+}
+
+.accessibility-adapter-form label strong {
+  color: #35232a;
+  font-size: 14px;
+}
+
+.accessibility-adapter-form label small {
+  color: #6c6268;
+  line-height: 1.35;
+}
+
+.accessibility-adapter-form label:has(input:disabled) {
+  opacity: .52;
+  cursor: not-allowed;
+}
+
+.accessibility-adapter-note {
+  margin: 18px 0 0;
+  padding: 12px 14px;
+  border-left: 4px solid #7a1730;
+  border-radius: 8px;
+  background: #f9f3f5;
+  color: #4f4248;
+  font-weight: 700;
+}
+
+.accessibility-adapter-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.accessibility-applied-summary {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: center;
+  margin: 12px 0 18px;
+  padding: 14px 16px;
+  border: 1px solid #ddb7c1;
+  border-radius: 14px;
+  background: #fff6f8;
+}
+
+.accessibility-applied-summary > div {
+  display: grid;
+  gap: 3px;
+}
+
+.accessibility-applied-summary strong {
+  color: #641126;
+}
+
+.accessibility-applied-summary span,
+.accessibility-applied-summary small {
+  color: #66585e;
+  line-height: 1.35;
+}
+
+.accessibility-teacher-time {
+  margin-top: 3px;
+  font-weight: 700;
+  color: #4a0715 !important;
+}
+
+.accessibility-student-support,
+.accessibility-checklist {
+  margin: 16px 0;
+  padding: 13px 15px;
+  border: 1.5px solid #8aa9c3;
+  border-radius: 12px;
+  background: #f6fbff;
+  color: #263746;
+}
+
+.accessibility-student-support strong,
+.accessibility-checklist strong {
+  display: block;
+  margin-bottom: 7px;
+  color: #23455f;
+}
+
+.accessibility-student-support p {
+  margin: 4px 0;
+  line-height: 1.45;
+}
+
+.accessibility-checklist {
+  display: grid;
+  gap: 6px;
+  border-color: #95b995;
+  background: #f7fff7;
+}
+
+.accessibility-checklist strong {
+  color: #2f6334;
+}
+
+.accessibility-question-list {
+  counter-reset: accessibility-question;
+}
+
+.accessibility-question-step {
+  counter-increment: accessibility-question;
+  position: relative;
+}
+
+.accessibility-question-step::before {
+  content: "Etapa " counter(accessibility-question);
+  display: inline-block;
+  margin: 0 8px 6px 0;
+  padding: 3px 8px;
+  border-radius: 999px;
+  background: #e8f2fa;
+  color: #285372;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: .02em;
+}
+
+.accessibility-large-text .collection-student-page,
+.accessibility-large-text .student-page,
+.accessibility-large-text.early-childhood-preview,
+.accessibility-large-text .accessibility-student-support,
+.accessibility-large-text .accessibility-checklist {
+  font-size: 1.12em !important;
+  line-height: 1.55 !important;
+}
+
+.accessibility-spacious .collection-student-page li,
+.accessibility-spacious .student-page li,
+.accessibility-spacious.early-childhood-preview li {
+  margin-bottom: 16px !important;
+}
+
+.accessibility-low-stimulus .collection-student-page,
+.accessibility-low-stimulus .student-page,
+.accessibility-low-stimulus.early-childhood-preview {
+  background: #fff !important;
+  box-shadow: none !important;
+}
+
+.accessibility-low-stimulus .collection-student-page *:not(img):not(svg),
+.accessibility-low-stimulus .student-page *:not(img):not(svg),
+.accessibility-low-stimulus.early-childhood-preview *:not(img):not(svg) {
+  text-shadow: none !important;
+}
+
+.accessibility-low-stimulus .collection-student-page [style*="gradient"],
+.accessibility-low-stimulus .student-page [style*="gradient"] {
+  background-image: none !important;
+}
+
+.accessibility-visual-support .collection-student-page img,
+.accessibility-visual-support .student-page img,
+.accessibility-visual-support.early-childhood-preview img {
+  outline: 2px solid #7fa6c4;
+  outline-offset: 4px;
+  border-radius: 8px;
+}
+
+@media (max-width: 640px) {
+  .accessibility-adapter-form {
+    padding: 22px 16px 18px;
+  }
+
+  .accessibility-adapter-form fieldset > label {
+    padding: 11px 10px;
+  }
+
+  .accessibility-adapter-actions,
+  .accessibility-applied-summary {
+    align-items: stretch;
+    flex-direction: column;
+  }
+}
+
+@media print {
+  .accessibility-applied-summary,
+  .accessibility-adapter-dialog {
+    display: none !important;
+  }
+
+  .accessibility-student-support,
+  .accessibility-checklist,
+  .accessibility-question-step {
+    break-inside: avoid;
+  }
+}
