@@ -29,5 +29,5 @@ for(let year=1;year<=5;year++)for(let term=1;term<=4;term++)for(const subject of
 const out=path.join(root,'docs','auditoria-fundamental-1a5-gerada.json');
 fs.writeFileSync(out,JSON.stringify({generatedAt:new Date().toISOString(),scope:'1-5 anos 100 colecoes',summary,findings},null,2)+'\n');
 const groups={};for(const f of findings)groups[f.code]=(groups[f.code]||0)+1;
-console.log(JSON.stringify({collections:summary.length,activities:summary.reduce((s,x)=>s+x.count,0),noImage:summary.reduce((s,x)=>s+x.noImage,0),groups,report:out},null,2));
+console.log(JSON.stringify({collections:summary.length,activities:summary.reduce((s,x)=>s+x.count,0),noImage:summary.reduce((s,x)=>s+x.noImage,0),groups,perCollection:summary.map(x=>({year:x.year,term:x.term,subject:x.subject,missing:x.noImage,total:x.count})),report:out},null,2));
 if(findings.some(f=>f.severity==='BLOCKER'))process.exitCode=1;
