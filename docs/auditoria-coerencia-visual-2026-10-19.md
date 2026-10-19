@@ -1,3 +1,16 @@
+## ATUALIZAÇÃO — Auditoria automática integral executada em 19/10/2026
+
+- GitHub Actions: **248 testes aprovados, zero falhas**.
+- Scanner específico percorreu **100 coleções / 5.000 atividades**.
+- **4.468 atividades sem figura vinculada** (`NO_LINKED_FIGURE`).
+- **4.900 atividades com ilustração marcada `producao-visual-pendente`**.
+- O scanner não encontrou bloqueios de contagem de questões, gabarito vazio, arquivo JSON inválido ou texto completamente vazio nas 100 coleções. Isto NÃO atesta correção didática.
+- O teste automatizado não abre as 5.000 imagens para validar coerência visual/semântica, nem verifica a validade individual de cada habilidade BNCC.
+- Correção técnica adicional: ampliadas as respostas 3 e 7 da atividade piloto de alfabeto; CI voltou a passar.
+- **Publicação bloqueada** até conclusão da produção visual, correção semântica e aprovação pedagógica.
+- Execução: https://github.com/cunhadalbert-cmyk/TeachEasy/actions/runs/39320152299
+- PR em rascunho: https://github.com/cunhadalbert-cmyk/TeachEasy/pull/211
+
 # Auditoria pedagógica e visual — Ensino Fundamental 1º ao 5º ano
 Data: 19/10/2026
 Branch de trabalho: `audit/coerencia-fundamental-1a5-out2026`
