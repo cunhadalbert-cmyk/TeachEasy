@@ -15,7 +15,7 @@
       "sequencia": "Atividade 1",
       "tipoSequencia": "Coleção principal",
       "dificuldade": "facil",
-      "objetivo": "Analisar leitura e compreensão: alfabeto por meio de leitura, análise de evidências, comparação, justificativa e síntese adequadas ao 1º ano.",
+      "objetivo": "Reconhecer letras iniciais de palavras familiares, relacionar palavras ao seu significado e praticar leitura e escrita inicial com apoio de uma situação concreta.",
       "bncc": [
         {
           "codigo": "EF01LP01",
@@ -29,16 +29,16 @@
       "figuras": [],
       "possuiGabarito": true,
       "possuiVersaoAdaptada": false,
-      "instrucaoGeral": "Leia o texto de apoio e responda às oito questões sobre “Leitura e compreensão: alfabeto”. Use informações da atividade para justificar suas respostas.",
+      "instrucaoGeral": "Leia com o professor as palavras do cartaz da turma. Responda às oito atividades. Quando necessário, peça ajuda para ler o enunciado.",
       "textoApoio": {
-        "titulo": "Língua Portuguesa: leitura e investigação de Leitura e compreensão: alfabeto",
-        "conteudo": "Textos circulam em situações reais de comunicação e apresentam escolhas de linguagem, organização e finalidade. Ao estudar leitura e compreensão: alfabeto, é importante observar informações explícitas, pistas de sentido, recursos linguísticos e a relação entre o texto e seu contexto de produção. No 1º ano, a investigação parte de situações próximas da criança, com linguagem clara, comparação de exemplos e registros por palavras, desenhos, números ou pequenas explicações. O 1º bimestre amplia essas aprendizagens sem retirar o vínculo com experiências concretas da escola, da família e da comunidade. Em “Leitura e compreensão: alfabeto”, as questões retomam esse contexto e pedem que o estudante use informações do texto para sustentar suas respostas. No 1º ano, a investigação parte de situações próximas da criança, com linguagem clara, comparação de exemplos e registros por palavras, desenhos, números ou pequenas explicações. O 1º bimestre amplia essas aprendizagens sem retirar o vínculo com experiências concretas da escola, da família e da comunidade. Em “Leitura e compreensão: alfabeto”, as questões retomam esse contexto e pedem que o estudante use informações do texto para sustentar suas respostas."
+        "titulo": "O cartaz de palavras da turma",
+        "conteudo": "Na sala de Ana há um cartaz com palavras que a turma conhece.\n\nA — ABELHA\nB — BOLA\nC — CASA\nD — DADO\n\nAna apontou para BOLA e disse: — BOLA começa com a letra B!\nDepois, a turma procurou outras palavras que começam com essas letras."
       },
       "questoes": [
         {
           "numero": 1,
           "tipo": "compreensao",
-          "enunciado": "Observe o texto sobre Leitura e compreensão: alfabeto: qual é o assunto e para que ele foi escrito?",
+          "enunciado": "Qual é o nome da menina que aparece no texto?",
           "alternativas": [],
           "espacoResposta": "medio",
           "figuraId": null
@@ -46,55 +46,55 @@
         {
           "numero": 2,
           "tipo": "localizacao",
-          "enunciado": "Localize duas palavras ou informações importantes e mostre onde aparecem no texto. Considere o contexto de “Leitura e compreensão: alfabeto”.",
+          "enunciado": "Qual palavra do cartaz começa com a letra B?",
           "alternativas": [],
           "espacoResposta": "medio",
           "figuraId": null
         },
         {
           "numero": 3,
-          "tipo": "inferencia",
-          "enunciado": "Explique uma escolha de palavra, imagem, pontuação ou organização que ajuda a construir o sentido. Considere o contexto de “Leitura e compreensão: alfabeto”.",
+          "tipo": "reconhecimento",
+          "enunciado": "Marque a letra inicial da palavra CASA: A, B ou C.",
           "alternativas": [],
           "espacoResposta": "medio",
           "figuraId": null
         },
         {
           "numero": 4,
-          "tipo": "vocabulario",
-          "enunciado": "Compare duas informações ou personagens e diga uma semelhança e uma diferença. Considere o contexto de “Leitura e compreensão: alfabeto”.",
+          "tipo": "associacao",
+          "enunciado": "Ligue cada letra à palavra correspondente: A, B, C, D — ABELHA, BOLA, CASA, DADO.",
           "alternativas": [],
           "espacoResposta": "medio",
           "figuraId": null
         },
         {
           "numero": 5,
-          "tipo": "organizacao",
-          "enunciado": "Analise a finalidade comunicativa de “Leitura e compreensão: alfabeto” e justifique sua resposta com elementos do texto de apoio.",
+          "tipo": "escrita",
+          "enunciado": "Copie do cartaz a palavra que começa com D.",
           "alternativas": [],
           "espacoResposta": "medio",
           "figuraId": null
         },
         {
           "numero": 6,
-          "tipo": "sintese",
-          "enunciado": "Releia a resposta e faça duas melhorias de clareza, sequência ou escrita. Considere o contexto de “Leitura e compreensão: alfabeto”.",
+          "tipo": "sequencia",
+          "enunciado": "Escreva, na ordem, as letras iniciais de ABELHA, BOLA, CASA e DADO.",
           "alternativas": [],
           "espacoResposta": "grande",
           "figuraId": null
         },
         {
           "numero": 7,
-          "tipo": "analise-critica",
-          "enunciado": "Avalie um recurso linguístico ou discursivo usado em “Leitura e compreensão: alfabeto” e explique o efeito produzido no leitor.",
+          "tipo": "compreensao",
+          "enunciado": "Ana disse que BOLA começa com qual letra?",
           "alternativas": [],
           "espacoResposta": "medio",
           "figuraId": null
         },
         {
           "numero": 8,
-          "tipo": "sintese",
-          "enunciado": "Elabore uma conclusão sobre leitura e compreensão: alfabeto a partir das evidências reunidas em “Leitura e compreensão: alfabeto”.",
+          "tipo": "producao",
+          "enunciado": "Diga outra palavra que comece com a letra A. O professor pode registrar sua resposta.",
           "alternativas": [],
           "espacoResposta": "grande",
           "figuraId": null
@@ -103,43 +103,43 @@
       "gabarito": [
         {
           "numero": 1,
-          "resposta": "Reconhecer elementos centrais de Leitura e compreensão: alfabeto e registrá-los com clareza.",
-          "justificativa": "Critério alinhado à EF01LP01, considerando o desenvolvimento esperado no 1º ano."
+          "resposta": "Ana.",
+          "justificativa": "Resposta diretamente verificável no cartaz de palavras e no texto de apoio."
         },
         {
           "numero": 2,
-          "resposta": "Localizar ou representar informações pertinentes ao comando.",
-          "justificativa": "Critério alinhado à EF01LP01, considerando o desenvolvimento esperado no 1º ano."
+          "resposta": "BOLA.",
+          "justificativa": "Resposta diretamente verificável no cartaz de palavras e no texto de apoio."
         },
         {
           "numero": 3,
-          "resposta": "Explicar a estratégia ou relação observada com apoio em evidências.",
-          "justificativa": "Critério alinhado à EF01LP01, considerando o desenvolvimento esperado no 1º ano."
+          "resposta": "A letra inicial da palavra CASA é a letra C.",
+          "justificativa": "Resposta diretamente verificável no cartaz de palavras e no texto de apoio."
         },
         {
           "numero": 4,
-          "resposta": "Comparar, verificar ou justificar a resposta com critério explícito.",
-          "justificativa": "Critério alinhado à EF01LP01, considerando o desenvolvimento esperado no 1º ano."
+          "resposta": "A–ABELHA; B–BOLA; C–CASA; D–DADO.",
+          "justificativa": "Resposta diretamente verificável no cartaz de palavras e no texto de apoio."
         },
         {
           "numero": 5,
-          "resposta": "Deve justificar a resposta com evidências e vocabulário adequado a Língua Portuguesa.",
-          "justificativa": "Critério de correção alinhado à habilidade EF01LP01 já associada à coleção e à aprendizagem desenvolvida nesta atividade."
+          "resposta": "DADO.",
+          "justificativa": "Resposta diretamente verificável no cartaz de palavras e no texto de apoio."
         },
         {
           "numero": 6,
-          "resposta": "Apresentar conclusão coerente e uma revisão ou proposta adequada.",
-          "justificativa": "Critério alinhado à EF01LP01, considerando o desenvolvimento esperado no 1º ano."
+          "resposta": "A, B, C e D.",
+          "justificativa": "Resposta diretamente verificável no cartaz de palavras e no texto de apoio."
         },
         {
           "numero": 7,
-          "resposta": "Deve reconhecer um limite, cuidado, erro possível ou ponto de vista e justificar a avaliação apresentada.",
-          "justificativa": "Critério de correção alinhado à habilidade EF01LP01 já associada à coleção e à aprendizagem desenvolvida nesta atividade."
+          "resposta": "Ana disse que a palavra BOLA começa com a letra B.",
+          "justificativa": "Resposta diretamente verificável no cartaz de palavras e no texto de apoio."
         },
         {
           "numero": 8,
-          "resposta": "Deve produzir uma síntese autoral coerente com leitura e compreensão: alfabeto, articulando evidências e conclusão.",
-          "justificativa": "Critério de correção alinhado à habilidade EF01LP01 já associada à coleção e à aprendizagem desenvolvida nesta atividade."
+          "resposta": "Resposta pessoal válida: AMIGO, AVIÃO, AMOR, entre outras palavras iniciadas por A.",
+          "justificativa": "Aceitar outra palavra que comece com A, com mediação do professor."
         }
       ],
       "revisao": {
@@ -149,13 +149,14 @@
         "questoesConferidas": false,
         "gabaritoConferido": false,
         "ilustracaoConferida": false,
-        "validacaoAutomatica": true
+        "validacaoAutomatica": true,
+        "observacao": "Texto, oito questões e gabarito reescritos em auditoria de 19/10/2026; imagem, BNCC e revisão pedagógica humana pendentes."
       },
       "bnccConferida": true,
       "padraoPedagogico": "teacheasy-v2",
       "ilustracao": {
-        "objetivoPedagogico": "Apoiar a compreensão de leitura e compreensão: alfabeto com elementos visuais coerentes com o objetivo da atividade.",
-        "descricao": "Cena ou representação pedagógica relacionada a leitura e compreensão: alfabeto, adequada ao 1º ano, sem texto embutido desnecessário e com função didática clara.",
+        "objetivoPedagogico": "Representar o cartaz com quatro pares letra-palavra, auxiliando a leitura e reconhecimento de letras.",
+        "descricao": "Ilustração pedagógica clara: sala de aula com menina apontando para cartaz legível contendo exatamente A–ABELHA, B–BOLA, C–CASA, D–DADO; quatro desenhos fiéis às palavras, sem outras letras ou palavras; conferir ortografia e impressão A4.",
         "status": "producao-visual-pendente",
         "estilo": "TeachEasy — ilustração pedagógica de Língua Portuguesa adequada ao 1º ano"
       }
