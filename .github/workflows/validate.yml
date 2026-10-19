@@ -40,3 +40,7 @@ jobs:
 
       - name: Run all validations
         run: npm run validate
+
+      - name: Audit 100 Fundamental I collections
+        if: always()
+        run: node scripts/audit-coerencia-fundamental-1a5.mjs
